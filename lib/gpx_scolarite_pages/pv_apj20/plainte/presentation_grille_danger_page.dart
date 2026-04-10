@@ -1,0 +1,791 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class PresentationGrilleDangerPage extends StatelessWidget {
+  const PresentationGrilleDangerPage({super.key});
+
+  static const String routeName =
+      '/gpx/pv_apj20/plainte/violences_conjugales/presentation_grille_danger';
+
+  static const Color _lawRed = Color(0xFFE53935);
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
+    final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
+
+    // Palette cards (propre + lisible)
+    final Color cardLegal = isDark
+        ? const Color(0xFF1F2733)
+        : const Color(0xFFF2F6FF);
+    final Color cardUse = isDark
+        ? const Color(0xFF1D2A24)
+        : const Color(0xFFF1FBF5);
+    final Color cardReco = isDark
+        ? const Color(0xFF2A1F2D)
+        : const Color(0xFFFFF1F8);
+    final Color cardCriteria = isDark
+        ? const Color(0xFF2C2417)
+        : const Color(0xFFFFF8E1);
+    final Color cardDocs = isDark
+        ? const Color(0xFF222224)
+        : const Color(0xFFF7F7F7);
+
+    final Color accentBlue = isDark
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
+    final Color accentGreen = isDark
+        ? const Color(0xFF66BB6A)
+        : const Color(0xFF2E7D32);
+    final Color accentPink = isDark
+        ? const Color(0xFFF48FB1)
+        : const Color(0xFFC2185B);
+    final Color accentAmber = isDark
+        ? const Color(0xFFFFCA28)
+        : const Color(0xFFF9A825);
+    final Color accentGrey = isDark ? Colors.white70 : const Color(0xFF616161);
+
+    return Scaffold(
+      backgroundColor: bg,
+      appBar: AppBar(
+        backgroundColor: bg,
+        elevation: 0,
+        centerTitle: true,
+        leading: IconButton(
+          onPressed: () => Navigator.of(context).maybePop(),
+          icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
+          tooltip: 'Retour',
+        ),
+        title: Text(
+          "Violences conjugales",
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: GoogleFonts.fustat(
+            fontWeight: FontWeight.w900,
+            fontSize: 18,
+            color: textMain,
+          ),
+        ),
+      ),
+      body: ListView(
+        physics: const BouncingScrollPhysics(),
+        padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
+        children: [
+          Text(
+            "Présentation de la grille d’évaluation du danger",
+            style: GoogleFonts.fustat(
+              fontWeight: FontWeight.w900,
+              fontSize: 21,
+              height: 1.15,
+              color: textMain,
+            ),
+          ),
+          const SizedBox(height: 10),
+
+          // Définition / objectif (sans répétitions)
+          _ConditionCard(
+            title: "Objectif",
+            cardColor: cardDocs,
+            accent: accentGrey,
+            titleColor: textMain,
+            children: const [
+              _Paragraph(
+                "La grille d’évaluation du danger vise à apprécier le niveau de danger encouru par une victime "
+                "de violences conjugales. Combinée à d’autres éléments de contexte, elle peut conduire à la mise "
+                "en œuvre de mesures d’accompagnement et de protection. Elle aide aussi la victime à prendre conscience "
+                "du danger encouru.",
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // ✅ Élément légal en haut (articles en rouge)
+          _ConditionCard(
+            title: "I — Élément légal",
+            cardColor: cardLegal,
+            accent: accentBlue,
+            titleColor: textMain,
+            children: [
+              _Paragraph.rich([
+                const TextSpan(
+                  text:
+                      "Information des droits des victimes (dans le cadre d’une plainte) — ",
+                ),
+                TextSpan(
+                  text: "article 10-2 du Code de procédure pénale",
+                  style: const TextStyle(
+                    color: _lawRed,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+                const TextSpan(text: "."),
+              ]),
+              const SizedBox(height: 10),
+              _NotaBox(
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "La grille est transmise à l’autorité judiciaire lorsqu’elle est renseignée, "
+                        "en l’annexant à l’audition ou à la main courante informatisée (MCI).",
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Présentation / contenu du questionnaire
+          _ConditionCard(
+            title: "II — Présentation",
+            cardColor: cardUse,
+            accent: accentGreen,
+            titleColor: textMain,
+            children: const [
+              _Paragraph(
+                "La grille se présente sous la forme de 23 questions fermées. "
+                "Parmi elles, 5 questions signalées en rouge définissent un degré de danger particulier.",
+              ),
+              SizedBox(height: 10),
+              _BulletPoint(
+                text:
+                    "Permet une évaluation structurée et rapide de la situation de danger.",
+              ),
+              _BulletPoint(
+                text:
+                    "Sert d’appui pour décider et déclencher des mesures adaptées (protection, accompagnement, partenariats).",
+              ),
+              _BulletPoint(
+                text:
+                    "Doit être remplie par le policier à partir des déclarations de la victime.",
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Où trouver la grille (LRPPN) + cas refus de plainte
+          _ConditionCard(
+            title: "III — Renseignement & transmission",
+            cardColor: cardReco,
+            accent: accentPink,
+            titleColor: textMain,
+            children: const [
+              _SubTitle("Disponibilité (LRPPN)"),
+              _Paragraph(
+                "Disponible dans le logiciel de rédaction des procédures (LRPPN) : "
+                "« RÉDACTION PJ » → fonction « création/suite de dossier – Violences conjugales ».",
+              ),
+              SizedBox(height: 12),
+              _SubTitle("Quand la victime refuse la plainte"),
+              _Paragraph(
+                "Si la victime privilégie une main courante informatisée (MCI), il convient d’imprimer la grille "
+                "et de la remplir manuellement.",
+              ),
+              SizedBox(height: 12),
+              _SubTitle("Transmission"),
+              _Paragraph(
+                "La grille doit être transmise à l’autorité judiciaire, annexée à l’audition ou à la MCI.",
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Préconisations (pédagogie + confidentialité etc.)
+          _ConditionCard(
+            title: "IV — Préconisations",
+            cardColor: cardDocs,
+            accent: accentGrey,
+            titleColor: textMain,
+            children: const [
+              _BulletPoint(
+                text:
+                    "Recevoir la victime dans un lieu sécurisant et respectant la confidentialité (dans la mesure du possible).",
+              ),
+              _BulletPoint(
+                text:
+                    "Informer la victime : ce questionnaire sert à mieux évaluer la situation pour mieux l’accompagner.",
+              ),
+              _BulletPoint(
+                text:
+                    "Laisser un temps de parole, puis compléter la grille avec la victime (ne pas lui remettre pour qu’elle la remplisse seule).",
+              ),
+              _BulletPoint(
+                text:
+                    "Adopter une posture bienveillante et pédagogique pour rassurer et déculpabiliser.",
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Critères danger (2 hypothèses non cumulatives)
+          _ConditionCard(
+            title: "V — Critères de danger (non cumulatif)",
+            cardColor: cardCriteria,
+            accent: accentAmber,
+            titleColor: textMain,
+            children: const [
+              _Paragraph(
+                "Le danger est susceptible d’être caractérisé dans deux hypothèses non cumulatives :",
+              ),
+              SizedBox(height: 10),
+              _BulletPoint(
+                text:
+                    "Réponse positive à au moins 2 questions signalées en rouge dans le formulaire.",
+              ),
+              _BulletPoint(
+                text:
+                    "Réponse positive à 12 questions (qu’elles soient en rouge ou non).",
+              ),
+              SizedBox(height: 10),
+              _NotaBox(
+                bodySpans: [
+                  TextSpan(
+                    text:
+                        "La conduite à tenir est adaptée au résultat (danger identifié ou non), avec mobilisation des partenaires "
+                        "engagés dans la lutte contre les violences conjugales.",
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // “Rappel / conduite à tenir” (résumé opérationnel)
+          _ConditionCard(
+            title: "VI — Rappel opérationnel (conduites à tenir)",
+            cardColor: cardUse,
+            accent: accentGreen,
+            titleColor: textMain,
+            children: [
+              const _SubTitle("Diligences essentielles"),
+              const _BulletPoint(
+                text:
+                    "Accueillir la victime : confidentialité, sécurité, possibilité d’être accompagnée.",
+              ),
+              const _BulletPoint(
+                text:
+                    "Écouter et prendre les déclarations (plainte ou MCI), avis OPJ si nécessaire.",
+              ),
+              const _BulletPoint(
+                text:
+                    "Renseigner systématiquement la grille d’évaluation du danger.",
+              ),
+              const _BulletPoint(
+                text:
+                    "Remise à la victime : information droits victimes, récépissés, coordonnées utiles (ISC / associations / etc.).",
+              ),
+              const SizedBox(height: 10),
+              _NotaBox(
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "Tout refus de la victime (ITT, mise en sécurité, etc.) doit être mentionné en procédure.",
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Documents/images (zoom + rotation)
+          _ConditionCard(
+            title: "VII — Documents (zoom / rotation)",
+            cardColor: cardDocs,
+            accent: accentGrey,
+            titleColor: textMain,
+            children: const [
+              _Paragraph(
+                "Appuie sur l’image pour l’ouvrir en plein écran. Tu peux zoomer et tourner.",
+              ),
+              SizedBox(height: 10),
+              _ZoomRotateImage(assetPath: 'assets/images/protocole.png'),
+              SizedBox(height: 12),
+              _ZoomRotateImage(assetPath: 'assets/images/presentation.png'),
+              SizedBox(height: 12),
+              _ZoomRotateImage(assetPath: 'assets/images/evaluation.png'),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+///  Image : plein écran + zoom + rotation (sans dépendances, sans copyWith)
+///////////////////////////////////////////////////////////////////////////////
+
+class _ZoomRotateImage extends StatefulWidget {
+  const _ZoomRotateImage({required this.assetPath});
+
+  final String assetPath;
+
+  @override
+  State<_ZoomRotateImage> createState() => _ZoomRotateImageState();
+}
+
+class _ZoomRotateImageState extends State<_ZoomRotateImage> {
+  int _quarterTurns = 0;
+
+  void _rotateLeft() => setState(() => _quarterTurns = (_quarterTurns - 1) % 4);
+  void _rotateRight() =>
+      setState(() => _quarterTurns = (_quarterTurns + 1) % 4);
+  void _reset() => setState(() => _quarterTurns = 0);
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final Color border = isDark
+        ? Colors.white.withOpacity(.18)
+        : Colors.black.withOpacity(.10);
+
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: border, width: 1),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+            decoration: BoxDecoration(
+              color: isDark ? Colors.black.withOpacity(.18) : Colors.black12,
+              border: Border(bottom: BorderSide(color: border, width: 1)),
+            ),
+
+            // ✅ FIX OVERFLOW: la barre devient scrollable horizontalement
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: const BouncingScrollPhysics(),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    onPressed: _rotateLeft,
+                    tooltip: 'Tourner à gauche',
+                    icon: const Icon(Icons.rotate_left_rounded),
+                  ),
+                  IconButton(
+                    onPressed: _rotateRight,
+                    tooltip: 'Tourner à droite',
+                    icon: const Icon(Icons.rotate_right_rounded),
+                  ),
+                  const SizedBox(width: 6),
+                  TextButton.icon(
+                    onPressed: _reset,
+                    icon: const Icon(Icons.refresh_rounded),
+                    label: Text(
+                      "Réinitialiser",
+                      style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
+                    ),
+                  ),
+                  const SizedBox(width: 6),
+                  TextButton.icon(
+                    onPressed: () => _openFullscreen(context),
+                    icon: const Icon(Icons.fullscreen_rounded),
+                    label: Text(
+                      "Plein écran",
+                      style: GoogleFonts.fustat(fontWeight: FontWeight.w800),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          AspectRatio(
+            aspectRatio: 4 / 3,
+            child: InteractiveViewer(
+              minScale: 1,
+              maxScale: 6,
+              panEnabled: true,
+              boundaryMargin: const EdgeInsets.all(80),
+              child: Center(
+                child: RotatedBox(
+                  quarterTurns: _quarterTurns,
+                  child: Image.asset(widget.assetPath, fit: BoxFit.contain),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _openFullscreen(BuildContext context) {
+    int turns = _quarterTurns;
+
+    showDialog(
+      context: context,
+      barrierColor: Colors.black.withOpacity(.92),
+      builder: (_) {
+        return StatefulBuilder(
+          builder: (ctx, setLocalState) {
+            return Dialog(
+              insetPadding: const EdgeInsets.all(12),
+              backgroundColor: Colors.transparent,
+              child: Column(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 8,
+                    ),
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(.35),
+                      borderRadius: BorderRadius.circular(14),
+                    ),
+
+                    // ✅ FIX OVERFLOW aussi en plein écran
+                    child: SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      physics: const BouncingScrollPhysics(),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          IconButton(
+                            onPressed: () =>
+                                setLocalState(() => turns = (turns - 1) % 4),
+                            tooltip: 'Tourner à gauche',
+                            icon: const Icon(
+                              Icons.rotate_left_rounded,
+                              color: Colors.white,
+                            ),
+                          ),
+                          IconButton(
+                            onPressed: () =>
+                                setLocalState(() => turns = (turns + 1) % 4),
+                            tooltip: 'Tourner à droite',
+                            icon: const Icon(
+                              Icons.rotate_right_rounded,
+                              color: Colors.white,
+                            ),
+                          ),
+                          const SizedBox(width: 6),
+                          TextButton.icon(
+                            onPressed: () => setLocalState(() => turns = 0),
+                            icon: const Icon(
+                              Icons.refresh_rounded,
+                              color: Colors.white,
+                            ),
+                            label: Text(
+                              "Réinitialiser",
+                              style: GoogleFonts.fustat(
+                                fontWeight: FontWeight.w900,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 6),
+                          IconButton(
+                            onPressed: () => Navigator.of(context).pop(),
+                            icon: const Icon(
+                              Icons.close_rounded,
+                              color: Colors.white,
+                            ),
+                            tooltip: 'Fermer',
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Expanded(
+                    child: InteractiveViewer(
+                      minScale: 1,
+                      maxScale: 10,
+                      panEnabled: true,
+                      boundaryMargin: const EdgeInsets.all(200),
+                      child: Center(
+                        child: RotatedBox(
+                          quarterTurns: turns,
+                          child: Image.asset(
+                            widget.assetPath,
+                            fit: BoxFit.contain,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                ],
+              ),
+            );
+          },
+        );
+      },
+    ).then((_) {
+      setState(() => _quarterTurns = turns);
+    });
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+///                   TES WIDGETS PERSONNALISÉS EXACTS                    ///
+///////////////////////////////////////////////////////////////////////////////
+
+class _ConditionCard extends StatelessWidget {
+  const _ConditionCard({
+    required this.title,
+    required this.cardColor,
+    required this.accent,
+    required this.titleColor,
+    required this.children,
+  });
+
+  final String title;
+  final Color cardColor;
+  final Color accent;
+  final Color titleColor;
+  final List<Widget> children;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      container: true,
+      header: true,
+      child: Container(
+        decoration: BoxDecoration(
+          color: cardColor,
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(.12),
+              blurRadius: 18,
+              offset: const Offset(0, 10),
+            ),
+          ],
+        ),
+        padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: GoogleFonts.fustat(
+                fontWeight: FontWeight.w800,
+                fontSize: 16.5,
+                color: titleColor,
+              ),
+            ),
+            const SizedBox(height: 12),
+            ...children,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SubTitle extends StatelessWidget {
+  const _SubTitle(this.text);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 6, bottom: 6),
+      child: Text(
+        text,
+        style: GoogleFonts.fustat(
+          fontWeight: FontWeight.w700,
+          fontSize: 15.5,
+          color: isDark ? Colors.white : const Color(0xFF0D47A1),
+        ),
+      ),
+    );
+  }
+}
+
+class _Paragraph extends StatelessWidget {
+  const _Paragraph(this.text) : spans = null;
+
+  const _Paragraph.rich(this.spans) : text = null;
+
+  final String? text;
+  final List<TextSpan>? spans;
+
+  @override
+  Widget build(BuildContext context) {
+    final isRich = spans != null;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final Color color = isDark
+        ? Colors.white70
+        : const Color(0xFF1F1F1F).withOpacity(.92);
+
+    if (!isRich) {
+      return Text(
+        text!,
+        textAlign: TextAlign.justify,
+        style: GoogleFonts.fustat(
+          fontSize: 14,
+          height: 1.45,
+          fontWeight: FontWeight.w500,
+          color: color,
+        ),
+      );
+    }
+
+    return RichText(
+      textAlign: TextAlign.justify,
+      text: TextSpan(
+        style: GoogleFonts.fustat(
+          fontSize: 14,
+          height: 1.45,
+          fontWeight: FontWeight.w500,
+          color: color,
+        ),
+        children: spans!,
+      ),
+    );
+  }
+}
+
+class _IntroBullet extends StatelessWidget {
+  const _IntroBullet({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final Color bulletColor = isDark
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
+    final Color textColor = isDark
+        ? Colors.white70
+        : const Color(0xFF1F1F1F).withOpacity(.92);
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 2),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Icon(
+              Icons.arrow_right_rounded,
+              size: 18,
+              color: bulletColor,
+            ),
+          ),
+          const SizedBox(width: 2),
+          Expanded(
+            child: Text(
+              text,
+              style: GoogleFonts.fustat(
+                fontSize: 14,
+                height: 1.3,
+                fontWeight: FontWeight.w500,
+                color: textColor,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _BulletPoint extends StatelessWidget {
+  const _BulletPoint({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 4),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(
+            Icons.check_rounded,
+            size: 18,
+            color: isDark ? const Color(0xFF64B5F6) : const Color(0xFF1565C0),
+          ),
+          const SizedBox(width: 6),
+          Expanded(
+            child: Text(
+              text,
+              style: GoogleFonts.fustat(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                height: 1.35,
+                color: isDark
+                    ? Colors.white70
+                    : const Color(0xFF1F1F1F).withOpacity(.92),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _NotaBox extends StatelessWidget {
+  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+
+  final List<TextSpan> bodySpans;
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final Color borderColor = isDark
+        ? const Color(0xFFFFCA28)
+        : const Color(0xFFF9A825);
+    final Color bgColor = isDark
+        ? const Color(0xFF26200F)
+        : const Color(0xFFFFF8E1);
+    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        color: bgColor.withOpacity(isDark ? .7 : .95),
+        borderRadius: BorderRadius.circular(12),
+        border: Border(left: BorderSide(color: borderColor, width: 3)),
+      ),
+      child: RichText(
+        textAlign: TextAlign.justify,
+        text: TextSpan(
+          style: GoogleFonts.fustat(
+            fontSize: 13.5,
+            fontWeight: FontWeight.w500,
+            height: 1.4,
+            color: isDark
+                ? Colors.white70
+                : const Color(0xFF3E2723).withOpacity(.95),
+          ),
+          children: [
+            TextSpan(
+              text: '$title : ',
+              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
+            ),
+            ...bodySpans,
+          ],
+        ),
+      ),
+    );
+  }
+}

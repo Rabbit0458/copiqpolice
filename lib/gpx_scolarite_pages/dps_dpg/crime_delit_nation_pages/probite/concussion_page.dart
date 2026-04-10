@@ -1,0 +1,731 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class ConcussionPage extends StatelessWidget {
+  const ConcussionPage({super.key});
+
+  static const String routeName =
+      '/gpx_scolarite_pages/crime_delit_nation_pages/probite/concussion';
+
+  static const Color _lawRed = Color(0xFFE53935);
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
+    final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
+
+    // Palette cards (propre + lisible)
+    final Color cardLegal = isDark
+        ? const Color(0xFF1F2733)
+        : const Color(0xFFF2F6FF);
+    final Color cardMat = isDark
+        ? const Color(0xFF1D2A24)
+        : const Color(0xFFF1FBF5);
+    final Color cardMoral = isDark
+        ? const Color(0xFF2A1F2D)
+        : const Color(0xFFFFF1F8);
+    final Color cardAggr = isDark
+        ? const Color(0xFF2C2417)
+        : const Color(0xFFFFF8E1);
+    final Color cardRep = isDark
+        ? const Color(0xFF222224)
+        : const Color(0xFFF7F7F7);
+
+    final Color accentBlue = isDark
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
+    final Color accentGreen = isDark
+        ? const Color(0xFF66BB6A)
+        : const Color(0xFF2E7D32);
+    final Color accentPink = isDark
+        ? const Color(0xFFF48FB1)
+        : const Color(0xFFC2185B);
+    final Color accentAmber = isDark
+        ? const Color(0xFFFFCA28)
+        : const Color(0xFFF9A825);
+    final Color accentGrey = isDark ? Colors.white70 : const Color(0xFF616161);
+
+    return Scaffold(
+      backgroundColor: bg,
+      appBar: AppBar(
+        backgroundColor: bg,
+        elevation: 0,
+        centerTitle: true,
+        leading: IconButton(
+          onPressed: () => Navigator.of(context).maybePop(),
+          icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
+          tooltip: 'Retour',
+        ),
+        title: Text(
+          "Probité",
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: GoogleFonts.fustat(
+            fontWeight: FontWeight.w900,
+            fontSize: 18,
+            color: textMain,
+          ),
+        ),
+      ),
+      body: ListView(
+        physics: const BouncingScrollPhysics(),
+        padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
+        children: [
+          Text(
+            "La concussion",
+            style: GoogleFonts.fustat(
+              fontWeight: FontWeight.w900,
+              fontSize: 21,
+              height: 1.15,
+              color: textMain,
+            ),
+          ),
+          const SizedBox(height: 10),
+
+          // Définition
+          _ConditionCard(
+            title: "Définition",
+            cardColor: cardRep,
+            accent: accentGrey,
+            titleColor: textMain,
+            children: const [
+              _Paragraph(
+                "La concussion consiste, pour une personne dépositaire de l’autorité publique ou chargée d’une mission de service public, "
+                "à recevoir, exiger ou ordonner de percevoir, à titre de droits ou contributions, impôts ou taxes publics, "
+                "une somme qu’elle sait ne pas être due, ou excéder ce qui est dû.\n\n"
+                "Elle se réalise également lorsque ces mêmes personnes accordent illégalement une exonération ou une franchise "
+                "des droits, contributions, impôts ou taxes publics, sous une forme quelconque et pour quelque motif que ce soit.",
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // ✅ Élément légal en haut
+          _ConditionCard(
+            title: "I — Élément légal",
+            cardColor: cardLegal,
+            accent: accentBlue,
+            titleColor: textMain,
+            children: [
+              _Paragraph.rich([
+                TextSpan(
+                  text: "Article 432-10 du Code pénal",
+                  style: const TextStyle(
+                    color: _lawRed,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+                const TextSpan(
+                  text: " : prévoit et réprime l’infraction de concussion.",
+                ),
+              ]),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Élément matériel
+          _ConditionCard(
+            title: "II — Élément matériel",
+            cardColor: cardMat,
+            accent: accentGreen,
+            titleColor: textMain,
+            children: [
+              const _SubTitle("A) Un auteur particulier"),
+              const _Paragraph(
+                "La concussion ne peut être commise que par certaines personnes listées par le texte :\n"
+                "• une personne dépositaire de l’autorité publique ;\n"
+                "• ou une personne chargée d’une mission de service public.",
+              ),
+              const SizedBox(height: 10),
+
+              const _SubTitle("1) Personne dépositaire de l’autorité publique"),
+              const _Paragraph(
+                "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle d’autorité publique "
+                "conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou ministériel, etc.).\n\n"
+                "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, commissaires-priseurs, "
+                "fonctionnaires des eaux et forêts, responsables d’exécutifs locaux (maires, présidents d’intercommunalités, "
+                "des conseils départementaux et régionaux), adjoints au maire et conseillers municipaux délégués.",
+              ),
+              const SizedBox(height: 10),
+              _NotaBox(
+                title: "Jurisprudence",
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "Un maire imposant à chaque promoteur/particulier le paiement d’une somme par logement construit, sans base légale, "
+                        "les perceptions étant versées sur un compte occulte : ",
+                  ),
+                  TextSpan(
+                    text: "Cass. crim., 16 mai 2001",
+                    style: const TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const TextSpan(text: "."),
+                ],
+              ),
+
+              const SizedBox(height: 12),
+
+              const _SubTitle(
+                "2) Personne chargée d’une mission de service public",
+              ),
+              const _Paragraph(
+                "Est chargé d’une mission de service public celui qui accomplit, à titre temporaire ou permanent, volontairement ou sur réquisition, "
+                "un service public quelconque. Il participe à une mission d’intérêt général sans détenir de pouvoir de décision ou de commandement.\n\n"
+                "Les élus locaux, lorsqu’ils n’exercent aucune prérogative de puissance publique par délégation, comme les parlementaires, "
+                "peuvent relever de cette catégorie.",
+              ),
+
+              const SizedBox(height: 14),
+
+              const _SubTitle("B) Une perception indue"),
+              const _Paragraph(
+                "Le texte vise les sommes réclamées ou reçues à titre de droits ou contributions, impôts ou taxes publics.\n\n"
+                "Le délit peut résulter du fait de recevoir, d’exiger ou d’ordonner de percevoir, sans qu’il soit nécessaire d’abuser de son autorité "
+                "ou d’utiliser des manœuvres, menaces ou violences.\n\n"
+                "Ce qui caractérise l’infraction, c’est le caractère illégal de la perception : on compare la somme réclamée à ce que les textes "
+                "légaux ou réglementaires autorisent réellement à percevoir. La somme peut être totalement ou partiellement indue.",
+              ),
+              const SizedBox(height: 10),
+              _NotaBox(
+                title: "Jurisprudence",
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "Un régisseur placier exigeant des commerçants une somme excédant le montant fixé pour le droit de place : ",
+                  ),
+                  TextSpan(
+                    text: "C.A. Versailles, 26 avril 2006",
+                    style: const TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const TextSpan(text: "."),
+                ],
+              ),
+              const SizedBox(height: 10),
+              _NotaBox(
+                title: "Jurisprudence",
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "Gestionnaire de maison de retraite ayant reçu une rémunération d’économe sans exercer les fonctions : ",
+                  ),
+                  TextSpan(
+                    text: "T.G.I. Bordeaux, 22 novembre 2004",
+                    style: const TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const TextSpan(text: "."),
+                ],
+              ),
+
+              const SizedBox(height: 12),
+
+              const _SubTitle("Nature de la perception"),
+              const _Paragraph(
+                "• La notion de « somme » s’apprécie largement : numéraire mais aussi prestations en nature.\n"
+                "• Les termes droits, contributions et taxes renvoient le plus souvent à des formes d’impôts ; "
+                "la jurisprudence inclut aussi des salaires/traitements ou certaines fournitures reçues.",
+              ),
+              const SizedBox(height: 10),
+              _NotaBox(
+                title: "Jurisprudence",
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "Repas pris chaque jour par un directeur d’hôpital dans la cuisine de son établissement : ",
+                  ),
+                  TextSpan(
+                    text: "Cass. crim., 21 mars 1995",
+                    style: const TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const TextSpan(text: "."),
+                ],
+              ),
+              const SizedBox(height: 10),
+              _NotaBox(
+                title: "Jurisprudence",
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "Agent d’une collectivité percevant au-delà de ses droits des salaires/indemnités : ",
+                  ),
+                  TextSpan(
+                    text: "Cass. crim., 24 octobre 2001",
+                    style: const TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const TextSpan(text: "."),
+                ],
+              ),
+              const SizedBox(height: 10),
+              _NotaBox(
+                title: "Jurisprudence",
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "Député-maire contournant l’interdiction de cumul via reversement d’indemnité : ",
+                  ),
+                  TextSpan(
+                    text: "Cass. crim., 14 février 1995",
+                    style: const TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const TextSpan(text: "."),
+                ],
+              ),
+
+              const SizedBox(height: 14),
+
+              const _SubTitle("C) Une exonération ou franchise indue"),
+              const _Paragraph(
+                "La concussion peut aussi résulter d’une abstention : accorder, sous quelque forme que ce soit et pour quelque motif que ce soit, "
+                "une exonération ou une franchise de droits, contributions, impôts ou taxes publics en violation des textes.",
+              ),
+              const SizedBox(height: 10),
+              _NotaBox(
+                title: "Jurisprudence",
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "Maire dispensant sciemment un garagiste (son fils) du paiement d’une redevance d’occupation du domaine public (CGCT) : ",
+                  ),
+                  TextSpan(
+                    text: "Cass. crim., 19 mai 1999",
+                    style: const TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const TextSpan(text: "."),
+                ],
+              ),
+              const SizedBox(height: 10),
+              _NotaBox(
+                title: "Jurisprudence",
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "Maire dispensant un employé municipal de tout loyer pour un logement communal sans délibération du conseil municipal : ",
+                  ),
+                  TextSpan(
+                    text: "Cass. crim., 31 janvier 2007",
+                    style: const TextStyle(
+                      color: _lawRed,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                  const TextSpan(text: "."),
+                ],
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Élément moral
+          _ConditionCard(
+            title: "III — Élément moral",
+            cardColor: cardMoral,
+            accent: accentPink,
+            titleColor: textMain,
+            children: [
+              const _SubTitle("A) Conscience du caractère indu"),
+              const _Paragraph(
+                "L’auteur doit avoir conscience que la somme réclamée ou reçue n’était pas due, "
+                "ou qu’elle excédait ce qui était dû.\n\n"
+                "Les mobiles sont indifférents. En revanche, l’intention peut disparaître si la perception résulte d’une erreur de fait "
+                "(erreur du fonctionnaire, mauvaise interprétation d’un texte de loi ou d’un règlement).",
+              ),
+              const SizedBox(height: 12),
+              const _SubTitle(
+                "B) Volonté d’accorder une exonération/franchise illégale",
+              ),
+              const _Paragraph(
+                "Dans l’hypothèse d’exonération/franchise, l’élément moral réside dans la volonté d’accorder une exonération ou une franchise "
+                "de droits, contributions, impôts ou taxes publics en violation des textes légaux ou réglementaires.",
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Circonstances aggravantes
+          _ConditionCard(
+            title: "IV — Circonstances aggravantes",
+            cardColor: cardAggr,
+            accent: accentAmber,
+            titleColor: textMain,
+            children: const [
+              _BulletPoint(
+                text: "Aucune circonstance aggravante prévue par le texte.",
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Répression + tentative/complicité
+          _ConditionCard(
+            title: "V — Répression",
+            cardColor: cardRep,
+            accent: accentGrey,
+            titleColor: textMain,
+            children: [
+              const _SubTitle("Peines encourues — personnes physiques"),
+              _Paragraph.rich([
+                const TextSpan(text: "Délit (concussion) : "),
+                const TextSpan(
+                  text: "5 ans d’emprisonnement et 500 000 € d’amende ",
+                ),
+                const TextSpan(
+                  text:
+                      "(le montant peut être porté au double du produit tiré de l’infraction). — ",
+                ),
+                TextSpan(
+                  text: "article 432-10 du Code pénal",
+                  style: const TextStyle(
+                    color: _lawRed,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+              ]),
+              const SizedBox(height: 12),
+
+              const _SubTitle("Personnes morales"),
+              const _Paragraph(
+                "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales).",
+              ),
+
+              const SizedBox(height: 12),
+
+              const _SubTitle("Tentative & complicité"),
+              _Paragraph.rich([
+                const TextSpan(text: "Tentative : OUI — prévue par "),
+                TextSpan(
+                  text: "l’article 432-10 alinéa 3 du Code pénal",
+                  style: const TextStyle(
+                    color: _lawRed,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+                const TextSpan(
+                  text:
+                      " (en pratique, elle peut être difficile à caractériser).",
+                ),
+              ]),
+              _Paragraph.rich([
+                const TextSpan(text: "Complicité : OUI — application de "),
+                TextSpan(
+                  text: "l’article 121-6 du Code pénal",
+                  style: const TextStyle(
+                    color: _lawRed,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+                const TextSpan(text: " et "),
+                TextSpan(
+                  text: "l’article 121-7 du Code pénal",
+                  style: const TextStyle(
+                    color: _lawRed,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+                const TextSpan(text: "."),
+              ]),
+              const SizedBox(height: 10),
+              _NotaBox(
+                title: "Point clé",
+                bodySpans: [
+                  const TextSpan(
+                    text:
+                        "Est puni comme concussionnaire non seulement celui qui reçoit ou exige, mais aussi celui qui ordonne d’opérer une perception indue. "
+                        "Celui qui donne l’ordre est l’auteur principal ; le subordonné est complice s’il aide sciemment.",
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+///                   TES WIDGETS PERSONNALISÉS EXACTS                    ///
+///////////////////////////////////////////////////////////////////////////////
+
+class _ConditionCard extends StatelessWidget {
+  const _ConditionCard({
+    required this.title,
+    required this.cardColor,
+    required this.accent,
+    required this.titleColor,
+    required this.children,
+  });
+
+  final String title;
+  final Color cardColor;
+  final Color accent;
+  final Color titleColor;
+  final List<Widget> children;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      container: true,
+      header: true,
+      child: Container(
+        decoration: BoxDecoration(
+          color: cardColor,
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(.12),
+              blurRadius: 18,
+              offset: const Offset(0, 10),
+            ),
+          ],
+        ),
+        padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: GoogleFonts.fustat(
+                fontWeight: FontWeight.w800,
+                fontSize: 16.5,
+                color: titleColor,
+              ),
+            ),
+            const SizedBox(height: 12),
+            ...children,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SubTitle extends StatelessWidget {
+  const _SubTitle(this.text);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 6, bottom: 6),
+      child: Text(
+        text,
+        style: GoogleFonts.fustat(
+          fontWeight: FontWeight.w700,
+          fontSize: 15.5,
+          color: isDark ? Colors.white : const Color(0xFF0D47A1),
+        ),
+      ),
+    );
+  }
+}
+
+class _Paragraph extends StatelessWidget {
+  const _Paragraph(this.text) : spans = null;
+
+  const _Paragraph.rich(this.spans) : text = null;
+
+  final String? text;
+  final List<TextSpan>? spans;
+
+  @override
+  Widget build(BuildContext context) {
+    final isRich = spans != null;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final Color color = isDark
+        ? Colors.white70
+        : const Color(0xFF1F1F1F).withOpacity(.92);
+
+    if (!isRich) {
+      return Text(
+        text!,
+        textAlign: TextAlign.justify,
+        style: GoogleFonts.fustat(
+          fontSize: 14,
+          height: 1.45,
+          fontWeight: FontWeight.w500,
+          color: color,
+        ),
+      );
+    }
+
+    return RichText(
+      textAlign: TextAlign.justify,
+      text: TextSpan(
+        style: GoogleFonts.fustat(
+          fontSize: 14,
+          height: 1.45,
+          fontWeight: FontWeight.w500,
+          color: color,
+        ),
+        children: spans!,
+      ),
+    );
+  }
+}
+
+class _IntroBullet extends StatelessWidget {
+  const _IntroBullet({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final Color bulletColor = isDark
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
+    final Color textColor = isDark
+        ? Colors.white70
+        : const Color(0xFF1F1F1F).withOpacity(.92);
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 2),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Icon(
+              Icons.arrow_right_rounded,
+              size: 18,
+              color: bulletColor,
+            ),
+          ),
+          const SizedBox(width: 2),
+          Expanded(
+            child: Text(
+              text,
+              style: GoogleFonts.fustat(
+                fontSize: 14,
+                height: 1.3,
+                fontWeight: FontWeight.w500,
+                color: textColor,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _BulletPoint extends StatelessWidget {
+  const _BulletPoint({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 4),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(
+            Icons.check_rounded,
+            size: 18,
+            color: isDark ? const Color(0xFF64B5F6) : const Color(0xFF1565C0),
+          ),
+          const SizedBox(width: 6),
+          Expanded(
+            child: Text(
+              text,
+              style: GoogleFonts.fustat(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                height: 1.35,
+                color: isDark
+                    ? Colors.white70
+                    : const Color(0xFF1F1F1F).withOpacity(.92),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _NotaBox extends StatelessWidget {
+  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+
+  final List<TextSpan> bodySpans;
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final Color borderColor = isDark
+        ? const Color(0xFFFFCA28)
+        : const Color(0xFFF9A825);
+    final Color bgColor = isDark
+        ? const Color(0xFF26200F)
+        : const Color(0xFFFFF8E1);
+    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        color: bgColor.withOpacity(isDark ? .7 : .95),
+        borderRadius: BorderRadius.circular(12),
+        border: Border(left: BorderSide(color: borderColor, width: 3)),
+      ),
+      child: RichText(
+        textAlign: TextAlign.justify,
+        text: TextSpan(
+          style: GoogleFonts.fustat(
+            fontSize: 13.5,
+            fontWeight: FontWeight.w500,
+            height: 1.4,
+            color: isDark
+                ? Colors.white70
+                : const Color(0xFF3E2723).withOpacity(.95),
+          ),
+          children: [
+            TextSpan(
+              text: '$title : ',
+              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
+            ),
+            ...bodySpans,
+          ],
+        ),
+      ),
+    );
+  }
+}

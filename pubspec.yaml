@@ -1,0 +1,87 @@
+name: copiqpolice
+description: "COP’IQ - Application scolaire de préparation pour la Police Nationale"
+publish_to: "none"
+
+environment:
+  sdk: ">=3.8.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # --- runtime packages ---
+  shared_preferences: ^2.5.4
+  url_launcher: ^6.3.2
+  google_fonts: ^8.0.2
+  permission_handler: ^12.0.1
+  supabase_flutter: ^2.12.0
+  flutter_riverpod: ^3.2.1
+  hive_flutter: ^1.1.0
+  like_button: ^2.1.0
+  particles_flutter: ^2.0.2
+  vibration: ^3.1.7
+  flutter_localization: ^0.3.3
+  hive: ^2.2.3
+  audioplayers: ^6.5.1
+  lib: ^0.2.1
+  package_info_plus: ^9.0.0
+  lottie: ^3.3.2
+  flutter_animate: ^4.5.2
+  flutter_animated_button: ^2.0.4
+  go_router: ^17.1.0
+  uuid: ^4.5.3
+  image_picker: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_native_splash: ^2.4.6
+  http: ^1.2.0
+  yaml: ^3.1.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icon_profile/
+    - assets/splash/
+    - assets/sfx/
+    - assets/images_pa/
+    - assets/quiz/culture_generale/quiz_histoire_france_merged.json
+
+
+
+  # —— POLICES ——
+  fonts:
+    - family: InstrumentSans
+      fonts:
+        - asset: assets/fonts/InstrumentSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/InstrumentSans-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/InstrumentSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/InstrumentSans-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/InstrumentSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/InstrumentSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/InstrumentSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/InstrumentSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+
+flutter_native_splash:
+  color: "#1147D9"
+  image: assets/images/logo.png
+
+  android_12:
+    color: "#1147D9"
+    image: assets/images/logo.png
+    icon_background_color: "#1AFFFFFF"
