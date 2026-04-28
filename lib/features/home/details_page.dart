@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import '../core/services/quiz_history_service.dart';
+import 'package:copiqpolice/core/services/quiz_history_service.dart';
 
 /// ----------------------------
 /// Helpers (score + labels)

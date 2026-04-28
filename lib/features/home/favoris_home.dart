@@ -3,7 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../core/services/favorites.dart';
+import 'package:copiqpolice/core/services/favorites.dart';
 
 /// ===================================================================
 /// Tokens locaux (pas de dépendance à _T de la Home)
