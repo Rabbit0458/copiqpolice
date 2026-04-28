@@ -9,25 +9,25 @@ dependencies:
   flutter:
     sdk: flutter
   # --- runtime packages ---
-  shared_preferences: ^2.5.4
+  shared_preferences: ^2.5.5
   url_launcher: ^6.3.2
-  google_fonts: ^8.0.2
+  google_fonts: ^8.1.0
   permission_handler: ^12.0.1
-  supabase_flutter: ^2.12.0
-  flutter_riverpod: ^3.2.1
+  supabase_flutter: ^2.12.4
+  flutter_riverpod: ^3.3.1
   hive_flutter: ^1.1.0
   like_button: ^2.1.0
   particles_flutter: ^2.0.2
-  vibration: ^3.1.7
-  flutter_localization: ^0.3.3
+  vibration: ^3.1.8
+  flutter_localization: ^0.4.0
   hive: ^2.2.3
-  audioplayers: ^6.5.1
-  lib: ^0.2.1
-  package_info_plus: ^9.0.0
-  lottie: ^3.3.2
+  audioplayers: ^6.6.0
+  lib: ^0.3.0
+  package_info_plus: ^10.1.0
+  lottie: ^3.3.3
   flutter_animate: ^4.5.2
   flutter_animated_button: ^2.0.4
-  go_router: ^17.1.0
+  go_router: ^17.2.2
   uuid: ^4.5.3
   image_picker: ^1.2.1
 
