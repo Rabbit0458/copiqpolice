@@ -1,6 +1,6 @@
 // placement_engine.dart
 
-import 'package:copiqpolice/placement/placement_questions.dart';
+import 'package:copiqpolice/features/placement/placement_questions.dart';
 
 enum Difficulty { easy, medium, hard }
 

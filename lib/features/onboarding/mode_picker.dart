@@ -14,7 +14,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/home/home_page.dart'
     show UserMode, UserModeController;
 // Import du grade picker
-import 'package:copiqpolice/onboarding/grade_picker.dart';
+import 'package:copiqpolice/features/onboarding/grade_picker.dart';
 
 // ✅ NEW: abonnement / lock
 import 'package:copiqpolice/core/services/subscription_service.dart';

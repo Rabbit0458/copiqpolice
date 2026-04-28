@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/physics.dart' as phys;
 import 'package:google_fonts/google_fonts.dart';
-import 'package:copiqpolice/onboarding/mode_picker.dart';
+import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 // ==== Modèles partagés depuis home_page.dart ====
 import 'package:copiqpolice/home/home_page.dart'
     show CategoryConfig, SubCategoryConfig, Track, UserMode;
-import 'package:copiqpolice/forum/forum_espace_exam_gpx.dart';
+import 'package:copiqpolice/features/forum/forum_espace_exam_gpx.dart';
 // ==== Pages existantes ====
 import 'package:copiqpolice/home/journal_pa_exam_page.dart';
 import 'package:copiqpolice/home/favoris_home.dart';

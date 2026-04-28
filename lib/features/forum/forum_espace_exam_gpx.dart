@@ -6,7 +6,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppSettingsController, AppNotifier;
-import 'package:copiqpolice/forum/forum_theme.dart';
+import 'package:copiqpolice/features/forum/forum_theme.dart';
 
 /// ForumEspaceExamGPXPage
 /// ✅ Profil Supabase user_profiles (username + role)

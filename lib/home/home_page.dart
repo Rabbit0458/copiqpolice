@@ -21,7 +21,7 @@ import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsCont
 
 // Pages
 import 'package:copiqpolice/pages/gpx/procedure_penale_page.dart';
-import 'package:copiqpolice/onboarding/mode_picker.dart';
+import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 
 // ========== GPX — generalite ==========
 import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/generalite_pages/classification_infractions/classification_infractions_page.dart';

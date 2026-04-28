@@ -3,14 +3,14 @@
 import 'package:copiqpolice/home/home_page.dart'
     show CategoryConfig, SubCategoryConfig;
 
-import 'package:copiqpolice/onboarding/gpx_school.dart' show GpxSchoolProgram;
+import 'package:copiqpolice/features/onboarding/gpx_school.dart' show GpxSchoolProgram;
 
 // lib/home/gpx_school_config.dart
 
 import 'package:flutter/material.dart';
 import 'package:copiqpolice/home/home_page.dart'
     show CategoryConfig, SubCategoryConfig;
-import 'package:copiqpolice/onboarding/gpx_school.dart' show GpxSchoolProgram;
+import 'package:copiqpolice/features/onboarding/gpx_school.dart' show GpxSchoolProgram;
 
 /// =======================================================
 ///  GPX SCHOOL — CONFIG CENTRALISÉE

@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
-import 'package:copiqpolice/placement/placement_test.dart';
+import 'package:copiqpolice/features/placement/placement_test.dart';
 
 class PlacementIntro extends StatelessWidget {
   const PlacementIntro({super.key});

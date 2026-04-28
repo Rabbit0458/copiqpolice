@@ -12,28 +12,28 @@ import 'package:copiqpolice/core/services/subscription_gate.dart';
 import 'package:copiqpolice/core/services/subscription_service.dart';
 
 // === Écrans (imports unifiés) ===
-import 'package:copiqpolice/warning/warning_screen.dart';
-import 'package:copiqpolice/onboarding/onboarding_screen.dart';
-import 'package:copiqpolice/onboarding/discovery_tutorial.dart';
-import 'package:copiqpolice/auth/signup.dart';
-import 'package:copiqpolice/auth/signin.dart';
-import 'package:copiqpolice/auth/confirm_email.dart';
-import 'package:copiqpolice/placement/placement_test.dart';
-import 'package:copiqpolice/placement/welcome_after_signup.dart';
-import 'package:copiqpolice/placement/placement_intro.dart';
+import 'package:copiqpolice/features/warning/warning_screen.dart';
+import 'package:copiqpolice/features/onboarding/onboarding_screen.dart';
+import 'package:copiqpolice/features/onboarding/discovery_tutorial.dart';
+import 'package:copiqpolice/features/auth/signup.dart';
+import 'package:copiqpolice/features/auth/signin.dart';
+import 'package:copiqpolice/features/auth/confirm_email.dart';
+import 'package:copiqpolice/features/placement/placement_test.dart';
+import 'package:copiqpolice/features/placement/welcome_after_signup.dart';
+import 'package:copiqpolice/features/placement/placement_intro.dart';
 import 'package:copiqpolice/home/home_page.dart' show HomePage;
 import 'package:copiqpolice/home/parametre_home.dart';
 import 'package:copiqpolice/home/favoris_home.dart';
-import 'package:copiqpolice/feedback/saving_screen.dart';
+import 'package:copiqpolice/features/feedback/saving_screen.dart';
 import 'package:copiqpolice/pages/gpx/institution_page.dart';
 import 'package:copiqpolice/pages/gpx/procedure_penale_page.dart';
-import 'package:copiqpolice/reserve/accueil_reserve.dart';
-import 'package:copiqpolice/onboarding/gpx_school.dart'
+import 'package:copiqpolice/features/reserve/accueil_reserve.dart';
+import 'package:copiqpolice/features/onboarding/gpx_school.dart'
     show GpxSchoolArt, GpxSchoolProgram;
 
 // Pages
 import 'package:copiqpolice/pages/gpx/procedure_penale_page.dart';
-import 'package:copiqpolice/onboarding/mode_picker.dart';
+import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 
 // GPX School
 import 'package:copiqpolice/home/home_page_gpx_school.dart';

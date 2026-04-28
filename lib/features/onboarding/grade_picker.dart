@@ -15,7 +15,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 // Si tu as exposé le contrôleur du grade depuis home_page.dart
 import 'package:copiqpolice/home/home_page.dart'
     show UserTrackController, UserTrack;
-import 'package:copiqpolice/reserve/accueil_reserve.dart';
+import 'package:copiqpolice/features/reserve/accueil_reserve.dart';
 
 class _T {
   static const Color ink = Color(0xFF212529);

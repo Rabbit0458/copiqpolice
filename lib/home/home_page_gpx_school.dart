@@ -11,7 +11,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter/physics.dart' as phys;
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:copiqpolice/onboarding/mode_picker.dart';
+import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 
 // ==== Types publics exportés par ta home ====
 import 'package:copiqpolice/home/home_page.dart'
@@ -24,7 +24,7 @@ import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/home/details_page.dart';
 import 'package:copiqpolice/home/profil_page.dart';
 import 'package:copiqpolice/home/parametre_home.dart';
-import 'package:copiqpolice/onboarding/gpx_school.dart' show GpxSchoolProgram;
+import 'package:copiqpolice/features/onboarding/gpx_school.dart' show GpxSchoolProgram;
 
 class _T {
   static const ink = Color(0xFF1C1C1C);

@@ -1,6 +1,6 @@
 // placement_questions.dart
 
-import 'package:copiqpolice/placement/placement_engine.dart';
+import 'package:copiqpolice/features/placement/placement_engine.dart';
 
 enum PlacementDomain { francais, logique, deontologie, histoire, sport }
 

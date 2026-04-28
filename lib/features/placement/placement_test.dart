@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-import 'package:copiqpolice/onboarding/mode_picker.dart';
+import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppSettingsController, AppNotifier;
 

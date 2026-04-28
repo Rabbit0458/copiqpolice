@@ -16,9 +16,9 @@ import 'package:copiqpolice/home/home_page_pa_school.dart'
     show HomePagePaSchool;
 
 // ✅ Programme PA du jour (NON sauvegardé)
-import 'package:copiqpolice/onboarding/pa_school.dart'
+import 'package:copiqpolice/features/onboarding/pa_school.dart'
     show PaSchoolArt, PaSchoolProgram;
-import 'package:copiqpolice/onboarding/gpx_school.dart'
+import 'package:copiqpolice/features/onboarding/gpx_school.dart'
     show GpxSchoolArt, GpxSchoolProgram;
 
 class HomeBootstrap extends StatefulWidget {

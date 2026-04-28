@@ -30,7 +30,7 @@ import 'package:copiqpolice/home/parametre_home.dart';
 import 'package:copiqpolice/home/information_page.dart';
 import 'package:copiqpolice/home/facture_page.dart';
 import 'package:copiqpolice/home/user_page.dart';
-import 'package:copiqpolice/onboarding/onboarding_screen.dart';
+import 'package:copiqpolice/features/onboarding/onboarding_screen.dart';
 
 // <-- Logger centralisé (fourni par toi)
 import 'package:copiqpolice/core/services/app_console_logger.dart';
