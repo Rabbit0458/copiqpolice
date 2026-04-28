@@ -20,29 +20,29 @@ import 'package:copiqpolice/features/home/profil_page.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 
 // Pages
-import 'package:copiqpolice/pages/gpx/procedure_penale_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/shared/procedure_penale_page.dart';
 import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 
 // ========== GPX — generalite ==========
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/generalite_pages/classification_infractions/classification_infractions_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/generalite_pages/infraction/infraction_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart';
 
 // ========== GPX — Cadres juridiques ==========
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/cadres_juridiques_pages/cadres_enquete_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/cadres_juridiques_pages/enquete_flagrant_delit_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/cadres_juridiques_pages/enquete_preliminaire_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/cadres_juridiques_pages/autres_cadres_enquete_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/cadres_enquete_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_flagrant_delit_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/autres_cadres_enquete_page.dart';
 
 // ========== GPX — Droit pénal général ==========
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/droit_p%C3%A9nale_g%C3%A9n%C3%A9ral_pages/responsabilite_penale_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/droit_p%C3%A9nale_g%C3%A9n%C3%A9ral_pages/responsabilite_penale_page.dart';
 
 // ========== GPX — Sanction ==========
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/sanction_pages/classification_peines_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/sanction_pages/causes_aggravation_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/sanction_pages/pluralite_infractions_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart';
 
 // ========== GPX — Crimes & délits contre les biens ==========
-import 'package:copiqpolice/gpx_scolarite_pages/dps_dpg/crime_delit_bien_pages/vol_page.dart';
+import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart';
 
 // ========================= CONFIGURATION CENTRALE (ALIGNÉE AUX DOSSIERS) =========================
 
