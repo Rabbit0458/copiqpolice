@@ -7,7 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import 'package:copiqpolice/ui/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 
 class WarningScreen extends StatefulWidget {
   final VoidCallback onAccepted;

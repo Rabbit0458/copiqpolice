@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // ✅ Import unique (contient AppSettingsController)
-import 'package:copiqpolice/ui/app_notifier.dart'
+import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppSettingsController, AppNotifier;
 
 class WelcomeAfterSignupPage extends StatelessWidget {

@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // ✅ ton import
-import 'package:copiqpolice/ui/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 
 class GpxCasPratiqueEtapesReussitePage extends StatefulWidget {
   const GpxCasPratiqueEtapesReussitePage({super.key});

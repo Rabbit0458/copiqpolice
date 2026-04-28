@@ -25,7 +25,7 @@ import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/home/abonnement_page.dart';
-import 'package:copiqpolice/ui/app_notifier.dart';
+import 'package:copiqpolice/core/widgets/app_notifier.dart';
 import 'package:copiqpolice/home/parametre_home.dart';
 import 'package:copiqpolice/home/information_page.dart';
 import 'package:copiqpolice/home/facture_page.dart';
@@ -33,7 +33,7 @@ import 'package:copiqpolice/home/user_page.dart';
 import 'package:copiqpolice/onboarding/onboarding_screen.dart';
 
 // <-- Logger centralisé (fourni par toi)
-import 'package:copiqpolice/services/app_console_logger.dart';
+import 'package:copiqpolice/core/services/app_console_logger.dart';
 
 /// ===== Validators
 

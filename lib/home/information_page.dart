@@ -9,7 +9,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:copiqpolice/ui/app_notifier.dart';
+import 'package:copiqpolice/core/widgets/app_notifier.dart';
 
 class InformationPage extends StatefulWidget {
   const InformationPage({super.key});

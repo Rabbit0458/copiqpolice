@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart'; // ✅ HapticFeedback
 import 'package:google_fonts/google_fonts.dart';
-import 'package:copiqpolice/services/subscription_service.dart'; // ✅ lock logique
+import 'package:copiqpolice/core/services/subscription_service.dart'; // ✅ lock logique
 
 class _T {
   static const Color ink = Color(0xFF212529);

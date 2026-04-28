@@ -2,7 +2,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:copiqpolice/ui/app_notifier.dart';
+import 'package:copiqpolice/core/widgets/app_notifier.dart';
 
 /// Page : L’infraction — refonte UI (sliders + CTA pill + mémo)
 /// Route: /gpx/generalites/infraction

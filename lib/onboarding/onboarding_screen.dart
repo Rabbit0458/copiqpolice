@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:copiqpolice/ui/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 
 const double kTopPadding = 70;
 const double kBottomPadding = 92;

@@ -1,8 +1,8 @@
 // lib/pages/gpx/procedure_penale_page.dart
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:copiqpolice/services/favorites.dart';
-import 'package:copiqpolice/ui/app_notifier.dart';
+import 'package:copiqpolice/core/services/favorites.dart';
+import 'package:copiqpolice/core/widgets/app_notifier.dart';
 import 'package:copiqpolice/pages/gpx/plainte_page.dart';
 
 class ProcedurePenalePage extends StatefulWidget {

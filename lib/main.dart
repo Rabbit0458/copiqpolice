@@ -8,8 +8,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/home//home_bootstrap.dart';
 import 'package:copiqpolice/home/abonnement_page.dart';
-import 'package:copiqpolice/services/subscription_gate.dart';
-import 'package:copiqpolice/services/subscription_service.dart';
+import 'package:copiqpolice/core/services/subscription_gate.dart';
+import 'package:copiqpolice/core/services/subscription_service.dart';
 
 // === Écrans (imports unifiés) ===
 import 'package:copiqpolice/warning/warning_screen.dart';
@@ -815,8 +815,8 @@ import 'package:copiqpolice/home/gpx_exam_concours_home_page.dart';
 import 'package:copiqpolice/home/gpx_exam_culture_generale_page.dart';
 
 // === Services ===
-import 'package:copiqpolice/services/app_console_logger.dart';
-import 'package:copiqpolice/ui/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/core/services/app_console_logger.dart';
+import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 
 /// ====== CONFIG SUPABASE ======
 const String kSupabaseUrl = 'https://nuoonagnkhbeeymtvrcn.supabase.co';

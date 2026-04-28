@@ -17,7 +17,7 @@ import 'package:copiqpolice/home/home_page.dart'
 import 'package:copiqpolice/onboarding/grade_picker.dart';
 
 // ✅ NEW: abonnement / lock
-import 'package:copiqpolice/services/subscription_service.dart';
+import 'package:copiqpolice/core/services/subscription_service.dart';
 
 class _T {
   static const Color ink = Color(0xFF212529);

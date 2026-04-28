@@ -9,7 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:vibration/vibration.dart';
 
-import 'package:copiqpolice/ui/app_notifier.dart'
+import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier, AppSettingsController;
 
 Color _opa(Color c, double a) => c.withValues(alpha: a);

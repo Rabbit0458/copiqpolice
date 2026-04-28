@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/scheduler.dart';
 
 // ✅ ton import correct
-import 'package:copiqpolice/ui/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 
 class GpxCasPratiqueListPage extends StatefulWidget {
   const GpxCasPratiqueListPage({super.key});

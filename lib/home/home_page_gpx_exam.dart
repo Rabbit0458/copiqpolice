@@ -14,10 +14,10 @@ import 'package:copiqpolice/forum/forum_espace_exam_gpx.dart';
 // ==== Pages existantes ====
 import 'package:copiqpolice/home/journal_pa_exam_page.dart';
 import 'package:copiqpolice/home/favoris_home.dart';
-import 'package:copiqpolice/services/favorites.dart';
+import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/home/profil_page.dart';
 import 'package:copiqpolice/home/parametre_home.dart';
-import 'package:copiqpolice/services/subscription_service.dart';
+import 'package:copiqpolice/core/services/subscription_service.dart';
 import 'package:copiqpolice/home/abonnement_page.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 

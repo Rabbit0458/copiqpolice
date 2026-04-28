@@ -8,7 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 // 👉 contrôleur global (thème synchro onboarding)
-import 'package:copiqpolice/ui/app_notifier.dart'
+import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppSettingsController, AppNotifier;
 
 class SignInPage extends StatefulWidget {

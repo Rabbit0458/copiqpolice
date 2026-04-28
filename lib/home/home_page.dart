@@ -12,12 +12,12 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 // Services / pages existants
-import 'package:copiqpolice/ui/app_notifier.dart';
-import 'package:copiqpolice/services/favorites.dart';
+import 'package:copiqpolice/core/widgets/app_notifier.dart';
+import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/home/favoris_home.dart';
 import 'package:copiqpolice/home/journal_home.dart';
 import 'package:copiqpolice/home/profil_page.dart';
-import 'package:copiqpolice/ui/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 
 // Pages
 import 'package:copiqpolice/pages/gpx/procedure_penale_page.dart';

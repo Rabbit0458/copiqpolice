@@ -16,7 +16,7 @@ import 'package:copiqpolice/home/home_page.dart'
 // ==== Pages existantes ====
 import 'package:copiqpolice/home/journal_pa_school.dart';
 import 'package:copiqpolice/home/favoris_home.dart';
-import 'package:copiqpolice/services/favorites.dart';
+import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/home/profil_page.dart';
 import 'package:copiqpolice/home/parametre_home.dart';
 

@@ -12,7 +12,7 @@ import 'package:copiqpolice/home/home_page_gpx_school.dart'
 import 'package:copiqpolice/auth/signup.dart';
 import 'package:copiqpolice/home/home_page.dart' show UserMode;
 import 'package:copiqpolice/onboarding/gpx_school.dart';
-import 'package:copiqpolice/ui/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 
 class _T {
   static const Color ink = Color(0xFF212529);

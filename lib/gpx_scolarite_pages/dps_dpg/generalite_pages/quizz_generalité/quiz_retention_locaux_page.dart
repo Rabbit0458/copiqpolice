@@ -17,7 +17,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'package:copiqpolice/ui/app_notifier.dart'
+import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier, AppSettingsController;
 
 Color _opa(Color c, double a) => c.withValues(alpha: a);
