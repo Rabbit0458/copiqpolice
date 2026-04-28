@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'dart:math' as math;
 import 'dart:ui' as ui;
+import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -13,17 +14,17 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 
 // ==== Types publics exportés par ta home ====
-import 'package:copiqpolice/home/home_page.dart'
+import 'package:copiqpolice/features/home/home_page.dart'
     show CategoryConfig, SubCategoryConfig, Track, UserMode;
 
 // ==== Pages existantes ====
-import 'package:copiqpolice/home/journal_gpx_school.dart';
-import 'package:copiqpolice/home/favoris_home.dart';
+import 'package:copiqpolice/features/home/journal_gpx_school.dart';
+import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
-import 'package:copiqpolice/home/details_page.dart';
-import 'package:copiqpolice/home/profil_page.dart';
-import 'package:copiqpolice/home/parametre_home.dart';
-import 'package:copiqpolice/features/onboarding/pa_school.dart' show PaSchoolProgram;
+import 'package:copiqpolice/features/home/details_page.dart';
+import 'package:copiqpolice/features/home/profil_page.dart';
+import 'package:copiqpolice/features/home/parametre_home.dart';
+import 'package:copiqpolice/features/onboarding/gpx_school.dart' show GpxSchoolProgram;
 
 class _T {
   static const ink = Color(0xFF1C1C1C);
@@ -54,19 +55,59 @@ Color _muted(BuildContext context, [double opacity = .7]) {
 //                                PAGE
 // ======================================================================
 
-class HomePagePaSchool extends StatefulWidget {
-  const HomePagePaSchool({super.key});
+class HomePageGpxSchool extends StatefulWidget {
+  const HomePageGpxSchool({
+    super.key,
+    this.apjTileKey,
+    this.discoveryLockToApj = false,
+    this.onApjTapOverride,
 
-  static PaSchoolProgram program = PaSchoolProgram.institutionValeurs;
+    // ✅ keys tuto home
+    this.modeGradeButtonKey,
+    this.settingsButtonKey,
+    this.heroDeckKey,
+    this.progressCardKey,
+    this.bottomNavKey,
+    this.navJournalKey,
+    this.navFavoritesKey,
+    this.navProfileKey,
+
+    // ✅ AJOUT : lock global pendant le tutoriel
+    this.tutorialLock = false,
+  });
+
+  /// Tutoriel : clé pour mesurer la tuile APJ
+  final GlobalKey? apjTileKey;
+
+  /// ✅ AJOUT : lock global pendant le tuto
+  final bool tutorialLock;
+
+  // ✅ Keys pour le tutoriel Home
+  final GlobalKey? modeGradeButtonKey; // 🎓
+  final GlobalKey? settingsButtonKey; // ⚙️
+  final GlobalKey? heroDeckKey; // 🟨
+  final GlobalKey? progressCardKey; // 🟩
+  final GlobalKey? bottomNavKey; // 🟦
+  final GlobalKey? navJournalKey; // 🟪
+  final GlobalKey? navFavoritesKey; // 🟥
+  final GlobalKey? navProfileKey; // 🩷
+
+  /// Tutoriel : bloque l’ouverture des autres modules (APJ only)
+  final bool discoveryLockToApj;
+
+  /// Tutoriel : si défini, on délègue le tap APJ
+  final VoidCallback? onApjTapOverride;
+
+  static GpxSchoolProgram program = GpxSchoolProgram.institutionValeurs;
   static Future<String?> Function()? usernameLoader;
 
-  static const String routeName = '/home-pa-school';
+  static const String routeName = '/home-gpx-school';
 
   @override
-  State<HomePagePaSchool> createState() => _HomePageGpxSchoolState();
+  State<HomePageGpxSchool> createState() => _HomePageGpxSchoolState();
 }
 
-class _HomePageGpxSchoolState extends State<HomePagePaSchool>
+class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
     with WidgetsBindingObserver {
   int _currentTab = 0;
 
@@ -79,15 +120,15 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
 
   // Contexte figé : School + GPX
   static const _mode = UserMode.school;
-  static const _track = Track.pa;
+  static const _track = Track.gpx;
 
   late final List<CategoryConfig> _cats =
-      (paSchoolCategoriesConfig[HomePagePaSchool.program] ??
+      (gpxSchoolCategoriesConfig[HomePageGpxSchool.program] ??
       const <CategoryConfig>[]);
 
   // =====================  PERSISTENCE DE L'INDEX DU DECK  =====================
 
-  static const String _kDeckIndexKey = 'pa_school_hero_deck_index';
+  static const String _kDeckIndexKey = 'gpx_school_hero_deck_index';
   int _initialDeckIndex = 0;
   bool _hasLoadedDeckIndex = false;
 
@@ -100,8 +141,8 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
 
   // =====================  ✅ REPRENDRE : dernier module ouvert  =====================
 
-  static const String _kLastRouteKey = 'pa_school_last_route';
-  static const String _kLastLabelKey = 'pa_school_last_label';
+  static const String _kLastRouteKey = 'gpx_school_last_route';
+  static const String _kLastLabelKey = 'gpx_school_last_label';
 
   String? _lastRoute;
   String? _lastLabel;
@@ -262,7 +303,7 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
 
     _progressChan?.unsubscribe();
     _progressChan = _sb
-        .channel('progress_home_pa_school_$uid')
+        .channel('progress_home_gpx_school_$uid')
         .onPostgresChanges(
           event: PostgresChangeEvent.all,
           schema: 'public',
@@ -353,7 +394,7 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
 
   Future<void> _loadUsername() async {
     try {
-      final loader = HomePagePaSchool.usernameLoader;
+      final loader = HomePageGpxSchool.usernameLoader;
       String? name;
       if (loader != null) {
         name = await loader();
@@ -483,14 +524,17 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
                     ),
                   ),
                   _IconCircle(
+                    key: widget.modeGradeButtonKey,
                     icon: Icons.school_rounded,
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const ModePickerScreen(),
-                        ),
-                      );
-                    },
+                    onTap: widget.tutorialLock
+                        ? null
+                        : () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => const ModePickerScreen(),
+                              ),
+                            );
+                          },
                   ),
                 ],
               ),
@@ -550,14 +594,17 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
                   ),
                   const SizedBox(width: 10),
                   _IconCircle(
+                    key: widget.settingsButtonKey,
                     icon: Icons.settings_rounded,
-                    onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (_) => const ParametreHomePage(),
-                        ),
-                      );
-                    },
+                    onTap: widget.tutorialLock
+                        ? null
+                        : () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (_) => const ParametreHomePage(),
+                              ),
+                            );
+                          },
                   ),
                 ],
               ),
@@ -569,7 +616,7 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
-                'Scolarité — Policier Adjoint',
+                'Scolarité — Gardien de la Paix',
                 style: theme.textTheme.titleLarge?.copyWith(
                   fontWeight: FontWeight.w900,
                 ),
@@ -590,29 +637,30 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
             // ✅ Deck (FIX : ctaLabel + open géré par le parent)
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: _HeroDeck(
-                // 🔥 IMPORTANT : force rebuild du deck quand _lastRoute change
-                key: ValueKey('pa-hero-deck-${_lastRoute ?? "none"}'),
-                height: 330,
-                items: deckItems,
-                initialIndex: _initialDeckIndex,
-                onIndexChanged: _saveDeckIndex,
-
-                // ✅ "Reprendre" si c'est le dernier module ouvert
-                ctaLabelBuilder: (item) {
-                  return (_lastRoute != null && _lastRoute == item.route)
-                      ? 'Reprendre'
-                      : 'Découvrir';
-                },
-
-                // ✅ laisse le parent gérer la navigation + sauvegarde "dernier ouvert"
-                onOpen: (item) {
-                  _openRouteOrDetails(
-                    label: item.label,
-                    route: item.route,
-                    subs: item.subcategories,
-                  );
-                },
+              child: KeyedSubtree(
+                key: widget.heroDeckKey, // ✅ focus carré jaune
+                child: _HeroDeck(
+                  // 🔥 IMPORTANT : force rebuild du deck quand _lastRoute change
+                  key: ValueKey('pa-hero-deck-${_lastRoute ?? "none"}'),
+                  height: 330,
+                  items: deckItems,
+                  initialIndex: _initialDeckIndex,
+                  onIndexChanged: _saveDeckIndex,
+                  ctaLabelBuilder: (item) {
+                    return (_lastRoute != null && _lastRoute == item.route)
+                        ? 'Reprendre'
+                        : 'Découvrir';
+                  },
+                  onOpen: (item) {
+                    if (widget.tutorialLock)
+                      return; // ✅ swipe OK, ouverture NON
+                    _openRouteOrDetails(
+                      label: item.label,
+                      route: item.route,
+                      subs: item.subcategories,
+                    );
+                  },
+                ),
               ),
             ),
 
@@ -670,8 +718,10 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
                     );
 
                 return ProgressCardV4(
+                  key: widget.progressCardKey, // ✅ focus carré vert
                   data: data,
                   onTapDetails: () {
+                    if (widget.tutorialLock) return; // ✅ lock
                     final uid = Supabase.instance.client.auth.currentUser?.id;
                     if (uid == null) return;
 
@@ -704,9 +754,18 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
       ),
       bottomNavigationBar: _SlidingPillNavBar(
         currentIndex: _currentTab,
-        onTap: (i) => _goToTab(i),
+        onTap: (i) {
+          if (widget.tutorialLock) return; // ✅ lock
+          _goToTab(i);
+        },
         height: 64,
         icons: icons,
+
+        // ✅ keys tuto home
+        barKey: widget.bottomNavKey,
+        journalKey: widget.navJournalKey,
+        favoritesKey: widget.navFavoritesKey,
+        profileKey: widget.navProfileKey,
       ),
     );
   }
@@ -717,25 +776,37 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
 // ======================================================================
 
 class _IconCircle extends StatelessWidget {
+  const _IconCircle({
+    super.key,
+    required this.icon,
+    this.onTap, // ✅ nullable
+  });
+
   final IconData icon;
-  final VoidCallback onTap;
-  const _IconCircle({required this.icon, required this.onTap});
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
-    return Material(
-      color: theme.cardColor,
-      shape: const CircleBorder(),
-      elevation: 0,
+    final disabled = onTap == null;
+
+    return Opacity(
+      opacity: disabled ? 0.55 : 1.0, // ✅ rendu "lock"
       child: InkWell(
-        customBorder: const CircleBorder(),
-        onTap: onTap,
-        child: SizedBox(
-          width: 40,
-          height: 40,
-          child: Icon(icon, color: isDark ? Colors.white : _T.ink),
+        onTap: onTap, // ✅ null ok
+        borderRadius: BorderRadius.circular(999),
+        child: Container(
+          height: 44,
+          width: 44,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: theme.cardColor,
+            boxShadow: const [_T.shadow],
+          ),
+          child: Icon(
+            icon,
+            color: disabled ? _muted(context, .55) : theme.iconTheme.color,
+          ),
         ),
       ),
     );
@@ -1488,12 +1559,34 @@ class _SlidingPillNavBar extends StatelessWidget {
   final double height;
   final List<IconData> icons;
 
+  // ✅ TUTO: lock total (aucun tap)
+  final bool locked;
+
+  // ✅ keys tuto
+  final Key? barKey;
+  final Key? journalKey; // index 1
+  final Key? favoritesKey; // index 3
+  final Key? profileKey; // index 4
+
   const _SlidingPillNavBar({
+    super.key,
     required this.currentIndex,
     required this.onTap,
     required this.height,
     required this.icons,
+    this.locked = false,
+    this.barKey,
+    this.journalKey,
+    this.favoritesKey,
+    this.profileKey,
   });
+
+  Key? _keyForIndex(int i) {
+    if (i == 1) return journalKey;
+    if (i == 3) return favoritesKey;
+    if (i == 4) return profileKey;
+    return null;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -1524,6 +1617,7 @@ class _SlidingPillNavBar extends StatelessWidget {
             final dotTop = (h - dotSize) / 2;
 
             return Container(
+              key: barKey, // ✅ focus rectangle bleu (bar entière)
               height: h,
               decoration: BoxDecoration(
                 color: barColor,
@@ -1546,28 +1640,53 @@ class _SlidingPillNavBar extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: innerPadX),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: List.generate(slots, (i) {
-                        final selected = i == currentIndex;
-                        final activeColor = isDark ? Colors.black : _T.ink;
-                        return Expanded(
-                          child: Center(
-                            child: InkResponse(
-                              onTap: () => onTap(i),
-                              radius: dotSize,
-                              highlightShape: BoxShape.circle,
-                              child: Icon(
-                                icons[i],
-                                size: iconSize,
-                                color: selected ? activeColor : Colors.white,
-                              ),
+
+                  // ✅ On bloque toute interaction pendant le tuto
+                  AbsorbPointer(
+                    absorbing: locked,
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(horizontal: innerPadX),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: List.generate(slots, (i) {
+                          final selected = i == currentIndex;
+
+                          // Couleurs (on garde ton style)
+                          final activeColor = isDark ? Colors.black : _T.ink;
+                          final inactiveColor = isDark
+                              ? Colors.white
+                              : Colors.white.withOpacity(.92);
+
+                          final itemKey = _keyForIndex(i);
+
+                          Widget iconWidget = Icon(
+                            icons[i],
+                            size: iconSize,
+                            color: selected ? activeColor : inactiveColor,
+                          );
+
+                          // ✅ Tap sans splash / sans highlight bleu
+                          Widget tappable = GestureDetector(
+                            behavior: HitTestBehavior.translucent,
+                            onTap: () => onTap(i),
+                            child: SizedBox(
+                              height: h,
+                              width: double.infinity,
+                              child: Center(child: iconWidget),
                             ),
-                          ),
-                        );
-                      }),
+                          );
+
+                          // ✅ Keys pour le spotlight
+                          if (itemKey != null) {
+                            tappable = KeyedSubtree(
+                              key: itemKey,
+                              child: tappable,
+                            );
+                          }
+
+                          return Expanded(child: tappable);
+                        }),
+                      ),
                     ),
                   ),
                 ],
@@ -1663,6 +1782,26 @@ class _HomeActionCard extends StatelessWidget {
       ),
     );
   }
+}
+
+class _DeckItem {
+  final String label;
+  final String badge;
+  final String image;
+  final String route;
+  final double rating;
+  final int reviews;
+  final List<SubCategoryConfig>? subcategories;
+
+  const _DeckItem({
+    required this.label,
+    required this.badge,
+    required this.image,
+    required this.route,
+    required this.rating,
+    required this.reviews,
+    this.subcategories,
+  });
 }
 
 // =====================  _CategoryDetailPage (cartes visuelles)  =====================
@@ -2058,7 +2197,8 @@ class _CategoryDetailPage extends StatelessWidget {
     if (l.contains('importation') || l.contains('exportation')) {
       return 'assets/images/stup_import_export.jpeg';
     }
-    if (l.contains('usage illicite')) return 'assets/images/stup_usage.jpeg';
+    if (l.contains('usage illicite'))
+      return 'assets/images/conduite_stupefiants.jpeg';
 
     // Défaut
     return 'assets/images/generalite.jpeg';
@@ -3319,29 +3459,65 @@ class ProgressRepository {
   }
 }
 
+/// ✅ Spotlight sans BackdropFilter (stable Impeller, pas d'erreur CanAcceptOpacity)
+class _SpotlightPainter extends CustomPainter {
+  _SpotlightPainter({
+    required this.hole,
+    required this.dimOpacity,
+    required this.radius,
+  });
+
+  final Rect hole;
+  final double dimOpacity;
+  final double radius;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final paint = Paint()..color = Colors.black.withOpacity(dimOpacity);
+
+    // Full screen
+    final full = Path()..addRect(Offset.zero & size);
+
+    // Hole
+    final cut = Path()
+      ..addRRect(RRect.fromRectAndRadius(hole, Radius.circular(radius)));
+
+    // Difference => on dessine tout SAUF le trou
+    final overlay = Path.combine(PathOperation.difference, full, cut);
+    canvas.drawPath(overlay, paint);
+  }
+
+  @override
+  bool shouldRepaint(covariant _SpotlightPainter old) {
+    return old.hole != hole ||
+        old.dimOpacity != dimOpacity ||
+        old.radius != radius;
+  }
+}
+
 // ======================================================================
-//                        CONFIGS LOCALES (PA SCHOOL)
+//                        CONFIGS LOCALES (GPX SCHOOL)
 // ======================================================================
 
-const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
+const Map<GpxSchoolProgram, List<CategoryConfig>> gpxSchoolCategoriesConfig = {
   // =========================================================
-  // 1) INSTITUTION & VALEURS
+  // 1) INSTITUTIONS & VALEURS
   // =========================================================
-  PaSchoolProgram.institutionValeurs: [
+  GpxSchoolProgram.institutionValeurs: [
     CategoryConfig(
       label: 'Formation initiale',
       badge: 'Bases & méthodo',
       image: 'assets/images/copic_institutions.jpg',
-      route: '/pa/institution/formation_initiale',
+      route: '/gpx/institution/formation_initiale',
       subcategories: [
         SubCategoryConfig(
           label: 'La formation initiale',
-          route: '/pa/institution/formation_initiale/formation',
+          route: '/gpx/institution/formation_initiale/formation',
           image: 'assets/images/copic_institutions.jpg',
         ),
         SubCategoryConfig(
           label: 'Mémento prise de notes & méthodologie',
-          route: '/pa/institution/formation_initiale/memento_notes',
+          route: '/gpx/institution/formation_initiale/memento_notes',
           image: 'assets/images/concours_connaissances_generales.jpeg',
         ),
       ],
@@ -3363,7 +3539,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         ),
         SubCategoryConfig(
           label: 'Direction générale de la sécurité intérieure',
-          route: '/pa/institution/organisation_pn/dgsi.jpeg',
+          route: '/pa/institution/organisation_pn/dgsi',
           image: 'assets/images/dgsi.jpeg',
         ),
         SubCategoryConfig(
@@ -3390,46 +3566,56 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           route: '/pa/institution/organisation_pn/horaires_service_sp',
           image: 'assets/images/horaires_service_sp.jpeg',
         ),
+        SubCategoryConfig(
+          label: 'Quiz — Organisation (global)',
+          route: '/gpx/institution/organisation_pn/quiz',
+          image: 'assets/images/quiz.jpeg',
+        ),
       ],
     ),
     CategoryConfig(
       label: 'Déontologie',
       badge: 'Éthique & cadre',
       image: 'assets/images/cat_organisation.jpg',
-      route: '/pa/institution/deontologie',
+      route: '/gpx/institution/deontologie',
       subcategories: [
         SubCategoryConfig(
           label: 'Code de déontologie commenté (PN & GN)',
-          route: '/pa/institution/deontologie/code_commente',
+          route: '/gpx/institution/deontologie/code_commente',
           image: 'assets/images/code_commente.webp',
         ),
         SubCategoryConfig(
           label: 'Marques extérieures de respect (salut, présentation)',
-          route: '/pa/institution/deontologie/marques_respect',
+          route: '/gpx/institution/deontologie/marques_respect',
           image: 'assets/images/marques_respect.jpeg',
         ),
         SubCategoryConfig(
           label: 'Droits & obligations des policiers',
-          route: '/pa/institution/deontologie/droits_obligations',
+          route: '/gpx/institution/deontologie/droits_obligations',
         ),
         SubCategoryConfig(
           label: 'Policier hors service : dois-je intervenir ? (AMARIS)',
-          route: '/pa/institution/deontologie/hors_service_amaris',
+          route: '/gpx/institution/deontologie/hors_service_amaris',
           image: 'assets/images/hors_service_amaris.jpeg',
         ),
         SubCategoryConfig(
           label: 'Sanctions & récompenses',
-          route: '/pa/institution/deontologie/sanctions_recompenses',
+          route: '/gpx/institution/deontologie/sanctions_recompenses',
           image: 'assets/images/sanction.jpeg',
         ),
         SubCategoryConfig(
           label: 'Enquête administrative',
-          route: '/pa/institution/deontologie/enquete_administrative',
+          route: '/gpx/institution/deontologie/enquete_administrative',
         ),
         SubCategoryConfig(
           label: 'Usage des réseaux sociaux',
-          route: '/pa/institution/deontologie/reseaux_sociaux',
+          route: '/gpx/institution/deontologie/reseaux_sociaux',
           image: 'assets/images/reseaux_sociaux.jpg',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Déontologie',
+          route: '/gpx/institution/deontologie/quiz',
+          image: 'assets/images/quiz.jpeg',
         ),
       ],
     ),
@@ -3437,21 +3623,21 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
       label: 'Information de la hiérarchie',
       badge: 'Écrits pro',
       image: 'assets/images/cat_hierarchie.jpg',
-      route: '/pa/institution/hierarchie_info',
+      route: '/gpx/institution/hierarchie_info',
       subcategories: [
         SubCategoryConfig(
           label: 'Le compte-rendu',
-          route: '/pa/institution/hierarchie_info/compte_rendu',
+          route: '/gpx/institution/hierarchie_info/compte_rendu',
           image: 'assets/images/compte_rendu.jpeg',
         ),
         SubCategoryConfig(
           label: 'Le formalisme du rapport',
-          route: '/pa/institution/hierarchie_info/formalisme_rapport',
+          route: '/gpx/institution/hierarchie_info/formalisme_rapport',
           image: 'assets/images/formalisme_rapport.jpeg',
         ),
         SubCategoryConfig(
           label: 'Modèles de rapports',
-          route: '/pa/institution/hierarchie_info/modeles',
+          route: '/gpx/institution/hierarchie_info/modeles',
           image: 'assets/images/modeles.jpeg',
         ),
       ],
@@ -3460,31 +3646,36 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
       label: 'Accueil du public',
       badge: 'Victimes & assistance',
       image: 'assets/images/image1.jpeg',
-      route: '/pa/institution/accueil_public',
+      route: '/gpx/institution/accueil_public',
       subcategories: [
         SubCategoryConfig(
           label: 'Charte de l’accueil du public & assistance aux victimes',
-          route: '/pa/institution/accueil_public/charte',
+          route: '/gpx/institution/accueil_public/charte',
           image: 'assets/images/charte.jpeg',
         ),
         SubCategoryConfig(
           label: 'Référentiel Marianne',
-          route: '/pa/institution/accueil_public/marianne',
+          route: '/gpx/institution/accueil_public/marianne',
           image: 'assets/images/marianne.jpg',
         ),
         SubCategoryConfig(
           label: 'Dépliants & doctrine accueil / prise en charge',
-          route: '/pa/institution/accueil_public/doctrine',
+          route: '/gpx/institution/accueil_public/doctrine',
           image: 'assets/images/doctrine.jpeg',
         ),
         SubCategoryConfig(
           label: 'Quelques démarches administratives',
-          route: '/pa/institution/accueil_public/demarches',
+          route: '/gpx/institution/accueil_public/demarches',
         ),
         SubCategoryConfig(
           label: 'Protection des locaux de police',
-          route: '/pa/institution/accueil_public/protection_locaux',
+          route: '/gpx/institution/accueil_public/protection_locaux',
           image: 'assets/images/protection_locaux.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Accueil du public',
+          route: '/gpx/institution/accueil_public/quiz',
+          image: 'assets/images/quiz.jpeg',
         ),
       ],
     ),
@@ -3492,52 +3683,60 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
       label: 'Laïcité, police et religions',
       badge: 'Neutralité',
       image: 'assets/images/image6.jpg',
-      route: '/pa/institution/laicite',
+      route: '/gpx/institution/laicite',
       subcategories: [
         SubCategoryConfig(
           label: 'La laïcité (DLPAJ / bureau des cultes)',
-          route: '/pa/institution/laicite/laicite_dlpaj',
+          route: '/gpx/institution/laicite/laicite_dlpaj',
           image: 'assets/images/laicite_dlpaj.jpeg',
         ),
         SubCategoryConfig(
           label: 'Charte de la laïcité dans les services publics',
-          route: '/pa/institution/laicite/charte',
+          route: '/gpx/institution/laicite/charte',
           image: 'assets/images/charte_laicite.jpeg',
         ),
         SubCategoryConfig(
           label: 'Principaux rites & pratiques des cultes en France',
-          route: '/pa/institution/laicite/rites_cultes',
+          route: '/gpx/institution/laicite/rites_cultes',
           image: 'assets/images/rites_cultes.jpeg',
         ),
+        //SubCategoryConfig(
+        //  label: 'Quiz — Laïcité',
+        //  route: '/gpx/institution/laicite/quiz',
+        //  image: 'assets/images/quiz.jpeg',
+        //),
       ],
     ),
     CategoryConfig(
       label: 'Histoire de la police',
       badge: 'Repères',
       image: 'assets/images/image4.jpeg',
-      route: '/pa/institution/histoire',
+      route: '/gpx/institution/histoire',
       subcategories: [
         SubCategoryConfig(
           label: 'Points de repères chronologiques',
-          route: '/pa/institution/histoire/reperes',
+          route: '/gpx/institution/histoire/reperes',
         ),
       ],
     ),
   ],
 
-  PaSchoolProgram.dpsDpg: [
+  // =========================================================
+  // 2) DPS / DPG
+  // =========================================================
+  GpxSchoolProgram.dpsDpg: [
     CategoryConfig(
       label: 'Généralités',
-      badge: 'Socle initial',
+      badge: 'Concepts de base',
       image: 'assets/images/generalite.jpeg',
-      route: '/pa/dps_dpg/socle_initial/generalites',
+      route: '/gpx_scolarite_pages/generalite_pages',
       subcategories: [
         SubCategoryConfig(
           label: 'Classification des infractions',
           route: '/gpx/generalites/classification_infractions',
         ),
         SubCategoryConfig(
-          label: 'L’infraction',
+          label: 'L\'infraction',
           route: '/gpx/generalites/infraction_intro',
         ),
         SubCategoryConfig(
@@ -3553,7 +3752,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           route: '/gpx/generalites/legitimedefense_intro',
         ),
         SubCategoryConfig(
-          label: 'Cadre légal d’usage des armes',
+          label: 'Cadre légal d\'usage des armes',
           route: '/gpx/generalites/usagedesarmes_intro',
         ),
         SubCategoryConfig(
@@ -3561,30 +3760,26 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           route: '/gpx/generalites/libertespubliques_intro',
         ),
         SubCategoryConfig(
-          label: 'Rétention dans les locaux de police',
+          label: 'Cas de rétention dans les locaux de police',
           route: '/gpx/generalites/retention_locaux_police_intro',
         ),
-      ],
-    ),
-
-    CategoryConfig(
-      label: 'Hiérarchie — fonctions judiciaires',
-      badge: 'Socle initial',
-      image: 'assets/images/cat_hierarchie.jpg',
-      route: '/pa/dps_dpg/socle_initial/hierarchie',
-      subcategories: [
         SubCategoryConfig(
-          label: 'Hiérarchie des personnels de la Police Nationale',
+          label:
+              'La hiérarchie des personnels de la Police Nationale : Fonctions judiciaires',
           route: '/gpx/generalites/hierarchie_intro',
+        ),
+        SubCategoryConfig(
+          label:
+              'Quiz généralités, classification des infractions, infraction, tentative punissable etc..',
+          route: '/gpx/procedure_penale/quiz/generalité_principales',
         ),
       ],
     ),
-
     CategoryConfig(
       label: 'Cadres juridiques',
-      badge: 'Socle initial',
+      badge: 'Cadres d\'enquête',
       image: 'assets/images/cadres_juridiques.jpeg',
-      route: '/pa/dps_dpg/socle_initial/cadres_juridiques',
+      route: '/gpx_scolarite_pages/cadres_juridiques_pages',
       subcategories: [
         SubCategoryConfig(
           label: 'Les cadres d\'enquête',
@@ -3622,91 +3817,331 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           label: 'Disparitions inquiétantes',
           route: '/gpx/cadres_juridiques/disparitions_inquietantes_intro',
         ),
-      ],
-    ),
-
-    CategoryConfig(
-      label: 'Contrôle d’identité',
-      badge: 'Socle initial',
-      image: 'assets/images/controle_identite.jpeg',
-      route: '/pa/dps_dpg/socle_initial/controle_identite',
-      subcategories: [
         SubCategoryConfig(
           label: 'Contrôles et vérifications d’identité',
           route: '/gpx/generalites/flagrant_delit_intro',
         ),
+        SubCategoryConfig(
+          label: 'Entraide judiciaire internationale',
+          route: '/gpx/generalites/entraide_judiciaire_intro',
+        ),
+        SubCategoryConfig(
+          label:
+              'Quiz cadres juridiques, les cadres d\'enquête, l\'enquête de flagrant délit etc..',
+          route: '/gpx/procedure_penale/quiz/cadres_juridiques_principales',
+        ),
       ],
     ),
 
     CategoryConfig(
-      label: 'Circulation routière',
-      badge: 'Socle initial',
-      image: 'assets/images/circulation_routiere.jpeg',
-      route: '/pa/dps_dpg/socle_initial/circulation',
+      label: 'Procédure Pénale',
+      badge: 'Cours & cas pratiques',
+      image: 'assets/images/procedure_penale.jpg',
+      route: '/gpx_scolarite_pages/procédure_pénale_pages',
       subcategories: [
         SubCategoryConfig(
-          label: 'Compétences des agents verbalisateurs',
-          route: '/pa/dps_dpg/socle_initial/circulation/agents_verbalisateurs',
+          label:
+              'Action publique, action civile, autorités & contrôle de la PJ',
+          route:
+              '/gpx_scolarite_pages/procédure_pénale_pages/pp_action_publique_autorites_pj',
         ),
+        SubCategoryConfig(
+          label: 'Nullité des actes de procédure',
+          route:
+              '/gpx_scolarite_pages/procédure_pénale_pages/nullite_intro_page',
+        ),
+        SubCategoryConfig(
+          label: 'Juridictions de jugement & exécution des décisions',
+          route:
+              '/gpx_scolarite_pages/procédure_pénale_pages/juridictions_intro',
+        ),
+        SubCategoryConfig(
+          label:
+              'Instruction préparatoire, mandats, contrôle jud., détention provisoire',
+          route:
+              '/gpx_scolarite_pages/procédure_pénale_pages/pp_instruction_mandats_controle_detention',
+        ),
+        SubCategoryConfig(
+          label:
+              'Quiz instruction préparatoire, mandats & détention provisoire',
+          route: '/gpx/procedure_penale/quiz/instruction_preparatoire',
+        ),
+      ],
+    ),
+
+    CategoryConfig(
+      label: 'Droit pénal général',
+      badge: 'Loi & responsabilité',
+      image: 'assets/images/droit_penal_general.jpeg',
+      route: '/gpx_scolarite_pages/droit_pénale_général_pages',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'De la loi pénale',
+          route: '/gpx_scolarite_pages/droit_pénale_général_pages/loi_penale',
+        ),
+        SubCategoryConfig(
+          label: 'De la responsabilité pénale',
+          route:
+              '/gpx_scolarite_pages/droit_pénale_général_pages/responsabilite_penale',
+        ),
+      ],
+    ),
+    CategoryConfig(
+      label: 'La sanction',
+      badge: 'Peines & sûreté',
+      image: 'assets/images/sanction.jpeg',
+      route: '/gpx_scolarite_pages/sanction_pages',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Classification des peines et mesures de sûreté',
+          route: '/gpx_scolarite_pages/sanction_pages/classification_peines',
+        ),
+        SubCategoryConfig(
+          label: 'Causes d’aggravation de la sanction',
+          route:
+              '/gpx_scolarite_pages/sanction_pages/causes_aggravation_sanction',
+        ),
+        SubCategoryConfig(
+          label: 'Règles en cas de pluralité d’infractions',
+          route: '/gpx_scolarite_pages/sanction_pages/pluralite_infractions',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Sanction  (récidive, réitération, concours réel)',
+          route: '/gpx/sanction/quiz/sanction_page',
+        ),
+      ],
+    ),
+    CategoryConfig(
+      label: 'Crimes & délits contre la personne',
+      badge: 'Atteintes aux personnes',
+      image: 'assets/images/contre_personne.jpeg',
+      route: '/gpx_scolarite_pages/crime_delit_contre_personne_pages',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'La mise en danger de la personne',
+          route:
+              '/gpx_scolarite_pages/crime_delit_contre_personne_pages/mise_en_danger',
+        ),
+        SubCategoryConfig(
+          label: 'Le viol, l’inceste et autres agressions sexuelles',
+          route:
+              '/gpx_scolarite_pages/crime_delit_contre_personne_pages/viol_inceste_agressions/avertissement',
+        ),
+        SubCategoryConfig(
+          label: 'L’enlèvement et la séquestration',
+          route:
+              '/gpx_scolarite_pages/crime_delit_contre_personne_pages/enlevement_sequestration',
+        ),
+        SubCategoryConfig(
+          label: 'Enregistrement & diffusion d’images',
+          route:
+              '/gpx_scolarite_pages/crime_delit_contre_personne_pages/enregistrement_diffusion_images',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes à la dignité de la personne',
+          route:
+              '/gpx_scolarite_pages/crime_delit_contre_personne_pages/dignite_personne',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes à la personnalité',
+          route:
+              '/gpx_scolarite_pages/crime_delit_contre_personne_pages/personnalite',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes involontaires à la vie et à l’intégrité',
+          route:
+              '/gpx_scolarite_pages/crime_delit_contre_personne_pages/atteintes_involontaires',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes volontaires à la vie',
+          route:
+              '/gpx_scolarite_pages/crime_delit_contre_personne_pages/atteintes_volontaires_vie',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes volontaires à l’intégrité physique',
+          route:
+              '/gpx_scolarite_pages/crime_delit_contre_personne_pages/atteintes_volontaires_integrite',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Crimes & délits contre la personne',
+          route: '/gpx/crimes_personne/quiz/crimes_delits_personne',
+        ),
+      ],
+    ),
+    CategoryConfig(
+      label: 'Atteintes aux mineurs & à la famille',
+      badge: 'Protection des mineurs',
+      image: 'assets/images/mineurs_famille.jpeg',
+      route: '/gpx_scolarite_pages/mineurs_famille_pages',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'La mise en péril des mineurs',
+          route: '/gpx_scolarite_pages/mineurs_famille_pages/mise_en_peril',
+        ),
+        SubCategoryConfig(
+          label: 'Violation d’ordonnances JAF (violences)',
+          route:
+              '/gpx_scolarite_pages/mineurs_famille_pages/violation_ordonnances_jaf',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes à l’exercice de l’autorité parentale',
+          route:
+              '/gpx_scolarite_pages/mineurs_famille_pages/autorite_parentale',
+        ),
+        SubCategoryConfig(
+          label: 'L’abandon de famille',
+          route: '/gpx_scolarite_pages/mineurs_famille_pages/abandon_famille',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — L’abandon de famille',
+          route: '/gpx/mineurs_famille_pages/quiz/quiz_mineurs_famille',
+        ),
+      ],
+    ),
+    CategoryConfig(
+      label: 'Crimes & délits contre la nation',
+      badge: 'Institutions & justice',
+      image: 'assets/images/contre_nation.jpeg',
+      route: '/gpx_scolarite_pages/crime_delit_nation_pages',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Association de malfaiteurs',
+          route:
+              '/gpx_scolarite_pages/crime_delit_nation_pages/association_malfaiteurs',
+        ),
+        SubCategoryConfig(
+          label: 'Abus d’autorité contre les particuliers',
+          route: '/gpx_scolarite_pages/crime_delit_nation_pages/abus_autorite',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes à l’action de la justice',
+          route:
+              '/gpx_scolarite_pages/crime_delit_nation_pages/atteintes_action_justice',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes à l’administration par des particuliers',
+          route:
+              '/gpx_scolarite_pages/crime_delit_nation_pages/atteintes_administration',
+        ),
+        SubCategoryConfig(
+          label: 'Faux et usage de faux',
+          route:
+              '/gpx_scolarite_pages/crime_delit_nation_pages/faux_usage_faux',
+        ),
+        SubCategoryConfig(
+          label: 'Manquements au devoir de probité',
+          route: '/gpx_scolarite_pages/crime_delit_nation_pages/probite',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Crimes & délits contre la nation',
+          route: '/gpx/crime_delit_nation_pages/quiz/quiz_crimes_delits_nation',
+        ),
+      ],
+    ),
+    CategoryConfig(
+      label: 'Crimes & délits contre les biens',
+      badge: 'Atteintes aux biens',
+      image: 'assets/images/contre_biens.jpeg',
+      route: '/gpx_scolarite_pages/crime_delit_bien_pages',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Recel & non-justification de ressources',
+          route:
+              '/gpx_scolarite_pages/crime_delit_bien_pages/recel_non_justification',
+        ),
+        SubCategoryConfig(
+          label: 'Le vol',
+          route: '/gpx_scolarite_pages/crime_delit_bien_pages/vol',
+        ),
+        SubCategoryConfig(
+          label: 'Atteintes aux STAD (informatique)',
+          route: '/gpx_scolarite_pages/crime_delit_bien_pages/stad',
+        ),
+        SubCategoryConfig(
+          label: 'Contrefaçons & falsifications de chèques',
+          route:
+              '/gpx_scolarite_pages/crime_delit_bien_pages/contrefacons_falsifications',
+        ),
+        SubCategoryConfig(
+          label: 'Destructions, dégradations, détériorations',
+          route:
+              '/gpx_scolarite_pages/crime_delit_bien_pages/destructions_degradations',
+        ),
+        SubCategoryConfig(
+          label: 'Infractions voisines du vol',
+          route: '/gpx_scolarite_pages/crime_delit_bien_pages/voisines_du_vol',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Crimes & délits contre les biens',
+          route: '/gpx/crime_delit_nation_pages/quiz/quiz_crimes_delits_bien',
+        ),
+      ],
+    ),
+    CategoryConfig(
+      label: 'Infractions à la circulation routière',
+      badge: 'Code de la route',
+      image: 'assets/images/circulation_routiere.jpeg',
+      route: '/gpx_scolarite_pages/infraction_circulation_routière_pages',
+      subcategories: [
         SubCategoryConfig(
           label: 'Conduite après usage de stupéfiants',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/conduite_stupefiants',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/conduite_stupefiants',
         ),
         SubCategoryConfig(
           label: 'Conduite en état d’ivresse',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/ivresse',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/ivresse',
         ),
         SubCategoryConfig(
           label: 'Conduite sous l’empire d’un état alcoolique',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/etat_alcoolique',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/etat_alcoolique',
         ),
         SubCategoryConfig(
           label: 'Défaut d’assurance',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/defaut_assurance',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/defaut_assurance',
         ),
         SubCategoryConfig(
           label: 'Défaut de permis de conduire',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/defaut_permis',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/defaut_permis',
         ),
         SubCategoryConfig(
           label: 'Délit de fuite',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/delit_fuite',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/delit_fuite',
         ),
         SubCategoryConfig(
           label: 'Grand excès de vitesse',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/grand_exces_vitesse',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/grand_exces_vitesse',
         ),
         SubCategoryConfig(
           label: 'Refus de vérifications',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/refus_verifications',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/refus_verifications',
         ),
         SubCategoryConfig(
           label: 'Refus d’obtempérer',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/refus_obtemperer',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/refus_obtemperer',
         ),
         SubCategoryConfig(
           label: 'Rodéo motorisé',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/rodeo_motorise',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/rodeo_motorise',
         ),
         SubCategoryConfig(
           label: 'Plaques & inscriptions (délits liés)',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/plaques_inscriptions',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/plaques_inscriptions',
         ),
         SubCategoryConfig(
           label: 'Incitation / organisation / promotion',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/incitation_organisation_promotion',
+              '/gpx_scolarite_pages/infraction_circulation_routière_pages/incitation_organisation_promotion',
         ),
         SubCategoryConfig(
           label: 'Quiz — Infractions à la circulation routière',
@@ -3715,341 +4150,1604 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         ),
       ],
     ),
-
     CategoryConfig(
-      label: 'Organisation judiciaire',
-      badge: 'Socle initial',
-      image: 'assets/images/cat_organisation.jpg',
-      route: '/pa/dps_dpg/socle_initial/organisation_judiciaire',
+      label: 'Armes & munitions',
+      badge: 'Régimes spéciaux',
+      image: 'assets/images/armes_munitions.jpeg',
+      route: '/gpx_scolarite_pages/armes_munitions_pages',
       subcategories: [
         SubCategoryConfig(
-          label: 'L’organisation judiciaire',
+          label: 'Classification des armes et des munitions',
           route:
-              '/pa/dps_dpg/socle_initial/organisation_judiciaire/organisation',
+              '/gpx_scolarite_pages/armes_munitions_pages/armes_classification',
         ),
         SubCategoryConfig(
-          label: 'La magistrature',
+          label: 'Définitions',
+          route: '/gpx_scolarite_pages/armes_munitions_pages/armes_definitions',
+        ),
+        SubCategoryConfig(
+          label: 'Introduction',
           route:
-              '/pa/dps_dpg/socle_initial/organisation_judiciaire/magistrature',
+              '/gpx_scolarite_pages/armes_munitions_pages/armes_introduction',
+        ),
+        SubCategoryConfig(
+          label: 'Acquisition/détention cat. A ou B sans autorisation',
+          route:
+              '/gpx_scolarite_pages/armes_munitions_pages/armes_acquisition_detention_ab',
+        ),
+        SubCategoryConfig(
+          label: 'Port/transport sans motif légitime (cat. C ou D)',
+          route:
+              '/gpx_scolarite_pages/armes_munitions_pages/armes_port_transport_cd',
+        ),
+        SubCategoryConfig(
+          label: 'Régimes matériels de guerre / éléments d’arme',
+          route:
+              '/gpx_scolarite_pages/armes_munitions_pages/armes_materiels_guerre_elements',
+        ),
+        SubCategoryConfig(
+          label: 'Règles d’acquisition & détention',
+          route:
+              '/gpx_scolarite_pages/armes_munitions_pages/armes_regles_acquisition_detention',
+        ),
+        SubCategoryConfig(
+          label: 'Règles de port & transport',
+          route:
+              '/gpx_scolarite_pages/armes_munitions_pages/armes_regles_port_transport',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Classification des armes et des munitions',
+          route: '/gpx/armes_munitions_pages/quiz/quiz_armes_munitions_pages',
+        ),
+      ],
+    ),
+    CategoryConfig(
+      label: 'Libertés publiques',
+      badge: 'Droits & garanties',
+      image: 'assets/images/libertes_publiques.jpeg',
+      route: '/gpx/generalites/libertespubliques_intro',
+    ),
+    CategoryConfig(
+      label: 'Stupéfiants — usage & trafic',
+      badge: 'Stups',
+      image: 'assets/images/stupefiants.jpeg',
+      route: '/gpx_scolarite_pages/stupéfiants_pages',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Introduction',
+          route: '/gpx_scolarite_pages/stupéfiants_pages/introduction',
+        ),
+        SubCategoryConfig(
+          label: 'Cession/offre illicites pour consommation personnelle',
+          route: '/gpx_scolarite_pages/stupéfiants_pages/cession_offre',
+        ),
+        SubCategoryConfig(
+          label: 'Direction/organisation d’un trafic',
+          route:
+              '/gpx_scolarite_pages/stupéfiants_pages/direction_organisation',
+        ),
+        SubCategoryConfig(
+          label: 'Facilitation à l’usage illicite',
+          route: '/gpx_scolarite_pages/stupéfiants_pages/facilitation_usage',
+        ),
+        SubCategoryConfig(
+          label: 'Production/fabrication illicites',
+          route:
+              '/gpx_scolarite_pages/stupéfiants_pages/production_fabrication',
+        ),
+        SubCategoryConfig(
+          label: 'Provocation d’un majeur à l’usage ou au trafic',
+          route: '/gpx_scolarite_pages/stupéfiants_pages/provocation_majeur',
+        ),
+        SubCategoryConfig(
+          label: 'Blanchiment du produit du trafic',
+          route: '/gpx_scolarite_pages/stupéfiants_pages/blanchiment_produit',
+        ),
+        SubCategoryConfig(
+          label: 'Transport/détention/offre/cession/acquisition/emploi',
+          route:
+              '/gpx_scolarite_pages/stupéfiants_pages/transport_detention_offre',
+        ),
+        SubCategoryConfig(
+          label: 'Importation/exportation illicites',
+          route: '/gpx_scolarite_pages/stupéfiants_pages/import_export',
+        ),
+        SubCategoryConfig(
+          label: 'Usage illicite de stupéfiants',
+          route: '/gpx_scolarite_pages/stupéfiants_pages/usage_illicite',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Stupéfiants — usage & trafic',
+          route: '/gpx/stupéfiants_pages/quiz/quiz_stupéfiants',
+        ),
+      ],
+    ),
+  ],
+
+  // =========================================================
+  // 3) MÉMENTO CIRCULATION ROUTIÈRE
+  // =========================================================
+  GpxSchoolProgram.mememtoCirculationRoutiere: [
+    // =========================================================
+    // 1) PROCÉDURES EN MATIÈRE DE CIRCULATION ROUTIÈRE
+    // =========================================================
+    CategoryConfig(
+      label: 'Procédures circulation routière',
+      badge: 'Procédures',
+      image: 'assets/images/memento_procedures.jpeg',
+      route: '/gpx/memento_circulation/procedures',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'L’amende forfaitaire',
+          route: '/gpx/memento_circulation/procedures/amende_forfaitaire',
+          image: 'assets/images/amende_forfaitaire.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'L’amende forfaitaire délictuelle',
+          route:
+              '/gpx/memento_circulation/procedures/amende_forfaitaire_delictuelle',
+          image: 'assets/images/amende_forfaitaire_delictuelle.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'La consignation',
+          route: '/gpx/memento_circulation/procedures/consignation',
+          image: 'assets/images/consignation.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'L’immobilisation du véhicule',
+          route: '/gpx/memento_circulation/procedures/immobilisation',
+          image: 'assets/images/immobilisation.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'La mise en fourrière',
+          route: '/gpx/memento_circulation/procedures/mise_en_fourriere',
+          image: 'assets/images/mise_en_fourriere.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'La conduite sous l’influence de l’alcool',
+          route: '/gpx/memento_circulation/procedures/conduite_alcool',
+          image: 'assets/images/ivresse.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'La conduite après usage de stupéfiants',
+          route: '/gpx/memento_circulation/procedures/conduite_stupefiants',
+          image: 'assets/images/stupefiants.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'La rétention du permis de conduire',
+          route: '/gpx/memento_circulation/procedures/retention_permis',
+          image: 'assets/images/retention_permis.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Le permis à points',
+          route: '/gpx/memento_circulation/procedures/permis_a_points',
+          image: 'assets/images/permis_points.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Procédures circulation',
+          route: '/gpx/memento_circulation/procedures/quiz',
+          image: 'assets/images/quiz.jpeg',
         ),
       ],
     ),
 
     CategoryConfig(
-      label: 'Atteintes aux biens',
-      badge: 'Socle initial',
-      image: 'assets/images/contre_biens.png',
-      route: '/pa/dps_dpg/socle_initial/atteintes_biens',
+      label: 'Contrôle routier & pièces',
+      badge: 'Contrôle',
+      image: 'assets/images/memento_controle_routier.jpeg',
+      route: '/gpx/memento_circulation/controle_routier',
       subcategories: [
         SubCategoryConfig(
-          label: 'Le vol',
-          route: '/pa/dps_dpg/socle_initial/atteintes_biens/vol',
+          label: 'Le cadre légal du contrôle routier',
+          route: '/gpx/memento_circulation/controle_routier/cadre_legal',
+          image: 'assets/images/cadres_juridiques.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Destructions, dégradations, détériorations',
-          route: '/pa/dps_dpg/socle_initial/atteintes_biens/destructions',
+          label: 'Le permis de conduire',
+          route: '/gpx/memento_circulation/controle_routier/permis_conduire',
+          image: 'assets/images/permis_conduire.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Infractions sans danger pour les personnes',
+          label: 'Le brevet de sécurité routière',
+          route: '/gpx/memento_circulation/controle_routier/bsr',
+          image: 'assets/images/bsr.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Les certificats d’immatriculation',
           route:
-              '/pa/dps_dpg/socle_initial/atteintes_biens/sans_danger_personnes',
+              '/gpx/memento_circulation/controle_routier/certificat_immatriculation',
+          image: 'assets/images/certificat_immatriculation.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Infractions dangereuses pour les personnes',
+          label: 'Le contrôle technique des véhicules',
+          route: '/gpx/memento_circulation/controle_routier/controle_technique',
+          image: 'assets/images/controle_technique.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'L’assurance',
           route:
-              '/pa/dps_dpg/socle_initial/atteintes_biens/dangereuses_personnes',
+              '/gpx/memento_circulation/controle_routier/assurance_obligatoire',
+          image: 'assets/images/assurance_obligatoire.jpeg',
         ),
+
+        // ✅ QUIZ catégorie
         SubCategoryConfig(
-          label: 'Tags et graffitis',
-          route: '/pa/dps_dpg/socle_initial/atteintes_biens/tags_graffitis',
+          label: 'Quiz — Contrôle routier',
+          route: '/gpx/memento_circulation/controle_routier/quiz',
+          image: 'assets/images/quiz.jpeg',
         ),
       ],
     ),
 
     CategoryConfig(
-      label: 'Atteintes aux personnes',
-      badge: 'Socle initial',
-      image: 'assets/images/contre_personne.png',
-      route: '/pa/dps_dpg/socle_initial/atteintes_personnes',
+      label: 'Équipements véhicules & usagers',
+      badge: 'Équipements',
+      image: 'assets/images/memento_equipements.jpeg',
+      route: '/gpx/memento_circulation/equipements',
       subcategories: [
+        // Équipements des véhicules
         SubCategoryConfig(
-          label: 'Les discriminations',
-          route:
-              '/pa/dps_dpg/socle_initial/atteintes_personnes/discriminations',
+          label: 'Les pneumatiques',
+          route: '/gpx/memento_circulation/equipements/pneumatiques',
+          image: 'assets/images/pneumatiques.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Les violences volontaires',
-          route:
-              '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_volontaires',
+          label: 'Éclairage et signalisation',
+          route: '/gpx/memento_circulation/equipements/eclairage_signalisation',
+          image: 'assets/images/eclairage_signalisation.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Les violences habituelles',
-          route:
-              '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_habituelles',
+          label: 'Chargement',
+          route: '/gpx/memento_circulation/equipements/chargement',
+          image: 'assets/images/chargement.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Violences contre les forces de sécurité intérieure',
-          route: '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_fsi',
+          label: 'Les plaques',
+          route: '/gpx/memento_circulation/equipements/plaques',
+          image: 'assets/images/plaques.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Atteintes volontaires à la vie',
-          route: '/pa/dps_dpg/socle_initial/atteintes_personnes/atteintes_vie',
+          label: 'Miroirs / rétroviseurs / vision indirecte',
+          route: '/gpx/memento_circulation/equipements/retroviseurs_vision',
+          image: 'assets/images/retroviseurs.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Le viol',
-          route: '/pa/dps_dpg/socle_initial/atteintes_personnes/viol',
+          label: 'Les essuie-glace',
+          route: '/gpx/memento_circulation/equipements/essuie_glace',
+          image: 'assets/images/essuie_glace.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Agressions sexuelles',
-          route:
-              '/pa/dps_dpg/socle_initial/atteintes_personnes/agressions_sexuelles',
+          label: 'Nuisances des véhicules (fumées, bruit, avertisseur sonore)',
+          route: '/gpx/memento_circulation/equipements/nuisances',
+          image: 'assets/images/nuisances.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Harcèlement sexuel',
-          route:
-              '/pa/dps_dpg/socle_initial/atteintes_personnes/harcelement_sexuel',
+          label: 'Ceinture de sécurité / retenue enfant',
+          route: '/gpx/memento_circulation/equipements/ceinture_retenue_enfant',
+          image: 'assets/images/ceinture_retenue_enfant.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Exhibition sexuelle',
-          route: '/pa/dps_dpg/socle_initial/atteintes_personnes/exhibition',
+          label: 'Casque et gants de protection',
+          route: '/gpx/memento_circulation/equipements/casque_gants',
+          image: 'assets/images/casque_gants.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Mise en péril des mineurs',
-          route:
-              '/pa/dps_dpg/socle_initial/atteintes_personnes/mineurs_mise_en_peril',
+          label: 'Casque “cycliste”',
+          route: '/gpx/memento_circulation/equipements/casque_cycliste',
+          image: 'assets/images/casque_cycliste.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Atteinte à l’intimité d’une personne',
-          route:
-              '/pa/dps_dpg/socle_initial/atteintes_personnes/atteinte_intimite',
+          label: 'Gilet de haute visibilité',
+          route: '/gpx/memento_circulation/equipements/gilet_haute_visibilite',
+          image: 'assets/images/gilet_haute_visibilite.jpeg',
         ),
+
+        // ✅ QUIZ catégorie
         SubCategoryConfig(
-          label: 'Outrage sexiste et sexuel',
-          route:
-              '/pa/dps_dpg/socle_initial/atteintes_personnes/outrage_sexiste',
+          label: 'Quiz — Équipements',
+          route: '/gpx/memento_circulation/equipements/quiz',
+          image: 'assets/images/quiz.jpeg',
         ),
       ],
     ),
 
     CategoryConfig(
-      label: 'Autorité de l’État',
-      badge: 'Socle initial',
-      image: 'assets/images/repression.png',
-      route: '/pa/dps_dpg/socle_initial/autorite_etat',
+      label: 'Natinf',
+      badge: 'Natinf',
+      image: 'assets/images/natinf.png',
+      route: '/gpx/memento_circulation/natinf',
       subcategories: [
         SubCategoryConfig(
-          label: 'Refus d’obtempérer',
-          route: '/pa/dps_dpg/socle_initial/autorite_etat/refus_obtemperer',
+          label: 'Natinf',
+          route: '/gpx/memento_circulation/controle_routier/natinf',
+          image: 'assets/images/natinf.png',
+        ),
+      ],
+    ),
+  ],
+
+  GpxSchoolProgram.policierEnInterventionsa: [
+    CategoryConfig(
+      label: 'Circulation & séjour des étrangers',
+      badge: 'Étrangers',
+      image: 'assets/images/mandat_arret.jpeg',
+      route: '/gpx/intervention/etrangers',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'L’accord de Schengen',
+          route: '/gpx/intervention/etrangers/schengen',
+          image: 'assets/images/schengen.jpeg',
         ),
         SubCategoryConfig(
-          label: 'L’outrage',
-          route: '/pa/dps_dpg/socle_initial/autorite_etat/outrage',
+          label: 'Coopération policière et judiciaire (UE)',
+          route: '/gpx/intervention/etrangers/cooperation-ue',
+          image: 'assets/images/cooperation_ue.jpeg',
         ),
         SubCategoryConfig(
-          label: 'La rébellion',
-          route: '/pa/dps_dpg/socle_initial/autorite_etat/rebellion',
+          label: 'Les différents titres de séjour',
+          route: '/gpx/intervention/etrangers/titres-sejour',
+          image: 'assets/images/titres_sejour.jpeg',
+        ),
+
+        // ✅ QUIZ (à ajouter)
+        SubCategoryConfig(
+          label: 'Quiz — Étrangers',
+          route: '/gpx/intervention/etrangers/quiz',
+        ),
+      ],
+    ),
+
+    // 2) LA PROTECTION DES MINEURS
+    CategoryConfig(
+      label: 'Protection des mineurs',
+      badge: 'Mineurs',
+      image: 'assets/images/mineurs_famille.jpeg',
+      route: '/gpx/intervention/mineurs',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Le statut juridique du mineur',
+          route: '/gpx/intervention/mineurs/statut-juridique',
         ),
         SubCategoryConfig(
-          label: 'Provocation directe à la rébellion',
+          label: 'Protection des mineurs sur la voie publique',
+          route: '/gpx/intervention/mineurs/voie-publique',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Mineurs',
+          route: '/gpx/intervention/mineurs/quiz',
+        ),
+      ],
+    ),
+
+    // 3) L’ACCIDENT DE LA CIRCULATION
+    CategoryConfig(
+      label: 'Accident de la circulation',
+      badge: 'Accident',
+      image: 'assets/images/mise_en_danger.jpeg',
+      route: '/gpx/intervention/accident-circulation',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Technique du plan des lieux',
+          route: '/gpx/intervention/accident-circulation/plan-lieux-technique',
+          image: 'assets/images/plan_lieux.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Différents modèles de plan',
+          route: '/gpx/intervention/accident-circulation/modeles-plan',
+          image: 'assets/images/modele-sans-cotes.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Renseignements à recueillir sur les lieux',
           route:
-              '/pa/dps_dpg/socle_initial/autorite_etat/provocation_rebellion',
-        ),
-      ],
-    ),
-
-    // =======================================================
-    // SOCLE AVANCÉ — D.P.S / D.P.G
-    // =======================================================
-    CategoryConfig(
-      label: 'Généralités',
-      badge: 'Socle avancé',
-      image: 'assets/images/droit_penal_general.jpeg',
-      route: '/pa/dps_dpg/socle_avance/generalites',
-      subcategories: [
-        SubCategoryConfig(
-          label: 'Le droit pénal',
-          route: '/pa/dps_dpg/socle_avance/generalites/droit_penal',
+              '/gpx/intervention/accident-circulation/renseignements-a-recueillir',
+          image: 'assets/images/renseignements.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Immunités et inviolabilités',
+          label: 'Tableau synthèse des renseignements à recueillir',
+          route: '/gpx/intervention/accident-circulation/tableau-synthese',
+          image: 'assets/images/tableau_synthese.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'L’avis à la famille',
+          route: '/gpx/intervention/accident-circulation/avis-famille',
+          image: 'assets/images/avis_famille.jpeg',
+        ),
+        SubCategoryConfig(
+          label: '“J’annonce une mauvaise nouvelle” (AMARIS)',
           route:
-              '/pa/dps_dpg/socle_avance/generalites/immunites_inviolabilites',
+              '/gpx/intervention/accident-circulation/annoncer-mauvaise-nouvelle',
+          image: 'assets/images/mauvaise_nouvelle.jpeg',
         ),
         SubCategoryConfig(
-          label: 'La responsabilité pénale',
-          route: '/pa/dps_dpg/socle_avance/generalites/responsabilite_penale',
-        ),
-      ],
-    ),
-
-    CategoryConfig(
-      label: 'Acteurs de la Police Judiciaire',
-      badge: 'Socle avancé',
-      image: 'assets/images/pp_action_publique_autorites_pj.png',
-      route: '/pa/dps_dpg/socle_avance/acteurs_pj',
-      subcategories: [
-        SubCategoryConfig(
-          label: 'Compétences des OPJ',
-          route: '/pa/dps_dpg/socle_avance/acteurs_pj/opj',
-        ),
-        SubCategoryConfig(
-          label: 'Compétences des APJ',
-          route: '/pa/dps_dpg/socle_avance/acteurs_pj/apj',
-        ),
-        SubCategoryConfig(
-          label: 'Assistants d’enquête',
-          route: '/pa/dps_dpg/socle_avance/acteurs_pj/assistants_enquete',
-        ),
-        SubCategoryConfig(
-          label: 'Prérogatives judiciaires (OPJ / APJ / APJA)',
-          route: '/pa/dps_dpg/socle_avance/acteurs_pj/prerogatives',
-        ),
-        SubCategoryConfig(
-          label: 'Le procureur de la République',
-          route: '/pa/dps_dpg/socle_avance/acteurs_pj/procureur',
-        ),
-        SubCategoryConfig(
-          label: 'Le juge d’instruction',
-          route: '/pa/dps_dpg/socle_avance/acteurs_pj/juge_instruction',
+          label: 'Quiz — Accident',
+          route: '/gpx/intervention/accident-circulation/quiz',
         ),
       ],
     ),
 
+    // 4) L’INTERVENTION EN MATIÈRE D’USAGE DE STUPÉFIANTS
     CategoryConfig(
-      label: 'Atteintes aux biens',
-      badge: 'Socle avancé',
-      image: 'assets/images/contre_biens.png',
-      route: '/pa/dps_dpg/socle_avance/atteintes_biens',
+      label: 'Intervention : usage de stupéfiants',
+      badge: 'Stupéfiants',
+      image: 'assets/images/stupefiants.jpeg',
+      route: '/gpx/intervention/stupefiants',
       subcategories: [
         SubCategoryConfig(
-          label: 'L’extorsion',
-          route: '/pa/dps_dpg/socle_avance/atteintes_biens/extorsion',
+          label: 'Amende forfaitaire délictuelle (usage illicite)',
+          route: '/gpx/intervention/stupefiants/amende-forfaitaire-delictuelle',
         ),
         SubCategoryConfig(
-          label: 'L’escroquerie',
-          route: '/pa/dps_dpg/socle_avance/atteintes_biens/escroquerie',
-        ),
-        SubCategoryConfig(
-          label: 'L’abus de confiance',
-          route: '/pa/dps_dpg/socle_avance/atteintes_biens/abus_confiance',
-        ),
-        SubCategoryConfig(
-          label: 'La filouterie',
-          route: '/pa/dps_dpg/socle_avance/atteintes_biens/filouterie',
-        ),
-        SubCategoryConfig(
-          label: 'Le recel',
-          route: '/pa/dps_dpg/socle_avance/atteintes_biens/recel',
-        ),
-        SubCategoryConfig(
-          label: 'Abstention volontaire de combattre un sinistre',
-          route: '/pa/dps_dpg/socle_avance/atteintes_biens/abstention_sinistre',
+          label: 'Quiz — Stupéfiants',
+          route: '/gpx/intervention/stupefiants/quiz',
         ),
       ],
     ),
 
+    // 5) L’INTERVENTION DANS UN DÉBIT DE BOISSONS
     CategoryConfig(
-      label: 'Atteintes aux personnes',
-      badge: 'Socle avancé',
-      image: 'assets/images/contre_personne.png',
-      route: '/pa/dps_dpg/socle_avance/atteintes_personnes',
+      label: 'Intervention : débit de boissons',
+      badge: 'Débit',
+      image: 'assets/images/ivresse.jpeg',
+      route: '/gpx/intervention/debit-boissons',
       subcategories: [
         SubCategoryConfig(
-          label: 'Atteintes involontaires à la vie et à l’intégrité',
-          route: '/pa/dps_dpg/socle_avance/atteintes_personnes/involontaires',
+          label: 'Intervention dans un débit de boissons',
+          route: '/gpx/intervention/debit-boissons/intervention',
+          image: 'assets/images/boissons_intervention.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Menaces contre les personnes',
-          route: '/pa/dps_dpg/socle_avance/atteintes_personnes/menaces',
+          label: 'Contrôle des débits de boissons',
+          route: '/gpx/intervention/debit-boissons/controle',
+          image: 'assets/images/boissons_controle.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Entrave volontaire à l’arrivée des secours',
-          route: '/pa/dps_dpg/socle_avance/atteintes_personnes/entrave_secours',
-        ),
-        SubCategoryConfig(
-          label: 'Non-obstacle à la commission d’un crime ou délit',
-          route: '/pa/dps_dpg/socle_avance/atteintes_personnes/non_obstacle',
-        ),
-        SubCategoryConfig(
-          label: 'Non-assistance à personne en péril',
-          route: '/pa/dps_dpg/socle_avance/atteintes_personnes/non_assistance',
-        ),
-        SubCategoryConfig(
-          label: 'Appels téléphoniques malveillants',
-          route:
-              '/pa/dps_dpg/socle_avance/atteintes_personnes/appels_malveillants',
-        ),
-        SubCategoryConfig(
-          label: 'Risque causé à autrui',
-          route: '/pa/dps_dpg/socle_avance/atteintes_personnes/risque_autrui',
+          label: 'Quiz — Débit de boissons',
+          route: '/gpx/intervention/debit-boissons/quiz',
         ),
       ],
     ),
 
+    // 6) LES MALADES MENTAUX
     CategoryConfig(
-      label: 'Délits routiers',
-      badge: 'Socle avancé',
-      image: 'assets/images/circulation_routiere.jpeg',
-      route: '/pa/dps_dpg/socle_avance/delits_routiers',
+      label: 'Les malades mentaux',
+      badge: 'Psychiatrie',
+      image: 'assets/images/malades_mentaux.jpeg',
+      route: '/gpx/intervention/malades-mentaux',
       subcategories: [
         SubCategoryConfig(
-          label: 'Rodéo motorisé',
-          route: '/pa/dps_dpg/socle_avance/delits_routiers/rodeo',
+          label:
+              'Intervenir auprès de personnes ne jouissant pas de toutes leurs capacités mentales',
+          route: '/gpx/intervention/malades-mentaux/intervenir',
+          image: 'assets/images/malades_mentaux_intervenir.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Incitation / organisation / promotion',
-          route: '/pa/dps_dpg/socle_avance/delits_routiers/incitation',
+          label: 'Admission en soins psychiatriques sans consentement',
+          route: '/gpx/intervention/malades-mentaux/soins-sans-consentement',
+          image: 'assets/images/soins_sans_consentement.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Délit de fuite',
-          route: '/pa/dps_dpg/socle_avance/delits_routiers/delit_fuite',
+          label: 'Quiz — Malades mentaux',
+          route: '/gpx/intervention/malades-mentaux/quiz',
+        ),
+      ],
+    ),
+
+    // 7) L’INTERVENTION EN PRÉSENCE D’UN ANIMAL
+    CategoryConfig(
+      label: 'Intervention : présence d’un animal',
+      badge: 'Animal',
+      image: 'assets/images/animal.jpeg',
+      route: '/gpx/intervention/animal',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Lutte contre la maltraitance animale',
+          route: '/gpx/intervention/animal/maltraitance',
+          image: 'assets/images/maltraitance.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Refus d’obtempérer',
-          route: '/pa/dps_dpg/socle_avance/delits_routiers/refus_obtemperer',
+          label: '“Intervenir face à un chien dangereux” (AMARIS)',
+          route: '/gpx/intervention/animal/chien-dangereux',
+          image: 'assets/images/chien_dangereux.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Protocole sanitaire en cas de morsure',
+          route: '/gpx/intervention/animal/protocole-morsure',
+          image: 'assets/images/protocole_morsure.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Chiens d’attaque, de garde ou de défense',
+          route: '/gpx/intervention/animal/chiens-categories',
+          image: 'assets/images/chiens_categories.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Animal',
+          route: '/gpx/intervention/animal/quiz',
+        ),
+      ],
+    ),
+
+    // 8) LES AUTRES INTERVENTIONS
+    CategoryConfig(
+      label: 'Les autres interventions',
+      badge: 'Divers',
+      image: 'assets/images/autres_interventions.jpeg',
+      route: '/gpx/intervention/autres',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Intervention sur les lieux d’un sinistre',
+          route: '/gpx/intervention/autres/sinistre',
+          image: 'assets/images/sinistre.jpeg',
+        ),
+        SubCategoryConfig(
+          label: '“Primo-intervenant sur un incendie” (AMARIS)',
+          route: '/gpx/intervention/autres/incendie-primo',
+          image: 'assets/images/incendie_primo.jpeg',
         ),
         SubCategoryConfig(
           label:
-              'Autres délits routiers (alcool, stup, permis, vérifications…)',
-          route: '/pa/dps_dpg/socle_avance/delits_routiers/autres',
+              'Intervention sur une alarme (établissement à caractère financier ou commercial)',
+          route: '/gpx/intervention/autres/alarme-etablissement',
+          image: 'assets/images/alarme_etablissement.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Principes de levée de doute lors d’agressions armées',
+          route: '/gpx/intervention/autres/levee-doute-agression-armee',
+          image: 'assets/images/levee_doute_agression_armee.jpeg',
+        ),
+        SubCategoryConfig(
+          label:
+              'Intervention suite à une agression armée à caractère crapuleux',
+          route: '/gpx/intervention/autres/agression-armee-crapuleux',
+          image: 'assets/images/agression_armee_crapuleux.jpeg',
+        ),
+        SubCategoryConfig(
+          label:
+              'Intervention suite à la violation d’un bracelet anti-rapprochement (interdiction de se rapprocher)',
+          route: '/gpx/intervention/autres/violation-bar',
+        ),
+        SubCategoryConfig(
+          label: 'Plan Vigipirate',
+          route: '/gpx/intervention/autres/plan-vigipirate',
+          image: 'assets/images/vigipirate.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Autres interventions',
+          route: '/gpx/intervention/autres/quiz',
+        ),
+      ],
+    ),
+  ],
+
+  // =========================================================
+  // 4) POLICIER EN INTERVENTION
+  // =========================================================
+  GpxSchoolProgram.policierEnIntervention: [
+    // 1) LA PRISE DE SERVICE
+    CategoryConfig(
+      label: 'La prise de service',
+      badge: 'Service',
+      image: 'assets/images/cat_hierarchie.jpg',
+      route: '/gpx/intervention/prise-service',
+      subcategories: [
+        SubCategoryConfig(
+          label: "La prise de service : l’appel",
+          route: '/gpx/intervention/prise-service/appel',
+          image: 'assets/images/prise_de_service.png',
+        ),
+        SubCategoryConfig(
+          label: "Les principaux registres du poste",
+          route: '/gpx/intervention/prise-service/registres',
+          image: 'assets/images/registe_poste.png',
+        ),
+        SubCategoryConfig(
+          label: "Les applications “main courante” et “déclaration d’usagers”",
+          route: '/gpx/intervention/prise-service/applications',
+          image: 'assets/images/main_courante.jpeg',
+        ),
+        SubCategoryConfig(
+          label: "Mesures de sécurité, la fouille intégrale",
+          route: '/gpx/intervention/prise-service/fouille-integrale',
+          image: 'assets/images/fouille.jpeg',
+        ),
+        SubCategoryConfig(
+          label: "La gestion humaine et matérielle de la garde à vue",
+          route: '/gpx/intervention/prise-service/garde-a-vue',
+          image: 'assets/images/gav.jpeg',
+        ),
+        SubCategoryConfig(
+          label: "Maîtriser le risque d’évasion et de fuite (AMARIS)",
+          route: '/gpx/intervention/prise-service/risque-evasion-fuite',
+          image: 'assets/images/amaris.jpg',
         ),
       ],
     ),
 
+    // 2) LA PATROUILLE
     CategoryConfig(
-      label: 'Autorité de l’État',
-      badge: 'Socle avancé',
-      image: 'assets/images/repression.png',
-      route: '/pa/dps_dpg/socle_avance/autorite_etat',
+      label: 'La patrouille',
+      badge: 'Patrouille',
+      image: 'assets/images/memento_controle_routier.jpeg',
+      route: '/gpx/intervention/patrouille',
       subcategories: [
         SubCategoryConfig(
-          label: 'Menaces envers les dépositaires de l’autorité publique',
-          route: '/pa/dps_dpg/socle_avance/autorite_etat/menaces',
+          label: "La patrouille",
+          route: '/gpx/intervention/patrouille/patrouille',
+          image: 'assets/images/cat_infractions.jpg',
         ),
         SubCategoryConfig(
-          label: 'Corruption passive',
-          route: '/pa/dps_dpg/socle_avance/autorite_etat/corruption_passive',
+          label: "La communication radioélectrique",
+          route: '/gpx/intervention/patrouille/communication-radio',
+          image: 'assets/images/prise_de_service.png',
         ),
         SubCategoryConfig(
-          label: 'Corruption active',
-          route: '/pa/dps_dpg/socle_avance/autorite_etat/corruption_active',
+          label: "Plaquette : respect de la procédure radio",
+          route: '/gpx/intervention/patrouille/procedure-radio',
+          image: 'assets/images/prise_de_service.png',
+        ),
+        SubCategoryConfig(
+          label: "MEMO TPH 900",
+          route: '/gpx/intervention/patrouille/memo-tph-900',
+          image: 'assets/images/prise_de_service.png',
+        ),
+        SubCategoryConfig(
+          label: "Les principaux fichiers",
+          route: '/gpx/intervention/patrouille/principaux-fichiers',
+          image: 'assets/images/copic_institutions.jpg',
+        ),
+        SubCategoryConfig(
+          label: "L’interrogation du F.P.R.",
+          route: '/gpx/intervention/patrouille/interrogation-fpr',
+          image: 'assets/images/criminalite_organisee.jpeg',
+        ),
+        SubCategoryConfig(
+          label: "La caméra piéton",
+          route: '/gpx/intervention/patrouille/camera-pieton',
+          image: 'assets/images/camera_pieton.jpg',
+        ),
+        SubCategoryConfig(
+          label: "L’utilité de la caméra piéton (AMARIS)",
+          route: '/gpx/intervention/patrouille/utilite-camera',
+          image: 'assets/images/amaris.jpg',
+        ),
+        SubCategoryConfig(
+          label: "Les équipements de sécurité",
+          route: '/gpx/intervention/patrouille/equipements-securite',
+          image: 'assets/images/equipement_securite.jpg',
+        ),
+        SubCategoryConfig(
+          label: "La conduite des véhicules de police",
+          route: '/gpx/intervention/patrouille/conduite-vehicules',
+          image: 'assets/images/voiture_police.jpg',
+        ),
+        SubCategoryConfig(
+          label: "L’usage des signaux sonores et lumineux",
+          route: '/gpx/intervention/patrouille/signaux-sonores-lumineux',
+          image: 'assets/images/gyro.jpg',
+        ),
+        SubCategoryConfig(
+          label: "Le signalement descriptif",
+          route: '/gpx/intervention/patrouille/signalement-descriptif',
+          image: 'assets/images/signalement_descriptif.jpg',
+        ),
+        SubCategoryConfig(
+          label: "La palpation de sécurité",
+          route: '/gpx/intervention/patrouille/palpation-securite',
+          image: 'assets/images/fouille.jpeg',
+        ),
+        SubCategoryConfig(
+          label: "Le menottage",
+          route: '/gpx/intervention/patrouille/menottage',
+          image: 'assets/images/menottage.jpeg',
+        ),
+        SubCategoryConfig(
+          label:
+              "Enregistrement et diffusion éventuelle d'images et de paroles de fonctionnaires de police dans l'exercice de leurs fonctions.",
+          route:
+              '/gpx/intervention/patrouille/enregistrement-diffusion-images-paroles',
+          image: 'assets/images/enregistement_police.jpg',
+        ),
+        SubCategoryConfig(
+          label: "Synthèse des indicateurs de basculement",
+          route:
+              '/gpx/intervention/patrouille/synthese-indicateurs-basculement',
+          image: 'assets/images/emotion.webp',
         ),
       ],
     ),
 
+    // 3) L’ACCIDENT DE LA CIRCULATION
     CategoryConfig(
-      label: 'Stupéfiants',
-      badge: 'Socle avancé',
-      image: 'assets/images/stupefiants.jpeg',
-      route: '/pa/dps_dpg/socle_avance/stupefiants',
+      label: 'L’accident de la circulation',
+      badge: 'Accident',
+      image: 'assets/images/mise_en_danger.jpeg',
+      route: '/gpx/intervention/accident-circulation',
       subcategories: [
         SubCategoryConfig(
-          label: 'Usage illicite de stupéfiants',
-          route: '/pa/dps_dpg/socle_avance/stupefiants/usage_illicite',
+          label:
+              "La sécurité pendant le trajet et sur les lieux du constat d’un accident de la circulation",
+          route: '/gpx/intervention/accident-circulation/securite-trajet-lieux',
+          image: 'assets/images/acccident_voiture.jpeg',
         ),
         SubCategoryConfig(
-          label: 'Cession / offre illicites (consommation personnelle)',
-          route: '/pa/dps_dpg/socle_avance/stupefiants/cession_offre',
+          label: "Les différents types d’accidents de la circulation routière",
+          route: '/gpx/intervention/accident-circulation/types-accidents',
+          image: 'assets/images/different_accident.jpg',
+        ),
+        SubCategoryConfig(
+          label: "La régulation de la circulation",
+          route:
+              '/gpx/intervention/accident-circulation/regulation-circulation',
+          image: 'assets/images/regulastion_accident.webp',
+        ),
+      ],
+    ),
+
+    // 4) L’INTERVENTION AU DOMICILE
+    CategoryConfig(
+      label: 'L’intervention au domicile',
+      badge: 'Domicile',
+      image: 'assets/images/mineurs_famille.jpeg',
+      route: '/gpx/intervention/domicile',
+      subcategories: [
+        SubCategoryConfig(
+          label: "Le domicile et la violation de domicile",
+          route: '/gpx/intervention/domicile/violation-domicile',
+          image: 'assets/images/violation_domicile.webp',
+        ),
+        SubCategoryConfig(
+          label: "Les bruits et tapages",
+          route: '/gpx/intervention/domicile/bruits-tapages',
+          image: 'assets/images/tapage.jpg',
+        ),
+        SubCategoryConfig(
+          label: "Le différend familial",
+          route: '/gpx/intervention/domicile/differend-familial',
+          image: 'assets/images/different_familiale.jpg',
+        ),
+        SubCategoryConfig(
+          label:
+              "Violences conjugales : conduite à tenir lors des interventions à domicile",
+          route: '/gpx/intervention/domicile/violences-conjugales',
+          image: 'assets/images/violence_conjugale.jpg',
+        ),
+      ],
+    ),
+
+    // 5) LES AUTRES INTERVENTIONS
+    CategoryConfig(
+      label: 'Les autres interventions',
+      badge: 'Divers',
+      image: 'assets/images/hierarchie_police.jpeg',
+      route: '/gpx/intervention/autres',
+      subcategories: [
+        SubCategoryConfig(
+          label: "“Primo-intervenant sur une scène d’infraction” (AMARIS)",
+          route: '/gpx/intervention/autres/primo-scene-infraction-amaris',
+          image: 'assets/images/flagrant_delit.webp',
+        ),
+        SubCategoryConfig(
+          label:
+              "Bagages abandonnés, oubliés ; objets, engins ou véhicules suspects",
+          route: '/gpx/intervention/autres/alertes-a-la-bombe',
+          image: 'assets/images/deminage_camion.png',
+        ),
+        SubCategoryConfig(
+          label: "Identification et détection des produits suspects",
+          route:
+              '/gpx/intervention/autres/identification-detection-produits-suspects',
+          image: 'assets/images/identifiacation_colis.png',
+        ),
+        SubCategoryConfig(
+          label: "L’ivresse publique et manifeste (I.P.M.)",
+          route: '/gpx/intervention/autres/ipm',
+          image: 'assets/images/ipm.jpg',
+        ),
+        SubCategoryConfig(
+          label: "Les plans ORSEC",
+          route: '/gpx/intervention/autres/plans-orsec',
+          image: 'assets/images/ORSEC_large.jpg',
+        ),
+      ],
+    ),
+
+    // 6) FORMULAIRES UTILES
+    CategoryConfig(
+      label: 'Formulaires utiles',
+      badge: 'Docs',
+      image: 'assets/images/copic_institutions.jpg',
+      route: '/gpx/intervention/formulaires-utiles',
+      subcategories: [
+        SubCategoryConfig(
+          label: "Avis de rétention d’un permis de conduire",
+          route: '/gpx/intervention/formulaires-utiles/avis-retention-permis',
+          image: 'assets/images/retention_permis_conduire.jpg',
+        ),
+        SubCategoryConfig(
+          label: "Fiche d’immobilisation",
+          route: '/gpx/intervention/formulaires-utiles/fiche-immobilisation',
+          image: 'assets/images/fiche_immobilisation.jpg',
+        ),
+        SubCategoryConfig(
+          label:
+              "Fiche descriptive de l’état du véhicule à enlever en fourrière",
+          route:
+              '/gpx/intervention/formulaires-utiles/fiche-descriptive-fourriere',
+          image: 'assets/images/fourrière.webp',
+        ),
+      ],
+    ),
+  ],
+
+  // =========================================================
+  // 5) RECUEIL PV (APJ 20)
+  // =========================================================
+  GpxSchoolProgram.recueilPvApj20: [
+    // =========================================================
+    // INTRODUCTION
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Introduction',
+      badge: 'Bases',
+      image: 'assets/images/pv_intro.jpg',
+      route: '/gpx/pv_apj20/introduction',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/introduction/preambule',
+          image: 'assets/images/pv_preambule.png',
+        ),
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/introduction/procedure',
+          image: 'assets/images/pv_procedure.png',
+        ),
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/introduction/proces_verbaux',
+          image: 'assets/images/proces_verbaux.png',
+        ),
+        SubCategoryConfig(
+          label: 'L’état-civil',
+          route: '/gpx/pv_apj20/introduction/etat_civil',
+          image: 'assets/images/etat_civil.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // LA PLAINTE
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — La plainte',
+      badge: 'Plainte',
+      image: 'assets/images/pv_plainte.jpeg',
+      route: '/gpx/pv_apj20/plainte',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/plainte/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas de procès-verbal de plainte contre auteur inconnu',
+          route: '/gpx/pv_apj20/plainte/pv_saisine_personne_inconnue',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas de procès-verbal de plainte contre personne dénommée',
+          route: '/gpx/pv_apj20/plainte/pv_saisine_personne_denommee',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Canevas de procès-verbal de plainte contre personne dénommée — Suite',
+          route: '/gpx/pv_apj20/plainte/pv_saisine_personne_denommee_suite',
+          image: 'assets/images/canevas.png',
+        ),
+
+        // --- Violences conjugales (pack)
+        SubCategoryConfig(
+          label: 'Violences conjugales — Grille d’évaluation du danger',
+          route:
+              '/gpx/pv_apj20/plainte/violences_conjugales/presentation_grille_danger',
+          image: 'assets/images/pv_vc_grille_danger.jpg',
+        ),
+        SubCategoryConfig(
+          label:
+              'Violences conjugales — Document d’information synthétique (démarches & dispositifs)',
+          route:
+              '/gpx/pv_apj20/plainte/violences_conjugales/document_info_synthetique',
+          image: 'assets/images/pv_vc_document_info.webp',
+        ),
+        SubCategoryConfig(
+          label:
+              'Canevas & PV de plainte d’une victime de violences conjugales',
+          route: '/gpx/pv_apj20/plainte/violences_conjugales/pv_victime',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // LES CONSTATATIONS
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Constatations',
+      badge: 'Constats',
+      image: 'assets/images/perquisition.jpeg',
+      route: '/gpx/pv_apj20/constatations',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/constatations/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/constatations/canevas_pv',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // LE TÉMOIGNAGE
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Témoignage',
+      badge: 'Audition',
+      image: 'assets/images/renseignements.jpeg',
+      route: '/gpx/pv_apj20/temoignage',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/temoignage/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV d’enquête de voisinage',
+          route: '/gpx/pv_apj20/temoignage/enquete_voisinage',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV d’audition de témoin',
+          route: '/gpx/pv_apj20/temoignage/audition_temoins',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // LE CONTRÔLE D’IDENTITÉ
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Contrôle d’identité',
+      badge: 'Identité',
+      image: 'assets/images/pv_controle_identite.jpeg',
+      route: '/gpx/pv_apj20/controle_identite',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/controle_identite/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV de contrôle d’identité',
+          route: '/gpx/pv_apj20/controle_identite/pv_controle_identite',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV de contrôle d’identité + fiche de recherche',
+          route: '/gpx/pv_apj20/controle_identite/pv_ci_fiche_recherche',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // L’INTERPELLATION — LA CONDUITE AU POSTE
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Interpellation & conduite au poste',
+      badge: 'Interpellation',
+      image: 'assets/images/pv_interpellation.jpeg',
+      route: '/gpx/pv_apj20/interpellation',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/interpellation/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV de contrôle d’identité + découverte d’une arme',
+          route: '/gpx/pv_apj20/interpellation/ci_decouverte_arme',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV d’interpellation',
+          route: '/gpx/pv_apj20/interpellation/pv_interpellation',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV de conduite au poste',
+          route: '/gpx/pv_apj20/interpellation/conduite_au_poste',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Les mandats (recherche, comparution, amener, arrêt)',
+          route: '/gpx/pv_apj20/interpellation/mandats',
+          image: 'assets/images/pv_mandats.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV de notification de mandat',
+          route: '/gpx/pv_apj20/interpellation/notification_mandat',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV de recherches infructueuses (exécution mandat)',
+          route: '/gpx/pv_apj20/interpellation/recherches_infructueuses_mandat',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas de compte-rendu à l’O.P.J.',
+          route: '/gpx/pv_apj20/interpellation/compte_rendu_opj',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // STATUT DU GARDÉ À VUE & SUSPECT LIBRE
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — GAV & suspect libre',
+      badge: 'Droits',
+      image: 'assets/images/pv_gav_suspect_libre.jpeg',
+      route: '/gpx/pv_apj20/gav_suspect_libre',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'La garde à vue : généralités',
+          route: '/gpx/pv_apj20/gav_suspect_libre/gav_generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : notification placement GAV + droits (A.P.J.)',
+          route: '/gpx/pv_apj20/gav_suspect_libre/notification_gav_droits_apj',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Le suspect libre : généralités',
+          route: '/gpx/pv_apj20/gav_suspect_libre/suspect_libre_generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : notification des droits au suspect majeur',
+          route:
+              '/gpx/pv_apj20/gav_suspect_libre/notification_droits_suspect_majeur_emprisonnement',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Canevas & PV : notification en audition libre (contravention/délit non puni emprisonnement)',
+          route:
+              '/gpx/pv_apj20/gav_suspect_libre/notification_audition_libre_sans_emprisonnement',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : notification des droits — Art. 65 du C.P.P.',
+          route:
+              '/gpx/pv_apj20/gav_suspect_libre/notification_droits_art_65_cpp',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Intervention de l’avocat : généralités',
+          route: '/gpx/pv_apj20/gav_suspect_libre/avocat_generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : entretien du gardé à vue avec l’avocat',
+          route: '/gpx/pv_apj20/gav_suspect_libre/entretien_gav_avocat',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // AUDITION DU SUSPECT (GAV OU LIBRE)
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Audition du suspect',
+      badge: 'Audition',
+      image: 'assets/images/pv_audition_suspect.jpeg',
+      route: '/gpx/pv_apj20/audition_suspect',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/audition_suspect/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : audition du gardé à vue',
+          route: '/gpx/pv_apj20/audition_suspect/audition_gav',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : audition du suspect libre',
+          route: '/gpx/pv_apj20/audition_suspect/audition_suspect_libre',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Canevas & PV : audition du suspect libre + notification des droits (contravention/délit non puni emprisonnement)',
+          route:
+              '/gpx/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Le civilement responsable : généralités',
+          route:
+              '/gpx/pv_apj20/audition_suspect/civilement_responsable_generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : audition du civilement responsable',
+          route:
+              '/gpx/pv_apj20/audition_suspect/audition_civilement_responsable',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // PERQUISITION EN ENQUÊTE PRÉLIMINAIRE
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Perquisition (enquête préliminaire)',
+      badge: 'Enquête',
+      image: 'assets/images/pv_perquisition.jpeg',
+      route: '/gpx/pv_apj20/perquisition_preliminaire',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/perquisition_preliminaire/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : perquisition en enquête préliminaire',
+          route: '/gpx/pv_apj20/perquisition_preliminaire/perquisition',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : fouille de véhicule en enquête préliminaire',
+          route: '/gpx/pv_apj20/perquisition_preliminaire/fouille_vehicule',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // RÉQUISITIONS
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Réquisitions',
+      badge: 'Réquisitions',
+      image: 'assets/images/pv_requisitions.jpeg',
+      route: '/gpx/pv_apj20/requisitions',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/requisitions/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : réquisition à personne',
+          route: '/gpx/pv_apj20/requisitions/requisition_personne',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & rapport : réquisition à personne',
+          route: '/gpx/pv_apj20/requisitions/rapport_requisition_personne',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // CONFRONTATION
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Confrontation',
+      badge: 'Procédure',
+      image: 'assets/images/pv_confrontation.jpeg',
+      route: '/gpx/pv_apj20/confrontation',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/confrontation/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label: 'Canevas & PV : confrontation victime / gardé à vue',
+          route: '/gpx/pv_apj20/confrontation/victime_gav',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Canevas & PV : confrontation victime / suspect libre (crime/délit puni emprisonnement)',
+          route:
+              '/gpx/pv_apj20/confrontation/victime_suspect_libre_emprisonnement',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // PROCÉDURES SPÉCIALES — ÉTRANGERS
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Procédures spéciales (étrangers)',
+      badge: 'Spécial',
+      image: 'assets/images/pv_etrangers.jpeg',
+      route: '/gpx/pv_apj20/procedures_speciales/etrangers',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/procedures_speciales/etrangers/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Canevas & PV : contrôle d’identité + contrôle du séjour et de la circulation des étrangers',
+          route:
+              '/gpx/pv_apj20/procedures_speciales/etrangers/ci_controle_sejour_circulation',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Canevas & PV : contrôle du séjour et de la circulation des étrangers',
+          route:
+              '/gpx/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // LA CIRCULATION ROUTIÈRE
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — Circulation routière',
+      badge: 'Circulation',
+      image: 'assets/images/pv_circulation_routiere.jpeg',
+      route: '/gpx/pv_apj20/circulation_routiere',
+      subcategories: [
+        // --- Alcool
+        SubCategoryConfig(
+          label: 'Alcool — Généralités',
+          route: '/gpx/pv_apj20/circulation_routiere/alcool/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Alcool — Canevas & PV conduite au poste (dépistage CEEA positif / refus / sans dépistage)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/alcool/conduite_poste_ceea_positif_ou_refus',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Alcool — Canevas & PV d’interpellation suite conduite en état d’ivresse',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Alcool — Tableau des taux d’alcool (affichés & retenus)',
+          route: '/gpx/pv_apj20/circulation_routiere/alcool/tableau_taux',
+          image: 'assets/images/pv_tableau_taux_alcool.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Alcool — Canevas & PV vérification + notification des taux (CEEA)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Alcool — Canevas & PV vérification des taux (CEI)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/alcool/verification_taux_cei',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Alcool — Canevas & PV prélèvement sanguin (vérification état alcoolique)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/alcool/prelevement_sanguin',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Alcool — Canevas & rapport réquisition (examen clinique médical + prélèvement sanguin)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Alcool — Fiches A, B, C',
+          route: '/gpx/pv_apj20/circulation_routiere/alcool/fiches_abc',
+          image: 'assets/images/pv_fiches_abc.png',
+        ),
+
+        // --- Stupéfiants
+        SubCategoryConfig(
+          label: 'Stupéfiants — Généralités',
+          route: '/gpx/pv_apj20/circulation_routiere/stupefiants/generalites',
+          image: 'assets/images/stupefiants.jpeg',
+        ),
+        SubCategoryConfig(
+          label:
+              'Stupéfiants — Canevas & PV conduite au poste (dépistage positif / refus)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistage_positif_ou_refus',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Stupéfiants — Formulaire d’information',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/stupefiants/formulaire_information',
+          image: 'assets/images/pv_formulaire_information.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Stupéfiants — Canevas & PV vérifications destinées à établir l’usage',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/stupefiants/verifications_etablir_usage',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Stupéfiants — Fiche suivi prélèvements (analyse salivaire)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_salivaire',
+          image: 'assets/images/pv_suivi_prelevements.png',
+        ),
+        SubCategoryConfig(
+          label: 'Stupéfiants — Canevas & PV suite à prélèvement sanguin',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/stupefiants/suite_prelevement_sanguin',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Stupéfiants — Canevas & PV prélèvement sanguin (établir usage stupéfiants)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label: 'Stupéfiants — Fiche suivi prélèvements (analyse sanguine)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine',
+          image: 'assets/images/pv_suivi_prelevements.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Stupéfiants — Canevas & rapport réquisition (examen clinique + prélèvement sanguin) + expertise',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise',
+          image: 'assets/images/canevas.png',
+        ),
+
+        // --- Alcool + Stups
+        SubCategoryConfig(
+          label:
+              'Alcool + Stups — Conduite au poste (dépistages positifs / refus)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/alcool_stupefiants/conduite_poste_depistages_positifs_ou_refus',
+          image: 'assets/images/pv_conduite_poste.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Alcool + Stups — Conduite au poste (refus de se soumettre aux vérifications)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/alcool_stupefiants/refus_verifications',
+          image: 'assets/images/pv_refus_verifications.png',
+        ),
+
+        // --- Contravention 5e classe
+        SubCategoryConfig(
+          label: 'Contravention 5e classe — Grand excès de vitesse (+50 km/h)',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse',
+          image: 'assets/images/grand_exces_vitesse.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Contravention 5e classe — Tableau des vitesses retenues',
+          route:
+              '/gpx/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses',
+          image: 'assets/images/pv_tableau_vitesses.png',
+        ),
+
+        // --- Formulaires utiles
+        SubCategoryConfig(
+          label: 'Formulaires utiles — Avis de rétention du permis',
+          route: '/gpx/intervention/formulaires-utiles/avis-retention-permis',
+          image: 'assets/images/retention_permis.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Formulaires utiles — Fiche d’immobilisation',
+          route: '/gpx/intervention/formulaires-utiles/fiche-immobilisation',
+          image: 'assets/images/immobilisation.jpeg',
+        ),
+        SubCategoryConfig(
+          label:
+              'Formulaires utiles — Fiche descriptive état véhicule (fourrière)',
+          route:
+              '/gpx/intervention/formulaires-utiles/fiche-descriptive-fourriere',
+          image: 'assets/images/mise_en_fourriere.jpeg',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // L’I.V.P.M (Ivresse Publique et Manifeste)
+    // =========================================================
+    CategoryConfig(
+      label: 'Recueil PV — I.V.P.M',
+      badge: 'IPM',
+      image: 'assets/images/ipm.jpeg',
+      route: '/gpx/pv_apj20/ipm',
+      subcategories: [
+        SubCategoryConfig(
+          label: '',
+          route: '/gpx/pv_apj20/ipm/generalites',
+          image: 'assets/images/généralités.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Canevas & PV contravention d’ivresse publique et manifeste (examen médical)',
+          route: '/gpx/pv_apj20/ipm/pv_ipm_examen_medical',
+          image: 'assets/images/canevas.png',
+        ),
+        SubCategoryConfig(
+          label:
+              'Canevas & PV contravention d’ivresse publique et manifeste (remise à un tiers)',
+          route: '/gpx/pv_apj20/ipm/pv_ipm_remise_tiers',
+          image: 'assets/images/canevas.png',
+        ),
+      ],
+    ),
+  ],
+
+  // =========================================================
+  // 6) DIMENSION HUMAINE (d’après le sommaire screen)
+  // =========================================================
+  GpxSchoolProgram.dimensionHumaine: [
+    CategoryConfig(
+      label: 'Communication & posture',
+      badge: 'Relationnel',
+      image: 'assets/images/dh_communication.jpeg',
+      route: '/gpx/dimension_humaine/communication',
+      subcategories: [
+        // Socle initial
+        SubCategoryConfig(
+          label:
+              'DH1 — Le fonctionnement intellectuel et émotionnel dans l’intervention',
+          route: '/gpx/dimension_humaine/communication/dh1_fonctionnement',
+          image: 'assets/images/dh1_fonctionnement.jpeg',
+        ),
+        SubCategoryConfig(
+          label:
+              'DH3 — Les stratégies de communication adaptées avec le public',
+          route: '/gpx/dimension_humaine/communication/dh3_strategies_public',
+          image: 'assets/images/dh3_strategies_public.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'DH4 — La coordination au sein des équipes de police',
+          route:
+              '/gpx/dimension_humaine/communication/dh4_coordination_equipes',
+          image: 'assets/images/dh4_coordination.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'ADH2 — La posture professionnelle adaptée face à une victime',
+          route: '/gpx/dimension_humaine/communication/adh2_posture_victime',
+          image: 'assets/images/adh2_posture_victime.jpeg',
+        ),
+        SubCategoryConfig(
+          label:
+              'S3-2 — L’intervention auprès de victimes de violences intrafamiliales',
+          route:
+              '/gpx/dimension_humaine/communication/s3_2_violences_intrafamiliales',
+          image: 'assets/images/s3_2_violences_intrafamiliales.jpeg',
+        ),
+
+        // ✅ QUIZ
+        SubCategoryConfig(
+          label: 'Quiz — Communication & posture',
+          route: '/gpx/dimension_humaine/communication/quiz',
+          image: 'assets/images/quiz.jpeg',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // STRESS & GESTION ÉMOTIONNELLE
+    // (stress, ressources, agressivité, suicide…)
+    // =========================================================
+    CategoryConfig(
+      label: 'Stress & gestion émotionnelle',
+      badge: 'Bien-être',
+      image: 'assets/images/dh_stress.jpeg',
+      route: '/gpx/dimension_humaine/stress',
+      subcategories: [
+        // Socle initial
+        SubCategoryConfig(
+          label: 'DH2 — Le stress',
+          route: '/gpx/dimension_humaine/stress/dh2_stress',
+          image: 'assets/images/dh2_stress.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'DH2 — Le carnet des ressources',
+          route: '/gpx/dimension_humaine/stress/dh2_carnet_ressources',
+          image: 'assets/images/dh2_carnet_ressources.jpeg',
+        ),
+
+        // Socle avancé
+        SubCategoryConfig(
+          label: 'ADH9 — Faire face à une situation d’agressivité',
+          route: '/gpx/dimension_humaine/stress/adh9_agressivite',
+          image: 'assets/images/adh9_agressivite.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'AC6 — Les conduites suicidaires',
+          route: '/gpx/dimension_humaine/stress/ac6_conduites_suicidaires',
+          image: 'assets/images/ac6_suicide.jpeg',
+        ),
+
+        // ✅ QUIZ
+        SubCategoryConfig(
+          label: 'Quiz — Stress & gestion émotionnelle',
+          route: '/gpx/dimension_humaine/stress/quiz',
+          image: 'assets/images/quiz.jpeg',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // ÉTHIQUE AU QUOTIDIEN
+    // (mental, violences sexuelles, confrontation à la mort…)
+    // =========================================================
+    CategoryConfig(
+      label: 'Éthique au quotidien',
+      badge: 'Valeurs',
+      image: 'assets/images/dignite_discriminations.jpeg',
+      route: '/gpx/dimension_humaine/ethique',
+      subcategories: [
+        // Socle initial
+        SubCategoryConfig(
+          label:
+              'ADH1 — L’intervention auprès de personnes ne jouissant pas de toutes ses facultés mentales',
+          route: '/gpx/dimension_humaine/ethique/adh1_facultes_mentales',
+          image: 'assets/images/adh1_facultes_mentales.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'ADH4 — Les violences sexuelles et sexistes',
+          route:
+              '/gpx/dimension_humaine/ethique/adh4_violences_sexuelles_sexistes',
+          image: 'assets/images/adh4_violences_sexuelles.jpeg',
+        ),
+        SubCategoryConfig(
+          label:
+              'ADH6 — La confrontation à la mort en situation professionnelle',
+          route: '/gpx/dimension_humaine/ethique/adh6_confrontation_mort',
+          image: 'assets/images/adh6_confrontation_mort.jpeg',
+        ),
+
+        // ✅ QUIZ
+        SubCategoryConfig(
+          label: 'Quiz — Éthique au quotidien',
+          route: '/gpx/dimension_humaine/ethique/quiz',
+          image: 'assets/images/quiz.jpeg',
         ),
       ],
     ),
@@ -4057,220 +5755,416 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
 };
 
 const Map<String, String> redirectConfig = {
-  // Généralités
-  '/generalite': '/gpx_scolarité_pages/generalite_pages',
-  '/classification_infractions': '/gpx/generalites/classification_infractions',
-  '/infraction': '/gpx/generalites/infraction',
-  '/tentative_punissable': '/gpx/generalites/tentative_punissable',
-  '/complicite': '/gpx/generalites/complicite',
-  '/legitime_defense': '/gpx/generalites/legitime_defense',
-  '/cadre_legal_armes': '/gpx/generalites/cadre_legal_armes',
-  '/libertes_publiques': '/gpx/generalites/libertes_publiques',
-  '/retention_locaux_police': '/gpx/generalites/retention_locaux_police',
-
-  // Cadres juridiques
-  '/cadres_juridiques': '/gpx_scolarité_pages/cadres_juridiques_pages',
-  '/cadres_enquete':
-      '/gpx_scolarité_pages/cadres_juridiques_pages/cadres_enquete',
-  '/enquete_flagrant_delit':
-      '/gpx_scolarité_pages/cadres_juridiques_pages/enquete_flagrant_delit',
-  '/enquete_preliminaire':
-      '/gpx_scolarité_pages/cadres_juridiques_pages/enquete_preliminaire',
-  '/autres_cadres_enquete':
-      '/gpx_scolarité_pages/cadres_juridiques_pages/autres_cadres_enquete',
-  '/commission_rogatoire':
-      '/gpx_scolarité_pages/cadres_juridiques_pages/autres_cadres_enquete', // à définir (Commission Rogatoire)
-  // Procédure pénale (compat /pp/*)
-  '/pp/action_publique_autorites_pj':
-      '/gpx_scolarité_pages/procédure_pénale_pages/pp_action_publique_autorites_pj',
-
-  '/pp/nullite_actes_procedure':
-      '/gpx_scolarité_pages/procédure_pénale_pages/pp_nullite_actes_procedure',
-
-  '/pp/juridictions_jugement_execution':
-      '/gpx_scolarité_pages/procédure_pénale_pages/pp_juridictions_jugement_execution',
-
-  '/pp/instruction_mandats_controle_detention':
-      '/gpx_scolarité_pages/procédure_pénale_pages/pp_instruction_mandats_controle_detention',
-  '/pp/quiz/instruction_preparatoire':
-      '/gpx/procedure_penale/quiz/instruction_preparatoire',
-
-  // Droit pénal général
-  '/dpg': '/gpx_scolarité_pages/droit_pénale_général_pages',
-  '/dpg/loi_penale':
-      '/gpx_scolarité_pages/droit_pénale_général_pages/loi_penale',
-  '/dpg/responsabilite_penale':
-      '/gpx_scolarité_pages/droit_pénale_général_pages/responsabilite_penale',
-
-  // Sanction
-  '/sanction': '/gpx_scolarité_pages/sanction_pages',
-  '/sanction/classification_peines':
-      '/gpx_scolarité_pages/sanction_pages/classification_peines',
-  '/sanction/causes_aggravation':
-      '/gpx_scolarité_pages/sanction_pages/causes_aggravation',
-  '/sanction/pluralite_infractions':
-      '/gpx_scolarité_pages/sanction_pages/pluralite_infractions',
-
-  // Contre la personne
-  '/crimes_personne': '/gpx_scolarité_pages/crime_delit_contre_personne_pages',
-  '/crimes_personne/mise_en_danger':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/mise_en_danger',
-  '/crimes_personne/viol_inceste_agressions':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/viol_inceste_agressions',
-  '/crimes_personne/enlevement_sequestration':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/enlevement_sequestration',
-  '/crimes_personne/enregistrement_diffusion_images':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/enregistrement_diffusion_images',
-  '/crimes_personne/dignite_personne':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/dignite_personne',
-  '/crimes_personne/personnalite':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/personnalite',
-  '/crimes_personne/atteintes_involontaires':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/atteintes_involontaires',
-  '/crimes_personne/atteintes_volontaires_vie':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/atteintes_volontaires_vie',
-  '/crimes_personne/atteintes_volontaires_integrite':
-      '/gpx_scolarité_pages/crime_delit_contre_personne_pages/atteintes_volontaires_integrite',
-
-  // Mineurs & famille
-  '/mineurs_famille': '/gpx_scolarité_pages/mineurs_famille_pages',
-  '/mineurs_famille/mise_en_peril':
-      '/gpx_scolarité_pages/mineurs_famille_pages/mise_en_peril',
-  '/mineurs_famille/violation_ordonnances_jaf':
-      '/gpx_scolarité_pages/mineurs_famille_pages/violation_ordonnances_jaf',
-  '/mineurs_famille/autorite_parentale':
-      '/gpx_scolarité_pages/mineurs_famille_pages/autorite_parentale',
-  '/mineurs_famille/abandon_famille':
-      '/gpx_scolarité_pages/mineurs_famille_pages/abandon_famille',
-
-  // Contre la nation
-  '/crimes_nation': '/gpx_scolarité_pages/crime_delit_nation_pages',
-  '/crimes_nation/association_malfaiteurs':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/association_malfaiteurs',
-  '/crimes_nation/abus_autorite':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/abus_autorite',
-  '/crimes_nation/atteintes_action_justice':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/atteintes_action_justice',
-  '/crimes_nation/atteintes_administration':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/atteintes_administration',
-  '/crimes_nation/faux_usage_faux':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/faux_usage_faux',
-  '/crimes_nation/probite':
-      '/gpx_scolarité_pages/crime_delit_nation_pages/probite',
-
-  // Contre les biens
-  '/crimes_biens': '/gpx_scolarité_pages/crime_delit_bien_pages',
-  '/crimes_biens/recel_non_justification':
-      '/gpx_scolarité_pages/crime_delit_bien_pages/recel_non_justification',
-  '/crimes_biens/vol': '/gpx_scolarité_pages/crime_delit_bien_pages/vol',
-  '/crimes_biens/stad': '/gpx_scolarité_pages/crime_delit_bien_pages/stad',
-  '/crimes_biens/contrefacons_falsifications':
-      '/gpx_scolarité_pages/crime_delit_bien_pages/contrefacons_falsifications',
-  '/crimes_biens/destructions_degradations':
-      '/gpx_scolarité_pages/crime_delit_bien_pages/destructions_degradations',
-  '/crimes_biens/voisines_du_vol':
-      '/gpx_scolarité_pages/crime_delit_bien_pages/voisines_du_vol',
-
-  // Circulation
-  '/circulation': '/gpx_scolarité_pages/infraction_circulation_routière_pages',
-  '/circulation/conduite_stupefiants':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/conduite_stupefiants',
-  '/circulation/ivresse':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/ivresse',
-  '/circulation/etat_alcoolique':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/etat_alcoolique',
-  '/circulation/defaut_assurance':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/defaut_assurance',
-  '/circulation/defaut_permis':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/defaut_permis',
-  '/circulation/delit_fuite':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/delit_fuite',
-  '/circulation/grand_exces_vitesse':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/grand_exces_vitesse',
-  '/circulation/refus_verifications':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/refus_verifications',
-  '/circulation/refus_obtemperer':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/refus_obtemperer',
-  '/circulation/rodeo_motorise':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/rodeo_motorise',
-  '/circulation/plaques_inscriptions':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/plaques_inscriptions',
-  '/circulation/incitation_organisation_promotion':
-      '/gpx_scolarité_pages/infraction_circulation_routière_pages/incitation_organisation_promotion',
-
-  // Armes
-  '/armes': '/gpx_scolarité_pages/armes_munitions_pages',
-  '/armes/classification':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_classification',
-  '/armes/definitions':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_definitions',
-  '/armes/introduction':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_introduction',
-  '/armes/acquisition_detention_ab':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_acquisition_detention_ab',
-  '/armes/port_transport_cd':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_port_transport_cd',
-  '/armes/materiels_guerre_elements':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_materiels_guerre_elements',
-  '/armes/regles_acquisition_detention':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_regles_acquisition_detention',
-  '/armes/regles_port_transport':
-      '/gpx_scolarité_pages/armes_munitions_pages/armes_regles_port_transport',
-
-  // Libertés publiques
-  '/libertes': '/gpx_scolarité_pages/libertés_publiques_pages',
-  '/libertes/introduction':
-      '/gpx_scolarité_pages/libertés_publiques_pages/introduction',
-  '/libertes/garanties_protection':
-      '/gpx_scolarité_pages/libertés_publiques_pages/garanties_protection',
-  '/libertes/expression_collectives':
-      '/gpx_scolarité_pages/libertés_publiques_pages/expression_collectives',
-  '/libertes/individuelles_vie_privee':
-      '/gpx_scolarité_pages/libertés_publiques_pages/individuelles_vie_privee',
-
-  // Stups
-  '/stup': '/gpx_scolarité_pages/stupéfiants_pages',
-  '/stup/introduction': '/gpx_scolarité_pages/stupéfiants_pages/introduction',
-  '/stup/cession_offre': '/gpx_scolarité_pages/stupéfiants_pages/cession_offre',
-  '/stup/direction_organisation':
-      '/gpx_scolarité_pages/stupéfiants_pages/direction_organisation',
-  '/stup/facilitation_usage':
-      '/gpx_scolarité_pages/stupéfiants_pages/facilitation_usage',
-  '/stup/production_fabrication':
-      '/gpx_scolarité_pages/stupéfiants_pages/production_fabrication',
-  '/stup/provocation_majeur':
-      '/gpx_scolarité_pages/stupéfiants_pages/provocation_majeur',
-  '/stup/blanchiment_produit':
-      '/gpx_scolarité_pages/stupéfiants_pages/blanchiment_produit',
-  '/stup/transport_detention_offre':
-      '/gpx_scolarité_pages/stupéfiants_pages/transport_detention_offre',
-  '/stup/import_export': '/gpx_scolarité_pages/stupéfiants_pages/import_export',
-  '/stup/usage_illicite':
-      '/gpx_scolarité_pages/stupéfiants_pages/usage_illicite',
+  // '/gpx/placeholder': '/gpx/ton_vrai_module',
 };
 
-class _DeckItem {
-  final String label, badge, image, route;
-  final double rating;
-  final int reviews;
-  final List<SubCategoryConfig>? subcategories;
-  const _DeckItem({
-    required this.label,
-    required this.badge,
-    required this.image,
-    required this.rating,
-    required this.reviews,
-    required this.route,
-    this.subcategories,
+// ===============================================================
+// ✅ Discovery Tutorial Overlay for HomePageGpxSchool
+// (focus + blur + tip bubble + next) — VERSION STABLE (NO FLASH)
+// ===============================================================
+
+class HomePageGpxSchoolDiscoveryTutorial extends StatefulWidget {
+  const HomePageGpxSchoolDiscoveryTutorial({
+    super.key,
+    required this.active,
+    required this.onFinished,
   });
+
+  final bool active;
+  final VoidCallback onFinished;
+
+  @override
+  State<HomePageGpxSchoolDiscoveryTutorial> createState() =>
+      _HomePageGpxSchoolDiscoveryTutorialState();
 }
 
-class _MiniSpec {
-  final String title, subtitle, image, route;
-  const _MiniSpec({
+class _HomePageGpxSchoolDiscoveryTutorialState
+    extends State<HomePageGpxSchoolDiscoveryTutorial> {
+  final GlobalKey _modeGradeKey = GlobalKey();
+  final GlobalKey _settingsKey = GlobalKey();
+  final GlobalKey _heroDeckKey = GlobalKey();
+  final GlobalKey _progressKey = GlobalKey();
+
+  final GlobalKey _bottomNavKey = GlobalKey();
+  final GlobalKey _navJournalKey = GlobalKey();
+  final GlobalKey _navFavoritesKey = GlobalKey();
+  final GlobalKey _navProfileKey = GlobalKey();
+
+  Rect? _hole;
+  int _step = 0;
+  bool _didRun = false;
+  bool _show = false;
+
+  static const double _pad = 8;
+
+  // ✅ rendu uniforme & premium
+  static const double _dimOpacity = 0.42; // ✅ uniformisé
+  static const double _blurSigma = 18.0; // ✅ stable & fluide (évite gros coûts)
+
+  // ✅ décalage de la bulle (c’est ICI que tu règles)
+  static const double _bubbleOffsetY = -24.0; // négatif => remonte
+
+  @override
+  void didUpdateWidget(covariant HomePageGpxSchoolDiscoveryTutorial oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.active && !_didRun) {
+      _didRun = true;
+      _start();
+    }
+  }
+
+  Future<void> _start() async {
+    await Future.delayed(const Duration(milliseconds: 220));
+    if (!mounted) return;
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _measure();
+      setState(() => _show = true);
+      HapticFeedback.selectionClick();
+    });
+  }
+
+  GlobalKey _currentKey() {
+    switch (_step) {
+      case 0:
+        return _modeGradeKey;
+      case 1:
+        return _settingsKey;
+      case 2:
+        return _heroDeckKey;
+      case 3:
+        return _progressKey;
+      case 4:
+        return _bottomNavKey;
+      case 5:
+        return _navJournalKey;
+      case 6:
+        return _navFavoritesKey;
+      case 7:
+        return _navProfileKey;
+      default:
+        return _modeGradeKey;
+    }
+  }
+
+  void _measure() {
+    final ctx = _currentKey().currentContext;
+    if (ctx == null) return;
+
+    final box = ctx.findRenderObject() as RenderBox;
+    final topLeftGlobal = box.localToGlobal(Offset.zero);
+    final size = box.size;
+
+    final overlayBox = context.findRenderObject() as RenderBox;
+    final topLeftLocal = overlayBox.globalToLocal(topLeftGlobal);
+
+    final nextHole = Rect.fromLTWH(
+      topLeftLocal.dx - _pad,
+      topLeftLocal.dy - _pad,
+      size.width + _pad * 2,
+      size.height + _pad * 2,
+    );
+
+    // ✅ IMPORTANT : ne JAMAIS mettre _hole = null => sinon flash
+    setState(() => _hole = nextHole);
+  }
+
+  void _next() {
+    if (_step >= 7) {
+      widget.onFinished();
+      return;
+    }
+
+    setState(() {
+      _step += 1;
+      // ✅ PAS de _hole = null ici
+    });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _measure();
+    });
+
+    HapticFeedback.selectionClick();
+  }
+
+  ({String title, String text, String cta}) _copyForStep() {
+    switch (_step) {
+      case 0:
+        return (
+          title: "Mode & grade",
+          text:
+              "Ici tu peux changer ton mode et ton grade à n’importe quel moment.\n"
+              "Ex : après le concours, tu passes en scolarité.",
+          cta: "Suivant",
+        );
+      case 1:
+        return (
+          title: "Paramètres",
+          text: "Ici tu peux configurer l’app : thème, préférences, options…",
+          cta: "Suivant",
+        );
+      case 2:
+        return (
+          title: "Catégories",
+          text:
+              "Voici les catégories de ta scolarité.\n"
+              "Tu peux swiper horizontalement et appuyer sur une carte ou sur “Découvrir”.",
+          cta: "Suivant",
+        );
+      case 3:
+        return (
+          title: "Progression",
+          text:
+              "Tu retrouves ici ton avancement.\n"
+              "Le bouton “Détails” te donne l’historique de tes quiz.",
+          cta: "Suivant",
+        );
+      case 4:
+        return (
+          title: "Navigation",
+          text:
+              "En bas, tu peux accéder aux grandes sections de l’application.",
+          cta: "Suivant",
+        );
+      case 5:
+        return (
+          title: "Journal",
+          text:
+              "Ici, tu accèdes au journal : cours & quiz de la scolarité GPX.",
+          cta: "Suivant",
+        );
+      case 6:
+        return (
+          title: "Favoris",
+          text: "Ici, tu retrouves tout ce que tu as mis en favoris.",
+          cta: "Suivant",
+        );
+      case 7:
+        return (
+          title: "Compte",
+          text:
+              "Ici, tu gères ton compte.\n"
+              "Après inscription, tu viendras compléter ton profil ici.",
+          cta: "Terminer",
+        );
+      default:
+        return (title: "COP’IQ", text: "Découverte", cta: "Suivant");
+    }
+  }
+
+  ({double? top, double? bottom}) _bubblePositionFor(Rect hole) {
+    final size = MediaQuery.sizeOf(context);
+    final padTop = MediaQuery.of(context).padding.top;
+    final padBot = MediaQuery.of(context).padding.bottom;
+
+    const bubbleH = 132.0;
+    const margin = 14.0;
+
+    final forceAbove = (_step == 3) || (_step == 4);
+
+    if (forceAbove) {
+      final top = (hole.top - bubbleH - 14).clamp(
+        padTop + 10,
+        size.height - padBot - bubbleH - 10,
+      );
+      return (top: top, bottom: null);
+    }
+
+    final bottomSafe = size.height - padBot - (bubbleH + margin);
+    if (hole.bottom > bottomSafe) {
+      final top = (hole.top - bubbleH - 12).clamp(
+        padTop + 10,
+        size.height - padBot - bubbleH - 10,
+      );
+      return (top: top, bottom: null);
+    }
+
+    return (top: null, bottom: 14.0);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final hole = _hole;
+    final copy = _copyForStep();
+
+    return Stack(
+      children: [
+        // ✅ Home réelle (toujours en base)
+        Positioned.fill(
+          child: HomePageGpxSchool(
+            tutorialLock: _show,
+            modeGradeButtonKey: _modeGradeKey,
+            settingsButtonKey: _settingsKey,
+            heroDeckKey: _heroDeckKey,
+            progressCardKey: _progressKey,
+            bottomNavKey: _bottomNavKey,
+            navJournalKey: _navJournalKey,
+            navFavoritesKey: _navFavoritesKey,
+            navProfileKey: _navProfileKey,
+          ),
+        ),
+
+        if (_show && hole != null) ...[
+          // ✅ BLUR + DIM (sans Opacity => pas d'erreur Impeller)
+          Positioned.fill(
+            child: IgnorePointer(
+              child: ClipPath(
+                clipper: _HomeTutorialHoleClipper(hole),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(
+                    sigmaX: _blurSigma,
+                    sigmaY: _blurSigma,
+                  ),
+                  child: Container(
+                    color: Colors.black.withOpacity(_dimOpacity),
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          // ✅ contour glow
+          Positioned.fromRect(
+            rect: hole,
+            child: IgnorePointer(
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(22),
+                  border: Border.all(
+                    color: const Color(0xFF1147D9).withOpacity(0.42),
+                    width: 1.2,
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      blurRadius: 22,
+                      offset: const Offset(0, 14),
+                      color: const Color(0xFF1147D9).withOpacity(0.12),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          // ✅ bulle
+          Builder(
+            builder: (_) {
+              final pos = _bubblePositionFor(hole);
+              return Positioned(
+                left: 16,
+                right: 16,
+                top: pos.top != null ? (pos.top! + _bubbleOffsetY) : null,
+                bottom: pos.bottom != null
+                    ? (pos.bottom! - _bubbleOffsetY)
+                    : null,
+                child: SafeArea(
+                  top: false,
+                  child: _HomeTutorialBubbleNoSkip(
+                    title: copy.title,
+                    text: copy.text,
+                    cta: copy.cta,
+                    onNext: _next,
+                  ),
+                ),
+              );
+            },
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+class _HomeTutorialHoleClipper extends CustomClipper<Path> {
+  _HomeTutorialHoleClipper(this.hole);
+  final Rect hole;
+
+  @override
+  Path getClip(Size size) {
+    final p = Path()..addRect(Offset.zero & size);
+    p.addRRect(RRect.fromRectAndRadius(hole, const Radius.circular(22)));
+    p.fillType = PathFillType.evenOdd;
+    return p;
+  }
+
+  @override
+  bool shouldReclip(covariant _HomeTutorialHoleClipper old) => old.hole != hole;
+}
+
+class _HomeTutorialBubbleNoSkip extends StatelessWidget {
+  const _HomeTutorialBubbleNoSkip({
     required this.title,
-    required this.subtitle,
-    required this.image,
-    required this.route,
+    required this.text,
+    required this.cta,
+    required this.onNext,
   });
+
+  final String title;
+  final String text;
+  final String cta;
+  final VoidCallback onNext;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      constraints: const BoxConstraints(maxWidth: 520),
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(14),
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 22,
+            offset: const Offset(0, 14),
+            color: Colors.black.withOpacity(0.22),
+          ),
+        ],
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: GoogleFonts.montserrat(
+              color: Colors.black,
+              fontWeight: FontWeight.w900,
+              fontSize: 16,
+              letterSpacing: -0.1,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            text,
+            textAlign: TextAlign.center,
+            style: GoogleFonts.montserrat(
+              color: Colors.black.withOpacity(0.78),
+              fontWeight: FontWeight.w700,
+              fontSize: 13.3,
+              height: 1.25,
+            ),
+          ),
+          const SizedBox(height: 12),
+          Align(
+            alignment: Alignment.centerRight,
+            child: ElevatedButton(
+              onPressed: onNext,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFF1147D9),
+                foregroundColor: Colors.white,
+                elevation: 0,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: Text(
+                cta,
+                style: GoogleFonts.montserrat(fontWeight: FontWeight.w900),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }

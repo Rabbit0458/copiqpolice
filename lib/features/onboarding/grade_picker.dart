@@ -13,7 +13,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 // Si tu as exposé le contrôleur du grade depuis home_page.dart
-import 'package:copiqpolice/home/home_page.dart'
+import 'package:copiqpolice/features/home/home_page.dart'
     show UserTrackController, UserTrack;
 import 'package:copiqpolice/features/reserve/accueil_reserve.dart';
 

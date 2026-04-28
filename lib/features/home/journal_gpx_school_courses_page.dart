@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:copiqpolice/home/home_page_gpx_school.dart' as school;
+import 'package:copiqpolice/features/home/home_page_gpx_school.dart' as school;
 import 'package:copiqpolice/core/services/favorites.dart';
 
 void navTo(BuildContext context, String route) {

@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:copiqpolice/home/journal_gpx_school_courses_page.dart';
+import 'package:copiqpolice/features/home/journal_gpx_school_courses_page.dart';
 
 class _T {
   static const Color ink = Color(0xFF212529);

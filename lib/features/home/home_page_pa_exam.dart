@@ -10,15 +10,15 @@ import 'package:flutter/physics.dart' as phys;
 import 'package:google_fonts/google_fonts.dart';
 
 // ==== Modèles partagés depuis home_page.dart ====
-import 'package:copiqpolice/home/home_page.dart'
+import 'package:copiqpolice/features/home/home_page.dart'
     show CategoryConfig, SubCategoryConfig, Track, UserMode;
 
 // ==== Pages existantes ====
-import 'package:copiqpolice/home/journal_pa_school.dart';
-import 'package:copiqpolice/home/favoris_home.dart';
+import 'package:copiqpolice/features/home/journal_pa_school.dart';
+import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
-import 'package:copiqpolice/home/profil_page.dart';
-import 'package:copiqpolice/home/parametre_home.dart';
+import 'package:copiqpolice/features/home/profil_page.dart';
+import 'package:copiqpolice/features/home/parametre_home.dart';
 
 // ======================================================================
 //                               THEME TOKENS

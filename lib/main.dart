@@ -6,8 +6,8 @@ import 'package:flutter/foundation.dart'
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:copiqpolice/home//home_bootstrap.dart';
-import 'package:copiqpolice/home/abonnement_page.dart';
+import 'package:copiqpolice/features/home/home_bootstrap.dart';
+import 'package:copiqpolice/features/home/abonnement_page.dart';
 import 'package:copiqpolice/core/services/subscription_gate.dart';
 import 'package:copiqpolice/core/services/subscription_service.dart';
 
@@ -21,9 +21,9 @@ import 'package:copiqpolice/features/auth/confirm_email.dart';
 import 'package:copiqpolice/features/placement/placement_test.dart';
 import 'package:copiqpolice/features/placement/welcome_after_signup.dart';
 import 'package:copiqpolice/features/placement/placement_intro.dart';
-import 'package:copiqpolice/home/home_page.dart' show HomePage;
-import 'package:copiqpolice/home/parametre_home.dart';
-import 'package:copiqpolice/home/favoris_home.dart';
+import 'package:copiqpolice/features/home/home_page.dart' show HomePage;
+import 'package:copiqpolice/features/home/parametre_home.dart';
+import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/features/feedback/saving_screen.dart';
 import 'package:copiqpolice/pages/gpx/institution_page.dart';
 import 'package:copiqpolice/pages/gpx/procedure_penale_page.dart';
@@ -36,12 +36,12 @@ import 'package:copiqpolice/pages/gpx/procedure_penale_page.dart';
 import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 
 // GPX School
-import 'package:copiqpolice/home/home_page_gpx_school.dart';
-import 'package:copiqpolice/home/home_page_gpx_exam.dart';
+import 'package:copiqpolice/features/home/home_page_gpx_school.dart';
+import 'package:copiqpolice/features/home/home_page_gpx_exam.dart';
 
 //PA School
-import 'package:copiqpolice/home/home_page_pa_school.dart';
-import 'package:copiqpolice/home/home_page_pa_exam.dart';
+import 'package:copiqpolice/features/home/home_page_pa_school.dart';
+import 'package:copiqpolice/features/home/home_page_pa_exam.dart';
 
 //═══════════════════════════════════════════════════════════════════════
 //  GPX — Scolarité | DPS & DPG
@@ -657,7 +657,7 @@ import 'package:copiqpolice/gpx_scolarite_pages/policier_intervention_avance/acc
 import 'package:copiqpolice/gpx_scolarite_pages/policier_intervention_avance/accident_circulation/annoncer_mauvaise_nouvelle_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/policier_intervention_avance/stupefiants/amende_forfaitaire_delictuelle_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/policier_intervention_avance/debit_boissons/intervention_debit_boissons_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages/policier_intervention_avance//debit_boissons/controle_debits_boissons_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/policier_intervention_avance/debit_boissons/controle_debits_boissons_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/policier_intervention_avance/malades_mentaux/intervenir_malades_mentaux_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/policier_intervention_avance/malades_mentaux/soins_sans_consentement_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/policier_intervention_avance/animal/maltraitance_animale_page.dart';
@@ -702,57 +702,57 @@ import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/interpellation/mandats_
 import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/interpellation/notification_mandat_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/interpellation/recherches_infructueuses_mandat_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/interpellation/compte_rendu_opj_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/gav_suspect_libre/gav_generalites_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/gav_suspect_libre/gav_generalites_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/gav_suspect_libre/notification_gav_droits_apj_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/gav_suspect_libre/suspect_libre_generalites_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/gav_suspect_libre/notification_droits_suspect_majeur_emprisonnement_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/gav_suspect_libre/notification_audition_libre_sans_emprisonnement_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/gav_suspect_libre/avocat_generalites_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/audition_suspect/audition_suspect_generalites_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/gav_suspect_libre/notification_audition_libre_sans_emprisonnement_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/gav_suspect_libre/notification_droits_article_65_cpp_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/gav_suspect_libre/avocat_generalites_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/gav_suspect_libre/entretien_gav_avocat_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/audition_suspect/audition_suspect_generalites_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/audition_suspect/audition_gav_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/audition_suspect/audition_suspect_libre_page.dart';
 import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/audition_suspect/audition_libre_notification_droits_sans_emprisonnement_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/audition_suspect/civilement_responsable_generalites__canevas_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/requisitions/requisitions_generalites_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/requisitions/requisition_personne_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/requisitions/rapport_requisition_personne_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/confrontation/confrontation_generalites_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/confrontation/confrontation_victime_gav_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/procedures_speciales/etrangers/ci_controle_sejour_circulation_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/alcool/conduite_poste_ceea_positif_ou_refus_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/alcool/tableau_taux_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistage_positif_ou_refus_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/verifications_etablir_usage_stupefiants_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/fiche_suivi_salivaire_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/suite_prelevement_sanguin_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/ipm/ipm_generalites_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/ipm/pv_ipm_examen_medical_page.dart';
-import 'package:copiqpolice/gpx_scolarite_pages//pv_apj20/ipm//pv_ipm_remise_tiers_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/audition_suspect/civilement_responsable_generalites_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/audition_suspect/civilement_responsable_generalites__canevas_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_generalites_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/perquisition_preliminaire/perquisition_preliminaire_perquisition_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/perquisition_preliminaire/fouille_vehicule_preliminaire_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/requisitions/requisitions_generalites_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/requisitions/requisition_personne_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/requisitions/rapport_requisition_personne_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/confrontation/confrontation_generalites_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/confrontation/confrontation_victime_gav_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/confrontation/confrontation_victime_suspect_libre_emprisonnement_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/procedures_speciales/etrangers/etrangers_generalites_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/procedures_speciales/etrangers/ci_controle_sejour_circulation_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/procedures_speciales/etrangers/controle_sejour_circulation_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/alcool/as_controle_alcoolemie_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/alcool/conduite_poste_ceea_positif_ou_refus_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/alcool/interpellation_etat_ivresse_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/alcool/tableau_taux_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/alcool/verification_notification_taux_ceea_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/alcool/verification_taux_cei_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/alcool/prelevement_sanguin_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/alcool/requisition_examen_clinique_prelevement_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/alcool/fiches_abc_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/stupefiants_generalites_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistage_positif_ou_refus_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/formulaire_information_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/verifications_etablir_usage_stupefiants_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_salivaire_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/suite_prelevement_sanguin_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/prelevement_sanguin_etablir_usage_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/fiche_suivi_sanguine_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/requisition_examen_clinique_prelevement_expertise_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/conduite_poste_depistages_positifs_ou_refus_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/stupefiants/refus_verifications_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/contravention_5e/grand_exces_vitesse_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/circulation_routiere/contravention_5e/tableau_vitesses_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/ipm/ipm_generalites_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/ipm/pv_ipm_examen_medical_page.dart';
+import 'package:copiqpolice/gpx_scolarite_pages/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart';
 //═════════════════════════════════════════════════════════════════════
 //  GPX — Concours | Organisation PN & Structure Concours
 //═══════════════════════════════════════════════════════════════════════
@@ -811,8 +811,8 @@ import 'package:copiqpolice/pa_scolarite_pages/organisation_pn/hierarchie_pn_pag
 import 'package:copiqpolice/pa_scolarite_pages/organisation_pn/regles_emploi_pa_page.dart';
 import 'package:copiqpolice/pa_scolarite_pages/organisation_pn/horaires_service_sp_page.dart';
 
-import 'package:copiqpolice/home/gpx_exam_concours_home_page.dart';
-import 'package:copiqpolice/home/gpx_exam_culture_generale_page.dart';
+import 'package:copiqpolice/features/home/gpx_exam_concours_home_page.dart';
+import 'package:copiqpolice/features/home/gpx_exam_culture_generale_page.dart';
 
 // === Services ===
 import 'package:copiqpolice/core/services/app_console_logger.dart';

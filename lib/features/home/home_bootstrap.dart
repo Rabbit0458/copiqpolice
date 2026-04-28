@@ -4,15 +4,15 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 // Types publics
-import 'package:copiqpolice/home/home_page.dart'
+import 'package:copiqpolice/features/home/home_page.dart'
     show UserMode, UserModeController, UserTrack, UserTrackController;
 
 // Homes
-import 'package:copiqpolice/home/home_page_gpx_school.dart'
+import 'package:copiqpolice/features/home/home_page_gpx_school.dart'
     show HomePageGpxSchool;
-import 'package:copiqpolice/home/home_page_gpx_exam.dart' show HomePageGpxExam;
-import 'package:copiqpolice/home/home_page_pa_exam.dart' show HomePagePaExam;
-import 'package:copiqpolice/home/home_page_pa_school.dart'
+import 'package:copiqpolice/features/home/home_page_gpx_exam.dart' show HomePageGpxExam;
+import 'package:copiqpolice/features/home/home_page_pa_exam.dart' show HomePagePaExam;
+import 'package:copiqpolice/features/home/home_page_pa_school.dart'
     show HomePagePaSchool;
 
 // ✅ Programme PA du jour (NON sauvegardé)

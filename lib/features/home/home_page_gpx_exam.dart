@@ -8,17 +8,17 @@ import 'package:flutter/physics.dart' as phys;
 import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 // ==== Modèles partagés depuis home_page.dart ====
-import 'package:copiqpolice/home/home_page.dart'
+import 'package:copiqpolice/features/home/home_page.dart'
     show CategoryConfig, SubCategoryConfig, Track, UserMode;
 import 'package:copiqpolice/features/forum/forum_espace_exam_gpx.dart';
 // ==== Pages existantes ====
-import 'package:copiqpolice/home/journal_pa_exam_page.dart';
-import 'package:copiqpolice/home/favoris_home.dart';
+import 'package:copiqpolice/features/home/journal_pa_exam_page.dart';
+import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
-import 'package:copiqpolice/home/profil_page.dart';
-import 'package:copiqpolice/home/parametre_home.dart';
+import 'package:copiqpolice/features/home/profil_page.dart';
+import 'package:copiqpolice/features/home/parametre_home.dart';
 import 'package:copiqpolice/core/services/subscription_service.dart';
-import 'package:copiqpolice/home/abonnement_page.dart';
+import 'package:copiqpolice/features/home/abonnement_page.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 // ======================================================================

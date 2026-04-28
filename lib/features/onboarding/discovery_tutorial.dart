@@ -7,10 +7,10 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 import 'package:copiqpolice/features/onboarding/grade_picker.dart';
-import 'package:copiqpolice/home/home_page_gpx_school.dart'
+import 'package:copiqpolice/features/home/home_page_gpx_school.dart'
     show HomePageGpxSchoolDiscoveryTutorial, HomePageGpxSchool;
 import 'package:copiqpolice/features/auth/signup.dart';
-import 'package:copiqpolice/home/home_page.dart' show UserMode;
+import 'package:copiqpolice/features/home/home_page.dart' show UserMode;
 import 'package:copiqpolice/features/onboarding/gpx_school.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 

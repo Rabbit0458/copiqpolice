@@ -24,12 +24,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:copiqpolice/home/abonnement_page.dart';
+import 'package:copiqpolice/features/home/abonnement_page.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
-import 'package:copiqpolice/home/parametre_home.dart';
-import 'package:copiqpolice/home/information_page.dart';
-import 'package:copiqpolice/home/facture_page.dart';
-import 'package:copiqpolice/home/user_page.dart';
+import 'package:copiqpolice/features/home/parametre_home.dart';
+import 'package:copiqpolice/features/home/information_page.dart';
+import 'package:copiqpolice/features/home/facture_page.dart';
+import 'package:copiqpolice/features/home/user_page.dart';
 import 'package:copiqpolice/features/onboarding/onboarding_screen.dart';
 
 // <-- Logger centralisé (fourni par toi)

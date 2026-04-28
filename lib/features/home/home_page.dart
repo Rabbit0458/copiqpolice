@@ -14,9 +14,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 // Services / pages existants
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
-import 'package:copiqpolice/home/favoris_home.dart';
-import 'package:copiqpolice/home/journal_home.dart';
-import 'package:copiqpolice/home/profil_page.dart';
+import 'package:copiqpolice/features/home/favoris_home.dart';
+import 'package:copiqpolice/features/home/journal_home.dart';
+import 'package:copiqpolice/features/home/profil_page.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 
 // Pages

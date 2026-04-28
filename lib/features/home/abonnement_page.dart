@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
-import 'package:copiqpolice/home/annulation_conditions_page.dart';
+import 'package:copiqpolice/features/home/annulation_conditions_page.dart';
 
 class AbonnementPage extends StatefulWidget {
   const AbonnementPage({super.key});

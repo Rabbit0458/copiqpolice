@@ -1,5 +1,5 @@
 // lib/services/route_registry.dart
-import 'package:copiqpolice/home/home_page.dart'
+import 'package:copiqpolice/features/home/home_page.dart'
     show CategoryConfig, SubCategoryConfig;
 
 /// Registre unique : mappe un libellé (module_name, quiz_name, label UI)
