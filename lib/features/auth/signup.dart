@@ -306,17 +306,45 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
     if (_loading) return;
 
     final sb = Supabase.instance.client;
-    final email = _emailCtrl.text.trim();
+    final email = _emailCtrl.text.trim().toLowerCase();
     final password = _pwdCtrl.text;
 
     setState(() => _loading = true);
 
     try {
+      // Sécurité finale : même si l’UI a eu un retard, on revérifie dans auth.users
+      // juste avant le signUp. La RPC doit vérifier auth.users, pas user_profiles.
+      final available = await sb.rpc(
+        'is_email_available',
+        params: {'p_email': email},
+      );
+      if (available != true) {
+        if (!mounted) return;
+        setState(() {
+          _loading = false;
+          _emailAvailable = false;
+          _emailTakenMsg = "Cet email est déjà utilisé.";
+        });
+        AppNotifier.warning(
+          context,
+          title: "E-mail déjà utilisé",
+          message:
+              "Un compte existe déjà avec cette adresse. Connecte-toi ou réinitialise ton mot de passe.",
+        );
+        await _pc.animateToPage(
+          1,
+          duration: const Duration(milliseconds: 320),
+          curve: Curves.easeOutCubic,
+        );
+        return;
+      }
+
       debugPrint('SIGNUP start -> email=$email');
 
       final res = await sb.auth.signUp(
         email: email,
         password: password,
+        emailRedirectTo: 'https://copiq.fr/confirm/',
         data: {'app': 'COPIQ', 'created_from': 'flutter'},
       );
 
@@ -936,15 +964,19 @@ class _EmailStepState extends State<_EmailStep> {
   @override
   void initState() {
     super.initState();
-
     widget.emailCtrl.addListener(_onEmailChange);
     widget.email2Ctrl.addListener(_onEmailChange);
+
+    // Vérification immédiate si la page est préremplie.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _onEmailChange();
+    });
   }
 
   @override
   void dispose() {
     widget.emailCtrl.removeListener(_onEmailChange);
-    widget.email2Ctrl.removeListener(_rebuild);
+    widget.email2Ctrl.removeListener(_onEmailChange);
     super.dispose();
   }
 
@@ -953,11 +985,12 @@ class _EmailStepState extends State<_EmailStep> {
   }
 
   void _onEmailChange() {
-    final email = widget.emailCtrl.text.trim();
+    final email = widget.emailCtrl.text.trim().toLowerCase();
+    final email2 = widget.email2Ctrl.text.trim().toLowerCase();
 
-    if (widget.validateEmail(email) == null) {
-      widget.checkEmailAvailability(email);
-    }
+    // La vérification serveur ne part que lorsque les 2 champs sont valides
+    // ET identiques. Sinon le parent remet l’état à null.
+    widget.checkEmailAvailability(email == email2 ? email : '');
 
     _rebuild();
   }
@@ -967,7 +1000,8 @@ class _EmailStepState extends State<_EmailStep> {
       widget.email2Ctrl.text.trim().isNotEmpty;
 
   bool get _emailsMatch =>
-      widget.emailCtrl.text.trim() == widget.email2Ctrl.text.trim();
+      widget.emailCtrl.text.trim().toLowerCase() ==
+      widget.email2Ctrl.text.trim().toLowerCase();
 
   bool get _emailFormatOk =>
       widget.validateEmail(widget.emailCtrl.text) == null;
@@ -1329,107 +1363,105 @@ class _PasswordStepState extends State<_PasswordStep> {
           padding: const EdgeInsets.fromLTRB(10, 18, 10, 12),
           child: ConstrainedBox(
             constraints: BoxConstraints(minHeight: constraints.maxHeight),
-            child: IntrinsicHeight(
-              child: Center(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    _FadeSlideIn(
-                      delay: const Duration(milliseconds: 0),
-                      child: Text(
-                        "Ton mot de passe",
-                        textAlign: TextAlign.center,
-                        style: widget.h1.copyWith(fontSize: 24, height: 1.06),
-                      ),
+            child: Center(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  _FadeSlideIn(
+                    delay: const Duration(milliseconds: 0),
+                    child: Text(
+                      "Ton mot de passe",
+                      textAlign: TextAlign.center,
+                      style: widget.h1.copyWith(fontSize: 24, height: 1.06),
                     ),
-                    const SizedBox(height: 10),
+                  ),
+                  const SizedBox(height: 10),
 
-                    _FadeSlideIn(
-                      delay: const Duration(milliseconds: 90),
-                      child: Text(
-                        "Sécurise ton compte en validant chaque critère.",
-                        textAlign: TextAlign.center,
-                        style: widget.p.copyWith(fontSize: 14.2, height: 1.45),
-                      ),
+                  _FadeSlideIn(
+                    delay: const Duration(milliseconds: 90),
+                    child: Text(
+                      "Sécurise ton compte en validant chaque critère.",
+                      textAlign: TextAlign.center,
+                      style: widget.p.copyWith(fontSize: 14.2, height: 1.45),
                     ),
-                    const SizedBox(height: 18),
+                  ),
+                  const SizedBox(height: 18),
 
-                    _FadeSlideIn(
-                      delay: const Duration(milliseconds: 160),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          _GlowField(
-                            label: "Mot de passe",
-                            hint: "••••••••",
-                            isDark: widget.isDark,
-                            controller: widget.pwdCtrl,
-                            focusNode: widget.fnPwd,
-                            validator: widget.validatePwd,
-                            obscureText: widget.obscure1,
-                            suffix: IconButton(
-                              onPressed: widget.onToggle1,
-                              icon: Icon(
-                                widget.obscure1
-                                    ? Icons.visibility_off_rounded
-                                    : Icons.visibility_rounded,
-                                color: Colors.white.withOpacity(0.85),
-                              ),
+                  _FadeSlideIn(
+                    delay: const Duration(milliseconds: 160),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        _GlowField(
+                          label: "Mot de passe",
+                          hint: "••••••••",
+                          isDark: widget.isDark,
+                          controller: widget.pwdCtrl,
+                          focusNode: widget.fnPwd,
+                          validator: widget.validatePwd,
+                          obscureText: widget.obscure1,
+                          suffix: IconButton(
+                            onPressed: widget.onToggle1,
+                            icon: Icon(
+                              widget.obscure1
+                                  ? Icons.visibility_off_rounded
+                                  : Icons.visibility_rounded,
+                              color: Colors.white.withOpacity(0.85),
                             ),
-                            textInputAction: TextInputAction.next,
-                            onSubmitted: (_) => widget.fnPwd2.requestFocus(),
                           ),
+                          textInputAction: TextInputAction.next,
+                          onSubmitted: (_) => widget.fnPwd2.requestFocus(),
+                        ),
 
-                          const SizedBox(height: 12),
+                        const SizedBox(height: 12),
 
-                          _PasswordLiveRules(
-                            controller: widget.pwdCtrl,
-                            minLen: 8,
-                          ),
+                        _PasswordLiveRules(
+                          controller: widget.pwdCtrl,
+                          minLen: 8,
+                        ),
 
-                          const SizedBox(height: 14),
+                        const SizedBox(height: 14),
 
-                          _GlowField(
-                            label: "Confirme le mot de passe",
-                            hint: "••••••••",
-                            isDark: widget.isDark,
-                            controller: widget.pwd2Ctrl,
-                            focusNode: widget.fnPwd2,
-                            validator: widget.validatePwd2,
-                            obscureText: widget.obscure2,
-                            suffix: IconButton(
-                              onPressed: widget.onToggle2,
-                              icon: Icon(
-                                widget.obscure2
-                                    ? Icons.visibility_off_rounded
-                                    : Icons.visibility_rounded,
-                                color: Colors.white.withOpacity(0.85),
-                              ),
+                        _GlowField(
+                          label: "Confirme le mot de passe",
+                          hint: "••••••••",
+                          isDark: widget.isDark,
+                          controller: widget.pwd2Ctrl,
+                          focusNode: widget.fnPwd2,
+                          validator: widget.validatePwd2,
+                          obscureText: widget.obscure2,
+                          suffix: IconButton(
+                            onPressed: widget.onToggle2,
+                            icon: Icon(
+                              widget.obscure2
+                                  ? Icons.visibility_off_rounded
+                                  : Icons.visibility_rounded,
+                              color: Colors.white.withOpacity(0.85),
                             ),
-                            textInputAction: TextInputAction.done,
                           ),
+                          textInputAction: TextInputAction.done,
+                        ),
 
-                          const SizedBox(height: 14),
+                        const SizedBox(height: 14),
 
-                          AnimatedSwitcher(
-                            duration: const Duration(milliseconds: 180),
-                            switchInCurve: Curves.easeOutCubic,
-                            switchOutCurve: Curves.easeOutCubic,
-                            child: !showStatus
-                                ? const SizedBox.shrink()
-                                : _PasswordStatusPill(
-                                    key: ValueKey(ok),
-                                    ok: ok,
-                                    mismatch:
-                                        widget.pwd2Ctrl.text.isNotEmpty &&
-                                        !_pwd2Ok,
-                                  ),
-                          ),
-                        ],
-                      ),
+                        AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 180),
+                          switchInCurve: Curves.easeOutCubic,
+                          switchOutCurve: Curves.easeOutCubic,
+                          child: !showStatus
+                              ? const SizedBox.shrink()
+                              : _PasswordStatusPill(
+                                  key: ValueKey(ok),
+                                  ok: ok,
+                                  mismatch:
+                                      widget.pwd2Ctrl.text.isNotEmpty &&
+                                      !_pwd2Ok,
+                                ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),

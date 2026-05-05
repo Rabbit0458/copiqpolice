@@ -194,6 +194,7 @@ class RouteRegistry {
         const CompliciteRepressionPage(),
     GpxExamCultureGeneralePage.routeName: (_) =>
         const GpxExamCultureGeneralePage(),
+    ResetPasswordPage.routeName: (_) => const ResetPasswordPage(),
     AttentionVisuellePage.routeName: (_) => const AttentionVisuellePage(),
     GpxExamConcoursHomePage.routeName: (_) => const GpxExamConcoursHomePage(),
     GpxCasPratiqueCase6Page.routeName: (_) => const GpxCasPratiqueCase6Page(),
@@ -1696,4 +1697,3 @@ class RouteRegistry {
     routes[path] = builder;
   }
 }
-

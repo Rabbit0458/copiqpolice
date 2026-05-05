@@ -33,6 +33,7 @@ import 'package:copiqpolice/features/onboarding/onboarding_screen.dart';
 import 'package:copiqpolice/features/onboarding/discovery_tutorial.dart';
 import 'package:copiqpolice/features/auth/signup.dart';
 import 'package:copiqpolice/features/auth/signin.dart';
+import 'package:copiqpolice/features/auth/reset_password.dart';
 import 'package:copiqpolice/features/auth/confirm_email.dart';
 import 'package:copiqpolice/features/placement/placement_test.dart';
 import 'package:copiqpolice/features/placement/welcome_after_signup.dart';
@@ -832,12 +833,12 @@ import 'package:copiqpolice/features/home/gpx_exam_culture_generale_page.dart';
 
 // === Services ===
 import 'package:copiqpolice/core/services/app_console_logger.dart';
-import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/core/widgets/app_notifier.dart'
+    show AppSettingsController;
 // endregion Imports
 
 // === Le routing (RouteRegistry, appOnGenerateRoute) est dans app_router.dart ===
 part 'routes/app_router.dart';
-
 
 /// ====== CONFIG SUPABASE ======
 const String kSupabaseUrl = 'https://nuoonagnkhbeeymtvrcn.supabase.co';
@@ -947,11 +948,10 @@ Future<void> _installUsernameLoader() async {
 
 /// ================== APP BOOTSTRAP ==================
 Future<void> main() async {
-  // 1) Corrige le "Zone mismatch": bindings AVANT la zone
-  WidgetsFlutterBinding.ensureInitialized();
-
   await runZonedGuarded<Future<void>>(
     () async {
+      WidgetsFlutterBinding.ensureInitialized();
+
       // 2) Logger Flutter
       FlutterError.onError = (FlutterErrorDetails details) async {
         FlutterError.dumpErrorToConsole(details);
