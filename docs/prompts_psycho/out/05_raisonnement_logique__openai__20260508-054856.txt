@@ -1,0 +1,509 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure de ce syllogisme ?",
+        "prompt": "Tous les chiens aiment l'eau. Rex est un chien.",
+        "options": [
+            "Rex n'aime pas l'eau",
+            "Rex aime l'eau",
+            "Rex est un poisson",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rex aime l'eau",
+        "explanation": "Ceci est un syllogisme par transitivité. On sait que tous les chiens aiment l'eau et que Rex est un chien. Donc, Rex doit aimer l'eau par la logique du syllogisme. Ne pas conclure que Rex aime l'eau serait oublier la règle de la transitivité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "À quelle vitesse va ce vélo ?",
+        "prompt": "Tous les vélos bleus vont vite. Ce vélo est bleu.",
+        "options": [
+            "Il va vite",
+            "Il va lentement",
+            "On ne peut pas savoir",
+            "Il ne va pas vite"
+        ],
+        "answer": "Il va vite",
+        "explanation": "Ce syllogisme repose sur le principe que si tous les vélos bleus vont vite et que ce vélo est bleu, alors il va vite. C'est un exemple typique de syllogisme affirmatif. Attention à ne pas se laisser influencer par des options qui ajoutent de l'incertitude non justifiée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le statut de l'objet ?",
+        "prompt": "Aucun objet en acier n'est fragile. Ce clou est en acier.",
+        "options": [
+            "Ce clou est fragile",
+            "Ce clou n'est pas fragile",
+            "Ce clou est en bois",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce clou n'est pas fragile",
+        "explanation": "C'est un syllogisme par transitivité : aucun objet en acier n'est fragile et ce clou est en acier, donc ce clou n'est pas fragile. À ne pas confondre avec d'autres propriétés qui n'ont pas été mentionnées."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Aujourd'hui, qu'est-ce que Marc préfère ?",
+        "prompt": "Tous les enfants préfèrent le chocolat. Marc est un enfant.",
+        "options": [
+            "Marc préfère la vanille",
+            "Marc préfère le chocolat",
+            "Marc préfère la fraise",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marc préfère le chocolat",
+        "explanation": "Syllogisme en affirmant une propriété universelle : tous les enfants préfèrent le chocolat. Étant donné que Marc est un enfant, il préfère donc le chocolat. Une réponse incohérente serait d'affirmer qu'il préfère autre chose sans justification."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la nature de cette plante ?",
+        "prompt": "Toutes les plantes verdoyantes sont saines. Cette plante est verdoyante.",
+        "options": [
+            "Cette plante est fanée",
+            "Cette plante est saine",
+            "Cette plante est une herbe",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette plante est saine",
+        "explanation": "En appliquant la règle du syllogisme, si toutes les plantes verdoyantes sont saines et que cette plante est verdoyante, alors elle est saine. Évitez de conclure hâtivement avec des propriétés qui n'ont pas été évoquées."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur est ce papillon ?",
+        "prompt": "Tous les papillons jaunes sont petits. Ce papillon est jaune.",
+        "options": [
+            "Ce papillon est gros",
+            "Ce papillon est petit",
+            "Ce papillon est bleu",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce papillon est petit",
+        "explanation": "Il s'agit d'un syllogisme : tous les papillons jaunes étant petits et ce papillon étant jaune, il est conclu qu'il est petit. Une autre conclusion nécessiterait une prémisse supplémentaire qui n'est pas fournie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Comment est cette fleur ?",
+        "prompt": "Toutes les fleurs parfumées sont belles. Cette fleur est parfumée.",
+        "options": [
+            "Cette fleur est laide",
+            "Cette fleur est belle",
+            "Cette fleur est fanée",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette fleur est belle",
+        "explanation": "En analysant le syllogisme : toutes les fleurs parfumées sont belles et cette fleur appartient à cette catégorie. Donc, elle est belle. Le piège serait de douter sans raison valable en l'absence d'autres informations."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la taille de ce chat ?",
+        "prompt": "Tous les chats noirs sont petits. Mon chat est noir.",
+        "options": [
+            "Mon chat est grand",
+            "Mon chat est petit",
+            "Mon chat est marron",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Mon chat est petit",
+        "explanation": "C'est un cas de syllogisme, où la conclusion se déduit directement des prémisses. Mon chat étant noir et tous les chats noirs étant petits, le chat doit logiquement être petit. Évitez de supposer un changement sans nouvelle information."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Élodie est-elle dans la classe ?",
+        "prompt": "Tous les élèves de cette classe portent un uniforme. Élodie est une élève.",
+        "options": [
+            "Élodie ne porte pas d'uniforme",
+            "Élodie porte un uniforme",
+            "Élodie est absente de la classe",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Élodie porte un uniforme",
+        "explanation": "Syllogisme classique : si tous les élèves portent un uniforme et Élodie est une élève, elle porte aussi un uniforme. Ne vous laissez pas induire en erreur par une option qui supposerait une absence de lien logique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la saveur de cette glace ?",
+        "prompt": "Tous les desserts italiens ont du chocolat. Cette glace est un dessert italien.",
+        "options": [
+            "Cette glace est au citron",
+            "Cette glace a du chocolat",
+            "Cette glace est à la vanille",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette glace a du chocolat",
+        "explanation": "En utilisant un syllogisme, si tous les desserts italiens ont du chocolat et cette glace est un dessert italien, elle contient du chocolat. Le piège réside à chercher inutilement une alternative sans raison."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'état de ce terrain ?",
+        "prompt": "Tous les terrains maudits sont secs. Ce terrain est maudit.",
+        "options": [
+            "Ce terrain est humide",
+            "Ce terrain est sec",
+            "Ce terrain est fertile",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce terrain est sec",
+        "explanation": "Syllogisme affirmatif simple : tous les terrains maudits sont secs, et celui-ci est maudit. Par conséquent, il est sec. Le piège classique serait d'inventer des caractéristiques qui n'ont pas été introduites."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Où place-t-on ce tapis ?",
+        "prompt": "Tous les tapis rouges sont dans le salon. Ce tapis est rouge.",
+        "options": [
+            "Ce tapis est dans la chambre",
+            "Ce tapis est dans le salon",
+            "Ce tapis est dans la cuisine",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce tapis est dans le salon",
+        "explanation": "Ce syllogisme utilise la règle de transitivité. Puisque ce tapis est rouge et tous les tapis rouges sont dans le salon, il est placé dans ce dernier. Faire une autre supposition serait sans fondement ici."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que dit-on d'un tel arbre ?",
+        "prompt": "Tous les pins ont des aiguilles. Cet arbre est un pin.",
+        "options": [
+            "Cet arbre n'a pas d'aiguilles",
+            "Cet arbre a des feuilles",
+            "Cet arbre a des aiguilles",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cet arbre a des aiguilles",
+        "explanation": "Utilisant le syllogisme transitif, nous savons que tous les pins ont des aiguilles. L'arbre étant un pin, il doit avoir des aiguilles. Ne vous laissez pas détourner par des caractéristiques non mentionnées."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est l'origine de cette peinture ?",
+        "prompt": "Toutes les œuvres de cet artiste sont modernes. Cette peinture est son œuvre.",
+        "options": [
+            "Cette peinture est classique",
+            "Cette peinture est moderne",
+            "Cette peinture est baroque",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette peinture est moderne",
+        "explanation": "Cet énoncé est un syllogisme basé sur l'universalité : toutes les œuvres de l'artiste sont modernes. Donc, cette peinture étant de lui, elle est moderne. Le risque est de négliger la logique claire du syllogisme."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Où se trouve cet animal ?",
+        "prompt": "Tous les animaux du zoo sont en cage. Ce tigre est dans le zoo.",
+        "options": [
+            "Ce tigre est caché",
+            "Ce tigre est en cage",
+            "Ce tigre est en liberté",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce tigre est en cage",
+        "explanation": "Le raisonnement suit le syllogisme implicite : tous les animaux du zoo sont en cage et le tigre est un de ces animaux. Ainsi, il est en cage. Prendre une autre option montre un manque de suivi des prémisses."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Où sont fabriqués ces jouets ?",
+        "prompt": "Tous les jouets rouges viennent de Chine. Ces jouets sont rouges.",
+        "options": [
+            "Ces jouets viennent d'Allemagne",
+            "Ces jouets viennent de Chine",
+            "Ces jouets viennent du Japon",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ces jouets viennent de Chine",
+        "explanation": "Le syllogisme fonctionne ici par déduction. Si tous les jouets rouges viennent de Chine et ces jouets sont rouges, ils proviennent donc de Chine. Ne laissez pas la couleur ou l'origine erronées vous égarer."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'état de ces feuilles ?",
+        "prompt": "Toutes les feuilles mortes sont tombées. Ces feuilles sont mortes.",
+        "options": [
+            "Ces feuilles sont encore sur l'arbre",
+            "Ces feuilles sont tombées",
+            "Ces feuilles sont toujours vertes",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ces feuilles sont tombées",
+        "explanation": "Le syllogisme déduit directement que si toutes les feuilles mortes sont tombées et ces feuilles sont mortes, alors elles sont, logiquement, tombées. Il serait erroné d'affirmer leur présence sur l'arbre."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Si Pierre ne mange pas, que fait-il ?",
+        "prompt": "Si Pierre mange, alors il ne joue pas. Si Pierre ne joue pas, il dort.",
+        "options": [
+            "Pierre joue",
+            "Pierre mange",
+            "Pierre dort",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Pierre dort",
+        "explanation": "C'est un raisonnement basé sur la condition modale. Si Pierre mange, il ne joue pas. En revanche, s'il ne joue pas, il dort. Dans notre cas, si Pierre ne mange pas, il ne joue donc pas, et par le même raisonnement, il dormira. Les erreurs fréquentes impliquent l'esquive de la double condition donnée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel jeu met-on sur la table ?",
+        "prompt": "Tous les jeux de société se jouent avec un plateau. Celui-ci se joue avec des dés.",
+        "options": [
+            "Il a un plateau",
+            "Il n'a pas de plateau",
+            "C'est un jeu de société",
+            "Il se joue sans dés"
+        ],
+        "answer": "Il n'a pas de plateau",
+        "explanation": "En déduisant que tous les jeux de société nécessitent un plateau et ce jeu se joue avec des dés, sans plateau, l'implication directe est qu’il n’a pas de plateau. Se méfier de l’association irréfléchie entre dés et plateau."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Comment est classé le groupe B ?",
+        "prompt": "Groupe A est meilleur que Groupe B. Groupe C est meilleur que Groupe A.",
+        "options": [
+            "Groupe C est le meilleur",
+            "Groupe B est le meilleur",
+            "Groupe B est meilleur que Groupe C",
+            "Tous les groupes sont égaux"
+        ],
+        "answer": "Groupe C est le meilleur",
+        "explanation": "Le classement comparatif suit : C > A > B. Ainsi, Groupe C apparaît comme le meilleur. La conclusion erronée serait tributaire d'un placement incorrect des groupes dans cet ordre hiérarchique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle conclusion tire-t-on ?",
+        "prompt": "Si un animal est un mammifère, il a des poils. Ce chat est un mammifère.",
+        "options": [
+            "Ce chat n'a pas de poils",
+            "Ce chat a des poils",
+            "Ce chat est un reptile",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce chat a des poils",
+        "explanation": "L'inférence typique en modus ponens : tout mammifère ayant des poils et le chat étant un mammifère, on en déduit logiquement qu'il a des poils. L'erreur consisterait à ignorer la propriété commune à tous les mammifères."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle couleur est la porte du bureau ?",
+        "prompt": "Il existe trois portes : la porte de la cuisine est bleue, celle de la chambre est rouge. La porte du bureau est jaune.",
+        "options": [
+            "Bleue",
+            "Rouge",
+            "Jaune",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jaune",
+        "explanation": "En énumérant les couleurs, on a la certitude que la porte du bureau est la troisième option donnée, c'est-à-dire jaune. Attention à ne pas mettre en relation incorrecte les couleurs avec des pièces non spécifiées."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Comment est rangée la bibliothèque ?",
+        "prompt": "Les gros livres sont rangés en bas. Les petits livres sont rangés en haut. Moyen format se trouve au centre.",
+        "options": [
+            "Les moyens sont en bas",
+            "Les moyens sont au centre",
+            "Les moyens sont en haut",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Les moyens sont au centre",
+        "explanation": "Le classement suit explicitement les descriptions de placement associées à chaque taille de livre. Les livres moyens sont placés au centre, ne vous trompez pas avec l'interprétation où tout se mélange."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le meilleur rémunéré ?",
+        "prompt": "Clara gagne moins qu'Émile. Emna gagne plus qu'Émile.",
+        "options": [
+            "Clara est la mieux rémunérée",
+            "Clara gagne plus qu'Emna",
+            "Émile est le mieux payé",
+            "Emna est mieux rémunérée"
+        ],
+        "answer": "Emna est mieux rémunérée",
+        "explanation": "Selon l'ordre économique Émile > Clara et Emna > Émile, il est clair qu'Emna est la mieux payée. L'erreur serait de ne pas faire la connexion entre ces implications de paie indirecte."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que vaut l'algèbre de ce café ?",
+        "prompt": "Si un café est noir, il est sans lait. Ce café est noir.",
+        "options": [
+            "Il a du lait",
+            "Il est sans lait",
+            "Ce café est sucré",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Il est sans lait",
+        "explanation": "Par modus ponens, un café noir implique l'absence de lait. S'agissant de ce café, cela signifie donc qu'il est sans lait. Faire une interprétation erronée revient à ignorer le lien clair entre couleur et ingrédient."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que fait Tom ?",
+        "prompt": "Si Tom lit des romans, il néglige sa bande dessinée préférée. Tom néglige sa bande dessinée.",
+        "options": [
+            "Tom ne lit pas de romans",
+            "Tom lit des romans",
+            "Tom ne néglige rien",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Tom lit des romans",
+        "explanation": "En appliquant la règle de modus ponens, Tom qui néglige sa bande dessinée, liée au fait qu'il lit des romans, doit effectivement être en train de lire ces livres. Croire qu'il ne négocie rien confond cause et effet."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que peut-on déduire de l'emploi de Karen ?",
+        "prompt": "Si Karen travaille tard, elle boit beaucoup de café. Karen boit beaucoup de café.",
+        "options": [
+            "Karen ne travaille pas tard",
+            "Karen travaille tard",
+            "Karen boit du thé",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Karen travaille tard",
+        "explanation": "En suivant l'implication logique de base, la consommation de café découle des longues heures de travail de Karen. C'est un exemple de raisonnement par modus ponens. Penser qu'elle n'a pas à travailler, c'est négliger cette structure."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle maison est plus proche ?",
+        "prompt": "La maison de Paul est plus proche que celle de Pierre. La maison de pierre est plus proche que celle de Julie.",
+        "options": [
+            "La maison de Julie est la plus proche",
+            "La maison de Paul est plus proche",
+            "La maison de Julie est plus éloignée que celle de Pierre",
+            "On ne peut pas savoir"
+        ],
+        "answer": "La maison de Paul est plus proche",
+        "explanation": "En rangeant les maisons selon les distances : Paul > Pierre > Julie, il est net que celle de Paul paraît la plus proche. Se tromper ici reviendrait à ne pas observer attentivement ce lien graduel."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le moins employé ?",
+        "prompt": "Julie a plus d'emplois que Samuel. Samuel a plus d'emplois que Maxime.",
+        "options": [
+            "Julie a le moins d'emplois",
+            "Samuel a le moins d'emplois",
+            "Maxime a le moins d'emplois",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Maxime a le moins d'emplois",
+        "explanation": "Vu que Julie > Samuel > Maxime, logiquement, Maxime possède le nombre d'emplois le plus bas. Si l'incompréhension s'introduit, elle émanerait d'une erreur d'alignement des hiérarchies initiales."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Déterminez-vous la position de Robert ?",
+        "prompt": "Clara est plus rapide que Robert. Mathieu est plus rapide que Clara.",
+        "options": [
+            "Robert est plus rapide que Mathieu",
+            "Clara est plus lente que Mathieu",
+            "Robert est plus rapide que Clara",
+            "Robert est le plus rapide"
+        ],
+        "answer": "Clara est plus lente que Mathieu",
+        "explanation": "En examinant les positions : Mathieu > Clara > Robert, Clara est effectivement plus lente que Mathieu. Commettre une erreur à partir d'une proposition alléchante mais fausse reflètera une mauvaise comparaison des vitesses."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle pile est la plus lourde ?",
+        "prompt": "Pile A est plus lourde que Pile B. Pile C est plus lourde que Pile A.",
+        "options": [
+            "Pile A est la plus lourde",
+            "Pile B est la plus lourde",
+            "Pile C est la plus lourde",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Pile C est la plus lourde",
+        "explanation": "Lorsqu'on classe A, B, et C en ordre de poids en sachant que Pile C > Pile A > Pile B, Pile C se révèle être la plus lourde. Ne pas appliquer cette comparaison séquentielle peut amener à une déduction erronée."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui est l'interlocuteur prioritaire de Sarah ?",
+        "prompt": "Si Sarah parle à Pierre, elle ne parle pas à Jacques. Si Sarah ne parle pas à Jacques, elle parle à Paul.",
+        "options": [
+            "Sarah parle à Jacques",
+            "Sarah parle à Paul",
+            "Sarah parle à Pierre",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Sarah parle à Paul",
+        "explanation": "Logiquement, si parler à Jacques est exclu en parlant à Pierre, et Paul est abordé quand Jacques ne l'est pas, Paul devient son interlocuteur par excellence. Ne laissez pas un manque de compréhension vous égarer vers Pierre ou Jacques."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le type de tissu pour ce fauteuil ?",
+        "prompt": "Les fauteuils en cuir sont chers. Ce fauteuil est bon marché.",
+        "options": [
+            "Ce fauteuil est en cuir",
+            "Ce fauteuil n'est pas en cuir",
+            "Ce fauteuil est cher",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce fauteuil n'est pas en cuir",
+        "explanation": "En inférant que les fauteuils en cuir étant chers, ce fauteuil bon marché n'est pas en cuir. Un lapsus se produit souvent en tombant dans le panneau de l'apparente dissonance offerte par les autres possibilités."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment est-il possible ?",
+        "prompt": "Si Paul fait du vélo, il fait aussi de la marche. Paul ne marche pas.",
+        "options": [
+            "Paul fait du vélo",
+            "Paul ne fait pas de vélo",
+            "On ne peut pas savoir",
+            "Paul marche"
+        ],
+        "answer": "Paul ne fait pas de vélo",
+        "explanation": "En se servant d'une implication, Paul qui ne peut faire de vélo sans marcher montre une incompatibilité. De ce fait, il ne fait pas de vélo. Les autres options gravitent autour de fausses hypothèses."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle image va-t-on choisir ?",
+        "prompt": "Si l'image est claire, elle est belle. Toutes les images belles sont prises en charge.",
+        "options": [
+            "L'image est prise en charge",
+            "L'image n'est pas clarifiée",
+            "L'image est belle",
+            "On ne peut pas savoir"
+        ],
+        "answer": "L'image est prise en charge",
+        "explanation": "Selon l'inférence et le syllogisme, une image claire est nécessairement belle. Par conséquent, elle se range dans celles exigeant prise en charge. Une option erronée néglige ce crochet entre beauté et gestion."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Pourquoi ces billets sont-ils en promotion ?",
+        "prompt": "Tous les billets achetés sont valables pour aujourd'hui seulement.",
+        "options": [
+            "Les billets sont valables aussi demain",
+            "Les billets sont en promotion",
+            "Les billets expirent aujourd'hui",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Les billets expirent aujourd'hui",
+        "explanation": "En analysant, acheté indique une validité unique pour ce jour. C'est un syllogisme où expiration devient évidente. L'erreur consisterait à basculer vers la promotion sans base exacte."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel sport pratique Jules ?",
+        "prompt": "Si Jules nage, il va à la salle de sport. Si Jules va à la salle, il ne court pas.",
+        "options": [
+            "Jules nage",
+            "Jules court",
+            "Jules ne court pas",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jules nage",
+        "explanation": "En suivant l'implication, nager vient avec le gymnase mais ôte la course de l'équation. Jules impliquant le premier marque donc l'existence de la nage. Choisir la course indiquerait une confusion du motif logique de départ."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle personne choisit ce plat ?",
+        "prompt": "Personne ne mange ce plat sans commander de salade. Paul a commandé ce plat.",
+        "options": [
+            "Paul a commandé une salade",
+            "Paul ne mange pas ce plat",
+            "Paul est végétarien",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Paul a commandé une salade",
+        "explanation": "Ceci repose sur le principe de non ingestion sans salade. En context, commander signifie salade aussi. L'omission de cette structure élémentaire provoque l’erreur dans l'analyse logique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle conclusion en déduire ?",
+        "prompt": "Si Anne sort, elle rentre tard. Anne rentre tôt.",
+        "options": [
+            "Anne est sortie",
+            "Anne n'est pas sortie",
+            "Anne ne rentre jamais",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Anne n'est pas sortie",
+        "explanation": "Une série logique basique montre que rentrer tôt équivaut à ne pas avoir été à l'extérieur. Tout conclusion sans rapport omet une démonstration mathématiquement solide."
+    }
+]

@@ -1,0 +1,331 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "Plaque : XX-123-YY",
+    "text_b": "Plaque : XX-123-YZ",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le dernier caractère de la plaque diffère : 'YY' dans text_a contre 'YZ' dans text_b. Cette différence pourrait être négligée en raison de la similitude visuelle des deux lettres."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Nom : Pierre Martin",
+    "text_b": "Nom : Pierre Martin",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Adresse : 15 rue Verte",
+    "text_b": "Adresse : 15 rue Verte",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "La date est le 20 août",
+    "text_b": "La date est le 21 août",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. La date diffère : '20' dans text_a et '21' dans text_b. Cette petite différence numérique pourrait passer inaperçue en raison de la similarité entre les chiffres."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Couleur : rouge vif",
+    "text_b": "Couleur : rouge vif",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Ville : Lyon",
+    "text_b": "Ville : Lyon",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Numéro : EX-452-BQ",
+    "text_b": "Numéro : EY-452-BQ",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le premier groupe de lettres diffère : 'EX' dans text_a et 'EY' dans text_b. Cette variation, bien que minime, peut être négligée en cas de manque de concentration."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Marque : Audi",
+    "text_b": "Marque : Audii",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Il y a une lettre supplémentaire dans text_b ('Audii'). Ce type d'erreur est subtil car il peut être facilement ignoré si l'on ne fait pas attention."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Nom : Luc Durand",
+    "text_b": "Nom : Luc Durand",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Température : 25°C",
+    "text_b": "Température : 25°C",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Heure : 12h45",
+    "text_b": "Heure : 12h46",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. L'heure diffère : '12h45' dans text_a et '12h46' dans text_b. Une seule minute de différence nécessite une observation attentive."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Lieu : parc central",
+    "text_b": "Lieu : parc central",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "État : calme",
+    "text_b": "Etat : calme",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. L'accent sur 'État' est absent dans text_b ('Etat'). L'absence d'accent est une erreur typique facile à manquer en lecture rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Code : 98765",
+    "text_b": "Code : 98765",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Jour : mardi",
+    "text_b": "Jour : mardi",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Signalement : homme grand",
+    "text_b": "Signalement : homme grand",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Voiture : Peugeot 208",
+    "text_b": "Voiture : Peugeout 208",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Une faute de frappe dans l'orthographe de 'Peugeot' ('Peugeout' dans text_b). Un ajout incorrect d'une lettre peut passer inaperçu si l'on fait preuve de fatigue oculaire."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Mme Dupuis a observé une voiture suspecte blanche à 14h30.",
+    "text_b": "Mme Dupuis a observé une voiture suspecte blanche à 14h30.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le véhicule était stationné à l'angle de la rue, non verrouillé.",
+    "text_b": "Le véhicule était stationé à l'angle de la rue, non verrouillé.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le mot 'stationné' est mal orthographié dans text_b ('stationé' a un n manquant). Cette petite faute peut échapper à un rapide examen."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Il portait un manteau marron foncé et des chaussures noires.",
+    "text_b": "Il portait un manteau marron foncé et des chaussures noires.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Une montre en or a été volée entre 13h00 et 13h15 selon la victime.",
+    "text_b": "Une montre en or a été volée entre 13h00 et 13h16 selon la victime.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. L'heure mentionnée à la fin diffère : '13h15' dans text_a et '13h16' dans text_b. Une lecture inattentionnée peut ne pas capter ce léger changement de chiffre."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Article 223-7 du code pénal interdit la violence volontaire envers autrui.",
+    "text_b": "Article 223-7 du code pénal interdit la violence volontaire envers autrui.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La scène s'est déroulée au numéro 12, avenue des Champs.",
+    "text_b": "La scène s'est déroulée au numéro 12, avenue des Champs.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Il a quitté le lieu à bord d'un vélo rouge sans équipement de sécurité.",
+    "text_b": "Il a quitté le lieu à bord d'un vélo rouge sans équipement de sécurité.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Victime : Mme Legrand, déclarant un vol dimanche soir vers 20h.",
+    "text_b": "Victime : Mme Legrand, déclarant un vol dimanche soire vers 20h.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le mot 'soir' est mal orthographié en 'soire' dans text_b. Une erreur de ce type peut être ignorée lors d'une lecture rapide en raison de l'apparente similitude."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Numéro de rapport : A6753-21-BZ, rempli par l'officier Dumas.",
+    "text_b": "Numéro de rapport : A6753-21-BZ, rempli par l'officier Dumas.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "À 16h48, monsieur Borel a été vu entrant au 4ème étage de l'immeuble.",
+    "text_b": "À 16h48, monsieur Borel a été vu entrant au 4ème étage de l'immeuble.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La victime a décrit l'agresseur comme étant barbu et avec des lunettes.",
+    "text_b": "La victime a décrit l'agresseur comme étant barbu et avec des lunetes.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le mot 'lunettes' est mal orthographié en 'lunetes' dans text_b. Cette différence, bien que subtile, nécessite une attention particulière."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 25 décembre, une chaîne en or a été arrachée rue de la Part-Dieu.",
+    "text_b": "Le 25 décembre, une chaîne en or a été arrachée rue de la Part-Diue.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le nom de la rue est mal orthographié en 'Part-Diue' dans text_b. La similarité entre 'i' et 'u' rend cette erreur facile à manquer."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le témoin a vu deux hommes se disputer devant le café Le Marché.",
+    "text_b": "Le témoin a vu deux hommes se disputer devant le café Le Marché.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Ce délit est passible de trois ans d'emprisonnement selon l'article 311-4.",
+    "text_b": "Ce délit est passible de trois an d'emprisonnement selon l'article 311-4.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Dans text_b, 'ans' est mal orthographié en 'an'. Cette minuscule omission est typique des erreurs de frappe qui peuvent passer inaperçues."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Tous les agissements de cette nature sont régis par l'article 223-7 qui stipule des sanctions précises en cas de récidive.",
+    "text_b": "Tous les agissements de cette nature sont régis par l'article 223-7 qui stipule des sanctions précises en cas de récidive.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'incident a été signalé à 23:49, lorsque Mme Berger a entendu des bruits suspects provenant de l'appartement voisin.",
+    "text_b": "L'incident a été signalé à 23:49, lorsque Mme Berger a entendu des bruits suspects provenant de l'appartement voisin.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le véhicule immatriculé CS-987-VG était garé sur la place 14. Selon les témoins, une personne louche a été vue près du véhicule aux alentours de 19:15.",
+    "text_b": "Le véhicule immatriculé CS-987-VG était garé sur la place 14. Selon les témoins, une personne louche a été vue près du véhicule aux alentours de 19:15.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Une altercation a eu lieu à 22h15 ; l'enquête conclut que l'affaire est classée sans suite sous réserve de nouveaux éléments probants.",
+    "text_b": "Une altercation a eu lieu à 22h15 ; l'enquête conclut que l'affaire est classée sans suite sous-réserve de nouveaux éléments probants.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Une différence subtile est l'ajout d'un trait d'union dans 'sous-réserve' dans text_b, ce qui peut être difficile à détecter sans une lecture soignée."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le 30 janvier, une somme de 12 456 euros a été déclarée volée dans le bureau de Monsieur Léger, directeur de la succursale bancaire.",
+    "text_b": "Le 30 janvier, une somme de 12 465 euros a été déclarée volée dans le bureau de Monsieur Léger, directeur de la succursale bancaire.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le montant volé diffère d'un chiffre : '12 456' euros dans text_a contre '12 465' euros dans text_b. La permutation du '6' et '5' est une erreur subtile mais cruciale."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Cette infraction, sous l'article 622-1 du code pénal, est classée parmi les délits mineurs, mais requiert une attention particulière des autorités.",
+    "text_b": "Cette infraction, sous l'article 620-1 du code pénal, est classée parmi les délits mineurs, mais requiert une attention particulière des autorités.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. La référence de l'article du code pénal diffère : '622-1' dans text_a alors que '620-1' dans text_b. Cette petite différence numérique pourrait être aisément manquée dans un examen rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Il a prétendu être présent à son domicile à 15 h 45, bien que certains témoignages contredisent cette déclaration.",
+    "text_b": "Il a prétendu être présent à son domicile à 15 h 45, bien que certains témoignages contradisent cette déclaration.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le mot 'contredisent' est mal orthographié en 'contradisent' dans text_b. Cela peut être facilement négligé car le cerveau compense souvent ce type d'erreur en lisant le mot correct."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon l'article 434-9, toute fausse déclaration à l'encontre de la justice est passible de sanctions pouvant aller jusqu'à cinq ans d'emprisonnement.",
+    "text_b": "Selon l'article 434-9, toute fausse déclaration à l'encontre de la justice est passible de sanctions pouvant aller jusqu'à cinq ans d'emprisonnement",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Il manque un point à la fin de text_b, ce qui en fait une différence de ponctuation subtile mais importante pour la précision du texte."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "À 10h32, une alerte a été émise concernant un feu au 5ème sous-sol du centre commercial, nécessitant l'intervention rapide des pompiers.",
+    "text_b": "À 10h32, une alerte a été émise concernant un feu au 5ème sous-sol du centre commerçial, nécessitant l'intervention rapide des pompiers.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le mot 'commercial' est incorrectement orthographié comme 'commerçial' dans text_b. Cette subtile substitution d'une lettre accentuée peut facilement passer inaperçue sans vigilance."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le jugement rendu à titre d'exemple par le tribunal de grande instance souligne la nécessité de prudence lors de l'engagement d'actions judiciaires.",
+    "text_b": "Le jugement rendu à titre d'exemple par le tribunal de grande instance souligne la nécessité de prudence lors de l'engagement d'actions judiciaires.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Les premières conclusions de l'enquête ont révélé de nombreux dysfonctionnements dans le traitement des signalements de disparition par les autorités compétentes.",
+    "text_b": "Les premières conclusions de l'enquête ont revelé de nombreux dysfonctionnements dans le traitement des signalements de disparition par les autorités compétentes.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le mot 'révélé' est mal orthographié en 'revelé' dans text_b, manquant l'accent. Un tel détail de ponctuation accentuée pourrait facilement être omis par un lecteur inattentif."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'article 521-1 stipule clairement qu'aucun individu ne doit être soumis à des traitements inhumains ou dégradants sous peine d'emprisonnement.",
+    "text_b": "L'article 521-1 stipule clairement qu'aucun individu ne doit être soumis à des traitements inhumains ou dégradants sous peine d'emprisionnement.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le mot 'emprisonnement' est incorrectement orthographié en 'emprisionnement' dans text_b, manquant un 'n'. Cette différence peut facilement passer inaperçue à cause de la fatigue oculaire."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Seuls les fichiers contenant des informations jugées essentielles pour la sécurité nationale sont conservés selon les règles établies.",
+    "text_b": "Seuls les fichiers contenant des informations jugées essentielles pour la sécurité nationale sont conservés selon les règles établies.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Les données obtenues lors de cette opération démontrent l'ampleur des dysfonctions au sein des services de renseignement.",
+    "text_b": "Les données obtenues lors de cette opération démontrent l'ampleur des dysfonctionnements au sein des services de renseignement.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le mot 'dysfonctions' dans text_a devrait être 'dysfonctionnements' comme dans text_b. Une lecture rapide pourrait ne pas saisir cette différence de typographie."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Les interventions seront réduites au strict minimum afin de ne pas perturber le fonctionnement ordinaire de l'établissement pendant les heures de bureau.",
+    "text_b": "Les interventions seront réduites au strict minimum afin de ne pas perturber le fonctionnement ordinaire de l'établissement pendant les hours de bureau.",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques. Le mot 'heures' est incorrectement orthographié en 'hours' dans text_b, introduisant une erreur typographique subtile qui pourrait passer inaperçue en lecture rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Toute installation illicite d'un dispositif d'écoute est sanctionnée par le code pénal selon l'article 226-1, qui prévoit de lourdes amendes.",
+    "text_b": "Toute installation illicite d'un dispositif d'écoute est sanctionnée par le code pénal selon l'article 226-1, qui prévoit de lourdes amendes.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  }
+]

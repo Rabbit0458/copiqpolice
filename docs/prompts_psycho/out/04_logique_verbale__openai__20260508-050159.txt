@@ -1,0 +1,416 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « heureux » ?",
+        "prompt": null,
+        "options": ["Triste", "Joyful", "Heureuse", "Content"],
+        "answer": "Content",
+        "explanation": "« Content » est un synonyme de « heureux », car les deux désignent un état de satisfaction et de joie. « Triste » est l'antonyme de « heureux ». « Joyful » est un anglicisme et ne convient pas. « Heureuse » pourrait être correct, mais un synonyme doit être strictement identique en genre et nombre.",
+        "hint": "Pense à un mot qui reflète la joie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Il est tellement fatigué qu'il pourrait ___ debout.\"",
+        "prompt": null,
+        "options": ["Manger", "Dormir", "Lire", "Courir"],
+        "answer": "Dormir",
+        "explanation": "Le mot « dormir » sémantiquement complète la phrase car l'état de fatigue induit le besoin de sommeil. « Manger » n'est pas directement lié à l'état de fatigué. « Lire » et « courir » nécessitent une certaine énergie, qui est absente quand on est fatigué.",
+        "hint": "Pensez à l'activité associée à la fatigue."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « jour » ?",
+        "prompt": null,
+        "options": ["Matin", "Soir", "Nuit", "Midi"],
+        "answer": "Nuit",
+        "explanation": "L'antonyme de « jour » est « nuit », car ils sont opposés dans le cycle quotidien. « Matin » et « midi » sont des parties du jour, et « soir » est une transition vers la fin du jour, mais pas son opposé.",
+        "hint": "Réfléchissez au cycle naturel opposé au jour."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Chat, Chien, Poisson, Maison",
+        "options": ["Chat", "Chien", "Poisson", "Maison"],
+        "answer": "Maison",
+        "explanation": "Les trois premiers termes, « chat », « chien » et « poisson », sont des animaux. « Maison » est un bâtiment et ne fait donc pas partie de la même catégorie.",
+        "hint": "Cherchez l'élément qui n'est pas un animal."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « voiture » ?",
+        "prompt": null,
+        "options": ["Bicyclette", "Camion", "Automobile", "Train"],
+        "answer": "Automobile",
+        "explanation": "« Automobile » est un synonyme de « voiture » car ce sont des termes interchangeables pour désigner un véhicule motorisé individuel. « Bicyclette » et « camion » sont d'autres types de véhicules. « Train » est un moyen de transport collectif et ne peut être confondu avec une voiture.",
+        "hint": "Cherchez un mot interchangeable avec voiture."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « commencer » ?",
+        "prompt": null,
+        "options": ["Initier", "Terminer", "Provoquer", "Démarrer"],
+        "answer": "Terminer",
+        "explanation": "« Terminer » est l'antonyme de « commencer », car ils indiquent des actions opposées dans un processus. « Initier » et « démarrer » sont des synonymes de commencer. « Provoquer » est un déclenchement mais pas en opposition directe.",
+        "hint": "C'est l'action qui vient après l'accomplissement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : « Le professeur a demandé aux élèves de rester ___ pendant l'examen. »",
+        "prompt": null,
+        "options": ["Silencieux", "Parlant", "Énergique", "Inattentif"],
+        "answer": "Silencieux",
+        "explanation": "Durant un examen, on demande généralement du « silence » pour ne pas perturber. « Parlant » et « énergique » sont contraires à l'atmosphère d'un examen. « Inattentif » n'est pas une recommandation mais une distraction.",
+        "hint": "Pense au comportement attendu pour favoriser la concentration."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « propre » ?",
+        "prompt": null,
+        "options": ["Sale", "Net", "Pur", "Fluide"],
+        "answer": "Sale",
+        "explanation": "« Sale » est l'antonyme de « propre », chaque terme décrivant un état opposé de propreté. « Net » et « pur » sont synonymes de propre. « Fluide » ne concerne pas la propreté.",
+        "hint": "Le mot décrit l’état possiblement désordonné d’une surface."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « rapide » ?",
+        "prompt": null,
+        "options": ["Vif", "Lent", "Calme", "Pondéré"],
+        "answer": "Vif",
+        "explanation": "« Vif » et « rapide » désignent une grande vitesse ou un développement soudain. « Lent » est l'antonyme et donc incorrect ici. « Calme » et « pondéré » suggèrent lenteur et maîtrise.",
+        "hint": "Un mot qui suggère de l'agilité et de la vitesse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « chaud » ?",
+        "prompt": null,
+        "options": ["Froid", "Sec", "Humide", "Tiède"],
+        "answer": "Froid",
+        "explanation": "« Froid » est l'antonyme de « chaud », chacun signifiant une extrémité du spectre thermique. « Sec », « humide » et « tiède » peuvent être des caractéristiques de température mais ne sont pas des opposés entre eux.",
+        "hint": "Il s'agit de l'opposé direct en termes de température."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Pomme, Orange, Raisin, Voiture",
+        "options": ["Pomme", "Orange", "Raisin", "Voiture"],
+        "answer": "Voiture",
+        "explanation": "Les mots « pomme », « orange » et « raisin » sont des fruits, alors que « voiture » est un moyen de transport. On exclut donc « voiture » comme ne faisant pas partie du même groupe de mots.",
+        "hint": "Repérez l'élément qui n'est pas comestible."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : « Il a un emploi stable et un salaire ___ chaque mois. »",
+        "prompt": null,
+        "options": ["Variable", "Constant", "Inconnu", "Minime"],
+        "answer": "Constant",
+        "explanation": "Un « salaire constant » complète bien l'idée d'un emploi stable. « Variable » oppose l’idée de stabilité. « Inconnu » et « minime » ne dépendent pas de la stabilité mais de l'information et du montant.",
+        "hint": "C'est un adjectif qui rime avec la stabilité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « heureux » ?",
+        "prompt": null,
+        "options": ["Ravi", "Sombre", "Triste", "Plein"],
+        "answer": "Ravi",
+        "explanation": "« Ravi » et « heureux » font partie du même champ lexical de la joie et de la satisfaction. « Sombre » et « triste » décrivent des émotions négatives. « Plein » est quantitatif et ne concerne pas l'émotion.",
+        "hint": "Cherchez un mot indiquant la satisfaction joyeuse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « ami » ?",
+        "prompt": null,
+        "options": ["Connaissance", "Inconnu", "Ennemi", "Frère"],
+        "answer": "Ennemi",
+        "explanation": "Un « ennemi » est l'opposé d'un « ami », car les deux décrivent les extrémités d'une relation interpersonnelle. « Connaissance » et « frère » impliquent des relations neutres à positives. « Inconnu » ne concerne pas directement un lien relationnel.",
+        "hint": "C'est le terme de relation opposé."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Piano, Violon, Trombone, Étagère",
+        "options": ["Piano", "Violon", "Trombone", "Étagère"],
+        "answer": "Étagère",
+        "explanation": "Les « piano », « violon » et « trombone » sont des instruments de musique. « Étagère » est un meuble et ne correspond donc pas aux autres termes de la catégorie.",
+        "hint": "Cherchez ce que vous ne pouvez pas jouer."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « léger » ?",
+        "prompt": null,
+        "options": ["Épais", "Plein", "Lourd", "Fragile"],
+        "answer": "Lourd",
+        "explanation": "L'antonyme de « léger » est « lourd », car ils représentent deux extrémités de la balance du poids. « Épais » et « plein » ne sont pas liés directement au poids, et « fragile » évoque la résistance.",
+        "hint": "Recherchez le mot qui pèse sur la balance."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « petit » ?",
+        "prompt": null,
+        "options": ["Grand", "Énorme", "Chétif", "Vaste"],
+        "answer": "Chétif",
+        "explanation": "« Chétif » est un synonyme de « petit » pour désigner quelque chose de faible taille ou stature. « Grand », « énorme » et « vaste » évoquent une dimension de grande envergure, donc opposées à « petit ».",
+        "hint": "C'est un synonyme qui indique une taille réduite, souvent associé à la faiblesse."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « méticuleux » ?",
+        "prompt": null,
+        "options": ["Négligent", "Soigneux", "Impulsif", "Hâtif"],
+        "answer": "Soigneux",
+        "explanation": "« Soigneux » est synonyme de « méticuleux » car les deux termes indiquent une attention particulière aux détails. « Négligent » est l'antonyme direct. « Impulsif » et « hâtif » impliquent précipitation sans attention aux détails.",
+        "hint": "Pensez à la qualité de l'attention et du soin apportés."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Chirurgien, Infirmière, Ingénieur, Docteur",
+        "options": ["Chirurgien", "Infirmière", "Ingénieur", "Docteur"],
+        "answer": "Ingénieur",
+        "explanation": "« Chirurgien », « infirmière » et « docteur » sont des professions médicales. « Ingénieur » est une profession dans le domaine technique, donc il ne partage pas le même secteur professionnel.",
+        "hint": "Identifiez la profession qui ne relève pas du domaine médical."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Gant est à main comme chaussette est à ___",
+        "prompt": null,
+        "options": ["Bras", "Pied", "Jambe", "Cuisse"],
+        "answer": "Pied",
+        "explanation": "Un gant se porte sur la main, tout comme une chaussette se porte sur le pied. « Bras », « jambe » et « cuisse » ne représentent pas l'endroit spécifique où l'une de ces pièces de vêtement est traditionnellement portée.",
+        "hint": "Concentrez-vous sur la partie du corps qui va dans les chaussures."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « cohérent » ?",
+        "prompt": null,
+        "options": ["Contradictoire", "Logique", "Confus", "Erratique"],
+        "answer": "Logique",
+        "explanation": "« Logique » est un synonyme de « cohérent », tous deux renvoyant à l'idée d'une suite harmonieuse et fondée. « Contradictoire » et « confus » sont des opposés. « Erratique » indique une absence de régularité.",
+        "hint": "Cherchez un mot qui définit une suite logique et ordonnée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le contraire de « sévère » ?",
+        "prompt": null,
+        "options": ["Clément", "Rude", "Difficile", "Sérieux"],
+        "answer": "Clément",
+        "explanation": "« Clément » est un antonyme de « sévère » en ce qu’il suggère de la douceur ou de l’indulgence. « Rude », « difficile » et « sérieux » accentuent la dureté ou le manque de souplesse, formant des idées similaires à « sévère » plutôt que de le contrarier.",
+        "hint": "Cherchez un mot qui dénote la douceur ou la compréhension."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Poêle, Chaise, Table, Télévision",
+        "options": ["Poêle", "Chaise", "Table", "Télévision"],
+        "answer": "Poêle",
+        "explanation": "La « poêle » est un ustensile de cuisine utilisé pour la cuisson. Tandis que « chaise », « table » et « télévision » sont des meubles et équipements d'ameublement couramment utilisés dans d'autres pièces de la maison.",
+        "hint": "Trouvez l'objet souvent utilisé en cuisine."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot « pièce » signifie : \"Il doit trouver une nouvelle pièce pour son appartement.\"",
+        "prompt": null,
+        "options": ["Monnaie", "Espace", "Jeu", "Composition"],
+        "answer": "Espace",
+        "explanation": "Dans le contexte de trouver quelque chose pour son appartement, « pièce » renvoie à un espace de vie. « Monnaie » indique de l'argent, « jeu » est lié au théâtre, et « composition » au domaine musical. Aucun de ces éléments n’est approprié au contexte ici.",
+        "hint": "Pensez à un mot qui désigne une partie d'un appartement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « sursaut » ?",
+        "prompt": null,
+        "options": ["Surprise", "Calme", "Noirceur", "Méfiance"],
+        "answer": "Surprise",
+        "explanation": "Un « sursaut » est souvent déclenché par une « surprise », car les deux impliquent une réaction brusque et inattendue. « Calme » est l'opposé de la spontanéité associée aux deux premiers termes. « Noirceur » et « méfiance » ne s'appliquent pas à l'idée d’un choc.",
+        "hint": "Lien avec une réaction soudaine."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Plombier est à tuyau comme électricien est à ___",
+        "prompt": null,
+        "options": ["Ampoule", "Fusible", "Câble", "Transformateur"],
+        "answer": "Câble",
+        "explanation": "Un plombier travaille principalement avec les tuyaux, tandis qu'un électricien manipule des câbles, par opposition à des éléments liés plus strictement à des appareils spécifiques comme une « ampoule » ou un « fusible ».",
+        "hint": "Pensez à l'élément le plus fondamental à manipuler par l'électricien."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « docile » ?",
+        "prompt": null,
+        "options": ["Difficile", "Obéissant", "Sauvage", "Ancien"],
+        "answer": "Sauvage",
+        "explanation": "« Sauvage », dans ce contexte, s'oppose à « docile », signifiant indiscipliné et réfractaire à recevoir des instructions. « Obéissant » est synonyme de « docile ». « Difficile » et « ancien » ne représentent par une stricte opposition contextuelle ici.",
+        "hint": "Cherchez la qualité contraire à la coopération."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Lion, Tigre, Léopard, Panda",
+        "options": ["Lion", "Tigre", "Léopard", "Panda"],
+        "answer": "Panda",
+        "explanation": "« Lion », « tigre » et « léopard » sont tous des félins carnivores, alors que « panda » appartient à une autre catégorie animale et n'est pas carnivore dominant, ce qui le rend l'intrus ici.",
+        "hint": "Identifiez l'animal connu pour ses régimes alimentaires distincts."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « complexe » ?",
+        "prompt": null,
+        "options": ["Simple", "Compliqué", "Aisé", "Facile"],
+        "answer": "Compliqué",
+        "explanation": "« Compliqué » est un synonyme de « complexe » car tous deux impliquent une idée de difficulté ou de sophistication. « Simple », « aisé » et « facile » renvoient à l'opposé de ce concept, ce qui les disqualifie pour cette réponse.",
+        "hint": "Cherchez un terme qui désigne une certaine sophistication."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le contraire de « avare » ?",
+        "prompt": null,
+        "options": ["Prodigue", "Économe", "Insouciant", "Mesuré"],
+        "answer": "Prodigue",
+        "explanation": "Un « prodigue » dépense sans retenue, le contraire du caractère « avare» qui garde jalousement ses biens. « Économe » et « mesuré » peuvent refléter des variations de gestion qui ne sont pas contradictoires. « Insouciant » ne concerne pas directement la gestion des ressources.",
+        "hint": "Recherchez un mot associé à la générosité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Rose, Orchidée, Lys, Scie",
+        "options": ["Rose", "Orchidée", "Lys", "Scie"],
+        "answer": "Scie",
+        "explanation": "Les termes « rose », « orchidée » et « lys » sont des fleurs. La « scie » est un outil de coupe et ne correspond donc pas à la catégorie des fleurs.",
+        "hint": "Repérez l'élément qui ne fleurit pas."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Marteau est à clou comme tournevis est à ___",
+        "prompt": null,
+        "options": ["Boulon", "Vis", "Plâtre", "Mèche"],
+        "answer": "Vis",
+        "explanation": "Un marteau enfonce des clous, tout comme un tournevis est utilisé pour enfoncer et retirer des vis. D’autres choix ne possèdent pas cette relation directe et pratique en termes de fonction.",
+        "hint": "Pensez à ce que manipule le tournevis."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « fugace » ?",
+        "prompt": null,
+        "options": ["Persistant", "Éphémère", "Rémanent", "Durable"],
+        "answer": "Éphémère",
+        "explanation": "« Éphémère » est un synonyme de « fugace », tous deux indiquant des choses ou événements de courte durée. « Persistant », « rémanent » et « durable » signent une plus longue pérennité.",
+        "hint": "Pensez à quelque chose qui a une durée de vie très brève."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "César, Napoléon, Winston, Spartacus",
+        "options": ["César", "Napoléon", "Winston", "Spartacus"],
+        "answer": "Spartacus",
+        "explanation": "« César », « Napoléon » et « Winston » sont des figures historiques reconnues principalement pour des rôles de leadership dans des contextes politiques ou militaires. « Spartacus » était un gladiateur esclave, non un chef militaire ou politique à la même échelle.",
+        "hint": "Cherchez le personnage qui n'était pas un leader politique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « fastidieux » ?",
+        "prompt": null,
+        "options": ["Plaisant", "Éprouvant", "Récurrent", "Léger"],
+        "answer": "Éprouvant",
+        "explanation": "« Fastidieux » renvoie à quelque chose de long et ardu, et « éprouvant » exprime cette même charge de pénibilité. « Plaisant », qui suggère quelque chose d'agréable, est donc l'antithèse. « Léger » est encore moins en corrélation. « Récurrent » souligne la répétition mais ignore la pénibilité.",
+        "hint": "Cherchez un adjectif marquant la lourdeur et la difficulté."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : « Il a fait preuve de ___ en cette situation complexe. »",
+        "prompt": null,
+        "options": ["Circonspection", "Conviction", "Léthargie", "Folie"],
+        "answer": "Circonspection",
+        "explanation": "La « circonspection » est souvent un choix judicieux dans des situations complexes qui demandent réflexion. « Conviction » ne s'accorde pas avec la prudence que requiert la complexité. « Léthargie » suggère la mollesse et « folie » l’irrationalité, peu indiquées dans ces moments.",
+        "hint": "Cherchez une attitude de prudence et de vigilance."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Infliger, Exhauster, Atavique, Contrit",
+        "options": ["Infliger", "Exhauster", "Atavique", "Contrit"],
+        "answer": "Exhauster",
+        "explanation": "« Exhauster » est un néologisme incorrect souvent confondu avec « exalter » ou « exaucer ». Les autres termes : « infliger », « atavique » et « contrit » ont des significations attestées et distinctes. L'intrus est un faux clivage linguistique.",
+        "hint": "Recherchez le mot qui semble ne pas appartenir au style reconnu."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « prolixe » ?",
+        "prompt": null,
+        "options": ["Bavard", "Conciliant", "Laconique", "Volubile"],
+        "answer": "Laconique",
+        "explanation": "« Laconique » caractérise un discours bref et concis, opposé au « prolixe », qui est abondamment verbeux. « Bavard » et « volubile » sont synonymes de la loquacité. « Conciliant » concerne davantage l'attitude que la quantité de paroles.",
+        "hint": "Optez pour une parole courbe et concise."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Mandragore, Envy, Perfidie, Charybde",
+        "options": ["Mandragore", "Envy", "Perfidie", "Charybde"],
+        "answer": "Envy",
+        "explanation": "« Envy » est d’origine anglaise et désigne l'envie, alors que les autres mots : « mandragore », « perfidie » et « charybde » font partie du lexique de la langue française avec des sens mythologiques, éthiques ou botaniques.",
+        "hint": "Repérez le mot n’appartenant pas à la langue française reconnue."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « atavique » ?",
+        "prompt": null,
+        "options": ["Innate", "Moderne", "Récent", "Héréditaire"],
+        "answer": "Moderne",
+        "explanation": "« Atavique » fait référence à ce qui repose sur l'hérédité et le passé lointain, créant une opposition avec « moderne », qui suggère la contemporanéité, l'évolution. « Récent » souligne aussi la notion de modernité, tandis qu’« héréditaire » est un synonyme.",
+        "hint": "Le terme inverse doit évoquer la contemporanéité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : « Enfance est à innocence comme vieillesse est à ___ »",
+        "prompt": null,
+        "options": ["Sagesse", "Naïveté", "Tendresse", "Cupidité"],
+        "answer": "Sagesse",
+        "explanation": "L'analogie fonctionne sur l'idée d'associations de qualités. « L’enfance » est souvent synonyme d’innocence. De même, « la vieillesse » est communément associée à la « sagesse », par l’expérience accumulée. Les autres qualités ne conviennent pas aussi globalement.",
+        "hint": "Pensez à ce que le temps mûrit."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Clair", "Limpide", "Ambigu", "Évident"],
+        "answer": "Ambigu",
+        "explanation": "« Sibyllin » se réfère à ce qui est dense, cryptique ou difficile à comprendre, d'où « ambigu » comme synonyme. « Clair », « limpide » et « évident » sont l’inverse de l'opacité, accentuant la clarté et simple compréhension.",
+        "hint": "Cherchez un terme soulignant une incertitude ou ambiguïté."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, que signifie « folie » : « Il a investi toutes ses économies dans un pari insensé, une véritable folie ! »",
+        "prompt": null,
+        "options": ["Raison", "Sagesse", "Excès", "Précaution"],
+        "answer": "Excès",
+        "explanation": "Dans ce contexte, « folie » décrit un acte excessif et insensé, pas comme une maladie mentale. « Raison » et « sagesse » sont des antithèses du sens contextuel. « Précaution » désigne la prudence à l’opposé du mot employé.",
+        "hint": "Concentrez-vous sur l'idée d'imprudence et d'excès."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Opale, Gypse, Hématite, Lyrique",
+        "options": ["Opale", "Gypse", "Hématite", "Lyrique"],
+        "answer": "Lyrique",
+        "explanation": "« Lyrique » tient des arts et de la poésie, tandis que « opale », « gypse » et « hématite » sont des termes minéralogiques désignant des minéraux ou des pierres. Ainsi, « lyrique » est l'intrus, déviant des propriétés au sens géologique.",
+        "hint": "Repérez l’élément lié à une catégorie artistique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « contrit » ?",
+        "prompt": null,
+        "options": ["Repentant", "Arrogant", "Désolé", "Chagriné"],
+        "answer": "Arrogant",
+        "explanation": "« Contrit » évoque une forme de souci profond, de repentir tel un remords, opposé en ce sens à « arrogant » qui dénote de la fierté et aucune humilité. « Repentant », « désolé » et « chagriné » se rangent également du côté de la contrition.",
+        "hint": "Mots en contraste avec le regret."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « pléthorique » ?",
+        "prompt": null,
+        "options": ["Exigu", "Comblé", "Opulent", "Redondant"],
+        "answer": "Opulent",
+        "explanation": "Le terme « pléthorique » signifie en grande et encombrante quantité, tout comme « opulent ». « Exigu » s'oppose à cette idée par sa connotation de petite taille. « Redondant » dénote une répétition excessive, mais est moins exact que l'abondance totale.",
+        "hint": "Pensez à l’idée globale de richesse et de surplus."
+    }
+]

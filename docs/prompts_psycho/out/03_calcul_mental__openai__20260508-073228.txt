@@ -1,0 +1,398 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 23 + 19 ?",
+    "expression": "23 + 19",
+    "options": ["41", "42", "43", "44"],
+    "answer": "42",
+    "explanation": "L'addition de 23 et 19 peut être facilitée en calculant 20 + 20, ce qui donne 40, puis en ajoutant 3, ce qui résulte en 43. Ensuite, il faut soustraire 1 pour corriger l'addition initiale excédentaire de 1, obtenant ainsi 42. Le piège ici pourrait être d'oublier de corriger cet excès.",
+    "hint": "Arrondis 19 à 20, additionne, puis ajuste en retirant 1."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 48 - 23 ?",
+    "expression": "48 - 23",
+    "options": ["25", "24", "26", "27"],
+    "answer": "25",
+    "explanation": "Pour résoudre 48 - 23, commence par soustraire 20 de 48, ce qui donne 28, puis soustrais 3 supplémentaires pour 25. L'astuce consiste à traiter d'abord des nombres ronds pour simplifier, évitant le piège de perdre une unité lors de la soustraction finale.",
+    "hint": "Soustrais d'abord 20 puis 3 pour simplifier."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 7 × 8 ?",
+    "expression": "7 × 8",
+    "options": ["54", "55", "56", "57"],
+    "answer": "56",
+    "explanation": "La multiplication de 7 par 8 peut être envisagée comme 7 fois 8. Une astuce est de multiplier 7 par 10 pour obtenir 70, puis retirer 14 (car 7 × 2 = 14) pour arriver à 56. Un piège classique est de confondre cette multiplication avec 7 × 9.",
+    "hint": "7 fois 10 moins 7 fois 2 peut t'aider."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 81 ÷ 9 ?",
+    "expression": "81 ÷ 9",
+    "options": ["8", "9", "10", "11"],
+    "answer": "9",
+    "explanation": "81 divisé par 9 est une opération simple si l'on reconnaît que 81 est un multiple de 9. Si on connaît ses tables, 9 fois 9 donne 81, donc 81 ÷ 9 = 9. Le piège ici est de confondre et penser à une division inexacte.",
+    "hint": "Quel nombre multiplié par 9 donne 81 ?"
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 50 % de 120 ?",
+    "expression": "0,5 × 120",
+    "options": ["50", "60", "70", "80"],
+    "answer": "60",
+    "explanation": "Calculer 50 % de 120 revient à diviser 120 par 2, puisque 50 % est la moitié. Donc, 120 ÷ 2 égale 60. Le piège commun est de mal diviser en deux ou de confondre avec un autre pourcentage comme 25 %, où l'on divise par 4.",
+    "hint": "50 % est la moitié du nombre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 66 ÷ 2 ?",
+    "expression": "66 ÷ 2",
+    "options": ["33", "32", "34", "35"],
+    "answer": "33",
+    "explanation": "Pour diviser 66 par 2, commence par diviser chaque chiffre dans 66 individuellement : 6 ÷ 2 = 3, et 6 ÷ 2 = 3. Le résultat est donc 33. Un piège est d'oublier de diviser chaque chiffre ou de confondre l'opération avec une multiplication.",
+    "hint": "Divise chaque chiffre de gauche à droite."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 12 + 34 ?",
+    "expression": "12 + 34",
+    "options": ["44", "45", "46", "47"],
+    "answer": "46",
+    "explanation": "Additionner 12 + 34 est plus simple en les arrondissant : ajoute 10 + 30 = 40, puis 2 + 4 = 6, ce qui donne 46. Le piège pourrait être de négliger le complément de l'arrondi ou d'ajouter trop vite.",
+    "hint": "Considère d'abord les dizaines puis les unités."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 18 + 16 ?",
+    "expression": "18 + 16",
+    "options": ["32", "33", "34", "35"],
+    "answer": "34",
+    "explanation": "Pour 18 + 16, commence par arrondir : (20 + 16) et soustrais 2, ce qui donne 36 - 2 = 34. Cette méthode évite d'oublier de retirer l'excès de l'arrondi initial.",
+    "hint": "Arrondis 18 à 20 puis effectue la correction."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 40 % de 50 ?",
+    "expression": "0,4 × 50",
+    "options": ["15", "20", "25", "30"],
+    "answer": "20",
+    "explanation": "Calculer 40 % de 50 s'effectue en multipliant 50 par 0,4, ce qui revient à 20. Une autre méthode consiste à calculer 10 % de 50, soit 5, et le multiplier par 4. Un piège serait de mal appliquer la division ou la multiplication.",
+    "hint": "Trouve 10 % puis multiplie par 4."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 5 × 6 ?",
+    "expression": "5 × 6",
+    "options": ["28", "29", "30", "31"],
+    "answer": "30",
+    "explanation": "La multiplication 5 × 6 est simplement un calcul qui donne 30, pensez aux tables de multiplication : 5 fois 5 égale 25 puis ajoutez 5 de plus. Le piège ici serait d'oublier l'ajout final de 5.",
+    "hint": "Utilise les tables de multiplication de 5."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 9 × 4 ?",
+    "expression": "9 × 4",
+    "options": ["34", "35", "36", "37"],
+    "answer": "36",
+    "explanation": "9 × 4 peut être vu comme 10 × 4 (40) moins 4, ce qui fait 36. Un piège commun est de prendre directement l'estimation sans retrait.",
+    "hint": "Multiplie par 10 puis retire 4."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 15 ÷ 3 ?",
+    "expression": "15 ÷ 3",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Pour diviser 15 par 3, considère combien de fois 3 entre dans 15. Étant donné que 3 × 5 = 15, le résultat est 5. Le piège est de diviser inexactement si l'on confond les tables de multiplication.",
+    "hint": "Combien de fois 3 va-t-il dans 15 ?"
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 6 × 7 ?",
+    "expression": "6 × 7",
+    "options": ["41", "42", "43", "44"],
+    "answer": "42",
+    "explanation": "Pour 6 × 7, imaginez 7 × 5 = 35, puis ajoutez 7 pour obtenir 42. Cette méthode aide à utiliser des tables de multiplication connues. Un piège pourrait être de doubler incorrectement 35 au lieu d'ajouter 7.",
+    "hint": "6 fois un groupe de 7 est l'idée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 33 + 17 ?",
+    "expression": "33 + 17",
+    "options": ["49", "50", "51", "52"],
+    "answer": "50",
+    "explanation": "Pour 33 + 17, ajouter d'abord les dizaines : 30 + 10 = 40, puis les unités : 3 + 7 = 10; additionnez-les pour 50. Le piège est d'omettre de combiner les unités correctes.",
+    "hint": "Commence par les dizaines puis les unités."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 14 × 2 ?",
+    "expression": "14 × 2",
+    "options": ["26", "28", "30", "32"],
+    "answer": "28",
+    "explanation": "Doublez 14 obtenu en multipliant 14 par 2 : 10 × 2 = 20 plus 4 × 2 = 8, totalisant 28. Un piège réside dans la multiplication des unités incorrecte.",
+    "hint": "Double chaque partie du nombre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 64 ÷ 8 ?",
+    "expression": "64 ÷ 8",
+    "options": ["6", "7", "8", "9"],
+    "answer": "8",
+    "explanation": "64 divisé par 8 se résout en reconnaissant que 8 fois 8 donne 64, donc 64 ÷ 8 = 8. Un piège potentiel est l'erreur dans les tables, confondant avec 8 × 9.",
+    "hint": "Quel nombre multiplié par 8 donne 64 ?"
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 45 % de 100 ?",
+    "expression": "0,45 × 100",
+    "options": ["40", "45", "50", "55"],
+    "answer": "45",
+    "explanation": "Calculer 45 % de 100 est direct : 45 % en décimal est 0,45, et 100 × 0,45 = 45. L'erreur classique serait de faire 45 % de 10 ou d'un autre nombre par inattention.",
+    "hint": "Utilise la notion de pourcentage direct."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 347 + 286 ?",
+    "expression": "347 + 286",
+    "options": ["633", "634", "635", "636"],
+    "answer": "633",
+    "explanation": "Pour additionner 347 et 286, commence par 300 + 200 = 500, puis 40 + 80 = 120, enfin 7 + 6 = 13. Ajoute ces résultats : 500 + 120 + 13 = 633. Un piège est de mélanger les unités, dizaines et centaines.",
+    "hint": "Additionne par blocs de valeurs."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 812 - 347 ?",
+    "expression": "812 - 347",
+    "options": ["461", "462", "463", "464"],
+    "answer": "465",
+    "explanation": "Pour soustraire 347 de 812, commence par soustraire les centaines : 800 - 300 = 500. Puis, soustrais les dizaines et les unités : 12 - 7 = 5, aboutissant à 465. Le piège réside dans les mauvaises soustractions intermédiaires.",
+    "hint": "Écris 812 comme (800 + 12) pour plus de clarté."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 27 × 30 ?",
+    "expression": "27 × 30",
+    "options": ["810", "815", "820", "825"],
+    "answer": "810",
+    "explanation": "Multiplie d'abord par 10 : 27 × 10 = 270, puis multiplie par 3 : 270 × 3 = 810. Un piège commun est d'oublier de multiplier les 90 résultant de 27 par 3.",
+    "hint": "Décompose l'opération en multipliant d'abord par 10."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 145 ÷ 5 ?",
+    "expression": "145 ÷ 5",
+    "options": ["28", "29", "30", "31"],
+    "answer": "29",
+    "explanation": "La division de 145 par 5 se fait en divisant d'abord par 10, soit 14,5, qui est 145 avec un point déplacé, et double ce résultat pour obtenir 29. Un piège pourrait être de placer incorrectement la virgule ou de doubler incorrectement.",
+    "hint": "Décompense en résultant de 145/10, puis double."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 1618 - 329 ?",
+    "expression": "1618 - 329",
+    "options": ["1289", "1299", "1300", "1309"],
+    "answer": "1289",
+    "explanation": "Pour compter 1618 diminuer 329, faites d'abord 1610 moins 300 pour obtenir 1310, puis retirez le reste 29. La réponse est 1289. Attention à ne pas inverser les chiffres de 329.",
+    "hint": "Envisager la décomposition progressive de la soustraction."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 75 % de 200 ?",
+    "expression": "0,75 × 200",
+    "options": ["140", "150", "160", "170"],
+    "answer": "150",
+    "explanation": "75 % de 200 revient à multiplier 200 par 0,75. Pouvez aussi voir cela comme prenant 3/4 de 200. 200 ÷ 4 égale 50, puis 50 × 3 égale 150. Ne confondez pas avec d'autres pourcentages comme 25 %.",
+    "hint": "Visualisez 200 comme quatre parties égales et multipliez par trois."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 925 - 614 ?",
+    "expression": "925 - 614",
+    "options": ["310", "311", "312", "313"],
+    "answer": "311",
+    "explanation": "D'abord, 900 moins 600 donne 300, 25 moins 14 donne 11. Ensemble, les sous-résultats composent 311. Le piège est de mélanger les unités et les dizaines.",
+    "hint": "Soustraire séparément les centaines, les dizaines et les unités."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 13² ?",
+    "expression": "13²",
+    "options": ["159", "161", "169", "171"],
+    "answer": "169",
+    "explanation": "Le carré de 13 est 13 multiplié par 13 : (10 + 3)² = 10² + 2×10×3 + 3², soit 100 + 60 + 9 = 169. Erreur : oublie des termes du carré = erreurs.",
+    "hint": "Rappelle-toi de (a + b)² comme a² + 2ab + b²."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 257 + 369 ?",
+    "expression": "257 + 369",
+    "options": ["616", "626", "636", "646"],
+    "answer": "626",
+    "explanation": "Ajoutez d'abord les centaines (200 + 300 = 500), puis les dizaines (50 + 60 = 110). Ensuite les unités, 7 + 9 = 16. Additionnez les résultats: 500 + 110 + 16 = 626. Attention aux erreurs de report.",
+    "hint": "Travaillez partie par partie (centaines, dizaines, unités)."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 15 % de 60 ?",
+    "expression": "0,15 × 60",
+    "options": ["8", "9", "10", "11"],
+    "answer": "9",
+    "explanation": "15 % de 60 peut être simplifié en multipliant 60 par 0,15, ce qui donne 9. Ou considérez 10 % de 60 (6), puis ajoutez la moitié de ce 10 % (3), pour un total de 9. Évitez le piège simple d'arrondi à 20 % au lieu de 15 %.",
+    "hint": "Étudiez 10 % de 60 puis 5 % de 60."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 735 - 287 ?",
+    "expression": "735 - 287",
+    "options": ["448", "449", "450", "451"],
+    "answer": "448",
+    "explanation": "735 diminuer de 287, commencez par 735 moins 280 pour trouver 455. Puis retirez 7 pour donner 448. Un piège est de mal compter les dizaines.",
+    "hint": "Décomposez la soustraction en deux étapes faciles."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 12 × 12 ?",
+    "expression": "12 × 12",
+    "options": ["143", "144", "145", "146"],
+    "answer": "144",
+    "explanation": "Multiplie 12 par 12 : (10+2)² = 10² + 2×10×2 + 2² = 100 + 40 + 4 = 144. Evitez d'oublier le double terme produit (2x2=4).",
+    "hint": "Récupérez la formule carré : a² + 2ab + b²."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 43 × 5 ?",
+    "expression": "43 × 5",
+    "options": ["210", "215", "220", "225"],
+    "answer": "215",
+    "explanation": "Multiplie 43 par 5 avec un multipli: 40 × 5 = 200, plus 3 × 5 = 15, ce qui donne 215. Le piège serait de négliger le calcul des unités.",
+    "hint": "Divise en bloc ten et single."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 294 ÷ 7 ?",
+    "expression": "294 ÷ 7",
+    "options": ["42", "43", "44", "45"],
+    "answer": "42",
+    "explanation": "En divisant 294 par 7, imagine 70 × 4 = 280, puis ajoute 14 (2×7) pour totaliser. Assurez-vous que chaque division partielle est correcte, c'est là un piège.",
+    "hint": "Divise 294 en blocs divisibles par 7."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font (53 × 4) + 28 ?",
+    "expression": "(53 × 4) + 28",
+    "options": ["236", "240", "245", "252"],
+    "answer": "240",
+    "explanation": "Multiplie 53 par 4: 50 × 4 = 200, 3 × 4 = 12, totale 212. Ajoute 28 à 212 pour arriver à 240. Le piège est de mal ajouter.",
+    "hint": "Calcule d'abord le produit, puis l'addition."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 23 × 17 ?",
+    "expression": "23 × 17",
+    "options": ["381", "391", "391", "401"],
+    "answer": "391",
+    "explanation": "Calcule 23 × 17 en utilisant l'arrondi: 20 × 17 = 340. Puis, 3 × 17 = 51 — resort toute l'add. compl. de 391. Piège: oublier ou douter des décisions.",
+    "hint": "Distribue en (20 + 3) par 17."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 48 % de 150 ?",
+    "expression": "0,48 × 150",
+    "options": ["70", "72", "74", "76"],
+    "answer": "72",
+    "explanation": "48 % de 150 soit 150 × 0,48, utilisez 이전 : (150 ÷ 2 = 75) - (3 = 1.5), 72. Piège inf. discussion (de 50 %.)",
+    "hint": "Pensez moitié moins un peu plus."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font (35 + 17) × 2 - 14 ?",
+    "expression": "(35 + 17) × 2 - 14",
+    "options": ["96", "104", "112", "116"],
+    "answer": "104",
+    "explanation": "35 ajoute 17 puis que 52 × 2, somme 104. -14 trouve. Un écuel se trompe gestes inter.cat + 17.",
+    "hint": "Faites parte et parte, careful soustraction."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 3^4 ?",
+    "expression": "3^4",
+    "options": ["81", "83", "85", "89"],
+    "answer": "81",
+    "explanation": "Pour obtenir 3 élevé à la puissance 4, multiplie 3 par 3 trois fois (3 × 3 = 9 → 9 × 9 = 81). Ne confondez jamais deux multipliers seulement, erreur fréquente. ",
+    "hint": "Considérez ce que répète multiplié au fois."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 68 × 15 ?",
+    "expression": "68 × 15",
+    "options": ["900", "1020", "1080", "1025"],
+    "answer": "1020",
+    "explanation": "Méthode par étapes: 60 × 15 = 900. 8 × 15 = 120. Donc, 900 + 120 = 1020. Confusion entre décompos imp. ces étapes.",
+    "hint": "Opposez la multiplication parts to help calculation."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 2/3 de 81 ?",
+    "expression": "2/3 × 81",
+    "options": ["52", "54", "56", "58"],
+    "answer": "54",
+    "explanation": "Divise d'abord 81 par 3: 81 ÷ 3 = 27. Puis multiplie 27 par 2, soit 54. Mal utilisé car mauvaise compréhension du concept fraction.",
+    "hint": "D'abord divisé par 3, puis multipliez par 2."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font √225 ?",
+    "expression": "√225",
+    "options": ["14", "15", "16", "17"],
+    "answer": "15",
+    "explanation": "Brisez 225 en 15 × 15, lequel donne facilement comme résultat. Punition d'autorité variable, au lieu de céder à la racine triviale (soussigne).",
+    "hint": "Quel nombre multiplié par lui-même fait 225 ?"
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 78 × 25 ?",
+    "expression": "78 × 25",
+    "options": ["1850", "1900", "1950", "2000"],
+    "answer": "1950",
+    "explanation": "Multiplies 25 par 4 pour facilité 100. Donc 78 par 4 (312) puis par 100 soit 1950. Séparez cette multiplication pour éviter blé des calcul faux.",
+    "hint": "Symplifier en quarts."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 35 % de 180 ?",
+    "expression": "0,35 × 180",
+    "options": ["63", "64", "65", "70"],
+    "answer": "63",
+    "explanation": "35 % équivalent à 0,35, donc 180 × 0,35 = 63. Estimez un tiers plus suffère peur erreur rapide.",
+    "hint": "Faites une approximation vers une faction tier."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font √289 ?",
+    "expression": "√289",
+    "options": ["16", "17", "18", "19"],
+    "answer": "17",
+    "explanation": "Rappelle que 289 = 17. Formez décomposition, il notait 17 × 17, égalité 289. La facilité dans autres racines possibles.",
+    "hint": "Que faire si multiplié par lui-même?"
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font (64 ÷ 4) + (9 × 8) ?",
+    "expression": "(64 ÷ 4) + (9 × 8)",
+    "options": ["112", "108", "110", "118"],
+    "answer": "112",
+    "explanation": "Faites d'abord : 64 divisé par 4 = 16. Ensuite : 9 multiplié par 8, = 72, la somme 112. Des règles de calcul (ordre opérations pour vérifier).",
+    "hint": "Terminer chaque étape, maintenez une liste de vérification."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font (56 + 8) × (5 - 2) ?",
+    "expression": "(56 + 8) × (5 - 2)",
+    "options": ["192", "176", "192", "204"],
+    "answer": "192",
+    "explanation": "Aditionner 56 et 8 = 64, ensuite soustraire 5 et 2 pour 3. Multiplié donne 192. On pourrait facilement oublier effectuer soustration premier.",
+    "hint": "Répétez chaque étape ordre opérér."
+  }
+]

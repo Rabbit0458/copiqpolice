@@ -1,0 +1,562 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on logiquement conclure ?",
+        "prompt": "Tous les chiens aiment jouer. Rex est un chien.",
+        "options": [
+            "Rex n'aime pas jouer",
+            "Rex aime jouer",
+            "On ne peut pas savoir",
+            "Rex est un chat"
+        ],
+        "answer": "Rex aime jouer",
+        "explanation": "Il s'agit d'un syllogisme simple où tous les chiens aiment jouer et Rex est un chien. Par transitivité, Rex appartient à la catégorie des chiens qui aiment jouer. Le piège serait de penser qu'il y a une exception pour Rex, mais l'énoncé ne le précise pas.",
+        "hint": "Applique le principe de transitivité entre les deux informations."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur est le plus probable ?",
+        "prompt": "Dans un sac, il y a 5 boules rouges et 5 boules bleues.",
+        "options": [
+            "Rouge",
+            "Bleu",
+            "Aucune différence",
+            "Impossible de savoir"
+        ],
+        "answer": "Aucune différence",
+        "explanation": "Avec un nombre égal de boules rouges et bleues, chaque couleur a une probabilité égale d'être tirée. Le piège possible est de croire qu'une couleur est favorisée sans justification.",
+        "hint": "Compare les quantités de boules pour déterminer la probabilité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que se passe-t-il si Anna est joyeuse ?",
+        "prompt": "Si Anna est joyeuse, alors elle chante.",
+        "options": [
+            "Anna ne chante pas",
+            "Anna chante",
+            "On ne peut pas savoir",
+            "Anna est triste"
+        ],
+        "answer": "Anna chante",
+        "explanation": "C'est un exemple de modus ponens : si Anna est joyeuse (prémisse vérifiée), alors elle chante, conformément à la condition. Le piège possible est de penser à l'inverse, ce qui n'est pas le cas ici.",
+        "hint": "Vérifie si la condition initiale est remplie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus vieux ?",
+        "prompt": "Paul est plus jeune que Marie. Marie est plus jeune que Thomas.",
+        "options": [
+            "Paul",
+            "Marie",
+            "Thomas",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Thomas",
+        "explanation": "L'ordre des âges est Thomas > Marie > Paul. En suivant cette chaîne d'inégalités, Thomas est le plus âgé. Le piège est d'inverser les comparaisons, ce qui pourrait mener à une fausse conclusion.",
+        "hint": "Trace la chaîne des inégalités données."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on affirmer ?",
+        "prompt": "Tous les éléphants sont gris. Dumbo est un éléphant.",
+        "options": [
+            "Dumbo est vert",
+            "Dumbo est gris",
+            "Dumbo est bleu",
+            "On ne sait pas"
+        ],
+        "answer": "Dumbo est gris",
+        "explanation": "Ce syllogisme repose sur les informations que tous les éléphants sont gris et que Dumbo est un éléphant. Donc, par transitivité, Dumbo est gris. Un piège courant serait d'oublier cette connexion logique directe.",
+        "hint": "Utilise la propriété de transitivité parmi les catégories."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que signifie cette information ?",
+        "prompt": "Si Luc est à la maison, il regarde la télévision.",
+        "options": [
+            "Luc ne regarde pas la télévision",
+            "Luc regarde la télévision",
+            "Luc est parti",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Luc regarde la télévision",
+        "explanation": "Modus ponens : la première condition indique que Luc regarde la télévision s'il est à la maison. Puisque la condition est satisfaite, la conséquence directe est qu'il regarde effectivement la télévision. Le piège serait de supposer un scénario contraire.",
+        "hint": "Valide si la condition initiale est respectée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui a le livre le plus cher ?",
+        "prompt": "Alice a un livre plus cher que celui de Bob. Bob a un livre plus cher que celui de Charlie.",
+        "options": [
+            "Alice",
+            "Bob",
+            "Charlie",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Alice",
+        "explanation": "Les livres sont classés par prix : Alice > Bob > Charlie. Alice a donc le livre le plus cher, conformément à la chaine d'inégalités. Le piège ici est de confondre l'ordre entre Bob et Alice.",
+        "hint": "Utilise un ordre de comparaison pour déterminer qui est supérieur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle affirmation est correcte ?",
+        "prompt": "Tous les poissons savent nager. Nemo est un poisson.",
+        "options": [
+            "Nemo sait nager",
+            "Nemo ne sait pas nager",
+            "Nemo est un oiseau",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Nemo sait nager",
+        "explanation": "Ce syllogisme indique que tous les poissons savent nager et que Nemo est un poisson, ce qui signifie que Nemo sait nager. Il n'y a pas d'exception à cette règle. Le piège réside dans l'oubli de ce lien direct.",
+        "hint": "Applique le principe logique de transitivité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on déduire ?",
+        "prompt": "Les voitures rouges sont toujours rapides. Cette voiture de course est rouge.",
+        "options": [
+            "Cette voiture est rapide",
+            "Cette voiture est lente",
+            "Cette voiture est verte",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette voiture est rapide",
+        "explanation": "Il s'agit d'un syllogisme simple : les voitures rouges étant rapides et la voiture de course étant rouge, il en découle que cette voiture est rapide. Le piège est de supposer que la couleur ne détermine pas toujours la vitesse, ici c'est affirmé.",
+        "hint": "Utilise la déduction basée sur les caractéristiques partagées."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le fruit le plus délicieux ?",
+        "prompt": "Les fraises sont plus délicieuses que les pommes. Les pommes sont plus délicieuses que les bananes.",
+        "options": [
+            "Fraîses",
+            "Pommes",
+            "Bananes",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Fraîses",
+        "explanation": "En suivant l'ordre donné, les fraises > pommes > bananes en termes de déliciosité. Donc, les fraises sont considérées comme le fruit le plus délicieux selon cet ordre. Inverser cet ordre serait un piège à éviter.",
+        "hint": "Trace la chaîne de délices pour savoir ce qui est supérieur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel tour fait le plus de bruit ?",
+        "prompt": "La cloche de l'église fait plus de bruit que la sonnette. La sonnette fait plus de bruit que la clochette.",
+        "options": [
+            "Cloche de l'église",
+            "Sonnette",
+            "Clochette",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cloche de l'église",
+        "explanation": "Le classement par niveau sonore est : cloche de l'église > sonnette > clochette. D'après cet ordre, la cloche de l'église est celle qui produit le plus de bruit. Le piège à éviter ici est de mal placer les éléments dans l'ordre.",
+        "hint": "Construire une chaîne en suivant les comparaisons fournies."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qu'indique cet énoncé ?",
+        "prompt": "Tous les enfants aiment les bonbons. Pierre est un enfant.",
+        "options": [
+            "Pierre n'aime pas les bonbons",
+            "Pierre aime les bonbons",
+            "On ne peut pas savoir",
+            "Pierre est adulte"
+        ],
+        "answer": "Pierre aime les bonbons",
+        "explanation": "Ce syllogisme montre que tous les enfants aiment les bonbons. Étant donné que Pierre est un enfant, par transitivité logique, Pierre aime les bonbons. Le piège voudrait être d'imaginer une exception qui n'est pas précisée ici.",
+        "hint": "Utilise la logique formelle de catégorisation."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on affirmer au sujet de Victor ?",
+        "prompt": "Si Victor lit, alors il porte ses lunettes. Victor lit un livre en ce moment.",
+        "options": [
+            "Victor ne porte pas ses lunettes",
+            "Victor porte ses lunettes",
+            "On ne sait pas",
+            "Victor est dehors"
+        ],
+        "answer": "Victor porte ses lunettes",
+        "explanation": "Par modus ponens, la condition indique que si Victor lit, il porte ses lunettes. Puisque Victor lit un livre, nous pouvons logiquement conclure qu'il porte ses lunettes. Le piège serait de penser que la lecture puisse ne pas nécessiter des lunettes malgré la condition explicitée.",
+        "hint": "Assure-toi que la condition initiale est satisfaite."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel animal est le plus grand ?",
+        "prompt": "L'éléphant est plus grand que le cheval. Le cheval est plus grand que le chien.",
+        "options": [
+            "Éléphant",
+            "Cheval",
+            "Chien",
+            "On ne sait pas"
+        ],
+        "answer": "Éléphant",
+        "explanation": "Selon la chaîne donnée, l'ordre est : éléphant > cheval > chien. Par cette chaîne de comparaisons, l'éléphant est le plus grand des trois. Un piège possible est de ne pas respecter l'ordre ou de confondre les tailles.",
+        "hint": "Construis l'ordre de grandeur pour comparer correctement les tailles."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conséquence peut-on tirer ?",
+        "prompt": "Tous les rosiers ont des épines. Ce buisson est un rosier.",
+        "options": [
+            "Ce buisson n'a pas d'épines",
+            "Ce buisson a des épines",
+            "Ce buisson est un arbre",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce buisson a des épines",
+        "explanation": "D'après le syllogisme, tous les rosiers ont des épines. Étant donné que ce buisson est un rosier, il suit logiquement qu'il a des épines également. Un piège serait d'imaginer une anomalie alors que l'information est claire sur cette propriété.",
+        "hint": "Invoque la logique de déduction par appartenance au groupe."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que implique la situation ?",
+        "prompt": "Si Marie est à la bibliothèque, alors elle étudie.",
+        "options": [
+            "Marie ne peut pas étudier",
+            "Marie étudie",
+            "Marie dort",
+            "On ne sait pas"
+        ],
+        "answer": "Marie étudie",
+        "explanation": "Selon la condition, si Marie est à la bibliothèque, elle doit être en train d'étudier. Cette implication est directement vérifiée par l'énoncé. Le piège serait d'inverser les implications ou de supposer qu'une exception existe.",
+        "hint": "Valide si la condition initiale est effectivement remplie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel fruit est le plus juteux ?",
+        "prompt": "Les oranges sont plus juteuses que les pommes. Les pommes sont plus juteuses que les poires.",
+        "options": [
+            "Oranges",
+            "Pommes",
+            "Poires",
+            "On ne sait pas"
+        ],
+        "answer": "Oranges",
+        "explanation": "En déduisant des comparaisons fournies, les oranges > pommes > poires en termes de jutosité. Ainsi, les oranges sont les plus juteuses de cette série. Le piège serait de changer l'ordre établi par l'énoncé.",
+        "hint": "Utilise l'ordre des comparaisons donné pour placer les fruits."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel animal est au milieu en termes de vitesse ?",
+        "prompt": "Le guépard est plus rapide que le cheval. Le cheval est plus rapide que le chien. Le chien est plus rapide que le chat.",
+        "options": [
+            "Guépard",
+            "Cheval",
+            "Chien",
+            "Chat"
+        ],
+        "answer": "Cheval",
+        "explanation": "L'ordre de vitesse établi est : guépard > cheval > chien > chat. Par conséquent, le cheval se situe au milieu dans cette hiérarchie de vitesse. Il est important de suivre minutieusement chaque étape de comparaison pour éviter de commettre une erreur d'ordre.",
+        "hint": "Trace la chaîne de vitesses en comparant soigneusement chaque paire."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que se passe-t-il si Jeanne sort ?",
+        "prompt": "Si Jeanne sort, alors Pierre range la maison. Si Pierre range la maison, alors Marie cuisine.",
+        "options": [
+            "Marie ne cuisine pas",
+            "Marie cuisine",
+            "Jeanne ne sort pas",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marie cuisine",
+        "explanation": "C'est une chaîne d'implications. Si Jeanne sort, cela déclenche une séquence : Pierre range la maison, puis Marie cuisine. Le piège est de confondre la chaîne ou de négliger l'effet domino inhérent à ces implications.",
+        "hint": "Suivre chaque implication pas à pas le long de la chaîne logique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que peut-on déduire si Marc étudie ?",
+        "prompt": "Si Marc étudie, il réussit l'examen. S'il réussit l'examen, il obtient une bourse.",
+        "options": [
+            "Marc échoue à l'examen",
+            "Marc obtient une bourse",
+            "Marc ne reçoit pas de bourse",
+            "On ne sait pas"
+        ],
+        "answer": "Marc obtient une bourse",
+        "explanation": "C'est un mode de raisonnement par transitivité des conditions. Si Marc étudie, il réussit l'examen et de là, il obtient une bourse. Le piège consiste à omettre une des étapes et à faussement conclure que la chaîne ne s'applique pas.",
+        "hint": "Identifie chaque lien entre les étapes successives."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui a terminé en première place ?",
+        "prompt": "Sophie termine avant Marc. Marc termine avant Luc. Luc termine avant Jeanne.",
+        "options": [
+            "Sophie",
+            "Marc",
+            "Luc",
+            "Jeanne"
+        ],
+        "answer": "Sophie",
+        "explanation": "Le classement des arrivées est Sophie > Marc > Luc > Jeanne, plaçant ainsi Sophie en première position. Le piège possible est d'inverser accidentellement l'ordre en confondant qui vient avant qui, ce qui pourrait brouiller la conclusion.",
+        "hint": "Compare l'ordre donné directement pour déterminer qui précède."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que se passe-t-il si Tom est en colère ?",
+        "prompt": "Si Tom est en colère, alors il ne parle pas à tout le monde. S'il ne parle pas à tout le monde, alors Lisa s'inquiète.",
+        "options": [
+            "Lisa ne s'inquiète pas",
+            "Lisa s'inquiète",
+            "Tom parle à tout le monde",
+            "On ne sait pas"
+        ],
+        "answer": "Lisa s'inquiète",
+        "explanation": "Cette structure utilise la transitivité de condition. La colère de Tom conduit à son silence, ce qui ensuite inquiète Lisa. Le piège clé ici consiste à manquer une condition intermédiaire, ce qui affecterait la conclusion.",
+        "hint": "Visualise la séquence d'impacts logiquement liés."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle conclusion déduis-tu ?",
+        "prompt": "Tous les médecins sont instruits. Quelques médecins sont des chercheurs. Aucun chercheur n'est paresseux.",
+        "options": [
+            "Tous les chercheurs sont instruits",
+            "Certains médecins sont paresseux",
+            "Tous les médecins sont paresseux",
+            "On ne sait pas"
+        ],
+        "answer": "Tous les chercheurs sont instruits",
+        "explanation": "Il est donné que tous les médecins sont instruits et que quelques-uns d'entre eux sont des chercheurs. Ainsi, ces chercheurs médecins sont instruits selon les prémisses. Le piège réside dans le fait de penser que la recherche d'informations non fournies est nécessaire pour déduction.",
+        "hint": "Considère les intersections de chaque groupe et catégorie."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la relation correcte si John est énergiquement impliqué ?",
+        "prompt": "Si John participe, alors Marie est motivée. Si Marie est motivée, alors l'équipe gagne.",
+        "options": [
+            "L'équipe perd",
+            "L'équipe gagne",
+            "John ne participe pas",
+            "On ne sait pas"
+        ],
+        "answer": "L'équipe gagne",
+        "explanation": "Ceci suit une logique en chaîne où la participation de John génère une séquence de résultats finissant par la victoire de l'équipe. Le piège potentiel est de ne pas reconnaitre l'effet cumulatif des implications successives.",
+        "hint": "Propage la chaîne d'effets pour établir la conclusion finale."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'animal le plus intelligent ?",
+        "prompt": "Les dauphins sont plus intelligents que les chiens. Les chiens sont plus intelligents que les chats. Les chats sont plus intelligents que les souris.",
+        "options": [
+            "Dauphins",
+            "Chiens",
+            "Chats",
+            "Souris"
+        ],
+        "answer": "Dauphins",
+        "explanation": "L'évaluation suit la séquence : dauphins > chiens > chats > souris, ce qui place les dauphins en haut de l'échelle d'intelligence. Le piège est d'oublier d'émettre chaque maillon de la chaîne correctement.",
+        "hint": "Compare chaque niveau progressivement selon les affirmations."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la veste la plus chère ?",
+        "prompt": "La veste de cuir coûte plus cher que la veste en laine. La veste en laine coûte plus cher que la veste en polyester.",
+        "options": [
+            "Veste de cuir",
+            "Veste en laine",
+            "Veste en polyester",
+            "On ne sait pas"
+        ],
+        "answer": "Veste de cuir",
+        "explanation": "Le classement des prix suit : cuir > laine > polyester, mettant ainsi la veste de cuir comme étant la plus chère. Le piège courant ici serait d'inverser accidentellement les ordres de comparaison.",
+        "hint": "Utilise la suite d'évaluations de prix pour identifier le plus coûteux."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui arrive en dernière position ?",
+        "prompt": "Charles finit après Marie. Marie termine après Louise. Louise arrive avant elle tout le monde.",
+        "options": [
+            "Charles",
+            "Marie",
+            "Louise",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Charles",
+        "explanation": "Ici, nous avons l'ordre de finition : Louise > Marie > Charles, donc Charles finit, en dernière position. Les inversions possibles de chaque comparaison sont les pièges ici.",
+        "hint": "Visualise la position finale par rapport aux autres."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle condition se vérifie si Sarah est heureuse ?",
+        "prompt": "Si Sarah est heureuse, alors elle danse. Si elle danse, alors elle chante.",
+        "options": [
+            "Sarah pleure",
+            "Sarah chante",
+            "Sarah dort",
+            "On ne sait pas"
+        ],
+        "answer": "Sarah chante",
+        "explanation": "En suivant la série d'implications, le bonheur de Sarah mène à son chant à travers une chaîne d'effets, suivant la logique d'enchaînement d'actions. Le piège est de casser cette chaîne ou d'oublier la dernière étape.",
+        "hint": "Suivre les conséquences pas à pas jusqu'au résultat final."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre position après le dépassement ?",
+        "prompt": "Vous doublez le deuxième véhicule dans une course.",
+        "options": [
+            "1ère",
+            "2ème",
+            "3ème",
+            "4ème"
+        ],
+        "answer": "2ème",
+        "explanation": "En doublant le deuxième, vous prenez sa place, devenant ainsi le second. Le piège classique consiste à croire que vous êtes premier après un tel dépassement, mais c'est en réalité l'ancien second qui est maintenant derrière vous.",
+        "hint": "Pensez à la position occupée par l'autre coureur avant le dépassement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment s'appelle le résultat de votre opération ?",
+        "prompt": "Il y a un banc avec dix pommes. Enlevez deux pommes. Combien reste-t-il de pommes ?",
+        "options": [
+            "8 pommes",
+            "10 pommes",
+            "2 pommes",
+            "On ne sait pas"
+        ],
+        "answer": "8 pommes",
+        "explanation": "En retirant 2 pommes des 10 initiales, il vous reste 8 pommes sur le banc. Le piège réside dans le fait de croire qu'il en reste toujours 10 parce que la phrase entière n'est pas recalculée correctement, ou dans l'oubli d'opérations simples.",
+        "hint": "Effectuez un simple calcul de soustraction."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle affirmation peut-on en déduire ?",
+        "prompt": "Si Léa est à l'école, alors elle porte uniforme. Léa est en uniforme.",
+        "options": [
+            "Léa n'est pas à l'école",
+            "Léa est à l'école",
+            "Léa est à la maison",
+            "On ne sait pas"
+        ],
+        "answer": "On ne sait pas",
+        "explanation": "La condition “Si Léa est à l'école, alors elle est en uniforme” ne garantit pas inversement qu'en étant en uniforme, elle est à l'école. L'erreur commune faite ici est la confusion d'inverser la condition initiale en modi tollens.",
+        "hint": "Évitez de fléchir à l'implication inverse."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que pouvons-nous affirmer sur l'équipe gagnante ?",
+        "prompt": "Si l'équipe A perd, alors l'équipe B gagne. L'équipe A a perdu.",
+        "options": [
+            "L'équipe B a perdu",
+            "L'équipe B a gagné",
+            "L'équipe A a gagné",
+            "On ne sait pas"
+        ],
+        "answer": "L'équipe B a gagné",
+        "explanation": "Grâce au modus ponens, la perte de l'équipe A a pour résultat la victoire de l'équipe B, selon la condition stipulée. Un piège fréquent est de supposer que la perte de l'équipe A n'implique pas forcément la victoire de l'équipe B.",
+        "hint": "Vérifiez si la condition entraîne la conclusion prévue."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle conclusion tirer de la chaine de quantités ?",
+        "prompt": "Il y a cinq bouteilles: trois sont pleines, une est vide et une est à moitié pleine.",
+        "options": [
+            "Toutes sont pleines",
+            "Plus de la moitié sont pleines",
+            "Moins de la moitié sont pleines",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Plus de la moitié sont pleines",
+        "explanation": "Sur cinq au total, trois étant pleines représentent plus de la moitié. Le piège consiste à ne pas reconnaître que cinq bouteilles inclues trois plus que la moitié sur une base mathématique simple.",
+        "hint": "Vérifiez la quantité proportionnée totale dans le calcul."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle pourrait être la répartition conclusion ?",
+        "prompt": "Dans une famille, un enfant a deux téléphones, l'autre n'en a aucun.",
+        "options": [
+            "Ensemble, ils ont deux téléphones",
+            "Ensemble, ils n'ont aucun téléphone",
+            "Ils ont chacun un téléphone",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ensemble, ils ont deux téléphones",
+        "explanation": "Malgré la possession indépendante, dans ensemble, les deux enfants possèdent encore deux téléphones. Le piège ici, c'est de mal comprendre que l'ensemble est non affecté par la répartition interne.",
+        "hint": "Additionnez le total par rapport aux possessions individuelles."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle erreur peut se produire dans cette circonstance ?",
+        "prompt": "Quatre personnes partent en canoë. L'embarcation entier peut faire deux traversées à la fois.",
+        "options": [
+            "Une seule traversée",
+            "Deux traversées",
+            "Trois traversées",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Deux traversées",
+        "explanation": "Le canoë est mentionné apte à effectuer deux traversées à la fois, conformément aux capacités partagées, rendant deux traversées réalisables par celui-ci. Le piège simple est de croire que deux traversées ne suffisent pas pour selon les capacités disponibles.",
+        "hint": "Utilisez la condition donnée concernant les capacités du canoë pour évaluer."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que se passe-t-il si des conditions sont remplies ?",
+        "prompt": "Si Marie arrive à l'heure, alors Paul n'est pas en retard. Si Paul n'est pas en retard, alors la réunion n'est pas annulée.",
+        "options": [
+            "La réunion est annulée",
+            "La réunion n'est pas annulée",
+            "Marie n'arrive pas à l'heure",
+            "On ne sait pas"
+        ],
+        "answer": "La réunion n'est pas annulée",
+        "explanation": "Grâce à une chaîne d'implications, l'arrivée à temps de Marie finit par éviter l'annulation de réunion. Un piège commun est de ne pas relier correctement les préconditions entre elles par ignorance des impacts séquentiels.",
+        "hint": "Suivre étape par étape l'effet découlant de chaque condition."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment se résoudre-t-elle en position de course ?",
+        "prompt": "Lors d'une course, vous doublez le deuxième coureur.",
+        "options": [
+            "1ère",
+            "2ème",
+            "3ème",
+            "On ne peut pas savoir"
+        ],
+        "answer": "2ème",
+        "explanation": "Vous prendriez la deuxième position après doublant le deuxième coureur, vous êtes donc deuxième. Le piège ici est la supposition commune que doubler l'autre place vous met en tête, mais ce n'est pas confirmé par la logique de position.",
+        "hint": "Pensez à la place où vous aboutissez après le dépassement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel équilibre peut-on obtenir d'un conteneur ?",
+        "prompt": "Une boîte contient sept carrés, deux rectangles, et six triangles.",
+        "options": [
+            "Tout est un carré",
+            "Moins de la moitié sont des carrés",
+            "Plus de la moitié sont des carrés",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Moins de la moitié sont des carrés",
+        "explanation": "Avec un total de quinze éléments, les sept carrés ne constituent pas plus de la moitié. Le piège est d'oublier d'ajouter correctement le total pour déterminer les proportions exactes.",
+        "hint": "Effectuez une analyse proportionnelle sur le nombre total d'éléments."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que signifie la condition donnée sur Jean ?",
+        "prompt": "Si Jean est à la maison, alors il joue au piano. Il joue au piano.",
+        "options": [
+            "Jean est à la maison",
+            "Jean n'est pas à la maison",
+            "Jean est au parc",
+            "On ne sait pas"
+        ],
+        "answer": "On ne sait pas",
+        "explanation": "Il est énoncé que si Jean joue du piano, cela pourrait toujours se faire même à l'extérieur de sa maison. Le piège est que la condition n'est pas nécessairement réglée dans un espace exclusif.",
+        "hint": "Ne confondez pas la direction ni la nature de l'implication."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la stratégie réussie par vos suppositions ?",
+        "prompt": "Si le ciel est nuageux, alors nous n'aurons pas de pluie. Nous n'avons pas de pluie.",
+        "options": [
+            "Le ciel est nuageux",
+            "Le ciel n'est pas nuageux",
+            "Il pleut",
+            "On ne sait pas"
+        ],
+        "answer": "On ne sait pas",
+        "explanation": "Une absence de pluie ne signifie pas obligatoirement que les nuages n'existent pas. L'erreur commune serait de supposer que les effets inverses sont explicitement proposés. Pourtant, ce n'est pas une conclusion valide.",
+        "hint": "Ne supposez pas une détermination implicite de lieu inversé."
+    }
+]

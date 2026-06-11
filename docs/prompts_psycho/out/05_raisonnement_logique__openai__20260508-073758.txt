@@ -1,0 +1,498 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'animal qui a des ailes et pond des œufs ?",
+    "prompt": "Tous les vols sont des oiseaux. Tous les oiseaux pondent des œufs. Certaines créatures volent.",
+    "options": [
+      "Un poisson",
+      "Un mammifère",
+      "Un oiseau",
+      "Un reptile"
+    ],
+    "answer": "Un oiseau",
+    "explanation": "Un syllogisme classique : si tout ce qui vole est un oiseau, et que tous les oiseaux pondent des œufs, alors une créature qui vole et pond des œufs est un oiseau. Le piège serait de supposer que le vol implique forcément la ponte d'œufs, mais seuls les oiseaux remplissent tous deux critères.",
+    "hint": "Considère la transitivité entre voler et pondre des œufs."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel fruit est sucré ?",
+    "prompt": "Tous les fruits tropicaux sont sucrés. La mangue est un fruit tropical.",
+    "options": [
+      "La mangue est salée",
+      "La mangue est acide",
+      "La mangue est sucrée",
+      "On ne peut pas savoir"
+    ],
+    "answer": "La mangue est sucrée",
+    "explanation": "En se basant sur le syllogisme : si tous les fruits tropicaux sont sucrés et que la mangue est un fruit tropical, alors nous pouvons conclure que la mangue est sucrée. Le piège consiste à ignorer la relation directe entre être un fruit tropical et être sucré.",
+    "hint": "Applique la propriété de transitivité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus rapide ?",
+    "prompt": "Alice court plus vite que Bob. Bob court plus vite que Charles.",
+    "options": [
+      "Alice",
+      "Bob",
+      "Charles",
+      "Ils courent tous à la même vitesse"
+    ],
+    "answer": "Alice",
+    "explanation": "Cet ordre montre clairement qu'Alice est plus rapide que Bob, qui à son tour est plus rapide que Charles. Donc, Alice est la plus rapide des trois. Le piège serait d'inverser l'ordre ou de mal interpréter les relations.",
+    "hint": "Visualise la chaîne d'ordre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que se passe-t-il si Julie est en école ?",
+    "prompt": "Si Julie est en école, alors elle apprend. Julie est en école.",
+    "options": [
+      "Julie n'apprend pas",
+      "Julie apprend",
+      "On ne peut pas savoir",
+      "Julie enseigne"
+    ],
+    "answer": "Julie apprend",
+    "explanation": "Il s'agit d'un raisonnement de la forme modus ponens : si la condition de départ (Julie est à l'école) est respectée, alors la conclusion (Julie apprend) s'ensuit nécessairement. Le piège serait de croire que Julie pourrait ne pas apprendre malgré sa présence à l'école.",
+    "hint": "Rappelle-toi que 'si A alors B' signifie que si A est vrai, B l'est aussi."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est mon rang quand je double le 3e coureur ?",
+    "prompt": "Dans une course, si vous doublez le 3e coureur, quelle est votre position ?",
+    "options": [
+      "1ère",
+      "2ème",
+      "3ème",
+      "4ème"
+    ],
+    "answer": "3ème",
+    "explanation": "En doublant le 3e coureur, vous prenez sa place et deviendrez ainsi le 3e. Le piège ici est de penser que doubler le troisième vous mènerait à la première ou deuxième place, ce qui n'est pas le cas.",
+    "hint": "Réfléchis à la position que tu prends en doublant."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle plante est comestible ?",
+    "prompt": "Toutes les plantes vertes de ce jardin sont comestibles. Cette plante est verte et se trouve dans ce jardin.",
+    "options": [
+      "Cette plante est toxique",
+      "Cette plante est non comestible",
+      "Cette plante est comestible",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette plante est comestible",
+    "explanation": "En utilisant le syllogisme par transitivité : toutes les plantes vertes dans ce jardin étant comestibles, toute plante verte dans le jardin est nécessairement comestible. Le piège serait de douter de la comestibilité malgré les informations fournies.",
+    "hint": "Fais attention à l'application de la transitivité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle couleur a T-shirt est porté par un fan ?",
+    "prompt": "Tous les supporters portent un T-shirt bleu. Pierre est un supporter.",
+    "options": [
+      "Pierre porte un T-shirt rouge",
+      "Pierre porte un T-shirt vert",
+      "Pierre porte un T-shirt bleu",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Pierre porte un T-shirt bleu",
+    "explanation": "Avec ce syllogisme : si tous les supporters portent un T-shirt bleu et que Pierre est un supporter, alors Pierre porte un T-shirt bleu. Le piège est de douter de la conclusion alors que l'information est explicitement donnée.",
+    "hint": "Rappelle-toi : toutes les situations s'appliquent aussi aux cas individuels."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus jeune ?",
+    "prompt": "Léo est plus jeune que Mia. Mia est plus jeune que Noah.",
+    "options": [
+      "Léo",
+      "Mia",
+      "Noah",
+      "Tous ont le même âge"
+    ],
+    "answer": "Léo",
+    "explanation": "D'après les données données, Léo < Mia < Noah, ce qui indique que Léo est le plus jeune. Le piège serait de mal interpréter les âges ou de ne pas voir qu'on demande le plus jeune.",
+    "hint": "Pense à l'ordre croissant des âges."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Est-ce que ce livre est intéressante ?",
+    "prompt": "Tous les livres de cette bibliothèque sont intéressants. Ce livre dans ma main provient de cette bibliothèque.",
+    "options": [
+      "Oui, il est ennuyeux",
+      "Non, il est passionnant",
+      "Oui, il est intéressant",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Oui, il est intéressant",
+    "explanation": "Utilisons le syllogisme : si tous les livres d'une bibliothèque sont intéressants et que ce livre appartient à cette bibliothèque, alors il est nécessairement intéressant. Le piège est de croire qu'un livre peut ne pas être intéressant malgré les informations données.",
+    "hint": "Applique simplement la règle à l'individu cité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Si vous avez un parapluie, que se passe-t-il ?",
+    "prompt": "Si vous emportez un parapluie, vous ne serez pas mouillé.",
+    "options": [
+      "Vous serez mouillé",
+      "Vous ne serez pas mouillé",
+      "Cela n'a aucun impact",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Vous ne serez pas mouillé",
+    "explanation": "Il s'agit d'une implication simple : si la condition (avoir un parapluie) est satisfaite, alors la conséquence (ne pas être mouillé) suit nécessairement. Le piège est de mal comprendre la condition et de penser qu'elle n'implique pas nécessairement l'effet donné.",
+    "hint": "Si une condition est satisfaite, son effet s'ensuit."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le rapport des cerises de ce verger ?",
+    "prompt": "Toutes les cerises de ce verger sont excellentes. Cette cerise vient de ce verger.",
+    "options": [
+      "Cette cerise est médiocre",
+      "Cette cerise est pourrie",
+      "Cette cerise est excellente",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette cerise est excellente",
+    "explanation": "En suivant le syllogisme : toutes les cerises du verger sont excellentes, donc toute cerise de ce verger est excellente. Le piège serait de douter de la qualité de cette cerise en ne tenant pas compte de la règle appliquée à tous les éléments.",
+    "hint": "Répète l'assertion générale pour chaque cas spécifique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "D'où vient Marc ?",
+    "prompt": "Si Marc est à la maison, il cuisine. Marc cuisine.",
+    "options": [
+      "Marc est à la maison",
+      "Marc est au marché",
+      "Marc est au restaurant",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Marc est à la maison",
+    "explanation": "Ce problème utilise la structure de l'implication logique : si cuisiner est associé à être à la maison et Marc cuisine, nous déduisons qu'il est à la maison. Le piège est de ne pas voir la confirmation de la condition initiale qui permet de conclure.",
+    "hint": "Reprends les conditions données."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Comment est cet objet ?",
+    "prompt": "Tous les objets rouges dans ce tiroir sont ronds. Cet objet est rouge et se trouve dans ce tiroir.",
+    "options": [
+      "Cet objet est carré",
+      "Cet objet est triangulaire",
+      "Cet objet est rond",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cet objet est rond",
+    "explanation": "Le syllogisme logique indique que si tous les objets rouges dans ce tiroir sont ronds, tout objet rouge de ce tiroir est donc rond. Le piège est de penser à d'autres formes sans reconnaissance de la règle donnée.",
+    "hint": "Applique directement la propriété aux objets concernés."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est l'assertion correcte ?",
+    "prompt": "Tous les vélos sont des véhicules. Ce vélo appartient à Jean.",
+    "options": [
+      "Ce vélo est un animal",
+      "Ce vélo est un jouet",
+      "Ce vélo est un véhicule",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce vélo est un véhicule",
+    "explanation": "En nous basant sur la relation de transitivité, si tous les vélos sont des véhicules, alors un vélo spécifiquement mentionné sera également un véhicule. Le piège serait de perdre cette transposition logique simple en distrayant vers d'autres catégories.",
+    "hint": "Pense à l'application de la règle générale."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Comment est cet appareil ?",
+    "prompt": "Toutes les machines dans cette usine sont automatisées. Cette machine est dans l'usine.",
+    "options": [
+      "Cette machine est manuelle",
+      "Cette machine est à vapeur",
+      "Cette machine est automatisée",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette machine est automatisée",
+    "explanation": "Avec le syllogisme aplati : si toutes les machines sont automatisées, alors nécessairement chaque machine présente dans cette usine l'est également. Le piège est de penser qu'il peut y avoir des exceptions quand toutes sont incluses.",
+    "hint": "Une propriété générale s'applique à chaque élément particulier."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est la personne la plus haute ?",
+    "prompt": "Élodie est plus grande que Lisa. Lisa est plus grande que Matt.",
+    "options": [
+      "Élodie",
+      "Lisa",
+      "Matt",
+      "Ils sont tous de la même taille"
+    ],
+    "answer": "Élodie",
+    "explanation": "En utilisant la logique de comparaison, cela montre directement qu'Élodie > Lisa > Matt; ainsi, Élodie est la plus grande. Le piège pourrait être de se tromper sur l'ordre ou penser qu'il y a une ambiguïté non existante.",
+    "hint": "Représente l'ordre de taille en un diagramme simple."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le seul fruit qui peut être vert ?",
+    "prompt": "Tous les avocats sont verts. Tous les fruits verts sont comestibles. Cet avocat est un fruit.",
+    "options": [
+      "Cet avocat est rouge",
+      "Cet avocat est vert",
+      "Cet avocat est bleu",
+      "Cet avocat n'est pas un fruit"
+    ],
+    "answer": "Cet avocat est vert",
+    "explanation": "En utilisant plusieurs implications, si tous les avocats sont verts et cet avocat est un fruit, l'avocat concret que vous avez est vert. Le piège consiste à ignorer une quelconque information basique et manquer la cohérence de plusieurs couches d'assertion.",
+    "hint": "Compatibilise les assertions entre plusieurs conditions."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus âgé ?",
+    "prompt": "Alan est plus vieux que Bernard. Bernard est plus vieux que Charles. Daniel est plus jeune qu'Alan mais plus vieux que Charles.",
+    "options": [
+      "Alan",
+      "Bernard",
+      "Charles",
+      "Daniel"
+    ],
+    "answer": "Alan",
+    "explanation": "En comparant toutes les relations d'âge : Alan > Bernard > Charles et Daniel est côté de Bernard mais plus jeune qu'Alan. Donc, Alan reste le plus âgé de tous. Le piège pourrait être de mélanger les relations ou d'ignorer un élément clé dans le procédé.",
+    "hint": "Tracez une ligne temporelle pour simplifier les relations."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que se passe-t-il si Julien est sur scène ?",
+    "prompt": "Si Julien est sur scène, il chante. Si Julien chante, le public applaudit. Julien est sur scène.",
+    "options": [
+      "Le public ne réagit pas",
+      "Le public applaudit",
+      "Julien ne chante pas",
+      "On n'en sait pas assez"
+    ],
+    "answer": "Le public applaudit",
+    "explanation": "L'implication multiple implique que si Julien est sur scène, il chante, entraînant l'applaudissement du public. Le piège est de négliger la chaîne d'actions qui s'ensuit logiquement à partir de la première hypothèse.",
+    "hint": "Visualise les implications par étapes successives pour obtenir la conclusion."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la vitesse de Maria par rapport à Jean ?",
+    "prompt": "Maria court plus vite que Laurie. Laurie court plus vite que Jean. Maria court moins vite que Paul.",
+    "options": [
+      "Maria est plus rapide que Jean",
+      "Maria est aussi rapide que Jean",
+      "Maria est plus lente que Jean",
+      "On ne peut pas déterminer lequel est le plus rapide"
+    ],
+    "answer": "Maria est plus rapide que Jean",
+    "explanation": "Avec différentes comparaisons, nous avons Maria > Laurie > Jean et Maria < Paul. Par conséquent, Maria est nécessairement plus rapide que Jean. Le piège possible est de mélanger les vitesses entre plusieurs comparaisons indirectes.",
+    "hint": "Liste toutes les comparaisons pour éclaircir la structure des relations."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Comment est-ce possible de ne pas se mouiller ?",
+    "prompt": "Si tu portes un imperméable, tu ne te mouilleras pas. Si tu n’as pas d’imperméable, alors tu te mouilleras.",
+    "options": [
+      "With no raincoat, you will stay dry",
+      "You’ll stay dry with raincoat",
+      "Only umbrella can save you",
+      "Cannot infer precisely"
+    ],
+    "answer": "You’ll stay dry with raincoat",
+    "explanation": "En utilisant mots de traduction : porter un imperméable rend sûr que tu seras sec. L'erreur serait supposer qu'il existe d'autres options de rester sec sans imperméable lorsque seuls deux scénarios sont donnés.",
+    "hint": "Revoir les conditions données pour être sec et choisir la seule logique qui fonctionne."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui choisit le premier ?",
+    "prompt": "Tom choisit avant Lisa. Lisa choisit avant Bill. Alice choisit après Bill.",
+    "options": [
+      "Tom",
+      "Lisa",
+      "Bill",
+      "Alice"
+    ],
+    "answer": "Tom",
+    "explanation": "De l'ordre relatif, Tom est devant Lisa, Lisa devant Bill et Bill devant Alice. Cela signifie que Tom choisit le premier. La tentation est de croire qu'Alice pourrait être en premier sans rapport à d'autres informations.",
+    "hint": "Visualisez chaque série d'ordres pour éviter de perdre des relations."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans quel ordre se placent-ils par taille ?",
+    "prompt": "Oliver est plus grand que Nathan. Nathan est plus grand que Max. Max est plus grand que Liam.",
+    "options": [
+      "Oliver > Max > Nathan > Liam",
+      "Nathan > Oliver > Max > Liam",
+      "Oliver > Nathan > Max > Liam",
+      "Liam > Nathan > Max > Oliver"
+    ],
+    "answer": "Oliver > Nathan > Max > Liam",
+    "explanation": "En comparant toutes les tailles : nous avons clairement Oliver > Nathan > Max > Liam. L'erreur à éviter est de perdre cette continuité en considérant des relations fausses intempestives.",
+    "hint": "Représente visuellement chaque personne du plus grand au plus petit."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette famille, combien de frères et sœurs chaque enfant a-t-il ?",
+    "prompt": "Il y a trois enfants : Camille a deux frères, Julien a un frère et un autre frère chez lui, et Lucie a une sœur et deux frères.",
+    "options": [
+      "Camille a 2 frères, Julien a 3 frères, Lucie a 2 frères et 1 sœur",
+      "Julien a 2 frères, Camille a 1 frère et 2 sœurs, Lucie a 1 frère et 2 sœurs",
+      "Camille a 1 frère et 2 sœurs, Julien a 2 frères, Lucie a 2 frères et 1 soeur",
+      "Camille a 2 frères, Julien a 1 soeur, Lucie a 2 frères"
+    ],
+    "answer": "Camille a 2 frères, Julien a 1 soeur, Lucie a 2 frères",
+    "explanation": "En traduisant chaque saut : chaque Camille a 2 frères, Julien a 1 soeur (qui est Lucie) et Lucie a 2 frères (Julien et Camille). La complexité existe dans l'entrelacement des rôles.",
+    "hint": "Recoupe les informations pour correspondre aux rôles et aux relations."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel fruit est l'exception? ",
+    "prompt": "Tous les agrumes sont citrons. Les citrons sont acides. Les pommes sont sucrées mais aussi un agrume.",
+    "options": [
+      "Pomme",
+      "Citrons",
+      "Pas d'exception",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Pomme",
+    "explanation": "Au premier tournant, nous savons que les agrumes incluent les citrons. Or, en ajoutant des pommes comme agrume, il y a une contradiction dans la sélectivité du goût, donc une pomme qui est douce ne sera pas prudente. Évitez de négliger des exceptions contradictoires.",
+    "hint": "Méfiez-vous des attributs prétendant être contradictoires aux qualités."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le fruit sucré qui pourrait être employé ailleurs?",
+    "prompt": "Tous les fruits sucrés peuvent être mangés. Les oranges ne peuvent pas être mangées. Les oranges sont jaunes. Quelques oranges ne sont pas sucrées.",
+    "options": [
+      "Un grand orange",
+      "Une orange sucrée, mais inéligible",
+      "Une pomme",
+      "Une orange jaune"
+    ],
+    "answer": "Une pomme",
+    "explanation": "Les seules options permises ne sont pas oranges, mais les autres fruits sucrés. La distinction entre oranges et autres fruits est vitalement importante.",
+    "hint": "Ne confondez pas entre fruits interdits et fruits autorisés dans les relations de couleur."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le problème de l'énigme ici?",
+    "prompt": "Alice gagne contre Bob, Bob est un pro gamer. Bob gagne contre Charlie après trois tentatives.",
+    "options": [
+      "Alice est meilleure que tous",
+      "Bob est le seul qui a perdu",
+      "Il n'y a pas d'évidence que Bob gagne contre Alice",
+      "Alice perd même si elle gagne contre Bob"
+    ],
+    "answer": "Il n'y a pas d'évidence que Bob gagne contre Alice",
+    "explanation": "La distinction ici est que les résultats des précédentes observations ne prévoient pas de taux final. L'hypothèse pourrait être qu'Alice gagne, mais des tests empiriques seraient nécessaires pour garantir cela.",
+    "hint": "Ne vous limitez pas à une conclusion fausse non préalablement démontrée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Y a-t-il une chance que cela arrive ?",
+    "prompt": "Tous les chiens mordent Manny sauf ce qui a des colliers bleus. Manny a eu une morsure par jour pendant une semaine.",
+    "options": [
+      "Cela ne pourrait pas arriver si un chien portait un collier bleu ",
+      "Un chien sans collier douteux",
+      "Il pourrait y avoir deux chiens qui mordent Manny",
+      "Un énoncé faux "
+    ],
+    "answer": "Cela ne pourrait pas arriver si un chien portait un collier bleu",
+    "explanation": "Les chiens à collier bleu ne mordent pas, donc le concept est que toutes les autres occurrences ne contredisent pas Manny qui possède un tel collier. Un port bleu signifie aucune morsure, un résultat improbable dans le contexte. Prends garde à une telle ambiguïté."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Qu'adviendra-t-il si dans un certain groupe, un ordre diffère ?",
+    "prompt": "Si Simon perd face à François, Nathan doit changer le plan. François perd face à Albert, Simon gagne contre lui-même.",
+    "options": [
+      "Pas d'impact",
+      "Simon hésitera à joindre",
+      "Variante avec autres voies",
+      "Résultat indéterminé même si Simon gagne"
+    ],
+    "answer": "Résultat indéterminé même si Simon gagne",
+    "explanation": "La logique s'embrouille lorsque l'auto-gagnant Simon crée un décalage, faisant place à un échec de planification. Ceci permet de déjouer le programme que Nathan doit employer dans une autre configuration. Comprenez le besoin d'une détermination claire dans un cadre dynamique de règles."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Comment pourrait-on rapprocher l'écart ?",
+    "prompt": "Si quelqu'un supporte Fred, Adam s'en éloigne. Fred perd sa grande capacité, cédant après à Adam.",
+    "options": [
+      "Adam n'aide pas Fred",
+      "Adam échoue dans sa tâche sauf si guidé",
+      "Fred maintient son pouvoir entre tous",
+      "Fred n'est pas actif même s'il maintient un ordre"
+    ],
+    "answer": "Adam n'aide pas Fred",
+    "explanation": "L'idée est que si Fred maintient son écart et qu'Adam échoue sans dissimulation, alors Adam, évitant Fred, doit se conformer à initier un raté sans permission directe. Trap ici suggère confusion en ligne directe à une simple question."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'au-delà de ce schéma ?",
+    "prompt": "Si William gagne contre Paul en test, dire que Anna dépeint Paul face à William. Paul échoue. Anna prête.",
+    "options": [
+      "La prochaine Paramount défaite semblera créer des tempêtes.",
+      "L'inconnue existe sous le mur de William",
+      "Anna échoue à remporter contre Paul",
+      "Retour garant et pas d'excuses"
+    ],
+    "answer": "L'inconnue existe sous le mur de William",
+    "explanation": "Les hypothèses exposées sont établies sur des perspectives périphériques, elles incluent entre autres l'abandon total de la capacité endémique de William ou de Anna. En connaissant cela de diverses méthodes, il devient compromis de suggérer que même sans garantie dans le test général.",
+    "hint": "Évalue l'impact de chaque instance prioritaire sur l'évolution."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Résout-on ce défi en statue ?",
+    "prompt": "Si Helen court plus vite que Karl, et Karl touche un test, elle perd la trace de ses rappels.",
+    "options": [
+      "Helen doit écrire ses rappels",
+      "Les rappels créeraient un tel échec dans sa mémoire",
+      "Elle pourrait impressionner",
+      "Les rappels restent dans sa mémoire"
+    ],
+    "answer": "Les rappels créeraient un tel échec dans sa mémoire",
+    "explanation": "Elle suppose que dans l'écriture elle utilise, le pouvoir domine le souvenir de Karl, mais en escalade géante, contre toute attente, une mémoire deviendrait un piège d'échec. En évitant un sillage, la compréhension demeure infaillible."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans quelle situation cette épreuve pourrait-elle échouer ?",
+    "prompt": "Adam conquiert le pic, si Sue apprécie la chance, mais tomber signifie défaite.",
+    "options": [
+      "Sue autoriserait la chute via accident",
+      "Adam échouerait si Sue échoue à l'aider",
+      "Pas de soin équivalent",
+      "Personne créé par hasard"
+    ],
+    "answer": "Adam échouerait si Sue échoue à l'aider",
+    "explanation": "Bien que Sue initie par une réussite, si elle embrasse le résultat, Adam pourrait briller s'il y a une lucidité claire. Il est impératif d'assurer la coordination dans un contexte équilibré ou la défaillance pourrait être un facteur décisif."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel sortient-ils ?",
+    "prompt": "Si trois cartes sont sélectionnées et talons, ils sont azur, mais la jointure est un point d'esprit.",
+    "options": [
+      "Les cartes ne sont pas blanches",
+      "Un mystère s'élèverait",
+      "Ils prennent une carte rouge distinctive",
+      "Tirer sur un talon n'importe où"
+    ],
+    "answer": "Un mystère s'élèverait",
+    "explanation": "Les options résiduelles ne sont pas spécifiques à un concept clair, de ce fait, si les cartes résident dans un talon, un mystère tire une dissymétrie sans reliance claire. La grande tentation est d'établir des cartes consécutives ou d'échouer."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que signifie-t-il pour dénouer ?",
+    "prompt": "Le mauvais temps empêche les chances de Sally, en retour, une clarté tourne fleur pour obtenir des temps.",
+    "options": [
+      "Sally impressionne l'incarnation",
+      "Sally démantèle succès",
+      "Les temps éclipsent l'espoir de transformation",
+      "Quelqu'un offre bientôt"
+    ],
+    "answer": "Les temps éclipsent l'espoir de transformation",
+    "explanation": "Le temps manipule l'opportunité des espérances, qui même sous des transformations bien dirigées, ne capturent pas totalement la clarté. Toute réussite est propre à assouvir une transformation en phase centrale."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "La cognition, cependant, laisse Sally décodé ?",
+    "prompt": "Harry engage une transformation. Sally prend le relais. La cognition inverse multiple foi.",
+    "options": [
+      "Sally arrive à décrocher sa chance sur Harry",
+      "Harry dénote l'attribut",
+      "Un flux hasardeux",
+      "Les transformations changent les efforts"
+    ],
+    "answer": "Sally arrive à décrocher sa chance sur Harry",
+    "explanation": "Sally anticipe sur ce qu'Harry engage. Elle permet les transformations, laissant au hasard une compréhension sous-jacente. Les efforts deviennent un ciment réservé en soi pour la cognition."
+  }
+]

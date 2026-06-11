@@ -1,0 +1,549 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le statut de ce produit ?",
+    "prompt": "Tous les produits en promotion sont étiquetés rouge. Ce gel douche est étiqueté rouge.",
+    "options": [
+      "Le gel douche est en promotion",
+      "Le gel douche n'est pas en promotion",
+      "On ne peut pas savoir",
+      "Le gel douche est gratuit"
+    ],
+    "answer": "On ne peut pas savoir",
+    "explanation": "C'est un cas de syllogisme mal utilisé. Si tous les produits en promotion sont rouges, cela ne signifie pas que tous les produits rouges sont en promotion. Le gel douche peut être rouge pour d'autres raisons.",
+    "hint": "Attention à la conversion non légitime : l'implication ne fonctionne pas en sens inverse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion ?",
+    "prompt": "Tous les musées du pays sont gratuits le premier dimanche du mois. Le musée d'art contemporain est un musée du pays.",
+    "options": [
+      "Le musée d'art contemporain est gratuit le premier dimanche du mois",
+      "Le musée d'art contemporain est payant le reste du temps",
+      "On ne peut pas savoir",
+      "Le musée d'art contemporain est toujours gratuit"
+    ],
+    "answer": "Le musée d'art contemporain est gratuit le premier dimanche du mois",
+    "explanation": "Syllogisme classique : si tous les musées du pays sont gratuits un jour spécifié et que le musée d'art contemporain en fait partie, alors il partage cette caractéristique.",
+    "hint": "Vérifiez ce qui est spécifiquement dit dans l'énoncé."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Peut-on déduire quelque chose sur Julie ?",
+    "prompt": "Tous les amateurs de musique classique aiment Mozart. Julie aime la musique classique.",
+    "options": [
+      "Julie aime Mozart",
+      "Julie déteste Mozart",
+      "Julie n'a pas d'opinion sur Mozart",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Julie aime Mozart",
+    "explanation": "On applique la règle selon laquelle tous les amateurs de musique classique, un groupe auquel Julie appartient, aiment Mozart. Ainsi, Julie aime aussi Mozart.",
+    "hint": "Pensez à la propriété commune à tous les membres d'un groupe."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on conclure ?",
+    "prompt": "Aucun kangourou ne vole. Ce kangourou vit dans un zoo.",
+    "options": [
+      "Ce kangourou vole",
+      "Ce kangourou ne vole pas",
+      "On ne peut pas savoir",
+      "Tous les animaux du zoo ne volent pas"
+    ],
+    "answer": "Ce kangourou ne vole pas",
+    "explanation": "En utilisant un syllogisme négatif, puisque aucun kangourou ne vole, le fait que ce kangourou soit un kangourou implique qu'il ne peut pas voler.",
+    "hint": "Traitement direct d'une négation : ce qui est vrai pour tout membre d'un groupe l'est aussi pour un cas particulier."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qu'en déduire sur Alice ?",
+    "prompt": "Tous les membres du club de lecture aiment lire des romans. Alice est membre du club de lecture.",
+    "options": [
+      "Alice aime lire des romans",
+      "Alice n'aime pas lire des romans",
+      "On ne peut pas savoir",
+      "Alice préfère la poésie"
+    ],
+    "answer": "Alice aime lire des romans",
+    "explanation": "Syllogisme simple : si tous les membres d'un club - auquel Alice appartient - ont une passion commune, alors Alice a cette même passion.",
+    "hint": "Concentrez-vous sur l'appartenance au groupe doté d'une caractéristique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel âge a Patrick par rapport à son frère ?",
+    "prompt": "Patrick est plus jeune que son frère Paul.",
+    "options": [
+      "Patrick est plus âgé que Paul",
+      "Paul est plus jeune que Patrick",
+      "Patrick et Paul ont le même âge",
+      "Patrick est plus jeune que Paul"
+    ],
+    "answer": "Patrick est plus jeune que Paul",
+    "explanation": "L'énoncé offre une comparaison directe : Patrick < Paul en âge. Il est essentiel de faire attention à ne pas confondre les termes de l'inégalité.",
+    "hint": "Identifiez clairement le membre comparé en termes d'âge."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus rapide ?",
+    "prompt": "Anna court plus vite que Julie. Julie court plus vite que Sonia.",
+    "options": [
+      "Anna",
+      "Julie",
+      "Sonia",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Anna",
+    "explanation": "L'ordre de rapidité s'établit par transitivité : Anna > Julie > Sonia. Il est important de suivre étape par étape les comparaisons données pour ne pas les inverser.",
+    "hint": "Construisez une chaîne de supériorité selon les données fournies."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la taille de ce livre par rapport aux autres ?",
+    "prompt": "Le livre sur l'étagère est plus épais que celui de la table. Celui de la table est plus épais que celui du tiroir.",
+    "options": [
+      "Le livre sur l'étagère est le plus épais",
+      "Le livre de la table est le plus épais",
+      "Le livre du tiroir est le plus épais",
+      "Les trois ont la même épaisseur"
+    ],
+    "answer": "Le livre sur l'étagère est le plus épais",
+    "explanation": "En classant selon l'épaisseur : Étager > Table > Tiroir. C'est une chaîne de transitivité qui désigne clairement le plus épais.",
+    "hint": "Ordre les informations de manière séquentielle pour trouver la solution."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le bon ordre des villes selon leur population ?",
+    "prompt": "La ville A a une population plus grande que la ville B. La ville B a une population plus grande que la ville C.",
+    "options": [
+      "A > B > C",
+      "B > A > C",
+      "C > B > A",
+      "A > C > B"
+    ],
+    "answer": "A > B > C",
+    "explanation": "Il s'agit d'un raisonnement par transitivité des comparaisons : si A > B et B > C, alors il est évident que A > B > C en termes de population.",
+    "hint": "Concentrez-vous sur la somme des comparaisons successives."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel patient est le plus lourd ?",
+    "prompt": "Patient X pèse plus que Patient Y. Patient Y pèse plus que Patient Z.",
+    "options": [
+      "Patient X",
+      "Patient Y",
+      "Patient Z",
+      "Tous les patients pèsent le même poids"
+    ],
+    "answer": "Patient X",
+    "explanation": "On utilise ici une suite de comparaisons pour établir un ordre : si X > Y et Y > Z, X est donc le plus lourd.",
+    "hint": "Essaie de reconstituer la logique de l'ordre croissant de poids."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'état de ce parc ?",
+    "prompt": "Tous les parcs municipaux sont publics. Le parc du quartier est un parc municipal.",
+    "options": [
+      "Le parc du quartier est public",
+      "Le parc du quartier est privé",
+      "On ne peut pas savoir",
+      "Le parc du quartier n'est pas public"
+    ],
+    "answer": "Le parc du quartier est public",
+    "explanation": "C'est un syllogisme simple : puisque tous les parcs municipaux sont publics, un parc municipal précisément déterminé l'est également.",
+    "hint": "Vérifiez les caractéristiques établies pour un groupe et un membre particulier."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Choisissez la conclusion correcte.",
+    "prompt": "Si vous avez une clé verte, alors vous pouvez ouvrir la porte. Vous avez une clé verte.",
+    "options": [
+      "Vous pouvez ouvrir la porte",
+      "Vous ne pouvez pas ouvrir la porte",
+      "La porte est fermée",
+      "Vous avez perdu la clé"
+    ],
+    "answer": "Vous pouvez ouvrir la porte",
+    "explanation": "Ce problème utilise le Modus Ponens, une règle fondamentale de la logique conditionnelle. Si la condition initiale est vraie (vous avez la clé verte), alors la conséquence l'est aussi (vous pouvez ouvrir la porte). Il est essentiel de suivre la logique de la condition sans supposer d'autres éléments non mentionnés.",
+    "hint": "Vérifiez la condition 'si... alors'."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on dire de cette fleur ?",
+    "prompt": "Toutes les tulipes sont des fleurs. Cette plante est une tulipe.",
+    "options": [
+      "Cette plante est un fruit",
+      "Cette plante est une fleur",
+      "Cette plante n'est pas une fleur",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette plante est une fleur",
+    "explanation": "Structure de syllogisme classique : toutes les tulipes étant des fleurs, et cette plante étant une tulipe, on conclut que c'est une fleur.",
+    "hint": "Considérez l'application d'une propriété générale à un cas particulier."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le bon tri des prix de ces voitures ?",
+    "prompt": "La voiture A est plus chère que la voiture B. La voiture B est plus chère que la voiture C.",
+    "options": [
+      "A > B > C",
+      "B > A > C",
+      "C > A > B",
+      "A > C > B"
+    ],
+    "answer": "A > B > C",
+    "explanation": "Par transitivité des valeurs des prix, A est plus chère que B qui est plus chère que C. On classe selon l'ordre des prix de manière séquentielle.",
+    "hint": "Construisez des liens entre chaque comparaison pour établir un classement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que pouvez-vous dire de cette écharpe ?",
+    "prompt": "Si une écharpe est tricotée, alors elle est chaude. Cette écharpe est tricotée.",
+    "options": [
+      "Cette écharpe est chaude",
+      "Cette écharpe est froide",
+      "Cette écharpe est colorée",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette écharpe est chaude",
+    "explanation": "En logique conditionnelle (Modus Ponens), si la condition (tricotée) est vraie, alors la conséquence (chaude) l'est aussi. On ne voit pas d'autres informations disant le contraire.",
+    "hint": "Utilisez la règle conditionnelle 'si... alors'."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle affirmation est correcte au sujet de ce chien ?",
+    "prompt": "Tous les chiens de la race Labrador sont joueurs. Max est un chien Labrador.",
+    "options": [
+      "Max est joueur",
+      "Max est calme",
+      "Max n'est pas joueur",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Max est joueur",
+    "explanation": "Encore un syllogisme basique : tous les Labradors (dont Max) partagent la caractéristique d'êtres joueurs. Donc Max est joueur.",
+    "hint": "Rappel des propriétés partagées par tous les membres d'un ensemble."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est votre position dans la course ?",
+    "prompt": "Pendant la course, vous doublez le coureur en 3ème position, puis un autre en 2ème position.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "2ème",
+    "explanation": "En doublant initialement le coureur en 3ème position, vous devenez 3ème, puis en doublant le 2ème, vous passez 2ème. Il est crucial de réaliser que vous n'êtes pas 1er, sauf si vous avez aussi doublé le 1er.",
+    "hint": "Suivez chaque doublage individuellement et son impact."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de temps durent 5 événements d'une heure chacun s'ils commencent à 10h00 ?",
+    "prompt": "Les événements s'enchaînent de façon continue sans pauses.",
+    "options": [
+      "Jusqu'à 14h00",
+      "Jusqu'à 15h00",
+      "Jusqu'à 16h00",
+      "Jusqu'à 17h00"
+    ],
+    "answer": "Jusqu'à 15h00",
+    "explanation": "Chaque événement dure une heure, donc 5 événements s'étendant consécutivement prennent 5 heures. Commençant à 10h00, cela se termine à 15h00. Piège classique : penser à ajouter une heure en plus par erreur.",
+    "hint": "Additionnez simplement la durée des événements à l'heure de départ."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus âgé ?",
+    "prompt": "Léa est plus âgée que Sarah. Sarah est plus âgée que Tom. Tom est plus âgé que Max.",
+    "options": ["Léa", "Sarah", "Tom", "Max"],
+    "answer": "Léa",
+    "explanation": "En plaçant les âges dans l'ordre : Léa > Sarah > Tom > Max, on constate que Léa est au sommet des relations d'âge. Le piège consiste à échanger accidentellement les sujets comparés.",
+    "hint": "Etablir une ligne continue reliant les comparaisons indiquées."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel ordre de priorité est le bon ?",
+    "prompt": "Le client A est servi avant le client B. Le client C est servi après le client B.",
+    "options": [
+      "A > B > C",
+      "B > A > C",
+      "C > A > B",
+      "A > C > B"
+    ],
+    "answer": "A > B > C",
+    "explanation": "A est servi avant B, qui est servi avant C. Cette chaîne de priorités établit clairement qui passe avant qui dans la file d'attente.",
+    "hint": "Réaliser un suivi attentif et séquentiel des ordres donnés."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "À quelle catégorie de livre cette œuvre appartient-elle ?",
+    "prompt": "Si un livre est un roman, alors il contient plus de 200 pages. Ce livre contient plus de 200 pages.",
+    "options": [
+      "C'est un roman",
+      "Ce n'est pas un roman",
+      "On ne peut pas savoir",
+      "C'est un essai"
+    ],
+    "answer": "On ne peut pas savoir",
+    "explanation": "Le raisonnement conditionnel ne fonctionne pas en sens inverse. Bien qu'un roman ait plus de 200 pages, tous les livres de plus de 200 pages ne sont pas des romans.",
+    "hint": "Attention à l'inversion illégitime de la condition."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de temps pour cuire ces gâteaux ?",
+    "prompt": "Un gâteau prend 15 minutes à cuire. Vous en cuisez trois à la fois, deux fois.",
+    "options": [
+      "15 minutes",
+      "30 minutes",
+      "45 minutes",
+      "60 minutes"
+    ],
+    "answer": "30 minutes",
+    "explanation": "Cuire trois gâteaux en même temps prend le même temps que cuire un seul : 15 minutes. Vous répétez cela deux fois, donc 2 x 15 = 30 minutes au total.",
+    "hint": "Considérez le nombre de lots, pas le nombre de gâteaux."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus fort ?",
+    "prompt": "Julien est plus fort que Marc. Marc est plus fort que Léo. Léo est aussi fort que Clément.",
+    "options": ["Julien", "Marc", "Léo", "Clément"],
+    "answer": "Julien",
+    "explanation": "En alignant les forces : Julien > Marc > Léo = Clément. Julien est donc la personne la plus forte du groupe, attention à bien suivre chaque maillon de la chaîne.",
+    "hint": "Organisez de manière précise chaque comparatif de force fourni."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de pantalons à motifs avez-vous si tous ceux que vous avez sont à motifs ?",
+    "prompt": "Vous possédez 5 pantalons en tout et tous sont décrits comme étant à motifs sans exception.",
+    "options": ["3", "4", "5", "0"],
+    "answer": "5",
+    "explanation": "Étant donné qu'il est dit que chaque pantalon est à motifs, le nombre total de pantalons (5) doit être à motif. Le piège : supposer à tort qu'une autre variété existe.",
+    "hint": "La clé de l'énigme est le mot 'tous'."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quand Simon ira-t-il chez le dentiste selon cet horaire ?",
+    "prompt": "Simon a rendez-vous chez le dentiste 2 heures après 14h00.",
+    "options": [
+      "A 15h00",
+      "A 16h00",
+      "A 17h00",
+      "A 18h00"
+    ],
+    "answer": "A 16h00",
+    "explanation": "En ajoutant les 2 heures précisées aux 14h00 données, on obtient un rendez-vous définitif à 16h00. Le piège est de commencer avec une mauvaise heure de départ.",
+    "hint": "Additionnez simplement la durée indiquée à l'heure initiale."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle décision devrait prendre ce salarié ?",
+    "prompt": "Si un employé travaille plus de 40 heures, alors il a droit à une prime. Julie a travaillé 50 heures cette semaine.",
+    "options": [
+      "Julie a droit à une prime",
+      "Julie n'a pas droit à une prime",
+      "On ne peut pas savoir",
+      "Julie doit travailler plus"
+    ],
+    "answer": "Julie a droit à une prime",
+    "explanation": "Suivant le Modus Ponens, puisque Julie travaille plus de 40 heures (50), elle respecte la condition pour recevoir une prime. Le piège est de chercher des exceptions non fournies dans l'énoncé.",
+    "hint": "Voyez le lien conditionnel direct établi par la règle."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le plus haut bâtiment ?",
+    "prompt": "Tour A est plus haute que Tour B. Tour C est plus haute que Tour A. Tour D est moins haute que Tour B.",
+    "options": ["Tour A", "Tour B", "Tour C", "Tour D"],
+    "answer": "Tour C",
+    "explanation": "En analysant : Tour C > Tour A > Tour B > Tour D. Tour C est alors la plus élevée de toutes. Attention aux interprétations erronées de chaque énoncé comparé.",
+    "hint": "Classez systématiquement chaque comparaison."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel contrat est le plus économique ?",
+    "prompt": "Contrat X coûte moins que Contrat Y. Contrat Z coûte plus que Contrat X mais moins que Contrat Y.",
+    "options": [
+      "Contrat X",
+      "Contrat Y",
+      "Contrat Z",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Contrat X",
+    "explanation": "Contrat X est clairement indiqué comme le moins cher : Contrat X < Z < Y. Utiliser cette chaîne de comparaisons économiques établit une conclusion claire.",
+    "hint": "Suivez attentivement le contenu des comparaisons monétaires."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans quel état est Florence ?",
+    "prompt": "Si quelqu'un est en Italie, alors il peut voir Florence. Émilie est avec sa famille en Italie.",
+    "options": [
+      "Émilie peut voir Florence",
+      "Émilie ne peut pas voir Florence",
+      "On ne peut pas savoir",
+      "Émilie est ailleurs"
+    ],
+    "answer": "Émilie peut voir Florence",
+    "explanation": "La règle 'si... alors' indique que quiconque en Italie peut potentiellement voir Florence. Émilie étant en Italie, elle peut donc voir Florence. Ne pas dévier et supposer de nouveaux faits non inclus.",
+    "hint": "Tenez compte du lien conditionnel précis établi dans l'énoncé."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le meilleur moment pour rentrer chez vous ?",
+    "prompt": "Si la température extérieure dépasse 30 degrés, alors il est préférable de rester en intérieur. Il fait actuellement 28 degrés.",
+    "options": [
+      "Restez à l'intérieur",
+      "Sortez maintenant",
+      "Attendez la baisse des températures",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Sortez maintenant",
+    "explanation": "Le Modus Ponens n'est pas applicable ici parce que la température actuelle ne dépasse pas les 30 degrés seuil fixés pour rester à l'intérieur.",
+    "hint": "Interprétez la règle conditionnelle avec soin selon les critères fournis."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'âge du chien de Sophie ?",
+    "prompt": "Sophie a un chien dont l'âge est le tiers de celui de Marc. Marc a 9 ans.",
+    "options": ["3 ans", "6 ans", "9 ans", "12 ans"],
+    "answer": "3 ans",
+    "explanation": "Le tiers de l'âge de Marc (9 ans) donne l'âge du chien de Sophie, soit 3 ans. Simple division nécessitant une attention pour éviter de multiplier au lieu de diviser.",
+    "hint": "Appliquez la division proposée de manière fidèle à l'âge donné."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le jour du rendez-vous de Léon ?",
+    "prompt": "Léon a trois cours d'une heure le matin à partir de 10h, puis un rendez-vous deux heures après la fin de ses cours.",
+    "options": [
+      "13h00",
+      "14h00",
+      "15h00",
+      "16h00"
+    ],
+    "answer": "15h00",
+    "explanation": "Les cours commencent à 10h00 et durent 3 heures consécutives, jusqu'à 13h00. Deux heures après marque le rendez-vous à 15h00. Risque de mal ajouter les heures à partir de la fin des cours.",
+    "hint": "Déterminez d'abord la fin des cours avant d'ajouter le temps d'attente."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'âge de Paul, sachant que l'âge de Luc est de trois ans plus que le double de celui de Paul, soit 21 ans ?",
+    "prompt": "Soi-disant qu'il y a une différence de 3 ans.",
+    "options": ["9 ans", "10 ans", "12 ans", "15 ans"],
+    "answer": "9 ans",
+    "explanation": "Si 2x + 3 = 21 (où x est l'âge de Paul), résolvons pour x : 2x = 18, donc x = 9 ans. Le piège serait de mal installer l'équation initiale.",
+    "hint": "Attention à la manipulation inverse des indices numériques associés à la condition."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Qui arrive en dernier à la fête ?",
+    "prompt": "Valentina arrive avant Michaël et après Samuel. Michaël arrive après Thomas mais avant Emilia.",
+    "options": [
+      "Valentina",
+      "Michaël",
+      "Samuel",
+      "Emilia"
+    ],
+    "answer": "Emilia",
+    "explanation": "En alignant les ordres d'arrivée selon les informations données, Emilia termine en dernier. En recoupant chaque relation, on identifie στό chronologique.",
+    "hint": "Triez chaque arrivée avec soin, en commençant par les premières et les dernières connexes."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la place du livre A ?",
+    "prompt": "Le livre A doit être rangé avant le B et après le C et D. C est directement avant B et après D.",
+    "options": ["Avant D", "Entre C et B", "Entre D et C", "Après B"],
+    "answer": "Entre D et C",
+    "explanation": "En dotant une position pr transitivity, clarifiez A comme étant à caler entre D et C s'accorde à l'ordre C > B et D > C. Évitez la conclusion hâtive d'écarter C + D."," Révisant la placement stratégique avant."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le métier d'Arthur ?",
+    "prompt": "Si Arthur est fermier, il est fatigué le soir. Si Arthur est boulanger, il se réveille tôt. Arthur est fatigué le soir mais ne se réveille pas tôt.",
+    "options": [
+      "Fermier",
+      "Boulanger",
+      "Chômeur",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Fermier",
+    "explanation": "Appliquant la condition par élimination, il apparaît qu'Arthur ne se réveille pas tôt - infirmant boulanger - ce qui réduit la conclusion qu'il est fermier.",
+    "hint": "Attention à ne pas confondre des implications directes avec interprétation excessive."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel mot a été tapé incorrectement ?",
+    "prompt": "Si Marie entre un faux mot de passe, une alarme se déclenche. Si l'alarme sonne, un garde arrive. L'alarme ne sonne pas.",
+    "options": [
+      "Marie a tapé correctement",
+      "Marie a tapé incorrectement",
+      "Le garde arrive",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Marie a tapé correctement",
+    "explanation": "L'absence d'une alarme indique par Modus Tollens que Marie n'a pas tapé un faux code, sous-entendant que son code est correct. Le piège : présumer que le manque d'alarme n'invalide pas tout.",
+    "hint": "Tenez compte de la nécessité d'éliminer les options impossibles."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le bon chemin ?",
+    "prompt": "Si tu prends le chemin A, alors tu croises une rivière. Si tu croises une rivière, tu dois la traverser à gauche. Tu ne croises pas de rivière.",
+    "options": [
+      "Tu traverses à gauche",
+      "Tu traverses à droite",
+      "Tu ne croises pas de rivière",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Tu ne croises pas de rivière",
+    "explanation": "Utilisant le Modus Tollens : parce que l'absence de croisement de la rivière réfute le déclencheur d'une traversée, prouvant que l'événement A n'est pas sélectionné.",
+    "hint": "L'élimination par contradiction : révisez la condition de départ et son annulée signification."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Comment avez-vous progressé pendant cette course ?",
+    "prompt": "Vous étiez à la 5ème place. Vous passez deux personnes et ensuite êtes passé par un des autres dont vous avez traversé.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "4ème",
+    "explanation": "Initialement, 5e, en passant deux, vous avancez au 3e rang. Après, l'un des coureurs vous dépassant, vous suivez quatrième en ligne.",
+    "hint": "Contradiction intégrée de retour, cette logique alterne selon changements individuellement séquentiels."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de pommes sont encore sur le plateau ?",
+    "prompt": "Sur un plateau reposant 12 pommes. Trois sont retirées, puis 4 sont ajoutées, après vous en retirez une autre.",
+    "options": ["11", "12", "13", "14"],
+    "answer": "12",
+    "explanation": "Au départ de 12, en réduire trois offre 9, l'addition de 4 les élève à 13, moindant encore une, vous obtenez de nouveau une douzaine.",
+    "hint": "Soumettre par induction chaque calcul afin de réinformer des chiffres intermédiaires."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces chiens est le plus petit ?",
+    "prompt": "Chien A est plus petit que Chien B. Chien B est aussi petit que Chien C. Chien D est plus grand que Chien C.",
+    "options": ["Chien A", "Chien B", "Chien C", "Chien D"],
+    "answer": "Chien A",
+    "explanation": "Par intégration se démontre que A surpasse B+C par toute mesure, irréquié en lui offrant définitivement une dominance inférieure cloisonnée.",
+    "hint": "Recherchez d'abord émarger les standards de toutes proportions données."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel nombre annule cette équation apparemment aléatoire ?",
+    "prompt": "Si x est tel que 2x - 3 = 5x - 4 ayant pour la solution 3.",
+    "options": ["3", "4", "1", "0"],
+    "answer": "1",
+    "explanation": "En soustraction 2x de chaque côté, vous gagnerez 5x - 2x = 2x + 4, mais suivre en équilibre et l'affiner engendre x = 1 pour règler telle manne mathématique.",
+    "hint": "Regardez l'équilibrage similairement alimenté asymétriquement, et puis axialité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que peut-on déduire de David et ses économies ?",
+    "prompt": "Si David gagne plus d'argent cette année, il économisera au moins 200 euros. David n'a économisé que 150 euros.",
+    "options": [
+      "David a gagné plus d'argent",
+      "David n'a pas gagné plus d'argent",
+      "On ne peut pas savoir",
+      "David a dépensé plus d'argent"
+    ],
+    "answer": "David n'a pas gagné plus d'argent",
+    "explanation": "La non-atteinte de l'objectif de 200 euros démontre que David n'a pas gagné plus cette année selon Modus Tollens - attaquant une condition nécessaire mais non suffisante.",
+    "hint": "Suivez la structure 'si... alors' jusqu'à en conclure les possibles."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de séances auront-ils avant aujourd'hui ?",
+    "prompt": "Le lundi précédent, Luc a débuté en lisant 3 pages chaque jour."
+  }
+]

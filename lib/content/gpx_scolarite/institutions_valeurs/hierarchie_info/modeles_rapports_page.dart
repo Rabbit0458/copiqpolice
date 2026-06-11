@@ -87,7 +87,7 @@ class ModelesRapportsPage extends StatelessWidget {
               fontWeight: FontWeight.w600,
               color: isDark
                   ? Colors.white70
-                  : const Color(0xFF1F1F1F).withOpacity(.85),
+                  : const Color(0xFF1F1F1F).withValues(alpha: .85),
             ),
           ),
           const SizedBox(height: 14),
@@ -98,10 +98,10 @@ class ModelesRapportsPage extends StatelessWidget {
             decoration: BoxDecoration(
               color: card,
               borderRadius: BorderRadius.circular(18),
-              border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+              border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(.12),
+                  color: Colors.black.withValues(alpha: .12),
                   blurRadius: 18,
                   offset: const Offset(0, 10),
                 ),
@@ -178,7 +178,7 @@ class _ModelTile extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF0B0B0B);
     final Color textSub = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.78);
+        : const Color(0xFF1F1F1F).withValues(alpha: .78);
 
     return Material(
       color: Colors.transparent,
@@ -192,7 +192,7 @@ class _ModelTile extends StatelessWidget {
             border: Border.all(color: border, width: 0.8),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(.10),
+                color: Colors.black.withValues(alpha: .10),
                 blurRadius: 14,
                 offset: const Offset(0, 8),
               ),
@@ -221,9 +221,9 @@ class _ModelTile extends StatelessWidget {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                              Colors.black.withOpacity(.00),
-                              Colors.black.withOpacity(.10),
-                              Colors.black.withOpacity(.18),
+                              Colors.black.withValues(alpha: .00),
+                              Colors.black.withValues(alpha: .10),
+                              Colors.black.withValues(alpha: .18),
                             ],
                           ),
                         ),
@@ -237,7 +237,7 @@ class _ModelTile extends StatelessWidget {
                             vertical: 6,
                           ),
                           decoration: BoxDecoration(
-                            color: Colors.black.withOpacity(.55),
+                            color: Colors.black.withValues(alpha: .55),
                             borderRadius: BorderRadius.circular(999),
                             border: Border.all(
                               color: Colors.white10,
@@ -389,7 +389,7 @@ class _ReportModelViewerPageState extends State<_ReportModelViewerPage> {
                         color: isDark ? const Color(0xFF1C1C1C) : Colors.white,
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(.18),
+                            color: Colors.black.withValues(alpha: .18),
                             blurRadius: 20,
                             offset: const Offset(0, 12),
                           ),

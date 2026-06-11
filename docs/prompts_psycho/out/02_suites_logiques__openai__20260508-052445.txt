@@ -1,0 +1,389 @@
+[
+  {
+    "difficulty": "Facile",
+    "sequence_text": "2, ?, 6, 10",
+    "prompt": "Quel terme manque ?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Progression arithmétique +2. Le premier terme est 2, donc 2 + 2 = 4 pour compléter la suite. Un piège serait de ne pas s'apercevoir qu'il s'agit d'une simple addition et chercher une multiplication inutile.",
+    "hint": "Ajout constant de 2 à chaque étape."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 4, 9, ?, 25",
+    "prompt": "Quel terme manque ?",
+    "options": ["12", "15", "16", "20"],
+    "answer": "16",
+    "explanation": "C'est une suite des carrés : 1^2, 2^2, 3^2, etc. Le terme manquant est 4^2 = 16. Un piège courant est de mal calculer les carrés des nombres ou de se méprendre avec la progression.",
+    "hint": "Chaque terme est un carré parfait."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, ?, 15, 20",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["7", "10", "12", "11"],
+    "answer": "10",
+    "explanation": "Suite arithmétique avec +5 entre chaque terme. Le deuxième terme est donc 5 + 5 = 10. Une erreur possible serait de supposer une règle de multiplication au lieu d'une addition.",
+    "hint": "Pense à une simple addition de 5."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 6, ?, 12, 15",
+    "prompt": "Quel terme manque ?",
+    "options": ["8", "9", "10", "7"],
+    "answer": "9",
+    "explanation": "Cette suite suit une progression arithmétique de +3. Ainsi, 6 + 3 = 9 remplit l'espace vide. Un piège pourrait être de supposer un schéma de multiplication basé sur des différences de termes.",
+    "hint": "Additionne simplement 3 à chaque terme."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "2, 4, 6, ?, 10",
+    "prompt": "Quel terme complète la suite ?",
+    "options": ["8", "7", "9", "11"],
+    "answer": "8",
+    "explanation": "Progression arithmétique +2. Ici, chaque terme augmente de 2. Après le 6, vient 6 + 2 = 8. Erreurs fréquentes : ajouter un nombre incorrect ou penser à une multiplication.",
+    "hint": "Regarde l'addition simple par 2."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "10, ?, 18, 20",
+    "prompt": "Quel est le bon terme ?",
+    "options": ["14", "12", "16", "15"],
+    "answer": "15",
+    "explanation": "La suite augmente de +5 à chaque étape. Le terme après 10 est donc 10 + 5 = 15. Un piège est de confondre la règle en interprétant une séquence multiplicative.",
+    "hint": "Chaque numéro suit l'addition de 5."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "8, 10, ?, 14",
+    "prompt": "Quel est le terme manquant ?",
+    "options": ["11", "12", "13", "15"],
+    "answer": "12",
+    "explanation": "Progression arithmétique avec +2. Après 10, le terme suivant est 10 + 2 = 12. Un piège peut être d'oublier que l'augmentation est totalement régulière.",
+    "hint": "Suis l'addition de 2 constantes."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "?, 5, 8, 11, 14",
+    "prompt": "Quel nombre commence la suite ?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "2",
+    "explanation": "Progression arithmétique de +3. En retranchant 3 à 5, on obtient le premier terme : 2. Un piège serait de partir du mauvais sens ou de ne pas ajuster correctement les termes.",
+    "hint": "Anticipe une suite croissante par 3."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "4, 8, 12, ?, 20",
+    "prompt": "Quel terme doit remplacer le ?",
+    "options": ["14", "15", "16", "18"],
+    "answer": "16",
+    "explanation": "Progression arithmétique de +4. Le terme après 12 est 12 + 4 = 16. Un piège commun est de chercher à appliquer une autre opération, comme une multiplication basée sur cette progression.",
+    "hint": "Addition régulière de 4."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, ?, 9, 12",
+    "prompt": "Quel chiffre complète la suite ?",
+    "options": ["6", "5", "7", "8"],
+    "answer": "6",
+    "explanation": "La suite progresse par +3. Ainsi, le terme manquant est 3 + 3 = 6. Un piège classique est d'oublier cette augmentation constante de 3 entre chaque nombre.",
+    "hint": "Ajoute constamment 3 aux termes."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 2, ?, 4, 5",
+    "prompt": "Quel est le chiffre manquant ?",
+    "options": ["3", "4", "2", "5"],
+    "answer": "3",
+    "explanation": "Progression arithmétique +1. Chaque quantité augmente d'un seul chiffre. Après 2, c'est donc 2 + 1 = 3. Le piège est de ne pas voir la simplicité de la progression.",
+    "hint": "Rien de complexe ici, ajoute simplement 1."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "?, 15, 20, 25",
+    "prompt": "Quel nombre doit être à la place du ?",
+    "options": ["10", "12", "5", "7"],
+    "answer": "10",
+    "explanation": "La suite est de +5. Avant 15, c'est 15 - 5, soit 10. Beaucoup se trompent en basant leur calcul sur une autre logique au lieu de rester simple.",
+    "hint": "Cinq, le meilleur ami de chaque nombre."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, 10, ?, 20",
+    "prompt": "Quel nombre complète cette suite ?",
+    "options": ["13", "15", "16", "20"],
+    "answer": "15",
+    "explanation": "Progression arithmétique de +5. Après 10, on a 10 + 5 = 15. Le piège est ici de se perdre dans des calculs plus complexes, alors qu'il s'agit d'une simple addition de 5.",
+    "hint": "Simple addition de cinq à chaque étape."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "7, 14, ?, 28",
+    "prompt": "Trouve le terme manquant.",
+    "options": ["18", "21", "20", "19"],
+    "answer": "21",
+    "explanation": "Progression arithmétique +7. Chaque terme augmente de sept par rapport au précédent. Après 14 vient 14 + 7 = 21. On pourrait facilement rater en confondant cela avec une autre progression.",
+    "hint": "Ajoute sept. C'est constant."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 6, 9, ?, 15",
+    "prompt": "Quel est le terme manquant ?",
+    "options": ["10", "11", "12", "13"],
+    "answer": "12",
+    "explanation": "Progression arithmétique de +3. Après 9, ce sera 9 + 3 = 12. L'erreur typique est de chercher à appliquer des règles plus complexes alors que la solution est simple.",
+    "hint": "Simple ajout de trois à chaque pas."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "10, 20, ?, 40",
+    "prompt": "Quel terme vient ensuite ?",
+    "options": ["25", "28", "30", "35"],
+    "answer": "30",
+    "explanation": "Progression arithmétique de +10. Le terme manquant ici est 20 + 10 = 30. Le piège typique est de suspecter une règle en multiplication tout en ignorant la simple addition.",
+    "hint": "Regarde le saut de dix."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "?, 12, 14, 16",
+    "prompt": "Quel est le premier nombre ?",
+    "options": ["6", "8", "10", "9"],
+    "answer": "10",
+    "explanation": "Progression arithmétique de +2. Avant 12, c'est donc 12 - 2 = 10. Beaucoup font l'erreur d'introduire une multiplication qui catapulte hors de la suite.",
+    "hint": "Regarde en arrière deux unités."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "6, 12, 18, ?, 30",
+    "prompt": "Quel nombre vient ensuite ?",
+    "options": ["22", "23", "24", "25"],
+    "answer": "24",
+    "explanation": "Progression arithmétique de +6. Une fois arrivés à 18, on a donc 18 + 6 = 24. Nombreux sont ceux qui peuvent trébucher avec une inhibition mathématique due à l'anticipation imprécise.",
+    "hint": "Six est le mot d'ordre ici."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "A, C, E, ?, I",
+    "prompt": "Quelle lettre manque ?",
+    "options": ["F", "G", "H", "J"],
+    "answer": "G",
+    "explanation": "Chaque lettre est séparée par un intervalle de +2 positions. Après E, la prochaine lettre est G. Une erreur fréquente est d'oublier de vérifier les positions alphabétiques, cherchant des motifs ailleurs.",
+    "hint": "Pense en 'deux à deux'."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "B, D, F, ?, J",
+    "prompt": "Quelle lettre suit ici ?",
+    "options": ["G", "H", "I", "K"],
+    "answer": "H",
+    "explanation": "La suite suit des écarts alphabétiques de +2. Donc, après F, vient H. Le piège ici est de ne pas s'en rendre compte et de penser au calcul numérique seulement.",
+    "hint": "Deux étapes alphabétiques à chaque fois."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "M, O, ?, S, U",
+    "prompt": "Quelle lettre complète la suite ?",
+    "options": ["P", "Q", "R", "T"],
+    "answer": "Q",
+    "explanation": "L'intervalle de progression est de +2 lettres. Après O, donc, Q. Oublier la progression par lettres et chercher une conversion numérique manque la solution.",
+    "hint": "Compter alphabétiquement deux de plus."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 4, 10, ?, 28",
+    "prompt": "Quel nombre vient ici ?",
+    "options": ["15", "20", "22", "18"],
+    "answer": "22",
+    "explanation": "Les différences sont +3, +6, +9. C'est donc 19 (la dernière différence est +11). Un piège serait de négliger de voir les différences croissantes qui progressent par +3.",
+    "hint": "Différences croissantes progressant par 3."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "2, 5, 10, ?, 26",
+    "prompt": "Quel est le terme manquant ?",
+    "options": ["17", "18", "19", "20"],
+    "answer": "17",
+    "explanation": "Multiplication puis addition : ×2 +1. Donc 10 × 2 + 1 = 21. Ne pas suivre cette opération et partir sur un autre développement mathématique est le piège ici.",
+    "hint": "Une simple multiplication suivie par une addition."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "3, 5, 7, ?, 11",
+    "prompt": "Quelle est la lettre manquante ?",
+    "options": ["7", "8", "9", "10"],
+    "answer": "9",
+    "explanation": "Les nombres changent par +2, +2, +2. Alors, après 7, nous avons 7 + 2 = 9. Une erreur classique serait de mélanger avec une série additive irrégulière.",
+    "hint": "Note l'ajout régulier de deux."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "4, 7, 13, ?, 31",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["21", "22", "23", "24"],
+    "answer": "22",
+    "explanation": "Les différences sont +3, +6, +9. Ainsi, après 13, +9 donne 22. Manquer la structure croissante des différences pourrait mener ailleurs.",
+    "hint": "Augmente les différences perpétuellement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, ?, 13, 21, 29",
+    "prompt": "Quel nombre est manquant ?",
+    "options": ["3", "5", "7", "9"],
+    "answer": "5",
+    "explanation": "Les nombres ajoutent +4 à chaque étape. Après 1, c'est 1 + 4 = 5. Confondre ceci avec un calcul supplémentaire ou une marque numérique est le piège.",
+    "hint": "Constantement, +4, c'est la clé."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "5, 9, 15, ?, 33",
+    "prompt": "Quel nombre complète la séquence ?",
+    "options": ["22", "23", "24", "25"],
+    "answer": "24",
+    "explanation": "Les différences sont +4, +6, +8, +10. Alors, après 15 vient 15 + 9 = 24. De nombreux se trompent en oubliant que les différences croissent régulièrement.",
+    "hint": "Différences croissantes égales à ce moment."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "A, D, G, ?, M",
+    "prompt": "Quelle lettre est manquante ?",
+    "options": ["J", "I", "K", "L"],
+    "answer": "J",
+    "explanation": "Les lettres ont un écart de +3. Après G vient J. Oublier ce décalage alphabétique amène à des erreurs.",
+    "hint": "Trois places à chaque avancée."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "4, 8, 14, ?, 34",
+    "prompt": "Quel chiffre complète la suite ?",
+    "options": ["20", "22", "24", "25"],
+    "answer": "22",
+    "explanation": "Differences augmentant de 2 chaque fois : +4, +6, +8. 14 + 8 = 22 pour le terme nécessaire. Un piège est de manquer la caractéristique croissante des différences.",
+    "hint": "Surveille le motif de différenciation croissante."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "5, 15, 30, ?, 65",
+    "prompt": "Quel nombre replace le ?",
+    "options": ["45", "40", "50", "55"],
+    "answer": "50",
+    "explanation": "Cette suite suit la combinaison d'ajouter de +10, +15, et +20. Après 30, le nombre vient ainsi : 30 + 20 = 50. Le piège est d'oublier d'analyser les différentes additions de manière croissante.",
+    "hint": "À chaque étape, 5 de plus."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 3, 7, ?, 15",
+    "prompt": "Quel nombre remplit la séquence ?",
+    "options": ["9", "10", "11", "12"],
+    "answer": "11",
+    "explanation": "Les différences sont +2, +4, +4 encore, laissant place à +8. Par conséquent, suivre la progression, donc 7 + 4 = 11. Un piège classique est l'ignorance de la double incrémentation.",
+    "hint": "Assistez à l'interstice croissant."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "B, E, H, ?, N",
+    "prompt": "Quelle lettre poursuit l'ordre ?",
+    "options": ["K", "J", "I", "L"],
+    "answer": "K",
+    "explanation": "Cette suite suit des bonds de +3 alphabétiquement. Après H, la lettre est K. Confondre ceci avec un nombre arbitraire pourrait entraîner une mauvaise réponse.",
+    "hint": "Trois places à chaque intervalle."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, ?, 10, 15, 21",
+    "prompt": "Quel nombre complète les blancs ?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "Les différences sont +5, +5, +5 et +6. 5 ajouté à 1 égal 6 en effet. Ne pas remarquer ce patron solide mène souvent à des confusions.",
+    "hint": "Le bons augmentant régulièrement leur somme."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "F, J, N, ?, X",
+    "prompt": "Quelle lettre complète le trou ?",
+    "options": ["P", "Q", "R", "S"],
+    "answer": "R",
+    "explanation": "La série avance par +4 positions alphabétiques. Après N, R complète la série. N'ignorez pas la progression continue des lettres; c'est crucial ici.",
+    "hint": "Chaque avancée est de quatre."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 3, ?, 8",
+    "prompt": "Quel nombre est le prochain ?",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Suite de Fibonacci : chaque terme est la somme des deux précédents. Ici, 3 + 2 = 5. Un piège est de présumer une arithmétique simple ou un modèle multiplicatif.",
+    "hint": "Combine les deux termes précédents."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 3, 5, 7, ?, 13",
+    "prompt": "Quel est le nombre manquant ?",
+    "options": ["9", "10", "11", "12"],
+    "answer": "11",
+    "explanation": "Suite des nombres premiers. Après 7, le suivant est 11. Ne pas connaître les nombres premiers crée de la confusion et empêche de trouver le bon patron.",
+    "hint": "Nombres divisibles seulement par 1 et par eux-mêmes."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 4, 9, 16, ?, 36",
+    "prompt": "Quel terme est manquant dans la série ?",
+    "options": ["20", "25", "28", "30"],
+    "answer": "25",
+    "explanation": "C'est la suite des carrés parfaits 1², 2², 3², etc. 5² = 25. Une confusion typique est de chercher des fonctions mathématiques complexes quand c'est simplement des quadratiques.",
+    "hint": "Chaque nombre élève au carré."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 8, 27, 64, ?, 216",
+    "prompt": "Quel nombre suit ?",
+    "options": ["100", "115", "125", "150"],
+    "answer": "125",
+    "explanation": "Les cubes parfaits. Il s'agit de chiffres cubés, tels que 1^3, 2^3, etc. Évitez de mélanger avec des séries similaires mais ne respectant pas le critère de cubage.",
+    "hint": "Pensez en cubes parfaits."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 5, 11, 23, ?, 95",
+    "prompt": "Quel nombre est le suivant ?",
+    "options": ["35", "45", "47", "48"],
+    "answer": "47",
+    "explanation": "Les différences se multiplient par 2 à chaque fois. Après 23, ajoutez 24 pour obtenir 47. Ne pas suivre intelligemment le motif et travailler à l'envers cause une confusion.",
+    "hint": "Différences doublées à chaque étape."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 5, ?, 22",
+    "prompt": "Quel nombre suit ici ?",
+    "options": ["9", "10", "12", "14"],
+    "answer": "12",
+    "explanation": "Il s'agit d'une variante de Fibonacci mais avec une première addition normale puis multipliée par 2. Donc, après 5, vous ajoutez 2 * 2 + 5 = 12. S'embrouiller avec des motifs standardisés généralisés est une erreur fréquente.",
+    "hint": "Multiplication subtilement insérée dans la suite."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "A, C, F, J, ?, U",
+    "prompt": "Quelle lettre va là ?",
+    "options": ["K", "L", "M", "N"],
+    "answer": "N",
+    "explanation": "Les écarts alphabétiques augmentent par +2, +3, +4, etc. Après J, on ajoute +5, qui mène à N. Ignorer l'augmentation continue peut amener à un mauvais choix.",
+    "hint": "Égalisons en progression d'espacement alphabétique."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "5, 15, 35, ?, 95",
+    "prompt": "Quel est le suivant ?",
+    "options": ["55", "65", "70", "75"],
+    "answer": "65",
+    "explanation": "Utilisée est une suite quadratique : chaque terme est n^2 + n. Le troisième terme réalisé 35 + 10 qui peut être dérivé ensuite comme venant de 5^2 + 5. En observant une simplification mathématique là où ce n'est pas ajusté manquerait la logique.",
+    "hint": "Suivez le schéma quadratique élargi."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "3, 9, 18, ?, 48",
+    "prompt": "Quel nombre remplit cet espace vide ?",
+    "options": ["30", "31", "32", "33"],
+    "answer": "33",
+    "explanation": "La série commence par une addition puis une multiplication alternative pour donner un effet doublement original. Après 18, on ajoute 15 pour avoir 33. Retarder le rythme latent entre les termes mène à un échec possible.",
+    "hint": "Un modèle alternant deux fonctions distinctes."
+  }
+]

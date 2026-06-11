@@ -1,0 +1,272 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « S » apparaît-elle dans cette phrase ?",
+    "prompt": null,
+    "stimulus": "Le soleil brille sur la surface de la mer.",
+    "options": ["1", "2", "3", "4"],
+    "answer": "4",
+    "explanation": "Un comptage précis montre un S dans soleil, sur, surface et un dans surface à nouveau. Total = 4. Chacun des mots a été vérifié individuellement pour s'assurer que chaque occurrence est comptée. Évitez de vous laisser distraire par d'autres lettres similaires.",
+    "hint": "Repérez chaque mot contenant un S."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Identifiez l'intrus dans cette suite de chiffres.",
+    "prompt": null,
+    "stimulus": "2, 4, 6, 8, 9, 10, 12",
+    "options": ["4", "6", "9", "12"],
+    "answer": "9",
+    "explanation": "Tous les chiffres sauf 9 sont pairs. Le chiffre 9 est impair et donc l'intrus. Cette séquence suit une logique de nombres pairs, ce qui rend 9 clairement identifiable comme discordant. Soyez attentifs aux motifs numériques.",
+    "hint": "Cherchez les chiffres pairs."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « R » apparaît-elle en majuscule ou minuscule ?",
+    "prompt": "Vous pouvez ignorer les accents.",
+    "stimulus": "Regardez les rivières qui reflètent la lumière dorée.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Décompte : Regardez (1), rivières (1), reflètent (1), la lumière (1), dorée (1) = 5. Chaque mot a été évalué pour ses R, avec attention particulière sur ceux en début de mot qui sont souvent oubliés. N'oubliez pas de considérer les finales de mots également.",
+    "hint": "Commencez par les mots contenant le son 'R'."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Choisissez la séquence identique au modèle donné.",
+    "prompt": "Modèle : mNPsJq",
+    "stimulus": null,
+    "options": ["mNPsjq", "mNPsJq", "mPnSJq", "nMPsJq"],
+    "answer": "mNPsJq",
+    "explanation": "La solution est d'examiner chaque lettre et sa casse pour chaque option. Seule l'option 2 mNPsJq correspond exactement au modèle donné, toutes les autres options ont une ou plusieurs différences. Un détail mineur, comme une différence de casse, peut induire en erreur.",
+    "hint": "Vérifiez chaque lettre point par point."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres « 1 » apparaissent dans la suite suivante ?",
+    "prompt": null,
+    "stimulus": "4 1 1 7 1 4 3 5",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "La séquence inclut les chiffres : 4 11 7 1 4 3 5. Comptage : position 2, 3 et 5. N'oubliez pas de parcourir chaque chiffre, y compris les répétitions successives. Ne vous laissez pas distraire par les chiffres similaires.",
+    "hint": "Reliez visuellement les nombres identiques."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de E majuscules apparaissent dans cette phrase?",
+    "prompt": null,
+    "stimulus": "Elles sont enthousiastes de ramener des Éclats d'Émeraude.",
+    "options": ["1", "2", "3", "4"],
+    "answer": "3",
+    "explanation": "Découpez : Elles (1), enthousiasme (0), Éclats (1), d'Émeraude (1) total = 3 E majuscules. Il est essentiel de distinguer les majuscules des minuscules et de bien différencier les accents qui ne changent pas la casse.",
+    "hint": "Repérez chaque mot commençant par un E majuscule."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'intrus dans cette suite ?",
+    "prompt": null,
+    "stimulus": "Janvier, Février, Mars, Avril, Lundi, Mai",
+    "options": ["Janvier", "Mars", "Lundi", "Avril"],
+    "answer": "Lundi",
+    "explanation": "Dans cette suite, Lundi se détache car c'est un jour de la semaine, alors que tous les autres éléments sont des mois. Chaque choix a été vérifié pour sa catégorie et sa conformité avec le motif. Focalisez-vous sur le type de temps évoqué.",
+    "hint": "Réfléchissez à la catégorie des mots."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « G » apparaît-elle (majuscule ou minuscule) ?",
+    "prompt": null,
+    "stimulus": "La girafe géante regarde gentiment.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Le mot girafe (1), géante (1), regarde (1) total = 3 G. L'erreur fréquente est d'oublier les g en milieu de mot ou de ne pas tenir compte des majuscules. Ratissez chaque mot pour vérifier chaque occurrence.",
+    "hint": "Cherchez à la fois les G dans les débuts et milieux de mots."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Choisissez la séquence identique au modèle suivant.",
+    "prompt": "Modèle : AbCdEfGi",
+    "stimulus": null,
+    "options": ["AbCdEfGi", "ABcDEfGI", "AbCdEfGh", "AbCdEFgI"],
+    "answer": "AbCdEfGi",
+    "explanation": "La seule séquence identique au modèle est la première. Les différences dans les autres séquences incluent des erreurs de casse comme 'E' et 'i' dans les autres options. Casse et précision dans l'ordre des lettres sont cruciales pour une comparaison exacte.",
+    "hint": "Comparez méthodiquement en suivant la casse de chaque lettre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de lettres majuscules dans cette phrase ?",
+    "prompt": null,
+    "stimulus": "Le Chat Dort Paisiblement Sur Le Canapé.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6",
+    "explanation": "Un examen attentif montre : L (1), C (1), D (1), P (1), S (1), Le C (1) donc un total de 6 majuscules. N'oubliez pas de compter uniquement les majuscules, ce qui parfois inclut les début de mots clés.",
+    "hint": "Repérez chaque début de mot."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre « T » apparaît-elle ?",
+    "prompt": null,
+    "stimulus": "Le chat saute sur le toit tout doucement.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "5",
+    "explanation": "Décompte : chat (1), saute (1), toit (1), tout (1), doucement (1) total = 5 T. Attention à ne pas négliger les lettres dans les finales ou début de mots. Faites un survol méthodique pour ne rien laisser filer.",
+    "hint": "Estimez le nombre de 't' à chaque fin de mot."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel chiffre est l'intrus dans cette séquence ?",
+    "prompt": null,
+    "stimulus": "10, 20, 15, 30, 40",
+    "options": ["20", "30", "15", "40"],
+    "answer": "15",
+    "explanation": "Tous les chiffres sauf 15 sont des multiples de 10. Contrairement aux autres, 15 est un multiple de 5 qui ne suit pas ce motif réfléchi sur base décimale. Évitez d'être distrait par l'aspect des dizaines qui peut amener aux mauvaises annonces.",
+    "hint": "Cherchez les multiples de 10."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Identifiez la séquence identique au modèle.",
+    "prompt": "Modèle : qWtYz",
+    "stimulus": null,
+    "options": ["qWtYz", "qWyZt", "qwtYz", "QWtYz"],
+    "answer": "qWtYz",
+    "explanation": "Le mot exact à retrouver est qWtYz. Toutes les autres options ont une erreur de casse ou un ordre incorrect, par exemple 'Wy' ou 'Q'. Chaque lettre et sa majuscule/minuscule a été comparée pour assurer une parfaite reproduction.",
+    "hint": "Regardez attentivement le format de chaque lettre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres 2 apparaissent dans la séquence ?",
+    "prompt": null,
+    "stimulus": "3 2 5 2 8 2 9 7 2",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les chiffres 2 se situent aux positions 2, 4, 6, et 9, totalisant 4. Une vérification ligne par ligne confirme que chaque occurrence est correctement comptée. Évitez d'oublier les chiffres situés à la fin de la séquence.",
+    "hint": "Parcourir chaque section en générant un rythme régulier."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle lettre est l'intrus dans la suite : M, N, O, P, R, S, U?",
+    "prompt": null,
+    "stimulus": "M, N, O, P, R, S, U",
+    "options": ["O", "P", "R", "S"],
+    "answer": "R",
+    "explanation": "La suite suit le schéma de lettres consécutives dans l'alphabet sauf pour 'R', qui devrait être 'T' après 'P'. Identifiez systématiquement les lettres pour les correspondances alphabétiques précises.",
+    "hint": "Cherchez les lettres interrompant la séquence."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres pair dans la suite donnée ?",
+    "prompt": null,
+    "stimulus": "3 5 8 6 7 4 9",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Le décompte des nombres pairs montre : 8 (1), 6 (1), 4 (1) donc 3 occurrences au total. Assurez-vous que vous différenciez clairement les chiffres pairs et impairs. Vérifiez minutieusement chaque nombre pour être sûr de la justesse de votre réponse.",
+    "hint": "Vérifiez chaque chiffre pour les paires claires."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles, sans les y, cette phrase contient-elle ?",
+    "prompt": null,
+    "stimulus": "Nous nous souvenons de cette belle journée d'été.",
+    "options": ["15", "16", "17", "18"],
+    "answer": "15",
+    "explanation": "Comptage mot à mot : Nous (1), nous (1), souvenons (4), de (1), cette (2), belle (2), journée (3), d'été (1). Attention, l'erreur fréquente consiste à ne pas inclure suffisament de voyelles surtout les 'e'. Un comptage précis réduit considérablement cette bévue.",
+    "hint": "Faites un balayage lent phrase par phrase."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre 'b' apparaît-elle en minuscule dans le texte ?",
+    "prompt": null,
+    "stimulus": "Les ballons brillants flottent par-dessus la bascule.",
+    "options": ["1", "2", "3", "4"],
+    "answer": "2",
+    "explanation": "Les mots 'ballons' (1) et 'bascules' (1) contiennent chacun un b minuscule, total : 2. Ne confondez pas les b minuscules avec ceux en majuscule qui ne sont pas désirés ici. Un tri attentif à travers chaque mot est conseillé.",
+    "hint": "Déterminez le début de chaque mot en minuscule uniquement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette liste quelles séquences a les caractères en premier identiques au modèle ?",
+    "prompt": "Modèle : PQqRrST",
+    "stimulus": null,
+    "options": ["PQqrRT", "PQrrST", "PQqRrST", "PqqRrST"],
+    "answer": "PQqRrST",
+    "explanation": "La seule option qui respecte la composition du modèle en termes de casse et ordre est la troisième séquence PQqRrST. Les autres choix contiennent soit des erreurs de casse soit d'ordre comme TpRr. Utilisez une approche systématique pour une vérification garantie.",
+    "hint": "Évaluez chaque lettre patiemment en lien avec le modèle."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le total des chiffres impairs dans cette séquence ?",
+    "prompt": null,
+    "stimulus": "8 1 4 3 7 9 2",
+    "options": ["4", "5", "6", "7"],
+    "answer": "4",
+    "explanation": "Les chiffres impairs sont 1, 3, 7, et 9, ce qui fait un total de 4. Concentrez-vous à vérifier individuellement, sans oublier les nombres cachés en début et fin de séquence souvent négligés par manque d'attention immédiate.",
+    "hint": "Cherchez uniquement ceux facilement identifiables par paire."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots de plus de 4 lettres dans cette phrase ?",
+    "prompt": null,
+    "stimulus": "Le détective minutieux résolut facilement l'énigme.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "3",
+    "explanation": "Les mots ≥ 4 lettres sont détective (1), minutieux (1), résolut (1), total : 3. Ne laissez pas les mots que vous supposez synonymes vous troubler, concentrez l'attention sur le nombre de lettres et significations exactes.",
+    "hint": "Décomposez chaque mot en lettres et chiffres."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel mot est l'intrus dans cette suite : Canada, États-Unis, Mexique, Espagne, Brésil ?",
+    "prompt": null,
+    "stimulus": "Canada, États-Unis, Mexique, Espagne, Brésil",
+    "options": ["Mexique", "Espagne", "États-Unis", "Canada"],
+    "answer": "Espagne",
+    "explanation": "L'Espagne est le seul pays non situé en Amérique, contrairement à tous les autres pays cités. Chaque choix a été vérifié pour son emplacement géographique et sa relation au continent.",
+    "hint": "Refléchissez aux continents."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre « M » apparaît-elle en majuscule ?",
+    "prompt": null,
+    "stimulus": "La Mer Miroitante Mène un Monde Magique.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "La séquence montre : Mer (1), Miroitante (1), Mène (1), Monde (1), Magique (1), soit un total de 5. Confondez pas avec des lettres autres en majuscules qui pourraient exister mais ne représentent pas M.",
+    "hint": "Marquez mentalement chaque mot démarrant par un M majuscule."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Parmi les séquences suivantes, laquelle est correcte ?",
+    "prompt": "Modèle : erRrBm",
+    "stimulus": null,
+    "options": ["ERrrbm", "eRRRbM", "erRrBm", "erRrbM"],
+    "answer": "erRrBm",
+    "explanation": "Chaque lettre dans le modèle doit être exactement respectée, ce qui n'est existant que dans erRrBm. Alternance et erreurs observées dans les autres séquences incluent 'eRR' en place de 'erR'.",
+    "hint": "Comparez chaque section une par apparente d'M majuscule."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles dans cette phrase entièrement ?",
+    "prompt": null,
+    "stimulus": "L'étrange aventure du navire pirate au trésor caché.",
+    "options": ["16", "17", "18", "19"],
+    "answer": "17",
+    "explanation": "Un décompte attentif résume « L'étrange(4) aventure(4) du(1) navire(3) pirate(3) au(2) trésor(2) caché(1) ». L'erreur commune est d'omettre les voyelles aux fins de mot ou insistant seulement sur les débuts.",
+    "hint": "Soyez méticuleux dans votre compte des syllabaire."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "À quels motifs cette évaluation s'identifient ?",
+    "prompt": "Modèle : zByXwWz",
+    "stimulus": null,
+    "options": ["zBXyXwWz", "ZbYXwWz", "zByXwWz", "zBYxwWz"],
+    "answer": "zByXwWz",
+    "explanation": "La structuration unique à retenir est « zByXwWz », les autres contiennent soit des lettres exagérées en majuscules soit complètement modifiées. Revérifiez chaque format efficacement.",
+    "hint": "Assurez-vous que chaque lettre soit correcte selon le modèle exact."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de consonnes dans la phrase entière ?",
+    "prompt": null,
+    "stimulus": "Lorsque le vent souffle, les voiles s'animent.",
+    "options": ["25", "26", "27", "28"],
+    "answer": "27",
+    "explanation": "Lorsqu'un compteur attentif majuscule et minuscule marque : « Lorsque(2), le(1), vent(3), souffle(5), les(2), voiles(3), s'anime(4) » total=27. Les erreurs se rencontrent fréquemment via confusion avec les phonétisement généralement.",
+    "hint": "Faites un abaque en traitant chaque consonant personnelle ponctuation."
+  }
+]

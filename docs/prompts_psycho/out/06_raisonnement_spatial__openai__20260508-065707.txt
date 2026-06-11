@@ -1,0 +1,576 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces possède un cube ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube est constitué de 6 faces carrées égales. Chacune des six faces se raccorde à une autre via une arête. Retenez que tous les cubes ont exactement 6 faces.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien d'arêtes un tétraèdre régulier possède-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "B",
+        "explanation": "Un tétraèdre régulier est formé de 4 faces triangulaires. Chaque face a 3 arêtes, mais elles sont partagées entre deux faces, résultat en un total de 6 arêtes. Rappelez-vous que chaque arête est partagée par deux triangles adjacents.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets a un prisme triangulaire ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "10"}
+        ],
+        "answer": "B",
+        "explanation": "Un prisme triangulaire est composé de deux bases triangulaires et trois faces latérales rectangulaires. Chaque base contient 3 sommets, totalisant 6 sommets pour le prisme. Notez que les sommets sur les deux bases ne se comptent qu'une fois chacun.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces un cylindre droit possède-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "C",
+        "explanation": "Un cylindre est composé de deux bases circulaires et d'une face latérale. La face latérale est un rectangle enroulé et deux cercles représentent la base. En tout, cela constitue 3 faces distinctes.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la caractéristique principale d'une pyramide à base carrée ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4 faces triangulaires"},
+            {"key": "B", "label": "5 sommets"},
+            {"key": "C", "label": "6 arêtes"},
+            {"key": "D", "label": "3 faces triangulaires"}
+        ],
+        "answer": "B",
+        "explanation": "Une pyramide à base carrée a une base carrée et 4 faces triangulaires, donnant 5 sommets en comptant le sommet supérieur. Chaque sommet du carré se connecte au sommet pyramidal, confirmant les 5 sommets.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de triangles composent la surface d'un tétraèdre ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "3"},
+            {"key": "C", "label": "4"},
+            {"key": "D", "label": "5"}
+        ],
+        "answer": "C",
+        "explanation": "Un tétraèdre régulier est composé de 4 triangles équilatéraux. Chaque triangle est une face, et toutes les arêtes mesurent la même longueur. Ce solide géométrique est souvent examiné pour sa symétrie.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets possède une pyramide triangulaire régulière ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "3"},
+            {"key": "B", "label": "4"},
+            {"key": "C", "label": "5"},
+            {"key": "D", "label": "6"}
+        ],
+        "answer": "B",
+        "explanation": "Une pyramide triangulaire régulière comporte une base triangulaire avec 3 sommets et un sommet supérieur, totalisant 4 sommets. Chaque sommet de la base est relié au sommet du haut.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces possède un octaèdre régulier ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "10"}
+        ],
+        "answer": "C",
+        "explanation": "Un octaèdre régulier consiste en 8 triangles équilatéraux. On peut le visualiser comme deux pyramides à base carrée partageant la même base. Ce corps géométrique est couramment illustré en modélisation 3D.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Si un cube est de côté 2, combien de petits cubes peuvent être formés à partir de lui ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "10"}
+        ],
+        "answer": "C",
+        "explanation": "Un cube de côté 2 peut être découpé en 8 petits cubes unitaires. Chaque côté est divisé en 2, et l'opération 2×2×2 confirme la présence de 8 cubes. Ce découpage est fondamental pour comprendre la composition volumétrique.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est l'apparence d'un cylindre vu de dessus ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Un rectangle"},
+            {"key": "B", "label": "Un carré"},
+            {"key": "C", "label": "Un cône"},
+            {"key": "D", "label": "Un cercle"}
+        ],
+        "answer": "D",
+        "explanation": "Vu de dessus, un cylindre apparaît comme un cercle. La raison en est que le dessus du cylindre est composé de sa base circulaire lorsque la hauteur n'est pas visible dans cette perspective.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces peintes un cube unitaire peut-il avoir au maximum lorsque le cube 3×3×3 entier est peint et découpé ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "3"},
+            {"key": "C", "label": "4"},
+            {"key": "D", "label": "1"}
+        ],
+        "answer": "B",
+        "explanation": "Lorsqu'un cube 3×3×3 est peint et découpé en petits cubes, ceux se trouvant aux coins ont trois faces extérieures visibles et peintes. Un cube unitaire a donc au maximum 3 faces peintes, ce qui est communément le cas pour chaque coin.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de cubes un cube de 2×2×2 peut-il être divisé ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "10"}
+        ],
+        "answer": "C",
+        "explanation": "Un cube de 2×2×2 contient 2 cubes le long de chaque dimension, soit un total de 8 cubes unitaires (2x2x2). Ce partitionnement est une base idéale pour comprendre les découpages en géométrie.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la caractéristique principale d'un cône droit vu de côté ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Un demi-cercle"},
+            {"key": "B", "label": "Un rectangle"},
+            {"key": "C", "label": "Un triangle"},
+            {"key": "D", "label": "Une ellipse"}
+        ],
+        "answer": "C",
+        "explanation": "Vu de côté, un cône droit apparaît comme un triangle isocèle. La base circulaire du cône est représentée par la ligne inférieure, et les deux côtés rejoignent le sommet du cône.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle figure obtient-on en pliant un carré sur l'une de ses diagonales ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Triangle rectangle isocèle"},
+            {"key": "B", "label": "Deux triangles superposés"},
+            {"key": "C", "label": "Rectangle"},
+            {"key": "D", "label": "Losange"}
+        ],
+        "answer": "A",
+        "explanation": "Plier un carré sur sa diagonale divise ce carré en deux triangles rectangles isocèles. Lorsqu'on imagine le pliage, ces triangles se superposent exactement. Donc, le pliage visible ressemble à un triangle rectangle isocèle.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Sur combien de faces un cube repose-t-il lorsqu'il est posé sur une table ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1 face"},
+            {"key": "B", "label": "2 faces"},
+            {"key": "C", "label": "3 faces"},
+            {"key": "D", "label": "4 faces"}
+        ],
+        "answer": "A",
+        "explanation": "Lorsqu'un cube est posé sur une surface plane, il repose sur une seule face. C'est une situation standard en géométrie où l'unique face interfère avec la surface. Non seulement cela fixe le cube mais maintient une stabilité.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Si un cube est de côté 3, quel est son volume ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "9 unités cubiques"},
+            {"key": "B", "label": "18 unités cubiques"},
+            {"key": "C", "label": "27 unités cubiques"},
+            {"key": "D", "label": "36 unités cubiques"}
+        ],
+        "answer": "C",
+        "explanation": "Le volume d'un cube est calculé en élevant la longueur d'une arête à la puissance trois. Pour un cube d'arête 3, le volume est donc 3x3x3, ce qui donne 27 unités cubiques.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel solide a une seule base avec des arêtes convergeant vers un sommet ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Pyramide"},
+            {"key": "B", "label": "Prisme"},
+            {"key": "C", "label": "Cube"},
+            {"key": "D", "label": "Cylindre"}
+        ],
+        "answer": "A",
+        "explanation": "Une pyramide possède une base unique et des faces triangulaires reliant la base à un sommet. Ce design distinctif regroupe toutes les arêtes à ce sommet unique.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel patron parmi ceux-ci peut former un cube lorsqu'il est plié ?",
+        "prompt": "Liste de patrons composés de 6 carrés.",
+        "options": [
+            {"key": "A", "label": "L en 6 carrés"},
+            {"key": "B", "label": "T renversé"},
+            {"key": "C", "label": "Carré central avec 4 extensions"},
+            {"key": "D", "label": "Bande de 6 carrés en ligne"}
+        ],
+        "answer": "B",
+        "explanation": "Un 'T renversé' peut se plier pour former un cube car il contient un carré central avec 4 carrés adjacents formant les faces latérales et un carré supplémentaire pour le dessus ou dessous. Prenez soin de visualiser comment chaque carré se raccorde.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la vue de profil d'un cône ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Un cercle"},
+            {"key": "B", "label": "Un ovale"},
+            {"key": "C", "label": "Un triangle"},
+            {"key": "D", "label": "Un rectangle"}
+        ],
+        "answer": "C",
+        "explanation": "Vu de profil, un cône ressemble à un triangle isocèle. La base circulaire n'est pas visible de côté, seulement l'arrête imaginée de la base au sommet, formant une ligne triangulaire.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de petits cubes sont visibles sur la surface d'un cube 3×3×3 non peint ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "26"},
+            {"key": "B", "label": "27"},
+            {"key": "C", "label": "24"},
+            {"key": "D", "label": "20"}
+        ],
+        "answer": "A",
+        "explanation": "Dans un cube 3×3×3, les coins, les arêtes et les faces directes sont exposés. Le cube central n'est pas sur la surface. Au total, 26 petits cubes sont visibles car 9 par face moins le duplicata des coins et arêtes.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "En pliant un carré en diagonale, que devient-il ?",
+        "prompt": "Un carré ABCD est plié par la diagonale AC.",
+        "options": [
+            {"key": "A", "label": "Deux triangles rectangles"},
+            {"key": "B", "label": "Un triangle équilatéral"},
+            {"key": "C", "label": "Un trapèze"},
+            {"key": "D", "label": "Un rectangle"}
+        ],
+        "answer": "A",
+        "explanation": "Plier un carré le long de sa diagonale crée deux triangles rectangles, avec l'hypoténuse représentant la diagonale commune. Les dimensions initiales sont maintenues dans ce processus.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de petites pyramides à base carrée peut-on former à partir d'un cube découpé ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "5"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "8"}
+        ],
+        "answer": "D",
+        "explanation": "En divisant un cube à partir de tous ses sommets au centre, vous pouvez obtenir 8 pyramides à base carrée. Cela se visualise comme chaque face aboutissant en un triangle incliné vers le centre.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Si un cube est peint et découpé en 3×3×3 cubes, combien auront une face peinte ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "18"},
+            {"key": "D", "label": "24"}
+        ],
+        "answer": "C",
+        "explanation": "Un cube 3×3×3 a 6 faces exposées, les cubes voisins des coins et des arêtes n'étant peints que d'une face. Il y a 9 cubes par face, et les coins (3 faces) et arêtes (2 faces) sont exclus.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle forme résulte d'un carré ABCD plié sur AB et CD perpendiculaires ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Pyramidale"},
+            {"key": "B", "label": "Prisme triangulaire"},
+            {"key": "C", "label": "Cylindrique"},
+            {"key": "D", "label": "Conique"}
+        ],
+        "answer": "C",
+        "explanation": "Le pliage d'un carré le long de deux axes opposés donne normalement une semi-cylindre, ce qui, vu aux extrémités supposées, forme une courbe fermée. C’est une transition vers la cylindricité.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel solide a une proportion 3:2 entre arêtes latérales et bases ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Prisme rectangulaire"},
+            {"key": "B", "label": "Pyramide carrée"},
+            {"key": "C", "label": "Cône"},
+            {"key": "D", "label": "Prisme triangulaire"}
+        ],
+        "answer": "D",
+        "explanation": "Dans un prisme triangulaire régulier, chaque face latérale est un rectangle dont la hauteur dépasse sa base d'une proportion parfois comparée à 3:2. Ce rapport est visible si l’on considère les proportions dimensionnelles. ",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle forme un disque en rotation crée-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Sphère"},
+            {"key": "B", "label": "Ellipse"},
+            {"key": "C", "label": "Cône"},
+            {"key": "D", "label": "Cylindre"}
+        ],
+        "answer": "A",
+        "explanation": "En rotation complète autour d'un diamètre, un disque produit une sphère, car chaque point du cercle tourne dans l’espace tridimensionnel en couvrant toutes les directions à distance égale du centre.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le volume d'un cube d'arête 4 ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "16"},
+            {"key": "B", "label": "32"},
+            {"key": "C", "label": "64"},
+            {"key": "D", "label": "48"}
+        ],
+        "answer": "C",
+        "explanation": "Le volume d'un cube est calculé comme la longueur d'arête au cube. Ainsi, pour un cube dont l'arête mesure 4, en élevant 4 à la puissance 3 (4x4x4), on obtient un volume de 64 unités cubiques.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de faces d'un cube 3×3×3 sont en contact avec l'intérieur d'un cube 4×4×4 qui le contient ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "B",
+        "explanation": "Le cube de taille 3×3×3 est doucement centré à l'intérieur d'un cube 4×4×4, permettant à deux faces opposées achostructure-contactées sur les bords intérieurs du plus grand cube, mettant en évidence leur alternance.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel angle a+t-on si deux arêtes identiques d'un cube de base carrée forment une intersection ?",
+        "prompt": "Un cube est intersecté de sorte que deux arêtes se croisent au travers d'une autre.",
+        "options": [
+            {"key": "A", "label": "90°"},
+            {"key": "B", "label": "45°"},
+            {"key": "C", "label": "60°"},
+            {"key": "D", "label": "30°"}
+        ],
+        "answer": "A",
+        "explanation": "Tout angle entre deux arêtes adjacentes d'un cube ou tétraèdre est rectangulaire. Cela provient du fait que chaque coin de cube est basé sur l'intersection de deux plans perpendiculaires.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Si un prisme droit est coupé transversalement, que se voit-il ?",
+        "prompt": "Un prisme droit à base triangulaire est coupé transversalement au sommet.",
+        "options": [
+            {"key": "A", "label": "Trapèze"},
+            {"key": "B", "label": "Rectangle"},
+            {"key": "C", "label": "Triangle"},
+            {"key": "D", "label": "Parallélogramme"}
+        ],
+        "answer": "C",
+        "explanation": "Couper transversalement un prisme triangulaire revient à le cross-segonner perpendiculairement à ses bases, révélant ainsi une figure triangulaire selon les sections sèches du prisme.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien d'arêtes un octaèdre régulier réunit révét-il vers un seul sommet ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "3"},
+            {"key": "C", "label": "4"},
+            {"key": "D", "label": "6"}
+        ],
+        "answer": "C",
+        "explanation": "À chaque sommet d'un octaèdre, quatre triangles équilatéraux affleurent ensemble; ainsi, le solide est incarné par quatre arêtes ecentrées. Différents sommets signifieraient la rencontre de cet ensemble.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de coins d'un cube 4×4×4 peint en rouge seront dépourvus de peinture une fois découpé ?",
+        "prompt": "Le cube est couvert de peinture rouge avant d'être découpé en 64 petits cubes unitaires.",
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "16"}
+        ],
+        "answer": "A",
+        "explanation": "Chaque coin d'un cube exposé est peintine sur trois faces. Dans un cube initialement peint 4x4x4, les 8 coins exposés conservent leur peinture. Ainsi, zéro coin est exempt de peinture.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel comportement a un cube 5×5×5 peint et découpé, via nombre de cubes unitaires peints sur chacune des trois faces connectées ?",
+        "prompt": "Après peinture, le cube est divisé en cubes unitaires.",
+        "options": [
+            {"key": "A", "label": "8 cubes"},
+            {"key": "B", "label": "24 cubes"},
+            {"key": "C", "label": "27 cubes"},
+            {"key": "D", "label": "33 cubes"}
+        ],
+        "answer": "A",
+        "explanation": "Dans un cube 5×5×5, 8 coins sont partagés entre trois faces visibles. Chacun de ces 8 coins abasorbe 3 faces pinturées, alors que d'autres extrémités ne présentent que 1 ou 2.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de petits cubes ont exactement 2 faces peintes dans un cube 4×4×4 peint et découpé ?",
+        "prompt": "Un cube 4×4×4 est totalement peint à l'extérieur puis découpé en 64 petits cubes unitaires.",
+        "options": [
+            {"key": "A", "label": "12"},
+            {"key": "B", "label": "24"},
+            {"key": "C", "label": "36"},
+            {"key": "D", "label": "48"}
+        ],
+        "answer": "B",
+        "explanation": "Les cubes à 2 faces peintes se trouvent le long des arêtes. Chaque arête du 4×4×4 contient 2 cubes intermédiaires. Avec 12 arêtes, cela fait 24 cubes au total présentant 2 faces peintes.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si l'intersection d'un cube 5×5×5 est faite plan-média, quelle figure formée ?",
+        "prompt": "À une intersection médiane entre deux faces opposées.",
+        "options": [
+            {"key": "A", "label": "Un carré"},
+            {"key": "B", "label": "Deux rectangles"},
+            {"key": "C", "label": "Un octogone"},
+            {"key": "D", "label": "Un hexagone"}
+        ],
+        "answer": "A",
+        "explanation": "L'intersection centrale d'un plan unique traversant un cube donne toujours un carré. Cela entraîne une coupe régulière, maintenant une symétrie parfaite à travers les faces jointes opposées.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que se voit-il par l'intersection plane d'un cylindre droit ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Cercle"},
+            {"key": "B", "label": "Ellipse"},
+            {"key": "C", "label": "Rectangle"},
+            {"key": "D", "label": "Trapèze"}
+        ],
+        "answer": "B",
+        "explanation": "Une section plane d'un cylindre droit, biaisée en angle, engendre une vue ellipsoïdale. Ce phénomène est essentiel pour examiner la projection circulaire en relations ajustées des moindres angles.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Une pyramide tronquée porte combien de faces ?",
+        "prompt": "Une pyramide régulière, coupée parallèle à sa base.",
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "5"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "10"}
+        ],
+        "answer": "A",
+        "explanation": "Une trépanation parallèle d'une pyramide originale réduit celle-ci à une structure appauvrie d'une base haute et large gardant 6 faces — soit quadrilatérals et deux bases distinctes.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Un cône sectionné équivoque de sommet et base forme quel type de vue ?",
+        "prompt": "Coupe équivoque à travers le demi cône des sommets de base.",
+        "options": [
+            {"key": "A", "label": "Une ellipse"},
+            {"key": "B", "label": "Un cerce"},
+            {"key": "C", "label": "Deux segments"},
+            {"key": "D", "label": "Un triangle"}
+        ],
+        "answer": "D",
+        "explanation": "Une coupure équivalente d'apex de cylindre traduit égale sa section recouvrée d’une dimensionnis retangulaire semblant triangulaire en surface restituée. Les côtés droits projettent abruptement.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si un cube N×N×N est tramé puis coupé en rames NA×NA×NA, combien de faces apparaîtront de chaque côté de cube découpé si N>2 ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "3"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "1"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "C",
+        "explanation": "Chaque côté du cube initialement découpé en sections égales ne présente que max un côté externe du cube peint. L’excentrique ne se développe que pour participer à une face.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Intersection de plan perpendiculaire avec base de prisme pentagoniste ; que voir ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Pentagone"},
+            {"key": "B", "label": "Rectangle"},
+            {"key": "C", "label": "Trapèze"},
+            {"key": "D", "label": "Hexagone"}
+        ],
+        "answer": "A",
+        "explanation": "Couper perpendiculairement un prisme pentagonal révèle automatiquement un contour compatible direct, réitérant sa base antérieurement pas décomposée. Qu’importe l'emplature, rehausse en continu.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Un cube 6×6×6, entier, peint et déc. pictograms combien de jeux sur trois faces ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "24"},
+            {"key": "B", "label": "48"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "36"}
+        ],
+        "answer": "C",
+        "explanation": "Dans un cube 6×6×6, stoppéné et courtant des coins n’exposant que 3-isoçons prospicaces, plongés 8 fois par empilement trifrons. Tout écartage dégénéré non-honorable, précipite taille corrompue.",
+        "hint": null
+    }
+]

@@ -1,0 +1,829 @@
+================================================================================
+  COP'IQ — SPECIFICATION COMPLETE — PANEL ADMIN WEB
+  Tout ce qu'il faut pour coder le site d'administration de COP'IQ.
+  Version : 1.0 (mai 2026)
+  Cible : developpeur web (Next.js / React conseille — n'importe quel framework
+          fonctionne tant qu'il appelle l'API Supabase).
+================================================================================
+
+================================================================================
+0. SOMMAIRE
+================================================================================
+
+  1. Stack technique recommandee
+  2. Connexion a Supabase (URL + cles + auth admin)
+  3. Modele de donnees (tables touchees par le panel)
+  4. Roles et permissions
+  5. RPC disponibles cote serveur (API du panel)
+  6. Edge Functions Stripe (deja deployees)
+  7. Ecrans a coder (avec wireframes texte)
+  8. Flux metier critiques
+  9. Gestion utilisateurs de test (mode fondateur, acces gratuit, etc.)
+ 10. Securite (regles imperatives)
+ 11. Variables d'environnement
+ 12. Exemples de code (fetch / mutations)
+ 13. Checklist de mise en production
+
+
+================================================================================
+1. STACK TECHNIQUE RECOMMANDEE
+================================================================================
+
+  Framework      : Next.js 14 (App Router) ou Remix
+  UI             : TailwindCSS + shadcn/ui (cards, tables, dialogs prets)
+  Auth           : @supabase/auth-helpers-nextjs (ou @supabase/ssr)
+  Charts         : Recharts (MRR, signups par jour, etc.)
+  Tables         : @tanstack/react-table v8 (tri / pagination / filtres)
+  Notifications  : sonner (toasts)
+  Icones         : lucide-react
+
+  Pourquoi Next.js : SSR pour les pages admin (donnees fraiches), middleware
+  pour la verification du role cote serveur (= zero risque de bypass client).
+
+
+================================================================================
+2. CONNEXION A SUPABASE
+================================================================================
+
+  PROJECT REF  : nuoonagnkhbeeymtvrcn
+  REGION       : eu-west-3 (Paris)
+
+  URL API      : https://nuoonagnkhbeeymtvrcn.supabase.co
+  ANON KEY     : disponible dans Supabase Dashboard > Project Settings > API
+                 (cle publique, OK dans le frontend)
+  SERVICE_ROLE : a NE JAMAIS exposer cote client. Uniquement dans les
+                 server actions / API routes Next.js.
+
+  Auth flow recommande pour le panel admin :
+    1. /login : email + password classique Supabase
+    2. Apres login, le frontend appelle RPC `get_my_entitlement()`
+    3. Si is_admin === false  ->  /forbidden
+    4. Si is_admin === true   ->  /dashboard
+
+  Important : la table `user_profiles.role` est l'ENUM SERVEUR. Le bypass
+  cote client est techniquement impossible : tous les RPC admin font la
+  verif `_actor_role() IN ('owner','admin')` cote SQL.
+
+
+================================================================================
+3. MODELE DE DONNEES
+================================================================================
+
+  --- Tables principales (schema public) ---
+
+  user_profiles
+    user_id           uuid PK (= auth.users.id)
+    email             text
+    first_name        text
+    last_name         text
+    username          text
+    role              user_role  enum {owner, admin, moderator, user, active}
+    user_mode         text       'exam' | 'school' | ...
+    user_track        text
+    has_passed_exam   boolean
+    cgv_accepted      boolean
+    created_at, updated_at
+
+  subscription_payement   (TABLE CANONIQUE — source de verite)
+    user_id                  uuid PK
+    email                    text
+    plan                     subscription_plan {free, week, month, year}
+    status                   subscription_status {active, trial, cancelled, expired, past_due}
+    valid_until              timestamptz   -- date de fin d'acces premium
+    cancel_at_period_end     boolean
+    canceled_at              timestamptz
+    stripe_subscription_id   text          -- Stripe sub_xxxxx
+    stripe_customer_id       text          -- Stripe cus_xxxxx
+    stripe_price_id          text          -- price_xxxxx
+    activated_at             timestamptz
+    updated_at               timestamptz
+
+  free_weekly_usage    (quota gratuit)
+    user_id        uuid PK
+    window_start   timestamptz   -- debut de la fenetre 7 jours
+    used           int           -- requetes deja consommees
+    updated_at     timestamptz   -- date de la derniere requete (= base reset)
+
+  billing_invoices    (factures Stripe)
+    id, user_id, invoice_number, stripe_invoice_id, amount_cents, currency,
+    status (paid|due|failed|refunded), pdf_url, hosted_invoice_url, plan,
+    period_start, period_end, paid_at, created_at
+
+  subscription_events   (audit / webhook log)
+    id, user_id, stripe_event_id (UNIQUE), event_type, payload jsonb,
+    processed_at, created_at
+
+  stripe_customers
+    user_id, stripe_customer_id, email, created_at, updated_at
+
+  rewarded_ad_grants    (anti-replay des pubs recompensees)
+    id, user_id, granted_at, client_nonce
+
+  --- ENUMS importants ---
+
+  user_role            : owner | admin | moderator | user | active
+  subscription_plan    : free | week | month | year
+  subscription_status  : active | trial | cancelled | expired | past_due
+
+  --- RLS ---
+
+  Toutes les tables sensibles ont RLS active. Les SELECT sont autorises
+  pour `user_id = auth.uid()` OU si l'utilisateur connecte est owner/admin.
+  Les UPDATE/INSERT sur subscription_payement / billing_invoices passent
+  uniquement par RPC SECURITY DEFINER (jamais en direct).
+
+
+================================================================================
+4. ROLES ET PERMISSIONS
+================================================================================
+
+  ROLE         | Acces panel | Voir users | Modifier role | Octroyer acces | Voir factures | Resilier sub | Voir owner
+  -------------|-------------|------------|---------------|-----------------|---------------|---------------|------------
+  owner        |    OUI      |    OUI     | OUI (jusqu'a owner) | OUI       | OUI           | OUI           | OUI
+  admin        |    OUI      |    OUI     | OUI (sauf owner)    | OUI       | OUI           | OUI           | OUI
+  moderator    |    NON*     |    NON     | NON                 | NON       | NON           | NON           | NON
+  user/active  |    NON      |    NON     | NON                 | NON       | NON           | NON           | NON
+
+  *  moderator = future feature forum, pas d'acces panel admin actuellement.
+
+  REGLE CRITIQUE :
+    Seul un OWNER peut promouvoir un autre user au role OWNER.
+    Un admin peut promouvoir jusqu'a admin/moderator/user mais PAS owner.
+    Cette regle est appliquee dans la RPC `set_user_role()`.
+
+
+================================================================================
+5. RPC DISPONIBLES (API DU PANEL)
+================================================================================
+
+  Toutes les RPC se consomment via le client Supabase :
+      const { data, error } = await supabase.rpc('<name>', { <params> });
+
+  --------------------------------------------------------------------------
+  5.1  get_my_entitlement()   -> json
+  --------------------------------------------------------------------------
+    Renvoie l'etat complet de l'utilisateur connecte.
+    Utilisation : check d'acces au panel + affichage profil admin.
+
+    Output JSON :
+    {
+      "authenticated": true,
+      "user_id": "uuid",
+      "role": "owner",
+      "is_owner": true,
+      "is_admin": true,
+      "premium": true,
+      "plan": "month",
+      "status": "active",
+      "valid_until": "2026-06-01T00:00:00Z",
+      "cancel_at_period_end": false,
+      "free_used": 0,
+      "free_limit": 10,
+      "free_remaining": 10,
+      "free_resets_at": "2026-05-13T..."
+    }
+
+  --------------------------------------------------------------------------
+  5.2  admin_metrics()   -> json
+  --------------------------------------------------------------------------
+    Renvoie le dashboard d'overview.
+
+    Output JSON :
+    {
+      "total_users": 1247,
+      "owners": 1,
+      "premium_users": 134,
+      "active_subscriptions": 132,
+      "pending_cancels": 4,
+      "mrr_cents": 119866,           // 1198.66 EUR
+      "today_signups": 12,
+      "invoices_30d": 156,
+      "revenue_30d_cents": 1402544
+    }
+
+  --------------------------------------------------------------------------
+  5.3  admin_list_users(p_search, p_role, p_plan, p_limit, p_offset)
+  --------------------------------------------------------------------------
+    Liste paginee + searchable.
+    Tous les params sont OPTIONNELS (passe null pour ignorer).
+
+    Params :
+      p_search  text   -- recherche partielle (email, username, nom, prenom)
+      p_role    text   -- 'owner' | 'admin' | 'user' | ...
+      p_plan    text   -- 'free' | 'week' | 'month' | 'year'
+      p_limit   int    -- 1..200 (defaut 50)
+      p_offset  int    -- pagination
+
+    Output : tableau de rows
+      { user_id, email, username, first_name, last_name, role, plan, status,
+        valid_until, cancel_at_period_end, premium, free_used, created_at }
+
+  --------------------------------------------------------------------------
+  5.4  admin_get_user(p_user_id uuid)   -> json
+  --------------------------------------------------------------------------
+    Detail d'un utilisateur (pour la fiche /users/[id]).
+
+    Output JSON :
+    {
+      "user_id": "uuid",
+      "auth_email": "kaisouartani@gmail.com",
+      "profile": { ... user_profiles ... },
+      "subscription": { plan, status, valid_until, stripe_subscription_id, ... },
+      "free_quota": { used, window_start, resets_at, ... },
+      "invoices": [ ... 50 dernieres ... ],
+      "events": [ ... 30 derniers webhook events ... ],
+      "premium": true
+    }
+
+  --------------------------------------------------------------------------
+  5.5  set_user_role(p_user_id uuid, p_role text)
+  --------------------------------------------------------------------------
+    Change le role d'un utilisateur.
+    p_role accepte : 'owner' | 'admin' | 'moderator' | 'user' | 'active'
+    Restriction : seul un owner peut promouvoir vers 'owner'.
+    Lance une exception 'forbidden' / 'forbidden_owner_promotion' sinon.
+
+    Exemple :
+      await supabase.rpc('set_user_role', {
+        p_user_id: '8f3d8d52-486f-46c4-a930-13d7c34e19fb',
+        p_role: 'admin'
+      });
+
+  --------------------------------------------------------------------------
+  5.6  admin_grant_access(p_user_id, p_plan, p_duration_days)
+  --------------------------------------------------------------------------
+    Octroie un acces premium SANS Stripe.
+    Ideal pour : testeurs, beta, ambassadeurs, presse, codes promo.
+
+    Params :
+      p_user_id        uuid
+      p_plan           'week' | 'month' | 'year'
+      p_duration_days  int (1..1095)
+
+    Effet : subscription_payement = active, valid_until = now() + N jours.
+    Trace : un event 'admin.access_granted' est insere dans subscription_events.
+
+    Output : { "ok": true, "valid_until": "2026-..." }
+
+  --------------------------------------------------------------------------
+  5.7  admin_revoke_access(p_user_id uuid)
+  --------------------------------------------------------------------------
+    Force l'expiration immediate. NE rembourse PAS Stripe (a faire dans le dashboard).
+    Pour tester le passage en mode 'expired'.
+
+    Output : { "ok": true }
+
+  --------------------------------------------------------------------------
+  5.8  admin_reset_free_quota(p_user_id uuid)
+  --------------------------------------------------------------------------
+    Remet le compteur a 0 pour le testeur. Utile pour QA.
+
+    Output : { "ok": true }
+
+
+================================================================================
+6. EDGE FUNCTIONS STRIPE (deja deployees)
+================================================================================
+
+  Endpoints de base : https://nuoonagnkhbeeymtvrcn.supabase.co/functions/v1/<name>
+
+  | Function                      | Methode | Auth         | Role      |
+  |-------------------------------|---------|--------------|-----------|
+  | stripe-create-checkout        | POST    | JWT user     | tout user |
+  | stripe-portal                 | POST    | JWT user     | tout user |
+  | stripe-cancel-subscription    | POST    | JWT user     | tout user |
+  | stripe-webhook                | POST    | Stripe sig   | webhook   |
+
+  Le panel admin n'a PAS BESOIN d'appeler ces fonctions directement —
+  utilise les RPC SQL pour modifier les abonnements.
+
+  EXCEPTION : si tu veux donner a l'admin la possibilite de lancer une
+  resiliation Stripe au nom d'un user, alors il faut creer une nouvelle
+  Edge Function `admin-cancel-subscription` qui :
+    1. Verifie que l'appelant est admin/owner (via JWT + RPC _actor_role)
+    2. Recupere stripe_subscription_id du user cible
+    3. Appelle stripe.subscriptions.update(id, { cancel_at_period_end: true })
+
+  (Pas encore implementee — a creer si besoin.)
+
+
+================================================================================
+7. ECRANS A CODER
+================================================================================
+
+  --------------------------------------------------------------------------
+  7.1  /login
+  --------------------------------------------------------------------------
+    Form email + password (Supabase auth).
+    Apres connexion, redirection vers /dashboard.
+    Si get_my_entitlement().is_admin === false  ->  /forbidden + signOut().
+
+  --------------------------------------------------------------------------
+  7.2  /dashboard   (overview)
+  --------------------------------------------------------------------------
+    Cartes (donnees admin_metrics()) :
+      - Utilisateurs total
+      - Abonnements actifs
+      - MRR (mrr_cents / 100 €)
+      - Revenu 30j (revenue_30d_cents / 100 €)
+      - Inscriptions aujourd'hui
+      - Resiliations en cours
+
+    Graph (Recharts) :
+      - Inscriptions par jour sur 30 jours
+        SELECT date_trunc('day', created_at)::date, count(*)
+        FROM user_profiles WHERE created_at > now() - interval '30 days' ...
+      - Revenu cumule sur 30 jours
+
+    Liste rapide :
+      - 10 derniers paiements (billing_invoices ORDER BY paid_at DESC)
+      - 10 dernieres inscriptions
+
+  --------------------------------------------------------------------------
+  7.3  /users   (gestion utilisateurs)
+  --------------------------------------------------------------------------
+    Tableau avec colonnes :
+      Email | Nom | Role | Plan | Status | Premium | Quota | Inscrit le | Actions
+
+    Filtres en haut :
+      - Search input (email/nom/prenom/username)
+      - Select Role  (Tous | Owner | Admin | User)
+      - Select Plan  (Tous | Free | Week | Month | Year)
+      - Bouton refresh
+
+    Pagination : limit 50, offset par defaut.
+    Source : RPC admin_list_users.
+
+    Actions par ligne :
+      - Bouton "Voir"           -> /users/[id]
+      - Menu (...)
+          - Promouvoir admin
+          - Promouvoir owner   (seulement si actor est owner)
+          - Demouvoir vers user
+          - Octroyer acces premium (ouvre dialog)
+          - Reset quota gratuit
+          - Revoquer acces (rouge, confirm)
+
+  --------------------------------------------------------------------------
+  7.4  /users/[id]   (fiche utilisateur)
+  --------------------------------------------------------------------------
+    Source : RPC admin_get_user(id).
+
+    Sections :
+
+    [HEADER]
+      Avatar + Nom + Email
+      Badge role (Owner / Admin / User / etc.)
+      Badge plan (Free / Week / Month / Year)
+      Badge premium (vert si premium, gris sinon)
+      Date inscription
+
+    [SECTION ABONNEMENT]
+      - Plan actuel
+      - Status
+      - Valid until (avec compte a rebours si <30 jours)
+      - cancel_at_period_end (banner orange si true)
+      - Stripe IDs (sub_xxxxx, cus_xxxxx) — cliquables vers dashboard.stripe.com
+      - Bouton "Octroyer acces" (dialog : plan + duree en jours)
+      - Bouton "Revoquer acces" (rouge, confirm)
+      - Bouton "Reset quota gratuit"
+
+    [SECTION QUOTA GRATUIT]
+      - used / 10
+      - Reset le ...
+      - Progress bar
+
+    [SECTION FACTURES]
+      Liste avec status (paid/due/failed/refunded), montant, date,
+      bouton "Voir PDF" (hosted_invoice_url || pdf_url).
+
+    [SECTION HISTORIQUE EVENEMENTS]
+      Liste chrono (created_at desc) :
+        admin.access_granted | admin.access_revoked
+        customer.subscription.created | .updated | .deleted
+        invoice.paid | invoice.payment_failed
+        checkout.session.completed
+      Cliquer = ouvrir le payload JSON dans une modale.
+
+    [SECTION ZONE DANGER]
+      - Changer le role (dropdown owner/admin/moderator/user/active)
+      - Suspendre le compte (TODO : ajouter une colonne `disabled` plus tard)
+
+  --------------------------------------------------------------------------
+  7.5  /testers   (utilisateurs de test / acces gracieux)
+  --------------------------------------------------------------------------
+    Vue filtree de /users specifiquement pour les acces gratuits :
+      WHERE role = 'owner' OR (subscription_payement.stripe_subscription_id IS NULL AND status = 'active')
+
+    Tableau :
+      Email | Plan | Acces jusqu'au | Octroye le | Octroye par | Actions
+    Action principale : "Renouveler" (re-octroie pour la meme duree).
+
+  --------------------------------------------------------------------------
+  7.6  /invoices   (toutes les factures)
+  --------------------------------------------------------------------------
+    Tableau global de billing_invoices.
+    Filtres : status, plan, plage de dates.
+    Export CSV (cote serveur via API route Next.js).
+
+  --------------------------------------------------------------------------
+  7.7  /events   (audit log)
+  --------------------------------------------------------------------------
+    Stream des subscription_events. Filtre par event_type, user.
+    Utile pour debug paiement.
+
+  --------------------------------------------------------------------------
+  7.8  /settings   (parametres admin)
+  --------------------------------------------------------------------------
+    - Lister les owners/admins (toi + les eventuels collaborateurs)
+    - Bouton "Ajouter un admin" (input email -> set_user_role)
+    - Liens utiles : Stripe Dashboard, Supabase Dashboard, AdMob console
+
+
+================================================================================
+8. FLUX METIER CRITIQUES
+================================================================================
+
+  --------------------------------------------------------------------------
+  8.1  Promouvoir un compte testeur en mode "fondateur"
+  --------------------------------------------------------------------------
+    Cas d'usage : le user "kaisouartani@gmail.com" a deja le role owner.
+    Pour ajouter un autre owner :
+
+      await supabase.rpc('set_user_role', {
+        p_user_id: '<uuid_du_user>',
+        p_role: 'owner'
+      });
+
+    L'app Flutter detecte le changement via realtime (table subscription_payement)
+    OU au prochain refresh automatique (~20s polling).
+    L'utilisateur n'a PAS besoin de redemarrer l'app.
+
+  --------------------------------------------------------------------------
+  8.2  Octroyer 30 jours de premium a un testeur (sans Stripe)
+  --------------------------------------------------------------------------
+      await supabase.rpc('admin_grant_access', {
+        p_user_id: '<uuid>',
+        p_plan: 'month',
+        p_duration_days: 30
+      });
+
+    -> subscription_payement.status = 'active', valid_until = now() + 30j
+    -> is_user_premium() = true => user voit l'app premium SANS pub
+    -> A l'expiration : passe en plan free automatiquement (verif valid_until > now())
+
+  --------------------------------------------------------------------------
+  8.3  Resiliation par l'admin (cas exceptionnel)
+  --------------------------------------------------------------------------
+    Option A (sans rembourser) : admin_revoke_access(uuid)
+      -> Force expired immediatement.
+      -> NE rembourse PAS Stripe.
+
+    Option B (annulation Stripe + remboursement) :
+      1. Va sur dashboard.stripe.com -> Customers -> [le client]
+      2. Cancel subscription + Refund la derniere facture.
+      3. Le webhook met automatiquement la BDD a jour.
+
+  --------------------------------------------------------------------------
+  8.4  Reset complet d'un compte testeur
+  --------------------------------------------------------------------------
+      // 1. Reset le quota
+      await supabase.rpc('admin_reset_free_quota', { p_user_id });
+      // 2. Revoquer tout acces premium
+      await supabase.rpc('admin_revoke_access', { p_user_id });
+      // 3. Repasser en role 'user' (depuis 'owner' par exemple)
+      await supabase.rpc('set_user_role', { p_user_id, p_role: 'user' });
+
+  --------------------------------------------------------------------------
+  8.5  Verification admin cote serveur (Next.js middleware)
+  --------------------------------------------------------------------------
+    middleware.ts (Next.js) :
+
+      import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs';
+
+      export async function middleware(req) {
+        const res = NextResponse.next();
+        const supabase = createMiddlewareClient({ req, res });
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) return NextResponse.redirect(new URL('/login', req.url));
+
+        const { data: ent } = await supabase.rpc('get_my_entitlement');
+        if (!ent?.is_admin) return NextResponse.redirect(new URL('/forbidden', req.url));
+        return res;
+      }
+      export const config = { matcher: ['/dashboard/:path*', '/users/:path*', ...] };
+
+
+================================================================================
+9. GESTION UTILISATEURS DE TEST — RECETTES
+================================================================================
+
+  Recette 1 : creer un compte test "free + quota plein"
+    1. Inscription normale dans l'app (kaiso+test1@gmail.com).
+    2. Aucun changement requis. Le user est en plan free, 10 quiz/sem.
+
+  Recette 2 : creer un compte test "premium 7 jours"
+    1. Inscription normale.
+    2. Dans le panel : /users -> rechercher l'email -> "Octroyer acces"
+       -> plan: week, duree: 7 jours.
+
+  Recette 3 : creer un compte test "premium expire"
+    1. Inscription normale.
+    2. admin_grant_access(uuid, 'week', 1)
+    3. Attendre 1 jour OU executer en SQL :
+       UPDATE subscription_payement SET valid_until = now() - interval '1 day'
+       WHERE user_id = '<uuid>';
+
+  Recette 4 : creer un compte test "owner / fondateur"
+    1. Inscription normale.
+    2. set_user_role(uuid, 'owner').
+
+  Recette 5 : tester un paiement reel sans payer
+    1. Stripe Dashboard -> mode TEST.
+    2. Sur abonnement_page, choisir un plan -> Stripe Checkout test.
+    3. Carte test : 4242 4242 4242 4242 / 12/30 / 123.
+    4. Le webhook met la BDD a jour, l'app debloque l'acces en realtime.
+
+
+================================================================================
+10. SECURITE — REGLES IMPERATIVES
+================================================================================
+
+  - JAMAIS exposer SUPABASE_SERVICE_ROLE_KEY au client. Seulement dans les
+    server actions / API routes Next.js.
+
+  - Le panel doit appeler `get_my_entitlement()` au premier load et
+    bloquer l'UI si is_admin est false.
+    Pour un vrai blocage : middleware.ts cote Next.js (verifie cote serveur).
+
+  - Toutes les RPC admin_* font la verif de role en SQL via _actor_role().
+    Donc meme si un attaquant trouve l'URL, il aura "forbidden" si pas admin.
+
+  - Le webhook Stripe verifie la signature HMAC obligatoirement
+    (STRIPE_WEBHOOK_SECRET requis).
+
+  - Les tables sensibles ont RLS active :
+      subscription_payement, billing_invoices, billing_events,
+      subscription_events, stripe_customers, free_weekly_usage.
+    Le client ne peut JAMAIS modifier ces tables en direct.
+
+  - 2FA pour les comptes admin/owner : recommande.
+    Active dans Supabase : Auth > Providers > Email > "Enable email OTP".
+
+  - Logs : toutes les actions admin sont tracees dans subscription_events
+    (event_type = 'admin.*').
+
+
+================================================================================
+11. VARIABLES D'ENVIRONNEMENT
+================================================================================
+
+  Pour le panel admin Next.js :
+
+  .env.local :
+    NEXT_PUBLIC_SUPABASE_URL=https://nuoonagnkhbeeymtvrcn.supabase.co
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGc...    # cle publique anon
+    SUPABASE_SERVICE_ROLE_KEY=eyJhbGc...        # JAMAIS dans le code client
+    STRIPE_DASHBOARD_URL=https://dashboard.stripe.com
+    NEXT_PUBLIC_APP_NAME="COP'IQ Admin"
+
+  Tu peux recuperer les cles dans :
+    Supabase Dashboard > Project Settings > API
+
+
+================================================================================
+12. EXEMPLES DE CODE
+================================================================================
+
+  --------------------------------------------------------------------------
+  12.1  Setup client Supabase (Next.js)
+  --------------------------------------------------------------------------
+    // lib/supabase.ts
+    import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+    export const supabase = createClientComponentClient();
+
+  --------------------------------------------------------------------------
+  12.2  Charger l'overview du dashboard
+  --------------------------------------------------------------------------
+    // app/dashboard/page.tsx (Server Component)
+    import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
+    import { cookies } from 'next/headers';
+
+    export default async function Dashboard() {
+      const sb = createServerComponentClient({ cookies });
+      const { data: metrics } = await sb.rpc('admin_metrics');
+
+      return (
+        <div className="grid grid-cols-4 gap-4">
+          <Card label="Utilisateurs" value={metrics.total_users} />
+          <Card label="Premium" value={metrics.premium_users} />
+          <Card label="MRR" value={`${(metrics.mrr_cents/100).toFixed(2)} €`} />
+          <Card label="Revenu 30j" value={`${(metrics.revenue_30d_cents/100).toFixed(2)} €`} />
+        </div>
+      );
+    }
+
+  --------------------------------------------------------------------------
+  12.3  Tableau utilisateurs (avec recherche)
+  --------------------------------------------------------------------------
+    'use client';
+    import { useState, useEffect } from 'react';
+    import { supabase } from '@/lib/supabase';
+
+    export default function UsersTable() {
+      const [users, setUsers] = useState([]);
+      const [search, setSearch] = useState('');
+      const [role, setRole] = useState<string | null>(null);
+      const [plan, setPlan] = useState<string | null>(null);
+      const [page, setPage] = useState(0);
+
+      async function load() {
+        const { data, error } = await supabase.rpc('admin_list_users', {
+          p_search: search || null,
+          p_role: role,
+          p_plan: plan,
+          p_limit: 50,
+          p_offset: page * 50,
+        });
+        if (!error) setUsers(data ?? []);
+      }
+      useEffect(() => { load(); }, [search, role, plan, page]);
+
+      return (
+        <div>
+          <input
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            placeholder="Email, nom, username..."
+          />
+          <table>
+            <thead>
+              <tr>
+                <th>Email</th><th>Role</th><th>Plan</th>
+                <th>Premium</th><th>Quota</th><th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {users.map(u => (
+                <tr key={u.user_id}>
+                  <td>{u.email}</td>
+                  <td><RoleBadge role={u.role}/></td>
+                  <td>{u.plan}</td>
+                  <td>{u.premium ? '✅' : '—'}</td>
+                  <td>{u.free_used}/10</td>
+                  <td><UserActions userId={u.user_id} actorIsOwner={...} /></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
+
+  --------------------------------------------------------------------------
+  12.4  Octroyer un acces (mutation)
+  --------------------------------------------------------------------------
+    async function grantAccess(userId: string, plan: 'week'|'month'|'year', days: number) {
+      const { data, error } = await supabase.rpc('admin_grant_access', {
+        p_user_id: userId,
+        p_plan: plan,
+        p_duration_days: days,
+      });
+      if (error) {
+        toast.error(error.message);
+        return;
+      }
+      toast.success(`Acces actif jusqu'au ${new Date(data.valid_until).toLocaleDateString()}`);
+    }
+
+  --------------------------------------------------------------------------
+  12.5  Promouvoir au role owner
+  --------------------------------------------------------------------------
+    async function promoteToOwner(userId: string) {
+      const { error } = await supabase.rpc('set_user_role', {
+        p_user_id: userId,
+        p_role: 'owner',
+      });
+      if (error) {
+        if (error.message === 'forbidden_owner_promotion') {
+          toast.error("Seul un owner peut promouvoir un autre owner.");
+        } else {
+          toast.error(error.message);
+        }
+        return;
+      }
+      toast.success("Compte promu owner.");
+    }
+
+  --------------------------------------------------------------------------
+  12.6  Revoquer + reset quota (combo testeur)
+  --------------------------------------------------------------------------
+    async function fullReset(userId: string) {
+      await supabase.rpc('admin_revoke_access', { p_user_id: userId });
+      await supabase.rpc('admin_reset_free_quota', { p_user_id: userId });
+      await supabase.rpc('set_user_role', { p_user_id: userId, p_role: 'user' });
+      toast.success("Compte remis a zero.");
+    }
+
+
+================================================================================
+13. CHECKLIST DE MISE EN PRODUCTION
+================================================================================
+
+  [ ] DNS pointe vers le panel (ex: admin.copiqpolice.app)
+  [ ] HTTPS active (Vercel/Cloudflare automatique)
+  [ ] Variables d'env coller (anon key, service_role key)
+  [ ] middleware.ts active la verif is_admin
+  [ ] Auth 2FA activee pour TOUS les comptes admin/owner
+  [ ] /forbidden route stylisee (en cas de tentative non autorisee)
+  [ ] Logs Supabase consultes (Edge Functions > stripe-webhook)
+  [ ] Test : creer un user de test, lui octroyer 7j premium, verifier
+      dans l'app Flutter qu'il devient bien premium en realtime
+  [ ] Test : revoquer son acces, verifier qu'il repasse en free
+  [ ] Test : promouvoir owner, verifier que le bandeau "Mode Fondateur"
+      apparait dans la facture_page de l'app
+
+
+================================================================================
+ANNEXE A — TEMPLATES SQL UTILES (a executer manuellement si besoin)
+================================================================================
+
+  -- Voir tous les owners actuels
+  SELECT u.email, up.role, up.created_at
+  FROM public.user_profiles up
+  JOIN auth.users u ON u.id = up.user_id
+  WHERE up.role IN ('owner','admin');
+
+  -- Voir les abonnements actifs avec details Stripe
+  SELECT u.email, sp.plan, sp.valid_until, sp.cancel_at_period_end,
+         sp.stripe_subscription_id, sp.stripe_customer_id
+  FROM public.subscription_payement sp
+  JOIN auth.users u ON u.id = sp.user_id
+  WHERE sp.status = 'active'
+  ORDER BY sp.valid_until DESC;
+
+  -- MRR detaille par plan
+  SELECT plan,
+         COUNT(*) AS nb_subs,
+         SUM(CASE plan
+               WHEN 'month' THEN 8.99
+               WHEN 'year'  THEN 7.249  -- 86.99/12
+               WHEN 'week'  THEN 19.96  -- 4*4.99
+             END) AS mrr_eur
+  FROM public.subscription_payement
+  WHERE status = 'active' AND (valid_until IS NULL OR valid_until > now())
+  GROUP BY plan;
+
+  -- Top 20 plus gros payeurs
+  SELECT u.email, SUM(bi.amount_cents)/100.0 AS total_eur, COUNT(*) AS nb
+  FROM public.billing_invoices bi
+  JOIN auth.users u ON u.id = bi.user_id
+  WHERE bi.status = 'paid'
+  GROUP BY u.email
+  ORDER BY total_eur DESC
+  LIMIT 20;
+
+  -- Audit : actions admin du dernier mois
+  SELECT u.email AS target, se.event_type, se.payload, se.created_at
+  FROM public.subscription_events se
+  JOIN auth.users u ON u.id = se.user_id
+  WHERE se.event_type LIKE 'admin.%'
+    AND se.created_at > now() - interval '30 days'
+  ORDER BY se.created_at DESC;
+
+
+================================================================================
+ANNEXE B — STRUCTURE DE DOSSIER NEXT.JS RECOMMANDEE
+================================================================================
+
+  copiq-admin/
+  ├── app/
+  │   ├── layout.tsx
+  │   ├── page.tsx                  (redirige /login ou /dashboard)
+  │   ├── login/page.tsx
+  │   ├── forbidden/page.tsx
+  │   ├── dashboard/page.tsx        (overview metrics)
+  │   ├── users/
+  │   │   ├── page.tsx              (table)
+  │   │   └── [id]/page.tsx         (fiche detail)
+  │   ├── testers/page.tsx
+  │   ├── invoices/page.tsx
+  │   ├── events/page.tsx
+  │   └── settings/page.tsx
+  ├── components/
+  │   ├── ui/                       (shadcn)
+  │   ├── RoleBadge.tsx
+  │   ├── PlanBadge.tsx
+  │   ├── UsersTable.tsx
+  │   ├── GrantAccessDialog.tsx
+  │   └── MetricsCards.tsx
+  ├── lib/
+  │   ├── supabase.ts
+  │   └── format.ts                 (currency, dates)
+  ├── middleware.ts                 (verif is_admin)
+  └── .env.local
+
+
+================================================================================
+FIN DU DOCUMENT — Bonne construction !
+================================================================================

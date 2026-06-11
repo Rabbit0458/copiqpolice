@@ -25,7 +25,7 @@ Color _muted(BuildContext context, [double a = .72]) {
   final base =
       Theme.of(context).textTheme.bodySmall?.color ??
       (Theme.of(context).brightness == Brightness.dark ? Colors.white : _T.ink);
-  return base.withOpacity(a);
+  return base.withValues(alpha: a);
 }
 
 enum GradeChoice { reserve, pa, gpx }
@@ -140,7 +140,7 @@ class _GradePickerScreenState extends State<GradePickerScreen> {
             end: Alignment.bottomCenter,
             colors: [
               theme.scaffoldBackgroundColor,
-              theme.scaffoldBackgroundColor.withOpacity(0.97),
+              theme.scaffoldBackgroundColor.withValues(alpha: 0.97),
             ],
           ),
         ),
@@ -236,7 +236,7 @@ class _ChoiceHeroCard extends StatelessWidget {
     try {
       img = Image.asset(image, fit: BoxFit.cover);
     } catch (_) {
-      img = Container(color: Colors.black.withOpacity(.06));
+      img = Container(color: Colors.black.withValues(alpha: .06));
     }
 
     return AnimatedScale(
@@ -255,7 +255,7 @@ class _ChoiceHeroCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(24),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(.12),
+                  color: Colors.black.withValues(alpha: .12),
                   blurRadius: 24,
                   offset: const Offset(0, 14),
                 ),
@@ -264,7 +264,7 @@ class _ChoiceHeroCard extends StatelessWidget {
                   ? Border.all(
                       color: isDark
                           ? const Color(0xFF90CAF9)
-                          : const Color(0xFF1565C0).withOpacity(.9),
+                          : const Color(0xFF1565C0).withValues(alpha: .9),
                       width: 2,
                     )
                   : null,
@@ -279,7 +279,7 @@ class _ChoiceHeroCard extends StatelessWidget {
                 Positioned.fill(
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 7, sigmaY: 7),
-                    child: Container(color: Colors.black.withOpacity(0.28)),
+                    child: Container(color: Colors.black.withValues(alpha: 0.28)),
                   ),
                 ),
 
@@ -293,8 +293,8 @@ class _ChoiceHeroCard extends StatelessWidget {
                         center: Alignment.center,
                         radius: 0.65,
                         colors: [
-                          Colors.white.withOpacity(.35),
-                          Colors.white.withOpacity(.12),
+                          Colors.white.withValues(alpha: .35),
+                          Colors.white.withValues(alpha: .12),
                           Colors.transparent,
                         ],
                         stops: const [0.0, 0.45, 1.0],

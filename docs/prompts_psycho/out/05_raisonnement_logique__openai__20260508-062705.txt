@@ -1,0 +1,380 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus âgé ?",
+    "prompt": "Julie est plus âgée que Tom. Tom est plus âgé que Lisa.",
+    "options": ["Julie", "Tom", "Lisa", "On ne peut pas savoir"],
+    "answer": "Julie",
+    "explanation": "Nous savons que Julie est plus âgée que Tom et que Tom est plus âgé que Lisa. Par transitivité, Julie est donc plus âgée que Lisa aussi. Julie est la plus âgée du groupe. Ne vous embrouillez pas avec l'ordre des prénoms dans l'énoncé.",
+    "hint": "Relie chaque comparaison pour voir qui est au sommet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est votre place après ce dépassement ?",
+    "prompt": "Vous doublez le coureur en 3ème position dans une course.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "3ème",
+    "explanation": "Lorsque vous dépassez le coureur en 3ème position, vous prenez sa place. Vous devenez alors le 3ème. Beaucoup font l'erreur de penser que vous serez 2ème, ce qui nécessiterait de dépasser encore un autre coureur en plus.",
+    "hint": "Vous prenez exactement la place que vous avez dépassée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Est-ce que Marie est heureuse ?",
+    "prompt": "Quand Marie mange du chocolat, elle est heureuse. Aujourd'hui, elle a mangé du chocolat.",
+    "options": ["Oui", "Non", "Impossible à déterminer", "Parfois"],
+    "answer": "Oui",
+    "explanation": "C'est un simple modus ponens : si Marie mange du chocolat, alors elle est heureuse. Aujourd'hui, elle a mangé du chocolat, donc, selon la condition initiale, elle est heureuse. Ne confondez pas avec d'autres activités possibles de Marie.",
+    "hint": "Regarde uniquement la condition donnée sur le chocolat."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on conclure concernant les étudiants ?",
+    "prompt": "Tous les étudiants de cette classe ont un ordinateur. Julie est une étudiante de cette classe.",
+    "options": ["Julie n'a pas d'ordinateur", "Julie a un ordinateur", "Julie est la professeure", "On ne sait pas"],
+    "answer": "Julie a un ordinateur",
+    "explanation": "Il s'agit d'un syllogisme basique : tous les étudiants ont un ordinateur, et Julie fait partie de cette classe. Donc, par déduction, Julie doit avoir un ordinateur. Ne vous laissez pas distraire par les détails sur son rôle potentiel dans la classe.",
+    "hint": "Utilise la logique de tous les membres d'un groupe."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on dire sur Lucas ?",
+    "prompt": "Tous les chiens aboient. Lucas est un chien.",
+    "options": ["Lucas n'aboie pas", "Lucas aboie", "Lucas est un chat", "On ne sait pas"],
+    "answer": "Lucas aboie",
+    "explanation": "Selon la prémisse, tous les chiens aboient. Lucas étant un chien, il suit alors cette règle : il aboie. Attention à ne pas inférer des caractéristiques non mentionnées telles que Lucas serait un chat.",
+    "hint": "Tous les éléments d'un ensemble ont la caractéristique donnée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Est-ce que Camille est une artiste ?",
+    "prompt": "Il est dit que toutes les personnes portant des lunettes sont artistes. Camille porte des lunettes.",
+    "options": ["Oui", "Non", "Parfois", "Impossible à déterminer"],
+    "answer": "Oui",
+    "explanation": "Le syllogisme est le suivant : toutes les personnes portant des lunettes sont artistes, et Camille porte des lunettes, donc Camille est une artiste. Assurez-vous de ne pas confondre avec des déclarations sur d'autres professions non mentionnées ici.",
+    "hint": "Regarde juste la règle liée aux lunettes et artistes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'effet probable du vent ?",
+    "prompt": "Si le vent souffle très fort, le parapluie se retourne. Aujourd'hui, le vent souffle très fort.",
+    "options": ["Le parapluie se retourne", "Le parapluie reste intact", "Pluie", "On ne sait pas"],
+    "answer": "Le parapluie se retourne",
+    "explanation": "Nous appliquons ici un raisonnement par modus ponens : si le vent souffle fort, le parapluie se retourne. Aujourd'hui, le vent souffle très fort, par conséquent, le parapluie va se retourner. Ne surinterprétez pas en introduisant la pluie qui n'est pas mentionnée.",
+    "hint": "C'est une simple application de cause à effet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est votre place après dépassement ?",
+    "prompt": "Vous doublez le coureur en 5ème position.",
+    "options": ["1ère", "5ème", "4ème", "6ème"],
+    "answer": "5ème",
+    "explanation": "En doublant le coureur en 5ème position, vous prenez sa place et devenez donc le 5ème. Il est courant de penser que vous seriez 4ème, mais cela nécessiterait de doubler deux coureurs, pas un seul.",
+    "hint": "Vous prenez la place de celui que vous avez dépassé."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que conclure sur l'appétit de Paul ?",
+    "prompt": "Si Paul a faim, il mange. Aujourd'hui, Paul mange.",
+    "options": ["Paul a faim", "Paul n'a pas faim", "Paul dort", "On ne peut pas savoir"],
+    "answer": "Paul a faim",
+    "explanation": "Nous avons un raisonnement par modus ponens : si Paul a faim, alors il mange. Paul mange aujourd'hui, par conséquent, il a probablement faim. Évitez de supposer des conditions non mentionnées comme le fait qu'il pourrait manger pour une autre raison.",
+    "hint": "Relie l'action à son motif probable."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est la plus rapide ?",
+    "prompt": "Emma court plus vite que Léa. Léa court plus vite que Marie.",
+    "options": ["Emma", "Léa", "Marie", "On ne sait pas"],
+    "answer": "Emma",
+    "explanation": "D'après les informations, Emma court plus vite que Léa, et Léa court plus vite que Marie. Par transitivité, Emma court plus vite que toutes les autres, faisant d'elle la plus rapide. Ne vous embrouillez pas avec un ordre de présentation différent.",
+    "hint": "Construisez la suite logique entre les trois."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que déduire sur Maxime ?",
+    "prompt": "Tous les peintres comme les sculpteurs utilisent des pinceaux. Maxime est sculpteur.",
+    "options": ["Maxime n'utilise pas de pinceaux", "Maxime utilise des pinceaux", "Maxime est un peintre", "On ne sait pas"],
+    "answer": "Maxime utilise des pinceaux",
+    "explanation": "Ici, tous les sculpteurs, comme les peintres, utilisent des pinceaux. Maxime, étant sculpteur, doit donc utiliser des pinceaux. Ne mélangez pas les catégories d'art qui ne sont pas abordées ici.",
+    "hint": "Concentrez-vous uniquement sur la partie pertinente de la réputation."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel temps fait-il ?",
+    "prompt": "Si le ciel est clair, il fait beau. Aujourd'hui, le ciel est clair.",
+    "options": ["Il fait beau", "Il pleut", "Il neige", "On ne sait pas"],
+    "answer": "Il fait beau",
+    "explanation": "Par application directe du modus ponens, si le ciel est clair, il fait beau. Puisque le ciel est clair aujourd'hui, on peut conclure qu'il fait beau. Ne confondez pas cette condition spécifique avec d'autres types de temps qui n'ont pas été mentionnés.",
+    "hint": "C'est une relation directe entre condition et résultat."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de pommes Simon possédait-il à l'origine ?",
+    "prompt": "Simon a 10 pommes. Il en donne 3 à Julie.",
+    "options": ["7", "10", "12", "13"],
+    "answer": "7",
+    "explanation": "Simon commence avec 10 pommes. En en donnant 3 à Julie, il en perd donc 3. Ainsi, il lui reste 10 - 3 = 7 pommes. Ne vous laissez pas troubler par des opérations inversées ou des oublis.",
+    "hint": "Retirez simplement le nombre de pommes données."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel produit Marie achète-t-elle ?",
+    "prompt": "Marie achète toujours du pain quand elle va à la boulangerie. Aujourd'hui, elle est allée à la boulangerie.",
+    "options": ["Elle a acheté des croissants", "Elle a acheté du pain", "Elle n'a rien acheté", "On ne sait pas"],
+    "answer": "Elle a acheté du pain",
+    "explanation": "Il s'agit d'une déduction simple : chaque visite à la boulangerie implique l'achat de pain. Aujourd'hui, Marie s'y est rendue, donc elle a forcément acheté du pain. Ne laissez pas de simples suggestions sur d'autres produits possibles perturber votre conclusion.",
+    "hint": "Concentrez-vous uniquement sur l'habitude déclarée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'effet sur la route ?",
+    "prompt": "Si le sol est mouillé, la route est glissante. Aujourd'hui, le sol est très mouillé.",
+    "options": ["La route est glissante", "La route est sèche", "La route est enneigée", "On ne sait pas"],
+    "answer": "La route est glissante",
+    "explanation": "Avec ce raisonnement, par le modus ponens, si le sol est mouillé, la route devient glissante. Comme c'est le cas aujourd'hui, on en conclut que la route est effectivement glissante. Ne pensez pas qu'il pourrait exister des conditions supplémentaires non mentionnées.",
+    "hint": "Une seule cause résulte dans un seul effet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le statut de la lumière ?",
+    "prompt": "Si l'interrupteur est appuyé, la lumière est allumée. L'interrupteur est actuellement appuyé.",
+    "options": ["La lumière est éteinte", "La lumière est allumée", "La lumière clignote", "On ne sait pas"],
+    "answer": "La lumière est allumée",
+    "explanation": "L'énoncé est un cas typique de modus ponens : si l'interrupteur est enfoncé, la lumière doit être allumée. Puisque l'interrupteur est enfoncé, la lumière l'est aussi. Ne considérez pas des états intermédiaires non spécifiés comme le clignotement.",
+    "hint": "Le lien entre interrupteur et lumière est direct."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Est-ce que Paul est satisfait ?",
+    "prompt": "Quand Paul mange des bonbons, il est satisfait. Aujourd'hui, il a mangé des bonbons.",
+    "options": ["Oui", "Non", "Parfois", "Impossible à déterminer"],
+    "answer": "Oui",
+    "explanation": "Selon un raisonnement par modus ponens, consommer des bonbons rend Paul satisfait. Aujourd'hui, il en a mangé, donc il est satisfait. Ne supposez pas d'autres facteurs qui pourraient influencer sa satisfaction, comme un événement extérieur.",
+    "hint": "La cause des bonbons mène directement à l'effet désiré."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus grand ?",
+    "prompt": "Alex est plus grand que Jean. Jean est plus grand que Nicolas. Marc est plus petit qu'Alex.",
+    "options": ["Alex", "Jean", "Nicolas", "Marc"],
+    "answer": "Alex",
+    "explanation": "D'après les informations, Alex > Jean > Nicolas, et Marc < Alex. La hiérarchie résultante indique qu'Alex est le plus grand de tous. Ne vous méprenez pas sur la petite taille de Marc sans rapport à d'autres points de comparaison.",
+    "hint": "Ordonnez chaque rapport pour établir une hiérarchie."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la conséquence pour le projet ?",
+    "prompt": "Si le projet est validé, alors l'équipe se réunira. Si l'équipe se réunit, le projet démarre le mois prochain. Le projet est validé.",
+    "options": ["Le projet échoue", "L'équipe se réunit", "Le projet démarre dans deux mois", "Le projet démarre le mois prochain"],
+    "answer": "Le projet démarre le mois prochain",
+    "explanation": "Enchaînement logique : projet validé implique réunion, et réunion implique démarrage le mois suivant. Comme le projet est validé, ces événements suivent obligatoirement. Évitez toute confusion sur des délais fictifs non liés.",
+    "hint": "Identifiez les conséquences de chaque étape."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que peut-on dire de l'état de Stéphanie ?",
+    "prompt": "Si Stéphanie boit beaucoup d'eau, elle n'a plus soif. Aujourd'hui, elle n'a plus soif.",
+    "options": ["Elle a bu beaucoup d'eau", "Elle a peu bu", "Elle a mangé", "On ne sait pas"],
+    "answer": "Elle a bu beaucoup d'eau",
+    "explanation": "Si boire de l'eau résout sa soif, alors il s'ensuit qu'elle a bu pour ne plus avoir soif. Évitez l'erreur en côtoyant des hypothèses non mentionnées comme l'alimentation.",
+    "hint": "Isole chaque logique directement liée à l'eau."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Où se trouve Philippe après avoir dépassé ?",
+    "prompt": "Philippe double le coureur en 6ème position dans un marathon.",
+    "options": ["3ème", "4ème", "5ème", "6ème"],
+    "answer": "5ème",
+    "explanation": "Doubler le 6ème fait que Philippe prend sa place et devient donc 5ème. Évitez de sauter des places en imaginant des dépassements supplémentaires.",
+    "hint": "Restez concentré sur le simple fait de dépasser une seule personne."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la conclusion sur l'accès à ce film ?",
+    "prompt": "Si le film est interdit aux moins de 16 ans, Paul ne peut le voir. Paul regarde ce film.",
+    "options": ["Le film n'est pas interdit aux moins de 16 ans", "Paul a plus de 16 ans", "Il voit un extrait", "On ne sait pas"],
+    "answer": "Le film n'est pas interdit aux moins de 16 ans",
+    "explanation": "Étant donné que Paul regarde le film, et que ce film interdit à un tel âge serait non visionné par lui, alors nécessairement le film n'est pas interdit. N'imaginez pas que cet extrait soit différent sans fondement préalable.",
+    "hint": "Concentrez-vous sur la condition liée à l'âge et à la disponibilité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'effet du changement d'heure ?",
+    "prompt": "Si l'heure est avancée, alors l'école commence plus tôt. Demain, l'heure est avancée.",
+    "options": ["L'école commence tôt", "L'école commence tard", "L'école est fermée", "On ne sait pas"],
+    "answer": "L'école commence tôt",
+    "explanation": "Par un raisonnement causal, le changement d'heure oblige l'école à ouvrir plus tôt. Puisque demain l'heure change, l'horaire de l'école suit automatiquement. Ne vous laissez pas distraire par le timing concernant les jour d'ouverture particulier!",
+    "hint": "Concentrez-vous strictement sur les causes heure-horaire."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le statut de la réunion ?",
+    "prompt": "Si John est présent, alors la réunion a lieu. John est présent.",
+    "options": ["Pas de réunion", "La réunion a lieu", "Réunion reportée", "On ne sait pas"],
+    "answer": "La réunion a lieu",
+    "explanation": "Selon la condition fournie, la présence de John garantit la tenue de la réunion. Puisqu'on nous confirme sa présence, la réunion doit avoir lieu. N'invoquez pas des suppressions ou des ajournements injustifiés.",
+    "hint": "C'est une logique conditionnelle directe - cause et effet."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel poste détient Sarah après cette action ?",
+    "prompt": "Sarah double son collègue qui est en 4ème position au classement.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "3ème",
+    "explanation": "En doublant le 4ème, Sarah prend naturellement sa place, lui laissant la 3ème position. Beaucoup peuvent se tromper en supposant qu'elle avance plus d'une position non soutenue.",
+    "hint": "Rappelez-vous que doubler 'take place' ne signifie pas avancer de plusieurs niveaux d'un coup."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que se passe-t-il pour le voyage de Claire ?",
+    "prompt": "Si Claire voyage en été, elle visite la mer. Actuellement, elle prépare un voyage d'été.",
+    "options": ["Elle visite la montagne", "Elle visite la mer", "Elle ne part pas", "On peut ignorer le lieu"],
+    "answer": "Elle visite la mer",
+    "explanation": "Avec l'association donnée, son voyage d'été inclut nécessairement la mer. N'imaginez pas des destinations supplémentaires sans justification, ignorant ainsi la condition initiale.",
+    "hint": "Concentrez-vous sur les préférences directes énoncées."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la vitesse de Pierre comparée aux autres ?",
+    "prompt": "Pierre court plus vite que Jacques, mais moins vite que Simon. Jacques court plus vite que Louis.",
+    "options": ["Pierre est le plus rapide", "Simon est le plus lent", "Jacques est le plus rapide", "Simon est le plus rapide"],
+    "answer": "Simon est le plus rapide",
+    "explanation": "D'après les comparaisons, Simon > Pierre > Jacques > Louis. Il est précisé que Simon dépasse Pierre, plaçant Simon en tête du classement. Ne confondez pas en inversant l'ordre donné.",
+    "hint": "Établissez les ordres de chaque coureur avant de conclure."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que peut-on conclure sur l'état de la voiture ?",
+    "prompt": "Si une voiture a un pneu crevé, elle ne roule pas. La voiture ne roule pas.",
+    "options": ["Un pneu est crevé", "Un pneu n'est pas crevé", "On ne peut pas savoir", "La voiture est neuve"],
+    "answer": "On ne peut pas savoir",
+    "explanation": "La non-roulance de la voiture pourrait être due à d'autres raisons comme panne de moteur ou manque d'essence. Ainsi, l'affirmation précise n'est que si elle a un pneu crevé, elle ne roule pas, mais ne garantie pas qu'un pneu crevé soit la seule explication.",
+    "hint": "Considérez qu'il pourrait y avoir d'autres causes de non-mobilisation."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la conclusion sur l'entretien ?",
+    "prompt": "Si la tondeuse est en panne, le jardinier doit réparer. Aujourd'hui, le jardin est en travaux, mais la tondeuse fonctionne.",
+    "options": ["Aucun entretien", "Réparation urgente", "Pas de réparation immédiate", "On ne sait pas"],
+    "answer": "Pas de réparation immédiate",
+    "explanation": "Bien que la tondeuse ou jardin soit en travaux, il est précisé que la tondeuse fonctionne bien. En conséquence, il n'y a pas besoin immédiat de réparation. Ne confondez pas des activités jardin avec les réparations non nécessaires.",
+    "hint": "Focus sur l'état réel actuel de la tondeuse."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le choix de Léa pour ses vacances ?",
+    "prompt": "Si Léa part en vacances, elle va à la montagne. Elle ne planifie aucun voyage cette année.",
+    "options": ["Elle va à la montagne", "Elle va à la mer", "Elle peut rester chez elle", "On ne sait pas"],
+    "answer": "Elle peut rester chez elle",
+    "explanation": "Pas de voyage signifie qu'elle n'applique pas la condition initiale de la montagne. Partir en vacances est lié à cette destination précise et reste chez elle devient possible. Ne confondez pas son envie de partir avec un départ réel.",
+    "hint": "Retenez la distinction entre intention et action effective."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'état hypothétique de Marie ?",
+    "prompt": "Si Marie mange du gâteau, elle est confuse. Aujourd'hui, elle semble confuse.",
+    "options": ["Elle a mangé du gâteau", "Elle n'a pas mangé de gâteau", "On ne peut être sûr", "Elle est lucide"],
+    "answer": "On ne peut être sûr",
+    "explanation": "Bien que la consommation de gâteau soit une cause potentielle de confusion, elle n'est pas la seule. Plusieurs facteurs externes peuvent affecter directement son état. Assurez-vous de ne pas supposer cette unique cause sans preuve.",
+    "hint": "Conférence ne prouve pas nécessairement un lien causal."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel sera l'effet sur la lumière du salon ?",
+    "prompt": "Si l'interrupteur est en haut, la lumière est allumée. Si la lumière est allumée et qu'on appuie à droite, elle s'éteint. L'interrupteur est en haut et on appuie à droite.",
+    "options": ["La lumière sera allumée", "La lumière sera éteinte", "L'interrupteur reste bloqué", "On ne sait pas"],
+    "answer": "La lumière sera éteinte",
+    "explanation": "La logique séquentielle combine les actions : en haut signifie allumé, mais une pression à droite l'éteint après activation. Ce type de configuration enchaîne l'opération d'un mécanisme à deux étapes. Évitez de confondre chaque action comme indépendamment non reliée pour le résultat.",
+    "hint": "Gardez en tête toutes les étapes combinées pour voir un résultat final."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle couleur de boule a le plus de chances d'être tirée ?",
+    "prompt": "Dans un sac, il y a 5 boules rouges, 3 vertes et 2 bleues.",
+    "options": ["Rouge", "Verte", "Bleue", "Aucune"],
+    "answer": "Rouge",
+    "explanation": "Avec 5 rouges, 3 vertes et 2 bleues, les rouges réunissent 50% (5 sur 10) sur la possibilité totale de tirage, déjà plus haute face aux restes. La probabilité factorise la quantité de chaque boule par rapport à tous les autres. Ne laissez pas des biais de couleur ou préférences interviennent.",
+    "hint": "Calculez en fonction de la proportion et pas du goût."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel type de produit a été acheté ?",
+    "prompt": "Si le magazin est ouvert le lundi, alors seuls des produits frais sont stockés. Aujourd'hui, il est ouvert.",
+    "options": ["Des produits frais", "Des produits secs", "Des stocks fermés", "On ne sait pas"],
+    "answer": "Des produits frais",
+    "explanation": "La déclaration affirme clairement que l'ouverture lundi garantit uniquement les produits frais disponibles. Évitez les suppositions supplémentaires concernant d'autres jours ou produits sans fondement.",
+    "hint": "Ne cherchez pas plus loin que les jours explicitement confirmés."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que déduire sur le volume exact de l'eau à utiliser ?",
+    "prompt": "Pour une parfaite cuisson, 3 litres d'eau doivent-être remplis avec des pots d'1 litre, surplus vide. Actuellement, 5 pots disponibles.",
+    "options": ["Utilisez 2 pots", "Utilisez 3 pots", "Utilisez 5 pots et vider", "Utilisez 4 pots"],
+    "answer": "Utilisez 3 pots",
+    "explanation": "Exclusivement 3 pots d'un litre s'avèrent nécessaires pour combler 3 littres en totoalité. Contrairement à ce que l'utilisation de toute une réserve entière pourrait suggérer, plus c'est exactement adapté nécessaire. Ne vous trompez pas par des moyens de remplir sans lien.",
+    "hint": "Concentrez-vous sur l'adéquation exacte et non sur l'abondance potentielle."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que se passe-t-il pour le gâteau ?",
+    "prompt": "Si on cuit trop longtemps, alors il devient sec. On a réglé un minuteur, mais il y a une panne de courant.",
+    "options": ["Le gâteau est sec", "Le gâteau est humide", "On ne sait pas", "Il est brûlé"],
+    "answer": "On ne sait pas",
+    "explanation": "Avec la panne de courant, on ne sait plus si le temps de cuisson réel a dépassé le seuil critique. Les paramètres d'origine changent et rendent la prévision difficile sur cet effet concret.",
+    "hint": "Parfois une coupure annule une équation initiale."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel résultat peut-on attendre de la compétition ?",
+    "prompt": "Doit être étudié plus que Pierre pour gagner. Pierre lui-même est rapporté avoir concentré lourdement.",
+    "options": ["On ne peut pas savoir", "Pierre gagnera", "Pierre perdra", "Égalité"],
+    "answer": "On ne peut pas savoir",
+    "explanation": "L'accumulation comparative est incertaine du travail, particulièrement parce que les concurrents relèvent ambiguïté sur leurs habilités spécifiques individuellement au préalable confirmée pour Pierre.",
+    "hint": "Comparez les suppositions sur la base des actions assurées."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle sera la réaction à l'enquête initiée ?",
+    "prompt": "Si la suspecte a fui, celle-ci est arrêtée. Un appel évoque une disparition.",
+    "options": ["Suspecte libre", "Suspecte protégée", "Suspecte arrêtée", "On ne sait pas"],
+    "answer": "On ne sait pas",
+    "explanation": "Encore graduée, la disparition mentionnée ne confirme pas la fuite; confusion reste donc quant à déterminer pour une action ultérieure en matière de poursuite de l'arrestation.",
+    "hint": "Optez pour des faits inébranlables, pas des accusations spéculatives."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le choix possible de couleur pour Jean ?",
+    "prompt": "Pour peindre, il préfère du bleu sauf si pluvieux. Il pleut des cordes.",
+    "options": ["Du vert assuremt", "Du bleu", "Du rouge", "On ne sait pas"],
+    "answer": "On ne sait pas",
+    "explanation": "Bien que Jean ne choisira pas le bleu, les autres options ne sont pas mentionnées comme compatibles particulièrement, la pluviosité introduit variable d'incertain spécialement.",
+    "hint": "Le contexte influe sur où s'arrête-vive intention imprévue."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que signifie l'écriture du prénom 'Paul' en miroir ?",
+    "prompt": "Que produit la lecture inversée de 'Paul' ?",
+    "options": ["L'ap", "LuaP", "On ne sait pas", "PaLu"],
+    "answer": "LuaP",
+    "explanation": "À travers réflexion en miroir, chaque lettre et affichée d'inversement identique, produisant LuaP longitudinalement. S'abstraire d'erreur amène un simple ordre remanié, et respect confondu des règles d'ordre fictif.",
+    "hint": "Visualisez chaque caractère déplacé pour résultant."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la contrainte vent conditionant les voiles à appliquer ?",
+    "prompt": "Si tempête, variantes non mobilisées. Une offre les suggère activage, mesurés par (muraille suspendues)",
+    "options": ["Emergency état", "Décisif activation", "Option négative", "On ignore impossibilité"],
+    "answer": "On ignore impossibilité",
+    "explanation": "Circonstance actuelle égale désignation théoriquement une touche complètement aliénée de pronostic viable-absence permutée calculée d'assurance.",
+    "hint": "Favorise conservation action initiale sans la tempête d'adaptabilité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le choix le plus probable pour la météo de demain ?",
+    "prompt": "Les prévisions rapportent 70% chance de pluie. Aujourd'hui il pleut.",
+    "options": ["Soleil probable", "Pluie inchangée", "Orage annoncé", "On ignore l'état"],
+    "answer": "Pluie inchangée",
+    "explanation": "Majorité relative, même variable immédiat hier d'événement, théorisant accroîtrait logique statistique cependant; la variance chances réduisent toujours le contexte énoncé déjà.",
+    "hint": "Respectez la probabilité intégrée déjà plutôt favorisée."
+  }
+]

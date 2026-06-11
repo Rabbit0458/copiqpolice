@@ -1,0 +1,345 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "Route des Lacs, 12000 Rodez",
+    "text_b": "Route des Lacs, 12000 Rodez",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Renault Clio grise immatriculée AC-345-BC",
+    "text_b": "Renault Clio rouge immatriculée AC-345-BC",
+    "is_true": false,
+    "explanation": "La couleur diffère : « grise » dans text_a, « rouge » dans text_b. La différence est au milieu de la phrase et pourrait passer inaperçue sans attention."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Avenue des Champs-Élysées, Paris",
+    "text_b": "Avenue des Champs-Élysée, Paris",
+    "is_true": false,
+    "explanation": "Le mot 'Champs-Élysée' dans text_b est écrit sans le dernier 's'. Cette différence rapide à lire peut facilement être manquée si l'on parcourt le texte trop vite."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Place de la Madeleine, 75008 Paris",
+    "text_b": "Place de la Madeleine, 75008 Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "BP 12345 LILLE CEDEX",
+    "text_b": "BP 12345 LILLE SUDOUEST",
+    "is_true": false,
+    "explanation": "Les mots 'CEDEX' et 'SUDOUEST' sont différents. Un lecteur pressé peut facilement négliger ce changement en fin de ligne. "
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "12 rue de l'Université, 75007 Paris",
+    "text_b": "12 rue de l'Université, 75007 Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Ford Fiesta bleue, AB-786-RK",
+    "text_b": "Ford Fiesta blu, AB-786-RK",
+    "is_true": false,
+    "explanation": "Le mot 'bleue' dans text_a est abrégé en 'blu' dans text_b. Cette abréviation peut être négligée par un lecteur distrait."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Rue de Rivoli, Paris",
+    "text_b": "Rue de Rivoli, Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Peugeot 208 noire, BC-987-QW",
+    "text_b": "Peugeot 208 blanc, BC-987-QW",
+    "is_true": false,
+    "explanation": "La couleur de la voiture diffère : 'noire' dans text_a, 'blanc' dans text_b. Le changement se trouve juste avant le numéro d'immatriculation."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Boulevard Haussmann, 75009 Paris",
+    "text_b": "Boulevard Haussmann, 75009 Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Avenue Foch, 75116 Paris",
+    "text_b": "Avenue Foch, 75116 Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Mazda rouge, AZ-456-ZX",
+    "text_b": "Mazda rogue, AZ-456-ZX",
+    "is_true": false,
+    "explanation": "Le mot 'rouge' est écrit 'rogue' dans text_b. C'est une erreur qui peut passer inaperçue en cas de lecture rapide ou de fatigue visuelle."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Place de la Concorde, 75008 Paris",
+    "text_b": "Place de la Concorde, 75008 Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Toyota Yaris verte, BA-123-CQ",
+    "text_b": "Toyota Yaris verte, BA-123-CQ",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Citroën C3 blanche BB-879-QW",
+    "text_b": "Citroën C3 blanc BB-879-QW",
+    "is_true": false,
+    "explanation": "Le mot 'blanche' a été transformé en 'blanc' dans text_b. Le genre du mot est modifié, ce qui peut facilement être ignoré par manque d'attention."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Rue Sébastopol, 75004 Paris",
+    "text_b": "Rue Sébestopol, 75004 Paris",
+    "is_true": false,
+    "explanation": "Le mot 'Sébastopol' est mal orthographié 'Sébestopol' dans text_b. Le changement d'une seule lettre peut être difficile à détecter sans concentration."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Volkswagen Golf grise CE-654-GF",
+    "text_b": "Volkswagen Golf geise CE-654-GF",
+    "is_true": false,
+    "explanation": "Le mot 'grise' est remplacé par 'geise' dans text_b. L'inattention peut conduire à manquer cette transposition subtile des lettres."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 15/08/2023 à 09h15, Mme Martin a été aperçue au 25 rue Saint-Lazare, Paris.",
+    "text_b": "Le 15/08/2023 à 09h15, Mme Martin a été aperçue au 25 rue Saint-Lazare, Paris.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 23/04/2022 à 17h40, M. Bernard affirme avoir vu une Ford Mustang rouge.",
+    "text_b": "Le 23/04/2022 à 17h40, M. Bernard affirme avoir vu une Ford Mustang roug.",
+    "is_true": false,
+    "explanation": "Le mot 'rouge' est incomplet dans text_b, écrit comme 'roug'. Cette différence est facile à manquer lors d'une lecture rapide."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 07/07/2025, Pauline a acheté une Renault Megane grise hybride.",
+    "text_b": "Le 07/07/2025, Pauline a acheté une Renault Megane grise hybride.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Déclaration du 11/09/2021 : un vol de moto Ducati a eu lieu à Nantes.",
+    "text_b": "Déclaration du 11/09/2021 : un vol de moto Ducati a eut lieu à Nantes.",
+    "is_true": false,
+    "explanation": "Le mot 'eu' est mal orthographié comme 'eut' dans text_b. Ce changement subtil peut passer inaperçu en raison de la similarité sonore des mots."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 02/03/2023, le témoin a remarqué un homme au chapeau marron.",
+    "text_b": "Le 02/03/2023, le témoin a remarqué un homme au chapeau marron.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 10/12/2021, un véhicule Audi TT bleu a été signalé à 18h.",
+    "text_b": "Le 10/12/2021, un véhicule Audi TT bleu a été signalé à 19h.",
+    "is_true": false,
+    "explanation": "L'heure diffère entre les deux textes : '18h' dans text_a et '19h' dans text_b. Ce détail temporel peut confondre un candidat peu attentif."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 04/06/2024, une bicyclette verte a été volée devant le 18 avenue de Clichy.",
+    "text_b": "Le 04/06/2024, une bicyclette verte a été volée devant le 18 avenue de Clichy.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Ainsi, le 30/11/2022, Mme Dubois a vu une personne en veste bleu foncé.",
+    "text_b": "Ainsi, le 30/11/2022, Mme Dubois a vu une personne en veste bleu foncé.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le samedi 12/09/2020, à 11h30, une audi noire a été repérée rue du Bac.",
+    "text_b": "Le samedi 12/09/2020, à 11h30, une Audi noire a été repérée rue du Bac.",
+    "is_true": false,
+    "explanation": "La marque de voiture 'audi' dans text_a est en minuscule, tandis que dans text_b, c'est 'Audi' avec un 'A' majuscule. Cette distinction subtile peut être confondue rapidement."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 18/01/2021, il a été rapporté un accident impliquant une BMW blanche à Dijon.",
+    "text_b": "Le 18/01/2021, il a été rapporté un accident impliquant une BMW blanche à Dijon.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 25/05/2026, un témoin a remarqué une personne avec une chemise en lin beige clair.",
+    "text_b": "Le 25/05/2026, un témoin a remarqué une personne avec une chemise en lin beige claire.",
+    "is_true": false,
+    "explanation": "Le mot 'clair' dans text_a est écrit 'claire' dans text_b, ce qui modifie le genre de l'adjectif. Le changement se situe à la fin de la phrase et peut être négligé à cause d'une attention réduite à la fin de la lecture."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Un incident a été signalé le 07/11/2023 à 07h00 avec un vélo rouge.",
+    "text_b": "Un incident a été signalé le 07/11/2023 à 07h00 avec un vélo rouge.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 19/10/2024, deux individus ont été vus en train d'entrer dans une voiture Fiat.",
+    "text_b": "Le 19/10/2024, deux individus ont été vus en train d'entrer dans une voiture Fiat.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "En date du 30/09/2020, une personne rapportait le vol d'un scooter Piaggio.",
+    "text_b": "En date du 30/09/2020, une personne rapportait le vol d'un scooter Piago.",
+    "is_true": false,
+    "explanation": "Le mot 'Piaggio' est incorrectement écrit 'Piago' dans text_b. La modification concerne deux lettres en fin de mot, ce qui peut facilement être négligé."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 05/12/2023, le signalement d'une VW Polo blanche a été reçu.",
+    "text_b": "Le 05/12/2023, le signalement d'une VW Polo blanche a été reçu.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Un vol a été commis le 14/08/2021 à 10h30 impliquant une Audi rouge.",
+    "text_b": "Un vol a été commis le 14/08/2021 à 10h31 impliquant une Audi rouge.",
+    "is_true": false,
+    "explanation": "L'heure du vol diffère entre les deux textes : '10h30' dans text_a et '10h31' dans text_b. Le changement subtil d'un chiffre oblige à une lecture très attentive."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'article 321-7 du code pénal rappelle que le recel est sanctionné de cinq ans d'emprisonnement et 375000 euros d'amende.",
+    "text_b": "L'article 321-7 du code pénal rappelle que le recel est sanctionné de cinq ans d'emprisonnement et 375,000 euros d'amende.",
+    "is_true": false,
+    "explanation": "La différence se trouve au niveau du nombre : un point pour les milliers ('375000') dans text_a contre une virgule ('375,000') dans text_b. La présence ou absence de la virgule peut facilement être ignorée en raison de la similarité visuelle du texte."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le rapport établit que M. Dupuis et M. Lefèvre ont été aperçus à 22h station Voltaire le 23/05/2022.",
+    "text_b": "Le rapport établit que M. Dupuis et M. Lefèvre ont été aperçus à 22h station Voltaire le 23/05/2022.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le véhicule de marque Opel, immatriculé DE-756-QT, était stationné près du 45 boulevard Diderot le 26 mars 2023 à 16h.",
+    "text_b": "Le véhicule de marque Opel, immatriculé DE-756-QT, était stationné près du; 45 boulevard Diderot le 26 mars 2023 à 16h.",
+    "is_true": false,
+    "explanation": "Un point-virgule a été ajouté avant le numéro 45 dans text_b, ce qui modifie subtilement la ponctuation. Cette petite différence peut être masquée par la longueur du texte et demande une inspection minutieuse pour être repérée."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon la déclaration de Mme Paulin, elle est allée au magasin le 15/09/2024 pour acheter des fournitures.",
+    "text_b": "Selon la déclaration de Mme Paulin, elle est allée au magasin le 15/09/2024 pour acheter des fournitures.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Lors du contrôle, à 14 h le 01/11/2025, M. Leblanc a présenté un passeport expiré et un permis de conduire valide.",
+    "text_b": "Lors du contrôle, à 14 h le 01/11/2025, M. Leblanc a présénté un passeport expiré et un permis de conduire valide.",
+    "is_true": false,
+    "explanation": "Le mot 'présenté' dans text_b est incorrectement écrit 'présénté', avec un accent supplémentaire. Cette erreur accentuée est difficile à repérer si l'on se concentre peu sur l'orthographe durant la lecture."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Article 122-5 du code pénal : Une personne qui commet un acte ne subira aucune peine si la défense est proportionnée et immédiate.",
+    "text_b": "Article 122-5 du code pénal : Une personne qui commet un acte ne subira aucune peine si la défense est proportionnée et imédiate.",
+    "is_true": false,
+    "explanation": "Le mot 'immédiate' dans text_b est écrit sans le double 'm', c’est 'imédiate'. Cette omission de lettre est subtile et difficile à percevoir sans une lecture attentive."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'enquête révèle que le témoin a entendu un bruit suspect vers 21 h 15 le lundi 2 octobre 2023, dans le quartier Marais.",
+    "text_b": "L'enquête révèle que le témoin a entendu un bruit suspect vers 21 h 15 le lundi 2 octobre 2023, dans le quartier Marais.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Conformément à l'article 223-1, met en danger la vie d'autrui est puni de 1 an de prison et de 15000 € d'amende.",
+    "text_b": "Conformément à l'article 223-1, met en danger la vie d'autrui est puni de 1 an de prison et de 15000€ d'amende.",
+    "is_true": false,
+    "explanation": "Il manque l'espace avant '€' dans text_b. Cet espace en moins modifie subtilement la mise en forme, un piège visuel courant dans les textes denses."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'autorisation pour la manifestation a été accordée sous l'article L211-1 du code des collectivités territoriales.",
+    "text_b": "L'autorisation pour la manifestation a été accordée sous l'article L211-1 di code des collectivités territoriales.",
+    "is_true": false,
+    "explanation": "Dans text_b, le mot 'du' est incorrectement écrit 'di'. Cette altération porte sur deux lettres proches ce qui peut ne pas être détectée immédiatement lors d'une lecture continue."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "D'après les témoignages, la Renault Megane grise a quitté le parking vers 08h30 le 5 mai s,ans autres incidents notables.",
+    "text_b": "D'après les témoignages, la Renault Megane grise a quitté le parking vers 08h30 le 5 mai, sans autres incidents notables.",
+    "is_true": false,
+    "explanation": "Dans text_a, il y a une virgule suivie d'un espace entre 'mai' et 'sans'. Text_b a cet espace omis, modifiant l'organisation visuelle du texte."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le policier a rédigé un procès-verbal détaillé à la suite de l'incident impliquant la personne au 12 rue de Lyon, Paris.",
+    "text_b": "Le policier a rédigé un procès-verbal détaillé à la suit de l'incident impliquant la personne au 12 rue de Lyon, Paris.",
+    "is_true": false,
+    "explanation": "Le mot 'suite' dans text_b est tronqué en 'suit'. La perte de la lettre 'e' peut ne pas être aperçue immédiatement parce que les mots se ressemblent fortement visuellement."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Il a été consigné le 08/03/2025 que l'individu semblait agité et porté un pantalon bleu, selon les témoins.",
+    "text_b": "Il a été consigné le 08/03/2025 que l'individu semblait agité et portait un pantalon bleu, selon les témoins.",
+    "is_true": false,
+    "explanation": "Le verbe 'portait' est écrit 'porté' dans text_a, un changement subtil qui peut aisément passer inaperçu en raison de la très grande similitude des formes des mots impliquées."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Ce 27 juillet 2021, l'incident a été rapporté près du 4 rue de Seine, Paris lors d'une patrouille sur les lieux.",
+    "text_b": "Ce 27 juillet, 2021 l'incident a été rapporté près du 4 rue de Seine, Paris lors d'une patrouille sur les lieux.",
+    "is_true": false,
+    "explanation": "Le texte b intègre une virgule différente après 'juillet', changeant subtilement la ponctuation. Cette simple différence est souvent ignorée sous une observation rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Sur l'avenue Victor Hugo, une voiture noire s'est arrêtée aux alentours de 22 h dans la soirée du 18 octobre 2020.",
+    "text_b": "Sur l'avenue Victor Hugo, une voiture noire s'est arrêtée aux alentours de 22 h dans la soirée du 18 octobre 2020.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'enquête menée le 02/12/2021 a découvert que le suspect travaillait en intérim à la station-service de l'avenue du Maine.",
+    "text_b": "L'enquête menée le 02/12/2021 a découvert que le suspect travaillait en intérim à la station-service de l'avenue du Maine.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Dans la matinée du 10 septembre 2022, une fouille a révélé des documents falsifiés cachés dans le coffre d'une BMW.",
+    "text_b": "Dans la matinée du 10 septembre 2022, une fouille a révélé des documents falsifiés cachés dans le coffre d'une BMW.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  }
+]

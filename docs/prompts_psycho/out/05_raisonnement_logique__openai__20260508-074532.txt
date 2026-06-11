@@ -1,0 +1,536 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on conclure ?",
+    "prompt": "Tous les chiens aboient. Rex est un chien.",
+    "options": [
+      "Rex aboie",
+      "Rex miaule",
+      "Rex ne fait aucun bruit",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Rex aboie",
+    "explanation": "C'est un syllogisme par transitivité : si tous les chiens aboient et que Rex est un chien, alors Rex doit aboyer. La conclusion est donc que Rex aboie. Le piège serait de conclure que Rex pourrait ne pas aboyer, ce qui n'est pas possible compte tenu des prémisses fournies.",
+    "hint": "Applique la règle de transitivité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus rapide ?",
+    "prompt": "La tortue est plus lente que le lièvre. Le lièvre est plus lent que le guépard.",
+    "options": [
+      "La tortue",
+      "Le lièvre",
+      "Le guépard",
+      "Aucun"
+    ],
+    "answer": "Le guépard",
+    "explanation": "Nous avons ici un ordre de vitesse : tortue < lièvre < guépard. Par conséquent, le guépard est le plus rapide des trois. Il est important de respecter cet ordre et de ne pas se tromper en inversant les relations de vitesse.",
+    "hint": "Comparez du plus lent au plus rapide."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on conclure ?",
+    "prompt": "Si elle est dimanche, il n'y a pas d'école. Aujourd'hui c'est dimanche.",
+    "options": [
+      "Il y a école",
+      "Il n'y a pas école",
+      "Peut-être qu'il y a école",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Il n'y a pas école",
+    "explanation": "C'est un syllogisme du type modus ponens : si une condition est vraie (dimanche), alors la conséquence (pas d'école) l'est aussi. Le dimanche entraîne donc l'absence d'école. Le piège serait d'oublier que les indications s'appliquent directement sans inférence supplémentaire.",
+    "hint": "Rappelle-toi : condition vraie, conséquence vraie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en conclure ?",
+    "prompt": "Tous les oiseaux peuvent voler. Cette autruche est un oiseau.",
+    "options": [
+      "Cette autruche peut voler",
+      "Cette autruche ne peut pas voler",
+      "Tous les oiseaux peuvent nager",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette autruche peut voler",
+    "explanation": "Syllogisme par abus : il semble que parce que tous les oiseaux peuvent voler, cette autruche devrait aussi voler. Cependant, l'autruche défie la règle générale ici, car elle ne vole pas. Cette exception piège ceux qui ne remettent pas en question les prémisses données.",
+    "hint": "Examinez les exceptions à la règle."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le moins cher ?",
+    "prompt": "Le produit A coûte plus cher que le produit B. Le produit C coûte moins cher que le produit B.",
+    "options": [
+      "Produit A",
+      "Produit B",
+      "Produit C",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Produit C",
+    "explanation": "Nous avons un ordre de prix : A > B > C. Cela signifie que le produit C est le moins cher des trois. Le piège ici serait de mal interpréter cet ordre et de choisir un produit autre que C comme étant le moins cher.",
+    "hint": "Tirez une ligne de comparaison des prix."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion ?",
+    "prompt": "Tous les poissons peuvent nager. Un requin est un poisson.",
+    "options": [
+      "Le requin peut nager",
+      "Le requin ne peut pas nager",
+      "Le requin peut voler",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Le requin peut nager",
+    "explanation": "Il s'agit d'un syllogisme de transitivité : tous les poissons pouvant nager et le requin étant un poisson, ce dernier peut donc nager. Un piège courant serait d'introduire une donnée externe qui pourrait mener à une conclusion différente, ce qui n'est pas possible ici.",
+    "hint": "Pensez à la relation de transitivité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on déduire ?",
+    "prompt": "Si Paul étudie, alors il réussira. Paul étudie.",
+    "options": [
+      "Paul va réussir",
+      "Paul va échouer",
+      "Paul pourrait réussir",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Paul va réussir",
+    "explanation": "C'est un syllogisme par modus ponens : si la condition (étudier) est remplie, alors la conséquence (réussir) est vraie. Paul étudie, il réussira. Le piège serait de douter de la conclusion malgré l’absence d’éléments contraires.",
+    "hint": "Suis la règle de l'implication directe."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion ?",
+    "prompt": "Tous les élèves de cette école portent un uniforme. Julie est élève dans cette école.",
+    "options": [
+      "Julie porte un uniforme",
+      "Julie ne porte pas d'uniforme",
+      "Les enseignants portent des uniformes",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Julie porte un uniforme",
+    "explanation": "Syllogisme basique par inclusion : puisque tous les élèves portent un uniforme et Julie est une élève, Julie porte un uniforme. Le piège est de suggérer que Julie pourrait être une exception sans justification.",
+    "hint": "Considérez l'ensemble et l'élément particulier."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion ?",
+    "prompt": "Aucun poisson ne vole. Cette carpe est un poisson.",
+    "options": [
+      "Cette carpe vole",
+      "Cette carpe ne vole pas",
+      "Cette carpe peut nager",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette carpe ne vole pas",
+    "explanation": "Il s'agit d'un syllogisme par inclusion inversée : aucun poisson ne vole et la carpe étant un poisson, elle ne peut pas voler. Le piège ici consisterait à mal interpréter la négation et en conclure, à tort, que certaines carpes pourraient voler.",
+    "hint": "Utilisez les faits établis pour les éléments particuliers."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion ?",
+    "prompt": "Si c'est l'été, alors il fait chaud. C'est l'été.",
+    "options": [
+      "Il fait chaud",
+      "Il fait froid",
+      "Il neige",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Il fait chaud",
+    "explanation": "C'est un syllogisme par modus ponens : puisque c'est l'été, la conséquence (qu'il fasse chaud) s'applique nécessairement. Le piège ici est de laisser le doute par rapport à la condition initiale déjà acceptée.",
+    "hint": "Suivez la conséquence de la condition donnée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus intelligent ?",
+    "prompt": "Arthur est plus intelligent que Bernard. Bernard est plus intelligent que Céline.",
+    "options": [
+      "Arthur",
+      "Bernard",
+      "Céline",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Arthur",
+    "explanation": "Nous avons un ordre d'intelligence : Arthur > Bernard > Céline. En suivant cet ordre, Arthur est le plus intelligent parmi les trois. Un piège serait d'inverser accidentellement les relations et de choisir une réponse erronée.",
+    "hint": "Classez les personnes de la moins à la plus intelligente."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion directe ?",
+    "prompt": "Tous les papillons ont des ailes. Ce papillon est bleu.",
+    "options": [
+      "Ce papillon n'a pas d'ailes",
+      "Ce papillon a des ailes",
+      "Tous les papillons sont bleus",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce papillon a des ailes",
+    "explanation": "C'est un syllogisme : tous les papillons ayant des ailes, et celui-ci étant un papillon, il en possède aussi. Le piège serait d'inférer à tort que la couleur influe sur les caractéristiques décrites par les prémisses.",
+    "hint": "Fiez-vous aux caractéristiques universelles données."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le bon ordre ?",
+    "prompt": "La ville de Lyon est plus au sud que Paris. Marseille est plus au sud que Lyon.",
+    "options": [
+      "Marseille, Lyon, Paris",
+      "Paris, Lyon, Marseille",
+      "Lyon, Marseille, Paris",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Marseille, Lyon, Paris",
+    "explanation": "Il s'agit d'un ordre géographique : Marseille est au sud de Lyon, qui est elle-même au sud de Paris. Le bon ordre du nord au sud est donc Paris, Lyon, Marseille. Toute autre conclusion serait due à une confusion dans l'ordre de comparaison.",
+    "hint": "Tracez mentalement une carte pour visualiser l'ordre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que déduire ?",
+    "prompt": "Si elle chante, alors il pleut. Elle chante.",
+    "options": [
+      "Il pleut",
+      "Il fait beau",
+      "Il neige",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Il pleut",
+    "explanation": "C'est un syllogisme par transitivité du type modus ponens : si le chant entraîne la pluie et elle chante, alors il pleut. Le piège serait de douter de la conclusion même si la condition initiale est remplie.",
+    "hint": "Conséquence directe à partir de l'action."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus jeune ?",
+    "prompt": "Sophie est plus âgée que Tom. Marc est plus jeune que Sophie.",
+    "options": [
+      "Sophie",
+      "Tom",
+      "Marc",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Marc",
+    "explanation": "Dans l'ordre des âges, nous avons : Sophie > Tom et Marc < Sophie. Par exclusion, Marc est le plus jeune s'il est aussi plus jeune que Tom. Une erreur serait de mal positionner Marc dans ce classement en ignorant la logique des comparaisons.",
+    "hint": "Réalise une comparaison directe."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la vitesse relative ?",
+    "prompt": "La voiture A va plus vite que la voiture B. La voiture C va plus vite que la voiture A.",
+    "options": [
+      "Voiture A",
+      "Voiture B",
+      "Voiture C",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Voiture C",
+    "explanation": "L'ordre des vitesses est : C > A > B, ce qui signifie que la voiture C est la plus rapide. L'erreur s’immisce quand on oublie l'ordre logique et finit par désigner une voiture moins rapide que C.",
+    "hint": "Représente mentalement la chaîne de vitesse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui gagne ?",
+    "prompt": "Marie est meilleure que Lisa au tennis. Lisa est meilleure que Claire.",
+    "options": [
+      "Marie",
+      "Lisa",
+      "Claire",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Marie",
+    "explanation": "Marie est supérieure dans ce classement : Marie > Lisa > Claire. Il est clair que Marie est la meilleure parmi les trois. L'erreur serait possible en inversant indûment l'ordre établi.",
+    "hint": "Examiner l'ordre hiérarchique du talent."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que conclure ?",
+    "prompt": "Si Alice est présente, Bob aussi. Si Bob est là, Chloé est absente. Alice est présente.",
+    "options": [
+      "Chloé est présente",
+      "Chloé est absente",
+      "Alice est absente",
+      "On manque d'information"
+    ],
+    "answer": "Chloé est absente",
+    "explanation": "Modus ponens appliqué séquentiellement : la présence d'Alice entraîne celle de Bob, qui entraîne par implication l'absence de Chloé. Une confusion possible serait de mal suivre cette chaine logique d'implications.",
+    "hint": "Déroulez chaque implication l'une après l'autre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le résultat ?",
+    "prompt": "Si le magasin est ouvert, alors Jeff est au travail. Si Jeff travaille, Sarah est avec lui. Le magasin est ouvert.",
+    "options": [
+      "Jeff ne travaille pas",
+      "Sarah est avec Jeff",
+      "Le magasin est fermé",
+      "Sarah n'est pas avec Jeff"
+    ],
+    "answer": "Sarah est avec Jeff",
+    "explanation": "En mode ponens, la suite d'événements logiques nous amène à : magasin ouvert → Jeff travaille → Sarah est avec lui. La principale erreur serait de couper la chaine ou d'introduire une alternative non mentionnée.",
+    "hint": "Suivez le fil de causalité jusqu'au bout."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel sentiment est partagé ?",
+    "prompt": "Tous ceux qui aiment le jazz aiment la musique. Paul aime le jazz. Anna aime la musique.",
+    "options": [
+      "Paul n'aime pas la musique",
+      "Anna aime le jazz",
+      "Anna n'aime pas le jazz",
+      "Paul aime la musique"
+    ],
+    "answer": "Paul aime la musique",
+    "explanation": "Syllogisme par inclusion : aimer le jazz implique aimer la musique, donc Paul aime la musique. L'erreur serait de mal interpréter la relation et conclure faussement sur Anna sans données suffisantes.",
+    "hint": "Concentrez-vous sur la relation donnée pour Paul."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que conclure sur l'ordre de valeur ?",
+    "prompt": "Le tableau X est plus cher que le tableau Y. Le tableau Y est plus cher que le tableau Z. Le tableau A est le plus abordable.",
+    "options": [
+      "Tableau X",
+      "Tableau Y",
+      "Tableau Z",
+      "Tableau A"
+    ],
+    "answer": "Tableau A",
+    "explanation": "L'ordre des prix est : X > Y > Z. Avec A étant le plus abordable, il doit être encore moins cher que Z. L'erreur courante est de confondre les niveaux de prix ou de placer A incorrectement dans l'ordre.",
+    "hint": "Tracez les comparaisons du plus cher au moins cher."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'ordre hiérarchique ?",
+    "prompt": "John a plus d'expérience que David. David a plus d'expérience que Emily. Emily n'est pas la moins expérimentée.",
+    "options": [
+      "John, David, Emily",
+      "Emily, David, John",
+      "David, Emily, John",
+      "John, Emily, David"
+    ],
+    "answer": "John, David, Emily",
+    "explanation": "Base des comparaisons : John > David > Emily. Même si Emily n'est pas la moins expérimentée globalement, elle l'est par rapport à ce trio. Le piège serait d'inverser la position de David et Emily sans compter la description précisée.",
+    "hint": "Reconstituez justement la position des trois sujets."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le résultat ?",
+    "prompt": "Si Jean est satisfait, il sourit. Si Marie est présente, Jean est satisfait. Marie n'est pas présente.",
+    "options": [
+      "Jean sourit",
+      "Jean ne sourit pas",
+      "Jean est satisfait",
+      "On manque d'information"
+    ],
+    "answer": "Jean ne sourit pas",
+    "explanation": "Application d'un raisonnement par absence de condition : Marie absente, donc Jean non satisfait, alors pas de sourire. Le piège consisterait à conclure un sourire sans vérifier l'enchaînement des conditions.",
+    "hint": "Prenez note de l'absence de condition et son effet."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui possède la plus grande collection ?",
+    "prompt": "Simone a plus de timbres que Paul. Clara a autant de timbres que Simone.",
+    "options": [
+      "Simone",
+      "Paul",
+      "Clara",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Clara",
+    "explanation": "Les relations de quantité nous informent que Simone = Clara > Paul, désignant Clara et Simone comme possédant la plus grande collection. Un oubli d'égalité entre Clara et Simone pourrait mener à une conclusion erronée.",
+    "hint": "N'oubliez pas les égalités dans les relations de comparaison."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que peut-on dire de l'éclairage ?",
+    "prompt": "Si les lampes s'allument, alors la pièce est illuminée. Les lampes sont allumées.",
+    "options": [
+      "La pièce n'est pas illuminée",
+      "La pièce est illuminée",
+      "Les lampes sont éteintes",
+      "On ne peut pas savoir"
+    ],
+    "answer": "La pièce est illuminée",
+    "explanation": "C'est un syllogisme par modus ponens : distinction extinction, allumage entraîne illumination. L'erreur serait penser que d'autres éléments sont nécessaires pour conclure l'éclairage.",
+    "hint": "S'en tenir à l'effet déclaré de l'action principale."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la logique de circulation ?",
+    "prompt": "Tous les véhicules utilitaires sont puissants. Pas de véhicule utilitaire est silencieux.",
+    "options": [
+      "Un véhicule utilitaire est bruyant",
+      "Un véhicule utilitaire est calme",
+      "On ne peut pas savoir si puissant = bruyant",
+      "Les véhicules silencieux ne sont pas utiles"
+    ],
+    "answer": "Un véhicule utilitaire est bruyant",
+    "explanation": "Syllogisme classique : les véhicules utilitaires non silencieux sous-entendent bruyance par règle d'opposition. Le piège réside dans un risque de presumption que puissant n'implique pas forcément bruyant.",
+    "hint": "Établissez le lien subtil de l'adjectif sur le sujet."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que peut-on déduire ?",
+    "prompt": "Si Clara obtient une promotion, alors elle gagne plus. Clara n'obtient pas de promotion.",
+    "options": [
+      "Clara gagne plus",
+      "Clara gagne moins",
+      "Clara gagne pareil",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Clara gagne pareil",
+    "explanation": "Raisonnement en négation fallacieuse : pas de promotion équivaut à maintenir le salaire. L'erreur serait de tirer de subtilement non-dits, conduisant à une fausse supposition qu'obtenir moins est synonyme.",
+    "hint": "Gardez à l'esprit la stabilité en absence de cause déterminante."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle couleur dominerait ?",
+    "prompt": "Si tous les murs extérieurs sont peints, alors ils sont blancs. Seule la clôture est repeinte.",
+    "options": [
+      "Les murs sont blancs",
+      "La clôture est blanche",
+      "Les murs gardent leur couleur",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Les murs gardent leur couleur",
+    "explanation": "Modus tollens : absence de peinture blanche sur les murs faute d'amorce. L'erreur se glisse ici en concluant à tort sur un effet non enclenché par l'acte de peindre.",
+    "hint": "Considérez ce qui change par absence de condition déclencheuse."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que peut-on prédire ?",
+    "prompt": "Si Paul chante, il pleut. Si il pleut, le match est annulé. Paul ne chante pas.",
+    "options": [
+      "Le match est annulé",
+      "Le match a lieu",
+      "On ne peut pas savoir",
+      "Paul chante peut-être"
+    ],
+    "answer": "Le match a lieu",
+    "explanation": "Modus tollens : Paul ne chantant pas, la condition initiale interdisant la pluie, donc le match se joue. Considérer qu'il manque une étape pourrait faire tomber dans l'erreur, en supposant une reconnexion.",
+    "hint": "Vérifiez la suppression de condition déclenchante."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la morale financière ?",
+    "prompt": "Si Louis investit, il obtient des dividendes. En l'absence d'investissement, aucune gain. Louis n'a pas investi.",
+    "options": [
+      "Louis gagne des dividendes",
+      "Louis ne gagne rien",
+      "Louis pourrait gagner des dividendes",
+      "On ne peut pas calculer"
+    ],
+    "answer": "Louis ne gagne rien",
+    "explanation": "En s'appuyant sur le modus tollens : absence d'investissement ferme la porte à tout gain, respecte la logique formelle du contenu. L'erreur serait de présumer acquisition par des sources inconnues.",
+    "hint": "Regardez bien ce qui est axé sur l'absence d'étape initiale."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle logique prévoir pour l'achat ?",
+    "prompt": "Si un crédit est approuvé, alors il est possible d'acheter une maison. Thomas a un crédit approuvé.",
+    "options": [
+      "Thomas peut acheter la maison",
+      "Thomas ne peut pas acheter la maison",
+      "Thomas a l'argent comptant",
+      "Thomas ne prévoit pas d'acheter"
+    ],
+    "answer": "Thomas peut acheter la maison",
+    "explanation": "L'interprétation systématique de ce modus ponens s'impose par cette succession crédit accepté > achat. L’erreur pourrait se faufiler en supposant que Thomas a d’autres plans, même s'il a les moyens.",
+    "hint": "Déroulez l’effet direct lié à l'approbation."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Pour quel motif Marc peut être là ?",
+    "prompt": "Si les vacances sont actées, Marc voyage. Les vacances ne sont pas actées.",
+    "options": [
+      "Marc ne voyage pas",
+      "Marc voyage",
+      "Marc pourrait voyager",
+      "Marc va en voyage d'affaires"
+    ],
+    "answer": "Marc ne voyage pas",
+    "explanation": "Modus tollens par déduction : refus des vacances signifie immobilité. Ignorer les énonciations formelles pourrait évoquer une issue de voyage ou affaires alors interdit par manque de validation.",
+    "hint": "Rappelez-vous des implications annulées en condition manquante."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que concluons-nous sur Luc ?",
+    "prompt": "Si Mathilde visite, on fait un gâteau. Si le gâteau cuit, alors Luc mange. Mathilde ne vient pas.",
+    "options": [
+      "Luc mange un gâteau",
+      "Luc ne mange pas de gâteau",
+      "Luc pourrait manger",
+      "On ne sait pas si Mathilde vient"
+    ],
+    "answer": "Luc ne mange pas de gâteau",
+    "explanation": "Usant le modus tollens, Mathilde restée absente empêche la réalisation du gâteau, ce qui interdit à Luc de le consommer. Une fausse route serait de considérer une présence par d'autre motifs.",
+    "hint": "Identifiez les actions annulées par absence d'une condition."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle règle traduit ?",
+    "prompt": "Si la température dépasse 30°C, alors la piscine ouvre. Aujourd'hui, la température est bien de 28°C.",
+    "options": [
+      "La piscine est fermée",
+      "La piscine est ouverte",
+      "La température est de 30°C",
+      "On ne peut pas préciser"
+    ],
+    "answer": "La piscine est fermée",
+    "explanation": "S'appuyant sur la même méthodologie que le modus tollens, absence de canicule entérine la fermeture du bassin. L'erreur classique consisterait à déduire une ouverture sur base de condition non remplie.",
+    "hint": "Focalisez l'importance sur la condition manquante."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel timing favoriser ?",
+    "prompt": "Si Daniel est libre, il vient au pique-nique. Si son agenda est chargé, il reste au bureau. Daniel reste au bureau.",
+    "options": [
+      "Daniel est au pique-nique",
+      "Daniel travaille",
+      "On ne peut pas discerner la décision",
+      "Daniel est libre"
+    ],
+    "answer": "Daniel travaille",
+    "explanation": "Interprétation de modus tollens : bureau égal occupation renvoie à une journée de travail. Une hypothèse erronée perturberait le contexte en négligeant l'enchaînement prévu du calendrier.",
+    "hint": "Évaluez bien la corrélation entre occupation et actions."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Où se place Martin concernant la fête ?",
+    "prompt": "Si le soleil brille, la fête est dehors. La météo prévoit des averses.",
+    "options": [
+      "La fête est dedans",
+      "La fête est dehors",
+      "La météo ne prévoit rien",
+      "On ignore la situation"
+    ],
+    "answer": "La fête est dedans",
+    "explanation": "État contraire au modus ponens, plaçant les activités en salle, loin des notifications anticlimatiques formelles. L'erreur pourrait naître d'une confusion interprétative des conditions météorologiques.",
+    "hint": "Considérez comment la météo influence les événements."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel impact Horaire détecter ?",
+    "prompt": "Si la banque est ouverte, alors les transactions sont acceptées. La banque est fermée.",
+    "options": [
+      "Les transactions sont refusées",
+      "Les transactions sont acceptées",
+      "Une transaction est possible",
+      "On ne peut pas vérifier"
+    ],
+    "answer": "Les transactions sont refusées",
+    "explanation": "Modus tollens : clôture des installations rend nulles les transactions. La supposition incorrecte serait un espace non respecté à la règle des conditions d’ouverture.",
+    "hint": "Observez comment l'accès à la banque agit sur les services."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Qu'est-ce qui peut propulser la conclusion ?",
+    "prompt": "Pour passer l'examen, il faut réviser. Sonya n'a pas révisé.",
+    "options": [
+      "Sonya réussit l'examen",
+      "Sonya échoue l'examen",
+      "Sonya pourrait réussir",
+      "On ignore son effort"
+    ],
+    "answer": "Sonya échoue l'examen",
+    "explanation": "Un modus tollens formel stipule que sans révision, la perspective de réussite de Sonya est exclue. Envisager un succès sans préparation soulignerait une incompréhension de la structure prémisse.",
+    "hint": "Faites attention à l’obligation préalable conditionnant le résultat."
+  }
+]
+```

@@ -1,0 +1,548 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est ce fruit ?",
+        "prompt": "Tous les kiwis sont des fruits. Cet objet est un kiwi.",
+        "options": [
+            "Ce n'est pas un fruit",
+            "C'est un kiwi",
+            "C'est un légume",
+            "C'est un fruit"
+        ],
+        "answer": "C'est un fruit",
+        "explanation": "Il s'agit d'un syllogisme par transitivité. Puisque tous les kiwis sont des fruits et que l'objet en question est un kiwi, nous concluons par transitivité que cet objet est un fruit. Le piège peut être de confondre la catégorie de l'objet avec une autre, comme un légume.",
+        "hint": "Utilisez la logique de transitivité dans les catégories."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "La voiture A est plus rapide que la voiture B. La voiture B est plus rapide que la voiture C.",
+        "options": [
+            "Voiture A",
+            "Voiture B",
+            "Voiture C",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Voiture A",
+        "explanation": "On utilise ici la transitivité de l'ordre. Si A > B et B > C, alors A > C. Le déduire échoue souvent par omission d'une comparaison, mais toutes les relations nécessaires sont données ici.",
+        "hint": "Reconstituez la chaîne de vitesses des voitures."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle affirmation est vraie ?",
+        "prompt": "Tous les livres de cette bibliothèque sont des romans. 'Les Misérables' est sur cette bibliothèque.",
+        "options": [
+            "'Les Misérables' est un roman",
+            "'Les Misérables' est un essai",
+            "'Les Misérables' n'est pas un livre",
+            "'Les Misérables' est une pièce"
+        ],
+        "answer": "'Les Misérables' est un roman",
+        "explanation": "Syllogisme simple : tous les livres de la bibliothèque sont des romans. 'Les Misérables', étant sur l'étagère, est donc aussi un roman. Le piège est de confondre avec sa dénomination dans un autre genre littéraire.",
+        "hint": "Vérifiez bien la catégorie générale de tous les éléments."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Où se trouve cet animal ?",
+        "prompt": "Tous les poissons se trouvent dans l'aquarium. Ce guppy est un poisson.",
+        "options": [
+            "Dans la cage",
+            "Sur le sol",
+            "Dans l'aquarium",
+            "Sur la table"
+        ],
+        "answer": "Dans l'aquarium",
+        "explanation": "Nous avons une déduction logique. Si tous les poissons se trouvent dans l'aquarium et que le guppy est un poisson, le guppy doit être dans l'aquarium. Le piège réside dans l'interprétation de l'espace 'où' le guppy pourrait potentiellement être.",
+        "hint": "Rappelez-vous les catégories de lieux pour les êtres vivants."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la conclusion logique ?",
+        "prompt": "Tous les chiens sont des animaux. Max est un chien.",
+        "options": [
+            "Max est un chat",
+            "Max est un animal",
+            "Max est un poisson",
+            "Max est un insecte"
+        ],
+        "answer": "Max est un animal",
+        "explanation": "Syllogisme par transitivité : si tous les chiens sont des animaux et Max est un chien, alors Max est un animal. Le défi est de ne pas négliger la transitivité de l'ensemble plus large où Max appartient.",
+        "hint": "Utilisez la logique par inclusion d'ensemble."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle déclaration est correcte ?",
+        "prompt": "Toutes les chemises dans l'armoire sont blanches. Cette chemise est dans l'armoire.",
+        "options": [
+            "La chemise est bleue",
+            "La chemise est blanche",
+            "La chemise est rouge",
+            "La chemise n'a pas de couleur"
+        ],
+        "answer": "La chemise est blanche",
+        "explanation": "Syllogisme simple : toutes les chemises de l'armoire sont blanches. Si une chemise est dans l'armoire, elle doit donc être blanche. La confusion pourrait venir de l'association erronée entre un objet et sa couleur réelle s'il n'était pas dans l'armoire.",
+        "hint": "Concentrez-vous sur les attributs donnés par l'environnement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus jeune ?",
+        "prompt": "Tom est plus jeune que Jerry. Jerry est plus jeune que Sam.",
+        "options": [
+            "Tom",
+            "Jerry",
+            "Sam",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Tom",
+        "explanation": "Nous appliquons ici un ordre de transitivité. Si Tom est plus jeune que Jerry, et Jerry est plus jeune que Sam, alors Tom est le plus jeune. Le piège est de ne pas correctement associer les âges en confondant les relations données.",
+        "hint": "Visualiser par un schéma les relations d'âge peut aider."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est cet objet ?",
+        "prompt": "Toutes les pommes sont rouges. Cet objet est une pomme.",
+        "options": [
+            "C'est un légume",
+            "C'est rouge",
+            "C'est vert",
+            "C'est bleu"
+        ],
+        "answer": "C'est rouge",
+        "explanation": "Syllogisme simple basé sur la description. Toutes les pommes étant rouges, si cet objet est une pomme, il est donc rouge. Les gens pourraient se tromper en supposant d'autres couleurs ne sont pas exclues, mais ce n'est pas le cas ici.",
+        "hint": "Concentrez-vous sur la couleur assignée aux objets."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle affirmation est vraie ?",
+        "prompt": "Tous les araignées sont des invertébrés. Charlotte est une araignée.",
+        "options": [
+            "Charlotte est un mammifère",
+            "Charlotte est un invertébré",
+            "Charlotte est un oiseau",
+            "Charlotte est un poisson"
+        ],
+        "answer": "Charlotte est un invertébré",
+        "explanation": "En appliquant la règle du syllogisme par inclusion, puisque toutes les araignées sont des invertébrés et que Charlotte est une araignée, Charlotte doit être un invertébré. La confusion peut venir de la mauvaise attribution d'une catégorie biologique.",
+        "hint": "Référez-vous aux classifications biologiques."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que pouvez-vous en déduire ?",
+        "prompt": "Tous les enfants de cette classe aiment les maths. Lisa est dans cette classe.",
+        "options": [
+            "Lisa aime les maths",
+            "Lisa déteste les maths",
+            "Lisa aime l'histoire",
+            "Lisa déteste l'histoire"
+        ],
+        "answer": "Lisa aime les maths",
+        "explanation": "Syllogisme par inclusion d'ensemble : tous les enfants de la classe aiment les maths. Lisa étant dans cette classe, elle aime donc les maths. Le risque d'erreur est de conclure sur une autre matière qui n'est pas mentionnée ici.",
+        "hint": "Assurez-vous d'utiliser les informations fournies."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus fort ?",
+        "prompt": "Marc est plus fort que Lucas. Lucas est plus fort que Paul.",
+        "options": [
+            "Marc",
+            "Lucas",
+            "Paul",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marc",
+        "explanation": "Raisonnement par transitivité : Si Marc > Lucas et Lucas > Paul, alors Marc est le plus fort. L'erreur typique est de ne pas reconnaître l'application directe de la transitivité sur les relations de forces.",
+        "hint": "Visualiser les forces par une chaîne d'inégalités aide souvent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion peut-on tirer ?",
+        "prompt": "Tous les ballons de cette boîte sont bleus. Ce ballon est dans la boîte.",
+        "options": [
+            "Le ballon est vert",
+            "Le ballon est bleu",
+            "Le ballon est rouge",
+            "Le ballon est jaune"
+        ],
+        "answer": "Le ballon est bleu",
+        "explanation": "En utilisant un raisonnement de type syllogisme. Tous les ballons de la boîte étant bleus, un ballon situé dans cette boîte est nécessairement bleu. Une erreur se produit souvent lorsque l'on ignore une règle qui fixe une couleur unique à un ensemble.",
+        "hint": "Isolez les attributs universels des objets."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la vérité ?",
+        "prompt": "Tous les stylos de cette boîte sont rouges. Ce stylo est sorti de la boîte.",
+        "options": [
+            "Le stylo est bleu",
+            "Le stylo est rouge",
+            "Le stylo est vert",
+            "Le stylo est noir"
+        ],
+        "answer": "Le stylo est rouge",
+        "explanation": "Il s'agit d'un syllogisme simple. Tous les stylos de la boîte étant rouges, un stylo sorti de cette boîte doit lui aussi être rouge. L'erreur classique consiste à croire que sortir un objet d'un ensemble modifie ses attributs initiaux.",
+        "hint": "Assurez-vous de suivre les attributs des ensembles."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on affirmer ?",
+        "prompt": "Tous les films de cette collection sont des thrillers. Ce film est dans la collection.",
+        "options": [
+            "C'est une comédie",
+            "C'est un drame",
+            "C'est un thriller",
+            "C'est un documentaire"
+        ],
+        "answer": "C'est un thriller",
+        "explanation": "Syllogisme par inclusion : si tous les films de la collection sont des thrillers et ce film en fait partie, alors il s'agit d'un thriller. Certaines difficultés surviennent en associant à tort le film à un autre genre non spécifié dans l'énoncé.",
+        "hint": "Concentrez-vous sur les genres cinématographiques donnés."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus sage ?",
+        "prompt": "Alice est plus sage que Betty. Betty est plus sage que Claire.",
+        "options": [
+            "Alice",
+            "Betty",
+            "Claire",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Alice",
+        "explanation": "Il s'agit d'un ordre de sagesse par transitivité. Alice >> Betty >> Claire signifie qu'Alice est la plus sage. L'erreur consiste souvent à ne pas suivre correctement la hiérarchie des affirmations.",
+        "hint": "Réalisez un diagramme pour clarifier les relations."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion tirez-vous ?",
+        "prompt": "Tous les cadeaux dans cette boîte sont petits. Ce cadeau est de la boîte.",
+        "options": [
+            "Le cadeau est gros",
+            "Le cadeau est petit",
+            "Le cadeau est moyen",
+            "Le cadeau est énorme"
+        ],
+        "answer": "Le cadeau est petit",
+        "explanation": "Syllogisme par inclusion : si tous les cadeaux sont petits et ce cadeau vient de la boîte, il est nécessairement petit. Le piège courant est de présumer qu'en dehors de la boîte, sa taille pourrait différer.",
+        "hint": "Revenez sur les caractéristiques uniques de l'ensemble mentionné."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le bon choix ?",
+        "prompt": "Tous les étudiants dans ce groupe aiment le sport. Pierrot est dans ce groupe.",
+        "options": [
+            "Pierrot n'aime pas le sport",
+            "Pierrot aime le sport",
+            "Pierrot aime la peinture",
+            "Pierrot n'aime pas le chocolat"
+        ],
+        "answer": "Pierrot aime le sport",
+        "explanation": "Syllogisme d'appartenance à un groupe : Toutes les personnes du groupe aiment le sport, donc Pierrot, étant du groupe, aime le sport. La méprise consiste à penser que Pierrot pourrait être l'exception sans base logique.",
+        "hint": "Pensez à l'universalité des préférences dans un groupe contrôlé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est la personne intermédiaire en taille ?",
+        "prompt": "Tom est plus grand que Jerry. Jerry est plus grand qu'Alice. Asher est plus petit que Tom mais plus grand qu'Alice.",
+        "options": [
+            "Tom",
+            "Jerry",
+            "Alice",
+            "Asher"
+        ],
+        "answer": "Asher",
+        "explanation": "Pour résoudre ce problème, nous devons aligner les tailles correctement : Tom > Asher > Jerry > Alice. Asher, étant plus petit que Tom mais plus grand qu'Alice, doit se situer entre Tom et Jerry.",
+        "hint": "Alignez les tailles une par une pour visualiser l'ordre."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que déduisez-vous des relations définies ?",
+        "prompt": "Si Paul a une réunion, Sandra va au gymnase. Si Sandra va au gymnase, elle prend les transports en commun.",
+        "options": [
+            "Sandra prend la voiture",
+            "Paul n'a pas de réunion",
+            "Sandra prend les transports en commun",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Sandra prend les transports en commun",
+        "explanation": "En utilisant le modus ponens : Si A alors B, et si B alors C. Si Paul a une réunion (A), Sandra va au gymnase (B), et donc elle prend les transports (C). Le piège classique serait de supposer que Sandra pourrait ne pas prendre les transports en commun sans analyser les implications logiques.",
+        "hint": "Considérez les connexions séquentielles dans les conditions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus vieux ?",
+        "prompt": "Maurice est plus vieux que Gaston. Gaston est plus vieux que Henri. Maurice n'est pas le plus jeune.",
+        "options": [
+            "Maurice",
+            "Gaston",
+            "Henri",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Maurice",
+        "explanation": "En suivant la logique d'ordre, Maurice > Gaston > Henri, et sachant que Maurice n'est pas le plus jeune, Maurice doit être le plus vieux. L'erreur est de mal interpréter la déclaration finale qui conforte sa position supérieure.",
+        "hint": "Identifiez la hierarchie en se basant sur les indices fournis."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le statut de Julie ?",
+        "prompt": "Si Julie est à l'extérieur, Marc reste à la maison. Marc reste à la maison. Donc...",
+        "options": [
+            "Julie est à l'intérieur",
+            "Julie est à l'extérieur",
+            "Julie est au travail",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julie est à l'extérieur",
+        "explanation": "Raisonnement par contraposition : La conclusion déduite de 'Si A alors B' est que si B est vrai, alors A doit être la cause d'autant que les options disponibles ne contredisent pas 'A'. Le risque était d'exclure par erreur Julie de l'ensemble d'origine.",
+        "hint": "Réfléchissez à la causalité inverse dans les conditions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle activité a lieu ?",
+        "prompt": "Si il pleut, nous restons à l'intérieur. Il pleut.",
+        "options": [
+            "Aller au parc",
+            "Rester à l'intérieur",
+            "Jouer au foot dehors",
+            "Faire du camping"
+        ],
+        "answer": "Rester à l'intérieur",
+        "explanation": "Modus ponens : Si A alors B, et A est vrai, donc B doit être vrai. Le piège consiste à ignorer qu'une condition a été pleinement remplie menant obligatoirement à une suite.",
+        "hint": "Utilisez le principe de causalité immédiate."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est dans la pièce ?",
+        "prompt": "Si Anna est dans la pièce, Ben est dans la cuisine. Anna n'est pas dans la pièce.",
+        "options": [
+            "Ben est dans la cuisine",
+            "Ben n'est pas dans la cuisine",
+            "Anna est dans la cuisine",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ben n'est pas dans la cuisine",
+        "explanation": "Contraposition : Si A alors B, donc si non A alors non B. Le défaut souvent vu ici est d’interpréter à tort que Ben se trouve ailleurs plutôt que de déduire son absence directe par le manque de présence d'Anna.",
+        "hint": "Explorez l'effet de la négation d'une condition."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la couleur du fruit ?",
+        "prompt": "Si un fruit est mûr, il est rouge. Si un fruit n'est pas rouge, il n'est pas vendu au marché.",
+        "options": [
+            "Le fruit est jaune",
+            "Le fruit est rouge",
+            "Le fruit est vendu au marché",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le fruit est rouge",
+        "explanation": "Il s'agit du principe de transitivité logique : Si mûr alors rouge. Sachant qu'un fruit non rouge n'est pas vendu, pour qu'il soit vendu il doit être rouge. Les erreurs typiques consistent à penser qu'une couleur intermédiaire pourrait être acceptée.",
+        "hint": "Examinez la séquence d'inférences conditionnelles."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que peut-on en déduire ?",
+        "prompt": "Si je réussis l'examen, j'aurai une célébration. Si j'ai une célébration, je vais inviter mes amis.",
+        "options": [
+            "Je n'invite pas mes amis",
+            "J'ai réussi l'examen",
+            "Je n'aurai pas de célébration",
+            "On ne peut pas savoir"
+        ],
+        "answer": "J'ai réussi l'examen",
+        "explanation": "En utilisant le raisonnement en chaîne, si A alors B et si B alors C, donc si C est vrai, cela remonte jusqu'à prouver A. Une omission fréquente est l'incapacité à suivre de A à C sans interruption.",
+        "hint": "Rappelez-vous de suivre chaque condition à rebours d’étapes."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Adam est-il promo-étudiant ?",
+        "prompt": "Si Adam est inscrit à l'université, alors il est promo-étudiant. Adam est inscrit à l'université.",
+        "options": [
+            "Adam est dans une autre faculté",
+            "Adam est promo-étudiant",
+            "Adam a quitté l'université",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Adam est promo-étudiant",
+        "explanation": "On applique le modus ponens : 'Si A alors B' et A vrai implique B vrai. Le piège est de douter de la preuve donnée et d'inférer à tort une alternative non supportée.",
+        "hint": "Vérifiez que vous restez dans le champ des affirmations."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus intelligent ?",
+        "prompt": "Claire est plus intelligente que Lisa. Lisa est plus intelligente que Bob.",
+        "options": [
+            "Claire",
+            "Lisa",
+            "Bob",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Claire",
+        "explanation": "Transitivité de l'ordre intellectuel : Claire > Lisa > Bob. Donc Claire est la plus intelligente. L'erreur consiste souvent à mélanger les niveaux de comparaison en omettant une étape cruciale.",
+        "hint": "Faites attention à chaque comparaison donnée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quels animaux restent ?",
+        "prompt": "S'il pleut, les chiens rentrent. Quand ils rentrent, les chats sortent.",
+        "options": [
+            "Les chiens restent dehors",
+            "Les chats sortent",
+            "Les chiens sont à l'intérieur",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Les chats sortent",
+        "explanation": "On doit suivre la chaîne d’implication : Pluie fait rentrer les chiens, ce qui, à son tour, fait sortir les chats. Les erreurs viennent d'une compréhension incorrecte des causes secondaires imbriquées.",
+        "hint": "Suivez chaque condition à la suite soigneusement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre position ?",
+        "prompt": "Dans une course, vous doublez le 2e coureur juste avant la ligne d'arrivée.",
+        "options": [
+            "1ère",
+            "2ème",
+            "3ème",
+            "4ème"
+        ],
+        "answer": "2ème",
+        "explanation": "En doublant le 2e, vous prenez sa place : vous êtes 2ème, pas 1er. Le coureur qui était 1er ne change pas de place. Le piège est de croire que doubler le 2e vous met immédiatemant en première position.",
+        "hint": "Piège classique : tu ne deviens pas 1er en doublant le 2e."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Marie aujourd'hui ?",
+        "prompt": "Marie a actuellement 3 fois l'âge de son fils. Dans 10 ans, elle aura le double de l'âge de son fils.",
+        "options": [
+            "20 ans",
+            "25 ans",
+            "30 ans",
+            "35 ans"
+        ],
+        "answer": "30 ans",
+        "explanation": "Soit f l'âge du fils. Marie = 3f. Dans 10 ans : 3f + 10 = 2(f + 10), donc 3f + 10 = 2f + 20, ce qui donne f = 10. Ainsi, Marie a actuellement 30 ans. Le piège est souvent de ne pas formuler correctement l'équation.",
+        "hint": "Pose une équation avec l'âge du fils comme inconnue."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment traverser la rivière en 3 voyages ?",
+        "prompt": "Un homme doit traverser une rivière avec un loup, une chèvre et du chou. Il ne peut transporter qu’un à la fois, et seul le loup et la chèvre ne doivent pas être laissés ensemble.",
+        "options": [
+            "Loup puis chèvre",
+            "Chou puis chèvre",
+            "Chèvre d'abord",
+            "Loup et chou ensemble"
+        ],
+        "answer": "Chèvre d'abord",
+        "explanation": "Emménagez d'abord la chèvre, retournez seul, puis apportez le loup, remmenez la chèvre, laissez-le et apportez le chou. Finalement, retournez seul pour la chèvre. L'astuce courante consiste à mal calculer les voyages nécessaires pour garder le loup séparé de la chèvre.",
+        "hint": "Planifiez chaque voyage pour assurer la sécurité des items restants."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de tours de piste restaient ?",
+        "prompt": "Un coureur double le deuxième, il reste 2 tours de piste.",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "4"
+        ],
+        "answer": "2",
+        "explanation": "En doublant le deuxième, le coureur ne change pas le nombre de tours restants, qui reste à 2. L'erreur ici est de supposer que doubler modifie le reste de la course en changeant d'autres variables non mentionnées.",
+        "hint": "Ne liez pas la position aux tours restants incorrectement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la place de Simon à la fin ?",
+        "prompt": "Simon s'élance derrière le dernier et ne double personne.",
+        "options": [
+            "Premier",
+            "Dernier",
+            "Deuxième",
+            "Troisième"
+        ],
+        "answer": "Dernier",
+        "explanation": "Placé derrière le dernier signifie être en dernière position. Sans doublage, Simon reste le dernier. Une erreur est de confondre sa vitesse potentielle avec sa position réelle.",
+        "hint": "Focus sur les déclarations de position statique mises à jour."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est l'erreur de placement ?",
+        "prompt": "Alice met plus de pommes que Marie, mais moins que Jean. Jean met plus de pommes qu'Alice.",
+        "options": [
+            "Jean a plus de pommes",
+            "Alice a plus de pommes",
+            "Marie a plus de pommes",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jean a plus de pommes",
+        "explanation": "Jean a plus que les autres, comme l'affirme 'Jean met plus de pommes qu'Alice'. Le piège est d'interpréter incorrectement la hiérarchie des rôles où se sont embrouillées les répétitions.",
+        "hint": "Soignez la sorte des rôles suivant les données."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de sœurs a-t-il réellement ?",
+        "prompt": "Arthur dit avoir autant de sœurs que de frères, alors que sa sœur déclare avoir deux fois plus de frères.",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "answer": "3",
+        "explanation": "Arthur a nécessairement trois sœurs, car la déclaration de sa sœur implique un nombre de frères qui est la moitié du nombre de sœurs. Le piège est de mal interpréter l'égalité initiale qui donne la clé de conversion.",
+        "hint": "Complétez les équations manquantes pour trouver la proportion."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la prochaine boîte à ouvrir ?",
+        "prompt": "Il y a trois boîtes. A dit que B, C ou Alpha est l'entrée. B déclare que C, Alpha, ou Bêta est l'entrée. C dit que seules A et B peuvent être suspectes.",
+        "options": [
+            "A",
+            "B",
+            "C",
+            "Alpha"
+        ],
+        "answer": "B",
+        "explanation": "En vertu du caractère formel selon lequel au moins une personne dit la vérité, B est la prochaine boîte car C ne pourrait être correct en raison du choix restreint impliqué par la teneur de sa déclaration.",
+        "hint": "Assurez-vous que le double mensonge exclut une option."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le ridicule dessin ?",
+        "prompt": "Dans un monde biaisé, un éléphant est aussi élevé qu'un rat. Le rat est plus petit qu'un lion.",
+        "options": [
+            "Rat plus grand",
+            "Éléphant plus grand",
+            "Éléphant plus petit",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Éléphant plus petit",
+        "explanation": "Il réside dans une erreur souvent acceptée par analogies. Rat plus petit que lion, et si éléphant était aussi petit que rat, alors c'est lui qui devient petit. Étonnement classique, car iconique inversé après une telle image.",
+        "hint": "Oubliez la logique ordinaire et concentrez-vous sur donné étrange."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle couleur sera-t-il en passant ?",
+        "prompt": "Lucien croit que le vert fait passer plus tôt au rouge au feu. A chaque passage, le changement arrive plus tard.",
+        "options": [
+            "Vert",
+            "Rouge",
+            "Orange",
+            "Bleu"
+        ],
+        "answer": "Rouge",
+        "explanation": "Ce problème joue sur la perspective climatique, passer au rouge, malgré le vert. Ici, la combinaison tyrannise la nuance inattendue relatant. Facilement dédoublé par illusion d'un afflux bénéfique non matérialisé.",
+        "hint": "Examinez réellement et mesurez au-delà de la perception."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Où se trouvent les noisettes ?",
+        "prompt": "Un écureuil cache ses noisettes en ligne, mais en met deux sur chaque extrémité d'une ligne de cinq.",
+        "options": [
+            "2 au total",
+            "6 au total",
+            "10 au total",
+            "12 au total"
+        ],
+        "answer": "10 au total",
+        "explanation": "En posant deux de plus sur chaque extrémité, il s'agit de doublons extraits originellement de trois restants. Ajouter chacun, on conclut à 3 + 4 hors doublon, et 5 total. Le trou s'attarde sur glisser la compréhension d'unité de part en part.",
+        "hint": "Comptez individuellement et assurez-vous qu'aucun point ne manque."
+    }
+]

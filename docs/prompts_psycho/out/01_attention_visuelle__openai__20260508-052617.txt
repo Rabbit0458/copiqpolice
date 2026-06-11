@@ -1,0 +1,289 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "Avenue du Général Leclerc, 92340 Bourg",
+    "text_b": "Avenue du Général Leclerc, 92340 Bourg",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Rue de la Liberté, 91200 Athis-Mons",
+    "text_b": "Rue de la République, 91200 Athis-Mons",
+    "is_true": false,
+    "explanation": "Les rues diffèrent dans les textes : « Liberté » versus « République ». Ce type de différence est facilement repérable en contexte urbain."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Robert Martin, né le 15/07/1980",
+    "text_b": "Robert Marin, né le 15/07/1980",
+    "is_true": false,
+    "explanation": "Erreur dans le nom de famille : « Martin » dans text_a et « Marin » dans text_b. Un piège dans lequel il est facile de tomber sous l'effet de la fatigue visuelle."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Voiture rouge SEAT Ibiza 21-AA-87",
+    "text_b": "Voiture rouge SEAT Ibiza 21-AA-87",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "LB-4567, Citroën C3, blanc",
+    "text_b": "LB-4576, Citroën C3, blanc",
+    "is_true": false,
+    "explanation": "Numéro de plaque différent : « 4567 » versus « 4576 ». Le renversement de chiffres est un classique des erreurs d'inattention."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Boulangerie au coin 22 rue des Fleurs",
+    "text_b": "Boulangerie au coin 23 rue des Fleurs",
+    "is_true": false,
+    "explanation": "Numéro de rue différent : « 22 » dans text_a et « 23 » dans text_b. Une simple confusion liée à la proximité des nombres."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Parc Georges Brassens",
+    "text_b": "Parc Georges Brassens",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Chevrolet Kalos PS-987-FT",
+    "text_b": "Chevrolet Kalos PS-987-FT",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "55008 And Paris",
+    "text_b": "55008 And Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "65 rue Saint-Denis, 75001 Paris",
+    "text_b": "15 rue Saint-Denis, 75001 Paris",
+    "is_true": false,
+    "explanation": "Numéro de rue différent : « 65 » dans text_a et « 15 » dans text_b. Cela peut souvent passer inaperçu en raison de la similarité visuelle des chiffres."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Honda Civic noire 44-EF-678",
+    "text_b": "Honda Civic noire 44-EF-678",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Rue du Bois, 94100 Saint-Maur",
+    "text_b": "Rue du Bois, 94100 Saint-Maur",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Immatriculation Renault AA-321-FG",
+    "text_b": "Immatriculation Renault BB-321-FG",
+    "is_true": false,
+    "explanation": "Différence dans l'immatriculation : « AA » dans text_a et « BB » dans text_b. Ce changement de lettres peut facilement induire en erreur à cause de leur proximité dans l'alphabet."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Valérie Dupuis 48, rue de Belleville",
+    "text_b": "Valérie Dupuis 48, rue de Belleville",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "13007 Marseille, rue Sainte",
+    "text_b": "13007 Marsseille, rue Sainte",
+    "is_true": false,
+    "explanation": "Faute d’orthographe dans le nom de ville : « Marseille » vs « Marsseille ». Ce type d’erreur provient souvent d’une faute de frappe ou d’une fatigue visuelle."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Ford Focus, grise, 19-FD-335",
+    "text_b": "Ford Focus, grise, 19-FD-335",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Peugeot 206, rouge, ZZ-999-ZZ",
+    "text_b": "Peugeot 206, rose, ZZ-999-ZZ",
+    "is_true": false,
+    "explanation": "Couleur différente : « rouge » dans text_a et « rose » dans text_b. La confusion de ces deux couleurs est un piège typique dans la description de véhicules."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Pierre, voyant le danger, courut au 257 avenue Philadelphia à 18h32.",
+    "text_b": "Pierre, voyant le danger, courut au 267 avenue Philadelphia à 18h32.",
+    "is_true": false,
+    "explanation": "Numéro d'avenue différent : « 257 » dans text_a et « 267 » dans text_b. Une erreur subtile qui peut passer inaperçue lors d'une lecture rapide."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Constat d'accident rédigé par Marie Durand le 12 juin 2022 à 14h47.",
+    "text_b": "Constat d'accident rédigé par Marie Durant le 12 juin 2022 à 14h47.",
+    "is_true": false,
+    "explanation": "Nom de famille différent : « Durand » versus « Durant ». L'absence de la lettre « d » en fin de nom constitue un piège classique par la proximité de ces orthographes."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "ZAFIRA BLEUE, immatriculation DQ-849-HT, 6 personnes à bord.",
+    "text_b": "ZAFIRA BLEUE, immatriculation DQ-849-HT, 6 personnes a bord.",
+    "is_true": false,
+    "explanation": "Différence d'accent sur le mot « a » : il manque l'accent dans text_b. Ce type d'erreur peut facilement être ignoré, car les accents sont souvent confondus avec des détails mineurs."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La victime a déclaré le vol le 05 octobre 2024 à 22h30.",
+    "text_b": "La victime a déclaré le vol le 05 octobre 2024 à 22h30.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "8h15 le 3 janvier 2024, le chien de Mme Dumas a attaqué un passant.",
+    "text_b": "8h15 le 3 janvier 2024, le chien de M. Dumas a attaqué un passant.",
+    "is_true": false,
+    "explanation": "Titre civil différent : « Mme » dans text_a, et « M. » dans text_b. Une petite différence qui peut échapper à une lecture rapide."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Suzuki Swift blanche, AB-875-FB, stationnée 12 rue du Château.",
+    "text_b": "Suzuki Swift blanche, AB-875-FB, stationnée 12 rue du Château.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le voleur portait un pull bleu et un jean noir le 21 févr. 11h.",
+    "text_b": "Le volleur portait un pull bleu et un jean noir le 21 févr. 11h.",
+    "is_true": false,
+    "explanation": "Faute d'orthographe dans « voleur » : un « l » ajouté dans text_b. Les doubles consonnes peuvent facilement être ignorées lorsqu'on est pressé."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Isabelle Asselin, ID : 1234567890, habitait 78 boulevard Henri IV.",
+    "text_b": "Isabelle Asselin, ID : 1234567890, habitait 78 boulevard Henri IV.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le témoin a identifié une RENAULT MEGANE, immatriculée CR-115-XD.",
+    "text_b": "Le témoin a identifié une RENAULT MEGANE, immatriculée CR-115-XD.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Monsieur Bernard a vu le suspect à 10 rue de la Gare à 11h55.",
+    "text_b": "Monsieur Bernard a vu le suspect à 10 rue de la Gare à 11h45.",
+    "is_true": false,
+    "explanation": "Petite différence dans l'heure : « 11h55 » versus « 11h45 ». Ce détail est important dans les chronologies d'évènements."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Marlène a reçu un colis avec numéro de suivi : FZ1234567HT.",
+    "text_b": "Marlène a reçu un colis avec numéro de suivi : FZ1234567HT.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Enquête ouverte le 01 février 2023 pour vol au 32 boulevard Foch.",
+    "text_b": "Enquête ouverte le 01 février 2023 pour vol au 32 boulevard Foch.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Constantin achète des volets avec ID-435671BF comme référence.",
+    "text_b": "Constantin achète des volets avec ID-435671FB comme référence.",
+    "is_true": false,
+    "explanation": "Inversion des lettres de référence : « BF » dans text_a et « FB » dans text_b. Les inversions sont communes lors de l'écriture."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le 15 décembre 2023, une Renault Kadjar, plaque DG-234-L0X, a été aperçue à proximité du parc durant les heures de fermeture.",
+    "text_b": "Le 15 décembre 2023, une Renault Kadjar, plaque DG-234-LOX, a été aperçue à proximité du parc durant les heures de fermeture.",
+    "is_true": false,
+    "explanation": "Différence subtile dans l'immatriculation : le chiffre « 0 » est remplacé par la lettre « O ». La similitude de ces caractères peut souvent échapper à l'œil non averti."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Témoin oculaire : Madame Louis, 45 ans, décrit le suspect comme grand, brun, portant des lunettes, rencontré le soir du 16/09.",
+    "text_b": "Témoin oculaire : Madame Louis, 45 ans, décrit le suspect comme grand, brun, portant des lunettes rencontrées le soir du 16/09.",
+    "is_true": false,
+    "explanation": "Omission d'une virgule dans text_b après « lunettes ». Ce petit détail change la structure de la phrase et peut être trompeur pour le lecteur."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon l'article 78-2, tout individu doit justifier de son identité auprès des forces de l'ordre, sous peine de sanction.",
+    "text_b": "Selon l'article 78-2, tout individu doit justifier de son identité auprès des forces de l'ordre, sous peine de sanction.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Inspection de sécurité : le bâtiment a passé avec succès toutes les normes requises en date du 05/03/2024.",
+    "text_b": "Inspection de sécurité : le bâtiment a passé avec succès toutes les normes requises en date du 05/03/2024.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le complice affirmait se trouver au domicile de Madame Hellène, 100 rue du Bac, durant toute la soirée du 7 juillet.",
+    "text_b": "Le complice affirmait se trouver au domicile de Madame Hélène, 100 rue du Bac, durant toute la soirée du 7 juillet.",
+    "is_true": false,
+    "explanation": "Différence sur l'accent aigu dans le prénom : « Hellène » vs « Hélène ». Les accents peuvent souvent passer inaperçus, particulièrement dans les prénoms."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Rapport d'observation : une berline noire stationnée sur le trottoir à l'intersection de la rue de la Méditerranée et du boulevard Haussmann.",
+    "text_b": "Rapport d'observation : une berline noire stationnée sur le trottoir à l'intersection de la rue de la Méditerranée et du boulevard Hausmann.",
+    "is_true": false,
+    "explanation": "Orthographe différente du nom de rue : « Haussmann » dans text_a et « Hausmann » dans text_b. Une simple omission de lettre est facile à rater dans des noms familiers."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Entendu : Monsieur Lecoq, âgé de 53 ans, portant un costume gris sombre, a vu un individu avec une casquette à l'entrée du cinéma.",
+    "text_b": "Entendu : Monsieur Lecoq, agé de 53 ans, portant un costume gris sombre, a vu un individu avec une casquette à l'entrée du cinéma.",
+    "is_true": false,
+    "explanation": "Problème similaire sur les accents : « âgé » dans text_a et « agé » dans text_b. Les accents constituent souvent le point faible lors de la lecture attentive."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Article 223-1 du code pénal stipule que le fait d'exposer directement autrui à un risque immédiat de mort constitue un délit.",
+    "text_b": "Article 223-1 du code pénal stipule que le fait d'exposer directement autrui à un risque immediat de mort constitue un délit.",
+    "is_true": false,
+    "explanation": "Le mot 'immédiat' est sans accent aigu sur le 'e' dans text_b. Les accents peuvent facilement être négligés dans de longs textes juridiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Emmy Vergara a demandé un permis de stationnement pour 2025 à l'adresse suivante : 134 rue du Temple, Paris.",
+    "text_b": "Emmy Vergara a demandé un permis de stationnement pour 2025 à l'adresse suivante : 134 rue du Temple, Pars.",
+    "is_true": false,
+    "explanation": "Erreur dans l'orthographe de « Paris » : il manque la lettre « i » dans text_b. Ces types d'errores orthographiques peuvent facilement passer inaperçues si l'on s'appuie trop sur la reconnaissance visuelle globale."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le suspect est entré dans la maison par la fenêtre du sous-sol malgré la pluie persistante de cette soirée.",
+    "text_b": "Le suspect est entré dans la maison par la fenêtre du sous-sol malgré la plui persistante de cette soirée.",
+    "is_true": false,
+    "explanation": "Erreur orthographique dans « pluie » où « e » manque dans text_b. La réduction de lettres peut être un piège dans la prise de notes rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Madame Fouquet a observé l'incident depuis la terrasse de son appartement au cinquième étage, au 19 avenue Hauséman.",
+    "text_b": "Madame Fouquet a observé l'incident depuis la terrasse de son appartement au cinquième étage, au 19 avenue Haussman.",
+    "is_true": false,
+    "explanation": "Erreur subtile dans l'orthographe du nom de rue : « Hauséman » dans text_a et « Haussman » dans text_b. L'orthographe des noms propres est un piège fréquent."
+  }
+]

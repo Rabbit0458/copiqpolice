@@ -13,6 +13,10 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+        // ─── Core library desugaring ────────────────────────────────────────
+        // Requis par `flutter_local_notifications` ≥ 17 pour fournir les
+        // APIs Java 8+ (java.time, java.util.stream, …) sur Android < 26.
+        isCoreLibraryDesugaringEnabled = true
     }
 
     kotlinOptions {
@@ -24,10 +28,13 @@ android {
         applicationId = "com.example.copiqpolice"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        // ⚠️ Core library desugaring exige minSdk ≥ 21. On force la valeur
+        // si la valeur héritée de Flutter est inférieure.
+        minSdk = maxOf(flutter.minSdkVersion, 21)
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -37,6 +44,12 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
+}
+
+dependencies {
+    // Fournit les APIs Java 8+ rétrocompatibles (requis par
+    // flutter_local_notifications).
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 }
 
 flutter {

@@ -1,0 +1,380 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 15 + 26 ?",
+        "expression": "15 + 26",
+        "options": ["41", "39", "43", "40"],
+        "answer": "41",
+        "explanation": "Le calcul peut se faire en ajoutant d'abord les dizaines (10 + 20 = 30) puis les unités (5 + 6 = 11). En combinant 30 et 11, on obtient 41. Méfiez-vous de l'erreur classique d'ajouter seulement les chiffres des dizaines, en oubliant les unités.",
+        "hint": "Additionne d'abord les dizaines puis les unités."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 8 × 4 ?",
+        "expression": "8 × 4",
+        "options": ["32", "28", "24", "36"],
+        "answer": "32",
+        "explanation": "Pour multiplier 8 par 4, vous pouvez calculer 8 + 8 + 8 + 8, soit 32. Une erreur courante est de négliger l'une des multiplications partielles ou d'arrondir prématurément.",
+        "hint": "Répéter 8 quatre fois suffit pour ce calcul."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 100 / 4 ?",
+        "expression": "100 / 4",
+        "options": ["25", "20", "30", "35"],
+        "answer": "25",
+        "explanation": "Diviser 100 par 4 revient à savoir combien de fois 4 entre dans 100, ce qui est exactement 25 fois. Ne vous laissez pas piéger par la similitude avec d'autres divisions par des nombres proches.",
+        "hint": "Pensez à réduire en divisant chaque centaine en quarts."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 50 % de 160 ?",
+        "expression": "0,5 × 160",
+        "options": ["80", "70", "60", "90"],
+        "answer": "80",
+        "explanation": "Calculer 50 % d'un nombre consiste simplement à diviser ce nombre par 2, donc 160/2 = 80. Le piège serait d'oublier que 50 % est la même chose que la moitié du nombre.",
+        "hint": "50 % équivaut à un effort simple de division par 2."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la racine carrée de 64 ?",
+        "expression": "√64",
+        "options": ["8", "7", "6", "9"],
+        "answer": "8",
+        "explanation": "La racine carrée de 64 est le nombre qui, multiplié par lui-même, donne 64. Ainsi, 8 × 8 = 64. Ne confondez pas la multiplication initiale avec une addition qui pourrait vous conduire à une erreur.",
+        "hint": "Quel nombre produit 64 quand vous le multipliez par lui-même ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 45 - 18 ?",
+        "expression": "45 - 18",
+        "options": ["27", "25", "23", "30"],
+        "answer": "27",
+        "explanation": "En soustrayant 10 d'abord, vous atteignez 35, puis en enlevant encore 8, vous obtenez 27. Le piège ici est de se tromper en sautant une étape ou en oubliant la décomposition des dizaines.",
+        "hint": "Décomposez 18 en 10 et 8 pour faciliter le calcul."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 72 / 8 ?",
+        "expression": "72 / 8",
+        "options": ["9", "8", "7", "10"],
+        "answer": "9",
+        "explanation": "Pour trouver combien de fois 8 entre dans 72, divisez simplement 72 par 8, ce qui donne 9. Attention à ne pas mélanger le processus avec d'autres divisions proches, ce qui pourrait fausser le résultat.",
+        "hint": "Divisez 72 en 8 parties égales pour simplifier."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le double de 22 ?",
+        "expression": "2 × 22",
+        "options": ["44", "42", "40", "46"],
+        "answer": "44",
+        "explanation": "Le double de 22 est simplement 22 additionné à lui-même, soit 22 + 22 = 44. Un piège pourrait être d'additionner seulement les unités ou de mal aligner les additions partielles.",
+        "hint": "Additionne le nombre à lui-même pour obtenir son double."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 36 + 15 ?",
+        "expression": "36 + 15",
+        "options": ["51", "50", "52", "49"],
+        "answer": "51",
+        "explanation": "En ajoutant d'abord les dizaines : 30 + 10 = 40, puis les unités : 6 + 5 = 11. En somme, 40 + 11 fait 51. Le piège est de mal calculer les unités en oubliant la retenue.",
+        "hint": "Regroupe dizaines et unités pour simplifier."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 7 × 6 ?",
+        "expression": "7 × 6",
+        "options": ["42", "40", "45", "44"],
+        "answer": "42",
+        "explanation": "En répétant 7 six fois ou 6 sept fois, on aboutit toujours à 42. Veillez à ne pas mélanger les chiffres ou à confondre avec des multiplications qui leur sont proches.",
+        "hint": "Répétez 7, 6 fois ou vice-versa pour confirmer."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 90 - 45 ?",
+        "expression": "90 - 45",
+        "options": ["45", "40", "35", "50"],
+        "answer": "45",
+        "explanation": "En retirant 40 et ensuite 5 de 90, vous arrivez à 45. Le danger ici réside dans un oubli de la double soustraction qui peut se traduire en décalage de résultat.",
+        "hint": "Soustrayez d'abord les dizaines puis les unités."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 10 % de 300 ?",
+        "expression": "0,1 × 300",
+        "options": ["30", "25", "35", "40"],
+        "answer": "30",
+        "explanation": "Pour trouver 10 %, divisez par 10, soit 300/10 = 30. Le piège est de prendre le mauvais diviseur, par exemple par confusion avec 20 % où l'on diviserait par 5.",
+        "hint": "10 % est une simple division par 10."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 54 / 6 ?",
+        "expression": "54 / 6",
+        "options": ["9", "8", "7", "10"],
+        "answer": "9",
+        "explanation": "Divisez 54 par 6 pour obtenir combien de fois 6 s'intègre dans 54, le résultat est 9. Attention aux erreurs de division fréquentes liées à de mauvaises estimations de qu'occupe le diviseur multiplié par un nombre.",
+        "hint": "Diviser en parts égales, comme une tarte en 6 morceaux."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 6 × 7 ?",
+        "expression": "6 × 7",
+        "options": ["42", "40", "44", "46"],
+        "answer": "42",
+        "explanation": "Par multiplication de 6 par 7 ou de 7 par 6 (ça revient au même), le total sera 42. Ce qui est souvent confondu dans ce calcul, c'est prendre des tables de multiplication proches comme 6 × 6.",
+        "hint": "Visualisez la table de 6 ou celle de 7 pour précision."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 23 + 34 ?",
+        "expression": "23 + 34",
+        "options": ["57", "56", "59", "55"],
+        "answer": "57",
+        "explanation": "En ajoutant d'abord les dizaines (20 + 30 = 50), puis les unités (3 + 4 = 7), vous arrivez à 57. Ne vous trompez pas en commençant par le mauvais côté du nombre ou en omettant la retenue finale.",
+        "hint": "Additionnez séparément dizaines et unités pour clarté."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 81 / 9 ?",
+        "expression": "81 / 9",
+        "options": ["9", "8", "7", "10"],
+        "answer": "9",
+        "explanation": "Pour calculer combien de fois 9 entre dans 81, il suffit de savoir que 9 × 9 = 81. Gardez en tête de vérifier par multiplication inverse pour éviter les erreurs typiques de divisions approximatives.",
+        "hint": "Revoyez vos tables : 9 fois combien fait 81 ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le carré de 4 ?",
+        "expression": "4^2",
+        "options": ["16", "17", "14", "18"],
+        "answer": "16",
+        "explanation": "Multiplier 4 par lui-même, soit 4 × 4 donne le carré qui est 16. Assurez-vous de ne pas mélanger cet exercice avec l'addition qui serait un autre cas.",
+        "hint": "Élevez 4 au carré en multipliant-le par lui-même."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 347 + 286 ?",
+        "expression": "347 + 286",
+        "options": ["633", "641", "628", "653"],
+        "answer": "633",
+        "explanation": "En additionnant les centaines (300 + 200 = 500), les dizaines (40 + 80 = 120) et les unités (7 + 6 = 13), on obtient 633. Faites attention de bien aligner vos retenues lors de l'addition.",
+        "hint": "Additionnez chaque colonne séparément avec retenue."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 81 - 37 ?",
+        "expression": "81 - 37",
+        "options": ["44", "45", "43", "46"],
+        "answer": "44",
+        "explanation": "Pour obtenir le résultat, il suffit de soustraire 30 d'abord (81 - 30 = 51) puis 7 (51 - 7 = 44). Une erreur classique serait de confondre les unités à soustraire ou de négliger le décalage à la dizaine précédente.",
+        "hint": "Soustrayez partiellement pour éviter les confusions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 27 × 30 ?",
+        "expression": "27 × 30",
+        "options": ["810", "830", "800", "820"],
+        "answer": "810",
+        "explanation": "On peut décomposer le calcul en (27 × 3) × 10 = 81 × 10 = 810. Une confusion courante est de négliger de multiplier par 10 en fin ou de mal évaluer un produit intermédiaire.",
+        "hint": "Calculez d'abord 27 × 3, puis multipliez par 10."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que vaut 13² ?",
+        "expression": "13^2",
+        "options": ["169", "156", "152", "176"],
+        "answer": "169",
+        "explanation": "Pour trouver 13 au carré, multipliez 13 par 13, ce qui fait 169. Ne vous faites pas avoir en confondant multiplication d'un carré avec un produit partiel ou un carré proche.",
+        "hint": "Répétez 13 fois et vérifiez pas à pas."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 145 / 5 ?",
+        "expression": "145 / 5",
+        "options": ["29", "27", "30", "28"],
+        "answer": "29",
+        "explanation": "En divisant 145 par 5, chaque unité restant dans les centaines et dizaines doivent être ajustées : 14 ÷ 5 = 2 avec reste 4, et ensemble, on maçonne avec les unités pour 29 en tout. Prêtez attention à la gestion des restes lorsque transformant des nombres dans une division.",
+        "hint": "Divisez étape par étape pour aligner le résultat."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel résultat pour 20 % de 150 ?",
+        "expression": "0,2 × 150",
+        "options": ["30", "25", "35", "28"],
+        "answer": "30",
+        "explanation": "Calculer 20 % c'est 1/5ème de 150, soit 150 divisé par 5 = 30. Erreur fréquente : diviser par 10 par inadvertance au lieu de 5 ou confondre avec 10 %.",
+        "hint": "Pour 20 %, divisez en 5 parties égales."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 23 + 74 ?",
+        "expression": "23 + 74",
+        "options": ["97", "98", "96", "95"],
+        "answer": "97",
+        "explanation": "Additionnez d'abord les dizaines : 20 + 70 = 90, puis les unités : 3 + 4 = 7, ce qui totalise 97. Vérifiez les additions de chaque composante séparément pour ne pas vous tromper.",
+        "hint": "Décomposez les nombres en dizaines et unités à vérifier."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que vaut √225 ?",
+        "expression": "√225",
+        "options": ["15", "14", "16", "13"],
+        "answer": "15",
+        "explanation": "La racine carré de 225 est le nombre que, multiplié par lui-même, donne 225. Donc, 15 × 15 = 225. Attention à ne pas confondre avec des multiplications qui paraissent proches.",
+        "hint": "Quelle multiplication de deux mêmes chiffres donne 225 ?"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 812 - 347 ?",
+        "expression": "812 - 347",
+        "options": ["465", "475", "455", "485"],
+        "answer": "465",
+        "explanation": "Soustrayez les centaines (800 - 300 = 500) et ensuite les autres parties pour obtenir 465 (500-47 = 465). Le plus focus est de ne pas oublier les changements de dizaines possibles dans des étapes.",
+        "hint": "Simplifiez en soustrayant d'abord toutes les centaines."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 14 % de 250 ?",
+        "expression": "0,14 × 250",
+        "options": ["35", "30", "40", "32"],
+        "answer": "35",
+        "explanation": "Pour obtenir 14 % de 250, convertissez 14 % en fraction (0,14) et multipliez par 250 pour un total de 35. Ne confondez pas avec un simple ajustement de 10 % ou 15 %, des erreurs peuvent s'y glisser.",
+        "hint": "Multiplier le pourcentage converti en décimal par le nombre."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que vaut 15² ?",
+        "expression": "15^2",
+        "options": ["225", "200", "210", "235"],
+        "answer": "225",
+        "explanation": "Multipler 15 par 15 donne 225. Verify step-by-step car une action rapide ne vous emmène pas à confondre avec des carrés un peu semblables.",
+        "hint": "Concevez un calcul de multiplication sur décomposition, (10+5)(10+5) confirme."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 105 / 3 ?",
+        "expression": "105 / 3",
+        "options": ["35", "33", "34", "36"],
+        "answer": "35",
+        "explanation": "Divisez 105 par 3 consistant à faire 10 dizaines et 5 unités par 3, vous obtenez 35. Attention à résister trois fois ou à ignorer les unités restantes après avoir divisé les.
+        "hint": "Divisez les dizaines et les unités, de manière équilibrée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 432 + 189 ?",
+        "expression": "432 + 189",
+        "options": ["621", "622", "619", "620"],
+        "answer": "621",
+        "explanation": "L'ajout des centaines 400+100=500. Ajoutez les dizaines, 30+80=110, avec les unités, 2+9=11. Total = 621, permette des additions sans manquer un point.",
+        "hint": "Addition à trois niveaux : plusieurs centaines, dizaines et unités."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font (47 × 8) - 76 ?",
+        "expression": "(47 × 8) - 76",
+        "options": ["300", "292", "310", "312"],
+        "answer": "300",
+        "explanation": "En premier lieu, 47 multiplié par 8 donne 376. Puis en soustrayant 76 on arrive à 300. Evitez de soustraire directement les unités sans passer par un calcul sérieux.",
+        "hint": "Multipliez d'abord et soustrayez ensuite les unités."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 23 × 17 ?",
+        "expression": "23 × 17",
+        "options": ["391", "397", "383", "385"],
+        "answer": "391",
+        "explanation": "Utilisez la distributivité: (20+3) × (10+7) = 20×10 + 20×7 + 3×10 + 3×7, ce qui donne 230 + 140 + 30 + 21 = 391. Distinguez les multiplicateurs intermédiaires pour être précis.",
+        "hint": "Décomposez chaque nombre en dizaines et unités avant de multiplier."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 48 × 25 ?",
+        "expression": "48 × 25",
+        "options": ["1200", "1150", "1100", "1050"],
+        "answer": "1200",
+        "explanation": "Pour simplifier, multipliez d'abord par 100: 48 × (100/4) = 48 × 25 = 1200. Cela transforme les multiplications complexes en plus petites approximations pour éviter les erreurs.",
+        "hint": "Multiplier par 100, puis divisez par 4 ensuite."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que valent 35 % de 180 ?",
+        "expression": "0,35 × 180",
+        "options": ["63", "61", "65", "60"],
+        "answer": "63",
+        "explanation": "Multipliez 180 par 0,35, assimilant comme une fraction: 180 × 0,35 = 63. Faites attention de ne pas diviser par de mauvaises valeurs fractionnelles.",
+        "hint": "Utilisez le 10 % puis additionnez-le par tranches pour atteindre 35 %."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font (65 ÷ 5) + 84 - 18 ?",
+        "expression": "(65 ÷ 5) + 84 - 18",
+        "options": ["79", "81", "77", "80"],
+        "answer": "79",
+        "explanation": "Divisez 65 par 5 pour une base de 13 puis faite l'addition 84, ce qui aboutit à 97. Ensuite, retranchez 18 pour un total correct de 79. Solve one portion at a time for accurate precision.",
+        "hint": "Commencez avec la division, ajoutez un total et réduisez pour la précision."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le résultat de 12 × 9 + 25 ?",
+        "expression": "12 × 9 + 25",
+        "options": ["133", "125", "128", "132"],
+        "answer": "133",
+        "explanation": "Calculez 12 × 9 pour 108, ensuite ajoutez 25 pour obtenir 133. Gardez à l'esprit de ne pas ajouter d'abord ni inverser les étapes pour maintenir un bon sens des opérations.",
+        "hint": "Multipliez d'abord, puis combinez avec l'addition."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 2^7 ?",
+        "expression": "2^7",
+        "options": ["128", "130", "132", "126"],
+        "answer": "128",
+        "explanation": "2 élevé à la 7e puissance va 2 multiplié par 2 sept fois, soit (4, 8, 16, 32, 64, 128). N'oubliez pas de terminer chaque multiplication avant de passer à l'étape suivante.",
+        "hint": "Doublez le résultat après chaque multiplication."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la valeur de √289 ?",
+        "expression": "√289",
+        "options": ["17", "16", "18", "19"],
+        "answer": "17",
+        "explanation": "La racine de 289 est 17, ainsi 17 × 17 = 289. Confondre les résultats avec d'autres carrés proches pourrait fausser les résultats.",
+        "hint": "Testez les multiplications pour résoudre avec une règle classique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 8 % de 250 ?",
+        "expression": "0,08 × 250",
+        "options": ["20", "18", "22", "25"],
+        "answer": "20",
+        "explanation": "En multiplicant 250 par 0,08, on obtient 20. Assurez-vous que chaque division partielle approche selon la correctivation et non les estimations.",
+        "hint": "Convertissez pourcentages en décimaux, simples à gérer en multiplication."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font (45 × 15) ÷ 3 ?",
+        "expression": "(45 × 15) ÷ 3",
+        "options": ["225", "225", "230", "235"],
+        "answer": "225",
+        "explanation": "Multipliez 45 par 15 pour un total de 675 et divisez ensuite par 3 pour 225. Soyez vigilant que la dividie soit accomplie post multiplication.",
+        "hint": "Multipliez d'abord dans la globalité des portions qui vous intéressent."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la racine carrée de 144 ?",
+        "expression": "√144",
+        "options": ["12", "11", "13", "14"],
+        "answer": "12",
+        "explanation": "Trouver 12, tant qu'une multiplication de 12 par 12 donnent 144 solvabilité. Proximitudes de chiffres coupables de piège peuvent vite intervenir.",
+        "hint": "Multipliez progressivement à l'aide de répétition croissante."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que valent 5/8 de 240 ?",
+        "expression": "5/8 × 240",
+        "options": ["150", "145", "155", "160"],
+        "answer": "150",
+        "explanation": "Calculez 5/8 sous 240, multiplié par 240 divisant 8, qui est 30 puis multiplié par 5 donne 150. Attention à vos fraction décomposables approximativement.",
+        "hint": "Transformez en une multiplicitité facilitée."
+    }
+]

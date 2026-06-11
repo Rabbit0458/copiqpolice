@@ -1,0 +1,576 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de sommets a un cube ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "4"},
+      {"key": "B", "label": "6"},
+      {"key": "C", "label": "8"},
+      {"key": "D", "label": "12"}
+    ],
+    "answer": "C",
+    "explanation": "Un cube est un solide avec 6 faces carrées et 8 sommets. Les sommets sont les points où se rencontrent trois arêtes. La confusion peut venir du fait que le nombre de sommets pourrait sembler inférieur car l'on pourrait confondre avec le nombre de faces.",
+    "hint": "Visualise les coins d'un cube."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'arêtes a une pyramide à base carrée ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "5"},
+      {"key": "B", "label": "8"},
+      {"key": "C", "label": "10"},
+      {"key": "D", "label": "12"}
+    ],
+    "answer": "B",
+    "explanation": "Une pyramide à base carrée possède 4 arêtes autour du carré et 4 arêtes montant vers le sommet. Ainsi, elle a un total de 8 arêtes. Le piège peut être de ne pas tenir compte des arêtes verticales.",
+    "hint": "Compte les arêtes de la base et celles qui rejoignent le sommet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'arêtes a un prisme triangulaire ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "6"},
+      {"key": "B", "label": "9"},
+      {"key": "C", "label": "12"},
+      {"key": "D", "label": "15"}
+    ],
+    "answer": "B",
+    "explanation": "Un prisme triangulaire est formé par deux triangles parallèles joints par trois rectangles. Chaque triangle possède 3 arêtes, et il y a 3 arêtes reliant les sommets correspondants des triangles. Cela donne un total de 9 arêtes.",
+    "hint": "Chaque face triangulaire compte 3 arêtes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle forme a la vue de face d'un cône ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "Cercle"},
+      {"key": "B", "label": "Triangle"},
+      {"key": "C", "label": "Rectangle"},
+      {"key": "D", "label": "Ellipse"}
+    ],
+    "answer": "B",
+    "explanation": "Vu de face, un cône apparaît comme un triangle si son axe est perpendiculaire à la vue. Ceci peut induire en erreur si l'on pense au cône vu de dessus, ce qui serait un cercle.",
+    "hint": "Pense à la silhouette d'une montagne."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de faces a un cylindre ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "2"},
+      {"key": "B", "label": "3"},
+      {"key": "C", "label": "4"},
+      {"key": "D", "label": "5"}
+    ],
+    "answer": "B",
+    "explanation": "Un cylindre a trois faces : deux faces circulaires et une face courbée latérale. Un cylindre n'a pas de bord droit sur la face latérale, ce qui pourrait amener à sous-estimer le nombre de faces.",
+    "hint": "Imagine une canette : deux extrémités et un côté."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le nom de la figure formée en pliant un carré sur sa diagonale ?",
+    "prompt": "Considérez le carré plié sur sa diagonale sud-ouest à nord-est.",
+    "options": [
+      {"key": "A", "label": "Rectangle"},
+      {"key": "B", "label": "Triangle rectangle isocèle"},
+      {"key": "C", "label": "Pentagone"},
+      {"key": "D", "label": "Losange"}
+    ],
+    "answer": "B",
+    "explanation": "En pliant un carré le long de sa diagonale, nous obtenons deux triangles rectangles isocèles superposés. Le résultat visible est donc un triangle rectangle isocèle.",
+    "hint": "Une diagonale divise un carré en deux triangles identiques."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le volume d'un cube dont le côté mesure 2 cm ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "4 cm³"},
+      {"key": "B", "label": "6 cm³"},
+      {"key": "C", "label": "8 cm³"},
+      {"key": "D", "label": "12 cm³"}
+    ],
+    "answer": "C",
+    "explanation": "Le volume d'un cube est calculé comme la longueur d'un côté élevée à la puissance de trois. Pour un cube de 2 cm, le volume est 2 × 2 × 2 = 8 cm³. Il est important de se rappeler que le volume n'est pas simplement un produit d'une seule multiplication.",
+    "hint": "Pour le volume, multiplie trois fois la même longueur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de bases a un cylindre classique ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "B",
+    "explanation": "Un cylindre classique se compose de deux bases circulaires identiques et d'une surface latérale courbée. Parfois, les bases peuvent être oubliées, mais le cylindre typique comporte deux bases.",
+    "hint": "Un cylindre a deux extrémités planes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de faces a un prisme rectangulaire ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "4"},
+      {"key": "B", "label": "5"},
+      {"key": "C", "label": "6"},
+      {"key": "D", "label": "10"}
+    ],
+    "answer": "C",
+    "explanation": "Un prisme rectangulaire a 6 faces : 3 paires de faces parallèles de formes rectangulaires. Cela inclut les deux bases rectangulaires et les quatre faces latérales. Ne pas les compter toutes peut mener à une erreur.",
+    "hint": "Chaque paire de côtés rectangles forme les faces."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la forme de la base d'une pyramide à base pentagonale ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "Carré"},
+      {"key": "B", "label": "Rectangle"},
+      {"key": "C", "label": "Pentagone"},
+      {"key": "D", "label": "Triangle"}
+    ],
+    "answer": "C",
+    "explanation": "Comme son nom l'indique, une pyramide à base pentagonale possède une base en forme de pentagone. Cela signifie que la base a cinq côtés. La confusion pourrait provenir d'un malentendu sur la définition spécifique de la forme de la base.",
+    "hint": "Le nom de la pyramide donne un indice sur la forme de sa base."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le nombre de sommets d'une pyramide à base triangulaire ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "3"},
+      {"key": "B", "label": "4"},
+      {"key": "C", "label": "5"},
+      {"key": "D", "label": "6"}
+    ],
+    "answer": "B",
+    "explanation": "Une pyramide à base triangulaire a un sommet pour chaque angle du triangle et un sommet additionnel au sommet de la pyramide, totalisant 4 sommets. Le piège serait de ne compter que les sommets de la base.",
+    "hint": "Ajoute le sommet supérieur aux coins de la base."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la forme d'une vue de dessus d'un cube ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "Carré"},
+      {"key": "B", "label": "Cercle"},
+      {"key": "C", "label": "Triangle"},
+      {"key": "D", "label": "Rectangle"}
+    ],
+    "answer": "A",
+    "explanation": "Vu de dessus, un cube apparaît comme un carré puisque toutes ses faces sont carrées. Cela peut créer de la confusion si l'on perçoit mentalement un angle différent du dessus.",
+    "hint": "Toutes les faces du cube sont carrées."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de faces possède une pyramide à base triangulaire ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "3"},
+      {"key": "B", "label": "4"},
+      {"key": "C", "label": "5"},
+      {"key": "D", "label": "6"}
+    ],
+    "answer": "B",
+    "explanation": "Une pyramide à base triangulaire a 3 faces en triangle et la base triangulaire elle-même, totalisant 4 faces. Le piège serait de confondre le nombre de côtés de la base avec le total des faces.",
+    "hint": "N'oublie pas d'inclure la base dans ton compte."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'arêtes possède un prisme hexagonal ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "6"},
+      {"key": "B", "label": "12"},
+      {"key": "C", "label": "18"},
+      {"key": "D", "label": "24"}
+    ],
+    "answer": "C",
+    "explanation": "Un prisme hexagonal a 6 arêtes sur chaque base et 6 arêtes reliant les bases, totalisant 18 arêtes. La confusion pourrait être causée par l'omission des arêtes verticales qui joignent les sommets des deux bases.",
+    "hint": "Comptez toutes les connexions entre les sommets."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de faces le patron d'un cube comporte-t-il ?",
+    "prompt": "Considérez un patron d'un cube complètement déplié.",
+    "options": [
+      {"key": "A", "label": "4"},
+      {"key": "B", "label": "5"},
+      {"key": "C", "label": "6"},
+      {"key": "D", "label": "8"}
+    ],
+    "answer": "C",
+    "explanation": "Un cube comporte 6 faces composées de carrés, et chaque patron de cube, une fois déplié, montre ces 6 faces. Certaines confusions peuvent venir de patrons qui semblent afficher plus ou moins de faces.",
+    "hint": "Un cube a le même nombre de faces, déplié ou non."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la forme de la base d'un prisme rectangulaire ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "Carré"},
+      {"key": "B", "label": "Rectangle"},
+      {"key": "C", "label": "Triangle"},
+      {"key": "D", "label": "Hexagone"}
+    ],
+    "answer": "B",
+    "explanation": "La base d'un prisme rectangulaire est un rectangle, bien qu'il soit parfois confondu avec un carré, car un carré est un cas particulier de rectangle.",
+    "hint": "La base d'un solide rectangulaire imite sa forme générale."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle forme obtient-on en dépliant un cône à partie circulaire ?",
+    "prompt": "Imaginez que vous découpez le long du côté du cône et le dépliez à plat.",
+    "options": [
+      {"key": "A", "label": "Rectangle"},
+      {"key": "B", "label": "Cercle"},
+      {"key": "C", "label": "Secteur circulaire"},
+      {"key": "D", "label": "Triangle isocèle"}
+    ],
+    "answer": "C",
+    "explanation": "En dépliant un cône, la partie circulaire s'étend en un secteur de cercle proportionnel à la circonférence de la base. Cela ressemble à une part de pizza, et non à un simple cercle ou à une forme plane géométrique.",
+    "hint": "Considérez la portion de cercle contenue dans le cône."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces patrons peut être replié en un cube ?",
+    "prompt": "Examinez plusieurs arrangements de carrés.",
+    "options": [
+      {"key": "A", "label": "En T"},
+      {"key": "B", "label": "En croix"},
+      {"key": "C", "label": "En ligne droite"},
+      {"key": "D", "label": "En L inversé"}
+    ],
+    "answer": "B",
+    "explanation": "Seul le patron en croix peut être replié en un cube, car il permet de couvrir toutes les six faces sans laisser de trous. Un agencement en ligne droite, ou avec une lettre formée, laisse des faces non adjacentes.",
+    "hint": "Pensez à couvrir chaque face sans superposition."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la surface visible d'une pyramide à base carrée vue de dessus ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "Carré"},
+      {"key": "B", "label": "Triangle"},
+      {"key": "C", "label": "Petit cône"},
+      {"key": "D", "label": "Pentagone"}
+    ],
+    "answer": "A",
+    "explanation": "Vu du dessus, une pyramide à base carrée apparaît comme un carré, qui est la projection de sa base. Contrairement à une vue latérale ou de face, toutes les autres formes de la pyramide ne sont pas apparentes.",
+    "hint": "Le dessus cache les autres faces pyramidales."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de petits cubes sans peinture sont présents dans un cube 4×4×4 peint à l'extérieur ?",
+    "prompt": "Considérez un cube 4x4x4 entièrement peint à l'extérieur.",
+    "options": [
+      {"key": "A", "label": "8"},
+      {"key": "B", "label": "16"},
+      {"key": "C", "label": "24"},
+      {"key": "D", "label": "64"}
+    ],
+    "answer": "A",
+    "explanation": "Seuls les cubes à l'intérieur, qui ne touchent l'extérieur que des faces non visibles en surface, ne sont pas peints. Dans un arrangement 4×4×4, un sous-cube 2×2×2 reste complètement non exposé et donc non peint.",
+    "hint": "Visualise les couches internes de cubes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Comment est une pyramide à base triangulaire vue de profil ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "Triangle"},
+      {"key": "B", "label": "Carré"},
+      {"key": "C", "label": "Rectangle"},
+      {"key": "D", "label": "Cercle"}
+    ],
+    "answer": "A",
+    "explanation": "Vu de profil, la pyramide à base triangulaire apparaît comme un triangle parce qu'un profil montre une face latérale convergeant en un point. L'erreur commune pourrait être de confondre avec la vue de face ou de dessus.",
+    "hint": "Seules deux lignes sont visibles dans le profil."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de petits cubes ont exactement une face peinte sur un cube 3×3×3 ?",
+    "prompt": "Un cube de 3×3×3 est peint à l'extérieur. Ensuite, on le découpe en cubes unitaires.",
+    "options": [
+      {"key": "A", "label": "6"},
+      {"key": "B", "label": "12"},
+      {"key": "C", "label": "18"},
+      {"key": "D", "label": "24"}
+    ],
+    "answer": "C",
+    "explanation": "Les cubes avec exactement une face peinte se trouvent au centre de chaque face du grand cube. En comptant 6 faces et chaque face ayant un centre de 3 petits cubes, on arrive à 18 cubes.",
+    "hint": "Chaque face centrale équipe 3 cubes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la vue de face d'un prisme pentagonal ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "Pentagone"},
+      {"key": "B", "label": "Carré"},
+      {"key": "C", "label": "Rectangle"},
+      {"key": "D", "label": "Triangle"}
+    ],
+    "answer": "C",
+    "explanation": "Un prisme pentagonal, vu de face, présente un rectangle si la base pentagonale est orientée horizontalement. La base vue de face, même si c'est un pentagone, est projetée en un rectangle.",
+    "hint": "La forme de la base ne change pas la silhouette latérale."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de petits cubes coins ont exactement trois faces peintes sur le cube 4x4x4 peint ?",
+    "prompt": "On considère un cube de 4x4x4 peint en rouge.",
+    "options": [
+      {"key": "A", "label": "4"},
+      {"key": "B", "label": "8"},
+      {"key": "C", "label": "12"},
+      {"key": "D", "label": "16"}
+    ],
+    "answer": "B",
+    "explanation": "Les cubes qui se trouvent aux coins d'un grand cube ont trois de leurs faces peintes. Pour un cube 4x4x4, il y a 8 coins, et donc 8 petits cubes ont 3 faces peintes.",
+    "hint": "Les coins sont toujours exposés sur trois côtés."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien d'arêtes a une pyramide hexagonale ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "12"},
+      {"key": "B", "label": "18"},
+      {"key": "C", "label": "9"},
+      {"key": "D", "label": "15"}
+    ],
+    "answer": "C",
+    "explanation": "Une pyramide hexagonale possède 6 arêtes autour de la base et 6 arêtes montant vers le sommet, soit un total de 12 arêtes. La confusion peut survenir en omettant d'inclure les verticales ou horizontales au total.",
+    "hint": "Le nombre de côtés de la base est la clé."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le volume d'un prisme rectangulaire de dimensions 3x2x5 ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "10"},
+      {"key": "B", "label": "15"},
+      {"key": "C", "label": "30"},
+      {"key": "D", "label": "60"}
+    ],
+    "answer": "D",
+    "explanation": "Le volume d'un prisme rectangulaire est la multiplication de sa longueur, sa largeur et sa hauteur. Pour un prisme 3x2x5, le calcul est 3 × 2 × 5 = 30. Ne pas l'oublier pourrait amener à ignorer une dimension.",
+    "hint": "Multiplie les trois dimensions."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le total des faces visibles sur un cube lorsqu'elles sont toutes exposées sauf une de la base ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "3"},
+      {"key": "B", "label": "5"},
+      {"key": "C", "label": "6"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "B",
+    "explanation": "Un cube possède 6 faces au total. Si l'une des faces étant sur le bas est cachée, cela signifie qu'il en reste 5 visibles. L'erreur courante est d'oublier que seul le bas est totalement masqué.",
+    "hint": "Cinq faces demeurent exposées."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien d'arêtes possède un tétraèdre régulier ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "4"},
+      {"key": "B", "label": "6"},
+      {"key": "C", "label": "8"},
+      {"key": "D", "label": "12"}
+    ],
+    "answer": "B",
+    "explanation": "Un tétraèdre régulier, une pyramide à base triangulaire, a 6 arêtes, car chaque sommet est connecté à trois autres. L'oubli de compter toutes les connexions entre sommets peut induire une erreur.",
+    "hint": "Chaque face triangulaire ajoute trois arêtes, mais il y a des arêtes communes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la surface visible d’un cube posé sur une table ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "4 faces"},
+      {"key": "B", "label": "5 faces"},
+      {"key": "C", "label": "6 faces"},
+      {"key": "D", "label": "3 faces"}
+    ],
+    "answer": "B",
+    "explanation": "Quand un cube est posé sur une table, seule la face en contact avec elle est cachée. Cela rend 5 faces visibles, car toutes les autres surfaces ne sont pas obstruées. La confusion arrive parfois en essayant de compter le cube complet.",
+    "hint": "La face inférieure est la seule masquée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de petits cubes doivent être alignés pour couvrir une arête d'un cube 5×5×5 ?",
+    "prompt": "Considère un cube 5x5x5 et visualise chaque arête peinte.",
+    "options": [
+      {"key": "A", "label": "3"},
+      {"key": "B", "label": "4"},
+      {"key": "C", "label": "5"},
+      {"key": "D", "label": "6"}
+    ],
+    "answer": "C",
+    "explanation": "Puisque l'arête du cube mesure 5 unités et que chacun de ses petits cubes mesure 1, il en faut 5 alignés pour couvrir une seule arête. Les erreurs apparaissent généralement avec des cubes non unis ou comptes incorrects de rangées.",
+    "hint": "Une arête atteint la longueur maximale du cube."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le nombre total de cubes non peints dans un arrangement de cubes 5×5×5 peint uniquement extérieur ?",
+    "prompt": "Imaginez un cube 5×5×5 entièrement peint sur ces surfaces extérieures puis découpé.",
+    "options": [
+      {"key": "A", "label": "27"},
+      {"key": "B", "label": "64"},
+      {"key": "C", "label": "54"},
+      {"key": "D", "label": "125"}
+    ],
+    "answer": "A",
+    "explanation": "Le cube initial étant un 5x5x5, comportant 125 petits cubes, il faut compter ceux vraiment cachés quand peints. Une structure 3x3x3 en son centre est invisible, soit 27 cubes non peints.",
+    "hint": "Seule la portion centrale d'un cube reste cachée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "En quoi consiste le résultat d’un prisme rectangulaire coupé selon un plan parallèle à la base ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "Deux prismes cubiques"},
+      {"key": "B", "label": "Deux prismes rectangulaires"},
+      {"key": "C", "label": "Surface circulaire"},
+      {"key": "D", "label": "Deux trapèzes"}
+    ],
+    "answer": "B",
+    "explanation": "Un prisme rectangulaire coupé parallèlement à sa base se divise en deux prismes, chacun avec des bases identiques, conservant ainsi la forme des prismes rectangulaires initiaux mais de hauteur réduite.",
+    "hint": "Couper parallèlement à sa base préserve la structure."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de triangles équilatéraux forme un tétraèdre régulier si chaque face est une de ces figures ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "3"},
+      {"key": "B", "label": "4"},
+      {"key": "C", "label": "6"},
+      {"key": "D", "label": "12"}
+    ],
+    "answer": "B",
+    "explanation": "Un tétraèdre régulier comprend 4 faces triangulaires équilatérales égales. L'erreur peut se produire par confusion avec les arêtes ou les angles au lieu des surfaces.",
+    "hint": "Compte une face par chaque triangle plein."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel solide résulte lorsque deux pyramides carrées sont jointes par leur base ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "Prisme hexagonal"},
+      {"key": "B", "label": "Prisme rectangulaire"},
+      {"key": "C", "label": "Octaèdre"},
+      {"key": "D", "label": "Pyramide hexagonale"}
+    ],
+    "answer": "C",
+    "explanation": "Joignant deux pyramides carrées par leur grande base, on obtient un octaèdre. Ce résultat peut prêter à confusion en pensant aux pyramides comme entités distinctes sans jointure à leur centre.",
+    "hint": "Deux bases carrées fusionnées forment cette figure."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de sommets sont visibles quand trois pyramides tétraédriques assemblées sont observées de dessus ?",
+    "prompt": "Trois tétraèdres identiques sont rassemblés en partant des faces basses.",
+    "options": [
+      {"key": "A", "label": "6"},
+      {"key": "B", "label": "4"},
+      {"key": "C", "label": "9"},
+      {"key": "D", "label": "7"}
+    ],
+    "answer": "D",
+    "explanation": "Vu de dessus, les tétraèdres se joignent par une seule face et laissent visibles 7 sommets. Les erreurs viennent souvent du mauvais comptage des faces en contact ou superposition.",
+    "hint": "Ne compte pas les sommets en contact."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le total de sections triangulaires dans l'intersection d'un tétraèdre avec un plan passant par deux arêtes parallèles ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "B",
+    "explanation": "Le plan coupe deux arêtes parallèles d'un tétraèdre sur deux points distincts de chaque arête, formant deux triangles équilatéraux. Ce calcul peut tromper en négligeant la topologie intérieure des intersections en plan.",
+    "hint": "Sans intersections multiples, chaque arête nature deux sections."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la surface totale d'un cône si le rayon de la base est 2 et la hauteur 4 ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "12π"},
+      {"key": "B", "label": "16π"},
+      {"key": "C", "label": "20π"},
+      {"key": "D", "label": "24π"}
+    ],
+    "answer": "A",
+    "explanation": "La surface totale d'un cône inclut la base et la surface latérale. Le calcul : la base est π × 2², et la surface latérale égale π × 2 × √(4² + 2²), donnant 12π. La confusion s'élève souvent avec une mauvaise application du théorème de Pythagore.",
+    "hint": "Inclure surface latérale (inq – base)."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le nombre total de sommets de deux prismes hexagonaux identiques accouplés par bases ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "12"},
+      {"key": "B", "label": "18"},
+      {"key": "C", "label": "24"},
+      {"key": "D", "label": "14"}
+    ],
+    "answer": "D",
+    "explanation": "En accouplant deux bases hexagonales, l'identité des bases centrales est combinée, formant ainsi un seul prisme plus grand. Deux fois six sommets réduits de par la couverture centrale valent 14.",
+    "hint": "Considérez les points sommets partagés."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de faces un solide constitué de deux hémisphères et un cylindre entre eux pourrait-il avoir ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "2"},
+      {"key": "B", "label": "3"},
+      {"key": "C", "label": "4"},
+      {"key": "D", "label": "5"}
+    ],
+    "answer": "B",
+    "explanation": "La structure offre trois parties telles qu'elles paraissent individuellement incorpore un cylindre et deux hémisphères, comprenant 1 cylindre central et les surfaces coursurées des hémis, confondues souvent à leur volume.",
+    "hint": "Comptez les surfaces extérieures, non le contour."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de côtés visibles forment un prisme hexagonal coupé transversalement ?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "5"},
+      {"key": "B", "label": "6"},
+      {"key": "C", "label": "7"},
+      {"key": "D", "label": "9"}
+    ],
+    "answer": "A",
+    "explanation": "Après la coupe transversale dans un prisme étagé, certaines faces sont mises à nu. Initialement à six côtés, la coupe révèle de nouvelles surfaces donnant lieu à cinq côtés visibles.",
+    "hint": "Chaque arête externe devient changement possible."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans une section plane passant par l'axe d'un cylindre, combien de côtés sont perçus?",
+    "prompt": null,
+    "options": [
+      {"key": "A", "label": "2"},
+      {"key": "B", "label": "4"},
+      {"key": "C", "label": "1"},
+      {"key": "D", "label": "3"}
+    ],
+    "answer": "B",
+    "explanation": "Quand un coupe traverse un cylindre par son axe longitudinal, la forme obtenue expose un rectangle formé par la hauteur et les rayons du cercle en largeur. Telle confusion pourrait résulter d'oublier la propre largeur externe.",
+    "hint": "Coupe un guide de validité sans perforation partout."
+  }
+]

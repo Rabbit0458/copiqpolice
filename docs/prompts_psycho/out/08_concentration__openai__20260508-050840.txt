@@ -1,0 +1,232 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « E » apparaît-elle dans cette phrase (sans distinction de casse) ?",
+        "prompt": "Comptez attentivement.",
+        "stimulus": "Epeler les LecErvEs exige de L'energie.",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7",
+        "explanation": "Les E apparaissent aux positions 1, 4, 10, 12, 15, 19, et 26, ce qui fait sept occurrences en tout. Attention au mot 'energie' qui contient deux E.",
+        "hint": "Cherchez les E indépendamment de la casse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans la suite ?",
+        "prompt": "Toutes les lettres sauf une suivent une alternance régulière.",
+        "stimulus": "A C E G I J K",
+        "options": ["C", "E", "G", "K"],
+        "answer": "K",
+        "explanation": "Toutes les lettres sauf K sont des voyelles ou suivent une alternance de toutes les deux positions, sauf K qui n'a pas de consonne sœur avant elle.",
+        "hint": "Vérifiez les paires voyelle-consonne."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de chiffres « 2 » apparaissent dans la suite ?",
+        "prompt": null,
+        "stimulus": "6 2 5 2 8 2 1",
+        "options": ["1", "2", "3", "4"],
+        "answer": "3",
+        "explanation": "Les chiffres 2 sont en positions 2, 4 et 6, ce qui fait trois occurrences. Il suffit de repérer chaque 2 dans la liste.",
+        "hint": "Concentrez-vous d'abord sur les chiffres répétés."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle séquence est strictement identique au modèle ?",
+        "prompt": "Modèle : 123-456-789",
+        "stimulus": "123-456-789",
+        "options": ["123-456-788", "123-455-789", "123-456-789", "124-456-789"],
+        "answer": "123-456-789",
+        "explanation": "La comparaison doit être faite chiffre par chiffre avec la référence du modèle. Seule la troisième option est exactement identique.",
+        "hint": "Vérifiez chaque groupe de chiffres séparément."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de voyelles contient le texte suivant (a, e, i, o, u) ?",
+        "prompt": "Ignorez les accents et casse.",
+        "stimulus": "Un éléphant observe une orange.",
+        "options": ["12", "10", "14", "11"],
+        "answer": "14",
+        "explanation": "Comptez chaque voyelle dans les phrases : Un(1), éléphant(2), observe(3), une(2), orange(4). En tout, cela fait 12 voyelles.",
+        "hint": "Notez que a et e sont omniprésents."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans la suite suivante ?",
+        "prompt": "Vérifiez chaque lettre individuellement.",
+        "stimulus": "L M N P Q S T",
+        "options": ["N", "P", "Q", "S"],
+        "answer": "N",
+        "explanation": "Les lettres suivantes suivent l'alternance de consonnes uniquement avec saut de deux : M, P, S. Seule N est avec la suite directe.",
+        "hint": "Les lettres impaires sont importantes."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la voyelle « A » apparaît-elle dans cette phrase (en majuscule ou minuscule) ?",
+        "prompt": "Comptez les A majuscules comme minuscules.",
+        "stimulus": "Avril et Alison adorent apprendre à pArler.",
+        "options": ["4", "5", "6", "7"],
+        "answer": "6",
+        "explanation": "Comptez les positions où A apparaît : Avril(1), Alison(1), adorent(2), apprendre(3), à(1), parler(4), soit 6 A en tout. Notez les majuscules et minuscules.",
+        "hint": "Revoyez les fins de mot comme début de mot."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle séquence est identique au modèle ?",
+        "prompt": "Modèle : *&^%$#@!",
+        "stimulus": "*&^%$#@!",
+        "options": ["*^&%$#@!", "*&^%$#@!", "*&^%$#!!", "*&^%$#@$"],
+        "answer": "*&^%$#@!",
+        "explanation": "Comparaison caractère par caractère révèle que seule la 2e option suit exactement le modèle. Les autres ont une erreur de placement ou de caractère.",
+        "hint": "Notez l'ordre exact des symboles."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de voyelles cette phrase contient-elle ?",
+        "prompt": "Incluez a, e, i, o, u, y. Casse insensible.",
+        "stimulus": "L'oeil aiguisé voit mieux l’objet.",
+        "options": ["10", "12", "13", "14"],
+        "answer": "13",
+        "explanation": "L(0) + oeil(2) + aiguisé(5) + voit(1) + mieux(2) + l(0) + objet(2). Total = 13 voyelles trouvées lorsque l'on compte chaque rythme phonétique.",
+        "hint": "Concentrez-vous sur chaque mot individuellement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de fois la lettre « T » majuscule apparaît-elle ?",
+        "prompt": "Attention à ne compter que les majuscules.",
+        "stimulus": "Test TMata vectors usaTder.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Test(1), TMata(1), vectors(0), usaTder(1). Attention aux mots inconsidérément majuscules.",
+        "hint": "Concentrez-vous sur les majuscules uniquement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence est strictement identique au modèle ?",
+        "prompt": "Modèle : ZY-XW-VU",
+        "stimulus": "ZY-XW-VU",
+        "options": ["ZY-XW-VV", "ZY-XW-VU", "YY-XW-VU", "ZZ-XW-VU"],
+        "answer": "ZY-XW-VU",
+        "explanation": "En comparant chaque lettre, seule la deuxième option est identique au modèle avec exactitude. Les autres séquences sont modifiées soit en lettres, soit en chiffres.",
+        "hint": "Lisez chaque segment séparément."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel chiffre est l'intrus dans cette suite ?",
+        "prompt": "Tous les chiffres suivent une règle mathématique.",
+        "stimulus": "5 10 20 25 40 50 55",
+        "options": ["10", "20", "25", "50"],
+        "answer": "25",
+        "explanation": "La suite suit un cycle de multiplication par addition de 5 : 5(×2=10), 10(×2=20), mais 25 ne suit pas ce cycle et en fait un chiffre additionné.",
+        "hint": "Vérifiez la règle multiplicateur."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de voyelles contient cette phrase ?",
+        "prompt": "Comptez-les soigneusement, même les répétées.",
+        "stimulus": "Un vent léger souffle paisiblement.",
+        "options": ["11", "12", "13", "14"],
+        "answer": "12",
+        "explanation": "Un(1) + vent(0) + léger(2) + souffle(2) + paisiblement(6) = 11 voyelles. Par contre, considérez le mot léger avec l'accent.",
+        "hint": "Les proportions des mots qui finissent en e sont significatives."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence est identique au modèle de mathématiques ?",
+        "prompt": "Modèle : °°--==++",
+        "stimulus": "°°--==++",
+        "options": ["°°--=:++", "°°--==++", "°°--==+*", "°==--==++"],
+        "answer": "°°--==++",
+        "explanation": "Chaque caractère doit être exact. Seul le modèle 2 suit toutes les directives sans modifications de symboles ou de ponctuation.",
+        "hint": "Lisez minutieusement chaque caractère."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de mots avec la lettre 'i' sont présents ?",
+        "prompt": "Considérez chaque mot contenant 'i' au moins une fois.",
+        "stimulus": "Larry innovates with intrinsic drive in mind.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Les mots avec la lettre « i » sont : innovates(1), intrinsic(1), drive(1), mind(1). Le décompte doit considérer chaque mot avec au moins un 'i'.",
+        "hint": "Cherchez chaque occurrence contenant 'i'."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de fois la lettre « N » majuscule ou minuscule apparaît-elle ?",
+        "prompt": "Ne comptez pas les 'n' dans les articles et conjonctions.",
+        "stimulus": "Nathan n’a jamais négocié une Nation.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5",
+        "explanation": "Nathan(1) + négocié(2) + Nation(1) + une(1) = 5 N. Se méfier du 'n' dans les conjonctions et articles qui ne sont pas inclus.",
+        "hint": "Vérifiez ce qui constitue un 'vrai' mot."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de fois la lettre « G » apparaît-elle en majuscule ?",
+        "prompt": "Ne comptez que les G en majuscule.",
+        "stimulus": "Gagner de l'or ne Gratifie pas Grandes ambitions globales.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Gagner(1), Gratifie(1), Grandes(1), globales(0) = 4 G en majuscules. Les majuscules initiales des mots doivent être repérées.",
+        "hint": "Recherchez la majuscule spécifique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle séquence est exactement identique au modèle d'éléments chimiques ?",
+        "prompt": "Modèle : Hg-Ar-Kr-Co-Cu",
+        "stimulus": "Hg-Ar-Kr-Co-Cu",
+        "options": ["Hg-Ar-Kr-Co-C", "Cu-Ar-Kr-Co-Cu", "Hg-Ar-Kr-Co-Cu", "Cu-Co-Kr-Ar-Hg"],
+        "answer": "Hg-Ar-Kr-Co-Cu",
+        "explanation": "En regardant chaque double symbole d'éléments, le modèle exact se trouve dans la troisième option. Les autres ont des inversions ou modifications.",
+        "hint": "Notez chaque symbole chimique précisément."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de consonnes cette phrase contient-elle ?",
+        "prompt": "Ignorez toutes les voyelles.",
+        "stimulus": "La profondeur des océans inspire mystère.",
+        "options": ["16", "17", "18", "19"],
+        "answer": "18",
+        "explanation": "Phrase par phrase : profondeur(9), des(1), océans(2), inspire(4), mystère(2). Attention à ne pas sous-estimer les consonnes invisibles.",
+        "hint": "Prenez les autres lettres restantes après avoir décompté les voyelles."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de chiffres impairs apparaissent dans la suite suivante ?",
+        "prompt": null,
+        "stimulus": "8 1 4 7 9 2 5 3 6",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "explanation": "Les chiffres impairs sont : 1, 7, 9, 5, 3, ce qui en fait 5 au total. Assurez-vous de remarquer tous les nombres entre les chiffres.",
+        "hint": "Identifiez chaque nombre par sa parité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de mots à 5 lettres figurent dans ce texte ?",
+        "prompt": "Ne comptez que les mots de précisément 5 lettres.",
+        "stimulus": "Le fleuve coule lentement sous le soleil levant.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Les mots 'fleuve'(1), 'coule'(1), et 'sous'(0) sont inclus. Comptez attentivement chaque lettre dans chaque mot pour une vérification.",
+        "hint": "Centre chaque mot sous vos doigts."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien d'occurrences du chiffre '1' apparaissent dans cette suite ?",
+        "prompt": null,
+        "stimulus": "1 21 11 31 41 13 14",
+        "options": ["4", "5", "6", "7"],
+        "answer": "6",
+        "explanation": "Les chiffres '1' sont présents dans : 1(1), 21(2), 11(2) et ainsi de suite. Il est facile de manquer les multiples occurrences dans une même proximité.",
+        "hint": "Concentrez-vous sur chaque multiple '1'."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle séquence de pictogramme est identique au modèle ?",
+        "prompt": "Modèle : ☀️🌧️🌈⛄",
+        "stimulus": "☀️🌧️🌈⛄",
+        "options": ["☀️☁️🌈⛄", "☀️🌧️⛅⛄", "☀️🌧️🌈⛄", "⛅🌧️🌈⛄"],
+        "answer": "☀️🌧️🌈⛄",
+        "explanation": "Une inspection minutieuse montre que seul le troisième ensemble de symboles suit le modèle initial. Chaque autre option a un pictogramme modifié ou ajouté.",
+        "hint": "Visualisez chaque symbole distinctement."
+    }
+]

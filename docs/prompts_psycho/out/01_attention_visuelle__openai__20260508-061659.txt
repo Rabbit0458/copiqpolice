@@ -1,0 +1,310 @@
+[
+    {
+        "difficulty": "easy",
+        "text_a": "Mr Jacques habite au 12 rue Lavoisier.",
+        "text_b": "Mr Jacques habite au 12 rue Lavoisier.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Mercedes Benz noire immatriculée AA-456-BB",
+        "text_b": "Mercedes Benz blanche immatriculée AA-456-BB",
+        "is_true": false,
+        "explanation": "La couleur du véhicule diffère : « noire » dans text_a, « blanche » dans text_b. Les mots sont similaires en longueur et peuvent facilement être échangés lors de la lecture rapide."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Émilie Dupont vit à 10 avenue Victor Hugo.",
+        "text_b": "Émilie Dupont vit à 10 avenue Victor Hugo.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Le susnommé a 42 ans et porte des lunettes.",
+        "text_b": "Le susnommé a 43 ans et porte des lunettes.",
+        "is_true": false,
+        "explanation": "Une légère différence d'âge : « 42 ans » contre « 43 ans ». Les chiffres sont visuellement proches et cela peut passer inaperçu lors d'une lecture rapide."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Sa voiture est verte immatriculée BC-789-DE.",
+        "text_b": "Sa voiture est rouge immatriculée BC-789-DE.",
+        "is_true": false,
+        "explanation": "La couleur du véhicule change de « verte » à « rouge ». La différence se situe au début de l'adjectif de couleur, ce qui peut passer inaperçu pour un survol rapide du texte."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Le propriétaire se nomme Albert Martin.",
+        "text_b": "Le propriétaire se nomme Albert Martin.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "La maison de Jules se trouve au 23 ter.",
+        "text_b": "La maison de Jules se trouve au 23 tris.",
+        "is_true": false,
+        "explanation": "Erreur de frappe : « ter » est écrit « tris ». Les erreurs de frappe sur les lettres proches peuvent être difficiles à détecter, surtout à la fin d'un mot."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Immatriculation CB-123-FV",
+        "text_b": "Immatriculation CB-123-FV",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Lucie a réservé pour six personnes.",
+        "text_b": "Lucie a réservé pour sil personnes.",
+        "is_true": false,
+        "explanation": "La différence réside dans « six » qui devient « sil ». Les lettres 'x' et 'l' peuvent se ressembler lors d'une lecture rapide et distraite."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Rapport du 17/09/2023 signé par Maître Beau",
+        "text_b": "Rapport du 17/09/2023 signé par Maître Beau",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Camille a adopté un Chat.",
+        "text_b": "Camille a adopté un chien.",
+        "is_true": false,
+        "explanation": "La différence se situe dans l'animal adopté : « Chat » devient « chien ». Ces mots désignent des animaux différents, mais la similitude phonétique peut tromper l'œil."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Gilles Dupuis, né le 1985.",
+        "text_b": "Gilles Dupuis, né en 1985.",
+        "is_true": false,
+        "explanation": "Préposition incorrecte : « le » au lieu de « en ». Ce genre d'erreur typographique peut être facilement ignoré, car il apparaît petit et insignifiant."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Alice a une montre en or.",
+        "text_b": "Alice a une montre en or.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Éric possède un vélo et une voiture.",
+        "text_b": "Éric possède un vélo et un voiture.",
+        "is_true": false,
+        "explanation": "Le déterminant possessif est incorrect : « une » est remplacé par « un ». Cette erreur peut être négligée, car l'œil s'attend à des phrases grammaticalement correctes."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Sa maison est au 23 rue des Lilas.",
+        "text_b": "Sa maison est au 23 rue des Lilas.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Phoebe a un chat nommé Simba",
+        "text_b": "Phoebe a un chat nommé Siba",
+        "is_true": false,
+        "explanation": "Erreur de lettre dans le nom : « Simba » devient « Siba ». Les deux lettres sont proches visuellement et peuvent facilement être confondues."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Le code est 4567",
+        "text_b": "Le code est 4567",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "L'homme portait un manteau bleu et une écharpe rayée.",
+        "text_b": "L'homme portait un manteau bleu et une écharpe rayé.",
+        "is_true": false,
+        "explanation": "Erreur d'accord : « rayée » doit être au féminin mais est écrit « rayé ». Cette différence peut passer inaperçue à cause de la petite différence de terminaison."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le témoin a vu la plaque d'immatriculation CT-345-DF.",
+        "text_b": "Le témoin a vu la plaque d'immatriculation CT-345-DF.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Mme Lefèvre, née le 11 mai 1978, a été entendue par la police.",
+        "text_b": "Mme Lefèvre, née le 11 mai 1978, a été entendue par la police.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Rendez-vous à la place de la Concorde à 18h30.",
+        "text_b": "Rendez-vous à la place de la Concorde à 18h00.",
+        "is_true": false,
+        "explanation": "L'heure du rendez-vous est différente : « 18h30 » dans text_a et « 18h00 » dans text_b. La similitude des chiffres peut entraîner une confusion rapide."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le 15 août 2023, un vol a été signalé boulevard Saint-Germain.",
+        "text_b": "Le 15 aout 2023, un vol a été signalé boulevard Saint-Germain.",
+        "is_true": false,
+        "explanation": "Un accent est manquant : « août » devient « aout ». Les accents sont souvent négligés à cause de leur petite taille et de leur position en haut des lettres."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "L'accident a eu lieu rue de la Paix vers 14h.",
+        "text_b": "L'accident a eu lieu rue de la Paix vers 14h.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Jean Lenoir a déposé plainte pour vol le 5 mars 2023.",
+        "text_b": "Jean Lenoir a déposé plainte pour vol le 06 mars 2023.",
+        "is_true": false,
+        "explanation": "Différence subtile dans la date : « 5 mars » dans text_a, « 06 mars » dans text_b. Les dates sont cruciales et leur confusion peut mener à des malentendus sérieux."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Son véhicule, une Citroën C3, était garé près du parc.",
+        "text_b": "Son véhicule, une Citroën C3, était garé près du parc.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Il mesurait environ 1,85 mètre avec une carrure imposante.",
+        "text_b": "Il mesurait environ 1,85 mètre avec une carrure imposante.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le suspect est décrit comme ayant une barbe et des lunettes.",
+        "text_b": "Le suspect est décrit comme ayant une barbe et des lunettez.",
+        "is_true": false,
+        "explanation": "Faute de frappe dans le pluriel de « lunettes », écrit « lunettez ». Cette petite différence à la fin d'un mot peut être facilement négligée."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "L'incident a eu lieu le 21 février 2023 vers 3h15 du matin.",
+        "text_b": "L'incident a eu lieu le 21 février 2023 vers 3h15 du matin.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Reçu le 20 janvier 2023 à 11h, par L. Dupuis.",
+        "text_b": "Reçu le 20 janvier 2023 à 11h, par L. Dupuis.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Il portait une chemise bleue avec un pantalon gris.",
+        "text_b": "Il portait une chemise bleue avec un pantalon gris.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La caméra de surveillance est située à l'angle Nord-Est.",
+        "text_b": "La caméra de surveillance est située à l'angle Nord-Ouest.",
+        "is_true": false,
+        "explanation": "Le point cardinal a varié : « Nord-Est » pour text_a, « Nord-Ouest » pour text_b. Les mots liés à la direction sont souvent pris pour acquis et un glissement de texte inattendu peut créer la confusion."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le 21 janvier 2023, une voiture rouge s'est arrêtée devant le commerce vers midi, puis est partie trente minutes plus tard.",
+        "text_b": "Le 21 janvier 2023 une voiture rouge s'est arrêtée devant le commerce vers midi, puis est partie trente minutes plus tard.",
+        "is_true": false,
+        "explanation": "Une différence subtile se trouve dans l'omission de la virgule après la date dans text_b. Un œil non attentif peut facilement passer à côté de cette ponctuation manquante, surtout dans un texte long."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Article 312-1 du code pénal : Le braquage est défini comme l'action de s'emparer de biens appartenant à autrui sous la menace d'une arme.",
+        "text_b": "Article 312-1 du code pénal : Le braquage est défini comme l'action de s'emparer de biens appartenant à autrui sous la menace d'une arne.",
+        "is_true": false,
+        "explanation": "Différence d'une lettre sur le mot final, où « arme » est écrit « arne ». Les lettres 'm' et 'n' étant visuellement proches, cette erreur peut facilement échapper à l'attention du lecteur."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon le témoignage de Mme Laurent, l'incident s'est produit à la sortie du magasin vers une heure du matin, au moment où la sécurité était moins présente.",
+        "text_b": "Selon le témioignage de Mme Laurent, l'incident s'est produit à la sortie du magasin vers une heure du matin, au moment où la sécurité était moins présente.",
+        "is_true": false,
+        "explanation": "Il y a une erreur de frappe dans text_b : « témoignage » est écrit « témioignage ». L'insertion d'un caractère supplémentaire peu familier peut amener le lecteur à ne pas remarquer l'erreur cachée dans le mot."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le PV mentionne qu'à 14h02, un homme a été aperçu en train de courir sur le boulevard, vêtu d'une veste rouge et portant un sac à dos noir.",
+        "text_b": "Le PV mentionne qu'à 14h02, un homme a été aperçu en train de courir sur le boulevard, vêtu d'une veste rouge et portant un sac à dos noir.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Lors de la fouille, un téléphone, des clés et un portefeuille contenant des documents d'identité ont été découverts dans la poche intérieure de sa veste.",
+        "text_b": "Lors de la fouille, un téléphone, des clés et un portefeuille contenant des documents d'identité ont été découvert dans la poche intérieure de sa veste.",
+        "is_true": false,
+        "explanation": "Erreur d'accord des participes passés : « découverts » est écrit « découvert ». Le contexte récurrent de ces mots peut induire en erreur toute personne surveillant rapidement le texte."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "À 16h45, le suspect a quitté les lieux précipitamment, laissant derrière lui des papiers éparpillés sur le sol détrempé par la pluie persistante.",
+        "text_b": "À 16h45, le suspect a quittez les lieux précipitamment, laissant derrière lui des papiers éparpillés sur le sol détrempé par la pluie persistante.",
+        "is_true": false,
+        "explanation": "Une erreur d'accord à « quitté » dans le text_b où il est écrit « quittez ». Une confusion grammaticale peut survenir facilement dans le contexte des verbes conjugués, surtout pour ces petites variations."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le véhicule blanc s'est immobilisé au feu rouge, et le conducteur a ensuite enfilé des lunettes de soleil avant de repartir.",
+        "text_b": "Le véhicule blanc s'est immobilisé au feu rouge, et le conducteur a ensuite enfilé des lunettes de soleil avant de repartir.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Il est à noter que le vol a eu lieu entre 13h15 et 13h45.",
+        "text_b": "Il est à noe que le vol a eu lieu entre 13h15 et 13h45.",
+        "is_true": false,
+        "explanation": "Texte_a contient l'erreur subtile de « noter » écrit « noe » dans text_b. Les correcteurs automatiques ignorent souvent les erreurs d'orthographe, rendant les petites erreurs de cette nature difficiles à déceler."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le témoin a vu un individu vêtu d'un manteau noir traverser la rue en direction du café, situé à l'angle de la rue Saint-Martin.",
+        "text_b": "Le témoin a vu un individu vêtu d'un manteau noir traverser la rue en direction du café, situé à l'angle de la rue Saint Martin.",
+        "is_true": false,
+        "explanation": "La différence réside dans l'hyphénisation de « Saint-Martin » et « Saint Martin ». Ces éléments typographiques, bien que petits, peuvent mener à des différences importantes dans l'interprétation."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "En consultant la vidéo de surveillance, on s'aperçoit que le suspect portait une valise grise et qu'il marchait rapidement vers la gare.",
+        "text_b": "En consultant la vidéo de surveillance, on s'aperçoit que le suspect portait une valise grise et qu'il marchait rapidement vers la gare.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "L'individu a laissé une empreinte de chaussure en marchant sur le ciment frais, ce qui permettra à la police d’avoir une piste à suivre.",
+        "text_b": "L'individu a laissé une empreinte de chaussure en marchant sur le ciment frais, ce qui permettra à la police d'avoir une piste à suivre.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "L'article 432-10 du code pénal stipule que toute atteinte à l'intégrité physique ou psychique d'une personne sera punie de dix ans de réclusion.",
+        "text_b": "L'article 432-10 du code pénal stipule que toute atteinte à l'intégrité physique ou psychique d'une personne sera punie de dix ans de réclusion.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le chien de race labrador se promenait sans laisse dans le parc, où plusieurs enfants jouaient à proximité, causant une légère panique.",
+        "text_b": "Le chien de race labrador se promenait sans laisse dans le parc, où plusieurs enfants jouaient à proximité causant une légère panique.",
+        "is_true": false,
+        "explanation": "Une virgule est manquante avant \"causant\" dans text_b. L'absence de signes de ponctuation peut changer la fluidité du texte, rendant un passage complexe difficile à reconnaître à première vue."
+    }
+]

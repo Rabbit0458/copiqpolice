@@ -1,0 +1,561 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on déduire de cet énoncé ?",
+    "prompt": "Tous les roses sont des fleurs. Cette tulipe est rose.",
+    "options": [
+      "Cette tulipe est une fleur",
+      "Cette tulipe est une herbe",
+      "Cette tulipe n'est pas une fleur",
+      "Cette tulipe est un arbre"
+    ],
+    "answer": "Cette tulipe est une fleur",
+    "explanation": "Il s'agit d'un syllogisme simple. Étant donné que tous les roses sont des fleurs et que cette tulipe est rose, on conclut que cette tulipe est une fleur. La difficulté était d'éviter de confondre avec d'autres catégories végétales qui n'ont pas été mentionnées."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la position de Maxime après avoir dépassé le 2ème coureur ?",
+    "prompt": "Maxime court vite et dépasse le 2ème coureur de la course.",
+    "options": [
+      "1ère",
+      "2ème",
+      "3ème",
+      "4ème"
+    ],
+    "answer": "2ème",
+    "explanation": "Lorsque Maxime double le 2ème, il prend sa place, devenant ainsi 2ème. Ce classique piège fait souvent penser qu'en doublant le 2ème, Maxime serait premier, mais le premier reste toujours devant."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Comment se compare la taille de Sophie par rapport à ses amies ?",
+    "prompt": "Sophie est plus grande que Camille, et Camille est plus grande que Léa.",
+    "options": [
+      "Sophie est la plus grande",
+      "Léa est plus grande que Sophie",
+      "Camille est plus grande que Sophie",
+      "Sophie est plus petite que Léa"
+    ],
+    "answer": "Sophie est la plus grande",
+    "explanation": "Dans cette situation, nous établissons une chaîne de taille : Sophie > Camille > Léa. Sophie étant plus grande que toutes les autres, elle est la plus grande du groupe. Attention à ne pas inverser les relations."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel âge a Paul aujourd'hui ?",
+    "prompt": "Paul a trois ans de plus que sa sœur. Sa sœur a 10 ans.",
+    "options": [
+      "7 ans",
+      "10 ans",
+      "13 ans",
+      "15 ans"
+    ],
+    "answer": "13 ans",
+    "explanation": "En ajoutant l'écart de trois ans à l'âge de sa sœur de 10 ans, Paul a donc 13 ans aujourd'hui. Une erreur commune est de ne pas ajouter correctement les années."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion est correcte ?",
+    "prompt": "Toutes les balles bleues sont en plastique. Cette balle est bleue.",
+    "options": [
+      "Cette balle est en plastique",
+      "Cette balle est en métal",
+      "Cette balle est en bois",
+      "Cette balle est en verre"
+    ],
+    "answer": "Cette balle est en plastique",
+    "explanation": "Ce syllogisme suit la règle de base: si toutes les balles bleues sont en plastique et que nous avons une balle bleue, alors elle doit être en plastique. Il faut éviter de présumer des matériaux qui ne sont pas en rapport avec bleu."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est l'aîné ?",
+    "prompt": "Julie est plus âgée que Nina, qui est à son tour plus âgée que Carole.",
+    "options": [
+      "Julie",
+      "Nina",
+      "Carole",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Julie",
+    "explanation": "On ordonne : Julie > Nina > Carole, donc Julie est l’aînée. Le piège réside dans la possibilité de mal comprendre les données temporelles présentées."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qu'obtient-on par transitivité ?",
+    "prompt": "Si tous les triangles sont des figures, alors tous les carrés sont des figures. Tous les triangles sont rouges.",
+    "options": [
+      "Tous les carrés sont rouges",
+      "Tous les triangles sont des figures",
+      "Aucune figure n'est rouge",
+      "Tout ce qui est rouge est une figure"
+    ],
+    "answer": "Tous les triangles sont des figures",
+    "explanation": "Nous utilisons ici la transitivité logique : si tous les triangles sont des figures, de même que tous les triangles sont rouges, cela ne nous donne que la conclusion que tous les triangles sont des figures. Évitez d'étendre cette propriété aux carrés ou à la couleur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Où se trouve Cédric après avoir dépassé le 2ème coureur ?",
+    "prompt": "Cédric court dans une course et dépasse le 2ème coureur.",
+    "options": [
+      "1ère",
+      "2ème",
+      "3ème",
+      "4ème"
+    ],
+    "answer": "2ème",
+    "explanation": "Cédric prenant la place du 2ème après le dépassement, il devient lui-même 2ème. Ne confondez pas cette action avec devenir premier, car le premier ne change pas initialement de place."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus jeune maintenant ?",
+    "prompt": "Lucas est plus jeune que Maxime, et Maxime est plus jeune que Thomas.",
+    "options": [
+      "Lucas",
+      "Maxime",
+      "Thomas",
+      "On ne sait pas"
+    ],
+    "answer": "Lucas",
+    "explanation": "La chaîne d'âge indique : Lucas < Maxime < Thomas. Lucas étant en début de chaîne, il est le plus jeune. Assurez-vous de ne pas inverser les comparaisons lors de l'interprétation."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion correcte ?",
+    "prompt": "Si tous les livres sont des objets et ce livre est rouge.",
+    "options": [
+      "Ce livre est un objet",
+      "Ce livre est blanc",
+      "Ce livre n'est pas un objet",
+      "On ne peut rien en dire"
+    ],
+    "answer": "Ce livre est un objet",
+    "explanation": "Puisque tous les livres sont des objets et ce livre est inclus dans la catégorie des livres, il doit être un objet. L'erreur classique est de questionner la couleur, qui n'affecte pas catégoriquement le statut d'objet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui a la plus grande prime ?",
+    "prompt": "Jeanne reçoit plus que Lucas, et Lucas reçoit plus que Nina.",
+    "options": [
+      "Jeanne",
+      "Lucas",
+      "Nina",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Jeanne",
+    "explanation": "En classant: Jeanne > Lucas > Nina, Jeanne a la prime la plus élevée. L'erreur potentielle est de supposer que l'ordre pourrait changer sans information additionnelle."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel jour est l'anniversaire de Marie ?",
+    "prompt": "Marie est née la veille de l'anniversaire de son frère qui est le 10 avril.",
+    "options": [
+      "8 avril",
+      "9 avril",
+      "11 avril",
+      "12 avril"
+    ],
+    "answer": "9 avril",
+    "explanation": "Si le frère de Marie fête son anniversaire le 10 avril, alors Marie est née le jour précédent, c’est-à-dire le 9 avril. Le piège ici est de simplement faire un ajout au lieu d'une soustraction sur le jour du mois."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Différence importante à noter ?",
+    "prompt": "Toutes les voitures rouges sont rapides. Toutes les rapides ne sont pas rouges.",
+    "options": [
+      "Toutes les rapides sont des voitures",
+      "Certaines voitures rapides peuvent être d'autres couleurs",
+      "Toutes les voitures sont rouges",
+      "Aucune voiture rapide n'est rouge"
+    ],
+    "answer": "Certaines voitures rapides peuvent être d'autres couleurs",
+    "explanation": "Les prémisses affirment que la rapidité n'est pas exclusive aux voitures rouges. Ainsi, bien que toutes les rouges soient rapides (mais pas exclusivement elles), certaines rapides peuvent être d'autres couleurs. L'erreur à éviter est d'inférer une réciprocité qui n'existe pas."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Si tous les oiseaux peuvent voler et que la pie vole, que signifie cela ?",
+    "prompt": "Toutes les pies sont des oiseaux. Cette pie vole.",
+    "options": [
+      "Cette pie n'est pas un oiseau",
+      "Cette pie est un oiseau",
+      "Cette pie ne vole pas",
+      "On ne peut rien dire sur cette pie"
+    ],
+    "answer": "Cette pie est un oiseau",
+    "explanation": "Puisque toutes les pies sont des oiseaux, cette pie est clairement un oiseau. La partie sur le vol confirme juste ce qui est déjà présupposé pour les oiseaux pouvant voler. Attention aux pertes de focus sur l'hypothèse basique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui fait le plus de ventes ?",
+    "prompt": "Marc a plus de ventes que Julia, et Julia en a plus que Léa.",
+    "options": [
+      "Marc",
+      "Julia",
+      "Léa",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Marc",
+    "explanation": "Les données établissent clairement: Marc > Julia > Léa. Ainsi, Marc a le plus de ventes. On doit éviter d’interpréter erronément la séquence comme non transitive."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on conclure de cet énoncé ?",
+    "prompt": "Si tous les fruits sont sucrés, et que ce citron est un fruit.",
+    "options": [
+      "Ce citron est amer",
+      "Ce citron est sucré",
+      "Ce citron n'est pas un fruit",
+      "On ne peut rien dire sur ce citron"
+    ],
+    "answer": "Ce citron est sucré",
+    "explanation": "Grâce au syllogisme, si tous les fruits sont sucrés et ce citron est un fruit, alors ce citron doit être sucré. La confusion fréquente provient de supposer des variations gustatives sans base."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le lien entre les deux ?",
+    "prompt": "Tous les chiens aboient. Ce chien est calme lorsqu'il ne dort pas.",
+    "options": [
+      "Ce chien n'aboie jamais",
+      "Ce chien est un chat",
+      "Ce chien aboie quand il ne dort pas",
+      "Ce chien ne dort jamais"
+    ],
+    "answer": "Ce chien aboie quand il ne dort pas",
+    "explanation": "La première phrase affirme que tous les chiens aboient, ce qui inclut celui-ci sous ces conditions. Cependant, quand il est calme, il ne dort normalement pas. Prêtez attention à la condition de sommeil qui est non clarifiée mais supposée stable."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que déduit-on pour la course de Mathilde ?",
+    "prompt": "En double 2ème place, elle prend le kit de podium.",
+    "options": [
+      "Mathilde gagne la course",
+      "Mathilde finit deuxième",
+      "Mathilde finit troisième",
+      "Mathilde n'obtient pas de place"
+    ],
+    "answer": "Mathilde finit deuxième",
+    "explanation": "En doublant le deuxième, Mathilde prend sa place et finit donc deuxième. Il est commun de conclure qu'elle gagne automatiquement en premier, ce qui est ici incorrect car il y a toujours un premier qu’elle n’a pas dépassé."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle couleur est cet objet ?",
+    "prompt": "Les objets ronds sont verts. Tous les objets carrés sont bleus. Cet objet est rond.",
+    "options": [
+      "Cet objet est bleu",
+      "Cet objet est vert",
+      "Cet objet est rouge",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cet objet est vert",
+    "explanation": "Nous avons ici deux catégorisations : rond = vert et carré = bleu. Étant donné que cet objet est rond, il est nécessairement vert. Le piège pourrait être d'associer des couleurs incorrectes sans observation directe."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui gagne la course ?",
+    "prompt": "Anaïs court plus vite que Benoît. Chacun court plus vite que Claude. Mais Claude court plus vite que Dany.",
+    "options": [
+      "Anaïs",
+      "Benoît",
+      "Claude",
+      "Dany"
+    ],
+    "answer": "Anaïs",
+    "explanation": "En regroupant les vitesses: Anaïs > Benoît > Claude > Dany. Anaïs est donc la plus rapide et remporte la course. Il est facile de perdre le fil du personnage principal et confondre les vitesses relatives."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que se passe-t-il si Anne ne mange pas de pommes ?",
+    "prompt": "Si une pomme est mangée, alors Anne boit un verre d'eau. Anne ne boit pas d'eau.",
+    "options": [
+      "Anne a mangé une pomme",
+      "Anne n'a pas mangé de pomme",
+      "Anne a soif",
+      "Anne a mangé une pomme mais ne boit pas d'eau"
+    ],
+    "answer": "Anne n'a pas mangé de pomme",
+    "explanation": "Utilisant la contraposition : si Anne ne boit pas d'eau, alors elle n'a pas mangé de pomme. Le piège est de croire incorrectement qu'un lien inverse est possible sans base."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Si Pierre fête son anniversaire aujourd'hui, quel jour est-il ?",
+    "prompt": "L'anniversaire de Pierre tombe deux jours après celui de Sarah, qui est le 5 mai.",
+    "options": [
+      "5 mai",
+      "6 mai",
+      "7 mai",
+      "10 mai"
+    ],
+    "answer": "7 mai",
+    "explanation": "Si Sarah fête le 5 mai, deux jours plus tard est le 7 mai, jour de l'anniversaire de Pierre. Le piège commun est de mal additionner les jours, ne prenant que le jour d'après comme point de référence."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel attribut est précis pour cet objet ?",
+    "prompt": "Si quelque chose est en métal, alors c'est lourd. Ce klaxon est en métal.",
+    "options": [
+      "Ce klaxon est léger",
+      "Ce klaxon est lourd",
+      "Ce klaxon est fragile",
+      "Ce klaxon n'est pas en métal"
+    ],
+    "answer": "Ce klaxon est lourd",
+    "explanation": "En appliquant le modus ponens, nous savons que ce qui est en métal est lourd. Donc, cet objet en métal, le klaxon, est lourd. Évitez de chercher des caractéristiques inexistantes hors de l'énonciation donnée."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "À quelle couleur peut-on associer cet objet ?",
+    "prompt": "Toutes les boules jaunes ont des rayures. Les boules avec des rayures sont rouges. Cette boule est jaune.",
+    "options": [
+      "Cette boule est rouge",
+      "Cette boule est bleu",
+      "Cette boule est verte",
+      "Cette boule est à rayures"
+    ],
+    "answer": "Cette boule est à rayures",
+    "explanation": "Nous savons que toutes les boules jaunes ont des rayures et que cette boule est jaune, donc elle doit avoir des rayures. Ne confondez pas cela avec la présomption de la couleur rouge, qui n’est pas garantie pour toutes les rayures."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus jeune ?",
+    "prompt": "Claire est plus âgée que Léo. Lucas est plus jeune que Claire mais plus âgé que Léo.",
+    "options": [
+      "Claire",
+      "Léo",
+      "Lucas",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Léo",
+    "explanation": "En organisant les âges, nous avons : Claire > Lucas > Léo, donc Léo est le plus jeune. Le piège classique est de mal positionner un individu suite aux comparaisons multiples."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Pourquoi Julie n'est-elle pas à la fête ?",
+    "prompt": "Si Julie a un examen demain, elle reste à la maison. Julie a un examen demain.",
+    "options": [
+      "Julie est à la fête",
+      "Julie n'est pas à la maison",
+      "Julie est restée à la maison",
+      "Julie a annulé son examen"
+    ],
+    "answer": "Julie est restée à la maison",
+    "explanation": "Le modus ponens nous montre que si l'examen était prévu, elle devait rester à la maison. C’est la conclusion logique directe sans espaces pour des deviations ou supposition contradictoire."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel animal est actuellement en cage ?",
+    "prompt": "Dans une mangeoire, seule la girafe est laissée dehors, tandis que le zèbre et l'éléphant sont en cage.",
+    "options": [
+      "Girafe",
+      "Zèbre",
+      "Éléphant",
+      "Lion"
+    ],
+    "answer": "Zèbre",
+    "explanation": "Le prompt spécifie que le zèbre et l'éléphant sont en cage, confirmant que le zèbre est bel et bien en cage. Le piège ici est d’inclure des animaux autres que ceux mentionnés (par exemple, le lion), créant une confusion inutile."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle conclusion est correcte ?",
+    "prompt": "Tous les véhicules électriques nécessitent une charge. Cette voiture nécessite une charge.",
+    "options": [
+      "Cette voiture est électrique",
+      "Cette voiture est à essence",
+      "Cette voiture n'a pas besoin de charge",
+      "On ne peut pas conclure que la voiture soit électrique"
+    ],
+    "answer": "On ne peut pas conclure que la voiture soit électrique",
+    "explanation": "La prémisse est que tous les véhicules électriques nécessitent une charge, mais toutes les entités nécessitant une charge ne sont pas nécessairement électriques. Faire l'erreur d'attribuer l'électricité seulement sur la base de la charge est un faux pas de conclusion universelle."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Facile de deviner quelle clé est là ?",
+    "prompt": "La clé de sécurité est soit rouge soit verte, jamais les deux. Ce jour-là, elle n'est pas rouge.",
+    "options": [
+      "Elle est rouge",
+      "Elle est bleue",
+      "Elle est verte",
+      "On ne sait pas"
+    ],
+    "answer": "Elle est verte",
+    "explanation": "Étant donné la dichotomie dans le prompt, si ce n’est pas rouge, ça doit être vert. L'attention doit être portée à ne pas prendre en compte des couleurs autres que celles spécifiées initialement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de temps Han devra-t-il attendre ?",
+    "prompt": "Han met deux jours pour nettoyer un hangar seul et Kira met trois jours. Ensemble, combien de temps leur faudra-t-il ?",
+    "options": [
+      "1 jour",
+      "1.2 jours",
+      "1.25 jours",
+      "2 jours"
+    ],
+    "answer": "1.2 jours",
+    "explanation": "La vitesse combinée est de 1/2 + 1/3 = 5/6 hangar par jour. Par conséquent, il leur faut 1/(5/6) = 1.2 jours pour venir à bout du hangar. La difficulté est souvent de calculer correctement les taux combinés de travail."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l’âge actuel de Ana ?",
+    "prompt": "Ana a deux fois l'âge de son frère. Dans cinq ans, elle aura 1,5 fois son âge actuel.",
+    "options": [
+      "20 ans",
+      "22 ans",
+      "24 ans",
+      "26 ans"
+    ],
+    "answer": "24 ans",
+    "explanation": "Supposons x l'âge d'Ana, ce qui fait 2x = x + 5 + 5. Résolvant x, l'âge est alors 24. Outre l'erreur simple de calcul, l'enjeu est souvent l'inadéquation en posant l'équation avec adéquation des termes d'âge actuels."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel nombre manque à la séquence ?",
+    "prompt": "La suite qui débute par 1, 1, 2, 3 et continue en suivant la règle où chaque prochain nombre est la somme des deux précédents.",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": "5",
+    "explanation": "La suite est celle de Fibonacci. Si on additionne les deux derniers nombres (2 et 3), on trouve naturellement 5. L'erreur commune est de présumer un autre type de progression arithmétique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle couleur a l’habitation en position de coin ?",
+    "prompt": "Les maisons sont rouges, bleues, vertes et jaunes. La maison bleue n'est jamais près de la maison rouge; la maison verte est entre la bleue et la jaune.",
+    "options": [
+      "Rouge",
+      "Bleu",
+      "Jaune",
+      "Vert"
+    ],
+    "answer": "Jaune",
+    "explanation": "D'après les conditions, seule la maison jaune est positionnée à un des coins de suite à l'arrangement donné. Il est fréquent de négliger la position intermédiaire de la verte ce qui invalide l'ordre de coin."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Y a-t-il un moyen rapide de découper le gâteau ?",
+    "prompt": "Un gâteau doit être coupé en exactement huit morceaux avec trois coups de couteau droits.",
+    "options": [
+      "Impossible",
+      "Possible en 3 coupes",
+      "Possible en 4 coupes",
+      "Possible seulement en les cassant"
+    ],
+    "answer": "Possible en 3 coupes",
+    "explanation": "En effectuant deux coupes croisées pour obtenir quatre parts et un troisième en passant horizontalement à mi-hauteur du gâteau, huit morceaux égaux sont possibles. Evitez ici l'erreur de penser le problème seulement en dimensions."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel âge a Fatou aujourd'hui ?",
+    "prompt": "Fatou a le double de l'âge de Ranneix. Il y a dix ans, Ranneix avait dix ans.",
+    "options": [
+      "30 ans",
+      "28 ans",
+      "32 ans",
+      "36 ans"
+    ],
+    "answer": "32 ans",
+    "explanation": "Si Ranneix avait dix ans il y a dix ans, elle a actuellement 20 ans. Donc Fatou ayant le double de son âge est de 40 ans. La méprise commune se trouve dans la rectification temporelle d'âge à contre-courant."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle pourrait être la température demain ?",
+    "prompt": "Si aujourd'hui la température est la moitié de celle d’hier, demain sera double de celle d’aujourd’hui, qui est 10°C.",
+    "options": [
+      "20°C",
+      "25°C",
+      "30°C",
+      "40°C"
+    ],
+    "answer": "20°C",
+    "explanation": "Si aujourd'hui est 10°C, demain sera le double de 10°C, donc 20°C. Le piège réside souvent dans la confusion des relations entre demi, double et l’évolution du jour."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le total de fruits dans le panier ?",
+    "prompt": "Chelsey a trois fois le nombre de pommes que de poires. Il y a 12 pommes.",
+    "options": [
+      "18",
+      "20",
+      "26",
+      "30"
+    ],
+    "answer": "20",
+    "explanation": "Puisque Chelsey a trois fois plus de pommes que de poires, alors poires = pommes/3, soit poires = 4. Le total est alors 12 (pommes) + 4 (poires) = 16 fruits dans le panier. Il y a un risque de ne pas correctement compter les parts de fruits."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de cycles durent-ils pour achever ?",
+    "prompt": "Une machine réalise 12 cycles par seconde. Il en faut 3600 pour finir une tâche.",
+    "options": [
+      "1 minute",
+      "2 minutes",
+      "3 minutes",
+      "5 minutes"
+    ],
+    "answer": "5 minutes",
+    "explanation": "3600 cycles divisés par 12 cycles chaque seconde donnent 300 secondes, ce qui est 5 minutes. Il est facile de négliger la division correcte des cycles par la contrainte temporelle."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que mange-t-il pour dîner ?",
+    "prompt": "Il mange soit pâte ou poisson, jamais les deux le même jour. Aujourd’hui, piscine et poisson sont annulés; il devait aller à la piscine.",
+    "options": [
+      "Pâte",
+      "Escargots",
+      "Poisson",
+      "Rien"
+    ],
+    "answer": "Pâte",
+    "explanation": "En établissant la correspondance d'activités, il prend du poisson uniquement s'il ne va pas à la piscine. Puisque du poisson est dit annulé, le choix exclusif restant est la pâte. Précaution en cas de suppression incorrecte des alternatives."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Est-ce possible en une course ?",
+    "prompt": "A double le 2ème aucun de son groupe, et on suggère que le premier n’a pas bougé. La course à pied supporte les coureurs A à E.",
+    "options": [
+      "Possible",
+      "Impossible",
+      "Une seule chance",
+      "Il faut recourir"
+    ],
+    "answer": "Possible",
+    "explanation": "Si A double le deuxième positionné, il occupe sa place, valide sa 2ème position. Un nouveau premier doit attendre par une autre méthode. L'erreur est souvent de supposer que le premier est passé ou reste automatiquement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de ponts sont ouverts ?",
+    "prompt": "Il existe cinq ponts de différentes solidités. Les deux les plus solides doivent fermer, et en plus deux moindres. Il n'en reste qu'une.",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ],
+    "answer": "1",
+    "explanation": "Avec deux plus deux fermés, un reste donc ouvert. 1 pont libre suggère une sécurité. Le piège interprétatif est la confusion par associations solidaire ou d'autres éléments ajoutés."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que décide l’arbitre ?",
+    "prompt": "Les directives gouvernent les lumières vertes, rouges et jaunes. Si le vert ne s'affiche, l'une des deux autres ne doit pas et vice versa.",
+    "options": [
+      "Rouge allumée",
+      "Verte allumée",
+      "Jaune allumée",
+      "Aucune n'est permise"
+    ],
+    "answer": "Aucune n'est permise",
+    "explanation": "Aucune association habituelle des directives avec interventions claires entremêlées ne conduite à des résultats uniques pour multiples réglages. Se tromper souvent sur le rôle dual affichant des non accordés."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Trouve le solde final après les transactions ?",
+    "prompt": "Un portefeuille détient un montant initial et après deux ajouts de 3x puis un retrait de 2x donne son résultat.",
+    "options": [
+      "7x",
+      "9x",
+      "5x",
+      "3x"
+    ],
+    "answer": "5x",
+    "explanation": "Initialement, nous avons x, et ajoutons: 2x après 3x – 2x (les actions distinctives). Ceci nous porte à 5x. Il est fréquemment négligé d'intégrer des changements par étapes locaux."
+  }
+]

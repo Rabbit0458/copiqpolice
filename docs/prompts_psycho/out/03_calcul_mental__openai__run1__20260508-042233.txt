@@ -1,0 +1,9 @@
+{
+"difficulty": "Facile",
+"question": "Combien font 23 + 34 ?",
+"expression": "23 + 34",
+"options": ["46", "57", "51", "60"],
+"answer": "57",
+"explanation": "23 + 34 = 50 + 7 = 57.",
+"hint": "Additionne d'abord les dizaines puis les unités."
+ 	}

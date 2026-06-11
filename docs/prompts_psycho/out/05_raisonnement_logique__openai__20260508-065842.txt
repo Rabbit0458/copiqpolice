@@ -1,0 +1,522 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on déduire ?",
+    "prompt": "Tous les dauphins sont des mammifères. Flip est un dauphin.",
+    "options": [
+      "Flip est un oiseau",
+      "Flip est un mammifère",
+      "Flip n'est pas un mammifère",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Flip est un mammifère",
+    "explanation": "C'est un syllogisme classique où tous les dauphins sont des mammifères. Puisque Flip est un dauphin, il est nécessairement un mammifère par transitivité. Le piège ici serait de penser que des qualités peuvent être exclusives aux dauphins.",
+    "hint": "Utilise la transitivité des catégories."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion logique ?",
+    "prompt": "Tous les triangles ont trois côtés. Cette figure est un triangle.",
+    "options": [
+      "Cette figure n'a pas de côtés",
+      "Cette figure a deux côtés",
+      "Cette figure a trois côtés",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette figure a trois côtés",
+    "explanation": "Sachant que tous les triangles ont trois côtés et que la figure donnée est un triangle, la conclusion logique est qu'elle a trois côtés. Confondre nombre de côtés typique de figures différentes est le principal piège.",
+    "hint": "Souviens-toi de la définition de base d'un triangle."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'animal de Sophie ?",
+    "prompt": "Toutes les perruches sont des oiseaux. Kiwi est l'animal de Sophie, et Kiwi est une perruche.",
+    "options": [
+      "Kiwi est un chien",
+      "Kiwi est un oiseau",
+      "Kiwi est un mammifère",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Kiwi est un oiseau",
+    "explanation": "Tous les perruches sont des oiseaux d'après l'énoncé. Kiwi étant une perruche, il est donc un oiseau. Évitez de confondre le type avec d'autres catégories animales.",
+    "hint": "Applique la règle que tout A est B."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus rapide ?",
+    "prompt": "Léa court plus vite que Claire. Claire court plus vite que Martin.",
+    "options": [
+      "Léa",
+      "Claire",
+      "Martin",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Léa",
+    "explanation": "Cet ordre de grandeur montre Léa > Claire > Martin. Léa est la plus rapide du groupe. Le piège serait de penser que les ordres changent sans qu'un nouvel élément ne soit introduit.",
+    "hint": "Suivez l'ordre donné pour identifier le plus rapide."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la bonne conclusion ?",
+    "prompt": "Tous les arbres ont des feuilles. Ce saule est un arbre.",
+    "options": [
+      "Ce saule a des racines",
+      "Ce saule n'a pas de feuilles",
+      "Ce saule a des feuilles",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce saule a des feuilles",
+    "explanation": "Tous les arbres ont des feuilles et le saule considéré est un arbre. Donc, ce saule a obligatoirement des feuilles. Un piège possible est de confondre caractéristiques diversifiées avec absentes.",
+    "hint": "Regardez la définition des caractéristiques des arbres."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on conclure logiquement ?",
+    "prompt": "Toutes les roses ont des épines. Cette fleur est une rose.",
+    "options": [
+      "Cette fleur est un tulipe",
+      "Cette fleur a des épines",
+      "Cette fleur n'a pas d'épines",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette fleur a des épines",
+    "explanation": "Toutes les roses ayant des épines, et cette fleur étant une rose, elle a nécessairement des épines. Le mélange des propriétés de différentes plantes constitue un piège potentiel.",
+    "hint": "Rappelez-vous que toutes les roses partagent des caractéristiques communes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus grand ?",
+    "prompt": "Alice est plus grande que Bob. Bob est plus grand que Claire.",
+    "options": [
+      "Alice",
+      "Bob",
+      "Claire",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Alice",
+    "explanation": "Alice est plus grande que Bob qui est lui-même plus grand que Claire. Par transitivité, Alice est la plus grande parmi eux tous. L'erreur à éviter ici est d'inverser l'ordre sans raison valable.",
+    "hint": "Visualise l'ordre une étape à la fois."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'état de ce fruit ?",
+    "prompt": "Tous les citrons sont acides. Ce fruit est un citron.",
+    "options": [
+      "Ce fruit est amer",
+      "Ce fruit est acide",
+      "Ce fruit est sucré",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce fruit est acide",
+    "explanation": "Puisque tous les citrons sont acides, et que ce fruit est un citron, il est forcément acide. Confondre l'acidité avec d'autres saveurs est la principale confusion à craindre.",
+    "hint": "Identifiez les caractéristiques générales des citrons."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion logique ici ?",
+    "prompt": "Tous les médecins sont qualifiés. Jean est un médecin.",
+    "options": [
+      "Jean est chauffagiste",
+      "Jean est qualifié",
+      "Jean n'est pas qualifié",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Jean est qualifié",
+    "explanation": "Selon le syllogisme, si tous les médecins sont qualifiés et que Jean est un médecin, alors Jean est qualifié. Le piège est de penser que l'énoncé n'apporte pas une déduction claire.",
+    "hint": "Appliquez le principe de déduction en deux étapes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en conclure ?",
+    "prompt": "Tous les cuisiniers peuvent cuisiner. Stéphane est cuisinier.",
+    "options": [
+      "Stéphane ne sait pas cuisiner",
+      "Stéphane peut cuisiner",
+      "Stéphane est boulanger",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Stéphane peut cuisiner",
+    "explanation": "Le raisonnement montre que si tout cuisinier peut cuisiner, et Stéphane est dans cette catégorie, il le peut aussi. Erreur commune : associer compétences avec titres seulement.",
+    "hint": "Appliquez un simple raisonnement logique sur la profession."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion peut-on tirer ?",
+    "prompt": "Tous les lions vivent en Afrique. Simba est un lion.",
+    "options": [
+      "Simba vit en Afrique",
+      "Simba vit en Amérique",
+      "Simba n'est pas un lion",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Simba vit en Afrique",
+    "explanation": "En suivant la logique que tous les lions vivent en Afrique, Simba, étant un lion, vit là-bas également. L'erreur classique : avoir des détails sans pertinence.",
+    "hint": "Utilise la correspondance directe pour trouver la réponse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le statut de Paul ?",
+    "prompt": "Tous les étudiants sont inscrits dans une université. Paul est un étudiant.",
+    "options": [
+      "Paul est enseignant",
+      "Paul est inscrit dans une université",
+      "Paul est diplômé",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Paul est inscrit dans une université",
+    "explanation": "Puisque tous les étudiants sont inscrits dans une université et Paul est un étudiant, il est donc inscrit. L'erreur consisterait à confondre le statut d'étudiant avec d'autres rôles académiques.",
+    "hint": "Souviens-toi qui concerne l'appartenance à une catégorie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que pouvons-nous en déduire ?",
+    "prompt": "Tous les artistes dessinent. Emma est une artiste.",
+    "options": [
+      "Emma ne sait pas dessiner",
+      "Emma dessine",
+      "Emma chante",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Emma dessine",
+    "explanation": "Le syllogisme indique que tous les artistes dessinent, et donc Emma, en tant qu'artiste, dessine. Le piège est d'associer d'autres disciplines artistiques sans fondement.",
+    "hint": "Concentre-toi sur les activités mentionnées explicitement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de soeurs a Marc ?",
+    "prompt": "Marc a trois fois plus de soeurs que de frères. Il a 1 frère.",
+    "options": [
+      "1 soeur",
+      "2 soeurs",
+      "3 soeurs",
+      "On ne peut pas savoir"
+    ],
+    "answer": "3 soeurs",
+    "explanation": "Si Marc a trois fois plus de soeurs que de frères et il a 1 frère alors il a 3 soeurs. Le piège commun est de ne pas multiplier correctement le nombre de frères.",
+    "hint": "Multiplie simplement le nombre de frères."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle relation peut-on établir ?",
+    "prompt": "Tous les éléphants ont une trompe. Jumbo est un éléphant.",
+    "options": [
+      "Jumbo n'est pas un éléphant",
+      "Jumbo a une trompe",
+      "Jumbo n'a pas une trompe",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Jumbo a une trompe",
+    "explanation": "En appliquant la logique, tous les éléphants ont une trompe, donc Jumbo, étant un éléphant, a aussi une trompe. Le piège serait de ne pas associer correctement les catégories avec leurs attributs.",
+    "hint": "Pense à ce que tous les éléphants ont en commun."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion en tirer ?",
+    "prompt": "Tous les jeunes réussissent leurs examens. Léa est jeune.",
+    "options": [
+      "Léa échoue à ses examens",
+      "Léa réussit ses examens",
+      "Léa ne passe pas d'examen",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Léa réussit ses examens",
+    "explanation": "Sous l'énoncé, tous les jeunes réussissent leurs examens. Léa, étant jeune, réussit donc les siens. Le piège est d'ajouter des suppositions non précisées dans la question.",
+    "hint": "Garde la déduction simple et directe."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le statut d'Élise ?",
+    "prompt": "Si Élise travaille, alors elle gagne de l'argent. Si elle gagne de l'argent, elle est heureuse. Élise travaille.",
+    "options": [
+      "Élise est au chômage",
+      "Élise n'est pas heureuse",
+      "Élise est heureuse",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Élise est heureuse",
+    "explanation": "Par modus ponens, si Élise travaille, elle gagne de l'argent, et gagner de l'argent la rend heureuse. Le piège est de ne pas associer toutes les implications correctements.",
+    "hint": "Vérifie chaque lien dans la chaîne."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que peut-on conclure ?",
+    "prompt": "Si tu lis, alors tu apprends. Si tu apprends, tu réussis tes examens. Tu lis.",
+    "options": [
+      "Tu échoues tes examens",
+      "Tu ne réussis pas tes examens",
+      "Tu réussis tes examens",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Tu réussis tes examens",
+    "explanation": "Selon le modus ponens, lire conduit à apprendre, et apprendre mène à réussir ses examens. Le piège serait de briser la chaîne de déductions.",
+    "hint": "Connecte chaque condition consécutive."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel repas est servi ?",
+    "prompt": "Si on sert du poisson, alors il y a du citron. Si on sert du citron, on a des invités. On a des invités.",
+    "options": [
+      "On sert du poisson",
+      "On ne sert pas de citron",
+      "On ne sait pas si on sert du poisson",
+      "On ne peut pas savoir"
+    ],
+    "answer": "On ne sait pas si on sert du poisson",
+    "explanation": "La relation directe n'est confirmée que quand du poisson implique du citron. La présence d'invités inverse la logique. Le piège est causalité inverse.",
+    "hint": "Ne confondez pas causes et effets."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la place de Martin après la course ?",
+    "prompt": "Dans une course, Martin double le 3ème, mais se fait doubler par le 4ème juste après.",
+    "options": [
+      "Il est 3ème",
+      "Il est 4ème",
+      "Il est 2ème",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Il est 4ème",
+    "explanation": "Martin devient 3ème en dépassant le 3ème, mais retourne à la 4ème position lorsqu'il est dépassé par le 4ème. Le piège réside dans la confusion provoquée par le séquencement des actions.",
+    "hint": "Suis l'ordre exact des événements."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle option est vraie ?",
+    "prompt": "Si une personne est ingénieure, alors elle a des diplômes. Si elle a des diplômes, elle peut travailler à l'étranger. Julie est ingénieure.",
+    "options": [
+      "Julie ne peut pas travailler à l'étranger",
+      "Julie a des diplômes",
+      "Julie n'a pas de diplômes",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Julie a des diplômes",
+    "explanation": "Si Julie est ingénieure, elle a des diplômes. La seconde implication est plausible, mais pas vérifiée. Le piège est d'assumer le dernier résultat automatiquement.",
+    "hint": "Faites attention aux segments confirmés de la chaîne."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le bon ordre ?",
+    "prompt": "Antoine est plus grand que Louis. Louis est plus grand que Clément. Clément est plus grand que Hugo.",
+    "options": [
+      "Antoine > Louis > Clément > Hugo",
+      "Antoine < Louis < Clément < Hugo",
+      "Clément > Antoine > Louis > Hugo",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Antoine > Louis > Clément > Hugo",
+    "explanation": "Les comparaisons individuelles montrent qu'Antoine > Louis > Clément > Hugo. Le piège repose dans l'attente d'un ordre inattendu ou impossible à suivre.",
+    "hint": "Construis la chaîne d'inégalités sans à-coup."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle information est correcte ?",
+    "prompt": "Si une voiture est rouge, elle est rapide. Si elle est rapide, elle est chère. Cette voiture est rapide.",
+    "options": [
+      "Cette voiture est rouge",
+      "Cette voiture est bon marché",
+      "Cette voiture est chère",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette voiture est chère",
+    "explanation": "Le fait qu'une voiture soit rapide entraîne son coût élevé. Pourtant, la couleur n'est pas automatiquement déterminée. Gardez à l'esprit que plusieurs caractéristiques peuvent être dissociées.",
+    "hint": "Ne liez pas de manière aléatoire couleur et rapidité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que peut-on inférer ici ?",
+    "prompt": "Si Cécile a son diplôme, elle peut enseigner. Si elle enseigne, elle gagne un revenu. Cécile enseigne.",
+    "options": [
+      "Cécile ne gagne pas de revenu",
+      "Cécile a son diplôme",
+      "Cécile ne gagne qu'un revenu moyen",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cécile gagne un revenu",
+    "explanation": "Selon le modus ponens, si Cécile enseigne, elle touche un revenu. Cependant, l'acquisition de son diplôme ne peut être confirmée. Un piège commun est de confondre conditions et certitudes.",
+    "hint": "Gardez la chronologie des faits logique et simple."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui arrive en premier ?",
+    "prompt": "Sophie arrive avant Jules. Jules arrive avant Marc. Sophie arrive après Anne.",
+    "options": [
+      "Anne",
+      "Sophie",
+      "Marc",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Anne",
+    "explanation": "En suivant la succession, Anne est suivie par Sophie, qui arrive avant Jules et Marc. Des erreurs surviennent fréquentes en reprenant une comparaison immédiate entre Sophie et Anne.",
+    "hint": "Saisissez le fil des relations temporelles."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus lourd ?",
+    "prompt": "Pierre est plus lourd que Robert. Robert est plus lourd que Jacques. Jacques est plus lourd que Nadia.",
+    "options": [
+      "Pierre",
+      "Jacques",
+      "Nadia",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Pierre",
+    "explanation": "Les relations données décrivent que : Pierre > Robert > Jacques > Nadia. En conséquence, Pierre est le plus lourd. Ne sois pas confondu par l'ajout inutile de termes.",
+    "hint": "Regroupe logique et pèse les comparaisons."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle conclusion peut-on déduire ?",
+    "prompt": "Si Diane passe l'examen, elle va à Paris. Si elle va à Paris, elle visite la tour Eiffel. Diane n'a pas visité la tour Eiffel.",
+    "options": [
+      "Diane a passé l'examen",
+      "Diane ne va pas à Paris",
+      "Diane ne passe pas l'examen",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Diane ne passe pas l'examen",
+    "explanation": "Utilisant le modus tollens, ne pas visiter la tour Eiffel signifie que Diane ne va pas à Paris. Donc, elle ne passe pas l'examen. Le piège est d'ignorer l'implication inverse.",
+    "hint": "Transforme la conclusion négative en conditions logiques."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est votre position ?",
+    "prompt": "Dans une course, vous doublez le coureur en troisième position, puis vous vous faites doubler par celui en quatrième position.",
+    "options": [
+      "Vous êtes 3ème",
+      "Vous êtes 2ème",
+      "Vous êtes 4ème",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Vous êtes 4ème",
+    "explanation": "Après avoir doublé le troisième, vous prenez sa position. En vous faisant doubler par le quatrième, vous descendez à la 4ème. Le piège est de perdre de vue la dynamique de réorganisation.",
+    "hint": "Compte la permanence des mouvements dans leur séquence respective."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel âge Arthur a-t-il aujourd'hui ?",
+    "prompt": "Arthur a deux fois l'âge de son frère. Dans cinq ans, il aura trois fois cet âge.",
+    "options": [
+      "10 ans",
+      "15 ans",
+      "20 ans",
+      "25 ans"
+    ],
+    "answer": "20 ans",
+    "explanation": "Si le frère a x ans, Arthur en a 2x. Dans cinq ans, Arthur égalera 3 fois x+5 : 2x+5=3(x+5), donc x=5. Arthur a alors 20 ans. Piège : équivalences mal posées.",
+    "hint": "Ecris et résous les équations pour x avant de déduire."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de bougies ai-je eu sur mon gâteau l'année dernière ?",
+    "prompt": "J'ai actuellement 15 ans, et chaque année de mon anniversaire, on met une bougie sur le gâteau.",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "On ne peut pas savoir"
+    ],
+    "answer": "14",
+    "explanation": "Chaque année correspond numériquement au nombre de bougies. D'ainsi, pour 15 ans maintenant, il devait y en avoir 14 l'année dernière. Le piège est la confusion temporelle ou numérique.",
+    "hint": "Considère le nombre d'années déjà passées."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Qui sortira vainqueur ?",
+    "prompt": "Trois frères font une course. Le plus jeune double l'aîné, mais est dépassé ensuite par le cadet.",
+    "options": [
+      "Le plus jeune",
+      "Le cadet",
+      "L'aîné",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Le cadet",
+    "explanation": "Le plus jeune dépasse l'aîné, alors en 1ère place. Puis le cadet le surpasse et par conséquent, remporte la course. Le piège : ne comprend pas le suivi du classement.",
+    "hint": "Notez la transition des positions après chaque événement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le montant restitué ?",
+    "prompt": "Vous aviez 50 euros, dépensez-en 20 pour un livre, 10 pour un repas, puis gagnez 30.",
+    "options": [
+      "40 euros",
+      "50 euros",
+      "30 euros",
+      "60 euros"
+    ],
+    "answer": "50 euros",
+    "explanation": "Calculant : 50 - 20 - 10 + 30. Le total après dépenses et gain revient à l'initiale 50. Le piège est de rater une opération, souvent cause de confusion simple.",
+    "hint": "Pauses : dépense puis ajout."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle phrase est correcte ?",
+    "prompt": "Avec A alors B. Avec B alors C. Sans C, rarement on observe B. Résultat!",
+    "options": [
+      "A a produit C",
+      "Pas de C effectivement",
+      "A n'interfère pas C",
+      "Pas de conclusion possible"
+    ],
+    "answer": "Pas de conclusion possible",
+    "explanation": "Empêcher C n'arrête pas impérativement A ou B, mais pourrait y répondre. Un absent de B ne peut confirmer l'inefficacité globale. Le piège est déduction de co-relation inverse forcée.",
+    "hint": "Attendre véritablement toutes les solutions."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quand Remy aura-t-il son gâteau d'anniversaire ?",
+    "prompt": "Rémy a quatre fois plus de gâteaux d'anniversaires que son frère cadet, qui en a 5.",
+    "options": [
+      "20 ans",
+      "30 gâteaux",
+      "35 ans",
+      "23"
+    ],
+    "answer": "20 ans",
+    "explanation": "S'il a vingt gâteaux, en suppose un par année dès son premier anniversaire. Le piège est confusion intermédiaire avec le nombre des anniversaires totaux.",
+    "hint": "Calcule l'accumulation."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Rapport véridique ?",
+    "prompt": "Si on gagne, on joue bien. Si on joue bien, on arrive en finale. On n'est pas finaliste.",
+    "options": [
+      "On joue bien",
+      "On gagne",
+      "On ne joue pas bien",
+      "Conclusion aléatoire"
+    ],
+    "answer": "On ne joue pas bien",
+    "explanation": "Absence en finale implique absence de bonne prestation s'appuyant le modus tollens. Le piège: exécuter réciproque non supportée.",
+    "hint": "Attends pas de rattraper situation sans moyens."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Simon boira quoi ?",
+    "prompt": "Si Simon est fatigué, il prendra du thé. Si Simon est en forme, il prendra un café. Simon est fatigué et en forme.",
+    "options": [
+      "Thé",
+      "Café",
+      "Les deux",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Les deux",
+    "explanation": "Fatigué exige le mélange thé pour relâchement. Forme stimulate café. Il se pourrait que deux sont simultanés, ajouté un aspect humain incalculé. Le piège similaire, attendre solution unique.",
+    "hint": "Possibilité double ne signifie pas forçage singulier."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Maximum atteint ?",
+    "prompt": "William et Ethan s'engagent à vendre jouets chaque mois. Si compounded, vendroid commerce, relancés demain. Dépasse cap mensuel!",
+    "options": [
+      "Pour l'éternité",
+      "L'optimal",
+      "Premature êtes",
+      "Nouveau recalibri"
+    ],
+    "answer": "Eternité",
+    "explanation": "Perpétuité suggère chaque développement supérieur que autre. Combinaison repose effacement médié pave plus clair évaluation. Le piège est dans fait confusion d'approximatif exactitude.",
+    "hint": "Perçois l'addition, multiplication issue d'escalade."
+  }
+]
+```

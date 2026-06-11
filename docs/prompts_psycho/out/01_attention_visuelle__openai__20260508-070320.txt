@@ -1,0 +1,303 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "Rue de la Paix, 75002 Paris",
+    "text_b": "Rue de la Paix, 75003 Paris",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par le code postal : 75002 dans text_a et 75003 dans text_b. Une modification de ce genre peut survenir par erreur de frappe lors de la saisie d'une adresse. Ce type d'erreur est facilement évitable avec une relecture attentive."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Jean Martin né le 14/07/1980",
+    "text_b": "Jean Martin né le 14/07/1980",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "BMW X5 blanche, plaque AA-456-BB",
+    "text_b": "BMW X5 noire, plaque AA-456-BB",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par la couleur de la voiture : blanche dans text_a et noire dans text_b. Ce type de substitution de mot est facile à repérer, mais peut être manqué par un lecteur distrait."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "34 avenue Foch",
+    "text_b": "34 avenue Foche",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par l'orthographe du nom de rue : 'Foch' dans text_a et 'Foche' dans text_b. Une simple lettre différente peut facilement passer inaperçue lors d'une première lecture rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "31 boulevard Haussmann, Paris",
+    "text_b": "31 boulevard Haussmann, Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Citroën C3, rouge, plaque BB-789-CC",
+    "text_b": "Citroën C3 rouge, plaque BB-789-CC",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Hôtel de Ville, 75004 Paris",
+    "text_b": "Hôtel de Ville, 75004 Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "24 rue du Temple",
+    "text_b": "24 rue Tempe",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par le nom de la rue : 'Temple' dans text_a et 'Tempe' dans text_b. Un défaut de concentration pourrait amener à négliger cette disparition de lettre."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "18 rue de Rivoli, Paris",
+    "text_b": "18 rue de Rivoli, Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Opel Corsa, plaque CC-112-DD",
+    "text_b": "Opel Corsa, plaque CC-112-DD",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Nissan bleu, 123 rue de Rome",
+    "text_b": "Nissan bleu, 123 rue de Rone",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par le nom de la rue : 'Rome' dans text_a et 'Rone' dans text_b. Ce type d'erreur est typique lors de saisies rapides, et il est important de porter une attention particulière aux homophonies similaires."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Avenue des Champs-Élysées",
+    "text_b": "Avenue des Champ-Élysées",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par 'Champs' dans text_a et 'Champ' dans text_b. La perte d'une lettre peut être facilement ignorée, surtout avec des terminaisons similaires."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "36 Quai des Orfèvres",
+    "text_b": "36 Quai des Orfèvres",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Renault Kangoo, grise",
+    "text_b": "Renault Kango, grise",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par l'orthographe du modèle : 'Kangoo' vs 'Kango'. Une seule lettre peut prêter à confusion si l'on n'est pas attentif aux détails des marques et modèles."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "8 rue de la Paix",
+    "text_b": "8 rue de la Pax",
+    "is_true": false,
+    "explanation": "La différence réside dans le nom de la rue : 'Paix' devient 'Pax'. Cela peut induire en erreur car les deux versions sont visuellement similaires et facilement interchangeables si la lecture est rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Gabriel Dupont, né le 22/11/1975",
+    "text_b": "Gabriel Dupont, né le 22/11/1975",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "20 avenue Montaigne, Paris",
+    "text_b": "20 avenue Montaigne, Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le témoin décrit un homme de taille moyenne, portant un manteau noir et une écharpe rouge.",
+    "text_b": "Le témoin décrit un homme de taille moyenne, portant un manteau noir et une échappe rouge.",
+    "is_true": false,
+    "explanation": "Le mot 'écharpe' dans text_a est écrit 'échappe' dans text_b. Cette subtile faute d'orthographe peut facilement échapper à une lecture rapide, car les mots partagent presque les mêmes lettres."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La Citroën était stationnée devant la boulangerie à 19h15.",
+    "text_b": "La Citroën était stationnée devant la boulangerie à 19h15.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Au moment des faits, il portait une casquette bleue et des lunettes noires.",
+    "text_b": "Aux moments des faits, il portait une casquette bleue et des lunettes noires.",
+    "is_true": false,
+    "explanation": "La différence réside dans l'utilisation de 'Au moment' dans text_a et 'Aux moments' dans text_b. Ce changement de nombre peut passer inaperçu si l'attention est focalisée uniquement sur les accessoires décrits."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le délit a eu lieu le 3 mars 2022, vers 14h30, rue de l'Université.",
+    "text_b": "Le délit a eu lieu le 3 mars 2022, vers 14h30, rue de l'Université.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La rue Victor Hugo était déserte le dimanche matin.",
+    "text_b": "La rue Victor Hugo était déserte le dimanche matin",
+    "is_true": false,
+    "explanation": "La différence est la présence du point final dans text_a qui est absent dans text_b. Ce genre de ponctuation manquante est une subtilité qui peut piéger, surtout dans des textes de longueur similaire."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Valérie a déclaré n'avoir vu aucun véhicule suspect ce jour-là.",
+    "text_b": "Valérie a déclaré n'avoir vu aucun véhicule suspecte ce jour-là.",
+    "is_true": false,
+    "explanation": "La différence repose sur le genre du mot : 'suspect' dans text_a et 'suspecte' dans text_b. Une faute de genre est fréquemment négligée dans une lecture cursive malgré ses implications grammaticales."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le voleur portait une veste en cuir brun, jean bleu et bottes noires.",
+    "text_b": "Le voleur portait une veste en cuir brun, jean bleu et bottes noir.",
+    "is_true": false,
+    "explanation": "Dans text_b, 'noires' devient 'noir', modifiant le nombre. Ce genre de différence est facile à ignorer lorsque l'attention est concentrée sur les détails descriptifs du reste de la phrase."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La date prévue pour l'interrogatoire est le 27 avril 2023.",
+    "text_b": "La date prévue pour l'interrogatoire est le 27 avril 2023.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le scooter était garé près du 14 boulevard Voltaire.",
+    "text_b": "Le scooter était garé près de 14 boulevard Voltaire.",
+    "is_true": false,
+    "explanation": "La différence repose sur 'près du' dans text_a et 'près de' dans text_b. Cette omission peut passer inaperçue à cause de la proximité des mots et de la familiarité de la structure de la phrase."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Selon le rapport, le suspect mesure environ 1,75 mètre.",
+    "text_b": "Selon le rapport, le suspect mesure environ 1.75 mètre.",
+    "is_true": false,
+    "explanation": "La différence réside dans l'utilisation de la virgule dans text_a contre le point dans text_b. Un tel changement dans la notation décimale est crucial en français et peut causer des malentendus significatifs."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Caméra de sécurité filmant le passage à 03h12.",
+    "text_b": "Caméra de sécurité filmant le passage à 03h12.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le témoin a mentionné des cris aux alentours de minuit et quart.",
+    "text_b": "Le témoin a mentionné des cris aux alentours de minuit et carte.",
+    "is_true": false,
+    "explanation": "La différence se trouve dans 'quart' changé en 'carte'. Cette substitution perturbe le sens, bien que phonétiquement proches, elle modifie pourtant totalement la signification."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Monsieur Bonnet a confirmé sa présence au café vers 21 heures.",
+    "text_b": "Monsieur Bonnet a confirmé sa présence au café vers 21 heures.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La Renault a été aperçue se dirigeant vers le périphérique à 22h45.",
+    "text_b": "La Renault a été aperçue se dirigeant vers le péréphérique à 22h45.",
+    "is_true": false,
+    "explanation": "La différence est une faute d'orthographe avec l'utilisation de 'péréphérique' au lieu de 'périphérique'. Cette modeste variation peut ne pas surprendre un lecteur qui regarde mentalement l'ensemble du mot."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Article 322-1 du code pénal : La dégradation ou la destruction de bien d’autrui est passible de deux ans d’emprisonnement et de 30 000 euros d’amende.",
+    "text_b": "Article 322-1 du code pénal : La dégradation ou la destruction de bien d’autrui est passible de deux ans d’emprisonnement et de 30 000 euros d’amende.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon le témoin, l'individu portait un masque et s'est dirigé vers les escaliers. Malgré la foule présente, il s'est déplacé avec aisance et rapidité.",
+    "text_b": "Selon le témoin, l'individu portait un masque et s'est dirigé vers les escaliers. Malgré la foule présente, il s'est déplacé avec aisance, et rapidité.",
+    "is_true": false,
+    "explanation": "Il y a une virgule superflue après 'aisance' dans text_b. Cette simple addition peut entraîner un écart de sens ou de rythme dans la phrase pour les lecteurs peu attentifs à la ponctuation."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le véhicule suspect a été décrit comme une berline quatre portes, de couleur bleue, immatriculée AA-909-ZZ, aperçu en fuite sur l'avenue principale.",
+    "text_b": "Le véhicule suspect a été décrit comme une berline quatre portes, de couleur bleue, immatriculée AA-909-ZZ, aperçu en fuite sur l'avenue principale.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L’individu, d’une trentaine d’années, portait un sac à dos noir. Il s’est enfui à vélo en direction de la gare, témoigne une passante.",
+    "text_b": "L’individu, d’une trentaine d’années, portait un sac à dos noire. Il s’est enfui à vélo en direction de la gare, témoigne une passante.",
+    "is_true": false,
+    "explanation": "Ici, l'accord est modifié par 'noir' devenant 'noire' dans text_b. Cette subtile différence, originant d'un changement de genre, peut passer inaperçue si l'accent est mis plus sur le contexte général que sur la structure grammaticale."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "La victime a identifié deux suspects : un homme de stature moyenne vêtu d'une chemise à rayures et une femme aux cheveux bouclés blonds, qui semblaient le suivre.",
+    "text_b": "La victime a identifié deux suspects : un homme de stature moyenne vêtu d'une chemise à rayures et une femme aux cheveux bouclés blonds, qui semblaient le suivre.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le récépissé mentionne une transgression constatée sur la voie publique, enregistrée à 16h43 par le policier muni d'une caméra-piéton.",
+    "text_b": "Le récépissé mentionne une transgression constatée sur la voie publique, enregistrée à 16h43 par le policier muni d'une caméra-pièton.",
+    "is_true": false,
+    "explanation": "Dans text_b, 'piéton' se transforme en 'pièton'. Bien qu'une lettre semble relativement petite, cela peut profondément changer l'orthographe d'un mot et pointe l'importance de ne pas se laisser tromper par des erreurs apparemment insignifiantes."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "En vertu des dispositions réglementaires, tout jet de projectile est interdit par arrêté municipal durant la période estivale.",
+    "text_b": "En vertu des dispositions réglémentaires, tout jet de projectile est interdit par arrêté municipal durant la période estivale.",
+    "is_true": false,
+    "explanation": "Le léger changement de 'réglementaires' dans text_a à 'réglémentaires' dans text_b constitue l'erreur. Cette distinction est fine mais essentielle pour maintenir l'orthographe correcte d'un mot."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon l'enquête préliminaire, l'impact économique estimé atteint une somme approchant les 200 000 euros, causant une crise dans le quartier commerçant.",
+    "text_b": "Selon l'enquête préliminaire, l'impact économique estimé atteint une somme approchant les 200000 euros, causant une crise dans le quartier commerçant.",
+    "is_true": false,
+    "explanation": "Dans text_b, l'absence d'espace dans '200 000' devient '200000'. Ce type d'erreur est commun avec les chiffres où l'œil peut négliger l'importance des séparateurs de milliers."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L’agent de la circulation a donné une contravention pour stationnement interdit et fausse plaque minéralogique au contrevenant.",
+    "text_b": "L’agent de la circulation a donné une contravention pour stationnement interdit et fausse plaque minéralogique au contrevenant.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "La vidéo de surveillance a enregistré le suspect portant un pull sombre, lunettes de soleil et écouteurs, à 14h30 près de la librairie.",
+    "text_b": "La vidéo de surveillance a enregistré le suspect portant un pull sombre, lunettes de soleil et écouteurs, à 14h30 près de la librairie.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Les forces de l'ordre ont confirmé une opération conjointe avec les autorités étrangères, résultant en l'arrestation de l'individu recherché.",
+    "text_b": "Les forces de l'ordre ont confirmé une opération conjointe avec les autorités étrangères, résultant en l'arrestation de l'individu recherché.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le rapport d'enquête souligne l'urgence d'améliorer les systèmes de sécurité autour des places publiques pour prévenir futurs incidents.",
+    "text_b": "Le rapport d'enquête souligne l'urgence d'améliorer les systèmes de securité autour des places publiques pour prévenir futurs incidents.",
+    "is_true": false,
+    "explanation": "La différence se trouve dans 'sécurité' qui devient 'securité' sans accent, text_b supprime l'accent aigu. Cela peut facilement échapper à une vigilance réduite sous prétexte de familiarité avec l'idée véhiculée."
+  }
+]

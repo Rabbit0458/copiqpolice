@@ -1,0 +1,458 @@
+{
+  "@@locale": "fr",
+  "@@last_modified": "2026-06-05",
+
+  "appName": "COP'IQ",
+  "@appName": { "description": "Nom de l'application" },
+
+  "back": "Retour",
+  "@back": { "description": "Bouton retour générique" },
+
+  "retry": "Réessayer",
+  "@retry": { "description": "Bouton réessayer" },
+
+  "cancel": "Annuler",
+  "@cancel": { "description": "Bouton annuler" },
+
+  "confirm": "Confirmer",
+  "@confirm": { "description": "Bouton confirmer" },
+
+  "close": "Fermer",
+  "@close": { "description": "Bouton fermer" },
+
+  "save": "Enregistrer",
+  "@save": { "description": "Bouton enregistrer" },
+
+  "loading": "Chargement…",
+  "@loading": { "description": "Message de chargement" },
+
+  "error_generic": "Une erreur est survenue.",
+  "@error_generic": { "description": "Erreur générique" },
+
+  "error_loading": "Une erreur est survenue pendant le chargement.",
+  "@error_loading": { "description": "Erreur chargement" },
+
+  "error_no_connection": "Pas de connexion réseau. Vérifie ta connexion.",
+  "@error_no_connection": { "description": "Erreur réseau" },
+
+  "error_not_authenticated": "Connecte-toi pour accéder à ce contenu.",
+  "@error_not_authenticated": { "description": "Non connecté" },
+
+  "error_server": "Problème serveur. Réessaie dans quelques instants.",
+  "@error_server": { "description": "Erreur serveur" },
+
+  "points_label": "{count, plural, one{{count} point} other{{count} points}}",
+  "@points_label": {
+    "description": "Nombre de points avec pluriel",
+    "placeholders": { "count": { "type": "num", "format": "compact" } }
+  },
+
+  "points_score": "{scored}/{max} pt",
+  "@points_score": {
+    "description": "Score X/Y points",
+    "placeholders": {
+      "scored": { "type": "num" },
+      "max": { "type": "num" }
+    }
+  },
+
+  "cp_list_title": "Cas Pratiques",
+  "@cp_list_title": { "description": "Titre page liste cas pratiques" },
+
+  "cp_list_search_hint": "Rechercher un cas, un mot-clé…",
+  "@cp_list_search_hint": { "description": "Placeholder de recherche" },
+
+  "cp_list_search_clear": "Effacer",
+  "@cp_list_search_clear": { "description": "Effacer la recherche" },
+
+  "cp_list_search_open": "Rechercher",
+  "@cp_list_search_open": { "description": "Ouvrir la recherche" },
+
+  "cp_list_search_close": "Fermer la recherche",
+  "@cp_list_search_close": { "description": "Fermer la recherche" },
+
+  "cp_list_sort": "Trier",
+  "@cp_list_sort": { "description": "Bouton trier" },
+
+  "cp_list_sorted_by": "Trié par : {label}",
+  "@cp_list_sorted_by": {
+    "description": "Indicateur tri actif",
+    "placeholders": { "label": { "type": "String" } }
+  },
+
+  "cp_list_empty_title": "Aucun cas disponible",
+  "@cp_list_empty_title": { "description": "Titre état vide (liste)" },
+
+  "cp_list_empty_message": "Les cas pratiques arrivent bientôt !",
+  "@cp_list_empty_message": { "description": "Message état vide (liste)" },
+
+  "cp_list_empty_filters_title": "Aucun cas pour ces filtres",
+  "@cp_list_empty_filters_title": { "description": "Titre état vide filtres actifs" },
+
+  "cp_list_empty_filters_message": "Essaie d'élargir tes critères de recherche.",
+  "@cp_list_empty_filters_message": { "description": "Message état vide filtres actifs" },
+
+  "cp_list_reset_filters": "Réinitialiser les filtres",
+  "@cp_list_reset_filters": { "description": "Bouton réinitialiser filtres" },
+
+  "cp_filter_year": "Année",
+  "@cp_filter_year": { "description": "Label filtre année" },
+
+  "cp_filter_theme": "Thème",
+  "@cp_filter_theme": { "description": "Label filtre thème" },
+
+  "cp_filter_difficulty": "Difficulté",
+  "@cp_filter_difficulty": { "description": "Label filtre difficulté" },
+
+  "cp_filter_clear": "Effacer",
+  "@cp_filter_clear": { "description": "Effacer tous les filtres" },
+
+  "cp_filter_title_year": "Filtrer par année",
+  "@cp_filter_title_year": { "description": "Titre sheet filtre année" },
+
+  "cp_filter_title_theme": "Filtrer par thème",
+  "@cp_filter_title_theme": { "description": "Titre sheet filtre thème" },
+
+  "cp_filter_title_difficulty": "Filtrer par difficulté",
+  "@cp_filter_title_difficulty": { "description": "Titre sheet filtre difficulté" },
+
+  "cp_filter_empty_year": "Aucune année disponible pour le moment.",
+  "@cp_filter_empty_year": { "description": "Vide filtre année" },
+
+  "cp_filter_empty_theme": "Aucun thème disponible pour le moment.",
+  "@cp_filter_empty_theme": { "description": "Vide filtre thème" },
+
+  "cp_sort_recent": "Plus récent",
+  "@cp_sort_recent": { "description": "Tri plus récent" },
+
+  "cp_sort_recent_subtitle": "Les cas publiés en premier",
+  "@cp_sort_recent_subtitle": { "description": "Sous-titre tri récent" },
+
+  "cp_sort_alpha": "Alphabétique (A → Z)",
+  "@cp_sort_alpha": { "description": "Tri alphabétique" },
+
+  "cp_sort_alpha_subtitle": "Ordre du titre du cas",
+  "@cp_sort_alpha_subtitle": { "description": "Sous-titre tri alphabétique" },
+
+  "cp_sort_duration_asc": "Durée croissante",
+  "@cp_sort_duration_asc": { "description": "Tri durée croissante" },
+
+  "cp_sort_duration_asc_subtitle": "Les plus courts d'abord",
+  "@cp_sort_duration_asc_subtitle": { "description": "Sous-titre tri durée croissante" },
+
+  "cp_sort_duration_desc": "Durée décroissante",
+  "@cp_sort_duration_desc": { "description": "Tri durée décroissante" },
+
+  "cp_sort_duration_desc_subtitle": "Les plus longs d'abord",
+  "@cp_sort_duration_desc_subtitle": { "description": "Sous-titre tri durée décroissante" },
+
+  "cp_sort_by": "Trier par",
+  "@cp_sort_by": { "description": "Titre sheet tri" },
+
+  "cp_badge_free": "GRATUIT",
+  "@cp_badge_free": { "description": "Badge cas gratuit" },
+
+  "cp_badge_premium": "PREMIUM",
+  "@cp_badge_premium": { "description": "Badge cas premium" },
+
+  "cp_badge_new": "NOUVEAU",
+  "@cp_badge_new": { "description": "Badge cas nouveau" },
+
+  "cp_difficulty_easy": "Facile",
+  "@cp_difficulty_easy": { "description": "Difficulté facile" },
+
+  "cp_difficulty_medium": "Moyen",
+  "@cp_difficulty_medium": { "description": "Difficulté moyen" },
+
+  "cp_difficulty_hard": "Difficile",
+  "@cp_difficulty_hard": { "description": "Difficulté difficile" },
+
+  "cp_tile_last_score": "Dernier",
+  "@cp_tile_last_score": { "description": "Colonne dernier score sur carte cas" },
+
+  "cp_tile_best_score": "Meilleur",
+  "@cp_tile_best_score": { "description": "Colonne meilleur score sur carte cas" },
+
+  "cp_tile_success_rate": "Réussite",
+  "@cp_tile_success_rate": { "description": "Colonne taux de réussite sur carte cas" },
+
+  "cp_tile_status_new": "Nouveau",
+  "@cp_tile_status_new": { "description": "Statut nouveau sur carte cas" },
+
+  "cp_paywall_title": "Cas premium",
+  "@cp_paywall_title": { "description": "Titre dialog paywall" },
+
+  "cp_paywall_message": "Ce cas fait partie de la bibliothèque COP'IQ Premium. Active ton abonnement pour débloquer tous les cas.",
+  "@cp_paywall_message": { "description": "Message dialog paywall" },
+
+  "cp_paywall_later": "Plus tard",
+  "@cp_paywall_later": { "description": "Bouton plus tard paywall" },
+
+  "cp_paywall_cta": "Voir l'abonnement",
+  "@cp_paywall_cta": { "description": "Bouton CTA paywall" },
+
+  "cp_case_loading": "Chargement du cas…",
+  "@cp_case_loading": { "description": "Chargement du cas" },
+
+  "cp_case_not_found_title": "Cas introuvable",
+  "@cp_case_not_found_title": { "description": "Titre erreur cas introuvable" },
+
+  "cp_case_error": "Une erreur est survenue.",
+  "@cp_case_error": { "description": "Erreur générique cas" },
+
+  "cp_case_step_case": "Le cas",
+  "@cp_case_step_case": { "description": "Étape 'Le cas' dans le stepper" },
+
+  "cp_case_step_question": "Question {index} / {total}",
+  "@cp_case_step_question": {
+    "description": "Étape question dans le stepper",
+    "placeholders": {
+      "index": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+
+  "cp_case_step_correction": "Correction",
+  "@cp_case_step_correction": { "description": "Étape correction dans le stepper" },
+
+  "cp_case_intro_objective_1": "Lecture immersive du scénario",
+  "@cp_case_intro_objective_1": { "description": "Objectif intro 1" },
+
+  "cp_case_intro_objective_2": "Structure claire de réponse",
+  "@cp_case_intro_objective_2": { "description": "Objectif intro 2" },
+
+  "cp_case_intro_objective_3": "Correction expliquée point par point",
+  "@cp_case_intro_objective_3": { "description": "Objectif intro 3" },
+
+  "cp_case_intro_cta": "Lire le scénario",
+  "@cp_case_intro_cta": { "description": "CTA intro cas" },
+
+  "cp_case_text_cta": "Je commence",
+  "@cp_case_text_cta": { "description": "CTA texte cas" },
+
+  "cp_question_label": "QUESTION {index} / {total}",
+  "@cp_question_label": {
+    "description": "Label question numérotée",
+    "placeholders": {
+      "index": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+
+  "cp_question_validate_last": "Valider et corriger",
+  "@cp_question_validate_last": { "description": "Bouton valider dernière question" },
+
+  "cp_question_validate_next": "Valider et continuer",
+  "@cp_question_validate_next": { "description": "Bouton valider et passer à la suite" },
+
+  "cp_question_validated": "Réponse validée ✓",
+  "@cp_question_validated": { "description": "Pill question validée" },
+
+  "cp_question_validated_pill": "Validée",
+  "@cp_question_validated_pill": { "description": "Pill courte validée" },
+
+  "cp_question_no_back": "Tu ne peux plus revenir en arrière après validation.",
+  "@cp_question_no_back": { "description": "Footnote lock navigation" },
+
+  "cp_question_no_back_snack": "Tu ne peux plus revenir en arrière après validation.",
+  "@cp_question_no_back_snack": { "description": "Snackbar lock navigation" },
+
+  "cp_question_validate_error": "Impossible de valider la réponse. Réessaie.",
+  "@cp_question_validate_error": { "description": "Erreur validation réponse" },
+
+  "cp_question_login_required": "Connecte-toi pour obtenir ta correction.",
+  "@cp_question_login_required": { "description": "Login requis correction" },
+
+  "cp_question_char_count": "{count} caractères — minimum {min}, recommandé {recommended}",
+  "@cp_question_char_count": {
+    "description": "Compteur de caractères dans la zone de réponse",
+    "placeholders": {
+      "count": { "type": "int" },
+      "min": { "type": "int" },
+      "recommended": { "type": "int" }
+    }
+  },
+
+  "cp_answer_placeholder": "Tape ta réponse ici…",
+  "@cp_answer_placeholder": { "description": "Placeholder zone de réponse" },
+
+  "cp_answer_save_typing": "Modifié",
+  "@cp_answer_save_typing": { "description": "État typing de la sauvegarde" },
+
+  "cp_answer_save_saving": "Sauvegarde…",
+  "@cp_answer_save_saving": { "description": "État saving de la sauvegarde" },
+
+  "cp_answer_save_saved": "Sauvegardé",
+  "@cp_answer_save_saved": { "description": "État saved de la sauvegarde" },
+
+  "cp_answer_save_saved_at": "Sauvegardé {time}",
+  "@cp_answer_save_saved_at": {
+    "description": "Sauvegardé il y a X",
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "cp_correction_loading": "On corrige ta copie…",
+  "@cp_correction_loading": { "description": "Chargement correction" },
+
+  "cp_correction_loading_detail": "Analyse de chaque réponse, mots-clés, formulations…",
+  "@cp_correction_loading_detail": { "description": "Détail chargement correction" },
+
+  "cp_correction_error": "Une erreur est survenue pendant la correction.",
+  "@cp_correction_error": { "description": "Erreur correction" },
+
+  "cp_correction_error_title": "Correction impossible",
+  "@cp_correction_error_title": { "description": "Titre erreur correction" },
+
+  "cp_correction_back_to_list": "Retour à la liste",
+  "@cp_correction_back_to_list": { "description": "Bouton retour à la liste" },
+
+  "cp_correction_engine_version": "Moteur de correction v{version}",
+  "@cp_correction_engine_version": {
+    "description": "Footer version moteur",
+    "placeholders": { "version": { "type": "String" } }
+  },
+
+  "cp_correction_no_detail": "Pas de détail de correction pour cette question.",
+  "@cp_correction_no_detail": { "description": "Pas de détail correction" },
+
+  "cp_score_excellent": "Excellent !",
+  "@cp_score_excellent": { "description": "Mention score excellent (≥90%)" },
+
+  "cp_score_solid": "Solide.",
+  "@cp_score_solid": { "description": "Mention score solide (≥70%)" },
+
+  "cp_score_not_bad": "Pas mal, mais il y a mieux.",
+  "@cp_score_not_bad": { "description": "Mention score moyen (≥50%)" },
+
+  "cp_score_work": "On recommence et on cible les points manqués.",
+  "@cp_score_work": { "description": "Mention score faible (<50%)" },
+
+  "cp_point_covered": "Couvert",
+  "@cp_point_covered": { "description": "Statut point couvert" },
+
+  "cp_point_partial": "Partiel",
+  "@cp_point_partial": { "description": "Statut point partiel" },
+
+  "cp_point_missing": "Manqué",
+  "@cp_point_missing": { "description": "Statut point manqué" },
+
+  "cp_point_keywords_found": "Trouvé dans ta réponse :",
+  "@cp_point_keywords_found": { "description": "Label mots-clés trouvés" },
+
+  "cp_point_appeal_cta": "Je pense que ma réponse est correcte",
+  "@cp_point_appeal_cta": { "description": "CTA appel sur point manqué" },
+
+  "cp_appeal_title": "Faire appel",
+  "@cp_appeal_title": { "description": "Titre sheet appel" },
+
+  "cp_appeal_label_point": "POINT ATTENDU",
+  "@cp_appeal_label_point": { "description": "Label point attendu dans l'appel" },
+
+  "cp_appeal_label_answer": "TA RÉPONSE",
+  "@cp_appeal_label_answer": { "description": "Label réponse user dans l'appel" },
+
+  "cp_appeal_textarea_hint": "Ton argumentaire",
+  "@cp_appeal_textarea_hint": { "description": "Hint textarea appel" },
+
+  "cp_appeal_warning": "Ton message sera transmis à l'équipe pédagogique. Les appels sont examinés sous 48 h.",
+  "@cp_appeal_warning": { "description": "Avertissement appel" },
+
+  "cp_appeal_send": "Envoyer mon appel",
+  "@cp_appeal_send": { "description": "Bouton envoyer appel" },
+
+  "cp_appeal_sent_snack": "Appel envoyé. L'équipe pédagogique va l'examiner.",
+  "@cp_appeal_sent_snack": { "description": "Snackbar appel envoyé" },
+
+  "cp_appeal_send_error": "Impossible d'envoyer ton appel. Réessaie.",
+  "@cp_appeal_send_error": { "description": "Erreur envoi appel" },
+
+  "cp_appeal_already_sent": "📨 Appel envoyé. L'équipe pédagogique va l'examiner.",
+  "@cp_appeal_already_sent": { "description": "Suffixe explication après envoi appel" },
+
+  "cp_appeal_no_appeal_on_point": "Impossible de faire appel sur ce point.",
+  "@cp_appeal_no_appeal_on_point": { "description": "Erreur appel point invalide" },
+
+  "cp_my_appeals_title": "Mes appels",
+  "@cp_my_appeals_title": { "description": "Titre page mes appels" },
+
+  "cp_my_appeals_count": "{count, plural, zero{Aucun appel pour le moment} one{{count} appel au total} other{{count} appels au total}}",
+  "@cp_my_appeals_count": {
+    "description": "Sous-titre nb appels",
+    "placeholders": { "count": { "type": "int" } }
+  },
+
+  "cp_appeal_status_all": "Tous",
+  "@cp_appeal_status_all": { "description": "Filtre appels tous" },
+
+  "cp_appeal_status_pending": "En cours",
+  "@cp_appeal_status_pending": { "description": "Statut appel en cours" },
+
+  "cp_appeal_status_approved": "Approuvés",
+  "@cp_appeal_status_approved": { "description": "Statut appels approuvés" },
+
+  "cp_appeal_status_rejected": "Rejetés",
+  "@cp_appeal_status_rejected": { "description": "Statut appels rejetés" },
+
+  "cp_appeal_admin_response": "RÉPONSE DE L'ÉQUIPE",
+  "@cp_appeal_admin_response": { "description": "Label réponse admin" },
+
+  "cp_appeal_no_message": "Pas de message ajouté.",
+  "@cp_appeal_no_message": { "description": "Pas de message dans appel" },
+
+  "cp_appeal_see_all": "Voir tous les appels",
+  "@cp_appeal_see_all": { "description": "Bouton voir tous les appels" },
+
+  "cp_appeal_empty_default": "Tu n'as encore jamais fait appel.\nSur une correction, tape Faire appel sur un point manqué.",
+  "@cp_appeal_empty_default": { "description": "Message vide appels par défaut" },
+
+  "cp_appeal_empty_filtered": "Aucun appel ne correspond à ce filtre.",
+  "@cp_appeal_empty_filtered": { "description": "Message vide appels filtrés" },
+
+  "cp_case_no_slug": "Aucun cas spécifié.",
+  "@cp_case_no_slug": { "description": "Erreur pas de slug" },
+
+  "cp_case_point_missing_fallback": "Point manqué",
+  "@cp_case_point_missing_fallback": { "description": "Fallback label point manqué" },
+
+  "langSwitcherTitle": "Langue de l'application",
+  "@langSwitcherTitle": { "description": "Titre du sélecteur de langue" },
+
+  "langSwitcherFr": "Français",
+  "@langSwitcherFr": { "description": "Option langue française" },
+
+  "langSwitcherEn": "English",
+  "@langSwitcherEn": { "description": "Option langue anglaise" },
+
+  "langSwitcherSubtitle": "Langue active : {lang}",
+  "@langSwitcherSubtitle": {
+    "description": "Sous-titre langue active",
+    "placeholders": { "lang": { "type": "String" } }
+  },
+
+  "dateToday": "Aujourd'hui",
+  "@dateToday": { "description": "Date aujourd'hui" },
+
+  "dateYesterday": "Hier",
+  "@dateYesterday": { "description": "Date hier" },
+
+  "dateNDaysAgo": "Il y a {n} jours",
+  "@dateNDaysAgo": {
+    "description": "Il y a N jours",
+    "placeholders": { "n": { "type": "int" } }
+  },
+
+  "dateNMonthsAgo": "Il y a {n} mois",
+  "@dateNMonthsAgo": {
+    "description": "Il y a N mois",
+    "placeholders": { "n": { "type": "int" } }
+  },
+
+  "dateNMinutesAgo": "Il y a {n} min",
+  "@dateNMinutesAgo": {
+    "description": "Il y a N minutes",
+    "placeholders": { "n": { "type": "int" } }
+  },
+
+  "dateNSecondsAgo": "À l'instant",
+  "@dateNSecondsAgo": { "description": "Maintenant / à l'instant" }
+}

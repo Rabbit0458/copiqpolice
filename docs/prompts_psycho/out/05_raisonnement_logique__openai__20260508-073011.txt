@@ -1,0 +1,332 @@
+```json
+[
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Tous les guépards sont rapides. Cet animal est un guépard.",
+        "options": ["Cet animal est lent", "Cet animal est rapide", "Cet animal est un lion", "On ne peut pas savoir"],
+        "answer": "Cet animal est rapide",
+        "explanation": "C'est un syllogisme classique : tous les guépards sont rapides, et cet animal est un guépard. Donc, par transitivité, cet animal est rapide. Le piège classique est de confondre le lien direct et de penser qu'on ne peut pas conclure."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Où se trouve la pomme ?",
+        "prompt": "Toutes les pommes rouges sont sur l'arbre. Cette pomme est rouge.",
+        "options": ["Cette pomme est par terre", "Cette pomme est sur l'arbre", "Cette pomme n'existe pas", "On ne peut pas savoir"],
+        "answer": "Cette pomme est sur l'arbre",
+        "explanation": "Syllogisme classique : si toutes les pommes rouges sont sur l'arbre et que cette pomme est rouge, elle se trouve donc sur l'arbre. Le piège est de considérer des conclusions possibles hors schéma, comme son absence."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le goût du bonbon ?",
+        "prompt": "Tous les bonbons bleus sont au goût de menthe. Ce bonbon est bleu.",
+        "options": ["Goût fraise", "Goût menthe", "Goût réglisse", "On ne peut pas savoir"],
+        "answer": "Goût menthe",
+        "explanation": "Par un syllogisme simple, sachant que tous les bonbons bleus ont goût de menthe et que ce bonbon est bleu, il a goût de menthe. Ne pas être distrait par la couleur qui pourrait sembler trompeuse est primordial."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus grand ?",
+        "prompt": "Jean est plus grand que Tom. Tom est plus grand que Marc.",
+        "options": ["Jean", "Tom", "Marc", "On ne peut pas savoir"],
+        "answer": "Jean",
+        "explanation": "En utilisant le raisonnement par transitivité, si Jean > Tom et Tom > Marc, alors Jean > Marc. Jean est donc le plus grand. Attention au piège : ne pas s'embrouiller avec les relations entre chaque individu."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Allez-vous gagner ?",
+        "prompt": "Dans une course, vous doublez le 3e coureur.",
+        "options": ["Oui, vous êtes 1er", "Non, vous êtes 2e", "Non, vous êtes 3e", "On ne peut pas savoir"],
+        "answer": "Non, vous êtes 2e",
+        "explanation": "En doublant le 3e coureur, vous prenez sa place, donc vous devenez le 3e. Vous n'êtes ni 1er ni 2e. Ce type de question est un piège classique en logique, souvent mal compris."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on en déduire ?",
+        "prompt": "Tous les chiens sont des mammifères. Rex est un chien.",
+        "options": ["Rex est un oiseau", "Rex est un mammifère", "Rex est un reptile", "On ne peut pas savoir"],
+        "answer": "Rex est un mammifère",
+        "explanation": "Il s'agit d'un syllogisme par transitivité : si tous les chiens sont des mammifères et Rex est un chien, alors Rex est un mammifère. Le piège est de se laisser distraire par des catégories sans lien dans ce contexte."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelles chaussures sont en cuir ?",
+        "prompt": "Seules les chaussures de sport sont en cuir. Ces chaussures sont de sport.",
+        "options": ["Elles sont en cuir", "Elles ne sont pas en cuir", "On ne peut pas savoir", "Elles sont en métal"],
+        "answer": "Elles sont en cuir",
+        "explanation": "En appliquant la règle stricte d'inclusion, toutes les chaussures de sport, et celles-là en font partie, sont en cuir. Ce piège vise à vérifier si on reconnaît la relation directe, malgré une seule condition."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le résultat final ?",
+        "prompt": "Paul construit des maisons. Il a construit une maison en pierre.",
+        "options": ["Il a fait une maison en bois", "Une maison en pierre", "Un immeuble", "Une cabane"],
+        "answer": "Une maison en pierre",
+        "explanation": "La relation présentée montre un résultat direct : il est dit que Paul construit des maisons, et précisément une en pierre ici, sans autre conclusion possible. Le piège serait de s'écarter de l'énoncé et de penser aux autres types de construction."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on dire de Julie ?",
+        "prompt": "Toutes les personnes intelligentes aiment lire. Julie aime lire.",
+        "options": ["Julie est intelligente", "Julie est bête", "Julie n'aime pas lire", "On ne peut pas savoir"],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Renverser la condition est incorrect ici : on sait que les intelligents lisent, mais lire ne prouve pas nécessairement l'intelligence, donc la conclusion directe sur l'intelligence de Julie est indéductible. C'est une situation classique où la condition inverse est invalidée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel animal a-t-on ?",
+        "prompt": "Tous les serpents sont reptiles. Mon python est un serpent.",
+        "options": ["Un oiseau", "Un reptile", "Un mammifère", "Un poisson"],
+        "answer": "Un reptile",
+        "explanation": "Syllogisme simple : tous les serpents sont reptiles, et mon python est un serpent, alors il est un reptile. Le piège ici pourrait être de se laisser distraire par des catégories non liées comme les mammifères."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le métier de Clara ?",
+        "prompt": "Clara est médecin et aime voyager. Elle voyage en Inde.",
+        "options": ["Elle est journaliste", "Elle est médecin", "Elle est architecte", "On ne peut pas savoir"],
+        "answer": "Elle est médecin",
+        "explanation": "Bien que l'on parle de voyages, son métier reste défini comme médecin, ce qui ne change pas avec son voyage. Le piège classique ici est de changer d'axe de raisonnement, passant du métier au loisir."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le champion ?",
+        "prompt": "Martin a battu tout le monde sauf Lisa. Lisa a perdu contre Eva.",
+        "options": ["Eva est championne", "Martin est champion", "Lisa est championne", "Martin n'est pas champion"],
+        "answer": "Eva est championne",
+        "explanation": "Si Lisa a perdu contre Eva, alors Eva doit être meilleure que Lisa et Martin ne l'a pas battue. Eva est donc championne. Un piège serait de considérer Martin comme champion alors qu'il n'a pas affronté Eva."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur est le ciel ?",
+        "prompt": "Le ciel est toujours bleu quand il fait beau. Il fait beau aujourd'hui.",
+        "options": ["Le ciel est gris", "Le ciel est bleu", "Le ciel est vert", "On ne peut pas savoir"],
+        "answer": "Le ciel est bleu",
+        "explanation": "Application directe : quand il fait beau, le ciel est bleu et il fait beau, donc le ciel est bleu. Le piège souvent rencontré est de mal stipuler la condition inverse ou de sur-interpréter l'énoncé simple."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le goût du chocolat ?",
+        "prompt": "Les chocolats amers sont tous noirs. Ce chocolat est noir.",
+        "options": ["Il est amer", "Il est sucré", "Il est blanc", "On ne peut pas savoir"],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Le fait d'avoir un chocolat noir ne garantit pas qu'il soit amer car la condition exprime que tous les amers sont noirs, mais pas l'inverse. Un piège commun est d'appliquer la condition dans les deux sens sans fondement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur est la voiture ?",
+        "prompt": "Toutes les voitures de course sont rouges. Claude a une voiture de course.",
+        "options": ["Elle est bleue", "Elle est rouge", "Elle est verte", "On ne peut pas savoir"],
+        "answer": "Elle est rouge",
+        "explanation": "Syllogisme simple : toutes les voitures de course sont rouges, donc la voiture de Claude, qui est une voiture de course, est rouge. Le piège est de douter de la conclusion parce que d'autres couleurs existent dans un autre contexte."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la taille du livre ?",
+        "prompt": "Tous les livres imprimés sont gros. Mon livre est imprimé.",
+        "options": ["Il est gros", "Il est petit", "Il est moyen", "On ne peut pas savoir"],
+        "answer": "Il est gros",
+        "explanation": "Dans ce contexte, la déduction est directe : un livre imprimé est gros. Celui de l'énoncé étant imprimé, il est gros. La confusion viendrait de penser à d'autres types d'impressions inappropriées ici."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle bouteille est pleine ?",
+        "prompt": "Toutes les bouteilles rouges sont pleines. Cette bouteille est rouge.",
+        "options": ["Elle est vide", "Elle est pleine", "Elle est à moitié", "On ne peut pas savoir"],
+        "answer": "Elle est pleine",
+        "explanation": "Syllogisme classique : toutes les bouteilles rouges sont pleines et cette bouteille est rouge, donc elle est nécessairement pleine. Le piège réside à mal comprendre la stricte relation implicite et claire."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que peut-on conclure à propos de Tom ?",
+        "prompt": "Tous les étudiants sont fatigués. Tom est étudiant. Tom est assis dans le bus.",
+        "options": ["Tom est fatigué", "Tom dort", "Tom est debout", "Tom est alerte"],
+        "answer": "Tom est fatigué",
+        "explanation": "Syllogisme : si tous les étudiants sont fatigués et que Tom est étudiant, alors Tom est fatigué. Ici, il ne faut pas laisser l'information contextuelle secondaire (où il est assis) vous détourner de la logique de base."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus vieux ?",
+        "prompt": "Léo est plus vieux que Marc. Marc est plus vieux que Max. Tom est plus vieux que Léo.",
+        "options": ["Léo", "Marc", "Tom", "Max"],
+        "answer": "Tom",
+        "explanation": "La comparaison est simple : Tom > Léo > Marc > Max. Tom est donc le plus vieux. L'erreur ici serait de mal combiner chaque relation de taille dans un ordre continu."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle position avez-vous ?",
+        "prompt": "Dans une course, vous doublez le 5e coureur puis le 2e.",
+        "options": ["1ère", "2ème", "3ème", "4ème"],
+        "answer": "2ème",
+        "explanation": "En doublant d'abord le 5ème, vous devenez 5ème, puis en doublant le 2ème, vous devenez 2ème. Le piège est de conclure une victoire sans calculer chaque positionnement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus grand ?",
+        "prompt": "Anna est plus grande que Lucie. Lucie est plus grande que Clara. Clara est plus grande que Julie.",
+        "options": ["Anna", "Lucie", "Clara", "Julie"],
+        "answer": "Anna",
+        "explanation": "En établissant l'ordre, Anna > Lucie > Clara > Julie, on voit qu'Anna est la plus grande. Un piège ici serait de se tromper dans l'ordre et d'affecter des conclusions incorrectes."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle direction devrais-tu prendre ?",
+        "prompt": "Si tu vas à l'école, tourne à gauche. Si tu vas chez Léa, tourne à droite. Tu vas à l'école.",
+        "options": ["Tourne à gauche", "Tourne à droite", "Continue tout droit", "Fais demi-tour"],
+        "answer": "Tourne à gauche",
+        "explanation": "En suivant la condition indiquée pour l'école, tu dois tourner à gauche. Bien qu'une autre condition parle d'un autre chemin, l'important est de ne pas mélanger ces directions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est ton prochain mouvement ?",
+        "prompt": "Si tu manges de la pizza, bois de l'eau. Si tu manges des pâtes, bois du jus. Tu manges de la pizza.",
+        "options": ["Bois du jus", "Bois de l'eau", "Ne bois rien", "Bois de l'eau ou du jus"],
+        "answer": "Bois de l'eau",
+        "explanation": "La règle donnée est claire : avec de la pizza, c'est de l'eau qu'il faut boire. Le piège serait de confondre cette association avec celle des pâtes ou de penser qu'il existe une option sans boire."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le montant final ?",
+        "prompt": "Toutes les chemises à rayures sont à 30 euros. Les chemises unies coûtent 20 euros de plus. Cette chemise est à rayures.",
+        "options": ["30 euros", "20 euros", "50 euros", "On ne peut pas savoir"],
+        "answer": "30 euros",
+        "explanation": "S'il est précisé que toutes les chemises à rayures coûtent 30 euros, c’est leur tarif ferme et fixe indépendamment des autres éléments. Le piège est de s'intéresser à un tarif non indiqué pour cette catégorie."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est l'occupation de Léa ?",
+        "prompt": "Tous les enseignants doivent corriger des copies. Léa corrige des copies.",
+        "options": ["Léa est étudiante", "Léa est enseignante", "Léa est photographe", "On ne peut pas savoir"],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Bien que tous les enseignants corrigent des copies, la réciproque n'est pas garantie : corriger des copies n’empêche pas d’avoir un autre métier. Ici, le piège consiste à inférer une obligation réciproque inexistante du groupe."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Thomas court plus vite que Lucas. Lucas court plus vite que Adrien. Adrien court plus vite que Daniel.",
+        "options": ["Thomas", "Lucas", "Adrien", "Daniel"],
+        "answer": "Thomas",
+        "explanation": "Thomas > Lucas > Adrien > Daniel. En observant cette chaîne directe, Thomas est indéniablement le plus rapide. Confondre l'ordre ou ignorer des segments est le risque principal."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est votre position finale ?",
+        "prompt": "Dans une course, vous doublez le 4e, puis le 3e coureur.",
+        "options": ["1ère", "2ème", "3ème", "4ème"],
+        "answer": "3ème",
+        "explanation": "En successivement doublant le 4e et le 3e, vous terminez alors à la 3e position. Un piège classique est de supposer que de tels dépassements entraînent une victoire immédiate sans calculer la progression."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans quel état est-ce ?",
+        "prompt": "Si un fruit est rouge, il est mûr. Je vois une pomme verte.",
+        "options": ["Elle est mûre", "Elle n'est pas mûre", "Elle est rouge", "On ne peut pas savoir"],
+        "answer": "Elle n'est pas mûre",
+        "explanation": "Puisqu'il est précisé que seuls les fruits rouges sont mûrs, cette pomme verte ne l'est pas. Ne pas confondre les termes présents avec des suppositions sur d'autres fruits est la clé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle direction pour Pierre ?",
+        "prompt": "Si Pierre va à la mer, il prend la route 4. Pierre ne prend pas la route 4.",
+        "options": ["Il va à la mer", "Il ne va pas à la mer", "Il est déjà à la mer", "On ne peut pas savoir"],
+        "answer": "Il ne va pas à la mer",
+        "explanation": "Dans une affirmation conditionnelle, le non-respect du moyen initial invalide le but prévu. Dans ce cas, ne pas prendre la route implique que Pierre n'ira pas à la mer. L'erreur pourrait venir d'une interprétation unilatérale."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel moyen de transport ?",
+        "prompt": "Si tu prends l'avion, apporte un passeport. Si tu voyages en train, tu n'as pas besoin de passeport. Tu voyages en train.",
+        "options": ["Avec passeport", "Sans passeport", "Ni l'un ni l'autre", "On ne peut pas savoir"],
+        "answer": "Sans passeport",
+        "explanation": "Dans ce cas de juxtaposition, tu voyages en train et la condition stipule que cela ne nécessite pas de passeport. L'erreur résiderait dans l'interprétation indifférenciée des conditions pour l'avion."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Camille ?",
+        "prompt": "Camille a 10 ans de plus que son frère. Dans 5 ans, elle aura le double de son âge actuel.",
+        "options": ["10 ans", "15 ans", "20 ans", "25 ans"],
+        "answer": "10 ans",
+        "explanation": "Posons c pour l'âge de Camille. Dans 5 ans, elle aura c+5 et elle dit que cela sera le double de c. On résout : c+5 = 2c, ce qui donne c = 5; doublé de 5 ans plus tard, elle ne sera pas cohérente à 15. Plaçons donc c = 10."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre position ?",
+        "prompt": "En marche rapide, vous doublez Ali, qui est 8ème. Puis, vous doublez Louis.",
+        "options": ["5ème", "6ème", "7ème", "9ème"],
+        "answer": "7ème",
+        "explanation": "En doublant Ali, vous prenez la 8ème place, puis en doublant Louis (qui est 7ème), vous passez 7ème. Le piège typique ici est de ne pas suivre l'ordre logique des positions."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'âge d'Hector ?",
+        "prompt": "Hector a deux fois l'âge de Raphaël. Dans 8 ans, il aura 8 ans de plus que trois fois l'âge actuel de Raphaël.",
+        "options": ["12 ans", "16 ans", "20 ans", "24 ans"],
+        "answer": "16 ans",
+        "explanation": "Posons h pour Hector : h = 2r. Dans 8 ans, h+8 = 3r+8. En les solutions donnant l'équation : h = 2r = 16 et vérifiant le résultat par réinsertion, r = 8 avec un h vérifié à 2r soit 16 avant, et 3x8 (24) + 8 ans après = 32 à vérifier."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle bouteille est vide ?",
+        "prompt": "Seules les bouteilles vertes et grandes sont pleines. Cette bouteille est verte mais petite.",
+        "options": ["Pleine", "Vide", "A moitié", "On ne peut pas savoir"],
+        "answer": "Vide",
+        "explanation": "Avec des contraintes spécifiques, la contraction n'est remplie qu'avec les deux caractéristiques. Cette bouteille, non grande, est donc vide. Le piège à éviter est de se persuader de l'union faussement correcte."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Arthur actuellement ?",
+        "prompt": "Arthur a deux fois l'âge de Paul. Dans dix ans, il aura l'âge qu'avait son père il y a vingt ans.",
+        "options": ["15 ans", "20 ans", "25 ans", "30 ans"],
+        "answer": "20 ans",
+        "explanation": "En posant a pour Arthur, double de p, on lie les âges futurs d'Arthur et du père reculant de 20 ans. La résolution révèle a=20 actuellement. Les pièges typiques se nouent en décalant les temps ou conditionnant la base actuelle."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui est le plus gros ?",
+        "prompt": "Un éléphant est plus gros qu'un lion. Un lion est plus gros qu'un chien. Un chien est plus gros qu'un chat.",
+        "options": ["Éléphant", "Lion", "Chien", "Chat"],
+        "answer": "Éléphant",
+        "explanation": "En classification séquentielle: Éléphant > Lion > Chien > Chat. L'éléphant est le plus gros. La difficulté réside dans le suivi attentif de chaque étape correspondant aux faits avérés donnés."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le statut de la lampe ?",
+        "prompt": "Si une lampe est en marche, elle éclaire. On ne voit pas de lumière.",
+        "options": ["La lampe est en marche", "La lampe est éteinte", "Elle est cassée", "Elle est allumée"],
+        "answer": "La lampe est éteinte",
+        "explanation": "En l'absence de lumière, on déduit que la lampe n'éclaire pas, donc elle est éteinte. Le piège ici est de confondre une absence de lumière comme seule preuve tangible pour conclure le statut d'un appareil."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la couleur de la dalle ?",
+        "prompt": "Une dalle peinte doit être bleue si toutes les autres dalles sont jaunes. Celle-ci est la seule d'une couleur différente.",
+        "options": ["Elle est bleue", "Elle est jaune", "Elle est verte", "On ne peut pas savoir"],
+        "answer": "Elle est bleue",
+        "explanation": "Dans une unique configuration, chaque statue dessine les autres, mais la contrainte souhaite un bleu pour tout sauf une. En contournant l'énoncé qui articulerait la différence, bleue reste la correcte." 
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la meilleure remède ?",
+        "prompt": "Si on trie toutes les herbes vertes, la potion est réussie. La potion ratée indique une erreur.",
+        "options": ["Herbes non mélangées", "Herbes bien triées", "Essayer un autre jour", "On ne peut pas savoir"],
+        "answer": "Herbes non mélangées",
+        "explanation": "Si la potion échoue, c’est que l'ensemble n'a pas été trié correctement à base d'herbes. Le piège s’inscrit à renoncer aux hypothèses plutôt qu’à affronter le mélange primaire ratifié."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a vraiment Chloé ?",
+        "prompt": "Chloé dit avoir 4 ans de plus que Marie. Elle est actuellement plus jeune d'une décade que son père.",
+        "options": ["18 ans", "28 ans", "32 ans", "42 ans"],
+        "answer": "28 ans",
+        "explanation": "Disposant de plus de transcendances propres, Chloé aveugle 28 afin d'égaler une décennie sous l'ascendance paternelle. Limbes par néometrisation sont à décompter."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui est le plus intelligent ?",
+        "prompt": "Mireille est plus intelligente que Paul. Paul est plus intelligent que Marie. Marie est plus intelligente que Jean.",
+        "options": ["Mireille", "Paul", "Marie", "Jean"],
+        "answer": "Mireille",
+        "explanation": "En ordonnant : Mireille > Paul > Marie > Jean. Mireille est donc en tête. Le piège consiste en cascades mal classées.”
+    }
+]
+```

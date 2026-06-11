@@ -1,0 +1,416 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « rapide » ?",
+    "prompt": null,
+    "options": ["Lent", "Vif", "Calme", "Lourd"],
+    "answer": "Vif",
+    "explanation": "« Vif » est synonyme de « rapide » car il décrit ce qui se meut rapidement. « Lent » est en réalité l'opposé de « rapide ». « Calme » et « lourd » n'ont aucun lien sémantique direct avec la notion de vitesse.",
+    "hint": null
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « grande » ?",
+    "prompt": null,
+    "options": ["Petite", "Large", "Immense", "Énorme"],
+    "answer": "Petite",
+    "explanation": "« Petite » est l'antonyme de « grande » car elle désigne une dimension réduite. « Large » suggère une ampleur, tandis que « immense » et « énorme » renforcent l'idée de grandeur.",
+    "hint": "Cherche la notion opposée en taille."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Chat est à poil comme poisson est à ___",
+    "prompt": null,
+    "options": ["Écaille", "Plume", "Aile", "Coquille"],
+    "answer": "Écaille",
+    "explanation": "Les chats ont des poils, tandis que les poissons ont des écailles. « Plume » est adapté pour les oiseaux, « aile » n’est pas un revêtement, et « coquille » concerne principalement les mollusques.",
+    "hint": "Pense à ce qui recouvre le poisson."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Pommes, Poires, Carottes, Bananes",
+    "options": ["Pommes", "Poires", "Carottes", "Bananes"],
+    "answer": "Carottes",
+    "explanation": "Les pommes, poires et bananes sont des fruits, alors que les carottes sont des légumes. Ils diffèrent par leur classification botanique.",
+    "hint": "Pense à ce que tu mettrais dans une salade de fruits."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « parler » ?",
+    "prompt": null,
+    "options": ["Chuchoter", "Regarder", "Pleurer", "Écouter"],
+    "answer": "Chuchoter",
+    "explanation": "« Chuchoter » est une manière de parler à voix basse. « Regarder » et « écouter » sont des actions impliquant les sens mais pas la parole, alors que « pleurer » est une expression émotionnelle distincte.",
+    "hint": "Considère les différentes manières d'utiliser la parole."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, « clé » signifie : « La clé réside dans le travail acharné. »",
+    "prompt": "La clé réside dans le travail acharné.",
+    "options": ["Instrument de musique", "Solution", "Artefact", "Matériau"],
+    "answer": "Solution",
+    "explanation": "Ici, « clé » est utilisé de façon figurative pour signifier « solution ». Un instrument de musique ou un matériel ne se traduirait pas par « résider ». « Artefact » désigne un objet fabriqué, mais pas une idée.",
+    "hint": "Pense à ce qui permet de résoudre un problème."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « froid » ?",
+    "prompt": null,
+    "options": ["Calme", "Chaud", "Épais", "Dense"],
+    "answer": "Chaud",
+    "explanation": "« Chaud » est l'opposé de « froid » dans le contexte de la température. « Calme », « épais », et « dense » n'appartiennent pas au même champ lexical ni au même registre.",
+    "hint": "Opposé dans le sens de température."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Malgré la fatigue, elle a ___ son travail à temps. »",
+    "prompt": null,
+    "options": ["Fini", "Oublié", "Regardé", "Brisé"],
+    "answer": "Fini",
+    "explanation": "Le mot « fini » colle au contexte, indiquant que la tâche a été achevée malgré la fatigue. Les autres options ne sont pas appropriées pour indiquer l'achèvement dans cette phrase.",
+    "hint": "Pense à quel verbe indiquerait la fin d'une tâche."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « content » ?",
+    "prompt": null,
+    "options": ["Triste", "Joyeux", "Énervé", "Indifférent"],
+    "answer": "Joyeux",
+    "explanation": "« Joyeux » signifie heureux, donc synonyme de « content ». « Triste » est un contraire, et « énervé » et « indifférent » présentent des états émotionnels différents.",
+    "hint": "Pense à un état émotionnel positif."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, « lumière » signifie : « Il a vu la lumière dans ce projet. »",
+    "prompt": "Il a vu la lumière dans ce projet.",
+    "options": ["Illumination", "Idée nouvelle", "Lampe", "Rayon"],
+    "answer": "Idée nouvelle",
+    "explanation": "Ici, la lumière symbolise la clarté ou une nouvelle approche. « Illumination » peut être trompeur mais se réfère souvent à l'éclat lumineux. « Lampe » et « rayon » ne sont pas corrects vu le contexte.",
+    "hint": "Considère ce qui peut être vu comme une découverte ou une révélation."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Rose, Tulipe, Carotte, Pivoine",
+    "options": ["Rose", "Tulipe", "Carotte", "Pivoine"],
+    "answer": "Carotte",
+    "explanation": "La carotte est un légume, alors que la rose, la tulipe, et la pivoine sont des fleurs. Ces termes appartiennent à des catégories botaniques différentes.",
+    "hint": "Cherche lequel n'est pas une fleur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « courageux » ?",
+    "prompt": null,
+    "options": ["Craintif", "Brave", "Faible", "Léthargique"],
+    "answer": "Brave",
+    "explanation": "« Brave » est synonyme de « courageux ». « Craintif », « faible », et « léthargique » ne partagent pas cet attribut de caractère, souvent confrontant la peur.",
+    "hint": "Pense à un adjectif décrivant ceux qui affrontent le danger sans peur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, « pied » signifie : « Prenons pied dans cette affaire. »",
+    "prompt": "Prenons pied dans cette affaire.",
+    "options": ["Membre", "Stabilité", "Support", "Accélérateur"],
+    "answer": "Stabilité",
+    "explanation": "Ici, « pied » fait référence à gagner de la stabilité. En tant que membre du corps, « pied » n'applique pas de sens ici, et « support » et « accélérateur » sont hors contexte.",
+    "hint": "Considère le sens figuratif pour parler de gagner en stabilité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Pour se maintenir en forme, il ___ régulièrement. »",
+    "prompt": null,
+    "options": ["Court", "Dort", "Mange", "Lit"],
+    "answer": "Court",
+    "explanation": "« Court » est le choix correct car l'exercice physique est une méthode reconnue pour maintenir la forme physique. Dormir, manger, et lire sont d'autres activités quotidiennes mais pas directement liées à la forme physique.",
+    "hint": "Pense à une activité physique souvent pratiquée pour rester en forme."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Chien, Chat, Perroquet, Canapé",
+    "options": ["Chien", "Chat", "Perroquet", "Canapé"],
+    "answer": "Canapé",
+    "explanation": "Le canapé est un meuble, alors que chien, chat et perroquet sont des animaux de compagnie. Ils appartiennent à des catégories totalement différentes.",
+    "hint": "Cherche ce qui ne peut pas bouger par lui-même."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « sombre » ?",
+    "prompt": null,
+    "options": ["Obscur", "Lumineux", "Terne", "Gris"],
+    "answer": "Lumineux",
+    "explanation": "« Lumineux » est l'antonyme de « sombre », car il désigne ce qui est éclairé ou brillant. Les termes « obscur », « terne » et « gris » ne sont pas des contraires du mot en question.",
+    "hint": "Opposé de manque de lumière."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « joyeux » ?",
+    "prompt": null,
+    "options": ["Triste", "Heureux", "Apathique", "Fâché"],
+    "answer": "Heureux",
+    "explanation": "« Heureux » est un synonyme de « joyeux », car tous deux indiquent un état de bonheur. Les mots « triste », « apathique » et « fâché » signalent des sentiments contraires ou différents.",
+    "hint": "Cherche un adjectif qui exprime de la joie."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « cohérent » ?",
+    "prompt": null,
+    "options": ["Disjoint", "Harmonieux", "Chaotique", "Épars"],
+    "answer": "Harmonieux",
+    "explanation": "« Harmonieux » est synonyme de « cohérent », car il se réfère à une disposition ordonnée et logique. Les autres options comme « disjoint », « chaotique », et « épars » décrivent des états de désordre ou de fragmentation.",
+    "hint": "Pensez à ce qui suit un certain ordre ou logique."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Professeur est à école comme docteur est à ___",
+    "prompt": null,
+    "options": ["Clinique", "Bureau", "Édifice", "Loisir"],
+    "answer": "Clinique",
+    "explanation": "Le professeur travaille à l'école tout comme le docteur exerce souvent en clinique. Un « bureau » peut être à divers endroits, tandis que « édifice » et « loisir » ne sont pas spécifiques au contexte.",
+    "hint": "Considérez où un docteur pratique habituellement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « épuisé » ?",
+    "prompt": null,
+    "options": ["Fatigué", "Vigoureux", "Usé", "Éreinté"],
+    "answer": "Vigoureux",
+    "explanation": "« Vigoureux » signifie plein d'énergie, c'est donc le contraire de « épuisé ». « Fatigué », « usé », et « éreinté » sont tous proches du sens d'épuisement.",
+    "hint": "Cherchez quelque chose qui exprime une pleine vitalité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, « pièce » signifie : « La pièce était grande. »",
+    "prompt": "La pièce était grande.",
+    "options": ["Salle", "Argent", "Segment", "Échantillon"],
+    "answer": "Salle",
+    "explanation": "Dans ce contexte, « pièce » désigne une salle ou une chambre. « Argent » ou « segment » sont interprétations incorrectes, et « échantillon » ne s'applique pas ici.",
+    "hint": "Réfère à une place dans le contexte d'une maison ou d'un bâtiment."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Cuivre, Étain, Bronze, Grès",
+    "options": ["Cuivre", "Étain", "Bronze", "Grès"],
+    "answer": "Grès",
+    "explanation": "Cuivre, étain, et bronze sont des métaux ou alliages, alors que le grès est une roche. Ils n'appartiennent pas à la même composition géologique.",
+    "hint": "Pensez à ce qui n'est pas métallurgique."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « méticuleux » ?",
+    "prompt": null,
+    "options": ["Laxiste", "Minutieux", "Confus", "Superficiel"],
+    "answer": "Minutieux",
+    "explanation": "« Minutieux » est associé à une grande attention aux détails, synonyme de « méticuleux ». « Laxiste », « confus » et « superficiel » sont d'autres caractéristiques mais pas en ligne avec la précaution.",
+    "hint": "Pensez à des actions qui requièrent de la précision."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, « glace » signifie : « La glace du lac était épaisse. »",
+    "prompt": "La glace du lac était épaisse.",
+    "options": ["Crème glacée", "Fenêtre", "Glaçon", "État solide de l'eau"],
+    "answer": "État solide de l'eau",
+    "explanation": "Ici, « glace » fait référence à l'état solide de l'eau. Une « crème glacée » serait hors de propos pour un lac, et « fenêtre » désigne un vitrage, pas pertinent dans ce contexte.",
+    "hint": "Contemple la surface d'un lac en hiver."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Salade, Tomate, Pizza, Laitue",
+    "options": ["Salade", "Tomate", "Pizza", "Laitue"],
+    "answer": "Pizza",
+    "explanation": "La pizza est un plat cuisiné, tandis que les trois autres, salade, tomate, et laitue, appartiennent au domaine de la cuisine crue – souvent servis ensemble.",
+    "hint": "Cherchez ce qui nécessite une méthode de cuisson spécifique."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : « Il est important de bien ___ les règles. »",
+    "prompt": null,
+    "options": ["Observer", "Ignorer", "Détruire", "Perdre"],
+    "answer": "Observer",
+    "explanation": "« Observer » correspond à suivre attentivement les règles. Ignorer les règles est contraire à cela, tandis que « détruire » et « perdre » sont hors contexte pour des règles.",
+    "hint": "Pense à un terme lié à l'adhésion et au respect."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « abondant » ?",
+    "prompt": null,
+    "options": ["Peu", "Inexistant", "Excessif", "Surchargé"],
+    "answer": "Peu",
+    "explanation": "« Peu » oppose la notion d'abondance, indiquant ce qui est en quantité limitée. « Inexistant » est absolu tandis que « excessif » et « surchargé » ne décrivent pas un manque.",
+    "hint": "Cherchez ce qui signifie l'opposé de grande quantité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Souris est à chat comme fromage est à ___",
+    "prompt": null,
+    "options": ["Rat", "Trappe", "Chien", "Croquette"],
+    "answer": "Trappe",
+    "explanation": "Le fromage est souvent utilisé pour appâter les souris, à l'instar de la façon dont le chat chasse la souris. Un « rat » pourrait être attiré par le fromage, mais ne répond pas à l'analogie.",
+    "hint": "Considérez l'attraction naturelle."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, « carton » signifie : « Son invention a fait un carton. »",
+    "prompt": "Son invention a fait un carton.",
+    "options": ["Boîte", "Succès", "Défaillance", "Emballage"],
+    "answer": "Succès",
+    "explanation": "Dans ce contexte, « carton » veut dire un grand succès. Le sens de boîte ou emballage n'est pas approprié ici, et une « défaillance » serait l'opposé.",
+    "hint": "Imaginez lorsque quelque chose est très bien reçu."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « réticent » ?",
+    "prompt": null,
+    "options": ["Enthousiaste", "Hésitant", "Déterminé", "Zélé"],
+    "answer": "Hésitant",
+    "explanation": "« Hésitant » est une expression semblable à « réticent », traduisant une certaine réserve ou reluctance. En revanche, « enthousiaste », « déterminé » et « zélé » traduisent des attitudes positives et proactives.",
+    "hint": "Concentrez-vous sur une attitude de réserve."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, « pièce » signifie : « La pièce valait beaucoup d'argent. »",
+    "prompt": "La pièce valait beaucoup d'argent.",
+    "options": ["Salle", "Objet d'art", "Monnaie", "Fragment"],
+    "answer": "Monnaie",
+    "explanation": "Dans ce contexte, « pièce » réfère à une monnaie ayant de la valeur. Une « salle » ou un « objet d'art » pourrait aussi avoir de la valeur, mais celles-ci ne sont pas pertinentes dans ce contexte précis.",
+    "hint": "Question sur la valeur monétaire."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « joyeux » ?",
+    "prompt": null,
+    "options": ["Heureux", "Triste", "Amusé", "Content"],
+    "answer": "Triste",
+    "explanation": "« Triste » est l'antonyme de « joyeux », car il représente un état de mécontentement ou de peine. « Heureux », « amusé », et « content » sont des synonymes ou des expressions similaires de joie.",
+    "hint": "Pensez à l'opposé du bonheur."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « prolixe » ?",
+    "prompt": null,
+    "options": ["Succinct", "Bavard", "Silencieux", "Réservé"],
+    "answer": "Bavard",
+    "explanation": "« Bavard » est proche de « prolixe », qui décrit quelqu'un qui parle abondamment. « Succinct » est l'exact opposé, tandis que « silencieux » et « réservé » ne sont pas synonymes.",
+    "hint": "Cherchez un terme décrivant une grande loquacité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « sibyllin » ?",
+    "prompt": null,
+    "options": ["Clair", "Énigmatique", "Fugace", "Troublant"],
+    "answer": "Clair",
+    "explanation": "« Clair » est l'opposé de « sibyllin », qui signifie obscur ou mystérieux. « Énigmatique » est similaire en nature, « fugace » et « troublant » ne s'opposent pas directement.",
+    "hint": "Pensez à la notion de transparence et de limpidité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Auteur est à livre comme peintre est à ___",
+    "prompt": null,
+    "options": ["Toile", "Musée", "Crayon", "Statue"],
+    "answer": "Toile",
+    "explanation": "L'auteur crée des livres et le peintre crée sur une toile. Un musée est un lieu d'exposition, un crayon est un outil de dessin et une statue est une forme d'art différente.",
+    "hint": "Considérez le support principal pour un peintre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Lymphocyte, Anticorps, Neurone, Bilan",
+    "options": ["Lymphocyte", "Anticorps", "Neurone", "Bilan"],
+    "answer": "Bilan",
+    "explanation": "Le « bilan » est un terme général souvent utilisé comme synonyme de résumé ou d'analyse, alors que lymphocyte, anticorps et neurone sont des termes médicaux spécifiques.",
+    "hint": "Regardez ce qui ne s'intègre pas à l'anatomie."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète la phrase : « Après des années, il reconnaît son erreur et se dit ___ . »",
+    "prompt": null,
+    "options": ["Navré", "Contrit", "Satisfait", "Indifférent"],
+    "answer": "Contrit",
+    "explanation": "« Contrit » désigne une profonde repentance, ce qui correspond au contexte. « Navré » est plus faible, « satisfait » est opposé au concept et « indifférent » n'exprime pas le sentiment de regret.",
+    "hint": "Recherchez un terme décrivant le repentir."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « atavique » ?",
+    "prompt": null,
+    "options": ["Nouvelle", "Héréditaire", "Prometteur", "Éphémère"],
+    "answer": "Héréditaire",
+    "explanation": "« Atavique » fait référence à quelque chose qui est hérité ou ancien. « Nouvelle », « prometteur » et « éphémère » ne partagent pas cet aspect génétique ou ancestral.",
+    "hint": "Réfléchissez à des tendances transmises de générations."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, « bête » signifie : « Son idée était vraiment bête. »",
+    "prompt": "Son idée était vraiment bête.",
+    "options": ["Animal", "Stupide", "Inoffensif", "Lourde"],
+    "answer": "Stupide",
+    "explanation": "Ici, « bête » est utilisé pour signifier une certaine stupidité ou manque de pertinence. Contrairement à « animal », étant la définition littérale, et « inoffensif » ou « lourde » ne conviennent pas.",
+    "hint": "Pensez au contexte de jugement sur une idée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Médecin est à stéthoscope comme peintre est à ___",
+    "prompt": null,
+    "options": ["Pinceau", "Toile", "Palette", "Chevalet"],
+    "answer": "Pinceau",
+    "explanation": "Le stéthoscope est un outil pour le médecin, tout comme le pinceau est un outil pour le peintre. Bien qu'une toile et une palette soient utilisées par le peintre, seule la fonctionnalité d'outil du pinceau se raccorde directement au stéthoscope.",
+    "hint": "Cherchez l'outil principal utilisé par le peintre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « altérer » ?",
+    "prompt": null,
+    "options": ["Conserver", "Dégrader", "Injurier", "Polluer"],
+    "answer": "Conserver",
+    "explanation": "« Conserver » s'oppose à « altérer » dans le sens de maintenir intact. « Dégrader », « injurier », et « polluer » participent plutôt à d'autres formes de détérioration.",
+    "hint": "Réfléchissez à ce qui maintient en l'état."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, « course » signifie : « Il a terminé sa course en trombe. »",
+    "prompt": "Il a terminé sa course en trombe.",
+    "options": ["Formation", "Compétition", "Boutique", "Marche"],
+    "answer": "Compétition",
+    "explanation": "Dans ce contexte, « course » désigne une compétition sportive. Une « formation » ou une « boutique » serait incorrecte ici, « marche » est un contre-sens.",
+    "hint": "Pensez à un événement sportif."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Sérendipité, Découverte, Invention, Lecture",
+    "options": ["Sérendipité", "Découverte", "Invention", "Lecture"],
+    "answer": "Lecture",
+    "explanation": "La sérendipité, la découverte et l'invention sont des termes associés à l'acte de trouver ou d'innover. « Lecture » est un acte passif sans lien direct avec les autres.",
+    "hint": "Pensez à ce qui implique un acte passif."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « prolifique » ?",
+    "prompt": null,
+    "options": ["Stérile", "Productif", "Infécond", "Riche"],
+    "answer": "Stérile",
+    "explanation": "« Stérile » est l'antonyme parfait de « prolifique », indiquant l'absence de production. « Infécond » est aussi plausible mais « productif » et « riche » s'approchent du sens de prolifique.",
+    "hint": "Trouvez un adjectif qui signifie la non-production."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, « batterie » signifie : « La batterie de son téléphone est déchargée. »",
+    "prompt": "La batterie de son téléphone est déchargée.",
+    "options": ["Ensemble d'instruments", "Accumulateur d'énergie", "Réserve", "Assortiment"],
+    "answer": "Accumulateur d'énergie",
+    "explanation": "En contexte, « batterie » ici réfère à un accumulateur d'énergie dans un téléphone. Pas une série d'instruments ou assortissements vestimentaires.",
+    "hint": "Pensez à ce qui alimente un appareil."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Juger, Douter, Penser, Déduire",
+    "options": ["Juger", "Douter", "Penser", "Déduire"],
+    "answer": "Douter",
+    "explanation": "Juger, penser, et déduire impliquent des conclusions ou une décision logique, en revanche, douter est un processus d'incertitude. Les autres participent à un raisonnement.",
+    "hint": "Considérez ce qui indique incertitude vs. raisonnement."
+  }
+]

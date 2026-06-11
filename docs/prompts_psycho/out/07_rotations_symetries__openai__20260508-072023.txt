@@ -1,0 +1,722 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie possède un triangle équilatéral ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "C",
+    "explanation": "Un triangle équilatéral possède trois axes de symétrie, chacun passant par un sommet et le milieu du côté opposé. Cela respecte la règle qu'un polygone régulier à n côtés possède n axes de symétrie. Il est important de ne pas confondre avec un triangle quelconque qui n'en a aucun.",
+    "hint": "Pense à chaque sommet lié au milieu du côté opposé."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre parmi les suivantes a un axe de symétrie vertical ? (A, H, D, E)",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "A"},
+      {"key": "B", "label": "H"},
+      {"key": "C", "label": "D"},
+      {"key": "D", "label": "E"}
+    ],
+    "answer": "A",
+    "explanation": "La lettre 'A' a un axe de symétrie vertical passant par son sommet et le milieu de sa base. Cette symétrie est une caractéristique importante des lettres avec formes géométriques équilibrées. Les autres lettres présentées ne possèdent pas cette particularité d'une symétrie verticale.",
+    "hint": "Visualise une ligne coupant verticalement la lettre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie possède un cercle ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "Infinite"},
+      {"key": "C", "label": "4"},
+      {"key": "D", "label": "0"}
+    ],
+    "answer": "B",
+    "explanation": "Un cercle a une infinité d'axes de symétrie car n'importe quelle ligne passant par son centre le divisera en deux moitiés égales. Cette propriété unique découle de la nature parfaitement ronde et homogène d'un cercle. Il est crucial de comprendre cette généralité, distincte des polygones réguliers.",
+    "hint": "Pense à chaque diamètre du cercle."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Une rotation de 90° dans le sens horaire transforme quel chiffre en un autre ? (6, 9, 8, 0)",
+    "prompt": "On considère les chiffres tels qu'ils apparaissent sur un écran d'horloge numérique.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "6 en 9"},
+      {"key": "B", "label": "9 en 6"},
+      {"key": "C", "label": "8 en 8"},
+      {"key": "D", "label": "0 en 0"}
+    ],
+    "answer": "A",
+    "explanation": "Une rotation de 90° dans le sens horaire d'un '6' sur un écran numérique typique le transforme en '9'. Cette transformation est une rotation simple mais montre comment une rotation peut changer la forme perçue. En se souvenant que le chiffre '6' devient '9', le risque de confusion entre ces chiffres symétriques est diminué.",
+    "hint": "Imagine tourner physiquement un écran d'horloge numérique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Une rotation de 180° autour d'un point sur un signe de STOP donnera :",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Le même signe"},
+      {"key": "B", "label": "Un signe inversé"},
+      {"key": "C", "label": "Un nouveau signe"},
+      {"key": "D", "label": "Impossible à déterminer"}
+    ],
+    "answer": "A",
+    "explanation": "Un signe de STOP, qui est un octogone régulier, reste identique après une rotation de 180° autour de son centre. Cela est dû à sa symétrie et la régularité de ses angles et longueurs. Cette transformation illustre comment certains objets réguliers ou symétriques peuvent rester invariants par rotation.",
+    "hint": "Pense à la symétrie d'un octogone."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel pictogramme routier n'a pas d'axe de symétrie ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "Fer à cheval"},
+      {"key": "B", "label": "Triangle de danger"},
+      {"key": "C", "label": "Cercle de restriction"},
+      {"key": "D", "label": "Carré d'information"}
+    ],
+    "answer": "A",
+    "explanation": "Un panneau en forme de fer à cheval n'a pas d'axe de symétrie du fait de sa forme ouverte et asymétrique. Les autres formes présentées ont soit un axe de symétrie, soit plusieurs, selon la régularité et fermeture de leurs contours. Reconnaître des formes sans symétrie est crucial pour identifier des exceptions aux règles usuelles de symétrie.",
+    "hint": "Cherche une forme ouverte."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel alphabet parmi ces lettres a un axe de symétrie horizontal ? (U, H, B, E)",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "U"},
+      {"key": "B", "label": "H"},
+      {"key": "C", "label": "B"},
+      {"key": "D", "label": "E"}
+    ],
+    "answer": "B",
+    "explanation": "La lettre H a un axe de symétrie horizontal qui divise la lettre en miroir le long de sa partie médiane. Cette symétrie se remarque dans les caractères typographiques équilibrés et considérés régulièrement. Aucune des autres lettres n’a une telle symétrie en position horizontale.",
+    "hint": "Visualise une ligne centrale qui coupe la lettre en deux parties égales."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Après une rotation de 180° autour de son centre, quel chiffre redevient le même ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "2"},
+      {"key": "B", "label": "6"},
+      {"key": "C", "label": "8"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "C",
+    "explanation": "Le chiffre '8' possède une symétrie centrale, le rendant identique après une rotation de 180°. Il est crucial de se souvenir que d'autres chiffres, tel que '6', lors de cette rotation, changent de chiffre (deviennent '9'). Cette propriété du '8' le distingue comme une exception parmi les chiffres.",
+    "hint": "Recherchez un chiffre qui se lit de façon identique si vous tournez la feuille."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Un rectangle a-t-il plus d'axes de symétrie qu'un carré ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "Oui, plus"},
+      {"key": "B", "label": "Non, moins"},
+      {"key": "C", "label": "Égal"},
+      {"key": "D", "label": "Impossible à déterminer"}
+    ],
+    "answer": "B",
+    "explanation": "Un rectangle possède 2 axes de symétrie (un axe vertical et un axe horizontal uniquement), tandis qu'un carré a 4 axes (deux médianes et deux diagonales). C'est parce qu'un carré est un rectangle particulier avec côtés égaux, mais avec une plus grande symétrie due à ses diagonales égales.",
+    "hint": "Considère les diagonales en supplément des médianes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Après une rotation de 90° autour d'un point, qu’arrive-t-il à l’angle d'un carré ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Rien, il reste à 90°"},
+      {"key": "B", "label": "Il devient aigu"},
+      {"key": "C", "label": "Il devient droit"},
+      {"key": "D", "label": "Il devient obtus"}
+    ],
+    "answer": "A",
+    "explanation": "L'angle intérieur d'un carré reste inchangé à 90° après une rotation complète, quelle que soit la position de chaque coin. Une rotation, en règle générale, affecte la position mais pas la mesure des angles internes dans les figures régulières comme les carrés.",
+    "hint": "Souviens-toi que les rotations conservent les angles internes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel polygone possède exactement deux axes de symétrie ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "Rectangle non carré"},
+      {"key": "B", "label": "Pentagone régulier"},
+      {"key": "C", "label": "Hexagone régulier"},
+      {"key": "D", "label": "Carré"}
+    ],
+    "answer": "A",
+    "explanation": "Un rectangle non carré possède deux axes de symétrie : l'un horizontal et l'autre vertical. Ces axes divisent le rectangle en deux moitiés égales chacune. Un carré, en comparaison, a quatre axes de symétrie, y compris les diagonales, ce qui montre la différence structurelle entre les deux.",
+    "hint": "Attention aux différences entre carré et rectangle en termes de symétrie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel signe routier est centro-symétrique ? (Stop, triangle de danger, cédez le passage)",
+    "prompt": null,
+    "transformation_type": "symétrie centrale",
+    "options": [
+      {"key": "A", "label": "Stop"},
+      {"key": "B", "label": "Triangle de danger"},
+      {"key": "C", "label": "Cédez le passage"},
+      {"key": "D", "label": "Aucun"}
+    ],
+    "answer": "A",
+    "explanation": "Le panneau STOP, un octogone régulier, possède une symétrie centrale, car sa forme peut être superposée sur elle-même après une rotation de 180°. Alors que les triangles de danger et les panneaux en forme de losange posent des pièges de symétrie axiale mais pas centrale.",
+    "hint": "Cherchez une forme régulière qui supporte un demi-tour."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel symbole parmi les suivants a le plus d'axes de symétrie ? (Cercle, triangle, croix, étoile)",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "Cercle"},
+      {"key": "B", "label": "Triangle"},
+      {"key": "C", "label": "Croix"},
+      {"key": "D", "label": "Étoile"}
+    ],
+    "answer": "A",
+    "explanation": "Le cercle possède une infinité d'axes de symétrie, car il peut être divisé en deux moitiés égales par n'importe quelle ligne passant par son centre. C'est une caractéristique remarquable et unique parmi toutes les formes mentionnées, qui ont un nombre fini d'axes de symétrie.",
+    "hint": "Considère une surface qui n'a pas de début ni de fin."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle rotation fait revenir un chiffre à sa position originale ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "90°"},
+      {"key": "B", "label": "180°"},
+      {"key": "C", "label": "270°"},
+      {"key": "D", "label": "360°"}
+    ],
+    "answer": "D",
+    "explanation": "Une rotation de 360° est un tour complet qui ramène la figure à sa position initiale. Cette propriété fondamentale découle du fait que 360° couvre tout le périmètre angulaire. Comprendre cette rotation assure de ne pas confondre avec d’autres rotations partielles.",
+    "hint": "Souviens-toi: 360° signifie un tour complet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Appliquer deux rotations de 180° équivaut à quoi ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Retour au point de départ"},
+      {"key": "B", "label": "Deux symétries axiales"},
+      {"key": "C", "label": "Un renversement horizontal"},
+      {"key": "D", "label": "Aucune transformation"}
+    ],
+    "answer": "A",
+    "explanation": "Deux rotations de 180° (chacune étant un demi-tour complet) équivalent à une rotation de 360°, ramenant toute forme ou objet à sa position initiale. Cette séquence montre le principe de cumulativité des rotations successives.",
+    "hint": "Deux demi-tours recomposent un tour entier."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel chiffre reste identique après une rotation de 360° ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "5"},
+      {"key": "B", "label": "0"},
+      {"key": "C", "label": "7"},
+      {"key": "D", "label": "3"}
+    ],
+    "answer": "B",
+    "explanation": "Après une rotation de 360°, le chiffre 0 reste identique car un tour complet autour de son axe ne modifie pas sa forme circulaire simple. Cette règle est vraie pour toute figure ayant une symétrie radiale parfaitement centrée.",
+    "hint": "Visualise un chiffre ayant une forme régulière telle qu'un cercle."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Une lettre ayant une symétrie centrale : M, T, X, R ?",
+    "prompt": null,
+    "transformation_type": "symétrie centrale",
+    "options": [
+      {"key": "A", "label": "M"},
+      {"key": "B", "label": "T"},
+      {"key": "C", "label": "X"},
+      {"key": "D", "label": "R"}
+    ],
+    "answer": "C",
+    "explanation": "La lettre X a une symétrie centrale ; elle peut être retournée autour de son centre et apparaître identique. Cette propriété de symétrie centrale est unique par rapport aux autres lettres qui peuvent présenter une symétrie axiale mais pas centrale.",
+    "hint": "Cherche une lettre qui forme un quadrillage régulier lorsqu'elle pivote."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle transformation est identique à l'application consécutive de deux symétries axiales avec des axes parallèles ?",
+    "prompt": "Imagine une figure entre deux miroirs parallèles.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Une symétrie centrale"},
+      {"key": "B", "label": "Une translation"},
+      {"key": "C", "label": "Une rotation de 180°"},
+      {"key": "D", "label": "Une homothétie"}
+    ],
+    "answer": "B",
+    "explanation": "Deux réflexions (symétries axiales) consécutives à travers des axes parallèles correspondent à une translation dans la direction perpendiculaire aux axes. C'est une propriété étonnante où la distance de translation équivaut à deux fois la distance entre les axes.",
+    "hint": "Pense à un glissement dans la direction entre les miroirs."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Après une rotation de 120° d’un hexagone régulier, combien d’arrêtes sont superposées à leur position initiale ?",
+    "prompt": "Considérez un hexagone vu de face posant un sommet vers le haut.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "2"},
+      {"key": "B", "label": "3"},
+      {"key": "C", "label": "6"},
+      {"key": "D", "label": "0"}
+    ],
+    "answer": "D",
+    "explanation": "Une rotation de 120° ne superpose aucune arête de l'hexagone sur son propre emplacement initial. Le motif réparti du polygone ne permet que toutes les 360° ou 720° à revenir exactement à la position originale.",
+    "hint": "Aucun côté ne rejoint son équivalent dans une rotation inférieure à 360°."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la lettre parmi celles-ci qui reste identique après une rotation de 180° autour de son centre: N, I, X, W ?",
+    "prompt": null,
+    "transformation_type": "symétrie centrale",
+    "options": [
+      {"key": "A", "label": "N"},
+      {"key": "B", "label": "I"},
+      {"key": "C", "label": "X"},
+      {"key": "D", "label": "W"}
+    ],
+    "answer": "C",
+    "explanation": "La lettre X possède une symétrie centrale et semble identique après une rotation de 180° autour de son centre. C'est une caractéristique valable pour toutes les lettres romaines qui ont la même projection droite à l'envers.",
+    "hint": "Cherche une lettre qui peut être lue de la même manière sous tous les angles."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Pour une figure aplatie, la réflexion dans deux axes perpendiculaires aboutit à quelle transformation ?",
+    "prompt": "Présume que la figure centrale est encadrée par des axes verticaux et horizontaux.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Symétrie centrale"},
+      {"key": "B", "label": "Rotation 360°"},
+      {"key": "C", "label": "Translation"},
+      {"key": "D", "label": "Rotation de 180°"}
+    ],
+    "answer": "A",
+    "explanation": "Les réflexions successives autour de deux axes perpendiculaires sont équivalentes à une symétrie centrale. Ce phénomène illustre l'effet composant de la série successive de transformations géométriques.",
+    "hint": "Centre-toi sur l’effet global lors de deux inversions en ligne droite et traversante."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la lettre centro-symétrique parmi : A, V, N, S ?",
+    "prompt": null,
+    "transformation_type": "symétrie centrale",
+    "options": [
+      {"key": "A", "label": "A"},
+      {"key": "B", "label": "V"},
+      {"key": "C", "label": "N"},
+      {"key": "D", "label": "S"}
+    ],
+    "answer": "D",
+    "explanation": "La lettre S possède une symétrie centrale, ce qui signifie qu'elle semble identique après une rotation de 180° autour de son centre. Ce trait provient de la forme courbée symétrique distinctive de sa typographie standard.",
+    "hint": "Cherche la lettre qui semble avoir une double courbe."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Une rotation de 270° contre le sens des aiguilles d'une montre est équivalente à quelle autre rotation ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Rotation de 90° dans le sens des aiguilles d'une montre"},
+      {"key": "B", "label": "Rotation de 180°"},
+      {"key": "C", "label": "Rotation de 270° dans le même sens"},
+      {"key": "D", "label": "Aucun déplacement"}
+    ],
+    "answer": "A",
+    "explanation": "Effectuer une rotation de 270° dans le sens inverse des aiguilles d'une montre revient à une rotation de 90° dans le sens des aiguilles d'une montre. La somme de 360° couvre un cercle entier et montre comment ces rotations sont connexes indirectement.",
+    "hint": "Considérez le cercle entier comme unité angulaire totale."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Après une rotation de 90° d'une lettre en espace 3D, quelle orientation obtient-on de 'N' ?",
+    "prompt": "La lettre 'N' est initialement orientée verticalement sur un cube.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Elle devient 'Z'"},
+      {"key": "B", "label": "Elle devient 'N' renversée"},
+      {"key": "C", "label": "Elle reste 'N''"},
+      {"key": "D", "label": "Elle redevient 'M''"}
+    ],
+    "answer": "C",
+    "explanation": "Une rotation de 90° en espace 3D d'une lettre 'N' à partir de sa position verticale raide ne change pas nécessairement son apparence immédiate, sauf si l'exposition change l'angle du spectateur. C'est donc une question complexe qui demande une visualisation précise.",
+    "hint": "Visualisez comment une rotation d'espace traite le positionnement avant de considérer la perspective du spectateur."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "L'application successive de deux symétries axiales par rapport à deux axes XY parallèles avec distance constante équivaut à :",
+    "prompt": "Pensez à une image entre deux miroirs parallèles.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Translation le long de l'axe parallèle"},
+      {"key": "B", "label": "Symétrie centrale"},
+      {"key": "C", "label": "Rotation à 0°"},
+      {"key": "D", "label": "Inversion totale"}
+    ],
+    "answer": "A",
+    "explanation": "Deux symétries axiales à travers des plans parallèles produisent une translation affectée vers le haut ou le bas selon leur distance entre mirages. C'est une propriété classique de dynamique de réflexion en séries.",
+    "hint": "Rappelez-vous comment un miroir et son reflet génèrent le mouvement continu."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Une rotation de 30° suivie d'une rotation de 330° équivaut à :",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Une rotation de 0° (identité)"},
+      {"key": "B", "label": "Une rotation de 360°"},
+      {"key": "C", "label": "Une rotation de 30°"},
+      {"key": "D", "label": "Une rotation de 60°"}
+    ],
+    "answer": "A",
+    "explanation": "La somme des rotations successives, équivalente à 30° + 330°, U234 retourne à une circonférence entière de 360°, qui est une transformation d'identité. Cela montre que des rotations avec une somme égale à 360° maintiennent la position de départ.",
+    "hint": "C'est une rotation complète, résultant en aucune transformation visible."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Une rotation de 180° autour de l’axe Z change quel mot en son inversion miroir ? (BOB, DAD, MOM, WOW)",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "BOB"},
+      {"key": "B", "label": "DAD"},
+      {"key": "C", "label": "MOM"},
+      {"key": "D", "label": "WOW"}
+    ],
+    "answer": "B",
+    "explanation": "La rotation d'un dicton symétrique verticalement comme 'DAD', une fois sur l'axe Z, résulte dans un miroir inversé et reste lisible. Les autres options de court palindrome perdent leur lisibilité symétrique après manipulation de l'axe transversal.",
+    "hint": "Regardez pour une mise en miroir par l'axe vertical."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Une rotation aux angles décroissants 90°, -90° sur une feuille donnera : ",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Une rotation à 0°"},
+      {"key": "B", "label": "Une rotation de 180°"},
+      {"key": "C", "label": "Une rotation sur le côté"},
+      {"key": "D", "label": "Un déplacement de centre"}
+    ],
+    "answer": "A",
+    "explanation": "En additionnant les rotations de 90° suivies de -90°, le résultat est de 0°, une identité, ne modifiant pas d'objet. Ces rotations sont mathématiquement défaites, revenant à l'état d'origine.",
+    "hint": "L'ensemble des angles annulés retourne à la même synchronisation initiale."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de symétries axiales possède un losange non carré ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "B",
+    "explanation": "Un losange non carré a deux axes de symétrie passant par chacun des sommets opposés. Bien que partageant ce trait avec le carré, ses diagonales égales mais leurs longueurs totalement différentes en longueur le distinguent généralement.",
+    "hint": "Mettez l'accent sur les diagonales passant à travers des sommets obliques."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Une rotation de 120° sur un objet 3D autour d'un axe vertical donne :",
+    "prompt": "Considérez l'objet comme un prisme à base hexagonale.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Une image inversée"},
+      {"key": "B", "label": "La même image"},
+      {"key": "C", "label": "Une image décalée"},
+      {"key": "D", "label": "Aucune image convenable"}
+    ],
+    "answer": "B",
+    "explanation": "Pour un prisme à base hexagonale, chaque tour d’exactement 120° amène la face suivante au même endroit de l’axe. Cette rotation précise d'angle aide à identifier la multitude de côtés réguliers qui servent des configurations supplémentaires.",
+    "hint": "Comptez trois arêtes équivalant à la rotation du prisme hexagonal."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelles transformations successives sur une feuille retournent un effet nul?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Rotation 180°, puis symétrie axiale"},
+      {"key": "B", "label": "Rotation 90°, puis rotation -90°"},
+      {"key": "C", "label": "Symétrie axiale double"},
+      {"key": "D", "label": "Aucune transformation"}
+    ],
+    "answer": "B",
+    "explanation": "Appliquer consécutivement une rotation de 90° suivie d'une rotation de -90° sur la même axe neutralise l'ensemble, aboutissant à une rotation globale de 0° (identité visuelle initiale).",
+    "hint": "Les annulations d'angle démontent la transformation initiale."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel objet a une symétrie radiale mais pas de symétrie centrale ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "Tour d'échecs"},
+      {"key": "B", "label": "Roue de vélo"},
+      {"key": "C", "label": "Étoile à six branches"},
+      {"key": "D", "label": "Anneau olympique"}
+    ],
+    "answer": "C",
+    "explanation": "Une étoile à six branches simple possède une symétrie radiale by n côtés égaux mais manque nécessairement de symétrie centrale en absence de rotation globale (180° n'aboutit à aucune image avenante). La symétrie radiale supporte les apps de forme sur les cercles fermés.",
+    "hint": "Bavure de tri radicalement divisée sans miroir total."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Pour une boîte multicouche tournée 45° suivant l'axe d'argent, le volume total est affiché comme :",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Initiale"},
+      {"key": "B", "label": "Moyenne"},
+      {"key": "C", "label": "Réduite"},
+      {"key": "D", "label": "Transformée"}
+    ],
+    "answer": "A",
+    "explanation": "En tournant mécaniquement la boîte sur 45°, l'enveloppe totale visible reste inchangée pour l'épaisseur égale et ne compromet pas les métrages. C'est un exemple parfait de la conservation de la masse volumétrique.",
+    "hint": "Soulèvement d'assise autour d'un axe standard."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Parmi les rotations suivantes, laquelle conserve la même disposition pour une figure à base carrée en configuration multiple :",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Rotation 90°"},
+      {"key": "B", "label": "Rotation 180°"},
+      {"key": "C", "label": "Rotation 270°"},
+      {"key": "D", "label": "Rotation 360°"}
+    ],
+    "answer": "D",
+    "explanation": "Les dispositions des figures multi-étiquetées (avec bases carrées) restent toujours identiques à la suite d'une rotation de 360°. Dans le cadre des transformations continues, chaque segment laisse la structure complète inchangée.",
+    "hint": "Un tour complet ramène toutes les dalles à leur place d'origine."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Une suite lente de transformations passablement misaligned trouve réarrangées après une rotation de 72° :",
+    "prompt": "Imagine un assemblage étoilé doté de cinq branches.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Réarrangement méticuleux"},
+      {"key": "B", "label": "Demande espacement"},
+      {"key": "C", "label": "Rend toutes les brisettes convertissantes"},
+      {"key": "D", "label": "Identité originale changeable"}
+    ],
+    "answer": "A",
+    "explanation": "La rotation d'une forme pentagonale éclectique sur 72° suit le chemin iterated d'un cinquième du cercle (1/5 x 360°), et réinstaure chaque pétale en vis-à-vis. Le mouvement annulaire remplace conformément un membre.",
+    "hint": "Connexion découpant chacune entre pairs étoilés."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "En inversant des configurations avec axes asymétriquement placés, on aperçoit une nouvelle déclinaison centrale sauver pour une dissection par :",
+    "prompt": "Partez d'une sequence évolutive non régulière.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Répartition médianement axée"},
+      {"key": "B", "label": "Changements d'entités imbriqués"},
+      {"key": "C", "label": "Dérivatif circonspecte restante"},
+      {"key": "D", "label": "Application du mouvement identique"}
+    ],
+    "answer": "D",
+    "explanation": "Inverser les deux axes se cale à une forme quelconque renversée, mais un placement entre-deux continue de prévaloir assurément circondate à travers le barycentre correct. Regarder plus avant l'accentuel annule chaque arbre original.",
+    "hint": "Gravitez pour le placement central à feuilles vertueuses lorsque alignés."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Les cercles des pétales éminent d'un tournoiement éclectique distribué sur un substrat de 36° s'entrouvre vers la contre-équivalence :",
+    "prompt": "Plus large est le spectre tournoyant incliné.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Au milieu du schéma central"),
+      {"key": "B", "label": "Une rotation perpendiculaire"},
+      {"key": "C", "label": "Centre biais focal"},
+      {"key": "D", "label": "Site applet generatif multi"}
+    ],
+    "answer": "A",
+    "explanation": "Les unités rotatoires et pétaloïdes tangents harmonieusement à 36° restitue nécessaire autour du centre, car les cercles d'une fraction angulaire définie associée taisent lol traitants inconsidérablement transformatifs dégagés.",
+    "hint": "Affrontez au centre de la forme circumpolaire."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Après une triple couche de rotations successives, chaque segment subsysteme est introduit à l'état fondamental par le biais de :",
+    "prompt": "Nous visons un foyer d'arrangement sur-multipositionné.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Rétropole du noyau multi-stabilité"},
+      {"key": "B", "label": "Composite conversion général"},
+      {"key": "C", "label": "Chaptement d'axes commun"},
+      {"key": "D", "label": "Rotation déprendre étagère"}
+    ],
+    "answer": "B",
+    "explanation": "Chacune parmi les trois rotations negocient sa continuité, également yapent administré par le biais du noyau radial redécouvert qui occupe la convergence sur la matrice d'inversions déclinantes établies.",
+    "hint": "Consultez les parties transformatives symétriques en chaîne d’actions."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Imaginez un profondeur de trois pierres en arrangement relier figéavy provenières des rotations collectives 15° orientées :",
+    "prompt": "La tangente privilégiée méthode des pierres de jardin Japonica y touchées finies.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Réseau adopte boucles convergences"},
+      {"key": "B", "label": "Changement synchronisé réclusionnel"},
+      {"key": "C", "label": "Cluster épargonné mètre"},
+      {"key": "D", "label": "Fermes points de confort augmenteurs"}
+    ],
+    "answer": "A",
+    "explanation": "Les rotations parallèles de 15° reportent harmonieusement des convergences réseau depuis chaque pierre, atteignant ensemble en cloche, concaténant jusqu'à une boule de miel ordonnée juxtapositionnée.",
+    "hint": "Système rotatif multipliant les pierres effectuant d'une base combinée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Une haute rotation de transformation 60°/120° sépare les parties définies ainsi qu'une méfiance circumvoluante :",
+    "prompt": "Considérez la base intervenante comme restant dépendante de la transformation.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Rectangles non déployés limitant"},
+      {"key": "B", "label": "Déploiement constant du balancement"},
+      {"key": "C", "label": "Capacité à décroître inversée"},
+      {"key": "D", "label": "Inversant les propriétés intégrées"}
+    ],
+    "answer": "B",
+    "explanation": "Les bascules harmonisées à 60°/120° ainsi qu'une convergence circulaire trouvent appui perpetuum sans arbre de rotation chanson avant petit méfait apparent y envolée. La circonscription s’achève sous influence momentanée récapitulant l’antienne/notion.",
+    "hint": "Boucle non dépliante divisant chaque cadre melody."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Un aspect divergente cascade du dessous pyramidal traverse l’embolisation standard aux configurations recommencées par l’ensemble de rotation :",
+    "prompt": "Formez le sommet d’occlusion à partir de la pyramide.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Prisme à cinq sommets descendus"},
+      {"key": "B", "label": "Spire interne élastique"},
+      {"key": "C", "label": "Carré préposé complexe"},
+      {"key": "D", "label": "Momentum paradigmatique sugé"}
+    ],
+    "answer": "A",
+    "explanation": "Une fois le basculement libre déterminé, chacune des sections divergente obtient transversalement docile pourmode de rencontre calibrée/restauration définie aloeverde équipe et poussé maximal – octopion en contre-rotation ségrégués jeux d'unisson.",
+    "hint": "Espace en groupe, réunion aboutissant."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Un carélément posé dessous 15°, assidument éveillant plusieurs point non indenté traversés subitem : ",
+    "prompt": "Verrous-pal, immobilisé par certaines fonctionnalités près du sommet.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Endroit micro-pavé préréférencé"},
+      {"key": "B", "label": "Dénivellation d’axe"},
+      {"key": "C", "label": "Paramètre implicite exclusif"},
+      {"key": "D", "label": "Transmuant état approfondi"}
+    ],
+    "answer": "D",
+    "explanation": "Basé sur la recherche ciblée du noyau 15°, des rotations terminèrent tendues astulées aux coins définissants circulaires évités non un ferment mutuel élan d’effervescence disséminé aligné fixement.",
+    "hint": "Certains encoches percées consolidant deux urnes agréablement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "En considérant différents axes obliques à segment ouvert, combien plus d’effets principaux lors d'une transformation uniporta :",
+    "prompt": "Partez de centre de gravité jusqu’à suppression révolutionnaire.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Deux inversions converties"},
+      {"key": "B", "label": "Livre d’or chronomètre"},
+      {"key": "C", "label": "Couplée d’attention s’échelonne"},
+      {"key": "D", "label": "Un fonction expansive biphasique"}
+    ],
+    "answer": "A",
+    "explanation": "Deux inversions issues d'axes traversants obliques rapportent symétrie recentrée/stable au caractère vidéo parallèle. Les principaux effets influencés sont combinés sous un rapport récursif échelonné indélicatement reverbals.",
+    "hint": "Profitez de l'échelle, chaque pôle stabilisé mutuellement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Sur une image palier a configuration cunéiforme alternée, le revers irréversible contourne l'axe combiné :",
+    "prompt": "Ensemble jusqu’au sommet panoramix balance pièce à deux axes-centres.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Exploration septillionale"},
+      {"key": "B", "label": "Charnière à pourcentage plein"},
+      {"key": "C", "label": "Excessif symétrique stationnairement obtus"},
+      {"key": "D", "label": "Témoins vecteurs complaisants"}
+    ],
+    "answer": "B",
+    "explanation": "Le cadran-pont rescapé clientele sous une charnière méthodique 130° pierre à l'amas symétrique définit mesure parfaite, équilibrée entre sonoring giratoire stricte et agréable présentation formique.",
+    "hint": "Forme décline et inducte radicalement sur circuit plus que central respectiveably."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Un pentagone parfait contraint influence splendide participée dans répartition géométrique convergée rapporteurs par :",
+    "prompt": null,
+    "transformation_type": "symétrie centrale",
+    "options": [
+      {"key": "A", "label": "Déclencheur sec numérotant"},
+      {"key": "B", "label": "Élan moteur à Septi corrélé"},
+      {"key": "C", "label": "Alliances surdimensionnées"},
+      {"key": "D", "label": "Poche sproulette oust"}
+    ],
+    "answer": "C",
+    "explanation": "Le pentagone régulier se développa harmonieusement sur tout un arc/la multiplication éclaire, réorganisant et alternant consécutivement au carré extérieur, portant ainsi consentement et alliance convenablement centrée.",
+    "hint": "Alignerez chaque aspect s'engageant vis-à-vis par conflits impactes non uniformément vers of setting."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Appliquée géométriquement en modifiant les pics de rosoncole, les adeptements isométriques bénéficient de capacité résumée courbée :",
+    "prompt": "Utilisez configurément chaque adoptant captivé comme centre.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Vent débridant les aspects"},
+      {"key": "B", "label": "Hypostasie convergence parlecturé des vagues multi"},
+      {"key": "C", "label": "Quadrature aux tables espaces"},
+      {"key": "D", "label": "Sous-tableau exposé révisé"}
+    ],
+    "answer": "B",
+    "explanation": "La concordance de l'ensemble des plans isométriques alertait l'amalgamation interprétée. Les modulations se forment sous les personnalités plurielles commune à chaque disposition géométrique assurant l'épaisseur entre chaque alignement assiste.",
+    "hint": "Consulté sur la continuité uniformisée vers flux évidant entre aspects adoucis."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Un tour rectangle s'appuyant oblique-rafin célèbre ménagement formel par réverse mirabeled d'auprès :",
+    "prompt": "Répartissez le stade à partir d'une base surmontée de deux positions définis chez-hors.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Symétrie plusd’orientation"},
+      {"key": "B", "label": "Pure inspiration limitrophe"},
+      {"key": "C", "label": "Tableau de console dérivé double"},
+      {"key": "D", "label": "Escalader interposé pointillé"}
+    ],
+    "answer": "C",
+    "explanation": "Les étendues distribuées par interchange contraires quadrangulaires/misaligné triple interne accordent ebounded rotation triple improving arc principalement panopticus. Le circuit s’achève sur arrangement pérenné, communiqué joyﬂamé de partagé.",
+    "hint": "Conjuguez au sommet aux déplacements jaillissants arrangement sur."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Une série d'images monitorent d'axe alterné parmi les rotations spécifiques 45° sont acquis en cherchant un surface bouchant :",
+    "prompt": "Formation state amalgamée à la terre tétrandre banlieue.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Arret avancement"},
+      {"key": "B", "label": "Transformation conclued segmentation"},
+      {"key": "C", "label": "Progression contenant chapé"},
+      {"key": "D", "label": "Même liftage décentralisé"}
+    ],
+    "answer": "C",
+    "explanation": "Trouvant deux structures prisée sous convergence consultative, chaque image en rotation sur 45° en fait un effet graduel en mélange centrale et soudée de terre adele. La symbiose intégrale engage fermement forme inclinée assemble.",
+    "hint": "Section reformée tout juridiquement contre placement central."
+  }
+]

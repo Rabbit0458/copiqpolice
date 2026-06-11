@@ -196,7 +196,7 @@ class _HeroHeader extends StatelessWidget {
                       begin: Alignment.bottomCenter,
                       end: Alignment.center,
                       colors: [
-                        Colors.black.withOpacity(isDark ? .55 : .45),
+                        Colors.black.withValues(alpha: isDark ? .55 : .45),
                         Colors.transparent,
                       ],
                     ),
@@ -227,7 +227,7 @@ class _HeroHeader extends StatelessWidget {
                     Text(
                       subtitle,
                       style: TextStyle(
-                        color: Colors.white.withOpacity(.85),
+                        color: Colors.white.withValues(alpha: .85),
                         fontWeight: FontWeight.w700,
                       ),
                     ),
@@ -267,7 +267,7 @@ class _Ink {
 class _Token {
   static const double r16 = 16, r20 = 20, r24 = 24;
   static BoxShadow get shadow => BoxShadow(
-    color: Colors.black.withOpacity(.08),
+    color: Colors.black.withValues(alpha: .08),
     blurRadius: 20,
     offset: Offset(0, 10),
   );
@@ -297,7 +297,7 @@ class _SectionCard extends StatelessWidget {
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.w700,
-                color: (isDark ? Colors.white : _Ink.ink).withOpacity(.6),
+                color: (isDark ? Colors.white : _Ink.ink).withValues(alpha: .6),
               ),
             ),
             const SizedBox(height: 4),
@@ -326,7 +326,7 @@ class _Badge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(.90),
+        color: Colors.white.withValues(alpha: .90),
         borderRadius: BorderRadius.circular(999),
       ),
       child: Text(
@@ -347,7 +347,7 @@ class _Bullet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = (Theme.of(context).textTheme.bodyMedium?.color ?? _Ink.ink)
-        .withOpacity(.9);
+        .withValues(alpha: .9);
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Row(
@@ -373,7 +373,7 @@ class _ChecklistLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = (Theme.of(context).textTheme.bodySmall?.color ?? _Ink.ink)
-        .withOpacity(.9);
+        .withValues(alpha: .9);
     return Padding(
       padding: const EdgeInsets.only(bottom: 8),
       child: Row(
@@ -407,7 +407,7 @@ class _KeyChips extends StatelessWidget {
               backgroundColor: Theme.of(context).cardColor,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
-                side: BorderSide(color: Colors.black.withOpacity(.06)),
+                side: BorderSide(color: Colors.black.withValues(alpha: .06)),
               ),
               materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
               visualDensity: VisualDensity.compact,
@@ -430,7 +430,7 @@ class _LinkTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final muted = (Theme.of(context).textTheme.bodySmall?.color ?? _Ink.ink)
-        .withOpacity(.7);
+        .withValues(alpha: .7);
     return InkWell(
       onTap: () => Navigator.of(context).pushNamed(route),
       borderRadius: BorderRadius.circular(_Token.r16),
@@ -449,7 +449,7 @@ class _LinkTile extends StatelessWidget {
             width: 42,
             height: 42,
             decoration: BoxDecoration(
-              color: _Ink.ink.withOpacity(.08),
+              color: _Ink.ink.withValues(alpha: .08),
               borderRadius: BorderRadius.circular(10),
             ),
             child: const Icon(Icons.join_full_rounded, color: _Ink.ink),

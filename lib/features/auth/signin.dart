@@ -732,8 +732,8 @@ class _MinimalLogoState extends State<_MinimalLogo>
                         shape: BoxShape.circle,
                         gradient: RadialGradient(
                           colors: [
-                            widget.palette.glow.withOpacity(0.10 + 0.06 * t),
-                            widget.palette.glow.withOpacity(0.0),
+                            widget.palette.glow.withValues(alpha: 0.10 + 0.06 * t),
+                            widget.palette.glow.withValues(alpha: 0.0),
                           ],
                           stops: const [0.0, 1.0],
                         ),
@@ -755,8 +755,8 @@ class _MinimalLogoState extends State<_MinimalLogo>
                       shape: BoxShape.circle,
                       gradient: RadialGradient(
                         colors: [
-                          Colors.black.withOpacity(0.30 - 0.08 * t),
-                          Colors.black.withOpacity(0.0),
+                          Colors.black.withValues(alpha: 0.30 - 0.08 * t),
+                          Colors.black.withValues(alpha: 0.0),
                         ],
                       ),
                     ),
@@ -848,19 +848,19 @@ class _MeshGradientBackgroundState extends State<_MeshGradientBackground>
             children: [
               _orb(
                 align: Alignment(dx1, dy1),
-                color: widget.palette.accent.withOpacity(0.40),
+                color: widget.palette.accent.withValues(alpha: 0.40),
                 size: 380,
                 blur: 120,
               ),
               _orb(
                 align: Alignment(dx2, dy2),
-                color: widget.palette.accent2.withOpacity(0.35),
+                color: widget.palette.accent2.withValues(alpha: 0.35),
                 size: 420,
                 blur: 130,
               ),
               _orb(
                 align: Alignment(dx3, dy3),
-                color: widget.palette.glow.withOpacity(0.18),
+                color: widget.palette.glow.withValues(alpha: 0.18),
                 size: 340,
                 blur: 100,
               ),
@@ -991,7 +991,7 @@ class _ParticlesPainter extends CustomPainter {
 
       final fade = (math.sin(t * math.pi)).clamp(0.0, 1.0);
       final paint = Paint()
-        ..color = color.withOpacity(0.40 * fade)
+        ..color = color.withValues(alpha: 0.40 * fade)
         ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 1.2);
       canvas.drawCircle(Offset(x, y), p.size, paint);
     }
@@ -1016,9 +1016,9 @@ class _Vignette extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Colors.black.withOpacity(0.20),
+            Colors.black.withValues(alpha: 0.20),
             Colors.transparent,
-            Colors.black.withOpacity(0.30),
+            Colors.black.withValues(alpha: 0.30),
           ],
           stops: const [0.0, 0.5, 1.0],
         ),
@@ -1048,12 +1048,12 @@ class _GlassCardPremium extends StatelessWidget {
             border: Border.all(color: palette.glassBorder, width: 1),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.30),
+                color: Colors.black.withValues(alpha: 0.30),
                 blurRadius: 36,
                 offset: const Offset(0, 22),
               ),
               BoxShadow(
-                color: palette.accent.withOpacity(0.08),
+                color: palette.accent.withValues(alpha: 0.08),
                 blurRadius: 30,
                 spreadRadius: -4,
               ),
@@ -1070,9 +1070,9 @@ class _GlassCardPremium extends StatelessWidget {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [
-                          Colors.white.withOpacity(0.16),
-                          Colors.white.withOpacity(0.0),
-                          Colors.black.withOpacity(0.04),
+                          Colors.white.withValues(alpha: 0.16),
+                          Colors.white.withValues(alpha: 0.0),
+                          Colors.black.withValues(alpha: 0.04),
                         ],
                         stops: const [0.0, 0.45, 1.0],
                       ),
@@ -1089,9 +1089,9 @@ class _GlassCardPremium extends StatelessWidget {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        Colors.white.withOpacity(0.0),
-                        Colors.white.withOpacity(0.50),
-                        Colors.white.withOpacity(0.0),
+                        Colors.white.withValues(alpha: 0.0),
+                        Colors.white.withValues(alpha: 0.50),
+                        Colors.white.withValues(alpha: 0.0),
                       ],
                     ),
                   ),
@@ -1242,12 +1242,12 @@ class _PremiumFormTextFieldState extends State<_PremiumFormTextField>
                   boxShadow: _hasFocus
                       ? [
                           BoxShadow(
-                            color: p.glow.withOpacity(0.30),
+                            color: p.glow.withValues(alpha: 0.30),
                             blurRadius: 24,
                             spreadRadius: 1,
                           ),
                           BoxShadow(
-                            color: p.accent.withOpacity(0.16),
+                            color: p.accent.withValues(alpha: 0.16),
                             blurRadius: 18,
                             offset: const Offset(0, 6),
                           ),
@@ -1272,14 +1272,14 @@ class _PremiumFormTextFieldState extends State<_PremiumFormTextField>
                   decoration: InputDecoration(
                     hintText: widget.hint,
                     hintStyle: GoogleFonts.montserrat(
-                      color: Colors.white.withOpacity(0.55),
+                      color: Colors.white.withValues(alpha: 0.55),
                       fontWeight: FontWeight.w500,
                     ),
                     prefixIcon: Icon(
                       widget.icon,
                       color: _hasFocus
                           ? p.glow
-                          : Colors.white.withOpacity(0.55),
+                          : Colors.white.withValues(alpha: 0.55),
                       size: 19,
                     ),
                     suffixIcon:
@@ -1319,26 +1319,26 @@ class _PremiumFormTextFieldState extends State<_PremiumFormTextField>
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: p.fieldBorder.withOpacity(0.70),
+                        color: p.fieldBorder.withValues(alpha: 0.70),
                       ),
                       borderRadius: BorderRadius.circular(14),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.white.withOpacity(0.95),
+                        color: Colors.white.withValues(alpha: 0.95),
                         width: 1.4,
                       ),
                       borderRadius: BorderRadius.circular(14),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: softError.withOpacity(0.85),
+                        color: softError.withValues(alpha: 0.85),
                       ),
                       borderRadius: BorderRadius.circular(14),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: softError.withOpacity(0.95),
+                        color: softError.withValues(alpha: 0.95),
                         width: 1.3,
                       ),
                       borderRadius: BorderRadius.circular(14),
@@ -1415,7 +1415,7 @@ class _PasswordToggle extends StatelessWidget {
         child: Icon(
           obscure ? Icons.visibility_off_rounded : Icons.visibility_rounded,
           key: ValueKey(obscure),
-          color: Colors.white.withOpacity(0.78),
+          color: Colors.white.withValues(alpha: 0.78),
           size: 20,
         ),
       ),
@@ -1518,8 +1518,8 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.white.withOpacity(0.85),
-                            Colors.white.withOpacity(0.0),
+                            Colors.white.withValues(alpha: 0.85),
+                            Colors.white.withValues(alpha: 0.0),
                           ],
                           stops: const [0.0, 0.55],
                         ),
@@ -1547,9 +1547,9 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                                     end: Alignment.bottomCenter,
                                     colors: [
                                       Colors.transparent,
-                                      Colors.white.withOpacity(0.0),
-                                      Colors.white.withOpacity(0.55),
-                                      Colors.white.withOpacity(0.0),
+                                      Colors.white.withValues(alpha: 0.0),
+                                      Colors.white.withValues(alpha: 0.55),
+                                      Colors.white.withValues(alpha: 0.0),
                                       Colors.transparent,
                                     ],
                                     stops: const [0.0, 0.42, 0.50, 0.58, 1.0],
@@ -1566,8 +1566,8 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                   color: Colors.transparent,
                   child: InkWell(
                     onTap: widget.onPressed,
-                    splashColor: widget.palette.glow.withOpacity(0.18),
-                    highlightColor: widget.palette.glow.withOpacity(0.08),
+                    splashColor: widget.palette.glow.withValues(alpha: 0.18),
+                    highlightColor: widget.palette.glow.withValues(alpha: 0.08),
                     child: Center(
                       child: AnimatedSwitcher(
                         duration: const Duration(milliseconds: 200),
@@ -1579,7 +1579,7 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                                 child: CircularProgressIndicator(
                                   strokeWidth: 2.4,
                                   valueColor: AlwaysStoppedAnimation(
-                                    fg.withOpacity(0.85),
+                                    fg.withValues(alpha: 0.85),
                                   ),
                                 ),
                               )
@@ -1593,7 +1593,7 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                                       widget.leadingIcon,
                                       size: 18,
                                       color: isDisabled
-                                          ? fg.withOpacity(0.55)
+                                          ? fg.withValues(alpha: 0.55)
                                           : fg,
                                     ),
                                     const SizedBox(width: 10),
@@ -1608,7 +1608,7 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                                         fontSize: 16,
                                         letterSpacing: -0.2,
                                         color: isDisabled
-                                            ? fg.withOpacity(0.65)
+                                            ? fg.withValues(alpha: 0.65)
                                             : fg,
                                       ),
                                     ),
@@ -1658,16 +1658,16 @@ class _RememberMe extends StatelessWidget {
               width: 20,
               height: 20,
               decoration: BoxDecoration(
-                color: value ? Colors.white : Colors.white.withOpacity(0.04),
+                color: value ? Colors.white : Colors.white.withValues(alpha: 0.04),
                 borderRadius: BorderRadius.circular(6),
                 border: Border.all(
-                  color: value ? Colors.white : Colors.white.withOpacity(0.40),
+                  color: value ? Colors.white : Colors.white.withValues(alpha: 0.40),
                   width: 1.4,
                 ),
                 boxShadow: value
                     ? [
                         BoxShadow(
-                          color: palette.glow.withOpacity(0.35),
+                          color: palette.glow.withValues(alpha: 0.35),
                           blurRadius: 12,
                           spreadRadius: -1,
                         ),
@@ -1692,7 +1692,7 @@ class _RememberMe extends StatelessWidget {
             Text(
               "Se souvenir de moi",
               style: GoogleFonts.montserrat(
-                color: Colors.white.withOpacity(0.85),
+                color: Colors.white.withValues(alpha: 0.85),
                 fontWeight: FontWeight.w700,
                 fontSize: 13,
                 letterSpacing: 0.1,
@@ -1725,11 +1725,11 @@ class _LinkButton extends StatelessWidget {
       child: Text(
         label,
         style: GoogleFonts.montserrat(
-          color: Colors.white.withOpacity(0.85),
+          color: Colors.white.withValues(alpha: 0.85),
           fontWeight: FontWeight.w800,
           fontSize: 13,
           decoration: TextDecoration.underline,
-          decorationColor: Colors.white.withOpacity(0.40),
+          decorationColor: Colors.white.withValues(alpha: 0.40),
           decorationThickness: 1.2,
         ),
       ),
@@ -1754,8 +1754,8 @@ class _OrDivider extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Colors.white.withOpacity(0.0),
-                  Colors.white.withOpacity(0.30),
+                  Colors.white.withValues(alpha: 0.0),
+                  Colors.white.withValues(alpha: 0.30),
                 ],
               ),
             ),
@@ -1766,14 +1766,14 @@ class _OrDivider extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.06),
+              color: Colors.white.withValues(alpha: 0.06),
               borderRadius: BorderRadius.circular(999),
-              border: Border.all(color: Colors.white.withOpacity(0.14)),
+              border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
             ),
             child: Text(
               "ou",
               style: GoogleFonts.montserrat(
-                color: Colors.white.withOpacity(0.78),
+                color: Colors.white.withValues(alpha: 0.78),
                 fontWeight: FontWeight.w700,
                 fontSize: 12,
                 letterSpacing: 0.4,
@@ -1787,8 +1787,8 @@ class _OrDivider extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Colors.white.withOpacity(0.30),
-                  Colors.white.withOpacity(0.0),
+                  Colors.white.withValues(alpha: 0.30),
+                  Colors.white.withValues(alpha: 0.0),
                 ],
               ),
             ),
@@ -1836,10 +1836,10 @@ class _DiscoveryButtonState extends State<_DiscoveryButton> {
                     filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
                     child: DecoratedBox(
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.06),
+                        color: Colors.white.withValues(alpha: 0.06),
                         borderRadius: BorderRadius.circular(16),
                         border: Border.all(
-                          color: Colors.white.withOpacity(0.20),
+                          color: Colors.white.withValues(alpha: 0.20),
                           width: 1.2,
                         ),
                       ),
@@ -1848,8 +1848,8 @@ class _DiscoveryButtonState extends State<_DiscoveryButton> {
                         child: InkWell(
                           onTap: widget.onPressed,
                           borderRadius: BorderRadius.circular(16),
-                          splashColor: Colors.white.withOpacity(0.10),
-                          highlightColor: Colors.white.withOpacity(0.04),
+                          splashColor: Colors.white.withValues(alpha: 0.10),
+                          highlightColor: Colors.white.withValues(alpha: 0.04),
                           child: Center(
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
@@ -1857,13 +1857,13 @@ class _DiscoveryButtonState extends State<_DiscoveryButton> {
                                 Icon(
                                   Icons.explore_rounded,
                                   size: 19,
-                                  color: Colors.white.withOpacity(0.92),
+                                  color: Colors.white.withValues(alpha: 0.92),
                                 ),
                                 const SizedBox(width: 10),
                                 Text(
                                   "Mode découverte",
                                   style: GoogleFonts.montserrat(
-                                    color: Colors.white.withOpacity(0.95),
+                                    color: Colors.white.withValues(alpha: 0.95),
                                     fontWeight: FontWeight.w800,
                                     fontSize: 15,
                                     letterSpacing: 0.2,
@@ -1922,7 +1922,7 @@ class _NewBadgeState extends State<_NewBadge>
             ),
             boxShadow: [
               BoxShadow(
-                color: const Color(0xFF10B981).withOpacity(0.40 + 0.20 * t),
+                color: const Color(0xFF10B981).withValues(alpha: 0.40 + 0.20 * t),
                 blurRadius: 14 + 6 * t,
                 spreadRadius: -2,
               ),
@@ -1969,7 +1969,7 @@ class _SignupCTA extends StatelessWidget {
             "Pas encore de compte ?",
             textAlign: TextAlign.center,
             style: GoogleFonts.montserrat(
-              color: Colors.white.withOpacity(0.78),
+              color: Colors.white.withValues(alpha: 0.78),
               fontSize: 14,
               fontWeight: FontWeight.w500,
               letterSpacing: 0.1,
@@ -2046,7 +2046,7 @@ class _SignupLinkState extends State<_SignupLink>
                         letterSpacing: 0.2,
                         shadows: [
                           Shadow(
-                            color: widget.palette.glow.withOpacity(0.35),
+                            color: widget.palette.glow.withValues(alpha: 0.35),
                             blurRadius: 14,
                           ),
                         ],
@@ -2063,7 +2063,7 @@ class _SignupLinkState extends State<_SignupLink>
                       color: widget.palette.glow,
                       shadows: [
                         Shadow(
-                          color: widget.palette.glow.withOpacity(0.55),
+                          color: widget.palette.glow.withValues(alpha: 0.55),
                           blurRadius: 10,
                         ),
                       ],

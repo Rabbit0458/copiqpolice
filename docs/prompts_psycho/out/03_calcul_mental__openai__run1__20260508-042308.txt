@@ -1,0 +1,9 @@
+{
+    "difficulty": "Facile",
+    "question": "Combien font 23 + 41 ?",
+    "expression": "23 + 41",
+    "options": ["64", "63", "65", "66"],
+    "answer": "64",
+    "explanation": "23 + 41 = (20 + 40) + (3 + 1) = 60 + 4 = 64.",
+    "hint": "Additionne d'abord les dizaines puis les unités."
+  }

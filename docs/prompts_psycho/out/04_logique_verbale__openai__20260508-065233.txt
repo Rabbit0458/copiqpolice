@@ -1,0 +1,409 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « heureux » ?",
+    "prompt": null,
+    "options": ["Triste", "Joyeux", "Endormi", "Silencieux"],
+    "answer": "Joyeux",
+    "explanation": "Le mot 'heureux' signifie être dans un état de satisfaction ou de joie. 'Joyeux' est un synonyme direct car il exprime également la notion de bonheur. 'Triste' est son antonyme, ces deux mots expriment des sentiments opposés. 'Endormi' et 'silencieux' ne sont pas liés au sentiment de bonheur ou tristesse.",
+    "hint": "Considérez des mots qui expriment la joie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Il est tellement petit qu'il se sent ___ dans cette maison. »",
+    "prompt": null,
+    "options": ["Gris", "Minuscule", "Énorme", "Lumineux"],
+    "answer": "Énorme",
+    "explanation": "Quand quelqu'un ou quelque chose est trop petit pour un grand espace, il se sent 'énorme' par contraste. 'Minuscule' serait redondant ici car cela décrit toujours une petite taille. 'Gris' et 'lumineux' se rapportent à d'autres qualités comme la couleur ou la lumière et ne conviennent pas pour exprimer une comparaison de taille.",
+    "hint": "Pensez à l'effet de contraste dans les comparaisons."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « courageux » ?",
+    "prompt": null,
+    "options": ["Hardi", "Intrépide", "Lâche", "Brave"],
+    "answer": "Lâche",
+    "explanation": "Un 'courageux' montre du courage, donc l'opposé logique, ou antonyme, est 'lâche', qui désigne quelqu'un qui manque de courage. 'Hardi' et 'intrépide' sont des termes synonymes de 'courageux', tandis que 'brave' signifie également courageux.",
+    "hint": "Cherchez le mot qui reflète une absence de courage."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Poisson, Chien, Chat, Cheval",
+    "options": ["Poisson", "Chien", "Chat", "Cheval"],
+    "answer": "Poisson",
+    "explanation": "Le 'poisson' est un animal aquatique, alors que 'chien', 'chat' et 'cheval' sont des mammifères terrestres. Leurs habitudes de vie et leurs habitats naturels les différencient. 'Chien', 'chat' et 'cheval' partagent une classification biologique commune, ce qui fait du 'poisson' l'intrus.",
+    "hint": "Réfléchissez à l'environnement naturel de chacun."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « rapide » ?",
+    "prompt": null,
+    "options": ["Rapide", "Vif", "Calme", "Lourd"],
+    "answer": "Vif",
+    "explanation": "Dans ce contexte, 'rapide' et 'vif' signifient tous deux ayant une grande vitesse de réaction. 'Calme' ne correspond pas ici, car il décrit une absence de mouvement ou de bruit. 'Lourd' ne s'accorde pas non plus car cela fait davantage référence au poids.",
+    "hint": "Optez pour un mot qui exprime la vivacité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « content » ?",
+    "prompt": null,
+    "options": ["Accablé", "Heureux", "Abattu", "Déçu"],
+    "answer": "Heureux",
+    "explanation": "Le mot 'content' implique un sentiment de satisfaction et de bonheur, ce qui correspond précisément à 'heureux'. 'Accablé', 'abattu' et 'déçu' représentent tous des états émotionnels négatifs et s'opposent au sentiment de contentement.",
+    "hint": "Choisissez un mot qui exprime la satisfaction."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « timide » ?",
+    "prompt": null,
+    "options": ["Sociable", "Réservé", "Paresseux", "Calme"],
+    "answer": "Sociable",
+    "explanation": "Une personne 'timide' hésite souvent à interagir socialement, donc son antonyme est 'sociable', qui décrit quelqu'un d'ouvert et d'aimable en société. 'Réservé' partage une connotation similaire à 'timide', tandis que 'paresseux' et 'calme' relèvent d'autres traits de caractère différents.",
+    "hint": "Pensez à un caractère ouvert et amical."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Malgré le froid, elle ___ dehors toute la journée. »",
+    "prompt": null,
+    "options": ["Tremblait", "Resta", "Rentra", "Cuisa"],
+    "answer": "Resta",
+    "explanation": "Le mot 'resta' signifie qu'elle a choisi de demeurer à l'extérieur malgré les conditions. 'Tremblait' décrit une réaction au froid, mais ne concerne pas le fait de rester. 'Rentra' indiquerait qu'elle est allée à l'intérieur, et 'cuisa' n'est pas pertinent dans ce contexte.",
+    "hint": "Cherchez une action durative malgré des conditions opposées."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « étonnant » ?",
+    "prompt": null,
+    "options": ["Banal", "Surprenant", "Prévisible", "Ordinaire"],
+    "answer": "Surprenant",
+    "explanation": "Un 'étonnant' événement est quelque chose qui cause surprise, donc 'surprenant' est le synonyme approprié. 'Banal', 'prévisible' et 'ordinaire' décrivent des situations qui manquent d'originalité ou d'éléments inattendus et s'opposent à l'idée de surprise.",
+    "hint": "Cherchez un terme qui évoque l'inattendu."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « sombre » ?",
+    "prompt": null,
+    "options": ["Clair", "Épais", "Lourd", "Serein"],
+    "answer": "Clair",
+    "explanation": "Le mot 'sombre' se réfère à une absence de lumière ou à quelque chose d'obscurci, donc son antonyme est 'clair', indiquant la présence de lumière. 'Épais' et 'lourd' sont des adjectifs qui concernent la densité ou le poids, alors que 'serein' fait référence à la tranquillité.",
+    "hint": "Pensez à la lumière opposée à l'obscurité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Lunettes, Livre, Baskets, Chaussures",
+    "options": ["Lunettes", "Livre", "Baskets", "Chaussures"],
+    "answer": "Livre",
+    "explanation": "Le 'livre' est un objet de lecture, tandis que 'lunettes', 'baskets' et 'chaussures' sont tous des accessoires portés. Ce qui qualifie 'livre' comme l'intrus est sa fonction différente par rapport aux autres objets.",
+    "hint": "Considérez des objets portés par les gens."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « brillant » ?",
+    "prompt": null,
+    "options": ["Sombre", "Éclairé", "Sale", "Ternie"],
+    "answer": "Éclairé",
+    "explanation": "'Brillant' désigne quelque chose qui réfléchit bien la lumière, tout comme 'éclairé'. 'Sombre' est l'antonyme puisqu'il se réfère à l'absence de lumière. 'Sale' se réfère à de la saleté et 'ternie' à une perte d'éclat.",
+    "hint": "Pensez à la luminosité intense."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot « clef » signifie : « Marie avait la clef de la réussite. »",
+    "prompt": null,
+    "options": ["Instrument", "Secret", "Verrou", "Quincaillerie"],
+    "answer": "Secret",
+    "explanation": "Dans la phrase, 'clef' est employée de manière métaphorique pour signifier un 'secret' ou un élément crucial conduisant à la réussite. 'Instrument', 'verrou' et 'quincaillerie' concernent des usages physiques du mot 'clef' et ne correspondent pas au sens figuré.",
+    "hint": "Considérez des significations symboliques."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Elle a ___ son livre préféré 10 fois. »",
+    "prompt": null,
+    "options": ["Lu", "Écrit", "Dit", "Oublié"],
+    "answer": "Lu",
+    "explanation": "Le verbe 'lu' s'accorde avec un objet comme un livre, exprimant l'action de lecture répétée. 'Écrit' correspond à une création, 'dit' à un discours, et 'oublié' signifierait n'avoir pas de souvenir de l'objet.",
+    "hint": "Pensez à l'action liée à un livre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « fatigué » ?",
+    "prompt": null,
+    "options": ["Reposé", "Épuisé", "Vivant", "Actif"],
+    "answer": "Épuisé",
+    "explanation": "'Fatigué' signifie ressentir une fatigue, donc 'épuisé' est son synonyme direct, représentant un état similaire d'épuisement. 'Reposé' est l'antonyme, et 'vivant' et 'actif' ne s'appliquent pas puisque ce sont des indicateurs d'énergie.",
+    "hint": "Cherchez un mot qui exprime une grande fatigue."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Pomme, Fraise, Tomate, Cerise",
+    "options": ["Pomme", "Fraise", "Tomate", "Cerise"],
+    "answer": "Tomate",
+    "explanation": "Bien que botaniquement la 'tomate' soit un fruit, dans le contexte culinaire, elle est souvent catégorisée comme un légume, ce qui la distingue de 'pomme', 'fraise' et 'cerise' qui sont des fruits sucrés. Ainsi, d'un point de vue culinaire, 'tomate' est l'intrus.",
+    "hint": "Réfléchissez au contexte culinaire des fruits."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « facile » ?",
+    "prompt": null,
+    "options": ["Complexe", "Simple", "Compliqué", "Lourd"],
+    "answer": "Simple",
+    "explanation": "'Facile' désigne quelque chose qui ne nécessite pas beaucoup d'efforts ou de complications, ce qui est aussi le cas de 'simple'. A l'opposé, 'complexe' et 'compliqué' impliquent plus de difficultés que de facilité. 'Lourd' se concentre sur le poids, pas sur la simplicité.",
+    "hint": "Cherchez un mot indiquant l'absence de difficulté."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « sourire » ?",
+    "prompt": null,
+    "options": ["Pleurer", "Rire", "Grimacer", "Chantonner"],
+    "answer": "Pleurer",
+    "explanation": "'Sourire' exprime une émotion positive, souvent de joie, donc son antonyme est 'pleurer', qui exprime une tristesse. 'Rire' est encore une expression de joie semblable. 'Grimacer' ne correspond pas, bien qu'il puisse montrer du mécontentement mais reste une expression faciale. 'Chantonner' évoque une autre activité mais pas l'opposé de 'sourire'.",
+    "hint": "Considérez les expressions de tristesse opposées à la joie."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « imprécis » ?",
+    "prompt": null,
+    "options": ["Vague", "Exact", "Net", "Précisé"],
+    "answer": "Vague",
+    "explanation": "'Imprécis' indique un manque de détail ou de clarté, ce qui se rapproche de 'vague' qui signifie aussi flou ou non distinct. 'Exact', 'net', et 'précisé' se rapportent à des éléments bien définis et clairs, qui ne sont pas des synonymes d'imprécis.",
+    "hint": "Cherchez un mot décrivant une idée floue."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Pinceau est à artiste comme marteau est à ___",
+    "prompt": null,
+    "options": ["Chanteur", "Pianiste", "Menuisier", "Marin"],
+    "answer": "Menuisier",
+    "explanation": "Un 'pinceau' est l'outil d'un 'artiste', de même un 'marteau' est un instrument essentiel pour un 'menuisier'. 'Chanteur', 'pianiste', et 'marin' n'utilisent pas de marteau dans leur profession spécifique. Ainsi, la relation outil-profession est éclairée ici.",
+    "hint": "Réfléchissez aux outils utilisés dans différentes professions."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Hiver, Été, Soleil, Automne",
+    "options": ["Hiver", "Été", "Soleil", "Automne"],
+    "answer": "Soleil",
+    "explanation": "'Hiver', 'été', et 'automne' sont toutes des saisons, tandis que 'soleil' est un astre impliqué dans toutes les saisons mais n'en constitue pas une en elle-même, ce qui en fait l'intrus du groupe.",
+    "hint": "Identifiez le terme qui n’est pas une saison."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « respectueux » ?",
+    "prompt": null,
+    "options": ["Poli", "Grossier", "Attentionné", "Humble"],
+    "answer": "Grossier",
+    "explanation": "'Respectueux' se réfère à quelqu'un qui montre du respect et de la considération, dont l'antonyme est 'grossier', un mot décrivant quelqu’un avec des manières irrespectueuses. 'Poli', 'attentionné', et 'humble' soulignent toutes des formes de respect ou de soins envers les autres.",
+    "hint": "Cherchez un terme qui décrit un manque de respect."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est l'analogie correcte ? Soif est à boire comme faim est à ___",
+    "prompt": null,
+    "options": ["Marcher", "Manger", "Parler", "Dormir"],
+    "answer": "Manger",
+    "explanation": "La 'soif' incite à 'boire', tandis que la 'faim' amène logiquement à 'manger'. 'Marcher', 'parler', et 'dormir' sont des activités qui ne résolvent ni soif ni faim. Cette relation en est une de condition et d'action pour apaiser un besoin.",
+    "hint": "Considérez les actions nécessaires pour satisfaire des besoins."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot « clair » signifie : « Sa réponse était claire et concise. »",
+    "prompt": null,
+    "options": ["Brillant", "Visible", "Limpide", "Rumoreuse"],
+    "answer": "Limpide",
+    "explanation": "Dans ce contexte, 'clair' signifie 'facile à comprendre', ce que 'limpide' synonyme de transparence et de clarté reflète bien. 'Brillant' évoque de l'éclat ou de l'intellect, 'visible' est lié à la perception visuelle, et 'rumoreuse' est un néologisme inapproprié ici.",
+    "hint": "Optez pour ce qui indique ici de la compréhension évidente."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « fervent » ?",
+    "prompt": null,
+    "options": ["Apatique", "Ardent", "Lukewarm", "Modéré"],
+    "answer": "Ardent",
+    "explanation": "Un fervent partisan est 'ardent' dans sa passion ou son engagement. 'Apatique' signifie manquer de passion, et 'lukewarm' en anglicisme voudrait dire tiède, 'modéré' – tempéré – contraste avec une ferveur ardente.",
+    "hint": "Pensez à une grande intensité d'émotion ou de croyance."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : « Pour clore le débat, le maire a ___ les questions restantes. »",
+    "prompt": null,
+    "options": ["Ignorer", "Aborder", "Exacerber", "Inventer"],
+    "answer": "Aborder",
+    "explanation": "Ici, 'aborder' signifie discuter ou s'occuper des questions, ce qui est nécessaire pour conclure le débat. 'Ignorer' n'aiderait pas à clore un débat, 'exacerber' signifierait aggraver, et 'inventer' serait créer des éléments non existants.",
+    "hint": "Pensez à une action de finalisation adéquate."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « moderne » ?",
+    "prompt": null,
+    "options": ["Ancien", "Récent", "Présent", "Émergent"],
+    "answer": "Ancien",
+    "explanation": "'Moderne' fait référence à une chose contemporaine ou nouvelle, tandis que 'ancien' désigne quelque chose de vieux. 'Récent' et 'émergent' sont similaires à 'moderne', alors que 'présent' ne décrit pas l'opposé.",
+    "hint": "Considérez un temps passé comparé à l'actuel."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Docteur est à maladie comme avocat est à ___",
+    "prompt": null,
+    "options": ["Juste", "Jour", "Lois", "Juge"],
+    "answer": "Lois",
+    "explanation": "Un 'docteur' traite les 'maladies', de la même manière, un 'avocat' pratique inomément lié aux 'lois'. 'Juste' et 'juge' ont des associations judiciaires, mais ne reflètent pas l'analogie outil-sujet.",
+    "hint": "Pensez aux professions et à leur cœur de discipline."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « perplexe » ?",
+    "prompt": null,
+    "options": ["Confus", "Éclairé", "Certain", "Déterminé"],
+    "answer": "Confus",
+    "explanation": "Une personne 'perplexe' est incertaine ou confuse, donc 'confus' est le synonyme approprié. 'Éclairé', 'certain', et 'déterminé' procurent des sens ne correspondant pas à la perplexité.",
+    "hint": "Choisissez un terme qui reflète un état de confusion."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Arbre, Buisson, Gazon, Roche",
+    "options": ["Arbre", "Buisson", "Gazon", "Roche"],
+    "answer": "Roche",
+    "explanation": "Les 'arbres', 'buissons', et 'gazon' sont des formes de végétation, tandis que 'roche' appartient au monde minéral. Ce qui distingue 'roche' reste sa classification distincte par rapport aux formes de vie végétale.",
+    "hint": "Référez-vous à l'appartenance à la nature végétale."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « discret » ?",
+    "prompt": null,
+    "options": ["Bruyant", "Sobre", "Évident", "Franc"],
+    "answer": "Sobre",
+    "explanation": "'Discret' décrit une qualité de réserve et retenue, tout comme 'sobre' peut signifier modéré et non ostentatoire. 'Bruyant' et 'évident' sont à l'opposé d'une nature discrète, et 'franc' implique davantage de franchise.",
+    "hint": "Cherchez une qualité de simplicité et de modestie."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, le mot « àïeul » signifie : « Victor a écouté les récits de son aïeul toute la journée. »",
+    "prompt": null,
+    "options": ["Enfant", "Ami", "Ancêtre", "Oncle"],
+    "answer": "Ancêtre",
+    "explanation": "Le terme 'aïeul' signifie un ancêtre ou un grand-parent, quelqu’un d’une génération plus vieille. Ce choix s’aligne avec l’idée de récits du passé partagés par les anciens. 'Enfant', 'ami', et 'oncle' n’impliquent pas d’ascendance directe et ancienne.",
+    "hint": "Considérez l’idée d’histoires racontées à travers des générations."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « parsimonieux » ?",
+    "prompt": null,
+    "options": ["Prodigue", "Radine", "Économe", "Austère"],
+    "answer": "Prodigue",
+    "explanation": "'Parsimonieux' désigne quelqu’un qui dépense avec retenue, ce qui oppose "prodigue", exprimant une grande générosité dans la dépense. 'Radine' et 'économe' suggèrent aussi une nature économe, quand 'austère' se focalise plus sur la sobriété que la dépense.",
+    "hint": "Évoquez une dépense généreuse sans retenue."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Chanteur est à chant comme sculpteur est à ___",
+    "prompt": null,
+    "options": ["Chœur", "Outils", "Oeuvre", "Marteau"],
+    "answer": "Oeuvre",
+    "explanation": "Un 'chanteur' réalise une performance de 'chant', tout comme un 'sculpteur' produit une 'œuvre'. Le 'marteau' serait un outil sûrement, mais n’exprime pas le produit de création propre de l’analogie. 'Chœur' et 'outils' ne se réfèrent pas directement aux créations artistiques.",
+    "hint": "Pensez à la finalité des efforts artistiques."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Enclave, Cité, Agora, Province",
+    "options": ["Enclave", "Cité", "Agora", "Province"],
+    "answer": "Agora",
+    "explanation": "Une 'agora' est un espace public dans la Grèce antique, contrairement à 'enclave', 'cité', et 'province' qui désignent des entités territoriales ou administratives modernes.",
+    "hint": "Pensez à la différence entre espace public ancien et moderne."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « alentir » ?",
+    "prompt": null,
+    "options": ["Animer", "Accélérer", "Ralentir", "Retenir"],
+    "answer": "Accélérer",
+    "explanation": "'Alentir' est un terme vieilli ou moins commun pour 'ralentir', l'opposé serait donc 'accélérer'. 'Animer' fait référence à donner vie, 'ralentir' est redondant ici, et 'retenir' implique une pause ou un blocage.",
+    "hint": "Cherchez un terme pour augmenter la vitesse."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète la phrase : « L'entreprise a ___ sa production pour répondre à la demande croissante. »",
+    "prompt": null,
+    "options": ["Limitée", "Optimisé", "Multiplié", "Diminuer"],
+    "answer": "Multiplié",
+    "explanation": "Avec la demande croissante, l'entreprise doit « multiplier » sa production pour y répondre. 'Limitée' et 'diminuer' suggèrent une réduction, opposée à un besoin de croissance. 'Optimisé' suggère une amélioration d’efficacité, mais pas nécessairement une augmentation.",
+    "hint": "Considérez l'effet d'une demande croissante sur l'offre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, le mot « aiguiser » signifie : « L'entraîneur a aiguisé les compétences de son équipe. »",
+    "prompt": null,
+    "options": ["Apathie", "Affuter", "Dull", "Adoucir"],
+    "answer": "Affuter",
+    "explanation": "'Aiguiser' dans ce contexte signifie peaufiner ou rendre plus efficace, tout comme 'affûter' un couteau. 'Apathie' est un manque d'intérêt, 'dull' en anglicisme signifierait émousser, et 'adoucir' fait référence à la souplesse, pas à l'acuité.",
+    "hint": "Considérez le renforcement des capacités."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Pamplemousse, Citron, Pomme, Orange",
+    "options": ["Pamplemousse", "Citron", "Pomme", "Orange"],
+    "answer": "Pomme",
+    "explanation": "Le 'pamplemousse', 'citron', et 'orange' sont tous des agrumes, tandis que la 'pomme' n'appartient pas à cette famille botanique. Ainsi, elle en est l’intrus en termes de catégorie fruitière.",
+    "hint": "Chercher un fruit en dehors de la classification d'agrumes."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « succinct » ?",
+    "prompt": null,
+    "options": ["Verbeux", "Bavard", "Concis", "Long"],
+    "answer": "Concis",
+    "explanation": "'Succinct' et 'concis' signifient transmettre l'essentiel en peu de mots. 'Verbeux' et 'bavard' impliquent de longues explications. 'Long' se réfère à l'étendue et n’est pas synonyme d’efficacité langagière.",
+    "hint": "Cherchez la brièveté précise dans l’expression."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète la phrase : « Après mûre réflexion, elle a finalement ___ sa décision. »",
+    "prompt": null,
+    "options": ["Maintenu", "Repensé", "Ajourné", "Révélée"],
+    "answer": "Révélée",
+    "explanation": "À l'issue d'une réflexion approfondie, elle a 'révélé' sa décision. 'Maintenu' pourrait signifier qu’elle conserve sa résolution, 'repensé' ne clôt pas une décision, et 'ajourné' retarde l’action.",
+    "hint": "Pensez à l'importance de l’aboutissement d’une décision."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « insolite » ?",
+    "prompt": null,
+    "options": ["Banal", "Étrange", "Exotique", "Spectaculaire"],
+    "answer": "Banal",
+    "explanation": "'Insolite' indique du non-conventionnel, rarement vu, tandis que 'banal' est tout ce qui est ordinaire et commun. 'Étrange', 'exotique', et 'spectaculaire' renforcent l’idée de singularité et détonation.",
+    "hint": "Considérez ce qui est ordinaire et largement accepté."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, le mot « épurer » signifie : « Pour plaire au jury, elle a épuré son discours. »",
+    "prompt": null,
+    "options": ["Complexifier", "Allourdir", "Simplifier", "Prolonger"],
+    "answer": "Simplifier",
+    "explanation": "'Épurer' un discours signifie ici le simplifier, le rendre plus clair et direct pour qu’il soit accessible et agréable à écouter. 'Complexifier' et 'prolonger' rendent un texte plus dense plutôt que fluide.",
+    "hint": "Cherchez le mot reflétant une action de réduction."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Bannir, Acquitter, Exiler, Prohiber",
+    "options": ["Bannir", "Acquitter", "Exiler", "Prohiber"],
+    "answer": "Acquitter",
+    "explanation": "Alors que 'bannir', 'exiler', et 'prohiber' indiquent une certaine forme d’exclusion ou d’interdiction, 'acquitter' se rapporte à l’absoudre d’accusations. Ainsi, 'acquitter' étant juridique et libérateur, il diffère des autres.",
+    "hint": "Trouvez le terme en désaccord avec la notion d'interdiction."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « futile » ?",
+    "prompt": null,
+    "options": ["Efficace", "Essentiel", "Derisoire", "Imposable"],
+    "answer": "Derisoire",
+    "explanation": "'Futile' suggère sans importance réelle, ce que 'dérisoire' partage en décrivant ce qui est insignifiant. Les 'efficace', 'essentiel' et 'imposable' insistent sur des performances ou nécessités valables.",
+    "hint": "Concentrez-vous sur l’idée d’insignifiance."
+  }
+]
+```

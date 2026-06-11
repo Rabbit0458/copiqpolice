@@ -74,9 +74,9 @@ class PlacementIntro extends StatelessWidget {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          Colors.black.withOpacity(isDark ? 0.12 : 0.08),
+                          Colors.black.withValues(alpha: isDark ? 0.12 : 0.08),
                           Colors.transparent,
-                          Colors.black.withOpacity(isDark ? 0.22 : 0.18),
+                          Colors.black.withValues(alpha: isDark ? 0.22 : 0.18),
                         ],
                         stops: const [0.0, 0.50, 1.0],
                       ),
@@ -139,7 +139,7 @@ class PlacementIntro extends StatelessWidget {
                                           shape: BoxShape.circle,
                                           boxShadow: [
                                             BoxShadow(
-                                              color: Colors.white.withOpacity(
+                                              color: Colors.white.withValues(alpha: 
                                                 isDark ? 0.10 : 0.12,
                                               ),
                                               blurRadius: 70,
@@ -168,7 +168,7 @@ class PlacementIntro extends StatelessWidget {
                                                     center: Alignment.topCenter,
                                                     radius: 0.95,
                                                     colors: [
-                                                      Colors.white.withOpacity(
+                                                      Colors.white.withValues(alpha: 
                                                         isDark ? 0.10 : 0.12,
                                                       ),
                                                       Colors.transparent,
@@ -379,13 +379,13 @@ class _GlassCardPremium extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Colors.white.withOpacity(opacity),
-        border: Border.all(color: Colors.white.withOpacity(0.10), width: 1),
+        color: Colors.white.withValues(alpha: opacity),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.10), width: 1),
         boxShadow: [
           BoxShadow(
             blurRadius: 28,
             offset: const Offset(0, 16),
-            color: Colors.black.withOpacity(0.22),
+            color: Colors.black.withValues(alpha: 0.22),
           ),
         ],
       ),
@@ -401,9 +401,9 @@ class _GlassCardPremium extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        Colors.white.withOpacity(0.10),
+                        Colors.white.withValues(alpha: 0.10),
                         Colors.transparent,
-                        Colors.black.withOpacity(0.06),
+                        Colors.black.withValues(alpha: 0.06),
                       ],
                     ),
                   ),
@@ -484,12 +484,12 @@ class _DynamicBlobsBackgroundState extends State<_DynamicBlobsBackground>
         final dy2 = lerpDouble(0.22, -0.06, t)!;
 
         final c1 = widget.isDark
-            ? Colors.white.withOpacity(0.06)
-            : Colors.white.withOpacity(0.10);
+            ? Colors.white.withValues(alpha: 0.06)
+            : Colors.white.withValues(alpha: 0.10);
 
         final c2 = widget.isDark
-            ? Colors.white.withOpacity(0.04)
-            : Colors.white.withOpacity(0.08);
+            ? Colors.white.withValues(alpha: 0.04)
+            : Colors.white.withValues(alpha: 0.08);
 
         return Stack(
           children: [
@@ -642,9 +642,9 @@ class _PrimaryCTAButtonState extends State<_PrimaryCTAButton>
                                       end: Alignment.bottomCenter,
                                       colors: [
                                         Colors.transparent,
-                                        Colors.white.withOpacity(0.00),
-                                        Colors.white.withOpacity(0.18),
-                                        Colors.white.withOpacity(0.00),
+                                        Colors.white.withValues(alpha: 0.00),
+                                        Colors.white.withValues(alpha: 0.18),
+                                        Colors.white.withValues(alpha: 0.00),
                                         Colors.transparent,
                                       ],
                                       stops: const [0.0, 0.42, 0.50, 0.58, 1.0],
@@ -667,7 +667,7 @@ class _PrimaryCTAButtonState extends State<_PrimaryCTAButton>
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.white.withOpacity(0.10),
+                            Colors.white.withValues(alpha: 0.10),
                             Colors.transparent,
                           ],
                         ),

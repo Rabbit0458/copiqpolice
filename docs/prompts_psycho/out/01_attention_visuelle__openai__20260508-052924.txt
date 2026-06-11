@@ -1,0 +1,310 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "Rue des Lilas, 75019 Paris",
+    "text_b": "Rue des Lilas, 75019 Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Peugeot 206 bleue, plaque AB-789-EF",
+    "text_b": "Peugeot 207 bleue, plaque AB-789-EF",
+    "is_true": false,
+    "explanation": "La différence réside dans le modèle : 206 dans text_a et 207 dans text_b. C'est une erreur typique lorsqu'on lit trop rapidement."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "M. BERTRAND Paul, né le 15/01/1990",
+    "text_b": "M. BERTRAND Paul, né le 15/01/1990",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Maison, rue du Parc, 78100 Saint-Germain",
+    "text_b": "Maison, rue du Parc, 78100 Saint-Germain",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Voiture rouge immatriculée FG-456-HJ",
+    "text_b": "Voiture bleue immatriculée FG-456-HJ",
+    "is_true": false,
+    "explanation": "La couleur de la voiture change : rouge dans text_a et bleue dans text_b. C'est une différence évidente pour qui y prête attention."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "26 rue des Violettes, 31200 Toulouse",
+    "text_b": "26 rue des Violettes, 31200 Toulouse",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Citroën C3, plaque d'immatriculation ZX-987-GH",
+    "text_b": "Citroën C4, plaque d'immatriculation ZX-987-GH",
+    "is_true": false,
+    "explanation": "La différence est dans le modèle : C3 pour text_a et C4 pour text_b. Cela peut passer inaperçu lors d'une lecture rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Villa blanche, 14 chemin des Lys",
+    "text_b": "Villa blanche, 14 chemin des Lys",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Jean Dupuis, né le 02/02/1985",
+    "text_b": "Jean Dupuy, né le 02/02/1985",
+    "is_true": false,
+    "explanation": "La différence notable est le nom de famille : Dupuis dans text_a et Dupuy dans text_b. Attention, les noms similaires se confondent aisément."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Café des Amis, 5 place de la République",
+    "text_b": "Café des Amis, 5 place de la République",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Nissan Qashqai noire, plaque TY-321-UO",
+    "text_b": "Nissan Qashqai noire, plaque TY-321-UO",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Gendarmerie 77 avenue du Stade",
+    "text_b": "Gendarmerie 78 avenue du Stade",
+    "is_true": false,
+    "explanation": "La différence est numérique : 77 dans text_a et 78 dans text_b. C'est une confusion courante avec les chiffres successifs."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "14 rue Principale, 29000 Quimper",
+    "text_b": "14 rue Principale, 29000 Quimper",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Mairie de Laval, rue de l'Hôtel de Ville",
+    "text_b": "Mairie de Laval, rue de l'Hôtel de Ville",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "BMW X3 grise, plaque QS-999-RT",
+    "text_b": "BMW X3 blanche, plaque QS-999-RT",
+    "is_true": false,
+    "explanation": "Ici, la couleur diffère : grise dans text_a et blanche dans text_b. C'est facile à manquer si l'on ne regarde pas attentivement."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "23 avenue des Champs-Élysées",
+    "text_b": "23 avenue des Champs-Élysées",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Suzuki Swift rouge, plaque NM-456-YZ",
+    "text_b": "Suzuki Swift bleue, plaque NM-456-YZ",
+    "is_true": false,
+    "explanation": "La différence réside dans la couleur : rouge dans text_a et bleue dans text_b. Un simple coup d'œil peut souvent induire en erreur."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le suspect portait un pull vert foncé et un jean usé, chaussé de baskets blanches.",
+    "text_b": "Le suspect portait un pull ver foncé et un jean usé, chaussé de baskets blanches.",
+    "is_true": false,
+    "explanation": "La différence se trouve dans l'orthographe du mot 'vert', qui devient 'ver' dans text_b. Cette erreur de frappe est typique d'une lecture rapide."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Rencontre le 18/04/2023 à 15h45 devant la gare Montparnasse.",
+    "text_b": "Rencontre le 18/04/2023 à 15h30 devant la gare Montparnasse.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par l'heure : 15h45 pour text_a et 15h30 pour text_b. Ce genre de détails temporels peut échapper lors d'une lecture hâtive."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Estelle Martin, domiciliée au 22 rue des Amandiers, 67200 Strasbourg.",
+    "text_b": "Estelle Martin, domiciliée au 22 rue des Amandiers, 67200 Strasbourg.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le suspect a mentionné être présent à 14h dans le parc de Belleville.",
+    "text_b": "Le suspect a mentionné être présent à 14h30 dans le parc de Belleville.",
+    "is_true": false,
+    "explanation": "La différence réside dans l'heure mentionnée : 14h dans text_a contre 14h30 dans text_b. Les détails temporels nécessitent toujours une attention particulière."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Mélanie Roussel, observée en train de courir le long de la plage à 17h50.",
+    "text_b": "Mélanie Roussel, observée en train de courir le long de la plage à 17h50.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Signalement : individu de 1m75, cheveux blonds courts, lunettes noires.",
+    "text_b": "Signalement : individu de 1m75, cheveux blonds court, lunettes noires.",
+    "is_true": false,
+    "explanation": "La différence repose sur le pluriel du mot 'courts', qui devient 'court' dans text_b. Cette erreur est facilement manquable en raison de la proximité orthographique."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Déclaration déposée le 25/10/2023 à 10h05 par Mme Rivière.",
+    "text_b": "Déclaration déposée le 25/10/2023 à 10h05 par Mme Rivière.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Témoin présent à l'adresse 45 boulevard du Nord, le 09/11/2022.",
+    "text_b": "Témoin présent à l'adresse 45 boulevard du Nord, le 09/11/2022.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Signalement : homme vêtu d'un manteau marron et d'un pantalon de jogging gris.",
+    "text_b": "Signalement : homme vêtu d'un manteau marron et d'un pantalon de jogging gris.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Jean-Paul Delcourt, né le 16/09/1978, vu le 03/04/2023 à 16h.",
+    "text_b": "Jean-Paul Delcourt, né le 16/09/1978, vu le 03/04/2023 à 16h.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Rapport reçu le 13/06/2023 à 11h15 de la part de Mme Dubois.",
+    "text_b": "Rapport reçu le 13/06/2023 à 11h05 de la part de Mme Dubois.",
+    "is_true": false,
+    "explanation": "La différence est subtile mais essentielle : l'heure est 11h15 dans text_a contre 11h05 dans text_b. Les horaires sont des points critiques à vérifier attentivement."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Contact pris avec M. Vallet le 25/09/2023 à 12h20.",
+    "text_b": "Contact pris avec M. Vallet le 25/09/2023 à 12h20.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La rencontre a eu lieu à 18h40 à la bibliothèque municipale.",
+    "text_b": "La rencontre a eu lieu à 18h40 à la bibliothèque municipale.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Lors de l'incident survenu à la date du 21/07/2023, une Renault Mégane bleue a été vue à proximité du domicile de la victime.",
+    "text_b": "Lors de l'incident survenu à la date du 21/07/2023, une Renaut Mégane bleue a été vue à proximité du domicile de la victime.",
+    "is_true": false,
+    "explanation": "La différence est une lettre manquante : 'Renault' est devenu 'Renaut' dans text_b. Ce détail passe souvent inaperçu malgré son impact significatif."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'article 322-1 du code civil stipule que toute dégradation volontaire d'un bien immobilier est passible d'une amende.",
+    "text_b": "L'article 322-1 du code civil stipule que toute dégradation volontaire d'un bien immobilier est passible d'une amende.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Une caméra de surveillance a capturé l'image d'un individu portant une veste en cuir noir et des chaussures de marche marron, le 17/05/2023 à 23h05.",
+    "text_b": "Une caméra de surveillance a capturé l'image d'un individu portant une veste en cuir noir et des chaussures de marche mairon, le 17/05/2023 à 23h05.",
+    "is_true": false,
+    "explanation": "La différence est subtile : 'marron' est devenu 'mairon' dans text_b. Les lettres 'r' et 'i' combinées peuvent passer inaperçues pour un œil non averti."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le tribunal a décidé d'ajourner le jugement de l'affaire référencée sous le numéro 245/2023, en raison d'une demande de remise de la défense.",
+    "text_b": "Le tribunal a décidé d'ajourner le jugement de l'affaire référencée sous le numéro 245/2023, en raison d'une demande de remise de la défense.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "M. Bernard Lebrun a signalé un vol de bicyclette le 10/02/2023 dans le parc municipal, près de l'entrée principale, à proximité du kiosque.",
+    "text_b": "M. Bernard Lebrun a signalé un vol de bicyclette le 10/02/2023 dans le parc municipal près de l'entrée principale, à proximité du kiosque.",
+    "is_true": false,
+    "explanation": "Une virgule manquante dans text_b après 'municipal' modifie légèrement la lecture. C'est un détail que l'on peut facilement omettre sous la fatigue."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "La réunion de coordination des forces de l'ordre s'est tenue au commissariat central le 05/04/2023 de 14h00 à 16h00 pour préparer le défilé.",
+    "text_b": "La réunion de coodination des forces de l'ordre s'est tenue au commissariat central le 05/04/2023 de 14h00 à 16h00 pour préparer le défilé.",
+    "is_true": false,
+    "explanation": "'Coordination' est devenu 'coodination' dans text_b. Ce genre d'erreur de frappe avec des lettres doublées est fréquent quand la concentration diminue."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le témoignage de Mme Leclerc, enregistré le 12/11/2023 à 09h20, relate la disparition d'un portefeuille sur le marché du boulevard Perrotin.",
+    "text_b": "Le témoignage de Mme Leclerc, enregistré le 12/11/2023 à 09h20, relate la disparition d'un portefeuille sur le marché du boulevard Perrotin.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Durant la ronde habituelle, une patrouille a noté la présence d'un véhicule suspect, un Audi A3 de couleur noire, stationné illégalement devant l'hôpital.",
+    "text_b": "Durant la ronde habituelle, une patrouille a noté la présence d'un véhicule suspect, un Audi A3 de couleur noire, stationné illégalement devant l'hôpital.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Les faits se sont déroulés au domicile de la victime, situé au 23 rue de l'Espérance, dans un quartier résidentiel calme, le 10/09/2023 tard dans la soirée.",
+    "text_b": "Les faits se sont déroulés au domicile de la victime, situé au 23 rue de l'Espérance, dans un quartier résidentiel calme, le 10/09/2023 tard dans la soirée.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Il est noté que l'incident s'est produit sous une pluie fine, rendant les chaussées glissantes et augmentant le risque d'accidents.",
+    "text_b": "Il est noté que l'incident s'est produit sous une pluie fine, rendant les chaussées glissantes et augmentant le risque de d'accidents.",
+    "is_true": false,
+    "explanation": "Un 'de' supplémentaire apparaît dans text_b avant 'accidents'. Ce double emploi est un exemple typique d'erreur que l'on peut rater lors de la relecture."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Pendant la manifestation, deux individus ont été repérés en train de distribuer des tracts illégaux aux passants, causant du désordre dans la foule.",
+    "text_b": "Pendant la manifestation, deux individus ont été repérés en train de distribuer des tracts illégaux aux passants, causant du désordre dans la foule.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'article 432-1 du code pénal dispose que l'abus d'autorité est réprimé par une amende et une peine d'emprisonnement pouvant aller jusqu'à dix ans.",
+    "text_b": "L'article 432-1 du code pénal dispose que l'abus d'autorité est réprimé par une amende et une peine d'emprisonnement pouvant aller jusqu'à dix ans.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Un rapport détaillant les circonstances entourant l'accident de la route, qui a impliqué un camion et une voiture, a été rédigé le lendemain de l'événement.",
+    "text_b": "Un rapport détaillant les circonstances entourant l'accident de la route, qui a impliqué un camion et une voiture, a été rédigé le lendemain de l'événement.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Au cours de l'enquête, un témoin a indiqué avoir vu un individu louche errer aux abords de la ruelle sombre, peu avant minuit, le 18/08/2023.",
+    "text_b": "Au cours de l'enquête, un témoin a indiqué avoir vu un individu louche errer aux abords de la ruelle sombre, peu avant minuit, le 18/08/2023.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « E » apparaît-elle dans cette phrase (en majuscule ou minuscule) ?",
+    "prompt": "Comptez attentivement.",
+    "stimulus": "ELLE EST ENCORE ENTRAIN DE LIRE.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "ELLE (2) + EST (1) + ENCORE (2) + ENTRAIN (0) + DE (1) + LIRE (0) = 6 occurrences au total. Il est important de distinguer les E dans chaque mot. Attention à ne pas compter les R pour des E.",
+    "hint": "Regardez chaque mot indépendamment pour éviter les doublons."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Toutes les lettres sauf une suivent une règle commune.",
+    "stimulus": "A C E G J K M",
+    "options": ["A", "J", "K", "M"],
+    "answer": "J",
+    "explanation": "Les lettres A, C, E, G, K, M suivent une alternance de 2 en 2 dans l'alphabet. La lettre J ne fait pas partie de cette alternance.",
+    "hint": "Cherchez une progression constante dans l'ordre alphabétique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois le chiffre « 8 » apparaît-il dans ce texte ?",
+    "prompt": "Regardez attentivement.",
+    "stimulus": "Le 8 août, elle a acheté 8 kg de pommes chez 8 commerçants.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Le chiffre 8 apparaît dans '8 août', '8 kg' et '8 commerçants', totalisant 3 occurrences. Les nombres dans les textes peuvent être trompeurs s'ils sont accompagnés de mots similaires.",
+    "hint": "Ignorez les lettres et concentrez-vous uniquement sur les chiffres."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de majuscules se trouvent dans cette phrase ?",
+    "prompt": "Ne comptez que les majuscules.",
+    "stimulus": "Paul et Marie Vont à Londres En Juin.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "PAUL (1), Marie (0), Vont (1), à (0), Londres (1), En (1), Juin (1) = 5 majuscules totales. Notez que chaque mot commence par une majuscule à cause des noms propres.",
+    "hint": "Repérez le début de chaque mot."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres 7 dans la suite ?",
+    "prompt": null,
+    "stimulus": "7 5 7 9 2 7 1 7 3",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Le chiffre 7 apparaît à la position 1, 3, 6 et 8, soit 4 fois au total. Faites attention aux chiffres qui peuvent former un 7 si mal distingués, comme le 1.",
+    "hint": "Repérez les séquences avec le chiffre 7 distinct."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Repérez l'intrus dans cette suite de mois.",
+    "prompt": "L'un de ces mois ne suit pas la règle des 31 jours.",
+    "stimulus": "Janvier Mars Mai Juillet Août Septembre",
+    "options": ["Mars", "Mai", "Août", "Septembre"],
+    "answer": "Septembre",
+    "explanation": "Septembre a seulement 30 jours, alors que tous les autres mois listés ont 31 jours. Cette suite teste vos connaissances sur la durée des mois.",
+    "hint": "Rappelez-vous du nombre de jours dans chaque mois."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : 123ABC456",
+    "stimulus": "Vérifiez chaque séquence attentivement.",
+    "options": ["123ACB456", "123ABC456", "123BAC456", "1234BC567"],
+    "answer": "123ABC456",
+    "explanation": "La deuxième option reproduit le modèle sans erreur : 1 = 1, 2 = 2, 3 = 3, A = A, B = B, C = C, 4 = 4, 5 = 5, 6 = 6. Prenez le temps de comparer chaque caractère pour éviter les erreurs d'inversion.",
+    "hint": "Comparez chaque caractère avec le modèle."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de mots de plus de 5 lettres dans cette phrase ?",
+    "prompt": "Considérez les mots entièrement formés.",
+    "stimulus": "Le navigateur inspecte son équipement chaque matin.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Les mots 'navigateur', 'inspecte', et 'équipement' ont chacun plus de 5 lettres, soit trois mots au total. Calculez le nombre de lettres pour chaque mot à l'aide de vos doigts ou mentalement.",
+    "hint": "Vérifiez la longueur pour chaque mot calmly."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de L majuscules apparaissent dans ce texte ?",
+    "prompt": "Comptez uniquement les L en majuscules.",
+    "stimulus": "Le Loyaliste LARVE Lavage LUCIDE.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "LE (1), Loyaliste (1), LARVE (1), Lavage (1), LUCIDE (0), ce qui donne un total de 4 L majuscules. Il est crucial de ne pas confondre minuscule et majuscule dans les noms.",
+    "hint": "Cherchez les L au début et au milieu de chaque mot."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Cherchez une progression logique.",
+    "stimulus": "M O Q S T U W",
+    "options": ["O", "Q", "T", "W"],
+    "answer": "W",
+    "explanation": "Les lettres M, O, Q suivent un schéma alternant sans sauter aucune lettre dans les paires. W ne suit pas ce schéma car elle saute un segment.",
+    "hint": "Vérifiez les différences de positions entre chaque lettre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est strictement identique au modèle ?",
+    "prompt": "Modèle : ABC-123-DE",
+    "stimulus": "Vérifiez chaque séquence attentivement.",
+    "options": ["ABC-123-DF", "ABD-123-DE", "ABC-123-DE", "ABC-124-DE"],
+    "answer": "ABC-123-DE",
+    "explanation": "La troisième séquence reproduit parfaitement chaque caractère du modèle. L'utilisation des tirets et des chiffres peuvent facilement tromper si on ne fait pas attention.",
+    "hint": "Regardez attentivement chaque position du caractère."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de voyelles dans cette phrase, casse insensible ?",
+    "prompt": "Les voyelles sont a, e, i, o, u.",
+    "stimulus": "Demandez à Véronique si elle a des informations uniques.",
+    "options": ["17", "18", "19", "20"],
+    "answer": "18",
+    "explanation": "Compte mental des voyelles : Demandez (3), Véronique (4), si (1), elle (2), a (1), des (1), informations (5), uniques (2) = 18 voyelles. Assurez-vous de ne pas négliger les E muets à la fin des mots.",
+    "hint": "Repérez chaque voyelle et comptez une par une."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres pairs dans cette suite ?",
+    "prompt": null,
+    "stimulus": "4 7 2 5 8 1 6 3 0",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Les chiffres pairs sont 4, 2, 8, 6, et 0. En comptant ces numéros, cela donne 5 chiffres pairs. Faites attention aux chiffres qui sautent de la ligne pour éviter de double-compter.",
+    "hint": "Repérez les chiffres qui peuvent être divisés par 2 sans reste."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel élément est l'intrus dans cette suite de jours ?",
+    "prompt": "Chaque jour sauf un se base sur une règle.",
+    "stimulus": "Mardi Jeudi Samedi Dimanche",
+    "options": ["Jeudi", "Samedi", "Dimanche", "Mardi"],
+    "answer": "Dimanche",
+    "explanation": "Tous les jours sauf Dimanche sont des jours où les magasins ouvrent normalement. Dimanche est souvent fermé ou partiellement ouvert. Pensez aux routines typiques de travail.",
+    "hint": "Considérez la semaine de travail standard."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est celle du modèle ?",
+    "prompt": "Modèle : AA11BB22",
+    "stimulus": "Analysez chaque option attentivement.",
+    "options": ["AA12BB22", "AA11BB22", "A11ABB22", "AA11BB33"],
+    "answer": "AA11BB22",
+    "explanation": "Seule la deuxième séquence reproduit les lettres et chiffres du modèle exactement. Confondre les chiffres et les lettres est facile si on ne vérifie pas chaque point d'inflexion.",
+    "hint": "Faites une comparaison directe pour identifier les erreurs."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots de plus de 4 lettres ?",
+    "prompt": "Considérez la longueur de chaque mot.",
+    "stimulus": "Chacun souhaite profiter des belles promenades.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "Les mots 'Chacun' (6), 'souhaite' (7), 'profiter' (8), 'belles' (6) ont plus de 4 lettres, il y en a donc 4 en tout. Concentrez-vous sur la longueur spécifique des mots plus longs.",
+    "hint": "Recensez chaque mot par son nombre de lettres."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres « 9 » apparaissent-ils dans ce nombre ?",
+    "prompt": null,
+    "stimulus": "999,492,993,199",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "Positions 1, 2, 3, 9, 10, 11 — six occurrences du chiffre 9. Chaque chiffre au milieu peut être distrait par la présence de nombres similaires, soyez prudent.",
+    "hint": "Survolez chaque séquence en examinant le 9 récurrent."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de lettres « S » majuscules sont-elles présentes dans ce paragraphe ?",
+    "prompt": "Comptez uniquement les S en majuscules.",
+    "stimulus": "Sophie a quitté la maison en Silence, laissant sur la table un bouquet de roses Sans un mot.",
+    "options": ["1", "2", "3", "4"],
+    "answer": "2",
+    "explanation": "Le mot 'Sophie' commence avec un S majuscule, de même que 'Silence'. Les autres occurrences de s sont en minuscule, ce qui donne 2 S majuscules en total. Vérifiez les débuts et isolés mots pour assurer l'exactitude.",
+    "hint": "Regardez spécifiquement les débuts de mots ou après des points."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre « K » apparaît-elle, en majuscule ou minuscule ?",
+    "prompt": "Inclut les noms propres.",
+    "stimulus": "Katie aime le kitesurf à l'occasion du Carnaval de L'Été.",
+    "options": ["1", "2", "3", "4"],
+    "answer": "3",
+    "explanation": "Le K apparaît dans 'Katie' (1) et deux fois dans 'kitesurf' (2), totalisant 3. Gardez à l'esprit que les noms et activités peuvent facilement contenir des lettres non intuitives.",
+    "hint": "Attention aux R semblables aux K."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence identique au modèle est la bonne ?",
+    "prompt": "Modèle : #$%&*()",
+    "stimulus": "Vérifiez chaque caractère.",
+    "options": ["#$%&*((", "#&%$*)", "#$%&*()", "#$%&)("],
+    "answer": "#$%&*()",
+    "explanation": "La troisième option #$%&*() reproduit le modèle exactement, y compris la ponctuation. Des erreurs typiques se produisent avec la symétrie de certains caractères ; vérifiez chaque point.",
+    "hint": "Soulignez les paires unique des symboles."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots de plus que 3 syllabes ?",
+    "prompt": "Chaque syllabe compte.",
+    "stimulus": "Le développement durable nécessite des stratégies innovantes en permanence.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "5",
+    "explanation": "'Développement' (4 syllabes), 'nécessite' (4), 'stratégies' (3), 'innovantes' (4), 'permanence' (4) totalisent 5 mots. Compter chaque syllabe peut différencier les mots longs des percepteurs erronés.",
+    "hint": "Soyez méthodiques dans le déchiffrage des syllabes internes."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles sont présentes en majuscules ?",
+    "prompt": "Les voyelles en majuscules sont : A, E, I, O, U.",
+    "stimulus": "L'ÉCHO du CRI résonne fort, mais la HAINE S'ÉNVOLE.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les majuscules concernées sont É (1), O (1), I (1) et É (encore 1, dans 'S'ÉNVOLE'), donnant 4 voyelles majuscules. Méfiez-vous des accents et cases ignorés.",
+    "hint": "Étudiez attentivement chaque voyelle initiale ou accentuée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de lettres sont doublées dans ce texte ?",
+    "prompt": "Comptez les lettres consécutives identiques.",
+    "stimulus": "Aller au zoo n'était pas habituel.",
+    "options": ["1", "2", "3", "4"],
+    "answer": "2",
+    "explanation": "Les lettres doublées sont 'll' et 'oo' totalisant 2 paires. Faites attention aux distributions qui semblent aléatoires mais qui sont répandues par espace géométrique.",
+    "hint": "Repérez et notez les paires immédiates dans chaque mot."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois le mot 'police' est-il répété en premier ?",
+    "prompt": null,
+    "stimulus": "La police examine, la police inspecte, mais une seule police verdict.",
+    "options": ["1", "2", "3", "4"],
+    "answer": "3",
+    "explanation": "Le mot 'police' est utilisé 3 fois comme premier (débutant comme : La/La/Mais La), ce qui peut être une répétition subreptice dans les documents d'un cas spécial. Attention aux indications suggérées par les autres mots de continue.",
+    "hint": "Repérer les premières occurrences pour comprendre le modèle d'ordre ou répit."
+  }
+]

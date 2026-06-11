@@ -1,0 +1,422 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « B » apparaît-elle dans la phrase (en majuscule ou minuscule) ?",
+        "prompt": "Comptez attentivement.",
+        "stimulus": "Bobby adore les biscuits et les bonbons.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4",
+        "explanation": "Dans la phrase, nous trouvons « Bobby » (2), « biscuits » (1) et « bonbons » (1), ce qui fait un total de 4 B. Attention, le B de Bobby est compté deux fois.",
+        "hint": "Regarde chaque mot contenant un B."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans cette séquence ?",
+        "prompt": "Identifiez l'intrus par rapport à l'ordre alphabétique.",
+        "stimulus": "A C E F G I K",
+        "options": ["E", "F", "G", "I"],
+        "answer": "F",
+        "explanation": "La séquence suit l'ordre alterné de l'alphabet : A (1), C (3), E (5). F (6) ne suit pas cette alternance, alors que G aurait dû être suivi de I.",
+        "hint": "Concentrez-vous sur l'ordre alterné des lettres."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de chiffres « 2 » apparaissent dans la suite ?",
+        "prompt": "Comptez ce qui est visible.",
+        "stimulus": "1 2 5 2 8 9 0 2 4 2",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4",
+        "explanation": "Positions 2, 4, 8, 10. Chaque « 2 » est séparé par d'autres chiffres pour distraire le comptage.",
+        "hint": "Repère chaque 2 parmi les chiffres."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « P » majuscule apparaît-elle dans cette phrase ?",
+        "prompt": "Recherchez exclusivement les P majuscules.",
+        "stimulus": "Le Pompier a Préparé les PLANS pour la Probabilité.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "3",
+        "explanation": "Les P majuscules apparaissent dans « Pompier » (1), « Préparé » (1), et « PLANS » (1), formant un total de 3 P majuscules.",
+        "hint": "Ne vous laissez pas distraire par les p minuscules."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quels chiffres forment une paire parmi la suite suivante ?",
+        "prompt": "Une seule paire identique est présente.",
+        "stimulus": "3 5 7 8 7 9",
+        "options": ["3", "5", "7", "9"],
+        "answer": "7",
+        "explanation": "La seule paire de chiffres identiques dans la séquence est 7, aux positions 3 et 5.",
+        "hint": "Cherchez un chiffre qui se répète."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de chiffres impairs trouve-t-on dans cette suite ?",
+        "prompt": null,
+        "stimulus": "1 4 3 6 5 8 7",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Dans la suite, les chiffres impairs sont 1, 3, 5, et 7, ce qui inclut quatre occurrences.",
+        "hint": "Repérez les chiffres qui ne se divisent pas par 2."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle séquence est l'intrus parmi ces chiffres ?",
+        "prompt": "Cherchez le chiffre qui ne suit pas la série.",
+        "stimulus": "10, 20, 30, 35, 40",
+        "options": ["10", "20", "30", "35"],
+        "answer": "35",
+        "explanation": "La séquence suit des multiples de 10 : 10, 20, 30, 40, et le 35 n'en est pas un.",
+        "hint": "Pensez aux multiples de dix."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de majuscules y a-t-il dans cette phrase ?",
+        "prompt": "Considérer uniquement les majuscules.",
+        "stimulus": "Aujourd'hui, La Pluie Tombe Sur Paris.",
+        "options": ["5", "6", "7", "8"],
+        "answer": "6",
+        "explanation": "Les majuscules sont A (1), L (1), P (1), T (1), S (1), P (1), formant un total de 6 majuscules dans la phrase.",
+        "hint": "Surlignez mentalement les majuscules."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans cette suite ?",
+        "prompt": "Identifiez la lettre qui est différente des autres par sa position.",
+        "stimulus": "D F H J M N",
+        "options": ["F", "J", "M", "N"],
+        "answer": "N",
+        "explanation": "La suite suit les consonnes situées en position impaire dans l'alphabet : D (4), F (6), H (8), J (10), M (13), mais N (14) brise cette logique.",
+        "hint": "Vérifiez la position de chaque lettre dans l'alphabet."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de chiffres « 4 » apparaissent dans cette suite ?",
+        "prompt": null,
+        "stimulus": "2 4 5 4 7 4 9 0",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Les 4 apparaissent aux positions 2, 4, et 6, totalisant trois occurrences dans la séquence.",
+        "hint": "Concentrez-vous sur les positions paires."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans cette suite alphabétique ?",
+        "prompt": "Toutes les lettres sauf une forment une suite continue.",
+        "stimulus": "A B C E F G",
+        "options": ["C", "E", "F", "G"],
+        "answer": "E",
+        "explanation": "La lettre E est l'intrus car elle brise la continuité de la suite alphabétique après D.",
+        "hint": "Notez l'ordre alphabétique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « O » apparaît-elle dans cette phrase ?",
+        "prompt": "Comptez les O majuscules et minuscules.",
+        "stimulus": "Oscar observe un ouragan durant octobre.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "5",
+        "explanation": "Dans la phrase, nous avons : Oscar (1), observe (1), ouragan (1), octobre (2), avec un total ne dev 5 O.",
+        "hint": "Surlignez chaque O que vous voyez."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel nombre est l'intrus dans cette suite de chiffres ?",
+        "prompt": "Identifiez le nombre qui ne suit pas le même modèle.",
+        "stimulus": "2 4 6 7 10 12",
+        "options": ["4", "6", "7", "10"],
+        "answer": "7",
+        "explanation": "La suite suit des nombres pairs : 2, 4, 6, 10, 12. Le 7 est impair et rompt ainsi le modèle.",
+        "hint": "Vérifiez la parité des nombres."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de voyelles y a-t-il dans cette phrase ?",
+        "prompt": "Considère a, e, i, o, u en majuscule et minuscule.",
+        "stimulus": "Le gardien a aperçu une étrange ombre.",
+        "options": ["10", "11", "12", "13"],
+        "answer": "12",
+        "explanation": "Voici la répartition : Le (1+1), gardien (2), a (1), aperçu (2), une (1), étrange (1), ombre (2). En tout, 12 voyelles.",
+        "hint": "Surlignez mentalement les voyelles."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois le chiffre « 5 » apparaît-il dans cette suite ?",
+        "prompt": null,
+        "stimulus": "5 3 5 8 5 2 7",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Dans la séquence, les 5 apparaissent aux positions 1, 3, et 5, totalisant ainsi trois occurrences.",
+        "hint": "Recherchez chaque chiffre « 5 » isolément."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de consonnes y a-t-il dans cette phrase ?",
+        "prompt": "Ne comptez que les consonnes.",
+        "stimulus": "L'agent secret note une formule.",
+        "options": ["10", "11", "12", "13"],
+        "answer": "11",
+        "explanation": "La répartition des consonnes est la suivante : L (1), 'g' (1), 'n' (1), secret (4), note (1), formule (3), totalisant 11 consonnes.",
+        "hint": "Comptez attentivement chaque consonne."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel chiffre est l'intrus dans cette suite de chiffres ?",
+        "prompt": "Identifiez le intrus par rapport au modèle pair-impair.",
+        "stimulus": "2 4 6 8 7 10",
+        "options": ["4", "6", "7", "8"],
+        "answer": "7",
+        "explanation": "Tous les chiffres dans la séquence sont pairs à l'exception de 7, qui est impair et ne suit pas le motif.",
+        "hint": "Concentrez-vous sur la combinaison de nombres pairs et impairs."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de fois la lettre « T » apparaît-elle dans ce texte (en majuscule ou minuscule) ?",
+        "prompt": "Soyez attentif aux T majuscules et minuscules.",
+        "stimulus": "Timothy triture les textes techniques tout le temps.",
+        "options": ["6", "7", "8", "9"],
+        "answer": "8",
+        "explanation": "Les T apparaissent dans : Timothy (1), triture (1), textes (2), techniques (2), tout (1), temps (1), totalisant 8 occurrences.",
+        "hint": "Repérez les T en visualisant chaque mot."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel nombre est l'intrus dans cette suite ?",
+        "prompt": "Tous les nombres sauf un forment une suite de carrés parfaits.",
+        "stimulus": "1, 4, 9, 15, 16, 25",
+        "options": ["4", "9", "15", "16"],
+        "answer": "15",
+        "explanation": "Les nombres 1, 4, 9, 16 et 25 sont tous des carrés parfaits : 1^2, 2^2, 3^2, etc. Le nombre 15 n'est pas un carré parfait.",
+        "hint": "Pensez aux carrés des nombres entiers."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de mots de plus de 6 lettres y a-t-il dans cette phrase ?",
+        "prompt": null,
+        "stimulus": "L'inspecteur examina minutieusement la scène du crime pour y trouver des évidences.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "L'inspecteur (9), examinera (9), minutieusement (13), sont trois mots de plus de 6 lettres.",
+        "hint": "Identifiez les mots longs dès le début."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence est identique au modèle ?",
+        "prompt": "Modèle : abcd1234EfGh",
+        "stimulus": null,
+        "options": ["abcd1234EFGh", "abcd1243EfGh", "abcd1235EfGh", "abcd1234EfGh"],
+        "answer": "abcd1234EfGh",
+        "explanation": "Seule la dernière proposition suit exactement le modèle donné, les autres contiennent des différences subtiles.",
+        "hint": "Vérifiez chaque caractère un par un."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de voyelles majuscules y a-t-il dans cette phrase ?",
+        "prompt": null,
+        "stimulus": "Un ÉNORME LOUP BAGUAIT DANS LES BOIS, CHASSANT QUELQUE MEUTE.",
+        "options": ["5", "6", "7", "8"],
+        "answer": "8",
+        "explanation": "Décompte : ÉNORME (1), LOUP (1), BAGUAIT (1), DANS (1), LES (1), BOIS (1), CHASSANT (0), QUELQUE (1), MEUTE (1) = 8 voyelles majuscules.",
+        "hint": "Concentrez-vous uniquement sur les majuscules."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel chiffre est l'intrus dans cette suite de nombres ?",
+        "prompt": "Levez l'intrus par rapport à son parité.",
+        "stimulus": "2 4 6 8 9 12 14",
+        "options": ["9", "12", "14", "6"],
+        "answer": "9",
+        "explanation": "Tous les chiffres sont pairs à l'exception de 9, qui est impair et rompt ainsi le modèle.",
+        "hint": "Ciblez les chiffres impairs."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de paires de voyelles consécutives y a-t-il ?",
+        "prompt": null,
+        "stimulus": "Eau et naïade sont épiques ici.",
+        "options": ["1", "2", "3", "4"],
+        "answer": "3",
+        "explanation": "Voyelles consécutives trouvées dans : 'Eau' (1), 'naïade' (1), 'épiques' (1), total 3 paires.",
+        "hint": "Analysez chaque groupe de deux lettres."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien d'adjectifs trouve-t-on dans cette phrase ?",
+        "prompt": null,
+        "stimulus": "Le rapide renard brun sauta par-dessus le chien paresseux.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Les adjectifs sont : rapide, brun, paresseux. Ils décrivent les noms renard et chien.",
+        "hint": "Repérez les mots décrivant les noms."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien d'occurrences de la lettre « A » sous forme majuscule trouve-t-on ?",
+        "prompt": null,
+        "stimulus": "AVEC ACHETER est fortement recommandé dans ce contexte ANxieux.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Décompte des A majuscules : AVEC (1), ACHETER (1), recommandé (0), ANxieux (1). Total 3 A majuscules.",
+        "hint": "Ignorez les occurrences minuscules."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence est identique au modèle ?",
+        "prompt": "Modèle : GHPQZXYR",
+        "stimulus": null,
+        "options": ["GHPQZXYR", "HPQGZXYR", "GHPQZAYR", "GHPQZXTR"],
+        "answer": "GHPQZXYR",
+        "explanation": "Seule la première option correspond exactement au modèle, les autres contiennent des variations subtiles.",
+        "hint": "Comparez chaque lettre soigneusement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de mots de plus de 5 lettres y a-t-il dans cette phrase ?",
+        "prompt": null,
+        "stimulus": "Dans l'assemblée, plusieurs leaders se réinventa pour atteindre leurs objectifs.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Les mots de plus de cinq lettres incluent : assemblée (9), réinventa (8), atteindre (8), pour un total de 3.",
+        "hint": "Repérez les mots qui dépassent cinq lettres."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence suit exactement le modèle ci-dessous ?",
+        "prompt": "Modèle : 8BZA94SQ",
+        "stimulus": null,
+        "options": ["8BZA94SQ", "8BZ4A9SQ", "B8ZA9QS4", "8BZA9S4Q"],
+        "answer": "8BZA94SQ",
+        "explanation": "Le seul choix qui reproduit exactement le modèle fourni est le premier.",
+        "hint": "Vérifiez chaque caractère un à un."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de chiffres « 6 » apparaissent dans la suite ?",
+        "prompt": null,
+        "stimulus": "9 6 7 8 6 9 6 1 6 0 4 6 3 2 6",
+        "options": ["5", "6", "7", "8"],
+        "answer": "5",
+        "explanation": "Les chiffres « 6 » sont aux positions 2, 5, 7, 10, 14. Il y a donc 5 occurrences de ce chiffre.",
+        "hint": "Concentrez-vous sur chaque position impaire."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de voyelles majuscules y a-t-il dans ce bloc de texte ?",
+        "prompt": null,
+        "stimulus": "UNE GRANDE MAISON AVEC UN JARDIN CLÔTURÉ EST DISPONIBLE.",
+        "options": ["6", "7", "8", "9"],
+        "answer": "8",
+        "explanation": "Voyelles majuscules : UNE (1), GRANDE (1), AVEC (1), MAISON (2), UN (0), JARDIN (0), CLÔTURÉ (1), DISPONIBLE (1) pour un total de 8.",
+        "hint": "Ne comptez que les majuscules."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel nombre est l'intrus dans la séquence suivante et pourquoi ?",
+        "prompt": "Identifiez le nombre qui ne suit pas le modèle de carrés.",
+        "stimulus": "4, 9, 16, 23, 25, 36",
+        "options": ["9", "16", "23", "25"],
+        "answer": "23",
+        "explanation": "La séquence suit des carrés parfaits : 2^2, 3^2, 4^2, 5^2, 6^2. Le 23 n'est pas un carré parfait.",
+        "hint": "Considérez les carrés des nombres entiers."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de mots de plus de 7 lettres contient cette phrase ?",
+        "prompt": null,
+        "stimulus": "L'astronome passionné d'astrophysique découvrit un phénomène inexpliqué.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "3",
+        "explanation": "Les mots de plus de 7 lettres incluent 'astronome' (9), 'astrophysique' (13), et 'inexpliqué' (9), totalisant 3 mots.",
+        "hint": "Cherchez les mots les plus longs."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle séquence suit exactement le modèle ci-dessous ?",
+        "prompt": "Modèle : hJH6&^jGm3",
+        "stimulus": null,
+        "options": ["hjH6&^jGm3", "hJH6&^jGmO", "HJH6&^jGm3", "hJH6&^jGm3"],
+        "answer": "hJH6&^jGm3",
+        "explanation": "La dernière proposition suit exactement le modèle lettre par lettre, aucune différence n'est présente.",
+        "hint": "Vérifiez chaque caractère et sa position."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de chiffres se trouvent dans la séquence suivante ?",
+        "prompt": null,
+        "stimulus": "V3H5JX9Q0W6",
+        "options": ["5", "6", "4", "3"],
+        "answer": "4",
+        "explanation": "La séquence contient quatre chiffres : 3, 5, 9, et 0. Les autres caractères sont des lettres.",
+        "hint": "Repérez chaque chiffre individuel."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de lettres majuscules y a-t-il dans ce passage ?",
+        "prompt": null,
+        "stimulus": "La forêt du Nord est un endroit Magnifique qui abrite des créatures Mystérieuses.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5",
+        "explanation": "Lettres majuscules : L (1) dans 'La', N (1) dans 'Nord', M (1) dans 'Magnifique', M (1) dans 'Mystérieuses'. Total : 5 majuscules.",
+        "hint": "N'oubliez pas le début des phrases."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de mots de plus de 8 lettres apparaissent dans ce texte ?",
+        "prompt": null,
+        "stimulus": "L'enquêteur mit en œuvre des techniques d'investigation approfondies pour résoudre l'affaire.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "2",
+        "explanation": "Les mots qui dépassent 8 lettres sont 'techniques' (10) et 'investigation' (13), donnant un total de 2 mots.",
+        "hint": "Recherchez les mots avec au moins 9 lettres."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel nombre est l'intrus parmi la série suivante ?",
+        "prompt": "Identifiez celui qui ne suit pas la règle des cubes parfaits.",
+        "stimulus": "1, 8, 27, 54, 64, 125",
+        "options": ["27", "54", "64", "125"],
+        "answer": "54",
+        "explanation": "Tous les nombres sauf 54 sont des cubes parfaits, résultant de 1^3, 2^3, 3^3, 4^3, 5^3.",
+        "hint": "Pensez à la puissance de trois."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de voyelles minuscules y a-t-il ?",
+        "prompt": null,
+        "stimulus": "L'ÉCOLE ÉLITISTE est FERMÉE pour l'ÉTÉ afin de permettre des RÉPARATIONS.",
+        "options": ["0", "1", "2", "3"],
+        "answer": "0",
+        "explanation": "Toutes les voyelles dans la phrase sont en majuscule, il n'y a donc aucune voyelle minuscule.",
+        "hint": "Considérez la casse des lettres."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle séquence suit exactement le modèle ci-dessous ?",
+        "prompt": "Modèle : 9KlOp123#",
+        "stimulus": null,
+        "options": ["9KlOp123#", "9KlOp321#", "9KlOp123-", "9KLOp123#"],
+        "answer": "9KlOp123#",
+        "explanation": "La première option est la seule séquence qui correspond parfaitement au modèle en tout point.",
+        "hint": "Considérez la casse et les symboles avec attention."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de mots se terminent par une consonne ?",
+        "prompt": null,
+        "stimulus": "Les détectives réunis discutèrent de l'indice crucial trouvé lors de leur dernière enquête.",
+        "options": ["5", "6", "7", "8"],
+        "answer": "6",
+        "explanation": "Détectives (1), discutèrent (1), crucial (1), trouvé (0), lors (1), leur (1), enquête (0), totalisant 6 mots.",
+        "hint": "Focalisez sur les dernières lettres."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel chiffre est l'intrus dans la séquence suivante ?",
+        "prompt": "Identifie le chiffre qui ne suit pas le modèle croissant.",
+        "stimulus": "1 3 5 7 2 9 11",
+        "options": ["3", "5", "7", "2"],
+        "answer": "2",
+        "explanation": "La séquence est formée de chiffres impairs croissants. Le chiffre 2 est pair et rompt le modèle.",
+        "hint": "Cherchez la série de nombres impairs."
+    }
+]

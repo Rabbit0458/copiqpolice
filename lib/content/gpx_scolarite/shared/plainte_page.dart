@@ -54,9 +54,9 @@ class _PlaintePageState extends State<PlaintePage> {
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
-                    colors: [cs.primary.withOpacity(.10), cs.surface],
+                    colors: [cs.primary.withValues(alpha: .10), cs.surface],
                   ),
-                  border: Border.all(color: cs.outlineVariant.withOpacity(.35)),
+                  border: Border.all(color: cs.outlineVariant.withValues(alpha: .35)),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(18, 16, 14, 12),
@@ -126,7 +126,7 @@ class _PlaintePageState extends State<PlaintePage> {
                       'Rechercher (ex: mentions, droits, violences, ITT, témoin…)',
                   isDense: true,
                   filled: true,
-                  fillColor: cs.surfaceContainerHighest.withOpacity(.55),
+                  fillColor: cs.surfaceContainerHighest.withValues(alpha: .55),
                   contentPadding: const EdgeInsets.symmetric(
                     horizontal: 16,
                     vertical: 14,
@@ -134,18 +134,18 @@ class _PlaintePageState extends State<PlaintePage> {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(28),
                     borderSide: BorderSide(
-                      color: cs.outlineVariant.withOpacity(.5),
+                      color: cs.outlineVariant.withValues(alpha: .5),
                     ),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(28),
                     borderSide: BorderSide(
-                      color: cs.outlineVariant.withOpacity(.5),
+                      color: cs.outlineVariant.withValues(alpha: .5),
                     ),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(28),
-                    borderSide: BorderSide(color: cs.primary.withOpacity(.6)),
+                    borderSide: BorderSide(color: cs.primary.withValues(alpha: .6)),
                   ),
                 ),
               ),
@@ -209,10 +209,10 @@ class _BlocTile extends StatelessWidget {
         decoration: BoxDecoration(
           color: cs.surface,
           borderRadius: BorderRadius.circular(22),
-          border: Border.all(color: cs.outlineVariant.withOpacity(.35)),
+          border: Border.all(color: cs.outlineVariant.withValues(alpha: .35)),
           boxShadow: [
             BoxShadow(
-              color: cs.shadow.withOpacity(.06),
+              color: cs.shadow.withValues(alpha: .06),
               blurRadius: 18,
               offset: const Offset(0, 8),
             ),
@@ -271,9 +271,9 @@ class _ItemCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(18),
       child: Container(
         decoration: BoxDecoration(
-          color: cs.surfaceContainerHighest.withOpacity(.6),
+          color: cs.surfaceContainerHighest.withValues(alpha: .6),
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: cs.outlineVariant.withOpacity(.25)),
+          border: Border.all(color: cs.outlineVariant.withValues(alpha: .25)),
         ),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(14, 12, 14, 14),
@@ -319,7 +319,7 @@ class _CopyBox extends StatelessWidget {
       decoration: BoxDecoration(
         color: cs.surface,
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: cs.outlineVariant.withOpacity(.35)),
+        border: Border.all(color: cs.outlineVariant.withValues(alpha: .35)),
       ),
       child: Column(
         children: [
@@ -329,7 +329,7 @@ class _CopyBox extends StatelessWidget {
               borderRadius: const BorderRadius.vertical(
                 top: Radius.circular(12),
               ),
-              color: cs.surfaceContainerHighest.withOpacity(.5),
+              color: cs.surfaceContainerHighest.withValues(alpha: .5),
             ),
             child: Row(
               children: [
@@ -372,9 +372,9 @@ class _IconBadge extends StatelessWidget {
       width: 44,
       height: 44,
       decoration: BoxDecoration(
-        color: cs.primary.withOpacity(.12),
+        color: cs.primary.withValues(alpha: .12),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: cs.primary.withOpacity(.25)),
+        border: Border.all(color: cs.primary.withValues(alpha: .25)),
       ),
       child: Icon(icon, color: cs.primary),
     );
@@ -392,9 +392,9 @@ class _TinyTag extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: cs.secondaryContainer.withOpacity(.5),
+        color: cs.secondaryContainer.withValues(alpha: .5),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: cs.outlineVariant.withOpacity(.3)),
+        border: Border.all(color: cs.outlineVariant.withValues(alpha: .3)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,

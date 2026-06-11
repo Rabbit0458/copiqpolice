@@ -452,7 +452,7 @@ class SubscriptionService {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'quota_lock',
-      barrierColor: Colors.black.withOpacity(0.55),
+      barrierColor: Colors.black.withValues(alpha: 0.55),
       transitionDuration: const Duration(milliseconds: 220),
       pageBuilder: (_, __, ___) => const SizedBox.shrink(),
       transitionBuilder: (context, anim, __, ___) {
@@ -627,7 +627,7 @@ class _QuotaLockDialog extends StatelessWidget {
 
     final surface = isDark ? const Color(0xFF111317) : Colors.white;
     final textMain = isDark ? Colors.white : const Color(0xFF0B0C0F);
-    final textMuted = (isDark ? Colors.white : Colors.black).withOpacity(0.68);
+    final textMuted = (isDark ? Colors.white : Colors.black).withValues(alpha: 0.68);
 
     return SafeArea(
       child: Center(
@@ -651,11 +651,11 @@ class _QuotaLockDialog extends StatelessWidget {
                       child: Container(
                         width: 520,
                         decoration: BoxDecoration(
-                          color: surface.withOpacity(isDark ? 0.92 : 0.95),
+                          color: surface.withValues(alpha: isDark ? 0.92 : 0.95),
                           borderRadius: BorderRadius.circular(26),
                           border: Border.all(
                             color: (isDark ? Colors.white : Colors.black)
-                                .withOpacity(0.08),
+                                .withValues(alpha: 0.08),
                             width: 1,
                           ),
                           boxShadow: const [
@@ -678,7 +678,7 @@ class _QuotaLockDialog extends StatelessWidget {
                                 children: [
                                   Icon(
                                     Icons.lock_rounded,
-                                    color: textMain.withOpacity(0.9),
+                                    color: textMain.withValues(alpha: 0.9),
                                   ),
                                   const SizedBox(width: 10),
                                   Text(
@@ -710,7 +710,7 @@ class _QuotaLockDialog extends StatelessWidget {
                                 'Réinitialisation : $resetsText',
                                 textAlign: TextAlign.center, // ✅
                                 style: theme.textTheme.bodyMedium?.copyWith(
-                                  color: textMain.withOpacity(0.92),
+                                  color: textMain.withValues(alpha: 0.92),
                                   fontWeight: FontWeight.w900,
                                 ),
                               ),

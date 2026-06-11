@@ -1,0 +1,331 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "M. Pierre Martin, 45 ans, 1m78, yeux bleus",
+    "text_b": "M. Pierre Martin, 45 ans, 1m78, yeux vert",
+    "is_true": false,
+    "explanation": "Les yeux de M. Martin sont décrits comme 'bleus' dans text_a et 'vert' dans text_b. Le changement de couleur rend les textes différents et peut passer inaperçu à une lecture rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Immatriculation: CA-345-ZB",
+    "text_b": "Immatriculation: CA-345-ZB",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Rue de Vaugirard, 15ème arrondissement",
+    "text_b": "Avenue de Vaugirard, 15ème arrondissement",
+    "is_true": false,
+    "explanation": "Dans text_a, c'est 'Rue de Vaugirard', alors que dans text_b, c'est 'Avenue de Vaugirard'. La confusion entre rue et avenue est fréquente dans les descriptions d'adresses."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Renault Megane, verte",
+    "text_b": "Renault Megane, Verte",
+    "is_true": false,
+    "explanation": "Dans text_a, 'verte' est en minuscule, tandis que dans text_b, 'Verte' est en majuscule, ce qui crée une différence. C'est une subtilité typographique facile à manquer."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Voiture rouge, plaque RT-678-EF",
+    "text_b": "Voiture rouge, plaque TT-678-EF",
+    "is_true": false,
+    "explanation": "La différence se situe au niveau de la plaque : 'RT-678-EF' dans text_a contre 'TT-678-EF' dans text_b. La confusion visuelle entre 'R' et 'T' peut survenir avec une lecture rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Né le 15/04/1980",
+    "text_b": "Né le 15/04/1980",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Vélos bleu et blanc à Paris",
+    "text_b": "Vélos bleu et blanc à Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Signalement : Pull gris",
+    "text_b": "Signalement : Pull gris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Appart. 2B, bâtiment C",
+    "text_b": "Appart. 2B, bâtiment D",
+    "is_true": false,
+    "explanation": "Le bâtiment diffère : 'C' dans text_a et 'D' dans text_b. Ces types de détails doivent être soigneusement vérifiés, car la confusion entre lettres est courante."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "René Dupont, 50 kg",
+    "text_b": "René Dupont, 50 kg",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Née le 01/01/1990",
+    "text_b": "Née le 01/01/1999",
+    "is_true": false,
+    "explanation": "La date de naissance diffère par la dernière année : '1990' dans text_a et '1999' dans text_b. Ces erreurs de chiffres peuvent facilement être masquées par la fatigue oculaire."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Numéro de série: A123B456",
+    "text_b": "Numéro de série: A123B456",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Moteur diesel",
+    "text_b": "Moteur disel",
+    "is_true": false,
+    "explanation": "Le mot 'diesel' est mal orthographié en 'disel' dans text_b. Cette faute d'orthographe courante peut facilement passer inaperçue."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Numéro de permis: 4567890",
+    "text_b": "Numéro de permis: 4567890",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Marque Audi, modèle A3",
+    "text_b": "Marque Audi, modele A3",
+    "is_true": false,
+    "explanation": "Dans text_b, 'modele' est écrit sans accent alors que dans text_a c'est 'modèle'. Cette différence d'accent est une cause fréquente d'erreur lors de la vérification des textes."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Noir, 75 kg",
+    "text_b": "Noir, 75 KG",
+    "is_true": false,
+    "explanation": "Dans text_a, 'kg' est en minuscules tandis que dans text_b, 'KG' est en majuscules. Cette distinction typographique peut induire en erreur, surtout lors de lectures rapides."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Profession: Enseignant",
+    "text_b": "Profession : Enseignant",
+    "is_true": false,
+    "explanation": "La différence réside dans l'espace après 'Profession :' dans text_b qui est absent dans text_a. La présence d'un espace supplémentaire peut facilement être négligée."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "M. Jacques Lefèvre, né le 23/07/1965, a signalé un vol à la gare de Lyon.",
+    "text_b": "M. Jacques Lefevre, né le 23/07/1965, a signalé un vol à la gare de Lyon.",
+    "is_true": false,
+    "explanation": "Le nom de famille diffère : 'Lefèvre' avec un accent dans text_a, mais 'Lefevre' sans accent dans text_b. Cette omission d'accent peut facilement être négligée par un candidat."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le véhicule était garé devant le 58, rue Rivoli à 17h30.",
+    "text_b": "Le véhicule était garé devant le 58, rue Rivoli à 17h30.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Mme Dupuis, cheveux bruns, a vu un homme s'enfuir en courant.",
+    "text_b": "Mme Dupuis, cheveux brins, a vu un homme s'enfuir en courant.",
+    "is_true": false,
+    "explanation": "Les descriptions des cheveux divergent : 'bruns' dans text_a contre 'brins' dans text_b. Une telle similarité sonore et visuelle peut tromper un lecteur inattentif."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le suspect portait un manteau noir et des chaussures marron.",
+    "text_b": "Le suspect portait un manteau noir et des chaussures marron.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Incident survenu le 04/11/2023 au coin de la rue Sollier.",
+    "text_b": "Incident survenu le 04/11/2023 au coin de la rue Solier.",
+    "is_true": false,
+    "explanation": "Le nom de rue est inexact dans text_b : 'Solier' au lieu de 'Sollier' dans text_a. Une différence subtile qui peut être aisément ignorée sans attention."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "À 19h45, un véhicule bleu a percuté un piéton.",
+    "text_b": "À 19:45, un véhicule bleu a percuté un piéton.",
+    "is_true": false,
+    "explanation": "Dans text_a, '19h45' utilise 'h' alors que c'est '19:45' avec ':' dans text_b. Cette différence de format peut être difficile à percevoir rapidement."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "M. Gauthier a acheté une montre le 12 juillet 2021.",
+    "text_b": "M. Gauthier a achetẹ une montre le 12 juillet 2021.",
+    "is_true": false,
+    "explanation": "La différence se trouve sur l'orthographe : 'acheté' dans text_a est mal orthographié en 'achetẹ' dans text_b, une substitution subtile qui peut passer inaperçue."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "RDV : 31 place de la République le 5 juin 2024 à 10h00.",
+    "text_b": "RDV : 31 place de la République le 5 juin 2024 à 10h00.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Un homme à capuche noire a été aperçu à 20h15.",
+    "text_b": "Un homme à capuche noire a été aperçu à 20h1S.",
+    "is_true": false,
+    "explanation": "Dans text_b, l'horaire se termine par '20h1S' avec 'S' au lieu de '5' dans text_a, une confusion fréquente qui peut facilement échapper à l'œil."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "M. Lambert déclare son vélo volé près du parc le 2 septembre.",
+    "text_b": "M. Lambert déclare son velo volé près du parc le 2 septembre.",
+    "is_true": false,
+    "explanation": "Dans text_b, 'vélo' est écrit 'velo' sans accent, ce qui crée une différence subtile mais cruciale. Ces petites inexactitudes sont à surveiller."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Mme Bernard se promène avec son chien tous les matins à 8h.",
+    "text_b": "Mme Bernard se promène avec son chien tou les matins à 8h.",
+    "is_true": false,
+    "explanation": "Dans text_b, 'tous' est écrit 'tou', ce qui enlève une lettre. Cette omission est facile à rater lors de la relecture, particulièrement en fin de phrase."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "L'incident est survenu en face du café vers 22h30.",
+    "text_b": "L'incicent est survenu en face du café vers 22h30.",
+    "is_true": false,
+    "explanation": "Dans text_b, 'incident' est mal orthographié en 'incicent'. Cette faute de frappe commune passe facilement inaperçue à cause de la proximité des touches 'd' et 'c' sur un clavier."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Date de l'événement : 06 août 2021",
+    "text_b": "Date de l'événement : 06 août 2021",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Une Renault Clio rouge était garée près du parc à 16:00.",
+    "text_b": "Une Renault Clio rouge était garée près du parc à l6:00.",
+    "is_true": false,
+    "explanation": "Dans text_b, le chiffre '1' a été remplacé par la lettre 'l' dans l'heure, ce qui peut très facilement se perdre à l'œil nu, notamment en raison de la similarité de ces caractères."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "La déclaration fut enregistrée au bureau central à 9h15, au 3e étage, bureau B.",
+    "text_b": "La déclaration fut enregistrée au bureau central à 9h15, au 3e étage, bureau B.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon l'article 223-6, toute personne doit porter assistance à un individu en danger imminent.",
+    "text_b": "Selon l'article 223-6, toute personne doit porter assistance à un individu en danger imminent.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "La Renault blanche immatriculée 0F-789-AH était stationnée sur le trottoir, proximité de la sortie de secours.",
+    "text_b": "La Renault blanche immatriculée OF-789-AH était stationnée sur le trottoir, proximité de la sortie de secours.",
+    "is_true": false,
+    "explanation": "Dans text_a, l'immatriculation commence par '0F' (zéro) et dans text_b par 'OF' (lettre O). La confusion entre zéro et O est courante et difficile à discerner à vue d'œil."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Lors de la perquisition, l'agent a trouvé une liasse de billets sous le matelas dans la chambre à l'étage.",
+    "text_b": "Lors de la perquisition, l'agent a trouvé une liasse de billets sous le matelas dans la chambre à l'étage.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Il a été observé que l'individu portait un sweatshirt gris avec un motif de triangle jaune à 3H du matin.",
+    "text_b": "Il a été observé que l'individu portait un sweatshirt gris avec un motif de triangle jaune à 3h du matin.",
+    "is_true": false,
+    "explanation": "La différence se trouve dans l'usage de 'H' majuscule dans text_a et 'h' minuscule dans text_b pour indiquer l'heure. Cette substitution est subtile mais cruciale pour la précision du texte."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le véhicule suspect a été repéré sur la C1 vers 18h55, sans plaque visible, roulant à vive allure.",
+    "text_b": "Le véhicule suspect a été repéré sur la C1 vers 18h55, sans plaque visible, roulant à vive allure.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "La victime rapporte que l'incident a eu lieu à 22h30, dans une ruelle sombre, et qu'elle a été agressée par derrière.",
+    "text_b": "La victime rapporte que l'incident a eu lieu à 22h30, dans une ruelle sombre, et qu'elle a été agressé par derrière.",
+    "is_true": false,
+    "explanation": "Il y a une erreur grammaticale où 'agressée' dans text_a est devenu 'agressé' dans text_b. Ce genre d'erreur nécessite une lecture attentive pour être détecté, surtout dans un texte long."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Les témoins ont affirmé que la personne portait un manteau et un chapeau sombres, difficile à repérer dans la foule.",
+    "text_b": "Les témoins ont affirmé que la personne portait un manteau et un chapeau sombres, difficile à repėrer dans la foule.",
+    "is_true": false,
+    "explanation": "Dans text_b, 'repérer' est mal orthographié en 'repėrer'. La différence d'accent est subtile et peut ne pas être visible à première vue, surtout avec la fatigue oculaire."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Il a été noté que le suspect avait trois tatouages sur le bras gauche, visiblement réalisés récemment.",
+    "text_b": "Il a été noté que le suspect avait trois tatouages sur le bras gauche, visiblement réalisés récemment.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "La caméra de surveillance a capturé l'individu entre 11h00 et 11h15, entrant et sortant du magasin à deux reprises.",
+    "text_b": "La caméra de surveillance a capturé l'individu entre 1lh00 et 11h15, entrant et sortant du magasin à deux reprises.",
+    "is_true": false,
+    "explanation": "Dans text_b, '11h00' est mal typographié en '1lh00' où '1' a été remplacé par 'l'. Cette substitution est extrêmement subtile et peut facilement être manquée lors de la relecture."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Article 223-1 : Est puni de deux ans d'emprisonnement et de 30 000 euros d'amende le fait d'exposer directement autrui à un risque immédiat de mort ou de blessures.",
+    "text_b": "Article 223-1 : Est puni de deux ans d'emprisonnement et de 30 000 euros d'amende le fait d'exposer directement autrui à un risque immédiat de mort ou de blessures.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le procès-verbal a été rempli à la demande du capitaine à 11h20, sans la présence de l'accusé.",
+    "text_b": "Le procės-verbal a été rempli à la demande du capitaine à 11h20, sans la présence de l'accusé.",
+    "is_true": false,
+    "explanation": "Dans text_b, 'processus' est faussement écrit 'procész'. Le changement d'accent est très discret et facile à manquer pour une vérification rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Après un long interrogatoire, la suspecte a finalement avoué sa présence sur les lieux du délit samedi dernier à 21h45.",
+    "text_b": "Après un long interrogatoire, la suspecte a finalement avoué sa présence sur les lieux du délit samedi dernier à 2lh45.",
+    "is_true": false,
+    "explanation": "Le '21h45' de text_a est écrit '2lh45' dans text_b avec 'l' au lieu de '1'. Cette confusion entre lettre et chiffre est difficile à détecter dans un texte densément rempli."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'enquête a révélé que le cambriolage avait été soigneusement planifié et exécuté par des inconnus.",
+    "text_b": "L'enquête a révélé que le cambriolage avait été soigneusement planifié et exécuté par des inconnus.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "La porte de secours était bloquée par des encombrants, empêchant toute évacuation rapide en cas d'urgence, ce qui constitue une infraction au règlement.",
+    "text_b": "La porte de secours était bloquée par des encombrants, empêchant toute évacuation rapide en cas d'urgence, ce qui constitue une infraction au règlement.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le propriétaire du véhicule, dont l'immatriculation est BR-329-CA, a été identifié grâce aux caméras de surveillance environnantes.",
+    "text_b": "Le propriétaire du véhicule, dont l'immatriculation est BR-32g-CA, a été identifié grâce aux caméras de surveillance environnantes.",
+    "is_true": false,
+    "explanation": "Le numéro d'immatriculation présente une différence subtile : '329' dans text_a est écrit '32g' avec une 'g' minuscule dans text_b à la place de '9'. Une lecture minutieuse est nécessaire pour identifier cela."
+  }
+]

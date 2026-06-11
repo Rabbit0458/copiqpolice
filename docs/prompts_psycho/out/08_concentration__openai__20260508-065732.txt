@@ -1,0 +1,252 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « C » apparaît-elle dans cette phrase ?",
+    "prompt": "Comptez attentivement les C, majuscules et minuscules confondus.",
+    "stimulus": "Ce cerf courageux se cache dans cette clairière.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "La lettre 'C' apparaît dans 'Ce' (1), 'cerf' (1), 'courageux' (1), et 'cache' (1). Cela fait un total de quatre occurrences. Ne confondez pas avec les autres consonnes similaires.",
+    "hint": "Repérez chaque 'C' en lisant lentement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Une lettre ne suit pas le même motif.",
+    "stimulus": "A F K P U Z B",
+    "options": ["K", "P", "U", "B"],
+    "answer": "B",
+    "explanation": "Les lettres A, F, K, P, U, et Z sont toutes espacées de 5 dans l'alphabet. La lettre B ne suit pas cette séquence régulière et est donc l'intrus.",
+    "hint": "Vérifiez les intervalles entre les lettres."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de mots de plus de 3 lettres sont présents ?",
+    "prompt": "Dans cette phrase, comptez les mots dépassant 3 lettres.",
+    "stimulus": "Le chat joue dans la maison avec jovialité.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "Les mots 'chat', 'joue', 'maison', et 'jovialité' comptent plus de trois lettres. Les mots 'Le', 'dans', et 'la' ne dépassent pas cette limite. Ce qui donne un total de quatre mots.",
+    "hint": "Identifiez les mots en vous concentrant sur leur longueur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois le chiffre « 0 » apparaît-il ?",
+    "prompt": "Comptez les zéros uniquement, chaque chiffre compte.",
+    "stimulus": "102030405060708090",
+    "options": ["6", "7", "8", "9"],
+    "answer": "9",
+    "explanation": "On trouve le 0 aux positions 2, 4, 6, 8, 10, 12, 14, 16 et 18 — cela fait neuf zéros au total. Ne laissez pas le défilement rapide vous tromper.",
+    "hint": "Regardez chaque chiffre indépendamment."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : A1B2C3",
+    "stimulus": "A1B2C3",
+    "options": ["A1B2C3", "A1B2C4", "A1C2B3", "A2B1C3"],
+    "answer": "A1B2C3",
+    "explanation": "La première option est identique au modèle proposé. Les autres options comportent des erreurs telles que l'inversion des chiffres ou des lettres.",
+    "hint": "Vérifiez chaque caractère dans l'ordre exact."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « T » apparaît-elle dans ce texte ?",
+    "prompt": "Tous les T comptent, peu importe la casse.",
+    "stimulus": "Toto trottine tout autour du terrain.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6",
+    "explanation": "On trouve les T dans 'Toto' (2), 'trottine' (1), 'tout' (1), et 'terrain' (2) soit un total de six occurrences. Attention à ne pas compter le même T plusieurs fois par mégarde.",
+    "hint": "Surlignez mentalement chaque T."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres « 5 » apparaissent dans la suite ?",
+    "prompt": "Évaluez chaque chiffre attentivement.",
+    "stimulus": "155405521555",
+    "options": ["2", "3", "4", "5"],
+    "answer": "5",
+    "explanation": "Les chiffres 5 sont en positions 2, 3, 6, 7 et 11. Cela résulte en cinq occurrences au total.",
+    "hint": "Comptez les chiffres un par un."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre « E » majuscule apparaît-elle ?",
+    "prompt": "Comptez uniquement les E majuscules.",
+    "stimulus": "L'ENSEIGNANT EXPLIQUE LES ÉTAPES ÉDUCATIVES.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Nous avons E dans 'ENSEIGNANT' (1), 'EXPLIQUE' (1), 'ÉTAPES' (1) et 'ÉDUCATIVES' (1). Cela donne un total de quatre E majuscules.",
+    "hint": "Recherchez les E débutant les mots."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence correspond exactement au modèle ?",
+    "prompt": "Modèle : 12345ABCDE",
+    "stimulus": "12345ABCDE",
+    "options": ["12345ABCDE", "12354ABCDE", "12345ABCDG", "13245ABCDE"],
+    "answer": "12345ABCDE",
+    "explanation": "La séquence n°1 est identique au modèle. La 2ème a des chiffres inversés, la 3ème une lettre fausse et la 4ème a un ordre de chiffres modifié.",
+    "hint": "Comparez chaque segment avec exactitude."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de voyelles contient ce paragraphe ?",
+    "prompt": "Rappel : a, e, i, o, u, y sont toutes des voyelles.",
+    "stimulus": "L'opération a été une réussite totale, grâce à l'effort d'équipe.",
+    "options": ["16", "17", "18", "19"],
+    "answer": "17",
+    "explanation": "Les voyelles se trouvent ainsi : 'L'opération'(5), 'a été'(2), 'une'(2), 'réussite'(4), 'totale'(3), 'grâce'(2), à'(1), 'l'effort'(2), 'd'équipe'(3), totalisant bien 17 voyelles.",
+    "hint": "Comptez chaque voyelle en finissant un mot avant de commencer le suivant."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Identifiez l'intrus dans cette suite de chiffres.",
+    "prompt": "Tous les chiffres sauf un suivent le double du précédent.",
+    "stimulus": "2, 4, 8, 16, 33, 32",
+    "options": ["4", "8", "16", "33"],
+    "answer": "33",
+    "explanation": "Chaque chiffre est le double du précédent (2x2=4, 4x2=8, 8x2=16, 16x2=32). Le 33 ne continue pas cette logique de doublement, c'est donc l'intrus.",
+    "hint": "Multipliez chaque chiffre par deux pour vérifier."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel mot avec plus de 4 lettres est absent ?",
+    "prompt": "Un mot long ne figure pas dans cette liste.",
+    "stimulus": "chien, voiture, avion, maison",
+    "options": ["voiture", "chien", "avion", "maison"],
+    "answer": "avion",
+    "explanation": "Le mot 'avion' a seulement cinq lettres et n'atteint pas le critère des plus de quatre lettres. Les autres options font bien partie de mots avec plus de quatre lettres.",
+    "hint": "Comptez systématiquement les lettres de chaque mot."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de caractères spéciaux trouve-t-on dans cet extrait ?",
+    "prompt": "Les caractères spéciaux incluent ponctuation, @, #, etc.",
+    "stimulus": "Bienvenue! C'est une belle journée, n'est-ce pas ?@#",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "Les caractères spéciaux sont '!', ',', '-', '?', ' ', '@' et '#'. On en dénombre ainsi sept au total.",
+    "hint": "Compte chaque signe de ponctuation distinctement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres pairs sont présents ?",
+    "prompt": "Identifiez les chiffres pairs uniquement.",
+    "stimulus": "4, 7, 5, 2, 9, 6, 3, 8, 1",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les chiffres 4, 2, 6, et 8 sont pairs, pour un total de quatre chiffres.",
+    "hint": "Sélectionnez seulement les nombres divisibles par deux."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est un parfait palindrome ?",
+    "prompt": "Identifiez la séquence qui lit la même chose dans les deux sens.",
+    "stimulus": "ABCDDCBA, ABCDCBA, ABBA, AABB",
+    "options": ["ABCDDCBA", "ABBA", "AABB", "ABCDCBA"],
+    "answer": "ABCDCBA",
+    "explanation": "La séquence 'ABCDCBA' lit correctement de l'avant en arrière comme de l'arrière avant, contrairement aux autres. Un palindrome est symétrique.",
+    "hint": "Réfléchissez à la façon dont la séquence se termine pour vérifier la symétrie."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel chiffre devrait être supprimé pour suivre le modèle ?",
+    "prompt": "Modèle : tous les chiffres devraient être des carrés parfaits.",
+    "stimulus": "1, 4, 9, 11, 16, 25",
+    "options": ["4", "9", "11", "16"],
+    "answer": "11",
+    "explanation": "Les chiffres 1, 4, 9, 16 et 25 sont des carrés parfaits (respectivement 1x1, 2x2, etc.), mais 11 ne l'est pas. C'est donc le nombre à supprimer.",
+    "hint": "Identifiez les carrés des nombres entiers."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre « S » apparaît-elle dans ce texte (majuscule uniquement) ?",
+    "prompt": "Ne comptez que les S en majuscule.",
+    "stimulus": "Sa Majesté La SERENISSIME SOUVERAINE SALUERA SES SOUS-SERVITEURS SAMEDI.",
+    "options": ["6", "7", "8", "9"],
+    "answer": "7",
+    "explanation": "Dans 'SERENISSIME' (2), 'SOUVERAINE' (1), 'SALUERA' (1) et 'SES' (1), 'SOUS-SERVITEURS' (2), il y a sept S majuscules. Les S minuscules et autres lettres sont à éviter.",
+    "hint": "Ne vous laissez pas distraire par les S en minuscule."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots de 6 lettres ou plus contient ce passage ?",
+    "prompt": "Parez attention à la taille des mots.",
+    "stimulus": "La magistrature française est complexe et exigeante.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Les mots de 6 lettres ou plus sont 'magistrature', 'française', et 'complexe', totalisant trois mots. Les autres mots ne satisfont pas cette condition.",
+    "hint": "Solvez par élimination en décomposant chaque mot."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chiffres « 7 » sont présents dans la ligne de code ?",
+    "prompt": null,
+    "stimulus": "777707770077777",
+    "options": ["7", "8", "9", "10"],
+    "answer": "11",
+    "explanation": "Les chiffres '7' sont bien alignés au début et en milieu de la suite, apparaissant aussi en positions intercalaires. 11 est le décompte total exact des 7.",
+    "hint": "Ne manquez aucun 7 en début de séquence."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Identifiez l'élément intrus dans cet ensemble.",
+    "prompt": "Tous les nombres sauf un suivent une fonction cubique.",
+    "stimulus": "8, 27, 64, 125, 144, 216",
+    "options": ["27", "125", "144", "216"],
+    "answer": "144",
+    "explanation": "Les nombres 8, 27, 64, 125, et 216 sont des cubes parfaits. 144 ne l'est pas et constitue donc l'anomalie dans cette série.",
+    "hint": "Vérifiez chaque nombre par rapport à sa racine cubique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de points y a-t-il dans la phrase ?",
+    "prompt": "N'incluez que les points de pontuation",
+    "stimulus": "C'est un test. Avec des points. Attention aux comptes incorrects.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Il y a des points après 'test', 'points', et 'des'. Un décompte rapide peut faire oublier ces petits détails. Veillez à ne pas vous tromper avec d'autres signes.",
+    "hint": "Soyez méticuleux et suivez chaque passage attentivement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre « T » apparaît dans cette séquence ?",
+    "prompt": "Seulement les T majuscules sont comptés.",
+    "stimulus": "TOUT A L'HORIZON SEMBLE TRANQUILLE ET TEMPORE.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6",
+    "explanation": "Compte tenu du stimulus : 'TOUT' (1), 'TRANQUILLE' (1), 'TEMPORE' (1), 'T' (1, après L') 'T' (1, en 'et') — six T majuscules au total.",
+    "hint": "Suivez le rythme tout au long de la phrase."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le mot intrus dans la liste suivante ?",
+    "prompt": "Détectez le mot qui ne commence pas par la même lettre.",
+    "stimulus": "Sérénité, Solitude, Resplendissance, Sagesse",
+    "options": ["Sérénité", "Solitude", "Resplendissance", "Sagesse"],
+    "answer": "Resplendissance",
+    "explanation": "Tous les autres mots débutent par 'S' sauf 'Resplendissance' qui débute par 'R'. Cette différence est importante pour l'identification.",
+    "hint": "Pensez à la consonnance des lettres initiales."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de « E » majuscules apparaissent après plusieurs mots ?",
+    "prompt": "Seuls les E majuscules en début de mot comptent.",
+    "stimulus": "Éclat de LUNE dans l'ESPACE ÉTOILÉ silence ÉMERVEILLEMENT.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "On compte 'E' dans 'Éclat', 'ESPACE', 'ÉTOILÉ' et 'ÉMERVEILLEMENT', soit 4 E majuscules. Les rescanner individuellement vous mène à la bonne réponse.",
+    "hint": "Concentrez-vous sur les débuts de chaque mot."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots contenant 5 lettres y a-t-il ?",
+    "prompt": "Détectez les mots contenant 5 lettres exactement.",
+    "stimulus": "Les toits gris surplombent la ruelle étroite de Lyon.",
+    "options": ["1", "2", "3", "4"],
+    "answer": "3",
+    "explanation": "Les mots 'toits', 'surplomb' et 'étroite' contiennent exactement cinq lettres. 'Ruelle' ne remplit pas cette condition, ni 'Lyon'.",
+    "hint": "Détaillez et vérifiez chaque occurrence ensemble."
+  }
+]

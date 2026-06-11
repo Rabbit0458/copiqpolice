@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+gem "fastlane", "~> 2.220"
+
+# Plugins utilisés dans le Fastfile
+gem "fastlane-plugin-sentry"       # upload sources maps / symbols vers Sentry
+gem "fastlane-plugin-appcenter"    # fallback distribution (optionnel)
+
+# Gems utilitaires
+gem "json"

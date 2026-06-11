@@ -285,7 +285,7 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
     await showModalBottomSheet(
       context: context,
       backgroundColor: Theme.of(context).colorScheme.surface,
-      barrierColor: Colors.black.withOpacity(.6),
+      barrierColor: Colors.black.withValues(alpha: .6),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
@@ -300,7 +300,7 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
                 width: 48,
                 height: 5,
                 decoration: BoxDecoration(
-                  color: Theme.of(context).dividerColor.withOpacity(.35),
+                  color: Theme.of(context).dividerColor.withValues(alpha: .35),
                   borderRadius: BorderRadius.circular(999),
                 ),
               ),
@@ -431,13 +431,13 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
         Container(
           decoration: BoxDecoration(
             color: isDark
-                ? Colors.white.withOpacity(0.08)
-                : Colors.black.withOpacity(0.04),
+                ? Colors.white.withValues(alpha: 0.08)
+                : Colors.black.withValues(alpha: 0.04),
             borderRadius: BorderRadius.circular(16),
             border: Border.all(
               color: isDark
-                  ? Colors.white.withOpacity(0.16)
-                  : Colors.black.withOpacity(0.08),
+                  ? Colors.white.withValues(alpha: 0.16)
+                  : Colors.black.withValues(alpha: 0.08),
             ),
           ),
           child: Row(
@@ -477,7 +477,7 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
           borderRadius: BorderRadius.circular(24),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.25),
+              color: Colors.black.withValues(alpha: .25),
               blurRadius: 30,
               offset: const Offset(0, 10),
             ),
@@ -570,13 +570,13 @@ class _FirstTimeWelcomeDialogState extends State<FirstTimeWelcomeDialog> {
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
                       color: isDark
-                          ? Colors.white.withOpacity(0.08)
-                          : Colors.black.withOpacity(0.04),
+                          ? Colors.white.withValues(alpha: 0.08)
+                          : Colors.black.withValues(alpha: 0.04),
                       borderRadius: BorderRadius.circular(16),
                       border: Border.all(
                         color: isDark
-                            ? Colors.white.withOpacity(0.16)
-                            : Colors.black.withOpacity(0.08),
+                            ? Colors.white.withValues(alpha: 0.16)
+                            : Colors.black.withValues(alpha: 0.08),
                       ),
                     ),
                     child: Row(
@@ -946,7 +946,7 @@ class _ProfilPageState extends State<ProfilPage> {
     showDialog(
       context: context,
       barrierDismissible: false, // 🔒 bloquant
-      barrierColor: Colors.black.withOpacity(.7),
+      barrierColor: Colors.black.withValues(alpha: .7),
       builder: (ctx) => FirstTimeWelcomeDialog(
         firstName: _firstName,
         lastName: _lastName,
@@ -1114,7 +1114,7 @@ class _ProfilPageState extends State<ProfilPage> {
                             side: BorderSide(
                               color: Theme.of(
                                 context,
-                              ).dividerColor.withOpacity(.35),
+                              ).dividerColor.withValues(alpha: .35),
                             ),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
@@ -1257,7 +1257,7 @@ class _ProfilPageState extends State<ProfilPage> {
 
     showModalBottomSheet(
       context: context,
-      barrierColor: Colors.black.withOpacity(.25),
+      barrierColor: Colors.black.withValues(alpha: .25),
       backgroundColor: Theme.of(context).colorScheme.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
@@ -1376,7 +1376,7 @@ class _ProfilPageState extends State<ProfilPage> {
     await showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      barrierColor: Colors.black.withOpacity(.25),
+      barrierColor: Colors.black.withValues(alpha: .25),
       backgroundColor: Theme.of(context).colorScheme.surface,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
@@ -1453,7 +1453,7 @@ class _ProfilPageState extends State<ProfilPage> {
                                 ? Theme.of(context).colorScheme.primary
                                 : Theme.of(
                                     context,
-                                  ).dividerColor.withOpacity(.35),
+                                  ).dividerColor.withValues(alpha: .35),
                           ),
                         ),
                         padding: const EdgeInsets.all(12),
@@ -1482,7 +1482,7 @@ class _ProfilPageState extends State<ProfilPage> {
         width: 48,
         height: 5,
         decoration: BoxDecoration(
-          color: Theme.of(c).dividerColor.withOpacity(.35),
+          color: Theme.of(c).dividerColor.withValues(alpha: .35),
           borderRadius: BorderRadius.circular(999),
         ),
       ),
@@ -1564,7 +1564,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
     await showModalBottomSheet(
       context: context,
       backgroundColor: Theme.of(context).colorScheme.surface,
-      barrierColor: Colors.black.withOpacity(.25),
+      barrierColor: Colors.black.withValues(alpha: .25),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
       ),
@@ -1579,7 +1579,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 width: 48,
                 height: 5,
                 decoration: BoxDecoration(
-                  color: Theme.of(context).dividerColor.withOpacity(.35),
+                  color: Theme.of(context).dividerColor.withValues(alpha: .35),
                   borderRadius: BorderRadius.circular(999),
                 ),
               ),
@@ -1626,8 +1626,8 @@ class _EditProfilePageState extends State<EditProfilePage> {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final pillColor = isDark
-        ? Colors.white.withOpacity(.06)
-        : Colors.black.withOpacity(.05);
+        ? Colors.white.withValues(alpha: .06)
+        : Colors.black.withValues(alpha: .05);
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
@@ -1874,8 +1874,8 @@ class _SettingsTile extends StatelessWidget {
         height: 40,
         decoration: BoxDecoration(
           color: isDark
-              ? Colors.white.withOpacity(.08)
-              : Colors.black.withOpacity(.06),
+              ? Colors.white.withValues(alpha: .08)
+              : Colors.black.withValues(alpha: .06),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Icon(icon),

@@ -1,0 +1,263 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 23 + 41 ?",
+    "expression": "23 + 41",
+    "options": ["64", "63", "62", "65"],
+    "answer": "64",
+    "explanation": "23 + 41 fait 64.",
+    "hint": "Additionne en ajoutant d'abord les dizaines puis les unités."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 48 - 23 ?",
+    "expression": "48 - 23",
+    "options": ["24", "25", "26", "27"],
+    "answer": "25",
+    "explanation": "48 - 23 est égal à 25.",
+    "hint": "Enlève d'abord les dizaines, puis les unités."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 7 × 8 ?",
+    "expression": "7 × 8",
+    "options": ["54", "55", "56", "57"],
+    "answer": "56",
+    "explanation": "7 fois 8 est égal à 56.",
+    "hint": "Utilise ta connaissance des tables de multiplication."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 81 ÷ 9 ?",
+    "expression": "81 ÷ 9",
+    "options": ["9", "8", "10", "11"],
+    "answer": "9",
+    "explanation": "81 divisé par 9 donne 9.",
+    "hint": "Rappelle-toi que 9 fois 9 donne 81."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 50 % de 80 ?",
+    "expression": "50 % de 80",
+    "options": ["40", "35", "45", "50"],
+    "answer": "40",
+    "explanation": "50 % de 80 est équivalent à diviser 80 par 2.",
+    "hint": "50 % est la moitié de 100 %."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font le double de 34 ?",
+    "expression": "34 × 2",
+    "options": ["68", "64", "66", "70"],
+    "answer": "68",
+    "explanation": "34 multiplié par 2 donne 68.",
+    "hint": "Doublez chaque chiffre séparément."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 66 ÷ 2 ?",
+    "expression": "66 ÷ 2",
+    "options": ["31", "32", "33", "34"],
+    "answer": "33",
+    "explanation": "66 divisé par 2 donne 33.",
+    "hint": "Diviser par 2 revient à trouver la moitié."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 6 × 7 ?",
+    "expression": "6 × 7",
+    "options": ["40", "42", "44", "46"],
+    "answer": "42",
+    "explanation": "6 fois 7 fait 42.",
+    "hint": "Utilise les tables de multiplication : 6 fois 7."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 10 % de 90 ?",
+    "expression": "10 % de 90",
+    "options": ["9", "10", "8", "11"],
+    "answer": "9",
+    "explanation": "10 % de 90 équivaut à diviser 90 par 10.",
+    "hint": "10 % correspond à un dixième."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font le triple de 15 ?",
+    "expression": "15 × 3",
+    "options": ["45", "40", "50", "35"],
+    "answer": "45",
+    "explanation": "15 multiplié par 3 donne 45.",
+    "hint": "Multiplie chaque chiffre par 3 pour trouver la réponse."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 347 + 286 ?",
+    "expression": "347 + 286",
+    "options": ["643", "633", "633", "653"],
+    "answer": "633",
+    "explanation": "347 + 286 = (347 + 300) - 14 = 647 - 14 = 633.",
+    "hint": "Arrondissez et ajustez."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 812 - 347 ?",
+    "expression": "812 - 347",
+    "options": ["465", "455", "475", "485"],
+    "answer": "465",
+    "explanation": "812 - 347 = (812 - 350) + 3 = 462 + 3 = 465.",
+    "hint": "Soustrait d'abord un montant arrondi."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 145 ÷ 5 ?",
+    "expression": "145 ÷ 5",
+    "options": ["29", "25", "28", "30"],
+    "answer": "29",
+    "explanation": "145 divisé par 5 est 29.",
+    "hint": "Pense à combien de fois 5 rentre dans 145."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 15 % de 200 ?",
+    "expression": "15 % de 200",
+    "options": ["30", "25", "35", "20"],
+    "answer": "30",
+    "explanation": "15 % est égal à 15/100. Donc 200 × 0,15 = 30.",
+    "hint": "15 % est 10 % + 5 %. Calcule séparément puis additionne."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 27 × 30 ?",
+    "expression": "27 × 30",
+    "options": ["810", "820", "830", "840"],
+    "answer": "810",
+    "explanation": "27 × 30 = 27 × 3 × 10 = 81 × 10 = 810.",
+    "hint": "Multiplie d'abord par 3 puis par 10."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien sont les carrés de 13 ?",
+    "expression": "13²",
+    "options": ["169", "166", "170", "171"],
+    "answer": "169",
+    "explanation": "13 × 13 = 169.",
+    "hint": "Essayez de décomposer en (10+3)²."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 12 × 12 ?",
+    "expression": "12 × 12",
+    "options": ["144", "142", "146", "148"],
+    "answer": "144",
+    "explanation": "Le carré de 12 est équivalent à 144.",
+    "hint": "Tablez sur les carrés proches."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 5 × 14 ?",
+    "expression": "5 × 14",
+    "options": ["70", "65", "72", "68"],
+    "answer": "70",
+    "explanation": "5 × 14 = 70.",
+    "hint": "Multiplie par 5 et double le résultat par 7."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 43 + 59 ?",
+    "expression": "43 + 59",
+    "options": ["102", "100", "102", "104"],
+    "answer": "102",
+    "explanation": "43 + 59 = 102.",
+    "hint": "Complète jusqu'à 60 puis achève l'addition."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 1500 - 775 ?",
+    "expression": "1500 - 775",
+    "options": ["725", "725", "730", "735"],
+    "answer": "725",
+    "explanation": "1,500 - 775 = 725.",
+    "hint": "Soustrait d'abord 700 ensuite 75."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 23 × 17 ?",
+    "expression": "23 × 17",
+    "options": ["391", "394", "387", "383"],
+    "answer": "391",
+    "explanation": "23 × 17 = (20 + 3) × 17 = 340 + 51 = 391.",
+    "hint": "Divise et conquéris : multiplie les parties."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font (47 × 8) - 76 ?",
+    "expression": "(47 × 8) - 76",
+    "options": ["300", "310", "312", "290"],
+    "answer": "300",
+    "explanation": "47 × 8 = 376, 376 - 76 = 300.",
+    "hint": "Calcule d'abord la multiplication."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 35 % de 180 ?",
+    "expression": "0,35 × 180",
+    "options": ["63", "62", "65", "64"],
+    "answer": "63",
+    "explanation": "35 % peut être transformé en 0,35. Donc 180 × 0,35 = 63.",
+    "hint": "Pense à la méthode de décomposition : 30 % + 5 %."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 48 × 25 ?",
+    "expression": "48 × 25",
+    "options": ["1200", "1150", "1225", "1250"],
+    "answer": "1200",
+    "explanation": "48 × 25 = (48 × 100) ÷ 4 = 4800 ÷ 4 = 1200.",
+    "hint": "Multiplie 48 par 100 puis divise par 4."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 2/3 de 81 ?",
+    "expression": "(2/3) × 81",
+    "options": ["54", "55", "50", "53"],
+    "answer": "54",
+    "explanation": "Pour 2/3 de 81, calcule 81 ÷ 3 = 27, puis 27 × 2 = 54.",
+    "hint": "Trouve d'abord 1/3, puis multiplie par 2."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 5/8 de 240 ?",
+    "expression": "(5/8) × 240",
+    "options": ["150", "145", "140", "155"],
+    "answer": "150",
+    "explanation": "Pour 5/8 de 240, répartissez 240 ÷ 8 = 30, puis 30 × 5 = 150.",
+    "hint": "D'abord fractionne en huitièmes."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 3⁴ ?",
+    "expression": "3^4",
+    "options": ["81", "80", "79", "82"],
+    "answer": "81",
+    "explanation": "3⁴ signifie 3 × 3 × 3 × 3 = 81.",
+    "hint": "Pouvoir des carrés et racines successives."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la racine carrée de 225 ?",
+    "expression": "√225",
+    "options": ["15", "16", "14", "17"],
+    "answer": "15",
+    "explanation": "La racine carrée de 225 est 15.",
+    "hint": "Quel nombre multiplié par lui-même fait 225 ?"
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font (35 + 17) × 2 - 14 ?",
+    "expression": "(35 + 17) × 2 - 14",
+    "options": ["90", "95", "96", "92"],
+    "answer": "90",
+    "explanation": "(35 + 17) = 52; (52 × 2) = 104; 104 - 14 = 90.",
+    "hint": "Résolvez les parenthèses d'abord."
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « E » apparaît-elle (majuscule ou minuscule) dans la phrase ?",
+    "prompt": "Comptez attentivement chaque E.",
+    "stimulus": "Les examens essentiels s'effectuent en été.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "Dans 'Les' (1), 'examens' (2), 'essentiels' (3), 's'effectuent' (1), 'en' (1), 'été' (1), nous avons un total de 7 occurrences de E. Il est crucial de vérifier chaque mot pour ne pas manquer les lettres accentuées également comptées.",
+    "hint": "Utilisez le surlignage mental pour chaque E."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'intrus dans cette suite de couleurs ?",
+    "prompt": "Une couleur ne suit pas le motif des couleurs de l'arc-en-ciel.",
+    "stimulus": "Rouge, Orange, Vert, Bleu, Rose, Violet",
+    "options": ["Orange", "Vert", "Rose", "Rouge"],
+    "answer": "Rose",
+    "explanation": "En suivant l'ordre des couleurs de l'arc-en-ciel, nous avons Rouge, Orange, Jaune, Vert, Bleu, Indigo, Violet. Rose n'en fait pas partie, ce qui en fait l'intrus. La confusion peut venir de la proximité de teintes avec le Rouge.",
+    "hint": "Récitez mentalement les couleurs de l'arc-en-ciel."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres « 5 » trouve-t-on dans la suite ?",
+    "prompt": null,
+    "stimulus": "1 5 7 5 9 5 3 5",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les chiffres 5 apparaissent aux positions 2, 4, 6, et 8, fournissant un total de 4 occurrences. La tendance à ignorer le dernier chiffre 5 dans cette séquence visualement répétitive est courante.",
+    "hint": "Vérifiez chaque position paire dans la suite."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l’intrus dans la suite alphabétique ?",
+    "prompt": "Une lettre ne suit pas l'ordre des consonnes après une voyelle.",
+    "stimulus": "B, D, F, G, J",
+    "options": ["D", "F", "G", "J"],
+    "answer": "G",
+    "explanation": "Les lettres B, D, F, J suivent l'ordre des consonnes succédant une voyelle en début de l'alphabet (A, B, C, D). G est après une voyelle O et fait exception. Comprendre l'ordre des lettres peut aider à rendre évidente cette anomalie.",
+    "hint": "Révisez l'ordre des lettres après chaque voyelle."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « T » apparaît-elle (en minuscule) ?",
+    "prompt": "Concentrez-vous uniquement sur les minuscules.",
+    "stimulus": "Une tortue tranquille traverse tranquillement.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "5",
+    "explanation": "Dans 'tortue' (1), 'tranquille' (2), 'traverse' (1), 'tranquillement' (2), il y a 6 T au total. Il est facile de sous-compter dans une phrase où un mot apparaît plusieurs fois avec des variations.",
+    "hint": "Soyez attentif aux mots récurrents."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : 1234-5678-ABCD",
+    "stimulus": "1234-5678-ABCD",
+    "options": ["1234-5678-ABDC", "1234-5678-ABCD", "1235-5678-ABCD", "1234-5679-ABCD"],
+    "answer": "1234-5678-ABCD",
+    "explanation": "La séquence correcte suit l'exactitude caractère par caractère au modèle. Les autres propositions dissimulent subtilement une inversion ou un changement de chiffre.",
+    "hint": "Compare chaque partie de la séquence une à une."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de lettres « S » (majuscule ou minuscule) voient le jour dans cette phrase ?",
+    "prompt": "Incluez toutes les lettres S visibles.",
+    "stimulus": "Samedi, Sophie se promène avec son chien sous le soleil.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6",
+    "explanation": "Les S se trouvent dans 'Samedi' (1), 'Sophie' (1), 'se' (1), 'son' (1), 'sous' (1), 'soleil' (1), donnant un total de 6. La similarité phonétique avec les lettres Z peut parfois induire en erreur.",
+    "hint": "Surlignez chaque S visuellement dans votre esprit."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'intrus dans cette suite de jours ?",
+    "prompt": "Un jour ne fait pas partie de la semaine française.",
+    "stimulus": "Lundi, Mardi, Mercredi, Žour",
+    "options": ["Lundi", "Mardi", "Mercredi", "Žour"],
+    "answer": "Žour",
+    "explanation": "La suite donnée offre un mot 'Žour' qui n’appartient pas au calendrier. C'est clairement une fausse note par rapport aux jours établis tels que Lundi, Mardi, et Mercredi.",
+    "hint": "Mémorisez les jours de la semaine standard."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre « N » en minuscule apparaît-elle dans ce texte ?",
+    "prompt": "Regardez uniquement les minuscules.",
+    "stimulus": "Le chemin mène non loin de l'ancienne maison.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Dans 'chemin' (1), 'non' (1), 'loin' (1), 'ancienne' (2), et 'maison' (1), nous obtenons 6 occurrences. Ne pas vérifier attentivement chaque mot peut entraîner une omission.",
+    "hint": "Parcourez mot par mot lentement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence correspond exactement au modèle ?",
+    "prompt": "Modèle : 4765-4821-ZYXW",
+    "stimulus": "4765-4821-ZYXW",
+    "options": ["4765-4821-ABCD", "4765-4821-ZYXW", "4765-4820-ZYXW", "4764-4821-ZYXW"],
+    "answer": "4765-4821-ZYXW",
+    "explanation": "Seule la séquence '4765-4821-ZYXW' est une copie conforme du modèle, vérifiée caractère par caractère. Les autres séquences contiennent des différences subtiles cassant cette authentification.",
+    "hint": "Comparez chaque combinaison de chiffres et lettres méthodiquement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de voyelles en minuscule contient la phrase ?",
+    "prompt": "Incluez a, e, i, o, u.",
+    "stimulus": "Le village caché regorge de histoires mystérieuses.",
+    "options": ["11", "12", "13", "14"],
+    "answer": "13",
+    "explanation": "Dans 'village' (2), 'caché' (2), 'regorge' (3), 'de' (1), 'histoires' (3), 'mystérieuses' (3), nous obtenons 14 voyelles. Une erreur fréquente est de négliger les accents qui restent des voyelles.",
+    "hint": "Comptez d'abord les voyelles de chaque mot individuellement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre 'M' en majuscule est-elle visible ?",
+    "prompt": "Comptez uniquement les majuscules.",
+    "stimulus": "Maxime et Mario mangent des M&M's pendant le match.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Il y a 3 M majuscules : 'Maxime' (1), 'Mario' (1), 'M&M's' (1). Les mots débutant par M majuscule sont souvent négligés, donc soyez prudent.",
+    "hint": "Cherchez toute première lettre de mot majuscule dans votre vérification."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel nombre est l'intrus dans cette suite mathématique ?",
+    "prompt": "Identifiez le numéro qui ne suit pas le modèle des multiples de 4.",
+    "stimulus": "4, 8, 12, 18, 16, 20",
+    "options": ["8", "12", "18", "16"],
+    "answer": "18",
+    "explanation": "Dans la suite, 4, 8, 12, 16, 20 sont tous des multiples de 4 tandis que 18 ne l'est pas. Le piège ici est de penser que 18 est proche de 16, ce qui peut induire erreur.",
+    "hint": "Divisez chaque chiffre par 4 pour vérifier."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Choisissez le modèle identique parmi les options.",
+    "prompt": "Modèle : ABCD-5678-XD",
+    "stimulus": "ABCD-5678-XD",
+    "options": ["ABCD-5678-XC", "ABCD-5678-XD", "ABCD-5678-YD", "ABCD-5677-XD"],
+    "answer": "ABCD-5678-XD",
+    "explanation": "En évaluant chaque lettre et chiffre, seule la deuxième proposition est correctement retranscrite. Les erreurs typiques incluent des interversions ou modifications légères.",
+    "hint": "Analysez chaque caractère avant de décider."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'intrus dans cette séquence inversée ?",
+    "prompt": "Sauf un, chaque chiffre vient par valeur décroissante du précédent.",
+    "stimulus": "10, 9, 8, 4, 6, 3",
+    "options": ["8", "4", "6", "3"],
+    "answer": "6",
+    "explanation": "Les nombres descendent 10, 9, 8, et ensuite brisent l'ordre avec 4 puis 6. Le 6 n'est pas à sa place logique selon la suite et est ainsi l'intrus.",
+    "hint": "Concentrez-vous d'abord sur la règle de dégression."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots de plus de 4 lettres sont présents ?",
+    "prompt": "Envoyez uniquement les mots avec 5 lettres et plus.",
+    "stimulus": "Le policier a interrogé soigneusement le témoin principal.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Les mots 'policier' (1), 'interrogé' (1), 'soigneusement' (1), 'témoin' (1), 'principal' (1) dépassent 4 lettres. C’est commun de réagir à l'apparence des mots sans les mesurer.",
+    "hint": "Mesurez chaque mot attentivement par lettre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Identifiez la séquence stricte.",
+    "prompt": "Modèle : XYL0-9987-ASD",
+    "stimulus": "XYL0-9987-ASD",
+    "options": ["XYZ0-9987-ASD", "XYL0-9987-ASD", "XYL0-9986-ASD", "XYL0-9987-SAD"],
+    "answer": "XYL0-9987-ASD",
+    "explanation": "En comparant soigneusement, seule 'XYL0-9987-ASD' est parfaitement conforme au modèle. Chaque lettre et chiffre nécessitent une double vérification pour éviter l'erreur.",
+    "hint": "Procédez avec minutie en commençant par les premières lettres."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre « G » majuscule apparaît-elle ?",
+    "prompt": "Compte uniquement les G majuscules.",
+    "stimulus": "GRAND GUERRIER GARDE GALETTE.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "« GRAND » (1), « GUERRIER » (1), « GARDE » (1), et « GALETTE » (1) donnent 4 majuscules. Le piège est d'oublier d'inclure tous les mots quand il y a répétition de son.",
+    "hint": "Ne comptez que les initiales majuscules."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence est identique au modèle alphanumérique ?",
+    "prompt": "Modèle : 3G5-K2R-01L-ZX",
+    "stimulus": null,
+    "options": ["3G5-K2R-02L-ZX", "3G5-K2R-01L-ZX", "3G6-K2R-01L-ZX", "3G5-KKR-01L-ZX"],
+    "answer": "3G5-K2R-01L-ZX",
+    "explanation": "La deuxième proposition suit exactement le modèle. Il est important d'étudier de près pour détecter des dyslexies ou erreurs de proximité.",
+    "hint": "Commencez avec les chiffres avant de passer aux lettres."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots avec plus de 5 lettres contient le texte ?",
+    "prompt": "Tous les mots doivent être comptabilisés.",
+    "stimulus": "Le détective Anderson soupçonnait un complot international extrêmement complexe.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Les mots « détective » (1), « Anderson » (1), « soupçonnait » (1), « international » (1), et « extrêmement » (1) font 5 mots au total. En négligeant de vérifier intégralement les mots, des erreurs se produisent.",
+    "hint": "Comptez chaque grande empreinte textuelle pas à pas."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Identifiez l'anomalie dans la séquence de chiffres impairs.",
+    "prompt": "Cherchez un nombre qui ne suit pas la logique des chiffres impairs.",
+    "stimulus": "11, 23, 33, 44, 55",
+    "options": ["23", "33", "44", "55"],
+    "answer": "44",
+    "explanation": "Tous les chiffres sont impairs sauf 44, qui est pair, rompt donc le motif. Assurez-vous de toujours penser en catégories de nombres (pair vs. impair) pour déceler ces infractions.",
+    "hint": "Vérifiez la parité de chaque chiffre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de E minuscules apparaissent dans ce texte ?",
+    "prompt": "Considérons les accents sans distinction.",
+    "stimulus": "Édouard et Héléna prennent leur café ensemble maintenant.",
+    "options": ["7", "8", "9", "10"],
+    "answer": "8",
+    "explanation": "Les e dans « Édouard » (1), « Héléna » (2), « prennent » (2), « leur » (1), « ensemble » (1), « maintenant » (1) comptabilisent au total 8 e. Les accents sur les majuscules ne doivent pas être négligés.",
+    "hint": "Regardez chaque groupe de lettres individuellement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chiffres pairs trouve-t-on dans la suite affichée ?",
+    "prompt": null,
+    "stimulus": "2, 5, 4, 9, 8, 7, 6, 1",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les chiffres pairs sont : 2, 4, 8, et 6. De nombreux examinateurs tombent dans le piège en ne reconnaissant pas correctement chaque chiffre de parité.",
+    "hint": "Repérez les nombres divisibles par 2."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Identifiez le modèle identique alphanumérique parmi les séquences.",
+    "prompt": "Modèle : 4D5F-XX9L",
+    "stimulus": null,
+    "options": ["4D5F-XX9L", "4D5X-XX9L", "4D5F-XY9L", "4D5F-XX9M"],
+    "answer": "4D5F-XX9L",
+    "explanation": "Seulement la première option '4D5F-XX9L' conserve chaque lettre du modèle initial, à vérifier systématiquement pour éviter les trappes lexicales.",
+    "hint": "Comparez un caractère à la fois, du début à la fin."
+  }
+]

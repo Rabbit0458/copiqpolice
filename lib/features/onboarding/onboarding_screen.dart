@@ -171,7 +171,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     );
 
     final subtitleStyle = GoogleFonts.montserrat(
-      color: Colors.white.withOpacity(_isDark ? 0.86 : 0.92),
+      color: Colors.white.withValues(alpha: _isDark ? 0.86 : 0.92),
       fontSize: w < 360 ? 14.0 : 14.6,
       fontWeight: FontWeight.w500,
       height: 1.55,
@@ -218,9 +218,9 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.black.withOpacity(0.16),
+                        Colors.black.withValues(alpha: 0.16),
                         Colors.transparent,
-                        Colors.black.withOpacity(0.30),
+                        Colors.black.withValues(alpha: 0.30),
                       ],
                     ),
                   ),
@@ -440,7 +440,7 @@ class _PremiumGradientPainter extends CustomPainter {
       ..shader = RadialGradient(
         center: const Alignment(0.0, 0.10),
         radius: 1.05,
-        colors: [Colors.white.withOpacity(0.06), Colors.transparent],
+        colors: [Colors.white.withValues(alpha: 0.06), Colors.transparent],
       ).createShader(Offset.zero & size);
     canvas.drawRect(Offset.zero & size, r);
   }
@@ -462,13 +462,13 @@ class _GlassCard extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(22),
-        color: Colors.white.withOpacity(0.10),
-        border: Border.all(color: Colors.white.withOpacity(0.16)),
+        color: Colors.white.withValues(alpha: 0.10),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.16)),
         boxShadow: [
           BoxShadow(
             blurRadius: 20,
             offset: const Offset(0, 10),
-            color: Colors.black.withOpacity(0.16),
+            color: Colors.black.withValues(alpha: 0.16),
           ),
         ],
       ),
@@ -484,7 +484,7 @@ class _GlassCard extends StatelessWidget {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.white.withOpacity(0.12),
+                        Colors.white.withValues(alpha: 0.12),
                         Colors.transparent,
                       ],
                     ),
@@ -523,7 +523,7 @@ class _HeroPng extends StatelessWidget {
                   blurRadius: 42,
                   spreadRadius: 6,
                   offset: const Offset(0, 18),
-                  color: Colors.black.withOpacity(0.22),
+                  color: Colors.black.withValues(alpha: 0.22),
                 ),
               ],
             ),
@@ -553,9 +553,9 @@ class _ProgressCapsule extends StatelessWidget {
           Positioned.fill(
             child: DecoratedBox(
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.18),
+                color: Colors.white.withValues(alpha: 0.18),
                 borderRadius: BorderRadius.circular(999),
-                border: Border.all(color: Colors.white.withOpacity(0.14)),
+                border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
               ),
             ),
           ),
@@ -569,13 +569,13 @@ class _ProgressCapsule extends StatelessWidget {
               width: 26,
               height: 10,
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.92),
+                color: Colors.white.withValues(alpha: 0.92),
                 borderRadius: BorderRadius.circular(999),
                 boxShadow: [
                   BoxShadow(
                     blurRadius: 10,
                     offset: const Offset(0, 4),
-                    color: Colors.black.withOpacity(0.16),
+                    color: Colors.black.withValues(alpha: 0.16),
                   ),
                 ],
               ),
@@ -600,9 +600,9 @@ class _TopPillButton extends StatelessWidget {
       child: Ink(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.12),
+          color: Colors.white.withValues(alpha: 0.12),
           borderRadius: BorderRadius.circular(999),
-          border: Border.all(color: Colors.white.withOpacity(0.16)),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.16)),
         ),
         child: Text(
           label,
@@ -650,18 +650,18 @@ class _ThemeIconToggleState extends State<_ThemeIconToggle> {
             height: 48,
             width: 48,
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.12),
+              color: Colors.white.withValues(alpha: 0.12),
               borderRadius: BorderRadius.circular(999),
-              border: Border.all(color: Colors.white.withOpacity(0.18)),
+              border: Border.all(color: Colors.white.withValues(alpha: 0.18)),
               boxShadow: [
                 BoxShadow(
                   blurRadius: 16,
                   offset: const Offset(0, 10),
-                  color: Colors.black.withOpacity(0.14),
+                  color: Colors.black.withValues(alpha: 0.14),
                 ),
               ],
             ),
-            child: Icon(icon, size: 26, color: Colors.white.withOpacity(0.95)),
+            child: Icon(icon, size: 26, color: Colors.white.withValues(alpha: 0.95)),
           ),
         ),
       ),
@@ -714,20 +714,20 @@ class _OrDivider extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: Divider(color: Colors.white.withOpacity(0.30), thickness: 1),
+          child: Divider(color: Colors.white.withValues(alpha: 0.30), thickness: 1),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: Text(
             "ou",
             style: GoogleFonts.montserrat(
-              color: Colors.white.withOpacity(0.70),
+              color: Colors.white.withValues(alpha: 0.70),
               fontWeight: FontWeight.w600,
             ),
           ),
         ),
         Expanded(
-          child: Divider(color: Colors.white.withOpacity(0.30), thickness: 1),
+          child: Divider(color: Colors.white.withValues(alpha: 0.30), thickness: 1),
         ),
       ],
     );
@@ -755,7 +755,7 @@ class _NoisePainter extends CustomPainter {
       final dx = _r.nextDouble() * size.width;
       final dy = _r.nextDouble() * size.height;
       final a = 0.02 + _r.nextDouble() * 0.05;
-      paint.color = (_r.nextBool() ? Colors.white : Colors.black).withOpacity(
+      paint.color = (_r.nextBool() ? Colors.white : Colors.black).withValues(alpha: 
         a,
       );
       canvas.drawRect(Rect.fromLTWH(dx, dy, 1, 1), paint);
@@ -793,7 +793,7 @@ class OnboardingTextCard extends StatelessWidget {
     );
 
     final subtitleStyle = GoogleFonts.montserrat(
-      color: Colors.white.withOpacity(isDark ? 0.76 : 0.84),
+      color: Colors.white.withValues(alpha: isDark ? 0.76 : 0.84),
       fontSize: w < 360 ? 13.8 : 14.2,
       fontWeight: FontWeight.w500,
       height: 1.50,
@@ -932,7 +932,7 @@ class _StaggerTextWithShineState extends State<_StaggerTextWithShine>
                       width: 3,
                       height: 56,
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.78),
+                        color: Colors.white.withValues(alpha: 0.78),
                         borderRadius: BorderRadius.circular(999),
                       ),
                     ),
@@ -1000,9 +1000,9 @@ class _ShineSweep extends StatelessWidget {
                 end: Alignment.bottomCenter,
                 colors: [
                   Colors.transparent,
-                  Colors.white.withOpacity(0.10),
-                  Colors.white.withOpacity(0.18),
-                  Colors.white.withOpacity(0.10),
+                  Colors.white.withValues(alpha: 0.10),
+                  Colors.white.withValues(alpha: 0.18),
+                  Colors.white.withValues(alpha: 0.10),
                   Colors.transparent,
                 ],
                 stops: const [0.0, 0.35, 0.5, 0.65, 1.0],
@@ -1112,7 +1112,7 @@ class _StaggerTextState extends State<_StaggerText>
                 width: 3,
                 height: 56,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.78),
+                  color: Colors.white.withValues(alpha: 0.78),
                   borderRadius: BorderRadius.circular(999),
                 ),
               ),
@@ -1157,13 +1157,13 @@ class _GlassCardPremium extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         // plus transparent = plus premium
-        color: Colors.white.withOpacity(0.075),
-        border: Border.all(color: Colors.white.withOpacity(0.10), width: 1),
+        color: Colors.white.withValues(alpha: 0.075),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.10), width: 1),
         boxShadow: [
           BoxShadow(
             blurRadius: 28,
             offset: const Offset(0, 16),
-            color: Colors.black.withOpacity(0.22),
+            color: Colors.black.withValues(alpha: 0.22),
           ),
         ],
       ),
@@ -1180,9 +1180,9 @@ class _GlassCardPremium extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        Colors.white.withOpacity(0.10),
+                        Colors.white.withValues(alpha: 0.10),
                         Colors.transparent,
-                        Colors.black.withOpacity(0.06),
+                        Colors.black.withValues(alpha: 0.06),
                       ],
                     ),
                   ),

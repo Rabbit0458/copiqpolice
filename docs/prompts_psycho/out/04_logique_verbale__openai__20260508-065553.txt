@@ -1,0 +1,434 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « beau » ?",
+    "prompt": null,
+    "options": ["Joli", "Vilain", "Déplaisant", "Laid"],
+    "answer": "Joli",
+    "explanation": "« Joli » est synonyme de « beau » car ces deux mots décrivent quelque chose d'agréable à voir. « Vilain », « déplaisant » et « laid » sont tous des antonymes car ils indiquent le contraire, c'est-à-dire quelque chose qui n'est pas agréable visuellement.",
+    "hint": "Pense à un mot qui décrit quelque chose d'esthétiquement plaisant."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « froid » ?",
+    "prompt": null,
+    "options": ["Chaud", "Glacé", "Gelé", "Réfrigéré"],
+    "answer": "Chaud",
+    "explanation": "« Chaud » est l'antonyme de « froid » car il décrit une température élevée, opposée à une température basse. « Glacé », « gelé », et « réfrigéré » sont tous des synonymes de « froid » puisqu'ils accentuent l'idée de basses températures.",
+    "hint": "Cherche la température opposée à 'froid'."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Pomme, Orange, Carotte, Poire",
+    "options": ["Pomme", "Orange", "Carotte", "Poire"],
+    "answer": "Carotte",
+    "explanation": "La carotte est un légume, alors que la pomme, l'orange et la poire sont des fruits. Les fruits, se développent à partir de la fleur de la plante, tandis que les légumes peuvent être racines, feuilles ou tiges.",
+    "hint": "Pense aux fruits versus les légumes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Après le coup de vent, il a ___ les branches cassées. »",
+    "prompt": null,
+    "options": ["Ramassé", "Cassé", "Observé", "Ignoré"],
+    "answer": "Ramassé",
+    "explanation": "« Ramassé » est correct car on nettoie souvent les débris comme des branches après un coup de vent. « Cassé » n'est pas logique après un coup de vent, « observé » n'implique pas d'action concrète, et « ignoré » serait l’opposé d’une action de nettoyage.",
+    "hint": "Le mot doit montrer ce qu'on fait après un désordre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « triste » ?",
+    "prompt": null,
+    "options": ["Malheureux", "Joyeux", "Content", "Heureux"],
+    "answer": "Malheureux",
+    "explanation": "« Malheureux » est synonyme de « triste » car les deux expriment un état émotionnel de désolation ou de chagrin. En revanche, « joyeux », « content » et « heureux » sont des antonymes parce qu'ils décrivent un état de bonheur et de satisfaction.",
+    "hint": "Cherche un mot qui décrit le chagrin."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot « pièce » signifie ?",
+    "prompt": "Il est entré dans la pièce en silence.",
+    "options": ["Salle", "Monnaie", "Morceau", "Spectacle"],
+    "answer": "Salle",
+    "explanation": "Dans ce contexte, « pièce » désigne une « salle » où il est possible d'entrer. « Monnaie » et « morceau » sont des significations alternatives du mot « pièce » mais inappropriées ici. « Spectacle » ne convient pas du tout dans ce contexte.",
+    "hint": "Pense à un endroit où l'on peut entrer."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « sec » ?",
+    "prompt": null,
+    "options": ["Humide", "Mouillé", "Aride", "Déshydraté"],
+    "answer": "Humide",
+    "explanation": "« Humide » est l'antonyme de « sec » car il décrit une surface contenant de l'eau. « Mouillé » est proche, mais « aride » et « déshydraté » renforcent l'idée de sécheresse, le contraire de ce qui est souhaité.",
+    "hint": "Cherche le contraire d'une absence d'eau."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Pour réussir, il faut souvent ___ du temps et des efforts. »",
+    "prompt": null,
+    "options": ["Investir", "Perdre", "Gaspiller", "Ignorer"],
+    "answer": "Investir",
+    "explanation": "« Investir » est le terme correct car il signifie consacrer des ressources telles que le temps et les efforts pour obtenir un bénéfice, ici la réussite. « Perdre » et « gaspiller » ont une connotation négative qui ne correspond pas au contexte positif de la réussite. « Ignorer » signifierait ne rien faire du tout.",
+    "hint": "Pense à un terme qui signifie consacrer des ressources de manière positive."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Chien, Chat, Lapin, Fleur",
+    "options": ["Chien", "Chat", "Lapin", "Fleur"],
+    "answer": "Fleur",
+    "explanation": "« Fleur » est l'intrus car c'est une plante, alors que « chien », « chat » et « lapin » sont des animaux domestiques courants. Les animaux partagent des attributs biologiques et des fonctions écologiques similaires, ce qui n'est pas le cas avec une plante.",
+    "hint": "Pense à ce qui n'est pas un animal."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « joyeux » ?",
+    "prompt": null,
+    "options": ["Heureux", "Triste", "Déprimé", "Sombré"],
+    "answer": "Heureux",
+    "explanation": "« Heureux » est un synonyme de « joyeux » car les deux mots expriment un état de bonheur et de satisfaction. « Triste », « déprimé » et « sombré » sont des antonymes car ils décrivent la tristesse ou l’abattement, opposés à la joie.",
+    "hint": "Cherche le mot exprimant le bonheur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot « glace » signifie ?",
+    "prompt": "Il a mangé une glace pour se rafraîchir.",
+    "options": ["Dessert", "Gel", "Miroir", "Bloc"],
+    "answer": "Dessert",
+    "explanation": "Ici, « glace » signifie « dessert » car il s'agit d'une crème glacée consommée pour se rafraîchir. « Gel » et « bloc » sont incorrects car ils se réfèrent à de la matière glacée ou à de la glace solide. « Miroir » ne correspond pas au contexte.",
+    "hint": "C'est quelque chose que l'on mange."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « grand » ?",
+    "prompt": null,
+    "options": ["Petit", "Énorme", "Immense", "Gigantesque"],
+    "answer": "Petit",
+    "explanation": "« Petit » est l'antonyme de « grand » car il désigne une taille inférieure. Par contre, « énorme », « immense » et « gigantesque » sont synonymes en cela qu'ils désignent tous de grandes tailles.",
+    "hint": "Cherche l'opposé d'une grande dimension."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Lorsque le soleil se couche, le ciel devient souvent ___. »",
+    "prompt": null,
+    "options": ["Rougeâtre", "Clair", "Noirci", "Bleu"],
+    "answer": "Rougeâtre",
+    "explanation": "« Rougeâtre » est approprié, car au coucher du soleil, le ciel prend souvent des teintes rouges. « Clair » ne convient pas, car le jour décline. « Noirci » apparaît après le coucher du soleil complet, et « bleu » est plus typique pendant le jour.",
+    "hint": "Pense à la couleur que le ciel prend au coucher."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « ancien » ?",
+    "prompt": null,
+    "options": ["Vieux", "Nouveau", "Récente", "Moderne"],
+    "answer": "Vieux",
+    "explanation": "« Vieux » est un synonyme d'« ancien » car tous deux désignent quelque chose qui a existé depuis longtemps. « Nouveau », « récente » et « moderne » sont des antonymes, chacun décrivant quelque chose qui est d'apparition récente ou en accord avec l'époque actuelle.",
+    "hint": "Cherche un mot qui exprime la durée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Avion, Hélicoptère, Train, Montgolfière",
+    "options": ["Avion", "Hélicoptère", "Train", "Montgolfière"],
+    "answer": "Train",
+    "explanation": "Le « train » est l'intrus car c'est un moyen de transport terrestre, tandis que « avion », « hélicoptère » et « montgolfière » sont des moyens de transport aérien. Les trois véhicules aériens utilisent l'air comme surface de transport, ce qui les distingue des véhicules terrestres.",
+    "hint": "Pense à celui qui ne vole pas."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « intelligent » ?",
+    "prompt": null,
+    "options": ["Érudit", "Bête", "Ignorant", "Stupide"],
+    "answer": "Érudit",
+    "explanation": "« Érudit » est un synonyme d'« intelligent » car il décrit quelqu'un possédant un vaste savoir éducatif. L'inverse est le cas de « bête », « ignorant », et « stupide », qui décrivent un manque de savoir ou de capacité intellectuelle.",
+    "hint": "Cherche un mot associé au savoir."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « En hiver, la neige rend les routes ___ ». ",
+    "prompt": null,
+    "options": ["Glissantes", "Sèches", "Douces", "Rugueuses"],
+    "answer": "Glissantes",
+    "explanation": "« Glissantes » est correct car la neige et le verglas rendent les surfaces plus difficiles à adhérer, augmentant le risque de glissade. « Sèches », « douces » et « rugueuses » ne conviennent pas aux conditions hivernales sous la neige.",
+    "hint": "Pense à un adjectif qui décrit un manque d'adhérence."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « affable » ?",
+    "prompt": null,
+    "options": ["Agréable", "Hostile", "Rébarbatif", "Conflituel"],
+    "answer": "Agréable",
+    "explanation": "« Affable » est synonyme d'« agréable » car les deux implicent une disposition amicale et accueillante. « Hostile », « rébarbatif » et « conflituel » sont des antonymes car ils indiquent une tendance à être désagréable ou difficile.",
+    "hint": "Cherche un mot qui implique une approche amicale."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Opérateur, Instruit, Maîtrisé, Doctoral",
+    "options": ["Opérateur", "Instruit", "Maîtrisé", "Doctoral"],
+    "answer": "Opérateur",
+    "explanation": "« Opérateur » est l'intrus car ce terme décrit une occupation ou rôle, tandis que « instruit », « maîtrisé », et « doctoral » renvoient à des niveaux de savoir ou d’éducation. Les trois partagent une thématique éducative.",
+    "hint": "Cherche un mot qui ne concerne pas l'éducation."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « généreux » ?",
+    "prompt": null,
+    "options": ["Avaricieux", "Altruiste", "Prodigue", "Largesse"],
+    "answer": "Avaricieux",
+    "explanation": "« Avaricieux » est l'antonyme de « généreux » car il décrit une personne avare et peu encline à donner. « Altruiste » et « prodigue » sont des synonymes de généreux. « Largesse » est également synonyme, se rapportant à une générosité démontrée.",
+    "hint": "Cherche le contraire de la générosité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot « pièce » signifie ?",
+    "prompt": "Il a donné une pièce au musicien.",
+    "options": ["Monnaie", "Salle", "Morceau", "Spectacle"],
+    "answer": "Monnaie",
+    "explanation": "Dans ce contexte, « pièce » signifie une petite somme d'argent, puisqu'il est courant de donner une pièce de monnaie comme pourboire. « Salle », « morceau » et « spectacle » ne conviennent pas ici, car aucun n'implique de transaction monétaire.",
+    "hint": "Pense à une forme de paiement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Professeur est à école comme docteur est à ___",
+    "prompt": null,
+    "options": ["Hôpital", "Élève", "Chirurgie", "Infirmier"],
+    "answer": "Hôpital",
+    "explanation": "Le professeur travaille dans une école, tout comme le docteur travaille dans un hôpital. « Élève » est à l'école ce que « patient » est à l'hôpital, mais ne correspond pas à l'analogie directe. « Chirurgie » et « infirmier » sont des aspects du travail hospitalier, pas le lieu général.",
+    "hint": "Considérez le lieu équivalent du travail."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « exhaustif » ?",
+    "prompt": null,
+    "options": ["Complet", "Partiel", "Superficiel", "Intermittent"],
+    "answer": "Complet",
+    "explanation": "« Complet » est synonyme de « exhaustif » car les deux signifient qu'il comprend tout. « Partiel », « superficiel », et « intermittent » sont des antonymes ou mots proches qui relatent une absence de totalité ou de continuité.",
+    "hint": "Cherche un mot qui signifie entier ou total."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Pigeon, Aigle, Hélicoptère, Albatross",
+    "options": ["Pigeon", "Aigle", "Hélicoptère", "Albatross"],
+    "answer": "Hélicoptère",
+    "explanation": "L'« hélicoptère » est l'intrus car c'est un véhicule aérien construit, tandis que le pigeon, l'aigle et l'albatros sont des oiseaux, donc des êtres vivants. Leur mode de vol est naturel, contrairement à celui de l'hélicoptère qui repose sur des mécanismes technologiques.",
+    "hint": "Pense à ce qui n'est pas vivant."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : « Même confiant, avant un entretien, il est important de ___. »",
+    "prompt": null,
+    "options": ["Préparer", "Négliger", "Cacher", "Ignorer"],
+    "answer": "Préparer",
+    "explanation": "« Préparer » est essentiel car la préparation est souvent la clé du succès, même lorsque l'on est confiant. « Négliger », « cacher » et « ignorer » impliquent une absence de préparation, ce qui est déconseillé dans un contexte professionnel.",
+    "hint": "Cherche une action positive à prendre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « optimiste » ?",
+    "prompt": null,
+    "options": ["Pessimiste", "Joyeux", "Confident", "Enthousiaste"],
+    "answer": "Pessimiste",
+    "explanation": "« Pessimiste » est l'antonyme d'« optimiste » car il signifie s'attendre au pire résultat possible, alors qu'optimiste s'attend au meilleur. « Joyeux », « confident » et « enthousiaste » évoquent des états positifs qui sont compatibles avec l'optimisme.",
+    "hint": "Considérez le contraire d'attendre le meilleur."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « cohérent » ?",
+    "prompt": null,
+    "options": ["Logique", "Confus", "Désordonné", "Inconsistant"],
+    "answer": "Logique",
+    "explanation": "« Logique » est synonyme de « cohérent » car les deux décrivent quelque chose qui est bien organisé et raisonnable. « Confus », « désordonné » et « inconsistant » décrivent des états ou des processus qui manquent de structure et de clarté.",
+    "hint": "Pense à une organisation ou à un raisonnement bien structuré."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot « carton » signifie ?",
+    "prompt": "Il a rempli un carton de vêtements pour le déménagement.",
+    "options": ["Boîte", "Papier", "Annonce", "Outil"],
+    "answer": "Boîte",
+    "explanation": "Dans cette phrase, « carton » correspond à « boîte », un conteneur pour transporter des objets. « Papier », « annonce » et « outil » n'ont pas leur place ici car ils ne se réfèrent pas à ce type de contenant.",
+    "hint": "Pense à un contenant pour transporter."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Soleil est à jour ce que lune est à ___",
+    "prompt": null,
+    "options": ["Nuit", "Eclipse", "Étoile", "Planète"],
+    "answer": "Nuit",
+    "explanation": "Le soleil est visible durant le jour de la même manière que la lune l'est pendant la nuit. « Éclipse » est un événement rare, « étoile » et « planète » ne se rapportent pas directement à la division jour/nuit.",
+    "hint": "Pense à ce qui éclaire le temps opposé au jour."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "lequel de ces mots est l'intrus ?",
+    "prompt": "Emeraude, Rubis, Saphir, Argent",
+    "options": ["Emeraude", "Rubis", "Saphir", "Argent"],
+    "answer": "Argent",
+    "explanation": "« Argent » est l'intrus car c'est un métal, alors que l'émeraude, le rubis et le saphir sont des pierres précieuses. Les trois pierres sont des gemmes utilisées pour leur beauté et leur rareté, contrairement aux métaux.",
+    "hint": "Cherche une distinction entre pierres et métaux."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « visible » ?",
+    "prompt": null,
+    "options": ["Invisible", "Clair", "Évident", "Visible"],
+    "answer": "Invisible",
+    "explanation": "« Invisible » est l'antonyme de « visible » car cela décrit quelque chose qui ne peut être vu. « Clair », « évident » et « visible » sont tous relatifs au fait d'être aperçu, perceptible ou manifeste.",
+    "hint": "Cherche l'opposé de ce qui peut être vu."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot « pièce » signifie ?",
+    "prompt": "Il a écrit une pièce de théâtre en trois actes.",
+    "options": ["Ouvrage", "Place", "Fragment", "Musique"],
+    "answer": "Ouvrage",
+    "explanation": "Ici, « pièce » signifie « ouvrage », faisant référence à une œuvre littéraire ou artistique. « Place », « fragment », et « musique » sont impropres au contexte de création artistique guidée par un script et un scénario.",
+    "hint": "Pense à une œuvre entière."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « sibyllin » ?",
+    "prompt": null,
+    "options": ["Enigmatique", "Clair", "Compréhensible", "Evident"],
+    "answer": "Enigmatique",
+    "explanation": "« Enigmatique » est un synonyme de « sibyllin » car cela décrit un message obscur ou cryptique. « Clair », « compréhensible » et « évident » sont antonymes car ils caractérisent la facilité de compréhension et l'absence de mystère.",
+    "hint": "Pense à quelque chose de mystérieux ou difficile à comprendre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « pléthorique » ?",
+    "prompt": null,
+    "options": ["Indigent", "Foisonnant", "Abondant", "Profusion"],
+    "answer": "Indigent",
+    "explanation": "« Pléthorique » signifie en grande quantité, alors que « indigent » caractérise le manque ou la pauvreté extrême, y compris en termes de ressources. « Foisonnant », « abondant » et « profusion » partagent la connotation de l'opulence de quantité.",
+    "hint": "Pense à la rareté ou à l'insuffisance."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète la phrase : « Le développement durable cherche à ___ les ressources pour l'avenir. »",
+    "prompt": null,
+    "options": ["Preserver", "Dilapider", "Déroger", "Ignorer"],
+    "answer": "Preserver",
+    "explanation": "« Preserver » est correct car le développement durable met l'important sur la conservation des ressources. « Dilapider » signifierait une exploitation irresponsable, tandis que « déroger » et « ignorer » sont inappropriés ici.",
+    "hint": "Cherche à protéger pour le long terme."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Sine die, Summa cum laude, Ipso facto, Carambar",
+    "options": ["Sine die", "Summa cum laude", "Ipso facto", "Carambar"],
+    "answer": "Carambar",
+    "explanation": "« Carambar » est l'intrus puisqu'il s'agit d'une marque de bonbons, alors que les autres sont des expressions latines souvent utilisées dans des contextes académiques ou juridiques.",
+    "hint": "Cherche un terme qui ne vient pas du latin."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « contrit » ?",
+    "prompt": null,
+    "options": ["Repentant", "Comblé", "Joyeux", "Ignorant"],
+    "answer": "Repentant",
+    "explanation": "« Repentant » est synonyme de « contrit » car les deux expriment un sentiment de regret et de remords. « Comblé », « joyeux », et « ignorant » ne partagent pas cette nuance de culpabilité ou d'auto-réprimande.",
+    "hint": "Pense à un sentiment de regret."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, le mot « altérer » signifie ?",
+    "prompt": "Il ne faut pas altérer les résultats du concours.",
+    "options": ["Modifier", "Amplifier", "Inverser", "Conserver"],
+    "answer": "Modifier",
+    "explanation": "« Altérer » dans ce contexte signifie « modifier », souvent vers le pire. « Amplifier » impliquerait une augmentation, « inverser » une permutation, et « conserver » un maintien de l'état, tous incorrects ici.",
+    "hint": "Pense à un simple changement, souvent négatif."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « atavique » ?",
+    "prompt": null,
+    "options": ["Moderne", "Héréditaire", "Ancien", "Régressif"],
+    "answer": "Moderne",
+    "explanation": "« Atavique » désigne un retour à des caractéristiques ancestrales, donc « moderne » est son antonyme puisqu'il implique nouveauté et innovation. « Héréditaire », « ancien » et « régressif » ont tous des connotations liées au passé ou à l'hérédité.",
+    "hint": "Pense à ce qui est actuel et nouveau."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète la phrase : « Dans sa démarche, il a toujours été d'une franchise ___. »",
+    "prompt": null,
+    "options": ["Desarmante", "Circonspecte", "Sournoise", "Hypocrite"],
+    "answer": "Desarmante",
+    "explanation": "« Désarmante » est choisi car elle reflète une franchise qui étonne par sa sincérité. « Circonspecte » impliquerait de la prudence. « Sournoise » et « hypocrite » contredisent l'idée de franchise.",
+    "hint": "Pense à une franchise étonnamment ouverte."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, le mot « prolixe » signifie ?",
+    "prompt": "Son discours était prolixe mais peu informatif.",
+    "options": ["Verbeux", "Concis", "Précis", "Pertinent"],
+    "answer": "Verbeux",
+    "explanation": "« Prolixe » signifie « verbeux », c’est-à-dire s'étalant en longueur sans apporter de contenu précieux. Ce qui est « concis », « précis », ou « pertinent » va droit au but et enrichit l'information, contrairement à un discours prolixe.",
+    "hint": "Pense à un discours qui s'éternise."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Péremptoire, Impératif, Contre-productif, Injonctif",
+    "options": ["Péremptoire", "Impératif", "Contre-productif", "Injonctif"],
+    "answer": "Contre-productif",
+    "explanation": "« Contre-productif » est l'intrus ; il signifie inefficace ou contraire à l'objectif, tandis que « péremptoire », « impératif » et « injonctif » renvoient tous trois à des formes d'autoritarisme et d'obligations.",
+    "hint": "Cherche ce qui ne renvoie pas à l'autorité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « vendetta » ?",
+    "prompt": null,
+    "options": ["Revanche", "Alliance", "Amitié", "Accord"],
+    "answer": "Revanche",
+    "explanation": "« Revanche » est un synonyme de « vendetta » car cela implique une suite d'actes violents exercés en cœur suite à une injustice ou un différend. « Alliance », « amitié » et « accord » impliquent tous des relations coopératives et harmonieuses, l'inverse d'une vendetta.",
+    "hint": "Pense à un mot qui décrit la revanche personnelle."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Encre est à stylo ce que plomb est à ___",
+    "prompt": null,
+    "options": ["Mine", "Papier", "Livre", "Bureau"],
+    "answer": "Mine",
+    "explanation": "L'encre est contenue dans un stylo comme le plomb dans une mine de crayon. « Papier », « livre », et « bureau » ne sont pas des contenants directs ou associés de la mine de crayon dans le cadre de l'analogie proposée.",
+    "hint": "Cherche ce que le stylo et le crayon contiennent."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « irrémédiable » ?",
+    "prompt": null,
+    "options": ["Réparable", "Définitif", "Final", "Incurable"],
+    "answer": "Réparable",
+    "explanation": "« Irrémédiable » signifie qu’on ne peut pas changer. « Réparable » est son antonyme en ce sens qu'il dénote la possibilité de correction ou de restauration. « Définitif », « final » et « incurable » maintiennent tous une connotation d'impossible à changer.",
+    "hint": "Pense à la capacité de se corriger."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, le mot « solliciter » signifie ?",
+    "prompt": "Il faut solliciter son aide pour réussir ce projet.",
+    "options": ["Demander", "Refuser", "Diminuer", "Ignorer"],
+    "answer": "Demander",
+    "explanation": "Ici, « solliciter » signifie faire appel à quelqu'un pour obtenir quelque chose, donc « demander » est le choix approprié. « Refuser », « diminuer » et « ignorer » vont à l'encontre de l'action d'appeler à l'aide.",
+    "hint": "Pense à l'acte de s'adresser à quelqu'un pour obtenir quelque chose."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est l'analogie suivante : Tisserand est à métier à tisser ce que potier est à ___",
+    "prompt": null,
+    "options": ["Tour", "Argile", "Vase", "Four"],
+    "answer": "Tour",
+    "explanation": "Un tisserand utilise un métier à tisser, tout comme un potier utilise un tour pour créer. « Argile », « vase », et « four » ne sont pas des outils directs utilisés de la même manière que le tour par un potier.",
+    "hint": "Pense à ce que chaque artisan utilise activement comme outil principal."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « exacerber » ?",
+    "prompt": null,
+    "options": ["Aggraver", "Soulager", "Modérer", "Atténuer"],
+    "answer": "Aggraver",
+    "explanation": "« Exacerber » et « aggraver » désignent tous deux rendre une situation plus intense ou plus sévère. « Soulager », « modérer » et « atténuer » désignent des actions qui diminuent ou apaisent, ce qui est contraire à l’action d’exacerber.",
+    "hint": "Cherche un mot décrivant l'intensification."
+  }
+]

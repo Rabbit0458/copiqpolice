@@ -1,0 +1,618 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on en déduire ?",
+        "prompt": "Tous les chiens sont loyaux. Rex est un chien.",
+        "options": [
+            "Rex est un chat",
+            "Rex est loyal",
+            "Rex n'est pas loyal",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rex est loyal",
+        "explanation": "Il s'agit d'un syllogisme par transitivité. Si tous les chiens sont loyaux et Rex est un chien, alors Rex est loyal. Le piège classique serait de choisir 'On ne peut pas savoir', mais ici, la conséquence est directement déductible.",
+        "hint": "Utilise la propriété de transitivité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion est correcte ?",
+        "prompt": "Tous les cygnes sont blancs. Ce cygne est blanc.",
+        "options": [
+            "Ce cygne est noir",
+            "Ce cygne est grand",
+            "Ce cygne est un cygne",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce cygne est un cygne",
+        "explanation": "Bien que le cygne soit blanc, la seule information fiable est qu'il est effectivement un cygne. Le piège consiste à conclure quelque chose de l'ordre de la taille ou d’attribuer un trait non mentionné.",
+        "hint": "Ne te concentre que sur la catégorie concernée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Roger court plus vite que Thomas. Thomas court plus vite que Jean.",
+        "options": [
+            "Roger",
+            "Thomas",
+            "Jean",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Roger",
+        "explanation": "C'est un ordre de transitivité. Roger court plus vite que Thomas, et Thomas court plus vite que Jean, donc Roger court plus vite que Jean également. Le piège potentiel est de penser qu'on ne peut pas établir une hiérarchie directe.",
+        "hint": "Pense en termes de chaîne de vitesse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on en déduire ?",
+        "prompt": "Tous les oiseaux peuvent voler. Le pigeon est un oiseau.",
+        "options": [
+            "Le pigeon ne peut pas voler",
+            "Le pigeon est un mammifère",
+            "Le pigeon peut voler",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le pigeon peut voler",
+        "explanation": "Syllogisme simple : tous les oiseaux peuvent voler, et le pigeon en est un, donc il peut voler. Ignorer la relation de transitivité serait l'erreur ici.",
+        "hint": "Observe l'affirmation initiale sur les oiseaux."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion peut-on tirer ?",
+        "prompt": "Si le terrain est humide, alors il pleut. Le terrain est humide.",
+        "options": [
+            "Il pleut",
+            "Il ne pleut pas",
+            "Le terrain est sec",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Il pleut",
+        "explanation": "C'est un exemple de modus ponens. Si la prémisse 'si le terrain est humide, alors il pleut' est vraie et que le terrain est effectivement humide, alors il pleut. Le piège est de ne pas reconnaître cette implication directe.",
+        "hint": "Applique l'implication logique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le résultat ?",
+        "prompt": "Tous les voitures rouges sont rapides. Cette voiture est rouge.",
+        "options": [
+            "Cette voiture est lente",
+            "Cette voiture est rapide",
+            "Cette voiture est bleue",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette voiture est rapide",
+        "explanation": "Utilisation de la règle de transitivité du syllogisme : si toutes les voitures rouges sont rapides et que cette voiture est rouge, elle est donc rapide. Il ne faut pas choisir 'On ne peut pas savoir', car la conclusion est déductible.",
+        "hint": "Suis la logique du syllogisme."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure ?",
+        "prompt": "Tous les poissons vivent dans l'eau. Ce saumon est un poisson.",
+        "options": [
+            "Ce saumon vit sur terre",
+            "Ce saumon vit dans l'eau",
+            "Ce saumon vole",
+            "On ne peut pas conclure"
+        ],
+        "answer": "Ce saumon vit dans l'eau",
+        "explanation": "C'est un syllogisme simple : tous les poissons vivent dans l'eau, et le saumon étant un poisson, il vit donc dans l'eau. Le piège ici pourrait être de conclure autre chose hors du cadre fourni.",
+        "hint": "Ne t'éloigne pas des informations initiales."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus âgé ?",
+        "prompt": "Lucas est plus âgé que Martin. Martin est plus âgé que Louis.",
+        "options": [
+            "Lucas",
+            "Martin",
+            "Louis",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Lucas",
+        "explanation": "C'est une simple transposition des âges. Lucas est plus âgé que Martin, et Martin est plus âgé que Louis. Ainsi, Lucas est le plus âgé. Ne pas s'embrouiller avec des détails non essentiels est important ici.",
+        "hint": "Pense à la hiérarchie d'âge."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion peut-on faire ?",
+        "prompt": "Si tu étudies, alors tu réussiras. Tu étudies.",
+        "options": [
+            "Tu échoues",
+            "Tu réussis",
+            "Tu ne réussis pas",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Tu réussis",
+        "explanation": "Le principe du modus ponens s'applique ici. Si étudier mène à réussir et que tu étudies, alors tu réussis. Un piège spécifique serait de supposer qu'il y a d'autres facteurs à considérer.",
+        "hint": "Concentre-toi sur la relation cause-effet."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le résultat ?",
+        "prompt": "Tous les fruits sont sucrés. Cette pomme est un fruit.",
+        "options": [
+            "Cette pomme est sucrée",
+            "Cette pomme est amère",
+            "Cette pomme n'est pas un fruit",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette pomme est sucrée",
+        "explanation": "C'est un raisonnement syllogistique : tous les fruits sont sucrés, donc si la pomme est un fruit, elle est sucrée. Il est nécessaire d'éviter de conclure quelque chose sur le caractère de la pomme non couvert par ce raisonnement.",
+        "hint": "Considère la logique des tous les fruits."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus riche ?",
+        "prompt": "Sophie a plus d'argent que Pierre. Marie a moins d'argent que Pierre.",
+        "options": [
+            "Sophie",
+            "Pierre",
+            "Marie",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Sophie",
+        "explanation": "Ici, un ordre simple est établi : Sophie a plus d'argent que Pierre, et Pierre a plus d'argent que Marie. Donc Sophie est la plus riche. Évitez de supposer des variables hors du contexte donné.",
+        "hint": "Déduis la chaîne de richesse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure ?",
+        "prompt": "Tous les planteurs d'arbres sont verts. Je suis un planteur d'arbres.",
+        "options": [
+            "Je suis vert",
+            "Je suis bleu",
+            "Je ne suis pas vert",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Je suis vert",
+        "explanation": "La logique est que si tous les planteurs d'arbres sont verts et je suis un planteur d'arbres, alors je suis vert. Ne vous laissez pas tromper en pensant qu'il manque des informations.",
+        "hint": "Applique le syllogisme."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure ?",
+        "prompt": "Si elle chante, alors tout le monde est content. Elle chante.",
+        "options": [
+            "Personne n'est content",
+            "Tout le monde est content",
+            "Tout le monde dort",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Tout le monde est content",
+        "explanation": "C'est un autre exemple de modus ponens : si son chant rend tout le monde content et qu'elle chante, alors tout le monde est content. Il ne faut pas supposer que d'autres effets viennent interférer.",
+        "hint": "Pense en suivant le chemin logique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le résultat ?",
+        "prompt": "Tous les enfants aiment le chocolat. Ma cousine est une enfant.",
+        "options": [
+            "Ma cousine aime le chocolat",
+            "Ma cousine n'aime pas le chocolat",
+            "Ma cousine est un adulte",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ma cousine aime le chocolat",
+        "explanation": "Cela suit un syllogisme basique : tous les enfants aiment le chocolat, donc ma cousine, étant une enfant, aime le chocolat. Le piège serait de penser que les goûts personnels peuvent intervenir.",
+        "hint": "Utilise la règle générale donnée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le plus grand animal ?",
+        "prompt": "L'éléphant est plus grand que le lion. Le lion est plus grand que le chien.",
+        "options": [
+            "Éléphant",
+            "Lion",
+            "Chien",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Éléphant",
+        "explanation": "En utilisant la règle de transitivité, l'éléphant, étant plus grand que le lion, qui est lui-même plus grand que le chien, est le plus grand. Une erreur courante est de mal interpréter les comparaisons.",
+        "hint": "Trace la hiérarchie des tailles."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le résultat ?",
+        "prompt": "Aucun chien n'est méchant. Max est un chien.",
+        "options": [
+            "Max est méchant",
+            "Max n'est pas méchant",
+            "Max est un chat",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Max n'est pas méchant",
+        "explanation": "C'est une variation avec négation : aucun chien n'étant méchant et Max étant un chien, Max n'est pas méchant. Attention à bien comprendre la négation pour éviter d'en tirer la conclusion inverse.",
+        "hint": "Souligne la négation dans l'énoncé."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que pouvez-vous conclure ?",
+        "prompt": "Si elle danse, alors le rythme est rapide. Elle ne danse pas.",
+        "options": [
+            "Le rythme est lent",
+            "Le rythme est rapide",
+            "On ne peut pas savoir",
+            "Elle danse quand même"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "C'est un piège subtil : l'énoncé initial ne permet pas de conclure automatiquement que le rythme est lent juste parce qu'elle ne danse pas. Il ne s'agit pas d'une contraposée valide. Le piège réside ici dans l'erreur classique de croire que la négation d'une prémisse entraîne la négation de la conclusion.",
+        "hint": "Attention aux implicites : la négation directe ne fonctionne pas."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus grand ?",
+        "prompt": "Alice est plus grande que Clara. Bernard est plus grand qu'Alice. Clara est plus grande que Denise.",
+        "options": [
+            "Alice",
+            "Bernard",
+            "Clara",
+            "Denise"
+        ],
+        "answer": "Bernard",
+        "explanation": "En suivant l’ordre des comparaisons, Bernard > Alice > Clara > Denise. Bernard est donc le plus grand. Le piège est de manquer la dernière comparaison qui peut confirmer l'ordre.",
+        "hint": "Établis une hiérarchie stricte de tailles."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui a le plus d'expérience ?",
+        "prompt": "Sophie a plus d'expérience que Julien. Léa a moins d'expérience que Julien. Céline a plus d'expérience que Sophie.",
+        "options": [
+            "Sophie",
+            "Julien",
+            "Léa",
+            "Céline"
+        ],
+        "answer": "Céline",
+        "explanation": "En classant selon l'expérience : Céline > Sophie > Julien > Léa. Le piège est de ne pas placer correctement Léa dans l'ordre. Céline est donc au sommet de la liste.",
+        "hint": "Utilise chaque relation pour construire l'ordre complet."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle conclusion peut-on tirer ?",
+        "prompt": "Si Marc arrive avant midi, alors Julie viendra. Julie n'est pas venue.",
+        "options": [
+            "Marc est arrivé avant midi",
+            "Marc n'est pas arrivé avant midi",
+            "Julie est arrivée",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marc n'est pas arrivé avant midi",
+        "explanation": "En utilisant la contraposée logique : si Julie n'est pas venue, alors Marc n'est pas arrivé avant midi. Notez bien qu'aucune autre conclusion n’est directement déductible de l’énoncé.",
+        "hint": "Dans une implication, la contraposée est souvent utile."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la conclusion correcte ?",
+        "prompt": "Tous les jours de pluie sont nuageux. Aujourd'hui n'est pas nuageux.",
+        "options": [
+            "Il pleut",
+            "Il ne pleut pas",
+            "On ne peut pas savoir",
+            "Il y a des nuages"
+        ],
+        "answer": "Il ne pleut pas",
+        "explanation": "En inversant la première affirmation par sa contraposée, si le jour n'est pas nuageux, alors il ne peut pas pleuvoir. Veillez à ne pas conclure qu'il pleut sur la base d'informations extérieures.",
+        "hint": "Pense en termes de contrepied logique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la bonne conclusion ?",
+        "prompt": "Si Jean est à l'heure, il y aura une réunion. La réunion a eu lieu.",
+        "options": [
+            "Jean était à l'heure",
+            "Jean n'était pas à l'heure",
+            "La réunion est annulée",
+            "On ne peut pas savoir"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "L'énoncé ne mène pas à la confirmation que Jean était à l'heure simplement parce que la réunion a eu lieu, car cela pourrait résulter d'une raison inconnue. Le piège est de confondre conséquence et cause spécifique.",
+        "hint": "Ne pas confondre implication avec réciproque."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Arnaud court plus vite que Louise. Émilie court moins vite qu'Arnaud. Mathieu court plus vite qu'Émilie.",
+        "options": [
+            "Arnaud",
+            "Louise",
+            "Émilie",
+            "Mathieu"
+        ],
+        "answer": "Arnaud",
+        "explanation": "Les informations établissent que Mathieu > Émilie et Arnaud > Louise. Cependant, Arnaud est plus rapide qu'Émilie, et donc aussi comparativement à Mathieu. Le piège est de s’arrêter à la première condition.",
+        "hint": "Établis un classement complet des vitesses."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel membre a le plus d'années d'expérience ?",
+        "prompt": "Paul a plus d'années que Marie. Lisa a moins d'années que Marie. Thomas a plus d'années que Paul.",
+        "options": [
+            "Paul",
+            "Marie",
+            "Lisa",
+            "Thomas"
+        ],
+        "answer": "Thomas",
+        "explanation": "Le classement est Thomas > Paul > Marie > Lisa. Pour le déterminer, il faut assembler le puzzle des comparaisons. Le piège serait de laisser Marie du mauvais côté de l'ordre.",
+        "hint": "Assemble les pièces des comparaisons ensemble."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle conclusion est bonne ?",
+        "prompt": "Si elle réussit l'examen, elle recevra un diplôme. Elle n'a pas encore reçu de diplôme.",
+        "options": [
+            "Elle a réussi l'examen",
+            "Elle n'a pas réussi l'examen",
+            "Elle a reçu un diplôme",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Elle n'a pas réussi l'examen",
+        "explanation": "Puisque le diplôme est conditionné par la réussite à l'examen, l'absence de diplôme indique qu'elle n'a pas réussi l'examen. Gardez à l'esprit l'erreur de penser à d'autres causes sans preuve.",
+        "hint": "Considère ce qui est requis pour le diplôme."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus jeune ?",
+        "prompt": "Thomas est plus âgé que Lucas. Marie est plus jeune que Lucas.",
+        "options": [
+            "Thomas",
+            "Lucas",
+            "Marie",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marie",
+        "explanation": "Nous savons que Thomas > Lucas et Lucas > Marie, ce qui signifie Marie est la plus jeune. Faites attention à ne pas négliger l'importance de la comparaison Lucas > Marie.",
+        "hint": "Range les âges de chacun dans l'ordre."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la bonne conclusion ?",
+        "prompt": "Si Luc parle, alors il sourit. Luc sourit.",
+        "options": [
+            "Luc parle",
+            "Luc ne parle pas",
+            "Luc ne sourit pas",
+            "On ne peut pas savoir"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Savoir que Luc sourit ne nous permet pas de conclure qu'il parle, car le sourire ne dépend pas uniquement de la parole selon la prémisse. Le piège est la confusion entre le fait d'un sourire comme condition suffisante pour parler.",
+        "hint": "Considère la réciproque de l'énoncé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est arrivé en dernier ?",
+        "prompt": "Jack est arrivé avant Julie. Paul est arrivé avant Jack.",
+        "options": [
+            "Jack",
+            "Julie",
+            "Paul",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julie",
+        "explanation": "D'après l'ordre donné, Paul > Jack > Julie. Julie est donc reléguée en dernière position. Le problème est de prendre le chemin inverse de l'ordre sans méfiance.",
+        "hint": "Évalue chronologiquement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la conclusion correcte ?",
+        "prompt": "Aucun poisson ne vole. Ce merlu est un poisson.",
+        "options": [
+            "Ce merlu vole",
+            "Ce merlu ne vole pas",
+            "Ce merlu est un oiseau",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce merlu ne vole pas",
+        "explanation": "C'est une application simple de la logique catégorique : aucun poisson ne vole, donc ce merlu en tant que poisson ne vole pas. Ne laissez pas un raisonnement sur d'autres caractéristiques potentiel interférer.",
+        "hint": "Applique les restrictions catégoriques données."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle conclusion en tirer ?",
+        "prompt": "Si elle aime lire, elle emprunte des livres. Elle n'a pas emprunté de livres.",
+        "options": [
+            "Elle n'aime pas lire",
+            "Elle aime lire",
+            "Elle n'a pas de livres",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Elle n'aime pas lire",
+        "explanation": "Sans l'emprunt de livres, il n'y a pas preuve qu'elle aime lire, simplifiant la contraposée : absence d’acte = absence d’intérêt. La confusion courante est de supposer d'autres moyens d'accès non mentionnés explicitement.",
+        "hint": "Harmonise avec l'affirmation initiale."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui raconte l'histoire correctement ?",
+        "prompt": "Pierre a dit à Jean que le concert était annulé. Jean l'a dit à Sophie. Sophie a dit à Marie.",
+        "options": [
+            "Pierre",
+            "Jean",
+            "Sophie",
+            "Marie"
+        ],
+        "answer": "Marie",
+        "explanation": "Marie a correctement entendu que le concert était annulé via la chaîne : Pierre > Jean > Sophie > Marie. Le piège est d'ignorer la voie de l'information. Assurez-vous de suivre le flux complet.",
+        "hint": "Quelqu'un a-t-il brisé cette chaîne d'information ?"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui perçoit plus d'argent ?",
+        "prompt": "Claude gagne plus que Luc. Luc gagne plus que Fleur. Martine gagne moins que Claude.",
+        "options": [
+            "Claude",
+            "Martine",
+            "Luc",
+            "Fleur"
+        ],
+        "answer": "Claude",
+        "explanation": "On replace les gagnants en ordre : Claude > Luc > Fleur et Claude > Martine. Le piège serait de ne pas reconnaître l'intermédiaire Luc en dépit de son placement haut.",
+        "hint": "Ordre du plus important au moins important."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre position ?",
+        "prompt": "Dans une course, vous dépassez le 3e coureur avant de franchir l'arrivée.",
+        "options": [
+            "1ère",
+            "2ème",
+            "3ème",
+            "4ème"
+        ],
+        "answer": "3ème",
+        "explanation": "En dépassant le 3e, vous prenez donc sa place, vous ne devenez pas le 1er. C'est un piège classique où l'on croit progresser plus qu'on ne le fait. Visez à bien comprendre la ligne temporelle des positions.",
+        "hint": "Réfléchissez à quel coureur vous dépassez."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de sœurs a chaque frère ?",
+        "prompt": "Il y a quatre frères dans une famille et une sœur.",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "answer": "1",
+        "explanation": "Chaque frère n'a qu'une sœur. Le piège consiste à penser qu'ils comptent tous collectivement, mais chaque frère a la même sœur unique. Ignorez les permutations inutiles du minimalisme frère-sœur en famille.",
+        "hint": "Lisez attentivement combien chaque frère a de sœurs."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Léa aujourd'hui ?",
+        "prompt": "Léa a trois fois l'âge de son frère. Dans 15 ans, elle aura 1.5 fois son âge actuel.",
+        "options": [
+            "45 ans",
+            "60 ans",
+            "50 ans",
+            "30 ans"
+        ],
+        "answer": "45 ans",
+        "explanation": "Déterminons d'abord : soyons a = âge actuel de Léa. a + 15 = 1.5a. Après simplification : a = 45, ici. Attention au piège qui serait d'oublier d'additionner 15 ans au calcul.",
+        "hint": "Trouver une équation pour l’âge d’avant."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de t-shirts portent-ils ?",
+        "prompt": "Tom porte trois t-shirts, Jim en met deux de plus que Tom, ensemble ils ont 11.",
+        "options": [
+            "5",
+            "3",
+            "7",
+            "4"
+        ],
+        "answer": "5",
+        "explanation": "Tom a 3, et si Jim en met deux de plus, Jim en a donc 5. Leur somme est bien égale à 8. Ce piégé est de ne pas juxtaposer ces relations et évaluer quantitativement.",
+        "hint": "Additionnez correctement les différences."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de pièces ont été échangées ?",
+        "prompt": "Jules a 5 pièces et Marc en a 10. Chacun donne 2 pièces à l'autre, combien ont-ils respectivement ?",
+        "options": [
+            "Jules: 5, Marc: 10",
+            "Jules: 7, Marc: 8",
+            "Jules: 6, Marc: 9",
+            "Jules: 8, Marc: 7"
+        ],
+        "answer": "Jules: 7, Marc: 8",
+        "explanation": "Après échange, Jules a 7 (5 + 2) et Marc a 8 (10 - 2). Ne vous méprenez pas sur l'ajout et soustraction appropriés - l’astuce comprend d'agir à chaque part pour une différence minime.",
+        "hint": "Vérifiez chaque pas individuellement sur l’échange de pièces."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Tom aujourd'hui ?",
+        "prompt": "Tom a le double de l'âge de son frère. En dix ans, il aura huit ans de plus que son frère.",
+        "options": [
+            "12 ans",
+            "20 ans",
+            "16 ans",
+            "24 ans"
+        ],
+        "answer": "16 ans",
+        "explanation": "Pose l'équation : soit T = 2 * F. Dans 10 ans, T + 10 = F + 10 + 8, simplifiant, T = 16 ans. Une erreur commune serait d’omettre les différences entre 'aujourd’hui' et 'en dix ans'.",
+        "hint": "Pose un système d’équations."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui est le plus intelligent ?",
+        "prompt": "Si Ali est intelligent, Ben l'est plus. Si Ben est intelligent, Carl est le plus intelligent.",
+        "options": [
+            "Ali",
+            "Ben",
+            "Carl",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Carl",
+        "explanation": "Carl est intelligent d'après les conditions données par la transposition et renforcements séquentielles. S'assurer de relier chaque prémisse des ensembles nous guide – on pourrait traverser mal les chaines, un écueil courant.",
+        "hint": "Regarde pour l’intelligence la plus haute dans la relation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le volume restant ?",
+        "prompt": "Une bouteille à 3/4 remplie de 16L verse la moitié. Combien reste-t-il ?",
+        "options": [
+            "2L",
+            "4L",
+            "6L",
+            "8L"
+        ],
+        "answer": "6L",
+        "explanation": "A 3/4, elle tenait 12L (16 * 3/4) ; la versée moitié se retire 6L, restant 6L. La complexité repose sur l'assimilation des étapes de fraction qui, sinon, se prennent pour des totaux erronés.",
+        "hint": "Multipliez les fractions étape par étape."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle couleur reste-t-elle à choisir ?",
+        "prompt": "Paul a 3 chemises rouges, 4 bleues et 2 vertes. Il en choisit une rouge et une bleue mais en rencontre une grise plutôt que la verte.",
+        "options": [
+            "Rouge",
+            "Bleue",
+            "Verte",
+            "Grise"
+        ],
+        "answer": "Grise",
+        "explanation": "Il a pris une rouge et une bleue déjà, mais finalement une grise fut privilégiée affirmant aucune verte prise. Pensez à la variable distributive qu’elle subit souvent dans de longues simulations de permutations.",
+        "hint": "Étalez l’objet de chaque choix."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de pommes sont cachées ?",
+        "prompt": "5 pommes sont dans une boîte. 3 sont rouges, les autres jaunes, mais 2 rouges sont mangées. Combien de jaunes sont cachées ?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "0"
+        ],
+        "answer": "2",
+        "explanation": "On assume initialement 3 rouges donc après la consommation, le reste interagit avec le total pour confirmer deux jaunes. Notez qu’il y avait un potentiel d’ancrage trompeur dans la présentation rouge-jaune.",
+        "hint": "Pensez à la construction entre conte moyen et termes cachés."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de livres Paul a-t-il lus ?",
+        "prompt": "Paul a 12 livres, 1/4 sont des fictions. Il en a lu 3, tous non fictifs.",
+        "options": [
+            "5",
+            "3",
+            "4",
+            "6"
+        ],
+        "answer": "5",
+        "explanation": "De 12, 3 sont des fictions et 5 sont parmi ceux restants. Contrez le biais en pensant strictement proportion ratios et commendables comme les enfilades d'efforts mentaux requis pour obtenir sans confusion des nombres apparus.",
+        "hint": "Déterminez les parts lues proprement par rapport aux catégories."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien restent-ils de billes à utiliser ?",
+        "prompt": "5 billes sont retirées d'un sac de 20, le total est maintenant 15. Une bille disparaît. Combien rendent l'accès possible ?",
+        "options": [
+            "15",
+            "14",
+            "16",
+            "13"
+        ],
+        "answer": "14",
+        "explanation": "Si 15 restent déjà après 5 retirées, un autre coupera à travers ces dernières, d’où un rendu précisé de 14 laissé. Attention : soutenez-vous d'équations minutées par calcul de mise à jour série se réfère.",
+        "hint": "Gardez à l’esprit les réductions successives."
+    }
+]

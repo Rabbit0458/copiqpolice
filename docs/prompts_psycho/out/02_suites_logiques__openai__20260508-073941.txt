@@ -1,0 +1,407 @@
+[
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 2, 3, ?, 5",
+    "prompt": "Quel terme manque ?",
+    "options": ["4", "6", "7"],
+    "answer": "4",
+    "explanation": "Il s'agit d'une progression arithmétique avec un incrément constant de +1 à chaque étape. Nous avons 1, 2, 3, donc le numéro suivant devrait être 3 + 1 = 4. Le piège typique est d'oublier que chaque terme augmente systématiquement de 1.",
+    "hint": "Chaque chiffre augmente de 1."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, 10, 15, ?, 25",
+    "prompt": "Quel terme manque ?",
+    "options": ["20", "22", "24"],
+    "answer": "20",
+    "explanation": "Cette suite suit une progression arithmétique de +5. Depuis 5, chaque nombre est obtenu en ajoutant 5 au précédent : 5 + 5 = 10, 10 + 5 = 15, donc 15 + 5 = 20. Le piège est de mélanger le pas et de penser à une autre série de nombres.",
+    "hint": "Additionne constamment le même nombre."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 6, 9, 12, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "18", "21"],
+    "answer": "15",
+    "explanation": "La progression additionne constamment 3 à chaque terme. Commence avec 3, puis 3 + 3 = 6, 6 + 3 = 9, et ainsi de suite, jusqu'à atteindre 12 + 3 = 15. Un piège fréquent est de changer le facteur d'incrément.",
+    "hint": "Continue d'ajouter 3."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "2, 4, 8, 16, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["32", "64", "48"],
+    "answer": "32",
+    "explanation": "Chaque nombre est multiplié par 2. On commence à 2, et à chaque étape c'est doublé : 2 × 2 = 4, 4 × 2 = 8, 8 × 2 = 16, portant le prochain à 16 × 2 = 32. Il est facile de se tromper en supposant un ajout simple plutôt qu'une multiplication.",
+    "hint": "Vérifie le multiplicateur."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "7, 14, 21, ?, 35",
+    "prompt": "Quel terme manque ?",
+    "options": ["28", "30", "33"],
+    "answer": "28",
+    "explanation": "Chacun de ces nombres est un multiple de 7, donc l'écart constant entre eux est de 7. Ainsi, après 21, ajouter 7 donne 28. Le piège est de ne pas remarquer que tous les termes sont des multiples de 7.",
+    "hint": "Que se passe-t-il par 7 ?"
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 4, 9, 16, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["25", "20", "36"],
+    "answer": "25",
+    "explanation": "Ces termes représentent des carrés parfaits : 1², 2², 3², et ainsi de suite, donc 5² = 25. Si l'on utilise une autre stratégie, perdant de vue le concept des puissances carrées, on risque de se tromper.",
+    "hint": "Regarde pour une séquence carrée."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "10, 20, 30, ?, 50",
+    "prompt": "Quel terme manque ?",
+    "options": ["40", "45", "35"],
+    "answer": "40",
+    "explanation": "Il s'agit d'une suite arithmétique où l'on ajoute 10 chaque fois. On commence à 10, on monte à 20, puis à 30, si l'on continue cette logique : 30 + 10 = 40. Le piège potentiel est de s'attendre à une autre variante d'addition.",
+    "hint": "Qu'ajoutes-tu à chaque fois ?"
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "4, 8, 12, ?, 20",
+    "prompt": "Quel terme manque ?",
+    "options": ["16", "18", "14"],
+    "answer": "16",
+    "explanation": "Chaque terme de cette suite arithmétique augmente de façon constante de 4 de plus. Débutant à 4, il est : 4 + 4 = 8, 8 + 4 = 12, et suivi de 12 + 4 = 16. Le réseau d'erreurs potentielles inclut la confusion de l'ajout progressif.",
+    "hint": "Ajoute toujours 4."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "6, 12, 18, 24, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["30", "28", "36"],
+    "answer": "30",
+    "explanation": "Le principe est d'ajouter 6 chaque fois. À 6, puis en ajoutant 6, devient 12, ensuite 18, 24, et ainsi, 24 + 6 = 30. Le piège ici est de perdre la trace de l'addition constante.",
+    "hint": "Multiplie par 6, puis ajoute 0."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "10, 5, 0, ?, -10",
+    "prompt": "Quel terme manque ?",
+    "options": ["-5", "-4", "-7"],
+    "answer": "-5",
+    "explanation": "Cette série suit une progression arithmétique décroissante de -5. Commencer à 10, ensuite soustraire 5 : 10 - 5 = 5, 5 - 5 = 0, donc 0 - 5 = -5. L'erreur commune ici est de ne pas reconnaître que c’est une soustraction constante.",
+    "hint": "Soustrais 5 chaque fois."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "15, 20, 25, ?, 35",
+    "prompt": "Quel terme manque ?",
+    "options": ["30", "28", "32"],
+    "answer": "30",
+    "explanation": "Ici, chaque terme est obtenu en ajoutant 5 à son prédécesseur : 15 + 5 = 20, 20 + 5 = 25, donc 25 + 5 = 30. L’erreur fréquente provient du manque d’attention à la valeur fixe ajoutée.",
+    "hint": "Pense en thématique de 5."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "100, 90, 80, ?, 60",
+    "prompt": "Quel terme manque ?",
+    "options": ["70", "75", "65"],
+    "answer": "70",
+    "explanation": "Chaque terme de cette suite décroît de 10. En partant de 100, 90 suit (100 - 10), alors on descend à 80, établissant que 80 - 10 = 70. L'erreur serait de dévier de ce rythme de soustraction.",
+    "hint": "Retire 10 chaque fois."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "8, 4, 2, ?, 0.5",
+    "prompt": "Quel terme manque ?",
+    "options": ["1", "1.5", "2.5"],
+    "answer": "1",
+    "explanation": "Cette suite divise chaque nombre par 2 à chaque étape consécutive : 8 ÷ 2 = 4, 4 ÷ 2 = 2, puis 2 ÷ 2 = 1. Le piège potentiel réside souvent dans le passage à la division, que l'on pourrait facilement oublier ou négliger.",
+    "hint": "Divise chaque nombre par 2."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, 10, ?, 20, 25",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "18", "12"],
+    "answer": "15",
+    "explanation": "Chaque terme est le précédent augmentant de 5. Partant de 5, continue en ajoutant 5, 10 + 5 = 15, permettant à 15 + 5 de donner 20. Le piège est de ne pas percevoir ce régulier intervalle de +5.",
+    "hint": "Ajoute continuellement 5."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "4, 8, ?, 16, 20",
+    "prompt": "Quel terme manque ?",
+    "options": ["12", "10", "14"],
+    "answer": "12",
+    "explanation": "Ce type de séquence fonctionne en ajoutant 4 à chaque itération : 4 avant d'ajouter donne 8, puis 8 + 4 = 12. Omettre cet incremental constant est le principal piège à éviter.",
+    "hint": "Chaque renversement continue en 4."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 6, ?, 12, 15",
+    "prompt": "Quel terme manque ?",
+    "options": ["9", "11", "8"],
+    "answer": "9",
+    "explanation": "Chaque pas dans la série ajoute toujours 3 en continu. On commence à 3, suivant à 6, ensuite 6 + 3 = 9. Oublier l'incrément invariant de +3 pourrait vous induire en erreur.",
+    "hint": "Vérifie le rythme de +3."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "24, 18, 12, ?, 0",
+    "prompt": "Quel terme manque ?",
+    "options": ["6", "4", "8"],
+    "answer": "6",
+    "explanation": "Il s'agit d'une série où l'on soustrait 6 à chaque mouvement. Commençant à 24 puis 18, continuer à 12 et soustraire 6 de 12, résultant en 6. Un piège consisterait à diviser les nombres au lieu de les soustraire.",
+    "hint": "Soustraire constamment une série de 6."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 2, 3, 5, 8, ?, 21",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["13", "10", "15"],
+    "answer": "13",
+    "explanation": "Cette suite est une variante de la suite de Fibonacci. Chaque nombre est la somme des deux précédents : 3 + 5 = 8, et donc 5 + 8 = 13. Attention au piège simple de supposer une progression arithmétique.",
+    "hint": "Chaque terme s’obtient en sommant les deux précédents."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "2, 3, 5, ?, 11",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["7", "8", "9"],
+    "answer": "7",
+    "explanation": "Cette séquence liste les nombres premiers. Après 5, le prochain nombre premier est 7, suivi de 11. Le piège ici est de sauter un nombre et d'oublier ce qu'est un nombre premier.",
+    "hint": "Cherche la suite des nombres premiers."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "4, 9, 25, ?, 121",
+    "prompt": "Quel terme manque ?",
+    "options": ["49", "64", "81"],
+    "answer": "81",
+    "explanation": "Cette suite est formée par les carrés de nombres premiers : 2², 3², 5², ce qui donne suivi de 11² = 121. Le nombre manquant est 7² = 49. Un piège couru est de supposer une suite de carrés simples.",
+    "hint": "Carrés de nombres spécifiques."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "3, 6, 11, 18, 27, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["38", "34", "36"],
+    "answer": "38",
+    "explanation": "La différence entre chaque nombre croît successivement, débutant à +3 pour passer de 3 à 6, à +5 pour atteindre 11, et ainsi jusqu'à 27. Ainsi 27 + 11 = 38. Un piège typique est de rechercher seulement une addition simple.",
+    "hint": "Vérifie les différences croissantes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "10, 5, 6, 3, ?, 1.5",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["4", "2", "4.5"],
+    "answer": "4",
+    "explanation": "Cette suite alterne division par 2 et soustraction de 1. Partant à 10 ÷ 2 = 5, on soustrait 1 de 5 pour obtenir 4, 6 ÷ 2 = 3, suffisamment 3 - 1 = 2. Évitez de penser directement à une simple division.",
+    "hint": "Alterne entre diviser et soustraire."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "7, 13, 19, 25, ?, 37",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["31", "32", "30"],
+    "answer": "31",
+    "explanation": "Cette suite suit une progression arithmétique de +6. Partant à 7, chaque pas ajoute 6 : 7 + 6 = 13, et après cela, 13 + 6 = 19, de 25 + 6 = 31, jusqu'à atteindre 37. Méfiez-vous de substituer le pas par une autre valeur.",
+    "hint": "Suivez la logique d'ajout constant."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "5, 11, 17, 23, ?, 35",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["29", "28", "30"],
+    "answer": "29",
+    "explanation": "Chaque terme est obtenu en ajoutant 6 au précédent. Ainsi on commence à 5 puis on monte à 11, 17, 23, et ainsi de suite. 23 + 6 = 29. Le piège consiste à adopter une façon d'addition incorrecte.",
+    "hint": "La logique est consistante à +6."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "13, 26, 39, ?, 65",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["52", "50", "54"],
+    "answer": "52",
+    "explanation": "Les termes suivent une progression où l'on ajoute 13 à chaque étape. Débutant à 13, on progresse jusqu'à 26, 39, et lorsqu'on arrive à 52. L'erreur est de supposer une autre sorte d'arithmétique.",
+    "hint": "Ajoute 13 à chaque fréquence."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "4, 8, 16, ?, 64",
+    "prompt": "Quel terme manque ?",
+    "options": ["32", "34", "28"],
+    "answer": "32",
+    "explanation": "Cette suite fonctionne avec une simple multiplication par 2 : 4 × 2 = 8, 8 × 2 = 16, donc logiquement, 16 × 2 = 32. Un piège pourrait être d'ajouter au lieu de multiplier.",
+    "hint": "Observer le service simplifié."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "9, 18, 36, ?, 144",
+    "prompt": "Quel terme manque ?",
+    "options": ["72", "70", "74"],
+    "answer": "72",
+    "explanation": "Cette suite double chaque nombre : chaque terme est le double du précédent. 9 × 2 = 18, 18 × 2 = 36, et 36 × 2 = 72. Le piège est de penser que c'est une addition.",
+    "hint": "Procède par multiplication double."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "6, 12, 18, 24, ?, 36",
+    "prompt": "Quel terme manque ?",
+    "options": ["30", "32", "28"],
+    "answer": "30",
+    "explanation": "Il s'agit d'une suite arithmétique avec une augmentation constante de 6. À partir de 6, chaque pas ajoute 6 : 6 + 6 = 12, 12 + 6 = 18, et ainsi de suite, jusqu'à atteindre 30. Le piège à éviter est de penser à une autre évolution arithmétique.",
+    "hint": "Progression constante incorporée."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 1, 2, 3, 5, 8, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["13", "11", "12"],
+    "answer": "13",
+    "explanation": "Il s'agit d'une suite de Fibonacci où chaque élément est la somme des deux précédents : 1 + 1 = 2, 1 + 2 = 3, etc. Donc, 5 + 8 = 13. Une confusion pourrait venir de négliger la structure intrinsèque basée sur l'addition.",
+    "hint": "Considérez les deux termes précédents."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "11, 13, 17, 19, ?, 23",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["19", "21", "20"],
+    "answer": "21",
+    "explanation": "Cette suite repose sur une progression où chaque étape affiche un nombre premier suivant : 11, 13, 17, jusqu'à 19. Ainsi, après 19 vient 21 avant d'atteindre 23. Le piège ici réside dans le passage erroné d'un nombre.",
+    "hint": "En utilisant un terme spécifique, liez les choix."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 4, 8, ?, 16",
+    "prompt": "Quel terme manque ?",
+    "options": ["12", "10", "13"],
+    "answer": "12",
+    "explanation": "La suite suit un modèle particulier où chaque nombre est multiplié par 2 puis on ajoute 2. Ici, 2 × 2 + 2 = 6, 6 × 2 + 2 = 12. Le piège consiste à ne pas suivre cette relation multiplicative.",
+    "hint": "Chaque fois, intégrez à la fois une opération de multiplication et l'addition."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 2, 3, 6, 11, ?, 31",
+    "prompt": "Quel terme manque ?",
+    "options": ["20", "21", "18"],
+    "answer": "20",
+    "explanation": "Il s'agit d'une suite de type Fibonacci où chaque terme est la somme des deux précédents. Donc 11 + 9 = 20. Ne pas reconnaitre la structure additive dans cette complexité pourrait vous tromper.",
+    "hint": "Sommez les deux précédents."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "5, 12, 26, 54, ?, 218",
+    "prompt": "Quel terme manque ?",
+    "options": ["110", "112", "108"],
+    "answer": "110",
+    "explanation": "Cette suite est formée en multipliant chaque terme par 2 puis en soustrayant 2 : 5 × 2 - 2 = 8, 12 × 2 - 2 = 22, 26 × 2 - 2 = 54, donc 54 × 2 - 2 = 108. Une confusion pourrait venir de ne pas suivre cette règle.",
+    "hint": "Faites attention aux opérations inverses."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "3, 6, 11, ? ,31",
+    "prompt": "Quel terme manque ?",
+    "options": ["20", "19", "18"],
+    "answer": "20",
+    "explanation": "On multiplie ensuite par 2 chaque fois et on ajoute 2, ensuite 6 fois 2 égale 12, 11 × 2 + 2 = 24 et donc 20. Rappelez-vous de suivre cette règle pour éviter tout échec.",
+    "hint": "Faites attention à une interaction spéciale."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "6, 14, 30, 62, ?, 254",
+    "prompt": "Quel terme manque ?",
+    "options": ["126", "132", "116"],
+    "answer": "126",
+    "explanation": "La règle est de multiplier par 2 puis d'ajouter 2. Chaque terme est aussi le double du précédent plus 2. Ainsi 62 × 2 + 2 = 126. Le piège commun est de s'éloigner de la multiplication par 2.",
+    "hint": "Identifiez le double de chaque terme plus deux."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 4, 9, 16, ?, 36",
+    "prompt": "Quel terme manque ?",
+    "options": ["25", "32", "28"],
+    "answer": "25",
+    "explanation": "Les termes listés correspondent à des carrés de nombres entiers : 1², 2², 3²,... jusqu'à 5² = 25. Une confusion serait de ne pas repérer la logique des carrés parfaits.",
+    "hint": "Examinez la succession de carrés parfaits."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 8, 27, ?, 125",
+    "prompt": "Quel terme manque ?",
+    "options": ["64", "72", "81"],
+    "answer": "64",
+    "explanation": "La séquence montre les cubes successifs de chaque nombre entier : 1³, 2³, 3³, 4³ = 64. Ne pas identifier ce motif fondamental pourrait entraîner une erreur dans votre conclusion.",
+    "hint": "Chaque nombre est une hausse multidimensionnelle."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 3, ?, 8, 13",
+    "prompt": "Quel terme manque ?",
+    "options": ["5", "7", "9"],
+    "answer": "5",
+    "explanation": "Nous avons ici une suite de Fibonacci. Chacun de ses termes est la somme des deux prédécesseurs. Donc 3 + 2 = 5 est le suivant. Ne pensez pas simplement à une suite linéaire.",
+    "hint": "Sommez deux des précédents."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "5, 10, 20, 40, ?, 160",
+    "prompt": "Quel terme manque ?",
+    "options": ["80", "90", "70"],
+    "answer": "80",
+    "explanation": "Chaque nombre est doublé du nombre précédent : 5 × 2 = 10, 10 × 2 = 20 et ainsi de suite, ce qui signale que 40 × 2 doit donner 80. Un piège commun réside dans le regroupement incorrect.",
+    "hint": "Doublé ainsi répété."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "3, 5, 8, 13, ?, 34",
+    "prompt": "Quel terme manque ?",
+    "options": ["21", "23", "20"],
+    "answer": "21",
+    "explanation": "Partie intégrante de la suite de Fibonacci. Chaque pas est formé par la somme des deux nombres précédents. Donc 8 + 13 = 21. Ne vous laissez pas induire en erreur par d'autres valeurs répétitives.",
+    "hint": "Inspire-toi de suites célébrées."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "3, 9, 6, 18, 15, ?, 30",
+    "prompt": "Quel terme manque ?",
+    "options": ["45", "24", "27"],
+    "answer": "24",
+    "explanation": "Les chiffres alternent entre multiplication et soustraction : 3 × 3 = 9, 9 - 3 = 6, 6 × 3 = 18, etc. Par conséquent, 15 - 3 = 12. Un piège courant est de manquer l'alternance",
+    "hint": "Regarde les mouvements entre les termes."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 3, 5, 8, ?, 21",
+    "prompt": "Quel terme manque ?",
+    "options": ["13", "12", "14"],
+    "answer": "13",
+    "explanation": "Comme dans une séquence de Fibonacci, chaque terme est déterminé par la somme de deux termes le précédant. 8 + 5 = 13. L'oubli de cette règle simple peut amener à des erreurs fatales.",
+    "hint": "Non pas une mais deux évaluations."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "4, 10, 28, 82, ?, 730",
+    "prompt": "Quel terme manque ?",
+    "options": ["244", "248", "228"],
+    "answer": "244",
+    "explanation": "C’est une série où chaque terme est le résultat d’une multiplication du nombre précédent par 3 puis ajouté un supplément. C'est-à-dire 28 × 2 + 28 = 244. Un piège potentiel est de ne pas exploser cette équation.",
+    "hint": "Unissez multiplications et additions."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 4, 7, 13, ?, 31",
+    "prompt": "Quel terme manque ?",
+    "options": ["19", "21", "18"],
+    "answer": "19",
+    "explanation": "La suite suit une progression particulière où chaque terme est multiple de 3 suivi par une addition progressive. De 1 on passe à 4, 7, ajoutant par conséquent 6 = 19. Un écart est ainsi comblé par une erreur de nuancer.",
+    "hint": "Additionne et multiplie ensemble successivement."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 3, 5, ?, 21",
+    "prompt": "Quel terme manque ?",
+    "options": ["8", "9", "10"],
+    "answer": "8",
+    "explanation": "Retrouver une suite de Fibonacci où chaque chiffre provient de l'addition des deux précédents : 5 + 3 = 8. Se tromper dans le nombre n'est jamais la bonne approche.",
+    "hint": "En liaison avec termes anciens."
+  }
+]

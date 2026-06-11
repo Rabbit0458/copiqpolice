@@ -1,0 +1,562 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Qu'est-ce que Mathieu peut végétaliser ?",
+        "prompt": "Toutes les plantes peuvent être végétalisées. Les roses sont des plantes.",
+        "options": [
+            "Mathieu peut végétaliser des roses",
+            "Mathieu ne peut pas végétaliser des roses",
+            "Mathieu peut végétaliser des tulipes",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Mathieu peut végétaliser des roses",
+        "explanation": "Syllogisme par transitivité : si toutes les plantes peuvent être végétalisées, et que les roses sont des plantes, alors Mathieu peut végétaliser des roses. Le raisonnement est direct et appliqué à tous les éléments dans la catégorie des plantes.",
+        "hint": "Raisonnement basé sur la catégorie d'appartenance."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Carlos court plus vite que Daniel. Daniel court plus vite que Emilie.",
+        "options": [
+            "Carlos",
+            "Daniel",
+            "Emilie",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Carlos",
+        "explanation": "En établissant les relations, Carlos > Daniel et Daniel > Emilie. Par transitivité, Carlos est donc le plus rapide. Attention à bien suivre la chaîne sans inverser l'ordre.",
+        "hint": "Remets les coureurs dans l'ordre du plus rapide au moins rapide."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion est correcte ?",
+        "prompt": "Tous les sportifs aiment la compétition. Jean est un sportif.",
+        "options": [
+            "Jean aime la compétition",
+            "Jean n'aime pas la compétition",
+            "Jean n'est pas un sportif",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jean aime la compétition",
+        "explanation": "Syllogisme par inclusion. Puisque tous les sportifs aiment la compétition et Jean est un sportif, il est logique de conclure que Jean aime la compétition. Ne pas inverser les prémisses.",
+        "hint": "Explication par le lien catégoriel."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle déclaration est vraie ?",
+        "prompt": "Toutes les pommes sont rouges. Cette pomme est une fruit.",
+        "options": [
+            "Cette pomme est rouge",
+            "Cette pomme est verte",
+            "Cette pomme est un légume",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette pomme est rouge",
+        "explanation": "Syllogisme simple : Toutes les pommes sont rouges, donc cette pomme particulière, étant une pomme, est nécessairement rouge. Assurez-vous que l'appartenance à la catégorie initiale est vérifiée.",
+        "hint": "Considérez l'inclusion des catégories."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la bonne conclusion ?",
+        "prompt": "Quelques oiseaux volent. Un hibou est un oiseau.",
+        "options": [
+            "Un hibou vole",
+            "Un hibou ne vole pas",
+            "On ne peut pas savoir",
+            "Tous les hiboux volent"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Syllogisme à quantificateur particulier : puisque seulement quelques oiseaux volent, il est incertain de savoir si un hibou en fait partie. Le raisonnement montre que ce n'est pas généralisable.",
+        "hint": "Attention aux quantificateurs comme 'quelques'."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la conclusion logique ?",
+        "prompt": "Si un animal est un chien, alors il aboie. Rex est un animal.",
+        "options": [
+            "Rex aboie",
+            "Rex est un chien",
+            "Rex n'aboie pas",
+            "On ne peut pas savoir"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Modus ponens : la prémisse établit un lien conditionnel entre être un chien et aboyer, mais Rex étant seulement un animal, nous ne savons rien sur sa capacité à aboyer. Le piège est de supposé à partir d'une information partielle.",
+        "hint": "Assurez-vous que les conditions sont toutes vérifiées."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel genre de livre est-ce ?",
+        "prompt": "Tous les romans sont des fictions. Ce livre est un roman.",
+        "options": [
+            "Ce livre est un fiction",
+            "Ce livre est un essai",
+            "Ce livre est un manuel",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce livre est un fiction",
+        "explanation": "Syllogisme de catégorisation : si tous les romans sont des fictions et ce livre est un roman, alors nécessairement, ce livre est aussi une fiction. Assurez-vous que la catégorisation est complète.",
+        "hint": "Vérifiez l'appartenance à des catégories données."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qu'est-ce qu'Anna est capable de faire ?",
+        "prompt": "Toute personne bilingue parle au moins deux langues. Anna parle l'espagnol.",
+        "options": [
+            "Anna est bilingue",
+            "Anna n'est pas bilingue",
+            "Anna parle deux langues",
+            "On ne peut pas savoir"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Piège de catégorisation partielle : parler une langue ne signifie pas être bilingue selon la définition donnée. L'information ici est insuffisante pour conclure le bilinguisme.",
+        "hint": "Considérez ce qui est explicitement dit."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui connaît le secret ?",
+        "prompt": "Léa dit la vérité à Alice. Alice partage le secret avec Bruno.",
+        "options": [
+            "Bruno connaît le secret",
+            "Alice a oublié le secret",
+            "Léa connaît le secret",
+            "Léa ne connaît pas le secret"
+        ],
+        "answer": "Bruno connaît le secret",
+        "explanation": "Par transitivité de la communication, si Léa connaît et partage le secret avec Alice, et qu'Alice le transmet à Bruno, alors Bruno connaît le secret. Évitez la confusion sur le passage d'informations.",
+        "hint": "Suivez la chaîne de transmission."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui a perdu sa place ?",
+        "prompt": "Les enfants sont assis en cercle. Tom se déplace pour s'asseoir à la place de Marty.",
+        "options": [
+            "Tom a perdu sa place",
+            "Marty a perdu sa place",
+            "Tom garde sa place",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marty a perdu sa place",
+        "explanation": "En se déplaçant, Tom a pris la place de Marty. Ainsi, par un simple jeu de chaises musicales, c'est Marty qui a perdu sa place. Attention à ne pas confondre qui prend la place de qui.",
+        "hint": "Pensez aux déplacements en cercle."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui court le plus lentement ?",
+        "prompt": "Alice court plus vite que Maria. Maria court plus vite que Sabine.",
+        "options": [
+            "Alice",
+            "Maria",
+            "Sabine",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Sabine",
+        "explanation": "En établissant l'ordre Alice > Maria > Sabine, on voit que Sabine est la plus lente. Attention au piège de l'inversion de l'ordre établi.",
+        "hint": "Classez les coureurs du plus rapide au plus lent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est plus âgé ?",
+        "prompt": "Nico est plus âgé que Léa. Léa est plus âgée que Sam.",
+        "options": [
+            "Nico",
+            "Léa",
+            "Sam",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Nico",
+        "explanation": "Établissez l'ordre des âges : Nico > Léa > Sam. Puisque Nico est au sommet, il est le plus âgé. Ne confondez pas la relation des âges qui doit être suivie une étape à la fois.",
+        "hint": "Visualisez les relations d'âges pour éviter l'erreur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui possède le plus de livres ?",
+        "prompt": "Paul a plus de livres que Julie. Julie a plus de livres que Max.",
+        "options": [
+            "Paul",
+            "Julie",
+            "Max",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Paul",
+        "explanation": "L'ordre est Paul > Julie > Max en termes de possession de livres. Par transitivité, Paul possède donc le plus de livres. C'est un simple problème de classement que d'établir qui est au sommet de cette relation.",
+        "hint": "Vérifiez le classement des relations."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus jeune ?",
+        "prompt": "Marie est plus jeune que Lucas. Lucas est plus jeune que Sophie.",
+        "options": [
+            "Marie",
+            "Lucas",
+            "Sophie",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marie",
+        "explanation": "En classant les âges : Marie < Lucas < Sophie, nous voyons que Marie est la plus jeune. Assurez-vous de suivre correctement l'ordre de la déclaration des âges.",
+        "hint": "Tracez la hiérarchie d'âge en respectant le sens donné."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'animal de Paul ?",
+        "prompt": "Tous les amis de Paul ont un chat ou un chien. Paul n'aime pas les chiens.",
+        "options": [
+            "Paul a un chien",
+            "Paul a un chat",
+            "Paul n'a pas d'animal",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Paul a un chat",
+        "explanation": "Puisque Paul n'aime pas les chiens et qu'il doit avoir un des deux animaux (chat ou chien), il a donc un chat. La logique ici repose sur l'exclusion de l'option chien.",
+        "hint": "Utilisez l'exclusion pour déterminer la logique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "À quelle couleur n'appartient pas la banane ?",
+        "prompt": "Toutes les bananes sont jaunes. Tous les fruits rouges sont des pommes.",
+        "options": [
+            "Jaune",
+            "Rouge",
+            "Vert",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rouge",
+        "explanation": "Un syllogisme montre que si toutes les bananes sont jaunes et seuls les fruits rouges sont des pommes, une banane ne peut être rouge car ce serait une pomme. Assurez-vous de bien comprendre la notion d'appartenance.",
+        "hint": "Considérez le raisonnement caché dans les couleurs."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la probabilité que Sara gagne le prix ?",
+        "prompt": "Seul le meilleur participant peut gagner le prix. Sara est la meilleure participante.",
+        "options": [
+            "Sara ne peut pas gagner",
+            "Sara a une chance de gagner",
+            "Sara gagnera sûrement",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Sara gagnera sûrement",
+        "explanation": "Puisque seul le meilleur participant gagne et que Sara est confirmée comme étant la meilleure, il est garanti qu'elle gagnera le prix. Cette conclusion s'appuie sur la stricte définition du meilleur.",
+        "hint": "Assurez-vous que les conditions sont entièrement remplies."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le statut de Pierre au cinéma ?",
+        "prompt": "Si Pierre va au cinéma, alors François reste à la maison. Paul va aussi au cinéma. Pierre est finalement au cinéma.",
+        "options": [
+            "François est au cinéma",
+            "François est à la maison",
+            "Paul est à la maison",
+            "On ne peut pas savoir"
+        ],
+        "answer": "François est à la maison",
+        "explanation": "En utilisant le modus ponens, si Pierre est au cinéma, François doit être chez lui. La condition est assez simple mais il faut vérifier que les étapes sont correctement remplies sans confusion.",
+        "hint": "Regardez bien les structures conditionnelles."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui réussira l'examen ?",
+        "prompt": "Si un élève révise, alors il réussit l'examen. Julie révise. Paul ne révise pas.",
+        "options": [
+            "Julie réussira",
+            "Paul réussira",
+            "Aucun ne réussira",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julie réussira",
+        "explanation": "En appliquant le modus ponens, Julie, qui révise, réussira l'examen. On ne peut conclure pareillement pour Paul, car la règle ne s'applique qu'aux révisants.",
+        "hint": "Vérifiez dans quelle mesure chaque condition a été remplie."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la conclusion correcte ?",
+        "prompt": "Si le magasin est fermé, alors Anna rentre à la maison. Le magasin est ouvert. Anna n'avait pas prévu de sorties.",
+        "options": [
+            "Anna est à la maison",
+            "Anna n'est pas à la maison",
+            "On ne peut pas savoir",
+            "Anna fait des courses"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Cette énigme utilise la contraposition : le magasin est ouvert, ce qui n'invalide pas directement qu'Anna soit à la maison pour d'autres raisons. Ici, sans autre information, son état est indéterminé.",
+        "hint": "Évaluez bien les implications inverses."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le résultat de l'activité ?",
+        "prompt": "Si Paul et Pierre jouent ensemble, ils gagnent. Pierre joue seul aujourd'hui.",
+        "options": [
+            "Paul et Pierre gagnent",
+            "Pierre gagne",
+            "Pierre ne gagne pas",
+            "On ne peut pas savoir"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Il a été stipulé que les deux doivent jouer ensemble pour assurer une victoire. L'activité individuelle de Pierre ne donne aucune conclusion directe sur un résultat.",
+        "hint": "Considérez la structure conditionnelle coalitive."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle décision peut être prise ?",
+        "prompt": "Si l'école a lieu, alors Julien doit y aller. L'école a été annulée aujourd'hui.",
+        "options": [
+            "Julien doit y aller",
+            "Julien reste à la maison",
+            "On ne peut pas savoir",
+            "Julien étudie ailleurs"
+        ],
+        "answer": "Julien reste à la maison",
+        "explanation": "Ici, la négation de l'implication opère : si l'école est annulée, l'obligation de s'y rendre est éteinte. On observe donc la sauf-rupture de la logique dans ses impositions.",
+        "hint": "Pensez à ce qui cesse d'obliger l'individu en l'absence de son déclencheur."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Queue vaut la place du tableau ?",
+        "prompt": "Dans une galerie d'art, le tableau B est plus beau que le tableau A. Le tableau C est plus beau que le tableau B. Le tableau D est moins beau que A.",
+        "options": [
+            "Le tableau D est le plus beau",
+            "Le tableau C est le plus beau",
+            "Le tableau A est le plus beau",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le tableau C est le plus beau",
+        "explanation": "En établissant l'ordre C > B > A > D, il est clair que C est en haut de la hiérarchie. Assurez-vous d'aligner correctement le classement par la beauté.",
+        "hint": "Suivez la chaîne de comparaisons pour une conclusion."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle composition gagne ?",
+        "prompt": "Si la composition de Pierre contient plus de 500 mots, il obtient le meilleur prix. Sa composition contient 600 mots. Tom a 550 mots dans sa rédaction.",
+        "options": [
+            "Pierre gagne le prix",
+            "Tom gagne le prix",
+            "Aucun n'est éligible",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Pierre gagne le prix",
+        "explanation": "Grâce au modus ponens, la condition est limpide : Pierre dépassant les 500 mots dans sa composition, il remporte le prix. Ce problème met en avant les calculs qui se concrétisent avec des valeurs spécifiques.",
+        "hint": "Remarquez les valeurs qui satisfont les conditions à atteindre."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel livre est préféré ?",
+        "prompt": "Si quelqu'un a lu 'Le Meilleur des Mondes', il préfère les dystopies. Léa a lu 'Le Meilleur des Mondes'. Julie préfère les classiques.",
+        "options": [
+            "Léa préfère les dystopies",
+            "Julie préfère les dystopies",
+            "Ni l'une ni l'autre préfère",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Léa préfère les dystopies",
+        "explanation": "Étant donné que Léa a lu l'ouvrage spécifié, il est cohérent que sa préférence se dirige vers le genre assumé. Julie n'ayant pas cette connexion, la conclusion est logique quant à la préférence de Léa.",
+        "hint": "Assurez-vous de comprendre la portée de la lecture sur la préférence thématique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la conclusion fiable ?",
+        "prompt": "Si Simon est à la fête, alors Michèle apporte le gâteau. Simon est absent aujourd'hui.",
+        "options": [
+            "Michèle apporte le gâteau",
+            "Michèle n'apporte pas le gâteau",
+            "On ne peut pas savoir",
+            "La fête est annulée"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Une implication n'assure rien si le prélude est cassé. Simon absent ne prouve rien sur l'apport de Michèle. L'application inversée de l'implication est exploitée ici.",
+        "hint": "Remarquez ce qui n'est pas implicitement décidé avec l'absence."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'animal adopté ?",
+        "prompt": "Si un chat est proposé, Marie l'adopte immédiatement. Un chat persan a été proposé.",
+        "options": [
+            "Marie adopte le chat",
+            "Marie n'adopte pas le chat",
+            "On ne peut pas savoir",
+            "Marie adopte un autre animal"
+        ],
+        "answer": "Marie adopte le chat",
+        "explanation": "Grâce au modus ponens, dès qu'un chat persan est fourni, Marie l'adopte immédiatement, comme stipulé par la règle claire. Ne confondez pas l'adoption immédiate avec d'autres types d'animaux.",
+        "hint": "Vérifiez les implications à partir de l'information de base."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel ordre de travail est respecté ?",
+        "prompt": "Samuel termine son travail avant David. David termine après Emma. Emma finit après Marc.",
+        "options": [
+            "Emma termine en premier",
+            "Samuel termine en premier",
+            "Marc termine en premier",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marc termine en premier",
+        "explanation": "C'est en reliant Marc < Emma < David < Samuel qu'on déduit que Marc est le premier à finir. Les différentes étapes de victoires se contentent de suivre la relation d'antécédent des finitions.",
+        "hint": "Tracez les relations pour visualiser les résultats."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui peut garantir sa place ?",
+        "prompt": "Si Lucas va au parc, alors Paul cuisine. Lucas est parti faire du jogging.",
+        "options": [
+            "Paul est en cuisine",
+            "Paul n'est pas en cuisine",
+            "On ne peut pas savoir",
+            "Paul va au parc"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Étant donné que Lucas ne va pas au parc et aucune action n'est faite par Paul, cela demeure un flou total sur sa position. Seule condition ouverte qui n'est pas pertinente ici, donc impossible de conclure.",
+        "hint": "Concentrez-vous sur les déclarations exactes."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'animal de Louise ?",
+        "prompt": "Tous les amis de Louise ont des chiens. Louise aime les chats.",
+        "options": [
+            "Louise a un chien",
+            "Louise a un chat",
+            "On ne peut pas savoir",
+            "Louise n'aime aucun animal"
+        ],
+        "answer": "Louise a un chat",
+        "explanation": "Bien que les amis de Louise aient tous des chiens, elle a manifestement un penchant pour les chats, indiquant donc sa préférence. Elle a fait un choix personnel d'aimer un animal différent par opposition, c'était sûr.",
+        "hint": "Dans des choix, préférez l'intérêt personnel."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle conclusion tirons-nous ?",
+        "prompt": "Si l'on plante une vigne, le raisin pousse. On a planté des vignes seulement dans deux des quatre parcelles.",
+        "options": [
+            "Il y a du raisin dans toutes les parcelles",
+            "Il y a du raisin dans aucune parcelle",
+            "Il y a du raisin dans deux parcelles",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Il y a du raisin dans deux parcelles",
+        "explanation": "Les deux parcelles avec des vignes verront en effet pousser du raisin, selon l'implication posée. Une information démontrée pour un placement particulier endosse une explication stricte basée sur ce suivi.",
+        "hint": "Reliez la plante et sa sortie à travers les infos définies."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle commande sera retardée ?",
+        "prompt": "Si le téléphone est en panne, alors les commandes ne sont pas passées. En cas d'ordinateur en panne, tout est annulé. Le téléphone est en panne.",
+        "options": [
+            "Rien ne changera",
+            "Les commandes sont annulées",
+            "Une autre commande est traitée",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Les commandes sont annulées",
+        "explanation": "Un téléphone en panne implique que les commandes ne sont pas passées, donc elles sont annulées. Quand l'ordi est en panne l'effet est total, mais il n'interfère pas ici. Etablir des implications multiples assure une compréhension entière des relations.",
+        "hint": "Établissez le chemin logique à partir des informations consignes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le plan sécuritaire ?",
+        "prompt": "Universellement, les alarmes doivent être actives pour la sécurité. La zone C est toujours en alerte. Zone A et B ont des alarmes défectueuses.",
+        "options": [
+            "Zone A est sécurisée",
+            "Zone C est sécurisée",
+            "Zone B est sécurisée",
+            "Zones A, B, C toutes sécurisées"
+        ],
+        "answer": "Zone C est sécurisée",
+        "explanation": "En utilisant une déduction directionnelle, seule la zone C, constamment en alerte, satisfait les exigences de sécurité par rapport à une situation d'alarmes. Considérez les implications pour tirer une décision concise sur chaque zone.",
+        "hint": "L'alerte des zones montre la sûreté pour l'identité sécurisée."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle arme est fatale ?",
+        "prompt": "On affirme que si une dague est en obsidienne, elle tue instantanément. Refleté, la lame est obsidienne. Seules deux lames ont vérifié être des dagues.",
+        "options": [
+            "Les dagues ne tuent pas",
+            "Les autres dagues sont neutres",
+            "Une dague tue instantanément",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Une dague tue instantanément",
+        "explanation": "En assignant spécifiquement un matériau spécial comme aiguillon mortel, les observations sur certains objets ont permis de garantir la défense de leur imposition. L'implication directe assure une preuve absolue de la relation.",
+        "hint": "Un matériau spécifique peut garantir l'issue à palier défini."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle conséquence possible ?",
+        "prompt": "Si le fromage est poisonné, alors le chien tombe malade. La laiterie a produit du fromage toxique.",
+        "options": [
+            "Aucun chien ne tombe malade",
+            "Tous les chiens tombent malades",
+            "Un chien est en plein forme",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Tous les chiens tombent malades",
+        "explanation": "Une toxinité générale posée par la laiterie irrigue que les fromages en question touchent tous les animaux les consommant, impliquant donc l'état de maladie auto-activée. Lorsque les objets de consommation possèdent un cadre toxique totalitaire, tous les éléments en subissent la cause.",
+        "hint": "La toxicité générale aboutit à une contamination généralisée."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel détail sur les baies ?",
+        "prompt": "Si une baie est roncière ou issue du sous-bois, alors elle est comestible. Une baie de sous-bois rouge est trouvée.",
+        "options": [
+            "La baie est toxique",
+            "La baie est comestible",
+            "La baie est un fruit",
+            "On ne peut pas savoir"
+        ],
+        "answer": "La baie est comestible",
+        "explanation": "Si la baie provient du sous-bois, elle est directement inclue sous cet aspect comestible, achevant une garantie d'absence de toxicité. Déduisez l'état à partir de l'originalité localisée.",
+        "hint": "Vérifiez la provenance de base pour décider de son état."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle réaction prévenir ?",
+        "prompt": "Si un véhicule diésel est sur place, alors pas de transport électrique est possible. Le diésel était garé hier.",
+        "options": [
+            "Transport électrique impossible",
+            "Transport électrique possible",
+            "Transport électrique jamais possible",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Transport électrique possible",
+        "explanation": "L'arrêt du diesel quelque part hier n'empêche plus le transport électrique pour un autre moment, sauf quand il est sur place. Remarquez les étapes de correspondance temporelle qui exécutent le lien.",
+        "hint": "Reliez la condition temporaire et son interruption combinée."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la fiabilité du blanc ?",
+        "prompt": "Si la peinture sèche au soleil, alors elle ne s'écaillera pas. La peinture blanche est mouillée.",
+        "options": [
+            "La peinture restera lisse",
+            "La peinture sera écaillée",
+            "Il n'y a rien sur le mur",
+            "On ne peut pas savoir"
+        ],
+        "answer": "La peinture sera écaillée",
+        "explanation": "Non-séchage augmente le risque d'écaillement, confirmant ici la condition manquante pour une protection entière. L'échec de remplissage de l'implication détermine le risque inévitable.",
+        "hint": "Clarifiez la correspondance de sécheresse pour voir l'occurrence."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle somme chapotée ?",
+        "prompt": "Si quelqu'un remonte une rivière, il dépend d'une barque sécurisée. Si l'embarcation n'atteint pas la cote, alors elle est instable et sombre.",
+        "options": [
+            "Elle est en sécurité",
+            "Elle est en panne",
+            "Elle est hors service",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Elle est en sécurité",
+        "explanation": "L'implication est qu'une barque sécurisée écarte le défaut, confirmant la validité de l'argument stérile, répondant à l'utilité. Suivez les preuve de certitude pour un préjugé propre.",
+        "hint": "La sécurité désarme la condition de succès nécessaire."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le statut des équipements ?",
+        "prompt": "Si un équipement passe la vérification de conformité, il obtient l'autorisation d'utilisation. Les équipements B et C ont passé la vérification.",
+        "options": [
+            "Tout équipement autorisé",
+            "Aucun équipement autorisé",
+            "B et C sont autorisés",
+            "On ne peut pas savoir"
+        ],
+        "answer": "B et C sont autorisés",
+        "explanation": "On établit par une vérification que B et C satisfont les requirements, donc seuls eux reçoivent les accréditations. L'évidence sur ce respect revient sur des obligations internes.",
+        "hint": "Reprennez ce qui a été vérifié pour être certain de la licence."
+    }
+]

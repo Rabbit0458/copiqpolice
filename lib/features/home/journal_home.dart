@@ -32,7 +32,7 @@ Color _jMuted(BuildContext context, [double a = .72]) {
   final base =
       Theme.of(context).textTheme.bodySmall?.color ??
       (Theme.of(context).brightness == Brightness.dark ? Colors.white : _J.ink);
-  return base.withOpacity(a);
+  return base.withValues(alpha: a);
 }
 
 /// ===================================================================
@@ -471,7 +471,7 @@ class _HeroCard extends StatelessWidget {
     try {
       img = Image.asset(item.image, fit: BoxFit.cover);
     } catch (_) {
-      img = Container(color: Colors.grey.shade400.withOpacity(.25));
+      img = Container(color: Colors.grey.shade400.withValues(alpha: .25));
     }
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
@@ -511,7 +511,7 @@ class _HeroCard extends StatelessWidget {
                     begin: Alignment.bottomCenter,
                     end: Alignment.center,
                     colors: [
-                      Colors.black.withOpacity(isDark ? .55 : .45),
+                      Colors.black.withValues(alpha: isDark ? .55 : .45),
                       Colors.transparent,
                     ],
                   ),
@@ -529,7 +529,7 @@ class _HeroCard extends StatelessWidget {
                     children: [
                       BackdropFilter(
                         filter: ImageFilter.blur(sigmaX: 2.6, sigmaY: 2.6),
-                        child: Container(color: Colors.black.withOpacity(.10)),
+                        child: Container(color: Colors.black.withValues(alpha: .10)),
                       ),
                       Center(
                         child: Container(
@@ -538,7 +538,7 @@ class _HeroCard extends StatelessWidget {
                             horizontal: 12,
                           ),
                           decoration: BoxDecoration(
-                            color: Colors.black.withOpacity(.55),
+                            color: Colors.black.withValues(alpha: .55),
                             borderRadius: BorderRadius.circular(999),
                           ),
                           child: Row(
@@ -717,7 +717,7 @@ class _CategoryCard extends StatelessWidget {
     try {
       img = Image.asset(item.image, fit: BoxFit.cover);
     } catch (_) {
-      img = Container(color: Colors.grey.shade400.withOpacity(.25));
+      img = Container(color: Colors.grey.shade400.withValues(alpha: .25));
     }
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
@@ -765,7 +765,7 @@ class _CategoryCard extends StatelessWidget {
                           horizontal: 10,
                         ),
                         decoration: BoxDecoration(
-                          color: Theme.of(context).cardColor.withOpacity(.95),
+                          color: Theme.of(context).cardColor.withValues(alpha: .95),
                           borderRadius: BorderRadius.circular(999),
                           boxShadow: [_J.shadow],
                         ),

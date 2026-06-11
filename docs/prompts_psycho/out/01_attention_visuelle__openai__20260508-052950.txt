@@ -1,0 +1,317 @@
+[
+    {
+        "difficulty": "easy",
+        "text_a": "Rue de la Paix, 75002 Paris",
+        "text_b": "Rue de la Paix, 75002 Paris",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Voiture rouge plaque AA-123-BB",
+        "text_b": "Voiture bleue plaque AA-123-BB",
+        "is_true": false,
+        "explanation": "Les textes diffèrent par la couleur de la voiture : 'rouge' dans text_a et 'bleue' dans text_b."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Nicolas Martin, né le 12/04/1985",
+        "text_b": "Nicolas Martin, né le 21/04/1985",
+        "is_true": false,
+        "explanation": "La date de naissance diffère légèrement : '12/04' dans text_a et '21/04' dans text_b, ce qui pourrait facilement être raté à cause de chiffres similaires."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Avenue des Champs-Élysées",
+        "text_b": "Avenue des Champs-Élysées",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Un scooter Yamaha noir",
+        "text_b": "Un scooter Yamaha bleu",
+        "is_true": false,
+        "explanation": "La couleur diffère : 'noir' dans text_a et 'bleu' dans text_b. La similitude phonétique entre 'noir' et 'bleu' peut être confondue."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Boulangerie Dupont, 15 rue de Lyon",
+        "text_b": "Boulangerie Dupont, 15 rue de Lyon",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Numéro de série 9876543210",
+        "text_b": "Numéro de série 9876543201",
+        "is_true": false,
+        "explanation": "Les deux derniers chiffres sont inversés entre '3210' et '3201'. Cette inversion subtile peut passer inaperçue."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Garage ouvert de 9h à 19h",
+        "text_b": "Garage ouvert de 9h à 19h",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Paris, capitale de la France",
+        "text_b": "Paris, capitale des France",
+        "is_true": false,
+        "explanation": "Il y a une préposition incorrecte dans text_b : 'des' au lieu de 'de'. L'erreur est discrète, mais essentielle."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Téléphone : 0123456789",
+        "text_b": "Téléphone : 0123456789",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Plaque : ZZ-998-AA",
+        "text_b": "Plaque : ZZ-988-AA",
+        "is_true": false,
+        "explanation": "Le deuxième groupe de chiffres diffère : '998' dans text_a et '988' dans text_b. Cela demande une attention minutieuse aux chiffres."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Vélo bleu, marque Giant",
+        "text_b": "Vélo bleu, marque Giant",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Mercredi 15 mai 2024",
+        "text_b": "Mercredi 14 mai 2024",
+        "is_true": false,
+        "explanation": "Il y a une différence d'un jour : '15 mai' dans text_a et '14 mai' dans text_b, un détail souvent confondu par la similitude des chiffres."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Rendez-vous chez le docteur",
+        "text_b": "Rendez-vous chez le docteur",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Voiture Peugeot 208",
+        "text_b": "Voiture Peugeot 308",
+        "is_true": false,
+        "explanation": "Le modèle de voiture diffère : '208' dans text_a contre '308' dans text_b. Une erreur de frappe qui pourrait être facilement négligée."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "RDV à 18h30",
+        "text_b": "RDV à 18h30",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Jean Lefebvre né en 1975",
+        "text_b": "Jean Lefebvre né en 1976",
+        "is_true": false,
+        "explanation": "L'année de naissance diffère légèrement : '1975' contre '1976'. Un détail qui nécessite de l'attention pour être détecté."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Déclaration de vol le 05/07/2023 par Mme Marie Leroy, 23 ans.",
+        "text_b": "Déclaration de vol le 05/07/2023 par Mme Marie Leroy, 23 ans.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "M. Bergeron a été entendu à 14h15 le 10 juin 2024.",
+        "text_b": "M. Bergeron a été entendu à 14h15 le 10 juin 2023.",
+        "is_true": false,
+        "explanation": "Les années diffèrent : '2024' dans text_a et '2023' dans text_b. Cette différence peut passer inaperçue si on ne se concentre pas suffisamment."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La Peugeot 308 rouge a été aperçue à 10h30.",
+        "text_b": "La Peugeot 308 rouge a été aperçue à 10:30.",
+        "is_true": false,
+        "explanation": "Différence de notation de l'heure : '10h30' dans text_a contre '10:30' dans text_b. Ce changement de format est subtil mais significatif."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Témoin : M. Dupuis, rue de l'Église.",
+        "text_b": "Témoin : M. Dupuis, rue de l'Église.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Rendez-vous fixé au 23/09/2023, 16h.",
+        "text_b": "Rendez-vous fixé au 23/09/2023, 16h.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Il mesure 1m75 et porte un blouson noir.",
+        "text_b": "Il mesure 1m75 et porte un blouson noir.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Bagarre devant le 12, rue Voltaire.",
+        "text_b": "Bagarre devant le 12, rue Valtaire.",
+        "is_true": false,
+        "explanation": "Erreur sur le nom de la rue : 'Voltaire' dans text_a et 'Valtaire' dans text_b. La modification d'une seule lettre change complètement le sens."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Marque de la voiture : Ford Fiesta.",
+        "text_b": "Marque de la voiture : Ford Fiesta.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Appel reçu à 14h30 le 20 mai.",
+        "text_b": "Appel reçu à 14h30 le 20 mai.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La suspecte est une femme d'environ 30 ans.",
+        "text_b": "La suspecte est une femme d'environ 30 ans.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Son numéro de téléphone est le 06-78-91-54-32.",
+        "text_b": "Son numéro de téléphone est le 06-78-91-54-32.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le chien a été retrouvé vers 17h45.",
+        "text_b": "Le chien a été retrouvé vers 17h55.",
+        "is_true": false,
+        "explanation": "L'heure signalée est différente : '17h45' dans text_a contre '17h55' dans text_b. Un simple écart de dix minutes facile à rater visuellement."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Camion immatriculé BB-456-ZZ, couleur blanche.",
+        "text_b": "Camion immatriculé BB-456-ZZ, couleur blanche.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Vol de vélo signalé : modèle Trek, 20 vitesses.",
+        "text_b": "Vol de vélo signalé : modèle Treck, 20 vitesses.",
+        "is_true": false,
+        "explanation": "Le nom du modèle est incorrect dans text_b : 'Trek' dans text_a est devenu 'Treck'. Une différenciation parfois difficile à discerner à cause de la proximité phonétique."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon l'article 223-6 du Code pénal, toute personne s'abstient de porter assistance à quelqu'un en danger est responsable.",
+        "text_b": "Selon l'article 223-6 du Code pénal, toute personne s'abstient de porter assistance à quelqu'un en danger est responsable.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le suspect portait un sweat-shirt à capuche noir et des baskets blanches de marque Nike, aperçu dans la rue à 15h32.",
+        "text_b": "Le suspect portait un sweat-shirt à capuche noir et des baskets blanches de marque Nike, aperçu dans la rue à 15h 32.",
+        "is_true": false,
+        "explanation": "Un espace supplémentaire a été ajouté après '15h' dans text_b. Ce petit détail peut facilement échapper à une observation rapide."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Mme Martin A. a rapporté avoir vu la voiture suspecte à 3h47 du matin, suspecte immatriculée BZ-324TM, gris noir dans l'obscurité.",
+        "text_b": "Mme Martin A. a rapporté avoir vu la voiture suspecte à 3h47 du matin, suspecte immatriculée BZ-324TM, gris noir dans l'obscurité.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "En vertu de l'article 311-1, le vol est défini comme la soustraction frauduleuse de la chose d'autrui, commise intentionnellement.",
+        "text_b": "En vertu de l'article 311-1, le vol est défini comme la soustraction frauduleuse de la chose d’autrui, commise intentionnellement.",
+        "is_true": false,
+        "explanation": "L'apostrophe est différente : droite (') dans text_a contre courbe (’) dans text_b. Cette dissemblance typographique est un piège fréquent à haut niveau de fatigue oculaire."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "M. Dupont a quitté les lieux à 4h25 selon le témoin Mlle Rosier, qui l'a vu partir dans une Mercedes bleue.",
+        "text_b": "M. Dupont a quitté les lieux à 4h25 selon le témoin Mlle Rosier, qui l'a vu partir dans une Mercedes bleue.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le compte rendu du 15 octobre mentionne que le véhicule Audi A6 a été identifié à 18h53 près de l'avenue de la République.",
+        "text_b": "Le compte rendu du 15 octobre mentionne que le véhicule Audi A6 a été identifié à 18:53 près de l'avenue de la République.",
+        "is_true": false,
+        "explanation": "Dans text_b, l'heure est notée avec un deux-points '18:53' au lieu de '18h53'. Ce changement subtil pourrait facilement passer inaperçu."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "L'enquête montre que M. Bernard a résidé au 23, rue Saint-Martin, du 12 avril au 27 septembre 2020, sans discrétion apparente.",
+        "text_b": "L'enquête montre que M. Bernard a résidé au 23, rue Saint-Martin, du 12 avril au 27 septembre 2020, sans discrétion apparente.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Rapport de M. Lavoie : Le véhicule suspect a circulé à grande vitesse à 17h45 sans feux allumés, passant le carrefour sans s'arrêter.",
+        "text_b": "Rapport de M. Lavoie : Le véhicule suspect a circulé à grande vitesse à 17h45 sans feux allumés, passan le carrefour sans s'arrêter.",
+        "is_true": false,
+        "explanation": "Dans text_b, le 't' est manquant dans 'passant'. Cette omission peut passer inaperçue dans un contexte de lecture rapide."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "M. Ollivier a signalé que l'individu portait un blouson sombre et des lunettes de soleil, se dirigeant vers la station de métro à 14:30.",
+        "text_b": "M. Ollivier a signalé que l'individu portait un blouson sombre et des lunettes de soleil, se dirigeant vers la station de métro à 14:30.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Convocation pour le 02 fév. : veuillez-vous présenter au 25, rue Pasteur, muni de tous les documents demandés lors du précédent entretien.",
+        "text_b": "Convocation pour le 02 fév. : veuillez-vous présenter au 25, rue Pasteur, muni de tous les documents demandés lors du précédent enterrien.",
+        "is_true": false,
+        "explanation": "Dans text_b, une lettre supplémentaire 'r' a été ajoutée dans le mot 'enterrien' qui devrait être 'entretien'. Un mot similaire induit souvent en erreur."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon les déclarations recueillies le 15/08, aucune anomalie n'a été constatée sur les lieux, malgré des allégations de bruits suspects.",
+        "text_b": "Selon les déclarations recueillies le 15/08, aucune anomalie n'a été constatée sur les lieux, malgré des allégations de bruits suspects.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Dans la nuit du 11 au 12 août, un individu a brisé la vitre de la boutique pour y dérober plusieurs articles de valeur sans activer l'alarme.",
+        "text_b": "Dans la nuit du 11 au 12 août, un individu a brisé la vitre de la boutique pour y dérober plusieurs articles de valeur sans activer l'alarme.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La déclaration de Mme Weber mentionne un homme caucasien d'environ 1m80, portant des chaussures Adidas et un parapluie jaune.",
+        "text_b": "La déclaration de Mme Weber mentionne un homme caucasien d'environ 1m80, portant des chaussures Adiddas et un parapluie jaune.",
+        "is_true": false,
+        "explanation": "Erreur dans la marque des chaussures, 'Adidas' devient 'Adiddas' dans text_b, une faute difficile à percevoir rapidement."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Extrait du rapport : L'individu en fuite portait un T-shirt blanc et une casquette bleue, aperçu pour la dernière fois courant vers le parc.",
+        "text_b": "Extrait du rapport : L'individu en fuite portait un T-shirt blanc et une casquette bleue, aperçu pour la dernière fois courant ver le parc.",
+        "is_true": false,
+        "explanation": "Dans text_b, il manque un 's' à 'vers'. Cette minuscule omission peut ne pas être relevée si l'attention diminue."
+    }
+]

@@ -11,7 +11,6 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
-import 'package:flutter/widgets.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:device_info_plus/device_info_plus.dart';
 
@@ -255,7 +254,7 @@ class AppConsoleLogger {
         _platform = 'web';
         final name = describeEnum(info.browserName);
         _deviceModel = 'Browser: $name';
-        _osVersion = '${info.appVersion ?? ''}';
+        _osVersion = info.appVersion ?? '';
       }
     } catch (_) {
       _platform = kIsWeb ? 'web' : 'unknown';

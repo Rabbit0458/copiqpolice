@@ -142,8 +142,8 @@ class ForumTheme extends ThemeExtension<ForumTheme> {
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
     colors: [
-      bgTop.withOpacity(isDark ? 0.90 : 0.98),
-      bgTop.withOpacity(isDark ? 0.55 : 0.75),
+      bgTop.withValues(alpha: isDark ? 0.90 : 0.98),
+      bgTop.withValues(alpha: isDark ? 0.55 : 0.75),
       Colors.transparent,
     ],
     stops: const [0.0, 0.55, 1.0],
@@ -344,18 +344,18 @@ class ForumTheme extends ThemeExtension<ForumTheme> {
     final surface3 = isDark ? const Color(0xFF0B1220) : const Color(0xFFEEF3FF);
 
     final stroke = isDark
-        ? Colors.white.withOpacity(0.10)
-        : Colors.black.withOpacity(0.06);
+        ? Colors.white.withValues(alpha: 0.10)
+        : Colors.black.withValues(alpha: 0.06);
 
     final strokeStrong = isDark
-        ? Colors.white.withOpacity(0.14)
-        : Colors.black.withOpacity(0.10);
+        ? Colors.white.withValues(alpha: 0.14)
+        : Colors.black.withValues(alpha: 0.10);
 
     final text = isDark ? const Color(0xFFEAF0FF) : const Color(0xFF0D1730);
     final textSoft = isDark ? const Color(0xFFC1CBE8) : const Color(0xFF3E4E79);
     final textMuted = isDark
-        ? Colors.white.withOpacity(0.62)
-        : Colors.black.withOpacity(0.44);
+        ? Colors.white.withValues(alpha: 0.62)
+        : Colors.black.withValues(alpha: 0.44);
 
     final textOnPrimary = isDark ? const Color(0xFF061023) : Colors.white;
 
@@ -383,53 +383,53 @@ class ForumTheme extends ThemeExtension<ForumTheme> {
             BoxShadow(
               blurRadius: 22,
               offset: const Offset(0, 10),
-              color: Colors.black.withOpacity(0.38),
+              color: Colors.black.withValues(alpha: 0.38),
             ),
           ]
         : <BoxShadow>[
             BoxShadow(
               blurRadius: 22,
               offset: const Offset(0, 10),
-              color: Colors.black.withOpacity(0.08),
+              color: Colors.black.withValues(alpha: 0.08),
             ),
           ];
 
     // Inputs / chips
     final inputBg = isDark ? const Color(0xFF0B1322) : const Color(0xFFF7F9FF);
     final inputStroke = isDark
-        ? Colors.white.withOpacity(0.12)
-        : Colors.black.withOpacity(0.10);
+        ? Colors.white.withValues(alpha: 0.12)
+        : Colors.black.withValues(alpha: 0.10);
 
     final chipBg = isDark
-        ? Colors.white.withOpacity(0.06)
-        : Colors.black.withOpacity(0.05);
+        ? Colors.white.withValues(alpha: 0.06)
+        : Colors.black.withValues(alpha: 0.05);
     final chipText = isDark ? textSoft : textSoft;
 
     final divider = isDark
-        ? Colors.white.withOpacity(0.08)
-        : Colors.black.withOpacity(0.06);
+        ? Colors.white.withValues(alpha: 0.08)
+        : Colors.black.withValues(alpha: 0.06);
 
     final icon = isDark ? const Color(0xFFDDE6FF) : const Color(0xFF132149);
     final iconSoft = isDark
-        ? Colors.white.withOpacity(0.70)
-        : Colors.black.withOpacity(0.52);
+        ? Colors.white.withValues(alpha: 0.70)
+        : Colors.black.withValues(alpha: 0.52);
 
     // Overlays
     final overlayScrim = isDark
-        ? Colors.black.withOpacity(0.62)
-        : Colors.black.withOpacity(0.42);
+        ? Colors.black.withValues(alpha: 0.62)
+        : Colors.black.withValues(alpha: 0.42);
 
     // Bottom sheets / modals
     final sheetBg = isDark ? const Color(0xFF0B1220) : const Color(0xFFFFFFFF);
 
     // Glass (Notifiers, menu cards)
     final glassBg = isDark
-        ? Colors.black.withOpacity(0.32)
-        : Colors.white.withOpacity(0.72);
+        ? Colors.black.withValues(alpha: 0.32)
+        : Colors.white.withValues(alpha: 0.72);
 
     final glassStroke = isDark
-        ? Colors.white.withOpacity(0.10)
-        : Colors.black.withOpacity(0.10);
+        ? Colors.white.withValues(alpha: 0.10)
+        : Colors.black.withValues(alpha: 0.10);
 
     return ForumTheme._(
       skin: skin,

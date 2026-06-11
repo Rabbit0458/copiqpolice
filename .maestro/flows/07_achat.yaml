@@ -1,0 +1,49 @@
+# COP'IQ — E2E Flow 07 : Vérification du flow achat (jusqu'au checkout)
+# Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-099
+# Note : Ce flow vérifie que le checkout s'ouvre (lien store/Stripe).
+#        L'achat réel n'est PAS effectué en E2E (sandbox seulement).
+# Prérequis : connecté avec compte FREE
+
+appId: fr.copiq.app
+---
+- launchApp
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Naviguer vers le paywall via cas premium
+- tapOn:
+    text: "Cas Pratique"
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    index: 1
+    id: "case_card"
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Paywall visible
+- assertVisible:
+    text: "Premium"
+
+# Sélectionner le plan mensuel (sélectionné par défaut)
+- tapOn:
+    text: "Mensuel"
+
+# Tapper le CTA principal
+- tapOn:
+    text: "Démarrer"
+
+- waitForAnimationToEnd:
+    timeout: 8000
+
+# Le browser externe (store ou Stripe) s'ouvre — on ne peut pas asserter
+# dans l'app. On vérifie juste qu'aucun crash n'est survenu en revenant.
+- pressKey: Back
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# L'app doit être toujours vivante
+- assertVisible:
+    text: "COP'IQ"

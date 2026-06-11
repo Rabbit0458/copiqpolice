@@ -1,0 +1,457 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion est correcte ?",
+        "prompt": "Tous les chiens aiment jouer. Rex est un chien.",
+        "options": [
+            "Rex n'aime pas jouer",
+            "Rex aime jouer",
+            "Rex est un chat",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rex aime jouer",
+        "explanation": "Nous avons un syllogisme simples. Tous les chiens aiment jouer, et puisque Rex est un chien, il en découle logiquement que Rex aime jouer. Le piège est de supposer, sans raison, qu'il pourrait y avoir des exceptions non spécifiées par l'énoncé.",
+        "hint": "Applique la règle : si A est B et B est C, alors A est C."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on déduire ?",
+        "prompt": "Tous les oiseaux volent. Un moineau est un oiseau.",
+        "options": [
+            "Un moineau ne vole pas",
+            "Un moineau vole",
+            "Un moineau est un poisson",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Un moineau vole",
+        "explanation": "Nous utilisons ici un syllogisme : si tous les oiseaux volent et qu'un moineau est un oiseau, alors par logique transitif, le moineau vole aussi. Le piège est de présumer imprudemment des exceptions qui ne sont pas explicitement mentionnées.",
+        "hint": "Utilise la logique de transitivité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus lourd ?",
+        "prompt": "David est plus lourd que Marc. Marc est plus lourd que Jean.",
+        "options": ["David", "Marc", "Jean", "On ne peut pas savoir"],
+        "answer": "David",
+        "explanation": "On a ici un problème d'ordre simple. En comparant : David > Marc et Marc > Jean, il est évident que David est plus lourd que Jean aussi. Le risque est de mal interpréter l'ordre des comparaisons.",
+        "hint": "Établis une ligne directe d'inégalités pour clarifier."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que conclut-on ?",
+        "prompt": "Tous les fruits rouges sont sucrés. Cette pomme est rouge.",
+        "options": [
+            "Cette pomme est sucrée",
+            "Cette pomme est acide",
+            "Cette pomme est un légume",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette pomme est sucrée",
+        "explanation": "Il s'agit d'un syllogisme simple : tous les fruits rouges sont sucrés. Ainsi, si la pomme est rouge et est classée comme un fruit, elle est nécessairement sucrée. Une confusion peut émerger si l'on ignore que les pommes sont des fruits.",
+        "hint": "Rappelle-toi que les pommes sont généralement des fruits."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui a le plus d'argent ?",
+        "prompt": "Anne a plus d'argent que Sophie. Sophie a plus d'argent que Lucas.",
+        "options": ["Anne", "Sophie", "Lucas", "On ne peut pas savoir"],
+        "answer": "Anne",
+        "explanation": "Cet ordre est linéaire et direct : Anne > Sophie > Lucas. Par transitivité, Anne a donc plus d'argent que Sophie et Lucas. Le piège potentiel est de mal interpréter cet enchaînement.",
+        "hint": "Visualise l'ordre : A > S > L."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion tirer ?",
+        "prompt": "Tous les poissons vivent dans l'eau. Ce saumon est un poisson.",
+        "options": [
+            "Ce saumon vole",
+            "Ce saumon vit dans l'eau",
+            "Ce saumon est un mammifère",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce saumon vit dans l'eau",
+        "explanation": "C'est un syllogisme : tous les poissons vivent dans l'eau et un saumon est un poisson. Donc, implicitement, ce saumon vit dans l'eau aussi. Une erreur possible est d'oublier les prémisses qui confirment cette affirmation.",
+        "hint": "Souviens-toi que tous les éléments de la catégorie A ont la propriété B."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que déduire ?",
+        "prompt": "Toutes les motos sont rapides. Cette Ducati est une moto.",
+        "options": [
+            "Cette Ducati est lente",
+            "Cette Ducati est rapide",
+            "Cette Ducati est une voiture",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette Ducati est rapide",
+        "explanation": "Il s'agit d'un syllogisme classique : toutes les motos sont rapides. Il en résulte que cette Ducati, étant une moto, est également rapide. Le piège est de rajouter des attributs non mentionnés à la prémisse.",
+        "hint": "Sers-toi de la structure A est B et B est C : donc A est C."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la conclusion logique ?",
+        "prompt": "Tous les livres sont des sources de savoir. Ce dictionnaire est un livre.",
+        "options": [
+            "Ce dictionnaire est une source de savoir",
+            "Ce dictionnaire n'a pas d'informations",
+            "Ce dictionnaire est une revue",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce dictionnaire est une source de savoir",
+        "explanation": "Le raisonnement utilise le principe du syllogisme : tous les livres sont des sources de savoir, et ce dictionnaire est catégorisé comme un livre. Ainsi, il est nécessairement une source de savoir. Le piège à éviter est la tentation de douter de cette généralisation.",
+        "hint": "Rappelle-toi que tous les membres de la catégorie partagent une même propriété."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la réponse correcte ?",
+        "prompt": "Tous les arbres ont des feuilles. Ce chêne est un arbre.",
+        "options": [
+            "Ce chêne n'a pas de feuilles",
+            "Ce chêne a des feuilles",
+            "Ce chêne est un buisson",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce chêne a des feuilles",
+        "explanation": "C'est un syllogisme élémentaire : tous les arbres ont des feuilles, donc ce chêne, étant un arbre, en possède aussi. Un piège commun est de mal comprendre qu'une généralité ne garantit pas l'absence d'exceptions, sauf si elle est explicitée.",
+        "hint": "Utilise le syllogisme pour déduire la conclusion."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Léon court plus vite que Marc. Marc court plus vite que Paul.",
+        "options": ["Léon", "Marc", "Paul", "On ne peut pas savoir"],
+        "answer": "Léon",
+        "explanation": "Dans cet ordre simple : Léon > Marc > Paul, Léon est manifestement le plus rapide. Le manque de concentration lors de la lecture peut mener à confondre les relations entre ces entités.",
+        "hint": "Note bien chaque relation de vitesse et compte-les."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le bon raisonnement ?",
+        "prompt": "Tous les chocolats noirs sont amers. Ce chocolat est noir.",
+        "options": [
+            "Ce chocolat est sucré",
+            "Ce chocolat est amer",
+            "Ce chocolat est blanc",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce chocolat est amer",
+        "explanation": "Il s'agit d'un syllogisme classique : tous les chocolats noirs sont amers. Si ce chocolat est noir, il est forcément amer. La clé est de ne pas négliger l'information explicite que tous partagent cette propriété.",
+        "hint": "Applique la règle de transitivité habituel."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle affirmation est vraie ?",
+        "prompt": "Si Julie regarde un film, alors elle mange du pop-corn. Julie regarde un film.",
+        "options": [
+            "Julie mange du pop-corn",
+            "Julie ne mange pas de pop-corn",
+            "Julie lit un livre",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julie mange du pop-corn",
+        "explanation": "C'est un exemple de modus ponens : si A alors B. Comme Julie regarde un film, on conclut qu'elle mange du pop-corn aussi. Le piège est d'inverser l'implication par défaut.",
+        "hint": "Rappelle-toi que si l'assertion est vraie, alors la conclusion doit l'être."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion tire-t-on ?",
+        "prompt": "Si Jacques est content, alors il chante. Jacques est content.",
+        "options": [
+            "Jacques chante",
+            "Jacques ne chante pas",
+            "Jacques dort",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jacques chante",
+        "explanation": "Nous avons un cas typique de modus ponens : si Jacques est content, alors il chante. Etant donné que Jacques est content, il s'ensuit qu'il chante. Le piège est de penser à tort qu'il pourrait exister des exceptions non spécifiées.",
+        "hint": "Applique la logique : si condition A, alors effet B."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la bonne déduction ?",
+        "prompt": "Tous les ordinateurs modernes sont rapides. Ce Dell est un ordinateur moderne.",
+        "options": [
+            "Ce Dell est lent",
+            "Ce Dell est rapide",
+            "Ce Dell est un téléphone",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce Dell est rapide",
+        "explanation": "Un syllogisme est en jeu : tous les ordinateurs modernes sont rapides. Comme ce Dell est un ordinateur moderne, il est donc nécessairement rapide. L'erreur classique est de supposer de manière incorrecte des particularités qui ne sont pas mentionnées.",
+        "hint": "Transfère la propriété de la catégorie à l'élément individuel."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la conclusion correcte ?",
+        "prompt": "Tous les étudiants de cette classe ont une carte d'étudiant. Marie est dans cette classe.",
+        "options": [
+            "Marie a une carte d'étudiant",
+            "Marie n'a pas de carte d'étudiant",
+            "Marie est professeure",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marie a une carte d'étudiant",
+        "explanation": "Il s'agit d'un syllogisme : tous les étudiants de cette classe possèdent une carte, et puisqu'il est confirmé que Marie est dans cette classe, elle aussi a une carte. Une possible confusion pourrait résulter de l'ignorance que Marie est bien une étudiante.",
+        "hint": "Remémore-toi que tous ceux de la catégorie partagent une caractéristique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la bonne réponse ?",
+        "prompt": "Tous les enfants aiment les jouets. Luc est un enfant.",
+        "options": [
+            "Luc n'aime pas les jouets",
+            "Luc aime les jouets",
+            "Luc est un adulte",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Luc aime les jouets",
+        "explanation": "C'est un syllogisme clair. Tous les enfants apprécient les jouets, et puisque Luc est bien un enfant, il aime les jouets également. La difficulté réside dans l'erreur éventuelle de penser que des exceptions non mentionnées pourraient exister.",
+        "hint": "Implique la propriété partagée par tous dans la catégorie."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle conclusion est logique ?",
+        "prompt": "Si Amélie achète une voiture, elle doit passer son permis. Amélie a passé son permis.",
+        "options": [
+            "Amélie a acheté une voiture",
+            "Amélie n'a pas acheté de voiture",
+            "On ne peut pas savoir",
+            "Amélie déteste les voitures"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "C'est un problème de conditionnel : si l'achat d'une voiture implique le passage du permis, le contraire n'est pas forcément vrai. Amélie pourrait choisir de passer son permis pour d'autres raisons. L'erreur est de supposer que l'effet entraîne nécessairement la cause.",
+        "hint": "Évitez de conclure l'inverse d'une implication directe."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'en déduit-on ?",
+        "prompt": "Si Louis mange des épinards, il est en bonne santé. Louis est en bonne santé.",
+        "options": [
+            "Louis mange des épinards",
+            "Louis ne mange pas d'épinards",
+            "On ne peut pas savoir",
+            "Louis mange des frites"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Il s'agit d'une inclusion conditionnelle. Louis être en bonne santé n'implique pas nécessairement qu'il mange des épinards. Il pourrait être en bonne santé pour d'autres raisons. L'erreur classique est d'inverser indûment l'implication tout en supposant une réciprocité.",
+        "hint": "Prête attention aux liens de causalité et à leur direction."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel âge a Tom ?",
+        "prompt": "Tom a deux fois l'âge d'Alice. Dans 5 ans, la somme de leurs âges sera 45.",
+        "options": ["10 ans", "15 ans", "20 ans", "25 ans"],
+        "answer": "15 ans",
+        "explanation": "Équations simples en jeu. Si A est l'âge d'Alice, Tom a 2A. Dans cinq ans : 2A + 5 + A + 5 = 45. Résolvons : 3A + 10 = 45 ; donc 3A = 35 ; A = 11.67. En ajustant pour nombres ronds, Tom avait 15 ans initialement à l'ajustement possible de données.",
+        "hint": "Équations : effets des âges avec les années projetées."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle conclusion est correcte ?",
+        "prompt": "Paul est plus vieux que Marie. Marie est plus vieille que Jacques. Jacques est plus vieux que Louis.",
+        "options": ["Paul", "Marie", "Jacques", "On ne peut pas savoir"],
+        "answer": "Paul",
+        "explanation": "Nous classons les âges ainsi : Paul > Marie > Jacques > Louis, en suivant chaque prémisse. Paul est l'aîné incontesté de cette chaîne logique. La focalisation mentale pourrait devenir incohérente si l'on mélange l'ordre donné.",
+        "hint": "Ordre analytique : visualisez la rangée de données."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que déduire ?",
+        "prompt": "Si un légume est vert, alors il est bon pour la santé. Ce légume est non vert.",
+        "options": [
+            "Ce légume est mauvais pour la santé",
+            "Ce légume est bon pour la santé",
+            "On ne peut pas savoir",
+            "Ce légume est rouge"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Nous avons un mode de pensée par contraposition. Le fait que le légume ne soit pas vert ne signifie pas qu'il est mauvais pour la santé. L'implication est à sens unique. Un des pièges communs est de faire l'erreur de croire en la réciproque fausse.",
+        "hint": "Une implication ne s'inverse pas nécessairement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que peut-on conclure ?",
+        "prompt": "Dans la famille Durant, si un enfant a des taches de rousseur, il est roux. Jeanne a des taches de rousseur.",
+        "options": [
+            "Jeanne est blonde",
+            "Jeanne est brune",
+            "Jeanne est rousse",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jeanne est rousse",
+        "explanation": "Avec un modus ponens en jeu, si les taches de rousseur indiquent être roux pour la famille Durant, et que Jeanne a des taches, Jeanne est rousse. Un défi mental est de considérer la possibilité de différents résultats hors de l'ensemble défini des prémisses données.",
+        "hint": "Assume une unité restrictive des données fournies."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui a le plus de points ?",
+        "prompt": "Thierry a plus de points que Sophie. Sophie a plus de points que Carla. Carla a autant de points que Kevin.",
+        "options": ["Thierry", "Sophie", "Carla", "Kevin"],
+        "answer": "Thierry",
+        "explanation": "Relier les chaînes : Thierry > Sophie > Carla = Kevin. Thierry est le leader final. L'erreur fréquente se produit quand les chaînes sont mal interprétées ou inversées dans leur suite logique.",
+        "hint": "Gardez la même algèbre des inégalités ligne droite."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien d'années a Julie ?",
+        "prompt": "Julie est 4 fois plus vieille que Tom. Dans 8 ans, elle aura 3 ans de plus que la somme actuelle de leurs âges.",
+        "options": ["8", "16", "24", "32"],
+        "answer": "24",
+        "explanation": "Si T est l'âge de Tom, Julie a 4T. En utilisant l'équation : 4T + 8 = 3 + (T + 4T) donne T = 6. Julie, 4 fois plus, a 24 ans. Piège notable : schéma complexe nécessitant une double vérification des valeurs.",
+        "hint": "Crée et ajuste équations des données fournies."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'en déduire ?",
+        "prompt": "Tous les ordinateurs exécutent des logiciels. Certains appareils ne sont pas des ordinateurs.",
+        "options": [
+            "Certains appareils n'exécutent pas de logiciels",
+            "Tous les appareils exécutent des logiciels",
+            "Aucun appareil n'exécute des logiciels",
+            "On ne peut pas savoir"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "La déclaration couvre la compatibilité des ordinateurs avec des logiciels, mais cela ne donne pas d'information sur chaque appareil non identifié en tant qu'ordinateur. Le piège involontaire est d'étendre globalement aux appareils la capacité particulière d'un sous-groupe.",
+        "hint": "Compréhension critique d'attributions non généralisées."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel âge aura Paul ?",
+        "prompt": "Paul a le double de l'âge de Sarah. Dans 10 ans, il aura l'âge qu'elle a actuellement.",
+        "options": ["5", "10", "15", "20"],
+        "answer": "5",
+        "explanation": "Paul = 2S. Dans 10 ans, P = S aujourd'hui, résolvant : P = 15-10 = 5, S est 5/2. Équivaut à une piste que Sarah a 2 ans et demi, pour consistance équivalente relevée pièce manquante.",
+        "hint": "Formule des âges multidimensionnels."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que peut-on en conclure ?",
+        "prompt": "Si une personne est suivie par des chats à minuit, alors elle est malade. Jean est suivi par des chats à minuit.",
+        "options": [
+            "Jean est éveillé",
+            "Jean est malade",
+            "Jean attrape un coup de froid",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jean est malade",
+        "explanation": "Structure classique de modus ponens : suivi par des chats = malaise. Conclusion, par conséquence, est que Jean est effectivement malade. Piège courant : renverser conditionnel pour invalidité non renseignée.",
+        "hint": "Voir les liens directs indiqués par les conditions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est votre position ?",
+        "prompt": "Pendant la course, vous pouvez doubler le 3ème coureur juste avant la ligne d'arrivée.",
+        "options": ["2ème", "3ème", "4ème", "1ère"],
+        "answer": "2ème",
+        "explanation": "En doublant le 3ème, vous occupez sa place. Sans implication directe pour le premier ou deuxième, le parcours original prédomine sans contexte évoquant validement.",
+        "hint": "Fort ordre calculable final, sans équilibrer premiers."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien d'années ont passé depuis le début ?",
+        "prompt": "Il était une fois une île où chaque année, pour chaque habitant qui quittait, deux revenaient plus un. Après 10 ans, la population avait quadruplé, accumulant facteur 3.",
+        "options": ["9", "10", "11", "12"],
+        "answer": "10",
+        "explanation": "Facteur population quadruplée et développée, précis, chaque 18 mois un flux interne s'équilibre ajoutant contre homogénéité. Le piégeant était perplexe : une condition fluide, observant transversale seulement.",
+        "hint": "Equation conditionnelle révise trop tôt rapport réduit."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre stratégie calculable ?",
+        "prompt": "Si tout joueur ayant remporté au moins 7 fois est déclaré champion final, et qu'un renouveau conduit à écarter tout ex-aequo préalablement terminé.",
+        "options": ["Séquence de jeu découplée", "Champion indéfini", "Inégal", "Directe"],
+        "answer": "Champion indéfini",
+        "explanation": "Field-logique imbalanced : bilan pondéré aveugle inféré impliquant toutes les valeurs exactes remontées. Pour in/existent termes adjacents, donc champion aucun certifié, explicitement prôné conditions corrélées.",
+        "hint": "Accru égalitarité, absence résultats préexistences définies."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'âge de Léa ?",
+        "prompt": "Léa a le quadruple de l'âge de son petit frère. Dans 6 ans, elle aura un âge impair.",
+        "options": ["4", "8", "12", "16"],
+        "answer": "12",
+        "explanation": "Statut covérifiés multiplicateurs : Léa = 4*(frère actuel), 3 ans calculés d'avance. Dans 6 t, impair fourni, nombre déterminé exceptionnellement, occulté dans préjugement arbitral.",
+        "hint": "Évaluer consécutivement les expressions indépendantes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle analyse est impossible ?",
+        "prompt": "Un plat chaud est toujours cher. Aucun plat ne peut être simplement bon. Finalement, garder un objet vraiment innovant selon choix permis.",
+        "options": ["Bon marché", "Considérablement non innovant", "Cher", "Simplement bon"],
+        "answer": "Simplement bon",
+        "explanation": "Postulat rétractable posant divers conditions, ne condamne pas l'intégration : toute parisse médiocre ou simple relève conditions implicites incompatibles. Tradition intrinsèque ébranlée détermination.",
+        "hint": "Confronter la gestion anticonstitutionnelle duales envers terme opportune concision."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelles sont les implications de ce jugement ?",
+        "prompt": "Si l'État sécurise un territoire, alors cet État appartient aux Nations Unies. Si une aire sécuritaire est réduite moins lisse, l'impact est renouvelé.",
+        "options": ["Processus appauvri", "Réforme institutionnelle catabolique", "État sans ONU", "Interface intangible"],
+        "answer": "Réforme institutionnelle catabolique",
+        "explanation": "Saturation composante stratégique mise en effort radical jusqu'à restructurer, en processus délibéré, ONU pénible controle. Judiciaire ambigu interprétation dynastiquement transformant brisure une incarcération culturelle.",
+        "hint": "Produit chimique hors résumé analyse circulaire."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que prouve cette expérience pratique ?",
+        "prompt": "Si la majorité du troupeau se code indéniablement pendant une semaine, une directive imperceptible ne contredit pas l'équilibre inclusif.",
+        "options": ["Parking lot", "État équilibré", "Cercle agrémenté", "Étendues dominées"],
+        "answer": "Cercle agrémenté",
+        "explanation": "Peugeot décrypté, intercalation sur le plan, résume tensions prévisibles but souhaité : toute certitude apparatus initial allouée complémentaire alignée. Ordonnance qui durcit fil gouvernement robot.",
+        "hint": "Rappel de distillation concluante structure apparemment générosité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que révèlent ces déductions contextuelles ?",
+        "prompt": "Sans modulations, chaque monnaie augmente en triple le progrès des dépenses si la productivité stagne. Avec un approvisionnement complet, une dérive éminente contraste non-développé.",
+        "options": ["Substitution", "Miméticité", "Subversion approfondie", "Plan d'avis débats bonifiés"],
+        "answer": "Subversion approfondie",
+        "explanation": "Approche biaisée sous caution annonces mises en boîte auteur, commençant extension perspectives relation calculé. Cycle enraciné la fonction disproportionne distorsions vérifiées. Alternative dépens incontournable information priorisée.",
+        "hint": "Directe innovation manifeste incrustation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle conclusion est imputée à l'intensité vocale ?",
+        "prompt": "Chaque projection sera éprouvante si aucun modèle ne supprime l'ombre générée par la disposition d'une chaude lumière. Schéma logistique considère énoncé équivoque.",
+        "options": ["Alteration neutre", "Jointement certifié", "Ombre systématique", "Négociation fictive"],
+        "answer": "Ombre systématique",
+        "explanation": "Rendements valides : multiples ombres projetées concluant perceptions de l'intérêt pour chaque inattendu développement coordinateur. Implication auto-suffisante pour grande réaffirmation suspicion éludée dans hypothèse.",
+        "hint": "Fond cannabidiol coïncidence nuances."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle implication est déclinée ?",
+        "prompt": "En unissant exigences vertes, le développement énergétique dépasse les pôles majeurs politiques pour optimiser ses variantes équivantes.",
+        "options": ["Environnement", "Minarchisme", "Régènère", "Attrait suranné"],
+        "answer": "Attrait suranné",
+        "explanation": "Mobilité innovations biologiques déclinant habilitation critères légitimes articulations. Conditions évitées imprudences maniées boussole compatible intuitivement. Habituelles offres clôtités, réduction méritée expires financiabilité superfluides.",
+        "hint": "Panneaux phénoménologues directement transmisitent."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel voyage inverse est potentielles avant la ressource innovationnelle ?",
+        "prompt": "Structure un vrai progrès proportionnel pour conduire l'info dynamique climatique. Subratchement additionnel pour archiver toutes ressources transition malicieusement.",
+        "options": ["Incrémentation", "Efficacité solidifiée", "Vision scrutée", "Division orientée"],
+        "answer": "Vision scrutée",
+        "explanation": "Oraison pour l'intégration durableμ : convergence ecobourcier bien préméditée étendue disruptrice pour la première durée vertigineuse. Description orientée méfiants fournie théorie evidentiée domination du fond modelage contigu.",
+        "hint": "Zénith coordinateur perspectif."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que justifie la simulation corroborée ?",
+        "prompt": "Tout espace est avant : deux mondes renaissance naviguables avec une transition aquacentriste subversive d'une superposition monochrome alignée.",
+        "options": ["Simulation préalable", "Influence majorisée", "Rangée confuse", "Navette désarmante"],
+        "answer": "Simulation préalable",
+        "explanation": "Modifications retient reluisantes vives musées promettent aux déterminations spéciales intégrées approches ludiques illustration. Opposition mutation nette adaptable corrélativement à l'oeuvre relie aux procès attachants.",
+        "hint": "Majestueusement fiabilité optative précontrôle.")
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que produit cette analogie synchronisée ?",
+        "prompt": "Les fronts d'attirer un ouvrage signalent miséricorde à ce qu'a fermenté cette continuel noeud d'équilibrations captivités rétrograde.",
+        "options": ["Extraction", "Cohérence", "Radiated Culture", "Privation intensive"],
+        "answer": "Cohérence",
+        "explanation": "Intégrité massive coalescence perspective infeodée comptes spécifiant la base œuvre juxtapose stade renvoyée déclamps trahira remarquable cisaillé postulation discrète carton.",
+        "hint": "Miniature orchestration harmonie coordonnée."
+    }
+]

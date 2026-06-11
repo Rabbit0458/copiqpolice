@@ -1,0 +1,434 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « joyeux » ?",
+        "prompt": null,
+        "options": ["Triste", "Heureux", "Fâché", "Mécontent"],
+        "answer": "Heureux",
+        "explanation": "Le mot « joyeux » est synonyme de « heureux » car ils décrivent tous deux un état de contentement ou de bonheur. « Triste » et « fâché » sont des contraires de joyeux. « Mécontent » désigne une insatisfaction, ce qui est encore un contraire.",
+        "hint": "Pense à une émotion positive."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Chat, Chien, Loup, Pommes",
+        "options": ["Chat", "Chien", "Loup", "Pommes"],
+        "answer": "Pommes",
+        "explanation": "Les mots chat, chien et loup désignent des animaux. Les pommes sont des fruits, ce qui les rend différentes des autres mots.",
+        "hint": "Trois sont des animaux, l'un est un fruit."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « léger » ?",
+        "prompt": null,
+        "options": ["Lourd", "Flottant", "Aérien", "Vaporeux"],
+        "answer": "Lourd",
+        "explanation": "« Lourd » est l'antonyme de « léger » car il signifie un poids important, tandis que « léger » indique un faible poids. « Flottant », « aérien » et « vaporeux » sont plus synonymes de légèreté.",
+        "hint": "Si quelque chose n'est pas léger, il est..."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette phrase, le mot « voilier » signifie…",
+        "prompt": "Le voilier est parti à l'aube.",
+        "options": ["Un bateau", "Un avion", "Un vélo", "Une voiture"],
+        "answer": "Un bateau",
+        "explanation": "Un voilier est un bateau propulsé par la force du vent sur ses voiles. Un avion, un vélo et une voiture ne sont pas concernés par la notion de voile dans leur définition.",
+        "hint": "Imagine un moyen de transport utilisant le vent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « courageux » ?",
+        "prompt": null,
+        "options": ["Peur", "Vaillant", "Timide", "Terrifié"],
+        "answer": "Vaillant",
+        "explanation": "Le mot « vaillant » est synonyme de « courageux », tous deux décrivant quelqu'un qui fait preuve de bravoure. « Peur », « timide » et « terrifié » sont des états plutôt liés à l'absence de courage.",
+        "hint": "Pensez à quelqu'un qui n'a pas peur d'affronter les défis."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'antonyme de « propre » ?",
+        "prompt": null,
+        "options": ["Sale", "Net", "Immaculé", "Pur"],
+        "answer": "Sale",
+        "explanation": "« Propre » signifie exempt de saleté, donc son contraire est « sale ». Les mots « net », « immaculé » et « pur » sont des synonymes de « propre ». Ils décrivent tous un état de propreté.",
+        "hint": "C'est le contraire d'avoir la propreté."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Malgré le froid, elle a ___ dehors.\"",
+        "prompt": null,
+        "options": ["Reste", "Fuis", "Ressenti", "Couru"],
+        "answer": "Reste",
+        "explanation": "Dans le contexte de cette phrase, « reste » est le mot le plus approprié car il indique que la personne n'a pas bougé malgré le froid. « Fuis » indique un départ, « ressenti » ne montre pas une action d'emplacement, et « couru » implique un mouvement sans lien avec rester.",
+        "hint": "Pense à une action de ne pas changer de lieu."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « commencer » ?",
+        "prompt": null,
+        "options": ["Arrêter", "Entamer", "Finir", "Cesser"],
+        "answer": "Entamer",
+        "explanation": "« Entamer » signifie débuter ou commencer une action. « Arrêter », « finir » et « cesser » sont des antonymes dans le sens de terminer une action. Entamer se rapporte à l'idée de lancement.",
+        "hint": "C'est le stade initial d'une action."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Banane, Fraise, Brocoli, Pomme",
+        "options": ["Banane", "Fraise", "Brocoli", "Pomme"],
+        "answer": "Brocoli",
+        "explanation": "La banane, la fraise et la pomme sont des fruits. Le brocoli est un légume, ce qui en fait l'intrus parmi les listes de fruits.",
+        "hint": "Cherche le légume parmi les fruits."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « noir » ?",
+        "prompt": null,
+        "options": ["Gris", "Blanc", "Sombre", "Nocturne"],
+        "answer": "Blanc",
+        "explanation": "« Blanc » est l'antonyme de « noir » car ce sont deux couleurs opposées. « Gris » est une couleur intermédiaire et « sombre » et « nocturne » décrivent des tonalités liées au noir.",
+        "hint": "Pensez à la couleur opposée à la nuit."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette phrase, le mot « feuille » signifie…",
+        "prompt": "La feuille du chêne est tombée.",
+        "options": ["Page", "Papier", "Feuillage", "Carte"],
+        "answer": "Feuillage",
+        "explanation": "Dans ce contexte, « feuille » désigne une partie d'une plante, un feuillage. Une page, un papier et une carte sont fabriqués et ne se rattachent pas directement à une plante sans transformation.",
+        "hint": "Ce mot se trouve sur les arbres."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « joli » ?",
+        "prompt": null,
+        "options": ["Beau", "Moche", "Hideux", "Maladroit"],
+        "answer": "Beau",
+        "explanation": "« Joli » et « beau » sont des synonymes car ils expriment la beauté ou l'agrément visuel. « Moche » et « hideux » sont des antonymes, tandis que « maladroit » ne concerne pas l'esthétique mais la façon de se comporter.",
+        "hint": "Cherchez un mot qui loue l'esthétique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'antonyme de « chaud » ?",
+        "prompt": null,
+        "options": ["Tiède", "Glacé", "Brûlant", "Chaudron"],
+        "answer": "Glacé",
+        "explanation": "« Glacé » est l'antonyme de « chaud » car il désigne une température très basse. « Tiède » est quelque chose entre chaud et froid, tandis que « brûlant » renforce la chaleur. « Chaudron » est un contenant, pas une température.",
+        "hint": "Pensez à un extrême de température."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « grand » ?",
+        "prompt": null,
+        "options": ["Petit", "Élevé", "Minuscule", "Léger"],
+        "answer": "Élevé",
+        "explanation": "« Élevé » signifie d'une grande hauteur, ce qui en fait un synonyme de « grand ». « Petit » et « minuscule » sont des antonymes, tandis que « léger » ne s'applique pas à la taille mais au poids.",
+        "hint": "Concentrez-vous sur la hauteur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette phrase, le mot « canne » signifie…",
+        "prompt": "Il s'appuie sur sa canne pour marcher.",
+        "options": ["Bague", "Instrument", "Tube", "Bâton"],
+        "answer": "Bâton",
+        "explanation": "La « canne » pour marcher est un bâton utilisé pour s'appuyer. Les autres propositions ne correspondent pas à l'objet utilisé dans le contexte locomoteur.",
+        "hint": "C'est un support pour la marche."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « jour » ?",
+        "prompt": null,
+        "options": ["Soleil", "Nuit", "Matin", "Tard"],
+        "answer": "Nuit",
+        "explanation": "La « nuit » est l'antonyme du « jour » car elle représente la période d'obscurité, tandis que le jour est associé à la clarté solaire. « Soleil » et « matin » sont liés à la lumière, et « tard » indique un moment mais pas l'opposition au jour.",
+        "hint": "Cherchez la période sans lumière."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « terminer » ?",
+        "prompt": null,
+        "options": ["Commencer", "Achever", "Démarrer", "Initier"],
+        "answer": "Achever",
+        "explanation": "« Terminer » et « achever » sont synonymes car ils signifient tous deux mettre fin à une action. « Commencer », « démarrer » et « initier » sont des antonymes, désignant le début d'une action.",
+        "hint": "C'est le point final d'une activité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Orange, Kiwi, Carotte, Fraise",
+        "options": ["Orange", "Kiwi", "Carotte", "Fraise"],
+        "answer": "Carotte",
+        "explanation": "La carotte est l'intrus car c'est un légume racine, alors que l'orange, le kiwi et la fraise sont des fruits. Tous les autres offrent un fruit comestible.",
+        "hint": "Cherchez le légume parmi les fruits."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Pilote est à avion comme marin est à ___",
+        "prompt": null,
+        "options": ["Voiture", "Bateau", "Train", "Bus"],
+        "answer": "Bateau",
+        "explanation": "Un pilote contrôle un avion, tout comme un marin contrôle un bateau. Le train et le bus ont aussi leurs opérateurs (conducteur et chauffeur), mais ne s'appliquent pas au marin.",
+        "hint": "Réfléchissez à quel véhicule un marin est affilié."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « visible » ?",
+        "prompt": null,
+        "options": ["Invisible", "Transparent", "Transparent", "Fluide"],
+        "answer": "Invisible",
+        "explanation": "« Invisible » est l'antonyme de « visible », signifiant qu'il ne peut pas être vu. « Transparent » et « fluide » ne sont pas des antonymes, désignant un certain degré de clarté ou régularité.",
+        "hint": "Cherchez le contraire de ce qui peut être vu."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot « carte » signifie…",
+        "prompt": "Il a étudié la carte avant de partir en randonnée.",
+        "options": ["Plan", "Menu", "Carte bancaire", "Etiquette"],
+        "answer": "Plan",
+        "explanation": "Dans le contexte de la randonnée, « carte » signifie un plan ou une carte géographique. Un menu, carte bancaire et étiquette sont d'autres significations qui ne s'appliquent pas ici.",
+        "hint": "C'est un terme utilisé pour s'orienter."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Or, Argent, Cuivre, Plastique",
+        "options": ["Or", "Argent", "Cuivre", "Plastique"],
+        "answer": "Plastique",
+        "explanation": "Or, argent, et cuivre sont des métaux, tandis que le plastique est un matériau synthétique, différent de nature.",
+        "hint": "Les trois appartiennent à la catégorie métallurgique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « construire » ?",
+        "prompt": null,
+        "options": ["Détruire", "Bâtir", "Casser", "Abattre"],
+        "answer": "Bâtir",
+        "explanation": "« Construire » et « bâtir » sont synonymes, les deux indiquent la création ou l'élaboration d'une structure. « Détruire », « casser » et « abattre » sont des antonymes puisqu'ils impliquent la destruction.",
+        "hint": "Cherchez un mot qui décrit une création."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « léger » ?",
+        "prompt": null,
+        "options": ["Lourd", "Fatigué", "Souple", "Dur"],
+        "answer": "Lourd",
+        "explanation": "« Léger » signifie d'un faible poids, tandis que « lourd » désigne un poids important, faisant de lui l'antonyme. « Fatigué », « souple » et « dur » ont des significations sans rapport direct avec le poids.",
+        "hint": "Concentrez-vous sur le poids opposé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Pour s'améliorer, il a ___ tous les jours.\"",
+        "prompt": null,
+        "options": ["Regardé", "Écouté", "Pratiqué", "Décidé"],
+        "answer": "Pratiqué",
+        "explanation": "Ici, « pratiqué » est le mot juste car il implique la répétition d'une activité pour s'améliorer. « Regardé », « écouté » et « décidé » ne transmettent pas ce sens actif de l'amélioration constante.",
+        "hint": "Cherchez une action continue et constructive."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Professeur, Étudiant, Tableau, Directeur",
+        "options": ["Professeur", "Étudiant", "Tableau", "Directeur"],
+        "answer": "Tableau",
+        "explanation": "Professeur, étudiant et directeur sont des personnes impliquées dans le système éducatif, alors que le tableau est un objet utilisé en classe, c'est l'intrus.",
+        "hint": "Concentrez-vous sur un objet non humain."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot « poêle » signifie…",
+        "prompt": "Il mit la poêle sur le feu pour cuire la viande.",
+        "options": ["Appareil de chauffage", "Casserole", "Grill", "Poêle à frire"],
+        "answer": "Poêle à frire",
+        "explanation": "Dans ce contexte, « poêle » désigne un ustensile de cuisine utilisé pour cuire des aliments, aussi appelé poêle à frire. Les autres options ne servent pas à cuisiner de manière directe.",
+        "hint": "Utilisé pour préparer des aliments."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « rapide » ?",
+        "prompt": null,
+        "options": ["Lent", "Véloce", "Calme", "Pesant"],
+        "answer": "Véloce",
+        "explanation": "« Rapide » et « véloce » sont synonymes, tous deux décrivant une grande vitesse. « Lent » est l'antonyme, tandis que « calme » et « pesant » ne touchent pas à l'idée de la vitesse.",
+        "hint": "Cherchez un mot équivalent à grande vitesse."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « courage » ?",
+        "prompt": null,
+        "options": ["Vaillance", "Timidité", "Audace", "Intrépidité"],
+        "answer": "Timidité",
+        "explanation": "« Timidité » est l'antonyme de « courage » car elle indique une réserve excessive face à des situations nouvelles. « Vaillance », « audace » et « intrépidité » sont des synonymes de courage.",
+        "hint": "Reflète une hésitation à affronter."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Oiseau est à vol comme poisson est à ___",
+        "prompt": null,
+        "options": ["Mer", "Nage", "Ailes", "Respiration"],
+        "answer": "Nage",
+        "explanation": "Un oiseau utilise le vol pour se déplacer, un poisson utilise la nage. Mer, ailes et respiration ne sont pas des modes de locomotion spécifiques pour le poisson.",
+        "hint": "Pensez au mode de déplacement dans l'eau."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Oreille, Nez, Livre, Bouche",
+        "options": ["Oreille", "Nez", "Livre", "Bouche"],
+        "answer": "Livre",
+        "explanation": "Oreille, nez et bouche font partie du corps humain, tandis que le livre est un objet de lecture, il est donc l'intrus de cette liste.",
+        "hint": "Cherchez le non-anatomique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « lumineux » ?",
+        "prompt": null,
+        "options": ["Obscur", "Clair", "Éteint", "Sombre"],
+        "answer": "Clair",
+        "explanation": "« Lumineux » et « clair » sont synonymes car ils décrivent quelque chose de bien illuminé. « Obscur » et « sombre » désignent une absence de lumière, et « éteint » se réfère à la cessation d'une source lumineuse.",
+        "hint": "Synonyme qui implique une bonne visibilité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot « pièce » signifie…",
+        "prompt": "La pièce est remplie de meubles anciens.",
+        "options": ["Monnaie", "Espace", "Échantillon", "Jeu"],
+        "answer": "Espace",
+        "explanation": "Dans ce contexte, « pièce » signifie une chambre ou une salle dans un bâtiment, un espace. Les autres significations de pièce ne concernent pas la disposition des meubles.",
+        "hint": "Un espace dans une maison."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Clair", "Mystérieux", "Évident", "Translucide"],
+        "answer": "Mystérieux",
+        "explanation": "« Sibyllin » signifie qui est obscur, mystérieux ou difficile à comprendre. « Clair » et « évident » sont des antonymes puisqu'ils indiquent de la clarté, et « translucide » renvoie à la qualité de laisser passer la lumière, sans lien avec l'opacité du sens.",
+        "hint": "Prenez en compte le mystère et la complexité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'antonyme de « prolixe » ?",
+        "prompt": null,
+        "options": ["Laconique", "Bavard", "Discursif", "Éloquent"],
+        "answer": "Laconique",
+        "explanation": "« Laconique » est l'antonyme de « prolixe » car il signifie qu'il est exprimé en peu de mots, opposé à un discours verbeux. « Bavard », « discursif » et « éloquent » sont liés à l'abondance de parole.",
+        "hint": "Concentré sur le fait de parler peu."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Magicien est à illusion comme écrivain est à ___",
+        "prompt": null,
+        "options": ["Livre", "Imagination", "Fiction", "Vérité"],
+        "answer": "Fiction",
+        "explanation": "Un magicien réalise des illusions, tout comme un écrivain crée des fictions. Les autres termes, bien que liés à l'écriture, ne s'appuient pas sur la création imaginative.",
+        "hint": "Concentré sur la création d'histoires irréelles."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « atavique » ?",
+        "prompt": null,
+        "options": ["Moderne", "Héréditaire", "Ancestral", "Traditionnel"],
+        "answer": "Moderne",
+        "explanation": "« Atavique » se réfère à quelque chose qui relève des ancêtres ou d'un temps ancien. « Moderne » est l'antonyme car il indique ce qui est actuel ou récent. « Héréditaire », « ancestral » et « traditionnel » sont des concepts liés à la continuité du passé.",
+        "hint": "Pensez au terme opposé à l'ancien."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : \"Il a finalement ___ sa demande.\"",
+        "prompt": null,
+        "options": ["Applaudi", "Réprimandé", "Accordé", "Repoussé"],
+        "answer": "Accordé",
+        "explanation": "Dans ce contexte, « accordé » signifie qu'une demande a été acceptée ou approuvée. « Applaudi », « réprimandé » et « repoussé » ne conviennent pas à une approbation ou accepter une demande.",
+        "hint": "Cherchez l'idée d'accepter ou de valider."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « contrit » ?",
+        "prompt": null,
+        "options": ["Réjoui", "Attristé", "Complice", "Coupable"],
+        "answer": "Attristé",
+        "explanation": "« Contrit » signifie profondément désolé ou attristé. « Réjoui » est un antonyme car il signifie heureux, et « complice » ou « coupable » ne véhiculent pas directement la tristesse ou le regret.",
+        "hint": "Cherchez ce qui induit une tristesse mêlée de regrets."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Permis, Autorisé, Rejeté, Légal",
+        "options": ["Permis", "Autorisé", "Rejeté", "Légal"],
+        "answer": "Rejeté",
+        "explanation": "Permis, autorisé et légal évoquent des notions de permission, tandis que « rejeté » signifie refusé ou non accepté.",
+        "hint": "Cherchez le terme qui signifie refuser."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est l'analogie correcte : Plume est à oiseau comme écaille est à ___",
+        "prompt": null,
+        "options": ["Poisson", "Mammifère", "Plante", "Insecte"],
+        "answer": "Poisson",
+        "explanation": "Une plume est un attribut de l'oiseau comme l'écaille est un attribut du poisson. Mammifère et insecte n'ont pas d'écailles, et plante n'est pas animée.",
+        "hint": "Cherchez un attribut physique de certains animaux marins."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Architecte est à bâtiment comme compositeur est à ___",
+        "prompt": null,
+        "options": ["Partition", "Musique", "Livre", "Film"],
+        "answer": "Partition",
+        "explanation": "Un architecte conçoit des bâtiments comme un compositeur crée des partitions. Musique, livre et film sont des produits finis où la contribution conceptuelle du compositeur se manifeste mais n’est pas explicitée directement.",
+        "hint": "Cherchez la base d'une création musicale."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Asile, Hôpital, Prison, Jardin",
+        "options": ["Asile", "Hôpital", "Prison", "Jardin"],
+        "answer": "Jardin",
+        "explanation": "Asile, hôpital et prison sont des établissements accueillant des personnes pour des séjours plus ou moins longs, alors que le jardin n'a pas cette fonction.",
+        "hint": "Cherchez l'endroit qui n’est pas un lieu d’accueil."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « pléthorique » ?",
+        "prompt": null,
+        "options": ["Abondant", "Rare", "Minime", "Insuffisant"],
+        "answer": "Abondant",
+        "explanation": "« Pléthorique » signifie en excès ou très abondant, ce qui en fait un synonyme d'« abondant ». « Rare », « minime » et « insuffisant » sont contraires à ce concept de profusion.",
+        "hint": "Cherchez une situation de surabondance."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « altérer » ?",
+        "prompt": null,
+        "options": ["Modifier", "Altérner", "Conserver", "Stabiliser"],
+        "answer": "Modifier",
+        "explanation": "« Altérer » signifie changer ou modifier, c'est donc synonyme de « modifier ». « Alterner » a une toute autre signification : faire se succéder. « Conserver » et « stabiliser » sont contraires à l'idée de changement.",
+        "hint": "Recherchez un terme impliquant un changement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Synonyme, Antonyme, Homophone, Prénom",
+        "options": ["Synonyme", "Antonyme", "Homophone", "Prénom"],
+        "answer": "Prénom",
+        "explanation": "Synonyme, antonyme et homophone sont des termes liés à la linguistique, tandis que « prénom » est une désignation personnelle et ne fait pas partie de ce champ lexical.",
+        "hint": "Cherchez l’étiquette individuelle."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : \"Elle a ___ ses larmes lors de l'allocution.\"",
+        "prompt": null,
+        "options": ["Versé", "Retenu", "Déversé", "Atténué"],
+        "answer": "Retenu",
+        "explanation": "« Retenu » indique qu’elle a réussi à ne pas pleurer, contrairement à « versé » et « déversé » qui suggèrent une libération ou un écoulement. « Atténué » serait plus pertinent avec un sentiment plutôt qu’avec une action physique comme les pleurs.",
+        "hint": "Cherchez un terme reflétant le contrôle."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Clair", "Ferme", "Flou", "Morbide"],
+        "answer": "Clair",
+        "explanation": "« Sibyllin » signifie mystérieux ou difficile à comprendre, tandis que « clair » indique une compréhension facile et sans ambiguïté, c'est donc l'antonyme. « Ferme » et « morbide » ne traitent pas de clarté, et « flou » est un synonyme plutôt qu’un contraire.",
+        "hint": "Cherchez un mot qui implique la compréhension facile."
+    }
+]

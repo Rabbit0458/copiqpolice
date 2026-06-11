@@ -1,0 +1,54 @@
+# COP'IQ — E2E Flow 02 : Onboarding 4 slides
+# Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-099
+# Prérequis : compte existant, onboarding non encore vu (clearState)
+
+appId: fr.copiq.app
+---
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Passer l'avertissement
+- optional:
+    - tapOn:
+        text: "J'ai compris"
+
+# Slide 1 : Bienvenue
+- assertVisible:
+    text: "Bienvenue"
+
+- tapOn:
+    text: "Suivant"
+
+- waitForAnimationToEnd
+
+# Slide 2 : Cas réels
+- assertVisible:
+    text: "Cas réels"
+
+- tapOn:
+    text: "Suivant"
+
+- waitForAnimationToEnd
+
+# Slide 3 : Correction
+- assertVisible:
+    text: "Correction"
+
+- tapOn:
+    text: "Suivant"
+
+- waitForAnimationToEnd
+
+# Slide 4 : CTA final
+- tapOn:
+    text: "Démarrer maintenant"
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# On doit arriver sur la page de login/signup
+- assertVisible:
+    text: "Se connecter"

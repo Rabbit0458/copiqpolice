@@ -1,0 +1,312 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre 'A' apparaît-elle dans la phrase ?",
+    "prompt": "Comptez attentivement les majuscules uniquement.",
+    "stimulus": "ANNA ADORE MANGER DES APPLE PIE LE MATIN.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "La lettre 'A' est présente dans ANNA (2), ADORE (1), APPLE (1), PIE (0), LE (0), MATIN (1). Il y a aussi 'A' dans DES (0) et donc 7 occurrences au total.",
+    "hint": "Surligne mentalement chaque A en majuscule."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Cherchez la lettre qui ne suit pas le modèle d'espacement.",
+    "stimulus": "M O Q S T W Y A",
+    "options": ["S", "T", "W", "A"],
+    "answer": "A",
+    "explanation": "Les lettres M, O, Q, S, T, W, Y suivent une alternance de deux espaces (M, O, Q, S...), mais 'A' ne suit pas cette logique. Elle est décalée.",
+    "hint": "Considérez les espaces entre les lettres."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre 'E' majuscule apparaît-elle ?",
+    "prompt": "Ne comptez que les majuscules.",
+    "stimulus": "ELLE AIME LES ÉLÉPHANTS ET LES ÉTOILES.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "'E' apparaît dans ELLE (2), AIME (0), LES (1), ÉLÉPHANTS (0 car l'accent change la lettre), et ÉTOILES (1). ÉLÉPHANTS a aussi un É mais on ne compte que les E majuscules donc total 5.",
+    "hint": "Ne comptez que ce qui est clairement un 'E'."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle couleur est l'intrus dans la suite ?",
+    "prompt": "Chaque couleur suit un schéma logique.",
+    "stimulus": "Rouge Bleu Vert Jaune Noir Bleu Gris",
+    "options": ["Jaune", "Noir", "Gris", "Bleu"],
+    "answer": "Bleu",
+    "explanation": "Dans cette suite, chaque couleur est unique, mais 'Bleu' apparaît deux fois, rompant l'unicité. Cela fait du second 'Bleu' l'intrus.",
+    "hint": "Identifiez la couleur répétée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres 2 apparaissent dans la suite ?",
+    "prompt": "Comptez chaque chiffre '2'.",
+    "stimulus": "4 2 5 2 8 2 3 7 2 1",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Le chiffre '2' apparaît à la position 2, 4, 6, et 9 dans la suite, totalisant 4 occurrences. Les autres nombres ne contiennent pas de '2'.",
+    "hint": "Cherchez chaque '2' isolément."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel nombre est l'intrus dans la suite ?",
+    "prompt": "Trouvez le chiffre qui ne suit pas la séquence.",
+    "stimulus": "1 3 5 6 7 9 11",
+    "options": ["3", "5", "6", "11"],
+    "answer": "6",
+    "explanation": "Tous les nombres sauf '6' sont impairs. '6' est l'intrus car c'est le seul nombre pair. Il interrompt la suite d'impairs.",
+    "hint": "Notez les caractéristiques des nombres."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de mots de plus de 5 lettres y a-t-il dans la phrase ?",
+    "prompt": "Comptez uniquement les mots ayant plus de 5 lettres.",
+    "stimulus": "Le chien et son maître jouent joyeusement dans le jardin agréable.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les mots de plus de 5 lettres sont 'maître', 'joyeusement', 'jardin', et 'agréable'. Chacun de ces mots est compté individuellement.",
+    "hint": "Comptez chaque mot un par un pour la longueur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre 'I' apparaît-elle dans ce texte (majuscules et minuscules) ?",
+    "prompt": "Comptabilisez chaque 'I' peu importe la casse.",
+    "stimulus": "Il invite Isa pour un dîner inoubliable à Ibiza.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "Le 'I' apparaît dans 'Il' (1), 'invite' (1), 'Isa' (1), 'dîner' (1), 'inoubliable' (1), et deux fois dans 'Ibiza' (2), totalisant 7.",
+    "hint": "Regardez chaque mot qu'il soit grand ou petit."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : XY123Z9",
+    "stimulus": "XY123Z9",
+    "options": ["XY123Z8", "XY124Z9", "XY123Z9", "XY123Z7"],
+    "answer": "XY123Z9",
+    "explanation": "La séquence correcte est XY123Z9, les autres ont soit des chiffres modifiés soit des différences légères mais significatives.",
+    "hint": "Compare chaque caractère attentivement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres impairs dans la suite ?",
+    "prompt": "Comptez uniquement ceux qui sont impairs.",
+    "stimulus": "5 8 7 2 3 4 9",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les chiffres impairs sont 5, 7, 3, et 9. Cela nous donne un total de 4 chiffres impairs alors que les autres sont pairs.",
+    "hint": "Soulignez mentalement chaque impair."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre 'T' apparaît-elle (majuscule et minuscule) ?",
+    "prompt": "Comptez 'T' ou 't' en majuscule ou minuscule.",
+    "stimulus": "La tortue traverse activement tout le sentier interdit.",
+    "options": ["6", "7", "8", "9"],
+    "answer": "9",
+    "explanation": "La lettre 'T' apparaît respectivement 1, 1, 1, 1, 2, 1, et 2 fois dans chaque segment du texte donné.",
+    "hint": "Passe en revue chaque mot pour ne pas en manquer."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel mot est l'intrus dans la séquence ?",
+    "prompt": "Identifiez l'intrus qui ne suit pas le schéma.",
+    "stimulus": "chien, chat, oiseau, poisson, salamandre",
+    "options": ["chat", "oiseau", "poisson", "salamandre"],
+    "answer": "salamandre",
+    "explanation": "Tous les autres animaux sont communément gardés comme animaux de compagnie en intérieur, sauf la salamandre qui reste souvent en milieu spécifique.",
+    "hint": "Pensez à l'environnement habituel de chaque animal."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots de plus de 4 lettres y a-t-il ?",
+    "prompt": "Comptez les mots de plus de quatre lettres.",
+    "stimulus": "Il a beaucoup de courage et d'ambition pour réussir.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Les mots de plus de 4 lettres sont 'beaucoup', 'courage', 'ambition', 'réussir'. Chacun atteint ce critère.",
+    "hint": "Identifiez la longueur des mots un par un."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : MNOPQR56",
+    "stimulus": "MNOPQR56",
+    "options": ["MNOQR56", "MNOPQS56", "MNOPQR56", "MN0PQR56"],
+    "answer": "MNOPQR56",
+    "explanation": "La séquence identique est MNOPQR56, sans erreur d'espacement ni de caractères modifiés par rapport aux autres.",
+    "hint": "Concentrez-vous ligne par ligne avec patience."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots commencent par une voyelle ?",
+    "prompt": "Considérez les voyelles : A, E, I, O, U.",
+    "stimulus": "Un éléphant indomptable ose toujours entreprendre.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "5",
+    "explanation": "Les mots 'Un', 'éléphant', 'indomptable', 'ose', 'entreprendre' commencent par une voyelle. Chaque débute par A, E, I, O, ou U.",
+    "hint": "Repérez chaque initiale de mot soigneusement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de consonnes sont présentes dans la phrase ?",
+    "prompt": "Comptez chaque lettre qui n'est pas une voyelle.",
+    "stimulus": "Le vent souffle paisiblement sur les collines vertes.",
+    "options": ["27", "28", "29", "30"],
+    "answer": "29",
+    "explanation": "Le décompte des consonnes révèle un total de 29. Chaque lettre non-voyelle a été individuellement considérée.",
+    "hint": "Passez en revue chaque lettre pour éviter les erreurs."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle couleur est l'intrus dans la suite ?",
+    "prompt": "Une couleur n'appartient pas au groupe.",
+    "stimulus": "Violet Bleu Rose Indigo Turquoise",
+    "options": ["Bleu", "Rose", "Indigo", "Turquoise"],
+    "answer": "Indigo",
+    "explanation": "L'Indigo appartient au spectre des couleurs de l'arc-en-ciel, contrairement aux autres qui ne sont pas présentes dans l'ordre traditionnel du spectre visible.",
+    "hint": "Réfléchissez à la composition de l'arc-en-ciel."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de X et Y apparaissent dans la suite ?",
+    "prompt": "Comptez les occurrences de X et de Y.",
+    "stimulus": "XYYXYYXYXYXY",
+    "options": ["8", "9", "10", "11"],
+    "answer": "11",
+    "explanation": "Il y a 5 X et 6 Y dans la suite au total, d'où un nombre total de 11. Chaque lettre a été comptée distinctement.",
+    "hint": "Comptez chaque apparition individuellement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence suit exactement le modèle ?",
+    "prompt": "Modèle : 4A6B90CE",
+    "stimulus": "4A6B90CE",
+    "options": ["4A6B9OCE", "4A6B90CE", "4A6C90BE", "4A7B90CE"],
+    "answer": "4A6B90CE",
+    "explanation": "La 2e option suit intégralement le modèle sans modification de lettres ni de chiffres par rapport aux autres options.",
+    "hint": "Comparez chaque élément avec minutie."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre 'M' apparaît-elle dans ce texte ?",
+    "prompt": "Considérez 'M' et 'm', sans différence de casse.",
+    "stimulus": "Marie marche même quand il fait mauvais.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "Les 'M' apparaissent dans Marie (1), marche (1), même (1), quand (0), il (0), fait (0), et mauvais (1). Total de 6.",
+    "hint": "Vérifiez chaque mot attentivement pour 'M's."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots de plus de 6 lettres y a-t-il ici ?",
+    "prompt": "Maintenez votre attention à la longueur des mots.",
+    "stimulus": "Le capitaine observa avec insistance les horizons lointains.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les mots 'capitaine', 'observe', 'insistance', 'horizons', et 'lointains' dépassent 6 lettres, donc 4 mots sont concernés.",
+    "hint": "Ciblez les mots plus longs que d'habitude."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre 'R' apparaît-elle en majuscule dans ce passage ?",
+    "prompt": "Concentrez-vous uniquement sur les R majuscules.",
+    "stimulus": "ROUGE est la couleur RAREMENT RÉVÉLÉE dans ce RÉPERTOIRE.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Les 'R' apparaissent dans ROUGE (1), RAREMENT (2), RÉVÉLÉE (1), et RÉPERTOIRE (1). Chaque mot a été scruté pour les majuscules.",
+    "hint": "Considérez chaque mot commençant par un R."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le mot qui ne respecte pas la structure dans cette séquence ?",
+    "prompt": "Cherchez celui qui ne suit pas le modèle donné d'espace.",
+    "stimulus": "Amour, Beauté, Candeur, Désir, paix",
+    "options": ["Amour", "Beauté", "Candeur", "paix"],
+    "answer": "paix",
+    "explanation": "Tous commencent par une majuscule, sauf 'paix' qui commence en minuscules, faisant de lui l'intrus.",
+    "hint": "Notez la capitalisation au début de chaque mot."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de séquences de trois chiffres pairs y a-t-il ici ?",
+    "prompt": "Isoler uniquement des suites où chaque chiffre est pair.",
+    "stimulus": "248 628 468 572 392",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Les suites de trois chiffres pairs sont 248 (tous pairs), 468 (tous pairs), et 628 (tous pairs). 572 ne l'est pas.",
+    "hint": "Regardez attentivement chaque chiffre dans les groupes."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre 'S' apparaît-elle, peu importe sa casse ?",
+    "prompt": "Vérifiez chaque 's' ou 'S' sans attention à leur forme.",
+    "stimulus": "Sagesse signifie savoir souplement saisir le temps.",
+    "options": ["6", "7", "8", "9"],
+    "answer": "7",
+    "explanation": "Les 'S' sont présents dans Sagesse (3), signifie (1), savoir (0), souplement (1), saisir (1), et le temps (1).",
+    "hint": "Prélevez chaque 'S' et 's' indépendamment de son apparence."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle suite est identique au modèle ?",
+    "prompt": "Modèle : XJ7D-92B4",
+    "stimulus": "XJ7D-92B4",
+    "options": ["XJ7D-92B4", "XJ7D-29B4", "XJ7D-92B3", "XJ7D-92C4"],
+    "answer": "XJ7D-92B4",
+    "explanation": "La suite correcte XJ7D-92B4 est le modèle parfait, sans différence comparée aux autres variations erronées.",
+    "hint": "Distinguez chaque chiffre et lettre de la suite."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots contiennent une lettre majuscule ?",
+    "prompt": "Même un seul caractère majuscule suffit pour les inclure.",
+    "stimulus": "l'Aube sur le Port offre un spectacle Epoustouflant.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "Les mots 'l'Aube', 'Port', 'Epoustouflant' incluent une majuscule et sont comptés distinctement, donnant une quantité finale.",
+    "hint": "Faites attention aux capitales intégrées au milieu des mots."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles uniquement sous forme majuscule ?",
+    "prompt": "Voyelles concernées : A, E, I, O, U.",
+    "stimulus": "UNIVERS ENTRE DES EAUX CLAIRES AZURÉES ET OCEAN.",
+    "options": ["6", "7", "8", "9"],
+    "answer": "7",
+    "explanation": "Il y a 1 dans 'UNIVERS', 2 dans 'ENTRE', 0 dans 'DES', 1 dans 'EAUX', 1 dans 'AZURÉES', et 2 dans 'OCEAN'.",
+    "hint": "Cherchez uniquement les majuscules bien distinctes."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chiffres sont les multiples de quatre ?",
+    "prompt": "Listez tous ceux qui sont divisibles par quatre.",
+    "stimulus": "16 23 48 64 12 55 8 32",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6",
+    "explanation": "Le 16, 48, 64, 12, 8, et 32 sont divisibles par quatre, contrairement à 23 et 55.",
+    "hint": "Divisez chaque chiffre par quatre pour vérifier."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle phrase contient toutes les lettres du modèle ?",
+    "prompt": "Modèle : C'est une réussite !",
+    "stimulus": "Rechercher : C'est une réussite !",
+    "options": ["C'est un échec", "C'est la réussite !", "C'est une réussite !", "Ceci est un fait"],
+    "answer": "C'est une réussite !",
+    "explanation": "Seule la troisième option réplique l'intégralité du modèle. Les autres modifient ou omettent des lettres.",
+    "hint": "Comparez lettre par lettre pour la précision."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre 'A' en minuscule apparaît-elle ici ?",
+    "prompt": "Comptez les 'a' uniquement en minuscules.",
+    "stimulus": "abracadabra auk kakawi maka",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6",
+    "explanation": "On retrouve 'a' dans 'abracadabra' (4), 'auk' (1), 'kakawi' (1), et 'maka' (0). Total : 6.",
+    "hint": "Focalisez-vous sur les minuscules uniquement."
+  }
+]

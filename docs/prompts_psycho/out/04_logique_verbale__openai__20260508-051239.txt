@@ -1,0 +1,389 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « joyeux » ?",
+        "prompt": null,
+        "options": ["Triste", "Heureux", "Somnolent", "Ennuyé"],
+        "answer": "Heureux",
+        "explanation": "« Heureux » est synonyme de « joyeux » car les deux termes expriment un état de satisfaction et de bonheur. « Triste » est l'antonyme de « joyeux », exprimant un sentiment opposé. « Somnolent » ne signifie pas joyeux, car cela décrit un état de fatigue. « Ennuyé » n'est pas synonyme de joyeux puisqu'il décrit un état de désintérêt.",
+        "hint": "Pensez à un mot qui décrit un sentiment positif."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « courageux » ?",
+        "prompt": null,
+        "options": ["Hardi", "Vaillant", "Lâche", "Brave"],
+        "answer": "Lâche",
+        "explanation": "« Lâche » est l'antonyme de « courageux » car il désigne quelqu'un qui manque de courage. « Hardi » et « vaillant » sont des synonymes de courageux, signifiant audacieux ou brave. « Brave » également renforce l'idée de courage.",
+        "hint": "Pensez à quelqu'un qui fuit le danger au lieu de l'affronter."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Chat est à ronronner comme chien est à ___",
+        "prompt": null,
+        "options": ["Aboyer", "Miauler", "Dormir", "Siffler"],
+        "answer": "Aboyer",
+        "explanation": "Le chat émet un ronronnement comme son spécifique, de même le chien aboie. « Miauler » est le son produit par le chat, non par le chien. Dormir n'est pas un son particulier lié au chien. « Siffler » est une action non spécifique à un chien.",
+        "hint": "Pensez au son typique qu'un chien produit."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Chat, Chien, Lapin, Ordinateur",
+        "options": ["Chat", "Chien", "Lapin", "Ordinateur"],
+        "answer": "Ordinateur",
+        "explanation": "Le mot « ordinateur » est l'intrus car il n'appartient pas à la catégorie des animaux. « Chat », « chien » et « lapin » sont tous des animaux domestiques. Ils partagent un lien sémantique en tant qu'animaux tandis que l'ordinateur est un objet technologique.",
+        "hint": "Un seul des mots n'est pas vivant."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « finir » ?",
+        "prompt": null,
+        "options": ["Commencer", "Terminer", "Interrompre", "Progresser"],
+        "answer": "Terminer",
+        "explanation": "« Terminer » est un synonyme de « finir » car les deux signifient achever quelque chose. « Commencer » est un antonyme puisqu'il signifie l'initiation. « Interrompre » n'indique pas la fin mais une pause temporaire. « Progresser » indique un avancement, non la fin.",
+        "hint": "Cherchez le terme qui signifie l'achèvement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Il est rentré chez lui pour ___ la fatigue de la journée.\"",
+        "prompt": null,
+        "options": ["Intensifier", "Alléger", "Accroître", "Prolonger"],
+        "answer": "Alléger",
+        "explanation": "Le mot « alléger » correspond au fait de réduire ou diminuer, ce qui est souhaité lorsqu'on rentre chez soi fatigué. « Intensifier » et « accroître » constitueraient une augmentation contraire au sens désiré. « Prolonger » ne signifie pas diminuer, mais continuer la sensation.",
+        "hint": "Cherchez un mot qui signifie réduire l'intensité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « amuser » ?",
+        "prompt": null,
+        "options": ["Ennuyer", "Distraire", "Attrister", "Déprimer"],
+        "answer": "Distraire",
+        "explanation": "« Distraire » est synonyme de « amuser » car il signifie divertir ou changer les pensées de quelqu'un pour le mettre dans une bonne humeur. « Ennuyer » est l'inverse en enlevant tout intérêt ou plaisir. « Attrister » et « déprimer » sont également des antonymes car ils indiquent un changement vers un état émotionnel négatif.",
+        "hint": "Pensez à un mot qui signifie apporter de la joie ou du plaisir."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « généreux » ?",
+        "prompt": null,
+        "options": ["Avarice", "Altruiste", "Prodigue", "Chaleureux"],
+        "answer": "Avarice",
+        "explanation": "« Avarice » est l'antonyme de « généreux », car l'avarice désigne le désir de garder tout pour soi sans partager. « Altruiste » et « prodigue » sont proches du sens de généreux, impliquant l'idée de donner. « Chaleureux » n'est pas directement lié mais indique une nature aimable.",
+        "hint": "Cherchez un mot qui exprime le manque de volonté de donner."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Plume est à écrire comme fourchette est à ___",
+        "prompt": null,
+        "options": ["Manger", "Couper", "Lire", "Éclairer"],
+        "answer": "Manger",
+        "explanation": "Une plume sert à écrire, tout comme une fourchette sert à manger. « Couper » est associé à un couteau, pas une fourchette. « Lire » est une action distincte qui ne nécessite ni plume ni fourchette. « Éclairer » n'est associé à aucun des deux.",
+        "hint": "Creusez sur l'utilisation de l'objet en rapport avec sa nature."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « parler » ?",
+        "prompt": null,
+        "options": ["Écouter", "Discuter", "Obéir", "Eriger"],
+        "answer": "Discuter",
+        "explanation": "« Discuter » est proche de « parler » car il implique un échange verbal entre plusieurs personnes. « Écouter » ne signifie pas parler mais plutôt recevoir l'information. « Obéir » n'est pas lié au verbe parler, car cela exprime une action de soumission ou d'accord. « Eriger » est un verbe totalement sans rapport, signifiant construire ou ériger.",
+        "hint": "Cherchez le mot qui implique également une communication verbale."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette phrase, le mot \"pièce\" signifie : \"Il a laissé tomber la pièce par terre.\"",
+        "prompt": null,
+        "options": ["Monnaie", "Salle", "Opus", "Fragment"],
+        "answer": "Monnaie",
+        "explanation": "Dans le contexte, « pièce » fait référence à une unité de monnaie, souvent implicite dans de telles formulations. « Salle » serait une erreur contextuelle ici ; ce mot ne tomberait pas littéralement. « Opus » se rapporte principalement à une œuvre musicale. « Fragment » ne correspond pas au contexte suggérant une chute tangible et ronde.",
+        "hint": "Réfléchissez à ce qui peut vraiment tomber dans ce contexte."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Dans une grande ville, il est normal de ___ des embouteillages.\"",
+        "prompt": null,
+        "options": ["Croiser", "Anticiper", "Couvrir", "Ignorer"],
+        "answer": "Anticiper",
+        "explanation": "« Anticiper » signifie prévoir quelque chose à l'avance, ce qui est pertinent lorsqu'on parle des embouteillages indissociables des grands centres urbains. « Croiser » est inapproprié car il implique du hasard et non de la prévision. « Couvrir » et « ignorer » ne sont pas liés au contexte de planification préalable.",
+        "hint": "Réfléchissez à ce que quelqu'un ferait en s'attendant à un événement prévisible."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « terminer » ?",
+        "prompt": null,
+        "options": ["Annuler", "Commencer", "Achever", "Poursuivre"],
+        "answer": "Achever",
+        "explanation": "« Achever » et « terminer » décrivent tous deux le fait de conclure une tâche. « Annuler » signifie ce qui ne se terminera jamais. « Commencer » est l'antonyme, signifiant l'initiation d'une activité. « Poursuivre » ne signifie pas terminer mais continuer quelque chose.",
+        "hint": "Pensez au mot marquant l'achèvement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Oiseau est à voler comme poisson est à ___",
+        "prompt": null,
+        "options": ["Nager", "Courir", "Bondir", "Flotter"],
+        "answer": "Nager",
+        "explanation": "Un oiseau est conçu pour voler et un poisson pour nager. « Courir » n'appartient pas aux capacités primaires d'un poisson. « Bondir » est souvent lié aux animaux terrestres comme les lapins. « Flotter » évoque une immobilité dans l'eau plutôt qu'un mouvement contrôlé.",
+        "hint": "Pensez à la fonction principale d'un poisson sous l'eau."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Rouge, Bleu, Chat, Vert",
+        "options": ["Rouge", "Bleu", "Chat", "Vert"],
+        "answer": "Chat",
+        "explanation": "« Chat » est l'intrus car il n'est pas une couleur. Rouge, bleu et vert font tous partie des couleurs du spectre visible. « Chat » représente un animal et n'est pas associé aux autres termes en tant que catégorie de couleur.",
+        "hint": "Un des mots n'est pas un élément du spectre visible de la couleur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « lumière » ?",
+        "prompt": null,
+        "options": ["Lueur", "Fausse", "Sombre", "Clarté"],
+        "answer": "Sombre",
+        "explanation": "« Sombre » est l'antonyme direct de « lumière », représentant l'absence ou une faible intensité de celle-ci. « Lueur » est plus faible que lumière mais reste un type de lumière. « Clarté » est aussi synonyme car elle signifie également une bonne luminosité. « Fausse » n'a pas de relation directe avec la lumière.",
+        "hint": "Cherchez un mot qui signifie l'absence de lumière."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « acheter » ?",
+        "prompt": null,
+        "options": ["Vendre", "Acquérir", "Échanger", "Emprunter"],
+        "answer": "Acquérir",
+        "explanation": "« Acquérir » est synonyme d'« acheter » car il implique l'obtention de quelque chose en échange de paiement. « Vendre » est le contraire, impliquant céder un bien contre de l'argent. « Échanger » ne correspond pas, car cela signifie donner un bien pour en recevoir un autre sans l'intervention d'argent. « Emprunter » indique l'acquisition temporaire sans achat.",
+        "hint": "Pensez à un mot qui implique l'obtention définitive."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"intelligent\" ?",
+        "prompt": null,
+        "options": ["Sot", "Astucieux", "Brillant", "Supérieur"],
+        "answer": "Sot",
+        "explanation": "Le mot \"sot\" est le contraire de \"intelligent\" car il désigne quelqu'un de mentalement lent ou incompétent. \"Astucieux\" est quasi synonyme d'intelligent, indiquant la ruse ou la finesse d'esprit. \"Brillant\" renforce encore le concept d'intelligence. \"Supérieur\" pourrait impliquer la qualité, mais pas spécifiquement intellectuelle.",
+        "hint": "Recherchez un mot qui suggère un manque de perspicacité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « méticuleux » ?",
+        "prompt": null,
+        "options": ["Superficiel", "Soigneux", "Négligent", "Ordinaire"],
+        "answer": "Soigneux",
+        "explanation": "« Méticuleux » signifie accorder une attention minutieuse aux détails; « soigneux » partage cette notion de rigueur. « Superficiel » est son opposé immédiat, manquant de profondeur ou de soin. « Négligent » exprime un manque de soin intentionnel. « Ordinaire » n'indique pas le niveau de souci aux détails particulier.",
+        "hint": "Recherchez un mot qui implique minutie et attention."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"En rentrant de vacances, il a ___ des paysages splendides.\"",
+        "prompt": null,
+        "options": ["Remémoré", "Oublié", "Inventé", "Ignoré"],
+        "answer": "Remémoré",
+        "explanation": "« Remémoré » signifie se rappeler, ce qui est approprié au retour de vacances avec de nouvelles impressions visuelles. « Oublié » serait incorrect car cela impliquerait perdre ces souvenirs. « Inventé » serait inventer de fausses mémoires. « Ignoré » est une action de ne pas prêter attention volontaire.",
+        "hint": "Cherchez un mot qui indique se souvenir activement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « clairvoyant » ?",
+        "prompt": null,
+        "options": ["Prévoyant", "Aveugle", "Illuminé", "Experte"],
+        "answer": "Aveugle",
+        "explanation": "« Clairvoyant » décrit quelqu'un qui perçoit les choses avec justesse; l'opposé serait « aveugle », tant au sens propre que figuré. « Prévoyant » est synonyme, désignant une aptitude à anticiper. « Illuminé » pourrait suggérer de la clarté, et « experte » indique compétence.",
+        "hint": "Cherchez le trait opposé à la perception claire et précise."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Médecin est à hôpital comme enseignant est à ___",
+        "prompt": null,
+        "options": ["École", "Bibliothèque", "Laboratoire", "Atelier"],
+        "answer": "École",
+        "explanation": "Tout comme un médecin travaille à l'hôpital, un enseignant officie à l'école. Bibliothèque pourrait être liée à l'étude, mais l'enseignant y agit moins fréquemment en tant que professionnel. Laboratoire et atelier ne sont pas des lieux principaux pour un enseignant traditionnel.",
+        "hint": "Pensez au lieu principal de travail d'un enseignant."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot \"glace\" signifie : \"Après l'effort, elle a bu un verre d'eau avec de la glace.\"",
+        "prompt": null,
+        "options": ["Cristaux", "Miroir", "Dessert", "Glacière"],
+        "answer": "Cristaux",
+        "explanation": "Dans le contexte, « glace » désigne des cristaux d'eau gelée, placés dans un verre d'eau pour le rafraîchir. « Miroir » représente une surface réfléchissante non comestible. « Dessert » ne s'applique pas ici, la glace étant utilisée pour rafraîchir, et « glacière » correspond à un conteneur de rafraichissement.",
+        "hint": "Réfléchissez à ce qui est ajouté à une boisson pour la rafraîchir."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Guitare, Violon, Piano, Trompette",
+        "options": ["Guitare", "Violon", "Piano", "Trompette"],
+        "answer": "Trompette",
+        "explanation": "La trompette est l'intrus puisqu'elle est un instrument à vent, alors que guitare, violon et piano sont des instruments à cordes. Le moyen de production de son de ces trois derniers implique des cordes, contrairement à la trompette qui repose sur la vibration de l'air introduit.",
+        "hint": "Considérez l'instrument qui fonctionne par vibration d'air."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « compliqué » ?",
+        "prompt": null,
+        "options": ["Simple", "Facile", "Difficile", "Léger"],
+        "answer": "Difficile",
+        "explanation": "« Difficile » est synonyme de « compliqué » car les deux termes signifient poser des défis ou obstacles. « Simple » et « facile » sont antonymes, suggérant l'aisance et la clarté, tandis que « léger » concerne principalement un poids ou une intensité physique ou figurée.",
+        "hint": "Pensez à un mot qui traduit des obstacles ou des efforts."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « expansion » ?",
+        "prompt": null,
+        "options": ["Croissance", "Réduction", "Élargissement", "Augmentation"],
+        "answer": "Réduction",
+        "explanation": "« Réduction » est l'antonyme d'« expansion » car elle implique une diminution de taille ou d'étendue. En revanche, « croissance », « élargissement », et « augmentation » sont des synonymes, indiquant un accroissement ou une amplification.",
+        "hint": "Pensez à ce qui signifiait une diminution d'ampleur."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Elle a préféré ___ plutôt que de prendre la parole.\"",
+        "prompt": null,
+        "options": ["Observer", "Interruptions", "Rires", "Débat"],
+        "answer": "Observer",
+        "explanation": "« Observer » signifie regarder attentivement ou suivre les événements en silence, ce qui est logique ici comparativement à une situation où quelqu'un peut parler mais choisit d'écouter. « Interruptions », « rires » et « débat » n'ont pas cette connotation de silence ou de choix de ne pas parler.",
+        "hint": "Cherchez un mot qui implique le silence attentif."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Pâtissier est à gâteau comme forgeron est à ___",
+        "prompt": null,
+        "options": ["Fer", "Couteau", "Acier", "Anvil"],
+        "answer": "Fer",
+        "explanation": "Un pâtissier crée des gâteaux, tandis qu'un forgeron façonne le fer. L'acier, bien que travaillable par le forgeron, n'est pas son matériau principal. Couteau n'est pas le produit primordial de son art, et l'anvil, bien que c'est utilisé, reste un outil plutôt que matériau.",
+        "hint": "Réfléchissez au matériau traditionnellement associé aux forgerons."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « erroné » ?",
+        "prompt": null,
+        "options": ["Faux", "Vrai", "Exact", "Juste"],
+        "answer": "Faux",
+        "explanation": "« Faux » signifie incorrect, similaire à « erroné ». « Vrai » est un antonyme, signifiant correct ou authentique. « Exact » et « juste » sont également opposés, car ils désignent précision et justesse.",
+        "hint": "Cherchez un mot indiquant une erreur ou inexactitude."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot \"pièce\" signifie : \"La pièce qu'il cherche est sur la table.\"",
+        "prompt": null,
+        "options": ["Follement", "Objet", "Salle", "Jeu"],
+        "answer": "Objet",
+        "explanation": "Ici, « pièce » désigne un objet particulier que l'on recherche, souvent un quest spécifique. « Salle » serait une erreur, puisqu'il s'agit d'une pièce structurelle. « Jeu » ne s'appliquerait que dans un contexte dramatique, et « follement » n'a pas de rapport ici.",
+        "hint": "Réfléchissez au mot qui peut être recherché et possédé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « exubérant » ?",
+        "prompt": null,
+        "options": ["Sobre", "Éclatant", "Réfléchi", "Timide"],
+        "answer": "Sobre",
+        "explanation": "« Sobre » est l'antonyme d'« exubérant » car il décrit quelque chose de simple, modéré ou aisé. « Éclatant » et « réflexif » ne traduisent pas l'idée de réserve, bien que ces mots soient similaires à l'exubérance. La timidité n'est pas un strict opposé, mais se retrouve moins égal.",
+        "hint": "Pensez à quelque chose qui tempère grandement l'abondance."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Il cherche un endroit calme pour ___ ses examens.\"",
+        "prompt": null,
+        "options": ["Passer", "Réviser", "Échouer", "Regarder"],
+        "answer": "Réviser",
+        "explanation": "Il est logique de réviser ses examens dans un endroit calme afin de se concentrer et de bien apprendre. « Passer » les examens est ce qu'on fait après la révision. « Échouer » ne serait pas anticipé ici, et « regarder » n'est généralisé contre-productif ou pertinent.",
+        "hint": "Considérez ce que l'on fait avant de se présenter à un examen."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « pléthorique » ?",
+        "prompt": null,
+        "options": ["Abondant", "Indigent", "Foisonnant", "Surabondant"],
+        "answer": "Indigent",
+        "explanation": "« Pléthorique » signifie en grande abondance, tandis qu'« indigent » signifie insuffisant ou pauvre. « Abondant », « foisonnant », et « surabondant » sont synonymes de pléthorique, indiquant divers degrés de quantité excédentaire.",
+        "hint": "Cherchez un terme qui signifie une absence ou un manque de quantité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Architecte est à maison comme peintre est à ___",
+        "prompt": null,
+        "options": ["Tableau", "Brique", "Foule", "Papier"],
+        "answer": "Tableau",
+        "explanation": "Un architecte crée des maisons assimilarément à comment un peintre produit des tableaux. La brique est un matériau architectural, non une œuvre finie. La foule ne représente pas le métier d'artiste, et le papier, bien qu'éventuellement utilisé, n'est pas l'œuvre finalisée.",
+        "hint": "Pensez au produit finalement manifeste d'une intention créative."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de \"sibyllin\" ?",
+        "prompt": null,
+        "options": ["Clair", "Mystérieux", "Évident", "Simple"],
+        "answer": "Mystérieux",
+        "explanation": "\"Sibyllin\" signifie difficile à interpréter ou énigmatique, ce qui est synonyme de \"mystérieux\". \"Clair\" et \"évident\" sont antonymes car ils désignent quelque chose de simple à comprendre. \"Simple\" également n'est pas synonyme car il exprime l'absence de complexité ou de mystère.",
+        "hint": "Réfléchissez à quelque chose qui est ample d'ambigüité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : \"Cherchant la vérité, il était prêt à ___ les obstacles.\"",
+        "prompt": null,
+        "options": ["Éviter", "Affronter", "Renoncer", "Contourner"],
+        "answer": "Affronter",
+        "explanation": "« Affronter » signifie rencontrer résolument quelque chose, souvent avec courage ou détermination. C'est ce que fait quelqu'un qui cherche la vérité. « Éviter » et « contourner » indiquent un retrait ou une stratégie alternative. « Renoncer » contredit l'idée d'un engagement à surmonter.",
+        "hint": "Recherchez un mot suggérant action directe et résolue face à un problème."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot \"carte\" signifie : \"Il a reçu une carte pour son anniversaire.\"",
+        "prompt": null,
+        "options": ["Menu", "Postale", "Routière", "Bancaire"],
+        "answer": "Postale",
+        "explanation": "Dans ce contexte, « carte » désigne typiquement un document ou une missive postale remise pour des célébrations personnelles. « Menu » se réfère aux repas, non à un anniversaire. « Routière » suggère la navigation, et « bancaire » l'accès au compte personnel. Ni l'une ni l'autre de ces cartes n'est donnée pour une célébration.",
+        "hint": "Réfléchissez au type de carte qui accompagne traditionnellement les souhaits d'anniversaire."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Hématologie, Cardiologie, Neurologie, Jurisprudence",
+        "options": ["Hématologie", "Cardiologie", "Neurologie", "Jurisprudence"],
+        "answer": "Jurisprudence",
+        "explanation": "« Jurisprudence » est l'intrus car elle se rapporte au domaine du droit, tandis que « hématologie », « cardiologie », et « neurologie » sont des disciplines médicales. Ces spécialités de la médecine se focalisent sur les systèmes internes du corps humain.",
+        "hint": "Identifiez le terme qui ne concerne pas la médecine."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « atavisme » ?",
+        "prompt": null,
+        "options": ["Modernité", "Tradition", "Hérité", "Régression"],
+        "answer": "Modernité",
+        "explanation": "« Atavisme » est un terme qui signifie un retour à des traits ancestraux ou passés, tandis que « modernité » désigne l'état d'appartenance au présent ou au temps moderne. « Tradition » et « régression » renforcent l'idée de retour ou de continuité avec le passé. « Hérité » consiste en une continuité conceptuelle intergénérationnelle.",
+        "hint": "Recherchez un terme qui contraste avec le passé."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Cérémonie est à formel comme improvisation est à ___",
+        "prompt": null,
+        "options": ["Sponanée", "Reconnu", "Prémédité", "Solennel"],
+        "answer": "Sponanée",
+        "explanation": "Une cérémonie est formelle par nature, tout comme une improvisation est spontanée et non planifiée. « Prémédité » inverse significativement l'idée d'improvisation, exprimant prévoyance et savant plan. « Solennel » est souvent relié à la cérémonie. « Reconnu » est simplement déclaré officiel ou décrit. ",
+        "hint": "Identifiez un adjectif décrivant quelque chose d'inattendu ou non préparé."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est un synonyme de \"contrit\" ?",
+        "prompt": null,
+        "options": ["Insensible", "Navré", "Froid", "Arrogant"],
+        "answer": "Navré",
+        "explanation": "\"Contrit\" indique un sentiment de regret sincère pour une action commise, similaire à \"navré\". \"Insensible\" et \"froid\" sont opposés car ils impliquent une absence d'émotion. \"Arrogant\" ne correspond pas non plus puisque cela représente un excès de confiance souvent sans souci pour les conséquences.",
+        "hint": "Pensez à un mot qui exprime le regret sincère."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « prolixe » ?",
+        "prompt": null,
+        "options": ["Taciturne", "Loquace", "Dissert", "Conversant"],
+        "answer": "Taciturne",
+        "explanation": "« Prolixe » signifie parler ou écrire abondamment; par contre, « taciturne » désigne une personne peu loquace ou réservée. À l'opposé, « loquace », « dissert », et « conversant » donnent tous le sens d'aisance dans la parole.",
+        "hint": "Cherchez un caractère opposé à l'abondance d'élocution."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : \"Pour éviter de s'ennuyer, elle a choisi de ___ à de nouvelles activités.\"",
+        "prompt": null,
+        "options": ["S'inviter", "Toucher", "S'initier", "Se passer"],
+        "answer": "S'initier",
+        "explanation": "Dans ce contexte, s'initier signifie commencer ou se familiariser avec quelque chose de nouveau, empêchant ainsi l'ennui. « S'inviter » indiquerait peu de rapport direct. « Toucher » n'est pas conventionnel ici. « Se passer » exprime l'absence de besoin.",
+        "hint": "Cherchez un terme indiquant la prise de pied dans une nouveauté."
+    }
+]

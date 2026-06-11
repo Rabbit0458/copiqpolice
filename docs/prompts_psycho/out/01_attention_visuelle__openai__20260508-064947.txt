@@ -1,0 +1,331 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "Rue de la Paix, 75002 Paris",
+    "text_b": "Rue de la Paix, 75002 Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Peugeot 206 blanche, plaque AA-999-AA",
+    "text_b": "Renault 206 blanche, plaque AA-999-AA",
+    "is_true": false,
+    "explanation": "Les textes sont différents : 'Peugeot' dans text_a et 'Renault' dans text_b. La différence de la marque est évidente."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Chien perdu rue des Roses",
+    "text_b": "Chien trouvé rue des Roses",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques : 'perdu' dans text_a et 'trouvé' dans text_b. La différence sur le mot clé 'perdu/trouvé' est flagrante."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Mairie de Lille, 59000 Lille",
+    "text_b": "Mairie de Lille, 59000 Lille",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Audi A4 noire, immatriculée ZZ-456-GH",
+    "text_b": "Audi A4 noire, immatriculée ZZ-456-GH",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Vélo bleu, rue de Paris",
+    "text_b": "Vélo bleu, rue de Tunis",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par le nom de rue : 'Paris' dans text_a et 'Tunis' dans text_b. La différence de toponyme est claire."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Patrouille à 8h30",
+    "text_b": "Patrouille à 8h30",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Arrêté le suspect à 15h",
+    "text_b": "Arrêté le suspect à 15h",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Rue de l'Église, 97400 Saint-Denis",
+    "text_b": "Rue de l'Église, 97400 Saint-Denis",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Camion rouge, plaque AB-321-XY",
+    "text_b": "Avion rouge, plaque AB-321-XY",
+    "is_true": false,
+    "explanation": "Les textes diffèrent : 'Camion' dans text_a et 'Avion' dans text_b. La différence de véhicule est très visible."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Véhicule suspect à 15 mars",
+    "text_b": "Véhicule suspect à 15 heures",
+    "is_true": false,
+    "explanation": "Les textes sont différents : 'mars' dans text_a et 'heures' dans text_b. La variation dans le temps est immédiate à repérer."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Immeuble gris, 10e étage",
+    "text_b": "Immeuble gris, 10e étage",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Agent Pierre Martin",
+    "text_b": "Agent Jean Martin",
+    "is_true": false,
+    "explanation": "Les noms diffèrent : 'Pierre' dans text_a et 'Jean' dans text_b. La variation sur les prénoms est très perceptible."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Déposition à 10h",
+    "text_b": "Déposition à 10h",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Boîte noire, rue Lemercier",
+    "text_b": "Boîte rouge, rue Lemercier",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques : 'noire' dans text_a et 'rouge' dans text_b. La différence dans la couleur est évidente."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Rue de la Liberté, Marseille",
+    "text_b": "Rue de la Liberté, Marseille",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Incident à 20h45",
+    "text_b": "Incident 20h45",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par la présence de 'à' dans text_a qui manque dans text_b. Cette omission du petit mot est assez visible."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le véhicule impliqué est une Peugeot 208 bleue, plaque ZZ-123-ABC.",
+    "text_b": "Le véhicule impliqué est une Peugeot 208 bleue, plaque ZZ-123-ABC.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Rencontre suspecte signalée le 15 juin 2023 à 14h55.",
+    "text_b": "Rencontre suspecte signalée le 15 juin 2023 à 14h45.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par l'heure : '14h55' dans text_a et '14h45' dans text_b. Le changement subtil dans les minutes est à noter."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Agresseur vu portant un blouson rouge, basket noir et jean.",
+    "text_b": "Agresseur vu portant un blouson rouge, baskets noir et jean.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par le pluriel : 'basket' dans text_a et 'baskets' dans text_b. Cette variation est subtile mais importante."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Surveillance du parc prévue le 24 novembre de 10h à 12h.",
+    "text_b": "Surveillance du parc prévus le 24 novembre de 10h à 12h.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par 'prévue' dans text_a et 'prévus' dans text_b. La différence de terminaison est subtile mais cruciale."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Fermeture des sites jusqu'à nouvel ordre.",
+    "text_b": "Fermeture des site jusqu'à nouvel ordre.",
+    "is_true": false,
+    "explanation": "La différence réside dans le pluriel : 'sites' dans text_a et 'site' dans text_b. Le pluriel manquant peut facilement être ignoré."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Accident à l'angle de la rue de Rivoli et du boulevard Sébastopol.",
+    "text_b": "Accident à l'angle de la rue de Rivoli et du Boulevard Sébastopol.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par une majuscule : 'boulevard' dans text_a et 'Boulevard' dans text_b. La casse peut être source d'erreur."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le véhicule suspect est une Citroën C3 grise.",
+    "text_b": "Le véhicule suspect est une Citroén C3 grise.",
+    "is_true": false,
+    "explanation": "La différence réside dans l'accent : 'Citroën' dans text_a et 'Citroén' dans text_b. Un accent mal placé peut facilement passer inaperçu."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Interrogatoire programmé le 5 juillet à 17:00.",
+    "text_b": "Interrogatoire programmée le 5 juillet à 17:00.",
+    "is_true": false,
+    "explanation": "La différence se trouve au niveau de l'accord : 'programmé' dans text_a et 'programmée' dans text_b. L'accord peut échapper au candidat."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Individu observé portant un t-shirt blanc avec logo noir.",
+    "text_b": "Individu observé portant un t shirt blanc avec logo noir.",
+    "is_true": false,
+    "explanation": "La différence est due au tiret : 't-shirt' dans text_a et 't shirt' dans text_b. L'absence de tiret peut passer inaperçue."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Rendez-vous au poste à 14h samedi.",
+    "text_b": "Rendez-vous au poste à 14h dimanche.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par le jour : 'samedi' dans text_a et 'dimanche' dans text_b. Le changement de jour est un piège subtil."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Témoin déclare avoir vu un homme avec une veste bleue.",
+    "text_b": "Témoin déclare avoir vu un homme avec une veste bleu.",
+    "is_true": false,
+    "explanation": "La différence se trouve dans la couleur : 'bleue' dans text_a et 'bleu' dans text_b. L'accord de couleur est un piège courant."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La caméra de surveillance est active de 8h à 18h.",
+    "text_b": "La caméra de surveillance est active de 8h à 18h.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Jour de marché les mardi à partir de 9h.",
+    "text_b": "Jour de marché le mardi à partir de 9h.",
+    "is_true": false,
+    "explanation": "La différence est causée par l'article défini : 'les' dans text_a et 'le' dans text_b. Cette subtile différence peut passer inaperçue."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Monsieur Duval est arrivé à 14h30 précises.",
+    "text_b": "Monsieur Duval est arrivé à 14h30 précises.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Une patrouille vérifie toujours la zone à 22h chaque soir.",
+    "text_b": "Une patrouille vérifie toujours la zone à 22h chaque soirs.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par le pluriel: 'soirs' dans text_b n'est pas correct par rapport à 'soir' dans text_a. Le pluriel en fin de phrase peut être rapidement lu de travers."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le suspect a été localisé grâce à la vidéo-surveillance le 23 mars à 13h.",
+    "text_b": "Le suspect a été localisé grâce à la vidéo surveillance le 23 mars à 13h.",
+    "is_true": false,
+    "explanation": "La différence réside dans le tiret : 'vidéo-surveillance' dans text_a et 'vidéo surveillance' dans text_b. Cette absence subtile peut facilement être ignorée."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'article 223-6 du Code pénal stipule l'obligation pour quiconque de porter assistance à une personne en danger.",
+    "text_b": "L'article 223-6 du Code pénal stipule l'obligation pour quiconque de porter assistance à une personne en danger.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le prévenu, né le 12/07/1980, a nié les faits lors de l'audience du 25 octobre.",
+    "text_b": "Le prévenu, né le 12/07/1980, a nié les faits lors de l’audience du 25 octobre.",
+    "is_true": false,
+    "explanation": "La différence réside dans l'apostrophe : une apostrophe droite dans text_a contre une courbe dans text_b. Ce changement peut passer inaperçu."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon l'agent, le véhicule suspect évoluait à une vitesse de 90 km/h alors que l'autorisation était de 70.",
+    "text_b": "Selon l'agent, le véhicule suspect évoluait à une vitesse de 90 km/h alors que l'autorisation était de 70.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le changement de la lumière s'effectue assez rapidement dans cette rue bondée d’étudiants.",
+    "text_b": "Le changement de la lumière s’effectue assez rapidement dans cette rue bondée d’étudiants.",
+    "is_true": false,
+    "explanation": "La différence se trouve dans l'apostrophe : un 's'' dans text_a contre 's’' dans text_b. Ce subtil détail typographique peut échapper à l'œil."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Assurez-vous que les besoins pour la réunion soient bien transmis à tous les participants avant le 30 juin.",
+    "text_b": "Assurez-vous que les besoins pour la réunion soient bien transmis à tous les participants avant le 30 juin.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'audience pour le verdict a été programmée le jeudi 14 décembre à 9h00 dans la salle 105.",
+    "text_b": "L'audience pour le verdict a été programMé le jeudi 14 décembre à 9h00 dans la salle 105.",
+    "is_true": false,
+    "explanation": "La différence est due à une majuscule inattendue : 'programmée' dans text_a et 'programMé' dans text_b. Une majuscule induite par erreur est difficilement repérable."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le témoin a assuré avoir vu trois personnes entrer brusquement dans le bâtiment, vers 23 h 30.",
+    "text_b": "Le témoin a assuré avoir vu trois personnes entrer brusquement dans le bâtiment, vers 23 h 30.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Je demande à tous les officiers disponibles de se rendre immédiatement à la rue des Lilas après l'alerte sonore.",
+    "text_b": "Je demande à tous les officiers disponibles de se rendre immédiatement à la rue des Lilas après l’alerte sonore.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par l'apostrophe utilisée : une apostrophe droite dans text_a contre une courbe dans text_b. C’est un détail très subtil à détecter."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le rapport indique que l'individu portait un pull-over foncé, des lunettes de soleil, et un jean.",
+    "text_b": "Le rapport indique que l'individu portait un pull-over foncé, des lunettes de soleil, et un jean.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Lors de la fouille, il a été trouvé deux sachets de poudre suspecte dans le coffre d'une voiture rouge.",
+    "text_b": "Lors de la fouille, il a été trouvé deux sachets de poudre suspecte dans le coffre d’une voiture rouge.",
+    "is_true": false,
+    "explanation": "La différence se situe au niveau de l'apostrophe : 'd'une' dans text_a et 'd’une' dans text_b. Ce petit détail typographique peut facilement être négligé."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "De nouveaux règlements sur le port de masque sont entrés en vigueur le 1er décembre.",
+    "text_b": "De nouveaux règlements sur le port de masque sont entrés en vigueur le 1er décembre.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Une nouvelle enquête est ouverte concernant des transactions suspectes remontant à juin 2022.",
+    "text_b": "Une nouvelle enquête est ouverte consernant des transactions suspectes remontant à juin 2022.",
+    "is_true": false,
+    "explanation": "La différence est dans l'orthographe : 'concernant' dans text_a et 'consernant' dans text_b. La similarité des consonnes peut induire en erreur."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Les dépositions doivent être remises avant le mercredi 5 pour être examinées par le supérieur.",
+    "text_b": "Les dépositions doivent être remises avant le mercredi 5 pour être examinées par le supeérieur.",
+    "is_true": false,
+    "explanation": "Une répétition de voyelle est présente dans text_b : 'supérieur' dans text_a et 'supeérieur' dans text_b. Cette erreur est très subtile et peut facilement échapper au candidat."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Les horaires d'ouverture sont de 8h00 à 17h00 tous les jours de semaine sauf le mercredi.",
+    "text_b": "Les horaires d'ouverture sont de 8h00 à 17h00 tous les jours de semaine sauf le mecredi.",
+    "is_true": false,
+    "explanation": "Une lettre manque dans text_b : 'mercredi' est orthographié 'mecredi'. Cette omission d'une lettre peut passer inaperçue."
+  }
+]

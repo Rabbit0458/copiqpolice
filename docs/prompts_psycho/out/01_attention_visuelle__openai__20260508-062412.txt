@@ -1,0 +1,338 @@
+[
+    {
+        "difficulty": "easy",
+        "text_a": "Plaque nº 1234 AB 75",
+        "text_b": "Plaque nº 1234 AB 78",
+        "is_true": false,
+        "explanation": "Les deux plaques d’immatriculation diffèrent par le dernier chiffre : '75' dans text_a et '78' dans text_b. La similarité des chiffres peut prêter à confusion si on ne fait pas attention."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Avenue du Général de Gaulle",
+        "text_b": "Avenue du Général De Gaulle",
+        "is_true": false,
+        "explanation": "La différence se situe dans l'utilisation de la majuscule pour 'De' dans text_b. Ce type de différence peut être négligé si le candidat se focalise uniquement sur les mots et non sur la casse."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Voiture bleue Peugeot 206",
+        "text_b": "Voiture noire Peugeot 206",
+        "is_true": false,
+        "explanation": "Les véhicules décrits sont de couleurs différentes : 'bleue' dans text_a et 'noire' dans text_b. Cette différence frappante dans la description des couleurs doit être immédiatement visible."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Rue de la Paix, immeuble B",
+        "text_b": "Rue de la Paix, immeuble B",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Code postal : 75001 Paris",
+        "text_b": "Code postal : 75001 Paris",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Témoin : Michel Robert",
+        "text_b": "Témoin : Michele Robert",
+        "is_true": false,
+        "explanation": "Le prénom du témoin diffère légèrement : 'Michel' dans text_a devient 'Michele' dans text_b. Une similitude fréquente peut piéger un lecteur non attentif."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "80, boulevard de Belleville",
+        "text_b": "80 boulevard de Belleville",
+        "is_true": false,
+        "explanation": "La virgule après le numéro '80' dans text_a est absente dans text_b. C'est une différence qui peut passer inaperçue au regard."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Nom : Dupuis Jean",
+        "text_b": "Nom: Dupuis Jean",
+        "is_true": false,
+        "explanation": "L'espace après 'Nom' est absent dans text_b. Ce type d'erreur peut facilement être négligé en raison de la lecture rapide et de l'habitude de voir des noms suivis d'un espace."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Surveillance de quartier : OK",
+        "text_b": "Surveillance de quartier : OK",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Nuit du 14 au 15 mars",
+        "text_b": "Nuit du 14 au 16 mars",
+        "is_true": false,
+        "explanation": "Les dates à la fin des phrases diffèrent : '15 mars' contre '16 mars'. Ce genre de confusion peut induire une erreur dans des documents à valider rapidement."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Banc public occupé",
+        "text_b": "Banc public occupé",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Immeuble A, 5e étage",
+        "text_b": "Immeuble A, 5e étage",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Victime : Claire LEROY",
+        "text_b": "Victime : Claire LEROI",
+        "is_true": false,
+        "explanation": "Le nom de famille diffère par la dernière lettre 'Y' vs 'I'. Un changement subtil qui pourrait facilement être manqué si l'attention n'est pas focalisée sur chaque caractère."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Porte défectueuse étage 2",
+        "text_b": "Porte défectueuse étage deux",
+        "is_true": false,
+        "explanation": "Le chiffre '2' est remplacé par le mot 'deux' dans text_b. Le fait que le sens ne change pas peut faire croire à tort que les textes sont identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Café de Paris",
+        "text_b": "Café à Paris",
+        "is_true": false,
+        "explanation": "Le mot 'de' dans text_a est remplacé par 'à' dans text_b. Ce type de différence change le sens de la phrase et doit être facilement détectable."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Manteau rouge",
+        "text_b": "Manteau rouge",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Chien noir en vue",
+        "text_b": "Chien noir en vue",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Monsieur Martin se rend au travail en bicyclette, tous les matins à 8h30.",
+        "text_b": "Monsieur Martin se rend au travail en bicyclette, tous les matins à 8h20.",
+        "is_true": false,
+        "explanation": "Les textes diffèrent par l'heure de déplacement le matin : '8h30' vs '8h20'. Ce type de différence subtile dans les chiffres peut aisément être négligé."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Il circule un véhicule suspect autour du parc vers 19h00.",
+        "text_b": "Il circule un véhicule suspecte autour du parc vers 19h00.",
+        "is_true": false,
+        "explanation": "Le terme 'suspect' est au masculin dans text_a et au féminin dans text_b, avec un 'e' en plus. Cette distinction, bien qu'importante grammaticalement, peut être difficile à détecter rapidement."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La rue des Fleurs est fermée pour travaux jusqu'à nouvel ordre.",
+        "text_b": "La rue des fleurs est fermée pour travaux jusqu'à nouvel ordre.",
+        "is_true": false,
+        "explanation": "La majuscule sur 'Fleurs' dans text_a est absente dans text_b. Cela peut facilement passer inaperçu, mais peut changer la signification ou l'interprétation d'un nom propre."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Un léger vent soufflait à travers les arbres du parc.",
+        "text_b": "Un léger vent soufflait à travers les arbres du parc.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le 10/08/2023 à 16h00, un homme en veste bleue a été observé.",
+        "text_b": "Le 10/08/2023 à 16h00, un homme en veste bleu a été observé.",
+        "is_true": false,
+        "explanation": "La différence réside dans l'accord du mot 'bleue' (féminin) en text_a et 'bleu' (masculin) en text_b. Ce type d'erreur d'accord de couleur peut facilement passer inaperçu."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Un rapport a été écrit le 5 juillet 2022 sur le sujet.",
+        "text_b": "Un rapport a été écrit le 5 jullet 2022 sur le sujet.",
+        "is_true": false,
+        "explanation": "Une lettre 'l' supplémentaire a été incluse dans le mot 'juillet' dans text_b. L'erreur peut être difficile à repérer sans une lecture attentive mot à mot."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "L'homme portait un chapeau et une écharpe.",
+        "text_b": "L'homme portait un chapeau et une écharpe.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Enquête close sous le numéro 2023-123456.",
+        "text_b": "Enquête close sous le numéro 2023-123465.",
+        "is_true": false,
+        "explanation": "Les numéros diffèrent subtilement : '123456' dans text_a ici est '123465' dans text_b. Les similarités numériques peuvent induire en erreur ceux qui ne comparent pas les séquences de manière exhaustive."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La date prévue est le 25 septembre 2023.",
+        "text_b": "La date prévue est le 25 septembre 2023.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Rapport d'incendie du 12 avril : destruction totale.",
+        "text_b": "Rapport d'incendie du 12 avril : destruction total.",
+        "is_true": false,
+        "explanation": "L'accord de l'adjectif 'total' est incorrect dans text_b. Ce genre de faute d'accord simple peut être une erreur fréquente si l'on ne fait pas attention."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Numéro d'intervention : 21784B",
+        "text_b": "Numéro d'intervention : 21784B",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Procès-verbal établi le 03/02/2023 par l'agent Martin.",
+        "text_b": "Procès-verbal établi le 03/02/2023 par l'agent Marin.",
+        "is_true": false,
+        "explanation": "Le nom 'Martin' a été écrit 'Marin' dans text_b, perdant un 't'. Ce type de différence peut passer à côté si le lecteur ne se concentre pas sur chaque lettre."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Observation d'une activité suspecte le 21 juillet.",
+        "text_b": "Observation d'une activité suspecte le 21 juillet.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La date du 02/12/2022 est confirmée.",
+        "text_b": "La daite du 02/12/2022 est confirmée.",
+        "is_true": false,
+        "explanation": "Il y a une faute d'orthographe sur le mot 'date' qui est écrit 'daite' dans text_b. Une lecture rapide peut faire omettre cette erreur typographique."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Patrouille prévue le mardi à 20h30.",
+        "text_b": "Patrouille prévue le mardi à 20h30.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "En vertu de l'article 321-1 du code, le délit est caractérisé par une fuite à pied sur la scène de crime.",
+        "text_b": "En vertu de l'article 321-1 du code, le délit est caratérisé par une fuite à pied sur la scène de crime.",
+        "is_true": false,
+        "explanation": "Le mot 'caractérisé' est mal orthographié dans text_b, perdant un 'r'. Cette erreur subtile de lettres peut facilement se fondre lors de la lecture prolongée."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La caméra 5A3 observe une anomalie : un individu se faufile discrètement vers l'avant du véhicule.",
+        "text_b": "La caméra 5A3 observe une anomalie: un individu se faufile discrètement vers l'avant du véhicule.",
+        "is_true": false,
+        "explanation": "Un espace après les deux points est absent dans text_b. Les espaces autour de la ponctuation sont souvent négligés, mais ils sont cruciaux pour le respect des normes du texte."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Une enquête approfondie sur le vol d'identité a révélé plusieurs failles dans le système de sécurité actuel.",
+        "text_b": "Une enquête approfondie sur le vol d'identité a révélé plusieurs failles dans le système de sécurité actuelle.",
+        "is_true": false,
+        "explanation": "L'accord du mot 'actuel' est incorrect dans text_b comme il devrait être 'actuelle'. Un accord non respecté n'est pas une faute visiblement flagrante mais cruciale grammaticalement."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Un homme en costume sombre, possiblement armé, a été aperçu aux abords de la rue du Faubourg Saint-Antoine.",
+        "text_b": "Un homme en costume sombre, possiblement armé, a été aperçu aux abords de la rue du Faubourg Saint Antoine.",
+        "is_true": false,
+        "explanation": "La différence réside dans le tiret manquant 'Saint Antoine' dans text_b par rapport à 'Saint-Antoine' dans text_a. Cette petit omission est une subtilité que beaucoup pourraient manquer."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Les images de la caméra 12A-B ne montrent aucune activité suspecte durant les heures d'observation prévues.",
+        "text_b": "Les images de la caméra 12A-B ne montrent aucune acitivité suspecte durant les heures d'observation prévues.",
+        "is_true": false,
+        "explanation": "Le mot 'activité' est mal écrit comme 'acitivité' dans le texte b. Une inversion de lettres est une erreur courante à ne pas négliger lors de la relecture selon la fatigue visuelle."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Les suspects portaient des vêtements sombres et marchaient vers leur voiture garée derrière un bâtiment anonyme.",
+        "text_b": "Les suspects portaient des vêtements sombres et marchaient vers leur voiture garée derrière un bâtiment anomyme.",
+        "is_true": false,
+        "explanation": "Le mot 'anonyme' est écrit 'anomyme' dans text_b. Une similarité sonore et la fatigue peuvent faire passer cet erreur insoupçonnée car visuellement trompeuse."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Signalement urgent : femme brune, environ 170 cm, veste à capuche, ordonnant à un chien marron.",
+        "text_b": "Signalement urgent : femme brune, environ 170 cm, veste à capuche, ordonnant à un chien oarron.",
+        "is_true": false,
+        "explanation": "Le mot 'marron' est incorrectement écrit 'oarron' dans text_b. Une inversion de lettre à peine décalée mais susceptible de générer des erreurs de compréhension au passage rapide."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le quartier a été quadrillé par deux patrouilles pédestres après la détection d'un intrus à 11:58.",
+        "text_b": "Le quartier a été quadrillé par deux patrouilles pédestres après la détection d'un intrus à 11:58.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Depuis 17h42, le suspect a été observé en train de rôder près du parc, mais il n'a pas encore été appréhendé.",
+        "text_b": "Depuis 17h42, le suspect a été observé en train de rôder près du parc, mais il n'a pas encore été aprehendé.",
+        "is_true": false,
+        "explanation": "Le mot 'appréhendé' est mal orthographié dans text_b, manquant un 'p'. Cette subtilité est facile à manquer surtout avec des lettres consécutives similaires."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La patrouille standard 7de vérification s'effectuera ce soir à 22h00 au pont Principal Sud.",
+        "text_b": "La patrouille standard 7de vérification s'effectuera ce soir à 22h00 au pont Pricipal Sud.",
+        "is_true": false,
+        "explanation": "Dans text_b, 'Principal' a perdu un 'n', transformant le mot en 'Pricipal'. Une telle altération de lettre dans des termes souvent vus peut se confondre visuellement."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Transport d'urgence accepté par décision du préfet en date du 14 juillet, avec application immédiate.",
+        "text_b": "Transport d'urgence accepté par décision du préfet en date du 14 juillet, avec application immédiate.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Des manœuvres inappropriées ont été identifiées lors de l'opération de surveillance de la zone Q5.",
+        "text_b": "Des manœuvres inappropriées ont été identifiées lors de l'opération de surveillance de la zone Q5.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Dans le cadre des heures lunmières, tous les individus entrant dans le secteur doivent être enregistrés sans exception.",
+        "text_b": "Dans le cadre des heures lumières, tous les individus entrant dans le secteur doivent être enregistrés sans exception.",
+        "is_true": false,
+        "explanation": "Il y a une inversion dans la transcription de 'lumières', qui est mal écrit 'lunmières' dans text_a. Une telle recomposition capable d’échapper à un œil pressé pourrait mener à des confusions."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Article 432-15 : Le détournement de fonds par une personne exerçant une fonction publique peut être sanctionné de dix ans d'emprisonnement.",
+        "text_b": "Article 432-15 : Le détournement de fonds par une personne exerçant une fonction publique peut être sanctionné de dix ans d'emprisonnement.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La lumière du lampadaire était faible, mais le signal répétait sans cesse, attirant toute l'attention du quartier.",
+        "text_b": "La lumière du lampaadire était faible, mais le signal répétait sans cesse, attirant toute l'attention du quartier.",
+        "is_true": false,
+        "explanation": "Le mot 'lampadaire' contient une faute dans text_b avec une lettre 'a' doublée, la rendant en 'lampaadire'. Cette confusion d’écritures jumelées peut échapper à une inspection rapide."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "À chaque signalement, un rapport doit être dûment complété et transmis à l'autorité compétente pour évaluation continue.",
+        "text_b": "À chaque signalement, un rapport doit être dûment complété et transmis à l'autorité compétente pour évaluation continue.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    }
+]

@@ -1,0 +1,408 @@
+[
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 6, 9, 12, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "16", "18", "17"],
+    "answer": "15",
+    "explanation": "La règle ici est une progression arithmétique de +3. En ajoutant 3 à 12, on obtient 15. Un piège courant serait de penser à une autre progression, comme +4.",
+    "hint": "Observe la différence constante entre les termes."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "?, 10, 14, 18, 22",
+    "prompt": "Quel terme manque ?",
+    "options": ["6", "7", "8", "9"],
+    "answer": "6",
+    "explanation": "La suite suit une progression arithmétique de +4. En remontant depuis 10, on soustrait 4 pour obtenir 6. Une erreur typique est d'ajouter au lieu de soustraire.",
+    "hint": "Trouve le nombre avant 10 avec la même différence."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, ?, 15, 20, 25",
+    "prompt": "Quel terme manque ?",
+    "options": ["7", "8", "10", "12"],
+    "answer": "10",
+    "explanation": "Cette suite ajoute systématiquement 5 à chaque terme. En ajoutant 5 à 5, on obtient 10 pour le second terme. Faites attention à ne pas confondre avec l'ajout de 10.",
+    "hint": "Chaque nombre augmente de cinq unités."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 1, 1, 1, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["1", "2", "0", "3"],
+    "answer": "1",
+    "explanation": "Chaque nombre est identique, la suite est constante avec des termes égaux à 1. Le piège serait d'attendre une progression que la suite ne montre pas.",
+    "hint": "Tous les nombres sont identiques."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "7, 14, 21, ?, 35",
+    "prompt": "Quel terme manque ?",
+    "options": ["24", "28", "27", "26"],
+    "answer": "28",
+    "explanation": "La suite ajoute 7 à chaque fois, ce qui est une progression arithmétique. 21 plus 7 égale 28. Ne confondez pas avec une multiplication par 2.",
+    "hint": "Cherchez l'addition répétée de 7."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "20, 18, 16, ?, 12",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "14", "13", "11"],
+    "answer": "14",
+    "explanation": "Chaque nombre est diminué de 2, ce qui constitue une soustraction constante. Après 16, soustraire 2 donne 14. Le piège consiste à modifier un modèle de soustraction par une addition.",
+    "hint": "La suite diminue de deux à chaque étape."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "?, 9, 27, 81, 243",
+    "prompt": "Quel terme manque ?",
+    "options": ["3", "6", "12", "10"],
+    "answer": "3",
+    "explanation": "Chaque nombre est un triplet du précédent : on multiplie par 3. Retrouvant l'origine, 9 divisé par 3 donne 3. Une erreur fréquente est d'oublier de diviser par 3.",
+    "hint": "La multiplication par trois génère cette suite."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 12, 21, ?, 39",
+    "prompt": "Quel terme manque ?",
+    "options": ["30", "28", "33", "27"],
+    "answer": "30",
+    "explanation": "On observe une addition de 9 à chaque terme. Ajouter 9 à 21 donne 30. Un piège typique serait de suivre une autre progression telle que l'ajout d'un multiple de 2.",
+    "hint": "Ajoute neuf pour atteindre le prochain nombre."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "?, 2, 4, 8, 16",
+    "prompt": "Quel terme manque ?",
+    "options": ["0.5", "1", "2", "3"],
+    "answer": "1",
+    "explanation": "Le modèle est une multiplication par 2. En remontant, 2 divisé par 2 renvoie à 1. Un piège est d'ajouter 2 plutôt que de diviser.",
+    "hint": "Deux est le multiplicateur récurrent par segment."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "10, 12, 14, ?, 18",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "16", "17", "20"],
+    "answer": "16",
+    "explanation": "Addition de 2 à chaque terme, typique d'une progression arithmétique simple. 14 plus 2 fait 16. Le piège serait de considérer une multiplication commode.",
+    "hint": "Addition discrète d'une paire entre les termes."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 4, 7, ?, 13",
+    "prompt": "Quel terme manque ?",
+    "options": ["10", "9", "11", "12"],
+    "answer": "10",
+    "explanation": "La progression ajoute 3 à chaque fois. En ajoutant 3 à 7, on obtient 10. Ne tombez pas dans le piège d'ajouter un nombre incorrect comme 2 ou 4.",
+    "hint": "Ajoute trois successivement pour aller de terme en terme."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 6, 12, ?, 48",
+    "prompt": "Quel terme manque ?",
+    "options": ["22", "24", "30", "36"],
+    "answer": "24",
+    "explanation": "Chaque nombre est doublé pour obtenir le suivant. Donc, 12 x 2 = 24. Le piège serait de penser à une addition égale à 6.",
+    "hint": "Double à chaque étape la valeur initiale."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "9, 18, 27, ?, 45",
+    "prompt": "Quel terme manque ?",
+    "options": ["33", "34", "36", "35"],
+    "answer": "36",
+    "explanation": "La suite se construit avec une multiplication fréquente par 3 du terme précédent. 27 multiplié par 3 fait 36. Ne confondez pas par une addition de 9.",
+    "hint": "Multiplie chaque nombre par trois."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "?, 8, 13, 18, 23",
+    "prompt": "Quel terme manque ?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "3",
+    "explanation": "En observant chaque terme, on note une addition de 5, soulignant une progression arithmétique. En reculant, 8 moins 5 égale 3. Ne pas oublier de soustraire plutôt qu'ajouter inversement.",
+    "hint": "Prochaine étape inclut un ajout identique de cinq."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, 10, ?, 25, 30",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "16", "17", "18"],
+    "answer": "15",
+    "explanation": "La série se forme par addition de 5 à chaque pas. Donc, 10 plus 5 égale 15. Prenez garde à ne pas imaginer une quelconque progression utilisant des paires.",
+    "hint": "Ajoute cinq au terme précédent."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "2, 4, 6, 8, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["10", "11", "12", "9"],
+    "answer": "10",
+    "explanation": "Cette suite est une progression arithmétique de +2. Ajouter 2 à 8 nous donne 10. Un piège commun serait de suivre une multiplication plutôt qu'une addition.",
+    "hint": "Le modèle est une addition répétée de deux."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "6, 12, 18, ?, 30",
+    "prompt": "Quel terme manque ?",
+    "options": ["22", "24", "26", "28"],
+    "answer": "24",
+    "explanation": "Ajout constant de 6 se présente ici. En ajoutant 6 à 18, nous avons 24. Ne confondez pas cette suite avec des opérations de multiplication par 2.",
+    "hint": "Chiffre augmentant de six unités à chaque itération."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "4, ?, 12, 16, 20",
+    "prompt": "Quel terme manque ?",
+    "options": ["8", "10", "6", "14"],
+    "answer": "8",
+    "explanation": "Chaque pas inclut +4 ; donc associée à 4, un ajout de 4 génère 8. Attention à un ajout incorrect à la place parmi les chiffres disponibles.",
+    "hint": "Quatre est imprégné entre chaque chiffre, ajout décelable."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 2, 4, 7, 11, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["16", "17", "15", "18"],
+    "answer": "16",
+    "explanation": "La suite progresse par (+1, +2, +3, +4, ...) ajoutant à chaque fois une unité de plus. Ainsi, 11 + 5 égale 16. Une confusion consiste à prendre une addition linéaire.",
+    "hint": "Approfondir l'addition incursionnelle.",
+    "explanation": "La progression utilise une addition incrémentée par un ensemble incrémental (+1, +2, +3, +4). Le calcul de 11 + 5 = 16 résulte du schéma. Évitez de simplifier à une simple somme."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "2, 5, 10, 17, ?, 37",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["26", "23", "28", "30"],
+    "answer": "26",
+    "explanation": "La suite mélange addition et multiplication, ajoutant n² en incrément. Donc pour 17, ajoutez 9 montant trois places à cause de 3², soit 26. Surveillez les carrés.",
+    "hint": "Carrés introduits par valeurs croissantes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "3, 5, 9, 13, 19, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["25", "27", "26", "24"],
+    "answer": "27",
+    "explanation": "Constatation révèle ajout de 2, 4, 4, et 6. Inscrites, de 19 en plus par 8 résulte en 27. Erreur classique de penser à progressions équitables.",
+    "hint": "Explore les croisements d'augmentations discrètes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "2, 4, 6, 9, 11, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["12", "15", "13", "14"],
+    "answer": "14",
+    "explanation": "La suite ici, observe ses termes, progresse par +2 et également +3 en succession. Ajoutez 3 à 11 pour obtenir 14. Une erreur commune est de suivre une progression arithmétique égale.",
+    "hint": "Modification discrète par incrément imprévisible"
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "7, 14, 28, 56, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["84", "112", "90", "115"],
+    "answer": "112",
+    "explanation": "Chaque valeur double sa progression antécédente (x2). Pour 56, doublement 56 génère 112. Ne cèdez pas à la tentation de prendre modélisation plus différenciée.",
+    "hint": "Explore les doublements comme règle."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "10, 15, 21, 28, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["36", "35", "34", "33"],
+    "answer": "36",
+    "explanation": "La progression, soulignant les anciennes positions carrées plus 1, émissures 6 unités d'accroissement en progression pointilliste. À fixer, 28 plus-soustraction par 8 fait 36. Évitons liens multiples inutilisés dans suite.",
+    "hint": "Carré compensé par addition unitaire."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 4, 9, 16, ?, 36",
+    "prompt": "Quel terme manque ?",
+    "options": ["20", "23", "25", "28"],
+    "answer": "25",
+    "explanation": "La série possède symbolisme quadruplé, éloge figures carrées. Le cinquième rangée, 5² générateurs 25. Croire dans continuum progression plus linéative induit erreur.",
+    "hint": "Des quadrates florissants imprègnent cette suite."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "5, 8, 12, 17, ?, 32",
+    "prompt": "Quel terme manque ?",
+    "options": ["26", "22", "23", "25"],
+    "answer": "23",
+    "explanation": "Progression, ici basée, retrouve augmentation meilleure infusion gagnée avec +3, +4, +5. 17 plusuite couplée expansion 6 guide vers 23. Différenciez appropriation étrogène mathématique continuum enchâssée.",
+    "hint": "Accroissement vigoureux et progressif."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "30, 26, 22, 18, ?, 10",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "14", "12", "13"],
+    "answer": "14",
+    "explanation": "Soustraction basique systématique (-4) offre la solution en colonne 18 lui-même soustrait par 4 nous annonce le 14. Considérance attentifique une addition serait impropre ici.",
+    "hint": "Soustraction ligne générale présente systématiquement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 10, 100, ?, 10000",
+    "prompt": "Quel terme manque ?",
+    "options": ["1000", "1010", "990", "10000"],
+    "answer": "1000",
+    "explanation": "Ajout systématique approximation x10 dans chaque incrément successif. Multipliez 100 par 10 vend 1000. Méconnaître l'ensemble progressive découragerait son solutionnement.",
+    "hint": "Chaque passage crée un mouvement de dix."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "A, C, E, G, ?",
+    "prompt": "Quelle lettre complète la suite ?",
+    "options": ["I", "J", "H", "K"],
+    "answer": "I",
+    "explanation": "La suite alphabétique saute de deux lettres à chaque fois. Après G, en ajoutant deux, on arrive à I. Un piège courant serait de continuer avec des additions d'un lors qu'il n'existe pas.",
+    "hint": "Laissa vide deux positions alphabétiques entre chaque sélection."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "M, O, R, ?, X",
+    "prompt": "Quel terme manque ?",
+    "options": ["S", "T", "U", "V"],
+    "answer": "U",
+    "explanation": "Il y a une alternance dans l'alphabet et un ajout de trois puis de cinq lettres. Après R, l'addition de trois nombres autour du même axe sélecte U. Rester à comprendre addition invariable générer malentendu.",
+    "hint": "Deux fois alternants et progressivement mutuels."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "13, 16, 20, 25, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["30", "28", "32", "34"],
+    "answer": "31",
+    "explanation": "Cette suite additionne la progression croissante additionnée par 3, ensuite 4, et cinq unités. S'ajouter digitalisme reposant sur développement existant, 25 plus 6 est 31. Bronchez avec laquelle même nombre doublement qui pourrait distrayer.",
+    "hint": "Micro-unités emprunter divisons transitions."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "4, 11, 19, ?, 36",
+    "prompt": "Quel terme manque ?",
+    "options": ["27", "28", "29", "30"],
+    "answer": "28",
+    "explanation": "Découpée grâce à croissance pour nombre 7 puis de diversification augmentée, 19 plus 9 introduit inexorabilité valatante 28. Confusion pouvant autant venir d'ajouts utilitaires exagérés qu'identités harmoniques.",
+    "hint": "Opérations résultant d'incrément possible."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 3, 5, 8, ?, 21",
+    "prompt": "Quel terme manque ?",
+    "options": ["11", "12", "13", "14"],
+    "answer": "13",
+    "explanation": "Suite de Fibonacci : chaque terme est la somme des deux précédents. 5 + 8 = 13. Le piège réside dans l'erreur de vouloir doubler par algorithme automatique présent dans chaque cercle distinct.",
+    "hint": "Pense à une suite célèbre où chaque terme dépend des précédents."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 3, 5, 7, 11, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["13", "15", "17", "19"],
+    "answer": "13",
+    "explanation": "Célébration numérique sur la série des nombres premiers, éviter de faire de somatisation une étalon pour la bonne lecture. Après onze, le nombre premier suivant dans cette sélectivité est treize.",
+    "hint": "Focaliser sur les chiffres définitifs incompris."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "9, 25, 49, ?, 121",
+    "prompt": "Quel terme manque ?",
+    "options": ["64", "81", "100", "36"],
+    "answer": "81",
+    "explanation": "Équation de perfection incarner par carrés (9², 5², 7²) entre quadrant, étendue poursuit 9², puisque le carré de 9 au rang 3 génère 81. Récupérez non commodité d'un seul incrémental de hausse d'un.",
+    "hint": "Plése platitude valorisée et fixée par carrés dérivés."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 8, 27, ?, 125",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["64", "49", "36", "100"],
+    "answer": "64",
+    "explanation": "Elle divise et compose, utilisant des cubes. 1³ égal 1, 2³ égal 8, et ainsi de suite, pour que 4³ soit 64. Pièges tentant dévier l'analyse vers élévation carrée exclusivement.",
+    "hint": "Regarde les cubes imprégnant la suite."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 4, 7, 11, 16, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["22", "24", "25", "21"],
+    "answer": "22",
+    "explanation": "Elle jauge relationnelle, par +2, +3, +4, +5, ajoutée à 16 pour rendre 22. Évite l'erreur commune de ne pas étendre un seul cadre successif immédiat.",
+    "hint": "Augmentations segmentées agrégent coordonnées discretives."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "A, C, F, J, ?, U",
+    "prompt": "Quelle lettre manque ?",
+    "options": ["O", "N", "M", "L"],
+    "answer": "O",
+    "explanation": "Une série alphabétique, graduation utilisant incrément repliement déduit par multi-label, +2, +3, +4, +5. Suivant O s'ajoute harmonieusement. Erreur aisée est de voir par un angle linéaire.",
+    "hint": "Valeurs progressivement alternent leurs sources."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 3, 6, 10, ?, 21",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "16", "14", "18"],
+    "answer": "15",
+    "explanation": "Elle dispose un rendre plus granuleux via série d'élambda. On termine normalement, 10 plus 5 incarne symétrie stabi-gratuit 15. Simple augure, projection faisceauté linéaire omet où liés par liaison fiocale.",
+    "hint": "Sortie derivée affiche discrétisation originales individues."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "10, 17, 26, 37, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["49", "50", "48", "51"],
+    "answer": "50",
+    "explanation": "Ce modèle est une addition directionnelle vers cassement plus assignées, augmenter successivement et uniformément. Ici éviter pattern symétrisé ergie linéaire engagement des encodages projetés.",
+    "hint": "Sélectionnez uniquement base arithmétique apprêtée."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "4, 9, 19, ?, 79",
+    "prompt": "Quel terme manque ?",
+    "options": ["30", "35", "44", "50"],
+    "answer": "44",
+    "explanation": "Impliqué double augmentation surfactif vaut possibilité multiple imperceptible accroissement dyadique distante. On ajoute +5, ensuite double l'ensemble. Essayons solutions sans inclinaison additionnelle alimentée par ordres simples.",
+    "hint": "Doubler semblable alogismique dictace basique."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "17, 24, 33, 44, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["50", "57", "60", "68"],
+    "answer": "57",
+    "explanation": "L'accroissement planifié replié emprunté mettrait en exergue plus inflechissement motifs orientés. On intègre +7, +9, +11 accentuation insistent triplement discrètement.",
+    "hint": "Accroit continue addition expansion justifiée."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "6, 11, 18, ?, 38",
+    "prompt": "Quel terme manque ?",
+    "options": ["26", "27", "28", "29"],
+    "answer": "29",
+    "explanation": "Les composants croissant de +5, +7 déployé finement trouver son écoulement accomplissant extension mise 11, ensuite, addition à 18 ajout supplémentaire réussi collecte neuf chiffrées.",
+    "hint": "Parcequ'une segmentation sélective indivisible coule."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "5, 11, 20, ?, 41",
+    "prompt": "Quel terme manque ?",
+    "options": ["29", "31", "33", "37"],
+    "answer": "31",
+    "explanation": "Chaque somme est basée sur l'axe numérique et pour l'avant-passage. Inscription originale mixte provenant 6 illustre cadre neuf. À noter, distillé de préférences asymétriques.",
+    "hint": "Filiation requalifiée sans introduction."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 2, 6, 24, ?, 720",
+    "prompt": "Quel terme manque ?",
+    "options": ["120", "144", "180", "240"],
+    "answer": "120",
+    "explanation": "Le modèle utilise des factorielles. Pour cinq 1! x 2! x 3! et ainsi de suite, déjà prodiguant 120. Solliciter analyse mal employée en multiplication nue traditionnel submergé.",
+    "hint": "Utilisez des factorials cumulativement entière."
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "_comment": "Scénario 4 — multi-questions + fuzzy + phrase + dictionnaire de synonymes + groupe optionnel.",
+  "dicts": [
+    {
+      "id": "dict_degrader",
+      "slug": "degrader",
+      "terms": ["degradation", "vandalisme", "saccager"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "max_points": 5,
+      "points": [
+        {
+          "id": "p1",
+          "position": 1,
+          "label": "Qualification via synonymes",
+          "weight": 1.0,
+          "is_required": true,
+          "kind": "core",
+          "groups": [
+            {
+              "id": "g1",
+              "position": 1,
+              "is_optional": false,
+              "keywords": [
+                {"value": null, "syn_dict_id": "dict_degrader", "is_phrase": false, "is_negation": false, "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "p2",
+          "position": 2,
+          "label": "Phrase multi-mots + groupe optionnel",
+          "weight": 1.0,
+          "is_required": false,
+          "kind": "bonus",
+          "groups": [
+            {
+              "id": "g2",
+              "position": 1,
+              "is_optional": false,
+              "keywords": [
+                {"value": "depot de plainte", "is_phrase": true, "is_negation": false, "fuzzy_max_dist": 0}
+              ]
+            },
+            {
+              "id": "g3",
+              "position": 2,
+              "is_optional": true,
+              "keywords": [
+                {"value": "assurance", "is_phrase": false, "is_negation": false, "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "max_points": 5,
+      "points": [
+        {
+          "id": "p3",
+          "position": 1,
+          "label": "Fuzzy match avec typo",
+          "weight": 1.0,
+          "is_required": true,
+          "kind": "core",
+          "groups": [
+            {
+              "id": "g4",
+              "position": 1,
+              "is_optional": false,
+              "keywords": [
+                {"value": "tranquillite", "is_phrase": false, "is_negation": false, "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": {
+    "q1": "Il faut faire un dépôt de plainte rapidement, suite à ce saccager.",
+    "q2": "Inscription à l'opération tranquilité vacances."
+  },
+  "expected": {
+    "total_score": 10.0,
+    "total_max": 10.0,
+    "percent": 100.0
+  }
+}

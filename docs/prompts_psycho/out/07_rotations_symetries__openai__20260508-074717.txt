@@ -1,0 +1,587 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie possède un rectangle ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "B",
+    "explanation": "Un rectangle possède 2 axes de symétrie : l'un qui passe par le milieu de sa largeur et l'autre par le milieu de sa hauteur. Ces axes divisent le rectangle en deux parties égales et reflètent chaque côté sur lui-même. Les réponses C et D sont des distracteurs plausibles en référence au carré.",
+    "hint": "Considérez les médianes du rectangle."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Une rotation de 180° autour d'un point donne quelle figure ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "La figure inversée"},
+      {"key": "B", "label": "La figure de départ"},
+      {"key": "C", "label": "Une figure décalée"},
+      {"key": "D", "label": "Une figure agrandie"}
+    ],
+    "answer": "A",
+    "explanation": "Une rotation de 180° tourne la figure à l'envers, générant une image inversée. Ce type de rotation est équivalent à une symétrie centrale, où chaque point est déplacé vers son opposé à l'axe de rotation. Les réponses B et D sont erronées car elles ne changent pas l'orientation ou l'échelle de la figure.",
+    "hint": "Pensez à une demi-révolution."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Laquelle de ces lettres possède un axe de symétrie vertical ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "B"},
+      {"key": "B", "label": "C"},
+      {"key": "C", "label": "M"},
+      {"key": "D", "label": "T"}
+    ],
+    "answer": "D",
+    "explanation": "La lettre T possède un axe de symétrie vertical, car elle est symétrique lorsqu'elle est divisée en deux moitiés le long de cet axe. Les lettres B et M ont des symétries mais pas verticales, tandis que C n'a pas de symétrie axiale en typographie standard.",
+    "hint": "Cherchez la symétrie verticale."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel pictogramme routier a exactement un axe de symétrie ?",
+    "prompt": "Considérez les panneaux ronds, triangulaires, carrés et rectangulaires.",
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "Panneau rond"},
+      {"key": "B", "label": "Panneau triangulaire"},
+      {"key": "C", "label": "Panneau carré"},
+      {"key": "D", "label": "Panneau rectangulaire"}
+    ],
+    "answer": "B",
+    "explanation": "Un panneau triangulaire équilatéral possède un axe de symétrie vertical si la base est horizontale. Le panneau rond possède une infinité d'axes, le carré en a quatre et le rectangle deux, faisant de l'option B la seule avec un unique axe vertical.",
+    "hint": "Envisagez la symétrie d'une forme triangulaire.",
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Laquelle de ces figures ne subit aucun changement après une rotation de 360° ?",
+    "prompt": "Les figures sont : cercle, carré, triangle équilatéral, losange.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Cercle"},
+      {"key": "B", "label": "Carré"},
+      {"key": "C", "label": "Triangle équilatéral"},
+      {"key": "D", "label": "Losange"}
+    ],
+    "answer": "A",
+    "explanation": "Bien qu'une rotation de 360° ramène une figure sur elle-même, le cercle est celui qui n'affiche aucun changement perçu car il ne dépend pas de rotations; il est constamment symétrique sur tout angle. En revanche, le carré, le triangle équilatéral et le losange se retrouvent identiques, mais le cercle reste inchangé par la rotation.",
+    "hint": "Une figure totalement équilibrée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de rotations distinctes laissent un carré invariant ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "D",
+    "explanation": "Un carré peut être tourné sur lui-même à des angles de 0°, 90°, 180° et 270°, qui sont les quatre rotations distinctes le laissant invariant. Ces angles correspondent à l'ordre de symétrie du carré qui le rend identique après chaque application.",
+    "hint": "Considérez chaque quart de tour."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Une symétrie axiale laisse quelle figure inchangée par rapport à son axe vertical ?",
+    "prompt": "Envisagez les figures usuelles comme un cercle, un carré, un rectangle, une ellipse.",
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "Cercle"},
+      {"key": "B", "label": "Carré"},
+      {"key": "C", "label": "Rectangle"},
+      {"key": "D", "label": "Ellipse"}
+    ],
+    "answer": "A",
+    "explanation": "Le cercle est inchangé par toute symétrie axiale à travers son centre, qu'elle soit verticale ou horizontale. Cette propriété est due à l'infinité d'axes de symétrie circulaires qui ne changent pas l'apparence du cercle. Autres figures comme le carré et le rectangle changent selon l'axe choisi.",
+    "hint": "Imaginez toutes symétries possibles."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Après combien de rotations de 90° un carré revient-il à sa position initiale ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "D",
+    "explanation": "Quatre rotations de 90° (soit quatre quarts de tour) complètent un angle de 360°, ramenant un carré à sa position de départ. Chaque quart de tour fait tourner le carré de 90° successifs, demandant quatre tels tours pour faire un cycle complet.",
+    "hint": "Le carré met quatre quarts pour 360°."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces chiffres n'est pas transformé par une rotation de 180° ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "6"},
+      {"key": "C", "label": "8"},
+      {"key": "D", "label": "9"}
+    ],
+    "answer": "C",
+    "explanation": "Le chiffre 8 est symétrique par rapport à son centre, donc une rotation de 180° ne modifie pas son apparence. Les chiffres 1, 6 et 9 seront transformés et inversés, mais le 8 restera identique, illustrant sa symétrie centrale.",
+    "hint": "Pensez à la symétrie centrale."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre reste inchangée après une symétrie axiale horizontale ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "A"},
+      {"key": "B", "label": "H"},
+      {"key": "C", "label": "M"},
+      {"key": "D", "label": "O"}
+    ],
+    "answer": "B",
+    "explanation": "La lettre H possède un axe de symétrie horizontal qui divise la lettre en deux moitiés égales. Cette symétrie permet à la lettre de rester inchangée après une réflexion horizontale. Les autres lettres ne présentent pas cette symétrie dans toutes les typographies.",
+    "hint": "Cherchez l'horizontalité parfaite."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle forme ne change pas après une rotation de 90° ?",
+    "prompt": "Considérez un cercle, un rectangle, un triangle, un losange.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Cercle"},
+      {"key": "B", "label": "Rectangle"},
+      {"key": "C", "label": "Triangle"},
+      {"key": "D", "label": "Losange"}
+    ],
+    "answer": "A",
+    "explanation": "Le cercle ne change pas d'apparence après une rotation de 90° car il conserve ses propriétés symétriques autour de son centre. Les autres formes changeraient d'orientation, et visibles différences de forme seraient perçues après la rotation.",
+    "hint": "Pensez à la symétrie totale."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie possède un triangle équilatéral ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "C",
+    "explanation": "Un triangle équilatéral a trois axes de symétrie. Chacun passe par un sommet et le milieu du côté opposé, créant trois lignes égales symétriques à travers le centre du triangle.",
+    "hint": "Il possède n axes pour n côtés."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces symboles reste identique après une rotation de 180° ?",
+    "prompt": "Symboles considérés : ♢, ☆, ◯, □",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "♢"},
+      {"key": "B", "label": "☆"},
+      {"key": "C", "label": "◯"},
+      {"key": "D", "label": "□"}
+    ],
+    "answer": "C",
+    "explanation": "Le cercle (◯) reste identique après une rotation de 180° en raison de sa symétrie totale. Les autres formes peuvent avoir une symétrie seulement partielle ou orientée et montrent un changement notable après une telle rotation.",
+    "hint": "Une symétrie parfaite est recherchée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel chiffre apparaît inchangé après une symétrie axiale verticale ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "3"},
+      {"key": "B", "label": "0"},
+      {"key": "C", "label": "8"},
+      {"key": "D", "label": "2"}
+    ],
+    "answer": "C",
+    "explanation": "Le chiffre 8, en typographie standard, possède une symétrie axiale verticale, le laissant inchangé après réflexion par cet axe. Les autres chiffres changeraient de forme ou d'apparence lorsqu'ils sont reflétés verticalement.",
+    "hint": "Symétrie verticale intégrale."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel symbole ne change pas après une rotation de 90° ?",
+    "prompt": "Symboles considérés : ⊕, ▲, ▼, ◼",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "⊕"},
+      {"key": "B", "label": "▲"},
+      {"key": "C", "label": "▼"},
+      {"key": "D", "label": "◼"}
+    ],
+    "answer": "A",
+    "explanation": "Le symbole ⊕ reste inchangé après une rotation de 90°, car sa symétrie est radiale autour de son centre. Contrairement aux triangles ▲ et ▼, ainsi que le carré ◼, qui changent d'orientation ou apparence.",
+    "hint": "Un symbole radial conserve sa forme."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie possède un triangle isocèle ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "0"},
+      {"key": "B", "label": "1"},
+      {"key": "C", "label": "2"},
+      {"key": "D", "label": "3"}
+    ],
+    "answer": "B",
+    "explanation": "Un triangle isocèle a exactement un axe de symétrie, qui passe par son sommet et divise la base en deux parties égales. Cette symétrie rend les deux côtés égaux du triangle isocèle reflétant l'un à travers l'autre.",
+    "hint": "Axe médian pour isocèle."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel cube obtient-on après une symétrie axiale verticale du patron de départ puis pliage ?",
+    "prompt": "Patron de départ : figure en forme de 'T', 6 symboles distincts.",
+    "transformation_type": "symetrie_axiale",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "T",
+      "faces": {
+        "top":    "⛤",
+        "bottom": "⚫",
+        "left":   "▲",
+        "right":  "■",
+        "front":  "★",
+        "back":   "⬟"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "⛤", "front": "▲", "right": "■"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "⛤", "front": "⬟", "right": "▲"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "⚫", "front": "■", "right": "★"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "⛤", "front": "★", "right": "■"}}
+    ],
+    "answer": "B",
+    "explanation": "Une symétrie axiale verticale du patron inverse la position des côtés gauche/droite et front/back : left=▲ devient right, right=■ devient left, front=★ devient back et back=⬟ devient front. Après pliage, on voit top=⛤, front=⬟, right=▲, correspondant à B seulement.",
+    "hint": "Inverse horizontalement avant pliage."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel chiffre reste identique après une rotation de 180° autour de son centre ?",
+    "prompt": "On considère les chiffres dessinés en typographie standard.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "6"},
+      {"key": "B", "label": "8"},
+      {"key": "C", "label": "5"},
+      {"key": "D", "label": "3"}
+    ],
+    "answer": "B",
+    "explanation": "Le 8 est centro-symétrique : retourné de 180°, il reste identique. Le 6 devient 9 ; le 5 et le 3 ne sont pas symétriques.",
+    "hint": "Cherche le chiffre qui se lit pareil à l'envers."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Une rotation de 180° autour d'un point équivaut à quelle autre transformation ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Une symétrie centrale"},
+      {"key": "B", "label": "Une translation"},
+      {"key": "C", "label": "Une homothétie"},
+      {"key": "D", "label": "Une symétrie axiale"}
+    ],
+    "answer": "A",
+    "explanation": "La rotation de 180° autour d'un point O et la symétrie centrale par rapport à O produisent exactement la même image.",
+    "hint": "Une rotation d'un demi-tour..."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Après une rotation de 90° et une symétrie axiale, quel cube obtient-on ?",
+    "prompt": "Consider the unfolded pattern with a cross layout.",
+    "transformation_type": "combinée",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "cross",
+      "faces": {
+        "top":    "♦",
+        "bottom": "♣",
+        "left":   "♠",
+        "right":  "❤",
+        "front":  "★",
+        "back":   "⬤"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "♦", "front": "❤", "right": "⬤"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "♣", "front": "★", "right": "♠"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "♦", "front": "⬤", "right": "❤"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "♦", "front": "♠", "right": "★"}}
+    ],
+    "answer": "C",
+    "explanation": "La combinaison d'une rotation de 90° (déplaçant front→right→back→left→front) et d'une symétrie axiale horizontale change les positions pour donner un cube C. Les autres cubes ne respectent pas cette double transformation.",
+    "hint": "Visualisez chaque étape séparément."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle lettre possède à la fois un axe de symétrie vertical et horizontal ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "X"},
+      {"key": "B", "label": "H"},
+      {"key": "C", "label": "C"},
+      {"key": "D", "label": "D"}
+    ],
+    "answer": "A",
+    "explanation": "La lettre X est spéciale car elle possède deux axes de symétrie, la verticale et l'horizontale. Chaque axe divise la lettre de manière identique et équilibrée. Autre que H qui a seulement un axe, C et D n'ont pas de telles symétries dans toutes les typographies.",
+    "hint": "Recherchez la symétrie complète."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de rotations distinctes laissent un hexagone régulier invariant ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "3"},
+      {"key": "B", "label": "4"},
+      {"key": "C", "label": "6"},
+      {"key": "D", "label": "12"}
+    ],
+    "answer": "C",
+    "explanation": "Un hexagone régulier est invariant sous 6 rotations distinctes : 0°, 60°, 120°, 180°, 240°, 300°. Chaque rotation équivaut à un multiple de 60° et ramène l'hexagone à sa forme initiale après une rotation complète de 360°.",
+    "hint": "Décomposez 360° en parties égales."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Après une rotation de 180° suivie d'une symétrie centrale, que devient un carré ?",
+    "prompt": "On considère un carré sous une transformation double.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Le même carré"},
+      {"key": "B", "label": "Un rectangle"},
+      {"key": "C", "label": "Une figure inversée"},
+      {"key": "D", "label": "Un losange"}
+    ],
+    "answer": "A",
+    "explanation": "Une rotation de 180° et une symétrie centrale sont identiques pour un point central comme un carré. Leur composition ramène le carré à sa position initiale. Cela montre qu'une transformation centrale redondante garde la figure inchangée.",
+    "hint": "Identique sous rotation et symétrie."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel chiffre reste inchangé après une symétrie centrale ?",
+    "prompt": "Typographie standard prise en compte.",
+    "transformation_type": "symetrie_centrale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "6"},
+      {"key": "C", "label": "8"},
+      {"key": "D", "label": "9"}
+    ],
+    "answer": "C",
+    "explanation": "Le chiffre 8 reste inchangé sous une symétrie centrale, car il est symétrique autour de son propre centre. Les chiffres 1, 6 et 9 ne partagent pas une telle symétrie dans la typographie standard.",
+    "hint": "Présentez une incroyable symétrie centrée."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Une symétrie centrale fait quoi sur un rectangle ?",
+    "prompt": null,
+    "transformation_type": "symetrie_centrale",
+    "options": [
+      {"key": "A", "label": "Inversion"},
+      {"key": "B", "label": "Translation"},
+      {"key": "C", "label": "Réduction"},
+      {"key": "D", "label": "Aucun changement"}
+    ],
+    "answer": "A",
+    "explanation": "Une symétrie centrale inverse les points par rapport à un centre, donnant un rectangle inversé. Tous les points sont déplacés à l'opposé, seulement provoquant une inversion, contrairement aux autres transformations.",
+    "hint": "Chaque point oppose son image."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle lettre reste inchangée après deux symétries axiales successives ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "X"},
+      {"key": "B", "label": "H"},
+      {"key": "C", "label": "N"},
+      {"key": "D", "label": "R"}
+    ],
+    "answer": "A",
+    "explanation": "Pour la lettre X, les symétries axiales successives la laissent inchangée, reflétant sa double symétrie naturelle. Les lettres H, N et R changeraient, le H par symétrie horizontale mais pas avec divers axes.",
+    "hint": "Symétrie double complète."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel cube obtient-on après une symétrie axiale horizontale du patron puis pliage ?",
+    "prompt": "Consider a net with a T shape configuration.",
+    "transformation_type": "symetrie_axiale",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "T",
+      "faces": {
+        "top":    "✤",
+        "bottom": "☆",
+        "left":   "☼",
+        "right":  "❄",
+        "front":  "◯",
+        "back":   "□"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "✤", "front": "◯", "right": "☼"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "☆", "front": "□", "right": "☼"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "✤", "front": "☼", "right": "◯"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "✤", "front": "□", "right": "❄"}}
+    ],
+    "answer": "D",
+    "explanation": "The axial horizontal symmetry flips the top/bottom, left/right and front/back facets. Hence, top becomes ✤, front becomes □, and right becomes ❄; cube D matches this transformation.",
+    "hint": "Reflect the arrangement across the middle."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien d'axes de symétrie possède un pentagone régulier ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "5"},
+      {"key": "B", "label": "10"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "1"}
+    ],
+    "answer": "A",
+    "explanation": "Un polygone régulier à n côtés possède n axes de symétrie. Ainsi, un pentagone régulier (n=5) a cinq axes, chaque fois qu'il est divisé par un sommet et le milieu du côté opposé.",
+    "hint": "Réfléchissez au nombre de côtés."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle transformation est équivalente à trois symétries axiales successives selon trois axes parallèles ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Symétrie axiale"},
+      {"key": "B", "label": "Rotation de 180°"},
+      {"key": "C", "label": "Identité"},
+      {"key": "D", "label": "Translation"}
+    ],
+    "answer": "A",
+    "explanation": "Trois symétries axiales selon des axes parallèles reviennent à une seule symétrie axiale sous la forme de l'axe externe initial et final. Cela dérive de la combinaison des inversions des propriétés géométriques.", 
+    "hint": "Simulez deux inversions qui annulent une."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel cube obtient-on après deux rotations à 90° successives (vers l'avant puis à gauche) du patron ?",
+    "prompt": "Patterns in L shape with unique symbols on each face.",
+    "transformation_type": "combinée",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "L",
+      "faces": {
+        "top":    "◼",
+        "bottom": "◆",
+        "left":   "◎",
+        "right":  "❖",
+        "front":  "✣",
+        "back":   "⊕"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "⯀", "front": "✣", "right": "❖"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "◆", "front": "❖", "right": "✣"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "➕", "front": "◎", "right": "❖"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "➕", "front": "✣", "right": "❖"}}
+    ],
+    "answer": "C",
+    "explanation": "La première rotation de 90° avant place top=◼ vers right. Une deuxième rotation à gauche place top=◆. Cette transformation double amène à C ne changeant que l'orientation. Avez-vous donné l'ordre correct?", 
+    "hint": "Effectuez chaque rotation séquentiellement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel mot peut être latinisé si les lettres 'Z' et 'R' sont retournées horizontalement?",
+    "prompt": "Mots: NATO, LOT, RAZE, ZAR",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "NATO"},
+      {"key": "B", "label": "LOT"},
+      {"key": "C", "label": "RAZE"},
+      {"key": "D", "label": "ZAR"}
+    ],
+    "answer": "C",
+    "explanation": "La réflexion horizontale des lettre Z et R cause Z↔E et N↔ᴎ en typographie miroir, ainsi permettant mosaïc. RAZE devient une mosaïc pour reflet centrale pour transformation.", 
+    "hint": "Réfléchissez horizontalement dans votre esprit sur chaque lettre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle transformation résulte en trois symétries centrales successives sur une figure de même point central ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Transformation identitaire"},
+      {"key": "B", "label": "Symétrie centrale"},
+      {"key": "C", "label": "Translation"},
+      {"key": "D", "label": "Rotation de 90°"}
+    ],
+    "answer": "B",
+    "explanation": "Trois symétries centrales successives aboutissent à une seule symétrie sur le même point central en annulation mutuelle des précédentes niveaux. Le second inversement rétablit et le troisième correspondant à un point décalé à nouveau. ",
+    "hint": "Commentez la nature des annulations entre inversions centrales."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quels chiffres subissent un miroir vertical et restent inchangés à l'anagramme dans un miroir, tournée 180°?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "12"},
+      {"key": "B", "label": "69"},
+      {"key": "C", "label": "88"},
+      {"key": "D", "label": "96"}
+    ],
+    "answer": "C",
+    "explanation": "Le chiffre 88 est centro-symétrique et reste identique lors de l'exécution d'une symétrie centrale. Ce n'est pas le cas pour les autres chiffres qui changent de forme, notamment 12 et 96, perte de symétrie.", 
+    "hint": "Simulez les transformations successives pour garantir votre défense!"
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de symétries axiales et rotations combinées infractions complètes sur un rectangle non carré symétrique?",
+    "prompt": "Notes normes dans un rectangle dont longueurs de côtés ne sont pas égales, identifiant 'elongated'.",
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "2 et 4"},
+      {"key": "B", "label": "1 et 2"},
+      {"key": "C", "label": "2 et 2"},
+      {"key": "D", "label": "1 et 4"}
+    ],
+    "answer": "C",
+    "explanation": "Rectangles non carrés conservent deux symétries axiales (à travers les diagonales) et rotations 180° d'ordre haut en bas et gauche uniquement. Car deux symétries autres type forment des croix midlen, multiplication cinétique à 360°, mais ne suffisent pas à rotation complète", 
+    "hint": "Faites attentions aux longueurs!"
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel cube produit-on après avoir appliqué une rotation de 270° suivie d'une symétrie centrale au patron ?",
+    "prompt": "Layout de patron : croix latine, symboles distincts.",
+    "transformation_type": "combinée",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "cross",
+      "faces": {
+        "top":    "✪",
+        "bottom": "✱",
+        "left":   "⚐",
+        "right":  "♡",
+        "front":  "☁",
+        "back":   "❄"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "✪", "front": "⚐", "right": "♡"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "❄", "front": "☁", "right": "⚐"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "✱", "front": "⚐", "right": "☁"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "✪", "front": "☁", "right": "❄"}}
+    ],
+    "answer": "D",
+    "explanation": "Une rotation de 270° tourne le cube dans le sens antihoraire amenant top=✱ vers right. Ensuite, la symétrie centrale autour du centre du pattern redonne le cube à l'état initial symétrique au centre, produisant le cube D.",
+    "hint": "Tournage suivi de symétrie évaluée."
+  }
+]

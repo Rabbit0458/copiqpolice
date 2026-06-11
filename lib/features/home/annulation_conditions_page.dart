@@ -11,10 +11,10 @@ class AnnulationConditionsPage extends StatelessWidget {
     final isDark = t.brightness == Brightness.dark;
 
     final stroke = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final subtle = t.colorScheme.onSurface.withOpacity(isDark ? .75 : .70);
+    final subtle = t.colorScheme.onSurface.withValues(alpha: isDark ? .75 : .70);
 
     final danger = const Color(0xFFD94841);
     final warning = const Color(0xFFF08C00);
@@ -38,7 +38,7 @@ class AnnulationConditionsPage extends StatelessWidget {
         style: t.textTheme.bodyMedium?.copyWith(
           height: 1.5,
           fontWeight: FontWeight.w600,
-          color: t.colorScheme.onSurface.withOpacity(isDark ? .92 : .88),
+          color: t.colorScheme.onSurface.withValues(alpha: isDark ? .92 : .88),
         ),
       ),
     );
@@ -54,7 +54,7 @@ class AnnulationConditionsPage extends StatelessWidget {
           BoxShadow(
             blurRadius: 18,
             offset: const Offset(0, 10),
-            color: Colors.black.withOpacity(isDark ? .35 : .08),
+            color: Colors.black.withValues(alpha: isDark ? .35 : .08),
           ),
         ],
       ),
@@ -69,9 +69,9 @@ class AnnulationConditionsPage extends StatelessWidget {
     }) => Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: color.withOpacity(isDark ? .18 : .12),
+        color: color.withValues(alpha: isDark ? .18 : .12),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: color.withOpacity(.45)),
+        border: Border.all(color: color.withValues(alpha: .45)),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -95,7 +95,7 @@ class AnnulationConditionsPage extends StatelessWidget {
                   style: t.textTheme.bodyMedium?.copyWith(
                     height: 1.45,
                     fontWeight: FontWeight.w700,
-                    color: t.colorScheme.onSurface.withOpacity(.95),
+                    color: t.colorScheme.onSurface.withValues(alpha: .95),
                   ),
                 ),
               ],
@@ -231,7 +231,7 @@ class AnnulationConditionsPage extends StatelessWidget {
             "Cette page peut évoluer jusqu’à la sortie officielle de COP’IQ, puis être mise à jour "
             "afin de garantir une conformité continue avec la législation et les règles des stores.",
             style: t.textTheme.bodySmall?.copyWith(
-              color: t.hintColor.withOpacity(.9),
+              color: t.hintColor.withValues(alpha: .9),
               height: 1.35,
               fontWeight: FontWeight.w600,
             ),

@@ -1,0 +1,324 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "Citroën C3 blanche, plaque WX-543-YZ",
+    "text_b": "Citroën C3 blanche, plaque WX-543-YZ",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Monsieur Robert Martin, né le 12 mai 1985",
+    "text_b": "Monsieur Robert Marie, né le 12 mai 1985",
+    "is_true": false,
+    "explanation": "Le prénom diffère : « Martin » dans text_a, « Marie » dans text_b. Une confusion courante entre prénoms aux orthographes proches."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "24 Avenue des Champs, 75008 Paris",
+    "text_b": "24 Avenue des Champs, 75008 Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Peugeot 208 rouge, immatriculée NC-546-KB",
+    "text_b": "Peugeot 208 rouge, immatriculée NC-546-KB",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "10, rue Racine, Lyon",
+    "text_b": "10, avenue Racine, Lyon",
+    "is_true": false,
+    "explanation": "La voie change : « rue » dans text_a, « avenue » dans text_b. La confusion entre types de voies est fréquente."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Dr. Henri Dubois, né le 07 février 1974",
+    "text_b": "Dr. Henry Dubois, né le 07 février 1974",
+    "is_true": false,
+    "explanation": "Le prénom diffère par une lettre : « Henri » dans text_a et « Henry » dans text_b. Cette différence est souvent invisible à cause de la proximité des lettres."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Renault Megane verte, ZZ-678-UI",
+    "text_b": "Renault Megane bleu, ZZ-678-UI",
+    "is_true": false,
+    "explanation": "La couleur diffère : « verte » dans text_a, « bleu » dans text_b. Facile à repérer, couleur étant un critère visuel important."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Thomas 201, Pierre 202",
+    "text_b": "Thomas 201, Pierre 202",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "8 rue de la Paix, 75002 Paris",
+    "text_b": "8 rue de la Pais, 75002 Paris",
+    "is_true": false,
+    "explanation": "Le mot « Paix » est mal orthographié dans text_b comme « Pais ». Erreur courante lorsque l'on est concentré uniquement sur une lecture rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Audi A4 noire, 45-ABJ-123",
+    "text_b": "Audi A4 noire, 45-ABJ-123",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "La maison est au 16 rue Vème",
+    "text_b": "La maison est au 16 rue Vème",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Noelle Gerard née le 15/03/1987",
+    "text_b": "Noëlle Gerard née le 15/03/1987",
+    "is_true": false,
+    "explanation": "La différence réside dans l'accent : « Noelle » vs « Noëlle » dans text_b. L'accent modifie souvent le son, et peut se faire oublier lors de la relecture."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Alain Bernard née le 21/07/1990",
+    "text_b": "Alain Bernard né le 21/07/1990",
+    "is_true": false,
+    "explanation": "Erreur de terminaison dans « né(e) » : « née » dans text_a au lieu de « né » dans text_b, attribuable facilement en lisant trop vite."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Place Victor Hugo, 69002 Lyon",
+    "text_b": "Place Victor Higo, 69002 Lyon",
+    "is_true": false,
+    "explanation": "Nom mal orthographié, « Hugo » est écrit « Higo » dans text_b. Cela peut passer inaperçu par un manque d'attention."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "202 rue du Faubourg Saint-Antoine",
+    "text_b": "202 rue du Faubourg Saint Antoine",
+    "is_true": false,
+    "explanation": "L'absence du tiret entre « Saint » et « Antoine » dans text_b pourrait induire en erreur ceux qui ne le recherchent pas."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "19 rue Buffon, Nîmes",
+    "text_b": "19 rue Buffon, Nîmes",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Julien Dupont, né le 04/04/1980",
+    "text_b": "Julian Dupont, né le 04/04/1980",
+    "is_true": false,
+    "explanation": "Prénom différent : « Julien » dans text_a vs « Julian » dans text_b. Un piège courant quand on ne se concentre pas sur les détails."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le véhicule suspect, une Seat Leon bleue, immatriculée SD-719-DE, a été repéré avenue Jean Jaurès.",
+    "text_b": "Le véhicule suspect, une Seat Lean bleue, immatriculée SD-719-DE, a été repéré avenue Jean Jaurès.",
+    "is_true": false,
+    "explanation": "Erreur dans le mot « Leon » : écrit « Lean » dans text_b. L'ordre des lettres peut passer inaperçu si l'on se fie trop à une lecture automatique."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Incident signalé le 14/11/2024 à 16h45, place de la République.",
+    "text_b": "Incident signalé le 14/11/2024 à 16:45, place de la République.",
+    "is_true": false,
+    "explanation": "Différence de ponctuation dans l'heure : « 16h45 » vs « 16:45 ». Propice aux erreurs lors de l'interprétation rapide d'horaires."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Au 5 rue de la Liberté, appartement 2B.",
+    "text_b": "Au 5 rue de la Liberté, appartement 2B.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Monsieur Pierre Lenoir a été aperçu à 15h30 à l'angle de la rue Saint-Honoré.",
+    "text_b": "Monsieur Pierre Lenoir a été aperçu à 15h30 à l’angle de la rue Saint-Honoré.",
+    "is_true": false,
+    "explanation": "Différence subtile sur l'apostrophe : « l'angle » avec une apostrophe droite vs courbe. Cela complique la distinction avec une lecture rapide."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 18 août 2024, un individu a été vu gare Saint-Jean.",
+    "text_b": "Le 18 août 2024, un individu à été vu gare Saint-Jean.",
+    "is_true": false,
+    "explanation": "Erreur sur le mot « a » : écrit comme « à » dans text_b. Accentuation facile à manquer si la relecture n'est pas minutieuse."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Déposition de Marie Curie du 24/02 concernant l'incident au parc.",
+    "text_b": "Déposition de Marie Curie du 24/02 concernant l’incident au parc.",
+    "is_true": false,
+    "explanation": "Utilisation d'apostrophes différentes : droite dans text_a vs courbe dans text_b. Cela pourrait ne pas être détecté sans attention à la typographie."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Vol d'un Téléviseur, Hôtel de Ville, le 20 mars 2023.",
+    "text_b": "Vol d'un Televiseur, Hôtel de Ville, le 20 mars 2023.",
+    "is_true": false,
+    "explanation": "Erreur sur le mot « Téléviseur » : accent omis dans « Televiseur ». La suppression d'accents peut facilement échapper à l'œil inattentif."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Témoin : Lucie Martin, contact 0654321876.",
+    "text_b": "Témoin : Lucie Martin, contact 0654321876.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le rapport indique un retrait de 200 euros effectué le 05 avril.",
+    "text_b": "Le rapport indique un retrait de 200 euros effectué le 05 Avril.",
+    "is_true": false,
+    "explanation": "Différence de capitalisation : « avril » vs « Avril ». La casse est souvent ignorée lors des relectures rapides."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le témoin a indiqué avoir vu une voiture rouge foncée le 16/07 à 19h.",
+    "text_b": "Le témoin a indiqué avoir vus une voiture rouge foncée le 16/07 à 19h.",
+    "is_true": false,
+    "explanation": "Erreur dans le verbe : « a vu » vs « a vus ». Concordance parfois négligée, mais le contexte se concentre sur une seule voiture."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Arrestation d'un suspect à 10h20 rue de La Victoire.",
+    "text_b": "Arrestation d'un suspect à 10h20 rue de La Victoire.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Rapport : tentative d'effraction constatée vers 04h15 du matin.",
+    "text_b": "Rapport : tentative d’effraction constatée vers 04h15 du matin.",
+    "is_true": false,
+    "explanation": "Apostrophe droite vs courbe sur « d'effraction ». L'utilisation des différentes apostrophes peut passer inaperçue sans attention."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Mademoiselle Sarah Louvet assure avoir quitté les lieux à 11h45.",
+    "text_b": "Mademoiselle Sarah Louvet assure avoir quitté les lieux à 11h45.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Coupure électrique signalée le 27/09/23 à 22h30 rue Principale.",
+    "text_b": "Coupure électrique signalée le 27/09/23 a 22h30 rue Principale.",
+    "is_true": false,
+    "explanation": "Manque d'accent sur « à » : écrit comme « a ». Accent omis dans un contexte où il clarifie la structure de la phrase."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Rencontre prévue le 30 décembre à 14 heures, salle 5B.",
+    "text_b": "Rencontre prévue le 30 décembre à 14 heures, salle 5B.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Il est reconnu selon l'article 223-1 du code pénal que l'homicide volontaire est un crime, passible de lourdes peines.",
+    "text_b": "Il est reconnu selon l’article 223-1 du code pénal que l'homicide volontaire est un crime, passible de lourdes peines.",
+    "is_true": false,
+    "explanation": "La différence réside dans l'apostrophe du texte_a qui est droite, contre courbe dans le texte_b. Un détail typographique souvent manqué."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Monsieur Lionel Groult arrive à 16h à l'aéroport Charles de Gaulle pour le vol AF1234.",
+    "text_b": "Monsieur Lionel Gr0ult arrive à 16h à l’aéroport Charles de Gaulle pour le vol AF1234.",
+    "is_true": false,
+    "explanation": "Erreur visuelle subtile : « Groult » est écrit « Gr0ult » dans text_b avec un zéro à la place d’un « o ». Cela peut confondre par son aspect similaire."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "C'est lors de cette enquête que l'on découvre que le sujet avait une dette élevée auprès de Mr. Henri Paton.",
+    "text_b": "C’est lors de cette enquête que l’on découvre que le sujet avait une dette élevée auprès de Mr. Henri Paton.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon l'article 225-7, le trafic de stupéfiants est un délit sévèrement puni par la loi française.",
+    "text_b": "Selon l'article 225–7, le trafic de stupéfiants est un délit sévèrement puni par la loi française.",
+    "is_true": false,
+    "explanation": "Différence entre tiret court et tiret long dans « 225-7 » vs « 225–7 ». Le choix du type de trait peut passer inaperçu lors d'une lecture rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "À 22 h 45, le suspect a quitté la scène du crime en direction de la rue Solférino, selon les témoins.",
+    "text_b": "À 22 h 45, le suspect a quitté la scéne du crime en direction de la rue Solférino, selon les témoins.",
+    "is_true": false,
+    "explanation": "Erreur sur l'accent : « scène » avec accent aigu vs « scéne » avec mauvais positionnement. Les accents nécessitent une attention particulière."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Les témoins ont déclaré que la voiture s’est dirigée vers la rue André Malraux à une vitesse excessive.",
+    "text_b": "Les témoins ont déclaré que la voiture s’est dirigée vers la rue André Malraux à une vitesse excessive.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'individu portait un pull noir avec un logo blanc. Il a été aperçu pour la dernière fois en direction du pont Georges Clemenceau.",
+    "text_b": "L’individu portait un pull noir avec un logo blanc. Il a été aperçu pour la derniére fois en direction du pont Georges Clemenceau.",
+    "is_true": false,
+    "explanation": "Différence sur l'apostrophe de « l’individu » et accent grave mal placé sur « dernière » dans text_b. Les erreurs combinées réduisent la lisibilité."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le 15 septembre, l’incident a eu lieu à l'angle du boulevard Voltaire. Aucun dommage matériel n’a été rapporté.",
+    "text_b": "Le 15 septembre, l’incident a eu lieu à l’angle du boulevard Voltaire. Aucun dommage matériel n’a été rapporté.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Les agents ont noté que la caméra de surveillance installée près de la porte d'entrée était activée entre 22h et 3h.",
+    "text_b": "Les agents ont noté que la caméra de surveillance installée prêt de la porte d’entrée était activée entre 22h et 3h.",
+    "is_true": false,
+    "explanation": "Erreurs sur « près » vs « prêt », une modification orthographique subtile. Les erreurs d’homophonie nécessitent une veille constante."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'enquête sur le vol de bijoux est menée par l'équipe du commissaire Rivière. Le rapport final est attendu pour jeudi prochain.",
+    "text_b": "L’enquête sur le vol de bijoux est menée par l’équipe du commissaire Rivière. Le rapport final est attendue pour jeudi prochain.",
+    "is_true": false,
+    "explanation": "Accord incorrect sur « attendu » : écrit « attendue » dans text_b. Un détail de conjugaison qui passe facilement inaperçu lors de la lecture."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le vol SNCF n°4512 à destination de Marseille a quitté la gare à 14h25 précises, trois minutes après l'aller-retour de Claude.",
+    "text_b": "Le vol SNCF n°4512 à destination de Marseille a quitté la gare à 14h25 précises, trois minutes aprés l'aller-retour de Claude.",
+    "is_true": false,
+    "explanation": "Accent incorrect : « après » devient « aprés » dans text_b. L'accentuation incorrecte est souvent ignorée lors de lectures rapides."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Dans l'affaire concernant l'article 314-2 du code pénal, il est stipulé que le détournement de fonds est poursuivi en justice.",
+    "text_b": "Dans l'affaire concernant l'article 314-2 du code pénal, il est stipulé que le détournement de fonds est poursuivi en justice.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'audience qui devait avoir lieu le mercredi 10 octobre 2023 a été reportée à une date ultérieure en raison de circonstances imprévues.",
+    "text_b": "L'audience qui devait avoir lieu le mercredi 10 octobre 2023 a été reportée à une date ultérieure en raison de circonstances imprévues.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon l'article 112-1, un délit est considéré comme infraction si et seulement si tous les éléments constitutifs sont réunis.",
+    "text_b": "Sel0n l’article 112-1, un délit est considéré comme infraction si et seulement si tous les éléments constitutifs sont réunis.",
+    "is_true": false,
+    "explanation": "« Selon » est mal orthographié dans text_b comme « Sel0n » avec un zéro à la place du « o ». Facilement confondu visuellement."
+  }
+]

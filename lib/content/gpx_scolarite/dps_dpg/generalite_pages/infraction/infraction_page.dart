@@ -432,7 +432,7 @@ class _QuizCTAState extends State<_QuizCTA>
             borderRadius: BorderRadius.circular(999),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(.20),
+                color: Colors.black.withValues(alpha: .20),
                 blurRadius: 18,
                 offset: const Offset(0, 8),
               ),
@@ -513,8 +513,8 @@ class _QuickNav extends StatelessWidget {
                     vertical: 8,
                   ),
                   decoration: BoxDecoration(
-                    color: cs.primary.withOpacity(.12),
-                    border: Border.all(color: cs.primary.withOpacity(.25)),
+                    color: cs.primary.withValues(alpha: .12),
+                    border: Border.all(color: cs.primary.withValues(alpha: .25)),
                     borderRadius: BorderRadius.circular(999),
                   ),
                   child: Row(
@@ -628,7 +628,7 @@ class _SliderSectionState extends State<_SliderSection> {
                   height: 8,
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(i == _index ? .9 : .35),
+                    color: Colors.white.withValues(alpha: i == _index ? .9 : .35),
                     borderRadius: BorderRadius.circular(999),
                   ),
                 ),
@@ -662,8 +662,8 @@ class _CheatCard extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.all(16),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(.14),
-            border: Border.all(color: Colors.white.withOpacity(.24)),
+            color: Colors.white.withValues(alpha: .14),
+            border: Border.all(color: Colors.white.withValues(alpha: .24)),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Column(
@@ -676,8 +676,8 @@ class _CheatCard extends StatelessWidget {
                     height: 40,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      color: Colors.white.withOpacity(.20),
-                      border: Border.all(color: Colors.white.withOpacity(.22)),
+                      color: Colors.white.withValues(alpha: .20),
+                      border: Border.all(color: Colors.white.withValues(alpha: .22)),
                     ),
                     child: Icon(category.icon, color: Colors.white),
                   ),
@@ -749,7 +749,7 @@ class _ReadingBar extends StatelessWidget {
       height: 3,
       child: LinearProgressIndicator(
         value: progress.clamp(0, 1),
-        backgroundColor: Colors.white.withOpacity(.18),
+        backgroundColor: Colors.white.withValues(alpha: .18),
         valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
         minHeight: 3,
       ),

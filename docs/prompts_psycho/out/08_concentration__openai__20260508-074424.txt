@@ -1,0 +1,452 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « E » apparaît-elle dans cette phrase ?",
+        "prompt": "Observez attentivement la phrase.",
+        "stimulus": "LES ÉTUDIANTS ÉTUDIENT LES ETOILES.",
+        "options": ["5", "6", "7", "8"],
+        "answer": "6",
+        "explanation": "En examinant chaque mot : 'LES' (1), 'ÉTUDIANTS' (1), 'ÉTUDIENT' (2), 'LES' (1), 'ETOILES' (1) = 6 E au total. Il est important de ne pas confondre les majuscules et de bien compter chaque occurrence.",
+        "hint": "Parcourez chaque mot lentement pour ne rien manquer."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans la suite ?",
+        "prompt": "Trouver l'intrus dans cette séquence logique.",
+        "stimulus": "A C E G I J K",
+        "options": ["I", "J", "K", "C"],
+        "answer": "K",
+        "explanation": "Les lettres A, C, E, G, I, J sont les deuxième, quatrième, sixième, huitième, dixième et onzième lettres respectivement, formant une suite d'augmentations de 2. K n'est pas à la douzième position et rompt le schéma.",
+        "hint": "Considérez la position de chaque lettre dans l'alphabet."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de chiffres 5 apparaissent dans cette suite ?",
+        "prompt": "Comptez chaque chiffre 5.",
+        "stimulus": "5 3 5 7 5 9 5 1 5",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "explanation": "Les chiffres 5 se trouvent aux positions 1, 3, 5, 7 et 9. Il y en a donc cinq au total. En examinant chaque position, il est facile de ne pas en manquer un seul.",
+        "hint": "Concentrez-vous sur les chiffres à positions impaires."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle séquence est identique au modèle suivant ?",
+        "prompt": "Modèle : HKLMNPQ",
+        "stimulus": "Choisissez parmi les options.",
+        "options": ["HKLMNPQ", "HLKMNPQ", "HKLMNPR", "HKLMNP"],
+        "answer": "HKLMNPQ",
+        "explanation": "En comparant chaque option avec le modèle, uniquement 'HKLMNPQ' correspond parfaitement à chaque lettre de la séquence initiale. Les autres options ont des lettres interverties, manquantes ou supplémentaires.",
+        "hint": "Comparez lettre par lettre pour repérer les erreurs."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de voyelles dans cette phrase ?",
+        "prompt": "Inclut a, e, i, o, u, y. Casse insensible.",
+        "stimulus": "Julie aime lire et écouter la radio.",
+        "options": ["11", "12", "13", "14"],
+        "answer": "13",
+        "explanation": "Comptons les voyelles : Julie (3), aime (2), lire (2), et (1), écouter (3), la (1), radio (1) = 13 voyelles. Le piège potentiel est de ne pas inclure le Y, qui compte comme une voyelle.",
+        "hint": "Assurez-vous de compter toutes les voyelles, y compris le Y."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de mots de plus de 4 lettres dans cette phrase ?",
+        "prompt": "Ne comptez que les mots strictement supérieurs à 4 lettres.",
+        "stimulus": "Le chien observe attentivement le paysage.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "En parcourant chaque mot, 'chien' (5), 'observe' (8), et 'attentivement' (13) sont les seuls mots ayant plus de 4 lettres. Les mots 'Le' (2), 'le' (2), 'paysage' (8) ne sont pas pris en compte sauf pour un mauvais compte de la règle.",
+        "hint": "Ne prenez que les mots comptant plus de 4 lettres."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de consonnes dans cette courte phrase ?",
+        "prompt": "Considère la casse. Aucune distinction entre majuscules et minuscules.",
+        "stimulus": "Les gardiens observent.",
+        "options": ["8", "9", "10", "11"],
+        "answer": "10",
+        "explanation": "Décomptons chaque lettre : dans 'Les' (2 consonnes), 'gardiens' (5 consonnes), 'observent' (3 consonnes) = 10 consonnes au total. Il est essentiel de bien différencier consonnes et voyelles.",
+        "hint": "Soulignez mentalement chaque consonne lorsque vous lisez."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle séquence correspond exactement au modèle donné ?",
+        "prompt": "Modèle : LMNOPQRS",
+        "stimulus": "Sélectionnez la bonne séquence.",
+        "options": ["LMNQRPS", "LMNOPQRS", "LMNOPRTS", "LMNOPQRT"],
+        "answer": "LMNOPQRS",
+        "explanation": "En analysant chaque option, 'LMNOPQRS' est la seule à ne pas alterner la position des lettres présentes dans le modèle fourni. Les autres options ont au moins un caractère deplacé ou manquant.",
+        "hint": "Comparez méthodiquement chaque caractère à son correspondant dans le modèle."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « T » apparaît-elle dans cette phrase ?",
+        "prompt": "Considérez le T en majuscule et minuscule.",
+        "stimulus": "Le plus grand trésor est le temps que l'on chérisse.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Décomptons chaque fois que 'T' apparaît : 'Le' (0), 'plus' (0), 'grand' (0), 'trésor' (1), 'est' (1), 'le' (0), 'temps' (1), 'que' (0), 'l'on' (0), 'chérisse' (1) = 4. Un piège courant est d'oublier de compter les T dans des articles courts comme 'le'.",
+        "hint": "Les articles courts contiennent souvent des lettres clés à ne pas négliger."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans la suite suivante ?",
+        "prompt": "Toutes les lettres sauf une suivent une alternance régulière.",
+        "stimulus": "Q S U W X Y Z",
+        "options": ["U", "W", "X", "Z"],
+        "answer": "X",
+        "explanation": "La suite suit une alternance de lettres : Q, S, U, W sautant une lettre à chaque fois, tandis que X suit directement W, ne respectant pas l'alternance. Le piège réside dans l'oubli du modèle d'alternance tous les deux.",
+        "hint": "Examiner la régularité entre chaque lettre pourrait réduire le nombre de candidats pour l'intrus."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de G majuscules y a-t-il ?",
+        "prompt": "Comptez uniquement les G en majuscule.",
+        "stimulus": "Le Gros Gourmand gagne toujours a Grands coups.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Considérons chaque occurrence : 'Gros' (1), 'Gourmand' (1), 'gagne' (0), 'Grands' (1) = 3 G en majuscule. Les G en minuscule ne doivent pas être pris en compte afin de dériver une réponse correcte.",
+        "hint": "Assurez-vous de distinguer correctement entre G majuscule et minuscule."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de chiffres pairs apparaissent dans la suite ?",
+        "prompt": "Comptez uniquement les chiffres pairs.",
+        "stimulus": "1 2 3 4 5 6 7 8 9 0",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5",
+        "explanation": "Examinons les chiffres 2, 4, 6, 8, 0 — 5 chiffres pairs dans la suite. Il est crucial de prendre en compte le zéro, car c'est un chiffre pair souvent négligé.",
+        "hint": "Soulignez mentalement chaque chiffre pair pendant votre comptage."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Trouver l'intrus dans la suite alphabétique.",
+        "prompt": "Identifiez la lettre qui ne suit pas le modèle.",
+        "stimulus": "M O Q R T U V",
+        "options": ["Q", "R", "T", "V"],
+        "answer": "R",
+        "explanation": "Les lettres M, O, Q, T, U, V progressent par intervalles de 2 : M (0), O (2), Q (2), mais R ne suit pas ce modèle et rompt le schéma progressif. L'oubli de l'intervalle réduit la probabilité d'un choix judicieux.",
+        "hint": "Examiner l'espacement et voyez si une lettre rompt le motif."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de voyelles dans ce texte ?",
+        "prompt": "Comptabilisez chaque a, e, i, o, u, y en majuscule ou minuscule.",
+        "stimulus": "Un jardin fleuri attire des abeilles",
+        "options": ["12", "13", "14", "15"],
+        "answer": "14",
+        "explanation": "Il y a : Un (1), jardin (2), fleuri (3), attire (3), des (1), abeilles (4) = 14. Le compte nécessite une analyse de chaque mot, et le Y décompté dans 'attire' comme voyelle.",
+        "hint": "Regardez chaque mot attentivement pour éviter un oubli."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette suite de chiffres, combien de fois le 9 apparaît-il ?",
+        "prompt": "Comptez attentivement les occurrences de 9.",
+        "stimulus": "9 8 7 9 6 9 5 4 3 2 1 9 0 9",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "explanation": "Les chiffres 9 se trouvent aux positions 1, 4, 6, 12 et 14. Comprendre chaque position aidera à ne négliger aucune occurrence. Se fier seulement aux emplacements logiques amène une grande efficacité dans le calcul.",
+        "hint": "Gardez une trace visuelle des positions précédentes atteintes."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la lettre l'intruse dans cette suite de voyelles ?",
+        "prompt": "Identifiez l'intrus.",
+        "stimulus": "A E I O U B",
+        "options": ["I", "O", "B", "A"],
+        "answer": "B",
+        "explanation": "B est la seule consonne dans la suite. Les autres lettres A, E, I, O, U sont voyelles. Identifier rapidement le motif de voyelles est la clé pour élimination cela.",
+        "hint": "Cherchez ce qui rompt un motif évident pour la plupart."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle séquence correspond exactement au modèle présenté ?",
+        "prompt": "Modèle : 1234ABCD",
+        "stimulus": "Trouvez la séquence concordante.",
+        "options": ["1234ABDC", "1234ACBD", "1234ABCD", "123ABC4D"],
+        "answer": "1234ABCD",
+        "explanation": "La seule séquence qui correspond exactement au modèle est '1234ABCD'. Il est crucial de lire attentivement chaque lettre pour éviter les options ayant des inversions de lettres.",
+        "hint": "Comparez chaque lettre méticuleusement pour repérer les divergences."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de fois la lettre « S » majuscule apparaît-elle ?",
+        "prompt": "Considérez uniquement le S majuscule.",
+        "stimulus": "Des Serpents Subtils se cachent sous cette grande Souche.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Le décompte des 'S' majuscules : 'Des' (0), 'Serpents' (1), 'Subtils' (1), 'Souche' (1) = 3. Les 'S' minuscules complique souvent un comptage erroné en amplifiant le nombre initialement pensé.",
+        "hint": "Faire attention exclusivement aux majuscules vous facilitera le calcul."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de chiffres 8 apparaissent dans la suite ?",
+        "prompt": "Comptez minutieusement chaque 8.",
+        "stimulus": "8 7 8 6 8 5 8 4 8 3 8 2 8",
+        "options": ["7", "8", "9", "10"],
+        "answer": "7",
+        "explanation": "Les 8 apparaissent aux positions 1, 3, 5, 7, 9, 11 et 13, donc il y a sept occurrences de 8. La vigilance est essentielle dans ce système répétitif d'alternance pour éviter de manquer de comptage.",
+        "hint": "Repérez chaque 8 sur les positions impaires pour voir facilement les motifs."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de mots de plus de 5 lettres cette phrase contient-elle ?",
+        "prompt": "Considérez les mots strictement de plus de 5 lettres.",
+        "stimulus": "La justice établit des règlements pour assurer l'ordre.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "2",
+        "explanation": "Les mots dépassant 5 lettres sont : 'justice' (7), 'règlements' (10). 'Établit' ne compte que 6 lettres mais réside à leur seuil critique constituant une échéance de calcul.",
+        "hint": "Concentrez-vous vraiment sur chaque mot pour parfaitement éviter les erreurs."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence correspond exactement au modèle fourni ?",
+        "prompt": "Modèle : ABCDEFGH",
+        "stimulus": "Sélectionnez la correspondance exacte.",
+        "options": ["ABCDFGH", "ABCDEFGH", "ABDCEFGH", "AZCDEFGH"],
+        "answer": "ABCDEFGH",
+        "explanation": "La séquence 'ABCDEFGH' est la seule à correspondre directement au modèle sans changement d'ordre. Ne pas déceler à temps les différences subtiles est une erreur commune.",
+        "hint": "Parcourez lentement chaque lettre pour vous assurer contre les petites altérations."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de mots dans cette phrase contiennent des double consonnes ?",
+        "prompt": "Considérez les groupes de toutes consonnes adjacentes.",
+        "stimulus": "Les policiers abattent rapidement les barrières.",
+        "options": ["1", "2", "3", "4"],
+        "answer": "3",
+        "explanation": "'Policiers', 'abattent', 'barrières' contiennent tous des paires de consonnes comme 'bb', 'tt' et 'rr'. Éviter les inclure involontairement pourrait s retirer au calcul correct.",
+        "hint": "Concentrez-vous sur les lettres doubles en existence même si nuances fines pour éviter."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de F majuscules trouve-t-on dans cette phrase ?",
+        "prompt": "Ne comptez que les F en majuscule.",
+        "stimulus": "Le Facteur de Frisson Finalement s'est manifesté.",
+        "options": ["1", "2", "3", "4"],
+        "answer": "3",
+        "explanation": "En examinant chaque terme, 'Facteur' (1), 'Frisson' (1), 'Finalement' (1) contiennent chacun un F majuscule. L'exclusion des f minuscule est essentielle à une conclusion de compte rationnelle.",
+        "hint": "Vérifiez attentivement pour ne pas vous figer sur les clauses."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle lettre est l'intrus dans cette suite ?",
+        "prompt": "Identifiez la lettre ne suivant pas le modèle binaire.",
+        "stimulus": "B D F G H J L N",
+        "options": ["G", "H", "L", "N"],
+        "answer": "G",
+        "explanation": "Les lettres B, D, F, H, J, L, N correspondent à un modèle de lettres alternant les chiffres pairs et impairs sauf pour 'G', une anomalie. Retenir ce principe d'alternance aide à éviter l'erreur.",
+        "hint": "Considérez l'alternance pair/impair pour repérer le motif."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de E majuscules dans cette phrase complexe ?",
+        "prompt": "Considérez seulement les E majuscules possibles.",
+        "stimulus": "Élégance Est Essentialement sobre Et exclusivement Élaborée.",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "explanation": "Les 'E' majuscules sont respectivement : 'Élégance' (1), 'Est' (1), 'Essentialement' (1), 'Exclusivement' (1), 'Élaborée' (1). Comptez furtivement sur les espaces pour éviter distractions.",
+        "hint": "Concentrez à compter chaque majesté ouuppercela E pour arriver à la fin."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Trouver l'intrus parmi la suite des jours.",
+        "prompt": "Seul un des éléments ne correspond pas.",
+        "stimulus": "Lundi Mardi Jeudi Samedi Dimanche",
+        "options": ["Mardi", "Jeudi", "Dimanche", "Samedi"],
+        "answer": "Jeudi",
+        "explanation": "Chaque jour est inscrit selon un écart symétrique entre lundi, mardi, et jeudi ayant aucune association par unité de jours ou séquence. Le point de surprise serait d'oublier un cyclique intéressant.",
+        "hint": "Représentez visuellement l'échelle jour pour jour week."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence de lettres est identique au modèle donné ci-dessous ?",
+        "prompt": "Modèle : MNBVCXZA",
+        "stimulus": "Choisissez le bon modèle qui convient.",
+        "options": ["MNBVCDZA", "MNBVCXZA", "MNBCVXZA", "MNBVCXZ"],
+        "answer": "MNBVCXZA",
+        "explanation": "'MNBVCXZA' est seule option qui recrée fidèlement le modèle sans erreurs. Attentionné double et triple vérification des séquences permettra d'éviter omissions.",
+        "hint": "Considérez à gauche chaque lettre une à une, à plusieurs reprises pour résoudre l'inexactitude."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Identifiez une séquence identique au modèle suivant.",
+        "prompt": "Modèle : ZXCVBNML",
+        "stimulus": "Effectuez votre sélection parmi options.",
+        "options": ["ZXCBBNML", "ZXCBVNML", "ZXCVBNML", "ZXCVNMML"],
+        "answer": "ZXCVBNML",
+        "explanation": "Les options sont trompeuses car seule 'ZXCVBNML' alignerait parfaitement le modèle proposé. Discervez que substitution chaque lettre incom Rechercher une courte inexactitude prône.",
+        "hint": "Lit progressivement de temps en temps plus d'une phrase pour atteindre une exacte vision."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de mots de plus de 7 lettres dans la phrase suivante ?",
+        "prompt": "Prenez en compte les mots strictement supérieurs à 7 lettres.",
+        "stimulus": "L'authenticité et la fiabilité sont cruciales pour bâtir une réputation solide.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Analysons les mots : 'authenticité' (12), 'fiabilité' (9), 'cruciales' (9) : 3 mots. Le piège est de considérer le mot 'réputation' qui ne fait que 10 et 'solide' avec 6 lettres.",
+        "hint": "Passez en revue chaque terminaison de mot, jauger leur longueur excessive nous offrira un total correct."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle séquence reproduit exactement le modèle suivant ?",
+        "prompt": "Modèle : 1234567890ABCDEF",
+        "stimulus": "Indiquez la séquence exacte conforme.",
+        "options": ["1234567890ABCFDE", "1234567890ABCDEF", "123456790ABCDEF", "1234567890BACDEF"],
+        "answer": "1234567890ABCDEF",
+        "explanation": "La séquence '1234567890ABCDEF' est fidèle au modèle initialement donné sans erreur, chaque lettre et chiffre est à sa place. Considérez éviter d'omettre inversion de positionnement quelle partie infime.",
+        "hint": "Inspectez minutieusement chaque caractère pour éviter l'omission lourde et soulager votre incertitude."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de fois la lettre « R » majuscule apparaît-elle ici ?",
+        "prompt": "Observez uniquement les occurrences en majuscule de R.",
+        "stimulus": "Rien n'est Réellement Réellement impossible lorsque Rêves courts Règnent.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "En comptant les bonnes lettres : 'Rien' (1), 'Réellement' (2), 'Rêves' (0), 'Règnent' (1) = 4 R majuscules. Attention cependant : confondre des majuscules pourrait conduire un faux calcul.",
+        "hint": "Ne prenez en compte que les R grands via développement direct et intuiros?"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de chiffres impairs se trouvent dans cette suite alphanumérique ?",
+        "prompt": "Attention, ne comptez que les chiffres numérotés impairs.",
+        "stimulus": "1X2Y3Z4A5B6C7D8E9F",
+        "options": ["5", "6", "7", "8"],
+        "answer": "5",
+        "explanation": "Nous avons 1, 3, 5, 7, 9 — 5 chiffres impairs au total. Leur identification dans ce désordre est habilement influencée par les caractères alphabétiques et ne pas retirer tous les nombres voisins est essentiel.",
+        "hint": "Ignorez les lettres, concentrez-vous simplement sur les formules improbables."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle lettre est l'intrus dans la suite suivante ?",
+        "prompt": "Un seul élément n'accomplit pas le motif binaire.",
+        "stimulus": "A C E G H I K M",
+        "options": ["G", "H", "I", "M"],
+        "answer": "H",
+        "explanation": "L'alternance est 2 places entre lettres impaires. 'H' sort la ligne en observant la répétition suivante à travers E -> G, suivi I -> K. L'erreur réside en ne pas voir un point récurrent.",
+        "hint": "L'ajout d'un modèle séquentiel est crucial pour observer ces régularités discrètes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de R majuscules dans ce passage ?",
+        "prompt": "Ne comptez que les lettres R en majuscule.",
+        "stimulus": "Rachel, en Remontant ses trempeurs, Remarqua étrangement un Reverberateur.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Examiner chaque mot : 'Rachel' (0), 'Remontant (1)', 'Remarqua' (1), 'Reverberateur' (1) = 3 fois. Reposant sur la vigilance d'omettre certain R petit peut amener un tout autre résulté de l'approche",
+        "hint": "Gardez les R en retenues, visualisez leur amplitude dans les vocabulaires."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de E majuscules y a-t-il dans la suite suivante ?",
+        "prompt": "Comptez exclusivement les E en majuscule.",
+        "stimulus": "Ecrire Est Essentiel pour Eduquer dans l'Enthousiasme.",
+        "options": ["4", "5", "6", "7"],
+        "answer": "4",
+        "explanation": "Les E majuscules correspondent aux : 'Ecrire' (1), 'Est' (1), 'Essentiel' (1), 'Eduquer' (1) = 4 E majuscules. Chaque mot doit être observé pour éviter de compter miniscule e à la place.",
+        "hint": "Optez une distinction correcte et évitez de vous tromper entre e min et maj."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle séquence est exactement identique au modèle suivant ?",
+        "prompt": "Modèle : QWERTYUIOPASDFGH",
+        "stimulus": "Identifiez la séquence correcte.",
+        "options": ["QWERTYUIOPDSAFHG", "QWERTYUIOPASDFGH", "QWERTYYUIOPASDFGH", "QWERTYUIOAPSDFGH"],
+        "answer": "QWERTYUIOPASDFGH",
+        "explanation": "La séquence 'QWERTYUIOPASDFGH' reproduit fidèlement le modèle donné sans modifications. La concentration sur permutations est cruciale pour ne pas choisir de façon incorrecte.",
+        "hint": "Analysez chaque lettre lentement pour détecter les moindres différences."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de lettres font parties de la suite palindrome ?",
+        "prompt": "Trouvez et identifiez les nombres de chaque groupe.",
+        "stimulus": "ABCDCBA EFGHGFED 12321 DEED",
+        "options": ["3", "4", "5", "6"],
+        "answer": "3",
+        "explanation": "Les ensembles sont ABCDCBA, 12321 et DEED. Chacun est un palindrome, donc contestant la symétrie constante. Évitez de confondre suite incomplète avec une mistake nécessaire.",
+        "hint": "Représentez chaque partition clairement pour observer la symphonie intégrale."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de consonnes trouvent-on dans ce texte descriptif ?",
+        "prompt": "Faites attention à ne considérer que les consonnes.",
+        "stimulus": "Récit salutaire ceci n'est qu'un extrait mémorable.",
+        "options": ["20", "21", "22", "23"],
+        "answer": "22",
+        "explanation": "Nous avons : 'Récit' (3), 'salutaire' (5), 'ceci' (2), 'n'est' (3), 'qu'un' (2), 'extrait' (4), 'mémorable' (3) = 22. Bien différencier les voyelles, s'assurer de rassembler timbres masque une attente possible.",
+        "hint": "Visitez chaque mot correctement structurer, filtrer passage pour assurer que lettres sont consonnes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de mots ont exactement 5 lettres ici ?",
+        "prompt": "Considérez chaque mot individuellement.",
+        "stimulus": "Avant d'accepter, demandez, puis pensez catégoriquement.",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "explanation": "'Avant', 'puis' contiennent exactement 5 lettres chaque. Un écart sur demande réside là ce pourrait trouver se retire. Quelques effets mauvais de permettre des intervales oblitèrent différence vitale.",
+        "hint": "Comparez L'entrée avec votre seuil pour s'assurer que chaque mot ne soit pas écarté."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle séquence choisie correspond exactement à cette proposition ?",
+        "prompt": "Modèle : AZWSXEDCRFVTGBYHNUJMIKOLP.",
+        "stimulus": "Admirez l'observation logique pour référencement correct.",
+        "options": ["AZWSXRDECFVTGBYHNUJMIKOLP", "AZWSXEQDRFVTGBYHNUJMIKOLP", "AZWSXEDCRFVTGBYHNUJMIKOLP", "AWSXEDCRFVTGB","AZWSXEDCRFVTGBYHNUJMIKOLP"],
+        "answer": "AZWSXEDCRFVTGBYHNUJMIKOLP",
+        "explanation": "La séquence 'AZWSXEDCRFVTGBYHNUJMIKOLP' produit sans faute un parallèle modèle en général. Il ne reste qu'alterner membres individuels à former ruptures spécifiques.",
+        "hint": "Faites une tentative sur les bords, pour déterminer s'il y a distorsion."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de mots de plus de 6 lettres composent cet extrait ?",
+        "prompt": "Prenez bien soin de respecter la règle des mots à 'plus de 6 lettres'.",
+        "stimulus": "L'élaboration minutieuse de procédures améliore constamment la qualité.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "En analysant, 'élaboration' (11), 'minutieuse' (10), 'procédures' (9), 'améliore' (8) font plus que 6 lettres chacun. Ne pas prêter attention à 'qualité' initialement apparent mais non inclus, de 7 lettres quu fait défaut peut faire erreur.",
+        "hint": "Surligner chaque mot est une méthode efficace pour éviter les oublis."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de fois la lettre « M » en majuscule apparaît-elle ?",
+        "prompt": "Observez particulièrement le M majuscule.",
+        "stimulus": "Le Malicieux Matin Maboul Mandat est Magnifiquement Moelleux.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Comptabilisons : 'Malicieux' (1), 'Matin' (1), 'Mandat' (1), 'Magnifiquement' (1) = 4 M majuscules en ométant minuscule 'm'. Évitez de compter 'moelleux' comme distraction typique.",
+        "hint": "Passez en arpentant chaque mot pour repérer les majuscules M pas m."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Trouver l'intrus dans cette suite d'année non séquentielles.",
+        "prompt": "Identifiez le chiffre qui ne s'accorde pas à la non progression des années.",
+        "stimulus": "1999 2001 2002 2004 2005 2003",
+        "options": ["2005", "2004", "2003", "2001"],
+        "answer": "2003",
+        "explanation": "Les années progressent de plusieurs et l'année 2003 est intercalée, c'est-à-dire '1999' (5), '2004' (5), l'écart en étant suivant un cycle imparti. Indépendamment possible nature qu'2002 replace sa logique.",
+        "hint": "Revenez plus loin quelques chiffres en séquence pour voir s'il est inégal ou non."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de R majuscules trouvent-on dans l'extrait suivant ?",
+        "prompt": "Considérer uniquement les R en majuscules.",
+        "stimulus": "Ravi au coeur de cet immense Récif Réflexif. Un R symbolique.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Les R majuscules sont présents dans : 'Ravi' (1), 'Récif' (1), 'Réflexif' (1), 'R' (1) = 4 au total. Des erreurs viennent souvent du fait de ne pas faire la distinction entre les minuscules et majuscules R.",
+        "hint": "Soulignez ce que vous trouvez facilement, c'est la clé."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de E majuscules ce paragraphe contient-il ?",
+        "prompt": "Attention, seuls les E majuscules doivent être comptés.",
+        "stimulus": "Éclair d'Été ÉlancÉ, Épaule rigide. Échos résonants.",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "explanation": "En référencement l'E morde : 'Éclair' (1), 'Été' (1), 'ÉlancÉ, (1), 'Échos (1), 'Épaules (1) = 5. Les majuscules et minuscules sont critiques souvent erronées à première vue.",
+        "hint": "Utilisez une vérification simple des E maj devant pour ajuster le calcul."
+    }
+]

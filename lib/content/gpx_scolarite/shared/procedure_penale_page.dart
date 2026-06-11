@@ -188,9 +188,9 @@ class _HeroHeader extends StatelessWidget {
             end: Alignment.bottomRight,
             colors: isDark
                 ? [cs.surfaceContainerHighest, cs.surface]
-                : [cs.primary.withOpacity(.10), cs.surface],
+                : [cs.primary.withValues(alpha: .10), cs.surface],
           ),
-          border: Border.all(color: cs.outlineVariant.withOpacity(.35)),
+          border: Border.all(color: cs.outlineVariant.withValues(alpha: .35)),
         ),
         child: Stack(
           children: [
@@ -198,12 +198,12 @@ class _HeroHeader extends StatelessWidget {
             Positioned(
               right: -30,
               top: -20,
-              child: _SoftBlob(color: cs.primary.withOpacity(.08), size: 160),
+              child: _SoftBlob(color: cs.primary.withValues(alpha: .08), size: 160),
             ),
             Positioned(
               left: -20,
               bottom: -30,
-              child: _SoftBlob(color: cs.secondary.withOpacity(.06), size: 140),
+              child: _SoftBlob(color: cs.secondary.withValues(alpha: .06), size: 140),
             ),
 
             // contenu
@@ -295,22 +295,22 @@ class _SearchPill extends StatelessWidget {
         hintText: hint,
         isDense: true,
         filled: true,
-        fillColor: cs.surfaceContainerHighest.withOpacity(.55),
+        fillColor: cs.surfaceContainerHighest.withValues(alpha: .55),
         contentPadding: const EdgeInsets.symmetric(
           horizontal: 16,
           vertical: 14,
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(color: cs.outlineVariant.withOpacity(.5)),
+          borderSide: BorderSide(color: cs.outlineVariant.withValues(alpha: .5)),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(color: cs.outlineVariant.withOpacity(.5)),
+          borderSide: BorderSide(color: cs.outlineVariant.withValues(alpha: .5)),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(color: cs.primary.withOpacity(.6)),
+          borderSide: BorderSide(color: cs.primary.withValues(alpha: .6)),
         ),
       ),
     );
@@ -345,10 +345,10 @@ class _SectionTile extends StatelessWidget {
         decoration: BoxDecoration(
           color: cs.surface,
           borderRadius: BorderRadius.circular(22),
-          border: Border.all(color: cs.outlineVariant.withOpacity(.35)),
+          border: Border.all(color: cs.outlineVariant.withValues(alpha: .35)),
           boxShadow: [
             BoxShadow(
-              color: cs.shadow.withOpacity(.06),
+              color: cs.shadow.withValues(alpha: .06),
               blurRadius: 18,
               offset: const Offset(0, 8),
             ),
@@ -419,9 +419,9 @@ class _ChapterTile extends StatelessWidget {
       borderRadius: BorderRadius.circular(18),
       child: Container(
         decoration: BoxDecoration(
-          color: cs.surfaceContainerHighest.withOpacity(.6),
+          color: cs.surfaceContainerHighest.withValues(alpha: .6),
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: cs.outlineVariant.withOpacity(.25)),
+          border: Border.all(color: cs.outlineVariant.withValues(alpha: .25)),
         ),
         child: Theme(
           data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
@@ -485,9 +485,9 @@ class _IconBadge extends StatelessWidget {
       width: 44,
       height: 44,
       decoration: BoxDecoration(
-        color: cs.primary.withOpacity(.12),
+        color: cs.primary.withValues(alpha: .12),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: cs.primary.withOpacity(.25)),
+        border: Border.all(color: cs.primary.withValues(alpha: .25)),
       ),
       child: Icon(icon, color: cs.primary),
     );
@@ -506,9 +506,9 @@ class _TinyTag extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: cs.secondaryContainer.withOpacity(.5),
+        color: cs.secondaryContainer.withValues(alpha: .5),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: cs.outlineVariant.withOpacity(.3)),
+        border: Border.all(color: cs.outlineVariant.withValues(alpha: .3)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -623,8 +623,8 @@ class _QuizPageState extends State<_QuizPage> {
     final isWrong = _sel != null && isSelected && index != answerIndex;
 
     Color? bg;
-    if (isCorrect) bg = Colors.green.withOpacity(.12);
-    if (isWrong) bg = Colors.red.withOpacity(.12);
+    if (isCorrect) bg = Colors.green.withValues(alpha: .12);
+    if (isWrong) bg = Colors.red.withValues(alpha: .12);
 
     return Card(
       color: bg,

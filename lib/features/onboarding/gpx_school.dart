@@ -361,7 +361,6 @@ class _ProgramHeroCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   const _ProgramHeroCard({
-    super.key,
     required this.program,
     required this.selected,
     required this.disabled,

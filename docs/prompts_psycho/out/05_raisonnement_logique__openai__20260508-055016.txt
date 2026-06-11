@@ -1,0 +1,298 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Puis-je sortir sous la pluie sans parapluie ?",
+    "prompt": "Si il pleut, alors je prends mon parapluie.",
+    "options": [
+      "Oui, il ne pleut pas",
+      "Non, je prendrai un parapluie",
+      "Oui, il pleut",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Oui, il ne pleut pas",
+    "explanation": "Il s'agit ici d'un exemple de modus ponens. Si la condition 'il pleut' est vraie, alors 'je prends mon parapluie'. Si la condition initiale 'il pleut' est fausse, alors la deuxième partie de l'implication ne s'applique pas. Ainsi, il est possible de sortir sans parapluie si et seulement si il ne pleut pas.",
+    "hint": "Cherche la négation de la première condition."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le champion ?",
+    "prompt": "Leila court plus vite que Sophie. Millie court moins vite que Leila.",
+    "options": [
+      "Leila",
+      "Sophie",
+      "Millie",
+      "Sophie et Millie"
+    ],
+    "answer": "Leila",
+    "explanation": "En analysant les données, nous avons Leila > Sophie et Leila > Millie. Cela signifie que Leila court plus vite que les deux autres concurrentes. On peut en déduire que Leila est la championne parmi ces trois compétitrices. Il est important de ne pas supposer que Millie court plus vite que Sophie, car cela n’est pas mentionné.",
+    "hint": "Comparez individuellement chaque coureur avec Leila."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Peut-on conclure que Paul a passé l'examen ?",
+    "prompt": "Tous ceux qui ont révisé ont passé l'examen. Paul a révisé.",
+    "options": [
+      "Oui, il a passé l'examen",
+      "Non, il n'a pas passé l'examen",
+      "Peut-être a-t-il échoué",
+      "Révision et succès ne sont pas liés"
+    ],
+    "answer": "Oui, il a passé l'examen",
+    "explanation": "Ceci est un syllogisme classique. Selon l’énoncé, avoir révisé implique que l’examen est réussi. Paul ayant révisé, il a obligatoirement passé l'examen. Le piège ici aurait été de supposer la possibilité d’échec malgré la révision.",
+    "hint": "Pense à la conséquence logique d'avoir révisé."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le fruit préféré de Clara ?",
+    "prompt": "Clara préfère les fruits rouges aux fruits jaunes. Les fraises sont rouges.",
+    "options": [
+      "Les bananes",
+      "Les fraises",
+      "Les pêches",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Les fraises",
+    "explanation": "Cet énoncé se base sur des préférences et les caractéristiques de couleur. Clara préfère les fruits rouges, et les fraises appartiennent à cette catégorie. Ainsi, par simple logique de classification, elle préfère les fraises. Le piège aurait été de supposer qu'un fruit de couleur non mentionnée était préféré.",
+    "hint": "Concentre-toi sur la couleur des fruits."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que voit Alice depuis la fenêtre ?",
+    "prompt": "Tous les arbres devant la fenêtre portent des fleurs. Le cerisier de la cour est devant la fenêtre.",
+    "options": [
+      "Des branches",
+      "Rien du tout",
+      "Des fleurs",
+      "Des feuilles"
+    ],
+    "answer": "Des fleurs",
+    "explanation": "Ce problème repose sur un syllogisme simple. Si tous les arbres devant la fenêtre portent des fleurs, et que le cerisier est un de ces arbres, alors il en va de soi qu'Alice voit des fleurs. La tentation pourrait être de deviner vague ou incorrect en supposant des éléments non énoncés.",
+    "hint": "Ne prends en compte que les arbres devant la fenêtre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Peut-on conclure qu'il pleut ?",
+    "prompt": "Si le sol est mouillé, alors il pleut. Le sol est sec.",
+    "options": [
+      "Oui, il pleut",
+      "Non, il ne pleut pas",
+      "Il y a du soleil",
+      "On ne peut pas savoir"
+    ],
+    "answer": "On ne peut pas savoir",
+    "explanation": "La règle ici est le modus tollens. La négation d'une implication permet de conclure que si le sol est sec, cela n'implique pas forcément qu'il ne pleut pas. Il se pourrait qu'il pleuve ailleurs, mais ici, cette condition spécifique n'est pas satisfaite. Ne pas confondre le sens de l'implication et sa double négation serait crucial.",
+    "hint": "Examine le rapport entre sol mouillé et pluie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on affirmer sur les ovnis ?",
+    "prompt": "Tous les objets volants sont générés techniquement. Des ovnis sont observés.",
+    "options": [
+      "Les ovnis sont des illusions",
+      "Les ovnis sont générés techniquement",
+      "On ne sait pas ce que sont les ovnis",
+      "Les ovnis ne sont pas volants"
+    ],
+    "answer": "Les ovnis sont générés techniquement",
+    "explanation": "Le syllogisme est ici utilisé : si tous les objets volants sont générés techniquement et que des ovnis font partie de cette catégorie, alors les ovnis doivent être générés techniquement. Évitez de penser que les ovnis ne respectent pas les lois énoncées dans l'énoncé.",
+    "hint": "Applique le tout sur la catégorie 'objet volant'."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on dire du chien ?",
+    "prompt": "Tous les animaux domestiques sont vaccinés. Ce chien est un animal domestique.",
+    "options": [
+      "Le chien n'est pas vacciné",
+      "Le chien est vacciné",
+      "Les chiens ne devraient pas être domestiques",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Le chien est vacciné",
+    "explanation": "Utilisant un syllogisme classique, puisque tous les animaux domestiques sont vaccinés et que le chien en question est un animal domestique, il suit logiquement que le chien est vacciné. Se méfier des tentatives de contester une relation qui intègre des catégories bien définies.",
+    "hint": "Connecte les concepts de vaccination et d'animal domestique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que conclure sur le trajet de Claire ?",
+    "prompt": "Si Claire prend le bus, elle sera à l'heure. Claire est en retard.",
+    "options": [
+      "Claire a pris le bus",
+      "Claire n'a pas pris le bus",
+      "Claire est partie plus tôt",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Claire n'a pas pris le bus",
+    "explanation": "Par modus tollens, si l'arrivée à l'heure dépend du fait de prendre le bus et que Claire est en retard, alors elle n'a pas pris le bus. Le piège consiste à penser que d'autres facteurs auraient pu influencer le retard, mais l'implication directe ne laisse pas cette option.",
+    "hint": "Cherche ce qu'entraîne son retard pour les actions."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la couleur du véhicule que Pierre conduit ?",
+    "prompt": "Tous les véhicules rouges sont rapides. Pierre conduit un véhicule qui n'est pas rapide.",
+    "options": [
+      "Rouge",
+      "Bleu",
+      "Impossible à déterminer",
+      "Jaune"
+    ],
+    "answer": "Impossible à déterminer",
+    "explanation": "La logique ici démontre que si toutes les voitures rouges sont rapides et que le véhicule de Pierre n'est pas rapide, il n'est pas nécessairement rouge. Cependant, sans informations supplémentaires, sa couleur exacte ne peut être déterminée. Le piège serait de conclure directement que sa couleur est différente d'un rouge sans envisager d'autres possibilités.",
+    "hint": "Pense aux caractéristiques de rapidité et couleur."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "En quelle position termine Luc ?",
+    "prompt": "Luc court plus lentement que Sam. Sam court plus vite que Laura.",
+    "options": [
+      "Luc termine avant Sam",
+      "Luc termine après Sam",
+      "Luc et Sam arrivent ex æquo",
+      "Laura gagne la course"
+    ],
+    "answer": "Luc termine après Sam",
+    "explanation": "Cet énoncé construit une chaîne d'inégalités : Sam > Luc et Sam > Laura. Cela établit que Luc est plus lent que Sam, donc Luc termine après ce dernier. Le piège est ici d'être distrait par la comparaison entre Laura et Sam, ce qui pourrait semer la confusion.",
+    "hint": "Utilise la chaîne de comparaison directement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Pierre a-t-il pris un café ?",
+    "prompt": "Si Pierre boit un café, alors il dort moins. Pierre a de bonnes heures de sommeil.",
+    "options": [
+      "Non, il a pris un café",
+      "Oui, il n'a pas pris de café",
+      "Impossible à dire",
+      "Il boit du thé"
+    ],
+    "answer": "Oui, il n'a pas pris de café",
+    "explanation": "L'application du modus tollens nous montre que si prendre un café réduit le sommeil et que Pierre dort bien, il n’a pas pris de café. Les erreurs probables incluent le mélange des rôles entre boire du café et l'effet direct sur le sommeil.",
+    "hint": "Concentre-toi sur l'effet du café sur le sommeil."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel sport Paul préfère-t-il ?",
+    "prompt": "Paul préfère le sport où l'on court vite. Le basketball exige de la vitesse.",
+    "options": [
+      "Basketball",
+      "Échecs",
+      "Natation",
+      "Tennis"
+    ],
+    "answer": "Basketball",
+    "explanation": "L'information fournie indique que quelque chose de rapide convient à Paul. Puisque le basketball est cité et demandant une certaine vitesse, c'est la préférence probable. L'erreur serait de minimiser la composante vitesse requise dans ce sport en le comparant à d'autres popularités individuelles.",
+    "hint": "Assure-toi de bien comprendre quels sports impliquent de la vitesse."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Peut-on conclure que le chat est noir ?",
+    "prompt": "Tous les chats noirs aiment le poisson. Ce chat aime le poisson.",
+    "options": [
+      "Oui, le chat est noir",
+      "Non, aucune certitude sur sa couleur",
+      "On ne peut pas savoir",
+      "Oui, il est blanc"
+    ],
+    "answer": "Non, aucune certitude sur sa couleur",
+    "explanation": "Cet énoncé met en lumière un raisonnement sur les catégories. L'affirmation que les chats noirs aiment le poisson ne signifie pas que tous ceux qui aiment le poisson sont noirs. D’autres couleurs peuvent également exister. La tentation ici est d’inverser irrationnellement la direction de la relation.",
+    "hint": "Fais attention à la direction de l'implication."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Comment est la pièce finale de Marc ?",
+    "prompt": "Marc possède tous les objets en métal et fabrique ceux en plastique. Ce vase est en plastique.",
+    "options": [
+      "Métal",
+      "Plastique",
+      "Verre",
+      "Bois"
+    ],
+    "answer": "Plastique",
+    "explanation": "D'après les prémisses, tous les objets en plastique sont fabriqués par Marc. Donc, ce vase, étant en plastique, sera effectivement en plastique. La confusion peut venir de l'idée que Marc aurait d'autres matériaux à disposition.",
+    "hint": "Vérifie quelle matière Marc fabrique seul."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Qui est le plus âgé ?",
+    "prompt": "Paul est plus âgé que Catherine. Catherine est plus âgée que Marie. Louise a le même âge que Marie.",
+    "options": [
+      "Paul",
+      "Catherine",
+      "Marie",
+      "Louise"
+    ],
+    "answer": "Paul",
+    "explanation": "D’après les informations données, on a : Paul > Catherine > Marie = Louise. Par transitivité, Paul est clairement le plus âgé de ce groupe. On pourrait par inadvertance confondre l'ordre des relations ou oublier l'égalité entre Marie et Louise.",
+    "hint": "Rassemble tes informations dans une hiérarchie."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Jean est-il parti en vacances ?",
+    "prompt": "Si Jean part en vacances, alors il arrose ses plantes avant. Ses plantes ne sont pas arrosées.",
+    "options": [
+      "Oui, il est parti",
+      "Non, il n'est pas parti",
+      "Peut-être est-il chez lui",
+      "Peut-être qu'il a oublié d'arroser"
+    ],
+    "answer": "Non, il n'est pas parti",
+    "explanation": "On utilise ici le modus tollens. Ne pas arroser signifie qu'il ne peut pas être parti, car cela était un prérequis. Le piège est de penser qu'il pourrait avoir oublié, trop d'hypothèses non confirmées biaisent le raisonnement concluant.",
+    "hint": "La non-fulfilment d'une condition empêche l'action."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Comment est Salomé ?",
+    "prompt": "Salomé a les cheveux plus longs qu'Émilie. Lise a les cheveux plus courts que Salomé.",
+    "options": [
+      "Salomé n'a pas de cheveux",
+      "Émilie a des cheveux plus courts que Salomé",
+      "Salomé a les cheveux les plus longs",
+      "La longueur des cheveux est égale"
+    ],
+    "answer": "Émilie a des cheveux plus courts que Salomé",
+    "explanation": "Le raisonnement repose sur l'ordre : Salomé > Émilie et Salomé > Lise, ce qui signifie qu'Émilie a les cheveux plus courts. La confusion serait de trop simplifier en croyant que les autres n'ont pas de cheveux plus longs.",
+    "hint": "Crée l'ordre linéaire de la longueur des cheveux."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "En quoi consiste la mission de Lisa ?",
+    "prompt": "Lisa part en mission si elle reçoit trois appels. Elle a reçu deux appels.",
+    "options": [
+      "Mission engagée",
+      "Mission retardée",
+      "Mission acceptée automatiquement",
+      "Mission refusée"
+    ],
+    "answer": "Mission retardée",
+    "explanation": "Ici, la conclusion montrant qu'une mission nécessite 3 appels, alors en ne recevant que 2, elle ne part pas encore. Une erreur fréquente serait de penser que puisqu’elle a reçu quelques appels, une action est engagée sans attendre le nombre requis.",
+    "hint": "Compter est important par rapport au conditionnement fourni."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Pourrait-on dire que Gérard a voyagé ?",
+    "prompt": "Si Gérard voyage, alors il accumule des journées d'hôtel. Gérard n'a pas de journées d'hôtel.",
+    "options": [
+      "Oui, il a voyagé",
+      "Non, il n'a pas voyagé",
+      "Peut-être une seule journée",
+      "Il est parti campeur"
+    ],
+    "answer": "Non, il n'a pas voyagé",
+    "explanation": "L'analyse ici suit un modus tollens : ne pas avoir de journées d'hôtel signifie qu'il n'a pas voyagé. Il serait une erreur ici de penser qu'autrement, les activités auraient pu être organisées en dehors d'un système d’hôtels.",
+    "hint": "Concentre-toi sur le lien entre voyage et hôtel."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle direction a probablement choisi Tom ?",
+    "prompt": "Si Tom veut s’éviter du trafic, il passe par le nord. Il est bloqué dans le trafic.",
+    "options": [
+      "Nord",
+      "Sud",
+      "Est",
+      "Ouest"
+    ],
+    "answer": "Sud",
+    "explanation": "Utilisation de modes contraint ou conclusion. Puisque Tom voulait éviter le trafic et qu'il y est piégé, il n’a manifestement pas pris la route du nord. La conclusion peut rapidement devenir erronée si un modificateur inattendu est appliqué sans rapport avec les mentions strictes.",
+    "hint": "Cherche comment éviter ou entrer dans des scénarios prévus."
+  }
+]
+```

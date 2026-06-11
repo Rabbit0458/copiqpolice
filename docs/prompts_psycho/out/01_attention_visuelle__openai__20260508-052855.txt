@@ -1,0 +1,338 @@
+[
+    {
+        "difficulty": "easy",
+        "text_a": "Rue des Lilas, 75020 Paris",
+        "text_b": "Rue des Lilas, 75020 Paris",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Immatriculation XY-456-ZT",
+        "text_b": "Immatriculation WL-456-ZT",
+        "is_true": false,
+        "explanation": "La série de lettres initiale est différente : « XY » contre « WL »."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Nora Martin, née en 1990",
+        "text_b": "Nora Martin, née en 1991",
+        "is_true": false,
+        "explanation": "L'année de naissance diffère : 1990 dans text_a et 1991 dans text_b."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Place du Marché, 69003 Lyon",
+        "text_b": "Place du Marché, 69003 Lyon",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Signalement : 1m75, cheveux bruns",
+        "text_b": "Signalement : 1m85, cheveux bruns",
+        "is_true": false,
+        "explanation": "La taille signalée est différente : « 1m75 » contre « 1m85 »."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Boîte postale 1234, Paris",
+        "text_b": "Boîte postale 1235, Paris",
+        "is_true": false,
+        "explanation": "Le numéro de boîte postale diffère : 1234 contre 1235."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Sophie Duval réside à Lille",
+        "text_b": "Sophie Duval réside à Lille",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Vol à 15h, gare Montparnasse",
+        "text_b": "Vol à 16h, gare Montparnasse",
+        "is_true": false,
+        "explanation": "Heure de vol différente : 15h dans text_a, 16h dans text_b."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Article 222-7 du code pénal",
+        "text_b": "Article 222-7 du code pénal",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Surveillance : 8h à 16h",
+        "text_b": "Surveillance : 9h à 16h",
+        "is_true": false,
+        "explanation": "L'heure de début est différente : 8h contre 9h."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "J. Bernard, 5 rue de l'Église",
+        "text_b": "J. Bernard, 8 rue de l'Église",
+        "is_true": false,
+        "explanation": "Le numéro de rue diffère : 5 dans text_a, 8 dans text_b."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "BP 1000, Marseille",
+        "text_b": "BP 1000, Marseille",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Modèle Ford Fiesta",
+        "text_b": "Modèle Ford Focus",
+        "is_true": false,
+        "explanation": "Le modèle du véhicule varie : « Fiesta » dans text_a et « Focus » dans text_b."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Route de Vannes, Nantes",
+        "text_b": "Route de Vannes, Nantes",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Mercredi 14 juin 2024",
+        "text_b": "Mercredi 15 juin 2024",
+        "is_true": false,
+        "explanation": "La date est différente : 14 juin dans text_a, 15 juin dans text_b."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Signalement : T-shirt rouge",
+        "text_b": "Signalement : T-shirt vert",
+        "is_true": false,
+        "explanation": "La couleur du T-shirt signalé varie : « rouge » dans text_a, « vert » dans text_b."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Rue des Roses, 54000 Nancy",
+        "text_b": "Rue des Roses, 54000 Nancy",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Rencontre au carrefour vers 14h30, le 03/11/2023.",
+        "text_b": "Rencontre au carrefour vers 14h30, le 04/11/2023.",
+        "is_true": false,
+        "explanation": "La date diffère : « 03/11/2023 » dans text_a contre « 04/11/2023 » dans text_b."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Type de véhicule : SUV, couleur bleue, immatriculé FT-789-JH.",
+        "text_b": "Type de véhicule : SUV, couleur bleue, immatriculé FT-789-JH.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Suspect : jean noir, veste grise, casquette noire.",
+        "text_b": "Suspect : jean noir, veste grise, casquette marron.",
+        "is_true": false,
+        "explanation": "La couleur de la casquette varie : « noire » contre « marron »."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Prochain rendez-vous : mardi 17 janvier à 10h15.",
+        "text_b": "Prochain rendez-vous : mardi 17 janvier à 10h15.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Carburant : diesel, station Total, reçu à 14h02.",
+        "text_b": "Carburant : diesel, station Total, reçu à 14h02.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Identité vérifiée : M. Paulo Gonçalves, né le 05/07/1975.",
+        "text_b": "Identité vérifiée : M. Paulo Gonçalves, né le 05/07/1976.",
+        "is_true": false,
+        "explanation": "L'année de naissance varie : 1975 dans text_a contre 1976 dans text_b."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Témoin : cheveux longs blonds, yeux verts, 1m62.",
+        "text_b": "Témoin : cheveux longs blonds, yeux verts, 1m62.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Parcelle 4 nord, plantation de chênes, parcelle 50m².",
+        "text_b": "Parcelle 4 nord, plantation de chênes, parcelle 51m².",
+        "is_true": false,
+        "explanation": "La taille de la parcelle diffère : « 50m² » contre « 51m² »."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Réunion de suivi, salle 3B, vendredi à 15h.",
+        "text_b": "Réunion de suivi, salle 3B, vendredi à 15h.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Réception de commande le 07/08/2023 à 12h.",
+        "text_b": "Réception de commande le 07/08/2024 à 12h.",
+        "is_true": false,
+        "explanation": "La différence est dans l'année : 2023 contre 2024."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Livrée à 14h05 au 11 rue de Bretagne, Paris.",
+        "text_b": "Livrée à 14h05 au 11 rue de Bretagne, Paris.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Appel de Mr Leclerc à 08h30, pour affaire urgente.",
+        "text_b": "Appel de Mr Leclerc à 08h30, pour affaire urgente.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Objet trouvé à 17h12 au parc du Loup noir, Lyon.",
+        "text_b": "Objet trouvé à 17h12 au parc du Loup noir, Lyon.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Convocation : 21 juin 2024 à 09h, mairie de Dijon.",
+        "text_b": "Convocation : 21 juin 2023 à 09h, mairie de Dijon.",
+        "is_true": false,
+        "explanation": "La différence est dans l'année : 2024 dans text_a contre 2023 dans text_b."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Caméra de surveillance activée le 10/02/2023 à 22h.",
+        "text_b": "Caméra de surveillance activée le 11/02/2023 à 22h.",
+        "is_true": false,
+        "explanation": "La date diffère : le 10/02/2023 dans text_a contre le 11/02/2023 dans text_b."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le suspect présumé a été aperçu boulevard Saint-Michel à 20h30, vêtu d'un manteau long noir et d'un chapeau gris, se déplaçant rapidement.",
+        "text_b": "Le suspect présumé a été aperçu boulevard Saint-Michel à 20h30, vêtu d'un manteau long noix et d'un chapeau gris, se déplaçant rapidement.",
+        "is_true": false,
+        "explanation": "La couleur du manteau diffère subtilement entre text_a (« noir ») et text_b (« noix »), ce qui peut aisément être manqué si on lit rapidement."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Déclaration faite le 10 mai 2023 par Mme Dupont, selon les documents consultés, aucun dégât supplémentaire n'a été observé sur la scène.",
+        "text_b": "Déclaration faite le 10 mai 2023 par Mme Dupont, selon les documents consultés, aucun dégât supplémentaire n'a été observé sur la scène.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Un véhicule de type camionnette blanche a été vu se dirigeant vers le sud sur la route 152. Sa vitesse était estimée à environ 50 km/h.",
+        "text_b": "Un véhicule de type camionnette blanche a été vu se dirigeant vers le sud sur la route 152. Sa vitesse était estimée à environ 50 Km/h.",
+        "is_true": false,
+        "explanation": "La différence se situe dans le mot « km/h » de text_a qui est écrit « Km/h » dans text_b. Cette subtile majuscule peut être facilement négligée."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Article 133-7 du code civil stipule que tout acte dolosif est punissable par la loi.",        
+        "text_b": "Article 133·7 du code civil stipule que tout acte dolosif est punissable par la loi.",
+        "is_true": false,
+        "explanation": "La différence réside dans le séparateur de l'article, un tiret dans text_a et un point médian dans text_b, une modification très discrète."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Ce jour-là, une enquête approfondie a été effectuée à l'angle des rues Lafayette et Verdun, avec comme résultat un rapport très détaillé.",
+        "text_b": "Ce jour-là, une enquête approfondie a été effectuée à l'angle des rues La Fayette et Verdun, avec comme résultat un rapport très détaillé.",
+        "is_true": false,
+        "explanation": "La différence est dans l'écriture de « Lafayette » dans text_a, qui est séparé en 'La Fayette' dans text_b, rendant le piège subtil."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Lors de l'interrogatoire, monsieur Hervé a mentionné qu'il ne connaissait pas la personne portée disparue ce mardi matin.",
+        "text_b": "Lors de l'interrogatoire, monsieur Hervé a mentionné qu'il ne connaissait pas la personne portée disparue ce mardi main.",
+        "is_true": false,
+        "explanation": "Le mot « matin » dans text_a est noté « main » dans text_b. C'est une subtilité de frappe pouvant passer inaperçue."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La caméra de surveillance a capturé un événement important à 15h03, montrant une activité suspecte à l'entrée principale du bâtiment.",
+        "text_b": "La caméra de surveillance a capturé un évènement important à 15h03, montrant une activité suspecte à l'entrée principale du bâtiment.",
+        "is_true": false,
+        "explanation": "La différence se situe dans l'accentuation : « événement » dans text_a contre « évènement » dans text_b, une nuance souvent ignorée."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le code postal indiqué pour l'adresse du lieu était erroné : 78000 au lieu de 79000, entraînant un retard dans la correspondance.",
+        "text_b": "Le code postal indiqué pour l'adresse du lieu était erroné : 78000 au lieu de 79000, entraînant un retard dans la correspondance.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Une réunion spéciale s'est tenue le lundi 14 juillet à l'hôtel de ville pour aborder les mesures de sécurité à appliquer durant l'événement prévu.",
+        "text_b": "Une réunion spéciale s'est tɪenue le lundi 14 juillet à l'hôtel de ville pour aborder les mesures de sécurité à appliquer durant l'événement prévu.",
+        "is_true": false,
+        "explanation": "Une erreur quasi invisible : le mot « tenue » dans text_b contient un caractère erroné après le « t » par rapport à text_a."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "D'après les analyses, le suspect aurait employé un véhicule immatriculé DF-432-LL pour commettre l'infraction dans le quartier sud.",
+        "text_b": "D'après les analyses, le suspect aurait employé un véhicule immatriculé DF-432-LL pour commettre l'infraction dans le quartier sud.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La police a renforcé la sécurité autour des lieux sensibles à fin de prévenir toute menace potentielle identifiée via les derniers rapports.",
+        "text_b": "La police a renforcé la sécurité autour des lieux sensibles afin de prévenir toute menace potentielle identifiée via les derniers rapports.",
+        "is_true": false,
+        "explanation": "Différence subtile dans la locution : « à fin de » dans text_a par rapport à « afin de » dans text_b."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Les caméras situées au coin des rues indiquées ont révélé des mouvements anormaux durant la nuit entre 2h et 4h.",
+        "text_b": "Les caméras situées au coin des rues indiquées ont révélé des mouvements anormaux durant la nuit entre 2h et 4 h.",
+        "is_true": false,
+        "explanation": "Un espace supplémentaire suivit du caractère 'h' est présent dans text_b après « 4 », rendant l'erreur assez discrète."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "En conformité avec l'article 225-1, toute discrimination fondée sur l'apparence physique est punissable par la loi en vigueur.",
+        "text_b": "En conformité avec l'article 225-1, toute discrimination fondée sur l'apparance physique est punissable par la loi en vigueur.",
+        "is_true": false,
+        "explanation": "La différence réside dans l'orthographe du mot « apparence » dans text_a, orthographié « apparance » incorrectement dans text_b."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La soirée du 22 mars, un vol à main armée a eu lieu dans le commerce Zoom, sans qu'aucune victime ne soit à déplorer selon les documents.",
+        "text_b": "La soirée du 22 mars, un vol à main armée a eu lieu dans le commerce Zoom, sans qu'aucune victime ne soit à déplorer selon les documents.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "L'opération policière planifiée pour le 12 septembre a été reportée, selon le capitaine, à des fins logistiques liées aux conditions imprévues.",
+        "text_b": "L'opération policière planifiée pour le 12 septembre a été reportée, selon le captiane, à des fins logistiques liées aux conditions imprévues.",
+        "is_true": false,
+        "explanation": "Le mot « capitaine » est mal orthographié dans text_b, écrit « captiane », une inversion de lettres qui piège facilement l'œil."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Les témoignages indiquent une dispute entre voisins au 5e étage, survenue vers 3h du matin après une soirée plus qu'animée.",
+        "text_b": "Les témoignages indiquent une dispute entre voisins au 5e étage, survenue vers 3 h du matin après une soirée plus qu'animée.",
+        "is_true": false,
+        "explanation": "La différence réside dans un espace supplémentaire entre « 3 » et « h » dans text_b, un détail aisément caché par une lecture rapide."
+    }
+]

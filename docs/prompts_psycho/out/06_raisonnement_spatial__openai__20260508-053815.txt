@@ -1,0 +1,604 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces possède un cube ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube est composé de 6 faces carrées. Chaque face correspond à une surface carrée plane. La confusion fréquente vient de considérer les arêtes ou les sommets plutôt que les faces elles-mêmes.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien d'arêtes un tétraèdre régulier possède-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "A",
+        "explanation": "Un tétraèdre régulier, ou pyramide à base triangulaire, possède 6 arêtes. Chaque sommet est relié aux trois autres par une arête. Les distrations typiques viennent de confondre avec le nombre d'arêtes d'autres solides.",
+        "hint": "Considérez les paires de sommets reliées par une arête."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets a un prisme triangulaire ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "10"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "A",
+        "explanation": "Un prisme triangulaire a deux bases triangulaires, chacune avec 3 sommets, donc en total 6 sommets. Chaque sommet d'une base est relié au sommet correspondant de l'autre base.",
+        "hint": "Visualisez deux triangles parallèles."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le nombre total de sommets d'un cube ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "C",
+        "explanation": "Un cube a 8 sommets au total. Chaque sommet est l'intersection de trois arêtes. Une erreur courante est de penser qu'il y a un sommet par face, mais chaque sommet est partagé entre trois faces.",
+        "hint": "Imaginez un cube et comptez les coins."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces possède une pyramide à base carrée ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "3"},
+            {"key": "B", "label": "4"},
+            {"key": "C", "label": "5"},
+            {"key": "D", "label": "6"}
+        ],
+        "answer": "C",
+        "explanation": "Une pyramide à base carrée a 5 faces : une base carrée et quatre faces triangulaires. Certaines personnes comptent mal en oubliant la base.",
+        "hint": "N'oubliez pas la base de la pyramide."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien d'arêtes y a-t-il sur une pyramide à base carrée ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "5"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "10"},
+            {"key": "D", "label": "6"}
+        ],
+        "answer": "B",
+        "explanation": "Une pyramide à base carrée a 8 arêtes : 4 autour de la base et 4 reliant la base au sommet. Le piège serait de ne pas inclure les bords reliant le sommet au carré.",
+        "hint": "Incluez tous les bords, y compris ceux du sommet."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces a un cylindre ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "C",
+        "explanation": "Un cylindre possède trois surfaces : deux bases circulaires et une surface latérale qui est un rectangle enroulé. Le piège est de ne pas compter la surface latérale qui n'est pas un 'face' au sens strict mais bien une surface.",
+        "hint": "Il y a deux bases circulaires et une surface enroulée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la forme des faces d'un cube ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Rectangles"},
+            {"key": "B", "label": "Carrés"},
+            {"key": "C", "label": "Triangles"},
+            {"key": "D", "label": "Cercles"}
+        ],
+        "answer": "B",
+        "explanation": "Les faces d'un cube sont des carrés. Chaque face est égale et équilatérale, faisant de toutes ses côtés des segments égaux. Il est facile de se tromper avec des rectangles quand on pense à d'autres parallélépipèdes.",
+        "hint": "Tous les côtés d'une face d'un cube sont égaux."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Si vous enlevez un sommet d'un cube, combien en reste-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "7"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "5"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube a 8 sommets. Si on en enlève un, il reste 7 sommets. La confusion classique est de faire un mauvais calcul de soustraction sur le nombre initial de sommets.",
+        "hint": "Pensez au nombre total de sommets initialement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces a un cône ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "B",
+        "explanation": "Un cône a une base circulaire et une surface latérale qui s'effile vers le sommet, donc deux surfaces. Une confusion fréquente est de croire que c'est une seule face en raison de l'aspect unifié du corps du cône.",
+        "hint": "Considérez la base et la courbe latérale ensemble."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Si vous pliez une feuille carrée en deux alignant deux bords opposés, quelle forme obtenez-vous ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Triangle"},
+            {"key": "B", "label": "Rectangle"},
+            {"key": "C", "label": "Carré"},
+            {"key": "D", "label": "Hexagone"}
+        ],
+        "answer": "B",
+        "explanation": "Plier une feuille carrée en deux par le milieu d'un côté au côté opposé aboutit à un rectangle. Le rectangle formé est la moitié de la dimension de la feuille originale. Le piège est de croire que la forme reste un carré, mais ça diminue sa symétrie.",
+        "hint": "Imaginez la création d'une ligne médiane dans le carré."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la somme des faces visibles d'un cube posé sur une table ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "3"},
+            {"key": "B", "label": "4"},
+            {"key": "C", "label": "5"},
+            {"key": "D", "label": "6"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube posé sur une table montre 5 faces : les quatre latérales et la face supérieure. Le piège à éviter est d'essayer de compter la face inférieure qui n'est pas visible.",
+        "hint": "Seules les faces exposées à l'air sont visibles."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Si vous regardez une sphère de côté, quelle forme voyez-vous ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Cercle"},
+            {"key": "B", "label": "Ellipse"},
+            {"key": "C", "label": "Rectangle"},
+            {"key": "D", "label": "Carré"}
+        ],
+        "answer": "A",
+        "explanation": "Quelle que soit la perspective, une sphère apparaît toujours comme un cercle de côté. Les personnes peuvent confondre cela avec un ellipse en raison de la perspective, mais une sphère est symétrique dans toutes les directions.",
+        "hint": "Une sphère ressemble à un disque dans n'importe quelle orientation."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Un cube a-t-il plus de faces ou de sommets ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Plus de faces"},
+            {"key": "B", "label": "Autant de faces que de sommets"},
+            {"key": "C", "label": "Plus de sommets"},
+            {"key": "D", "label": "Impossible à déterminer"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube dispose de 6 faces et 8 sommets. Ainsi, il a plus de sommets que de faces. Le piège serait de confondre les termes techniques comme sommets, faces et arêtes.",
+        "hint": "Comparez les deux nombres directement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de bases possède un cylindre ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "1"},
+            {"key": "C", "label": "2"},
+            {"key": "D", "label": "3"}
+        ],
+        "answer": "C",
+        "explanation": "Un cylindre a deux bases circulaires aux deux extrémités. Ne pas compter correctement le nombre de bases est une erreur commune, souvent en confondant avec un cône qui n'a qu'une base.",
+        "hint": "Un cylindre repose sur une base et a un sommet fermé par une autre base."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de côtés a un octaèdre régulier ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "C",
+        "explanation": "Un octaèdre régulier est constitué de 8 faces triangulaires. La confusion vient souvent des nombres similaires : 'octa' pour 8 et 'diamant' instaure une image incorrecte.",
+        "hint": "Octa sous-entend huit éléments à quelque niveau."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets y a-t-il dans un cube teinté ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "C",
+        "explanation": "Le cube, coloré ou non, contient toujours 8 sommets. Les couleurs sont sans importance pour le dénombrement géométrique des sommets.",
+        "hint": "La couleur n'altère pas le nombre de sommets d'un objet."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le nombre total de coin sur une pyramide à base triangulaire ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "3"},
+            {"key": "B", "label": "4"},
+            {"key": "C", "label": "5"},
+            {"key": "D", "label": "6"}
+        ],
+        "answer": "B",
+        "explanation": "Une pyramide à base triangulaire possède 4 coins ou sommets : trois sommets à la base triangulaire plus le sommet qui relie les trois coins de la base.",
+        "hint": "Imaginez le sommet supplémentaire qui joint les trois coins de la base."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces patrons ne peut pas former un cube une fois plié ?",
+        "prompt": "Considère 4 patrons composés de 6 carrés assemblés.",
+        "options": [
+            {"key": "A", "label": "Croix latine"},
+            {"key": "B", "label": "T renversé"},
+            {"key": "C", "label": "Ligne droite de 6 carrés"},
+            {"key": "D", "label": "Z de 6 carrés"}
+        ],
+        "answer": "C",
+        "explanation": "Une bande linéaire de 6 carrés ne forme jamais un cube car elle ne peut pas se replier sur elle-même pour fermer un volume. Les autres patrons permettent des pliages qui couvrent toutes les arêtes d'un cube.",
+        "hint": "Imagine le pliage : la bande reste plane."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la vue de face d'un cylindre droit ?",
+        "prompt": "Imaginez un cylindre droit placé debout sur sa base circulaire.",
+        "options": [
+            {"key": "A", "label": "Rectangle"},
+            {"key": "B", "label": "Cercle"},
+            {"key": "C", "label": "Ellipse"},
+            {"key": "D", "label": "Ligne droite"}
+        ],
+        "answer": "A",
+        "explanation": "En regardant un cylindre de face, on voit un rectangle représenté par la hauteur et le diamètre de la base. Les confusions peuvent venir de la considération erronée de l'ellipse, mais l'ellipse apparaît sous un autre angle.",
+        "hint": "Considérez la hauteur et le diamètre de la base."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Vu de dessus, à quoi ressemble une pyramide à base carrée ?",
+        "prompt": "Imaginez une pyramide à base carrée telle que vous la regardez directement de dessus.",
+        "options": [
+            {"key": "A", "label": "Carré"},
+            {"key": "B", "label": "Triangle"},
+            {"key": "C", "label": "Pentagone"},
+            {"key": "D", "label": "Ligne droite"}
+        ],
+        "answer": "A",
+        "explanation": "Vue de dessus, la pyramide à base carrée apparaît comme un carré car seule la base est visible. Le sommet de la pyramide ne se projette pas dans un plan supérieur. Le piège est de voir l'ensemble comme une figure plus complexe.",
+        "hint": "N'oubliez pas, vue de dessus = regardez uniquement la base."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de petits cubes faut-il pour construire un cube de 3 d'arête ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "9"},
+            {"key": "B", "label": "18"},
+            {"key": "C", "label": "27"},
+            {"key": "D", "label": "36"}
+        ],
+        "answer": "C",
+        "explanation": "Pour obtenir un cube de 3 d'arête, vous devez empiler des cubes plus petits de manière à former un 3x3x3. Cela fait 27 petits cubes au total (3x3x3). La confusion vient souvent de multiplier incorrectement les dimensions.",
+        "hint": "Calculer le volume en multipliant LxLxL pour des petits cubes unitaires."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Si on coupe un cube 3×3×3 en cubes unitaires, combien ont 2 faces non peintes ?",
+        "prompt": "Un cube 3×3×3 est peint sur une couleur extérieure, puis divisé en 27 cubes unitaires.",
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "16"}
+        ],
+        "answer": "A",
+        "explanation": "Les cubes avec 2 faces non peintes se trouvent au bord entre deux faces peintes externes. Pour un cube 3x3x3, il y a 4 cubes de ce type situés au milieu de chaque bord non visible.",
+        "hint": "Les cubes centraux en bordure intérieure ont 2 faces visibles."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel type de face obtient-on en sectionnant un cône par un plan passant par son axe ?",
+        "prompt": "Considérez une section passant par la pointe et la base du cône.",
+        "options": [
+            {"key": "A", "label": "Cercle"},
+            {"key": "B", "label": "Ellipse"},
+            {"key": "C", "label": "Parabole"},
+            {"key": "D", "label": "Triangle"}
+        ],
+        "answer": "D",
+        "explanation": "Sectionner un cône par son axe révèle une coupe triangulaire. Le sommet de chaque triangle rejoint le sommet du cône avec sa base. Les erreurs fréquentes incluent confondre cette coupe avec une figure plus arrondie comme une ellipse.",
+        "hint": "Pensez à unir le sommet du cône et sa base."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de faces d'un cube 4×4×4 sont complètement visibles lorsqu'il est posé sur une table ?",
+        "prompt": "Un cube 4x4x4 est positionné avec une face sur la surface.",
+        "options": [
+            {"key": "A", "label": "3"},
+            {"key": "B", "label": "4"},
+            {"key": "C", "label": "5"},
+            {"key": "D", "label": "6"}
+        ],
+        "answer": "C",
+        "explanation": "En posant un cube sur une table, 5 faces demeurent exposées : toutes sauf la base qui repose sur la table. Fréquemment, ne pas incorporer la face supérieure ou une erreur arithmétique produit une réponse incorrecte.",
+        "hint": "Excluez la face cachée par la table."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'obtenez-vous en pliant un rectangle sur sa diagonale ?",
+        "prompt": "Pliez un rectangle de sorte que le coin opposé à celui de départ se rejoigne.",
+        "options": [
+            {"key": "A", "label": "Carré"},
+            {"key": "B", "label": "Triangle équilatéral"},
+            {"key": "C", "label": "Triangle rectangle isocèle"},
+            {"key": "D", "label": "Trapèze"}
+        ],
+        "answer": "C",
+        "explanation": "Plier un rectangle sur sa diagonale l'égale en deux triangles rectangles isocèles. C'est parce que les dimensions initiales du rectangle déterminent cette proportion. L'erreur type consiste à omettre que les triangles sont isocèles et non équilibrés dans dimensions.",
+        "hint": "Divisez le rectangle et observez les moitiés résultantes."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de petits cubes dans un cube 4x4x4 ont exactement une face peinte ?",
+        "prompt": "Un cube 4x4x4 entier est peint puis segmenté.",
+        "options": [
+            {"key": "A", "label": "24"},
+            {"key": "B", "label": "20"},
+            {"key": "C", "label": "16"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "B",
+        "explanation": "Ces cubes sont au centre de chaque face peinte d'origine. En tout, 24 cubes sont concernés, soit 4 par face; les coins et les côtés possédant plus d'une face peinte n'en font pas partie.",
+        "hint": "Considérez les couches centrales de chaque face."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Si l'on retire un cube unitaire du centre d'un cube 3x3x3, combien de faces vides reste-t-il visibles ?",
+        "prompt": "Imaginez enlever le cube central à l'intérieur d'un cube plus grand peint.",
+        "options": [
+            {"key": "A", "label": "5"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "0"},
+            {"key": "D", "label": "7"}
+        ],
+        "answer": "C",
+        "explanation": "Les cubes unitaires, une fois enlevés de l'intérieur, n'ont en fait aucun impact sur le nombre de faces visibles. Toutes les faces visibles sont liées aux cubes opposés, ainsi il n'affecte pas l'apparence extérieure.",
+        "hint": "Aucune face n'est effectivement affectée extérieurement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Pliage : quelle figure aurez-vous en repliant un carré en deux sur son côté ?",
+        "prompt": "Visualisez le carré plissé en deux en chevauchant ses côtés adjacents.",
+        "options": [
+            {"key": "A", "label": "Rectangle"},
+            {"key": "B", "label": "Ligne"},
+            {"key": "C", "label": "Parallélogramme"},
+            {"key": "D", "label": "Triangle"}
+        ],
+        "answer": "A",
+        "explanation": "Pliant en deux le carré sur l'un de ses côtés, le résultat visible fini sera un rectangle. Ceci a lieu parce que chaque moitié reste plus longue que celles transversales, et cela est leur équivalence.",
+        "hint": "Regardez le résultat de moitié en perspective."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de cubes unitaires peuvent avoir trois faces peintes après séparer un cube 4x4x4 ?",
+        "prompt": "Un cube 4x4x4 est uniformément peinte et se voit disséquer en plus petits cubes.",
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "0"}
+        ],
+        "answer": "B",
+        "explanation": "Seuls les coins présenteront trois faces peintes. Ces cubes d'angle sont 8 en tout pour une géométrie cohérente, mettant en lumière une forme carrée. Le piège à éviter est de penser à des faces extérieures comme des faces internes.",
+        "hint": "Un cube a un coin à j'intersection de trois plans."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de petits cubes ont exactement 2 faces peintes ?",
+        "prompt": "Un cube 3×3×3 est entièrement peint en rouge sur l'extérieur, puis découpé en 27 petits cubes unitaires.",
+        "options": [
+            {"key": "A", "label": "8"},
+            {"key": "B", "label": "12"},
+            {"key": "C", "label": "24"},
+            {"key": "D", "label": "27"}
+        ],
+        "answer": "B",
+        "explanation": "Les cubes à 2 faces peintes sont sur les arêtes (sans inclure les coins). Un cube possède 12 arêtes ; sur un 3×3×3, il y a 1 cube par arête (les 2 extrémités sont les coins, à 3 faces peintes). Donc 12 cubes à 2 faces peintes.",
+        "hint": "Compte les arêtes du cube et exclus les coins."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de petits cubes d’un cube 5×5×5 ont une face visible après découpe ?",
+        "prompt": "Un cube 5×5×5 est divisé en 125 cubes unitaires, alors seuls ceux avec une face à l'extérieur affichent une peinture.",
+        "options": [
+            {"key": "A", "label": "54"},
+            {"key": "B", "label": "50"},
+            {"key": "C", "label": "64"},
+            {"key": "D", "label": "72"}
+        ],
+        "answer": "A",
+        "explanation": "Les cubes avec une seule face exposée forment la couche extérieure sauf sur les bords qui comportent plusieurs côtés. Un cube 5x5x5 exhibe 5² cubes par face, mais seuls 4 × 5 = 20 par côté, et 2 × 4 × 5 = 40 aux lignes intérieures, soit au total 54 cubes.",
+        "hint": "Réfléchissez à ceux directement visibles."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel solide obtient-on si on réunit deux pyramides à base carrée par leur base ?",
+        "prompt": "Mettez deux pyramides en opposition dont leurs bases carrés résonant ensemble.",
+        "options": [
+            {"key": "A", "label": "Cube"},
+            {"key": "B", "label": "Dodécaèdre"},
+            {"key": "C", "label": "Octaèdre"},
+            {"key": "D", "label": "Prisme hexagonal"}
+        ],
+        "answer": "C",
+        "explanation": "En liant deux pyramides à base carrée par la base chacune, un octaèdre apparaît, formé de 8 triangles équilatéraux homogènes. Les erreurs de compréhension s'expliquent par la méconnaissance du lien géométrique.",
+        "hint": "Comptez les faces triangulaires ainsi obtenues."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Un cube 6×6×6 est découpe en cubes unitaires ; combien de cubes ont 3 faces non peintes ?",
+        "prompt": "Un cube 6×6×6, d'abord uniformément peint, est ensuite découpé.",
+        "options": [
+            {"key": "A", "label": "8"},
+            {"key": "B", "label": "12"},
+            {"key": "C", "label": "16"},
+            {"key": "D", "label": "20"}
+        ],
+        "answer": "A",
+        "explanation": "Seuls les coins internes profonds sont exempts des peintures extérieures, donc pour un pyramide principalement de ceux de 2x2 pour chaque angle, se réduisant aux 8 internes au final.",
+        "hint": "En résumé, seuls les coins internes ne sont pas exposés."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de petits cubes n'ont aucune face peinte dans un cube 5×5×5 ?",
+        "prompt": "Un cube 5×5×5 est recouvert de peinture puis pris apart.",
+        "options": [
+            {"key": "A", "label": "27"},
+            {"key": "B", "label": "64"},
+            {"key": "C", "label": "125"},
+            {"key": "D", "label": "16"}
+        ],
+        "answer": "A",
+        "explanation": "Ces 27 cubes centraux sont cachés du contact surface, vu qu'uniquement les cubes directement en contact avec la surface extérieure comprennent de la peinture. Aussi les 3×3×3 qui se cachent du centre et n'ont aucun contact extérieur mise à part les extérieurs obtiennent aucune peinture.",
+        "hint": "Repensez aux cubes qui ne touchent aucune de les surfaces extérieurs."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si on retire une tranche complète depuis l'extérieur d'un côté d'un cube 4x4x4, combien de petits cubes restent-ils visibles ?",
+        "prompt": "Coupez uniformément une bande sur l'extérieur et comptez ceux en contact direct en vue.",
+        "options": [
+            {"key": "A", "label": "56"},
+            {"key": "B", "label": "60"},
+            {"key": "C", "label": "64"},
+            {"key": "D", "label": "72"}
+        ],
+        "answer": "A",
+        "explanation": "Chaque face perdra 4 cubes, réduisant 16 à 12 visibles sur cette face après la coupe réalisée sur la tranche imposée ; totalisant alors 56 visueles cubes restants visibles sur les quatre autres côtés. En continuant autour d'une coupe externe sur trois côtés, ils restent pintés visibles sur l'intérieur aussi.",
+        "hint": "La coupe sur la tranche extérireure retire seulement le besoin de cubes visibles."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Calculant par combien il restera de faces visibles d'un cube 10x10x10 après découpe, combien calcules-tu ?",
+        "prompt": "Un cube 10x10x10 change de forme vers des unitaires tout en masquant le maximum de couleurs.",
+        "options": [
+            {"key": "A", "label": "100"},
+            {"key": "B", "label": "96"},
+            {"key": "C", "label": "64"},
+            {"key": "D", "label": "60"}
+        ],
+        "answer": "B",
+        "explanation": "Chaque face originellement visible maintient 10x8 units dominant les côtés face à l'extérieur. Surface là-dessus produit 6xy observations non couvertes sur les côtés de l'extérieur. Les cubes touchés pricipaux maximisent les façonnements internes invisibles.",
+        "hint": "Évaluez récursivement les positions déposées sur la facade."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment attester de la réduction des cubes indivisibles au sein d'un cube 4x4x4 une fois un coin externe ôté?",
+        "prompt": "Visualisez la soustraction rongeant directement par coin confiée ainsi à une structure de cubes effondrés.",
+        "options": [
+            {"key": "A", "label": "60"},
+            {"key": "B", "label": "62"},
+            {"key": "C", "label": "64"},
+            {"key": "D", "label": "56"}
+        ],
+        "answer": "A",
+        "explanation": "Une basse principale par coin persiste largement d'une structure en recurrence 2x2 et la disposition originelle non en contact est coupée extérieurement par proprement 4 surfonddant une catégorie de chaque coin, avec donc ces 64 devenant 60.",
+        "hint": "Suivez en droit d'un côté droit qui touche la face apparente exclu tous les coins."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si l'on joint deux cubes par leur base, quel solide peut-on déterminer ?",
+        "prompt": "Tournez les bases opposées et considérez comment transformer les contours structurels vers un prisme unifié.",
+        "options": [
+            {"key": "A", "label": "Cube"},
+            {"key": "B", "label": "Parallélogramme"},
+            {"key": "C", "label": "Rectangle"},
+            {"key": "D", "label": "Hexaèdre"}
+        ],
+        "answer": "D",
+        "explanation": "La combinaison de deux cubes juxtapose des structures élémentaires en contrôle d'un prisme plus uniforme héxagonal. La confusion dynamique repose sur l'évidence de la dualité visuelle.",
+        "hint": "Considérez les surfaces comme possibles capacités réunifiées."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment est productif un hexagone dès l'attaque d'un cube par découpe conjointe sur l'ensemble/la totalité des zones ?",
+        "prompt": "Imaginez une figure capable de capter la section visuelle géométrique à l'intersection des plans.",
+        "options": [
+            {"key": "A", "label": "Rond"},
+            {"key": "B", "label": "Hexagonal"},
+            {"key": "C", "label": "Hexaèdre"},
+            {"key": "D", "label": "Octogonal"}
+        ],
+        "answer": "B",
+        "explanation": "Un plan qui désigne symétriquement la séquence entière des sections contenues complètes égaux est captée, transformant les figures originales, produisant alors l'hexagone nécessaire. Les erreurs viennent souvent de la mésinterprétation des termes complexes en géométrie temporelle.",
+        "hint": "Adressez vos soucis sur les sections intégrales égales."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Au travers d'une séquence corective, que créeriez-vous en sectionnant tout le long d'un seul prisme à la moitié?",
+        "prompt": "Visualiser le long poste polarisé et sèction par séparation du volume d'origine en deux comparables semi-un fonctionnel à concatener.",
+        "options": [
+            {"key": "A", "label": "Prisme hexagonal"},
+            {"key": "B", "label": "Rectangle"},
+            {"key": "C", "label": "Prisme polygonal"},
+            {"key": "D", "label": "Triangle équilatéral"}
+        ],
+        "answer": "C",
+        "explanation": "La division d'un plan unique génère une structure stabilisée en profondeur d'un prisme équilatérale sur la base des champs collectifs originalement contenus par organicité.", 
+        "hint": "Concevoir la soudure pour assembler des futurs visuels."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si on prélève le fragment central le plus proéminent d'un cube 4x4x4, Qu'en reste-t-il ?",
+        "prompt": "Une section massive centrale est ôtée, l'extrême arrangement non affecté est intacte uniquement.",
+        "options": [
+            {"key": "A", "label": "36"},
+            {"key": "B", "label": "32"},
+            {"key": "C", "label": "40"},
+            {"key": "D", "label": "44"}
+        ],
+        "answer": "B",
+        "explanation": "Privilégiant d'ôter un segment tout entier, vous restituez la structure pour retirer la matrice: la face première livrée est recomplétée ainsi ne laissant que 32 faces extérieures visibles. Revoir là-dessus dérive souvent un manque de sections comprises.",
+        "hint": "Etudiez les composantes principales qui préservent la décoration."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle figure est révélée si vous sectionnez un cube ayant un prisme inséré inquillègement ?",
+        "prompt": "Une coupe conduirait à réimprimer divers formes bilement originales et projetées en seul prisme dominé.",
+        "options": [
+            {"key": "A", "label": "Parallelogramme"},
+            {"key": "B", "label": "Hexagonal"},
+            {"key": "C", "label": "Rectangulaire"},
+            {"key": "D", "label": "Trapeze"}
+        ],
+        "answer": "A",
+        "explanation": "Un paralleleogramme est formé lorsque nous multiplions la symétrie équivalente de projections d'une mouvance à travers un prisme de cube dominant à l'interieur, systématiquement lorsque refracté. Liseurs souvent se méprend à mal percevoir le complet du processus logique abordé.",
+        "hint": "Conservez attentivement aux erreurs de matrix basé sur pensé."
+    }
+]

@@ -1,0 +1,522 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on conclure ?",
+    "prompt": "Tous les enseignants ont un diplôme. Luc est enseignant.",
+    "options": [
+      "Luc n'a pas de diplôme",
+      "Luc a un diplôme",
+      "Luc est étudiant",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Luc a un diplôme",
+    "explanation": "C'est un syllogisme simple. Si tous les enseignants ont un diplôme et que Luc est enseignant, alors par transitivité Luc a un diplôme. Il est important de ne pas confondre avec la négation, ici un piège potentiel est de penser que 'n'avoir pas de diplôme' pourrait être une option."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus rapide ?",
+    "prompt": "Jean court plus vite que Marc. Marc court plus vite que Paul.",
+    "options": [
+      "Jean",
+      "Marc",
+      "Paul",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Jean",
+    "explanation": "Jean > Marc > Paul; donc Jean est le plus rapide. La logique de classement est simple ici : il suffit de suivre l'ordre des inégalités. Ce genre de question évalue la capacité à comprendre un ordre linéaire et à résister à la tentation de surinterpréter le prompt."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le bon choix ?",
+    "prompt": "Si le ciel est bleu, alors il ne pleut pas. Actuellement, il pleut.",
+    "options": [
+      "Le ciel est bleu",
+      "Le ciel est rouge",
+      "Le ciel est nuageux",
+      "Le ciel n'est pas bleu"
+    ],
+    "answer": "Le ciel n'est pas bleu",
+    "explanation": "En utilisant le raisonnement conditionnel ('si... alors'), si on sait qu'il pleut, alors la condition de ciel bleu ne peut être vraie. Par la règle de la contraposition, cela nous conduit à conclure que le ciel n'est pas bleu."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on déduire ?",
+    "prompt": "Aucun chien n'est un chat. Rex est un chien.",
+    "options": [
+      "Rex est un chat",
+      "Rex n'est pas un chat",
+      "Rex est un animal",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Rex n'est pas un chat",
+    "explanation": "Ceci est un syllogisme par exclusion : si aucun chien n'est un chat et Rex est un chien, alors certainement Rex n'est pas un chat. Le piège ici serait de mal interpréter le 'aucun' et de penser qu'il existe une exception."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le bon ordre ?",
+    "prompt": "Tom est plus jeune que Bob. Bob est plus jeune que Alice.",
+    "options": [
+      "Alice, Bob, Tom",
+      "Tom, Alice, Bob",
+      "Bob, Alice, Tom",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Alice, Bob, Tom",
+    "explanation": "On suit l'ordre : si Alice est plus âgée que Bob, et Bob plus âgé que Tom, alors l'ordre est Alice > Bob > Tom. L'erreur typique serait d'inverser accidentellement l'ordre des âges."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion possible ?",
+    "prompt": "Tous les oiseaux volent. Un canari est un oiseau.",
+    "options": [
+      "Un canari ne vole pas",
+      "Un canari vole",
+      "Un canari nage",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Un canari vole",
+    "explanation": "C'est un syllogisme direct. Si tous les oiseaux volent et le canari est un oiseau, alors un canari vole. Le piège pourrait être de proposer des alternatives farfelues, mais il faut s'en tenir à ce qui est logiquement déductible."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui a le plus haut score ?",
+    "prompt": "Léna a un score supérieur à Luc. Luc a un score supérieur à Jean.",
+    "options": [
+      "Jean",
+      "Luc",
+      "Léna",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Léna",
+    "explanation": "Léna > Luc > Jean; par conséquent, Léna a le score le plus élevé. Ici, nous avons une chaîne d'inégalités simple. Le piège serait de négliger la première comparaison et de se concentrer sur une seule relation."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Peut-on savoir si elle pleure ?",
+    "prompt": "Si elle voit un film triste, elle pleure. Elle ne pleure pas.",
+    "options": [
+      "Elle voit un film triste",
+      "Elle ne voit pas de film triste",
+      "Elle est heureuse",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Elle ne voit pas de film triste",
+    "explanation": "En utilisant le raisonnement par contraposition: si elle ne pleure pas, cela signifie qu'elle ne voit pas de film triste. Le piège réside dans l'incompréhension de l'implication inverse, qui n'est pas une simple négation."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion ?",
+    "prompt": "Tous les hommes portent un chapeau. Julien est un homme.",
+    "options": [
+      "Julien porte un chapeau",
+      "Julien ne porte pas de chapeau",
+      "Julien est un chat",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Julien porte un chapeau",
+    "explanation": "Syllogisme simple : si tous les hommes portent un chapeau et Julien est un homme, alors il en porte un. Le piège est de remettre en question l'assertion globale sans preuve contraire."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qu'en déduire ?",
+    "prompt": "Les pommes sont rouges. Cette pomme est rouge.",
+    "options": [
+      "Cette pomme est une orange",
+      "Cette pomme est une pomme",
+      "Cette pomme est une banane",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette pomme est une pomme",
+    "explanation": "Bien qu'intuitivement évident, si cette pomme est rouge et que les pommes sont généralement rouges, elle est probablement une pomme. Le piège ici est d'interpréter l'information de manière littérale sans faire l'association avec ce qui est suggéré."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion logique ?",
+    "prompt": "Aucun chat ne sait nager. Félix est un chat.",
+    "options": [
+      "Félix sait nager",
+      "Félix ne sait pas nager",
+      "Félix est un poisson",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Félix ne sait pas nager",
+    "explanation": "En utilisant un syllogisme négatif, puisqu'aucun chat ne sait nager et que Félix est un chat, alors Félix ne sait pas nager. Le piège serait de supposer que Félix pourrait être une exception sans preuve."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle affirmation est correcte ?",
+    "prompt": "Tous les chiens aboient. Pluto est un chien.",
+    "options": [
+      "Pluto n'aboie pas",
+      "Pluto aboie",
+      "Pluto est muet",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Pluto aboie",
+    "explanation": "C'est un syllogisme affirmatif. Si tous les chiens aboient et que Pluto est un chien, alors il aboie nécessairement. Une mauvaise interprétation du syllogisme pourrait conduire à la conclusion inexacte qu'on ne peut pas savoir."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la bonne conclusion ?",
+    "prompt": "Si tu finis tes devoirs, alors tu peux regarder la télé. Tu n'as pas fini tes devoirs.",
+    "options": [
+      "Tu peux regarder la télé",
+      "Tu ne peux pas regarder la télé",
+      "Tu as fini tes devoirs",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Tu ne peux pas regarder la télé",
+    "explanation": "Ceci est un exemple de raisonnement par implication directe. Puisque tu n'as pas fini tes devoirs, tu ne peux pas regarder la télé. Le piège à éviter est de supposer que ne pas finir ses devoirs ne change rien à l'accord initial."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Est-ce vrai qu'elle est adolescente ?",
+    "prompt": "Toute personne de plus de 13 ans est adolescente. Ana a 14 ans.",
+    "options": [
+      "Ana est une enfant",
+      "Ana est adolescente",
+      "Ana est adulte",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ana est adolescente",
+    "explanation": "Ceci est un simple exercice de catégorisation. Avec 14 ans, Ana a nécessairement plus de 13 ans, elle est donc adolescente. Le piège potentiel est de mal interpréter l'âge de l'adolescence."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on dire de Bill ?",
+    "prompt": "Tous les garçons dans l'équipe aiment le basket. Bill est dans l'équipe.",
+    "options": [
+      "Bill aime le tennis",
+      "Bill n'aime pas le basket",
+      "Bill aime le basket",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Bill aime le basket",
+    "explanation": "Si tous les membres de l'équipe aiment le basket et que Bill en fait partie, il aime donc le basket. L'erreur courante serait de supposer que ses goûts personnels pourraient différer de ceux du groupe."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la déduction logique ?",
+    "prompt": "Si c'est un sedan, alors c'est une voiture. C'est un sedan.",
+    "options": [
+      "Ce n'est pas une voiture",
+      "C'est un camion",
+      "C'est une voiture",
+      "On ne peut pas savoir"
+    ],
+    "answer": "C'est une voiture",
+    "explanation": "Par modus ponens, le fait qu'un sedan est une voiture implique que si quelque chose est un sedan, c'est une voiture. Le piège ici serait de proposer une autre catégorie de véhicule sans relation directe avec l'information donnée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Peut-on conclure à sa fidélité ?",
+    "prompt": "Si un employé est loyal, il ne vole pas. Mathieu ne vole pas.",
+    "options": [
+      "Mathieu est loyal",
+      "Mathieu vole",
+      "Mathieu n'est pas loyal",
+      "On ne peut pas savoir"
+    ],
+    "answer": "On ne peut pas savoir",
+    "explanation": "L'absence d'un acte (vol) ne prouve pas la présence d'un autre trait (loyauté). Le piège est de croire à tort que l'implication inverse est vraie : que l'absence d'une action implique l'existence d'une qualité positive."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le bon ordre des années ?",
+    "prompt": "Paul est né avant 1990. Marie est née après Paul. Sophie est née après Marie.",
+    "options": [
+      "Paul, Marie, Sophie",
+      "Sophie, Paul, Marie",
+      "Marie, Sophie, Paul",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Paul, Marie, Sophie",
+    "explanation": "L'ordre est déterminé par les naissances : Paul < Marie < Sophie, donc Paul est le plus âgé et Sophie la plus jeune. Un piège courant serait de mal interpréter le 'après' et l'inverser dans l'ordre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus âgé ?",
+    "prompt": "Julie a 2 ans de plus que Marc. Marc est plus jeune que Pierre de 3 ans. Paulo a le même âge que Marc.",
+    "options": [
+      "Julie",
+      "Marc",
+      "Pierre",
+      "Paulo"
+    ],
+    "answer": "Pierre",
+    "explanation": "Avec Julie = Marc + 2 et Marc = Pierre - 3, on a donc Pierre comme étant le plus âgé. Les informations imbriquées doivent être analysées correctement, sans sauter une étape. Il est facile ici de confondre les années d'écart entre les deux indices."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la règle ?",
+    "prompt": "Si une plante est arrosée régulièrement, elle pousse. La plante grandit.",
+    "options": [
+      "Elle n'a pas été arrosée",
+      "Elle a été arrosée",
+      "Elle est morte",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Elle a été arrosée",
+    "explanation": "S'interprétant en imbrication conditionnelle, si la plante a grandi, cela signifie qu'elle a reçu l'arrosage nécessaire conformément à l'énoncé initial. L'erreur fréquente serait de penser qu'il n'y a pas de relation claire si on omet l'étape du lien causal."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que pouvez-vous déduire logiquement ?",
+    "prompt": "Si Marie chante, Paul joue de la guitare. Marie chante et Paul joue de la guitare.",
+    "options": [
+      "Paul ne joue pas de la guitare",
+      "Paul chante",
+      "Marie ne chante pas",
+      "L'énoncé est respecté"
+    ],
+    "answer": "L'énoncé est respecté",
+    "explanation": "Le lien conditionnel est observé : le chant de Marie entraîne la performance de Paul. Le piège ici est d'introduire une conclusion non nécessaire ou de surestimer la déclaration simplement vraie."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel ordre d'arrivée ?",
+    "prompt": "Lucas est arrivé avant Sandra et après Sabrina, mais après Martin. Mylène était juste derrière Martin.",
+    "options": [
+      "Martin, Lucas, Sabrina, Sandra",
+      "Martin, Mylène, Lucas, Sabrina",
+      "Mylène, Martin, Sabrina, Lucas",
+      "Martin, Sabrina, Lucas, Sandra"
+    ],
+    "answer": "Martin, Mylène, Lucas, Sabrina",
+    "explanation": "Martin est devant tout le monde sauf Mylène qui le suit, puis Lucas devant Sabrina et enfin Sandra. La permutation des places rend la tâche complexe car les descriptions sont subtilement entremêlées."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle température est la plus haute ?",
+    "prompt": "Hier, il a fait 3°C de plus qu'aujourd'hui. Demain, il fera 2°C de moins qu'hier. Quelle température est la plus élevée ?",
+    "options": [
+      "Aujourd'hui",
+      "Hier",
+      "Demain",
+      "Toutes égales"
+    ],
+    "answer": "Hier",
+    "explanation": "Hier a le plus haut chiffre car c'était 3°C de plus par rapport à aujourd'hui, et demain sera 5°C de moins. Ne pas omettre les fluctuations positives et éviter d'égaliser celles-ci."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus fort mathematiquement ?",
+    "prompt": "Georges est moins fort que Charles mais plus fort que Leo. Brice est aussi fort que Georges.",
+    "options": [
+      "Charles",
+      "Georges",
+      "Brice",
+      "Leo"
+    ],
+    "answer": "Charles",
+    "explanation": "Avec Georges < Charles et Brice = Georges mais Georges > Leo, par transitivité, la force de Charles est supérieure à celle de tous les autres. Varier les valeurs de chaque participant peut causer des confusions."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est votre décision ?",
+    "prompt": "Si elle mange du chocolat, elle est heureuse. Elle est heureuse.",
+    "options": [
+      "Elle n'a pas mangé de chocolat",
+      "Elle a mangé du chocolat",
+      "Elle mange du chocolat",
+      "On ne peut rien prononcer"
+    ],
+    "answer": "On ne peut rien prononcer",
+    "explanation": "L'humeur heureuse de quelqu'un n'indique pas qu'elle a mangé du chocolat selon la logique formelle. Les prémisses disent seulement que le chocolat serait une possibilité parmi d'autres pour rendre joyeux."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la déduction correcte ?",
+    "prompt": "Armand est plus grand que Rachel qui est plus grande que Jules. Or Jules est plus grand que Thomas.",
+    "options": [
+      "Armand, Rachel, Jules, Thomas",
+      "Thomas, Jules, Rachel, Armand",
+      "Rachel, Armand, Thomas, Jules",
+      "Armand, Jules, Rachel, Thomas"
+    ],
+    "answer": "Armand, Rachel, Jules, Thomas",
+    "explanation": "Avec Armand > Rachel > Jules > Thomas, on obtient une cascade directe de grandeurs. L'erreur courante est de mélanger l'ordre mentionné initialement avec le résultat final."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Peut-on résoudre l'ordre des courses ?",
+    "prompt": "Anne court moins rapidement que Betty qui bat Sophie. Sarah termine après Sophie.",
+    "options": [
+      "Betty, Sophie, Anne, Sarah",
+      "Sarah, Sophie, Anne, Betty",
+      "Betty, Sophie, Sarah, Anne",
+      "Anne, Betty, Sarah, Sophie"
+    ],
+    "answer": "Betty, Sophie, Anne, Sarah",
+    "explanation": "Betty termine avant Sophie qui précède Anne, tandis que Sarah finit dernière. Les indications sur la spontanéité de leur arrivée déterminent aussi l'emplacement de chaque concurrent."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la séquence correcte ?",
+    "prompt": "Un ruban rouge est plus cher qu'un vert mais moins cher qu'un bleu. Le ruban bleu est moins cher qu'un noir.",
+    "options": [
+      "Noir, Bleu, Rouge, Vert",
+      "Rouge, Vert, Bleu, Noir",
+      "Vert, Rouge, Bleu, Noir",
+      "Bleu, Rouge, Noir, Vert"
+    ],
+    "answer": "Noir, Bleu, Rouge, Vert",
+    "explanation": "Avec Noir > Bleu > Rouge > Vert, la valeur suit la direction indiquée. La tâche peut être compliquée à cause de la surimpression faite par le nombre de couleurs et de valeurs relatifs."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "À quoi se combinent leurs âges ?",
+    "prompt": "Lise a 4 ans de plus que Belle. Belle a 2 ans de moins que Simone. Rebecca a l'âge de Simone plus deux fois celui de Belle.",
+    "options": [
+      "Simone, Belle, Lise, Rebecca",
+      "Rebecca, Simone, Belle, Lise",
+      "Lise, Rebecca, Simone, Belle",
+      "Belle, Simone, Lise, Rebecca"
+    ],
+    "answer": "Rebecca, Simone, Belle, Lise",
+    "explanation": "Belle < Simone et Lise > Belle. En supposant que Belle est la plus jeune et Rebecca la plus âgée, on déduit l'ordre adéquat. Il est facile de mélanger des âges par interprétations approximatives."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la position réelle ?",
+    "prompt": "Dans une compétition, vous avez dépassé le deuxième avant d'atteindre le final.",
+    "options": [
+      "1ère",
+      "2ème",
+      "3ème",
+      "4ème"
+    ],
+    "answer": "2ème",
+    "explanation": "En prononçant cela, une personne doit prendre en compte qu'en dépassant le deuxième, on obtient une victoire à cette place. C'est le genre de situation qu'il est facile d'oublier pour simplifier la soumission comme '1ère'."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel âge a Manon ?",
+    "prompt": "Manon a 5 fois l'âge de son fils. Dans 6 ans, elle aura triple son âge actuel.",
+    "options": [
+      "40 ans",
+      "45 ans",
+      "30 ans",
+      "35 ans"
+    ],
+    "answer": "30 ans",
+    "explanation": "Soit x l'âge de son fils. Alors Manon = 5x. Dans 6 ans, elle doit avoir 3x + 6 = 3 * (f + 6). L'erreur serait de ne pas saisir correctement l'équation."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la bonne place ?",
+    "prompt": "A la course, vous dépassez la personne en 4e position juste avant d'atteindre la fin.",
+    "options": [
+      "1ère",
+      "2ème",
+      "3ème",
+      "4ème"
+    ],
+    "answer": "3ème",
+    "explanation": "En dépassant la personne classée quatrième, il est important de noter que vous terminez immédiatement troisième (en prenant sa place). Il est facile de laisser de côté ce détail clé le conduisant à mal interpréter '1ère'."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est votre position ?",
+    "prompt": "En course, vous doublez la personne située juste derrière la seconde place.",
+    "options": [
+      "1ère",
+      "2ème",
+      "3ème",
+      "4ème"
+    ],
+    "answer": "3ème",
+    "explanation": "En progressant au-dessus d'un troisième concurrent, une nouvelle place dépend directement. Ne pas s'inscrire intégralement dans le processus engendre des résultats erronés."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien d'années a Leo ?",
+    "prompt": "Le double de l'âge actuel de Leo augmentera de huit années dans six ans.",
+    "options": [
+      "10 ans",
+      "14 ans",
+      "13 ans",
+      "12 ans"
+    ],
+    "answer": "10 ans",
+    "explanation": "Soit 2x + 6 = x + 8. Ce merveilleux puzzle amène Leo à être âgé de 10. Un manque d'évaluation du double et de l'addition donne des conclusions de même nature."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle somme a Céline ?",
+    "prompt": "Céline a trois fois plus que ce que Leo a aujourd'hui. Dans sept ans, deux fois ce qu'ils auront ensemble sera égal à 56.",
+    "options": [
+      "35",
+      "42",
+      "30",
+      "28"
+    ],
+    "answer": "35",
+    "explanation": "Equation 3L + L = 4L, puis 4L + 2(n+7) = 56. Ce calcul reflecteur est simple à omettre, entraînant des estimations invalides."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est votre avance sur Lucie ?",
+    "prompt": "Vous avez complété vos devoirs plus rapidement que Lucie après avoir aidé quelqu'un d'autre.",
+    "options": [
+      "10 secondes",
+      "5 minutes",
+      "15 secondes",
+      "On ne peut pas savoir"
+    ],
+    "answer": "On ne peut pas savoir",
+    "explanation": "Tout en dépassant une barrière temporelle, il s'agit ici d'analyser des détails disponibles qui ne concluent qu'en partie. Le manque de précisions sur le temps lui-même conduit à de mauvaises interprétations."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Comment les enfants joueront-ils ensemble ?",
+    "prompt": "Lily et Sam jouent en solitaire au début, mais Milo les rejoint. Deux enfants maximum peuvent utiliser chaque jeu.",
+    "options": [
+      "Ils tournent entre chaque jeu",
+      "Lily et Sam partagent un jeu avec Milo",
+      "Milo reste dans un jeu solo",
+      "Ils s'alternent dans les équipes"
+    ],
+    "answer": "Ils tournent entre chaque jeu",
+    "explanation": "En se restreignant à deux enfants par jeu, les enfants doivent se répartir équitablement. Des interprétations simplistes ne montrent facilement qu'une mauvaise lecture."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel choix viable existe ?",
+    "prompt": "Trois branches se connectent à la base d'une centrale électrique. Chaque doit être vérifiée pour maintenir l'électricité en pourcentage égal.",
+    "options": [
+      "30% chaque",
+      "33% chaque",
+      "35% chaque",
+      "40% chaque"
+    ],
+    "answer": "33% chaque",
+    "explanation": "Pour un tiers équitable de la distribution électrique, chaque branche reçoit environ 33%. De simples conjectures donneraient une ou plusieurs valeurs erronées."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle partition gagne le plus ?",
+    "prompt": "Ana s'assoit après deux victoires dont l'une a été volée par sa coéquipière. Le nombre minimum de ses points est demandé.",
+    "options": [
+      "25 points",
+      "30 points",
+      "20 points",
+      "35 points"
+    ],
+    "answer": "30 points",
+    "explanation": "Les étapes décisives de la victoire garantissent que ses partitions s'accumulent à exactement deux fois le résultat partiel, malgré une perte logique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel défunt on ne peut identifier ?",
+    "prompt": "Un homme est enterré à 103 ans dans un cimetière où sont enterrés 101 ans.",
+    "options": [
+      "C'est lui",
+      "Il n'est pas connu",
+      "C'est son cousin",
+      "Il n'existe pas"
+    ],
+    "answer": "Il n'est pas connu",
+    "explanation": "La condition entraîne un manque virtuel vu l'absence d'âge correspondable dans la liste fournie. Le manque d'informations précises encourage la réflexion sur cette mystérieuse hypothèse."
+  }
+]

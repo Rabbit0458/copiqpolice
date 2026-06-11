@@ -1,0 +1,525 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en déduire ?",
+    "prompt": "Tous les chiens aboient. Rex est un chien.",
+    "options": [
+      "Rex aboie",
+      "Rex ne peut pas aboyer",
+      "Rex est un chat",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Rex aboie",
+    "explanation": "C'est un syllogisme simple : tous les chiens aboient et Rex est un chien. Par conséquent, Rex doit aboyer. Le piège ici pourrait être de penser que Rex pourrait être un chien spécial, mais selon le principe donné, tous les chiens ont la même caractéristique d'aboiement.",
+    "hint": "Utilise la règle du syllogisme."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est votre rang maintenant ?",
+    "prompt": "Vous êtes 5ème dans une file et vous dépassez la personne devant vous.",
+    "options": ["4ème", "3ème", "5ème", "1er"],
+    "answer": "4ème",
+    "explanation": "Si vous passez de 5ème à la place de la personne devant vous, vous devenez 4ème. Un piège classique est de penser que vous pouvez devenir 1er à terme, mais vous ne dépassez qu'une seule personne ici.",
+    "hint": "Considérez les changements immédiats dans le classement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion est correcte ?",
+    "prompt": "Tous les oiseaux ont des plumes. Un perroquet est un oiseau.",
+    "options": [
+      "Un perroquet n'a pas de plumes",
+      "Un perroquet a des plumes",
+      "Un perroquet est un poisson",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Un perroquet a des plumes",
+    "explanation": "Par syllogisme, sachant que tous les oiseaux ont des plumes et un perroquet est un oiseau, donc le perroquet a des plumes. Évitez de supposer qu'il existe des exceptions non mentionnées.",
+    "hint": "Relie chaque point : oiseau ↔ plumes ↔ perroquet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en déduire de ce scénario ?",
+    "prompt": "Si un animal miaule, alors c'est un chat. Félix miaule.",
+    "options": [
+      "Félix est un chat",
+      "Félix est un chien",
+      "Félix est un oiseau",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Félix est un chat",
+    "explanation": "Utilisant le modus ponens, si miauler implique être un chat et que Félix miaule, alors Félix est un chat. Le piège à éviter est d'associer miauler à d'autres animaux sans justification.",
+    "hint": "Pense aux implications logiques directes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est arrivé en premier ?",
+    "prompt": "Marie a couru plus vite que Paul. Paul a couru plus vite que Julie.",
+    "options": ["Marie", "Paul", "Julie", "On ne peut pas savoir"],
+    "answer": "Marie",
+    "explanation": "Marie est la plus rapide car elle a dépassé Paul, qui lui-même a dépassé Julie. Enchaînez les comparaisons pour comprendre le classement final.",
+    "hint": "Crée une hiérarchie des performances."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le lien le plus probable ?",
+    "prompt": "Tous les dauphins sont des mammifères. Ce dauphin s'appelle Flipper.",
+    "options": [
+      "Flipper est un mammifère",
+      "Flipper est un poisson",
+      "Flipper est un oiseau",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Flipper est un mammifère",
+    "explanation": "Syllogisme : si tous les dauphins sont des mammifères et Flipper est un dauphin, alors Flipper est un mammifère. Ne confondez pas avec des classifications erronées.",
+    "hint": "Applique la relation d'inclusion logique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui commande la chaîne alimentaire ?",
+    "prompt": "Les lions mangent les zèbres. Les zèbres mangent l'herbe.",
+    "options": ["Lions", "Zèbres", "Herbe", "On ne peut pas savoir"],
+    "answer": "Lions",
+    "explanation": "Les lions sont au sommet de cette chaîne alimentaire puisqu'ils mangent les zèbres, qui eux mangent l'herbe. Cet ordre montre clairement la hiérarchie alimentaire.",
+    "hint": "Visualise la chaîne comme une pyramide."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle déduction pouvez-vous faire ?",
+    "prompt": "Tous les rectangles ont quatre côtés. Un carré est un rectangle.",
+    "options": [
+      "Un carré a quatre côtés",
+      "Un carré a trois côtés",
+      "Un carré a cinq côtés",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Un carré a quatre côtés",
+    "explanation": "Utilisant le syllogisme : tous les rectangles ont quatre côtés, et un carré est un type de rectangle, donc un carré a aussi quatre côtés. Soyez attentif à ne pas confondre les définitions géométriques.",
+    "hint": "Utilisez la définition géométrique de base."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conséquence logique ?",
+    "prompt": "Si le ciel est bleu, Claire porte un chapeau. Le ciel est bleu.",
+    "options": [
+      "Claire porte un chapeau",
+      "Claire ne porte pas de chapeau",
+      "Claire s'assoit",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Claire porte un chapeau",
+    "explanation": "Application directe du modus ponens : si A alors B ; A est vérifié, donc B aussi. Ne tombez pas dans le piège de douter de la relation donnée sans autre information.",
+    "hint": "Vérifiez les conditions de cause à effet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion peut-on tirer ?",
+    "prompt": "Si Paul dessine un cercle, alors il utilise un compas. Paul dessine un cercle.",
+    "options": [
+      "Paul utilise un compas",
+      "Paul utilise une règle",
+      "Paul n'utilise rien",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Paul utilise un compas",
+    "explanation": "La relation « Si A alors B » s'applique ici : Paul dessine un cercle et cela implique qu'il utilise un compas. Le piège ici serait de négliger l'outil spécifié dans l'énoncé.",
+    "hint": "Suivre le lien logique entre action et outil."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que déduisez-vous concernant Paul ?",
+    "prompt": "Tous les musiciens jouent d'un instrument. Paul est musicien.",
+    "options": [
+      "Paul joue d'un instrument",
+      "Paul joue à des jeux",
+      "Paul est jongleur",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Paul joue d'un instrument",
+    "explanation": "Syllogisme par transitivité : tous les musiciens jouent d'un instrument et Paul est un musicien. Donc logiquement, Paul joue d'un instrument. Ne prenez pas d'autres interprétations non suggérées.",
+    "hint": "Utilise la règle de base des groupes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que concluez-vous de cela ?",
+    "prompt": "Si Sophie lit un livre, alors elle est silencieuse. Sophie lit un livre.",
+    "options": [
+      "Sophie est silencieuse",
+      "Sophie parle",
+      "Sophie chante",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Sophie est silencieuse",
+    "explanation": "Avec la logique « Si A alors B » : Sophie lit un livre (A) donc elle est silencieuse (B). Le piège serait de croire qu'elle peut faire autre chose en même temps, ce qui n'est pas stipulé.",
+    "hint": "Focus sur la conséquence directe."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion logique ?",
+    "prompt": "Tous les fruits ont des vitamines. Une pomme est un fruit.",
+    "options": [
+      "Une pomme a des vitamines",
+      "Une pomme a des protéines",
+      "Une pomme est un légume",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Une pomme a des vitamines",
+    "explanation": "En utilisant le syllogisme : tous les fruits ont des vitamines et une pomme est un fruit, donc une pomme a des vitamines. Évitez de considérer des protéines ou autres, non mentionnées.",
+    "hint": "Associe les propriétés aux catégories."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion tirer logiquement ?",
+    "prompt": "Tous les triangles ont trois côtés. Ce polygone est un triangle.",
+    "options": [
+      "Ce polygone a trois côtés",
+      "Ce polygone a quatre côtés",
+      "Ce polygone a cinq côtés",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce polygone a trois côtés",
+    "explanation": "Logique directe par syl-logisme : tous les triangles ont trois côtés et ce polygone est un triangle. Évitez de confondre avec d'autres polygones, car leur nom n'est pas mentionné ici.",
+    "hint": "Considérez les caractéristiques spécifiques."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que remarquez-vous de ce fait ?",
+    "prompt": "Si l'eau gèle, alors elle est à 0°C ou moins. L'eau gèle.",
+    "options": [
+      "L'eau est à 0°C ou moins",
+      "L'eau est à 1°C",
+      "L'eau est à 2°C",
+      "On ne peut pas savoir"
+    ],
+    "answer": "L'eau est à 0°C ou moins",
+    "explanation": "C'est un cas de modus ponens : si condition remplie, alors le résultat s'ensuit. Le piege ici serait de trop compliquer la cause simple de la congélation de l'eau.",
+    "hint": "Suivez les températures-clés physiquement établies."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel ordre prédéterminez-vous ?",
+    "prompt": "Si un feu est rouge, alors arrêtez-vous. Le feu est rouge.",
+    "options": [
+      "Arrêtez-vous",
+      "Allez",
+      "Ralentissez",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Arrêtez-vous",
+    "explanation": "En lien avec le modus ponens : un feu rouge signifie un arrêt. Ne laissez pas d'autres options de mouvement influencer votre déduction.",
+    "hint": "Comptez sur les lois claires du trafic."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion s'impose ?",
+    "prompt": "Tous les étudiants portent des sacs à dos. Maxime est un étudiant.",
+    "options": [
+      "Maxime porte un sac à dos",
+      "Maxime ne porte pas de sac à dos",
+      "Maxime est un enseignant",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Maxime porte un sac à dos",
+    "explanation": "Un syllogisme simple confirme : tous les étudiants portent des sacs à dos et Maxime est un étudiant, donc il en porte un. Ne laissez pas d'autres objets distrayants ou des rôles non concernés influencer votre vue.",
+    "hint": "Établissez le lien depuis le collectif jusqu'à l'individu."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui termine second ?",
+    "prompt": "Paul a terminé devant Sophie dans une course. Sophie a terminé avant Marc. Pierre a fini avant Paul.",
+    "options": ["Paul", "Sophie", "Marc", "Pierre"],
+    "answer": "Paul",
+    "explanation": "On classe les résultats : Pierre > Paul > Sophie > Marc. Paul est donc second. Le piège est d'ignorer les conditions liées ou de faire des inversions.",
+    "hint": "Classe les participants en fonction des informations données."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le processus à suivre ?",
+    "prompt": "Si une ampoule s'allume, alors il y a un contact. Si le contact est présent, l'interrupteur est basculé.",
+    "options": [
+      "L'ampoule s'allume car l'interrupteur est basculé",
+      "Pas de contact implique ampoule éteinte",
+      "L'interrupteur n'est pas nécessaire",
+      "On ne peut pas savoir"
+    ],
+    "answer": "L'ampoule s'allume car l'interrupteur est basculé",
+    "explanation": "En deux étapes : si l'ampoule s'allume, alors il y a un contact (A implique B), et un contact implique que l'interrupteur est basculé (B implique C). Donc allumer l'ampoule implique que l'interrupteur est basculé (A implique C). Ne sautez pas les liens dans la chaîne logique.",
+    "hint": "Connecte les implications en cascade."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que peut Marie acheter avec 12 € ?",
+    "prompt": "Marie a 12 euros. Les pommes coûtent 3 € chacune, et les poires 5 €.",
+    "options": [
+      "2 pommes et 1 poire",
+      "3 pommes",
+      "2 poires",
+      "4 pommes et 1 poire"
+    ],
+    "answer": "2 pommes et 1 poire",
+    "explanation": "Marie a un total de 12 € à dépenser. Deux pommes coûtent 6 €, et une poire 5 €, totalisant 11 €. Les autres combinaisons excèdent 12 €. Faire attention aux erreurs de comptage rapide ou à l’oubli des totaux en euro pourrait tromper.",
+    "hint": "Faites une addition prudente des fruits dans le budget donné."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Comment est Lisa ?",
+    "prompt": "Si Lisa joue du piano, alors elle est heureuse. Si elle est heureuse, elle sourit.",
+    "options": [
+      "Lisa joue du piano et sourit",
+      "Lisa ne sourit pas",
+      "Lisa est triste",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Lisa joue du piano et sourit",
+    "explanation": "Lisa sourit car elle est heureuse, et elle est heureuse parce qu'elle joue du piano. La déduction suit une chaîne : piano -> heureux -> sourire. Ne supposons pas d'interruptions non expliquées.",
+    "hint": "Lisez les implications pour assembler l'état final."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le niveau d'eau après ?",
+    "prompt": "Un seau de 10 litres est rempli à moitié. On y ajoute 3 litres.",
+    "options": [
+      "8 litres",
+      "10 litres",
+      "7 litres",
+      "5 litres"
+    ],
+    "answer": "8 litres",
+    "explanation": "Initialement, le seau contient 5 litres (10/2). Après l'ajout de 3 litres, le total devient 8 litres. Un calcul rapide pourrait vous tromper en oubliant les chiffres initiaux exacts.",
+    "hint": "Ajoutez l'eau en tenant compte du volume initial."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de livres peut-elle acheter ?",
+    "prompt": "Chaque livre coûte 4 €. Elle a 18 €.",
+    "options": [
+      "4 livres",
+      "5 livres",
+      "3 livres",
+      "2 livres"
+    ],
+    "answer": "4 livres",
+    "explanation": "Prix total disponible divisé par le coût du livre : 18/4 = 4 livres possible sans dépasser 18 €. Il peut être déroutant de s'attendre à dépenser toute la somme juste.",
+    "hint": "Diviser l'argent par le coût pour savoir combien est achetable."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le bon classement final ?",
+    "prompt": "Alice est plus âgée que Bob. Bob est plus âgé que Clara. Dan est plus jeune que Clara.",
+    "options": [
+      "Alice, Bob, Clara, Dan",
+      "Alice, Clara, Bob, Dan",
+      "Bob, Alice, Dan, Clara",
+      "Dan, Clara, Bob, Alice"
+    ],
+    "answer": "Alice, Bob, Clara, Dan",
+    "explanation": "Par hiérarchisation : Alice > Bob > Clara > Dan. En considérant chaque paire d'âge et la position relative de Dan, un oublie ici pourrait mener à ignorer un ordre donné ou une inversion.",
+    "hint": "Établir des relations âge à âge en lisant avec soin."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que prévoit la météo exact ?",
+    "prompt": "Si la pluie tombe, alors il y a des nuages. Il y a des nuages si le vent souffle.",
+    "options": [
+      "Il y a des nuages si la pluie tombe",
+      "Le vent souffle si des nuages sont présents",
+      "La pluie tombe uniquement sans vent",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Il y a des nuages si la pluie tombe",
+    "explanation": "Enchaînement implicite : Pluie -> Nuages, Vent -> Nuages. Mais pas forcément que les nuages ne sont causés que par la pluie. Evitez l'erreur d'une relation exactement exéclusive et directe pour chaque cas.",
+    "hint": "Vérifiez les connexions cyclicales et séparables."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle option suit les faits ?",
+    "prompt": "Si la lumière est allumée, alors la pièce est éclairée. Si la fenêtre est fermée, alors la lumière est allumée.",
+    "options": [
+      "La pièce est éclairée si la fenêtre est fermée",
+      "La pièce est sombre si la lumière est allumée",
+      "La fenêtre doit être ouverte pour éclairage",
+      "On ne peut pas savoir"
+    ],
+    "answer": "La pièce est éclairée si la fenêtre est fermée",
+    "explanation": "Deux conditions : fenêtre fermée -> lumière allumée -> pièce éclairée. La connexion est indirecte mais logique. Pensez à comment chaque condition mène à l'autre avant de conclure à tort.",
+    "hint": "Construisez les conditions comme des dominos."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le rang correct ?",
+    "prompt": "Tom court plus vite que Sam. Sam court plus rapidement que Leo. Tim est plus rapide que Tom.",
+    "options": ["Tim", "Tom", "Sam", "Leo"],
+    "answer": "Tim",
+    "explanation": "Classification précise des vitesses : Tim > Tom > Sam > Leo. Les liens circulaires, ou interprétations trop pressantes peuvent vous faire tomber.",
+    "hint": "Évaluez chaque point en relations croissantes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Où placez-vous Jean ?",
+    "prompt": "Jean est plus grand que Luc mais plus petit que Stéphanie. Paul est plus petit que Luc.",
+    "options": [
+      "Paul",
+      "Luc",
+      "Stéphanie",
+      "Jean"
+    ],
+    "answer": "Stéphanie",
+    "explanation": "Jean a une taille intermédiaire, tandis que Stéphanie est au top en taille totale. Sans sauter de rang, cette représentation évite l’erreur ordinaire de comparer non-équivalences conjecturées.",
+    "hint": "Retenez l'ordre strict sans omettre qu'aucun choix n’est disloqué."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui finit en premier ?",
+    "prompt": "Carla court plus vite que Tristan. Tristan court plus vite que Sonia. Et Sonia est plus rapide que Mark.",
+    "options": ["Carla", "Tristan", "Sonia", "Mark"],
+    "answer": "Carla",
+    "explanation": "L'ordre des courses est : Carla > Tristan > Sonia > Mark. On confondrait facilement les vitesses si une seule comparaison d'ensemble n'avait pas été regardée à part entière.",
+    "hint": "Una analyse attentive des liens est cruciale pour repartir les positions."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle position obtenez-vous ?",
+    "prompt": "Vous passez le 2e coureur dans une course juste avant de franchir la ligne d'arrivée.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "2ème",
+    "explanation": "Piège typique : en doublant le 2ème, vous récupérez sa position, donc vous êtes 2ème, non pas 1er. Les distractions ou une anticipation excessive pourraient induire en erreur en croyant avancer plus haut sans la justesse du nombre de coureurs passé irréfutable.",
+    "hint": "Souvenez-vous : dépasser ne mène pas forcément au sommet."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel âge a Tom actuellement ?",
+    "prompt": "Tom a trois fois l'âge de son père. Dans 15 ans, il aura exactement le double de l'âge de son père.",
+    "options": [
+      "27 ans",
+      "33 ans",
+      "36 ans",
+      "45 ans"
+    ],
+    "answer": "45 ans",
+    "explanation": "Développez l'équation basée sur les indications données : Si l'âge du père est x, alors Tom = 3x ; dans 15 ans, 3x + 15 = 2(x + 15). Cela donne x = 15. Donc, Tom a actuel-lement 45 ans vu 3x = 45.",
+    "hint": "Créer une équation pour chaque assertion examinée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la position finale ?",
+    "prompt": "En pleine course vous dépassez le 3ème coureur à votre gauche lors d'un sprint final.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "3ème",
+    "explanation": "Simplement en doublant le 3ème, vous devenez effectivement 3ème, sans influ-encez au-delà. Il vaut mieux écouter la solution authentique avec ce transit de compréhension unique afin d'écarter d'autres harmoniques.",
+    "hint": "Ne vous précipitez pas vers le haut sans en être juste."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est votre poste à l'instant ?",
+    "prompt": "À ce tour-ci, vous arrivez à dépasser le 4ème coureur en ligne vers la finition.",
+    "options": ["5ème", "3ème", "2ème", "4ème"],
+    "answer": "4ème",
+    "explanation": "En prenant la place du 4ème, vous êtes maintenant la 4ème personne, pas l'avant-dernière ou derrière. Pensez simultanément sur place pour éviter le débat que la priorité infligerait logiquement.",
+    "hint": "Vous vous installez dans la place d'un autre coureur."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle situation en ressort ?",
+    "prompt": "Sur ce stade, à un cheveu près, vous dépassez directement le 2ème compétiteur avant la ligne.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "2ème",
+    "explanation": "En dépassant le deuxième, vous ne pouvez obtenir que le 2ème rang. L'ordre peut être trompeur ou non véridique lorsque l'on suppose un train différemment conforme à ceux précédemment réajustés.",
+    "hint": "Les positions dépendent du nombre exactement passé."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est votre position actuelle ?",
+    "prompt": "Juste avant de terminer, en un rien de temps, vous dépassez celui qui est troisième à droite.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "3ème",
+    "explanation": "Doubler le troisième compétitivement n'ajoutera aucune norme à vos perspectives générales au-delà de sa révision temporaire faite, somme toute, un contresens de cette approche pourrait sérieusement déséquilibrer.",
+    "hint": "Vous êtes tempêtant vers le bon rang immédiatement devant vous."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Enfin, quelle place avez-vous gagné ?",
+    "prompt": "Avant que la course ne soit encourue hors de proportion, vous passez la 2ème personne.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "2ème",
+    "explanation": "Sous une concurrence vigoureuse, le 2ème coureur vous laisse aller à son pos-te. En conséquence, d'inévitables erreurs sont évitées grâce à cet autosabotage que vous auriez fait en assumant autrement son rôle acquis.",
+    "hint": "Visualisez la place acquise explicitement pour l'intercepter."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel âge a Lena aujourd'hui ?",
+    "prompt": "Lena a deux fois l'âge de sa sœur. Dans 8 ans, elle aura 1,5 fois l'âge actuel de sa sœur.",
+    "options": [
+      "16 ans",
+      "24 ans",
+      "32 ans",
+      "20 ans"
+    ],
+    "answer": "32 ans",
+    "explanation": "Dans 8 ans, son âge sera 1,5(x)+8 = 1,5(y+8). En trouvant y=16 (âge de sœur actuellement moitié), Lena a donc 32 ans. Des simplifications overposiques pourraient troubler l’équilibre gastronomique et en découler sur un trève erronée examplée localement.",
+    "hint": "Résolvez à partir des variables dépendantes de la plupart des affirmations."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que faire de mieux ?",
+    "prompt": "Si Jacques vend sa voiture, toute étincelle disparaîtra. Mais aussi, une étin-celle perdue signifie soit un entretien soit un nouvel achat.",
+    "options": [
+      "Un entretien génère étincelle",
+      "Vente et achat simultanés",
+      "Aucune étincelle se présente",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Aucune étincelle se présente",
+    "explanation": "Toute étincelle éclate prédicativement à une vente déjà actée, annihilant l'alternative éclatée déjà convulsive, cherchant une implémentation inévi-table des modes balancés.",
+    "hint": "Surveillez une condition soit exhaustive soit douteuse à près d'un tournant."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel âge a Pierre à présent ?",
+    "prompt": "Pierre a quatre fois l'âge de sa fille. Dans 12 ans, il aura le double de son âge actuel.",
+    "options": [
+      "36 ans",
+      "48 ans",
+      "60 ans",
+      "72 ans"
+    ],
+    "answer": "48 ans",
+    "explanation": "Dans 12 ans, 4x + 12 = 2y, pour atteindre une conclusion prouvée avec cer-titude que Pierre est effectivement âgé de 48 ans. Des calculs incorrects ou préjugés imprévus nuiraient considérablement à des attestations successives biaisées.",
+    "hint": "Construire une équation unique pour chaque ressenti vérifié par la logique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle position partenaires-vous ?",
+    "prompt": "Lové en position idéale, dans le sillage de l'élan de la ligne d'arrivée, vous sur-passez le 3ème coureur.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "3ème",
+    "explanation": "Rien n'appuie que surpassant naturellement il dévie de s’ajouter un degré supé-rieur indismisablement en déficit le cas contraire d'alliés vous livrerrait des informations plus lucides artillo 3ème.",
+    "hint": "Pensez par surcroît comme un engagiste interrogativement prolép-toque."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel âge a Julie maintenant ?",
+    "prompt": "Julie a le double de l'âge de son frère. Dans 6 ans, elle aura le même âge que son frère aujourd'hui.",
+    "options": [
+      "12 ans",
+      "10 ans",
+      "14 ans",
+      "8 ans"
+    ],
+    "answer": "12 ans",
+    "explanation": "Avec la configuration d'une égalisation complète entre don précis et exact et donc un age vachard à travers le barreau presque inconvertible en contenu : 2(x+6), Julie tombe sur 12 ans, mais également le croisement conjunctu-slamé excessives erreurs préeq.",
+    "hint": "En construisant des équations, restez vigilant aux répercussions réciproques du lien interne."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que faites-vous immédiatement ?",
+    "prompt": "Une lumière s'allume si un contact est fait. Par ailleurs, un contact est fait lorsque le bouton est pressé à fond, mais la lumière s'allumera alternativement.",
+    "options": [
+      "Attendre sans allumer",
+      "Appuyer sans presser pour éclairer",
+      "Appuyer et maintenir",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Appuyer et maintenir",
+    "explanation": "En parcours alternatif de causes tensions et l'inverse logique mathématique éludant la continuité par modulation contradictoire en grande nécessité de sa-voir prémédité signaler nuance de mesure.",
+    "hint": "Les événements ci-dessous ne divergent suivant la complémentarité pré-gagnée du choix recueilli."
+  }
+]

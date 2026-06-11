@@ -213,7 +213,7 @@ class _InformationPageState extends State<InformationPage>
                       subtitle: 'Rapport précis, priorisé et synchronisé',
                       onTap: () => _openBugSheet(context),
                     ),
-                    _DividerInset(color: t.dividerColor.withOpacity(.35)),
+                    _DividerInset(color: t.dividerColor.withValues(alpha: .35)),
                     _SettingsTile(
                       icon: Icons.mail_outline_rounded,
                       title: 'Contact',
@@ -405,8 +405,8 @@ class _SettingsTile extends StatelessWidget {
         height: 40,
         decoration: BoxDecoration(
           color: isDark
-              ? Colors.white.withOpacity(.08)
-              : Colors.black.withOpacity(.06),
+              ? Colors.white.withValues(alpha: .08)
+              : Colors.black.withValues(alpha: .06),
           borderRadius: BorderRadius.circular(12),
         ),
         child: Icon(icon),

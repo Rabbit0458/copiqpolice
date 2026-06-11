@@ -1,0 +1,345 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "Rue de la Paix, 75002 Paris.",
+    "text_b": "Rue de la Pax, 75002 Paris.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par une lettre : 'Paix' dans text_a est 'Pax' dans text_b. Ce type d'erreur peut passer inaperçu lors d'une lecture rapide car seule une lettre change et les deux mots commencent par 'Pa'."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Peugeot 208 rouge immatriculée AB-456-CD.",
+    "text_b": "Peugeot 208 bleue immatriculée AB-456-CD.",
+    "is_true": false,
+    "explanation": "La différence se situe dans la couleur du véhicule : 'rouge' dans text_a et 'bleue' dans text_b. Il est facile de ne pas remarquer cette différence car le reste de la description est identique."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Monsieur Dupont, né le 17/04/1985.",
+    "text_b": "Monsieur Dupond, né le 17/04/1985.",
+    "is_true": false,
+    "explanation": "Le nom de famille diffère d'une lettre : 'Dupont' dans text_a et 'Dupond' dans text_b. Les deux orthographes sont phonétiquement proches, ce qui pourrait facilement induire en erreur lors d'une lecture rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "7 rue Lavoisier, 31000 Toulouse.",
+    "text_b": "7 rue Lavosier, 31000 Toulouse.",
+    "is_true": false,
+    "explanation": "Il y a une inversion de lettres dans le nom de la rue : 'Lavoisier' dans text_a et 'Lavosier' dans text_b. Ce type de différence peut être particulièrement trompeur à cause de la symétrie des lettres."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Immatriculation EF-789-GH.",
+    "text_b": "Immatriculation EF-789-GH.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "14 Avenue Foch, 75116 Paris.",
+    "text_b": "14 Avenue Foch, 75116 Paris.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "BMW Série 3, blanche, ABC-123-ZX.",
+    "text_b": "BMW Série 5, blanche, ABC-123-ZX.",
+    "is_true": false,
+    "explanation": "La différence se trouve dans le modèle de la voiture : 'Série 3' dans text_a et 'Série 5' dans text_b. Ces modèles étant de la même marque, ils peuvent facilement prêter à confusion."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Monsieur Martin, né le 04/07/1975.",
+    "text_b": "Monsieur Martin, né le 04/07/1975.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Ford Focus, bleue, 45000 km.",
+    "text_b": "Ford Focus, bleue, 45000 km.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "12 rue Pasteur, 69007 Lyon.",
+    "text_b": "12 rue Pasteur, 69007 Lyon.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Opel Astra noire, immat AB-987-CD.",
+    "text_b": "Opel Astra bleu, immat AB-987-CD.",
+    "is_true": false,
+    "explanation": "La différence réside dans la couleur de la voiture : 'noire' dans text_a et 'bleu' dans text_b. Une simple variation de couleur peut passer inaperçue, notamment lorsqu'on se focalise sur le numéro d'immatriculation."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Volkswagen Golf GTI AB-321-XY.",
+    "text_b": "Volkswagen Gold GTI AB-321-XY.",
+    "is_true": false,
+    "explanation": "Le modèle de la voiture diffère d'une lettre : 'Golf' dans text_a est devenu 'Gold' dans text_b. Les deux mots étant visuellement proches, cette erreur peut facilement ne pas être remarquée."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Chevrolet Spark immatriculée CD-123-FG.",
+    "text_b": "Chevrolet Spark immatriculée CD-123-FG.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "15, Avenue des Champs-Elysées.",
+    "text_b": "15, Avenue des Champs-Elysées.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Citroën C4, rouge, immatriculée QR-111-ST.",
+    "text_b": "Citroën C4, verte, immatriculée QR-111-ST.",
+    "is_true": false,
+    "explanation": "Le changement de couleur du véhicule est la différence : 'rouge' dans text_a et 'verte' dans text_b. Une modification de ce type est souvent ignorée si l'on se concentre sur l'immatriculation."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Fiat Panda, blanche, KL-987-YU.",
+    "text_b": "Fiat Panda, blanche, KL-987-YU.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Toyota Yaris grise immatriculée UV-876-ZX.",
+    "text_b": "Toyota Yaris grise immatriculée UV-876-XY.",
+    "is_true": false,
+    "explanation": "La différence se trouve dans l'immatriculation : 'ZX' dans text_a et 'XY' dans text_b. Les variations dans les numéros ou lettres d'immatriculation sont souvent négligées."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Sur les lieux du cambriolage, seules des empreintes ont été relevées.",
+    "text_b": "Sur les lieux du cambriolage, seules des empreints ont été relevées.",
+    "is_true": false,
+    "explanation": "'empreintes' dans text_a est devenu 'empreints' dans text_b. Cette erreur peut facilement être ignorée car 'empreintes' et 'empreints' se ressemblent visuellement et phonétiquement."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le suspect portait un blouson noir et un pantalon bleu.",
+    "text_b": "Le suspect portait un blouson noir et un pantalon bleu.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La déposition est enregistrée sous la référence 1234-567.",
+    "text_b": "La déposition est enregistrée sous la réference 1234-567.",
+    "is_true": false,
+    "explanation": "Le mot 'référence' dans text_a est mal orthographié dans text_b : 'réference'. Les accents peuvent facilement être négligés, surtout dans des textes contenant des chiffres."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le témoin affirme avoir vu une silhouette à 22 heures.",
+    "text_b": "Le témoin affirme avoir vue une silhouette à 22 heures.",
+    "is_true": false,
+    "explanation": "Le mot 'vu' dans text_a est changé en 'vue' dans text_b. La similarité entre 'vu' et 'vue' peut facilement passer inaperçue car les deux mots se prononcent de la même manière."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "L'incident a eu lieu le 15/05/2023 à 19h45.",
+    "text_b": "L'incident a eu lieu le 15/05/2023 à 19h45.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le véhicule suspect est une Audi A4 de couleur noire.",
+    "text_b": "Le véhicule suspect est une Audi A4 de couleur noie.",
+    "is_true": false,
+    "explanation": "Le terme 'noire' est devenu 'noie' dans text_b. Une erreur dans une lettre peut facilement passer inaperçue, surtout lorsque les mots sont presque identiques et placés à la fin."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Article 225-2 : La traite des êtres humains est punie de sept ans de prison.",
+    "text_b": "Article 225-2 : La traite des êtres humains est punie de sept ans de prison.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "L'accident s'est produit au carrefour des rues Lafayette et Masséna.",
+    "text_b": "L'accident s'est produit au carrefour des rues Layfayette et Masséna.",
+    "is_true": false,
+    "explanation": "Dans text_b, 'Lafayette' est écrit 'Layfayette'. Une telle permutation de lettres peut facilement être manquée car le mot reste visuellement similaire."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le témoin a décrit le voleur comme étant de grande taille et portant des lunettes.",
+    "text_b": "Le témoin a décrit le voleur comme étant de grande taille et portant des lunnettes.",
+    "is_true": false,
+    "explanation": "Le mot 'lunettes' dans text_a est mal orthographié dans text_b : 'lunnettes'. La double consonne peut sembler identique à première vue, du fait de la répétition de lettres."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La date du jugement est fixée au 12 juillet 2024.",
+    "text_b": "La date du jugement est fixée au 12 juillet 2024.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le code d'accès est 856974, ne pas oublier!",
+    "text_b": "Le code d'accès est 856974, ne pas oublie!",
+    "is_true": false,
+    "explanation": "La terminaison 'oublier' dans text_a est 'oublie' dans text_b. Un lecteur inattentif pourrait ne pas remarquer cette omission finale en raison du contexte qui semble complet."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Madame Lafontaine est née le 05/12/1978 à Strasbourg.",
+    "text_b": "Madame Lafontaine est née le 05/12/1978 à Strasbourg.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "L'agression a eu lieu devant la boulangerie du 12 place Saint-Louis.",
+    "text_b": "L'agression a eu lieu devant la boulangerie du 12 place Saint-ouis.",
+    "is_true": false,
+    "explanation": "'Saint-Louis' dans text_a est devenu 'Saint-ouis' dans text_b. Une lettre est manquante au milieu du mot, ce qui peut être facilement omis lors de la lecture en flux continu de noms propres."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Mr Jones a avoué le vol vers 23h00 ce lundi.",
+    "text_b": "Mr Jones a avoué le vol vers 23h00 se lundi.",
+    "is_true": false,
+    "explanation": "Dans text_b, 'ce' est mal écrit 'se'. Cette petite inversion peut passer inaperçue car elle ne modifie pas fortement la lecture de la phrase."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La plainte est classée sous la référence FR-2024-0134.",
+    "text_b": "La plainte est classée sous la référence FR-2024-0134.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Déclaration du témoin : Il portait un chapeau rouge.",
+    "text_b": "Déclaration du témoin : Il portait un chapeau rouge.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Article 223-1 : La mise en danger d'autrui est définie comme le fait d'exposer une tierce personne à un risque immédiat de mort.",
+    "text_b": "Article 223-1 : La mise en danger d’autrui est définie comme le fait d'exposer une tierce personne à un risque immédiat de mort.",
+    "is_true": false,
+    "explanation": "La différence réside dans l'apostrophe utilisée : apostrophe droite ('') dans text_a et apostrophe typographique (’) dans text_b. Ce genre de différence est pratiquement invisible et demande une attention minutieuse."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Durant l'interrogatoire, le suspect a droit à l'assistance de son avocat, conformément à l'article 63-4 du code de procédure pénale.",
+    "text_b": "Durant l'interrogatoire, le suspect a droit à l’assistance de son avocat, conformément à l'article 63-4 du code de procédure pénale.",
+    "is_true": false,
+    "explanation": "Une différence réside dans l'apostrophe après 'à' : apostrophe droite ('') dans text_a contre une apostrophe typographique (’) dans text_b. Cette variation est subtile et souvent non remarquée."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'inspection a révélé que les systèmes de sécurité, y compris les alarmes, n'étaient pas en état de marche le 14/06/2023.",
+    "text_b": "L'inspection a révélé que les systèmes de sécurité, y compris les alarmes, n'étaient pas en état de marche le 14/06/2023.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L’article 225-7 du code pé nal spécifie les peines encourues pour proxénétisme aggravé, y compris l’emprisonnement pouvant aller jusqu’à 20 ans.",
+    "text_b": "L’article 225-7 du code pénal spécifie les peines encourues pour proxénétisme aggravé, y compris l’emprisonnement pouvant aller jusqu’à 20 ans.",
+    "is_true": false,
+    "explanation": "Une espace supplémentaire après 'pé' dans 'pé nal' de text_a mais pas dans text_b. La difficulté réside dans la perception d'espaces supplémentaires trompeuses à l'œil dans un texte dense."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'article R. 645-12 du Code pénal stipule que les cruautés envers animaux domestiques sont punies de 10 000 € d'amende.",
+    "text_b": "L'article R. 645-12 du Code pénal stipule que les cruautés envers animaux domestiques sont punies de 10 000 € d'amende.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "La mise en sursis de deux mois pour son infraction au code de la route a été confirmée par la cour d’appel.",
+    "text_b": "La mise en sursis de deux mois pour son infraction au code de la route a été confirmée par la cour d’appèl.",
+    "is_true": false,
+    "explanation": "La différence est dans l'accent du mot 'appel' : 'd’appel' dans text_a et 'd’appèl' dans text_b. Cet accent incorrect est subtile mais change le mot parfaitement orthographié."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le 18 octobre 2024, à 14h35 précise, Monsieur X a été appréhendé pour conduite sous l'emprise de stupéfiants.",
+    "text_b": "Le 18 octobre 2024, à 14h35 précise, Monsieur X a été appréhendé pour conduite sous l'emprise de stupéfiants.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Conformément à l’article 223-1, toute mise en danger délibérée de la vie d’autrui est passible d’une peine de prison ferme.",
+    "text_b": "Conformément à l’article 223-1, toute mise en danger délibérée de la vie d’autrui est passible d’une peine de prison ferme.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Dans l'article 611-1, la tentative de vol est réprimée au même titre que le vol consommé.",
+    "text_b": "Dans l’article 6111, la tentative de vol est réprimée au même titre que le vol consommé.",
+    "is_true": false,
+    "explanation": "Dans text_b, 'article 611-1' est écrit 'article 6111'. Ce type de différence dans un numéro d'article peut être trompeur car le texte semble correct au premier regard."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Après délibération, le tribunal a reconnu le prévenu coupable des faits reprochés, conformément à l’article 132-80.",
+    "text_b": "Après délibération, le tribunal a reconnu le prévenu coupable des faits reprochés, conformément a l’article 132-80.",
+    "is_true": false,
+    "explanation": "L’accent sur 'à' est manquant dans text_b. L'absence d'un accent peut facilement se perdre dans des phrases longues et complexes, surtout lorsque l'on est fatigué."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "En vertu de l’article 311-3, le vol à l’arraché est un délit passible de cinq ans d’emprisonnement et de 75 000 € d’amende.",
+    "text_b": "En vertu de l'article 311-3, le vol à l'arraché est un délit passible de cinq ans d'emprisonnement et de 75000 € d'amende.",
+    "is_true": false,
+    "explanation": "La différence se situe dans la séparation des milliers : '75 000 €' dans text_a et '75000 €' dans text_b. L'absence d'espace entre les chiffres peut sembler anodine, mais modifie la clarté."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le témoin a assuré que l'individu portait une casquette rouge et courait vers le sud au moment de l'agression.",
+    "text_b": "Le témoin a assuré que l'individu portait une casquette rouge et courait vers le sud au moment de l'agression.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon l’article 225-12-2, l’exploitation de la prostitution d’autrui est punie de sept ans d’emprisonnement.",
+    "text_b": "Selon l\'article 225-12-2, l\'exploitation de la prostitution d\'autrui est punie de sept ans d\'emprisonnement.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par l'usage des apostrophes : typographiques dans text_a et droites dans text_b. Un changement subtil souvent non détecté en raison de la densité du texte juridique."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le dépôt de plainte a été enregistré sous la référence judiciaire numéro FR-2025-8421.",
+    "text_b": "Le dépôt de plainte a été enregistré sous la référence judiciaire numéro FR-2025-8421.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L’agent a verbalisé le conducteur pour excès de vitesse sur l’Autoroute A6, limitée à 110 km/h.",
+    "text_b": "L’agent a verbalisé le conducteur pour excès de vitesse sur l’Autoroute A6, limités à 110 km/h.",
+    "is_true": false,
+    "explanation": "Le mot 'limitée' dans text_a est 'limités' dans text_b. Le pluriel à la fin du mot modifie subtilement le sens et peut passer inaperçu dans un texte où l'orthographe individuelle semble correcte."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L’enquête a déterminé que le véhicule incriminé était une Mercedes avec une immatriculation étrangère.",
+    "text_b": "L’enquête a déterminé que le véhicule incriminé était une Mercedes avec une immatriculation étrangère.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  }
+]

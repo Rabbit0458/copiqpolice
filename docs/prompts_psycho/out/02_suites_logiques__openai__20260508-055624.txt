@@ -1,0 +1,173 @@
+[
+    {
+        "difficulty": "Facile",
+        "sequence_text": "3, 6, 9, 12, ?",
+        "prompt": "Quel terme manque ?",
+        "options": ["15", "14", "18", "16"],
+        "answer": "15",
+        "explanation": "La suite suit une progression arithmétique de +3 à chaque étape. Le calcul pour le terme manquant est 12 + 3 = 15. Le piège serait de croire que la suite augmente de manière non constante.",
+        "hint": "Regarde l'intervalle constant entre les termes."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "2, 4, 8, 16, ?",
+        "prompt": "Quel terme manque ?",
+        "options": ["32", "28", "30", "24"],
+        "answer": "32",
+        "explanation": "Chaque terme est obtenu en multipliant le précédent par 2, une suite multiplicative simple. Ainsi, 16 × 2 = 32. Le piège serait de penser à une addition plutôt qu'à une multiplication.",
+        "hint": "Cherche le coefficient multiplicateur."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "5, 10, 15, 20, ?",
+        "prompt": "Quel terme complète la suite ?",
+        "options": ["25", "30", "40", "35"],
+        "answer": "25",
+        "explanation": "La suite suit une progression arithmétique de +5. Le terme suivant est donc 20 + 5 = 25. Attention à ne pas confondre cette suite avec une autre série qui pourrait augmenter par un facteur différent.",
+        "hint": "Vérifie l'intervalle fixe entre les termes."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "10, 20, 30, 40, ?",
+        "prompt": "Quel est le terme manquant ?",
+        "options": ["50", "45", "55", "60"],
+        "answer": "50",
+        "explanation": "La suite progresse de +10 à chaque étape. Pour obtenir le suivant : 40 + 10 = 50. Un piège courant serait d'ajouter un multiple différent, comme +5 ou +7.",
+        "hint": "Identifie l'addition régulière."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "7, 14, 21, 28, ?",
+        "prompt": "Complète la suite.",
+        "options": ["35", "32", "42", "49"],
+        "answer": "35",
+        "explanation": "La suite progresse de +7 à chaque étape. Le calcul pour le terme suivant est 28 + 7 = 35. Ne te laisse pas distraire par d'autres progressions qui ne respectent pas le multiple de sept.",
+        "hint": "Les termes suivent les multiples de sept."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "1, 3, 5, 7, ?",
+        "prompt": "Quel terme manque ?",
+        "options": ["9", "10", "11", "8"],
+        "answer": "9",
+        "explanation": "La suite est une progression arithmétique de +2, impliquant uniquement des nombres impairs. Le terme manquant est 7 + 2 = 9. Le piège réside dans l'intégration par erreur d'un nombre pair.",
+        "hint": "C'est une suite de nombres impairs."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "12, 24, 36, 48, ?",
+        "prompt": "Quel terme manque ?",
+        "options": ["60", "62", "72", "52"],
+        "answer": "60",
+        "explanation": "La suite est basée sur une progression arithmétique de +12 à chaque étape. Le terme après 48 est 48 + 12 = 60. Un piège à éviter est une possible distraction avec des chiffres qui semblent plus proches mais ne sont pas des multiples de 12.",
+        "hint": "Regarde la progression à grande échelle."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "6, 12, 18, ?, 30",
+        "prompt": "Quel est le terme manquant ?",
+        "options": ["24", "22", "26", "20"],
+        "answer": "24",
+        "explanation": "La progression arithmétique est de +6 à chaque étape. Ensuite, le calcul est 18 + 6 = 24. Un piège possible est d'oublier cette augmentation constante.", 
+        "hint": "Cherche un multiple de six."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "1, 4, 9, 16, ?",
+        "prompt": "Quel terme manque ?",
+        "options": ["25", "24", "20", "30"],
+        "answer": "25",
+        "explanation": "Cette suite suit les carrés de nombres entiers : 1^2=1, 2^2=4, 3^2=9, 4^2=16 et 5^2=25. Le piège serait de percevoir un motif arithmétique au lieu des carrés.",
+        "hint": "Pense aux carrés des nombres."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "8, 16, ?, 32, 40",
+        "prompt": "Quel est le terme manquant ?",
+        "options": ["24", "22", "20", "18"],
+        "answer": "24",
+        "explanation": "La progression arithmétique est de +8 à chaque étape. Donc, le terme après 16 est 16 + 8 = 24. Ne pas confondre avec une progression qui pourrait sauter des chiffres non multiples de 8.",
+        "hint": "C'est une série d'ajout régulier."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "11, 22, 33, 44, ?",
+        "prompt": "Quel terme complète la suite ?",
+        "options": ["55", "66", "60", "50"],
+        "answer": "55",
+        "explanation": "La suite suit une progression arithmétique de +11, le calcul est donc 44 + 11 = 55. Attention à ne pas confondre avec une série basée sur un multiple différent.",
+        "hint": "Identifie le nombre ajouté à chaque étape."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "? , 3, 6, 9, 12",
+        "prompt": "Quel est le terme manquant ?",
+        "options": ["0", "1", "2", "1.5"],
+        "answer": "0",
+        "explanation": "La suite est une progression arithmétique de +3. En commençant par 0, 0 + 3 = 3, en poursuivant ainsi. Ne commence pas avec un nombre non entier.",
+        "hint": "C'est une suite commençant de zéro."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "4, 8, 12, 16, ?",
+        "prompt": "Quel terme complète la suite ?",
+        "options": ["20", "24", "22", "19"],
+        "answer": "20",
+        "explanation": "La progression est de +4 à chaque étape. Le terme manquant est 16 + 4 = 20. Méfie-toi des termes qui ne sont pas des multiples de 4.",
+        "hint": "Les nombres progressent de quatre en quatre."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "3, 5, 7, 9, ?",
+        "prompt": "Quel terme manque-t-il ?",
+        "options": ["11", "12", "13", "10"],
+        "answer": "11",
+        "explanation": "La suite progresse de +2 et implique les nombres impairs. Le terme manquant est donc 9 + 2 = 11. La distraction est de penser à une progression différente utilisant peut-être des nombres pairs.",
+        "hint": "Pense à utiliser uniquement des impairs."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "2, 6, 10, 14, ?",
+        "prompt": "Quel est le terme suivant ?",
+        "options": ["18", "20", "16", "22"],
+        "answer": "18",
+        "explanation": "Chaque terme augmente de 4. Avec 14, il faudrait ajouter 4 pour obtenir 18. La confusion serait d'utiliser une incrémentation incorrecte.",
+        "hint": "C'est une suite à incréments constants."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "8, ?, 24, 32, 40",
+        "prompt": "Quel terme complète la suite ?",
+        "options": ["16", "12", "20", "18"],
+        "answer": "16",
+        "explanation": "Chaque terme augmente de 8. Le calcul est donc 8 + 8 = 16. Il est important de ne pas se tromper avec une suite qui possède une autre constante.",
+        "hint": "La valeur ajoutée est la même entre chaque terme."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "1, 2, 3, 4, ?",
+        "prompt": "Quel terme complète la série ?",
+        "options": ["5", "6", "7", "4.5"],
+        "answer": "5",
+        "explanation": "La suite est une simple progression arithmétique de +1. Le calcul est 4 + 1 = 5. Attention à ne pas substituer des incréments supérieurs.",
+        "hint": "Le motif est trivial. Cherche le nombre entier suivant."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "2, 5, 10, 17, ?",
+        "prompt": "Quel nombre complète la suite ?",
+        "options": ["26", "22", "28", "25"],
+        "answer": "26",
+        "explanation": "La suite augmente de +1 à +3, +3 à +5, +5 à +7 donc on continue avec +7 pour obtenir 17 + 9 = 26. Le piège est de ne pas observer la progression de la différence.",
+        "hint": "Regarde comment la différence entre les termes grandit."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "5, 15, 16, 48, 49, ?",
+        "prompt": "Quel terme complète la série ?",
+        "options": ["147", "148", "150", "155"],
+        "answer": "147",
+        "explanation": "La suite alterne entre ×3 et +1. À partir de 49, le calcul est 49 × 3 = 147. La confusion pourrait être entre une série imprévue.:",
+        "hint": "Cherche une alternation reconnaissable."
+    }
+]

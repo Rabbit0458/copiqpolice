@@ -1,0 +1,434 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « joyeux » ?",
+        "prompt": null,
+        "options": ["Content", "Triste", "Fâché", "Ennuyé"],
+        "answer": "Content",
+        "explanation": "« Content » signifie être heureux ou satisfait, ce qui est proche de « joyeux ». Par contre, « triste » est son antonyme, alors que « fâché » et « ennuyé » décrivent des états émotionnels opposés à la joie.",
+        "hint": "Pensez à la joie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"sec\" ?",
+        "prompt": null,
+        "options": ["Humide", "Dur", "Aigu", "Mou"],
+        "answer": "Humide",
+        "explanation": "« Sec » signifie sans humidité, donc son opposé est « humide ». « Dur » et « mou » décrivent des textures, et « aigu » est lié à la sonorité.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Chat est à chaton comme chien est à ___",
+        "prompt": null,
+        "options": ["Cachot", "Chien", "Chiot", "Poulain"],
+        "answer": "Chiot",
+        "explanation": "Un chat donne naissance à un chaton, de même qu'un chien donne naissance à un chiot. « Cachot » et « poulain » n'ont pas de rapport direct avec l'analogie. « Chien » est simplement l'espèce déjà mentionnée.",
+        "hint": "Pensez à un bébé chien."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Piano, Violon, Flûte, Guitare",
+        "options": ["Piano", "Violon", "Flûte", "Guitare"],
+        "answer": "Flûte",
+        "explanation": "La flûte est un instrument à vent alors que le piano, le violon, et la guitare sont des instruments à cordes. En se concentrant sur le mode de production du son, la flûte se distingue clairement.",
+        "hint": "Considérez le type d'instrument."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que signifie « propre » dans la phrase : « Il a rendu son devoir propre. » ?",
+        "prompt": "Il a rendu son devoir propre.",
+        "options": ["Non copié", "Sans fautes", "Bien présenté", "Ponctuel"],
+        "answer": "Bien présenté",
+        "explanation": "Dans ce contexte, « propre » signifie que le devoir est soigné ou bien présenté. « Non copié », « sans fautes » et « ponctuel » décrivent d'autres qualités positives mais diffèrent du sens de « propre » ici.",
+        "hint": "Pense à l'apparence du devoir."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « petit » ?",
+        "prompt": null,
+        "options": ["Minuscule", "Grand", "Énorme", "Épais"],
+        "answer": "Minuscule",
+        "explanation": "« Minuscule » signifie extrêmement petit, ce qui en fait un synonyme proche de « petit ». « Grand » et « énorme » sont des antonymes, et « épais » décrit une épaisseur, pas une taille.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Il est parti en vacances pour ___\".",
+        "prompt": null,
+        "options": ["Reposer", "Reposer de", "Se reposer", "Reposément"],
+        "answer": "Se reposer",
+        "explanation": "La structure correcte est « pour se reposer » car cela désigne l'action intentionnelle de se détendre. « Reposer » n'est pas réfléchi, « Reposer de » est incorrect grammaticalement, et « Reposément » n'existe pas.",
+        "hint": "Réfléchi indique l'action sur soi-même."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"rapide\" ?",
+        "prompt": null,
+        "options": ["Lent", "Vif", "Fluide", "Prompt"],
+        "answer": "Lent",
+        "explanation": "L'antonyme de « rapide » est « lent » car il représente une absence de vitesse. « Vif » et « prompt » désignent aussi la rapidité, tandis que « fluide » est plus lié à la continuité qu'à la vitesse.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Serpent est à reptile comme perroquet est à ___",
+        "prompt": null,
+        "options": ["Oiseau", "Mammifère", "Poisson", "Amphibien"],
+        "answer": "Oiseau",
+        "explanation": "Le serpent est un type de reptile, de la même manière que le perroquet est un type d'oiseau. Les autres termes représentent des catégories d'animaux mais ne correspondent pas au type de l'animal indiqué.",
+        "hint": "Considérez la catégorie biologique du perroquet."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Rouge, Bleu, Carré, Jaune",
+        "options": ["Rouge", "Bleu", "Carré", "Jaune"],
+        "answer": "Carré",
+        "explanation": "Un « carré » est une forme géométrique, tandis que « rouge », « bleu », et « jaune » sont des couleurs. Un simple examen des catégories montre que « carré » diffère des autres.",
+        "hint": "Considérez les notions de forme et de couleur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « aider » ?",
+        "prompt": null,
+        "options": ["Lancer", "Soutenir", "Détruire", "Emprunter"],
+        "answer": "Soutenir",
+        "explanation": "« Soutenir » signifie appuyer ou assister quelqu'un, ce qui est proche de « aider ». En revanche, « lancer », « détruire », et « emprunter » ne partagent pas cette connotation d'assistance.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « courageux » ?",
+        "prompt": null,
+        "options": ["Hardi", "Intrépide", "Lâche", "Vaillant"],
+        "answer": "Lâche",
+        "explanation": "Le terme « lâche » désigne quelqu'un qui manque de courage, il est donc l'antonyme de « courageux ». « Hardi », « intrépide », et « vaillant » se rapportent tous à la bravoure ou au courage.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : « Malgré la difficulté, elle a persévéré et a ___ son objectif. »",
+        "prompt": null,
+        "options": ["Perdu", "Atteint", "Quitter", "Évité"],
+        "answer": "Atteint",
+        "explanation": "Dans ce contexte, « atteint » est approprié car il exprime la réalisation d'un objectif. « Perdu » implique un échec, « quitter » et « évité » ne sont pas logiquement compatibles avec la persévérance mentionnée.",
+        "hint": "Pensez au succès d'une action."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que signifie « lumière » dans la phrase : « Il a vu la lumière au bout du tunnel. » ?",
+        "prompt": "Il a vu la lumière au bout du tunnel.",
+        "options": ["Éclat", "Lueur d'espoir", "Lampe", "Soleil"],
+        "answer": "Lueur d'espoir",
+        "explanation": "Dans cette expression, « lumière au bout du tunnel » symbolise l'espoir ou la résolution d'une période difficile. « Éclat », « lampe », et « soleil » sont littéraux et ne capturent pas cette signification métaphorique.",
+        "hint": "Considérez le sens figuré dans un contexte difficile."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « calme » ?",
+        "prompt": null,
+        "options": ["Tranquille", "Agité", "Bruyant", "Excité"],
+        "answer": "Tranquille",
+        "explanation": "« Tranquille » indique une absence d'agitation, ce qui rend ce terme synonyme de « calme ». « Agité », « bruyant », et « excité » dénotent tous une certaine activité ou désordre, contrairement au calme.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Paris, Lyon, Table, Marseille",
+        "options": ["Paris", "Lyon", "Table", "Marseille"],
+        "answer": "Table",
+        "explanation": "Paris, Lyon, et Marseille sont des villes françaises, alors que « table » est un objet de mobilier. La différence de catégorie est claire entre ces termes.",
+        "hint": "Réfléchissez à la catégorisation."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Médecin est à hôpital comme professeur est à ___",
+        "prompt": null,
+        "options": ["École", "Bureau", "Garage", "Bibliothèque"],
+        "answer": "École",
+        "explanation": "Un médecin travaille généralement dans un hôpital, de même qu'un professeur travaille dans une école. Les autres lieux ne sont pas typiquement associés au rôle du professeur.",
+        "hint": "Considérez l'environnement de travail."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que signifie « pièce » dans la phrase : « Il est dans la pièce. » ?",
+        "prompt": "Il est dans la pièce.",
+        "options": ["Salle", "Objet", "Élément", "Monnaie"],
+        "answer": "Salle",
+        "explanation": "Dans ce contexte spécifique, « pièce » signifie une salle ou un espace clos. Les autres options, telles que « objet », « élément », et « monnaie » sont des significations de « pièce » dans d'autres contextes mais pas ici.",
+        "hint": "Considérez l'environnement intérieur."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « connivence » ?",
+        "prompt": null,
+        "options": ["Complicité", "Antagonisme", "Opacité", "Divergence"],
+        "answer": "Complicité",
+        "explanation": "« Connivence » et « complicité » partagent l'idée d'une compréhension secrète ou d'une collaboration cachée entre personnes. « Antagonisme » décrit une opposition, « opacité » un manque de transparence, et « divergence » une différence d'opinion.",
+        "hint": "Pensez à une coopération secrète."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Lune est à nuit comme soleil est à ___",
+        "prompt": null,
+        "options": ["Jour", "Étoile", "Lumière", "Chaleur"],
+        "answer": "Jour",
+        "explanation": "La lune est principalement visible la nuit, tout comme le soleil l'est durant le jour. Bien que « lumière » et « chaleur » soient des effets du soleil, elles ne sont pas des moments ou périodes, et « étoile » n'est pas liée temporellement.",
+        "hint": "Considérez les périodes de visibilité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Chien, Loup, Chat, Renard",
+        "options": ["Chien", "Loup", "Chat", "Renard"],
+        "answer": "Chat",
+        "explanation": "Le chien, le loup, et le renard appartiennent tous à la famille des canidés. Le chat, en revanche, fait partie des félins, ce qui le distingue de l'ensemble.",
+        "hint": "Considérez la classification animale."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « augmenter » ?",
+        "prompt": null,
+        "options": ["Réduire", "Amplifier", "Ajouter", "Accumuler"],
+        "answer": "Réduire",
+        "explanation": "« Augmenter » signifie accroître en quantité ou en intensité, tandis que son antonyme « réduire » implique une diminution. « Amplifier », « ajouter », et « accumuler » suggèrent toutes une augmentation.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : « Sans prévenir, il s'est ___ dans une colère noire. »",
+        "prompt": null,
+        "options": ["Lancé", "Plongé", "Amusé", "Évité"],
+        "answer": "Plongé",
+        "explanation": "« Plongé » suggère une immersion soudaine et totale dans une émotion, ce qui est approprié ici. « Lancé » n'a pas nécessairement la nuance d'immersion, « amusé » est contraire au contexte émotionnel, et « évité » ne suit pas la logique d'une colère spontanée.",
+        "hint": "Pensez à l'idée de se jeter soudainement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que signifie « carton » dans la phrase : « Il a reçu un carton rouge lors du match. » ?",
+        "prompt": "Il a reçu un carton rouge lors du match.",
+        "options": ["Rectangulaire", "Sanction", "Emballage", "Couleur"],
+        "answer": "Sanction",
+        "explanation": "Dans le contexte sportif, un « carton rouge » est une sanction, indiquant une expulsion du match. « Rectangulaire » et « couleur » décrivent des aspects physiques tandis que « emballage » se réfère à un conteneur, tous sans rapport ici.",
+        "hint": "Considérez le contexte sportif."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « altruiste » ?",
+        "prompt": null,
+        "options": ["Généreux", "Égoïste", "Cupide", "Possessif"],
+        "answer": "Généreux",
+        "explanation": "« Altruiste » et « généreux » partagent la notion de s'intéresser au bien-être des autres. En revanche, « égoïste », « cupide », et « possessif » décrivent des préoccupations centrées sur la personne elle-même.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Œil est à voir comme oreille est à ___",
+        "prompt": null,
+        "options": ["Entendre", "Sentir", "Parler", "Mâcher"],
+        "answer": "Entendre",
+        "explanation": "L'œil est utilisé pour voir, de même que l'oreille est utilisée pour entendre. Les autres options se réfèrent à des sens spécifiques à d'autres organes.",
+        "hint": "Considérez la fonction sensorielle."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Tigre, Lion, Éléphant, Léopard",
+        "options": ["Tigre", "Lion", "Éléphant", "Léopard"],
+        "answer": "Éléphant",
+        "explanation": "Le tigre, le lion et le léopard sont tous des félins, alors que l'éléphant n'est pas de la même famille et est bien plus grand, ce qui le distingue dans cette liste.",
+        "hint": "Réfléchissez à la classification et la taille."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « harmonieux » ?",
+        "prompt": null,
+        "options": ["Discordant", "Mélodieux", "Consonant", "Agréable"],
+        "answer": "Discordant",
+        "explanation": "« Discordant » décrit quelque chose qui manque d'harmonie, ce qui en fait l'antonyme de « harmonieux ». « Mélodieux », « consonant », et « agréable » partagent une connotation positive, plus proche d'une harmonie.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : « Il est connu pour ses actes de ___. »",
+        "prompt": null,
+        "options": ["Gentillesse", "Ruse", "Fierté", "Paresse"],
+        "answer": "Gentillesse",
+        "explanation": "Le mot « gentillesse » complète cette phrase en associant une attitude ou des actions reconnues comme positives et valorisées. « Ruse », « fierté », et « paresse » sont des traits qui n'indiquent pas systématiquement un comportement amical ou admiré.",
+        "hint": "Réfléchissez à un comportement valorisé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « audacieux » ?",
+        "prompt": null,
+        "options": ["Téméraire", "Timide", "Réservé", "Hésitant"],
+        "answer": "Téméraire",
+        "explanation": "« Audacieux » et « téméraire » impliquent tous deux une prise de risque avec courage. Les autres termes, « timide », « réservé », et « hésitant » dénotent une réticence ou un manque de hardiesse.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que signifie « glace » dans la phrase : « Elle a regardé son reflet dans la glace. » ?",
+        "prompt": "Elle a regardé son reflet dans la glace.",
+        "options": ["Miroir", "Glaçon", "Crème glacée", "Surface de l'eau"],
+        "answer": "Miroir",
+        "explanation": "Dans ce contexte, « glace » fait référence à un miroir, un objet permettant de voir son reflet. Un « glaçon » et « crème glacée » sont des formes d'eau gelée, tandis que « surface de l'eau » n'offre pas un reflet aussi précis.",
+        "hint": "Parfois, « glace » est une surface réfléchissante."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Cheval est à galoper comme oiseau est à ___",
+        "prompt": null,
+        "options": ["Voler", "Nager", "Marcher", "Creuser"],
+        "answer": "Voler",
+        "explanation": "Le galop du cheval est son mode de déplacement le plus naturel, tout comme le vol est pour l'oiseau. Les autres options se rapportent à des actions moins typiques pour un oiseau.",
+        "hint": "Pense à comment un oiseau se déplace naturellement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Énigmatique", "Clair", "Évident", "Limpide"],
+        "answer": "Énigmatique",
+        "explanation": "« Sibyllin » se réfère à quelque chose de mystérieux ou difficile à comprendre, également décrit par « énigmatique ». À l'inverse, « clair », « évident », et « limpide » évoquent la transparence et la compréhension facile.",
+        "hint": "Pense à une manière de communiquer obscure."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « pléthorique » ?",
+        "prompt": null,
+        "options": ["Abondant", "Indigent", "Foisonnant", "Surabondant"],
+        "answer": "Indigent",
+        "explanation": "« Pléthorique » signifie en très grande quantité, et son antonyme est « indigent » qui désigne une pauvreté ou une insuffisance. Les autres termes qui restent sont des synonymes de pléthorique.",
+        "hint": "« Pléthorique » signifie excessif en quantité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Gant est à main comme chaussette est à ___",
+        "prompt": null,
+        "options": ["Pied", "Tête", "Oreille", "Main"],
+        "answer": "Pied",
+        "explanation": "Un gant est porté sur la main, de même qu'une chaussette est portée sur le pied. Les autres parties du corps mentionnées ne sont pas couplées avec l'usage d'une chaussette.",
+        "hint": "Pensez aux vêtements d'hiver pour les extrémités."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « éphémère » ?",
+        "prompt": null,
+        "options": ["Permanent", "Temporaire", "Momentané", "Passager"],
+        "answer": "Permanent",
+        "explanation": "« Éphémère » signifie de courte durée, et son opposé est « permanent », qui évoque la persistance et la durée infinie. Les autres options sont des synonymes ou concepts liés à la brièveté.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « atavique » ?",
+        "prompt": null,
+        "options": ["Héréditaire", "Moderne", "Superficiel", "Éphémère"],
+        "answer": "Héréditaire",
+        "explanation": "« Atavique » se réfère à des caractéristiques héréditaires ou résultant de l'ancêtre. « Moderne » reflète le temps présent, « superficiel » évoque un manque de profondeur, et « éphémère » signifie temporaire.",
+        "hint": "Réfléchissez à ce qui est transmis à travers les générations."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « prolixe » ?",
+        "prompt": null,
+        "options": ["Succinct", "Bavard", "Éloquent", "Verbeux"],
+        "answer": "Succinct",
+        "explanation": "« Prolixe » caractérise quelqu'un qui parle beaucoup, et son antonyme est « succinct », qui signifie l'économie de mots. « Bavard », « éloquent » et « verbeux » sont des termes liés à une expression abondante.",
+        "hint": "Pensez à ce qui décrit un discours court."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « contrit » ?",
+        "prompt": null,
+        "options": ["Repenti", "Satisfait", "Indifférent", "Joyeux"],
+        "answer": "Repenti",
+        "explanation": "« Contrit » et « repenti » impliquent tous deux un sentiment de regret ou de remords. « Satisfait », « indifférent », et « joyeux » véhiculent des émotions bien différentes de l'idée de contrition.",
+        "hint": "Pensez à quelqu'un qui regrette."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Clavicule, Tibia, Scapula, Mandat",
+        "options": ["Clavicule", "Tibia", "Scapula", "Mandat"],
+        "answer": "Mandat",
+        "explanation": "La clavicule, le tibia, et la scapula sont tous des os du corps humain. À l'inverse, un « mandat » est un document légal, non relié à l'anatomie.",
+        "hint": "Considérez les catégories médicales versus légales."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « taciturne » ?",
+        "prompt": null,
+        "options": ["Silencieux", "Parleur", "Expressif", "Ouvert"],
+        "answer": "Silencieux",
+        "explanation": "« Taciturne » décrit quelqu'un qui parle peu, donc proche de « silencieux ». Par contre, « parleur », « expressif », et « ouvert » impliquent tous une certaine volonté de communiquer.",
+        "hint": "Penser à quelqu'un qui ne parle pas beaucoup."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Lait est à beurre comme raisin est à ___",
+        "prompt": null,
+        "options": ["Vin", "Farine", "Bière", "Huile"],
+        "answer": "Vin",
+        "explanation": "Le beurre est produit à partir du lait, de la même manière que le vin est produit à partir des raisins. Les autres options ne sont pas des transformations directes du raisin.",
+        "hint": "Réfléchissez à un produit de fermentation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Délibéré, Médité, Songeur, Impulsif",
+        "options": ["Délibéré", "Médité", "Songeur", "Impulsif"],
+        "answer": "Impulsif",
+        "explanation": "Les termes « délibéré », « médité », et « songeur » ont tous une connotation de réflexion ou de considération. « Impulsif » implique une action sans réflexion.",
+        "hint": "Réfléchissez à la réflexion versus l'action spontanée."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « inexorable » ?",
+        "prompt": null,
+        "options": ["Implacable", "Flexible", "Clément", "Sensible"],
+        "answer": "Implacable",
+        "explanation": "« Inexorable » signifie qu'on ne peut pas détourner ou apaiser, ce qui est synonyme d'« implacable ». Les autres termes, « flexible », « clément », et « sensible » impliquent une capacité d'adaptation ou de compassion.",
+        "hint": "Considérez ce qui ne peut pas être changé."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Sel est à saler comme sucre est à ___",
+        "prompt": null,
+        "options": ["Sucrer", "Conserver", "Assaisonner", "Épicer"],
+        "answer": "Sucrer",
+        "explanation": "« Saler » est l'action d'ajouter du sel, de même que « sucrer » est l'action d'ajouter du sucre. Les autres actions ne conservent pas cette relation directe de l'ajout de l'ingrédient.",
+        "hint": "Pensez à l'action directe avec chaque produit."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « véniel » ?",
+        "prompt": null,
+        "options": ["Grave", "Anodin", "Pardonnable", "Insignifiant"],
+        "answer": "Grave",
+        "explanation": "« Véniel » décrit ce qui est léger ou pardonnable, tandis que « grave » est son opposé, significatif ou sérieux. « Anodin », « pardonnable », et « insignifiant » sont associés à ce qui est mineur.",
+        "hint": "Réfléchissez à un acte sérieux comparé à un léger."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « inébranlable » ?",
+        "prompt": null,
+        "options": ["Fermement", "Flexible", "Mouvant", "Tremblant"],
+        "answer": "Fermement",
+        "explanation": "« Inébranlable » désigne une solidité inchangeable, comme « fermement ». « Flexible », « mouvant », et « tremblant » ne partagent pas cette impression de stabilité.",
+        "hint": "Immobile et stable, pensez à une roche."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Allégorie, Métaphore, Similitude, Arbitrage",
+        "options": ["Allégorie", "Métaphore", "Similitude", "Arbitrage"],
+        "answer": "Arbitrage",
+        "explanation": "« Allégorie », « métaphore », et « similitude » sont des figures de style en littérature. « Arbitrage » se réfère à une décision ou médiation, généralement dans le contexte juridique ou sportif.",
+        "hint": "Considérez le contexte littéraire versus juridique."
+    }
+]

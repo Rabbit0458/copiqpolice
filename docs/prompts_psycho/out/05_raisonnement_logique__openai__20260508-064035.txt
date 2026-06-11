@@ -1,0 +1,446 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en déduire ?",
+    "prompt": "Tous les oiseaux peuvent voler. Ce corbeau est un oiseau.",
+    "options": [
+      "Ce corbeau ne peut pas voler",
+      "Ce corbeau peut voler",
+      "Ce corbeau est un reptile",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce corbeau peut voler",
+    "explanation": "Nous avons un syllogisme simple où tous les oiseaux ont la capacité de voler. Le corbeau étant un oiseau, par transitivité, il peut donc voler. Il est essentiel de ne pas ignorer la déclaration initiale qui place tous les oiseaux dans cette catégorie.",
+    "hint": "Si X est dans A et tous les A sont dans B, alors X est dans B."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel fruit est petit ?",
+    "prompt": "Tous les fraisiers produisent de petits fruits. Ce jardin a des fraisiers.",
+    "options": [
+      "Les fruits sont gros",
+      "Les fruits sont petits",
+      "Le jardin n'a pas de fruits",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Les fruits sont petits",
+    "explanation": "Le syllogisme ici implique que tous les fraisiers produisent de petits fruits, et puisqu'il y a des fraisiers dans ce jardin, les fruits doivent être petits. Il ne faut pas tomber dans le piège de réinterpréter l'origine après qu'elle ait été déterminée par l'énoncé.",
+    "hint": "Réfléchissez au lien direct entre les fraisiers et la taille des fruits."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus rapide ?",
+    "prompt": "Jean court plus vite que Marc. Marc court plus vite que Paul.",
+    "options": ["Jean", "Marc", "Paul", "Ils courent à la même vitesse"],
+    "answer": "Jean",
+    "explanation": "En utilisant une comparaison transitive, puisque Jean > Marc et Marc > Paul, Jean est forcément le plus rapide parmi les trois. Ne confondez pas la rapidité avec les noms ou autres caractéristiques.",
+    "hint": "Formez une chaîne ordonnée de vitesse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en conclure sur ce patient ?",
+    "prompt": "Aucun chat ne sait nager. Félix est un chat.",
+    "options": [
+      "Félix peut nager",
+      "Félix ne sait pas nager",
+      "Félix est un chien",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Félix ne sait pas nager",
+    "explanation": "Le syllogisme non affirmatif montre que comme Félix est un chat et que aucun chat ne sait nager, Félix ne sait pas nager. Faites attention au piège de confondre inclusion et capacité d'action basées sur les prémisses données.",
+    "hint": "Concentrez-vous sur ce que le groupe ne peut pas faire."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus âgé ?",
+    "prompt": "Antoine a 2 ans de plus que Bernard. Bernard a 3 ans de plus que Charles.",
+    "options": ["Antoine", "Bernard", "Charles", "Ils ont le même âge"],
+    "answer": "Antoine",
+    "explanation": "Antoine est plus âgé que tous les autres car il a 2 ans de plus que Bernard, qui lui-même est plus âgé que Charles. Chaque étape ajoute une différence d'âge qu'il faut suivre pour ne pas se laisser embrouiller.",
+    "hint": "Additionnez les différences d'âge pour chaque paire."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel animal est rapide ?",
+    "prompt": "Les guépards sont rapides. Ce félin est un guépard.",
+    "options": [
+      "Ce félin est lent",
+      "Ce félin est rapide",
+      "Ce félin est un oiseau",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce félin est rapide",
+    "explanation": "Nous utilisons ici un syllogisme classique : si les guépards sont tous rapides et que ce félin est un guépard, il en découle donc qu'il est rapide. Ne vous faites pas distraire par des caractéristiques d'autres félins.",
+    "hint": "La classification de catégorie est cruciale ici."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le repas du jour ?",
+    "prompt": "Tous les lundis, le repas est du poulet. Aujourd'hui est lundi.",
+    "options": [
+      "Le repas est du poisson",
+      "Le repas est du poulet",
+      "On ne peut pas savoir",
+      "Le repas est du bœuf"
+    ],
+    "answer": "Le repas est du poulet",
+    "explanation": "C'est un syllogisme évident qui utilise la régularité d'un événement. Puisque nous savons qu'aujourd'hui est lundi, ce doit être un jour de poulet, en conformité avec la règle donnée. Ne soyez pas trompé par d'autres jours ou options de repas similaires.",
+    "hint": "Identifiez la constance des jours avec leur repas."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel animal est domestiqué ?",
+    "prompt": "Tous les chiens sont domestiqués. Rex est un chien.",
+    "options": [
+      "Rex est sauvage",
+      "Rex est domestiqué",
+      "Rex est un chat",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Rex est domestiqué",
+    "explanation": "C'est un syllogisme simple où tous les chiens, et donc Rex, sont domestiqués. Ne confondez pas le groupe de tous les chiens avec d'autres animaux, ce qui pourrait vous induire en erreur.",
+    "hint": "Transférez les propriétés du groupe à l'individu."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel vêtement est neuf ?",
+    "prompt": "Tous les pantalons disponibles dans ce magasin sont neufs. Ce vêtement est un pantalon.",
+    "options": [
+      "Ce vêtement est usé",
+      "Ce vêtement est vieux",
+      "Ce vêtement est neuf",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce vêtement est neuf",
+    "explanation": "En analysant que tous les pantalons dans le magasin sont neufs, et que le vêtement en question est un pantalon, il est déduit qu'il est neuf. Ne mélangez pas les catégories de vêtements proposées.",
+    "hint": "Assurez-vous de respecter la catégorie 'pantalon'."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel animal aime l'eau ?",
+    "prompt": "Tous les canards aiment l'eau. Gilbert est un canard.",
+    "options": [
+      "Gilbert n'aime pas l'eau",
+      "Gilbert aime l'eau",
+      "Gilbert est un chat",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Gilbert aime l'eau",
+    "explanation": "Ce syllogisme montre que si tous les canards aiment l'eau et que Gilbert est un canard, alors logiquement, Gilbert aime l'eau. Ne confondez pas l'espèce et d'autres actions spécifiques.",
+    "hint": "Assurez-vous de suivre les caractéristiques intrinsèques de l'espèce."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle ville est la plus peuplée ?",
+    "prompt": "Paris a plus d'habitants que Lyon. Lyon a plus d'habitants que Nice.",
+    "options": ["Paris", "Lyon", "Nice", "Toutes sont égales"],
+    "answer": "Paris",
+    "explanation": "Le fait que Paris ait plus d'habitants que Lyon, et celui-ci plus que Nice, communique clairement que Paris est la ville la plus peuplée. Ne vous faites pas distraire en pensant que Nice pourrait soudainement devenir plus grande.",
+    "hint": "Classez par la taille de la population."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel animal vole ?",
+    "prompt": "Tous les pigeons volent. Cette colombe est un pigeon.",
+    "options": [
+      "Cette colombe vole",
+      "Cette colombe ne vole pas",
+      "Cette colombe est un chat",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette colombe vole",
+    "explanation": "Comme tous les pigeons volent et que la colombe en question est un pigeon, elle vole aussi. Les erreurs peuvent survenir si on est distrait par la redéfinition de l'espèce après l'affirmation initiale.",
+    "hint": "Respectez la relation du groupe à l'individu."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le moins rapide ?",
+    "prompt": "Alice court moins vite que Sophie. Sophie court moins vite que Lucas.",
+    "options": ["Alice", "Sophie", "Lucas", "Ils courent à la même vitesse"],
+    "answer": "Alice",
+    "explanation": "Alice est la moins rapide car elle court moins vite que Sophie, qui elle-même court moins vite que Lucas. Il est crucial de maintenir la chaîne de comparaison telle quelle et ne pas la renverser.",
+    "hint": "Établissez le rang de vitesse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle équipe est en tête ?",
+    "prompt": "Les lions ont plus de points que les tigres. Les tigres ont plus de points que les ours.",
+    "options": ["Lions", "Tigres", "Ours", "Ils ont tous le même score"],
+    "answer": "Lions",
+    "explanation": "Selon la chaîne de supériorité par points, les lions sont en tête, suivis des tigres et des ours. Ne vous laissez pas induire en erreur par l'ordre des mots plutôt que l'ordre de points.",
+    "hint": "Formez une chaîne de points descendants."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle maison est à étage ?",
+    "prompt": "Toutes les maisons du quartier A ont un étage. Cette maison est dans le quartier A.",
+    "options": [
+      "Cette maison n'a pas d'étage",
+      "Cette maison a un étage",
+      "Cette maison est dans le quartier B",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette maison a un étage",
+    "explanation": "Par définition du quartier A, toutes les maisons y ont un étage, donc cette maison en a aussi un. Ne vous laissez pas tromper en transposant les caractéristiques d'un autre quartier.",
+    "hint": "Les règles générales du quartier déterminent la conclusion."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le jour suivant ?",
+    "prompt": "Si aujourd'hui est jeudi, demain est vendredi.",
+    "options": ["Vendredi", "Samedi", "Jeudi", "Dimanche"],
+    "answer": "Vendredi",
+    "explanation": "Nous avons une relation direct de termes conditionnels: lorsque le jour 'aujourd'hui' est jeudi, le suivant est donc vendredi. Veillez à ne pas confondre avec d'autres jours sans la confirmation de l'ordre initial.",
+    "hint": "Suivez simplement l'ordre des jours de la semaine."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel animal est un mammifère ?",
+    "prompt": "Tous les lions sont des mammifères. Ce spécimen est un lion.",
+    "options": [
+      "Ce spécimen est un reptile",
+      "Ce spécimen est un mammifère",
+      "Ce spécimen est un oiseau",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce spécimen est un mammifère",
+    "explanation": "Puisque tous les lions sont des mammifères et que ce spécimen est un lion, il est nécessairement un mammifère. Assurez-vous de ne pas reléguer par inadvertance un membre du groupe à une autre catégorie non définie.",
+    "hint": "Appliquez l'appartenance de groupe aux sous-catégories."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui gagne le plus ?",
+    "prompt": "Thomas gagne plus d'argent que Léa. Léa gagne plus d'argent que Alex.",
+    "options": ["Thomas", "Léa", "Alex", "Tous gagnent autant"],
+    "answer": "Thomas",
+    "explanation": "Thomas est le plus rémunéré, car chacun des liens de comparaison indique qu'il domine le restant du groupe. Il ne faut pas renverser cette suite logique par inadvertance dans la réponse.",
+    "hint": "Suivez la hiérarchie de revenus clairement énoncée."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le placement final de l'équipe C ?",
+    "prompt": "L'équipe A a terminé avant l'équipe B. L'équipe B a terminé avant l'équipe C. L'équipe C n'est pas première.",
+    "options": ["Première", "Deuxième", "Troisième", "Quatrième"],
+    "answer": "Troisième",
+    "explanation": "La structure par transitivité place l'équipe C en troisième position car les équipes A et B les ont précédées. Aucune révision de l'ordre initial ne doit être faite sous peine d'erreur.",
+    "hint": "Reconstituez le rang en fonction des informations données."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus jeune ?",
+    "prompt": "Anna est plus âgée que Sonia. Sonia est plus jeune qu'Émilie. Anna est plus jeune qu'Émilie.",
+    "options": ["Anna", "Sonia", "Émilie", "Sonia et Anna ont le même âge"],
+    "answer": "Sonia",
+    "explanation": "La chaîne de comparaison montre qu'Anna > Sonia et Émilie > Sonia, ce qui signifie que Sonia est la plus jeune. Ne confondez pas la relation comparative de diffusion entre Anna et Émilie sans suivre les instructions données.",
+    "hint": "Identifiez les inégalités pour structurer un arbre d'âge."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel est le plus coûteux ?",
+    "prompt": "Le sac A est plus cher que le sac B. Le sac B est plus cher que le sac C. Le sac C est plus cher que le sac D.",
+    "options": ["Sac A", "Sac B", "Sac C", "Sac D"],
+    "answer": "Sac A",
+    "explanation": "Alors que chaque sac est plus cher que le suivant, cela revient à dire que le sac A est le plus coûteux. Assurez-vous de suivre précisément le chemin donné sans faire d'hypothèses, surtout lorsqu'à une remise confuse.",
+    "hint": "Classez-les par prix décroissant."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est la plus petite ?",
+    "prompt": "Lucie est plus grande que Marie. Marie est plus petite qu'Anne. Lucie est plus petite qu'Anne.",
+    "options": ["Lucie", "Marie", "Anne", "Lucie et Marie ont la même taille"],
+    "answer": "Marie",
+    "explanation": "Les éléments de comparaison sont tels que Lucie > Marie et Anne > Marie, ce qui signifie que Marie est la plus petite dans ce groupe donné. Ne jugez pas individuellement en tenant compte de l'organisation secondaire.",
+    "hint": "Construisez une pyramide de taille à partir des comparaisons."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle couleur appartient à quel objet ?",
+    "prompt": "Le parasol bleu est à droite de la nappe rouge. La nappe rouge est à gauche de la table verte. La chaise jaune est devant la nappe rouge.",
+    "options": ["La nappe est dans le coin", "Le parasol est devant", "La chaise est sous la table", "Toutes les couleurs sont mélangées"],
+    "answer": "La chaise est sous la table",
+    "explanation": "Les relations de position dans le texte montrent que la nappe rouge est entourée des autres éléments. La chaise étant devant, on comprend qu'elle est devant la nappe et sous la table. Attention à ne pas mélanger les emplacements et les objets.",
+    "hint": "Visualisez les positions en créant un plan logistique."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle règle peut-on suivre ?",
+    "prompt": "Si A alors B. Si B alors non-C. Si non-C alors D.",
+    "options": ["Si A alors C", "Si A alors non-D", "Si non-B alors non-D", "Si non-D alors B"],
+    "answer": "Si A alors non-D",
+    "explanation": "En suivant les enchaînements, la chaîne logique aboutit à : A entraîne B, B entraîne non-C, et non-C entraîne D. Cela montre qu'avec A, non-D doit être la conclusion logique. Vérifiez chaque lien avant de faire une déclaration alternative.",
+    "hint": "Dessinez les chaînes de syllogisme pour une clarté accrue."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le second pour la course ?",
+    "prompt": "X dépasse Y mais reste derrière Z. Z est rattrapé par W qui se trouve derrière.",
+    "options": ["X", "Y", "Z", "W"],
+    "answer": "Z",
+    "explanation": "La séquence montre : X est devant Y mais derrière Z et Z est juste devant W. Donc, Z est second. Conservez l'ordre de dépassement sans mélanger les positions.",
+    "hint": "Reconstituer les places en imaginant la course."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui part à la mer ?",
+    "prompt": "Si Paul va à la mer, Marie y va aussi. Si Marie y va, John n'y va pas. Paul va à la mer.",
+    "options": ["Marie et John", "Marie uniquement", "Paul uniquement", "Paul et Marie"],
+    "answer": "Paul et Marie",
+    "explanation": "Ajouter les conditions montre que puisque Paul part à la mer, Marie y va aussi mais John ne le peut pas. Ne mélangez pas ceux qui suivent par logique ceux qui sont écartés d'une telle manière.",
+    "hint": "Entrelacez les relations entre chaque déclaration."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui a le meilleur score ?",
+    "prompt": "A a plus de points que B. B a moins de points que C. C a plus de points que D.",
+    "options": ["A", "B", "C", "D"],
+    "answer": "C",
+    "explanation": "Suivant notre comparatif de soi, C reste omniprésent dans la section les plus élevés comparativement. Oublier l'ordre de classement possible pourrait ruiner la prédiction.",
+    "hint": "Établissez un ordre clair à partir de la hiérarchie des points."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est inactif ?",
+    "prompt": "Paul reste si Pierre va au parc. Si Pierre reste, Marie part. Pierre part au parc.",
+    "options": ["Paul reste", "Marie part", "Pierre reste", "Tous partent"],
+    "answer": "Marie part",
+    "explanation": "Puisque Pierre en se rendant au parc force Paul à ne pas partir et que Marie partira puisque Pierre sort, Marie est effectivement inactive. Assurez-vous de différencier clairement les conditions déclenchantes de l'activité.",
+    "hint": "Multipliez d'étape en étape pour suivre chaque action et réaction."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle personne a le meilleur salaire ?",
+    "prompt": "Jean gagne moins que Pierre. Pierre gagne moins que Dominique.",
+    "options": ["Jean", "Pierre", "Dominique", "Ils ont le même salaire"],
+    "answer": "Dominique",
+    "explanation": "En raison des résultats comparatifs, il est manifeste que Dominique détient le maximum de gain. La comparaison des sans égal n’est acceptable, lorsque chaque comparaison apporte une justification exacte.",
+    "hint": "N'omettez pas les références globales des bénéfices."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle place avez-vous après ce dépassement ?",
+    "prompt": "Dans une course, vous doublez le troisième juste avant la fin.",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "3ème",
+    "explanation": "En doublant le troisième, vous devenez le troisième vous-même derrière les deux premiers. Ne tombez pas dans le piège de devenir premier en doublant le troisième seulement.",
+    "hint": "Réfléchissez aux positions échangées, pas aux promotions."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'âge d'Étienne aujourd'hui ?",
+    "prompt": "Étienne a deux fois l'âge de son fils. Dans 5 ans, il aura 1,5 fois son âge.",
+    "options": ["30", "35", "40", "45"],
+    "answer": "30",
+    "explanation": "Soit f l'âge du fils. Aujourd'hui Étienne = 2f. Dans 5 ans, 2f + 5 = 1.5(f + 5). Résolvez pour trouver f = 10, donc Étienne est maintenant 30 ans. Ne mélanger pas les chiffres donnés avec le piège de suffixer par erreurs d'arithmétique.",
+    "hint": "Établissez une équation avec l'âge du fils."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'âge du fils ?",
+    "prompt": "Maurice est 3 fois plus âgé que son fils. Dans 15 ans, la moitié de l'âge combiné sera 45.",
+    "options": ["15", "20", "25", "30"],
+    "answer": "15",
+    "explanation": "La moitié de l'âge combiné sera de 45. Trois fois l'âge du fils plus 15 donne 45. Cela se résout en 15 ans. Ne vous laissez pas distraire par la confusion possible causée par les mots du problème.",
+    "hint": "Combiner les âges pour former une équation."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien d'années jusqu'au double d'âge ?",
+    "prompt": "Lorsque Sophie aura 30 ans, sa mère aura deux fois son âge. Aujourd'hui, Sophie a 20 ans.",
+    "options": ["Aujourd'hui", "Dans 5 ans", "Dans 10 ans", "Dans 15 ans"],
+    "answer": "Dans 10 ans",
+    "explanation": "Si Sophie a aujourd'hui 20 ans, dans 10 ans - soit à 30 ans, sa mère aura 60 ans, son double. Attention à ne pas se tromper en confondant l'âge futur ou passé.",
+    "hint": "La question est sur le laps de temps."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Où se trouve exactement le voleur ?",
+    "prompt": "Le porteur de chapeau se cache derrière celui avec l'écharpe. Celui avec le manteau est à gauche du porteur d'écharpe.",
+    "options": ["À gauche", "Au centre", "À droite", "Introuvable"],
+    "answer": "À gauche",
+    "explanation": "Comme le manteau est à gauche de l'écharpe et que c'est derrière celle-ci que le chapeau est, l'emplacement exact du voleur est déterminé par exclusion à gauche, étant la position adjacente donnée.",
+    "hint": "Reconstituer les positions en utilisant des éléments maîtres."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien chaque frère a-t-il de sœurs ?",
+    "prompt": "Marie a deux frères nommés Thomas et Luc, qui eux ont trois sœurs dont Marie.",
+    "options": ["Une", "Deux", "Trois", "Quatre"],
+    "answer": "Deux",
+    "explanation": "Marie, étant l'une des trois sœurs, signifie donc pour Thomas et Luc que chacun a deux autres sœurs. Le piège ici est de ne pas compter Marie comme une sœur pour elle-même.",
+    "hint": "Rappelez-vous que Marie ne compte pas comme sa propre sœur."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chats ?",
+    "prompt": "Il y a deux fois plus de chiens que de chats dans la maison. Si on ajoute 3 chats, il y aura une égalité entre chats et chiens.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Si ajouter 3 chats équivalut à l'égalité, l'idée est que initialement il y avait 3 chats. La multiplication par deux des chiens repose sur cet unique point de convergence. Ne laissez pas le scénario plus large fausser vos calculs de proportion.",
+    "hint": "Formez des équations autour de la relation double."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien d'animaux crois-je au champ ?",
+    "prompt": "Vois 13 bœufs dans le champ si 2 de moins que trois fois les vaches plus 1.",
+    "options": ["2", "4", "6", "8"],
+    "answer": "4",
+    "explanation": "Ce qui est 13 équivaut à la formulation 3 fois x (vaches) moins 2 avec 1 additionné encore. En manipulant l'équation pour résoudre donne 4 vaches. Attention à ne pas ignorer le facteur de correction par moins 2.",
+    "hint": "Réarrangez les relations de facteur et ajustement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel âge avait Chloé l'année dernière ?",
+    "prompt": "Chloé a 5 ans de moins que le triple de l'âge de sa fille. L'année dernière, le double de l'âge de sa fille était 20.",
+    "options": ["15", "25", "30", "35"],
+    "answer": "25",
+    "explanation": "Résolvez l'équation montrant l'an dernier, soit le double de f égal à 20. Aujourd'hui, f = 11 alors Chloé = 3x -5 ou 25 doit avoir été l'an dernier. Ne confondez pas le résultat actuel et celui de l'an précédent.",
+    "hint": "Soyez précis avec le temps des énoncés et les années précédentes."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle position entre vous deux ?",
+    "prompt": "Jean double le dernier coureur. Ensuite, Rathiana fait de même avec la même personne.",
+    "options": ["Jean 1er, Rathiana 2e", "Jean dernier, Rathiana dernier", "Jean et Rathiana 1ers", "Jean 2e, Rathiana 3e"],
+    "answer": "Jean 2e, Rathiana 3e",
+    "explanation": "Jean reçoit enfin la deuxième place car il dépassait le dernier, ensuite Rathiana la suit sans dépasser Jean. En dirigeant l'analyse ici, nuite à réaliser qu'ils vont partager pour contourner dans les positions.",
+    "hint": "Réfléchissez à quelle place chaque coureur occupait originellement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le prochain chiffre de la suite logique ?",
+    "prompt": "1, 3, 6, 10, 15, 21, ...",
+    "options": ["23", "26", "28", "31"],
+    "answer": "28",
+    "explanation": "Les nombres sont ajoutés par ordre de croissance (1, 2, 3, 4, 5, 6 ...) donc 21 est le résultat de 6. Par continuation, le chiffre suivant sera 21 +7, produisant par extension 28. Ne remplacez pas, au lieu de prendre, cette figure croissante à plus petite échelle.",
+    "hint": "Continuez la succession de plus un dans chaque série."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le prochain chiffre dans le modèle arithmétique ?",
+    "prompt": "2, 7, 12, 17, 22, ...",
+    "options": ["24", "27", "30", "29"],
+    "answer": "27",
+    "explanation": "Les nombres continus ont 5 segments supplémentaires à chaque intervalle. Le suivant qui suit donc logiquement 22 n'est donc rien d'autre qui vient que 27 dans la série anticipée. Confondez pas ce cadre progressif dans un autre sens ou par manipulation.",
+    "hint": "Ajoutez le même nombre constant pour continuer le modèle."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle somme conservez-vous sous forme nette ?",
+    "prompt": "En entamant une somme dans trois semaines avec 60 euros, vous perdez 5 euros par jour pendant les premiers 5 jours. Ensuite, 10 euros pendant le reste de la période.",
+    "options": ["0 euros", "15 euros", "10 euros", "5 euros"],
+    "answer": "5 euros",
+    "explanation": "Avec un contexte de trois semaines converti en jours, commencez par soustraire une perte de 25 initialement, avec la continuation de la dernière pour par semaine 140 en 14 jours. Ce qui laisse un résultat net final de 5 euros.",
+    "hint": "Évaluez l'impact sur chaque semaine."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Comment départager 27 objets de même taille ?",
+    "prompt": "Il y a deux bassins de 5 places disponibles. Et une autre surface où vous pouvez les placer.",
+    "options": ["Regroupez en un", "Créez quatre ensembles", "Divisez trois fois", "Deux rangées vont suffire"],
+    "answer": "Divisez trois fois",
+    "explanation": "Pour des commodités et agencements, si seulement deux bassins à remplir la division générale des objets permet un tri partir trois pour 9 objets restants. Ne rejeter pas les facteurs potentiels divisant sans penser qu'il y aura une égalité immédiate.",
+    "hint": "Pensez aux congruences et symétries fournies."
+  }
+]
+```

@@ -1,0 +1,372 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 12 + 23 ?",
+        "expression": "12 + 23",
+        "options": ["33", "35", "37", "28"],
+        "answer": "35",
+        "explanation": "Additionner 12 et 23 revient à calculer (10 + 2) + (20 + 3). En commençant par additionner les dizaines : 10 + 20 = 30, puis les unités : 2 + 3 = 5. Le total est donc 35.",
+        "hint": "Ajoute d'abord les dizaines puis les unités."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 45 - 19 ?",
+        "expression": "45 - 19",
+        "options": ["24", "26", "28", "25"],
+        "answer": "26",
+        "explanation": "La soustraction 45 - 19 peut se revoir comme 45 - 20 + 1. En effet, 45 - 20 = 25, et 25 + 1 = 26. Cela évite d'oublier la retenue.",
+        "hint": "Enlève 20 puis ajoute 1."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 7 × 8 ?",
+        "expression": "7 × 8",
+        "options": ["54", "56", "58", "48"],
+        "answer": "56",
+        "explanation": "Multipliez 7 par 8. Cela équivaut à (7 × 10) - (7 × 2) = 70 - 14 = 56. La tentation est d'oublier de bien réduire après le décalage.",
+        "hint": "Pense à 7 fois 10 moins 7 fois 2."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 81 ÷ 9 ?",
+        "expression": "81 ÷ 9",
+        "options": ["8", "9", "10", "7"],
+        "answer": "9",
+        "explanation": "81 divisé par 9 donne bien 9, car 9 × 9 = 81. Le rappel: un oubli courant est de ne pas vérifier ses multiplications basiques.",
+        "hint": "9 multiplié par quoi donne 81 ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "50 % de 120 égale combien ?",
+        "expression": "0,5 × 120",
+        "options": ["60", "70", "80", "50"],
+        "answer": "60",
+        "explanation": "50 % c'est la moitié. Ainsi, 120 ÷ 2 = 60. Le piège est de confondre avec des calculs multi-pourcentages.",
+        "hint": "50 % équivaut à diviser par 2."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 34 × 2 ?",
+        "expression": "34 × 2",
+        "options": ["68", "64", "72", "70"],
+        "answer": "68",
+        "explanation": "La multiplication 34 × 2 peut être vue comme 30 × 2 + 4 × 2 = 60 + 8 = 68. L'erreur typique est d'ignorer une partie du décalage.",
+        "hint": "Décompose en 30×2 et 4×2 puis ajoute."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien fait 90 ÷ 15 ?",
+        "expression": "90 ÷ 15",
+        "options": ["6", "5", "4", "7"],
+        "answer": "6",
+        "explanation": "Diviser 90 par 15 fait 6 car 15 × 6 = 90. Une faute fréquente est de mélanger les facteurs division/multiplication.",
+        "hint": "Quel nombre multiplié par 15 donne 90 ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 48 - 23 ?",
+        "expression": "48 - 23",
+        "options": ["25", "24", "27", "26"],
+        "answer": "25",
+        "explanation": "Effectuer 48 - 23 c'est identique à 48 - 20 - 3 = 28 - 3 = 25. Un possible piège consiste à oublier la décomposition en dizaines.",
+        "hint": "Enlève 20 puis 3 à 48."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la racine carrée de 64 ?",
+        "expression": "√64",
+        "options": ["6", "8", "10", "12"],
+        "answer": "8",
+        "explanation": "La racine carrée de 64 est 8, car 8 x 8 = 64. Une erreur fréquente vient de ne pas vérifier ce qui pourrait être un carré parfait.",
+        "hint": "Qu'est-ce que vous multipliez par lui-même pour obtenir 64 ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 100 % de 46 ?",
+        "expression": "1 × 46",
+        "options": ["46", "48", "50", "44"],
+        "answer": "46",
+        "explanation": "100 % d'un chiffre est le chiffre lui-même. Ici, 46 reste 46. Attention à reformuler en pourcentage, cela peut soupçonner une tentation de multiplication.",
+        "hint": "100% ne change pas le nombre."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 25 + 34 ?",
+        "expression": "25 + 34",
+        "options": ["59", "58", "60", "61"],
+        "answer": "59",
+        "explanation": "Additionner 25 et 34, revient à 25 + 35 - 1 = 60 - 1 = 59. L'erreur courante serait de mal gérer la somme des unités.",
+        "hint": "Arrondis 34 à 35 puis ajuste."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 9 × 6 ?",
+        "expression": "9 × 6",
+        "options": ["54", "56", "52", "58"],
+        "answer": "54",
+        "explanation": "Multipliez 9 par 6, soit 9 × 6 = 54. Retenir la table de multiplication est crucial pour ne pas faire d'erreur.",
+        "hint": "La table de 9 ; pensez 9 fois 6."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la moité de 66 ?",
+        "expression": "66 ÷ 2",
+        "options": ["32", "33", "31", "34"],
+        "answer": "33",
+        "explanation": "Diviser 66 par 2 donne 33. La division par 2 doit être sans oubli de retenue.",
+        "hint": "Coupez 66 en deux parts égales."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 24 + 33 ?",
+        "expression": "24 + 33",
+        "options": ["57", "56", "58", "59"],
+        "answer": "57",
+        "explanation": "Pour ajouter 24 et 33, commencez par les dizaines : 20 + 30 = 50 et ensuite, les unités : 4 + 3 = 7. Donc 57 est le résultat total. L'oubli de la somme des unités est une erreur sévère.",
+        "hint": "Ajoute d'abord les dizaines."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 18 + 27 ?",
+        "expression": "18 + 27",
+        "options": ["45", "44", "46", "47"],
+        "answer": "45",
+        "explanation": "Calculez 18 + 27 en arrondissant 27 à 30, donc 18 + 30 = 48 ; puis soustrayez 3 pour ajuster, ce qui donne 45. Ce processus minimise le risque d'erreur.",
+        "hint": "Arrondis 27 à 30 puis ajuste."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien fait 11 × 5 ?",
+        "expression": "11 × 5",
+        "options": ["55", "50", "45", "56"],
+        "answer": "55",
+        "explanation": "Multipliez 11 par 5, soit 11 × 5 = 55. Une erreur typique serait de mal multiplier les unités.",
+        "hint": "Pense à 5 fois la dizaine plus 5 de l'unité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 7 × 10 ?",
+        "expression": "7 × 10",
+        "options": ["70", "60", "80", "75"],
+        "answer": "70",
+        "explanation": "Pour 7 multiplié par 10, ajoutez un zéro à 7 : 70. Simple mais facile d'omettre lors de calculs rapides.",
+        "hint": "Ajoute un zéro à 7."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 485 + 317 ?",
+        "expression": "485 + 317",
+        "options": ["802", "792", "803", "804"],
+        "answer": "802",
+        "explanation": "Additionnez d'abord les centaines : 400 + 300 = 700. Puis, les dizaines : 80 + 10 = 90, et enfin les unités : 5 + 7 = 12. Ensuite, 700 + 90 + 12 donne 802. Ne pas aligner les unités peut entraîner des erreurs.",
+        "hint": "Ajoutez d'abord chacune des catégories dix par dix."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 812 - 347 ?",
+        "expression": "812 - 347",
+        "options": ["465", "455", "475", "445"],
+        "answer": "465",
+        "explanation": "Commencez par soustraire les centaines : 800 - 300 = 500. Ensuite, 10 - 40, il faut emprunter sinon : 60 - 40 = 20. Enfin, 2 - 7 avec emprunt donnera 5. La réponse est 465. L'oubli d'emprunt est une erreur classiquement commise.",
+        "hint": "Soustrayez étape par étape, en empruntant si besoin."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien fait 25 % de 360 ?",
+        "expression": "0,25 × 360",
+        "options": ["90", "85", "95", "100"],
+        "answer": "90",
+        "explanation": "Un quart de 360 est 360 divisé par 4. 360 / 4 = 90. Cette méthode demande simplement de diviser correctement par 4 sans égarement arithmétique.",
+        "hint": "Divise le nombre par 4."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Calculer 23 × 12",
+        "expression": "23 × 12",
+        "options": ["276", "268", "266", "280"],
+        "answer": "276",
+        "explanation": "Décomposez 23 × 12 en (20 + 3) × 12 = (20 × 12) + (3 × 12). Cela donne 240 + 36, soit 276. La distraction réside souvent dans l'étape finale d'addition des produits.",
+        "hint": "Décompose en (20+3) et multiplie chaque partie."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 13² ?",
+        "expression": "13²",
+        "options": ["169", "164", "159", "149"],
+        "answer": "169",
+        "explanation": "Le carré de 13 est 13 × 13. Décomposez en (10 + 3)² donc 100 + 60 + 9 = 169. Cligner des calculs croisés prix faute souvent.",
+        "hint": "Décompose en carré de 10, ajout 3 pour particulier."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Fraction 3/4 de 80",
+        "expression": "0.75 × 80",
+        "options": ["60", "70", "50", "55"],
+        "answer": "60",
+        "explanation": "3/4 équivaut à 75 %. Multipliez 75 % par 80 soit 80 × 0.75 = 60. La cause d'erreur survient du mauvais alignement du coefficient percentuel.",
+        "hint": "Utilez 0.75 comme multiplier.",
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 145 ÷ 5 ?",
+        "expression": "145 ÷ 5",
+        "options": ["29", "30", "31", "28"],
+        "answer": "29",
+        "explanation": "Divisez en module : 145 = 100 + 45. Ainsi 100 ÷ 5 = 20 et 45 ÷ 5 = 9. L'addition donne 29. Une simple oublie sufixant calcule pour embrouiller.",
+        "hint": "Diviser 100 et 45 par 5, puis additioner."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 347 + 289 ?",
+        "expression": "347 + 289",
+        "options": ["636", "626", "633", "629"],
+        "answer": "636",
+        "explanation": "Segin, summez les cents : 300 + 200 = 500, ensuite 40 + 80 = 120 et enfin 7 + 9 équivaut à 16. Rendering totals autour 500 + 120 + 16 = 636. Une somme précipité" +
+        "peut amener erreurs lors des dizaines.",
+        "hint": "Ecrivez somme par bloc, commencement contribue."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Multipliez 19 × 15.",
+        "expression": "19 × 15",
+        "options": ["285", "275", "290", "295"],
+        "answer": "285",
+        "explanation": "Admettez 19 comme 20 - 1. Donc (20 - 1) × 15 = 300 - 15 = 285. Le désartioguage est nécessaire lors d'un calcul mental rapide sans erreurs.",
+        "hint": "Appliquez distributive : (20-1) multiplié par 15"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 78 + 146 ?",
+        "expression": "78 + 146",
+        "options": ["224", "214", "234", "220"],
+        "answer": "224",
+        "explanation": "Additionner d'abord 70 + 140 = 210, suivie par l'addition 8 + 6 = 14. Totalizing, 210 + 14 = 224. Parfois, un chiffre source d'erreur vient d'un chiffre suppressé accidentellement.",
+        "hint": "Additionnez les dizaines, puis unités, puis des deux."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la racine carrée de 196 ?",
+        "expression": "√196",
+        "options": ["14", "12", "15", "13"],
+        "answer": "14",
+        "explanation": "La racine carrée de 196 est 14, car 14 × 14 = 196. La reconnaissance des carrés parfaitement organisés et cruciale peuvent aider à éviter des erreurs.",
+        "hint": "Quel est le chiffre qui se multiplie et faire 196 ?"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Multiplier 40 par 14",
+        "expression": "40 × 14",
+        "options": ["560", "550", "570", "540"],
+        "answer": "560",
+        "explanation": "40 × 14 = 40 × (10 + 4) = 400 + 160 = 560. Un calcul méthodique promeut des occurrences d'erreur minime.",
+        "hint": "Divisez en (10+4) facilites operations."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "12 × 13 égale combien?",
+        "expression": "12 × 13",
+        "options": ["156", "152", "148", "162"],
+        "answer": "156",
+        "explanation": "Décomposez 12 × 13 en (10 + 2)(10 + 3) = 120 + 30 + 6 = 156. La simplification par des méthodes distributives contribue à éviter des confusions.",
+        "hint": "Regroupez en (10+2) et (10+3) pour simplifier."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 7 × 24 ?",
+        "expression": "7 × 24",
+        "options": ["168", "158", "178", "160"],
+        "answer": "168",
+        "explanation": "Décortiquez comme : 7 × 20 + 7 × 4 = 140 + 28 = 168. Soulignez l'importance de la vérification en dernière étape.",
+        "hint": "Appliquez (20+4) pour divisorisation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le résultat de (35 + 17) × 2 - 14?",
+        "expression": "(35 + 17) × 2 - 14",
+        "options": ["80", "84", "86", "85"],
+        "answer": "80",
+        "explanation": "Ajoutez 35 et 17 : 52. Multipliez le résultat fois 2 : 52 × 2 = 104. Déduisez 14 pour obtenir 80. Ne pas tenir compte de la priorité des opérations aboutit à erreurs de 162.",
+        "hint": "Assurez-vous de combiner les additions avant de multiplicer."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 48 × 25 ?",
+        "expression": "48 × 25",
+        "options": ["1200", "1250", "1150", "1230"],
+        "answer": "1200",
+        "explanation": "Pensez à ce produit de 48 x 25 en mettant 25 = 100/4. Donc 48 x 100 / 4 = 4800 / 4 = 1200. Un calcul dein canne est sans faille pour mieux éviter suppressions.",
+        "hint": "Un product de 25 est identique à diviser par 4."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "8 % de 250 combien est-il?",
+        "expression": "0.08 × 250",
+        "options": ["20", "25", "30", "22"],
+        "answer": "20",
+        "explanation": "8 % de 250 est 20. Calculez 250 × 0.08 = 20 pour une compréhension utile de la transformation des pourcents. Conformément, une partie de l'erreur fréquente manquera autour du coefficient.",
+        "hint": "Conversez que 8% est 0.08 en decimal."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "12 × 15 égal combien ?",
+        "expression": "12 × 15",
+        "options": ["180", "178", "190", "185"],
+        "answer": "180",
+        "explanation": "Évaluez 12 × 15 comme 12 × (10 + 5) ou (10 + 2) × 15, chaque segment individu commence à 150 + 30 = 180. Un oubli typique sur le produit environnant peut émerger rapidement.",
+        "hint": "Contemplez 10+5 ou équivalant (10+2)."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Calculer 35% de 180",
+        "expression": "0.35 × 180",
+        "options": ["63", "62", "64", "61"],
+        "answer": "63",
+        "explanation": "Pourcentage 35 % enement, convertirão 0.35 donc 180 x 0.35 = 63. C'est classique d'oublier simplifier la multiplication par conversion fractionnée.",
+        "hint": "Poser numéro decimal équivalent en 0.35"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "5/8 de 240 combien est-il?",
+        "expression": "(5/8) × 240",
+        "options": ["150", "145", "155", "160"],
+        "answer": "150",
+        "explanation": "Convertez la fraction dès 5/8 de 240. Multiply 240 × 5/8 = 1200/8 = 150. L’enjeu est souvent mal évaluer la fraction et sa conversion multip).",
+        "hint": "Conversez avec convertis 5 parts sur 8."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 2^7?",
+        "expression": "2^7",
+        "options": ["128", "127", "130", "126"],
+        "answer": "128",
+        "explanation": "2 élevé à la puissance 7 est calculé comme 2 x 2 x 2 x 2 x 2 x 2 x 2 = 128. La multiplicité exponentielle simplifiée en progression.",
+        "hint": "Multipliez 2 fois sur 7 multiplication."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la racine carrée de 225?",
+        "expression": "√225",
+        "options": ["15", "14", "16", "13"],
+        "answer": "15",
+        "explanation": "Pour la racine carrée de 225 c'est 15 (car 15^2 = 225). Évitez l'erreur d'oublier vérifier nombre carré potential.",
+        "hint": "Quel chiffre en autante produit 225?"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font (47 × 8) − 76 ?",
+        "expression": "(47 × 8) − 76",
+        "options": ["300", "292", "305", "310"],
+        "answer": "300",
+        "explanation": "Effectuez d'abord la multiplication : 47 x 8 = 376. Ensuite, soustrayez 76 pour obtenir 300. L'erreur bien-connue consiste à oublier l'ordre correct des opérations.",
+        "hint": "Prioritisez la multiplication avant soustraction."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font (16 × 18) + 64?",
+        "expression": "(16 × 18) + 64",
+        "options": ["352", "350", "340", "345"],
+        "answer": "352",
+        "explanation": "Résolvez en commençant par 16 x 18 = 288. Additionnez 64 donne 352. N'oubliez pas de vérifier si les chiffres sont réglés avant d'additionner.",
+        "hint": "D'abord multiplication, puis addition."
+    }
+]

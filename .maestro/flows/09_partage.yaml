@@ -1,0 +1,66 @@
+# COP'IQ — E2E Flow 09 : Partage de score (share story)
+# Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-099
+# Prérequis : connecté, vient de compléter un cas (page correction visible)
+
+appId: fr.copiq.app
+---
+- launchApp
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Accéder à un cas et le compléter
+- tapOn:
+    text: "Cas Pratique"
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    index: 0
+    id: "case_card"
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    text: "Commencer"
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Saisir et valider
+- tapOn:
+    id: "answer_text_area"
+- inputText: "Test partage score E2E flow."
+- tapOn:
+    text: "Valider"
+- waitForAnimationToEnd:
+    timeout: 15000
+
+# Page correction : tapper "Partager"
+- tapOn:
+    text: "Partager"
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# La page share story doit s'ouvrir
+- assertVisible:
+    text: "Partager mon score"
+
+# Le RepaintBoundary (story 1080x1920) doit être visible
+- assertVisible:
+    text: "/20"
+
+# Tapper "Partager l'image"
+- tapOn:
+    text: "Partager l'image"
+
+- waitForAnimationToEnd:
+    timeout: 8000
+
+# Le share sheet natif s'ouvre — revenir dans l'app
+- pressKey: Back
+
+- waitForAnimationToEnd:
+    timeout: 2000
+
+# Vérifier que l'app n'a pas crashé
+- assertVisible:
+    text: "COP'IQ"

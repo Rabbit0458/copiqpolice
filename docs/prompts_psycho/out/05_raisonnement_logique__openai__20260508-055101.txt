@@ -1,0 +1,553 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure sur Léa ?",
+        "prompt": "Tous les poissons savent nager. Léa est un poisson.",
+        "options": [
+            "Léa sait nager",
+            "Léa ne sait pas nager",
+            "Léa est un oiseau",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Léa sait nager",
+        "explanation": "Syllogisme simple : nager est une caractéristique universelle des poissons. Puisque Léa est un poisson, elle doit savoir nager. Ne pas conclure cela équivaut à ignorer la transitivité dans un syllogisme.",
+        "hint": "Pensez à l'implication directe des caractéristiques données."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qu'en est-il de Kevin dans la course ?",
+        "prompt": "Kevin a couru plus vite que Paul. Paul a couru plus vite que Sylvie.",
+        "options": [
+            "Sylvie est plus rapide que Kevin",
+            "Kevin est plus rapide que Sylvie",
+            "Paul est plus rapide que Kevin",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Kevin est plus rapide que Sylvie",
+        "explanation": "Si Kevin est plus rapide que Paul, qui est déjà plus rapide que Sylvie, Kevin doit forcément être plus rapide que Sylvie. Le piège est de négliger la chaîne de transitivité des vitesses.",
+        "hint": "Rappelez-vous que l'ordre des vitesses forme une chaîne."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion peut-on tirer ?",
+        "prompt": "Si un verre tombe, alors il se brise. Ce verre est tombé.",
+        "options": [
+            "Le verre ne s'est pas brisé",
+            "Le verre s'est brisé",
+            "On ne peut pas savoir",
+            "Le verre est intact"
+        ],
+        "answer": "Le verre s'est brisé",
+        "explanation": "C'est un exemple de modus ponens : 'Si A alors B'. A étant vrai (le verre tombe), B doit être vrai (il se brise). Le piège est de penser à une exception qui n'est pas mentionnée dans les prémisses.",
+        "hint": "Vérifiez la condition initiale et son occurrence."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est assis devant la salle ?",
+        "prompt": "Lucie est devant Anna. Anna est devant Michel.",
+        "options": [
+            "Michel",
+            "Lucie",
+            "Anna",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Lucie",
+        "explanation": "Lucie est devant Anna, et Anna est elle-même devant Michel. Cela signifie que Lucie est la plus en avant. Le piège serait d'inverser l'ordre de la chaîne logique.",
+        "hint": "Utilisez la chaîne d'ordres pour déterminer la position."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conséquence faut-il tirer ?",
+        "prompt": "Tous les chiens aboient. Max est un chien.",
+        "options": [
+            "Max aboie",
+            "Max ne peut pas aboyer",
+            "Max est silencieux",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Max aboie",
+        "explanation": "Dans ce syllogisme : tous les membres de l'ensemble 'chiens' partagent la caractéristique d'aboyer. Puisque Max appartient à cet ensemble, il doit aboyer. Le piège consisterait à ne pas envisager que cette caractéristique soit universelle parmi les chiens.",
+        "hint": "Rappelez-vous des caractéristiques universelles données."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel café sont-ils prêts à essayer ?",
+        "prompt": "Tous les cafés bio sont appréciés. Ce café est bio.",
+        "options": [
+            "Ce café n'est pas apprécié",
+            "Ce café est apprécié",
+            "Les cafés bio ne sont pas appréciés",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce café est apprécié",
+        "explanation": "Comme ce café est bio, et que tous les cafés bio sont appréciés, il l'est par transitivité. Le piège est de douter de cette logique en cherchant une exception inexistante dans l'énoncé.",
+        "hint": "Considérez la catégorie générale décrite."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Comment Marie ira-t-elle à la fête ?",
+        "prompt": "Si Marie prend le bus, elle arrive à temps. Marie a pris le bus.",
+        "options": [
+            "Marie est en retard",
+            "Marie arrivera à temps",
+            "Marie ne pourra pas venir",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marie arrivera à temps",
+        "explanation": "C'est un cas de modus ponens. L'implication donnée : 'si elle prend le bus, alors elle arrive à temps'. A étant le cas, B est donc vrai. Le piège est de douter de cette implication directe.",
+        "hint": "Focus sur l'implication correcte."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Peut-on déduire quelque chose de Pascal ?",
+        "prompt": "Seuls les excellents élèves comprennent ce concept. Pascal le comprend.",
+        "options": [
+            "Pascal est un élève moyen",
+            "Pascal est un excellent élève",
+            "On ne peut pas savoir",
+            "Pascal est un mauvais élève"
+        ],
+        "answer": "Pascal est un excellent élève",
+        "explanation": "Ce cas montre une implication indirecte : comprendre ce concept est exclusif aux excellents élèves. Pascal faisant partie de ces rares élèves, il est nécessairement un excellent élève. Le piège est d'inclure d'autres catégories non mentionnées.",
+        "hint": "Concentrez-vous sur les qualifications exclusives."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que sait-on sur le livre de Sophie ?",
+        "prompt": "Tous les livres en vente à la librairie sont neufs. Le livre de Sophie est en vente là-bas.",
+        "options": [
+            "Le livre de Sophie est d'occasion",
+            "Le livre de Sophie est neuf",
+            "On ne peut pas savoir",
+            "Le livre de Sophie est vieux"
+        ],
+        "answer": "Le livre de Sophie est neuf",
+        "explanation": "Puisque seuls des livres neufs sont en vente à la librairie, et que le livre de Sophie est parmi eux, il doit être neuf. Le piège réside dans le doute insufflé par la possibilité d'un stock mixte, non mentionné.",
+        "hint": "Pensez à l'exclusivité des catégories données."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Peut-on être certain pour l'horloge ?",
+        "prompt": "Si une horloge fonctionne bien, elle affiche l'heure exacte. Cette horloge fonctionne bien.",
+        "options": [
+            "Elle affiche une heure incorrecte",
+            "Elle affiche l'heure exacte",
+            "On ne peut pas savoir",
+            "Elle ne fonctionne pas"
+        ],
+        "answer": "Elle affiche l'heure exacte",
+        "explanation": "Utilisation du modus ponens : condition A vraie entraîne B. Ici, une horloge fonctionnant bien affichant l'heure exacte est vérifiée. Le piège serait de douter du bon fonctionnement sans autre preuve contraire.",
+        "hint": "Utilisez la règle d'implication directe."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion tirer à propos de Léo ?",
+        "prompt": "Aucune personne végétalienne ne consomme de viande. Léo est végétalien.",
+        "options": [
+            "Léo mange de la viande",
+            "Léo ne mange pas de viande",
+            "On ne peut pas savoir",
+            "Léo est un carnivore"
+        ],
+        "answer": "Léo ne mange pas de viande",
+        "explanation": "Logique par exclusion : appartenir à un groupe refusant la viande implique que Léo suit ce mode de vie. L'erreur pourrait être de penser que certaines personnes du groupe échappent à cette règle.",
+        "hint": "Envisagez l'appartenance au groupe défini."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Léo a-t-il du chocolat ?",
+        "prompt": "Tous les enfants qui ont des bonbons ont aussi du chocolat. Léo a des bonbons.",
+        "options": [
+            "Léo a des bonbons mais pas de chocolat",
+            "Léo n'a pas de chocolat",
+            "Léo a du chocolat",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Léo a du chocolat",
+        "explanation": "Ce syllogisme indique que posséder des bonbons est systématiquement associé à du chocolat. Ainsi, Léo possédant des bonbons, a également du chocolat. Le piège serait de supposer une exception non décrite.",
+        "hint": "Pensez au lien systématique donné."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qu'en est-il des pommes ?",
+        "prompt": "Toutes les pommes vertes sont acides. Ces pommes sont vertes.",
+        "options": [
+            "Ces pommes sont douces",
+            "Ces pommes sont acides",
+            "Ces pommes ne sont pas acides",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ces pommes sont acides",
+        "explanation": "En considérant que toutes les pommes vertes partagent l'acidité, cette caractéristique se transfère par transitivité. L'erreur classique serait d'ignorer cette uniformité attribuée à une couleur donnée.",
+        "hint": "Appliquez directement la propriété partagée donnée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle information concernant Tom ?",
+        "prompt": "Si Tom joue du piano, alors il aime la musique. Tom aime la musique.",
+        "options": [
+            "Tom ne joue pas du piano",
+            "Tom joue du piano",
+            "Tom peut jouer du piano",
+            "On ne peut rien conclure"
+        ],
+        "answer": "On ne peut rien conclure",
+        "explanation": "Les prémisses donnent une implication : ‘piano implique musique’. Inversement, aimer la musique ne garantit pas que Tom joue du piano, d'où l'absence de déduction. Le piège est de commettre un ancien postulat affirmant l'inverse de A entraîne B.",
+        "hint": "Vérifiez si réciproque est exprimée explicitement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que penser de la température dehors ?",
+        "prompt": "Si le soleil brille, alors il fait chaud. Le soleil brille.",
+        "options": [
+            "Il fait froid",
+            "Il fait chaud",
+            "On ne peut pas savoir",
+            "Il pleut"
+        ],
+        "answer": "Il fait chaud",
+        "explanation": "Nous appliquons un modus ponens : puisque A (le soleil brille) est vrai, B (il fait chaud) suit logiquement. Une erreur serait de douter de ce lien en pensant à des exceptions non mentionnées.",
+        "hint": "Vérifiez l'implication directe donnée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que sait-on sur l'eau de ce lac ?",
+        "prompt": "Si l'eau d'un lac est pure, elle est potable. L'eau de ce lac est pure.",
+        "options": [
+            "Elle n'est pas potable",
+            "Elle est potable",
+            "On ne peut pas savoir",
+            "Elle est polluée"
+        ],
+        "answer": "Elle est potable",
+        "explanation": "C'est un modus ponens : la pureté de l'eau implique qu'elle est potable. Le piège serait d'oublier ce lien systématique et de douter sans base d'un problème potentiel pas mentionné.",
+        "hint": "Considérez la propriété conditionnelle donnée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'état du potager ?",
+        "prompt": "Si un jardin est bien arrosé, les plantes y poussent bien. Ce potager est bien arrosé.",
+        "options": [
+            "Les plantes poussent mal",
+            "Les plantes y poussent bien",
+            "On ne peut pas en être sûr",
+            "Les plantes ne peuvent pas y pousser bien"
+        ],
+        "answer": "Les plantes y poussent bien",
+        "explanation": "En utilisant le modus ponens, le fait qu'un jardin bien arrosé permette une bonne pousse signifie que ce potager en particulier a des plantes qui poussent bien. Le piège serait de s'attacher à une exception non indiquée.",
+        "hint": "Prenez note de la condition et de son résultat."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le bon ordre des athlètes ?",
+        "prompt": "Lili court plus vite que Nina, Nina court plus vite que Sophie, et Sophie court plus vite qu'Alice.",
+        "options": [
+            "Alice > Sophie > Lili > Nina",
+            "Lili > Nina > Sophie > Alice",
+            "Nina > Lili > Alice > Sophie",
+            "Sophie > Lili > Nina > Alice"
+        ],
+        "answer": "Lili > Nina > Sophie > Alice",
+        "explanation": "Pour déterminer l'ordre correct, il faut suivre la chaîne de causalité indiquée par qui est plus rapide que qui : Lili > Nina > Sophie > Alice. Une erreur consisterait à confondre les comparaisons entre les coureurs.",
+        "hint": "Suivez le chemin des comparaisons de vitesse."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le/la plus âgé(e) ?",
+        "prompt": "Matthieu est plus jeune que Claire. Claire est plus âgée que Julie. Julie est plus jeune que Pierre.",
+        "options": [
+            "Matthieu",
+            "Claire",
+            "Julie",
+            "Pierre"
+        ],
+        "answer": "Pierre",
+        "explanation": "Pierre doit être plus âgé que Julie, qui est elle-même plus jeune que Claire. Comme Matthieu est encore plus jeune, Pierre est donc le plus âgé parmi eux. La confusion pourrait venir de ne pas bien ordonner les relations.",
+        "hint": "Visualisez un ordre de grand à petit dans l'information donnée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est la plus rapide ?",
+        "prompt": "Aline court plus vite que Marie. Marie court plus vite que Laura. Laura court plus vite que Sophie.",
+        "options": [
+            "Aline",
+            "Sophie",
+            "Marie",
+            "Laura"
+        ],
+        "answer": "Aline",
+        "explanation": "En établissant rapidement les relations, nous comprenons qu'Aline est plus rapide que Marie qui elle-même est plus rapide que Laura et Sophie. Le piège serait d'oublier les relations transitoires menant à Aline comme la plus rapide.",
+        "hint": "Combinez toutes les comparaisons données."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le/la plus petit(e) ?",
+        "prompt": "Emma est plus grande que Clara. Clara est plus grande que Max. Max est plus grand que Louis.",
+        "options": [
+            "Emma",
+            "Clara",
+            "Max",
+            "Louis"
+        ],
+        "answer": "Louis",
+        "explanation": "En analysant chaque énoncé, nous comprenons que Louis est plus petit que Max qui est le suivant dans l'échelle, puis Clara et enfin Emma. Une erreur courante consisterait à mal aligner les comparaisons.",
+        "hint": "Tracez un diagramme des tailles."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'âge de Sam ?",
+        "prompt": "Sam a 5 ans de plus que Tom. Tom a le double de l'âge de Max. Max a 8 ans.",
+        "options": [
+            "13 ans",
+            "16 ans",
+            "26 ans",
+            "21 ans"
+        ],
+        "answer": "21 ans",
+        "explanation": "Max a 8 ans, donc Tom a le double, c'est-à-dire 16 ans. Sam, avec 5 ans de plus que Tom, a 21 ans. Le piège ici pourrait être de calculer les âges sans suivre les relations correctement.",
+        "hint": "Calculez étape par étape en remontant de Max à Sam."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle condition est remplie ?",
+        "prompt": "Si Anne va au cinéma, alors Brice la rejoint. Anne est allée au cinéma.",
+        "options": [
+            "Brice est resté chez lui",
+            "Brice a rejoint Anne",
+            "Anne a été seule",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Brice a rejoint Anne",
+        "explanation": "Cette situation emploie un modus ponens : la condition posée se réalise car Anne est allée au cinéma, donc Brice la rejoint. Le piège serait de supposer que ne pas être au courant entraîne un échec des conditions.",
+        "hint": "Vérifiez si l'antécédent se réalise dans la situation donnée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le résultat final d'une action ?",
+        "prompt": "Si Julia reste à la maison, elle cuisine. Julia est restée à la maison.",
+        "options": [
+            "Julia ne sait pas cuisiner",
+            "Julia a cuisiné",
+            "Julia n'a pas cuisiné",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julia a cuisiné",
+        "explanation": "Ceci est un emploi classique du modus ponens, indiquant que rester à la maison entraîne automatiquement cuisiner pour Julia. Le piège pourrait être d'imaginer une situation non spécifiée où elle ne cuisine pas.",
+        "hint": "Pensez au conditionnement donné à travers le contexte."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le montant payé par Lin ?",
+        "prompt": "Lin paie trois fois le montant de Sarah. Si Sarah paie 10 euros, combien paie Lin ?",
+        "options": [
+            "10 euros",
+            "20 euros",
+            "30 euros",
+            "40 euros"
+        ],
+        "answer": "30 euros",
+        "explanation": "Lin paie trois fois 10 euros, soit 30 euros. Le piège ici pourrait être de lire 'trois fois plus' comme '30 de plus', menant à un chiffre erroné.",
+        "hint": "Vérifiez la relation multiplicative vs additive."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le/la plus lente ?",
+        "prompt": "Zoe marche moins vite que Jade. Jade est plus rapide que Tina. Mais Tina marche plus lentement que Zoe.",
+        "options": [
+            "Zoe",
+            "Jade",
+            "Tina",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Tina",
+        "explanation": "Bien que Zoe soit moins rapide que Jade, Tina marche encore plus lentement que Zoe. Cela confirme que Tina est la plus lente. Le piège consisterait à mal juxtaposer les comparaisons et à se mélanger dans la chronologie des vitesses.",
+        "hint": "Faites attention aux comparaisons indirectes."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est l'implication correcte ?",
+        "prompt": "Si un animal est un chien, alors il aboie. Ce labrador est un chien.",
+        "options": [
+            "Ce labrador ne peut pas aboyer",
+            "Ce labrador aboie",
+            "On ne peut rien conclure",
+            "Ce labrador miaule"
+        ],
+        "answer": "Ce labrador aboie",
+        "explanation": "Le modus ponens s'applique ici : tous les chiens aboient, et tous les labradors sont inclus dans cet ensemble, donc il aboie. L'erreur serait de présumer une exception non suggérée dans l'énoncé.",
+        "hint": "N'oubliez pas les caractéristiques typiques des ensembles décrits."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Où se trouve Théo dans la course ?",
+        "prompt": "Théo court plus vite que Mina, mais plus lentement que Lucas.",
+        "options": [
+            "Premier",
+            "Deuxième",
+            "Dernier",
+            "Troisième"
+        ],
+        "answer": "Deuxième",
+        "explanation": "Par ce problème de position : Lucas > Théo > Mina. Théo est donc deuxième dans cet arrangement. Le piège consisterait à mal interpréter les indications, en positionnant Théo partout ailleurs.",
+        "hint": "Reconstituez correctement la chaîne de positions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le nombre de bonbons que Sam a ?",
+        "prompt": "Sam a deux fois les bonbons de Paul. Paul a 10 bonbons.",
+        "options": [
+            "5",
+            "10",
+            "20",
+            "30"
+        ],
+        "answer": "20",
+        "explanation": "Paul possède 10 bonbons, donc Sam ayant le double, totalise 20 bonbons. Une erreur commune peut être de penser qu'il détient un autre 'type' de double ou de multiplier incorrectement.",
+        "hint": "Utilisez une simplification de la multiplication ici."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la meilleure position dans la course ?",
+        "prompt": "Si vous dépassez le dernier, quelle place prenez-vous ?",
+        "options": [
+            "Dernier",
+            "Premier",
+            "Avant-dernier",
+            "On ne peut pas savoir"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Techniquement, il est impossible de dépasser celui en toute dernière position sans changer fondamentalement la formation de la course. Le piège ici est de tenter d'imaginer une rechute dans l'ordre mal expliquée dans les conditions actuelles.",
+        "hint": "Penser aux implications du dépassement du dernier en termes de formation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle position Thierry occupe-t-il après ces mouvements ?",
+        "prompt": "Thierry était à gauche, a avancé de trois pas, dépassant deux autres concurrents, puis a été rattrapé par un.",
+        "options": [
+            "Premier",
+            "Deuxième",
+            "Troisième",
+            "Dernier"
+        ],
+        "answer": "Deuxième",
+        "explanation": "Après avoir avancé de trois et dépassé deux places, Thierry se retrouve deux places mieux, puis recule d'une place lorsqu'un seul concurrent le dépasse. Cela le place en deuxième position. La confusion peut provenir des multiples déplacements.",
+        "hint": "Planifier chaque mouvement séparément et suivre l'ordre."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle sera la position de Luc ?",
+        "prompt": "Luc dépasse Nina puis Marie, mais est lui-même rattrapé par Sophie.",
+        "options": [
+            "Premier",
+            "Deuxième",
+            "Troisième",
+            "Quatrième"
+        ],
+        "answer": "Deuxième",
+        "explanation": "En premier lieu, Luc prend la place de Nina, puis de Marie avant d'être repris par Sophie, position qui le laisse à la seconde place. Une des erreurs fréquentes serait d'oublier de tenir compte du mouvement en avant suivi de son compensation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la solution finale de ce problème de logique ?",
+        "prompt": "Pierre peut traverser la ville en nato avec son vélo, tant qu'il ne pleut pas. Mais s'il pleut, il doit marcher. Or, il fait tellement mauvais que marcher devient impossible.",
+        "options": [
+            "Pierre traverse en vélo",
+            "Pierre ne peut pas traverser",
+            "Pierre trouve un moyen illégal de traverser",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Pierre ne peut pas traverser",
+        "explanation": "La situation ici présente un dilemme où les deux options données sont obsolètes pour Pierre : En vélo, il ne peut pas à cause de la pluie, idem pour marcher. Il ne peut donc pas traverser vraiment. Le piège souvent ici est de penser stratégiquement mais illégalement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien d'œufs restent après ceux qui sont mangés ?",
+        "prompt": "Deux œufs sont cuits et quatre encore cru. Si vous en mangez un court, combien reste-t-il ?",
+        "options": [
+            "Un",
+            "Deux",
+            "Trois",
+            "Quatre"
+        ],
+        "answer": "Quatre",
+        "explanation": "Il ne faut pas confondre la distinction entre les œufs cuits, crus et mangés. Après en avoir mangé un, vous avez encore les quatre crus - au total, six œufs restent mais mangé un retiré. Alors quatre… L'erreur serait de les déduire indistinctement les uns des autres."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment la résolution de ce voyage est-elle possible ?",
+        "prompt": "Marie doit visiter cinq pays en dix jours: France, Allemagne, Italie, Espagne et Portugal. Elle ne peut passer qu'un jour par pays mais doit traverser un océan qu'elle ne peut que faire le septième jour.",
+        "options": [
+            "Voir tous les pays pourtant en le faire septième jour",
+            "Ne pas voyager après le premier pays",
+            "Reprogrammer tout son voyage",
+            "Voyager seulement les trois premiers"
+        ],
+        "answer": "Reprogrammer tout son voyage",
+        "explanation": "Avec le besoin fondamental de traverser l'océan, ne pouvant le faire le dernier (sept) jour, tous les plans initiaux échouent. Vous devez donc penser à la reprogrammation pour faire tout en temps. Le piège est de ne penser qu'à supprimer un pays."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Est-il possible de résoudre définitivement cette énigme ?",
+        "prompt": "Tom a 20 euros dans sa main gauche et 10 dans sa droite. S'il perd 5 euros de la droite puis le double dans chaque main, combien a-t-il maintenant ?",
+        "options": [
+            "45 euros",
+            "55 euros",
+            "50 euros",
+            "35 euros"
+        ],
+        "answer": "45 euros",
+        "explanation": "En perdant initialement 5 (main droite), il en reste 5 - puis 10 euros à gauche, soit 15 euros. Ensuite, 20 euros doublent (main gauche) donc 45 euros dans les deux mains au total. L'erreur fréquente est de ne pas calculer la somme de la main droite à première visée."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "À combien de fruits dois-tu parvenir ?",
+        "prompt": "Adam a cinq pommes et en achète trois de plus chaque semaine. Combien en a-t-il après trois semaines ?",
+        "options": [
+            "8",
+            "11",
+            "14",
+            "17"
+        ],
+        "answer": "14",
+        "explanation": "C'est une multiplication d'addition : trois nouvelles pommes chaque semaine x trois, en ajoutant les 5 à disposition initiale : cinq pommes + neuf. Une erreur serait de supprimer le nombre de pommes incorrectement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de membres de leur équipe s'en vont ?",
+        "prompt": "Un tiers de l'équipe marketing a décidé de partir. Si l'équipe est composée de vingt-quatre personnes, combien partent ?",
+        "options": [
+            "8",
+            "6",
+            "5",
+            "12"
+        ],
+        "answer": "8",
+        "explanation": "En diviser 24 par trois, nous découvrons que huit personnes choisissent de partir. Erreur classique d'extrapolation : dire que 6 puisque ce n’est pas au même standard division évoquée."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la somme que peut dépenser Anna ?",
+        "prompt": "Anna dispose de trente billets, chacun de dix euros. Si elle dépense deux tiers de ses billets, combien lui reste-t-il ?",
+        "options": [
+            "100 euros",
+            "150 euros",
+            "200 euros",
+            "300 euros"
+        ],
+        "answer": "100 euros",
+        "explanation": "Anna garde un tiers de ses trente billets : dix entiers x dix euros = cent euros. Le piège était de multiplier incorrectement les deux tiers déjà dépensés et de confondre les chiffres."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien d'années séparatrices ?",
+        "prompt": "Marie a 46 ans, elle est cinq fois plus âgée que Claire l'an passé ? Combien d'années cela détermine-t-il entre elles ?",
+        "options": [
+            "6",
+            "3",
+            "8",
+            "2"
+        ],
+        "answer": "6",
+        "explanation": "Claire avait 9 ans l'an dernier (46 divisé par 5), établir l'actuel séparation où le « âges varie exactement pour six ans ». L'erreur comprendrait l'application incorrecte du calcul doublement donc simplification cette division."
+    }
+]

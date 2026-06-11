@@ -1,0 +1,338 @@
+[
+    {
+        "difficulty": "easy",
+        "text_a": "Rue de l'Église, 69007 Lyon",
+        "text_b": "Rue de l'Église, 69007 Lyon",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "BMW noir immatriculé XY-568-ZR",
+        "text_b": "BMW bleu immatriculé XY-568-ZR",
+        "is_true": false,
+        "explanation": "La couleur du véhicule change : « noir » dans text_a et « bleu » dans text_b. C'est une différence majeure, facile à repérer."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Appartement 14, 75003 Paris",
+        "text_b": "Appartement 14, 75003 Paris",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Clio rouge abandonnée RD-321-BF",
+        "text_b": "Clio jaune abandonnée RD-321-BF",
+        "is_true": false,
+        "explanation": "La couleur du véhicule est différente : « rouge » dans text_a et « jaune » dans text_b. C'est une différence évidente."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "30 avenue des Champs-Élysées",
+        "text_b": "30 avenue des Champs-Élysées",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Citroën C3 garée là A-123-BC",
+        "text_b": "Citroën C4 garée là A-123-BC",
+        "is_true": false,
+        "explanation": "Le modèle de la voiture diffère : « C3 » dans text_a et « C4 » dans text_b, ce qui est facilement observable."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Mr Pierre Morel, 45 ans",
+        "text_b": "Mr Pierre Morel, 45 ans",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Maison bleue au 64 boulevard",
+        "text_b": "Maison verte au 64 boulevard",
+        "is_true": false,
+        "explanation": "La couleur de la maison change : « bleue » dans text_a et « verte » dans text_b, ce qui est immédiatement apparent."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Audi grise 46-YX-741",
+        "text_b": "Audi grise 46-YX-741",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Appart 12, 3ème étage",
+        "text_b": "Appart 13, 3ème étage",
+        "is_true": false,
+        "explanation": "Le numéro de l'appartement est différent : « 12 » dans text_a et « 13 » dans text_b, ce qui est une distinction claire."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "École St-Pierre, salle 5",
+        "text_b": "École St-Pierre, salle 5",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Skoda Octavia bleue IM-987-PL",
+        "text_b": "Skoda Octavia rouge IM-987-PL",
+        "is_true": false,
+        "explanation": "La couleur de la voiture change : « bleue » dans text_a et « rouge » dans text_b, facilement repérable."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Place Pasteur, Arles",
+        "text_b": "Place Pasteur, Arles",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Golf blanc BS-874-JQ",
+        "text_b": "Golf noir BS-874-JQ",
+        "is_true": false,
+        "explanation": "La couleur de la voiture diffère : « blanc » dans text_a et « noir » dans text_b. La différence est évidente."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Marc Dupuis, 89 rue Victor",
+        "text_b": "Marc Dupuis, 89 rue Victor",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Renault beige XY-321-BZ",
+        "text_b": "Renault gris XY-321-BZ",
+        "is_true": false,
+        "explanation": "La couleur du véhicule est différente : « beige » dans text_a et « gris » dans text_b. Une distinction facile."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "18 rue du Chêne Blanc",
+        "text_b": "18 rue du Chêne Blanc",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le 20/11/2023 à 09h15, Mme Marie Martin, née le 12/01/1975, a signalé un cambriolage.",
+        "text_b": "Le 20/11/2023 à 09h15, Mme Marie Martin, née le 12/01/1975, a signalé un cambriolage.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "M. Stéphane Dumas, né le 05/05/1982, conduit une Peugeot 207 bleue immatriculée ZX-456-LK.",
+        "text_b": "M. Stéphane Dumas, né le 05/05/1983, conduit une Peugeot 207 bleue immatriculée ZX-456-LK.",
+        "is_true": false,
+        "explanation": "L'année de naissance change : 1982 dans text_a et 1983 dans text_b. Ce genre de différence est souvent négligée par faute d'inattention."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "L'incident s'est produit le 18/02/2023 à 22h07 dans le quartier de Santa Maria.",
+        "text_b": "L'incident s'est produit le 18/02/2023 à 22h07 dans le quartier de Santa Maria.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La réunion aura lieu le 22/05/2024 à 15h00, basée au centre de convention.",
+        "text_b": "La réunion aura lieu le 22/05/2024 à 17h00, basée au centre de convention.",
+        "is_true": false,
+        "explanation": "L'heure de la réunion change : 15h00 dans text_a et 17h00 dans text_b. Une vigilance particulière est nécessaire pour repérer ce type de différence."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Mme Louise Vernet, résidant au 25 rue des Lilas, née le 14/07/1980.",
+        "text_b": "Mme Louise Vernet, résidant au 25 rue des Lilas, née le 14/07/1980.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "L'accident s'est déroulé le 01/01/2023 à 05h45 près de la zone industrielle.",
+        "text_b": "L'accident s'est déroulé le 01/01/2023 à 05h46 près de la zone industrielle.",
+        "is_true": false,
+        "explanation": "L'heure de l'accident diffère d'une minute : 05h45 vs 05h46. Cette différence temporelle est facile à manquer si l'on ne fait pas attention aux détails."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Mr Paul Laurent, identifié dans les dossiers le 10/10/1985.",
+        "text_b": "Mr Paul Laurent, identifié dans les dossiers le 10/10/1985.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Un vol à main armée a eu lieu le 13/04/2023 à 18h30 dans la bijouterie centrale.",
+        "text_b": "Un vol à main armée a eu lieu le 13/04/2023 à 18h30 dans la bijouterie centrale.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Dimanche prochain, le 25/06/2023, le marché ouvrira exceptionnellement à 07h00.",
+        "text_b": "Dimanche prochain, le 25/06/2023, le marché ouvrira exceptionnellement à 08h00.",
+        "is_true": false,
+        "explanation": "L'heure d'ouverture du marché varie : 07h00 dans text_a et 08h00 dans text_b. Les horaires différents sont souvent difficiles à attraper lors d'une lecture rapide."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Des travaux sont prévus du 01/07/2024 au 30/07/2024 sur l'avenue principale.",
+        "text_b": "Des travaux sont prévus du 01/07/2024 au 31/07/2024 sur l'avenue principale.",
+        "is_true": false,
+        "explanation": "La date de fin diffère : 30/07/2024 dans text_a contre 31/07/2024 dans text_b. Ce changement subtil de date pourrait facilement être ignoré."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Mme Sophie Dubois, vivant au 32 rue des Fleurs, est née le 02/12/1979.",
+        "text_b": "Mme Sophie Dubois, vivant au 32 rue des Fleurs, est née le 02/12/1979.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "L'interrogatoire commencera à 14h00 le 15/08/2023 dans la salle B.",
+        "text_b": "L'interrogatoire commencera à 14h00 le 15/08/2023 dans la salle B.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le véhicule a été repéré le 22/11/2023 à 19h20, couleur rouge, plaque 78-HJ-435.",
+        "text_b": "Le véhicule a été repéré le 22/11/2023 à 19h29, couleur rouge, plaque 78-HJ-435.",
+        "is_true": false,
+        "explanation": "L'heure diffère dans les deux textes : 19h20 contre 19h29. Ce genre de différence temporelle nécessite une attention soutenue."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "L'homme identifié le 01/03/2024 à 14h50 portait un manteau noir.",
+        "text_b": "L'homme identifié le 01/03/2024 à 14:50 portait un manteau noir.",
+        "is_true": false,
+        "explanation": "L'heure est écrite différemment : « 14h50 » dans text_a et « 14:50 » dans text_b. Même de légères variations dans la notation de l'heure peuvent piéger."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Une Peugeot 308 noire, immatriculée AB-765-CD, a été vue le 02/02/2023.",
+        "text_b": "Une Peugeot 308 noire, immatriculée AB-765-CD, a été vue le 02/02/2023.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le témoignage de Mme Clara Dubois indique que l'incident s'est produit à 17h32 le 14/03/2024 près du 58 rue de Rivoli.",
+        "text_b": "Le témoignage de Mme Clara Duboi indique que l'incident s'est produit à 17h32 le 14/03/2024 près du 58 rue de Rivoli.",
+        "is_true": false,
+        "explanation": "Le 's' final du mot 'Dubois' dans text_a est omis dans text_b. Ce type de différence nécessite une lecture attentive, car l'absence ou la présence de lettres peut facilement passer inaperçue."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon l'article 223-1 du code pénal, il est interdit de mettre autrui en danger délibérément lors d'une conduite imprudente.",
+        "text_b": "Selon l'article 223-1 du code penal, il est interdit de mettre autrui en danger délibérément lors d'une conduite imprudente.",
+        "is_true": false,
+        "explanation": "Le mot 'pénal' dans text_a est écrit 'penal' dans text_b, sans l'accent sur le 'e'. Cette différence subtile est souvent négligée."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La procédure doit être initiée dans un délai de trois mois à compter de la date de l'infraction mentionnée à l'article 311.",
+        "text_b": "La procédure doit être initiée dans un délai de trois mois à compter de la date de l'infraction mentionnée à l'article 311.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le véhicule suspect a été repéré le 09/09/2023 à l'intersection de la rue du Bac et de la rue Saint-Placide.",
+        "text_b": "Le véhicule suspect a été repéré le 09/09/2023 à l'intersection de la rue du Bac et de la rue Saint-Placide.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Concernant l'article 221-4: le meurtre est une action avec intention de donner la mort qui entraîne des circonstances aggravantes.",
+        "text_b": "Concernant l'article 221-4: le meurtre est une action avec intention de donner la mort qui entraine des circonstances aggravantes.",
+        "is_true": false,
+        "explanation": "Le mot « entraîne » dans text_a est écrit « entraine » dans text_b, sans l'accent sur le 'e'. Ces différences subtiles d'accentuation exigent de la vigilance."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Du 1er janvier 2024 au 31 décembre 2024, les infractions seront sévèrement sanctionnées conformément à la législation en vigueur.",
+        "text_b": "Du 1er janvier 2024 au 31 décembre 2024, les infractions seront sévèrement sanctionnees conformément à la législation en vigueur.",
+        "is_true": false,
+        "explanation": "Le mot « sanctionnées » dans text_a est écrit « sanctionnees » dans text_b, où les accents ont été omis. Ces variations typographiques délicates sont des points de vigilance."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Il est stipulé dans l'article 121-3 que, pour être pénalement responsable, l'auteur doit avoir commis une faute grave.",
+        "text_b": "Il est stipulé dans l'article 121-3 que, pour être pénalement responsable, l'auteur doit avoir commis une faute grave.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Les témoignages recueillis dans le cadre de l'affaire numéro 456-78A sont essentiels pour comprendre les motivations du suspect.",
+        "text_b": "Les témoignages recueillis dans le cadre de l’affaire numéro 456-78A sont essentiels pour comprendre les motivations du suspect.",
+        "is_true": false,
+        "explanation": "L'apostrophe droite dans text_a est une apostrophe courbe dans text_b. Les variations d'apostrophes peuvent être facilement oubliées pendant une relecture rapide."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Les preuves matérielles doivent être présentées au tribunal conformément à l'article 313-2 dans un délai raisonnable.",
+        "text_b": "Les preuves matériaux doivent être présentées au tribunal conformément à l'article 313-2 dans un délai raisonnable.",
+        "is_true": false,
+        "explanation": "Le mot « matérielles » dans text_a est remplacé par « matériaux » dans text_b, ce qui change le sens. Cette substitution de mots similaires nécessite une lecture attentive."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Suite à l'infraction décrite dans l'article 323-1, l'auteur est passible de sanctions sévères incluant amendes et emprisonnement.",
+        "text_b": "Suite à l'infraction décrite dans l'article 323-1, l'auteur est passible de sanctions sévères incluant amendes et emprisonnement.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon les alinéas de l'article 124-8, la responsabilité civile implique une atteinte à autrui avec intention ou négligence.",
+        "text_b": "Selon les alinéas de l'article 124-8, la responsabilité civile implqué une atteinte à autrui avec intention ou négligence.",
+        "is_true": false,
+        "explanation": "Le mot « implique » dans text_a est écrit « implqué » dans text_b. Cette légère erreur orthographique peut être facilement négligée, mais elle change entièrement la fluidité du texte."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "L'article 434-9 impose de lourdes amendes aux individus reconnus coupables d'avoir intenté à l'intégrité physique d'une autre personne.",
+        "text_b": "L'article 434-9 impose de lourdes amendes aux individus reconnus coupables d'avoir intené à l'intégrité physique d'une autre personne.",
+        "is_true": false,
+        "explanation": "Le mot 'intenté' dans text_a est écrit 'intené' dans text_b, avec un 't' manquant. Les petites omissions peuvent souvent passer inaperçues si l'on ne prend pas soin de vérifier chaque mot."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La réforme de l'article 314-9 accentue les peines pour les délits commis avec violence, précise la circulaire du ministère.",
+        "text_b": "La réforme de l'article 314-9 accentue les peines pour les délits commis avee violence, précise la circulaire du ministère.",
+        "is_true": false,
+        "explanation": "Le mot 'avec' est mal orthographié en 'avee' dans text_b. Les fautes de frappe mineures peuvent échapper à l'œil non averti lorsqu'elles sont entourées de texte dense."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Il est impératif que tous les agents soient briefés sur les articles modifiés avant l'application de la nouvelle législation prévue pour fin 2024.",
+        "text_b": "Il est impératif que tous les agents soient briefés sur les articles modifiés avant l'application de la nouvelle législation prévue pour fin 2024.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Conformément à l'article 212-1, toute incitation à la haine se verra réprimée par des peines de deux à cinq ans d'emprisonnement.",
+        "text_b": "Conformément à l'article 212-1, toute incitation à la haine se vera réprimée par des peines de deux à cinq ans d'emprisonnement.",
+        "is_true": false,
+        "explanation": "Le mot « se verra » dans text_a est incorrectement écrit « se vera » dans text_b, avec un 'r' manquant. Ces petites erreurs sont souvent omises lorsque la relecture est rapide."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Les dispositions de l'article 224-4 prévoient des sanctions adaptées, proportionnelles à la gravité de l'infraction commise.",
+        "text_b": "Les dispositions de l'article 224-4 prévoient des sanctions adaptées, proportionnelles à la gravité de l’infraction commise.",
+        "is_true": false,
+        "explanation": "L'apostrophe droite dans 'l'infraction' de text_a est courbe dans text_b. Les différences de typographie, bien que subtiles, exigent une attention minutieuse."
+    }
+]

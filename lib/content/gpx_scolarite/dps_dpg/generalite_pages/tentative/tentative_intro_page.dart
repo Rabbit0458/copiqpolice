@@ -234,12 +234,12 @@ class CopiqHeroBackButton extends StatelessWidget {
     final Color effectiveBg =
         backgroundColor ??
         (isDark
-            ? Colors.black.withOpacity(.35)
-            : Colors.white.withOpacity(.30));
+            ? Colors.black.withValues(alpha: .35)
+            : Colors.white.withValues(alpha: .30));
 
     final Color borderColor = isDark
-        ? Colors.white.withOpacity(.25)
-        : Colors.black.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .25)
+        : Colors.black.withValues(alpha: .12);
 
     return SafeArea(
       child: Align(
@@ -267,7 +267,7 @@ class CopiqHeroBackButton extends StatelessWidget {
                   border: Border.all(color: borderColor, width: 1),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(.25),
+                      color: Colors.black.withValues(alpha: .25),
                       blurRadius: 12,
                       offset: const Offset(0, 6),
                     ),

@@ -1,0 +1,646 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on en déduire ?",
+        "prompt": "Tous les chiens sont des mammifères. Rex est un chien.",
+        "options": [
+            "Rex est un oiseau",
+            "Rex est un mammifère",
+            "Rex n'est pas un mammifère",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rex est un mammifère",
+        "explanation": "C'est un syllogisme par transitivité. Puisque tous les chiens sont des mammifères et que Rex est un chien, il en découle logiquement que Rex est un mammifère. Le piège classique serait de conclure hâtivement sans passer par l'étape intermédiaire de reconnaissance de catégorie.",
+        "hint": "Pense à la transitivité des groupes."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Marie court plus vite que Sophie. Sophie court plus vite que Emma.",
+        "options": [
+            "Marie",
+            "Sophie",
+            "Emma",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marie",
+        "explanation": "C'est un problème d'ordre ou de classement. En suivant les affirmations : Marie > Sophie et Sophie > Emma, on conclut que Marie est la plus rapide. Il est crucial de ne pas perdre de vue la relation de transitivité pour ne pas accumuler les erreurs dans ce type de question.",
+        "hint": "Établissez la hiérarchie de vitesse de manière logique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Peut-on en déduire que Luc est ouvert d'esprit ?",
+        "prompt": "Tous les grands voyageurs sont ouverts d'esprit. Luc est un grand voyageur.",
+        "options": [
+            "Oui, Luc est ouvert d'esprit",
+            "Non, Luc n'est pas ouvert d'esprit",
+            "On ne peut pas savoir",
+            "C'est faux, tous ne sont pas ouverts"
+        ],
+        "answer": "Oui, Luc est ouvert d'esprit",
+        "explanation": "Ce problème utilise le principe de transitivité. Tous les grands voyageurs sont ouverts d'esprit, et Luc étant un grand voyageur, on peut déduire qu'il est ouvert d'esprit. On doit faire attention à ne pas supposer involontairement des relations qui ne sont pas données directement.",
+        "hint": "Identifiez les groupes de catégories."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure sur Victor ?",
+        "prompt": "Aucune personne malhonnête n'est digne de confiance. Victor n'est pas malhonnête.",
+        "options": [
+            "Victor est digne de confiance",
+            "Victor n'est pas digne de confiance",
+            "On ne peut pas savoir",
+            "Victor est malhonnête"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "L'erreur ici est d'aller au-delà des informations données. Le fait que Victor ne soit pas malhonnête ne signifie pas qu'il est forcément digne de confiance, comme le suggère l'erreur de conversion. Sans information explicite sur les personnes non-malhonnêtes, nous ne pouvons rien conclure de certain.",
+        "hint": "Faites attention aux généralisations non justifiées."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Paul reste-t-il chez lui ?",
+        "prompt": "Si Paul ne sort pas, alors il regarde la télévision. Paul ne regarde pas la télévision.",
+        "options": [
+            "Paul reste chez lui",
+            "Paul est sorti",
+            "On ne sait pas",
+            "Paul dort"
+        ],
+        "answer": "Paul est sorti",
+        "explanation": "C'est un exemple de négation indirecte liée à une condition. Puisque la seule condition de Paul ne sortant pas est qu'il regarde la télévision, et qu'il ne le fait pas, on déduit qu'il est effectivement sorti. Ne pas tenir compte de la dire logique entre les deux parties classiques mène souvent à des conclusions incorrectes.",
+        "hint": "Vérifiez à quoi aboutissent les conditions inversées."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "La voiture est-elle chère ?",
+        "prompt": "Toutes les voitures de marque Z sont chères. Ma voiture est de marque Z.",
+        "options": [
+            "Oui, ma voiture est chère",
+            "Non, ma voiture est bon marché",
+            "On ne peut pas savoir",
+            "C'est une voiture de luxe"
+        ],
+        "answer": "Oui, ma voiture est chère",
+        "explanation": "Ce syllogisme repose sur le principe de transitivité. Puisque toutes les voitures de la marque Z sont chères et votre voiture appartient à cette marque, elle est nécessairement chère. Le piège habituel comprendrait des inférences incorrectes sur d'autres caractéristiques non mentionnées dans le problème.",
+        "hint": "Applique la règle générale aux cas particuliers."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la couleur de la voiture de Pierre ?",
+        "prompt": "Toutes les voitures rouges sont rapides. La voiture de Pierre n’est pas rapide.",
+        "options": [
+            "La voiture de Pierre est rouge",
+            "La voiture de Pierre n'est pas rouge",
+            "On ne peut pas savoir",
+            "Pierre a un vélo"
+        ],
+        "answer": "La voiture de Pierre n'est pas rouge",
+        "explanation": "L'énoncé suit un raisonnement par contradiction. Si toutes les voitures rouges sont rapides et que la voiture de Pierre n’est pas rapide, alors elle ne peut pas être rouge. Le piège éventuel est de confondre la condition inverse avec la conclusion originale, ce qui mène souvent à des déductions hasardeuses.",
+        "hint": "Soyez attentif aux rôles des conditions négatives."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Simon est-il un bon élève ?",
+        "prompt": "Tous les bons élèves réussissent leurs examens. Simon a réussi ses examens.",
+        "options": [
+            "Simon est un bon élève",
+            "Simon n'est pas un bon élève",
+            "On ne peut pas savoir",
+            "Simon est studieux"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Dans ce cas, réussir un examen n'implique pas nécessairement être un bon élève selon les prémisses données. On ne peut pas établir que Simon est bon car des facteurs externes (ex. chance) ont pu l'aider. Piège : faire des inférences bidirectionnelles qui ne sont pas confirmées par les données.",
+        "hint": "Ne confondez pas résultats avec qualités intrinsèques."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus grand parmi eux ?",
+        "prompt": "Anne est plus grande que Lise. Lise est plus grande que Emma.",
+        "options": [
+            "Anne",
+            "Lise",
+            "Emma",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Anne",
+        "explanation": "En classant selon la taille donnée, Anne > Lise et Lise > Emma, Anne est donc clairement la plus grande. L'erreur se produit souvent lorsque l'on suppose faussement une circularité dans les relations de taille sans respect des données.",
+        "hint": "Tracez les relations d'ordre de manière claire."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Marc est-il en sécurité ?",
+        "prompt": "Si Marc porte son casque, il est en sécurité. Marc ne porte pas son casque.",
+        "options": [
+            "Marc est en sécurité",
+            "Marc n'est pas en sécurité",
+            "On ne peut pas savoir",
+            "Marc fait du sport"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "L'assertion se base sur une implication continue. Le fait que Marc ne porte pas son casque n'implique pas automatiquement qu'il n'est pas en sécurité. A défaut d'informations complémentaires, il est erroné de conclure quoi que ce soit par simple négation.",
+        "hint": "Considérez les implications partielles ou incertaines."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "La rose est-elle rouge ?",
+        "prompt": "Toutes les fleurs rouges sentent bon. Cette rose ne sent pas bon.",
+        "options": [
+            "La rose est rouge",
+            "La rose n'est pas rouge",
+            "On ne peut pas savoir",
+            "Cette rose est fanée"
+        ],
+        "answer": "La rose n'est pas rouge",
+        "explanation": "Ce raisonnement suit une règle de négation logique. Puisque chaque fleur rouge sent bon et que cette rose ne le fait pas, elle ne peut pas appartenir à la catégorie des fleurs rouges. Piège classique: ne pas associer correctement les critères en termes d'exclusion.",
+        "hint": "Examinez les exclusions impliquées par la logique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Julie boit-elle du café ?",
+        "prompt": "Si Julie est fatiguée, elle boit du café. Julie n'est pas fatiguée.",
+        "options": [
+            "Julie boit du café",
+            "Julie ne boit pas de café",
+            "On ne peut pas savoir",
+            "Julie est au travail"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Il s'agit d'une condition spécifique qui n'est pas strictement exclusive. Même si Julie n'est pas fatiguée, cela ne nous dit rien sur sa consommation de café sans autre donnée. Le piège consiste à suppose que l'absence d'une condition exclue complètement le résultat, ce qui n'est pas directement dérivé ici.",
+        "hint": "Ne tirez pas de conclusions hâtives sur absence d'une condition."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Si Lucas va au cinéma, que fait sa sœur ?",
+        "prompt": "Si Lucas va au cinéma, sa sœur reste à la maison. Lucas est au cinéma.",
+        "options": [
+            "Elle va au cinéma",
+            "Elle reste à la maison",
+            "On ne peut pas savoir",
+            "Elle est chez une amie"
+        ],
+        "answer": "Elle reste à la maison",
+        "explanation": "Une déduction par modus ponens montre un lien direct clair entre l'action de Lucas et celle de sa sœur, validant la déclaration initiale concernant ces options. Négliger cette logique spécifique amènerait à surinterpréter ou à ignorer les contraintes établies précédemment.",
+        "hint": "Identifiez les conséquences immédiates des conditions données."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "L'ami de Pierre est-il ingénieur ?",
+        "prompt": "Tous les amis de Pierre sont ingénieurs. Jacques est un ami de Pierre.",
+        "options": [
+            "Jacques est ingénieur",
+            "Jacques n'est pas ingénieur",
+            "On ne peut pas savoir",
+            "Jacques est médecin"
+        ],
+        "answer": "Jacques est ingénieur",
+        "explanation": "En appliquant le raisonnement par universalité, Jacques doit être ingénieur puisqu'il est explicitement mentionné comme ami de Pierre. L'erreur habituelle est d'omettre correctement la nature de l'universalité dans la déduction logique.",
+        "hint": "Utilisez l'universalité des déclarations pour une analyse rationnelle."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "La chemise est-elle propre ?",
+        "prompt": "Toutes les chemises propres sont dans l'armoire. Cette chemise est sur le lit.",
+        "options": [
+            "La chemise est propre",
+            "La chemise n'est pas propre",
+            "On ne peut pas savoir",
+            "Cette chemise est repassée"
+        ],
+        "answer": "La chemise n'est pas propre",
+        "explanation": "L'établissement de groupes mutuellement exclusifs permet de conclure que si la chemise n'est pas dans l'armoire des chemises propres, alors elle est catégoriquement impure. L'erreur courante est de conférer ou généraliser la propreté des chemises à l'extérieur de l'armoire sans preuve.",
+        "hint": "Considérez chaque placement comme un classement exclusif."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Est-ce que Tom a réussi son examen ?",
+        "prompt": "Si Tom a étudié, il a réussi. Tom n’a pas étudié.",
+        "options": [
+            "Tom a réussi",
+            "Tom n'a pas réussi",
+            "On ne peut pas savoir",
+            "Tom a eu de la chance"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Cette situation examine une implication directe : l'absence de l'activité d'étude ne permet pas de tirer des conclusions claires quant à la réussite en l'absence d'informations complémentaires. Le piège réside dans l'hypothèse reconstructive erronée qu'un simple manque mène à un échec.",
+        "hint": "Vérifiez les relations dépendantes et leurs absences."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Comment est classé Marc ?",
+        "prompt": "Marc court moins vite que Claude, mais plus vite que Laurent. Laurent court moins vite que Sophie.",
+        "options": [
+            "Claude est le plus rapide",
+            "Sophie est la plus rapide",
+            "Marc est le plus rapide",
+            "Laurent est le plus lent"
+        ],
+        "answer": "Sophie est la plus rapide",
+        "explanation": "Une série de comparaisons permet de hiérarchiser ainsi : Sophie > Laurent > Marc > Claude. Sophie est donc assurément la plus rapide parmi eux. Un piège peut survenir si l'on classifie incorrectement en ne considérant pas tous les liens entrevelés, qui évite de bypasser les conditions cachées.",
+        "hint": "Rassemblez toutes les données de vitesse comparatives."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'est-ce que Julie ignore ?",
+        "prompt": "Si Julie est au concert, elle ne sait pas que Pierre est au cinéma. Julie sait que Pierre est au cinéma.",
+        "options": [
+            "Julie est au concert",
+            "Julie n'est pas au concert",
+            "On ne peut pas savoir",
+            "Pierre est chez lui"
+        ],
+        "answer": "Julie n'est pas au concert",
+        "explanation": "Un raisonnement par contraposition nous dit que si Julie sait que Pierre est au cinéma, elle ne peut pas être au concert. Souvent, les erreurs viennent de l'oubli des relations conditionnelles inversées ou du traitement abusivement direct, sans considération de la logique conditionnelle.",
+        "hint": "Inverser la condition pour révéler des insights cachés."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus fort ?",
+        "prompt": "Thomas est plus fort que Laurent. Alexis est plus fort que Thomas. Laurent est plus fort que Jules.",
+        "options": [
+            "Thomas",
+            "Alexis",
+            "Laurent",
+            "Jules"
+        ],
+        "answer": "Alexis",
+        "explanation": "Nous pouvons établir Alexis > Thomas > Laurent > Jules. Alexis est donc en principe le plus fort parmi eux. Cela suit un classement multiple basé sur la transitivité, exposant souvent une difficulté quand on ne revoit pas tous les liens en jeu.",
+        "hint": "Créez une liste de force multijahierique et comparez."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Le restaurant est-il ouvert ?",
+        "prompt": "Si le restaurant est ouvert, la lumière est allumée. La lumière n'est pas allumée.",
+        "options": [
+            "Le restaurant est ouvert",
+            "Le restaurant est fermé",
+            "On ne peut pas savoir",
+            "Le restaurant est en rénovation"
+        ],
+        "answer": "Le restaurant est fermé",
+        "explanation": "La négation d'une condition établie démontre la conclusion que le restaurant ne peut pas être ouvert. Bien que la lumière éteinte ne signifie pas nécessairement une fermeture en d'autres cas, ici elle suit une logique indiscutable dictée par les prémisses.",
+        "hint": "Considérez les implications que les actions associées indiquent."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la position de Julien ?",
+        "prompt": "Dans une course, Julien suit Marie, et Alain suit Julien.",
+        "options": [
+            "Julien est deuxième",
+            "Julien est troisième",
+            "Julien est quatrième",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julien est deuxième",
+        "explanation": "Dans cet ordre de placement direct, Julien occupe la position immédiatement derrière Marie. La confusion typique se matérialise en ne distinguant pas correctement chaque intervalle de position, conduisant à des résultats faussés.",
+        "hint": "Identifiez chacune des étapes par rapport aux autres."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Valérie a-t-elle un animal ?",
+        "prompt": "Si Valérie a un chien, elle va au parc. Valérie ne va pas au parc.",
+        "options": [
+            "Valérie a un chien",
+            "Valérie n'a pas de chien",
+            "On ne peut pas savoir",
+            "Valérie a un chat"
+        ],
+        "answer": "Valérie n'a pas de chien",
+        "explanation": "Par la logique de l'implication inverse, si Valérie ne va pas au parc, elle ne peut donc pas posséder aucun chien. On doit à tout prix éviter de tirer des conclusions défidées de l'existence d'autres animaux potentiels non impliqués dans le problème actuel.",
+        "hint": "Reversal est souvent sous-estimée en cas d'implication logique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus lent ?",
+        "prompt": "Jean court plus vite que Paul. Arnaud est plus rapide que Jean. Louis court moins vite que Paul.",
+        "options": [
+            "Jean",
+            "Paul",
+            "Arnaud",
+            "Louis"
+        ],
+        "answer": "Louis",
+        "explanation": "D'après le classement, Arnaud > Jean > Paul > Louis. Louis est donc le plus lent des quatre. Une erreur fréquente consiste à ignorer certains liens, ce qui peut fausser le calcul global de la vitesse relative.",
+        "hint": "Classez chaque participant dans l'ordre et analysez."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Jean est-il au travail ?",
+        "prompt": "Si Jean est au travail, il ne peut pas répondre au téléphone. Jean répond au téléphone.",
+        "options": [
+            "Jean est au travail",
+            "Jean n'est pas au travail",
+            "On ne peut rien dire",
+            "Jean est en pause"
+        ],
+        "answer": "Jean n'est pas au travail",
+        "explanation": "En utilisant une version contrapositive de la logique conditionnelle, il en découle que si Jean répond au téléphone, il ne peut pas être occupé au travail. Les erreurs concernent souvent la maltraitance des hypothèses inverses, omettant le cadre d'activité.",
+        "hint": "Vérifiez la condition du converse et confirmez."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Comment est l'écharpe de Lucie ?",
+        "prompt": "Toutes les écharpes bleues sont en laine. L'écharpe de Lucie n'est pas en laine.",
+        "options": [
+            "L'écharpe de Lucie est bleue",
+            "L'écharpe de Lucie n'est pas bleue",
+            "Impossible à déterminer",
+            "L'écharpe est multicolore"
+        ],
+        "answer": "L'écharpe de Lucie n'est pas bleue",
+        "explanation": "En évaluant indirectement la négation, il devient clair que la non-appartenance à la laine indique que l'écharpe de Lucie n'est pas bleue. L'erreur commune survient lorsqu'on omet de relier correctement la caractéristique négative à une classification définitive.",
+        "hint": "Considérez les implications de caractéristiques exclusives."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Marc a-t-il les cheveux longs ?",
+        "prompt": "Si Marc a les cheveux longs, il porte un chapeau. Marc ne porte pas de chapeau.",
+        "options": [
+            "Marc a les cheveux longs",
+            "Marc n'a pas les cheveux longs",
+            "On ne peut pas savoir",
+            "Marc a les cheveux courts"
+        ],
+        "answer": "Marc n'a pas les cheveux longs",
+        "explanation": "Par l'utilisation de l'implication contraire, le fait que Marc ne porte pas de chapeau nous indique il n'a pas les cheveux longs. Ne pas confondre les termes et leurs implications serait une erreur typique, laquelle risque de surestimer les comparaisons.",
+        "hint": "Faites attention aux implications inverses."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Alain peut courir plus vite que Baptiste. Franck ne peut pas courir aussi vite que Baptiste. Pierre court plus vite que Franck.",
+        "options": [
+            "Alain",
+            "Pierre",
+            "Baptiste",
+            "Franck"
+        ],
+        "answer": "Alain",
+        "explanation": "Nous pouvons déduire que Alain > Baptiste > Franck et Pierre > Franck, mais cela n'implique pas que Pierre est plus rapide que Baptiste ou Alain. Alain est donc le plus rapide. Ne pas bien ordonner chaque élément peut créer des anomalies de classement.",
+        "hint": "Notez bien les relations comparatives de chacun."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Par qui est dirigée l'équipe ?",
+        "prompt": "Si Léa est chef, alors Mathieu est en charge. Mathieu n'est pas en charge.",
+        "options": [
+            "Léa est chef",
+            "Léa n'est pas chef",
+            "On ne sait pas",
+            "C'est un chef intérimaire"
+        ],
+        "answer": "Léa n'est pas chef",
+        "explanation": "Un raisonnement contraposé démontre que si Mathieu n'est pas en charge, alors Léa ne peut pas être le chef à partir des conditions proposées. La tentation reste grande de supposer directement sans passer par les implications conditionnelles qui doivent être scrutées à chaque étape.",
+        "hint": "Inverser le propos sous une forme équivalente."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Comment sont les vacances de Marc ?",
+        "prompt": "Si Marc prend des vacances, alors Sophie garde la maison. Marc n'a pas pris de vacances cette année.",
+        "options": [
+            "Sophie ne garde pas la maison",
+            "Sophie garde la maison",
+            "On ne peut pas savoir",
+            "Marc est en retraite"
+        ],
+        "answer": "Sophie ne garde pas la maison",
+        "explanation": "C'est un exemple d'implication négative directe : si Marc ne prend pas de vacances, alors Sophie n'est pas en charge de garder la maison. Les pièges proviennent de conclusions rapides ou incorrectes fondées sur l'implication inverse, évitant des conclusions pas évidentes.",
+        "hint": "Vérifiez les conséquences de la condition réciproque."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle assertion est correcte ?",
+        "prompt": "Si Pierre va à la mer, Chloé reste chez elle. Pierre est à la mer. Chloé n'est pas restée chez elle.",
+        "options": [
+            "Pierre est allé à la montagne",
+            "Chloé est partie en voyage",
+            "Cela n'est pas possible",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cela n'est pas possible",
+        "explanation": "Ceci expose le paradoxe d'une prémisse contredite. Si Pierre est à la mer, Chloé devrait rester chez elle, ce qui contredit l’affirmation donnée. Ce genre de problème montre comment des conditions interverrouillées peuvent aboutir à une conclusion impossiblement entremêlée par identité logique.",
+        "hint": "Notez qu'une contradiction apparente signale un manque de consistance."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est la plus jeune ?",
+        "prompt": "Marie est plus âgée que Sophie. Sophie est plus âgée que Julie. Julie est plus âgée que Laura.",
+        "options": [
+            "Marie",
+            "Sophie",
+            "Julie",
+            "Laura"
+        ],
+        "answer": "Laura",
+        "explanation": "Dans la séquence d'âge présentée, Laura se trouve au bout de la chaîne et est la plus jeune des quatre. L'oubli d'énumérer intégralement la hiérarchie d'âge constitue une source d'erreur fréquente dans de telles situations logiques.",
+        "hint": "Suivez l'ordre strictement pour déterminer qui vient en dernier."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Comment est le climat à la mer ?",
+        "prompt": "Si le temps est ensoleillé, la mer est calme. La mer est agitée.",
+        "options": [
+            "Le temps est ensoleillé",
+            "Le temps n'est pas ensoleillé",
+            "On ne peut pas savoir",
+            "Il fait orageux"
+        ],
+        "answer": "Le temps n'est pas ensoleillé",
+        "explanation": "La mer agitée contredit une condition stipulée pour un temps ensoleillé, démontrant une négation indirecte. Confondre des règles basées sur le climat et commettre des erreurs d'appréciation des implications soulignent un aspect crucial constamment à surveiller.",
+        "hint": "Ne sous-estimez pas les conséquences de la règle climatique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Est-ce que Lise a bien étudié ?",
+        "prompt": "Si Lise réussit, elle a bien étudié. Lise n'a pas réussi.",
+        "options": [
+            "Lise a bien étudié",
+            "Lise n'a pas bien étudié",
+            "On ne peut pas savoir",
+            "Lise a été chanceuse"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Étant donné que cette implication ne est que possible dans un cas, la non-réussite ne révèle rien du tout sur le degré d'étude préalable qui aurait pu être sérieuse mais insuffisante. Les erreurs consistent en des conclusions hâtives basées sur des hypothèses mal étayées.",
+        "hint": "Attention à ce que l'absence de réussite n'implique pas directement l'absence d'effort."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la position de Paul ?",
+        "prompt": "En doublant le coureur en 3e position, Paul occupe maintenant la place de ce dernier.",
+        "options": [
+            "Paul est premier",
+            "Paul est deuxième",
+            "Paul est troisième",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Paul est troisième",
+        "explanation": "Le fait que Paul ait doublé le troisième signifie qu'il prend la troisième position, sans affecter directement ses adversaires immédiats. Ce complexe met en avant un problème fréquent car valider une douille à une étape mal reformulée pourrait résulter en une estimation biaisée.",
+        "hint": "Souvenez-vous que doubler signifie prendre la place, pas mettre hors-circuit."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que peut-on en conclure à propos de l'enquête ?",
+        "prompt": "Si un suspect est innocent, il n'a pas été sur les lieux du crime. Le suspect n'était pas là le jour du crime.",
+        "options": [
+            "Le suspect est innocent",
+            "Le suspect est coupable",
+            "On ne peut pas conclure",
+            "Le suspect avait un alibi"
+        ],
+        "answer": "Le suspect est innocent",
+        "explanation": "La prémisse proposée indique qu'un alibi valide l'innocence, ce qui signifie qu'aucune preuve directe n'a été attestée, augmentant ici une possibilité d'erreur consistent à ne pas prendre en compte toutes les variables incertaines.",
+        "hint": "Assurez-vous que l'innocence suit correctement des étapes de causation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Où est assis Marc ?",
+        "prompt": "Si le plan de Marc est bon, il est devant Mathieu. Mathieu est devant Julien. Mathieu est derrière Mani.",
+        "options": [
+            "Marc est devant Mani",
+            "Marc est derrière Julien",
+            "Marc est entre Mathieu et Mani",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marc est entre Mathieu et Mani",
+        "explanation": "En révélant que Marc est assis derrière Mani et devant Mathieu, les pièges communs incluent de ne pas correctement évaluer, de voir qu'en de telles circonstances le positionnement overlap est probable.",
+        "hint": "Identifiez les relations directes et contreposez-les."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre position ?",
+        "prompt": "Dans une course, vous dépassez la deuxième personne.",
+        "options": [
+            "Première",
+            "Deuxième",
+            "Troisième",
+            "Quatrième"
+        ],
+        "answer": "Deuxième",
+        "explanation": "En doublant la deuxième personne, vous prenez sa position, sans nécessairement menacer le premier qui s'adapte à une position dépendante. L'erreur typique est de supposer que toute ligne avant vous est passée instantanément.",
+        "hint": "Notez les différences entre être dépassé et complètement distancer."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans dix ans, quel sera l’âge de Sarah ?",
+        "prompt": "Sarah a 5 fois l'âge de son fils. Dans 15 ans, elle aura 3 fois l'âge de son fils.",
+        "options": [
+            "Sarah a 35 ans",
+            "Sarah aura 45 ans",
+            "Sarah aura 50 ans",
+            "Impossible à déterminer"
+        ],
+        "answer": "Sarah aura 50 ans",
+        "explanation": "Posons étoile de 5x = âge de Sarah et x celui du fils. Ainsi, 5x + 15 = 3(x + 15) se simplifie en déterminant x, révélant l'âge actuel réaliste déjà établi de Sarah. Une erreur de calcul impliquerait de confondre les mises à jour simultanées avec des projections.",
+        "hint": "Vérifiez que toutes les variables augmentent linéairement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans quelle situation se trouve le fermier ?",
+        "prompt": "Un fermier doit transporter une chèvre, un chou, et un loup sans qu'ils ne soient laissés seuls avec l'autre.",
+        "options": [
+            "Le fermier transporte d'abord la chèvre",
+            "Le fermier transporte d'abord le loup",
+            "Le fermier transporte d'abord le chou",
+            "Il est impossible de résoudre ce problème"
+        ],
+        "answer": "Le fermier transporte d'abord la chèvre",
+        "explanation": "En priorisant la chèvre, le fermier rentre librement pour chercher les autres alternant quétions cruciales. Nourrir inconsciemment une stratégie aboutirait à un déséquilibre, nécessitant une approche systématique fréquente pour éviter une confusion complexe.",
+        "hint": "Pensez comment chaque mouvement influence l'autre."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Martine ?",
+        "prompt": "Le montant en dizaines de son âge est triple de celui en unités. Dans 9 ans, les chiffres s'inverseront.",
+        "options": [
+            "33",
+            "36",
+            "39",
+            "42"
+        ],
+        "answer": "36",
+        "explanation": "La mise en équation révèle 3x + 10y = 36, permettant l'identification de Martine en tant que 36. Sauter trop rapidement les conclusions précipitées fausse les constructions équilibrées.",
+        "hint": "Transformez les conditions en ratios mathématiques."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'âge du fils ?",
+        "prompt": "Lucie a trois fois l'âge de son fils. Dans 12 ans, elle aura deux fois son âge.",
+        "options": [
+            "12 ans",
+            "15 ans",
+            "18 ans",
+            "20 ans"
+        ],
+        "answer": "18 ans",
+        "explanation": "Quand l'âge de Lucie est défini par 3 et la ligne est atteinte par 48 plus transformation, l'application de méthode alimente en termes équitables les valeurs correctes. Cela montre l'importance de planifier toutes les valeurs du système.",
+        "hint": "Assurez-vous chaque lien respecte le temps et les variables."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "À quelle position est Tom ?",
+        "prompt": "Tom se trouve juste avant la dernière personne dans une file de stands alimentaires.",
+        "options": [
+            "Première",
+            "Deuxième",
+            "Avant-dernière",
+            "Dernière"
+        ],
+        "answer": "Avant-dernière",
+        "explanation": "L'discussion principale de Tom se révèle avant la finale pour résoudre distinctement et non continuellement. Les erreurs comprennent ne pas estimer correctement chaque translation référentielle positionnelle basée sur la logique simplex",
+        "hint": "Listez chaque position à partir de la fin."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si Fabien double le coureur en cinquième position, quelle est la sienne ?",
+        "prompt": "Fabien participe à une compétition de cross-country.",
+        "options": [
+            "Quatrième",
+            "Cinquième",
+            "Sixième",
+            "Septième"
+        ],
+        "answer": "Cinquième",
+        "explanation": "Le dépassement de l'équival propriétaire reste coopératif au champion, bien qu'en multipliant les valeurs, représenterait une approximation tordue anormalement et mal vérifiée.",
+        "hint": "Ne deviennez pas superstition basé uniquement sur ces chiffres initiaux."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la seule affirmation vraie ?",
+        "prompt": "Si Mathilde participe à la réunion, elle termine ses plans.",
+        "options": [
+            "Mathilde travaille sans cesse",
+            "Mathilde n'a pas participé à la réunion",
+            "Mathilde a terminé ses plans",
+            "Il manque des données"
+        ],
+        "answer": "Il manque des données",
+        "explanation": "L'issue prévue repose sur un manque imprécis d'instruction, promulguant fantochement et paradoxalement en sorte que les informations ne glissent pas au dehors. Évaluer toutes les informations dans trois missions s'assure que rien n'a été oublié ni corrigé.",
+        "hint": "Valider chaque alternative incluse dans le contexte donné."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui est la plus jeune ?",
+        "prompt": "Évelyne est plus jeune que Nathalie. Briac est plus âgé que Nathalie. Chloé est plus jeune qu'Évelyne.",
+        "options": [
+            "Évelyne",
+            "Nathalie",
+            "Briac",
+            "Chloé"
+        ],
+        "answer": "Chloé",
+        "explanation": "Briac > Nathalie > Évelyne > Chloé, mais inclure des étapes intermédiaires promet de nombreux pièges pour faire croire au contraire. Au sein de cet énoncé sensible, plusieurs BPM surtout fantaisistes utilisent les lois initiales pour créer leurs conditions.",
+        "hint": "Ordinez toutes les données de la nouvelle à la plus ancienne."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui est en retard ?",
+        "prompt": "Anne arrive avant Marie. Julie est arrivée en même temps que Marie.",
+        "options": [
+            "Anne est en retard",
+            "Marielle est en retard",
+            "Julie est en retard",
+            "Marie est en retard"
+        ],
+        "answer": "Marielle est en retard",
+        "explanation": "Si Marie et Julie sont à la même heure, rares sont les détails explicitement permis montrant la fiscalité de Marielle. Toute ambiguïté résiduelle suppose que vous avez sous-estimé ou mis de côté les aptitudes à le traiter objectivement.",
+        "hint": "Utiliser seulement les indices enregistrés en évidence."
+    }
+]

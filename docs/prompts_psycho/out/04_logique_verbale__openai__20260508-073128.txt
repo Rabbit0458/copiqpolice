@@ -1,0 +1,418 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « heureux » ?",
+    "prompt": null,
+    "options": ["Triste", "Joyeux", "Fâché", "Indifférent"],
+    "answer": "Joyeux",
+    "explanation": "« Heureux » et « joyeux » partagent le sens de bien-être et de contentement. « Triste » et « fâché » sont des antonymes, ce qui les disqualifie. « Indifférent » décrit une absence d'émotion forte, donc n'est pas synonyme.",
+    "hint": "Pense à un état d'esprit positif."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Il a oublié son ___ à la maison. »",
+    "prompt": null,
+    "options": ["Crayon", "Mémoire", "Sourire", "Pluie"],
+    "answer": "Crayon",
+    "explanation": "Le mot « crayon » est approprié car on peut oublier un objet physique comme un bouton à la maison. « Mémoire » et « sourire » ne sont pas des objets tangibles. « Pluie » n'est pas pertinente dans ce contexte.",
+    "hint": "Considère les objets concrets qu'on peut réellement oublier."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « propre » ?",
+    "prompt": null,
+    "options": ["Sale", "Nouveau", "Pur", "Éclatant"],
+    "answer": "Sale",
+    "explanation": "« Propre » signifie nettoyé ou sans saleté, donc son antonyme est « sale », qui signifie couvert de saleté. « Nouveau » désigne la nouveauté, pas la propreté ou la saleté. « Pur » est synonyme de propre dans un sens figuré, et « éclatant » se rapporte plus à la vivacité d'une couleur ou d'une lumière.",
+    "hint": "Pense à ce qui est contraire à l'idée de netteté."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de \"briller\" ?",
+    "prompt": null,
+    "options": ["Éteindre", "Luire", "Sombre", "Disparaître"],
+    "answer": "Luire",
+    "explanation": "« Briller » et « luire » signifient tous deux émettre ou réfléchir de la lumière. « Éteindre » est l'action opposée de couper la lumière. « Sombre » et « disparaître » sont liés à l'obscurité ou à la disparition, ce qui n'a aucun rapport avec briller.",
+    "hint": "Cherche un mot qui implique de la lumière."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Chat est à miauler comme chien est à ___",
+    "prompt": null,
+    "options": ["Aboyer", "Siffler", "Rugir", "Hennir"],
+    "answer": "Aboyer",
+    "explanation": "Le chat miaule et le chien aboie, ce sont les cris respectifs de ces animaux. « Siffler » est un son produit par l'homme ou certains oiseaux, « rugir » est typique des grands félins comme le lion, et « hennir » est le cri du cheval.",
+    "hint": "Concentre-toi sur le cri typique de chaque animal."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Voiture, vélo, train, tomate",
+    "options": ["Voiture", "Vélo", "Train", "Tomate"],
+    "answer": "Tomate",
+    "explanation": "La tomate est un légume/fruits, alors que voiture, vélo, et train sont tous des moyens de transport. Aucun autre choix n'est alimentaire.",
+    "hint": "Cherche l'aliment parmi les moyens de transport."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « facile » ?",
+    "prompt": null,
+    "options": ["Ardu", "Simple", "Complexe", "Imposant"],
+    "answer": "Simple",
+    "explanation": "« Facile » et « simple » partagent le sens d'absence de difficulté. « Ardu » et « complexe » sont des antonymes de facile. « Imposant » ne concerne pas la difficulté mais la présence.",
+    "hint": "Cherche un mot qui désigne l'absence de difficulté."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est l'antonyme de « sombre » ?",
+    "prompt": null,
+    "options": ["Lumineux", "Obscur", "Ténébreux", "Maussade"],
+    "answer": "Lumineux",
+    "explanation": "« Sombre » décrit un manque de lumière ou de clarté. Le mot « lumineux » signifie plein de lumière, donc il est l'antonyme parfait. « Obscur » et « ténébreux » sont des synonymes de sombre. « Maussade » se réfère plus à l'humeur qu'à la lumière.",
+    "hint": "Cherche un mot associé à une grande luminosité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « grand » ?",
+    "prompt": null,
+    "options": ["Petit", "Énorme", "Minuscule", "Insignifiant"],
+    "answer": "Énorme",
+    "explanation": "« Grand » et « énorme » se rapportent à la taille au-dessus de la moyenne. « Petit » et « minuscule » sont antonymes de grand. « Insignifiant » se rapporte à l'importance, pas à la taille.",
+    "hint": "Cherche un mot synonyme de grande taille."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Pour son anniversaire, elle a reçu un ___. »",
+    "prompt": null,
+    "options": ["Gâteau", "Vêtement", "Stylo", "Arbre"],
+    "answer": "Gâteau",
+    "explanation": "Un gâteau est souvent associé aux anniversaires, ce qui rend l'option la plus pertinente. Un « vêtement » et un « stylo » ne sont pas typiquement associés à cet événement, tandis qu'un « arbre » est totalement hors propos.",
+    "hint": "Pense à ce qui est traditionnellement lié aux célébrations."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « oublier » ?",
+    "prompt": null,
+    "options": ["Se souvenir", "Négliger", "Effacer", "Ignorer"],
+    "answer": "Se souvenir",
+    "explanation": "Oublier et se souvenir sont des contraires, car oublier signifie perdre en mémoire et se souvenir implique garder en mémoire. Négliger n'est pas l'opposé d'oublier. Effacer et ignorer ne sont pas non plus antithétiques à oublier.",
+    "hint": "Pense à ce qui vient naturellement quand on n'oublie pas."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de \"voir\" ?",
+    "prompt": null,
+    "options": ["Scruter", "Oublier", "Ignorer", "Cacher"],
+    "answer": "Scruter",
+    "explanation": "« Voir » et « scruter » impliquent tous deux l'observation mais avec une intensité différente. Scruter signifie regarder attentivement. « Oublier » est sans rapport visuel, « ignorer » ne prête pas attention à ce qui est vu, et « cacher » obstrue la vision.",
+    "hint": "Cherche un mot qui implique une observation attentive."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Café est à boisson comme pain est à ___",
+    "prompt": null,
+    "options": ["Nourriture", "Verre", "Cuisine", "Faim"],
+    "answer": "Nourriture",
+    "explanation": "Le café est une boisson, tout comme le pain est un type de nourriture. « Verre » est un récipient pour boire, « cuisine » est un lieu, et « faim » est une sensation qui implique souvent de manger, mais pas spécifiquement lié à pain.",
+    "hint": "Pense à la catégorie globale à laquelle le pain appartient."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Rouge, bleu, rose, lion",
+    "options": ["Rouge", "Bleu", "Rose", "Lion"],
+    "answer": "Lion",
+    "explanation": "Rouge, bleu, et rose sont des couleurs, tandis que lion est un animal. Il se distingue ici en n'étant pas une couleur.",
+    "hint": "Cherche l'animal parmi les couleurs."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « courageux » ?",
+    "prompt": null,
+    "options": ["Peureux", "Brave", "Timide", "Lâche"],
+    "answer": "Brave",
+    "explanation": "« Courageux » et « brave » partagent le sens de montrer du courage face à un défi. « Peureux », « timide », et « lâche » sont des traits qui indiquent un manque de courage.",
+    "hint": "Choisissez un mot qui signifie faire face au danger avec courage."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « plein » ?",
+    "prompt": null,
+    "options": ["Vide", "Chargé", "Occupé", "Dense"],
+    "answer": "Vide",
+    "explanation": "« Plein » signifie en grande quantité, tandis que « vide » est l'absence totale de contenu, donc son antonyme. « Chargé », « occupé », et « dense » sont plus synonymes de plein que des antonymes.",
+    "hint": "Pense à l'opposé d'une capacité totale."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « acheter » ?",
+    "prompt": null,
+    "options": ["Vendre", "Acquérir", "Donner", "Offrir"],
+    "answer": "Acquérir",
+    "explanation": "« Acheter » et « acquérir » se rapportent tous deux à l'acquisition de biens ou services. « Vendre » est le processus opposé. « Donner » et « offrir » impliquent un transfert sans réception monétaire.",
+    "hint": "Cherche un mot qui signifie obtenir quelque chose en échange d'argent."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est l'antonyme de « clair » ?",
+    "prompt": null,
+    "options": ["Flou", "Limpide", "Brillant", "Lumineux"],
+    "answer": "Flou",
+    "explanation": "« Clair » signifie net, tandis que « flou » désigne un manque de netteté, donc ils sont antonymes. « Limpide », « brillant », et « lumineux » sont généralement synonymes ou proches de clair.",
+    "hint": "Axez-vous sur ce qui manque de netteté."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « métamorphose » ?",
+    "prompt": null,
+    "options": ["Stagnation", "Transformation", "Normalité", "Invariant"],
+    "answer": "Transformation",
+    "explanation": "« Métamorphose » et « transformation » désignent un changement marqué de forme. La stagnation implique l'absence de changement. « Normalité » et « invariant » décrivent la constance et non le changement.",
+    "hint": "Cherchez ce qui implique un changement radical."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Plante est à pousse comme oiseau est à ___",
+    "prompt": null,
+    "options": ["Nidification", "Éclipse", "Éclosion", "Photosynthèse"],
+    "answer": "Éclosion",
+    "explanation": "La plante pousse, tout comme l'oiseau éclot d'un œuf. La photosynthèse se rapporte aux plantes, l'éclipse n'est pas reliée à l'oiseau, et la nidification est un comportement post-éclosion.",
+    "hint": "Considérez le premier stade de vie."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Guitare, piano, trompette, livre",
+    "options": ["Guitare", "Piano", "Trompette", "Livre"],
+    "answer": "Livre",
+    "explanation": "Guitare, piano, et trompette sont des instruments de musique, tandis qu'un livre est un objet de lecture, ce qui le distingue de la catégorie des instruments.",
+    "hint": "Trouvez l'objet non musical."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : « Elle a ___ les fleurs dans son jardin. »",
+    "prompt": null,
+    "options": ["Planté", "Vu", "Mangée", "Écouté"],
+    "answer": "Planté",
+    "explanation": "« Planter » est l'action de mettre des fleurs dans le sol, ce qui est le plus logique ici. On peut voir, manger ou écouter les fleurs, mais ces actions ne sont pas cohérentes dans ce contexte.",
+    "hint": "Pensez à l'action la plus courante effectuée dans un jardin."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « cohérent » ?",
+    "prompt": null,
+    "options": ["Déraisonnable", "Incohérent", "Équilibré", "Accordé"],
+    "answer": "Incohérent",
+    "explanation": "« Cohérent » signifie logique et ordonné, tandis qu'« incohérent » décrit l'absence de cohésion logique. « Déraisonnable » ne concerne pas la logique structurée. « Équilibré » et « accordé » sont plus synonymes de cohérent qu'antonymes.",
+    "hint": "Cherchez un mot qui caractérise l'absence de logique."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Écrivain est à livre comme peintre est à ___",
+    "prompt": null,
+    "options": ["Toile", "Plume", "Couleur", "Motif"],
+    "answer": "Toile",
+    "explanation": "Un écrivain crée un livre, et un peintre crée une toile. Les autres options ne sont ni le produit final, ni l'œuvre principale de l'artiste.",
+    "hint": "Pensez à ce qu'un peintre produit comme œuvre principale."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « éphémère » ?",
+    "prompt": null,
+    "options": ["Permanent", "Fugace", "Continu", "Constante"],
+    "answer": "Fugace",
+    "explanation": "« Éphémère » et « fugace » indiquent tous deux une courte durée. « Permanent » est l'antonyme car il désigne la longévité ou la constance. « Continu » et « constante » impliquent aussi la persistance.",
+    "hint": "Cherchez un mot qui signifie temporarité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « dense » ?",
+    "prompt": null,
+    "options": ["Épars", "Concentré", "Compact", "Serré"],
+    "answer": "Épars",
+    "explanation": "« Dense » signifie que les éléments sont proches l'un de l'autre, tandis que « épars » signifie dispersé. Les autres termes indiquent également une proximité entre les éléments.",
+    "hint": "Recherchez un mot qui décrit quelque chose de dispersé."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « sophistiqué » ?",
+    "prompt": null,
+    "options": ["Simple", "Élégant", "Banal", "Rustique"],
+    "answer": "Élégant",
+    "explanation": "Sophistiqué et élégant peuvent tous deux désigner une certaine raffinement. Simple, banal, et rustique sont en contraste avec l'idée de complexité ou de raffinement apportée par sophistiqué.",
+    "hint": "Recherchez un terme qui connote un certain raffinement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que signifie « pièce » dans la phrase suivante: « Elle a trouvé une pièce en argent dans le pot. » ?",
+    "prompt": "Elle a trouvé une pièce en argent dans le pot.",
+    "options": ["Chambre", "Monnaie", "Partie", "Oeuvre"],
+    "answer": "Monnaie",
+    "explanation": "Dans ce contexte, « pièce » se réfère à une pièce de monnaie, comme suggéré par l'argent, une matière souvent associée à la monnaie. « Chambre », « partie », et « œuvre » n'ont pas de sens monétaire.",
+    "hint": "Pensez à ce qui est souvent fabriqué en argent dans les transactions."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complétez l'analogie : Infirmier est à hôpital comme enseignant est à ___",
+    "prompt": null,
+    "options": ["École", "Enfant", "Bureau", "Classe"],
+    "answer": "École",
+    "explanation": "L'infirmier travaille dans un hôpital, de la même manière qu'un enseignant travaille dans une école. Les autres options ne sont pas des équivalents directs du lieu de travail pour un enseignant.",
+    "hint": "Réfléchissez au lieu principal d'exercice de la profession."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Citron, Pamplemousse, Orange, Poire",
+    "options": ["Citron", "Pamplemousse", "Orange", "Poire"],
+    "answer": "Poire",
+    "explanation": "Citron, pamplemousse, et orange sont des agrumes, tandis que la poire ne l'est pas, ce qui la place hors de cette famille botanique.",
+    "hint": "Cherchez le fruit qui n'est pas un agrume."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « bienveillant » ?",
+    "prompt": null,
+    "options": ["Malveillant", "Généreux", "Amical", "Compatissant"],
+    "answer": "Malveillant",
+    "explanation": "« Bienveillant » signifie montrer de la bienveillance ou de la bonté, spécifiquement un désir de faire du bien; ainsi « malveillant » qui indique l'intention de nuire est son antonyme. Généreux, amical et compatissant ont des connotations positives similaires à bienveillant.",
+    "hint": "Cherchez le mot qui signifie avoir de mauvaises intentions."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « pléthorique » ?",
+    "prompt": null,
+    "options": ["Indigent", "Superflu", "Abondant", "Parcimonieux"],
+    "answer": "Abondant",
+    "explanation": "« Pléthorique » et « abondant » décrivent tous deux une grande quantité. « Indigent » et « parcimonieux » sont en fait des contraires, évoquant le manque ou la frugalité. « Superflu » indique un excès inutile, mais est moins spécifique que pléthorique.",
+    "hint": "Cherchez un mot qui évoque une quantité surabondante."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Fleurs est à bouquet comme étoiles est à ___",
+    "prompt": null,
+    "options": ["Ciel", "Constellation", "Lune", "Éclipse"],
+    "answer": "Constellation",
+    "explanation": "Les fleurs forment un bouquet, et les étoiles forment une constellation. « Ciel » est une grande étendue abritant étoiles, tandis que lune et éclipse ne sont pas des rassemblements d'étoiles.",
+    "hint": "Pensez à un terme désignant un ensemble d'étoiles."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « prolixe » ?",
+    "prompt": null,
+    "options": ["Succinct", "Bavard", "Conciseness", "Laconiquement"],
+    "answer": "Bavard",
+    "explanation": "« Prolixe » et « bavard » suggèrent tous deux de parler ou d'écrire en usant trop de mots. « Succinct » et « laconique » désignent une parole ou un écrit concis, donc ce sont des contraires.",
+    "hint": "Pensez à un mot qui caractérise ceux utilisant beaucoup de mots."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « altérer » ?",
+    "prompt": null,
+    "options": ["Conserver", "Modifier", "Détériorer", "Ajuster"],
+    "answer": "Conserver",
+    "explanation": "« Altérer » signifie changer, souvent en pire, alors que « conserver » signifie garder intact ou inchangé. « Modifier » et « ajuster » sont similaires au verbe altérer, tandis que « détériorer » suppose un changement en pire.",
+    "hint": "Cherchez le mot qui signifie laisser inchangé."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est l'antonyme de « sibyllin » ?",
+    "prompt": null,
+    "options": ["Clair", "Énigmatique", "Ambigu", "Complexe"],
+    "answer": "Clair",
+    "explanation": "« Sibyllin » signifie mystérieux ou difficile à comprendre, donc son antonyme serait « clair », qui désigne ce qui est facile à comprendre. « Énigmatique », « ambigu » et « complexe » sont synonymes ou proches de sibyllin.",
+    "hint": "Cherchez un mot signifiant facile à comprendre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « atavique » ?",
+    "prompt": null,
+    "options": ["Inné", "Nouvelle", "Émergent", "Innovant"],
+    "answer": "Inné",
+    "explanation": "« Atavique » se réfère à des traits ou des caractéristiques hérités de manière récurrente, donc son synonyme serait « inné », une caractéristique présente à la naissance. « Nouvelle » et « innovant » soulignent l'émergence, tandis qu'« émergent » signifie se manifester récemment, opposé à atavique.",
+    "hint": "Cherchez un mot qui évoque quelque chose d'héréditaire."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans ce contexte, que signifie « pièce » dans « la pièce du puzzle » ?",
+    "prompt": "La pièce du puzzle.",
+    "options": ["Objet", "Scène", "Monnaie", "Morceau"],
+    "answer": "Morceau",
+    "explanation": "Dans ce contexte, « pièce » se réfère à un « morceau », un composant du puzzle. « Objet » est trop large, « scène » s'applique à la partie d'un spectacle théâtral, et « monnaie » fait référence à de la valeur numéraire.",
+    "hint": "Réfléchissez aux composants individuels d'un ensemble."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « contrit » ?",
+    "prompt": null,
+    "options": ["Impenitent", "Repentant", "Attristé", "Réconcilié"],
+    "answer": "Impenitent",
+    "explanation": "« Contrit » signifie réellement désolé pour une faute, de sorte que l'antonyme « impenitent » désigne quelqu'un qui ne ressent pas de remords. « Repentant » est synonyme de contrit, tout comme « attristé » peut s'y associer dans un certain contexte, et « réconcilié » n'exprime ni remords ni absence de remords.",
+    "hint": "Cherchez un mot qui signifie absence de regret."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complétez l'analogie : Chiffre est à numérotation comme lettre est à ___",
+    "prompt": null,
+    "options": ["Écriture", "Sonorité", "Symbole", "Enigme"],
+    "answer": "Écriture",
+    "explanation": "Les chiffres permettent la numérotation; de façon analogue, les lettres permettent de l'écriture. « Sonorité » et « symbole » sont trop vagues et n'y sont pas directement associés, tandis que « énigme » n'a rien à voir.",
+    "hint": "Réfléchissez à ce que la lettre constitue lorsque combinée avec d'autres."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « sibyllin » ?",
+    "prompt": null,
+    "options": ["Clair", "Confus", "Énigmatique", "Lucide"],
+    "answer": "Énigmatique",
+    "explanation": "« Sibyllin » et « énigmatique » signifient tous deux mystérieux et difficile à comprendre. « Clair » et « lucide » sont antonymes, et « confus » implique la désorientation.",
+    "hint": "Cherchez un mot qui signifie mystérieux."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « altérer » dans: \"Ne pas altérer le tempo\" ?",
+    "prompt": "Ne pas altérer le tempo",
+    "options": ["Conserver", "Modifier", "Transformer", "Challenger"],
+    "answer": "Conserver",
+    "explanation": "Dans un contexte de tempo, « altérer » signifie changer le rythme, ainsi « conserver » signifie garder inchangé. « Modifier », « transformer » et « challenger » impliquent un changement.",
+    "hint": "Cherchez un mot qui exprime la conservation de l'état original."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complétez l'analogie : Marin est à mer comme aviateur est à ___",
+    "prompt": null,
+    "options": ["Ciel", "Vol", "Nuage", "Terre"],
+    "answer": "Ciel",
+    "explanation": "Le marin navigue sur la mer de manière identique à l'aviateur qui vole dans le ciel. « Nuage » n’est pas l’espace aérien général ni l'activité d'aviateur. « Vol » est l'acte de voler, non l’environnement, et « terre » est à l’opposé du milieu exercé par un aviateur.",
+    "hint": "Réfléchissez à l'environnement de prédilection pour le vol."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « prolixe » ?",
+    "prompt": null,
+    "options": ["Laconique", "Verbeux", "Bavard", "Éloquent"],
+    "answer": "Laconique",
+    "explanation": "« Prolixe » implique une abondance de mots, tandis que « laconique » signifie concis. « Verbeux » et « bavard » sont similaires à prolixe, et « éloquent » caractérise une manière persuasive ou expressive mais pas nécessairement concise.",
+    "hint": "Considérez un mot désignant la brièveté dans l'expression."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « pléthorique » ?",
+    "prompt": null,
+    "options": ["Parcimonieux", "Excessif", "Superflu", "Immodéré"],
+    "answer": "Parcimonieux",
+    "explanation": "« Pléthorique » décrit en grande quantité, tandis que « parcimonieux » signifie en petite quantité. « Excessif », « superflu » et « immodéré » décrivent toutes des situations d'abondance non freinée.",
+    "hint": "Pensez au mot décrivant ce qui est en faible quantité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « atavique » ?",
+    "prompt": null,
+    "options": ["Innovant", "Traditionnel", "Ancestral", "Héréditaire"],
+    "answer": "Innovant",
+    "explanation": "« Atavique » est lié à l'héritage d'anciennes caractéristiques, donc l'antonyme « innovant » implique de nouvelles idées. « Traditionnel », « ancestral », et « héréditaire » soulignent tous une continuité historique.",
+    "hint": "Chercher un mot qui parle de changer ou de nouvelles idées."
+  }
+]
+```

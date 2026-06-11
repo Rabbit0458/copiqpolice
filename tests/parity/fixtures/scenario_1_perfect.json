@@ -1,0 +1,46 @@
+{
+  "_comment": "Scénario 1 — réponse parfaite. CODE-052 parité Dart↔TS.",
+  "dicts": [],
+  "questions": [
+    {
+      "id": "q1",
+      "max_points": 5,
+      "points": [
+        {
+          "id": "p1",
+          "position": 1,
+          "label": "Qualification",
+          "weight": 1.0,
+          "is_required": true,
+          "kind": "core",
+          "groups": [
+            {
+              "id": "g1",
+              "position": 1,
+              "is_optional": false,
+              "keywords": [
+                {"value": "degradation", "is_phrase": false, "is_negation": false, "fuzzy_max_dist": 1}
+              ]
+            },
+            {
+              "id": "g2",
+              "position": 2,
+              "is_optional": false,
+              "keywords": [
+                {"value": "autrui", "is_phrase": false, "is_negation": false, "fuzzy_max_dist": 0}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "answers": {
+    "q1": "Il s'agit d'une dégradation volontaire du bien d'autrui."
+  },
+  "expected": {
+    "total_score": 5.0,
+    "total_max": 5.0,
+    "percent": 100.0
+  }
+}

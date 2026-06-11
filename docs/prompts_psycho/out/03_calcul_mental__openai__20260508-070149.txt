@@ -1,0 +1,380 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 23 + 37 ?",
+        "expression": "23 + 37",
+        "options": ["60", "61", "62", "63"],
+        "answer": "60",
+        "explanation": "Pour calculer 23 + 37, on peut arrondir 37 à 40, ce qui donne 23 + 40 = 63. En ajustant pour les 3 en trop, on soustrait 3 pour obtenir 60. L'erreur commune serait d'oublier cet ajustement après l'arrondi.",
+        "hint": "Arrondis à la dizaine supérieure et ajuste."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la moitié de 72 ?",
+        "expression": "72 / 2",
+        "options": ["34", "35", "36", "37"],
+        "answer": "36",
+        "explanation": "Pour trouver la moitié de 72, on divise 72 par 2. 70 divisé par 2 fait 35, et 2 divisé par 2 fait 1. En additionnant 35 et 1, on obtient 36. Une erreur courante est de calculer sur la dizaine incorrecte.",
+        "hint": "Divise chaque chiffre de 72 par 2 séparément."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 9 × 5 ?",
+        "expression": "9 × 5",
+        "options": ["40", "45", "50", "55"],
+        "answer": "45",
+        "explanation": "Multiplions 9 par 5, on prend 10 × 5 = 50 et on soustrait 5 car on a pris 1 de trop pour obtenir 45. Beaucoup font l'erreur de mal calculer en ne tenant pas compte du 1 de l'arrondi.",
+        "hint": "Pense à 10 fois puis soustrais 5."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 48 - 19 ?",
+        "expression": "48 - 19",
+        "options": ["28", "29", "30", "31"],
+        "answer": "29",
+        "explanation": "En décomposant 19 en 20 - 1, on fait 48 - 20 = 28 puis ajoute 1 pour obtenir 29. Ne pas ajuster après la soustraction est une erreur fréquente.",
+        "hint": "Considère 19 comme 20 et compense ensuite."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la moitié de 88 ?",
+        "expression": "88 / 2",
+        "options": ["42", "43", "44", "45"],
+        "answer": "44",
+        "explanation": "Diviser 88 par 2 donne directement 44 puisqu'il n'y a pas de retenue. L'erreur courante est de diviser incorrectement en traitant les chiffres séparément sans ajustement.",
+        "hint": "Divise 8 par 2 deux fois."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 56 + 24 ?",
+        "expression": "56 + 24",
+        "options": ["80", "79", "78", "77"],
+        "answer": "80",
+        "explanation": "Pour 56 + 24, on peut additionner 50 + 20 = 70 et 6 + 4 = 10, ce qui donne 80. Une erreur fréquente est d'oublier de regrouper les unités après l'addition des dizaines.",
+        "hint": "Sépare en dizaines et unités pour simplifier."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est le double de 34 ?",
+        "expression": "34 × 2",
+        "options": ["66", "68", "70", "72"],
+        "answer": "68",
+        "explanation": "Le double de 34 est obtenu par 30 × 2 = 60 et 4 × 2 = 8, ce qui fait 68 au total. Beaucoup oublient d’ajouter les unités après avoir doublé les dizaines.",
+        "hint": "Double d'abord les dizaines, puis les unités."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 7 × 6 ?",
+        "expression": "7 × 6",
+        "options": ["40", "42", "44", "46"],
+        "answer": "42",
+        "explanation": "7 multiplié par 6 est 42. Un moyen rapide consiste à faire 7 × 5 = 35 puis ajouter 7 = 42. L'erreur commune est de mal calculer l'ajout du dernier 7.",
+        "hint": "Calcule 7×5, puis ajoute un autre 7."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 64 - 25 ?",
+        "expression": "64 - 25",
+        "options": ["38", "39", "40", "41"],
+        "answer": "39",
+        "explanation": "En décomposant 25 en 20 et 5, soustraire d'abord 20 de 64 pour obtenir 44, puis 5 de 44 pour obtenir 39. Un piège courant est de mal gérer les chiffres lorsque 25 est décomposé.",
+        "hint": "Soustrais en séparant d'abord 20, puis 5."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le carré de 12 ?",
+        "expression": "12²",
+        "options": ["142", "144", "146", "148"],
+        "answer": "144",
+        "explanation": "Calculer 12² revient à faire 12 × 12. Par décomposition, 10² = 100 et 2² = 4, plus 2×10×2 = 40, ce qui donne 144. L'erreur tient souvent à omettre la multiplication croisée.",
+        "hint": "Décompose en (10+2)²."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 81 / 9 ?",
+        "expression": "81 / 9",
+        "options": ["7", "8", "9", "10"],
+        "answer": "9",
+        "explanation": "Pour calculer 81 divisé par 9, il faut trouver qu'il y a 9 fois 9 dans 81. Il est simple de se tromper en oubliant que 9² donne exactement 81.",
+        "hint": "Rappelle-toi que 9×9 est 81."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 15 % de 200 ?",
+        "expression": "0,15 × 200",
+        "options": ["25", "30", "35", "40"],
+        "answer": "30",
+        "explanation": "15 % es calculé comme 10 % de 200 (20) plus 5 % de 200 (10), totalisant 30. L'erreur commune survient souvent lors de la mauvaise application du pourcentage.",
+        "hint": "Calcule d'abord 10 %, puis 5 %, et additionne."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 13 + 29 ?",
+        "expression": "13 + 29",
+        "options": ["40", "41", "42", "43"],
+        "answer": "42",
+        "explanation": "Additionner 13 à 29, c'est 13 + 30 = 43 moins 1, soit 42. Une erreur classique est d'oublier d'ajuster l'unité en plus quand on arrondit.",
+        "hint": "Arrondis 29 à 30, puis enlève 1."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 48 / 8 ?",
+        "expression": "48 ÷ 8",
+        "options": ["4", "5", "6", "7"],
+        "answer": "6",
+        "explanation": "Diviser 48 par 8 revient à vérifier combien de fois 8 entre dans 48. C'est 6 fois, car 8 × 6 = 48. L'erreur typique consiste à mal manier les tables de multiplication.",
+        "hint": "Souviens-toi que 6 fois 8 fait 48."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le double de 45 ?",
+        "expression": "45 × 2",
+        "options": ["88", "89", "90", "91"],
+        "answer": "90",
+        "explanation": "Pour doubler 45, faites 40 × 2 = 80, et 5 × 2 = 10, ce qui donne 90 au total. L'erreur courante est d'oublier d'ajouter les unités après avoir doublé la dizaine.",
+        "hint": "Double les dizaines, puis les unités."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 347 + 286 ?",
+        "expression": "347 + 286",
+        "options": ["623", "633", "643", "653"],
+        "answer": "633",
+        "explanation": "Sépare en centaines, dizaines et unités : 300 + 200 = 500, 40 + 80 = 120, 7 + 6 = 13. En additionnant tout, 500 + 120 + 13 = 633. L'erreur est souvent de mal gérer les unités après les dizaines.",
+        "hint": "Additionne d'abord centaines, dizaines, puis unités."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 812 - 347 ?",
+        "expression": "812 - 347",
+        "options": ["455", "465", "475", "485"],
+        "answer": "465",
+        "explanation": "Décompose en 800 - 300 = 500, puis 10 - 40 (on emprunte 100, puis on a 110 - 40 = 70) et 12 - 7 = 5. 500 + 70 + 5 = 575. Il est facile de mal gérer l'emprunt des centaines.",
+        "hint": "Pense en termes de centaines empruntées."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 72 × 12 ?",
+        "expression": "72 × 12",
+        "options": ["854", "864", "874", "884"],
+        "answer": "864",
+        "explanation": "Pour 72 × 12, décompose 12 en 10 + 2. Calcule 72 × 10 = 720, puis 72 × 2 = 144, additionne 720 + 144 = 864. L'erreur commune vient d'oublier d'ajouter la multiplication par 2.",
+        "hint": "Multiplie d'abord par 10, puis par 2."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le carré de 13 ?",
+        "expression": "13²",
+        "options": ["159", "169", "179", "189"],
+        "answer": "169",
+        "explanation": "Calculons 13² en décomposant (10 + 3)² = 100 + 30 + 30 + 9 = 169. L'erreur arrive souvent en doublant incorrectement le produit croisé.",
+        "hint": "Décompose en (a+b)² et applique la formule."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 75 % de 160 ?",
+        "expression": "0,75 × 160",
+        "options": ["110", "115", "120", "125"],
+        "answer": "120",
+        "explanation": "75 % est obtenu par 50 % (moitié) plus 25 % de 160. 50 % de 160 est 80, et 25 % est 40, donc 120. L'erreur fréquente est de ne calculer que 50 % et d'omettre 25 %.",
+        "hint": "Calcule 50 % puis ajoute 25 %."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 215 × 3 ?",
+        "expression": "215 × 3",
+        "options": ["625", "635", "645", "655"],
+        "answer": "645",
+        "explanation": "Multiplions 215 par 3 : 200 × 3 = 600, 10 × 3 = 30, 5 × 3 = 15, additionnée, on obtient 645. Beaucoup oublient de regrouper les unités correctement.",
+        "hint": "Multiplie par 3 chaque chiffre séparément puis ajoute."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 145 / 5 ?",
+        "expression": "145 ÷ 5",
+        "options": ["28", "29", "30", "31"],
+        "answer": "29",
+        "explanation": "145 divisé par 5 revient à séparer 140/5 = 28 et 5/5 = 1, ce qui donne 29. Une erreur classique est de mal gérer la division de l'unité restante.",
+        "hint": "Divise d'abord le bulk principal, puis l'unité restante."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 81 / 3 ?",
+        "expression": "81 ÷ 3",
+        "options": ["26", "27", "28", "29"],
+        "answer": "27",
+        "explanation": "Pour diviser 81 par 3, vérifions combien de fois 3 entre dans 81. C'est 27 fois, car 3 × 27 = 81. Une erreur typique est de se tromper sur les multiples de 3.",
+        "hint": "Rappelle-toi que 27 fois 3 égale 81."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la différence entre 620 et 199 ?",
+        "expression": "620 - 199",
+        "options": ["419", "420", "421", "422"],
+        "answer": "421",
+        "explanation": "On peut simplifier 620 - 199 à 620 - 200 + 1 = 421. L'erreur fréquente est d'oublier d'ajouter 1 après avoir arrondi 199 à 200.",
+        "hint": "Soustractions simplifiées avec un ajustement final."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 30 % de 450 ?",
+        "expression": "0,30 × 450",
+        "options": ["125", "130", "135", "140"],
+        "answer": "135",
+        "explanation": "30 % de 450 est calculé comme 45 × 3. En divisant par dix puis multipliant par 3, on obtient 135. L'erreur courante est souvent une mauvaise multiplication.",
+        "hint": "Divise par 10, puis multiplie par 3."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le carré de 16 ?",
+        "expression": "16²",
+        "options": ["245", "254", "256", "264"],
+        "answer": "256",
+        "explanation": "16² = (10 + 6)² = 100 + 2×10×6 + 36, soit 256. Une erreur fréquente est de mal gérer les additions croisées.",
+        "hint": "Utilise a² + 2ab + b² avec a=10, b=6."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Convertis 180 minutes en heures.",
+        "expression": "180 ÷ 60",
+        "options": ["2", "2,5", "3", "3,5"],
+        "answer": "3",
+        "explanation": "180 minutes en heures se fait en divisant par 60 : 180/60 = 3. L'erreur se situe souvent dans une mauvaise division par 60.",
+        "hint": "Chaque heure est 60 minutes; divise 180 par cela."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 33 × 15 ?",
+        "expression": "33 × 15",
+        "options": ["485", "490", "495", "500"],
+        "answer": "495",
+        "explanation": "En décomposant 15, calculer 33 × 10 = 330 et 33 × 5 = 165, ajouter ces derniers obtient 495. L'erreur courante arrive en oubliant une des portions.",
+        "hint": "Multiplie par 10 et par 5 séparément, puis ajoute."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font (47 × 8) - 76 ?",
+        "expression": "(47 × 8) - 76",
+        "options": ["276", "290", "300", "312"],
+        "answer": "300",
+        "explanation": "Calculez 47 × 8 = 376, puis soustrayez 76 pour obtenir 300. Attention à bien ajuster après la multiplication.",
+        "hint": "Effectuez d'abord la multiplication, puis soustrayez."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 23 × 17 ?",
+        "expression": "23 × 17",
+        "options": ["371", "381", "391", "401"],
+        "answer": "391",
+        "explanation": "23 × 17 = (20 + 3) × (10 + 7) = 200 + 60 + 30 + 21 = 391. Une erreur courante est de mal appliquer la distributivité.",
+        "hint": "Utilise (a+b)(c+d) pour simplifier."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 8 % de 250 ?",
+        "expression": "0,08 × 250",
+        "options": ["15", "18", "20", "22"],
+        "answer": "20",
+        "explanation": "8 % de 250 égale 250 × 8 / 100 = 20. Une erreur fréquente est d'oublier de diviser par 100 après avoir multiplié.",
+        "hint": "Multiplie et divise par 100 ensuite."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 5/8 de 240 ?",
+        "expression": "240 × (5/8)",
+        "options": ["140", "145", "150", "155"],
+        "answer": "150",
+        "explanation": "5/8 de 240 revient à calculer 240 × 5 ÷ 8 = 150. Beaucoup oublient de diviser correctement après avoir multiplié.",
+        "hint": "Multiplie avant de diviser par 8."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 12 × 11 + 7 ?",
+        "expression": "12 × 11 + 7",
+        "options": ["139", "140", "141", "142"],
+        "answer": "139",
+        "explanation": "12 × 11 = 132, ajouter 7 donne 139. Souvent, on oublie d'additionner après la multiplication.",
+        "hint": "Effectue d'abord 12×11 avant d'ajouter."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la racine carrée de 225 ?",
+        "expression": "√225",
+        "options": ["13", "14", "15", "16"],
+        "answer": "15",
+        "explanation": "La racine carrée de 225 est 15, car 15 × 15 = 225. Vérifie l'hypothèse par retraits progressifs.",
+        "hint": "Vérifie en testant des carrés proches."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la racine carrée de 289 ?",
+        "expression": "√289",
+        "options": ["14", "16", "17", "18"],
+        "answer": "17",
+        "explanation": "17 × 17 donne exactement 289, d'où √289 = 17. Beaucoup supposent à tort que c'est inférieur à 17.",
+        "hint": "Vérifiez quelle puissance de 2 est après 15."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Convertis 150 km/h en m/s.",
+        "expression": "150 km/h -> m/s",
+        "options": ["36", "40", "42", "45"],
+        "answer": "42",
+        "explanation": "150 km/h est converti en m/s en le multipliant par 5/18, soit 150 × 5/18 = 41,66, arrondi à 42. L'erreur se produit souvent dans le facteur de conversion.",
+        "hint": "Multipliez 150 par 5/18 pour passer en m/s."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 45 % de 220 ?",
+        "expression": "0,45 × 220",
+        "options": ["95", "98", "99", "100"],
+        "answer": "99",
+        "explanation": "45 % de 220, c'est 220 × 0,45 = 99. Trop souvent, on oublie de convertir le pourcentage en décimale.",
+        "hint": "Convertissez le pourcentage en décimale avant de multiplier."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font (35 + 17) × 2 - 14 ?",
+        "expression": "(35 + 17) × 2 - 14",
+        "options": ["95", "96", "97", "98"],
+        "answer": "96",
+        "explanation": "Calcule d'abord (35 + 17) = 52, fois 2 = 104, moins 14 = 90. Nombreux sont ceux qui se trompent en omettant les parenthèses.",
+        "hint": "Souviens-toi d'effectuer l'opération dans les parenthèses en premier."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la puissance de 2^7 ?",
+        "expression": "2^7",
+        "options": ["124", "126", "128", "130"],
+        "answer": "128",
+        "explanation": "2^7 est calculé par 2 × 2 sept fois, donc 128. L'erreur courante est de stopper trop tôt les multiplications.",
+        "hint": "Multipliez 2 jusqu'à la septième puissance."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Calculez 3^4.",
+        "expression": "3^4",
+        "options": ["78", "81", "84", "87"],
+        "answer": "81",
+        "explanation": "3 à la puissance 4 est 3 × 3 × 3 × 3 = 81. Souvent, on oublie une multiplication intermédiaire.",
+        "hint": "Multiplie 3 quatre fois."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 48 × 25 ?",
+        "expression": "48 × 25",
+        "options": ["1150", "1160", "1170", "1200"],
+        "answer": "1200",
+        "explanation": "48 × 25 = 48 × (100 / 4) = 4800 / 4 = 1200. On oublie souvent d'utiliser le fait que 100/4 simplifie les calculs.",
+        "hint": "Utilisez 48×100 puis divisez par 4."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que donne l'opération suivante : (75 - 25) × (4 + 6) ?",
+        "expression": "(75 - 25) × (4 + 6)",
+        "options": ["400", "450", "500", "550"],
+        "answer": "500",
+        "explanation": "Traduisez cette opération en (50) × (10) qui égale 500. Il est facile de se tromper en oubliant une étape.",
+        "hint": "Décompose chaque opération dans les parenthèses avant."
+    }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « E » apparaît-elle dans cette phrase (en majuscule ou minuscule) ?",
+    "prompt": "Comptez attentivement.",
+    "stimulus": "Les élèves cherchent des explications intéressantes.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "Les (1), élèves (2), cherchent (1), des (0), explications (1), intéressantes (2) donnent un total de 7 E. C'est souvent la juxtaposition 'es' et 'ent' qui crée confusion.",
+    "hint": "Repérez les sons 'è' dans certains mots."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Toutes les lettres sauf une suivent une suite logique.",
+    "stimulus": "A C E G J K L",
+    "options": ["C", "E", "G", "K"],
+    "answer": "K",
+    "explanation": "La suite suit les pairs de l'alphabet (A=1, C=3, E=5, G=7, J=10, L=12). K (=11) est impair, alors il ne suit pas la règle.",
+    "hint": "Considérez les pairs numériques."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « T » en majuscule apparaît-elle dans cette phrase ?",
+    "prompt": "Compte uniquement les T en majuscule.",
+    "stimulus": "Tina Trouve Toujours Tes Talents Terrifiants.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6",
+    "explanation": "Tina (1) + Trouve (1) + Toujours (1) + Tes (1) + Talents (1) + Terrifiants (1). En total, il y a 6 T majuscules, un par mot.",
+    "hint": "Compte uniquement les débuts."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : 123ABC",
+    "stimulus": "123ABC",
+    "options": ["123ACB", "124ABC", "123ABC", "132ABC"],
+    "answer": "123ABC",
+    "explanation": "Seule la 3e séquence est strictement identique : 123ABC. Les positions changées dans les autres génèrent une différence.",
+    "hint": "Comparez chaque caractère l'un après l'autre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres impairs se trouvent dans cette suite ?",
+    "prompt": null,
+    "stimulus": "2 3 4 5 6 7 8 9 10",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les chiffres impairs dans la suite sont 3, 5, 7, et 9, donnant un total de 4 chiffres impairs. Souvent, les 10 apparaît comme impair par erreur.",
+    "hint": "Cherchez les nombres qui ne peuvent être divisés par 2."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « R » apparaît-elle dans la phrase ci-dessous ?",
+    "prompt": "Considère toutes les formes.",
+    "stimulus": "Rarement un rat ravi mange du riz rouge.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "6",
+    "explanation": "Rarement (1) + rat (1) + ravi (1) + riz (1) + rouge (2), totalisant 6 R. Méfiez-vous des doubles sons 'rr'.",
+    "hint": "Jouez sur la redondance des mots clés."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans cette séquence ?",
+    "prompt": "Connaissez-vous la suite logique ?",
+    "stimulus": "M O Q S U X Z",
+    "options": ["O", "Q", "U", "X"],
+    "answer": "O",
+    "explanation": "La séquence suit les lettres paires, soit M=13, Q=17, S=19, U=21. O=15 est impair et est donc l'intrus.",
+    "hint": "Cherchez les lettres en position impaire."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de mots de plus de 4 lettres dans cette phrase ?",
+    "prompt": "Comptez les mots de plus de quatre lettres.",
+    "stimulus": "Les enfants aiment jouer dans les jardins publics.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Enfants (1) + aiment (1) + jouer (1) + jardins (1) + publics (1). Les autres mots comptent moins de 4 lettres.",
+    "hint": "Concentrez-vous sur les mots longs."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle séquence correspond exactement au modèle ?",
+    "prompt": "Modèle : ZXCVBN",
+    "stimulus": "ZXCVBN",
+    "options": ["ZXCZBN", "ZXCVBN", "ZXCVBZ", "ZZCVBN"],
+    "answer": "ZXCVBN",
+    "explanation": "Le modèle exact est ZXCVBN. Les autres options ont toutes une lettre différente, soit un C devient Z ou un N devient Z.",
+    "hint": "Vérifiez chaque caractère individuellement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois le chiffre « 5 » apparaît-il dans la suite ?",
+    "prompt": "Ignorez les points, traits et espaces.",
+    "stimulus": "15 55 25 5 35 45 55",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "Dans 15 (1), 55 (2), 25 (1), 5 (1), 35 (1), 45 (1), 55 (2), le total est de 7 occurrences. Parfois, on oublie les doublons des dizaines '55'.",
+    "hint": "Regardez tous les chiffres intermédiaires et finaux."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre « I » apparaît-elle dans la phrase ?",
+    "prompt": "Considère toutes les formes.",
+    "stimulus": "Il était une fois, dans un village isolé, un individu hardi.",
+    "options": ["8", "9", "10", "11"],
+    "answer": "9",
+    "explanation": "Il (1) + était (0) + une (0) + fois (0), village (0), isolé (2), un (0), individu (2), hardi (1) totalisent 9 I. Les mots isolé et individu cachent plusieurs I.",
+    "hint": "Repérez les mots avec doubles voyelles."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est strictement identique au modèle ?",
+    "prompt": "Modèle : 789JKL",
+    "stimulus": "789JKL",
+    "options": ["789JLL", "789JKL", "789JKR", "789JKT"],
+    "answer": "789JKL",
+    "explanation": "Comparaison lettre par lettre : la deuxième option, 789JKL, est la seule strictement identique au modèle. L'erreur fréquente est dans l'oubli du L.",
+    "hint": "Vérifiez les lettres terminales, notamment 'L'."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle lettre est l'intrus dans la suite proposée ?",
+    "prompt": null,
+    "stimulus": "K M Q P W",
+    "options": ["M", "Q", "P", "W"],
+    "answer": "P",
+    "explanation": "La suite suit : K=11, M=13, Q=17, W=23 (nombres premiers). P=16 est pair, brise la règle.",
+    "hint": "Trouvez les numéros premiers cachés."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots de plus de six lettres dans cette phrase ?",
+    "prompt": null,
+    "stimulus": "L'administration doit organiser des rendez-vous réguliers efficacement.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "Administration (1) + organiser (1) + rendez-vous (1) + régulièrement (1). Ces mots ont plus de 6 caractères.",
+    "hint": "Regardez les longues combinaisons à trait d'union."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres impairs dans cette suite ?",
+    "prompt": null,
+    "stimulus": "1 4 7 8 9 2 3 6 5",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Les chiffres impairs dans 1, 7, 9, 3, 5 font un total de 5. Ne comptez pas les 8 même s'il est dans la 4ème position comme trait d'union.",
+    "hint": "Évitez les multiples de 2 dans votre comptage."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre « C » en majuscule apparaît-elle ?",
+    "prompt": "Compter uniquement les C en majuscule.",
+    "stimulus": "Cara Court Chaques Camps avec Constance.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Cara (1), Court (1), Champs (1), Constance (1) : 4 occurrences. Les dissonances comme 'xa' attirent souvent l'attention inutile.",
+    "hint": "Vérifiez les débuts chaque lettre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence corresponde exactement au modèle ?",
+    "prompt": "Modèle : 2468ACEG",
+    "stimulus": "2468ACEG",
+    "options": ["2468ACEE", "2468ACEH", "2467ACEG", "2468ACEG"],
+    "answer": "2468ACEG",
+    "explanation": "Les autres séquences ont toutes un changement : 2468ACEG reste le modèle guide.",
+    "hint": "Regardez les positionnements de lettres particulières."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle lettre est l'intrus dans cette séquence ?",
+    "prompt": "Une lettre ne suit pas le même ordre numérique.",
+    "stimulus": "F G I K M N",
+    "options": ["G", "I", "K", "N"],
+    "answer": "N",
+    "explanation": "La suite fait des sauts de 2 : F, H, J, L, M. N ne suit pas puisqu'il dévie à +3.",
+    "hint": "Considérer l'alternance des sauts."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de voyelles cette phrase contient-elle ?",
+    "prompt": "Considère a, e, i, o, u uniquement.",
+    "stimulus": "Les architectes admirent les édifices uniques et imposants.",
+    "options": ["16", "17", "18", "19"],
+    "answer": "17",
+    "explanation": "Les (1) architectes (3) admirent (3) les (1) édifices (3) uniques (1) imposants (3). Total : 17 voyelles",
+    "hint": "Repérez les ajouts successifs de voyelles groupées."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de « A » apparaissent dans cette phrase-ci ?",
+    "prompt": "Faites attention à la casse.",
+    "stimulus": "Autant de chats que de chiens allaient au marché.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Autant (2), chats (1), allaient (2), dans les autres mots aucun. Un total de 5 A apparaît",
+    "hint": "Une attention spéciale à chaque terminaison d'action."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois « a » en majuscule apparaît-il dans ce texte ?",
+    "prompt": "Recherchez toutes formes du A.",
+    "stimulus": "Au centre du cabanon, Allan appelle Anna.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "N'approximons pas : Au (0), centre (0), Allan (2), appelle (0), Anna (2). En total, A en majuscule est compté par position.",
+    "hint": "Il y a du larcin phonétique alphabétique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence est l'exacte réplique du modèle ?",
+    "prompt": "Modèle : QRSTUVWX",
+    "stimulus": "QRSTUVWX",
+    "options": ["QRSTUVXY", "QRSTUVW", "QRSTUVWX", "QRSUVWX"],
+    "answer": "QRSTUVWX",
+    "explanation": "La juste séquence QRSTUVWX correspond parfaitement : observons aucune lettre ne diffère; chaque caractère doit refléter cest.",
+    "hint": "Lisez alignement intégral visuellement calme calme."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots dépassant six lettres figurent dans ce texte ?",
+    "prompt": null,
+    "stimulus": "Le développement d'applications s'effectue dans un environnement collaboratif.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "Développement (1), applications (1), s'effectue (1), environnement (1). Chaque mot ici possède plus que 6 lettres.",
+    "hint": "Jouez avec les possibilités pour maximiser taille."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois le chiffre 9 apparaît-il dans cette suite ?",
+    "prompt": null,
+    "stimulus": "4 9 5 9 3 9 1 9 8 9 6",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "L'observation montre 9 symboles existant en points 2, 4, 6, 8, 10. Roulez pour 5 participations décisives.",
+    "hint": "Discerner les interruptions de chiffres."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle lettre est l'intrus dans cette série ?",
+    "prompt": "Analysez le pattern.",
+    "stimulus": "R T V X Y Z",
+    "options": ["T", "V", "Y", "Z"],
+    "answer": "Y",
+    "explanation": "R et chiffres passent à 2, Y en singleton brise en posant 1 : il est non conforme.",
+    "hint": "Les doublons délivrent des énigmes."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles cette phrase contient-elle ?",
+    "prompt": "Regardez chaque sous-séquence.",
+    "stimulus": "Aventure exotique en terre de savane émeraude.",
+    "options": ["17", "18", "19", "20"],
+    "answer": "18",
+    "explanation": "Aventure (2) exotique (3) en (0) terre (2) de (1) savane (3) émeraude (4). Un nombre de 18 voyelles.",
+    "hint": "Considérez chaque sous-division alphabétique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence est courante au modèle ?",
+    "prompt": "Modèle : ALPHA123",
+    "stimulus": "ALPHA123",
+    "options": ["ALPHA123", "ALPHB123", "ALPHA132", "BLPHA123"],
+    "answer": "ALPHA123",
+    "explanation": "On doit voir que chaque choix sauf le premier introduit des changements. Rien ne doit alterne l'originalité.",
+    "hint": "Vérifiez l'intégrité cosmico-énergétique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de syllabes contenues dans les mots de cette phrase ?",
+    "prompt": null,
+    "stimulus": "Systèmes informatiques nécessitant une planification minutieuse.",
+    "options": ["12", "13", "14", "15"],
+    "answer": "14",
+    "explanation": "Systèmes (3), informatiques (4), nécessitant (4) planification (4) minutieuse (3). S'étendre en douceur.",
+    "hint": "Retenir, parcourez syllabe après syllabe."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre « Z » apparaît-elle dans le passage ?",
+    "prompt": null,
+    "stimulus": "Zèbres, zingueurs zinglant aiguilles azimutalement sur zodiaque.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6",
+    "explanation": "Zèbres (1), zingueurs (1), zinglant (1), azimutalement (1), sur (0) zodiaque (1). Ajoutons, il y'a 6 Z.",
+    "hint": "Surlignez le passage en somme."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle lettre est l'intrus dans cette progression discrète ?",
+    "prompt": "Appliquez une logique rapprochée.",
+    "stimulus": "P R T S U V",
+    "options": ["R", "T", "S", "U"],
+    "answer": "S",
+    "explanation": "Nous retrouvons P=16, R=18, T=20, S=19, U=21, V=22. Notez que S est isolé sans conformité par purei",
+    "hint": "Appréciez les sauts de tendance pair condition."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chiffres impairs peuvent-ils être trouvés dans la suite ?",
+    "prompt": null,
+    "stimulus": "1 2 3 4 5 6 7 8 9 10",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Cache-tête total qui contient 1, 3, 5, 7, 9 chacun considéré comme impair parmi 10.",
+    "hint": "Passez vos nombres avec attention soutenue."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le chiffre impair manquant dans cette suite ?",
+    "prompt": "Assurez-vous que tous les nombres comptent.",
+    "stimulus": "1 3 5 7 11 13 15",
+    "options": ["9", "17", "15", "19"],
+    "answer": "9",
+    "explanation": "Analysons ici que la suite saute directement de 7 à 11. Le 9 doit donc être le mieux indiqué.",
+    "hint": "Butin cherchez l'échelle sacrée au compteur d'apparition."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots de plus de huit lettres sont inclus ?",
+    "prompt": "Tenez ce sérieux critique.",
+    "stimulus": "Amusement et divertissement font partie intégrante d'une création réussie.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Le calcul montre que : 'Amusement' (1), 'divertissement' (1), 'intégrante' (1) ont tous plus de huit lettres.",
+    "hint": "Sauvegardez pas simplement unique mais multiplié."
+  }
+]

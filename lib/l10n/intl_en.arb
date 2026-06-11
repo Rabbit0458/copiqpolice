@@ -1,0 +1,214 @@
+{
+  "@@locale": "en",
+  "@@last_modified": "2026-06-05",
+
+  "appName": "COP'IQ",
+  "back": "Back",
+  "retry": "Try again",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "close": "Close",
+  "save": "Save",
+  "loading": "Loading…",
+  "error_generic": "Something went wrong.",
+  "error_loading": "An error occurred while loading.",
+  "error_no_connection": "No network connection. Check your connection.",
+  "error_not_authenticated": "Sign in to access this content.",
+  "error_server": "Server issue. Try again in a moment.",
+
+  "points_label": "{count, plural, one{{count} point} other{{count} points}}",
+  "@points_label": {
+    "placeholders": { "count": { "type": "num", "format": "compact" } }
+  },
+
+  "points_score": "{scored}/{max} pt",
+  "@points_score": {
+    "placeholders": {
+      "scored": { "type": "num" },
+      "max": { "type": "num" }
+    }
+  },
+
+  "cp_list_title": "Practical Cases",
+  "cp_list_search_hint": "Search a case, a keyword…",
+  "cp_list_search_clear": "Clear",
+  "cp_list_search_open": "Search",
+  "cp_list_search_close": "Close search",
+  "cp_list_sort": "Sort",
+  "cp_list_sorted_by": "Sorted by: {label}",
+  "@cp_list_sorted_by": {
+    "placeholders": { "label": { "type": "String" } }
+  },
+  "cp_list_empty_title": "No cases available",
+  "cp_list_empty_message": "Practical cases are coming soon!",
+  "cp_list_empty_filters_title": "No cases for these filters",
+  "cp_list_empty_filters_message": "Try broadening your search criteria.",
+  "cp_list_reset_filters": "Reset filters",
+
+  "cp_filter_year": "Year",
+  "cp_filter_theme": "Theme",
+  "cp_filter_difficulty": "Difficulty",
+  "cp_filter_clear": "Clear",
+  "cp_filter_title_year": "Filter by year",
+  "cp_filter_title_theme": "Filter by theme",
+  "cp_filter_title_difficulty": "Filter by difficulty",
+  "cp_filter_empty_year": "No years available yet.",
+  "cp_filter_empty_theme": "No themes available yet.",
+
+  "cp_sort_recent": "Most recent",
+  "cp_sort_recent_subtitle": "Cases published first",
+  "cp_sort_alpha": "Alphabetical (A → Z)",
+  "cp_sort_alpha_subtitle": "Ordered by case title",
+  "cp_sort_duration_asc": "Shortest first",
+  "cp_sort_duration_asc_subtitle": "Quickest cases first",
+  "cp_sort_duration_desc": "Longest first",
+  "cp_sort_duration_desc_subtitle": "Longest cases first",
+  "cp_sort_by": "Sort by",
+
+  "cp_badge_free": "FREE",
+  "cp_badge_premium": "PREMIUM",
+  "cp_badge_new": "NEW",
+
+  "cp_difficulty_easy": "Easy",
+  "cp_difficulty_medium": "Medium",
+  "cp_difficulty_hard": "Hard",
+
+  "cp_tile_last_score": "Last",
+  "cp_tile_best_score": "Best",
+  "cp_tile_success_rate": "Rate",
+  "cp_tile_status_new": "New",
+
+  "cp_paywall_title": "Premium case",
+  "cp_paywall_message": "This case is part of the COP'IQ Premium library. Activate your subscription to unlock all cases.",
+  "cp_paywall_later": "Not now",
+  "cp_paywall_cta": "See subscription",
+
+  "cp_case_loading": "Loading case…",
+  "cp_case_not_found_title": "Case not found",
+  "cp_case_error": "Something went wrong.",
+
+  "cp_case_step_case": "The case",
+  "cp_case_step_question": "Question {index} / {total}",
+  "@cp_case_step_question": {
+    "placeholders": {
+      "index": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "cp_case_step_correction": "Correction",
+
+  "cp_case_intro_objective_1": "Immersive reading of the scenario",
+  "cp_case_intro_objective_2": "Clear answer structure",
+  "cp_case_intro_objective_3": "Correction explained point by point",
+  "cp_case_intro_cta": "Read the scenario",
+  "cp_case_text_cta": "Start",
+
+  "cp_question_label": "QUESTION {index} / {total}",
+  "@cp_question_label": {
+    "placeholders": {
+      "index": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "cp_question_validate_last": "Validate & correct",
+  "cp_question_validate_next": "Validate & continue",
+  "cp_question_validated": "Answer validated ✓",
+  "cp_question_validated_pill": "Validated",
+  "cp_question_no_back": "You can no longer go back after validation.",
+  "cp_question_no_back_snack": "You can no longer go back after validation.",
+  "cp_question_validate_error": "Could not validate the answer. Please try again.",
+  "cp_question_login_required": "Sign in to get your correction.",
+
+  "cp_question_char_count": "{count} characters — min {min}, recommended {recommended}",
+  "@cp_question_char_count": {
+    "placeholders": {
+      "count": { "type": "int" },
+      "min": { "type": "int" },
+      "recommended": { "type": "int" }
+    }
+  },
+
+  "cp_answer_placeholder": "Type your answer here…",
+  "cp_answer_save_typing": "Modified",
+  "cp_answer_save_saving": "Saving…",
+  "cp_answer_save_saved": "Saved",
+  "cp_answer_save_saved_at": "Saved {time}",
+  "@cp_answer_save_saved_at": {
+    "placeholders": { "time": { "type": "String" } }
+  },
+
+  "cp_correction_loading": "Correcting your answers…",
+  "cp_correction_loading_detail": "Analysing each answer, keywords, formulations…",
+  "cp_correction_error": "An error occurred during correction.",
+  "cp_correction_error_title": "Correction failed",
+  "cp_correction_back_to_list": "Back to list",
+  "cp_correction_engine_version": "Correction engine v{version}",
+  "@cp_correction_engine_version": {
+    "placeholders": { "version": { "type": "String" } }
+  },
+  "cp_correction_no_detail": "No correction detail for this question.",
+
+  "cp_score_excellent": "Excellent!",
+  "cp_score_solid": "Solid.",
+  "cp_score_not_bad": "Not bad, but you can do better.",
+  "cp_score_work": "Let's try again and target the missed points.",
+
+  "cp_point_covered": "Covered",
+  "cp_point_partial": "Partial",
+  "cp_point_missing": "Missed",
+  "cp_point_keywords_found": "Found in your answer:",
+  "cp_point_appeal_cta": "I think my answer is correct",
+
+  "cp_appeal_title": "Appeal",
+  "cp_appeal_label_point": "EXPECTED POINT",
+  "cp_appeal_label_answer": "YOUR ANSWER",
+  "cp_appeal_textarea_hint": "Your argument",
+  "cp_appeal_warning": "Your message will be sent to the teaching team. Appeals are reviewed within 48 hours.",
+  "cp_appeal_send": "Send my appeal",
+  "cp_appeal_sent_snack": "Appeal sent. The teaching team will review it.",
+  "cp_appeal_send_error": "Could not send your appeal. Please try again.",
+  "cp_appeal_already_sent": "📨 Appeal sent. The teaching team will review it.",
+  "cp_appeal_no_appeal_on_point": "Cannot appeal this point.",
+
+  "cp_my_appeals_title": "My Appeals",
+  "cp_my_appeals_count": "{count, plural, zero{No appeals yet} one{{count} appeal in total} other{{count} appeals in total}}",
+  "@cp_my_appeals_count": {
+    "placeholders": { "count": { "type": "int" } }
+  },
+  "cp_appeal_status_all": "All",
+  "cp_appeal_status_pending": "Pending",
+  "cp_appeal_status_approved": "Approved",
+  "cp_appeal_status_rejected": "Rejected",
+  "cp_appeal_admin_response": "TEAM RESPONSE",
+  "cp_appeal_no_message": "No message added.",
+  "cp_appeal_see_all": "See all appeals",
+  "cp_appeal_empty_default": "You haven't filed any appeal yet.\nOn a correction, tap \"Appeal\" on a missed point.",
+  "cp_appeal_empty_filtered": "No appeal matches this filter.",
+
+  "cp_case_no_slug": "No case specified.",
+  "cp_case_point_missing_fallback": "Missed point",
+
+  "langSwitcherTitle": "App language",
+  "langSwitcherFr": "Français",
+  "langSwitcherEn": "English",
+  "langSwitcherSubtitle": "Active language: {lang}",
+  "@langSwitcherSubtitle": {
+    "placeholders": { "lang": { "type": "String" } }
+  },
+
+  "dateToday": "Today",
+  "dateYesterday": "Yesterday",
+  "dateNDaysAgo": "{n} days ago",
+  "@dateNDaysAgo": {
+    "placeholders": { "n": { "type": "int" } }
+  },
+  "dateNMonthsAgo": "{n} months ago",
+  "@dateNMonthsAgo": {
+    "placeholders": { "n": { "type": "int" } }
+  },
+  "dateNMinutesAgo": "{n} min ago",
+  "@dateNMinutesAgo": {
+    "placeholders": { "n": { "type": "int" } }
+  },
+  "dateNSecondsAgo": "Just now"
+}

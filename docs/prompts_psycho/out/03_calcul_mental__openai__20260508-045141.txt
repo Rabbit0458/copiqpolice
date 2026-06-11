@@ -1,0 +1,362 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 23 + 41 ?",
+    "expression": "23 + 41",
+    "options": ["64", "63", "65", "62"],
+    "answer": "64",
+    "explanation": "Pour additionner 23 et 41, on peut commencer par ajouter 20 et 40, ce qui donne 60, puis ajouter les unités : 3 + 1 = 4. Le total fait donc 60 + 4 = 64. Le piège est d'oublier de compter les unités séparément.",
+    "hint": "Additionne d'abord les dizaines, puis les unités."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 48 - 23 ?",
+    "expression": "48 - 23",
+    "options": ["25", "26", "24", "27"],
+    "answer": "25",
+    "explanation": "48 - 23 peut être calculé en soustrayant d'abord 20 de 48 pour obtenir 28, puis en enlevant les 3 unités restantes, ce qui donne 25. Le piège est d'oublier de soustraire les unités correctement.",
+    "hint": "Soustrais 20 d'abord, puis ajuste avec l'unité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 7 × 8 ?",
+    "expression": "7 × 8",
+    "options": ["56", "54", "58", "52"],
+    "answer": "56",
+    "explanation": "La multiplication de 7 par 8 est 56. On utilise souvent le double de 7 qui est 14 ajouté huit fois, ou bien on se souvient du fait qu'il est courant dans la table de multiplication. Le piège est de confondre avec un autre produit comme 7 × 7 = 49.",
+    "hint": "Rappelle-toi que 7 × 8 est comme additionner 56 à zéro."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 34 × 2 ?",
+    "expression": "34 × 2",
+    "options": ["68", "64", "70", "66"],
+    "answer": "68",
+    "explanation": "Pour multiplier 34 par 2, double d'abord 30 pour obtenir 60, puis double 4 pour obtenir 8. Additionne ensuite 60 et 8 pour obtenir 68. Le piège peut être d'oublier de doubler l'unité 4.",
+    "hint": "Double d'abord la dizaine, puis l'unité."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 9 × 6 ?",
+    "expression": "9 × 6",
+    "options": ["54", "56", "52", "58"],
+    "answer": "54",
+    "explanation": "La multiplication de 9 par 6 donne 54. Une astuce classique est de compter 9 en haut de chaque doigt jusqu'à six. Le piège serait de se souvenir incorrectement de la multiplication 9 × 7 = 63.",
+    "hint": "Pense à la table de multiplication, 9 × quelque chose."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 48 / 6 ?",
+    "expression": "48 / 6",
+    "options": ["8", "7", "9", "6"],
+    "answer": "8",
+    "explanation": "Pour diviser 48 par 6, il suffit de reconnaître que 6 entre dans 48 un total de 8 fois. C'est plus facile si on résout 6 × 8 d'abord pour vérifier. Le piège est d'essayer de diviser incorrectement comme si c'était 6 dans 60.",
+    "hint": "Vérifie en multipliant 6 par l'option pour voir si c'est 48."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 81 / 9 ?",
+    "expression": "81 / 9",
+    "options": ["9", "8", "10", "7"],
+    "answer": "9",
+    "explanation": "Diviser 81 par 9 résulte en 9, puisque 9 multiplié par 9 donne 81. Certaines personnes trouvent utile de double-vérifier en ré-multipliant. Le piège potentiel est de penser à une division par un nombre oublié comme 8.",
+    "hint": "Utilise la table de multiplication pour voir 81."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 10 % de 80 ?",
+    "expression": "0,1 × 80",
+    "options": ["8", "7", "9", "10"],
+    "answer": "8",
+    "explanation": "10 % de 80 implique de diviser 80 par 10, ce qui donne 8. Il s'agit d'un calcul très simple qui repose sur la transition d'un pourcentage à la multiplication décimale. Le piège est de penser à d'autres pourcentages et de confondre avec 5 % ou 20 %. ",
+    "hint": "10 % équivaut souvent à déplacer une virgule."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 66 / 2 ?",
+    "expression": "66 / 2",
+    "options": ["33", "32", "31", "34"],
+    "answer": "33",
+    "explanation": "Lorsqu'on divise 66 par 2, on effectue un simple calcul qui donne 33. On partage simplement 66 en deux parties égales. Le piège est de calculer rapidement et de penser à 3 ou à l'alternative correcte 34.",
+    "hint": "66 est simplement le double d'une solution moitié."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 15 % de 60 ?",
+    "expression": "0,15 × 60",
+    "options": ["9", "8", "10", "12"],
+    "answer": "9",
+    "explanation": "15 % de 60 est calculé en multipliant 60 par 0,15 qui donne 9. Un moyen rapide est de calculer d'abord 10 % qui est 6, puis de prendre la moitié ajoutée qui est 3. On obtient ainsi 9. Le piège peut être d'oublier de calculer cette moitié additionnelle.",
+    "hint": "15 % est un peu plus que 10 % de 60."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 25 % de 200 ?",
+    "expression": "0,25 × 200",
+    "options": ["50", "40", "60", "45"],
+    "answer": "50",
+    "explanation": "25 % signifie un quart, donc 200 divisé par 4 est 50. C'est souvent utile de rappeler la division en quatre parties égales. Le piège serait de le traiter comme un dixième ou de mélanger les centièmes.",
+    "hint": "Pense à ce que représente un quart d'une somme."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que vaut la moitié de 64 ?",
+    "expression": "64 / 2",
+    "options": ["32", "31", "30", "33"],
+    "answer": "32",
+    "explanation": "La moitié de 64 est trouvée simplement en divisant par 2 pour obtenir 32. Un bon moyen de penser est de diviser d'abord 60 de manière égale et les 4 restants. Un piège est d'oublier cette division simple de 4.",
+    "hint": "Divise par 2, c'est 60 divisé et 4 en surplus."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le carré de 11 ?",
+    "expression": "11²",
+    "options": ["121", "111", "101", "131"],
+    "answer": "121",
+    "explanation": "Le carré de 11 est 121. Pour le calculer, multipliez 11 par lui-même. Un moyen de se souvenir est que le produit commence et finit par 1, avec un chiffre 2 au milieu. Beaucoup confondent souvent avec 11 + 11 ou une multiplication inexacte.",
+    "hint": "Multipliez le nombre 11 deux fois."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 16 + 9 ?",
+    "expression": "16 + 9",
+    "options": ["25", "24", "23", "26"],
+    "answer": "25",
+    "explanation": "16 plus 9 équivaut à 25. Ajoutez d'abord 10 à 16, puis soustrayez 1. C'est idéal pour ceux qui trouvent naturel d'arrondir. Le piège courant est d'oublier de retirer cette unité de surplus.",
+    "hint": "Ajoutons simplement 10 à 16 pour faciliter le calcul."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 50 % de 14 ?",
+    "expression": "0,5 × 14",
+    "options": ["7", "6", "8", "9"],
+    "answer": "7",
+    "explanation": "50 % de 14 est équivalent à la moitié de 14, soit 7. Visualisons-le comme diviser 14 en deux parties égales. Un piège est de penser à des calculs en les arrondissant à des dizaines.",
+    "hint": "Divisez simplement 14 en deux parts égales."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 20 + 35 ?",
+    "expression": "20 + 35",
+    "options": ["55", "54", "56", "53"],
+    "answer": "55",
+    "explanation": "20 plus 35 fait 55. Additionne 20 et 30 pour obtenir 50, puis ajoute 5, ce qui donne 55. Le piège classique est de mélanger les unités dans le rangement incorrectement.",
+    "hint": "Additionne séparément les unités et les dizaines."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 5 × 9 ?",
+    "expression": "5 × 9",
+    "options": ["45", "40", "50", "55"],
+    "answer": "45",
+    "explanation": "5 multiplié par 9 donne 45. Un moyen utile est de pointer 5 et 9 sur les doigts des deux mains, une méthode permettant de visualiser. Beaucoup peuvent être induits en erreur en confondant avec des multiples de 10.",
+    "hint": "Consultez les tables de multiplication familières."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que vaut le triple de 15 ?",
+    "expression": "3 × 15",
+    "options": ["45", "50", "40", "48"],
+    "answer": "45",
+    "explanation": "Le triple de 15 est 45. Multipliez simplement 15 par 3 ou ajoutez trois fois 15 ensemble. Ceux qui commettent une erreur typique peuvent exagérer en multipliant directement par des dizaines.",
+    "hint": "Additionne 15 trois fois pour trouver le total."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 347 + 286 ?",
+    "expression": "347 + 286",
+    "options": ["633", "631", "629", "635"],
+    "answer": "633",
+    "explanation": "Pour 347 + 286, commencez par ajouter les centaines (300 + 200 = 500), puis les dizaines (40 + 80 = 120) et enfin les unités (7 + 6 = 13). Ainsi, 500 + 120 + 13 = 633. Le piège est d'oublier la retenue des unités.",
+    "hint": "Additionne séparément centaines, dizaines, et unités."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 812 - 347 ?",
+    "expression": "812 - 347",
+    "options": ["465", "455", "475", "443"],
+    "answer": "465",
+    "explanation": "Pour soustraire 347 de 812, retranchez d'abord 300, puis les 40 et enfin les 7. Le calcul donne 465. Un piège est d'oublier de faire la subtile conversion des dizaines.",
+    "hint": "Soustrais chaque composante séparément."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 27 × 30 ?",
+    "expression": "27 × 30",
+    "options": ["810", "800", "820", "770"],
+    "answer": "810",
+    "explanation": "27 fois 30 est 810. Si vous utilisez la distributivité : 27 × (3 × 10) vous permet de multiplier 27 par 3 pour obtenir 81, puis d'ajouter un zéro, 810. Le piège est d'oublier de décomposer correctement en dizaines.",
+    "hint": "Utilisez la règle distributive : 27 × 3 suivi par × 10."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 145 / 5 ?",
+    "expression": "145 / 5",
+    "options": ["29", "30", "28", "31"],
+    "answer": "29",
+    "explanation": "145 divisé par 5 est 29. Visualisez-le comme (140 + 5)/5 et divisez chaque morceau séparément; 140/5 = 28 et 5/5 = 1. Une mauvaise interprétation pourrait confondre la division de 140 seulement.",
+    "hint": "Décompose 145 en 140 et 5 puis divise."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le carré de 13 ?",
+    "expression": "13²",
+    "options": ["169", "166", "156", "163"],
+    "answer": "169",
+    "explanation": "Le carré de 13 est calculé en multipliant 13 par 13, ce qui donne 169. Un moyen rapide est de savoir que le produit des unités est 9 en utilisant des carrés connus comme celui de 12. Le piège est d'oublier d'unir correctement les résultats.",
+    "hint": "Calcule comme si tu avais 12, puis ajuste."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 15 % de 240 ?",
+    "expression": "0,15 × 240",
+    "options": ["36", "34", "38", "30"],
+    "answer": "36",
+    "explanation": "15 % de 240 est 36 car cela se décompose en 10 % (24) plus 5 % (12), ce qui s'additionne pour faire 36. Souvent, on oublie de visualiser ces étapes cumulatives dans des parts simples.",
+    "hint": "D'abord 10 %, puis 5 %, enfin combine."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le carré de 17 ?",
+    "expression": "17²",
+    "options": ["289", "280", "252", "278"],
+    "answer": "289",
+    "explanation": "17² est 289. On peut décomposer en (20-3)², sachant que 20² = 400, et 3² = 9 ; 20×3×2 = 120 au format 400 - 120 + 9. Beaucoup oublient la formule de l'intersection.",
+    "hint": "Visualisez comme un quadrilatère d'autres unités multiplex."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Convertir 180 minutes en heures.",
+    "expression": "180 min to hours",
+    "options": ["3", "4", "2,5", "2"],
+    "answer": "3",
+    "explanation": "180 minutes représentent 3 heures. Chaque heure étant 60 minutes, on divise 180 sur 60 pour obtenir 3. Quelle que soit la méthode de division, on oublie en général le rapport minute-heure.",
+    "hint": "Divise par 60 pour passer de minutes aux heures."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 51 × 11 ?",
+    "expression": "51 × 11",
+    "options": ["561", "511", "510", "531"],
+    "answer": "561",
+    "explanation": "51 multiplié par 11 résulte en 561. Pour une approche mentale, multipliez 51 par 10 pour 510, puis ajouter encore 51. L'oubli est de ne faire qu'une seule multiplication.",
+    "hint": "Multiples de 10 puis de 1, additionne."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 478 + 592 ?",
+    "expression": "478 + 592",
+    "options": ["1070", "1068", "1072", "1065"],
+    "answer": "1070",
+    "explanation": "Ajoutez d'abord 478 et 500 pour obtenir 978. Puis, additionnez les 92 restantes à 978 pour faire 1070. Le piège est de mal placer le calcul final des unités.",
+    "hint": "Additionne les centaines, puis le reste."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 306 / 6 ?",
+    "expression": "306 / 6",
+    "options": ["51", "50", "52", "54"],
+    "answer": "51",
+    "explanation": "Pour diviser 306 par 6, on sait que 300 divisé par 6 est 50, auquel s'ajoute 6/6 qui donne 1. Total : 51. Le piège est souvent une méconnaissance des multiples exacts de 6.",
+    "hint": "Divise chaque portion du total par 6."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 215 × 12 ?",
+    "expression": "215 × 12",
+    "options": ["2580", "2570", "2600", "2560"],
+    "answer": "2580",
+    "explanation": "215×12 s'exécute en séparant 10 et 2. La multiplication par 10 obtient 2150 et celle par 2 ajoute 430; le total final : 2580. Beaucoup multiplient par 11 par distraction.",
+    "hint": "Décompose la multiplication en différents multiplicateurs."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 67 - 42 ?",
+    "expression": "67 - 42",
+    "options": ["25", "26", "24", "23"],
+    "answer": "25",
+    "explanation": "Pour éviter erreurs classiques : soustraire 67 à 42, retire 40 de 67 pour 27 ensuite 2 restants. Le piège est de faire la différence en nombres trop arrondis.",
+    "hint": "Retire ceci en morceaux tensiels suivis par unités."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 52 % de 125 ?",
+    "expression": "0,52 × 125",
+    "options": ["65", "64", "63", "70"],
+    "answer": "65",
+    "explanation": "52 % revient à multiplier 125 par 0,52, ramenant exactement 65. Vous pouvez évaluer 50 %, soit 62,5, plus la petite marge restante pour compléter à 65. L'erreur est de rater le tout compris dans le calcul partiel.",
+    "hint": "Raisonne d'abord 50 %, ensuite ajuste légèrement pour les prochaines unités."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 0,25 × 400 ?",
+    "expression": "0,25 × 400",
+    "options": ["100", "75", "95", "110"],
+    "answer": "100",
+    "explanation": "Effectuer 0,25 × 400 se traite par simple division 400 par 4 en rendu 100. Modularité inclut cette touche de 0,25 comme fraction divide quart. Type d'erreur caractéristique est omittance de décimalisation.",
+    "hint": "Utilisez 25 % résulte 4e de 100 garde-fer."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font (47 × 8) - 76 ?",
+    "expression": "(47 × 8) − 76",
+    "options": ["300", "290", "276", "252"],
+    "answer": "300",
+    "explanation": "47 multiplicateur 8 obtient 376 que nous soustrayons 76, rendant 300. Cet opérage multiple restaurer compréhension conceptuée provient parfois calcul négligeant priorité et subtractions radicales.",
+    "hint": "Conséquence multiplication puis repliement dans une équation finit surexponnée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font 23 × 17 ?",
+    "expression": "23 × 17",
+    "options": ["391", "374", "384", "368"],
+    "answer": "391",
+    "explanation": "23 × 17 s'accompagne du calcul unité 483 + 23 - 115 = 391. Multiplications distributives peuvent sécuriser par une phase préparatoire que différents. Le piège est de rendre des sous-produits séparés inégaux, error possible en cette simplicité.",
+    "hint": "Utilisez promesses ateliers distribuées pour arranger l'équipe multiplicative."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "8 % de 250 vaut combien ?",
+    "expression": "0,08 × 250",
+    "options": ["20", "18", "22", "24"],
+    "answer": "20",
+    "explanation": "Reformule 8 % avec 0,08 × 250 rend 20. Fais paliers rituels calcule anticipatifs percées jusqu'à complète calcul finale encadrement 20 en simulation complète. La distraction majeure est ce manque рeralité ajustement entre multiples intermédiaires non interprétés.",
+    "hint": "Multiples 8 facteurs minorés divisions additionnelles équilibres."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est 2/3 de 81 ?",
+    "expression": "2/3 × 81",
+    "options": ["54", "53", "55", "56"],
+    "answer": "54",
+    "explanation": "2/3 de 81 se calcule par déduction : (81 ÷ 3) = 27, × 2 = 54. Convert curse anatomy représente transformation art entretien rigoureuse comprehensive orientation diviser. Le piège réside souvent interprétations approxima entre fractions diratées.",
+    "hint": "Travails fractions facto d'équilibrage en divisions ports logiques."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la puissance de 2^7 ?",
+    "expression": "2^7",
+    "options": ["128", "120", "130", "124"],
+    "answer": "128",
+    "explanation": "Puissance 2 puissance 7 est 128 par produits successifs ou puissance 2^3 × 2^3 e.g. 2^6 + 2. Grande commode décomposeurs prudentes puissant perseverance découvrez permutations et calculations à mesure en errors surviennent uniquement lorsque la progression est apparemment ininterrompue.",
+    "hint": "Avant prospective sur petite puissance soit critique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la racine carrée de 225 ?",
+    "expression": "√225",
+    "options": ["15", "14", "16", "18"],
+    "answer": "15",
+    "explanation": "Racine de 225 est 15 parce que 15² est 225. Une tactique de règle, rentrée progressive, utilise hybride combinatorielle (3+allée-cent-cinquante/quart voiture sale) doublée compréhensivement par experts ou artisans qualifiés se rencontrent délais espousees.",
+    "hint": "Subi rigoureusement un make-up designé charier cibles métriques."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font (35 + 17) × 2 − 14 ?",
+    "expression": "(35 + 17) × 2 − 14",
+    "options": ["88", "84", "78", "82"],
+    "answer": "88",
+    "explanation": "Additionne d'abord : 35 + 17 = 52 ; ensuite multipliant par 2 rend 104, puis soustrayant 14, résulte 88. La pierre angulaire méticuleusement calquée et simplicité vice-jalonnée malintentionnée dans étapes mélangées opérations.",
+    "hint": "De suivre d'abord les op modèles ordinaire équation dès lors que compositions variables."
+  }
+]

@@ -114,16 +114,16 @@ class _GpxCasPratiqueEtapesReussitePageState
             : const Color(0xFF0E2F9E);
 
         // ✅ Overlay contrast
-        final overlayTop = Colors.black.withOpacity(isDark ? 0.32 : 0.22);
-        final overlayBot = Colors.black.withOpacity(isDark ? 0.42 : 0.32);
+        final overlayTop = Colors.black.withValues(alpha: isDark ? 0.32 : 0.22);
+        final overlayBot = Colors.black.withValues(alpha: isDark ? 0.42 : 0.32);
 
         // ✅ Halo blanc (la “lumière” derrière le texte)
-        final haloA = Colors.white.withOpacity(isDark ? 0.10 : 0.07);
-        final haloB = Colors.white.withOpacity(isDark ? 0.04 : 0.03);
+        final haloA = Colors.white.withValues(alpha: isDark ? 0.10 : 0.07);
+        final haloB = Colors.white.withValues(alpha: isDark ? 0.04 : 0.03);
 
         // Text
-        final onBgSoft = Colors.white.withOpacity(0.90);
-        final onBgSofter = Colors.white.withOpacity(0.78);
+        final onBgSoft = Colors.white.withValues(alpha: 0.90);
+        final onBgSofter = Colors.white.withValues(alpha: 0.78);
 
         // CTA
         final ctaBg = Colors.white;
@@ -168,8 +168,8 @@ class _GpxCasPratiqueEtapesReussitePageState
               Positioned.fill(
                 child: _DynamicBlobsBackground(
                   enabled: !reduceMotion,
-                  blobA: Colors.white.withOpacity(isDark ? 0.10 : 0.08),
-                  blobB: Colors.white.withOpacity(isDark ? 0.06 : 0.05),
+                  blobA: Colors.white.withValues(alpha: isDark ? 0.10 : 0.08),
+                  blobB: Colors.white.withValues(alpha: isDark ? 0.06 : 0.05),
                 ),
               ),
 
@@ -207,8 +207,8 @@ class _GpxCasPratiqueEtapesReussitePageState
                             child: _DropletProgress(
                               count: _steps.length,
                               index: _index,
-                              activeColor: Colors.white.withOpacity(0.92),
-                              idleColor: Colors.white.withOpacity(0.22),
+                              activeColor: Colors.white.withValues(alpha: 0.92),
+                              idleColor: Colors.white.withValues(alpha: 0.22),
                             ),
                           ),
                           const SizedBox(width: 6),
@@ -354,7 +354,7 @@ class _MethodStepSlide extends StatelessWidget {
                     Icon(
                       Icons.check_circle_rounded,
                       size: 18,
-                      color: Colors.white.withOpacity(0.95),
+                      color: Colors.white.withValues(alpha: 0.95),
                     ),
                     const SizedBox(width: 12),
                     SizedBox(
@@ -416,7 +416,7 @@ class _DropletProgress extends StatelessWidget {
                       BoxShadow(
                         blurRadius: 14,
                         offset: const Offset(0, 6),
-                        color: Colors.black.withOpacity(0.20),
+                        color: Colors.black.withValues(alpha: 0.20),
                       ),
                     ]
                   : null,
@@ -440,9 +440,9 @@ class _BackPill extends StatelessWidget {
       child: Ink(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.10),
+          color: Colors.white.withValues(alpha: 0.10),
           borderRadius: BorderRadius.circular(999),
-          border: Border.all(color: Colors.white.withOpacity(0.14)),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
@@ -456,7 +456,7 @@ class _BackPill extends StatelessWidget {
             Text(
               "Retour",
               style: GoogleFonts.montserrat(
-                color: Colors.white.withOpacity(0.92),
+                color: Colors.white.withValues(alpha: 0.92),
                 fontWeight: FontWeight.w800,
                 fontSize: 12.5,
               ),

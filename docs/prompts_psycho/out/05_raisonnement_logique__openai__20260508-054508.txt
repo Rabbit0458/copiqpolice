@@ -1,0 +1,436 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Laura est-elle une scientifique ?",
+        "prompt": "Tous les scientifiques portent des lunettes. Laura porte des lunettes.",
+        "options": [
+            "Laura est une scientifique",
+            "Laura n'est pas une scientifique",
+            "On ne peut pas savoir",
+            "Laura porte des lunettes de soleil"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Syllogisme avec prémisses insuffisantes. La prémisse initiale indique que tous les scientifiques portent des lunettes, mais ne couvre pas l'inverse. Laura portant des lunettes ne signifie pas automatiquement qu'elle est une scientifique. Évitez le piège d'inverser la prémisse de base.",
+        "hint": "Considérez la direction de l'implication logique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'âge de Julie ?",
+        "prompt": "Julie a 5 ans de plus que sa sœur. Sa sœur a 10 ans.",
+        "options": [
+            "10 ans",
+            "15 ans",
+            "20 ans",
+            "25 ans"
+        ],
+        "answer": "15 ans",
+        "explanation": "Avec l'équation simple, l'âge de Julie est déterminé par 10 + 5 = 15. Il s'agit d'une addition simple où vous ajoutez la différence d'âge à celui de la sœur. Le piège réside dans l'interprétation des relations directes entre les âges sans supposer inutilement de complicité.",
+        "hint": "Additionnez l'âge de la sœur et la différence d'âge."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la couleur du perroquet ?",
+        "prompt": "Tous les perroquets de la boutique sont verts. Coco est un perroquet de la boutique.",
+        "options": [
+            "Coco est rouge",
+            "Coco est bleu",
+            "Coco est vert",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Coco est vert",
+        "explanation": "Syllogisme par transitivité : si tous les perroquets de la boutique sont verts et Coco est l'un d'entre eux, il découle logiquement que Coco est vert. Portez une attention particulière à l'application directe des prémisses sans tentative d'inférer davantage de données.",
+        "hint": "Rappelez-vous de la transitivité des propriétés."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel fruit ne prend pas Anne ?",
+        "prompt": "Anne choisit entre une pomme et une orange. Elle prend la pomme.",
+        "options": [
+            "Elle ne prend pas l'orange",
+            "Elle ne prend pas la pomme",
+            "Elle prend les deux",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Elle ne prend pas l'orange",
+        "explanation": "En déclarant qu'Anne choisit la pomme, nous excluons d'office l'orange de sa sélection. La prémisse informe explicitement sur le choix final, et chaque option non choisie est par définition non retenue. L'erreur potentielle serait de supposer un choix multiple là où seule une option est sélectionnée.",
+        "hint": "Considère la nature du choix annoncé."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Est-ce que le chien de Max est dressé ?",
+        "prompt": "Tous les chiens dressés aboient sur commande. Le chien de Max aboie sur commande.",
+        "options": [
+            "Le chien de Max est dressé",
+            "Le chien de Max n'est pas dressé",
+            "On ne peut pas savoir",
+            "Le chien de Max aboie tout le temps"
+        ],
+        "answer": "Le chien de Max est dressé",
+        "explanation": "Syllogisme conditionnel : avec la prémisse que tous les chiens dressés aboient sur commande, et que le chien de Max fait de même, nous pouvons conclure par transitivité que son chien est dressé. Un piège commun serait de mal interpréter la conditionnelle, négligeant que cette prémisse assure une relation bidirectionnelle.",
+        "hint": "Usez de la structure conditionnelle."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Le lait doit-il être acheté ?",
+        "prompt": "Si le frigo est vide, alors il faut acheter du lait. Le frigo est vide.",
+        "options": [
+            "Il faut acheter du lait",
+            "Il ne faut pas acheter du lait",
+            "Le frigo n'est pas vide",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Il faut acheter du lait",
+        "explanation": "C'est un cas classique de modus ponens : notre condition initiale stipule que si le frigo est vide, du lait doit être acheté. La validation de la prémisse 'le frigo est vide' complète cette logique. Évitez le piège de supposer que la second option est possible sans nouvelle donnée libératoire.",
+        "hint": "Considérez la condition suivie par son antécédent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'âge actuel de Paul ?",
+        "prompt": "Paul a trois fois l'âge de son frère. Son frère a 7 ans.",
+        "options": [
+            "10 ans",
+            "21 ans",
+            "14 ans",
+            "28 ans"
+        ],
+        "answer": "21 ans",
+        "explanation": "Pour obtenir l'âge de Paul, multiplier l'âge du frère par trois. Équation : 3 * 7 = 21. Un piège pourrait résider dans une addition incorrecte de l'âge, causant une interprétation erronée et aboutissant à un mauvais calcul de l'âge final.",
+        "hint": "Multipliez l'âge du frère par trois."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien d'années avant que Julie ait 30 ans ?",
+        "prompt": "Julie a actuellement 25 ans.",
+        "options": [
+            "5 ans",
+            "4 ans",
+            "3 ans",
+            "6 ans"
+        ],
+        "answer": "5 ans",
+        "explanation": "En soustrayant l'âge actuel de Julie de 30, on découvre qu'il lui reste 5 ans avant d'avoir 30 ans. Cette simple opération soustractive assure le résultat juste. Un piège possible est une mauvaise interprétation de la soustraction par simple ajustement de variables de temps.",
+        "hint": "Soustrayez l'âge actuel à 30 pour trouver la différence."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Pierre court plus vite que Louis mais moins vite que Thomas.",
+        "options": [
+            "Pierre",
+            "Louis",
+            "Thomas",
+            "Ils courent à la même vitesse"
+        ],
+        "answer": "Thomas",
+        "explanation": "Les relations indiquent que Thomas > Pierre > Louis. Ainsi, Thomas est le plus rapide. Le piège ici est de confondre les ordres ou de ne pas correctement prioriser Thomas comme plus rapide que Pierre.",
+        "hint": "Organisez les vitesses dans un ordre hiérarchique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que sera l'âge de Marc dans 7 ans ?",
+        "prompt": "Marc a actuellement 21 ans.",
+        "options": [
+            "28 ans",
+            "30 ans",
+            "25 ans",
+            "35 ans"
+        ],
+        "answer": "28 ans",
+        "explanation": "En additionnant 7 ans à l'âge actuel de Marc, soit 21 + 7, on obtient 28 ans. Le piège commun est une mauvaise addition ou l'omission de recalculer correctement l'âge futur.",
+        "hint": "Ajoutez 7 à l'âge actuel de Marc."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Marie est-elle satisfaite de sa glace ?",
+        "prompt": "Si Marie a chanté, elle est satisfaite de sa glace. Marie a chanté.",
+        "options": [
+            "Marie est satisfaite de sa glace",
+            "Marie n'est pas satisfaite de sa glace",
+            "On ne peut pas savoir",
+            "Marie veut une autre glace"
+        ],
+        "answer": "Marie est satisfaite de sa glace",
+        "explanation": "En utilisant le modus ponens, l'information confirmant que Marie a chanté mène directement à la conclusion qu'elle est satisfaite. Le piège ici repose sur le mélange des conditions, prenant habilement la confirmation d'une action pour garantir un autre effet lié.",
+        "hint": "Appliquez le modus ponens sur les actions de Marie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'âge d'Anna dans 5 ans ?",
+        "prompt": "Anna a actuellement 12 ans.",
+        "options": [
+            "17 ans",
+            "15 ans",
+            "22 ans",
+            "10 ans"
+        ],
+        "answer": "17 ans",
+        "explanation": "L'ajout de 5 ans à l'âge actuel de 12 ans donne 17 ans. Le piège classique pourrait être une erreur de calcul due à une distraction inattentive sur l'addition simple.",
+        "hint": "Ajoutez 5 à l'âge actuel pour trouver l'âge futur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle tâche Paul a-t-il faite ?",
+        "prompt": "Si Paul a nettoyé sa chambre, alors il a aussi fait ses devoirs. Paul a nettoyé sa chambre.",
+        "options": [
+            "Paul a fait ses devoirs",
+            "Paul n'a pas fait ses devoirs",
+            "On ne peut pas savoir",
+            "Paul a pris une pause"
+        ],
+        "answer": "Paul a fait ses devoirs",
+        "explanation": "En vous limitant au modus ponens, les données selon lesquelles Paul a nettoyé sa chambre vérifient la condition qui confirme qu'il a également fait ses devoirs. Le piège de contredire la structure de la condition est omniprésent, donc soyez certain de suivre avec précision tout lien fourni.",
+        "hint": "Assurez un suivi de la condition et du résultat initial."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "De combien à l'avance Julie était-elle arrivée ?",
+        "prompt": "Julie est arrivée à son rendez-vous 15 minutes avant l'heure prévue.",
+        "options": [
+            "15 minutes",
+            "10 minutes",
+            "20 minutes",
+            "30 minutes"
+        ],
+        "answer": "15 minutes",
+        "explanation": "En arrivant exactement 15 minutes avant, la question est directement résolue par l'analyse de cette précédente condition temporelle. Le piège est d'engager par inadvertance une vue complexe sur un problème d'addition simple et bien exposé.",
+        "hint": "Examiner les chiffres donnés à partir de l'heure planifiée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien Tom a-t-il dépensé pour emprunter un livre ?",
+        "prompt": "Emprunter un livre coûte 2 euros chez Tom. Tom a emprunté 3 livres.",
+        "options": [
+            "6 euros",
+            "8 euros",
+            "10 euros",
+            "4 euros"
+        ],
+        "answer": "6 euros",
+        "explanation": "Un livre coûte 2 euros, donc 3 livres représentent 2 * 3 = 6 euros. Un simple calcul multiplicatif suffit pour déterminer le coût total. Le piège serait d'additionner incorrectement ou de multiplier par une valeur incorrecte, perturbant ainsi le décompte.",
+        "hint": "Multipliez le coût individuel par le nombre total d'emprunts."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur a le chapeau de Sophie ?",
+        "prompt": "Tous les chapeaux rouges sont à Sophie. Ce chapeau est rouge.",
+        "options": [
+            "Le chapeau est à Sophie",
+            "Le chapeau n'est pas à Sophie",
+            "On ne peut pas savoir",
+            "Le chapeau est bleu"
+        ],
+        "answer": "Le chapeau est à Sophie",
+        "explanation": "Par le syllogisme, si tous les chapeaux rouges appartiennent à Sophie, alors ce chapeau rouge doit être sien selon la règle établie. Il serait facile de confondre la condition et de conclure incorrectement sur d'autres aspects non pertinents.",
+        "hint": "Rappelez-vous de l'association exclusive rouge-Sophie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'âge de Léo ?",
+        "prompt": "Léo est deux fois plus âgé que Max. Max a 10 ans.",
+        "options": [
+            "20 ans",
+            "15 ans",
+            "30 ans",
+            "25 ans"
+        ],
+        "answer": "20 ans",
+        "explanation": "Si Max a 10 ans, alors Léo, qui est plus âgé de deux fois cet âge, a 10 * 2 = 20 ans. Le calcul est très simple et direct, empêchant tout réflexe de mauvaise addition ou de multiplication.",
+        "hint": "N'oubliez pas de doubler l'âge de Max pour découvrir celui de Léo."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus âgé ?",
+        "prompt": "Jean a 3 ans de plus que Paul. Paul a 2 ans de plus que Marc. Marc a 15 ans.",
+        "options": [
+            "Jean",
+            "Paul",
+            "Marc",
+            "Il n'y a pas assez d'informations"
+        ],
+        "answer": "Jean",
+        "explanation": "Jean a 3 ans de plus que Paul, donc Paul a 17 ans (Marc 15 ans + 2 ans). Jean a donc 20 ans : Paul (17 ans) + 3 ans. Jean est donc le plus âgé. Le défi ici est de suivre chaque étape consécutive sans devenir confus avec de numéros multiples.",
+        "hint": "Propagez les différences d'affaires chronologiques envers Jean."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le classement des coureurs ?",
+        "prompt": "Alice court plus vite que Betty. Betty court plus vite que Chloe. Diana court plus vite qu'Alice.",
+        "options": [
+            "Diana > Alice > Betty > Chloe",
+            "Alice > Diana > Betty > Chloe",
+            "Chloe > Betty > Alice > Diana",
+            "Betty > Alice > Chloe > Diana"
+        ],
+        "answer": "Diana > Alice > Betty > Chloe",
+        "explanation": "Le classement à définir est Diana > Alice > Betty > Chloe grâce au suivi attentif de l'information. Préservez attentivement votre structure afin d'éviter toute confusion avec les relations ordonnées initiales fournies.",
+        "hint": "Organisez les vitesses en chaîne en commençant par la plus grande."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans combien d'années David aura-t-il le double de l'âge actuel ?",
+        "prompt": "David a 15 ans.",
+        "options": [
+            "15 ans",
+            "10 ans",
+            "30 ans",
+            "20 ans"
+        ],
+        "answer": "15 ans",
+        "explanation": "Pour doubler ses 15 ans, David doit ajouter 15 ans supplémentaires, atteignant ainsi 30 ans après ce passage de temps défini. Ne confondez pas le doublement immédiat de l'âge avec des étapes intempressives incorrectes.",
+        "hint": "Soustrayez le double de l'âge actuel pour obtenir la différence temporelle."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Anne aura-t-elle du succès ?",
+        "prompt": "Si Anne obtient son diplôme, alors elle réussira. Anne a obtenu son diplôme.",
+        "options": [
+            "Anne réussira",
+            "Anne ne réussira pas",
+            "On ne peut pas savoir",
+            "Anne reviendra pour un diplôme supplémentaire"
+        ],
+        "answer": "Anne réussira",
+        "explanation": "En appliquant le modus ponens classique, la réussite d'Anne suit directement l'acquisition de son diplôme. Attention à ne pas confondre résultats intermédiaires et données directes à compétence linéaire.",
+        "hint": "Le mode pavé dépend du passage des qualifications établies."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien auront survécu du tri au bout de combien de jours ?",
+        "prompt": "George est à mi-chemin du sommet après 4 jours, et il descend la moitié du chemin chaque jour.",
+        "options": [
+            "4 jours",
+            "6 jours",
+            "8 jours",
+            "7 jours"
+        ],
+        "answer": "8 jours",
+        "explanation": "George, à mi-chemin au bout de 4 jours, descend la moitié du chemin initial chaque jour, alors 4 jours de plus l'ameneront au sommet. Justifiez votre calcul mais ne manquez pas cette logique partielle.",
+        "hint": "Ajoutez la mi-portion descendante au dernier ensemble."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "D'ici combien de temps Marie mettra-t-elle à atteindre le sommet ?",
+        "prompt": "Marie est à 3/4 du sommet après 6 jours, mais redescend d'un quart chaque jour.",
+        "options": [
+            "4 jours",
+            "8 jours",
+            "12 jours",
+            "6 jours"
+        ],
+        "answer": "12 jours",
+        "explanation": "Ayant parcouru 3/4 du sommet en 6 jours et redescendu d'un quart chaque jour, le reste du temps compte 12 jours au sommet. Évitez le piège de minimiser le nombre de jours dus au temps de descente perçu comme temporaire.",
+        "hint": "Assurez la pleine transition de jour en jour sans surtout anticiper."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'arrive-t-il à Sam ?",
+        "prompt": "Si Sam a un manteau, alors il sortira. Si Sam sort, il prendra un parapluie. Sam a un manteau.",
+        "options": [
+            "Sam sort et prend un parapluie",
+            "Sam reste à l'intérieur",
+            "On ne peut pas savoir",
+            "Sam ne prend pas son parapluie"
+        ],
+        "answer": "Sam sort et prend un parapluie",
+        "explanation": "En combinant les conditions par transitivité : Sam a un manteau, alors il sort et prend un parapluie. Ne mélangez pas les conclusions quantitatives et qualitatives en anticipant des options non fournies.",
+        "hint": "Unissez chaque condition par références successives."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'arrivera-t-il si l'échelle de Pierre est relevée ?",
+        "prompt": "Si Pierre commence à peindre, l'échelle sera relevée. Pierre ne commencera à peindre que si les pots sont prêts.",
+        "options": [
+            "Si les pots sont prêts, l'échelle sera relevée",
+            "Si l'échelle est relevée, Pierre commence à peindre",
+            "Pierre ne commence pas à peindre",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Si les pots sont prêts, l'échelle sera relevée",
+        "explanation": "L'ordre initial met en place la condition des pots prêts comme autorisant l'action de peindre, avant d'impliquer de relever l'échelle. Le danger est de confondre l'ordre des événements et de marcher à travers la condition après une fausse conclusion d’incompréhension.",
+        "hint": "Gardez les événements dans l'ordre d'importance respective."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que se passe-t-il si Paul court plus vite que Jean à présent ?",
+        "prompt": "Si Jean court, alors Paul court vite. Si Paul court, alors ils arrivent en même temps.",
+        "options": [
+            "Paul et Jean arrivent en même temps",
+            "Jean n'arrive pas",
+            "Paul court vite mais arrive avant",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Paul et Jean arrivent en même temps",
+        "explanation": "Paul court, ce qui rend possible l'arrivée simultanée des deux avec Jean comme résultant de leur engagement conjoint. Cela complique la confusion lorsque l'on tente de définir un enchevêtrement ou un conflit cachant la désignation de début.",
+        "hint": "Rappelez-vous la concordance par leur action culminante partagée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel prénom viendra avant ?",
+        "prompt": "Annie chante après Betty et avant Charlie. Betty chante avant Diane. Diane chante finalement avant Émile.",
+        "options": [
+            "Betty",
+            "Charlie",
+            "Annie",
+            "Diane"
+        ],
+        "answer": "Betty",
+        "explanation": "En se préférant description par description, c'est Betty, suivie d'Annie et de Charlie, avant Diane et après Émile. Assurez-vous d'accorder attention et synchronisation à un processus relaxant.",
+        "hint": "Aidez à l'analyse couche par couche sur chaque élément introduit."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Anne de nos jours ?",
+        "prompt": "Anne a le même âge que sa sœur il y a dix ans. À ce jour, sa sœur a le double de l'âge qu'Anne avait à cette époque.",
+        "options": [
+            "25 ans",
+            "30 ans",
+            "20 ans",
+            "35 ans"
+        ],
+        "answer": "30 ans",
+        "explanation": "Soit x l'âge de sa sœur actuel, qui est le double de l'âge d'Anne d'il y a dix ans. Posons x/2 = l'époque et x/2 + 10 ans comme l'âge actuel d'Anne. Ce type de problème est déroutant sans se tromper au niveau du numéro initial du calcul.",
+        "hint": "Établir une équation en fonction de l'âge pour Anne."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de jours auront-ils pour rentrer à destination ?",
+        "prompt": "Un bateau a fait la moitié du chemin en 3 jours. Chaque jour rallonge un cinquième. Le parcours complet initial implique 10 jours d’arrivée.",
+        "options": [
+            "5 jours",
+            "7 jours",
+            "6 jours",
+            "8 jours"
+        ],
+        "answer": "7 jours",
+        "explanation": "Il en fait la moitié initiale en 3 jours, rallongeant la course équivalente pour atteindre la terre dans 4 jours restants. Cette solution sous-estime seulement l'analyse de la durée incrémentale.",
+        "hint": "Ajoutez la durée d'incrémentation comme le temps suivant déjà passé."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel parent pourrait avoir rendu visite à leur mesurons ?",
+        "prompt": "Chaque parent rend visite aux amis de mesurons. Paul a rendu visite à Julie mais Jean n’a pas vu Paul.",
+        "options": [
+            "Jean",
+            "Paul",
+            "Julie",
+            "Ni Jean ni Paul"
+        ],
+        "answer": "Ni Jean ni Paul",
+        "explanation": "Toutes les visites sont dirigées par Jean sans que personne ne vienne voir Paul sauf Julie, ce clivage crée une divergence des visites, donc seul Paphiète mérite une attention future. Évitez de confondre les visites ordinaires avec la non-participation de Paul et Jean.",
+        "hint": "Combinಸೆz le réseautage social pour discerner qui reste absent."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien du tronçon entier pouvons-nous voir avant la ligne ?",
+        "prompt": "Après avoir abordé 2 coureurs avant la ligne, dans quel ordre se retrouve-t-on vers trois coureurs selon le parcours complet de la descente ?",
+        "options": [
+            "1ère",
+            "3ème",
+            "2ème",
+            "5ème"
+        ],
+        "answer": "2ème",
+        "explanation": "Un groupe classique renforcé par une autre boucle, restreignant aux immobilités classiques parfois, demandant plus d'analyse.",
+        "hint": "Distinguez les classes possibles après chaque déplacement conforme."
+    }
+]

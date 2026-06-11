@@ -38,7 +38,7 @@ class _SubscriptionGateState extends State<SubscriptionGate> {
                 child: IgnorePointer(
                   ignoring: false,
                   child: Container(
-                    color: Colors.black.withOpacity(0.55),
+                    color: Colors.black.withValues(alpha: 0.55),
                     alignment: Alignment.center,
                     child: _LockCard(
                       remaining: st.remaining ?? 0,
@@ -113,7 +113,7 @@ class _LockCard extends StatelessWidget {
             textAlign: TextAlign.center,
             style: theme.textTheme.bodyMedium?.copyWith(
               height: 1.35,
-              color: txt.withOpacity(0.75),
+              color: txt.withValues(alpha: 0.75),
               fontWeight: FontWeight.w600,
             ),
           ),

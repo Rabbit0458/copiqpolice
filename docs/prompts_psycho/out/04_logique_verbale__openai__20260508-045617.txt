@@ -1,0 +1,380 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « content » ?",
+        "prompt": null,
+        "options": ["Heureux", "Triste", "Fatigué", "Contentieux"],
+        "answer": "Heureux",
+        "explanation": "« Heureux » signifie joyeux ou satisfait, ce qui est similaire à « content ». « Triste » est l'opposé de content. « Fatigué » et « contentieux » n'ont pas de lien direct avec la satisfaction ou la joie.",
+        "hint": "Pense à un sentiment de satisfaction."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « difficile » ?",
+        "prompt": null,
+        "options": ["Simple", "Ardu", "Compliqué", "Complexe"],
+        "answer": "Simple",
+        "explanation": "« Simple » signifie facile, ce qui est le contraire de « difficile ». « Ardu », « compliqué » et « complexe » sont tous des termes qui impliquent qu'une tâche est dure ou complexe, donc similaires à « difficile ».",
+        "hint": "Cherche un mot qui signifie le contraire de dur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Il est aussi doux qu'un ___.\"",
+        "prompt": null,
+        "options": ["Cactus", "Chaton", "Érable", "Roc"],
+        "answer": "Chaton",
+        "explanation": "Un « chaton » est souvent considéré comme doux au toucher et par son comportement. Un « cactus » et un « roc » sont rugueux ou durs. Un « érable » est un arbre et ne connote pas la douceur.",
+        "hint": "Pense à quelque chose de moelleux."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « grand » ?",
+        "prompt": null,
+        "options": ["Petit", "Énorme", "Minuscule", "Étroit"],
+        "answer": "Énorme",
+        "explanation": "« Énorme » désigne quelque chose de très grand, c’est donc un synonyme de « grand ». « Petit » et « minuscule » sont des antonymes, et « étroit » ne se réfère pas à la taille mais à la largeur.",
+        "hint": "Un synonyme de grande taille."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Chien, Chat, Voiture, Oiseau",
+        "options": ["Chien", "Chat", "Voiture", "Oiseau"],
+        "answer": "Voiture",
+        "explanation": "La « voiture » est un objet mécanique et non un animal. « Chien », « chat » et « oiseau » sont tous des animaux domestiques communs.",
+        "hint": "Un mot ne désigne pas un animal."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « froid » ?",
+        "prompt": null,
+        "options": ["Chaud", "Glacé", "Frais", "Gelé"],
+        "answer": "Chaud",
+        "explanation": "« Chaud » est le contraire de « froid » dans le contexte de la température. « Glacé », « frais » et « gelé » indiquent tous une basse température, synonymes partiels de « froid ».",
+        "hint": "Reflète une température élevée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « regarder » ?",
+        "prompt": null,
+        "options": ["Voir", "Écouter", "Parler", "Toucher"],
+        "answer": "Voir",
+        "explanation": "« Voir » signifie percevoir avec les yeux, tout comme « regarder ». « Écouter » se réfère à l'audition, « parler » à l'expression verbale, et « toucher » au sens tactile.",
+        "hint": "Se fait avec les yeux."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Jour est à Soleil comme Nuit est à ___",
+        "prompt": null,
+        "options": ["Lune", "Étoile", "Matin", "Aube"],
+        "answer": "Lune",
+        "explanation": "Le « jour » est généralement associé au « soleil », tout comme la « nuit » est associée à la « lune ». Les « étoiles » sont visibles la nuit mais ne sont pas aussi traditionnellement liées que la lune. « Matin » et « aube » se réfèrent aux débuts de la journée plutôt qu'à la nuit.",
+        "hint": "Pense à ce qui éclaire la nuit."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « paix » ?",
+        "prompt": null,
+        "options": ["Guerre", "Harmonie", "Calme", "Sérénité"],
+        "answer": "Guerre",
+        "explanation": "« Guerre » est l'opposé de « paix », évoquant conflit et violence. « Harmonie », « calme », et « sérénité » sont des termes associés à la paix.",
+        "hint": "Opposé d'un état de non-conflit."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Boule, Carré, Cercle, Triangle",
+        "options": ["Boule", "Carré", "Cercle", "Triangle"],
+        "answer": "Boule",
+        "explanation": "« Boule » est un objet 3D, alors que « carré », « cercle », et « triangle » sont des formes géométriques 2D.",
+        "hint": "Différencie entre 2D et 3D."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « début » ?",
+        "prompt": null,
+        "options": ["Arrêt", "Origine", "Fin", "Conclusion"],
+        "answer": "Origine",
+        "explanation": "« Origine » peut être synonyme de « début » car ils désignent tous deux le commencement de quelque chose. Les autres options indiquent la cessation ou la conclusion.",
+        "hint": "Commencement de quelque chose."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Elle a terminé son travail en un ___ de temps.\"",
+        "prompt": null,
+        "options": ["éclair", "siècle", "style", "détour"],
+        "answer": "éclair",
+        "explanation": "L'expression « en un éclair de temps » signifie très rapidement. Un « siècle » indique une longue période, et « style » ou « détour » ne sont pas pertinents ici.",
+        "hint": "Expression signifiant rapidité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Plante est à terre comme poisson est à ___",
+        "prompt": null,
+        "options": ["Eau", "Ciel", "Feuille", "Boue"],
+        "answer": "Eau",
+        "explanation": "Une plante pousse dans la « terre », et un poisson vit dans l'« eau ». Le « ciel » n’est pas l'habitat du poisson, et « feuille » et « boue » sont incorrects.",
+        "hint": "Habitat naturel du poisson."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « maison » ?",
+        "prompt": null,
+        "options": ["Cottage", "Bureau", "Forêt", "Voiture"],
+        "answer": "Cottage",
+        "explanation": "Un « cottage » est un type de maison, ce qui en fait un synonyme partiel. « Bureau » et « voiture » sont des espaces de travail et de transport, pas des maisons. « Forêt » est un habitat naturel, pas une habitation construite.",
+        "hint": "Type de domicile."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Hiver, Été, Vacances, Automne",
+        "options": ["Hiver", "Été", "Vacances", "Automne"],
+        "answer": "Vacances",
+        "explanation": "« Vacances » ne désigne pas une saison, contrairement à « hiver », « été », et « automne ».",
+        "hint": "Ce mot n'est pas une saison."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « heureux » ?",
+        "prompt": null,
+        "options": ["Triste", "Gai", "Joyeux", "Content"],
+        "answer": "Triste",
+        "explanation": "« Triste » est l'opposé de « heureux », indiquant un état de malheur. « Gai », « joyeux », et « content » sont des synonymes ou des mots proches de « heureux ».",
+        "hint": "Cherche le sentiment opposé."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « choisir » ?",
+        "prompt": null,
+        "options": ["Écarter", "Sélectionner", "Ignorer", "Rejeter"],
+        "answer": "Sélectionner",
+        "explanation": "« Sélectionner » signifie décider parmi plusieurs options, de même que « choisir ». « Écarter », « ignorer », et « rejeter » indiquent une mise de côté.",
+        "hint": "Synonyme de prendre une décision."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Il a un appétit d'___.\"",
+        "prompt": null,
+        "options": ["éléphant", "oiseau", "ogre", "ours"],
+        "answer": "ogre",
+        "explanation": "L'expression « appétit d'ogre » signifie avoir une grande faim. « Ours » et « éléphant » pourraient avoir un grand appétit, mais ne sont pas utilisés communément dans cette expression, et « oiseau » évoque l'inverse.",
+        "hint": "Exagération pour une grande faim."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Lion, Tigre, Léopard, Cerise",
+        "options": ["Lion", "Tigre", "Léopard", "Cerise"],
+        "answer": "Cerise",
+        "explanation": "« Cerise » est un fruit, tandis que « lion », « tigre », et « léopard » sont des félins. Ce sont tous des animaux excepté « cerise ».",
+        "hint": "Ne pas confondre animal avec fruit."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « abondance » ?",
+        "prompt": null,
+        "options": ["Scarcité", "Affluence", "Profusion", "Riche"],
+        "answer": "Scarcité",
+        "explanation": "« Scarcité » désigne un manque, le contraire de « abondance ». « Affluence » et « profusion » sont synonymes, et « riche » évoque également la profusion.",
+        "hint": "Opposé de grande quantité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Oiseau est à voler comme Poisson est à ___",
+        "prompt": null,
+        "options": ["Nager", "Marcher", "Diver", "Sauter"],
+        "answer": "Nager",
+        "explanation": "L'oiseau vole, de même que le poisson nage dans l'eau. « Marcher », « sauter » et « diver » ne sont pas les modes de locomotion typiques des poissons.",
+        "hint": "Sens de déplacement dans l'eau."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Lait, Fromage, Beurre, Orange",
+        "options": ["Lait", "Fromage", "Beurre", "Orange"],
+        "answer": "Orange",
+        "explanation": "« Orange » est un fruit, tandis que « lait », « fromage », et « beurre » sont des produits laitiers.",
+        "hint": "Cherche le produit non laitier."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « réfléchir » ?",
+        "prompt": null,
+        "options": ["Penser", "Ignorer", "Confondre", "Oublier"],
+        "answer": "Penser",
+        "explanation": "« Penser » signifie utiliser sa réflexion, tout comme « réfléchir ». « Ignorer », « confondre », et « oublier » sont opposés ou non associés directement à la contemplation.",
+        "hint": "Synonyme d'analyse mentale."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Il faut battre le fer tant qu'il est ___.\"",
+        "prompt": null,
+        "options": ["froid", "chaud", "brûlé", "mou"],
+        "answer": "chaud",
+        "explanation": "L'expression signifie qu'il faut agir quand le moment est opportun, d'où « chaud ». « Froid », « brûlé », et « mou » ne forment pas d'expression connue dans ce contexte.",
+        "hint": "Agir avec promptitude."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « courage » ?",
+        "prompt": null,
+        "options": ["Lâcheté", "Bravoure", "Valeur", "Vaillance"],
+        "answer": "Lâcheté",
+        "explanation": "« Lâcheté » est le manque de courage, tandis que « bravoure », « valeur », et « vaillance » en sont des synonymes ou traits proches.",
+        "hint": "Cherche la peur ou la faiblesse."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Chat est à miauler comme chien est à ___",
+        "prompt": null,
+        "options": ["Aboyer", "Siffler", "Murmurer", "Hululer"],
+        "answer": "Aboyer",
+        "explanation": "Le chat miaule et le chien aboie, chaque animal ayant son propre cri. « Siffler » n’est pas typique d’un chien, « murmurer » est humain, et « hululer » est pour les hiboux.",
+        "hint": "Le cri du chien."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Mélancolie, Joie, Tristesse, Bonne humeur",
+        "options": ["Mélancolie", "Joie", "Tristesse", "Bonne humeur"],
+        "answer": "Joie",
+        "explanation": "« Joie » et « bonne humeur » sont des sentiments positifs, tandis que « mélancolie » et « tristesse » sont négatifs. En termes de sentiment, « joie » ne cadre pas avec trois autres choix qui sont négatifs.",
+        "hint": "Allez du côté positif."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « établir » ?",
+        "prompt": null,
+        "options": ["Créer", "Défaire", "Détruire", "Effacer"],
+        "answer": "Créer",
+        "explanation": "« Établir » implique poser les bases ou créer quelque chose. « Défaire », « détruire », et « effacer » sont des actions opposées qui impliquent la démolition ou l'élimination.",
+        "hint": "Synonyme d'initiation."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Ne vends pas la peau de l'ours avant de l'avoir ___.\"",
+        "prompt": null,
+        "options": ["attrapé", "dépecé", "tué", "aperçu"],
+        "answer": "tué",
+        "explanation": "Cette expression signifie qu'on ne doit pas compter sur un résultat avant qu'il ne soit certain. « Attraper » et « apercevoir » ne sont pas suffisant pour mettre en danger la notion de certitude. « Dépecé » touche au résultat, mais l'acte est « tué ».",
+        "hint": "Signifie certitude d'un résultat."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « léger » ?",
+        "prompt": null,
+        "options": ["Lourd", "Doux", "Frêle", "Délicat"],
+        "answer": "Lourd",
+        "explanation": "« Lourd » désigne un poids important, donc l'opposé de « léger ». « Doux », « frêle », et « délicat » ne relèvent pas de la même échelle pour définir le poids.",
+        "hint": "Opposé d'un objet pesant peu."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Intelligence est à cerveau comme émotion est à ___",
+        "prompt": null,
+        "options": ["Cœur", "Foyer", "Clarté", "Vaillance"],
+        "answer": "Cœur",
+        "explanation": "Classiquement, l'intelligence est attribuée au « cerveau », tandis que l'« émotion » est souvent associée au « cœur » dans les expressions idiomatiques. « Foyer » et « clarté » ne sont pas pertinents, et « vaillance » relie à un trait de bravoure.",
+        "hint": "Expression reliée aux sentiments."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « affabilité » ?",
+        "prompt": null,
+        "options": ["Grossièreté", "Politesse", "Amabilité", "Douceur"],
+        "answer": "Grossièreté",
+        "explanation": "« Affabilité » se réfère à la courtoisie et la douceur, tandis que « grossièreté » implique un comportement abrupt et rude. « Politesse », « amabilité », et « douceur » sont des traits similaires à l'affabilité.",
+        "hint": "Chercher un trait comportemental désagréable."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « exacerber » ?",
+        "prompt": null,
+        "options": ["Atténuer", "Aigrir", "Calmer", "Apaiser"],
+        "answer": "Aigrir",
+        "explanation": "« Exacerber » signifie rendre plus aigu ou intensifier, souvent de façon négative, tout comme « aigrir ». En revanche, « atténuer », « calmer », et « apaiser » résistent l'intensification.",
+        "hint": "Action d'intensification."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « prolixe » ?",
+        "prompt": null,
+        "options": ["Concise", "Verbeux", "Long", "Développé"],
+        "answer": "Concise",
+        "explanation": "« Prolixe » se réfère à quelqu'un qui parle beaucoup. L'opposé est « concise », signifiant exprimer beaucoup en peu de mots. « Verbeux », « long », et « développé » suggèrent également des discours étendus.",
+        "hint": "Chercher l'économie de mots."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « atavique » ?",
+        "prompt": null,
+        "options": ["Inné", "Appris", "Créé", "Innové"],
+        "answer": "Inné",
+        "explanation": "« Atavique » désigne quelque chose d'héréditaire ou inné, souvent transmis à travers les générations. « Appris », « créé », et « innové » impliquent l'acquisition ou la construction, non l'habitude héréditaire.",
+        "hint": "Transmission générationnelle."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus parmi les termes médicaux ?",
+        "prompt": "Cardiaque, Juridique, Pulmonaire, Vasculaire",
+        "options": ["Cardiaque", "Juridique", "Pulmonaire", "Vasculaire"],
+        "answer": "Juridique",
+        "explanation": "« Juridique » se rapporte au droit, tandis que « cardiaque », « pulmonaire », et « vasculaire » sont liés au système médical et aux organes.",
+        "hint": "Privilégier le secteur médical."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Sibyllin est à clair comme candide est à ___",
+        "prompt": null,
+        "options": ["Rusé", "Frivole", "Simple", "Difficile"],
+        "answer": "Rusé",
+        "explanation": "« Sibyllin » signifie obscur ou difficile à comprendre, contrairement à « clair ». De même, « candide » implique une pureté ou naïveté, par opposition à « rusé », signifiant malin. « Frivole » et « simple » n'accommodent pas ce contraste.",
+        "hint": "Antithèse d'une pureté naïve."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « éthéré » ?",
+        "prompt": null,
+        "options": ["Terrestre", "Aérien", "Lourd", "Bas"],
+        "answer": "Aérien",
+        "explanation": "« Éthéré » signifie léger, aérien, presque irréel, semblable à « aérien ». « Terrestre », « lourd », et « bas » se réfèrent à quelque chose de concret ou terre-à-terre.",
+        "hint": "Détaché de la terre."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « festif » ?",
+        "prompt": null,
+        "options": ["Morose", "Allègre", "Joyeux", "Réjouissant"],
+        "answer": "Morose",
+        "explanation": "« Festif » implique de l'entrain et de la joie, alors que « morose » signifie déprimé ou mélancolique. « Allègre », « joyeux », et « réjouissant » se combinent bien avec le caractère festif.",
+        "hint": "Sens de dépression et tristesse."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « délétère » ?",
+        "prompt": null,
+        "options": ["Salutaire", "Néfaste", "Bienfaisant", "Utile"],
+        "answer": "Néfaste",
+        "explanation": "« Délétère » indique quelque chose de nocif ou nuisible, similaire à « néfaste ». En revanche, « salutaire », « bienfaisant », et « utile » indiquent des effets bénéfiques.",
+        "hint": "Cherche nocivité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : \"Il a tant pleuré qu'il a vidé son ___ en larme.\"",
+        "prompt": null,
+        "options": ["coeur", "âme", "esprit", "corps"],
+        "answer": "coeur",
+        "explanation": "L'expression « vider son cœur en larme » signifie exprimer ses émotions les plus profondes en pleurant. « Âme », « esprit », et « corps » ne suffisent pas à capter cette expression dans son sens traditionnel.",
+        "hint": "Référence à une expression sur les émotions."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Détendu est à stressé comme bavard est à ___",
+        "prompt": null,
+        "options": ["Silencieux", "Verbeux", "Éloquent", "Expressif"],
+        "answer": "Silencieux",
+        "explanation": "« Détendu » est l'opposé de « stressé », tout comme « silencieux » l'est de « bavard ». « Verbeux », « éloquent », et « expressif » continuent le trait de communication verbale.",
+        "hint": "Involve polarité de conversation."
+    }
+]

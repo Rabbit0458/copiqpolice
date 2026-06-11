@@ -1,0 +1,62 @@
+# COP'IQ — E2E Flow 05 : Faire appel d'un point manquant
+# Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-099
+# Prérequis : connecté, sur la page correction d'un cas complété
+
+appId: fr.copiq.app
+---
+- launchApp
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Naviguer vers la page correction (abrégé)
+- tapOn:
+    text: "Cas Pratique"
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Ouvrir un cas déjà complété (premier de la liste avec badge score)
+- tapOn:
+    index: 0
+    id: "case_card"
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    text: "Commencer"
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Passer toutes les questions rapidement
+- tapOn:
+    id: "answer_text_area"
+- inputText: "Réponse de test pour le flow E2E appel."
+- tapOn:
+    text: "Valider"
+- waitForAnimationToEnd:
+    timeout: 15000
+
+# Sur la page correction, chercher un PointPill "manquant"
+# et tapper "Faire appel"
+- optional:
+    - tapOn:
+        text: "Faire appel"
+    - waitForAnimationToEnd:
+        timeout: 3000
+    # Remplir le motif d'appel dans l'AppealSheet
+    - tapOn:
+        id: "appeal_text_area"
+    - inputText: "Ma réponse couvre bien ce point selon le cours."
+    - tapOn:
+        text: "Envoyer l'appel"
+    - waitForAnimationToEnd:
+        timeout: 5000
+    - assertVisible:
+        text: "Appel envoyé"
+
+# Vérifier la page "Mes appels"
+- tapOn:
+    text: "Mes appels"
+- waitForAnimationToEnd:
+    timeout: 5000
+- assertVisible:
+    text: "En attente"

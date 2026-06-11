@@ -1,0 +1,398 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"heureux\" ?",
+        "prompt": null,
+        "options": ["Triste", "Content", "Mécontent", "Fâché"],
+        "answer": "Content",
+        "explanation": "« Content » signifie être satisfait ou comblé, un état proche de « heureux ». « Triste » et « mécontent » sont des antonymes et désignent un état de malheur ou de mécontentement. « Fâché » signifie être en colère, ce qui n'est pas synonyme de bonheur.",
+        "hint": "Pense à un état de satisfaction."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Chat est à Miauler comme Chien est à ___",
+        "prompt": null,
+        "options": ["Aboyer", "Nager", "Gratter", "Voler"],
+        "answer": "Aboyer",
+        "explanation": "Le chat fait le son 'miauler', et le chien fait le son 'aboyer'. 'Nager', 'gratter', et 'voler' désignent des actions qui ne sont pas liées aux sons produits par les animaux en question.",
+        "hint": "Concentre-toi sur le son produit par chaque animal."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"chaud\" ?",
+        "prompt": null,
+        "options": ["Froid", "Tiède", "Brûlant", "Tempéré"],
+        "answer": "Froid",
+        "explanation": "Le contraire de « chaud », qui exprime une température élevée, est « froid », qui indique une basse température. « Tiède » et « tempéré » désignent des températures intermédiaires, tandis que « brûlant » renforce l'idée de chaleur.",
+        "hint": "Pense à la température opposée à chaude."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"clair\" ?",
+        "prompt": null,
+        "options": ["Sombre", "Oscur", "Précis", "Brillant"],
+        "answer": "Précis",
+        "explanation": "Dans un contexte de communication, « clair » signifie « précis » ou sans ambiguïté. « Sombre » et « obscur » sont des antonymes, désignant un manque de clarté ou de lumière. « Brillant » renvoie à l'éclat, ce qui ne correspond pas nécessairement à la clarté de compréhension.",
+        "hint": "Réfléchis à quelque chose de compréhensible."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Pommes de terre, Carottes, Pois, Lampadaire",
+        "options": ["Pommes de terre", "Carottes", "Pois", "Lampadaire"],
+        "answer": "Lampadaire",
+        "explanation": "« Pommes de terre », « carottes », et « pois » sont tous des légumes tandis que « lampadaire » est un objet d'éclairage. Le piège ici est de vérifier attentivement à quelle catégorie appartiennent les mots.",
+        "hint": "Cherche l'intrus qui n'est pas un légume."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"écouter\" ?",
+        "prompt": null,
+        "options": ["Regarder", "Entendre", "Apprécier", "Parler"],
+        "answer": "Entendre",
+        "explanation": "« Écouter » et « entendre » impliquent tous deux l'utilisation de l'audition, bien que « écouter » implique une action plus volontaire. « Regarder » se réfère à l'usage de la vue, et « parler » est l'acte de communiquer oralement. « Apprécier » est plus général et extérieur au sens auditif.",
+        "hint": "Considérez l'audition passive."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"ancien\" ?",
+        "prompt": null,
+        "options": ["Vieux", "Nouveau", "Obsolète", "Désuet"],
+        "answer": "Nouveau",
+        "explanation": "L'antonyme de « ancien », qui désigne quelque chose d'existant depuis longtemps, est « nouveau », qui se réfère à quelque chose de récent ou d'actualisé. « Vieux », « obsolète », et « désuet » renforcent plutôt l'idée d'ancienneté.",
+        "hint": "Opposez le passé au présent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"joyeux\" ?",
+        "prompt": null,
+        "options": ["Heureux", "Déprimé", "Anxieux", "Fâché"],
+        "answer": "Heureux",
+        "explanation": "« Joyeux » est un état d'esprit rempli de bonheur, similaire à « heureux ». « Déprimé » indique tristesse et mal être, tandis que « anxieux » et « fâché » expriment des émotions négatives et stressantes.",
+        "hint": "Penser à un sentiment de bien-être positif."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Chat, Chien, Lapin, Table",
+        "options": ["Chat", "Chien", "Lapin", "Table"],
+        "answer": "Table",
+        "explanation": "« Chat », « chien », et « lapin » sont des animaux, alors que « table » est un meuble. Le contexte catégoriel est ici important pour discriminer l'intrus.",
+        "hint": "Identifie l'intrus qui n'est pas un animal."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Professeur est à Enseigner comme Écrivain est à ___",
+        "prompt": null,
+        "options": ["Lire", "Écrire", "Dessiner", "Parler"],
+        "answer": "Écrire",
+        "explanation": "Un professeur a pour rôle d'enseigner, tandis qu'un écrivain est connu pour écrire. « Lire », « dessiner », et « parler » ne correspondent pas aux actions principales de ces professions respectives.",
+        "hint": "Associe chaque profession avec son activité principale."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"large\" ?",
+        "prompt": null,
+        "options": ["Épais", "Étroit", "Grand", "Ample"],
+        "answer": "Étroit",
+        "explanation": "« Large » désigne quelque chose qui a de l'espace en largeur, tandis que « étroit » est son contraire, signifiant peu d'espace. « Épais », « grand », et « ample » ne restreignent pas la dimension de la largeur.",
+        "hint": "Concentre-toi sur quelque chose qui indique une restriction d'espace."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"éclatant\" ?",
+        "prompt": null,
+        "options": ["Éblouissant", "Terne", "Obscur", "Assombri"],
+        "answer": "Éblouissant",
+        "explanation": "« Éclatant » et « éblouissant » partagent une idée de splendeur lumineuse. « Terne », « obscur », et « assombri » indiquent, au contraire, un manque de lumière ou de couleur.",
+        "hint": "Pense à quelque chose de très lumineux."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Le soleil se lève à l'___ du jour.\"",
+        "prompt": null,
+        "options": ["Aube", "Crépuscule", "Soir", "Midi"],
+        "answer": "Aube",
+        "explanation": "« Aube » est le moment du jour où le soleil se lève. « Crépuscule » et « soir » correspondent au moment du coucher du soleil. « Midi » se réfère au milieu de la journée.",
+        "hint": "Cherchez le moment où commence la lumière."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"honnête\" ?",
+        "prompt": null,
+        "options": ["Franc", "Sincère", "Malhonnête", "Direct"],
+        "answer": "Malhonnête",
+        "explanation": "L'antonyme de « honnête », qui signifie intègre et véridique, est « malhonnête », qui évoque la tromperie. « Franc », « sincère » et « direct » sont des termes qui prolongent l'honnêteté sous divers aspects.",
+        "hint": "Considérez une personne qui trompe."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"début\" ?",
+        "prompt": null,
+        "options": ["Fin", "Commencement", "Conclusion", "Arrêt"],
+        "answer": "Commencement",
+        "explanation": "Un « début » est synonyme de « commencement », tous deux désignant le point de départ de quelque chose. « Fin » et « conclusion » évoquent plutôt la clôture. « Arrêt » représente l'interruption et non le départ.",
+        "hint": "Imagine le premier pas."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"rapide\" ?",
+        "prompt": null,
+        "options": ["Vif", "Lent", "Éclair", "Précipité"],
+        "answer": "Lent",
+        "explanation": "« Rapide » oppose « lent », le premier signifie vitesse, le second, la lenteur. « Vif », « éclair » et « précipité » renvoient tous à une idée de rapidité, et non de lenteur.",
+        "hint": "Cherche le contraire de la vitesse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Jour est à Soleil comme Nuit est à ___",
+        "prompt": null,
+        "options": ["Étoile", "Lumière", "Lune", "Clarté"],
+        "answer": "Lune",
+        "explanation": "Le jour est associé au soleil, la nuit est associée à la lune. « Étoile », « lumière », et « clarté » n'établissent pas ce binôme direct d'association.",
+        "hint": "Pense à la lumière naturelle nocturne."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de \"améliorer\" ?",
+        "prompt": null,
+        "options": ["Dégrader", "Perfectionner", "Ignorer", "Stagner"],
+        "answer": "Perfectionner",
+        "explanation": "Améliorer, c'est rendre quelque chose meilleur, synonyme de perfectionner. Dégrader désigne un état de dégradation, l'inverse de l'amélioration. Ignorer et stagner n'ont aucun rapport direct avec l'amélioration.",
+        "hint": "Cherchez un synonyme qui évoque un progrès qualitatif."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Triangle, Carré, Rectangle, Douze",
+        "options": ["Triangle", "Carré", "Rectangle", "Douze"],
+        "answer": "Douze",
+        "explanation": "Les trois premiers sont des figures géométriques, tandis que 'douze' est un nombre. Pour éviter le piège, notez que les trois figures ont une dimension physique.",
+        "hint": "Focalisez-vous sur les mathématiques et la géométrie."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de \"délicat\" ?",
+        "prompt": null,
+        "options": ["Raffiné", "Grossier", "Fragile", "Tendre"],
+        "answer": "Grossier",
+        "explanation": "L'antonyme de « délicat », qui implique finesse et subtilité, est « grossier », qui désigne quelque chose de brut et sans finesse. Raffiné, fragile, et tendre prolongent ou détaillent l'idée de délicatesse.",
+        "hint": "Cherchez quelque chose de brut ou peu raffiné."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Peintre est à Tableau comme Musicien est à ___",
+        "prompt": null,
+        "options": ["Partition", "Accord", "Instrument", "Symphonie"],
+        "answer": "Symphonie",
+        "explanation": "Un peintre produit un tableau, tandis qu'un musicien compose une symphonie. Partition, accord et instrument sont des outils ou éléments dans l'élaboration musicale, mais le produit final est la symphonie.",
+        "hint": "Pensez à la réalisation musicale finale."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot \"pièce\" signifie",
+        "prompt": "« Cette vieille pièce date du règne de Louis XIV. »",
+        "options": ["Chambre", "Monnaie", "Théâtre", "Musique"],
+        "answer": "Monnaie",
+        "explanation": "Dans ce contexte, « pièce » se réfère à une ancienne pièce de monnaie. « Chambre » et « théâtre » pourraient s'appliquer dans d'autres phrases. « Musique » est utilisé pour parler d'une composition musicale.",
+        "hint": "Considérez le contexte historique fourni."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Voiture, Vélomoteur, Tramway, Tapisserie",
+        "options": ["Voiture", "Vélomoteur", "Tramway", "Tapisserie"],
+        "answer": "Tapisserie",
+        "explanation": "Voiture, vélomoteur, et tramway sont tous des moyens de transport. 'Tapisserie' appartient au domaine de la décoration et de l'ameublement. Le piège est de ne pas confondre les objets mobiles avec les objets décoratifs.",
+        "hint": "Identifie l'intrus qui n'est pas un transport."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Il a enfin ___ son rêve d'enfance.\"",
+        "prompt": null,
+        "options": ["Réalisé", "Ignoré", "Refusé", "Imaginé"],
+        "answer": "Réalisé",
+        "explanation": "« Réalisé » signifie concrétiser un rêve, en faire une réalité. « Ignoré » et « refusé » impliquent une négation ou un détournement. « Imaginé » reste dans le domaine des idées non concrétisées.",
+        "hint": "Concrétiser une aspiration."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de \"inflexible\" ?",
+        "prompt": null,
+        "options": ["Flexible", "Malléable", "Rigide", "Élastique"],
+        "answer": "Rigide",
+        "explanation": "« Inflexible » décrit un caractère ou une nature qui n'est pas facilement modifié, semblable à « rigide ». « Flexible » et « malléable » sont des contraires, indiquant une facilité d'adaptation. « Élastique » insinue également une capacité d'ajustement.",
+        "hint": "Cherche un synonyme marquant une absence de souplesse."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de \"précoce\" ?",
+        "prompt": null,
+        "options": ["Tardif", "Rapide", "Ancien", "Hâtif"],
+        "answer": "Tardif",
+        "explanation": "« Précoce » implique une avancée ou un développement plus tôt que prévu. L'antonyme est « tardif », qui signifie survenir ou se développer plus tard. « Rapide », « ancien », et « hâtif » n'expriment pas le même contraste temporel.",
+        "hint": "Cherche une idée de retardement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot \"glace\" signifie",
+        "prompt": "« Elle a léché la glace tout l'été. »",
+        "options": ["Fenêtre", "Crème glacée", "Reflet", "Givre"],
+        "answer": "Crème glacée",
+        "explanation": "« Glace » se rapporte ici à la crème glacée consommée durant l'été. « Fenêtre », « reflet », et « givre » concernent d'autres contextes liés respectivement aux surfaces vitrées ou froides.",
+        "hint": "Pensez au contexte estival en lien avec une consommation."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de \"calme\" ?",
+        "prompt": null,
+        "options": ["Agité", "Paisible", "Nerveux", "Instable"],
+        "answer": "Paisible",
+        "explanation": "« Calme » signifie sans agitation ni perturbation, tout comme « paisible ». « Agité », « nerveux », et « instable » désignent des états d'excitation ou de déséquilibre, opposés au calme.",
+        "hint": "Visualisez une mer sans vagues."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Abeille est à Miel comme Vache est à ___",
+        "prompt": null,
+        "options": ["Lait", "Fromage", "Beurre", "Crème"],
+        "answer": "Lait",
+        "explanation": "L'abeille produit le miel, tout comme la vache fournit le lait. Bien que la vache soit impliquée dans la création de fromage, beurre, et crème, ces productions passent par des processus supplémentaires.",
+        "hint": "Cherche le produit brut fourni par l'animal."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Piano, Violon, Trompette, Chaise",
+        "options": ["Piano", "Violon", "Trompette", "Chaise"],
+        "answer": "Chaise",
+        "explanation": "Les trois premiers sont des instruments de musique tandis que « chaise » est un meuble. Le piège consiste à identifier l'objet non musical.",
+        "hint": "Cherche l'intrus qui ne se joue pas."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de \"compliquer\" ?",
+        "prompt": null,
+        "options": ["Simplifier", "Complexifier", "Clarifier", "Faciliter"],
+        "answer": "Complexifier",
+        "explanation": "Compliquer signifie rendre quelque chose plus difficile, similaire à complexifier. Simplifier et faciliter sont l'opposé de compliquer, et clarifier signifie rendre plus compréhensible.",
+        "hint": "Pensez à ajouter des difficultés ou des niveaux."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de \"prolixe\" ?",
+        "prompt": null,
+        "options": ["Succinct", "Verbeux", "Éloquent", "Conciliant"],
+        "answer": "Succinct",
+        "explanation": "« Prolixe » se rapporte à une tendance à beaucoup parler, alors que « succinct » signifie être bref et concis. « Verbeux » renforce l'idée de paroles abondantes. « Éloquent » dénote une capacité à bien exprimer, non nécessairement avec abondance de mots. « Conciliant » n'a pas de rapport direct avec la parole.",
+        "hint": "Cherchez l'idée de brièveté, peu de mots."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot \"carton\" signifie",
+        "prompt": "« Son message était un vrai carton dans les médias. »",
+        "options": ["Boîte", "Succès", "Échec", "Invitation"],
+        "answer": "Succès",
+        "explanation": "Dans ce contexte, « carton » est synonyme de succès retentissant. « Boîte » est le sens littéral de carton, tandis que « échec » et « invitation » ne correspondent pas ici, car le mot désigne au contraire une large réussite.",
+        "hint": "Pensez à un succès éclatant."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le faux ami du mot \"altérer\" ?",
+        "prompt": null,
+        "options": ["Changer", "Modérer", "Dénaturer", "Corriger"],
+        "answer": "Corriger",
+        "explanation": "On pourrait penser qu'\"altérer\" signifie \"corriger\", or, il signifie \"dénaturer\" ou modifier en défaveur, rendant un résultat moins bon. \"Changer\" et \"modérer\" n'alignent pas directement avec l'altération au sens détériorant.",
+        "hint": "L'alteration ne rend pas meilleur."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Chaleur est à Été comme Froid est à ___",
+        "prompt": null,
+        "options": ["Hiver", "Printemps", "Automne", "Vent"],
+        "answer": "Hiver",
+        "explanation": "La chaleur est caractéristique de l'été, tandis que le froid est indissociable de l'hiver. Bien que le printemps et l'automne puissent être froids, c'est l'hiver qui incarne pleinement cette qualité.",
+        "hint": "Cherche la saison la plus froide."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de \"atavique\" ?",
+        "prompt": null,
+        "options": ["Héréditaire", "Acquis", "Innate", "Inné"],
+        "answer": "Acquis",
+        "explanation": "« Atavique » fait référence à des traits hérités de nos ancêtres. L'opposé serait « acquis », désignant des qualités ou compétences développées par l'expérience. Héréditaire, innate, et inné renforcent l'ancrage inné ou transmis.",
+        "hint": "Pensez à ce qui est appris, non hérité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot \"pièce\" signifie",
+        "prompt": "« La nouvelle pièce se joue au théâtre ce soir. »",
+        "options": ["Monnaie", "Représentation", "Salle", "Unité"],
+        "answer": "Représentation",
+        "explanation": "Ici, « pièce » fait référence à une représentation théâtrale, non à une monnaie ni à une salle. Cela demande une lecture contextuelle, où la mise en scène prend le devant.",
+        "hint": "Considérez le contexte artistique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Jurisprudence, Pathologie, Mortalité, Sentence",
+        "options": ["Jurisprudence", "Pathologie", "Mortalité", "Sentence"],
+        "answer": "Pathologie",
+        "explanation": "« Jurisprudence », « mortalité », et « sentence » appartiennent au domaine légal, tandis que « pathologie » relève du médical. Le défi ici est de discerner entre ces deux domaines professionnels.",
+        "hint": "Cherchez le terme médical parmi les juridiques."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : « Un raisonnement ___ est un signe d'esprit critique. »",
+        "prompt": null,
+        "options": ["Dispersé", "Cohérent", "Incohérent", "Rapide"],
+        "answer": "Cohérent",
+        "explanation": "Un raisonnement « cohérent » se distingue par sa logique et son organisation, essentiel pour l'esprit critique. « Dispersé » et « incohérent » s'opposent à cette logique, tandis que « rapide » ne garantit pas la qualité du raisonnement.",
+        "hint": "Cherche la continuité logique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de \"férule\" ?",
+        "prompt": null,
+        "options": ["Autorité", "Liberté", "Faiblesse", "Égalité"],
+        "answer": "Autorité",
+        "explanation": "Férule désigne une forme de contrôle ou d'autorité exercée. Liberté, faiblesse, et égalité s'écartent de l'idée de domination ou de pouvoir exercé par une entité.",
+        "hint": "Cherchez l'idée de contrôle ou de domination."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot \"glace\" signifie",
+        "prompt": "« Elle s'est admirée longuement dans la glace de la chambre. »",
+        "options": ["Miroir", "Crème glacée", "Givre", "Fenêtre"],
+        "answer": "Miroir",
+        "explanation": "Ici, « glace » désigne un miroir, reflet dans lequel on se regarde. « Crème glacée », « givre », et « fenêtre » ne cadrent pas avec l'activité d'admiration dans la chambre.",
+        "hint": "Pensez à un objet de réflexion."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Carabine, Revolver, Calepin, Fusil",
+        "options": ["Carabine", "Revolver", "Calepin", "Fusil"],
+        "answer": "Calepin",
+        "explanation": "Carabine, revolver, et fusil sont des armes à feu, tandis que calepin est un carnet de notes. L'intrus se distingue par sa fonction pacifique.",
+        "hint": "Cherche l'objet non destiné à tirer."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de \"pulvérulent\" ?",
+        "prompt": null,
+        "options": ["Poussiéreux", "Liquide", "Solide", "Purulent"],
+        "answer": "Poussiéreux",
+        "explanation": "« Pulvérulent » décrit quelque chose qui est semblable à la poussière, ce qui en fait un synonyme de « poussiéreux ». « Liquide » et « solide » ont des états physiques clairement différents, tandis que « purulent » est lié à un aspect liquide infecté.",
+        "hint": "Pensez à une fine particule."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de \"contrit\" ?",
+        "prompt": null,
+        "options": ["Impenitent", "Coupable", "Repenti", "Humilié"],
+        "answer": "Impenitent",
+        "explanation": "« Contrit » signifie qu'une personne est pleine de remords. L'antonyme « impenitent » signifie ne ressentir aucun regret pour ses actions. « Coupable », « repenti » et « humilié » continuent l'idée de confession ou remords.",
+        "hint": "Cherchez une absence de remords."
+    }
+]

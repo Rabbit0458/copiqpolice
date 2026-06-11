@@ -261,7 +261,7 @@ class _HeaderHero extends StatelessWidget {
         child: Container(
           height: 190,
           decoration: BoxDecoration(
-            border: Border.all(color: cs.onSurface.withOpacity(.06), width: 1),
+            border: Border.all(color: cs.onSurface.withValues(alpha: .06), width: 1),
             borderRadius: radius,
           ),
           clipBehavior: Clip.antiAlias,
@@ -276,8 +276,8 @@ class _HeaderHero extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [
-                      Colors.black.withOpacity(.15),
-                      Colors.black.withOpacity(.55),
+                      Colors.black.withValues(alpha: .15),
+                      Colors.black.withValues(alpha: .55),
                     ],
                     stops: const [0.2, 1],
                   ),
@@ -305,7 +305,7 @@ class _HeaderHero extends StatelessWidget {
                     Text(
                       'L’intention ou la faute de l’auteur.',
                       style: GoogleFonts.fustat(
-                        color: Colors.white.withOpacity(.88),
+                        color: Colors.white.withValues(alpha: .88),
                         fontWeight: FontWeight.w600,
                         fontSize: 14,
                       ),
@@ -325,9 +325,9 @@ class _HeaderHero extends StatelessWidget {
   Widget _chip(String t) => Container(
     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
     decoration: BoxDecoration(
-      color: Colors.white.withOpacity(.16),
+      color: Colors.white.withValues(alpha: .16),
       borderRadius: BorderRadius.circular(999),
-      border: Border.all(color: Colors.white.withOpacity(.22)),
+      border: Border.all(color: Colors.white.withValues(alpha: .22)),
     ),
     child: Text(
       t,
@@ -343,9 +343,9 @@ class _HeaderHero extends StatelessWidget {
   Widget _ctaPill() => Container(
     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
     decoration: BoxDecoration(
-      color: Colors.white.withOpacity(.14),
+      color: Colors.white.withValues(alpha: .14),
       borderRadius: BorderRadius.circular(999),
-      border: Border.all(color: Colors.white.withOpacity(.22)),
+      border: Border.all(color: Colors.white.withValues(alpha: .22)),
     ),
     child: Row(
       mainAxisSize: MainAxisSize.min,
@@ -393,11 +393,11 @@ class _QuickNav extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final pillBg = isDark
-        ? Colors.white.withOpacity(.10)
-        : cs.primary.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : cs.primary.withValues(alpha: .08);
     final pillStroke = isDark
-        ? Colors.white.withOpacity(.18)
-        : cs.primary.withOpacity(.18);
+        ? Colors.white.withValues(alpha: .18)
+        : cs.primary.withValues(alpha: .18);
     final pillText = isDark ? Colors.white : cs.onSurface;
     final pillIcon = isDark ? Colors.white : cs.primary;
 
@@ -468,17 +468,17 @@ class _GlassCard extends StatelessWidget {
     final radius = BorderRadius.circular(16);
 
     final cardBg = isDark
-        ? Colors.white.withOpacity(.08)
-        : Colors.black.withOpacity(.035);
+        ? Colors.white.withValues(alpha: .08)
+        : Colors.black.withValues(alpha: .035);
     final border = isDark
-        ? Colors.white.withOpacity(.16)
-        : Colors.black.withOpacity(.06);
+        ? Colors.white.withValues(alpha: .16)
+        : Colors.black.withValues(alpha: .06);
     final chipBg = isDark
-        ? Colors.white.withOpacity(.16)
-        : Colors.black.withOpacity(.06);
+        ? Colors.white.withValues(alpha: .16)
+        : Colors.black.withValues(alpha: .06);
     final chipBrd = isDark
-        ? Colors.white.withOpacity(.18)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .18)
+        : Colors.black.withValues(alpha: .08);
     final textClr = isDark ? Colors.white : cs.onSurface;
 
     return Padding(
@@ -541,7 +541,7 @@ class _GlassCard extends StatelessWidget {
                         child: Icon(
                           Icons.fiber_manual_record,
                           size: 8,
-                          color: textClr.withOpacity(.95),
+                          color: textClr.withValues(alpha: .95),
                         ),
                       ),
                       const SizedBox(width: 8),
@@ -549,7 +549,7 @@ class _GlassCard extends StatelessWidget {
                         child: Text(
                           line,
                           style: GoogleFonts.fustat(
-                            color: textClr.withOpacity(.95),
+                            color: textClr.withValues(alpha: .95),
                             fontSize: 14,
                             height: 1.32,
                             fontWeight: FontWeight.w600,
@@ -571,8 +571,8 @@ class _GlassCard extends StatelessWidget {
                     ),
                     decoration: BoxDecoration(
                       color: isDark
-                          ? Colors.white.withOpacity(.10)
-                          : Colors.black.withOpacity(.035),
+                          ? Colors.white.withValues(alpha: .10)
+                          : Colors.black.withValues(alpha: .035),
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(color: border),
                     ),
@@ -589,7 +589,7 @@ class _GlassCard extends StatelessWidget {
                           child: Text(
                             note!,
                             style: GoogleFonts.fustat(
-                              color: textClr.withOpacity(.95),
+                              color: textClr.withValues(alpha: .95),
                               fontSize: 13.5,
                               height: 1.28,
                               fontWeight: FontWeight.w600,
@@ -619,11 +619,11 @@ class _MemoCard extends StatelessWidget {
     final cs = Theme.of(context).colorScheme;
 
     final bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.035);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .035);
     final border = isDark
-        ? Colors.white.withOpacity(.16)
-        : Colors.black.withOpacity(.06);
+        ? Colors.white.withValues(alpha: .16)
+        : Colors.black.withValues(alpha: .06);
     final text = isDark ? Colors.white : cs.onSurface;
 
     return Padding(
@@ -705,7 +705,7 @@ class _ReadingBar extends StatelessWidget {
       height: 3,
       child: LinearProgressIndicator(
         value: progress.clamp(0, 1),
-        backgroundColor: bar.withOpacity(.18),
+        backgroundColor: bar.withValues(alpha: .18),
         valueColor: AlwaysStoppedAnimation<Color>(bar),
         minHeight: 3,
       ),

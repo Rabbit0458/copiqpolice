@@ -1,0 +1,414 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on déduire ?",
+    "prompt": "Tous les chiens sont des mammifères. Rex est un chien.",
+    "options": [
+      "Rex est un oiseau",
+      "Rex est un mammifère",
+      "Rex est un reptile",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Rex est un mammifère",
+    "explanation": "C'est un syllogisme par transitivité. Si tous les chiens sont des mammifères et Rex est un chien, alors Rex est nécessairement un mammifère. Le piège ici aurait été de conclure à tort que Rex pourrait être autre chose qu'un mammifère.",
+    "hint": "Pense à la transitivité des classes d'animaux."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus rapide ?",
+    "prompt": "La voiture A est plus rapide que la voiture B. La voiture B est plus rapide que la voiture C.",
+    "options": ["Voiture A", "Voiture B", "Voiture C", "On ne peut pas savoir"],
+    "answer": "Voiture A",
+    "explanation": "En ordonnant les vitesses, on obtient : A > B > C, donc A est la plus rapide. Il ne faut pas confondre en inversant les ordres ou en pensant que B pourrait être plus rapide.",
+    "hint": "Met les voitures dans l'ordre de vitesse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Si Julie va au cinéma, que fait Paul ?",
+    "prompt": "Si Julie va au cinéma, alors Paul reste à la maison. Julie est au cinéma.",
+    "options": [
+      "Paul est à la maison",
+      "Paul est au cinéma",
+      "On ne peut pas savoir",
+      "Paul est à la plage"
+    ],
+    "answer": "Paul est à la maison",
+    "explanation": "C'est un exemple de modus ponens. Si la condition initiale est remplie (Julie va au cinéma), alors la conclusion (Paul reste à la maison) doit nécessairement être vraie. Il ne faut pas faire l'erreur de déduire une implication inverse fausse.",
+    "hint": "Si condition alors conséquence."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion est correcte ?",
+    "prompt": "Aucun chat n'aime l'eau. Ce minou est un chat.",
+    "options": [
+      "Ce minou aime nager",
+      "Ce minou n'aime pas l'eau",
+      "Ce minou est un poisson",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce minou n'aime pas l'eau",
+    "explanation": "Syllogisme par négation. Si aucun chat n'aime l'eau et Minou est un chat, il suit logiquement que Minou n'aime pas l'eau. Ne vous laissez pas leurrer par l'hypothèse contraire ici.",
+    "hint": "Négation universelle des chats."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel transport est plus lourd ?",
+    "prompt": "Le camion A est plus lourd que le camion B. Le camion B est plus lourd que le camion C.",
+    "options": ["Camion A", "Camion B", "Camion C", "On ne peut pas savoir"],
+    "answer": "Camion A",
+    "explanation": "En comparant les poids : A > B > C, A est donc le plus lourd. Le piège serait d'ignorer le fait que les comparaisons sont transitives dans ce type de problème de classement.",
+    "hint": "Comparer les poids par ordre de grandeur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus âgé ?",
+    "prompt": "Anna est plus âgée que Betty. Betty est plus âgée que Carol.",
+    "options": ["Anna", "Betty", "Carol", "On ne peut pas savoir"],
+    "answer": "Anna",
+    "explanation": "En classant les âges : Anna > Betty > Carol, on déduit qu'Anna est la plus âgée. Le piège à éviter ici serait d'oublier l'ordre séquentiel donné dans les prémisses.",
+    "hint": "Utilisez la séquence d'âges pour conclure."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on conclure sur la couleur de Max ?",
+    "prompt": "Tous les tigres sont rayés. Max est un tigre.",
+    "options": [
+      "Max est rayé",
+      "Max est vert",
+      "Max est une souris",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Max est rayé",
+    "explanation": "Syllogisme simple : si tous les tigres sont rayés et que Max est un tigre, alors Max est rayé. Attention à ne pas être distrait par des options qui n'ont pas de lien logique avec le fait d'être un tigre.",
+    "hint": "Applique le même critère à tous les membres du groupe."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus intelligent ?",
+    "prompt": "Thomas est plus intelligent que Hugo. Hugo est plus intelligent que Louis.",
+    "options": ["Thomas", "Hugo", "Louis", "On ne peut pas savoir"],
+    "answer": "Thomas",
+    "explanation": "L'ordre établi est Thomas > Hugo > Louis, donc Thomas est le plus intelligent. Il est crucial de suivre l'ordre strict des comparaisons pour éviter toute interprétation erronée.",
+    "hint": "Suivre la logique du classement établi."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la couleur de Rex ?",
+    "prompt": "Tous les dalmatiens sont blancs avec des taches noires. Rex est un dalmatien.",
+    "options": [
+      "Rex est brun",
+      "Rex est tigré",
+      "Rex est blanc avec des taches noires",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Rex est blanc avec des taches noires",
+    "explanation": "Utilisons un syllogisme classique. Si tous les dalmatiens ont un motif bien défini et que Rex est un dalmatien, alors Rex est blanc avec des taches noires. Ne vous laissez pas distraire par des options qui ne concernent pas les dalmatiens.",
+    "hint": "Attribuez les caractéristiques générales à l'individu."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Où est Peter ?",
+    "prompt": "Si Peter est en ville, alors il est au café. Peter est en ville.",
+    "options": [
+      "Peter est au cinéma",
+      "Peter est chez lui",
+      "Peter est au café",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Peter est au café",
+    "explanation": "C'est un cas de modus ponens. Vous savez que si Peter est en ville, il est au café, et puisque Peter est en ville, il doit être au café. Le piège est de supposer à tort qu'il pourrait être ailleurs.",
+    "hint": "Dérivez la conséquence directe de la condition remplie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qu'en conclure sur les boissons ?",
+    "prompt": "Toutes les limonades sont pétillantes. Cette boisson est une limonade.",
+    "options": [
+      "C'est une boisson plate",
+      "C'est une boisson pétillante",
+      "C'est une boisson chaude",
+      "On ne peut pas savoir"
+    ],
+    "answer": "C'est une boisson pétillante",
+    "explanation": "En utilisant un syllogisme par transitivité : toutes les limonades sont pétillantes et cette boisson est une limonade, de sorte que cette boisson est pétillante. Parfois, identifier l'évidence demande de ne pas se laisser distraire par des affirmations non pertinentes.",
+    "hint": "Concentrez-vous sur la caractéristique de la catégorie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on dire sur le bateau E ?",
+    "prompt": "Tous les bateaux de ce port sont bleus. Le bateau E est dans le port.",
+    "options": [
+      "Le bateau E est rouge",
+      "Le bateau E est vert",
+      "Le bateau E est bleu",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Le bateau E est bleu",
+    "explanation": "En appliquant la logique des syllogismes : si tous les bateaux du port sont bleus et E est un bateau du port, alors E est bleu. Comme précédemment, ce type de question piège en introduisant des couleurs qui n'ont pas de lien logique par rapport au contexte donné.",
+    "hint": "Retiens que tous les éléments d'un groupe partagent une propriété identique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qu'est-ce que ce fruit ?",
+    "prompt": "Tous les citrons sont acides. Ce fruit est un citron.",
+    "options": [
+      "Ce fruit est sucré",
+      "Ce fruit est acide",
+      "Ce fruit est amer",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce fruit est acide",
+    "explanation": "Syllogisme de classification : chaque citron étant acide et ce fruit étant un citron, alors nécessairement, ce fruit est acide. Se laisser distraire des autres goûts proposés serait une erreur logique.",
+    "hint": "Analysez la propriété intrinsèque des citrons."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Une conclusion sur Max ?",
+    "prompt": "Les poissons vivent dans l'eau. Max est un poisson.",
+    "options": [
+      "Max vit sur terre",
+      "Max vole",
+      "Max vit dans l'eau",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Max vit dans l'eau",
+    "explanation": "En raisonnant par transitivité, tous les membres d'une catégorie partagent une caractéristique commune. Si tous les poissons vivent dans l'eau et que Max est un poisson, alors Max vit dans l'eau, l'erreur typique serait d'attribuer à Max une caractéristique erronée.",
+    "hint": "Extensible à toute la catégorie concernée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus jeune ?",
+    "prompt": "Lucas est plus jeune que Martin. Martin est plus jeune que Sophie.",
+    "options": ["Lucas", "Martin", "Sophie", "On ne peut pas savoir"],
+    "answer": "Lucas",
+    "explanation": "En ordonnant la séquence, Lucas < Martin < Sophie, donc Lucas est le plus jeune. Il est important de ne pas se faire piéger par un changement d'ordre erroné des participants.",
+    "hint": "Ordonnez les âges pour valider."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est en centre-ville ?",
+    "prompt": "Si Mark est en centre-ville, alors Sandra est au parc. Mark est en centre-ville.",
+    "options": [
+      "Sandra est à la plage",
+      "Sandra est chez elle",
+      "Sandra est au parc",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Sandra est au parc",
+    "explanation": "Ce problème utilise le modus ponens. Si la condition initiale est satisfaite, alors la conséquence doit l'être également. Ici, puisque Mark est en centre-ville, Sandra doit être au parc. Le piège à éviter consiste à conclure sur une autre localisation sans fondement.",
+    "hint": "Une implication directe forte est la clé."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Conclusion sur ce légume ?",
+    "prompt": "Tous les brocolis sont verts. Ce légume est un brocoli.",
+    "options": [
+      "Ce légume est rouge",
+      "Ce légume est jaune",
+      "Ce légume est vert",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce légume est vert",
+    "explanation": "En suivant un raisonnement logique consistant : tout ce qui est vrai pour des brocolis l'est aussi pour ce spécimen s'il en est un. Tel est l'essence de la déduction par syllogisme. Se méfier des distractions par d'autres couleurs.",
+    "hint": "Ne perd pas de vue les caractéristiques définies de la catégorie."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui se couche le plus tôt ?",
+    "prompt": "Alice se couche plus tôt que Bob. Bob se couche plus tard que Charlie. Daan se couche plus tard qu'Alice mais plus tôt que Charlie.",
+    "options": ["Alice", "Bob", "Charlie", "Daan"],
+    "answer": "Alice",
+    "explanation": "Dans l'ordre Alice < Daan < Charlie < Bob, Alice se couche en premier. Il est important de structurer les informations pour éviter toute confusion entre les comparaisons directes et les retournements de perspective.",
+    "hint": "Utilise une ligne temporelle pour visualiser."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qu'en conclure sur la rivière ?",
+    "prompt": "Si la rivière est en crue, le pont est fermé. Le pont est ouvert.",
+    "options": [
+      "La rivière est en crue",
+      "La rivière n'est pas en crue",
+      "On ne peut pas savoir",
+      "La rivière est asséchée"
+    ],
+    "answer": "La rivière n'est pas en crue",
+    "explanation": "Il s'agit d'une contraposée implicite : si le pont est ouvert, la condition préalable (rivière en crue) ne peut être satisfaite. Le piège à éviter est de ne pas prendre en compte la validité de la relation implicite.",
+    "hint": "Une implication équivaut à nier deux fois."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus grand ?",
+    "prompt": "Linda est plus grande que Nora. Nora est plus grande qu'Eva. Megan est plus grande que Linda.",
+    "options": ["Linda", "Nora", "Eva", "Megan"],
+    "answer": "Megan",
+    "explanation": "L'ordre établi donne Megan > Linda > Nora > Eva. Sans confusion, Megan est la plus grande. Le danger serait de sous-estimer la séquence claire fournie.",
+    "hint": "Établissez une hiérarchie verticale pour interpréter."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que se passe-t-il si Leo voyage ?",
+    "prompt": "Si Leo voyage, alors Mia reste à la maison. Si Mia reste à la maison, alors Jack fait la cuisine. Leo voyage.",
+    "options": [
+      "Mia voyage",
+      "Mia reste à la maison et Jack fait la cuisine",
+      "Jack ne fait pas la cuisine",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Mia reste à la maison et Jack fait la cuisine",
+    "explanation": "Raisonnement en chaîne : Leo voyage implique Mia reste à la maison, ce qui implique dans la suite que Jack fait la cuisine. Chaque condition dépend de la précédente, et un maillon manquant entraînerait un mauvais raisonnement.",
+    "hint": "Cherchez une série d'implications continues."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que peut-on déduire sur le chat ?",
+    "prompt": "Si le chat est dehors, l'oiseau chante. L'oiseau ne chante pas.",
+    "options": [
+      "Le chat est dehors",
+      "Le chat n'est pas dehors",
+      "On ne peut pas savoir",
+      "L'oiseau est endormi"
+    ],
+    "answer": "Le chat n'est pas dehors",
+    "explanation": "La contraposée nous enseigne que si l'oiseau ne chante pas, alors la condition du chat dehors n'est pas satisfaite. Le piège est l'omission de la contraposée valide, qui est souvent ignorée ou mal comprise.",
+    "hint": "Liens d'implication inversés par contraposée."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui quittera le parc en premier ?",
+    "prompt": "Tina quitte le parc après Sam mais avant Dave. Sam quitte le parc après Lila.",
+    "options": ["Lila", "Sam", "Tina", "Dave"],
+    "answer": "Lila",
+    "explanation": "Ordre : Lila part avant tout le monde, Sam ensuite, puis Tina, et enfin Dave. Faites attention au mot 'après' qui inverse logiquement les attentes si mal compris.",
+    "hint": "Considérez à rebours les séquences de départ."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qu'en conclure sur le chocolat ?",
+    "prompt": "Si le chocolat est blanc, alors il est sucré. Si le chocolat est sucré, il fond au soleil.",
+    "options": [
+      "Il est impossible qu'il soit blanc.",
+      "Le chocolat blanc fond au soleil.",
+      "Le chocolat est blanc mais pas sucré.",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Le chocolat blanc fond au soleil.",
+    "explanation": "C'est un raisonnement en deux étapes. Le chocolat blanc entraîne qu'il est sucré, et s'il est sucré, il fond. Ne pas tirer de conclusion rapide sans intégrer les connexions séquencées.",
+    "hint": "Rappelez-vous d'intégrer toutes les conséquences."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est la plus rapide ?",
+    "prompt": "Carla court moins vite que Elise. Elise court plus vite que Adele. Julia court plus vite que Carla et Adele.",
+    "options": ["Carla", "Elise", "Adele", "Julia"],
+    "answer": "Julia",
+    "explanation": "En réordonnant : Julia > Elise > Carla > Adele, avec Julia en tête. Un piège courant serait d'accorder des vitesses similaires par erreur en raison de l'ordre des phrases.",
+    "hint": "Reliez les points pour former un ensemble cohérent."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui reçoit la récompense ?",
+    "prompt": "Si Peter gagne la compétition, alors Clara reçoit la récompense. Clara a reçu la récompense.",
+    "options": [
+      "Peter a sûrement gagné",
+      "Peter n'a pas gagné",
+      "On ne peut pas savoir",
+      "Peter a été disqualifié"
+    ],
+    "answer": "Peter a sûrement gagné",
+    "explanation": "Ici, la validité de l'implication inverse (modus ponens) n'autorise qu'une conclusion : Peter devait remporter car Clara a reçu la récompense. Veillez à considérer l'exclusivité de la condition originelle.",
+    "hint": "Relie les résultats directement confirmés."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Où est Tom ?",
+    "prompt": "Si Tom est au bureau, alors Anna est chez elle. Si Anna est chez elle, Louis est au marché.",
+    "options": [
+      "Tom est au bureau, Anna est chez elle, Louis au marché.",
+      "Louis est au marché sans que Anna soit impliquée.",
+      "On ne peut pas savoir",
+      "Anna est au bureau"
+    ],
+    "answer": "Tom est au bureau, Anna est chez elle, Louis au marché.",
+    "explanation": "Revenons à une chaîne séquencée d'implication : Tom au bureau garantit la présence d'Anna chez elle, qui assure que Louis est au marché. Jamais oublier une étape dans la chaîne pourrait alterner les résultats.",
+    "hint": "Une séquence continue d'événements suit son bâton d'enclencheur."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que se passe-t-il avec la lampe ?",
+    "prompt": "Si la lampe est allumée, alors la pièce est éclairée. La lampe est allumée.",
+    "options": [
+      "La pièce est sombre",
+      "La pièce est éclairée",
+      "La lampe est en panne",
+      "On ne peut pas savoir"
+    ],
+    "answer": "La pièce est éclairée",
+    "explanation": "C'est encore un cas de modus ponens. L'allumage de la lampe assure que la pièce soit éclairée. Se méfiez d'un raisonnement contradictoire postulant la panne de la lampe sans preuve.",
+    "hint": "Conséquence évidente d'un acte préalable."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qu'en est-il de la table ?",
+    "prompt": "Si une table a quatre pieds, elle est stable. La table a quatre pieds.",
+    "options": [
+      "La table est branlante",
+      "La table est stable",
+      "La table est cassée",
+      "On ne peut pas savoir"
+    ],
+    "answer": "La table est stable",
+    "explanation": "Modus ponens ici à nouveau : une condition donnée (quatre pieds) assure une conclusion (stabilité). De mauvaises déductions naissent souvent d'insinuations infondées sur des états alternatifs de condition.",
+    "hint": "Assertivité des règles appliquées directement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle balle pèse plus lourd ?",
+    "prompt": "La balle verte est plus lourde que la balle bleue. La balle rouge est plus légère que la balle verte mais plus lourde que la balle bleue.",
+    "options": ["Verte", "Bleue", "Rouge", "On ne peut pas savoir"],
+    "answer": "Verte",
+    "explanation": "Comparez les affirmations qui définissent un ordre : Vert > Rouge > Bleu. La question complexe cache un ordre simple si correctement analysé. Attention à ne pas mélanger dans la comparaison directe inégale.",
+    "hint": "Listez les objets pour visionner la hiérarchie."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Qu'en est-il du saut de Paul ?",
+    "prompt": "Paul a sauté une fois plus haut qu'Anna, mais hier, il a fait un saut moins haut que Jean.",
+    "options": [
+      "Paul a sauté le plus haut",
+      "Jean a sauté le plus haut",
+      "Anna a sauté le plus haut",
+      "On ne peut pas dire"
+    ],
+    "answer": "Jean a sauté le plus haut",
+    "explanation": "Identifiez la personne en tête par une analyse des faits : si Paul et Anna ont été sautés par Jean, c'est ce dernier le plus haut. L'erreur serait de juger indépendamment des faits décisifs.",
+    "hint": "Ne considérez pas les superpositions de temps."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle couleur la balle reflète-t-elle ?",
+    "prompt": "Si la lumière est rouge, alors la balle reflète le rouge. Si la lumière est bleue, elle ne l'est pas.",
+    "options": [
+      "La balle reflète le rouge",
+      "La balle reflète le bleu",
+      "La balle ne reflète pas",
+      "On ne peut pas dire"
+    ],
+    "answer": "On ne peut pas dire",
+    "explanation": "Le contexte n'est pas conclusive quant à la couleur actuelle de la lumière, donc la couleur de la balle pourrait varier. La sortie typique réside dans l'ajustement hâtif sur une couleur prédominante hypothétique.",
+    "hint": "L'ambiguïté de manque de détail empêche une déclaration."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle porte est la sortie ?",
+    "prompt": "La porte A mène à la porte B. La porte C mène seulement au jardin. La sortie est derrière la porte D.",
+    "options": [
+      "Porte A",
+      "Porte C",
+      "Porte D",
+      "On ne peut pas dire"
+    ],
+    "answer": "Porte D",
+    "explanation": "La seule porte explicitement mentionnée comme la sortie est D. La complexité est accentuée par l'idée d'autres connexions sans éléments probants. Veillez à ne pas formuler des suppositions.",
+    "hint": "Une mention explicite dépasse le reste."
+  }
+]

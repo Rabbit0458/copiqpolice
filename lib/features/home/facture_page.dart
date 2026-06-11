@@ -397,7 +397,7 @@ class _FacturePageState extends State<FacturePage> {
   bool get _isDark => Theme.of(context).brightness == Brightness.dark;
 
   Color get _stroke =>
-      _isDark ? Colors.white.withOpacity(0.08) : Colors.black.withOpacity(0.06);
+      _isDark ? Colors.white.withValues(alpha: 0.08) : Colors.black.withValues(alpha: 0.06);
 
   Future<void> _bootstrap() async {
     if (!mounted) return;
@@ -539,10 +539,10 @@ class _FacturePageState extends State<FacturePage> {
                   decoration: BoxDecoration(
                     color: const Color(
                       0xFFE03131,
-                    ).withOpacity(_isDark ? 0.14 : 0.08),
+                    ).withValues(alpha: _isDark ? 0.14 : 0.08),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: const Color(0xFFE03131).withOpacity(0.28),
+                      color: const Color(0xFFE03131).withValues(alpha: 0.28),
                     ),
                   ),
                   child: Row(
@@ -671,7 +671,7 @@ class _FacturePageState extends State<FacturePage> {
                     children: [
                       Icon(
                         Icons.search_rounded,
-                        color: theme.iconTheme.color?.withOpacity(0.70),
+                        color: theme.iconTheme.color?.withValues(alpha: 0.70),
                       ),
                       const SizedBox(width: 8),
                       Expanded(
@@ -803,8 +803,8 @@ class _FacturePageState extends State<FacturePage> {
   Widget _skeletonCard() {
     final theme = Theme.of(context);
     final base = _isDark
-        ? Colors.white.withOpacity(0.06)
-        : Colors.black.withOpacity(0.06);
+        ? Colors.white.withValues(alpha: 0.06)
+        : Colors.black.withValues(alpha: 0.06);
 
     return Container(
       height: 74,
@@ -917,12 +917,12 @@ class _IconPillButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: theme.colorScheme.surface,
           borderRadius: BorderRadius.circular(14),
-          border: Border.all(color: theme.dividerColor.withOpacity(.18)),
+          border: Border.all(color: theme.dividerColor.withValues(alpha: .18)),
           boxShadow: [
             BoxShadow(
               blurRadius: 18,
               offset: const Offset(0, 8),
-              color: Colors.black.withOpacity(
+              color: Colors.black.withValues(alpha: 
                 theme.brightness == Brightness.dark ? .30 : .08,
               ),
             ),
@@ -957,12 +957,12 @@ class _SectionCard extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
 
     final stroke = isDark
-        ? Colors.white.withOpacity(0.08)
-        : Colors.black.withOpacity(0.06);
+        ? Colors.white.withValues(alpha: 0.08)
+        : Colors.black.withValues(alpha: 0.06);
 
     final iconBg = isDark
-        ? Colors.white.withOpacity(0.06)
-        : Colors.black.withOpacity(0.04);
+        ? Colors.white.withValues(alpha: 0.06)
+        : Colors.black.withValues(alpha: 0.04);
 
     return Material(
       color: theme.colorScheme.surface,
@@ -989,7 +989,7 @@ class _SectionCard extends StatelessWidget {
                 child: IconTheme(
                   data: IconThemeData(
                     size: 20,
-                    color: theme.iconTheme.color?.withOpacity(0.85),
+                    color: theme.iconTheme.color?.withValues(alpha: 0.85),
                   ),
                   child: leading,
                 ),
@@ -1022,7 +1022,7 @@ class _SectionCard extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: theme.textTheme.bodySmall?.copyWith(
-                          color: theme.textTheme.bodySmall?.color?.withOpacity(
+                          color: theme.textTheme.bodySmall?.color?.withValues(alpha: 
                             0.75,
                           ),
                           fontWeight: FontWeight.w600,
@@ -1069,7 +1069,7 @@ class _KeyValue extends StatelessWidget {
                   k,
                   style: theme.textTheme.bodySmall?.copyWith(
                     fontWeight: FontWeight.w900,
-                    color: theme.colorScheme.onSurface.withOpacity(.75),
+                    color: theme.colorScheme.onSurface.withValues(alpha: .75),
                   ),
                 ),
                 const SizedBox(height: 4),
@@ -1096,7 +1096,7 @@ class _KeyValue extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: theme.textTheme.bodyMedium?.copyWith(
                     fontWeight: FontWeight.w900,
-                    color: theme.colorScheme.onSurface.withOpacity(.72),
+                    color: theme.colorScheme.onSurface.withValues(alpha: .72),
                   ),
                 ),
               ),
@@ -1141,11 +1141,11 @@ class _InfoCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: tone.withOpacity(
+        color: tone.withValues(alpha: 
           theme.brightness == Brightness.dark ? .12 : .10,
         ),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: tone.withOpacity(.35)),
+        border: Border.all(color: tone.withValues(alpha: .35)),
       ),
       child: Row(
         children: [
@@ -1163,7 +1163,7 @@ class _InfoCard extends StatelessWidget {
                 Text(
                   subtitle,
                   style: TextStyle(
-                    color: theme.colorScheme.onSurface.withOpacity(.85),
+                    color: theme.colorScheme.onSurface.withValues(alpha: .85),
                   ),
                 ),
               ],
@@ -1187,15 +1187,15 @@ class _PaymentCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: theme.colorScheme.surfaceContainerHighest.withOpacity(.45),
+        color: theme.colorScheme.surfaceContainerHighest.withValues(alpha: .45),
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: theme.dividerColor.withOpacity(.18)),
+        border: Border.all(color: theme.dividerColor.withValues(alpha: .18)),
       ),
       child: Row(
         children: [
           Icon(
             Icons.credit_card_rounded,
-            color: theme.colorScheme.onSurface.withOpacity(.9),
+            color: theme.colorScheme.onSurface.withValues(alpha: .9),
           ),
           const SizedBox(width: 10),
           Expanded(
@@ -1236,15 +1236,15 @@ class _StatusChip extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
           color: selected
-              ? color.withOpacity(
+              ? color.withValues(alpha: 
                   theme.brightness == Brightness.dark ? .22 : .14,
                 )
-              : theme.colorScheme.surfaceContainerHighest.withOpacity(.35),
+              : theme.colorScheme.surfaceContainerHighest.withValues(alpha: .35),
           borderRadius: BorderRadius.circular(999),
           border: Border.all(
             color: selected
-                ? color.withOpacity(.55)
-                : theme.dividerColor.withOpacity(.18),
+                ? color.withValues(alpha: .55)
+                : theme.dividerColor.withValues(alpha: .18),
           ),
         ),
         child: Row(
@@ -1289,12 +1289,12 @@ class _InvoiceTilePro extends StatelessWidget {
       decoration: BoxDecoration(
         color: theme.colorScheme.surface,
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: theme.dividerColor.withOpacity(.18)),
+        border: Border.all(color: theme.dividerColor.withValues(alpha: .18)),
         boxShadow: [
           BoxShadow(
             blurRadius: 18,
             offset: const Offset(0, 10),
-            color: Colors.black.withOpacity(
+            color: Colors.black.withValues(alpha: 
               theme.brightness == Brightness.dark ? .30 : .08,
             ),
           ),
@@ -1307,11 +1307,11 @@ class _InvoiceTilePro extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
             decoration: BoxDecoration(
-              color: statusColor.withOpacity(
+              color: statusColor.withValues(alpha: 
                 theme.brightness == Brightness.dark ? .16 : .10,
               ),
               borderRadius: BorderRadius.circular(999),
-              border: Border.all(color: statusColor.withOpacity(.55)),
+              border: Border.all(color: statusColor.withValues(alpha: .55)),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
@@ -1348,7 +1348,7 @@ class _InvoiceTilePro extends StatelessWidget {
                   '${_date(invoice.createdAt)} • $amount',
                   style: theme.textTheme.bodySmall?.copyWith(
                     fontWeight: FontWeight.w700,
-                    color: theme.colorScheme.onSurface.withOpacity(.70),
+                    color: theme.colorScheme.onSurface.withValues(alpha: .70),
                   ),
                 ),
                 if ((invoice.notes ?? '').trim().isNotEmpty) ...[
@@ -1357,7 +1357,7 @@ class _InvoiceTilePro extends StatelessWidget {
                     invoice.notes!,
                     style: theme.textTheme.bodyMedium?.copyWith(
                       fontWeight: FontWeight.w700,
-                      color: theme.colorScheme.onSurface.withOpacity(.85),
+                      color: theme.colorScheme.onSurface.withValues(alpha: .85),
                     ),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
@@ -1422,11 +1422,11 @@ class _InvoiceTilePro extends StatelessWidget {
               width: 42,
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: theme.colorScheme.surfaceContainerHighest.withOpacity(
+                color: theme.colorScheme.surfaceContainerHighest.withValues(alpha: 
                   .35,
                 ),
                 borderRadius: BorderRadius.circular(14),
-                border: Border.all(color: theme.dividerColor.withOpacity(.18)),
+                border: Border.all(color: theme.dividerColor.withValues(alpha: .18)),
               ),
               child: Icon(
                 Icons.more_horiz_rounded,
@@ -1491,14 +1491,14 @@ class _LabeledField extends StatelessWidget {
           maxLines: maxLines,
           decoration: InputDecoration(
             filled: true,
-            fillColor: t.colorScheme.surfaceContainerHighest.withOpacity(.55),
+            fillColor: t.colorScheme.surfaceContainerHighest.withValues(alpha: .55),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: BorderSide(color: t.dividerColor.withOpacity(.25)),
+              borderSide: BorderSide(color: t.dividerColor.withValues(alpha: .25)),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(14),
-              borderSide: BorderSide(color: t.dividerColor.withOpacity(.25)),
+              borderSide: BorderSide(color: t.dividerColor.withValues(alpha: .25)),
             ),
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 12,
@@ -1519,7 +1519,7 @@ class _SheetHandle extends StatelessWidget {
       height: 4,
       width: 44,
       decoration: BoxDecoration(
-        color: t.dividerColor.withOpacity(.55),
+        color: t.dividerColor.withValues(alpha: .55),
         borderRadius: BorderRadius.circular(999),
       ),
     );

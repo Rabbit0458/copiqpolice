@@ -1,0 +1,182 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « E » apparaît-elle dans la phrase ?",
+    "prompt": "Comptez les E majuscules et minuscules.",
+    "stimulus": "Pierre entre en contact avec elle tous les étés.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "Dans la phrase, comptez chaque 'E' : Pierre (2), entre (1), en (1), contact (0), avec (1), elle (2) = 7. Vérifiez soigneusement chaque mot pour ne pas manquer un E.",
+    "hint": "Passe en revue chaque mot, un par un."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel chiffre est l'intrus dans la suite ?",
+    "prompt": "Trouver le numéro qui rompt la séquence.",
+    "stimulus": "2 4 6 8 9 10 12",
+    "options": ["4", "8", "9", "12"],
+    "answer": "9",
+    "explanation": "La suite suit les nombres pairs : 2, 4, 6, 8, 10, 12. Le chiffre 9 est impair et coupe la progression des multiples de 2.",
+    "hint": "Cherchez celui qui n'est pas pair."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois le chiffre « 2 » apparaît-il dans la suite ?",
+    "prompt": "Comptez les chiffres 2 présents.",
+    "stimulus": "1 2 3 2 4 5 2 6 7 2",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Le chiffre 2 apparaît aux positions 2, 4, 7, et 10. Ainsi, il y a quatre occurrences du chiffre 2.",
+    "hint": "Concentrez-vous sur les positions des 2 dans la séquence."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel pictogramme est l'intrus ?",
+    "prompt": "Identifiez le symbole qui ne suit pas la séquence logicielle.",
+    "stimulus": "😊 😃 😀 😁 😇 🙂 😅",
+    "options": ["😃", "😁", "😇", "😅"],
+    "answer": "😇",
+    "explanation": "Cette suite est composée de visages souriants avec des sourcils et yeux, sauf le sourire angélique 😇 qui a une particularité : l'auréole.",
+    "hint": "Cherchez une vedette unique parmi les sourires."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « R » apparaît-elle ?",
+    "prompt": "Inclure les majuscules et les minuscules.",
+    "stimulus": "Ramy repasse ramer avec rigueur près du rivage rose.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "6",
+    "explanation": "Les ‘R’ se trouvent dans : Ramy (1), repasse (1), ramer (1), rigueur (1), près (1), rivage (1), rose (0), total : 6.",
+    "hint": "Comptez chaque mot attentivement pour les R."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel mois est l'intrus dans cette liste ?",
+    "prompt": "Tous sauf un sont des mois de 31 jours.",
+    "stimulus": "Janvier, Février, Mars, Mai, Juillet",
+    "options": ["Février", "Mars", "Mai", "Juillet"],
+    "answer": "Février",
+    "explanation": "Tous les mois mentionnés ont 31 jours sauf Février, qui a typiquement 28 ou 29 jours.",
+    "hint": "Comparez le nombre de jours des mois."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre « N » majuscule apparaît-elle ?",
+    "prompt": "Comptez uniquement les N majuscules.",
+    "stimulus": "Nina Nanar ne Nage pas loin du Nénuphar.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "4",
+    "explanation": "On trouve des N majuscules dans : Nina (1), Nanar (1), Nage (1), et Nénuphar (1). Chaque N au début de ces mots est compté, soit 4 au total.",
+    "hint": "Focalisez-vous sur les mots commençant par N."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel nombre est l'intrus dans la séquence arithmétique suivante ?",
+    "prompt": "Identifiez celui qui ne suit pas la progression logique.",
+    "stimulus": "3, 6, 9, 11, 15, 18",
+    "options": ["11", "6", "15", "18"],
+    "answer": "11",
+    "explanation": "La suite progresse par multiples de 3 (3, 6, 9, 12, 15, 18). Le chiffre 11 ne respecte pas cette règle.",
+    "hint": "Recherchez un motif de progression fixe."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est identique à cette combinaison : 1A2B3C ?",
+    "prompt": "Trouvez la séquence qui ne change aucune lettre ou chiffre.",
+    "stimulus": "1A2B3C",
+    "options": ["1A2B3C", "1A2B4C", "1A3B3C", "1B2A3C"],
+    "answer": "1A2B3C",
+    "explanation": "Parcourant chacune des options, seul « 1A2B3C » est identique au modèle proposé, sans changement de position.",
+    "hint": "Comparez chaque position en détail."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de voyelles dans la phrase suivante ?",
+    "prompt": "Comptez les voyelles sans distinction de casse.",
+    "stimulus": "La police examine les cartes d'identité.",
+    "options": ["10", "11", "12", "13"],
+    "answer": "11",
+    "explanation": "Décomposons : La (1), police (3), examine (3), les (1), cartes (2), d'identité (2), total : 11 voyelles.",
+    "hint": "Ne sautez aucun mot dans votre décompte."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel symbole est l'intrus dans la séquence ASCII ?",
+    "prompt": "Vous devez observer leurs positions dans le tableau ASCII.",
+    "stimulus": "! @ # $ % ^ * )",
+    "options": ["@", "#", "^", ")"],
+    "answer": ")",
+    "explanation": "Les autres sont rangés par ordre croissant de codes ASCII, sauf le symbole ')' qui apparait hors séquence numérique.",
+    "hint": "Recherchez l'ordre croissant par code."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de E majuscules cette phrase contient-elle ?",
+    "prompt": "Comptez les E uniquement en majuscule.",
+    "stimulus": "Ecrire Est Elementaire au niveau d'Enseignement",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les E en majuscule sont présents dans : Ecrire (1), Est (1), Elementaire (1), Enseignement (1), pour un total de 4 E majuscules.",
+    "hint": "Focalisez-vous sur les débuts de mots."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelles séquences suivantes sont identiques à X9Y8Z7 ?",
+    "prompt": "Repérez celle qui ne change rien.",
+    "stimulus": "X9Y8Z7",
+    "options": ["X9Y8Z7", "X9Y87", "XY9Z8", "XYZ789"],
+    "answer": "X9Y8Z7",
+    "explanation": "Après comparaison détaillée, seule « X9Y8Z7 » reste exactement identique au modèle sans permutation ni substitut.",
+    "hint": "Vérifiez chaque segment individuellement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chiffres pairs apparaissent dans cette séquence ?",
+    "prompt": "Ne comptez que les chiffres pairs.",
+    "stimulus": "9 0 2 3 8 5 4 7 6",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les chiffres pairs ici sont 0, 2, 8 et 4, pour un total de 4 chiffres même.",
+    "hint": "Pensez à 'pairs' = divisibles par 2 sans reste."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de « S » majuscules dans ce paragraphe ?",
+    "prompt": "Comptez les S uniquement en majuscule.",
+    "stimulus": "Le Serpent Siffle Sur la Sombre Scène d'un Sombre Soir.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "On dénombre les S majuscules : Serpent (1), Siffle (1), Sur (1), Scène (1), Soir (1), les deux 'Sombre' (1) soit 6 S.",
+    "hint": "Soyez attentif aux débuts et doublons."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle suite alphanumérique est identique au modèle 9X3K2L ?",
+    "prompt": "Le piège est dans la permutation de chiffres et lettres.",
+    "stimulus": "9X3K2L",
+    "options": ["9X3K2L", "93XK2L", "9X3K2L1", "K9X32L"],
+    "answer": "9X3K2L",
+    "explanation": "Décomposons les options : seule « 9X3K2L » reste stricte au modèle, sans alternance ni ajout.",
+    "hint": "Comparez chaque position soigneusement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles dans ces deux phrases réunies ?",
+    "prompt": "Additionnez les voyelles au total.",
+    "stimulus": "Ils lisent tous, même le matin. Autour, le vent gémit.",
+    "options": ["18", "19", "20", "21"],
+    "answer": "20",
+    "explanation": "Il y a 20 voyelles: Ils (1), lisent (2), tous (1), même (1), le (1), matin (2). Autour (4), le (1), vent (1), gémit (3).",
+    "hint": "Procédez étape par étape, phrase par phrase."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel caractère est l'intrus parmi ces symboles ?",
+    "prompt": "Identifiez le caractère qui ne suit pas le modèle de formatisation.",
+    "stimulus": "* & % # ? \\ /",
+    "options": ["*", "?", "\\", "/"],
+    "answer": "?",
+    "explanation": "Les autres symboles se groupent par la lisibilité (maths ou informatique), seulement '?' côté texteur.",
+    "hint": "L'intrus pourrait être un caractère de ponctuation différent."
+  }
+]

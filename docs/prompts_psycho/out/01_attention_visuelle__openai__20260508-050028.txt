@@ -1,0 +1,310 @@
+[
+    {
+        "difficulty": "easy",
+        "text_a": "42 rue de la Paix, 75002 Paris",
+        "text_b": "42 rue de la Paix, 75002 Paris",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Peugeot 308 bleue immatriculée BC-456-EF",
+        "text_b": "Peugeot 308 rouge immatriculée BC-456-EF",
+        "is_true": false,
+        "explanation": "La couleur diffère : « bleue » dans text_a, « rouge » dans text_b. La différence est évidente car les couleurs sont visuellement distinctes."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Monsieur Martin Durand",
+        "text_b": "Monsieur Martin Durand",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Voiture noire, modèle Audi A4",
+        "text_b": "Voiture noire, modèle Audi A3",
+        "is_true": false,
+        "explanation": "Une lettre est différente : « A4 » dans text_a, « A3 » dans text_b. Cela crée une différence subtile mais le modèle de voiture est généralement bien connu, ce qui facilite la détection."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "12 rue de l'Église, 75015 Paris",
+        "text_b": "12 rue de l'Église, 75015 Paris",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Nissan Micra immatriculée XY-987-ZT",
+        "text_b": "Nissan Micra immatriculée XY-978-ZT",
+        "is_true": false,
+        "explanation": "Les chiffres diffèrent dans le numéro d'immatriculation : « 987 » vs « 978 ». Une inversion de chiffres est un piège courant car le reste est identique."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Renault Mégane grise",
+        "text_b": "Renault Mégane grisée",
+        "is_true": false,
+        "explanation": "Les mots diffèrent légèrement : « grise » vs « grisée ». C'est une différence simple à repérer grâce au contexte plus court."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "BMW série 3 noire",
+        "text_b": "BMW série 5 noire",
+        "is_true": false,
+        "explanation": "La série diffère : « série 3 » dans text_a, « série 5 » dans text_b. Ceci est une différence marquante pour quelqu'un connaissant les modèles BMW."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Jean Dupuis, 75004 Paris",
+        "text_b": "Jean Dupuis, 75004 Paris",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Citroën C3 bleu ciel",
+        "text_b": "Citroën C3 bleu foncé",
+        "is_true": false,
+        "explanation": "Les nuances de couleur diffèrent : « ciel » vs « foncé ». Cette différence est très visible bien que subtile dans la notation."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Volvo XC60, très bon état",
+        "text_b": "Volvo XC60, très bon état",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "34 avenue des Champs-Élysées",
+        "text_b": "34 avenue des Champs Élysées",
+        "is_true": false,
+        "explanation": "La ponctuation diffère : tiret manquant entre « Champs » et « Élysées » dans text_b. C'est un piège typique dans les noms connus."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Toyota Prius rouge",
+        "text_b": "Toyota Prius noire",
+        "is_true": false,
+        "explanation": "La couleur diffère : « rouge » dans text_a, « noire » dans text_b. Bien que court, ce détail change complètement la description."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Opel Corsa immatriculée QW-123-ER",
+        "text_b": "Opel Corsa immatriculée QW-123-ER",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Victor Hugo, 75007 Paris",
+        "text_b": "Victor Hugo, 75007 Paris",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Rue de Rivoli",
+        "text_b": "Rue du Rivoli",
+        "is_true": false,
+        "explanation": "Le type de rue diffère : « de » dans text_a, « du » dans text_b. La préposition inhabituelle peut facilement passer inaperçue."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Maison bleue, 75011",
+        "text_b": "Maison verte, 75011",
+        "is_true": false,
+        "explanation": "La couleur diffère : « bleue » dans text_a, « verte » dans text_b. Une couleur aussi distincte rend la différence évidente."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le 15/06/2023 à 10h30, Mme Jeanne Moreau a été aperçue à la gare Saint-Lazare.",
+        "text_b": "Le 15/06/2023 à 10h30, Mme Jeanne Moreau a été aperçue à la gare Saint-Lazare.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Volkswagen Golf blanche, stationnée pont de Sèvres",
+        "text_b": "Volkswagen Golf blanche, stationnée pont des Sèvres",
+        "is_true": false,
+        "explanation": "Un mot diffère : « de » dans text_a, « des » dans text_b. La modification d'un mot peut facilement se perdre dans un contexte familier."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le 03/11/2024, vers 22h45, l'incendie s'est déclaré au 8ème étage.",
+        "text_b": "Le 03/11/2024, vers 21h45, l'incendie s'est déclaré au 8ème étage.",
+        "is_true": false,
+        "explanation": "Les heures diffèrent : « 22h45 » dans text_a, « 21h45 » dans text_b. Une différence d'une heure peut être confondue en cas de lecture rapide."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La déclaration de vol a été enregistrée à 17h15 par le brigadier.",
+        "text_b": "La déclaration de vol a été enregistrée à 17h15 par le brigadier.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Chevrolet Spark verte, immatriculée PL-234-MN",
+        "text_b": "Chevrolet Spark verte, immatriculée PL-243-MN",
+        "is_true": false,
+        "explanation": "Les chiffres du numéro d'immatriculation diffèrent : « 234 » dans text_a, « 243 » dans text_b. La permutation de chiffres est une erreur courante de transcription."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le suspect portait un manteau vert très similaire au nôtre.",
+        "text_b": "Le suspect portait un manteau vert très similaire au nôtre.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Ford Fiesta bleue, observée avenue Montaigne à 12h.",
+        "text_b": "Ford Fiesta noire, observée avenue Montaigne à 12h.",
+        "is_true": false,
+        "explanation": "Les couleurs diffèrent : « bleue » dans text_a, « noire » dans text_b. Le contexte suggère une similitude qui peut être trompeuse."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "L'article 431-1 du code pénal réprime le délit d'entrave.",
+        "text_b": "L'article 431-1 du code pénal réprime le délie d'entrave.",
+        "is_true": false,
+        "explanation": "Un mot diffère par une lettre : « délit » dans text_a, « délie » dans text_b. Cette erreur orthographique est subtile mais change le sens."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Subaru Forester grise trouvée route d'Étampes le 12 mars.",
+        "text_b": "Subaru Forester grise trouvée route d'Étampe le 12 mars.",
+        "is_true": false,
+        "explanation": "Un accent a été omis : « Étampes » dans text_a, « Étampe » dans text_b. Les accents sont souvent des points de confusion facile à manquer."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le 27/12/2023 à 08h15, un individu est entré dans le bâtiment du commissariat.",
+        "text_b": "Le 27/12/2023 à 08h15, un indiviedu est entré dans le bâtiment du commissariat.",
+        "is_true": false,
+        "explanation": "Une lettre supplémentaire change un mot : « individu » vs « indiviedu » à la position 8. Ce type d'erreur est facile à glisser comme typo sous fatigue."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Suzuki Swift rouge enregistrée sous le numéro AA-112-FF",
+        "text_b": "Suzuki Sift rouge enregistrée sous le numéro AA-112-FF",
+        "is_true": false,
+        "explanation": "Une lettre manquante modifie le modèle : « Swift » vs « Sift ». La proximité des lettres peut conduire à une confusion visuelle."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le agent a confirmé son identité à 14h32 et a signé le formulaire.",
+        "text_b": "Le agent a confirmé son identité à 14h32 et a signé le formulaire.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Volkswagen Touran, aperçu cour Vendôme, 15/04 à 13h50.",
+        "text_b": "Volkswagen Touran, aperçu cour vendôme, 15/04 à 13h50.",
+        "is_true": false,
+        "explanation": "La majuscule manquante à « Vendôme » dans text_b est la différence. Les différences de capitalisation dans les noms propres sont subtiles."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La voiture s'est arrêtée rue Vieille du Temple à midi pile.",
+        "text_b": "La voiture sest arrêtée rue Vieille du Temple à midi pile.",
+        "is_true": false,
+        "explanation": "L'apostrophe a été omise dans « s'est » du text_b. Cette omission peut se produire dans la précipitation et brouille la lisibilité pour l'œil fatigué."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le 29/02/2024, selon l'article 121-3 du code pénal, il n'y a point de crime ou de délit sans intention de le commettre.",
+        "text_b": "Le 29/02/2024, selon l'article 121-3 du code pénal, il n'y a point de crime ou de dèlit sans intention de le commettre.",
+        "is_true": false,
+        "explanation": "La différence est un accent erroné : « délit » vs « dèlit ». L'erreur d'accent est particulièrement perfide car il peut facilement être ignoré à la lecture rapide."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La loi considère que l'état de légitime défense doit être prouvé par une menace actuelle et proportionnée.",
+        "text_b": "La loi conisdère que l'état de légitime défense doit être prouvé par une menace actuelle et proportionnée.",
+        "is_true": false,
+        "explanation": "Il y a inversion de lettres : « considère » vs « conisdère ». Un glissement de lettre est une erreur fréquente lors de la saisie rapide."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Dans le cadre de l'article L632-3 du code de la consommation, toute pratique déloyale doit être sanctionnée.",
+        "text_b": "Dans le cadre de l'article L632-3 du code de la consommation, toute pratique déloyale doit être sanctionnée.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon la déclaration recueillie le 17/07/2024 à 09h28, le suspect portait des gants bleus et un chapeau gris clair.",
+        "text_b": "Selon la déclaration recueillie le 17/07/2024 à 09h28, le suspect portait des gants bleus et un chapeau gris clair.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "L'incident a été enregistré sous le rapport numéro 2023-45678, signé à 16h45 par l'inspecteur Lafleur.",
+        "text_b": "L'incident a été enregistré sous le rapport numéro 2023-45678, signé à 16h45 par l'inspecteur Latleur.",
+        "is_true": false,
+        "explanation": "Une lettre a été modifiée dans le nom : « Lafleur » vs « Latleur ». Un simple changement de lettre peut transformer le patronyme et favoriser une erreur d'attention."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le jugement du 21 mai 2025, en vertu de l'article 311-2, stipule que le vol en réunion est puni d'une peine plus sévère.",
+        "text_b": "Le jugement du 21 mai 2025, en vertu de l'article 311-2, stipule que le vol en réunion est puni d'une peine plus sévêre.",
+        "is_true": false,
+        "explanation": "Un accent a été incorrectement placé : « sévère » vs « sévêre ». La confusion des accents est un piège classique, particulièrement sur les voyelles proches."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Il a participé à l'enquête de 15h à 18h, conformément aux directives du 30/08/2024, concernant l'affaire d'intrusion.",
+        "text_b": "Il a participé à l'enquête de 15h à 18h, conformément aux directives du 30/08/2024, concernant l'affaire d'intursion.",
+        "is_true": false,
+        "explanation": "Une lettre diffère : « intrusion » vs « intursion ». Ce type d'erreur est difficile à percevoir à cause de la proximité sonore des lettres."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le véhicule signalé, une Peugeot 2008 rouge, était garé illégalement devant le numéro 58-60 de l'avenue de l'Opéra.",
+        "text_b": "Le véhicule signalé, une Peugeot 2008 rouge, était garé illégalement devant le numéro 58–60 de l'avenue de l'Opéra.",
+        "is_true": false,
+        "explanation": "Le texte utilise un tiret long : « 58–60 » au lieu de « 58-60 ». Bien que techniquement identique, le choix de ponctuation peut surprendre."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "En date du 01/01/2025, l'article 122-5 du code pénal régit les conditions de la légitime défense avec un cadre précis.",
+        "text_b": "En date du 01/01/2025, l'article 122-5 du code pénal régit les conditions de la légitime défénse avec un cadre précis.",
+        "is_true": false,
+        "explanation": "Un accent est mal placé : « défense » vs « défénse ». Le placement d'accents incorrects peut être imperceptible au premier regard."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le comportement inhabituel du suspect a été noté par les agents de surveillance, ainsi que son déplacement rapide.",
+        "text_b": "Le comportement inhabituel du suspect a été noté par les agentes de surveillance, ainsi que son déplacement rapide.",
+        "is_true": false,
+        "explanation": "Il y a une lettre supplémentaire dans text_b : « agents » vs « agentes ». Un ajout de lettre modifie le genre et peut facilement passer inaperçu."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "La résidence surveillée a été fouillée dans le cadre de l'enquête conformément à l'article 2-125 du code de procédure pénale.",
+        "text_b": "La résidence surveillée a été fouillée dans le cadre de l'enquête conformément à l'article 2-125 du code de procédure pénale.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon le rapport d'intervention daté du 5 août 2025, aucune infraction n'a été constatée par l'officier sur place.",
+        "text_b": "Selon le rapport d'intervention daté du 5 août 2025, aucune infarction n'a été constatée par l'officier sur place.",
+        "is_true": false,
+        "explanation": "Confusion entre « infraction » et « infarction » due à la similarité phonétique. Cette subtilité dans un texte dense peut piéger les inattentifs."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le code de la route, article L211-1, précise que tout conducteur doit avoir ses feux diurnes allumés dans les zones urbaines.",
+        "text_b": "Le code de la route, article L211-1, précise que tout conducteur doit avoir ses feus diurnes allumés dans les zones urbaines.",
+        "is_true": false,
+        "explanation": "Une faute orthographique est présente : « feux » vs « feus ». Cette substitution peut passer inaperçue en raison de l'habituation à l'ensemble du texte."
+    }
+]

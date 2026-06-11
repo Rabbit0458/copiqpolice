@@ -1,0 +1,302 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « C » apparaît-elle dans la phrase ?",
+    "prompt": "Attention aux majuscules et minuscules.",
+    "stimulus": "Calme et concentré, le chat chasse le ciel.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "Calme (1) + Concentré (1) + Chat (1) + Chasse (1) + Ciel (0) = 4 occurrences. Les mots 'concentré', 'chat', et 'chasse' possèdent tous le 'c'. Ne pas confondre avec le 'k' qui peut sembler similaire.",
+    "hint": "Regarde surtout le début des mots."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres « 5 » apparaissent dans la suite ?",
+    "prompt": "Cherchez bien parmi les chiffres.",
+    "stimulus": "5, 7, 5, 3, 5, 5, 2",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "5 présents aux positions 1, 3, 5 et 6 = 4 occurrences. Les 7 et 3 ne doivent pas vous distraire. Parfois, votre instinct peut vous tromper avec la répétition des chiffres proches.",
+    "hint": "Regardez chaque groupe de chiffres individuellement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel chiffre est l'intrus dans la suite suivante ?",
+    "prompt": "Tous les chiffres sauf un obéissent à une logique claire.",
+    "stimulus": "2, 4, 6, 8, 10, 11, 12",
+    "options": ["8", "10", "11", "12"],
+    "answer": "11",
+    "explanation": "La suite est formée de nombres pairs (2, 4, 6, 8, 10, 12). Le chiffre 11 est impair et ne s'intègre donc pas dans cette règle. Cette suite joue sur la simplicité pour piéger avec un nombre impair.",
+    "hint": "Concentrez-vous sur la parité des chiffres."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la voyelle « E » apparaît en majuscule dans la phrase ?",
+    "prompt": "Soyez attentif aux majuscules/capitales.",
+    "stimulus": "Étrange, personne ne l'ÉLUCIDE.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "2",
+    "explanation": "Étrange (0) + personne (0) + ne (0) + l' (0) + ÉLUCIDE (2) = 2. Il faut bien différencier les É majuscules des é minuscules. Attention à ne pas compter les minuscules par erreur.",
+    "hint": "Cherchez les grandes lettres uniquement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Identifiez l'élément discordant.",
+    "stimulus": "A, C, E, G, H, I, K",
+    "options": ["E", "H", "I", "K"],
+    "answer": "I",
+    "explanation": "La séquence suit un intervalle de +2 en alphabet (A, C, E, G, K), excepté pour I. I ne suit pas l'intervalle approprié et est donc l'intrus. Regardez bien les sauts réguliers entre chaque lettre.",
+    "hint": "Vérifiez la distance entre les lettres."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de mots de plus de 3 lettres dans cette phrase ?",
+    "prompt": "Comptez bien chaque mot.",
+    "stimulus": "Un chat seul sous un grand arbre.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Mots de plus de 3 lettres : 'chat' (4 lettres), 'seul' (4 lettres), 'grand' (5 lettres), 'arbre' (5 lettres). Total = 3. Les mots 'un' et 'sous' sont plus courts et ne sont pas comptabilisés.",
+    "hint": "Concentrez-vous sur la longueur de chaque mot."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de lettres « T » majuscules se trouvent dans la phrase ?",
+    "prompt": "Ne considérez que les majuscules.",
+    "stimulus": "Tout Tourne Autour du Temps.",
+    "options": ["1", "2", "3", "4"],
+    "answer": "3",
+    "explanation": "Les mots 'Tout', 'Tourne', et 'Temps' contiennent tous un 'T' majuscule. 'Autour' est la seule exception dans cette série de mots commençant habituellement par 'T'. Il est crucial de ne pas se laisser distraire par les lettres minuscules.",
+    "hint": "Comptez les capitales uniquement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel symbole est l'intrus dans cette suite ?",
+    "prompt": "Les symboles suivent tous un thème, sauf un.",
+    "stimulus": "#, %, &, *, @, !",
+    "options": ["#", "&", "@", "!" ],
+    "answer": "!",
+    "explanation": "Tous les symboles appartiennent à la catégorie des caractères spéciaux utilisés fréquemment en programmation et traitement de données, mais '!' est couramment utilisé dans le langage quotidien comme une ponctuation, ce qui en fait l'intrus. Les autres symboles ne sont pas typiquement vus en dehors d'un contexte technique.",
+    "hint": "Vérifiez si le symbole est une ponctuation."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Identifiez la séquence identique à : AB12CD34.",
+    "prompt": "Saisissez le bon ordre avec précision.",
+    "stimulus": null,
+    "options": ["AB12CE34", "AB12CD34", "AB12CD35", "AB21CD34"],
+    "answer": "AB12CD34",
+    "explanation": "La deuxième option, AB12CD34, correspond parfaitement à la séquence modèle fournie. Les autres changent un ou plusieurs caractères : 'E' au lieu de 'D', '5' au lieu de '4', permutation de '21'. Il est important de vérifier séquentiellement chaque caractère sans omission.",
+    "hint": "Comparez chaque paire de caractères attentivement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de mots de moins de 4 lettres dans cette phrase ?",
+    "prompt": "Attention à chaque mot court.",
+    "stimulus": "La lune est sur le point de se lever.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Les mots 'La', 'est', 'sur', 'le', 'de', et 'se' sont chacun en-dessous de 4 lettres. Le mot 'lune' en comporte déjà 4, donc ne compte pas ici. Mémoriser systématiquement une phrase aide à éviter de répéter le même mot dans le décompte.",
+    "hint": "Concentrez-vous sur les mots très courts."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre « M » majuscule apparaît-elle ?",
+    "prompt": "Faites attention aux majuscules uniquement.",
+    "stimulus": "Mon Maquillage est Mis en place Matin et Midi.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Mon (1), Maquillage (1), Mis (1), Matin (1) et Midi (1) contiennent un M majuscule chacun, totalisant 5. Les articles et prépositions 'en' et 'et' peuvent déconcentrer par leur rapprochement mais ne comptent pas ici.",
+    "hint": "Listez chaque M majuscule en début de mot."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel symbole est identique à : $%#* !",
+    "prompt": "Recherchez la séquence parfaitement identique.",
+    "stimulus": null,
+    "options": ["%#*!$", "$%#* !", "$#%*! ", "$%#*!"],
+    "answer": "$%#* !",
+    "explanation": "La séquence correcte, $%#* !, reste identique uniquement dans la deuxième option. Les espaces et l'ordre des symboles font partie des conditions d'identification, pensez à vérifier et comparer chaque symbole un à un.",
+    "hint": "Inspectez minutieusement les espaces et ordres entre les symboles."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres pairs dans la suite suivante ?",
+    "prompt": "Ne comptez que les chiffres pairs.",
+    "stimulus": "7, 2, 9, 8, 3, 4, 5",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "2 (1) + 8 (1) + 4 (1) sont les trois chiffres pairs dans la séquence. Les autres chiffres sont impairs et doivent être exclus du décompte.",
+    "hint": "Regardez les chiffres un à un et éliminez les impairs."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel nombre est l'intrus dans cette suite : 3, 6, 9, 12, 15, 18, 20 ?",
+    "prompt": "Tous les éléments sauf un suivent une règle.",
+    "stimulus": "3, 6, 9, 12, 15, 18, 20",
+    "options": ["12", "15", "18", "20"],
+    "answer": "20",
+    "explanation": "La suite avance par des ajouts de 3 à chaque étape. Cependant, le 20 ne correspond pas à ce modèle d'addition et donc rompt la logique établie.",
+    "hint": "Vérifiez la consistance de l'écart entre chaque nombre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est strictement identique au modèle suivant : GH788GJ?",
+    "prompt": "Repérez soigneusement chaque caractère.",
+    "stimulus": null,
+    "options": ["GH788GJ", "HG788GJ", "GH788JG", "GH788GG"],
+    "answer": "GH788GJ",
+    "explanation": "La séquence GH788GJ est la seule parfaite correspondance au modèle donné. Chaque autre option modifie un caractère à partir de l'original, ce qui nécessite une comparaison méticuleuse.",
+    "hint": "Analysez ligne par ligne chaque chiffre et lettre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de voyelles majuscules dans cette phrase : Un Océan Bleu Sous Un Ciel Clair?",
+    "prompt": "Surlignez mentalement chaque voyelle en majuscule.",
+    "stimulus": "Un Océan Bleu Sous Un Ciel Clair",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "Océan (O), Bleu (e), Clair (C) contient les voyelles majuscules recherchées. Évitez de compter celles qui sont présentes dans la casse inférieure et font partie des doublons invisibles au premier regard.",
+    "hint": "Concentrez-vous sur les initiales des mots."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel symbole est identique au modèle : #[@!]",
+    "prompt": "Faites attention au positionnement des symboles.",
+    "stimulus": null,
+    "options": ["[#!@]", "#[@!]", "[@#!]", "[#@!]"],
+    "answer": "#[@!]",
+    "explanation": "Le modèle identique exige que les symboles soient dans l'ordre #[@!]. D'autres manipulent l'ordre ou la parenthèse initiale, mais seul ce choix reproduit exactement le modèle donné. Soyez prudent avec les parenthèses et ordres de caractères.",
+    "hint": "Scrutez chaque symbole attentivement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots de plus de 4 lettres dans : 'Certains criminels élaborent des stratégies longues '",
+    "prompt": "Comptez les mots longs uniquement.",
+    "stimulus": "Certains criminels élaborent des stratégies longues.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "Le décompte cible les mots de plus de 4 lettres : 'Certains', 'criminels', 'élaborent', 'stratégies', et 'longues'. Le mot 'des' est bien trop court pour être comptabilisé ici. Soyez suffisamment méticuleux pour ne pas sauter de mots.",
+    "hint": "Repérez ceux qui vont au-delà de quatre lettres."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre « V » majuscule apparaît-elle ?",
+    "prompt": "Comptez uniquement les majuscules.",
+    "stimulus": "Voici un Véhicule Vaillant et Victorieux.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Véhicule (1), Vaillant (1), et Victorieux (1) possèdent chacun un ‘V’ majuscule. L'erreur courante serait de trop compter des minuscules dans 'voici'.",
+    "hint": "Regardez surtout chaque initiale."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de X majuscules dans ce long texte ?",
+    "prompt": "Soyez précis dans votre comptage parmi les majuscules.",
+    "stimulus": "Excellent Xylophone joue, mais XX ne suffit pas à expliquer son succès.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "Xylophone (1), XX (2) plus un X dans l'expression finale, totalise 4. Souvent, on sous-estime le nombre total avec les majuscules, surtout lorsqu'il y en a plusieurs en confrontation.",
+    "hint": "Surveillez bien les doubles consonants."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles minuscules apparaissent ici : 'L'Équation élégante explique tout'? ",
+    "prompt": "Focalisez-vous sur toutes les voyelles en minuscules.",
+    "stimulus": "L’Équation élégante explique tout.",
+    "options": ["8", "9", "10", "11"],
+    "answer": "10",
+    "explanation": "Examiner chaque mot révèle : L'(0) + Équation (3) + élégante (4), explique (3) + tout (0) = 10. Les 'É' ne comptent pas ici, pas plus que d'éventuels glissements incorrects vers les consonnes proches.",
+    "hint": "Travaillez mot par mot pour rester précis."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Identifiez l'intrus dans cette série : [!, @#, $%, ^&, *].",
+    "prompt": "Levez vos doutes sur un symbole unique.",
+    "stimulus": "!, @#, $%, ^&, *",
+    "options": ["@", "^&", "%", "*"],
+    "answer": "*",
+    "explanation": "Chaque groupe contient deux symboles, sauf '*'. C'est le seul groupe qui est une exception à cette logique double, soulignant ainsi son statut d'intrus sans compromis.",
+    "hint": "Vérifiez le nombre de symboles par groupe."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois le chiffre 9 apparaît-il parmi ces chiffres ?",
+    "prompt": "Un seul chiffre à remarquer. Finalisez le bon nombre.",
+    "stimulus": "99219345929989239",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "En vérifiant chaque position : 9921(3), 9345(5), 9299(8), 8923(9), et à nouveau les deux derniers 9, nous atteignons un total de 7 occurrences. Il est facile de rater des répétitions ou de les sur-compter sans une stratégie systématique.",
+    "hint": "Privilégiez une quête de chaque numéro neuf."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'intrus dans cette série : AZ, BY, CX, DE, FW ?'",
+    "prompt": "Prêtez attention à l'ordre alphabétique des paires.",
+    "stimulus": "AZ, BY, CX, DE, FW",
+    "options": ["AZ", "BY", "CX", "DE"],
+    "answer": "DE",
+    "explanation": "Chaque paire inverse les derniers et premiers caractères de l'alphabet (A-Z, B-Y), excepté DE qui ne suit pas cette habitude de pairing symétrique.",
+    "hint": "Examinez la relation de chaque lettre paire."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Compte combien de mots de moins de trois lettres dans : « Un test est en cours ».",
+    "prompt": "Rassemblez l'énergie sur les termes les plus courts.",
+    "stimulus": "Un test est en cours.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "'Un', 'est', et 'en' sont les mots recensés sous trois lettres. Le mot 'cours', avec ses cinq lettres, évite le piège tactile de le confondre avec des mots plus courts.",
+    "hint": "Passez en revue chaque fragment linguistique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles majuscules sont présentes ici ?",
+    "prompt": "Localisez avec satisfaction chaque cas de capitales.",
+    "stimulus": "ÉLOISE AIME ÉCONOMISER ET INVESTIT GRAND IOU.",
+    "options": ["3", "5", "7", "9"],
+    "answer": "5",
+    "explanation": "ÉLOISE (1) + AIME (2) + ÉCONOMISER (3) et INVESTIT (4) + GRAND (0) + IOU (5), en calculant précis chaque détective, nous avons 5 lettres en majuscules.",
+    "hint": "N’oubliez pas les intonations les plus visibles."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Identifiez quelle suite correspond : '1A2B3C4D'.",
+    "prompt": "Une symphonie équitable entre chiffres et lettres.",
+    "stimulus": null,
+    "options": ["1A2B3C4D", "A1B2C3D4", "1A2C3B4D", "1B2A3D4C"],
+    "answer": "1A2B3C4D",
+    "explanation": "Uniquement la première option respecte strictement l'ordre combinatoire donné. Les permutations altérées nécessitent une étude constante pour éviter la confusion.",
+    "hint": "Retenez mentalement le mantra des mélanges."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chiffres impairs trouve-t-on ici : « 5, 9, 3, 8, 6, 11, 12 »?",
+    "prompt": "Conservez un œil vigilant sur les nombres particuliers.",
+    "stimulus": "5, 9, 3, 8, 6, 11, 12",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les chiffres 5, 9, 3, 11 sont impairs - retenez ces détails et permettez à l'analyse d'éviter une appropriation erronée de valeurs. Une vigilance accrue pour ne pas additionner la multitude paire est cruciale.",
+    "hint": "Marquez les chiffres inégaux dans votre visualisation."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel nombre est l'intrus dans la série suivante : 1, 4, 9, 16, 24, 36, 49 ?",
+    "prompt": "Analysez attentivement cette succession.",
+    "stimulus": "1, 4, 9, 16, 24, 36, 49",
+    "options": ["9", "16", "24", "36"],
+    "answer": "24",
+    "explanation": "Tous sont des carrés parfaits (1x1=1, 2x2=4, 3x3=9,..., 7x7=49), au contraire du 24 qui déstabilise cette systématique. Feillez méthodiquement chaque potentiel pour éviter enfoncement fortuit.",
+    "hint": "Révisez chaque multiplication visible."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Incluyez la casse, quelle séquence est égale à : xyZ12?\n",
+    "prompt": "Plongez-vous dans chaque correspondance.",
+    "stimulus": null,
+    "options": ["xyZ12", "XYz12", "xyZ21", "XYZ12"],
+    "answer": "xyZ12",
+    "explanation": "Réplique perfectionnée pour la première option. Une discordance d'ordre ou de caps modifie la stricte égalité. Ce contraste nécessite une grande attention pour les décalages naturels.",
+    "hint": "Lisez chaque pivot avec rigueur détachée."
+  }
+]

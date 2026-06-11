@@ -143,7 +143,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Text(
       text,
@@ -176,7 +176,7 @@ class _NotaDetention extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? 0.8 : 1),
+        color: bgColor.withValues(alpha: isDark ? 0.8 : 1),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -189,7 +189,7 @@ class _NotaDetention extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: const [
             TextSpan(
@@ -233,7 +233,7 @@ class _TableCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color borderColor = isDark
-        ? Colors.white.withOpacity(.22)
+        ? Colors.white.withValues(alpha: .22)
         : Colors.grey.shade300;
 
     final double minWidth = MediaQuery.of(context).size.width - 32; // padding
@@ -310,7 +310,7 @@ class _DetentionDelitsTable extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color borderInside = isDark
-        ? Colors.white.withOpacity(.15)
+        ? Colors.white.withValues(alpha: .15)
         : Colors.grey.shade300;
 
     return Column(
@@ -457,7 +457,7 @@ class _DetentionCrimesTable extends StatelessWidget {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color borderInside = isDark
-        ? Colors.white.withOpacity(.15)
+        ? Colors.white.withValues(alpha: .15)
         : Colors.grey.shade300;
 
     return Column(

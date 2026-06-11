@@ -21,7 +21,7 @@ class JournalPaSchoolPage extends StatelessWidget {
           'Vos contenus récents et recommandations (PA).',
           style: t.bodySmall?.copyWith(
             fontWeight: FontWeight.w600,
-            color: t.bodySmall?.color?.withOpacity(.7),
+            color: t.bodySmall?.color?.withValues(alpha: .7),
             fontFamily: GoogleFonts.instrumentSans().fontFamily,
           ),
         ),

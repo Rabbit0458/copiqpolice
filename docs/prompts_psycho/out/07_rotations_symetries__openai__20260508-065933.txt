@@ -1,0 +1,632 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie possède un triangle équilatéral ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "C",
+    "explanation": "Un triangle équilatéral possède trois axes de symétrie, chacun passant par un sommet et le milieu du côté opposé. Cette propriété vient de sa régularité géométrique. Ces trois axes sont tous équidistants et se rencontrent en un point central où ils se coupent.",
+    "hint": "Chaque sommet a son axe."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Laquelle de ces lettres a un axe de symétrie vertical ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "M"},
+      {"key": "B", "label": "A"},
+      {"key": "C", "label": "B"},
+      {"key": "D", "label": "C"}
+    ],
+    "answer": "B",
+    "explanation": "La lettre 'A' a un axe de symétrie vertical qui passe par son sommet. Cela signifie que si vous pliez la lettre en deux le long de cet axe, les deux moitiés se superposent parfaitement. Les autres lettres 'M', 'B', 'C' ne partagent pas cette caractéristique.",
+    "hint": "Regarde l'axe central passant par le sommet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel pictogramme routier n'a pas d'axe de symétrie ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "Un panneau stop octogonal"},
+      {"key": "B", "label": "Un triangle de priorité"},
+      {"key": "C", "label": "Un panneau de danger circulaire"},
+      {"key": "D", "label": "Un panneau de sens interdit rectangulaire"}
+    ],
+    "answer": "D",
+    "explanation": "Le panneau de sens interdit rectangulaire n'a pas d'axe de symétrie. Par contre, les panneaux 'Stop', 'triangle de priorité' et 'danger circulaire' ont chacun plusieurs axes de symétrie grâce à leurs formes régulières.",
+    "hint": "Un rectangle sans symétrie particulière."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de rotations distinctes laissent un carré invariant ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "2"},
+      {"key": "B", "label": "3"},
+      {"key": "C", "label": "4"},
+      {"key": "D", "label": "5"}
+    ],
+    "answer": "C",
+    "explanation": "Un carré peut être tourné de 0°, 90°, 180° et 270° autour de son centre sans changer d'apparence, ce qui fait quatre rotations distinctes. Chaque angle est multiple de 90°, ce qui correspond à la juxtaposition de ses côtés.",
+    "hint": "Pense aux multiples de 90°."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel chiffre reste identique après une rotation de 180° ?",
+    "prompt": "Considérons les chiffres dans une typographie standard.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "0"},
+      {"key": "B", "label": "6"},
+      {"key": "C", "label": "8"},
+      {"key": "D", "label": "1"}
+    ],
+    "answer": "C",
+    "explanation": "Le chiffre '8' ressemble à lui-même après une rotation de 180° autour de son centre. Les autres chiffres ne restent pas les mêmes après une telle rotation à part '0', mais il peut être vu différemment selon le contexte.",
+    "hint": "Un chiffre symétrique dans les deux dimensions."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie possède un rectangle ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "B",
+    "explanation": "Un rectangle a deux axes de symétrie : un horizontal et un vertical. Ces axes passent par les milieux des côtés opposés du rectangle. Contrairement à un carré, il ne possède pas de symétrie diagonale.",
+    "hint": "Pense horizontal et vertical."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre a un axe de symétrie horizontal ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "E"},
+      {"key": "B", "label": "M"},
+      {"key": "C", "label": "N"},
+      {"key": "D", "label": "B"}
+    ],
+    "answer": "D",
+    "explanation": "La lettre 'B' a un axe de symétrie horizontal, car une ligne passant à travers son centre horizontalement la divise en deux moitiés identiques. Les autres lettres, en revanche, ne montrent pas cette symétrie.",
+    "hint": "Regarde le milieu horizontal."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie possède un cerf-volant classique ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "0"}
+    ],
+    "answer": "A",
+    "explanation": "Un cerf-volant classique a un seul axe de symétrie, qui passe le long de sa longueur maximale. Cet axe sépare les deux ailes égales en une symétrie mise en valeur. Les autres options ne respectent pas le design typique du cerf-volant.",
+    "hint": "Pense à la longueur centrale."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel symbole n'a pas d'axe de symétrie ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "Symbole de cœur"},
+      {"key": "B", "label": "Symbole de paix"},
+      {"key": "C", "label": "Symbole de plus"},
+      {"key": "D", "label": "Symbole de cercle"}
+    ],
+    "answer": "A",
+    "explanation": "Le symbole de cœur n'a pas d'axe de symétrie parfait, surtout en typographie courante. Les autres symboles mentionnés, comme le cercle et le symbole de plus, ont soit plusieurs axes de symétrie, soit en possèdent au moins un évident.",
+    "hint": "Pensez aux asymétries."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le degré minimal de rotation pour superposer un hexagone régulier sur lui-même ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "60°"},
+      {"key": "B", "label": "90°"},
+      {"key": "C", "label": "120°"},
+      {"key": "D", "label": "180°"}
+    ],
+    "answer": "A",
+    "explanation": "Un hexagone régulier se superpose sur lui-même après une rotation de 60° autour de son centre, car il possède six côtés égaux. Ainsi, chaque côté et sommet se chevauchent avec le suivant après une rotation de 60°.",
+    "hint": "N côtés = 360° / N."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie possède un cercle ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "Infinité"},
+      {"key": "C", "label": "4"},
+      {"key": "D", "label": "0"}
+    ],
+    "answer": "B",
+    "explanation": "Un cercle possède une infinité d'axes de symétrie parce que toute ligne passant par son centre le divise en deux demi-cercles égaux. Cette propriété unique provient de sa symétrie parfaite à 360°.",
+    "hint": "Pensez à toutes les lignes passant par le centre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle transformation résulte d'une rotation de 360° ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Retour à la position initiale"},
+      {"key": "B", "label": "Inversion de la figure"},
+      {"key": "C", "label": "Réduction de taille"},
+      {"key": "D", "label": "Transformation complexe"}
+    ],
+    "answer": "A",
+    "explanation": "Une rotation de 360° autour d'un point ramène la figure à sa position initiale sans aucun changement. C'est un tour complet qui laisse l'objet indistinguable de sa position de départ.",
+    "hint": "Un tour complet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de symétries axiales possède un losange ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "B",
+    "explanation": "Un losange possède deux axes de symétrie : l'un passant par les diagonales et l'autre perpendiculaire au milieu des côtés opposés. Ces axes divisent le losange en moitiés symétriques.",
+    "hint": "Regardez les diagonales."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Laquelle des lettres suivantes est centro-symétrique ?",
+    "prompt": null,
+    "transformation_type": "symétrie centrale",
+    "options": [
+      {"key": "A", "label": "S"},
+      {"key": "B", "label": "Z"},
+      {"key": "C", "label": "N"},
+      {"key": "D", "label": "H"}
+    ],
+    "answer": "B",
+    "explanation": "La lettre 'Z' est centro-symétrique, ce qui signifie qu'elle peut être retournée de 180° autour de son centre et apparaîtra identique. Les autres lettres ne montrent pas cette caractéristique.",
+    "hint": "Une lettre qui se reflète sur un tour complet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle figure ne change pas d'apparence après une rotation de 180° ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Ellipse"},
+      {"key": "B", "label": "Cercle"},
+      {"key": "C", "label": "Octogone régulier"},
+      {"key": "D", "label": "Rectangle"}
+    ],
+    "answer": "B",
+    "explanation": "Un cercle ne change jamais d'apparence quel que soit l'angle de rotation, y compris 180°, en raison de sa parfaite symétrie. Les autres figures changent d'apparence ou ne sont pas symétriques sous cette rotation sauf pour des cas spécifiques ou exceptions.",
+    "hint": "Symétrie parfaite dans tous les aspects."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre a deux axes de symétrie ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "X"},
+      {"key": "B", "label": "T"},
+      {"key": "C", "label": "A"},
+      {"key": "D", "label": "O"}
+    ],
+    "answer": "A",
+    "explanation": "La lettre 'X' possède deux axes de symétrie : un horizontal et un vertical. Ces axes passent par le centre de la lettre, divisant la lettre en moitiés égales.",
+    "hint": "Recherche les axes qui se croisent au centre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle lettre parmi les suivantes est centro-symétrique ?",
+    "prompt": null,
+    "transformation_type": "symétrie centrale",
+    "options": [
+      {"key": "A", "label": "R"},
+      {"key": "B", "label": "S"},
+      {"key": "C", "label": "N"},
+      {"key": "D", "label": "Z"}
+    ],
+    "answer": "D",
+    "explanation": "La lettre 'Z' est centro-symétrique, car lorsqu'elle est tournée de 180° autour de son centre, elle conserve son apparence. Cette propriété n'est pas partagée par les autres lettres listées, qui adoptent une apparence différente après une telle rotation.",
+    "hint": "Visualisez un retournement complet."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien d'axes de symétrie possède un losange, autre que ses diagonales ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "0"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "1"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "A",
+    "explanation": "Les seuls axes de symétrie que possède un losange passent par ses diagonales. Aucun autre axe ne le divise également du fait de la non-égalité avec les côtés.",
+    "hint": "Considérez seulement ses diagonales."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Laquelle de ces transformations correspond à une rotation de 180° ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Symétrie centrale"},
+      {"key": "B", "label": "Translation"},
+      {"key": "C", "label": "Homothétie"},
+      {"key": "D", "label": "Réflexion totale"}
+    ],
+    "answer": "A",
+    "explanation": "Une rotation de 180° autour d'un centre est équivalente à une symétrie centrale. Cela signifie que chaque point de l'objet trouve un équivalent diamétralement opposé par rapport au centre.",
+    "hint": "C'est une transformation qui implique un point central."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel chiffre ne change pas après une rotation de 90° autour de son centre ?",
+    "prompt": "Considérez la typographie standard des chiffres.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "0"},
+      {"key": "B", "label": "8"},
+      {"key": "C", "label": "6"},
+      {"key": "D", "label": "3"}
+    ],
+    "answer": "A",
+    "explanation": "Le chiffre '0' ne change pas car il est symétrique dans toutes les directions. Les chiffres '8', '6' et '3' prennent une apparence différente après une rotation de 90°.",
+    "hint": "Unificateur dans sa symétrie totale."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Une rotation de 90° d'un carré autour de son centre équivaut à combien de symétries axiales ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "0"},
+      {"key": "B", "label": "1"},
+      {"key": "C", "label": "2"},
+      {"key": "D", "label": "Aucune symétrie axiale"}
+    ],
+    "answer": "D",
+    "explanation": "Une rotation de 90° ne se traduit pas par une symétrie axiale, car elle implique un mouvement du plan sans réflexion. Seule une rotation qui remet la figure dans sa configuration initiale égale une opération symétrique.",
+    "hint": "Pas une réflexion, mais un mouvement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle transformation résulte de deux symétries axiales successives avec des axes perpendiculaires ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Rotation de 180°"},
+      {"key": "B", "label": "Translation"},
+      {"key": "C", "label": "Symétrie centrale"},
+      {"key": "D", "label": "Contraction"}
+    ],
+    "answer": "A",
+    "explanation": "Deux symétries axiales successives avec des axes perpendiculaires équivalent à une rotation de 180°. Cette propriété découle du théorème de composition des symétries axiales.",
+    "hint": "Deux réflexions impliquent un retour."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle figure reste identique après une rotation de 120° ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Triangle équilatéral"},
+      {"key": "B", "label": "Pentagone régulier"},
+      {"key": "C", "label": "Hexagone régulier"},
+      {"key": "D", "label": "Carré"}
+    ],
+    "answer": "C",
+    "explanation": "Un hexagone régulier se superpose sur lui-même après une rotation de 120°, car il peut être divisé en six parties égales. Cette symétrie tourne chaque segment à un sommet immédiatement contigu.",
+    "hint": "Divisions égales par multiples de 60°."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelles sont les deux transformations équivalentes d'un octogone régulier par tours successifs de 45° autour de son centre ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Rotation et translation"},
+      {"key": "B", "label": "Rotation et homothétie"},
+      {"key": "C", "label": "Double rotation"},
+      {"key": "D", "label": "Analyse symétrique"}
+    ],
+    "answer": "C",
+    "explanation": "En tournant un octogone régulier de 45°, il se superpose avec chaque côté adjacent, ainsi deux rotations successives de 45° correspondent à une rotation unique de 90°. Cela se traduit par une double rotation égale.",
+    "hint": "Pense en termes de petits pas égaux."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de symétries axiales possède un pentagone régulier ?",
+    "prompt": null,
+    "transformation_type": "symétrie axiale",
+    "options": [
+      {"key": "A", "label": "3"},
+      {"key": "B", "label": "4"},
+      {"key": "C", "label": "5"},
+      {"key": "D", "label": "6"}
+    ],
+    "answer": "C",
+    "explanation": "Un pentagone régulier a cinq axes de symétrie. Chaque axe passe par un sommet et le milieu du côté opposé. Cela reflète sa structure parfaitement régulière, et chaque symétrie la divise pareillement.",
+    "hint": "Count the sides."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle rotation ramène un heptagone régulier à lui-même ?",
+    "prompt": "Considérez un heptagone centré.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "51.42°"},
+      {"key": "B", "label": "60°"},
+      {"key": "C", "label": "51.43°"},
+      {"key": "D", "label": "45°"}
+    ],
+    "answer": "A",
+    "explanation": "Chaque angle de rotation qui superpose un heptagone régulier est de 360° divisé par 7, soit 51.42° par rotation, ce qui perpétue son cycle symétrique unique.",
+    "hint": "Angle par segment."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle transformation est équivalente à deux rotations successives de 90° et 180° autour du centre d'un carré ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Rotation de 270°"},
+      {"key": "B", "label": "Un tour complet"},
+      {"key": "C", "label": "Symétrie centrale"},
+      {"key": "D", "label": "Réflexion totale"}
+    ],
+    "answer": "A",
+    "explanation": "Une rotation de 90° suivie d'une de 180° équivaut à 270°. Dans cette succession, chaque rotation additionne l'angle de précédent. Cela signifie que le carré tourne quasiment un tour complet.",
+    "hint": "Additions d'angles successifs."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel axe de rotation 3D laisse un cube invariant après un tour de 120° ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Un axe passant par les centres de deux faces opposées"},
+      {"key": "B", "label": "Un axe passant par deux sommets opposés"},
+      {"key": "C", "label": "Un axe passant par les centres de deux arêtes opposées"},
+      {"key": "D", "label": "Aucun des axes"}
+    ],
+    "answer": "B",
+    "explanation": "Un cube peut être tourné de 120° autour d'un axe passant par les deux sommets opposés de façon à se superposer sur son image pré-rotationnelle. Ceci utilise sa symétrie tétraédrique incorporée en trois dimensions.",
+    "hint": "Explorez les diagonales 3D."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle transformation définie par des réflexions symétriques laisse un octogone invariant ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Deux réflexions qui se croisent à un angle de 45°"},
+      {"key": "B", "label": "Deux réflexions parallèles"},
+      {"key": "C", "label": "Trois réflexions successives"},
+      {"key": "D", "label": "Une unique réflexion"}
+    ],
+    "answer": "A",
+    "explanation": "Pour que deux réflexions gardent un octogone invariant, elles doivent être perpendiculaires et croiser les sommets de l'octogone. Cette interaction en 45° pivote efficacement l'octogone équidistantement.",
+    "hint": "Intersection cruciale à travers les côtés."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle rotation 3D fait superposer un tétraèdre sur lui-même ?",
+    "prompt": "Considérez un tétraèdre régulier.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Rotation de 120° autour d'un axe passant par un sommet et le centre de la face opposée"},
+      {"key": "B", "label": "Rotation de 90° autour d'une arête"},
+      {"key": "C", "label": "Rotation de 180° autour d'une médiane"},
+      {"key": "D", "label": "Pas de rotation possible"}
+    ],
+    "answer": "A",
+    "explanation": "Une rotation de 120° autour d'un axe passant par un sommet et le centre de la face opposée maintient l'orientation du tétraèdre et aligne chaque sommet avec un autre, illustrant le principe de la permutation circulaire.",
+    "hint": "Recherche une triangulation parfaite."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle transformation combine une réflexion avec une rotation de 120° pour un hexagone régulier ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Symétrie axiale après rotation"},
+      {"key": "B", "label": "Symétrie centrale sans rotation"},
+      {"key": "C", "label": "Deux réflexions parallèles"},
+      {"key": "D", "label": "Aucune transformation"}
+    ],
+    "answer": "A",
+    "explanation": "Un hexagone régulier après une rotation de 120° peut subir une réflexion sur un de ses axes symétriques, retournant chaque section sur la suivante. C'est l'intelligence de sa forme qui rend possible cette permutation.",
+    "hint": "Y a-t-il une série réfléchissante ?"
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Comment un cube peut-il être inversé à sa position initiale par transformations combinées de rotation?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Trois rotations de 90° autour des axes principaux"},
+      {"key": "B", "label": "Une unique rotation de 180° autour de l'un de ses axes"},
+      {"key": "C", "label": "Deux rotations successives"},
+      {"key": "D", "label": "Pas de rotation applicable"}
+    ],
+    "answer": "A",
+    "explanation": "Trois rotations successives de 90° autour des axes orthogonaux principaux d'un cube peuvent le ramener à sa configuration originale. Chacune de ces rotations échange les positions de deux faces adjacentes.",
+    "hint": "Pensez à un schéma tripartite synchronisé."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle transformation par deux rotations de 180° et 120° laisse un dodécaèdre stable ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Axe passant par les larges faces"},
+      {"key": "B", "label": "Axe passant par des arêtes"},
+      {"key": "C", "label": "Axe passant à travers sommets opposés"},
+      {"key": "D", "label": "Aucun axe spécifique"}
+    ],
+    "answer": "A",
+    "explanation": "Pour une double rotation réussie préservant la forme équilatérale, les axes doivent traverser les larges faces d'un dodécaèdre. En effet, les douze faces mènent à une rosette d'alignement en rotation continue.",
+    "hint": "Cela fonctionne mieux par symétrie étendue."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle symétrie caractérielle intégrée permet à un centaure étoilé de se superposer lui-même ?",
+    "prompt": null,
+    "transformation_type": "symétrie centrale",
+    "options": [
+      {"key": "A", "label": "Caractère axial sur tous les axes"},
+      {"key": "B", "label": "Rotation double journalière"},
+      {"key": "C", "label": "Réflexion par summation périphérique"},
+      {"key": "D", "label": "Conversion graduelle équidistante sans différence"}
+    ],
+    "answer": "C",
+    "explanation": "Un centaure étoilé suffisamment altérée peut démontrer sa symétrie en se couvrant par une connexion latérale de 180° à travers son astre central. Ainsi, les étoiles s'alignent dans une élévation uniforme globale à travers multiples axes.",
+    "hint": "Le mouvement est bien consternant."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle rotation 3D surpasse les aspects inverses d'un icosaèdre retourné sur soi-même ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Rotation de 36° autour d'un de ses 30 arêtes"},
+      {"key": "B", "label": "Rotation de 72° autour d'un sommet vers un centre adjacent"},
+      {"key": "C", "label": "Rotation de 180° sur un axe majeur"},
+      {"key": "D", "label": "Aucune rotation applicable"}
+    ],
+    "answer": "A",
+    "explanation": "Pour que l'icosaèdre repasse à travers une rotation de 36°, les axes passent à travers véritables niveaux d'alignement intermédiaires. Cette rotation rend harmonieux 12 symétries alignées ensemble.",
+    "hint": "Capitale aurorale fixée sur leur fond communal."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle transformation complexifiée par quatre rotations angulaires sphériques préconise un dodécaèdre à son état précurseur ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Quatre successions en chaînage pointu"},
+      {"key": "B", "label": "Double alternance de quaternion"},
+      {"key": "C", "label": "Designatif rétrack-éclat sur deux vecteurs"},
+      {"key": "D", "label": "Quatre révolutions interlinéaires"}
+    ],
+    "answer": "A",
+    "explanation": "Des rotations quadratiques en angles spécifiques permettent à un dodécaèdre de s'aligner harmonieusement. Chaque angle fournit une voie d'accumulation rationnelle via transmutation combinatoire de structure cortexique.",
+    "hint": "Structure en séquence de révision."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel impact une rotation de 45° dans le plan complexe a-t-elle sur une structure pentaculaire à angles égaux ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Cycle de la série en rotation continue"},
+      {"key": "B", "label": "Maintien de segmentation évidente"},
+      {"key": "C", "label": "Stabilisation par transmutation des sommets"},
+      {"key": "D", "label": "Aucune implication pratique directe"}
+    ],
+    "answer": "A",
+    "explanation": "Cette rotation dans une structure pentaculaire oriente la série sur un cycle perpétuel où succès augmentent géométriquement dans le plan. Cette apothème de révolution assure un repositionnement uniforme et fin.",
+    "hint": "Pensez au pentagone et au cycle itératif intense."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Comment une inversion tridimensionnelle en boucle entrante mime-t-elle un tesseract divisible ?",
+    "prompt": "Considération des cercles hypersphériques.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Hexade de rotations tournantes"},
+      {"key": "B", "label": "Tri-quad cyclique"},
+      {"key": "C", "label": "Rotation ancestrale trimodale"},
+      {"key": "D", "label": "Aucune classification orthogonale"}
+    ],
+    "answer": "C",
+    "explanation": "Lors de conceptions en incursion tridimensionnelle inversée se révélant, la structure tétraédrique ajuste son exposition par cycles complexifiés. Une rotation continue modale produit une transformation à intervalles définis.",
+    "hint": "Considérez les boucles schématiques dans le temps et l'espace."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle permutation combinée décrypte les forces intercubiques lors de rotations de 90° ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Changement quadratique simultané"},
+      {"key": "B", "label": "Double permutation centrale"},
+      {"key": "C", "label": "Transformations composites tripartites"},
+      {"key": "D", "label": "Innerspaces synchroniques inter-face"}
+    ],
+    "answer": "A",
+    "explanation": "Un ensemble de combinaisons faces-à-faces régulées révèle chaque détournement aligné. Module de 90° incarne décidément un cubique décrypté, métamorphosant l'environnement par sa capacité multiforme.",
+    "hint": "Voir au-delà de l'évidence cubique innée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle influence sur le contenu tridimensionnel laisse une rotation de 30° sur un octadécadron ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Répétition circulaire de bordures intactes"},
+      {"key": "B", "label": "Increment trans-bordé"},
+      {"key": "C", "label": "Absorption infiniment dense"},
+      {"key": "D", "label": "Aucun changement visible"}
+    ],
+    "answer": "A",
+    "explanation": "Une rotation de 30° pour un octadécadron fonctionne par l'itération segmentée systématique se répétant dans sa structure. La configuration géométrique majeure transcrit ainsi un halo visuel persistant.",
+    "hint": "Encercler le cadre par petits ajustements."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle architecture de rotation surprend les hespérides avec une animation orbitante ?",
+    "prompt": null,
+    "transformation_type": "combinée",
+    "options": [
+      {"key": "A", "label": "Articulations rotatives pluri-dimensionnelles"},
+      {"key": "B", "label": "Visées conjuguées quadratifaces"},
+      {"key": "C", "label": "Propagations asymétriques à travers les vides"},
+      {"key": "D", "label": "Absorptions en zones périphériques"}
+    ],
+    "answer": "A",
+    "explanation": "Cette rotation s'inscrit dans le paysage cosmologique dehors. Les motifs articulés singularisent la formation structurelle des sphères diverses se rencontrant par permutations simultanées à complexité avancée.",
+    "hint": "Imaginez les connexions entre axes dynamiques."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Comment une réhabilitation inverse permet-elle à une arthrométrie récalibrée de pivoter sur une hélisphère ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Chronothermes projectiles"},
+      {"key": "B", "label": "Configurations nucléaires de rotation"},
+      {"key": "C", "label": "Rotations de reflux synchronique"},
+      {"key": "D", "label": "Alignement asyméti-authentique"}
+    ],
+    "answer": "B",
+    "explanation": "La réhabilitation par inverses facilite l'exécution d'un pivot stratégique permettant à l'hélisphère de s'ériger parmi ses oscillations rotatives recalibrées. Cela s'achève sous l'effet d'une assignation nucléaire circonspecte.",
+    "hint": "Centraliser les forces pivot tête-bêche."
+  }
+]

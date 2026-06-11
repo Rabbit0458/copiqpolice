@@ -1060,12 +1060,12 @@ class _ForumEspaceExamGPXPageState extends State<ForumEspaceExamGPXPage> {
                                 vertical: 10,
                               ),
                               decoration: BoxDecoration(
-                                color: context.forum.danger.withOpacity(
+                                color: context.forum.danger.withValues(alpha: 
                                   context.forum.isDark ? 0.14 : 0.10,
                                 ),
                                 borderRadius: BorderRadius.circular(18),
                                 border: Border.all(
-                                  color: context.forum.danger.withOpacity(
+                                  color: context.forum.danger.withValues(alpha: 
                                     context.forum.isDark ? 0.28 : 0.22,
                                   ),
                                 ),
@@ -1121,12 +1121,12 @@ class _ForumEspaceExamGPXPageState extends State<ForumEspaceExamGPXPage> {
                                 vertical: 10,
                               ),
                               decoration: BoxDecoration(
-                                color: context.forum.danger.withOpacity(
+                                color: context.forum.danger.withValues(alpha: 
                                   context.forum.isDark ? 0.12 : 0.08,
                                 ),
                                 borderRadius: BorderRadius.circular(18),
                                 border: Border.all(
-                                  color: context.forum.danger.withOpacity(
+                                  color: context.forum.danger.withValues(alpha: 
                                     context.forum.isDark ? 0.26 : 0.20,
                                   ),
                                 ),
@@ -1853,7 +1853,7 @@ class _PostImage extends StatelessWidget {
             DecoratedBox(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Colors.black.withOpacity(0.08), Colors.transparent],
+                  colors: [Colors.black.withValues(alpha: 0.08), Colors.transparent],
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
                 ),
@@ -2000,12 +2000,12 @@ class _Fab extends StatelessWidget {
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
-                color: t.primary.withOpacity(t.isDark ? 0.30 : 0.35),
+                color: t.primary.withValues(alpha: t.isDark ? 0.30 : 0.35),
                 blurRadius: 40,
                 offset: const Offset(0, 18),
               ),
               BoxShadow(
-                color: t.primary.withOpacity(t.isDark ? 0.12 : 0.15),
+                color: t.primary.withValues(alpha: t.isDark ? 0.12 : 0.15),
                 spreadRadius: 6,
               ),
             ],
@@ -2045,7 +2045,7 @@ class _FabActionSheet extends StatelessWidget {
               filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
               child: Container(
                 decoration: BoxDecoration(
-                  color: t.sheetBg.withOpacity(t.isDark ? 0.92 : 0.98),
+                  color: t.sheetBg.withValues(alpha: t.isDark ? 0.92 : 0.98),
                   borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(28),
                   ),
@@ -2313,7 +2313,7 @@ class _CreatePostSheetState extends State<_CreatePostSheet> {
               child: Container(
                 padding: EdgeInsets.fromLTRB(16, 12, 16, 14 + inset),
                 decoration: BoxDecoration(
-                  color: t.sheetBg.withOpacity(t.isDark ? 0.92 : 0.98),
+                  color: t.sheetBg.withValues(alpha: t.isDark ? 0.92 : 0.98),
                   borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(28),
                   ),
@@ -2475,9 +2475,9 @@ class _CreatePostSheetState extends State<_CreatePostSheet> {
                           vertical: 10,
                         ),
                         decoration: BoxDecoration(
-                          color: t.danger.withOpacity(0.10),
+                          color: t.danger.withValues(alpha: 0.10),
                           borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: t.danger.withOpacity(0.22)),
+                          border: Border.all(color: t.danger.withValues(alpha: 0.22)),
                         ),
                         child: Text(
                           _err!,
@@ -2565,7 +2565,7 @@ class _SearchOverlay extends StatelessWidget {
                 filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: t.sheetBg.withOpacity(t.isDark ? 0.92 : 0.98),
+                    color: t.sheetBg.withValues(alpha: t.isDark ? 0.92 : 0.98),
                     borderRadius: BorderRadius.circular(26),
                     border: Border.all(color: t.stroke),
                   ),
@@ -3050,7 +3050,7 @@ class _ReportSheetState extends State<_ReportSheet> {
                     borderRadius: BorderRadius.circular(21),
                     boxShadow: [
                       BoxShadow(
-                        color: _ForumTheme.danger.withOpacity(0.25),
+                        color: _ForumTheme.danger.withValues(alpha: 0.25),
                         blurRadius: 24,
                         offset: const Offset(0, 12),
                       ),
@@ -3099,7 +3099,7 @@ class _SheetShell extends StatelessWidget {
               child: Container(
                 padding: EdgeInsets.fromLTRB(16, 12, 16, 16 + inset),
                 decoration: BoxDecoration(
-                  color: t.sheetBg.withOpacity(t.isDark ? 0.92 : 0.98),
+                  color: t.sheetBg.withValues(alpha: t.isDark ? 0.92 : 0.98),
                   borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(28),
                   ),
@@ -3169,7 +3169,7 @@ class _SheetAction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final t = context.forum;
-    final fg = (color ?? t.text).withOpacity(disabled ? 0.55 : 1.0);
+    final fg = (color ?? t.text).withValues(alpha: disabled ? 0.55 : 1.0);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
@@ -3184,7 +3184,7 @@ class _SheetAction extends StatelessWidget {
             color: t.surface,
             borderRadius: BorderRadius.circular(18),
             border: Border.all(
-              color: disabled ? t.stroke.withOpacity(0.65) : t.stroke,
+              color: disabled ? t.stroke.withValues(alpha: 0.65) : t.stroke,
             ),
           ),
           child: Row(
@@ -3214,7 +3214,7 @@ class _SheetAction extends StatelessWidget {
               ),
               Icon(
                 Icons.chevron_right_rounded,
-                color: disabled ? t.iconSoft.withOpacity(0.6) : t.iconSoft,
+                color: disabled ? t.iconSoft.withValues(alpha: 0.6) : t.iconSoft,
               ),
             ],
           ),
@@ -3233,7 +3233,7 @@ class _SkeletonList extends StatelessWidget {
       height: 160,
       margin: const EdgeInsets.only(bottom: 12),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.70),
+        color: Colors.white.withValues(alpha: 0.70),
         borderRadius: BorderRadius.circular(22),
         border: Border.all(color: _ForumTheme.outline),
       ),
@@ -3287,7 +3287,7 @@ class _EmptyState extends StatelessWidget {
                 borderRadius: BorderRadius.circular(21),
                 boxShadow: [
                   BoxShadow(
-                    color: _ForumTheme.accent.withOpacity(0.25),
+                    color: _ForumTheme.accent.withValues(alpha: 0.25),
                     blurRadius: 24,
                     offset: const Offset(0, 12),
                   ),
@@ -4172,7 +4172,7 @@ class _CommentsSheetState extends State<_CommentsSheet> {
                 height: MediaQuery.of(context).size.height * 0.82,
                 padding: EdgeInsets.fromLTRB(16, 14, 16, 12 + inset),
                 decoration: BoxDecoration(
-                  color: t.sheetBg.withOpacity(t.isDark ? 0.92 : 0.98),
+                  color: t.sheetBg.withValues(alpha: t.isDark ? 0.92 : 0.98),
                   borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(26),
                   ),
@@ -4222,9 +4222,9 @@ class _CommentsSheetState extends State<_CommentsSheet> {
                           vertical: 10,
                         ),
                         decoration: BoxDecoration(
-                          color: t.danger.withOpacity(0.10),
+                          color: t.danger.withValues(alpha: 0.10),
                           borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: t.danger.withOpacity(0.22)),
+                          border: Border.all(color: t.danger.withValues(alpha: 0.22)),
                         ),
                         child: Text(
                           "Commentaires désactivés pendant le mute.",
@@ -4467,7 +4467,7 @@ class _CommentsSheetState extends State<_CommentsSheet> {
                             ),
                             child: Icon(
                               Icons.send_rounded,
-                              color: t.textOnPrimary.withOpacity(
+                              color: t.textOnPrimary.withValues(alpha: 
                                 (widget.isMuted || _sending) ? 0.7 : 1,
                               ),
                             ),
@@ -4722,7 +4722,7 @@ class _CreateGroupSheetState extends State<_CreateGroupSheet> {
               child: Container(
                 padding: EdgeInsets.fromLTRB(16, 12, 16, 14 + inset),
                 decoration: BoxDecoration(
-                  color: t.sheetBg.withOpacity(t.isDark ? 0.92 : 0.98),
+                  color: t.sheetBg.withValues(alpha: t.isDark ? 0.92 : 0.98),
                   borderRadius: const BorderRadius.vertical(
                     top: Radius.circular(28),
                   ),
@@ -4854,9 +4854,9 @@ class _CreateGroupSheetState extends State<_CreateGroupSheet> {
                           vertical: 10,
                         ),
                         decoration: BoxDecoration(
-                          color: t.danger.withOpacity(0.10),
+                          color: t.danger.withValues(alpha: 0.10),
                           borderRadius: BorderRadius.circular(16),
-                          border: Border.all(color: t.danger.withOpacity(0.22)),
+                          border: Border.all(color: t.danger.withValues(alpha: 0.22)),
                         ),
                         child: Text(
                           _err!,
@@ -5344,7 +5344,7 @@ class _PostHeader extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: const Color(0xFFF5F7FF),
                     borderRadius: BorderRadius.circular(12),
-                    border: Border.all(color: Colors.black.withOpacity(0.08)),
+                    border: Border.all(color: Colors.black.withValues(alpha: 0.08)),
                   ),
                   child: const Icon(Icons.more_horiz_rounded, size: 20),
                 ),
@@ -5476,7 +5476,7 @@ class _CommentTile extends StatelessWidget {
               border: Border.all(color: _ForumTheme.outline),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.04),
+                  color: Colors.black.withValues(alpha: 0.04),
                   blurRadius: 14,
                   offset: const Offset(0, 6),
                 ),

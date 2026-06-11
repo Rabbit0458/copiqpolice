@@ -243,14 +243,14 @@ class _SearchBar extends StatelessWidget {
         color: theme.cardColor,
         border: Border.all(
           color: isDark
-              ? Colors.white.withOpacity(.10)
-              : Colors.black.withOpacity(.06),
+              ? Colors.white.withValues(alpha: .10)
+              : Colors.black.withValues(alpha: .06),
         ),
         boxShadow: [
           BoxShadow(
             blurRadius: 18,
             offset: const Offset(0, 10),
-            color: Colors.black.withOpacity(isDark ? 0.18 : 0.06),
+            color: Colors.black.withValues(alpha: isDark ? 0.18 : 0.06),
           ),
         ],
       ),
@@ -421,8 +421,8 @@ class _ModuleCardState extends State<ModuleCard> with TickerProviderStateMixin {
     final theme = Theme.of(context);
     final isDark = widget.isDark;
 
-    final Color badgeBg = Colors.white.withOpacity(isDark ? 0.14 : 0.10);
-    final Color borderClr = Colors.white.withOpacity(isDark ? 0.18 : 0.14);
+    final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
+    final Color borderClr = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
 
     return LayoutBuilder(
       builder: (context, c) {
@@ -451,7 +451,7 @@ class _ModuleCardState extends State<ModuleCard> with TickerProviderStateMixin {
         final subtitleStyle = GoogleFonts.fustat(
           fontWeight: FontWeight.w600,
           fontSize: 14,
-          color: Colors.white.withOpacity(.85),
+          color: Colors.white.withValues(alpha: .85),
           height: 1.15,
         );
 
@@ -490,7 +490,7 @@ class _ModuleCardState extends State<ModuleCard> with TickerProviderStateMixin {
             filterQuality: FilterQuality.high,
           );
         } catch (_) {
-          img = Container(color: theme.colorScheme.primary.withOpacity(0.08));
+          img = Container(color: theme.colorScheme.primary.withValues(alpha: 0.08));
         }
 
         // CTA bg (ton gris)
@@ -517,9 +517,9 @@ class _ModuleCardState extends State<ModuleCard> with TickerProviderStateMixin {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.black.withOpacity(.10),
-                            Colors.black.withOpacity(.55),
-                            Colors.black.withOpacity(.78),
+                            Colors.black.withValues(alpha: .10),
+                            Colors.black.withValues(alpha: .55),
+                            Colors.black.withValues(alpha: .78),
                           ],
                           stops: const [0.0, 0.55, 1.0],
                         ),
@@ -531,7 +531,7 @@ class _ModuleCardState extends State<ModuleCard> with TickerProviderStateMixin {
                       top: 12,
                       right: 12,
                       child: Material(
-                        color: Theme.of(context).cardColor.withOpacity(.95),
+                        color: Theme.of(context).cardColor.withValues(alpha: .95),
                         shape: const CircleBorder(),
                         child: InkWell(
                           customBorder: const CircleBorder(),
@@ -636,7 +636,7 @@ class _ModuleCardState extends State<ModuleCard> with TickerProviderStateMixin {
                                   color: ctaBg,
                                   borderRadius: BorderRadius.circular(18),
                                   border: Border.all(
-                                    color: Colors.white.withOpacity(.10),
+                                    color: Colors.white.withValues(alpha: .10),
                                   ),
                                 ),
                                 child: Row(
@@ -696,7 +696,7 @@ class _EmptyState extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: theme.colorScheme.surface,
-        border: Border.all(color: theme.dividerColor.withOpacity(0.18)),
+        border: Border.all(color: theme.dividerColor.withValues(alpha: 0.18)),
       ),
       child: Column(
         children: [

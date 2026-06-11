@@ -313,8 +313,8 @@ class _NotifierBannerState extends State<_NotifierBanner>
     final paddingTop = MediaQuery.of(context).padding.top;
     final safeTop = paddingTop == 0 ? 12.0 : paddingTop + 8.0;
 
-    final bg = Colors.black.withOpacity(0.38);
-    final stroke = Colors.white.withOpacity(0.08);
+    final bg = Colors.black.withValues(alpha: 0.38);
+    final stroke = Colors.white.withValues(alpha: 0.08);
 
     return Positioned.fill(
       child: IgnorePointer(
@@ -383,7 +383,7 @@ class _NotifierBannerState extends State<_NotifierBanner>
                                           maxLines: 3,
                                           overflow: TextOverflow.ellipsis,
                                           style: TextStyle(
-                                            color: Colors.white.withOpacity(
+                                            color: Colors.white.withValues(alpha: 
                                               0.92,
                                             ),
                                             fontWeight: FontWeight.w600,

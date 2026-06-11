@@ -1,0 +1,367 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 23 + 19 ?",
+        "expression": "23 + 19",
+        "options": ["42", "41", "43", "44"],
+        "answer": "42",
+        "explanation": "Pour calculer 23 + 19 rapidement, on peut arrondir 19 à 20, ce qui donne 23 + 20 = 43. Ensuite, on soustrait 1 pour obtenir la réponse correcte de 42. Un piège commun est de mal arrondir ou d'oublier de soustraire le 1 ajouté initialement.",
+        "hint": "Arrondis 19 à 20 puis ajuste après."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le résultat de 9 × 6 ?",
+        "expression": "9 × 6",
+        "options": ["54", "56", "52", "58"],
+        "answer": "54",
+        "explanation": "Pour effectuer 9 × 6, on peut utiliser la table de multiplication du 9. Une méthode rapide est de se rappeler que 9 × 6 = 54 grâce à la table des neuf. Le piège ici pourrait être de confondre avec une multiplication similaire comme 9 × 7.",
+        "hint": "Remets-toi en tête la table de 9."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que vaut 48 ÷ 8 ?",
+        "expression": "48 ÷ 8",
+        "options": ["5", "6", "7", "8"],
+        "answer": "6",
+        "explanation": "48 ÷ 8 est égal à 6 car 8 fois 6 équivaut à 48. On peut se simplifier la tâche en mémorisant ce fait simple de division. Un piège potentiel est de mal appliquer la division ou d'oublier la relation entre multiplication et division.",
+        "hint": "Rappelle-toi combien fait 8 x 6."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 50 % de 120 ?",
+        "expression": "0.5 × 120",
+        "options": ["60", "70", "50", "80"],
+        "answer": "60",
+        "explanation": "50% de 120 est équivalent à la moitié de 120. En divisant 120 par 2, on obtient 60. Un piège classique est d'oublier de diviser par 2 ou de mal interpréter 50% comme 5%.",
+        "hint": "50 % = la moitié, divise par 2."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que vaut 35 + 5 ?",
+        "expression": "35 + 5",
+        "options": ["40", "42", "45", "43"],
+        "answer": "40",
+        "explanation": "35 + 5 est un calcul simple où 5 est ajouté à 35, menant directement à 40. Aucune technique particulière n'est nécessaire ici. Le piège pourrait être de faire une erreur d'addition mentale sous pression.",
+        "hint": "Additionne directement, c'est simple."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 17 + 40 ?",
+        "expression": "17 + 40",
+        "options": ["55", "57", "52", "54"],
+        "answer": "57",
+        "explanation": "17 + 40 est calculé en ajoutant simplement 40 à 17, ce qui donne 57. Avec les dizaines déjà bien décalées, le piège est généralement absent ici mais reste la vérification mentale entre 7 et 0.",
+        "hint": "Additionne comme si c'était 10 + 47."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le double de 31 ?",
+        "expression": "31 × 2",
+        "options": ["62", "60", "64", "61"],
+        "answer": "62",
+        "explanation": "Pour 31 × 2, il suffit de multiplier 31 par 2 pour obtenir 62, une multiplication simple. Un piège possible serait de faire l'oubli d'une retenue si la multiplication était mal pensée.",
+        "hint": "Multiplie par 2, pense au double."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la moitié de 66 ?",
+        "expression": "66 ÷ 2",
+        "options": ["33", "31", "35", "34"],
+        "answer": "33",
+        "explanation": "66 divisé par 2 revient à calculer la moitié de 66, qui est 33. La division par 2 est directe ici. Le piège commun est d'oublier le concept de division en compréhension de la moitié.",
+        "hint": "Divise juste par 2."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 80 – 44 ?",
+        "expression": "80 - 44",
+        "options": ["36", "34", "38", "40"],
+        "answer": "36",
+        "explanation": "80 - 44 peut être résolu rapidement en décomposant en (80 - 40) - 4, soit 40 - 4 = 36. Une erreur classique serait d'effectuer les opérations dans le mauvais sens ou de mal compter.",
+        "hint": "Pense à 80 moins 40, puis ajuste."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 7 × 8 ?",
+        "expression": "7 × 8",
+        "options": ["56", "52", "54", "60"],
+        "answer": "56",
+        "explanation": "En multipliant 7 par 8, on obtient 56 selon la table de multiplication. Connaître cette table aide à éviter les erreurs typiques de confusion avec d'autres multiplications.",
+        "hint": "Utilise la table de 7 ou 8."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est 25 % de 40 ?",
+        "expression": "0.25 × 40",
+        "options": ["10", "8", "12", "14"],
+        "answer": "10",
+        "explanation": "25% de 40 est le quart de 40. Diviser 40 par 4 donne donc 10. Le piège courant ici est de confondre 25% avec une autre fraction comme 50%.",
+        "hint": "Un quart de 40."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Calculez 18 ÷ 3.",
+        "expression": "18 ÷ 3",
+        "options": ["6", "5", "8", "7"],
+        "answer": "6",
+        "explanation": "18 ÷ 3 donne 6, parce que 3 fois 6 égale 18. Cette division simple peut être rapidement vérifiée par multiplication reconnue. Se méprendre sur la table de multiplication est un risque potentiel ici.",
+        "hint": "Trois fois quoi fait dix-huit ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 6 × 5 ?",
+        "expression": "6 × 5",
+        "options": ["30", "25", "35", "40"],
+        "answer": "30",
+        "explanation": "6 × 5 = 30 car 5 fois 6 vaut 30. Ce résultat est directement issu de la table de multiplication, et le piège peut consister à confondre avec des multiplications de 6 ou 5 similaires.",
+        "hint": "Pensez à la table de 5."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le carré de 9 ?",
+        "expression": "9²",
+        "options": ["81", "72", "64", "91"],
+        "answer": "81",
+        "explanation": "9² signifie 9 multiplié par lui-même, ce qui donne 81. En gardant à l'esprit que cela revient à faire 9 fois 9, on évite de confondre avec des produits similaires.","hint": "9 x 9, c’est le carré."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que vaut 7 + 9 ?",
+        "expression": "7 + 9",
+        "options": ["16", "15", "14", "13"],
+        "answer": "16",
+        "explanation": "Pour 7 + 9, ajoutons 9 à 7 pour obtenir 16. C'est un simple verrouillage que l'on risque d'oublier sous stress bien qu'il n'y ait pas de retenue.",
+        "hint": "Addition simple, pas de retenue."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 100 ÷ 25 ?",
+        "expression": "100 ÷ 25",
+        "options": ["4", "5", "6", "3"],
+        "answer": "4",
+        "explanation": "100 ÷ 25 donne 4 car 25 fois 4 fait 100. La division nous montre combien de 25 font un total de 100. L'erreur serait de diviser par un nombre différent en ignorants les facteurs.",
+        "hint": "Combien de fois 25 dans 100."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la moitié de 82 ?",
+        "expression": "82 ÷ 2",
+        "options": ["41", "40", "42", "39"],
+        "answer": "41",
+        "explanation": "Diviser 82 par 2 donne 41. Le calcul direct signifie trouver le nombre qui, multiplié par 2, redonne 82. Soustraire ou additionner dans ce type de calcul peut mener à des erreurs.",
+        "hint": "Diviser par 2 pour trouver la moitié."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 347 + 286 ?",
+        "expression": "347 + 286",
+        "options": ["633", "622", "637", "652"],
+        "answer": "633",
+        "explanation": "Le calcul 347 + 286 implique de bien poser les centaines, dizaines, et unités. On retrouve 3 + 6 = 9, 4 + 8 = 12 (retenue de 1) et 7 + 2 + 1 = 10 (retenue de 1), ce qui nous donne 633. Le piège réside souvent dans l'oubli d'une retenue.",
+        "hint": "Additionne les unités, dizaines, centaines."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que vaut 27 × 30 ?",
+        "expression": "27 × 30",
+        "options": ["810", "820", "800", "830"],
+        "answer": "810",
+        "explanation": "27 × 30 peut être vu comme (27 × 3) × 10, soit 81 × 10 = 810. Penser aux dizaines entières est utile afin d'éviter l'erreur de centaine incorrecte qui vient souvent d'une mauvaise multiplication par 3.",
+        "hint": "Décompose 27 × 3 et multiplie par 10."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 15 % de 200 ?",
+        "expression": "0.15 × 200",
+        "options": ["30", "25", "20", "35"],
+        "answer": "30",
+        "explanation": "15% de 200 signifie multiplier 200 par 0,15, ce qui donne 30. On peut aussi le voir comme 10% (20) + 5% (10) de 200. Le piège est de prendre un pourcentage incorrect, comme 10% à la place de 15%.",
+        "hint": "Calculez 10 % puis moitié pour 5 %."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la valeur de 64 ÷ 8 ?",
+        "expression": "64 ÷ 8",
+        "options": ["8", "9", "7", "6"],
+        "answer": "8",
+        "explanation": "64 ÷ 8 égale 8, car 8 fois 8 rendent 64. Connaître et mémoriser cette table facilite la division sans erreur potentielle de multiplier au lieu de diviser.",
+        "hint": "Rappelle-toi 8 x 8."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que vaut 11 × 12 ?",
+        "expression": "11 × 12",
+        "options": ["132", "142", "122", "112"],
+        "answer": "132",
+        "explanation": "11 × 12 peut se faire par (11 × 10) + (11 × 2) ou 110 + 22 = 132. Reconnaître les multiples de 10 est crucial pour ne pas se perdre dans le comptage.",
+        "hint": "Décomposez en 11×10 + 11×2."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Calculez 13².",
+        "expression": "13²",
+        "options": ["169", "156", "176", "186"],
+        "answer": "169",
+        "explanation": "13² veut dire 13 multiplié par 13, ce qui donne 169 directement. Retenir les carrés d'un nombre proche de 10 peut prévenir le piège de multiplier inexactement ou d'additionner des dizaine incorrectes.",
+        "hint": "13 × 13, utilise les bases des carrés."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien fait 72 - 34 ?",
+        "expression": "72 - 34",
+        "options": ["38", "36", "34", "32"],
+        "answer": "38",
+        "explanation": "72 - 34 revient à soustraire 30 de 70, puis 4 de 2, résultant en 38. Éviter les erreurs de comptage nécessite de vérifier les unités distinctement des dizaines.",
+        "hint": "Soustraire d'abord les dizaines, ensuite ajuster."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Comment calculer 15 × 14 ?",
+        "expression": "15 × 14",
+        "options": ["210", "205", "215", "220"],
+        "answer": "210",
+        "explanation": "15 × 14 = (15 × 10) + (15 × 4) ou 150 + 60 = 210. Le mauvais nombre à multiplier est souvent le piège, se méprendre sur le second multiplicateur est classique.",
+        "hint": "Pense 15×10 puis 15×4."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 812 - 347 ?",
+        "expression": "812 - 347",
+        "options": ["465", "475", "455", "485"],
+        "answer": "465",
+        "explanation": "Pour 812 - 347, décomposez à 800 - 300 = 500, puis 500 - 40 = 460 et enfin 460 - 7 = 465. Garder une vision organisée des centaines et dizaines aide à contrôler les pertes de retenue.",
+        "hint": "Soustrais les centaines, ensuite ajuste."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien fait 144 ÷ 12 ?",
+        "expression": "144 ÷ 12",
+        "options": ["12", "13", "10", "9"],
+        "answer": "12",
+        "explanation": "144 ÷ 12 égale 12, car 12 fois 12 égale 144. Le piège serait de confondre ce avec un nombre qui, multiplié, donne une erreur, comme confondre avec 14.",
+        "hint": "12 x 12 rappelle un carré parfait."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que vaut 35 × 5 ?",
+        "expression": "35 × 5",
+        "options": ["175", "180", "165", "160"],
+        "answer": "175",
+        "explanation": "Pour 35 × 5, on peut décomposer en (30 × 5) + (5 × 5), soit 150 + 25 = 175. Le piège est d'oublier de re-multiplier après avoir séparé ou d'oublier de re-rassembler le total.",
+        "hint": "Pense en morceaux, puis rassemble."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le résultat de 15 % de 160 ?",
+        "expression": "0.15 × 160",
+        "options": ["24", "26", "22", "20"],
+        "answer": "24",
+        "explanation": "15% de 160 peut se voir comme 10% plus la moitié de 10%, soit 16 + 8, d'où 24. Ce type de questions présentent souvent le problème de la mauvaise estimation de chaque pallier de pourcentage.",
+        "hint": "Identifiez 10 %, puis trouvez 5 %."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel résultat pour (47 × 8) − 76 ?",
+        "expression": "(47 × 8) − 76",
+        "options": ["300", "290", "308", "314"],
+        "answer": "300",
+        "explanation": "47 × 8 donne 376, auquel on soustrait 76 pour obtenir 300. Il est crucial de réaliser chaque opération en séquence pour rester précis et ne pas mélanger ou oublier les résultats intermédiaires.",
+        "hint": "Multipliez, ensuite soustraire."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Calcul du suivant : (35 + 17) × 2 - 14 ?",
+        "expression": "(35 + 17) × 2 - 14",
+        "options": ["90", "102", "88", "92"],
+        "answer": "90",
+        "explanation": "D'abord résoudre 35 + 17 = 52, multiplier par 2 donnant 104, ensuite soustraire 14 pour 90. Évitez de perdre de vue l'ordre des opérations correctement appliqué dans ce problème.",
+        "hint": "Faites les additions en premier."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Résultat pour 23 × 17 ?",
+        "expression": "23 × 17",
+        "options": ["391", "389", "377", "373"],
+        "answer": "391",
+        "explanation": "23 × 17 en réalité signifie (20 + 3) × (10 + 7), ce qui devient 391 après expansion. La clé ici est la distributivité qui évite d'oublier les nombreuses étapes.",
+        "hint": "Pense à la distributivité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que vaut 8 % de 250 ?",
+        "expression": "0.08 × 250",
+        "options": ["20", "18", "22", "25"],
+        "answer": "20",
+        "explanation": "8 % correspond à 0,08 fois 250, qui peut être vu comme 10% (25) moins 2% (5), aboutissant à 20. Reconnaître l'amour des erreurs de pourcentages quels qu'il fût est souvent essentiel ici.",
+        "hint": "Décompose en 10 % - 2 %."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Calculer 35 % de 180 ?",
+        "expression": "0.35 × 180",
+        "options": ["63", "65", "61", "59"],
+        "answer": "63",
+        "explanation": "35 % de 180 est 0,35 fois 180, transformable en 30% (54) + 5% (9), soit 63. Ne pas estimer chaque partie du pourcentage individuellement expose à de potentieuses erreurs.",
+        "hint": "Décompose en 30 % + 5 %."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 48 × 25 ?",
+        "expression": "48 × 25",
+        "options": ["1200", "1150", "1250", "1230"],
+        "answer": "1200",
+        "explanation": "48 × 25 se résout par la division en simplifié, ou encore 48 fois un quart de 100, d'où 1200. Saisir la nature fractionnée de 25 avec un quart est crucial pour éviter toute confusion.",
+        "hint": "Réduisez avec la fraction 1/4."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que vaut 2³ ?",
+        "expression": "2³",
+        "options": ["8", "6", "10", "9"],
+        "answer": "8",
+        "explanation": "2<sup>3</sup> égale 8, car 2 doit être multiplié par lui-même trois fois : 2×2 = 4, puis 4×2 = 8. La puissance de trois est couramment confondue avec la puissance de deux.",
+        "hint": "Continue à multiplier à chaque état."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Résolvez: 16².",
+        "expression": "16²",
+        "options": ["256", "246", "266", "236"],
+        "answer": "256",
+        "explanation": "16 x 16 égale 256, ce qui est immédiatement appréciable en répétant 16, puis 256 suit comme une réponse l'anticipe à vérifier. La confusion avec les chiffres moins pour un résultat proches peut induire en erreur.",
+        "hint": "Pensez à 16 fois 16 littéralement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qu'est-ce que √225 ?",
+        "expression": "√225",
+        "options": ["15", "14", "16", "17"],
+        "answer": "15",
+        "explanation": "La racine carrée de 225 est 15, puisque 15 × 15 rend 225. Un piège facile ici est d'oublier que la racine carrée doit produire un nombre multiplé deux fois qui donne le nombre de départ.",
+        "hint": "Pense à quel chiffre donne 225 par double."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font (65 + 35) ÷ 5 ?",
+        "expression": "(65 + 35) ÷ 5",
+        "options": ["20", "25", "22", "30"],
+        "answer": "20",
+        "explanation": "Additionner 65 et 35 revient à 100, qui, divisé par 5, donne 20. L'ordre des opérations et la vérification beaucoup d'erreurs surgissent souvent lors d'étapes incorrectes ou mal ordonnées.","hint": "Faites les additions avant de diviser."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment calculer 13 % de 300 ?",
+        "expression": "0.13 × 300",
+        "options": ["39", "35", "40", "36"],
+        "answer": "39",
+        "explanation": "13% de 300 peut être trouvé en multipliant par 0,13, résultant en 39. Identifier une erreur dans la conversion de pourcentages en décimales est souvent crucial ici.","hint": "Rappelez-vous que 0,13 est utilisé pour 13 %."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qu'obtient-on en calculant (49 ÷ 7) + 6 ?",
+        "expression": "(49 ÷ 7) + 6",
+        "options": ["13", "11", "12", "10"],
+        "answer": "13",
+        "explanation": "49 ÷ 7 donne 7, auquel il faut ajouter 6 pour un résultat de 13. L'erreur provient souvent d'une mauvaise application de division et addition mal vérifiées.","hint": "Divisez avant d'additionner."
+    }
+]

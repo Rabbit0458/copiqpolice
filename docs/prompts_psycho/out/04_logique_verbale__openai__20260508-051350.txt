@@ -1,0 +1,362 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « joyeux » ?",
+    "prompt": null,
+    "options": ["Triste", "Heureux", "Fâché", "Ennuyé"],
+    "answer": "Heureux",
+    "explanation": "Le mot « joyeux » décrit quelqu'un qui se sent heureux ou satisfait. « Heureux » est le synonyme qui partage ce sens positif. En revanche, « triste » et « fâché » expriment des émotions négatives, et « ennuyé » implique une absence d'intérêt.",
+    "hint": "Pense à l'émotion positive."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « sombre » ?",
+    "prompt": null,
+    "options": ["Clair", "Noir", "Obscur", "Nuageux"],
+    "answer": "Clair",
+    "explanation": "« Sombre » décrit quelque chose de peu éclairé ou obscur. Son antonyme est « clair », qui désigne une apparence lumineuse. « Noir » et « obscur » sont des synonymes de sombre, tandis que « nuageux » ne se réfère pas à la luminosité en tant qu'opposé direct.",
+    "hint": "Cherche le contraire d'obscur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Chat est à ronronnement comme chien est à ___",
+    "prompt": null,
+    "options": ["Aboyer", "Japper", "Nager", "Écouter"],
+    "answer": "Aboyer",
+    "explanation": "Le chat produit un ronronnement, un son caractéristique. De même, le chien produit un aboiement. Japper est un son de chien plus aigu, nager ne concerne pas le son, et écouter est une action.",
+    "hint": "Pense au son typique produit par un chien."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Rouge, Bleu, Gros, Vert",
+    "options": ["Rouge", "Bleu", "Gros", "Vert"],
+    "answer": "Gros",
+    "explanation": "« Rouge », « bleu » et « vert » désignent des couleurs, tandis que « gros » décrit une taille ou un volume. La différence de catégorie fait de « gros » l'intrus.",
+    "hint": "Trois de ces mots se réfèrent à des couleurs."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « gros » ?",
+    "prompt": null,
+    "options": ["Mince", "Épais", "Léger", "Frêle"],
+    "answer": "Épais",
+    "explanation": "« Gros » désigne quelque chose d'important en volume. « Épais » est un synonyme qui décrit également une grande dimension ouépaisseur. « Mince » est au contraire, ainsi que « léger » et « frêle », qui désignent une faible apparence ou poids.",
+    "hint": "Cherche une autre mot signifiant une taille importante."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : \"Il a bravé la tempête et a ___ sa destination.\"",
+    "prompt": null,
+    "options": ["ignoré", "atteint", "oublié", "évité"],
+    "answer": "atteint",
+    "explanation": "La phrase suggère que, malgré des conditions difficiles, il est parvenu à son but. « Atteint » signifie arriver à destination, tandis qu'« ignoré », « oublié » et « évité » ne conviennent pas sémantiquement au contexte.",
+    "hint": "Cherche le mot qui exprime l'aboutissement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « courageux » ?",
+    "prompt": null,
+    "options": ["Peur", "Vaillant", "Craintif", "Timide"],
+    "answer": "Vaillant",
+    "explanation": "« Courageux » et « vaillant » décrivent quelqu'un avec du courage et de la bravoure. « Peur », « craintif », et « timide » expriment des traits opposés, caractérisant quelqu'un qui manque de courage.",
+    "hint": "Cherche un mot qui signifie aussi bravoure."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « haut » ?",
+    "prompt": null,
+    "options": ["Bas", "Grand", "Synthétique", "Élevé"],
+    "answer": "Bas",
+    "explanation": "Le mot « haut » décrit quelque chose situé à une élévation. Son antonyme est « bas », qui montre une situation à faible hauteur. « Grand » et « élevé » sont proches de « haut », tandis que « synthétique » n'est pas lié à la hauteur.",
+    "hint": "Pense à quelque chose qui est à l'opposé en altitude."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Poisson est à eau comme oiseau est à ___",
+    "prompt": null,
+    "options": ["Ciel", "Arbre", "Terre", "Cabane"],
+    "answer": "Ciel",
+    "explanation": "Le poisson vit et se déplace dans l'eau, tandis que l'oiseau volé dans le ciel. L'arbre et la cabane se situent au sol, la terre n'est pas le milieu de déplacement principal de l'oiseau.",
+    "hint": "Pense à l'environnement naturel de vol d'un oiseau."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Pêche, Pamplemousse, Fraise, Tomate",
+    "options": ["Pêche", "Pamplemousse", "Fraise", "Tomate"],
+    "answer": "Tomate",
+    "explanation": "« Pêche », « pamplemousse », et « fraise » sont des fruits sucrés, tandis que « tomate » est un fruit couramment considéré comme un légume du fait qu'il est utilisé principalement en cuisine salée.",
+    "hint": "Regarde comment ces aliments sont généralement utilisés."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « sec » ?",
+    "prompt": null,
+    "options": ["Humide", "Dur", "Friable", "Épais"],
+    "answer": "Humide",
+    "explanation": "Le terme « sec » décrit l'absence d'humidité. Son antonyme est « humide », qui signifie être chargé d'eau. « Dur », « friable », et « épais » ne sont pas des antonymes directs du trait d'humidité.",
+    "hint": "Cherche le mot qui désigne la présence de liquide."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Soleil est à jour comme lune est à ___",
+    "prompt": null,
+    "options": ["Saison", "Nuit", "Ombre", "Nuage"],
+    "answer": "Nuit",
+    "explanation": "Le soleil brille durant le jour, de même, la lune est visible principalement la nuit. « Saison » et « nuage » ne sont pas des périodes d'apparition typiques, et « ombre » n'est pas directement lié.",
+    "hint": "Pense au moment où la lune est généralement visible."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « maison » ?",
+    "prompt": null,
+    "options": ["Appartement", "Édifice", "Demeure", "Bibliothèque"],
+    "answer": "Demeure",
+    "explanation": "Une « maison » est un lieu d'habitation, synonyme plus élégant est « demeure ». « Appartement » et « édifice » sont des structures de logement divisibles, et « bibliothèque » est un lieu de lecture, non résidentiel.",
+    "hint": "Pense à un autre terme désignant un lieu de résidence."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « timide » ?",
+    "prompt": null,
+    "options": ["Audacieux", "Réservé", "Silencieux", "Hésitant"],
+    "answer": "Audacieux",
+    "explanation": "« Timide » désigne une personne hésitante ou réservée. « Audacieux » est son antonyme, désignant une personne qui ose. « Réservé », « silencieux », et « hésitant » sont des synonymes ou proches.",
+    "hint": "Cherche le mot qui implique l'assurance."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : \"Il est déjà ___ midi.\"",
+    "prompt": null,
+    "options": ["avant", "après", "pendant", "sous"],
+    "answer": "après",
+    "explanation": "La formulation ici est temporelle, en rapport avec l'horloge, et « après » indique le temps suivant midi. « Avant » indique précédemment, « pendant » implique simultanéité et « sous » est spatial.",
+    "hint": "Concentrez-vous sur l'indication temporelle."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « intelligent » ?",
+    "prompt": null,
+    "options": ["Stupide", "Éveillé", "Somnolent", "Ignare"],
+    "answer": "Éveillé",
+    "explanation": "« Éveillé » indique une vivacité d'esprit et une compréhension rapide, synonyme d'intelligence. « Stupide » et « ignare » sont négatifs, tandis que « somnolent » pointe vers la fatigue.",
+    "hint": "Pense à une personne qui comprend rapidement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « jour » ?",
+    "prompt": null,
+    "options": ["Crépuscule", "Nuit", "Matin", "Aube"],
+    "answer": "Nuit",
+    "explanation": "Le terme « jour » couvre la période de lumière, son antonyme est « nuit », représentant la période d'obscurité. « Crépuscule » et « aube » sont des transitions entre jour et nuit.",
+    "hint": "Considérez la période sans lumière."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Docteur est à patient comme enseignant est à ___",
+    "prompt": null,
+    "options": ["Élève", "Classe", "Leçon", "Apprentissage"],
+    "answer": "Élève",
+    "explanation": "Le docteur soigne son patient, de même que l'enseignant enseigne à son élève. La « classe » et la « leçon » sont contextuelles, mais elles ne désignent pas la relation individuelle.",
+    "hint": "Pensez à celui qui reçoit l'enseignement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « incliné » ?",
+    "prompt": null,
+    "options": ["Droit", "Courbé", "Plongée", "Évasé"],
+    "answer": "Droit",
+    "explanation": "« Incliné » décrit quelque chose qui penche. Son contraire est « droit », désignant une verticalité parfaite. « Courbé » et « évasé » continuent dans l'idée d'inclinaison.",
+    "hint": "Cherchez la direction opposée à l'inclinaison."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Journaliste est à écrire comme peintre est à ___",
+    "prompt": null,
+    "options": ["Sculpter", "Illustrer", "Peindre", "Dessiner"],
+    "answer": "Peindre",
+    "explanation": "Le journaliste produit des écrits. De même, un peintre produit des peintures. « Illustrer » et « dessiner » sont proches, mais leur mécanisme ne correspond pas précisément au terme principal.",
+    "hint": "Considérez l'action principale d'un peintre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'intrus ?",
+    "prompt": "Guitare, Violon, Flûte, Piano",
+    "options": ["Guitare", "Violon", "Flûte", "Piano"],
+    "answer": "Flûte",
+    "explanation": "« Guitare », « violon » et « piano » sont des instruments à corde. « Flûte » est à vent, ce qui en fait l'intrus.",
+    "hint": "Considérez le type d'instrument."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : \"Il aimerait qu'on ___ attentivement ses instru'lltions.\"",
+    "prompt": null,
+    "options": ["ignore", "écoute", "manque", "rejette"],
+    "answer": "écoute",
+    "explanation": "L'action désirée ici est l'attention. « Écoute » est approprié, « ignore », « manque » et « rejette » indiquent un manque d'intérêt ou une action négative.",
+    "hint": "Pense à l'attention attendue."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « érudit » ?",
+    "prompt": null,
+    "options": ["Inculte", "Savants", "Incroyant", "Désintéressé"],
+    "answer": "Savants",
+    "explanation": "Le terme « érudit » désigne une personne ayant beaucoup de connaissances. « Savants » est un synonyme. « Inculte », « incroyant », et « désintéressé » ont des significations contraires ou non-applicables.",
+    "hint": "Cherchez un mot décrivant une personne avec grande connaissance."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Clé est à serrure comme mot est à ___",
+    "prompt": null,
+    "options": ["Phrase", "Marteau", "Dictionnaire", "Signification"],
+    "answer": "Signification",
+    "explanation": "Une clé ouvre une serrure ainsi qu'un mot révèle une signification. « Phrase », « marteau », et « dictionnaire » ne relient pas directement à la correspondance proposée ici.",
+    "hint": "Considérez ce qu'un mot symbolise."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « oratoire » ?",
+    "prompt": null,
+    "options": ["Taciturne", "Bavard", "Éloquent", "Prolixe"],
+    "answer": "Taciturne",
+    "explanation": "L'« oratoire » réfère à un style oral ou expressif. « Taciturne » désigne une personne peu loquace, rendant ces termes contraires. « Bavard », « éloquent », et « prolixe » sont liés à une forme d'expression verbale active.",
+    "hint": "Recherchez ce qui est le plus opposé à l'art de l'expression."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'intrus ?",
+    "prompt": "Mer, Lac, Océan, Fleuve",
+    "options": ["Mer", "Lac", "Océan", "Fleuve"],
+    "answer": "Fleuve",
+    "explanation": "La « mer », l'« océan » et le « lac » sont des masses d'eau relativement stationnaires. Un « fleuve » est une voie d'eau en mouvement continu, le distinguant comme intrus.",
+    "hint": "Notez le caractère statique ou mobile."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : \"Ce magasin est connu pour ses produits de haute ___ .\"",
+    "prompt": null,
+    "options": ["quantité", "belle", "qualité", "origine"],
+    "answer": "qualité",
+    "explanation": "Le contexte évoque l'excellence, associée à « qualité ». « Quantité », « belle » et « origine » n'expriment pas l'idée de supériorité de produit attendue.",
+    "hint": "Pensez à ce qui désigne supérieur."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « prudent » ?",
+    "prompt": null,
+    "options": ["Imprudent", "Astucieux", "Avancé", "Circonspect"],
+    "answer": "Circonspect",
+    "explanation": "« Prudent » et « circonspect » indiquent une attention face aux risques. « Imprudent » est opposé, « astucieux » et « avancé » relèvent d'intelligence adaptative, pas de précaution.",
+    "hint": "Recherchez un terme qui indique la précaution."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « hostile » ?",
+    "prompt": null,
+    "options": ["Amical", "Répulsif", "Agressif", "Belliqueux"],
+    "answer": "Amical",
+    "explanation": "« Hostile » évoque une opposition ou une agressivité, donc son contraire s'exprime par « amical », qui désigne la gentillesse. « Répulsif », « agressif » et « belliqueux » continuent dans l'hostilité.",
+    "hint": "Pense au sentiment opposé à l'hostilité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Pince est à serrer comme cisaille est à ___",
+    "prompt": null,
+    "options": ["Couper", "Plier", "Soulever", "Appliquer"],
+    "answer": "Couper",
+    "explanation": "Une pince permet de serrer et maintenir des objets. Une cisaille, quant à elle, est conçue pour couper tel des feuilles ou des matériaux solides. « Plier », « soulever » et « appliquer » ne décrivent pas l'action principale d’une cisaille.",
+    "hint": "Penser à la fonction principale de cisailles."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « sédentaire » ?",
+    "prompt": null,
+    "options": ["Nomade", "Statique", "Fermé", "Établi"],
+    "answer": "Nomade",
+    "explanation": "« Sédentaire » concerne une vie fixe et peu de déplacement. Son antonyme est « nomade », qui implique le mouvement constant. « Statique », « fermé » et « établi » sont plus proches de sédentaires.",
+    "hint": "Cherche l'idée du mouvement et du déplacement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'intrus ?",
+    "prompt": "Guépard, Léopard, Jaguar, Loup",
+    "options": ["Guépard", "Léopard", "Jaguar", "Loup"],
+    "answer": "Loup",
+    "explanation": "« Guépard », « léopard » et « jaguar » sont de grands félins, alors que « loup » est un canidé, ce qui en fait l'intrus.",
+    "hint": "Pensez à la catégorie animale précise."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonymede « ataraxie » ?",
+    "prompt": null,
+    "options": ["Sérénité", "Angoisse", "Fureur", "Excitation"],
+    "answer": "Sérénité",
+    "explanation": "« Ataraxie » désigne un état de calme parfait, synonyme de « sérénité ». « Angoisse », « fureur » et « excitation » sont des oppositions directes, exprimant agitation ou stress.",
+    "hint": "Pensez à un état de tranquillité mentale."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Banc est à assis comme rebord est à ___",
+    "prompt": null,
+    "options": ["Pencher", "Appuyer", "Repos", "Nager"],
+    "answer": "Appuyer",
+    "explanation": "On s'assoit sur un banc, et l'on s'appuie sur un rebord. Les autres options, « pencher », « repos », et « nager », n'ont pas cette relation directe d'utilisation.",
+    "hint": "Considérer la fonctionnalité première en rapport corporel."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « paroxysme » ?",
+    "prompt": null,
+    "options": ["Apex", "Début", "Décrochage", "Fatigue"],
+    "answer": "Apex",
+    "explanation": "Le terme « paroxysme » désigne le point culminant d'une situation, tout comme « apex ». « Début », « décrochage » et « fatigue » réfèrent à des états de réduction ou commencement, non applicables.",
+    "hint": "Cherchez le sommet d’intensité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « euphémisme » ?",
+    "prompt": null,
+    "options": ["Hyperbole", "Litote", "Exagération", "Amplification"],
+    "answer": "Hyperbole",
+    "explanation": "« Euphémisme » adoucit, alors que « hyperbole » exagère, les rendant antonymes. « Litote » est une atténuation, similaire à euphémisme, et « exagération », « amplification » ne sont pas directement opposés.",
+    "hint": "Considérez l’idée d’exagérer contre atténuer."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « nébuleux » ?",
+    "prompt": null,
+    "options": ["Flou", "Clair", "Transparent", "Évident"],
+    "answer": "Flou",
+    "explanation": "« Nébuleux » signifie embrouillé, peu clair. « Flou » partage ce sens d'incertitude. « Clair », « transparent » et « évident » s’opposent en termes de qualité d'explication.",
+    "hint": "Recherchez un état d'obscurcissement ou d'incertitude."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Vis est à tournevis comme clou est à ___",
+    "prompt": null,
+    "options": ["Marteau", "Percer", "Poinçon", "Attacher"],
+    "answer": "Marteau",
+    "explanation": "Un tournevis est utilisé pour visser une vis, et un marteau sert à clouer. « Percer », « poinçon » et « attacher » ne fournissent pas cette mécanique directe.",
+    "hint": "Pensez à l'outil primaire utilisé pour insérer."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « proliférer » ?",
+    "prompt": null,
+    "options": ["Diminuer", "Augmenter", "Propager", "Développer"],
+    "answer": "Diminuer",
+    "explanation": "« Proliférer » désigne l'augmentation rapide. Son antonyme, « diminuer », implique une baisse. « Augmenter », « propager » et « développer » désignent aussi soit accroître ou s’étendre.",
+    "hint": "Cherchez l’idée de réduction par rapport à expansion."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète la phrase : \"Il a tenté de demeurer le plus ___ possible malgré les défis.\"",
+    "prompt": null,
+    "options": ["ferme", "calme", "inébranlable", "inexpressif"],
+    "answer": "calme",
+    "explanation": "L'adversité nécessitant la maîtrise de soi est souvent associée à rester « calme », idée amplifiée par situation de défis. « Ferme » et « inébranlable » incluent une force mais pas la tranquillité de gestion, « inexpressif » n’est pas nécessairement tranquille.",
+    "hint": "Penser à un état mental favorisant la gestion des événements troublants ."
+  }
+]

@@ -1,0 +1,434 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « content » ?",
+        "prompt": null,
+        "options": ["Heureux", "Triste", "Ennuyé", "Fâché"],
+        "answer": "Heureux",
+        "explanation": "« Content » signifie être satisfait ou joyeux, ce qui est synonyme de « heureux ». « Triste » est un antonyme qui signifie être malheureux. « Ennuyé » et « fâché » désignent des états d'esprit négatifs, mais ne signifient pas être content.",
+        "hint": "Pensez à un sentiment positif."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « rapide » ?",
+        "prompt": null,
+        "options": ["Lent", "Vif", "Calme", "Pesant"],
+        "answer": "Vif",
+        "explanation": "« Vif » désigne une action qui s'accomplit rapidement. « Lent » est l'antonyme de « rapide ». « Calme » et « pesant » ne décrivent pas la rapidité, mais plutôt des états de tranquillité ou de lourdeur.",
+        "hint": "Cherchez un adjectif lié à la vitesse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « ouvert » ?",
+        "prompt": null,
+        "options": ["Fermé", "Large", "Transparent", "Vaste"],
+        "answer": "Fermé",
+        "explanation": "L'antonyme de « ouvert », qui signifie qu'un objet n'oppose pas de barrière, est « fermé ». Les autres options, « large », « transparent » et « vaste », ne s'opposent pas directement au concept de « ouvert ».",
+        "hint": "Pensez à un état qui empêche le passage."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Chat, Chien, Cheval, Cerise",
+        "options": ["Chat", "Chien", "Cheval", "Cerise"],
+        "answer": "Cerise",
+        "explanation": "« Cerise » est un fruit, alors que les autres mots désignent des animaux domestiques ou familiers. Cette distinction de catégorie fait de « cerise » l'intrus. Les animaux mentionnés s'inscrivent plutôt dans le règne animal.",
+        "hint": "Réfléchissez à la catégorie alimentaire."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Pour ouvrir le coffre, il a tourné la clé dans la ___.\"",
+        "prompt": null,
+        "options": ["Serrure", "Poignée", "Fenêtre", "Clôture"],
+        "answer": "Serrure",
+        "explanation": "Dans cette phrase, « tourner la clé dans la serrure » décrit l'action précise de déverrouiller quelque chose. « Poignée » pourrait être confondante mais elle est généralement tenue, pas tournée. « Fenêtre » et « clôture » ne sont pas des dispositifs de verrouillage.",
+        "hint": "Pensez à ce qui garde les portes fermées."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « difficile » ?",
+        "prompt": null,
+        "options": ["Facile", "Dur", "Complexe", "Impraticable"],
+        "answer": "Facile",
+        "explanation": "« Facile » est le contraire de « difficile », indiquant quelque chose qui ne pose pas de problème. Les mots « dur », « complexe » et « impraticable » sont plutôt proches du concept de difficulté.",
+        "hint": "Cherchez un mot qui suggère l'aisance."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « petit » ?",
+        "prompt": null,
+        "options": ["Grand", "Minuscule", "Énorme", "Large"],
+        "answer": "Minuscule",
+        "explanation": "« Minuscule » est un synonyme de « petit », décrivant quelque chose de très réduit en taille. « Grand », « énorme » et « large » sont au contraire des termes indiquant la grandeur ou l'ampleur.",
+        "hint": "Pensez à quelque chose de très réduit."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette phrase, le mot \"banc\" signifie : \"Les élèves se sont assis sur le banc dans la cour.\"",
+        "prompt": null,
+        "options": ["Mobilier", "Institution financière", "Rangée de poisson", "Montagne"],
+        "answer": "Mobilier",
+        "explanation": "Ici, « banc » désigne un objet de mobilier sur lequel on peut s'asseoir, surtout dans des lieux publics. « Institution financière », « rangée de poisson » et « montagne » sont des significations du mot « banc » dans d'autres contextes.",
+        "hint": "Réfléchissez à l'endroit où l'on s'assied souvent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « joyeux » ?",
+        "prompt": null,
+        "options": ["Heureux", "Triste", "Ennuyé", "Fâché"],
+        "answer": "Heureux",
+        "explanation": "« Joyeux » et « heureux » sont des mots qui décrivent un état de contentement ou de satisfaction. En revanche, « triste », « ennuyé » et « fâché » décrivent des états émotionnels négatifs.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « froid » ?",
+        "prompt": null,
+        "options": ["Chaud", "Gelé", "Frais", "Glacial"],
+        "answer": "Chaud",
+        "explanation": "« Chaud » est l'antonyme de « froid », indiquant une température élevée. Les termes « gelé », « frais » et « glacial » sont aussi associés à diverses intensités du froid, mais ne s'y opposent pas.",
+        "hint": "Pensez à l'opposé d'une température basse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « maison » ?",
+        "prompt": null,
+        "options": ["Habitation", "Voiture", "Jardin", "Arbre"],
+        "answer": "Habitation",
+        "explanation": "« Habitation » désigne un lieu de résidence comme une maison. « Voiture », « jardin » et « arbre » ne sont pas des synonymes car ils désignent des objets ou des lieux différents.",
+        "hint": "Cherchez un terme général pour un lieu de vie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Vert, Bleu, Lèvre, Rouge",
+        "options": ["Vert", "Bleu", "Lèvre", "Rouge"],
+        "answer": "Lèvre",
+        "explanation": "« Lèvre » est l'intrus car c'est une partie du corps, tandis que « vert », « bleu » et « rouge » sont des couleurs. Les trois couleurs partagent une catégorie commune, ce qui les oppose au mot « lèvre ».",
+        "hint": "Parmi eux, un mot n'est pas une couleur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « haut » ?",
+        "prompt": null,
+        "options": ["Bas", "Grand", "Élevé", "Supérieur"],
+        "answer": "Bas",
+        "explanation": "« Bas » est l'antonyme de « haut », une position relative dans l'espace indiquant une altitude réduite. « Grand », « élevé » et « supérieur » renvoient à des notions de dimension supérieure ou de hauteur.",
+        "hint": "Cherchez la direction opposée dans l'espace."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « beau » ?",
+        "prompt": null,
+        "options": ["Joli", "Moche", "Affreux", "Hideux"],
+        "answer": "Joli",
+        "explanation": "« Beau » et « joli » sont des synonymes signifiant un aspect agréable à voir. Les termes « moche », « affreux » et « hideux » dénotent des qualités esthétiques négatives, opposées à la beauté.",
+        "hint": "Pense à quelque chose d'agréable visuellement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"La pluie a mouillé le ___ du pêcheur.\"",
+        "prompt": null,
+        "options": ["Chapeau", "Lac", "Soleil", "Glace"],
+        "answer": "Chapeau",
+        "explanation": "Dans cette phrase, un « chapeau » est un vêtement porté qui peut être mouillé par la pluie. Les options « lac », « soleil » et « glace » ne sont pas des objets portés et ne peuvent pas se mouiller directement.",
+        "hint": "Pense à un accessoire vestimentaire."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « facile » ?",
+        "prompt": null,
+        "options": ["Simple", "Difficile", "Compliqué", "Ardu"],
+        "answer": "Simple",
+        "explanation": "« Simple » est synonyme de « facile », signifiant quelque chose sans complication. « Difficile », « compliqué » et « ardu » sont des antonymes ou quasi-antonymes qui impliquent une complexité plus grande.",
+        "hint": "Cherchez une notion d'aisance."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « heureux » ?",
+        "prompt": null,
+        "options": ["Triste", "Content", "Joyeux", "Heureux"],
+        "answer": "Triste",
+        "explanation": "« Triste » est l'antonyme de « heureux », représentant une absence de bonheur. Les mots « content », « joyeux » et « heureux » sont des synonymes d'état de satisfaction ou de bonheur.",
+        "hint": "Cherchez un état émotionnel opposé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « achever » ?",
+        "prompt": null,
+        "options": ["Commencer", "Conclure", "Initier", "Lancer"],
+        "answer": "Conclure",
+        "explanation": "« Conclure » signifie finir quelque chose, ce qui en fait un synonyme d'« achever ». Au contraire, « commencer », « initier » et « lancer » sont des antonymes car ils marquent le début des actions.",
+        "hint": "Pensez à finir ce qui a été commencé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Tigre, Lion, Crocodile, Léopard",
+        "options": ["Tigre", "Lion", "Crocodile", "Léopard"],
+        "answer": "Crocodile",
+        "explanation": "« Crocodile » est un reptile, alors que « tigre », « lion » et « léopard » sont des félins. Tous les autres partagent une famille zoologique, ce qui distingue le crocodile.",
+        "hint": "Considérez la classification animale."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « augmenter » ?",
+        "prompt": null,
+        "options": ["Diminuer", "Élever", "Accroître", "Multiplier"],
+        "answer": "Diminuer",
+        "explanation": "« Diminuer » est l'antonyme de « augmenter », car il se réfère à une réduction en quantité. Les autres options comme « élever », « accroître » et « multiplier » impliquent toutes une augmentation.",
+        "hint": "Cherchez le sens inverse de croître."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Plombier est à tuyau comme électricien est à ___",
+        "prompt": null,
+        "options": ["Fil", "Tuyau", "Chaise", "Casserole"],
+        "answer": "Fil",
+        "explanation": "Un plombier travaille avec des tuyaux, tout comme un électricien travaille avec des fils. Les autres objets tels que « tuyau », « chaise » et « casserole » ne sont pas directement associés à la profession d'électricien.",
+        "hint": "Considérez l'outil ou matériel principal du métier."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Banane, Fraise, Pomme, Charbon",
+        "options": ["Banane", "Fraise", "Pomme", "Charbon"],
+        "answer": "Charbon",
+        "explanation": "« Charbon » est un combustible fossile, alors que les autres termes représentent des fruits. « Banane », « fraise » et « pomme » font partie d'une même catégorie alimentaire, oppose au charbon.",
+        "hint": "Focus sur la catégorie alimentaire."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Elle a pesé le pour et le ___ avant de décider.\"",
+        "prompt": null,
+        "options": ["Contre", "Mais", "Et", "Puis"],
+        "answer": "Contre",
+        "explanation": "L'expression « peser le pour et le contre » signifie évaluer les avantages et les inconvénients d'une décision. Les autres options n'ont pas de sens dans cette expression idiomatique précise.",
+        "hint": "Cherchez l'opposition traditionnelle dans l'expression."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « ennuyeux » ?",
+        "prompt": null,
+        "options": ["Fastidieux", "Amusant", "Frivole", "Gai"],
+        "answer": "Fastidieux",
+        "explanation": "« Fastidieux » est synonyme d'« ennuyeux », indiquant quelque chose de particulièrement monotone ou pénible. En revanche, « amusant », « frivole » et « gai » sont des qualités qui rendent une activité plaisante ou légère.",
+        "hint": "Concentrez-vous sur quelque chose qui manque d'intérêt."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Bibliothécaire est à livre comme cuisinier est à ___",
+        "prompt": null,
+        "options": ["Livre", "Casserole", "Clé", "Bureau"],
+        "answer": "Casserole",
+        "explanation": "Un bibliothécaire travaille avec des livres, tout comme un cuisinier travaille avec des casseroles. Les autres choix comme « livre », « clé » et « bureau » ne se rapportent pas directement à la cuisine.",
+        "hint": "Pensez à l'outil principal utilisé dans la cuisine."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « méticuleux » ?",
+        "prompt": null,
+        "options": ["Attentif", "Négligent", "Distrait", "Imprudent"],
+        "answer": "Attentif",
+        "explanation": "« Attentif » partage le même sens avec « méticuleux », décrivant une personne consciencieuse veillant aux détails. A contrario, « négligent », « distrait » et « imprudent » renvoient à des comportements moins rigoureux.",
+        "hint": "Focalisez sur le sens de conscience aux détails."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Ford, Toyota, Nike, BMW",
+        "options": ["Ford", "Toyota", "Nike", "BMW"],
+        "answer": "Nike",
+        "explanation": "« Nike » est une marque d'articles de sport, alors que « Ford », « Toyota » et « BMW » sont des marques d'automobiles. Ces dernières s'inscrivent dans l'industrie automobile, un domaine distinct des vêtements sportifs.",
+        "hint": "Pensez au secteur d'activité des sociétés."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot \"pièce\" signifie : \"Ils ont utilisé une pièce pour fabriquer ce moteur.\"",
+        "prompt": null,
+        "options": ["Composant", "Monnaie", "Chambre", "Scène"],
+        "answer": "Composant",
+        "explanation": "Ici, « pièce » signifie un élément ou un composant, nécessaire à la fabrication du moteur. « Monnaie », « chambre » et « scène » sont d'autres sens du mot dans différents contextes.",
+        "hint": "Pensez à un élément constructif."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « grossier » ?",
+        "prompt": null,
+        "options": ["Poli", "Malfaisant", "Imprécis", "Rude"],
+        "answer": "Poli",
+        "explanation": "« Poli » est l'antonyme de « grossier », décrivant une personne bien élevée, gracieuse ou courtoise. « Malfaisant », « imprécis » et « rude » peuvent partager certaines connotations de désagrément, mais ne s'opposent pas à la politesse.",
+        "hint": "Pensez à quelqu'un d'éduqué et courtois."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « optimiste » ?",
+        "prompt": null,
+        "options": ["Pessimiste", "Heureux", "Confiant", "Enthousiaste"],
+        "answer": "Pessimiste",
+        "explanation": "Un optimiste voit le bon côté des choses, tandis qu'un pessimiste voit le négatif. Les choix « heureux », « confiant » et « enthousiaste » partagent des connotations positives, mais ne sont pas opposés à « optimiste ».",
+        "hint": "Cherchez un point de vue négatif."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Or, Argent, Cuivre, Fleurs",
+        "options": ["Or", "Argent", "Cuivre", "Fleurs"],
+        "answer": "Fleurs",
+        "explanation": "« Fleurs » est un terme botanique, tandis que « or », « argent » et « cuivre » sont des métaux. Ces derniers appartiennent à la catégorie des éléments chimiques, ce qui établit la distinction.",
+        "hint": "Considérez la catégorie de métaux précieux."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Énigmatique", "Clair", "Lucide", "Évident"],
+        "answer": "Énigmatique",
+        "explanation": "« Sibyllin » signifie quelque chose de mystérieux ou difficile à comprendre, équivalemment à « énigmatique ». Au contraire, « clair », « lucide » et « évident » suggèrent une compréhension facile, rendant ces termes peu appropriés comme synonymes.",
+        "hint": "Pensez à quelque chose de mystérieux."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Aile est à avion comme voile est à ___",
+        "prompt": null,
+        "options": ["Bateau", "Auto", "Bicyclette", "Avion"],
+        "answer": "Bateau",
+        "explanation": "L'aile est une partie de l'avion qui lui permet de voler, tandis que la voile propulse le bateau grâce au vent. « Auto », « bicyclette » et « avion » ne fonctionnent pas sur ce principe.",
+        "hint": "Réfléchissez au moyen de propulsion par le vent."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « prolixe » ?",
+        "prompt": null,
+        "options": ["Concise", "Verbeux", "Ample", "Bavard"],
+        "answer": "Concise",
+        "explanation": "« Prolixe » se réfère à un style très discursif, l'antonyme est « concise » signifiant brièveté. « Verbeux », « ample » et « bavard » sont des termes similaires à « prolixe » en termes de quantité de paroles.",
+        "hint": "Cherchez un mot suggérant la brièveté."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « atavisme » ?",
+        "prompt": null,
+        "options": ["Hérédité", "Nouveauté", "Innovation", "Futurisme"],
+        "answer": "Hérédité",
+        "explanation": "« Atavisme » renvoie à des traits héréditaires anciens, tout comme « hérédité » indique la transmission de caractéristiques génétiques. « Nouveauté », « innovation » et « futurisme » dénotent des concepts opposés de contemporanéité.",
+        "hint": "Pensez aux anciens traits transmis."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Libraire, Bibliothèque, Livre, Scalpel",
+        "options": ["Libraire", "Bibliothèque", "Livre", "Scalpel"],
+        "answer": "Scalpel",
+        "explanation": "« Scalpel » est un outil chirurgical, tandis que « libraire », « bibliothèque » et « livre » sont liés aux livres. Les premiers partagent un rapport avec la vente ou le stockage de livres.",
+        "hint": "Pensez à ce qui coupe."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complétez l'analogie : Bicyclette est à rouler comme bateau est à ___",
+        "prompt": null,
+        "options": ["Flotter", "Voler", "Courir", "Escalader"],
+        "answer": "Flotter",
+        "explanation": "Une bicyclette roule sur terre, tandis qu'un bateau flotte sur l'eau. Les termes « voler », « courir », et « escalader » ne se rapportent pas au mécanisme de déplacement d'un bateau.",
+        "hint": "Considérer l'action principale sur un liquide."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « contrit » ?",
+        "prompt": null,
+        "options": ["Indifférent", "Pénitent", "Réflexif", "Coupable"],
+        "answer": "Indifférent",
+        "explanation": "« Contrit » signifie éprouver du regret sincère pour une faute, tandis que « indifférent » suggère un manque d'émotion ou de préoccupation. « Pénitent », « réflexif » et « coupable » impliquent quelque forme de remords ou introspection.",
+        "hint": "Cherchez une absence d'émotion."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « antédiluvien » ?",
+        "prompt": null,
+        "options": ["Très ancien", "Récent", "Moderne", "Néolithique"],
+        "answer": "Très ancien",
+        "explanation": "« Antédiluvien » signifie extrêmement vieux, synonyme de « très ancien ». « Récent » et « moderne » s'opposent à ce sens, et bien que « néolithique » se réfère à une époque ancienne, c’est une période précise.",
+        "hint": "Pensez à quelque chose d'avant le déluge."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot \"glace\" signifie : \"La mère a versé un sirop sur la glace pour la fête.\"",
+        "prompt": null,
+        "options": ["Dessert", "Substance froide", "Verre", "Patinoire"],
+        "answer": "Dessert",
+        "explanation": "Dans ce contexte, « glace » se réfère à la crème glacée, ce qui est un type de dessert. « Substance froide », « verre » et « patinoire » sont des significations possibles dans d'autres contextes.",
+        "hint": "Pensez à une friandise sucrée et froide."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : \"En naviguant sur la toile, il a découvert un site à la ___ technologie.\"",
+        "prompt": null,
+        "options": ["Pointe", "Fleuve", "Glace", "Montagne"],
+        "answer": "Pointe",
+        "explanation": "L'expression « à la pointe de la technologie » signifie l'utilisation de technologies très avancées. Les autres choix « fleuve », « glace » et « montagne » ne se rapportent pas au progrès technologique.",
+        "hint": "Recherchez une expression qui signifie avant-gardiste."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « diatribe » ?",
+        "prompt": null,
+        "options": ["Discours violent", "Éloge", "Apologie", "Compliment"],
+        "answer": "Discours violent",
+        "explanation": "« Diatribe » est un discours virulent, ce qui correspond à « discours violent ». Les mots « éloge », « apologie » et « compliment » évoquent des discours positifs ou favorables opposés aux critiques véhémentes.",
+        "hint": "Imaginez une critique acerbe."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « exacerber » ?",
+        "prompt": null,
+        "options": ["Apaiser", "Aggraver", "Renforcer", "Irriter"],
+        "answer": "Apaiser",
+        "explanation": "« Exacerber » signifie intensifier quelque chose, alors que « apaiser » signifie le calmer. « Aggraver », « renforcer » et « irriter » ont des connotations semblables d'intensification.",
+        "hint": "Cherchez un mot signifiant rendre plus doux."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot \"pièce\" signifie : \"Ils sont allés voir la pièce au théâtre.\"",
+        "prompt": null,
+        "options": ["Spectacle", "Monnaie", "Composant", "Chambre"],
+        "answer": "Spectacle",
+        "explanation": "Ici, « pièce » signifie un spectacle théâtral. Les autres choix, tels que « monnaie », « composant » et « chambre », sont des significations possibles de « pièce » mais dans des contextes totalement différents.",
+        "hint": "Pensez à une performance artistique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « munificent » ?",
+        "prompt": null,
+        "options": ["Généreux", "Avare", "Mesquin", "Parcimonieux"],
+        "answer": "Généreux",
+        "explanation": "« Munificent » est un terme de registre soutenu signifiant extrêmement généreux, équivalent à « généreux ». En revanche, « avare », « mesquin » et « parcimonieux » s'opposent à cette qualité de largesse.",
+        "hint": "Pensez à une capacité hors pair d'offrir."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « éphémère » ?",
+        "prompt": null,
+        "options": ["Permanent", "Momentané", "Transitoire", "Passager"],
+        "answer": "Permanent",
+        "explanation": "« Éphémère » signifie très bref, le contraire est « permanent » qui indique une durée durable. « Momentané », « transitoire » et « passager » dénotent également de l'éphémère mais avec des variantes de durée.",
+        "hint": "Cherchez une idée de continuité durable."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « supputer » ?",
+        "prompt": null,
+        "options": ["Estimer", "Ignorer", "Négliger", "Rejeter"],
+        "answer": "Estimer",
+        "explanation": "« Supputer » signifie évaluer ou calculer, c’est pourquoi « estimer » est le synonyme approprié. Les mots « ignorer », « négliger » et « rejeter » impliquent un détournement d'attention ou de considération.",
+        "hint": "Cherchez à donner une valeur."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot \"train\" signifie : \"Il a pris soin du train de sa robe avant la cérémonie.\"",
+        "prompt": null,
+        "options": ["Traîne", "Moyen de transport", "Ordre", "Séquence"],
+        "answer": "Traîne",
+        "explanation": "Dans ce contexte, « train » se réfère à l'extrémité flottante d'une robe, souvent posée au sol. Les autres choix, comme « moyen de transport », « ordre » et « séquence », peuvent être des sens possibles de « train » dans d'autres contextes.",
+        "hint": "Considérez une partie vestimentaire qui traîne."
+    }
+]

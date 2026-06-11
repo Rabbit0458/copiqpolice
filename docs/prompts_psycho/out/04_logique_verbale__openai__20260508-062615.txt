@@ -1,0 +1,281 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « heureux » ?",
+        "prompt": null,
+        "options": ["Triste", "Joyeux", "Lent", "Calme"],
+        "answer": "Joyeux",
+        "explanation": "Le mot 'heureux' est synonyme de 'joyeux', car les deux mots expriment un état de contentement ou de satisfaction. 'Triste' est l'antonyme, décrivant un sentiment de peine. 'Lent' et 'calme' n'ont pas de rapport direct avec le bonheur.",
+        "hint": "Pense à un sentiment positif."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « rapide » ?",
+        "prompt": null,
+        "options": ["Vite", "Agile", "Lent", "Fleuri"],
+        "answer": "Lent",
+        "explanation": "L'antonyme de 'rapide' est 'lent', qui signifie se déplacer ou agir avec une vitesse moindre. 'Vite' et 'agile' sont des synonymes de 'rapide', tandis que 'fleuri' ne décrit pas une vitesse.",
+        "hint": "Cherche le contraire de la vitesse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Chat est à miauler comme chien est à ___",
+        "prompt": null,
+        "options": ["Bâiller", "Aboyer", "Siffler", "Miauler"],
+        "answer": "Aboyer",
+        "explanation": "Le chat émet le son de 'miauler', tandis que le chien émet le son de 'aboyer'. 'Bâiller' est un acte que les deux peuvent faire, mais ce n'est pas un son caractéristique. 'Siffler' et 'miauler' sont moins appropriés dans cette analogie.",
+        "hint": "Pense au son typique du chien."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel mot est l'intrus ?",
+        "prompt": "Pomme, chaussette, poire, banane",
+        "options": ["Pomme", "Chaussette", "Poire", "Banane"],
+        "answer": "Chaussette",
+        "explanation": "La 'chaussette' est un vêtement, tandis que 'pomme', 'poire' et 'banane' sont des fruits. Le critère d'appartenance à une catégorie est ici basé sur le type de produit : fruit vs. vêtement.",
+        "hint": "Identifie ce qui n'est pas un fruit."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : Malgré la neige, elle a ___ au travail.",
+        "prompt": null,
+        "options": ["abandonné", "hésité", "renoncé", "continué"],
+        "answer": "continué",
+        "explanation": "La phrase implique une action persévérante malgré les conditions difficiles. 'Continué' est le verbe qui indique la poursuite de l'action. 'Abandonné' et 'renoncé' impliquent un arrêt, tandis que 'hésité' suggère une indécision pas une persistance.",
+        "hint": "Cherche un mot qui exprime la persistance."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette phrase, le mot « carton » signifie…",
+        "prompt": "Le déménagement nécessite beaucoup de carton à ranger.",
+        "options": ["Déchet", "Boîte", "Papier", "Feuille"],
+        "answer": "Boîte",
+        "explanation": "Dans le contexte du déménagement, 'carton' fait référence aux boîtes utilisées pour le rangement et le transport d'objets. 'Déchet' est une utilisation courante dans le recyclage, mais ne s'applique pas ici. 'Papier' et 'feuille' sont des formes, mais ne correspondent pas à l'objet description dans cette phrase.",
+        "hint": "Pense aux contenants de déménagement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « intelligent » ?",
+        "prompt": null,
+        "options": ["Stupide", "Incroyable", "Sage", "Ingenieux"],
+        "answer": "Ingenieux",
+        "explanation": "'Ingenieux' réfère à une manière astucieuse ou habile d’aborder des situations, donc proche de 'intelligent'. 'Stupide' est son antonyme, tandis que 'incroyable' et 'sage' ne reflètent pas spécifiquement la notion de capacité intellectuelle directe.",
+        "hint": "Cherche un synonyme basé sur l’astuce et la ruse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'intrus ?",
+        "prompt": "Tomate, Courgette, Fraise, Carotte",
+        "options": ["Tomate", "Courgette", "Fraise", "Carotte"],
+        "answer": "Fraise",
+        "explanation": "La fraise est un fruit, tandis que la tomate, courgette et carotte sont utilisés culinaire comme légumes. Le contexte de classification botanique et culinaire diffère, mais en pratique ici, seule la fraise est un sucré commun d'un plat.",
+        "hint": "Cherche un produit sucré plutôt qu'un salé."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : Pour sa patience, il a ___ une récompense.",
+        "prompt": null,
+        "options": ["obtenu", "perdu", "refusé", "ignoré"],
+        "answer": "obtenu",
+        "explanation": "Une récompense est généralement donnée en reconnaissance d'une qualité ou d'une action, ici 'obtenu' est le verbe approprié. 'Perdu' serait le résultat d'une défaite, 'refusé' implique un acte d'évitement actif, et 'ignoré' ne convient pas.",
+        "hint": "Quelle est l'action positive après l'effort ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'antonyme de « agréable » ?",
+        "prompt": null,
+        "options": ["Enchanté", "Plaisant", "Désagréable", "Amical"],
+        "answer": "Désagréable",
+        "explanation": "'Désagréable' signifie qui déplaît, l'opposé de 'agréable' qui est plaisant ou positif. 'Enchanté' et 'amical' sont des synonymes de plaisant dans des contextes sociaux et se rapportent à des sensations positives.",
+        "hint": "Pense à une sensation inverse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « fort » ?",
+        "prompt": null,
+        "options": ["Faible", "Puissant", "Léger", "Insignifiant"],
+        "answer": "Puissant",
+        "explanation": "'Puissant' découle de l'idée de force, correspondant à 'fort' dans divers contextes d’intensité ou de capacité. 'Faible' est l'antonyme, tandis que 'léger' et 'insignifiant' décrivent la force de manière réduite.",
+        "hint": "Un mot signifiant également énergique et influent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Écrivain est à plume comme peintre est à ___",
+        "prompt": null,
+        "options": ["Chapeau", "Palette", "Tableau", "Encre"],
+        "answer": "Palette",
+        "explanation": "Un écrivain utilise une plume pour écrire, tandis qu'un peintre utilise une palette pour mélanger ses couleurs. 'Chapeau' et 'tableau' sont accessoires à la peinture tandis qu''encre' n'est pas utilisée par peinture.",
+        "hint": "Cherche un outil essentiel à l'artiste."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel mot est l'intrus ?",
+        "prompt": "Écoute, Parole, Silence, Parfum",
+        "options": ["Écoute", "Parole", "Silence", "Parfum"],
+        "answer": "Parfum",
+        "explanation": "'Parfum' se distingue car il est lié à l'odorat, alors que 'écoute', 'parole', et 'silence' sont tous relatif à l'audition ou à la communication verbale.",
+        "hint": "C'est lié à un sens différent que l'audition."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : Malgré la fatigue, il a ___ à faire du sport.",
+        "prompt": null,
+        "options": ["cessé", "décidé", "abdiqué", "démontré"],
+        "answer": "décidé",
+        "explanation": "L'action implique de continuer une activité de volonté, même avec un obstacle, 'décidé' indique donc une intention positive et continue. 'Cessé', 'abdiqué', et 'démontré' n'engagent pas à la poursuite dans ce contexte.",
+        "hint": "Cherche quelque chose qui montre détermination."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « peur » ?",
+        "prompt": null,
+        "options": ["Horreur", "Deffence", "Courage", "Crainte"],
+        "answer": "Crainte",
+        "explanation": "'Crainte' est un synonyme de 'peur', tous deux évoquent une émotion de souci ou de recul face à un danger perçu. 'Horreur' peut être plus intense, 'courage' et 'défense' ne représentent pas cette idée.",
+        "hint": "Pense à un sentiment d'inquiétude ou d'anxiété."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « rigoureux » ?",
+        "prompt": null,
+        "options": ["Sévère", "Flou", "Relax", "Vague"],
+        "answer": "Sévère",
+        "explanation": "'Sévère' et 'rigoureux' indiquent tous deux une approche stricte ou exigeante. 'Flou' et 'vague' sont les contraires d'une méthode précise, tandis que 'relax' inclut une attitude plus détendue, à l’opposé de 'rigoureux'.",
+        "hint": "Cherche le mot indiquant la précision et l’exactitude."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : La réunion a été annulée car le directeur était en ___.",
+        "prompt": null,
+        "options": ["congé", "vacance", "déplacement", "voyage"],
+        "answer": "déplacement",
+        "explanation": "En contexte professionnel, 'déplacement' indique que le directeur n’était pas disponible au bureau, justifiant l'annulation. 'Congé' et 'vacance' impliquent repos ou temps libre, mais ne suggèrent pas l’engagement professionnel. 'Voyage' est trop générique.",
+        "hint": "Cherche une raison professionnelle de ne pas être présent."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Musicien est à orchestre comme athlète est à ___",
+        "prompt": null,
+        "options": ["Stade", "Équipe", "Course", "Instrument"],
+        "answer": "Équipe",
+        "explanation": "Un musicien fait partie d'un orchestre tout comme un athlète peut être membre d'une équipe avec d'autres athlètes. 'Stade' est un lieu, 'course' est une activité spécifique, et 'instrument' concerne l'orchestre individuelle.",
+        "hint": "Pense au collectif auquel l'athlète appartient."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « bavard » ?",
+        "prompt": null,
+        "options": ["Discret", "Volubile", "Éloquent", "Chahuteur"],
+        "answer": "Discret",
+        "explanation": "Le mot 'discret' est antonyme de 'bavard', car il décrit quelqu'un de réservé ou qui parle peu. 'Volubile' et 'éloquent' sont plutôt associés à la parole, tandis que 'chahuteur' est un comportement bruyant.",
+        "hint": "Cherchez une qualité inverse à celle de parler beaucoup."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel mot est l'intrus ?",
+        "prompt": "Médecin, Chirurgien, Dentiste, Greffier",
+        "options": ["Médecin", "Chirurgien", "Dentiste", "Greffier"],
+        "answer": "Greffier",
+        "explanation": "Les trois premiers termes, 'médecin', 'chirurgien', et 'dentiste', sont des professions médicales, tandis que 'greffier' est une profession juridique, travaillant dans le domaine du droit.",
+        "hint": "Identifie la profession non-médicale."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le sens contextuel de « pièce » ?",
+        "prompt": "Il collectionne les pièces comme un trésor précieux.",
+        "options": ["Partie", "Salle", "Objet", "Scène"],
+        "answer": "Objet",
+        "explanation": "Dans ce contexte, 'pièce' se réfère à un objet tangible telles que les pièces de monnaie qu'on peut collectionner. 'Partie' impliquerait un segment de quelque chose plus grand, 'salle' un lieu, et 'scène' un lieu d'action théâtrale.",
+        "hint": "Considère ce que l'on peut collectionner physiquement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel mot est l'intrus ?",
+        "prompt": "Piano, Violon, Trompette, Saxophone",
+        "options": ["Piano", "Violon", "Trompette", "Saxophone"],
+        "answer": "Violon",
+        "explanation": "Le 'violon' est un instrument à cordes, contrairement au 'piano' (cordes frappées), 'trompette' et 'saxophone' qui sont des instruments à vent. Le critère déterminant vient du type de mécanisme sonore.",
+        "hint": "Identifie l'instrument à cordes parmi ceux à vent."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « flexible » ?",
+        "prompt": null,
+        "options": ["Rigide", "Mou", "Décontracté", "Élastique"],
+        "answer": "Rigide",
+        "explanation": "'Rigide' décrit ce qui est inflexible, donc c'est l'antonyme parfait de 'flexible'. 'Mou' et 'décontracté' ne s'accordent pas avec la force ou la dureté, et 'élastique' associe souplesse à flexibilité.",
+        "hint": "Cherche la description d'un état inflexible ou dur."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : Après une longue journée, elle se sentait ___ épuisée.",
+        "prompt": null,
+        "options": ["partiellement", "incroyablement", "habituellement", "peu"],
+        "answer": "incroyablement",
+        "explanation": "L'adverbe 'incroyablement' intensifie le niveau de fatigue exprimé par 'épuisée'. 'Habituellement' ne correspond pas avec l'impression d'une journée singulière, 'peu' réduit l'épuisement, et 'partiellement' n'indique pas la totalité de l'effet ressenti.",
+        "hint": "Cherche un mot qui intensifie le sentiment d'épuisement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Clair", "Enigmatique", "Simple", "Élémentaire"],
+        "answer": "Enigmatique",
+        "explanation": "'Sibyllin' signifie mystérieux ou difficilement compréhensible, donc synonyme de 'énigmatique'. 'Clair', 'simple', et 'élémentaire' décrivent des états absolus de compréhension, opposés à la subtilité suggestive.",
+        "hint": "Regarde la référence à l'hermétisme et la codification."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel mot est un antonyme de « atavique » ?",
+        "prompt": null,
+        "options": ["Moderne", "Ancestral", "Héréditaire", "Récurrent"],
+        "answer": "Moderne",
+        "explanation": "'Atavique' concerne des traits ancestraux ou héréditaires, tandis que 'moderne' désigne des concepts actuels. 'Ancestral' et 'héréditaire' correspondent à des discussions des temps passés, et 'récurrent' décrit une fréquence qui n'est pas temporellement située.",
+        "hint": "Cherche ce qui est contemporain."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Panique est à calme comme chaleur est à ___",
+        "prompt": null,
+        "options": ["Froid", "Lumière", "Nuit", "Sombre"],
+        "answer": "Froid",
+        "explanation": "'Calme' est l'inverse de 'panique', de même que 'froid' est l'inverse de 'chaleur'. 'Lumière', 'nuit', et 'sombre' ne sont pas des opposés directs à considérer en température dans ce contexte.",
+        "hint": "Cherche des contraires."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le sens contextuel de « altérer » dans cette phrase ?",
+        "prompt": "Le temps a altéré le vieux manuscrit en rendant ses bords friables.",
+        "options": ["Amélioré", "Modifié", "Augmenté", "Éclairci"],
+        "answer": "Modifié",
+        "explanation": "Ici, 'altérer' signifie 'transformer' souvent avec une implication de détérioration, un synonyme serait 'modifier'. 'Amélioré' ou 'augmenté' seraient positifs et ne concernent pas le déclin ou l'usure naturelle.",
+        "hint": "Il s’agit d’un effet du changement intemporel."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel mot est l'intrus ?",
+        "prompt": "Messager, Messie, Révélateur, Prophète",
+        "options": ["Messager", "Messie", "Révélateur", "Prophète"],
+        "answer": "Messie",
+        "explanation": "Le 'messie' désigne une figure religieuse salvatrice, tandis que 'messager', 'révélateur', et 'prophète' représentent des rôles d’information ou de prédiction, non spécifiques à une philosophie religieuse ou doctrine.",
+        "hint": "Identifie la possibilité spirituelle unique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « prolixe » ?",
+        "prompt": null,
+        "options": ["Lacunaire", "Verbeux", "Épais", "Expressif"],
+        "answer": "Verbeux",
+        "explanation": "Les mots 'prolixe' et 'verbeux' tous deux décrivent quelqu'un qui s'exprime longuement, souvent de manière complex. À l'inverse, 'lacunaire' signale une carence, et 'épais' ou 'expressif' ne concernent pas la qualité du discours.",
+        "hint": "Associez avec la profusion des mots."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Marteau est à enclume comme hache est à ___",
+        "prompt": null,
+        "options": ["Plante", "Bûcheron", "Bois", "Forêt"],
+        "answer": "Bois",
+        "explanation": "Tout comme le marteau travaille conjointement avec l'enclume, la hache coupe le 'bois'. Alors que le 'bûcheron' manipule une hache, le 'bois' est le résultat demandé, tandis que 'forêt' est un environnement et non l'objet immédiat.",
+        "hint": "Pense à ce qui est directement affecté."
+    }
+]

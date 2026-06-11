@@ -1,0 +1,425 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"content\" ?",
+        "prompt": null,
+        "options": ["Heureux", "Triste", "Fâché", "Inquiet"],
+        "answer": "Heureux",
+        "explanation": "« Content » est synonyme de « heureux » car les deux expriment une émotion positive de satisfaction. « Triste », « fâché » et « inquiet » sont des antonymes ou expriment des émotions négatives, ce qui les disqualifie comme synonymes.",
+        "hint": "Pense à une émotion positive similaire."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"lourd\" ?",
+        "prompt": null,
+        "options": ["Léger", "Dense", "Massif", "Substantiel"],
+        "answer": "Léger",
+        "explanation": "« Léger » est l'antonyme de « lourd » car il désigne quelque chose de faible poids. « Dense », « massif » et « substantiel » renvoient tous à des qualités de poids ou de volume proche de « lourd », et ne s'opposent pas directement à lui.",
+        "hint": "Cherche un mot qui désigne l'opposé de « lourd »."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Plante est à terre comme poisson est à ___",
+        "prompt": null,
+        "options": ["Eau", "Aire", "Feu", "Sol"],
+        "answer": "Eau",
+        "explanation": "Un poisson vit dans l'eau tout comme la plante s'ancre dans la terre. L'aire, le feu et le sol sont incorrects car ils ne sont pas le milieu naturel pour un poisson.",
+        "hint": "Quel est le milieu naturel pour un poisson ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel mot est l'intrus ?",
+        "prompt": "Chat, Chien, Loup, Miel",
+        "options": ["Chat", "Chien", "Loup", "Miel"],
+        "answer": "Miel",
+        "explanation": "Le « miel » est un produit alimentaire. Les autres options sont des animaux. Ce qui classe clairement le miel dans une catégorie différente.",
+        "hint": "Pense aux catégories animales et alimentaires."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans la phrase, \"Le vent est doux ce soir\", le mot \"doux\" signifie…",
+        "prompt": "Le vent est doux ce soir.",
+        "options": ["Agrément", "Totalement", "Fort", "Sous pression"],
+        "answer": "Agrément",
+        "explanation": "« Doux » dans ce contexte signifie agréable, ni trop froid ni agressif. Les autres options ne se rapportent pas à la sensation apaisante que 'doux' évoque dans le cadre d'une caractérisation du vent.",
+        "hint": "Pense à l'adjectif qui décrit un vent plaisant."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"joyeux\" ?",
+        "prompt": null,
+        "options": ["Triste", "Heureux", "Calme", "Fâché"],
+        "answer": "Heureux",
+        "explanation": "« Joyeux » signifie plein de joie, similaire à « heureux ». Tandis que « triste », « calme » et « fâché » ont des significations émotionnelles qui ne sont pas synonymes avec « joyeux ».",
+        "hint": "Cherche un terme similaire à « joyeux » dans l'émotion positive."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"chaud\" ?",
+        "prompt": null,
+        "options": ["Tiède", "Froid", "Brûlant", "Bouillant"],
+        "answer": "Froid",
+        "explanation": "« Froid » est l'opposé direct de « chaud », indiquant une température basse. « Tiède », « brûlant » et « bouillant » se rapportent tous à des degrés qui incluent la chaleur et ne sont pas des opposés.",
+        "hint": "Pense à l'opposé d'une température haute."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Soleil est à jour comme lune est à ___",
+        "prompt": null,
+        "options": ["Nuit", "Matin", "Clarté", "Aube"],
+        "answer": "Nuit",
+        "explanation": "Le soleil est associé à la lumière du jour, tout comme la lune est traditionnellement associée à la nuit. Les autres options ne sont pas associées directement avec la représentation typique de la lune.",
+        "hint": "Quand apparaît normalement la lune dans le ciel ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Rouge, Vert, Doux, Bleu",
+        "options": ["Rouge", "Vert", "Doux", "Bleu"],
+        "answer": "Doux",
+        "explanation": "« Doux » désigne une sensation ou qualité, tandis que les autres termes sont des couleurs. Par conséquent, « doux » ne fait pas partie du même groupe catégorisé par la couleur.",
+        "hint": "Trois des mots décrivent des couleurs, l'autre non."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans la phrase, \"La scène était grandiose\", le mot \"grandiose\" signifie…",
+        "prompt": "La scène était grandiose.",
+        "options": ["Ordinaire", "Médiocre", "Époustouflante", "Simple"],
+        "answer": "Époustouflante",
+        "explanation": "« Grandiose » évoque quelque chose d'extrêmement impressionnant ou magnifique, comparable à « époustouflante ». « Ordinaire », « médiocre » et « simple » sont antonymes ou ne soutiennent pas cette idée d'envergure impressionnante.",
+        "hint": "Considérez une chose qui impressionne énormément."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"vivace\" ?",
+        "prompt": null,
+        "options": ["Éternel", "Mort", "Vibrant", "Déclinant"],
+        "answer": "Vibrant",
+        "explanation": "« Vivace » signifie énergique et plein de vie, ce qui est similaire à « vibrant ». « Éternel », « mort » et « déclinant » apportent des nuances de durabilité ou de manque de vie, donc ne sont pas synonymes.",
+        "hint": "Cherche un mot qui dégage une idée de vitalité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"jeune\" ?",
+        "prompt": null,
+        "options": ["Aîné", "Vieux", "Nouveau", "Récent"],
+        "answer": "Vieux",
+        "explanation": "« Vieux » est l'antonyme de « jeune », illustrant un état de plus grande progression dans l'âge. « Aîné », « nouveau » et « récent » ne forment pas une opposition directe à « jeune ».",
+        "hint": "Pense à l'opposé gravitant autour de l'âge."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Abeille est à ruche comme oiseau est à ___",
+        "prompt": null,
+        "options": ["Cage", "Nid", "Ciel", "Forêt"],
+        "answer": "Nid",
+        "explanation": "L'abeille vit dans une ruche tandis qu'un oiseau réside dans un nid. « Cage », « ciel » et « forêt » ne représentent pas la résidence naturelle de l'oiseau comme « nid » le fait.",
+        "hint": "Pense à la maison habituelle d'un oiseau."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel mot est l'intrus ?",
+        "prompt": "Pain, Croissant, Lait, Baguette",
+        "options": ["Pain", "Croissant", "Lait", "Baguette"],
+        "answer": "Lait",
+        "explanation": "Le lait est une boisson, différent des autres options qui sont toutes des produits de boulangerie. Ainsi, le lait se détache de ce groupe alimentaire.",
+        "hint": "Identifiez ce qui n'est pas un produit de boulangerie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans la phrase, \"Le chat est agile\", le mot \"agile\" signifie…",
+        "prompt": "Le chat est agile.",
+        "options": ["Paresseux", "Lent", "Adroit", "Rigide"],
+        "answer": "Adroit",
+        "explanation": "« Agile » signifie habile et rapide dans ses mouvements, ce qui se rapproche de la notion « adroit ». « Paresseux », « lent » et « rigide » évoquent plutôt l'idée contraire de maladresse ou de lenteur.",
+        "hint": "Pense au contraire de la maladresse et de la lenteur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"étrange\" ?",
+        "prompt": null,
+        "options": ["Banal", "Commun", "Insolite", "Naturel"],
+        "answer": "Insolite",
+        "explanation": "« Insolite » signifie curieux ou inhabituel, correspondant ainsi à « étrange ». « Banal », « commun » et « naturel » impliquent des aspects habituels qui ne capturent pas l'exceptionnalité du terme « étrange ».",
+        "hint": "Identifiez ce qui dénote quelque chose de peu commun."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"sombre\" ?",
+        "prompt": null,
+        "options": ["Clair", "Pâle", "Opaque", "Ténébreux"],
+        "answer": "Clair",
+        "explanation": "« Clair » est l'antonyme de « sombre », évoquant la luminosité par opposition à l'obscurité. « Pâle », « opaque » et « ténébreux » ne vont pas à l'encontre de l'idée d'obscurité.",
+        "hint": "Cherche le contraire de l'obscurité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Professeur est à école comme médecin est à ___",
+        "prompt": null,
+        "options": ["Cabinet", "Bibliothèque", "Jardin", "Usine"],
+        "answer": "Cabinet",
+        "explanation": "Un professeur travaille dans une école, tout comme un médecin travaille dans un cabinet. « Bibliothèque », « jardin » et « usine » ne sont pas liés de manière professionnelle directe avec la profession de médecin.",
+        "hint": "Pense au lieu de travail typique d'un médecin."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « courage » ?",
+        "prompt": null,
+        "options": ["Peureux", "Bravoure", "Honte", "Crainte"],
+        "answer": "Bravoure",
+        "explanation": "« Bravoure » est synonyme de « courage », les deux dénotent une force d'esprit pour affronter le danger. « Peureux » est un antonyme, tandis que « honte » et « crainte » sont des émotions liées au manque de courage.",
+        "hint": "Cherche un mot indiquant une force face au péril."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de \"méfiant\" ?",
+        "prompt": null,
+        "options": ["Confident", "Naïf", "Intrépide", "Douteux"],
+        "answer": "Naïf",
+        "explanation": "« Naïf » est l'antonyme de « méfiant », impliquant une confiance aveugle et sans soupçon. « Confident », « intrépide » et « douteux » ne montrent pas cette opposition directe à la méfiance.",
+        "hint": "Pense à une attitude qui manque de méfiance."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Médecin est à hôpital comme avocat est à ___",
+        "prompt": null,
+        "options": ["Tribunal", "Bureau", "École", "Usine"],
+        "answer": "Tribunal",
+        "explanation": "Un médecin travaille à l'hôpital, tout comme un avocat exerce au tribunal. « Bureau », « école » et « usine » ne sont pas les lieux professionnels standards pour un avocat.",
+        "hint": "Cherche le lieu associé au domaine du droit."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Cuivre, Fer, Or, Bois",
+        "options": ["Cuivre", "Fer", "Or", "Bois"],
+        "answer": "Bois",
+        "explanation": "Le « bois » est un matériau d'origine organique contrairement aux autres qui sont des métaux. C'est donc l'élément non métallique du groupe.",
+        "hint": "Identifiez le matériau qui n'est pas un métal."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans la phrase, \"La pièce était vaste\", le mot \"vaste\" signifie…",
+        "prompt": "La pièce était vaste.",
+        "options": ["Petite", "Étroite", "Spacieuse", "Limité"],
+        "answer": "Spacieuse",
+        "explanation": "« Vaste » indique une grande taille ou espace équivalent à « spacieuse ». « Petite », « étroite » et « limité » expriment l'absence d'espace considérable.",
+        "hint": "Pense à un espace grand."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « diligent » ?",
+        "prompt": null,
+        "options": ["Oisif", "Appliqué", "Négligent", "Inactif"],
+        "answer": "Appliqué",
+        "explanation": "« Diligent » et « appliqué » décrivent tous deux une action énergique et attentive. « Oisif », « négligent » et « inactif » sont des termes contraires impliquant un manque de diligence.",
+        "hint": "Cherche un mot décrivant le soin et l'attention."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de \"pénible\" ?",
+        "prompt": null,
+        "options": ["Facile", "Difficile", "Ardu", "Complexe"],
+        "answer": "Facile",
+        "explanation": "« Facile » s'oppose à « pénible », impliquant une tâche aisée à réaliser. « Difficile », « ardu » et « complexe » maintiennent l'idée de difficulté inhérente au terme « pénible ».",
+        "hint": "Cherche un mot qui exprime la facilité et non la difficulté."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Livre est à bibliothèque comme voiture est à ___",
+        "prompt": null,
+        "options": ["Garage", "Route", "Air", "Maison"],
+        "answer": "Garage",
+        "explanation": "Les livres sont stockés à la bibliothèque, tout comme les voitures sont souvent garées dans un garage. L'option « route » est de même associée à la voiture, mais pour autre contexte.",
+        "hint": "Considérez où une voiture est rangée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Balai, Aspirateur, Moquette, Serpillière",
+        "options": ["Balai", "Aspirateur", "Moquette", "Serpillière"],
+        "answer": "Moquette",
+        "explanation": "La « moquette » est un revêtement de sol alors que les autres sont des outils de nettoyage. Cela la classe ailleurs dans une catégorie non partagée avec les nettoyeurs.",
+        "hint": "Cherche le mot qui n'est pas un outil de nettoyage."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans la phrase, \"Sa réponse fut succincte\", le mot \"succinct\" signifie…",
+        "prompt": "Sa réponse fut succincte.",
+        "options": ["Longue", "Détaillée", "Brève", "Complexe"],
+        "answer": "Brève",
+        "explanation": "« Succinct » signifie court et précis, aussi simple que cela exprime une réponse brève. « Longue », « détaillée » et « complexe » sous-entendent le contraire d'une brièveté.",
+        "hint": "Considérez une réponse avec peu de mots."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de \"éloquent\" ?",
+        "prompt": null,
+        "options": ["Muet", "Incisif", "Expressif", "Taciturne"],
+        "answer": "Expressif",
+        "explanation": "« Éloquent » se réfère à une communication efficace et expressive. « Muet » et « taciturne » sont des antonymes ou synonymes d'une communication minimale. « Incisif » se réfère à débattre intelligemment, mais pas nécessairement dans un style éloquent ou expressif.",
+        "hint": "Cherche une qualité associée au discours fluide et captivant."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de \"flexible\" ?",
+        "prompt": null,
+        "options": ["Rigide", "Souple", "Malléable", "Élastique"],
+        "answer": "Rigide",
+        "explanation": "« Rigide » s'oppose directement à « flexible », impliquant une incapacité à plier. « Souple », « malléable » et « élastique » connotent toute une capacité à se plier ou s'étendre.",
+        "hint": "Identifiez ce qui est difficile à plier."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Musicien est à instrument comme écrivain est à ___",
+        "prompt": null,
+        "options": ["Bureau", "Livre", "Encre", "Stylo"],
+        "answer": "Stylo",
+        "explanation": "Un musicien utilise un instrument pour créer, tout comme un écrivain utilise un stylo pour écrire. Bien que l'écrivain puisse aussi avoir une relation avec le livre et l'encre, le stylo est d'un usage direct.",
+        "hint": "Pensez à l'outil direct utilisé pour écrire."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Médecin, Chirurgien, Dentiste, Juge",
+        "options": ["Médecin", "Chirurgien", "Dentiste", "Juge"],
+        "answer": "Juge",
+        "explanation": "« Juge » appartient au domaine judiciaire alors que les autres relèvent de la médecine. Cela fait du juge l'intrus parmi les différentes professions mentionnées.",
+        "hint": "Cherche la profession qui n'est pas un domaine médical."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans la phrase, \"Son discours était captivant\", le mot \"captivant\" signifie…",
+        "prompt": "Son discours était captivant.",
+        "options": ["Ennuyant", "Décevant", "Fascinant", "Indifférent"],
+        "answer": "Fascinant",
+        "explanation": "« Captivant » signifie que quelque chose capte complètement l'attention, tout comme « fascinant ». « Ennuyant », « décevant », et « indifférent » suggèrent un manque d'attrait et sont opposés au sens de captiver.",
+        "hint": "Pensez à quelque chose qui retient intensément l'attention."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « prolifique » ?",
+        "prompt": null,
+        "options": ["Rationnel", "Fécond", "Taciturne", "Aride"],
+        "answer": "Fécond",
+        "explanation": "« Prolifique » se rapporte à une abondance, souvent dans un contexte de production, semblant à « fécond ». « Rationnel », « taciturne », et « aride » signalent des sens qui ne traduisent pas une reproduction ou production abondante.",
+        "hint": "Cherche une idée exprimant beaucoup de production."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de \"opulent\" ?",
+        "prompt": null,
+        "options": ["Riche", "Dépouillé", "Fastueux", "Luxurieux"],
+        "answer": "Dépouillé",
+        "explanation": "« Dépouillé » signifie simple et dénué d'éléments superflus, en opposition à « opulent » qui signifie abondant et luxueux. Les mots « riche », « fastueux » et « luxurieux » correspondent plus à l'opulence.",
+        "hint": "Considérez ce qui est simple et sans apparat."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Plume est à oiseau comme écaille est à ___",
+        "prompt": null,
+        "options": ["Poisson", "Plante", "Araignée", "Chien"],
+        "answer": "Poisson",
+        "explanation": "La plume fait partie de l'oiseau, tout comme l'écaille est une partie naturelle d’un poisson. Les autres options ne possèdent pas d'écailles, ce qui élimine les autres choix.",
+        "hint": "Cherche un animal souvent recouvert d'écailles."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel mot est l'intrus ?",
+        "prompt": "Scalpel, Bistouri, Pinces, Bec Bunsen",
+        "options": ["Scalpel", "Bistouri", "Pinces", "Bec Bunsen"],
+        "answer": "Bec Bunsen",
+        "explanation": "Le « bec Bunsen » est un outil utilisé pour chauffer dans les laboratoires, tandis que le scalpel, le bistouri et les pinces sont des instruments chirurgicaux. Le contexte d'utilisation distingue clairement cet intrus.",
+        "hint": "Identifiez l'outil qui ne sert pas dans la chirurgie."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans la phrase, \"La prose était sibylline\", le mot \"sibylline\" signifie…",
+        "prompt": "La prose était sibylline.",
+        "options": ["Clair", "Énigmatique", "Simple", "Transparente"],
+        "answer": "Énigmatique",
+        "explanation": "Le terme « sibylline » veut dire obscure et difficile à comprendre, semblable à « énigmatique ». « Clair », « simple » et « transparente » sont en opposition avec cette notion.",
+        "hint": "Cherchez un mot qui désigne le mystère ou l'opacité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « altérer » ?",
+        "prompt": null,
+        "options": ["Conserver", "Modifier", "Stabiliser", "Restaurer"],
+        "answer": "Modifier",
+        "explanation": "« Altérer » signifie changer ou modifier, ce qui est synonyme de « modifier ». Les termes « conserver », « stabiliser » et « restaurer » impliquent une préservation et non un changement.",
+        "hint": "Pense à quelque chose qui implique un changement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de \"atrophie\" ?",
+        "prompt": null,
+        "options": ["Déclin", "Croissance", "Diminution", "Réduction"],
+        "answer": "Croissance",
+        "explanation": "« Croissance » s'oppose à « atrophie », qui signifie une diminution de taille ou de vitalité. « Déclin », « diminution », et « réduction » sont des processus de perte, similaires à l'atrophie.",
+        "hint": "Pense à l'opposé de la diminution ou de la perte."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Diplomatie est à politique comme chimie est à ___",
+        "prompt": null,
+        "options": ["Formule", "Physique", "Biologie", "Science"],
+        "answer": "Science",
+        "explanation": "La diplomatie fait partie de la pratique politique, tout comme la chimie est une science. « Formule », « physique » et « biologie » sont des aspects connexes, mais ne définissent pas la discipline entière.",
+        "hint": "Cherchez la discipline générale à laquelle appartient la chimie."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel mot est l'intrus ?",
+        "prompt": "Audit, Consultation, Diagnostic, Procédure",
+        "options": ["Audit", "Consultation", "Diagnostic", "Procédure"],
+        "answer": "Procédure",
+        "explanation": "« Procédure » est un ensemble de méthodes alors que les autres termes concernent l'examen ou l'évaluation dans un contexte professionnel. Ce qui distingue la procédure comme distincte et non directement liée à ces analyses.",
+        "hint": "Trouvez ce qui n'est pas un acte d'évaluation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans la phrase, \"Son discours était prolixe\", le mot \"prolixe\" signifie…",
+        "prompt": "Son discours était prolixe.",
+        "options": ["Brevity", "Verbeux", "Silencieux", "Concis"],
+        "answer": "Verbeux",
+        "explanation": "« Prolixe » signifie excessif en paroles ou en longueur, synonyme de « verbeux ». « Brevity », « silencieux » et « concis » sont les qualités opposées d'un tel discours.",
+        "hint": "Chercher un mot qui signifie une utilisation excessive de mots."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « érudit » ?",
+        "prompt": null,
+        "options": ["Ignorant", "Savant", "Stupide", "Aveugle"],
+        "answer": "Savant",
+        "explanation": "« Érudit » décrit quelqu'un de grandement instruit ou savant. « Ignorant », « stupide » et « aveugle » ne renvoient pas au savoir profond ou à la compréhension.",
+        "hint": "Cherche un terme qui évoque la connaissance approfondie."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de \"enclin\" ?",
+        "prompt": null,
+        "options": ["Opposé", "Prompt", "Prêt", "Incliné"],
+        "answer": "Opposé",
+        "explanation": "« Enclin » signifie avoir tendance à faire quelque chose, tandis que « opposé » signifie résister à cette tendance. « Prompt », « prêt » et « incliné » évoquent l'idée d'être disposé, aligné avec l'idée d'« enclin ».",
+        "hint": "Cherchez ce qui signifie une résistance à une tendance."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Roue est à voiture comme aile est à ___",
+        "prompt": null,
+        "options": ["Oiseau", "Aéroplane", "Marteau", "Bateau"],
+        "answer": "Aéroplane",
+        "explanation": "La roue est une partie essentielle de la voiture, tout comme l'aile est cruciale à la structure d'un aéorplane. « Oiseau », bien qu'il ait des ailes, n'est pas comparable structurellement comme une machine l'est.",
+        "hint": "Cherche une machine ayant des ailes comme élément structurel."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans la phrase, \"Il était contrit après ses actes\", le mot \"contrit\" signifie…",
+        "prompt": "Il était contrit après ses actes.",
+        "options": ["Heureux", "Ravi", "Repentant", "Indifférent"],
+        "answer": "Repentant",
+        "explanation": "« Contrit » désigne un sentiment de regret ou de repentance pour ses actions. Les mots « heureux », « ravi » et « indifférent » sont contraires à l'idée de remords et de regret.",
+        "hint": "Cherchez un mot traduisant le regret ou le remords."
+    }
+]

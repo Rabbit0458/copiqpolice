@@ -1,0 +1,324 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "Rue de la Paix, 75002 Paris",
+    "text_b": "Rue de la Paie, 75002 Paris",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques, car dans text_b, le mot « Paix » est écrit « Paie ». Un candidat pourrait se faire piéger par la proximité phonétique des deux mots et par une lecture rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Peugeot 208 bleue AB-321-CD",
+    "text_b": "Peugeot 208 bleue AB-321-CD",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Monsieur Martin, 45 ans",
+    "text_b": "Monsieur Martin, 45 an",
+    "is_true": false,
+    "explanation": "Les textes ne sont pas identiques car dans text_b, il manque le « s » à « ans ». Cette omission est subtile mais change le sens grammatical et pourrait passer inaperçue."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "14 rue des Lilas",
+    "text_b": "14 rue de Lilas",
+    "is_true": false,
+    "explanation": "La différence réside dans l'absence du mot « des » dans text_b. Les candidats peuvent se faire piéger par la somme visuelle et vérifier mentalement l'absence de petits mots."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Citroën C3 verte immatriculée ZZ-456-KL",
+    "text_b": "Citroën C3 verte immatriculée ZZ-456-KL",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Article 123 du code pénal",
+    "text_b": "Article 123 du code penal",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par l'accent sur le mot « pénal » qui manque dans text_b. Cette différence est subtile et pourrait passer inaperçue en raison d'une lecture rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Dentiste Dupont, 67 rue du Lac",
+    "text_b": "Dentiste Dupont, 67 rue du Lec",
+    "is_true": false,
+    "explanation": "La différence se trouve dans le mot « Lac » qui est remplacé par « Lec ». Cela pourrait piéger un candidat par la similitude visuelle des lettres « a » et « e »."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Plomberie Michel, 12 rue St-Jean",
+    "text_b": "Plomberie Michel, 12 rue St-Jean",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Nina Simon, née le 23 juin 1985",
+    "text_b": "Nina Simon, née le 23 juin 1985",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Carla Duval, 34 établissements",
+    "text_b": "Carla Duval, 34 etablissement",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par le nombre « s » à la fin d'« établissements » qui est absent dans text_b. L'absence de ce « s » peut être facilement négligée."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Marché du dimanche 9h-13h",
+    "text_b": "Marché du dimanche 9h-13h",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Garage Renault, secteur A2",
+    "text_b": "Garage Renault, secteur A2",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Boulangerie, 25 rue de la Gare",
+    "text_b": "Boulangerie, 25 rue de la Gard",
+    "is_true": false,
+    "explanation": "Le mot « Gare » est écrit « Gard » dans le text_b, ce qui peut être confondu à cause de la ressemblance visuelle des lettres. Il est important d'observer chaque lettre attentivement."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Camion Iveco blanc AB-987-FG",
+    "text_b": "Camion Iveco blanc AB-987-FG",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Immeuble C, 4ème étage",
+    "text_b": "Immeuble C, 4ème etage",
+    "is_true": false,
+    "explanation": "Dans text_b, le mot « étage » manque de l'accent sur le « e ». Ce type d'erreur d'accentuation est courant et requiert une attention particulière."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Agence postale, 75 avenue de Paris",
+    "text_b": "Agence postale, 75 avenue de Paris",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Suzanne Lefort, peintre",
+    "text_b": "Suzanne Lefort, peintre",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le véhicule Peugeot 308 a été aperçu quittant les lieux vers 18h30.",
+    "text_b": "Le véhicule Peugeot 308 a été aperçu quittant les lieux vers 18h 30.",
+    "is_true": false,
+    "explanation": "Text_b inclut un espace supplémentaire entre « 18h » et « 30 ». Cette subtilité peut passer inaperçue à cause d'une lecture rapide."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 14 mai 2024, il a été déclaré coupable de vol par le tribunal.",
+    "text_b": "Le 14 mai 2024, il a été déclaré coupable de vol par le tribunal.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Mme Durand a signalé le vol de son sac à main vers 10h15.",
+    "text_b": "Mme Durand a signalé le vol de son sac à main vers 10h15.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 17 mars 2024 à 17h45, un incident a eu lieu en centre-ville.",
+    "text_b": "Le 17 marz 2024 à 17h45, un incident a eu lieu en centre-ville.",
+    "is_true": false,
+    "explanation": "Dans text_b, le mot « mars » est incorrectement écrit « marz ». Cette erreur peut être facilement ignorée par un lecteur inattentif."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Un homme de 38 ans a été vu en train de casser une vitrine à 2h du matin.",
+    "text_b": "Un homme de 38 ans a été vu en train de casser une vitrine à 2h du matin.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 22 février 2025 à 21h, le suspect a quitté les lieux à pied.",
+    "text_b": "Le 22 février 2025 à 21h, le suspect a quitté les lieux à pied.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La déposition de Mme François Martin a été enregistrée à 11h.",
+    "text_b": "La déposition de Mme Francoise Martin a été enregistrée à 11h.",
+    "is_true": false,
+    "explanation": "Text_b utilise « Francoise » sans cédille, contrairement à text_a. Cette erreur subtile pourrait être négligée particulièrement à la fin d'une phrase."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "La Clio rouge a été observée quittant le parc vers 16h27.",
+    "text_b": "La Clio rouge a été observée quittant le parc vers 16h27.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le 5 juin 2025, vers 12h15, une altercation a été signalée à l'avenue de la république.",
+    "text_b": "Le 5 juin 2025, vers 12h15, une altercation a été signalée à l'avenue de la republique.",
+    "is_true": false,
+    "explanation": "Dans text_b, « république » est mal orthographié « republique ». L'absence d'accent sur le « e » pourrait facilement passer inaperçue."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le signalement mentionne une femme de 42 ans habillée de noir.",
+    "text_b": "Le signalement mentionne une femme de 42 ans habillée de noir.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Monsieur Pierre a été reçu en garde à vue à 15h30, selon le rapport.",
+    "text_b": "Monsieur Pierre a été recu en garde à vue à 15h30, selon le rapport.",
+    "is_true": false,
+    "explanation": "Text_b manque de l'accent sur le mot « reçu », le rendant « recu ». Cette différence, bien que subtile, change le sens grammatical."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "L'agent a noté la présence de trois individus suspects sur les lieux.",
+    "text_b": "L'agent a noté la présence de trois individus suspects sur les lieux.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le rapport du témoin oculaire mentionne une scène à 14h02.",
+    "text_b": "Le rapport du temoin oculaire mentionne une scène à 14h02.",
+    "is_true": false,
+    "explanation": "Dans text_b, le mot « témoin » est écrit sans accent, « temoin ». Ce type de différence pourrait être manqué à cause de la ressemblance des lettres."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Observation d'un break bleu vers le carrefour sud à 9h.",
+    "text_b": "Observation d'un break blue vers le carrefour sud à 9h.",
+    "is_true": false,
+    "explanation": "Le texte manque de l'accent dans « bleu », écrit « blue » dans text_b. Ceci pourrait facilement être confondu lors d'une vérification rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le 30 septembre 2024, Mme Lenoir a déposé une plainte alléguant plusieurs faits d'harcèlement répétitif sur son lieu de travail.",
+    "text_b": "Le 30 septembre 2024, Mme Lenoir a déposé une plainte alléguant plusieurs faits de harcèlement répétitif sur son lieu de travail.",
+    "is_true": false,
+    "explanation": "Dans text_a, il est écrit « d'harcèlement » alors que text_b contient « de harcèlement ». Cette subtilité grammaticale est souvent ignorée."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'agent 31450 a noté lors de son rapport que le véhicule gris suspecté avait quitté les lieux à une vitesse de 80 km/h vers le nord.",
+    "text_b": "L'agent 31450 a noté lors de son rapport que le vehicule gris suspecté avait quitté les lieux à une vitesse de 80 km/h vers le nord.",
+    "is_true": false,
+    "explanation": "Text_b ne contient pas d'accent sur le mot « véhicule », rendant la lecture differente. L'erreur pourrait passer inaperçue à cause de l'accent manquant."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon le procès-verbal, l'individu suspect portait une casquette rouge, des lunettes de soleil, et un sac noir à bandoulière.",
+    "text_b": "Selon le procès-verbal, l'individu suspect portait une casquette rouge, des lunettes de soleil, et un sac noir à bandouillère.",
+    "is_true": false,
+    "explanation": "La différence réside dans l'orthographe : « bandoulière » correctement écrit versus « bandouillère » avec un accent incorrect. Un lecteur peut facilement ignorer cette subtilité."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le plaignant a affirmé avoir reçu plusieurs appels anonymes entre le 15 et le 30 mai, sans qu'aucun message ne soit laissé.",
+    "text_b": "Le plaignant a affirmé avoir reçu plusieurs appels anonymes entre le 15 et le 30 mai, sans qu'aucun message ne soit laissé.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "À 21 heures le 12 mars 2025, trois individus armés ont forcé leur entrée dans la résidence du 23 rue des Lilas, selon les témoins.",
+    "text_b": "À 21 heures le 12 mars 2025, trois individus arnés ont forcé leur entrée dans la résidence du 23 rue des Lilas, selon les témoins.",
+    "is_true": false,
+    "explanation": "Dans text_b, « armés » est écrit « arnés », substituant 'm' par 'n', ce qui peut se confondre facilement, surtout quand les lettres sont proches."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le rapport indique que la voiture suspecte a été retrouvée stationnée près de la gare à 4h du matin, et comportait des traces de pneu.",
+    "text_b": "Le rapport indique que la voiture suspecte a été retrouvée stationnée pré de la gare à 4h du matin, et comportait des traces de pneu.",
+    "is_true": false,
+    "explanation": "L'accent sur le mot « près » est absent dans text_b. Ce type d'erreur est souvent négligé, pouvant entraîner une lecture incorrecte."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le document mentionnait plusieurs transactions suspectes sur le compte bancaire d'un monsieur E. Laurent entre le 6 et le 9 juin.",
+    "text_b": "Le document mentionnait plusieurs transactions suspectes sur le compte bancaire d'un monsieur E. Laurent entre le 6 et le 9 juin.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "En application de l'article 73 du code de procédure pénale, les citoyens peuvent appréhender l'auteur présumé d'un crime ou d'un délit flagrant.",
+    "text_b": "En application de l'article 73 du code de procédure pénale, les citoyens peuvent appréhender l'auteur présumé d'un crime ou d'un délit flagrarnt.",
+    "is_true": false,
+    "explanation": "La faute se trouve à la fin du mot « flagrant », où « rn » est transformé en « arnt ». Cette erreur peut être facilement négligée par la similitude des formes."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Lors de son audition, le suspect a maintenu n'avoir jamais eu l'intention de commettre un quelconque acte illégal.",
+    "text_b": "Lors de son audition, le suspect a maintenu n'avoir jamais eu l'intention de commettre un quelconque acte illegal.",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par l'accent sur le mot « illégal » absent dans text_b, ce qui change sensiblement l'orthographe, malgré leur prononciation similaire."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Il est porté à la connaissance du public que toute information relative aux événements du 12 juin doit être signalée immédiatement.",
+    "text_b": "Il est porté à la connaissance du public que tout information relative aux événements du 12 juin doit être signalée immédiatement.",
+    "is_true": false,
+    "explanation": "Dans text_b, l'erreur survient à « tout » au lieu de « toute », où il manque une lettre 'e'. Cette petite omission pourrait être ignorée lors d'une vérification rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Vers 22h45, une personnalité médiatique a été suivie par un groupe d'individus sur le boulevard principal, d'après la déclaration de Mr. T.",
+    "text_b": "Vers 22h45, une personnalité médiatique a été suivie par un groupe d'individus sur le boulevard principal, d'après la déclaration de Mr. T.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon les déclarations des témoins, l'accident s'est produit à l'intersection de la rue Nationale et de la rue Jean Moulin.",
+    "text_b": "Selon les déclarations des témoins, l'accident s'est produit à l'intersection de la rue Nationale et de la rue Jean Moul1n.",
+    "is_true": false,
+    "explanation": "Le mot « Moulin » est écrit « Moul1n » dans text_b, utilisant le chiffre „1” au lieu de l’« I ». Les lecteurs pourraient ignorer la différence visuelle entre le chiffre et la lettre."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le témoin a affirmé qu'un jeune homme portant un sweat à capuche sombre était présent lors de l'altercation.",
+    "text_b": "Le teimo1n a affirmé qu'un jeune homme portant un sweat à capuche sombre était présent lors de l'altercation.",
+    "is_true": false,
+    "explanation": "Dans text_b, le mot « témoin » est écrit « teimo1n », où le premier 'i' est remplacé par un '1'. Ceci pourrait être confondu facilement par une lecture rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'enquête a révélé que les suspects utilisaient un code Morse pour communiquer entre eux pour organiser leurs activités illégales.",
+    "text_b": "L'enquête a révélé que les suspects utilisaient un code Morse pour communiquer entre eux pour organiser leurs activités illégales.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "L'individu suspect a été observé quittant les lieux dans une grande précipitation, oubliant même un sac contenant divers effets personnels.",
+    "text_b": "L'individu suspect a été observé quittant les lieux dans une grande précipitation, oubliant même un sac contenant divers éffets personnels.",
+    "is_true": false,
+    "explanation": "Text_b contient une faute d'orthographe dans le mot « éffets », avec un accent incorrect. Cette différence est subtile et facilement ignorée à cause de la lecture rapide."
+  }
+]

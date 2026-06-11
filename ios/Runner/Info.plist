@@ -49,5 +49,17 @@
 		<false/>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<false/>
+		<!-- Google AdMob App ID (iOS).
+		     Le test ID ci-dessous fonctionne en debug.
+		     EN PROD : remplace par ton App ID AdMob (console.admob.com). -->
+		<key>GADApplicationIdentifier</key>
+		<string>ca-app-pub-3940256099942544~1458002511</string>
+		<key>SKAdNetworkItems</key>
+		<array>
+			<dict>
+				<key>SKAdNetworkIdentifier</key>
+				<string>cstr6suwn9.skadnetwork</string>
+			</dict>
+		</array>
 	</dict>
 </plist>

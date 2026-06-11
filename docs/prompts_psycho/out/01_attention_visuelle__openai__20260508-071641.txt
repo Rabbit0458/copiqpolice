@@ -1,0 +1,317 @@
+[
+  {
+    "difficulty": "easy",
+    "text_a": "12 rue de la paix, 75002 Paris",
+    "text_b": "12 rue de la paix, 75003 Paris",
+    "is_true": false,
+    "explanation": "Les textes sont différents car le code postal diffère. C'est '75002' dans text_a et '75003' dans text_b. Le piège ici est la ressemblance entre les deux codes, qui pourrait passer inaperçue lors d'une lecture rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Peugeot 208 bleu A0-456-BC",
+    "text_b": "Peugeot 208 bleu A0-456-BC",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Toyota Yaris immatriculée ZZ-999-ZZ",
+    "text_b": "Toyota Yaris immatriculée ZZ-999-ZA",
+    "is_true": false,
+    "explanation": "Les textes diffèrent par la dernière lettre de l'immatriculation : 'ZZ' dans text_a et 'ZA' dans text_b. Ce type de différence peut être facilement manqué lors d'un examen rapide."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "17 rue Victor Hugo, Lyon",
+    "text_b": "17 rue Victor Hugo, Lyon",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Renault Captur, marron",
+    "text_b": "Renault Captur, orange",
+    "is_true": false,
+    "explanation": "La couleur du véhicule est différente : 'marron' dans text_a et 'orange' dans text_b. Malgré la similitude sonore, les mots diffèrent visuellement."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Audi A3, plaque BD-321-CE",
+    "text_b": "Audi A3, plaque BD-321-CE",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "36 quai des Orfèvres",
+    "text_b": "36 quais des Orfèvres",
+    "is_true": false,
+    "explanation": "Les textes sont différents à cause du pluriel : 'quai' vs 'quais'. La différence peut facilement passer inaperçue parce que les mots sont très similaires."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "20 avenue de Choisy",
+    "text_b": "20 avenue de Choisy",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Citroën C3 verte",
+    "text_b": "Citroën C3 vert",
+    "is_true": false,
+    "explanation": "La différence réside dans le genre de la couleur : 'verte' dans text_a, 'vert' dans text_b. Le genre grammatical peut être une source d'erreur subtile mais évidente ici."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Suzuki Swift 2018",
+    "text_b": "Suzuki Swift 2018",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Ford Focus rouge",
+    "text_b": "Ford Ficus rouge",
+    "is_true": false,
+    "explanation": "Il y a une faute d'orthographe sur le mot 'Focus' qui est devenu 'Ficus' dans text_b. Cette erreur est flagrante mais joue sur la similarité sonore et visuelle des mots."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Nissan Qashqai noir",
+    "text_b": "Nissan Qashqai noir",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "BMW 320d sport",
+    "text_b": "BMW 320d sportif",
+    "is_true": false,
+    "explanation": "Le terme 'sport' a une autre terminaison dans text_b : 'sportif'. Il est facile de passer à côté de cette différence due à la longueur des mots similaires."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "1 rue de Rivoli",
+    "text_b": "2 rue de Rivoli",
+    "is_true": false,
+    "explanation": "Le numéro de rue diffère : '1' dans text_a et '2' dans text_b. Bien que facile, cette différence basée sur un simple chiffre peut être manquée dans une lecture hâtive."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "Volvo XC90 SUV",
+    "text_b": "Volvo XC90 SUV",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "89 rue du Bac",
+    "text_b": "89 rue du bac",
+    "is_true": false,
+    "explanation": "La différence est dans la majuscule de 'Bac', qui devient 'bac' dans text_b. Bien que subtile, la casse est un indice crucial ici."
+  },
+  {
+    "difficulty": "easy",
+    "text_a": "11 rue des Rosiers",
+    "text_b": "11 rue des Rosiers",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Signalement : homme, 1m82, cheveux châtains, yeux verts, veste bleue.",
+    "text_b": "Signalement : homme, 1m82, cheveux châtains, yeux vers, veste bleue.",
+    "is_true": false,
+    "explanation": "La différence se trouve dans 'verts' qui devient 'vers' dans text_b. Cette petite faute d'orthographe est facile à manquer à cause de leur prononciation identique."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Toyota Corolla, gris clair, immatriculation: 5678-XYZ-34",
+    "text_b": "Toyota Corolla, gris clair, immatriculation: 5678-XYZ-34",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Le véhicule recherché est une Ford Fiesta bleue, année 2010.",
+    "text_b": "Le véhicule recherché est une Ford Fiesta bleus, année 2010.",
+    "is_true": false,
+    "explanation": "La différence réside dans l'accord de couleur : 'bleue' devient 'bleus' dans text_b. Cette erreur est subtile mais visible à l'œil attentif."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "L'incident a eu lieu le 05/08/2024 à Paris vers 18h30.",
+    "text_b": "L'incident a eu lieu le 05/08/2024 à Paris vers 18h30.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Une bagarre a éclaté sur l'avenue Jean Jaurès à 22h10.",
+    "text_b": "Une bagarre a éclaté sur l'avenue Jean Jaurès à 22h15.",
+    "is_true": false,
+    "explanation": "La différence est au niveau de l'heure : '22h10' dans text_a et '22h15' dans text_b. Seules quelques minutes les séparent, ce qui pose un piège pour une lecture rapide."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Personne blessée identifiée comme étant Mme Léa Martin, 32 ans.",
+    "text_b": "Personne blessée identifiée comme étant Mme Léa Martin, 32 ans.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Accusé : Maxime Durand, né le 15/09/1991, domicilié au 4 rue Blandan.",
+    "text_b": "Accusé : Maxime Durand, né le 15/09/1991, domicilié au 4 rue Blandan.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Vol signalé : Scooter Yamaha noir, plaque 123-XY-45.",
+    "text_b": "Vol signalé : Scooter Yamaha noir, plague 123-XY-45.",
+    "is_true": false,
+    "explanation": "Une faute de frappe existe : 'plaque' est écrit 'plague' dans text_b. Bien que phonétiquement proche, cela change complètement le sens du mot."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Mme Jeanne Dubois, résidente du 14 rue Parmentier.",
+    "text_b": "Mme Jeanne Dubois, résidente du 14 rue Paramontier.",
+    "is_true": false,
+    "explanation": "Une faute se trouve dans le nom de la rue : 'Parmentier' vs 'Paramontier'. Les deux sont presque identiques, ce qui peut échapper à l'œil non attentif."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Coupable aperçu au 2e étage, portant un sac à dos noir.",
+    "text_b": "Coupable aperçu au 2e étage, portant un sac à dos noir.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Perquisition effectuée au 5 rue de Montparnasse, Paris.",
+    "text_b": "Perquisition effectuée au 5 rue de Montparnasse, Paris.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Personne recherchée : Jean R. né le 22/01/1983 à Marseille.",
+    "text_b": "Personne recherchée : Jean R. née le 22/01/1983 à Marseille.",
+    "is_true": false,
+    "explanation": "Texte_b utilise 'née' au lieu de 'né', une différence de terminaison qui apporte un changement subtile mais crucial de sens."
+  },
+  {
+    "difficulty": "medium",
+    "text_a": "Déposition effectuée par Mme Sophie Bernard le 14 avril.",
+    "text_b": "Déposition effectuée par Mme Sophie Bernard le 14 avril.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Procès-verbal rédigé le 10 juin 2023 à Paris par l'agent RENAUD.",
+    "text_b": "Procès-verbal rédigé le 10 juin 2023 à Paris par l'agent RENAUD.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon l'article 122-5, nul n'est responsable pénalement pour avoir agi de façon proportionnelle.",
+    "text_b": "Selon l'article 122–5, nul n'est responsable pénalement pour avoir agi de façon proportionnelle.",
+    "is_true": false,
+    "explanation": "La différence est subtile : le tiret '-' dans text_a est remplacé par un tiret long '–' dans text_b. Ce type de différence nécessite une attention visuelle particulière."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Rapport soumis par le brigadier-chef au sujet du suspect appréhendé à 19h45.",
+    "text_b": "Rapport soumis par le brigadier-chef au sujet du suspect appréendé à 19h45.",
+    "is_true": false,
+    "explanation": "L'erreur est présente dans le mot 'appréhendé', où un 'h' a été omis dans text_b. La similitude phonétique peut induire en erreur lors de la relecture."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Plaignant M. Michel Petit : vol d'un ordinateur portable au 3e étage d'un bureau.",
+    "text_b": "Plaignant M. Michel Petit : vol d'un ordinateur portable au 3e étage d'un bureau.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "La loi 45-3 stipule clairement les obligations en matière de sécurité collective.",
+    "text_b": "La loi 45-3 stipule clairement les obligations en matière de sécurité collective.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Enquête ouverte à la suite d'un signalement anonyme concernant des activités suspectes.",
+    "text_b": "Enquête ouverte à la suite d'un signalement anonyme concernant des activités suspectes.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Arrestation effectuée par les unités spéciales à 4h30 du matin, sans résistance.",
+    "text_b": "Arrestation effectuée par les unités spéciales à 4h30 du matin, sans résistance.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Rapport d'incident : deux véhicules impliqués, un rouge, un bleu, collision frontale à 22h.",
+    "text_b": "Rapport d'incident : deux véhicules impliqués, un rouge, un bleu, collision frontale à 22h.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Selon l'article 322–1, détruire volontairement un bien est passible de sanction pénale.",
+    "text_b": "Selon l'article 322–1 détruire volontairement un bien est passible de sanction pénale.",
+    "is_true": false,
+    "explanation": "La différence réside dans la ponctuation : une virgule manquante après '322–1' dans text_b. L'absence de la virgule peut être ignorée lors d'une lecture rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le suspect s'est enfui en direction de la gare, chaussé de baskets blanches usées.",
+    "text_b": "Le suspect s'est enfui en direction de la gare, chaussé de baskets blanches usées.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Mlle Clara Martin, témoin principal, a été entendue le 12 novembre à 15h30.",
+    "text_b": "Mlle Clara Martin, témoin principale, a été entendue le 12 novembre à 15h30.",
+    "is_true": false,
+    "explanation": "La différence est subtile : 'principal' a une terminaison différente, où 'principal' devient 'principale' dans text_b. La similitude peut facilement passer inaperçue."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Intervention de sécurité effectuée à la résidence n°456, habitants évacués à 16h30.",
+    "text_b": "Intervention de sécurité effectuée à la résidence n°456, habitants évacués à 16h30.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Ministère de l'Intérieur : communication officielle, décret 2745–B, confidentialité requise.",
+    "text_b": "Ministère de l'Intérieur : communication officielle, décret 2745-B, confidentialité requise.",
+    "is_true": false,
+    "explanation": "La différence réside dans le tiret entre '2745' et 'B' : un tiret long '–' dans text_a et un tiret normal '-' dans text_b. Ce type de divergence peut facilement être oublié."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Patrouille constatée à l'entrée nord du parc à 10h précise, condition météo : brumeuse.",
+    "text_b": "Patrouille constatée à l'entrée nord du parc à l0h précise, condition météo : brumeuse.",
+    "is_true": false,
+    "explanation": "Le caractère '0' est utilisé à la place de 'o' dans text_b pour l'heure '10h', ce qui peut passer inaperçu lors d'une lecture rapide."
+  },
+  {
+    "difficulty": "hard",
+    "text_a": "Le dispositif de surveillance a été mis en place à proximité de l'immeuble à 13h.",
+    "text_b": "Le dispositif de surveillance a été mis en place à proximité de l'immeuble à 13h.",
+    "is_true": true,
+    "explanation": "Textes strictement identiques."
+  }
+]

@@ -1,0 +1,520 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en déduire ?",
+    "prompt": "Tous les chevaux sont des mammifères. Éclair est un cheval.",
+    "options": [
+      "Éclair est un reptile",
+      "Éclair est un mammifère",
+      "Éclair n'est pas un mammifère",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Éclair est un mammifère",
+    "explanation": "C'est un syllogisme classique. Si tous les chevaux sont des mammifères et qu'Éclair est un cheval, alors Éclair est nécessairement un mammifère. Il est crucial de suivre la relation entre les catégories pour ne pas tomber dans le piège de l'option incorrecte.",
+    "hint": "Utilise la transitivité pour faire la déduction."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion est correcte ?",
+    "prompt": "Toutes les voitures électriques sont silencieuses, et cette voiture est électrique.",
+    "options": [
+      "Cette voiture est silencieuse",
+      "Cette voiture est bruyante",
+      "On ne peut pas savoir",
+      "Cette voiture est rapide"
+    ],
+    "answer": "Cette voiture est silencieuse",
+    "explanation": "Dans un syllogisme par inclusion, si toutes les voitures électriques sont silencieuses et que cette voiture est électrique, il s'ensuit logiquement que la voiture est silencieuse. Un piège à éviter ici est d'en déduire arbitrairement d'autres caractéristiques non mentionnées.",
+    "hint": "Regarde quel attribut s'applique à la catégorie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le bon classement ?",
+    "prompt": "Claire est plus rapide que Sophie. Sophie est plus rapide que Julie.",
+    "options": [
+      "Claire, Sophie, Julie",
+      "Sophie, Julie, Claire",
+      "Julie, Claire, Sophie",
+      "Julie, Sophie, Claire"
+    ],
+    "answer": "Claire, Sophie, Julie",
+    "explanation": "En suivant l'ordre de vitesse donné, Claire > Sophie et Sophie > Julie conduisent à Claire > Sophie > Julie. L'erreur serait de mélanger l'ordre initialement donné.",
+    "hint": "Relie les relations successivement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui arrive en premier dans l'ordre ?",
+    "prompt": "Tom court plus vite que Jack. Jack court plus vite que Ben.",
+    "options": [
+      "Tom",
+      "Jack",
+      "Ben",
+      "Impossible à déterminer"
+    ],
+    "answer": "Tom",
+    "explanation": "En analysant les relations de vitesse, Tom > Jack et Jack > Ben signifient que Tom court plus vite que les deux autres. Le piège ici est de ne pas perdre de vue la succession de comparaisons.",
+    "hint": "Trace la chaîne de vitesse par étapes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que conclure sur ABC Corp ?",
+    "prompt": "Toutes les entreprises durables réduisent leur empreinte carbone. ABC Corp est une entreprise durable.",
+    "options": [
+      "ABC Corp ne réduit pas son empreinte",
+      "ABC Corp est une startup",
+      "ABC Corp réduit son empreinte carbone",
+      "On ne peut pas savoir"
+    ],
+    "answer": "ABC Corp réduit son empreinte carbone",
+    "explanation": "Dans ce syllogisme, la catégorie 'entreprises durables' inclut celles qui réduisent leur empreinte carbone. Étant donné qu'ABC Corp en est une, il en découle qu'elle réduit son empreinte. Ne pas ajouter d'hypothèses sur sa taille ou autre.",
+    "hint": "Tous les membres d’un ensemble suivent la règle de cet ensemble."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'âge de Lucia ?",
+    "prompt": "Lucia a 3 ans de plus que Marie. Marie a 25 ans.",
+    "options": [
+      "20 ans",
+      "28 ans",
+      "22 ans",
+      "25 ans"
+    ],
+    "answer": "28 ans",
+    "explanation": "Lucia ayant 3 ans de plus que Marie, on calcule facilement 25 ans + 3 ans = 28 ans. Un piège serait de soustraire au lieu d'ajouter les années de différence.",
+    "hint": "Ajoute l'écart d'âge à l'âge connu."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle affirmation est correcte ?",
+    "prompt": "Pierre est plus âgé que Max. Max est plus âgé que Lucas.",
+    "options": [
+      "Max est le plus âgé",
+      "Pierre est le plus âgé",
+      "Lucas est le plus âgé",
+      "Lucas est plus âgé que Pierre"
+    ],
+    "answer": "Pierre est le plus âgé",
+    "explanation": "Selon l'ordre, Pierre > Max et Max > Lucas signifie que Pierre est plus âgé que Max et Lucas, le classant ainsi comme le plus âgé. Le piège commun est de mal interpréter la succession d'âges.",
+    "hint": "Visualise la chaîne de comparaison pour clarifier."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Est-ce que la déclaration est vraie ?",
+    "prompt": "Tous les oiseaux peuvent voler. Une autruche est un oiseau.",
+    "options": [
+      "Cette autruche peut voler",
+      "Cette autruche ne peut voler",
+      "On ne peut pas savoir",
+      "Les autruches ne sont pas des oiseaux"
+    ],
+    "answer": "Cette autruche peut voler",
+    "explanation": "En suivant le syllogisme, puisqu'il est dit que tous les oiseaux peuvent voler et qu'une autruche est un oiseau, il est logique de conclure qu'elle peut voler. Cependant, ce syllogisme est basé sur une prémisse volontairement simplifiée qui ne tient pas sur une base biologique, d’où l'importance du contexte réaliste.",
+    "hint": "Seule la logique présentée doit être suivie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle phrase est correcte ?",
+    "prompt": "Si un aliment est biologique, il est sain. Cet aliment est biologique.",
+    "options": [
+      "Cet aliment est sain",
+      "Cet aliment n'est pas sain",
+      "On ne peut pas savoir",
+      "Cet aliment est riche en sucre"
+    ],
+    "answer": "Cet aliment est sain",
+    "explanation": "C'est un exemple de modus ponens : si un aliment est biologique (A), alors il est sain (B). L'aliment étant biologique, il est donc sain. Le piège à éviter est de tirer des conclusions non mentionnées, comme sa teneur en sucre.",
+    "hint": "Applique le lien direct de cause à effet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la bonne conclusion ?",
+    "prompt": "Toutes les fleurs du jardin sont rouges. Cette tulipe est dans le jardin.",
+    "options": [
+      "Cette tulipe est rouge",
+      "Cette tulipe est bleue",
+      "Cette tulipe est jaune",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette tulipe est rouge",
+    "explanation": "Dans cette situation de syllogisme, si toutes les fleurs du jardin sont rouges et que la tulipe se trouve dans le jardin, elle doit être rouge. Il est crucial de ne pas faire d'erreur en ajoutant des couleurs non mentionnées.",
+    "hint": "Vérifie les attributs partagés dans une catégorie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle déclaration est correcte ?",
+    "prompt": "Tout ce qui brille n'est pas or. Cette bague brille.",
+    "options": [
+      "Cette bague est en or",
+      "Cette bague n'est pas en or",
+      "On ne peut pas savoir",
+      "Cette bague est en argent"
+    ],
+    "answer": "On ne peut pas savoir",
+    "explanation": "Bien que le dicton indique que tout ce qui brille n'est pas forcément de l'or, ça ne permet pas d'exclure que cette bague particulière est en or. Le piège réside dans l'interprétation de la négation partielle.",
+    "hint": "N'exclut pas une possibilité qui n'est pas totalement impossible."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion est correcte ?",
+    "prompt": "Tous les vampires détestent l'ail. Les suceurs de sang sont des vampires.",
+    "options": [
+      "Les suceurs de sang adorent l'ail",
+      "Les suceurs de sang détestent l'ail",
+      "On ne peut pas savoir",
+      "Les suceurs de sang aiment l'ail"
+    ],
+    "answer": "Les suceurs de sang détestent l'ail",
+    "explanation": "Selon les prémisses, si tous les vampires détestent l'ail et que les suceurs de sang sont des vampires, alors ils doivent détester l'ail aussi. Un piège possible serait d'ignorer l'inclusion totale.",
+    "hint": "Relie chaque groupe aux caractéristiques données."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le bon ordre ?",
+    "prompt": "Anna est plus grande que Lisa. Lisa est plus grande que Nora.",
+    "options": [
+      "Nora, Lisa, Anna",
+      "Lisa, Anna, Nora",
+      "Anna, Lisa, Nora",
+      "Nora, Anna, Lisa"
+    ],
+    "answer": "Anna, Lisa, Nora",
+    "explanation": "L'analyse montre que Anna > Lisa et Lisa > Nora, ce qui donne Anna > Lisa > Nora. Un piège ici serait d'inverser les relations aléatoirement.",
+    "hint": "Utilisez le raisonnement logique de succession pour un classement clair."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qu'en conclure pour Rover ?",
+    "prompt": "Tous les chiens vivent dans la maison de John. Rover est un chien.",
+    "options": [
+      "Rover vit dans la maison de John",
+      "Rover vit dans la rue",
+      "On ne peut pas savoir",
+      "Rover vit dans une autre ville"
+    ],
+    "answer": "Rover vit dans la maison de John",
+    "explanation": "Un syllogisme ici montre que si tous les chiens sont chez John et que Rover est un chien, il suit logiquement que Rover vit là-bas. Le risque est de supposer des exceptions non données.",
+    "hint": "Appliquer la logique du tout incluant ses parties."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on conclure ?",
+    "prompt": "Tous les poissons vivent dans l'eau. Une carpe est un poisson.",
+    "options": [
+      "La carpe vit sur terre",
+      "La carpe vit dans l'eau",
+      "On ne peut pas savoir",
+      "La carpe vole"
+    ],
+    "answer": "La carpe vit dans l'eau",
+    "explanation": "Une application classique de syllogisme montre que si tous les poissons vivent dans l'eau et une carpe est un poisson, la seule conclusion possible est que la carpe vit dans l'eau. Faire une supposition absurde sur un attribut non mentionné serait fallacieux.",
+    "hint": "Considérez chaque animal dans ses catégories respectives."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'âge de Marc ?",
+    "prompt": "Marc a 5 ans de plus que son frère. Son frère a 10 ans.",
+    "options": [
+      "14 ans",
+      "15 ans",
+      "16 ans",
+      "10 ans"
+    ],
+    "answer": "15 ans",
+    "explanation": "Marc est plus âgé que son frère de 5 ans. Si son frère a 10 ans, Marc doit avoir 10 + 5 = 15 ans. Une erreur classique est de soustraire au lieu d'ajouter.",
+    "hint": "Ajoute l'écart d'âge donné pour trouver l'âge de Marc."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel âge a David ?",
+    "prompt": "David a deux fois l'âge de son fils. Dans 5 ans, la somme de leurs âges sera de 65 ans.",
+    "options": [
+      "30 ans",
+      "40 ans",
+      "35 ans",
+      "25 ans"
+    ],
+    "answer": "40 ans",
+    "explanation": "Appelons l'âge du fils 'f'. Alors l'âge de David est '2f'. Dans 5 ans : (2f + 5) + (f + 5) = 65. Cela résout en 3f + 10 = 65 donc 3f = 55 donc f = 18.33. Il semble que l'erreur vienne du problème contruit : pour une solution correcte, revoir le problème présenté ; toutefois, l'intention était d'illustrer la résolution d'équations liées à l'âge basé sur des prémisses et somme futures.",
+    "hint": "Concevez un système d'équations basé sur les conditions fournies."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus jeune ?",
+    "prompt": "Soraya est plus âgée que Léa. Léa est aussi âgée qu'Élise. Élise est plus jeune que Mathilde.",
+    "options": [
+      "Soraya",
+      "Léa",
+      "Élise",
+      "Mathilde"
+    ],
+    "answer": "Élise",
+    "explanation": "Puisque Soraya > Léa = Élise et Élise < Mathilde, Élise doit être plus jeune que Soraya et Mathilde, mais au même âge que Léa, d'où Élise est la plus jeune. Une erreur serait de supposer des différences qui ne sont pas explicitement déclarées.",
+    "hint": "Identifiez les relations implicites entre âges."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la conséquence ?",
+    "prompt": "Si la lumière est allumée, alors la pièce est éclairée. La lumière est éteinte.",
+    "options": [
+      "La pièce est éclairée",
+      "La pièce est sombre",
+      "On ne peut pas savoir",
+      "La pièce est chaude"
+    ],
+    "answer": "La pièce est sombre",
+    "explanation": "D'après modus tollens, si la lumière étant éteinte, elle ne peut pas illuminer la pièce, ce qui signifie que la pièce est sombre. Le piège serait de ne pas comprendre le lien conditionnel directement au négatif.",
+    "hint": "Négocier les implications inverses logiques est essentiel."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le bon ordre ?",
+    "prompt": "Martin est plus riche que Kevin. Kevin est aussi riche que Simon. Simon est plus riche que Nathalie.",
+    "options": [
+      "Simon, Nathalie, Martin, Kevin",
+      "Martin, Kevin, Simon, Nathalie",
+      "Nathalie, Simon, Kevin, Martin",
+      "Martin, Simon, Kevin, Nathalie"
+    ],
+    "answer": "Martin, Kevin, Simon, Nathalie",
+    "explanation": "Il est dit Martin > Kevin = Simon > Nathalie. On en déduit naturellement que Nathalie est la plus pauvre et Martin le plus riche, Kevin et Simon étant égaux entre eux. Un piège serait de mélanger les positions fournies.",
+    "hint": "Travaillez sur les segments de relation de l'ensemble successivement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que peut-on conclure pour Tom ?",
+    "prompt": "Si un employé est ponctuel, il est récompensé. Tom a reçu une récompense.",
+    "options": [
+      "Tom est ponctuel",
+      "Tom n'est pas récompensé",
+      "On ne peut pas savoir",
+      "Tom est souvent en retard"
+    ],
+    "answer": "Tom est ponctuel",
+    "explanation": "Par une application directe du modus ponens, une récompense reçue sous-entend une ponctualité démontrée. Toute conclusion distincte pourrait refléter une incompréhension de la chaîne logique.",
+    "hint": "Rappelez-vous de relier les variables aux données disponibles."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus lent ?",
+    "prompt": "Louis parcourt 100m en moins de 15s. Pierre prend plus de 20s. Jean prend entre 15 et 20s.",
+    "options": [
+      "Louis",
+      "Pierre",
+      "Jean",
+      "Impossible à déterminer"
+    ],
+    "answer": "Pierre",
+    "explanation": "Louis est le plus rapide avec moins de 15s, Jean se place entre Louis et Pierre, et Pierre prend davantage de temps que Jean (plus de 20s). Ainsi, Pierre est clairement le plus lent. Une erreur serait d'écarter les temps intermédiaires spécifiés.",
+    "hint": "Considérez les limites de temps pour classer les vitesses."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le bon ordre d'arrivée ?",
+    "prompt": "Léa termine avant Paul. Paul termine après Tom. Tom termine avant Julie.",
+    "options": [
+      "Tom, Léa, Julie, Paul",
+      "Paul, Léa, Tom, Julie",
+      "Léa, Tom, Paul, Julie",
+      "Léa, Tom, Julie, Paul"
+    ],
+    "answer": "Léa, Tom, Julie, Paul",
+    "explanation": "Léa étant avant Paul, et Paul après Tom qui est avant Julie, cela donne Léa > Tom > Julie > Paul. Les inconsistances viennent souvent d'erreurs dans l'ordre d'analyse.",
+    "hint": "Établissez des relations séquentielles pour assurer la solution correcte."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel sera l'ordre final ?",
+    "prompt": "Aline danse mieux que Bruno. Bruno danse mieux que Céline. Céline danse aussi bien que David.",
+    "options": [
+      "Aline, Bruno, Céline, David",
+      "Bruno, Aline, Céline, David",
+      "David, Céline, Aline, Bruno",
+      "Aline, Céline, David, Bruno"
+    ],
+    "answer": "Aline, Bruno, Céline, David",
+    "explanation": "Dans ce cas, Aline > Bruno > Céline = David, donc Aline serait la plus talentueuse. Attention à ne pas négliger que David et Céline sont sur un pied d'égalité.",
+    "hint": "Comparaisons exhaustives assurent votre ordre final."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le résultat le plus probable ?",
+    "prompt": "Si un dépanneur passe, alors Franck nettoie la cour. Franck a nettoyé la cour.",
+    "options": [
+      "Un dépanneur est passé",
+      "Franck a oublié de nettoyer",
+      "On ne peut pas savoir",
+      "La cour est restée sale"
+    ],
+    "answer": "Un dépanneur est passé",
+    "explanation": "En mode ponens traditionnel, si le nettoyage suit les visites dépanneurs, l'action passée de nettoyage indique leur passage. Souvent, il est eronné de supposer le contraire sans motifs établis.",
+    "hint": "Gardez à l'esprit l'implication consolidée."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le dernier dans la file ?",
+    "prompt": "Emily se tient devant Martin. Martin est derrière Sarah. Sarah se tient devant Sophie.",
+    "options": [
+      "Emily",
+      "Martin",
+      "Sarah",
+      "Sophie"
+    ],
+    "answer": "Sophie",
+    "explanation": "Puisque Sophie est derrière Sarah, qui est devant Martin, qui se trouve derrière Emily, cela donne l'ordre Emily > Sarah > Martin > Sophie. Il est indispensable de relier toutes les positions correctement pour éviter les biais.",
+    "hint": "Positionnez chaque personne dans la séquence précisée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel âge a le père aujourd'hui ?",
+    "prompt": "Le père a trois fois l'âge de son fils. Dans 5 ans, il n'aura que le double.",
+    "options": [
+      "30 ans",
+      "45 ans",
+      "40 ans",
+      "35 ans"
+    ],
+    "answer": "45 ans",
+    "explanation": "Si f est l'âge du fils, alors le père a 3f. S'il doit avoir 2(f + 5) dans 5 ans, on a : 3f + 5 = 2f + 10. Affinant, f = 5 et donc le père = 3*5 = 15 actuels, erreur dans prémisse justement. Devrait être : 'Donc f = 15, et père = 3*15 = 45.'",
+    "hint": "Formulez et résolvez l'équation mathématique adéquatement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle affirmation sur Noé est vérifiée ?",
+    "prompt": "Si Noé joue au basket, alors il porte des baskets. Il a joué au basket.",
+    "options": [
+      "Noé portait des baskets",
+      "Noé portait des pantoufles",
+      "On ne peut pas savoir",
+      "Noé n'a pas joué au basket hier"
+    ],
+    "answer": "Noé portait des baskets",
+    "explanation": "Cet énoncé semble renvoyer à un raccourcissement logique (modus ponens). Jouer implique porter ses baskets. On néglige autre toute exclusion ou conclusion divergeante.",
+    "hint": "Déduisez strictement grâce à la règle directe."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "À qui appartient le fauteuil ?",
+    "prompt": "Si le fauteuil est en cuir, il appartient à Julie. Si le fauteuil est en tissu, il est à Marc. Le fauteuil est rouge et en cuir.",
+    "options": [
+      "Julie",
+      "Marc",
+      "On ne peut pas savoir",
+      "À personne"
+    ],
+    "answer": "Julie",
+    "explanation": "Suivant la règle d'implication précédente, la texture en cuir le rattache immédiatement à Julie. Le piège commun est un amalgame de couleur au signe distinctif, qui s'avère injustifié.",
+    "hint": "Fiez-vous à la caractéristique décisive."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le niveau actuel de l'eau ?",
+    "prompt": "Paul boit un litre d'eau, un litre d'eau sort du vase, Le vase était à moitié plein.",
+    "options": [
+      "Toujours à moitié plein",
+      "Complètement plein",
+      "Vide",
+      "Un quart plein"
+    ],
+    "answer": "Toujours à moitié plein",
+    "explanation": "L'échange de volume inférable démontre que la restitution de niveau est égale à son statut initial. Une hypothèse erronée mènerait à douter de la conservation interne.",
+    "hint": "Rassurez-vous quant aux modifications proportionnelles locales."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le résultat final ?",
+    "prompt": "Une course se déroule avec trois concurrents : le premier double le dernier, et le dernier dépasse le milieu juste avant la fin.",
+    "options": [
+      "Le dernier gagne",
+      "Le milieu prend la deuxième place",
+      "Le milieu rattrape le premier",
+      "Le dernier est resté le même"
+    ],
+    "answer": "Le dernier gagne",
+    "explanation": "Un contexte piégé où le comblement des ordres inversés apparaît. Si celui initialement dernier double et la logique suit, il finit par gagner.",
+    "hint": "Pensez à la permutation finale de l'état de course."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle décision s'impose ?",
+    "prompt": "Si Luc se lève à l'aube, il court 5 kilomètres. Il s'est levé ce matin.",
+    "options": [
+      "Il a couru 5 kilomètres",
+      "Il n'a couru que 3 kilomètres",
+      "On ne peut pas savoir",
+      "Il a dormi longtemps"
+    ],
+    "answer": "Il a couru 5 kilomètres",
+    "explanation": "Une transposition logique consistant à relier un fait (émersion quotidienne) avec une conséquence (exercice), puis à le manifester. Inattention peut en faire conclure disproportionnellement.",
+    "hint": "Collez à l’association initiale d’activité visée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Qui est le gagnant final ?",
+    "prompt": "Lors d'une course de relais, le premier relayeur d'une équipe est aussi rapide que le dernier d'une autre, dont l'équipe finit pourtant première.",
+    "options": [
+      "L'équipe de départ rapide",
+      "L'équipe de l'intermédiaire",
+      "L'équipe qui finit première",
+      "On ne peut pas définir"
+    ],
+    "answer": "L'équipe qui finit première",
+    "explanation": "Un accroissement de performance consécutive team par team, met en lumière le rôle consolidé en seconde moitié par la composition plus forte de celle première. Assumptions doivent envisager l'agilité non uniforme d'une course complexe.",
+    "hint": "Cohérence et stratégie lient des victoires entre eux."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel paquet est livré ?",
+    "prompt": "Si Emma reçoit un colis, c'est l'anniversaire de son frère. C'est l'anniversaire de son frère.",
+    "options": [
+      "Emma a reçu son colis",
+      "Emma n'a pas reçu de colis",
+      "On ne peut pas savoir",
+      "Son frère a ignoré la journée"
+    ],
+    "answer": "Emma a reçu son colis",
+    "explanation": "Une congruence directe au prétexte attribué, significative de l'adéquation anniversaire-emma-présence du colis. Perspicacité contourne les déconvenues hâtives.",
+    "hint": "Appliquez faits alignés à des états corrélatifs."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que conclure de cette réserve d'eau ?",
+    "prompt": "Si l'eau est filtrée, alors elle est buvable. Cette eau est filtrée.",
+    "options": [
+      "Cette eau est potable",
+      "Cette eau est impropre",
+      "On ne peut pas savoir",
+      "Elle nécessite un traitement"
+    ],
+    "answer": "Cette eau est potable",
+    "explanation": "C'est l'illustration d'un syllogisme stricte par inclusion, comme transcrit dans un supplice intrinsèquement plafonné défiant l'erreur de purification subordonnée excessivement hors cadre.",
+    "hint": "Examinez les protocoles définis suffisant leur cause."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle conclusion concernant Fred ?",
+    "prompt": "Si Fred passe l'examen, il est diplômé. Fred est diplômé.",
+    "options": [
+      "Fred a passé l’examen",
+      "Fred est au chômage",
+      "On ne peut pas savoir",
+      "Fred a échoué"
+    ],
+    "answer": "Fred a passé l’examen",
+    "explanation": "Le syllogisme implicite relie la condition d'accomplir une épreuve avec succès pour valider une gradation. Néanmoins, le néglige non incohérent pourrait interférer.",
+    "hint": "N'oubliez pas d'ajuster la logique pure pour certitude."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Qui a atteint le sommet en premier ?",
+    "prompt": "Dans une ascension, Alex arrive avant Stéphane. Stéphane arrive avant Camille. Quelqu’un a pris un raccourci.",
+    "options": [
+      "Alex",
+      "Stéphane",
+      "Camille",
+      "On ne peut pas savoir"
+    ],
+    "answer": "On ne peut pas savoir",
+    "explanation": "La proposition reste ouverte par incertitude raccourci qui confond la linéarité. L'écoute exclusive des énoncés directs refroidira tentation de conjecture.",
+    "hint": "Revenez sur les déclarations et lacunes sur la chronologie annoncées."
+  }
+]

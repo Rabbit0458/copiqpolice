@@ -1,0 +1,254 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « content » ?",
+    "prompt": null,
+    "options": ["Heureux", "Triste", "Inquiet", "Mécontent"],
+    "answer": "Heureux",
+    "explanation": "Le mot « heureux » est synonyme de « content », les deux exprimant un état de satisfaction. « Triste » est le contraire, tout comme « mécontent ». « Inquiet » désigne un autre sentiment négatif, ne correspondant pas à la joie.",
+    "hint": "Pense aux émotions positives."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « jour » ?",
+    "prompt": null,
+    "options": ["Nuit", "Lumière", "Matin", "Soleil"],
+    "answer": "Nuit",
+    "explanation": "« Nuit » est l'antonyme de « jour » car il s'agit de la période d'obscurité entre deux journées. « Lumière », « matin » et « soleil » sont associés au jour, mais ne sont pas des opposés.",
+    "hint": "Pense à la période où il fait sombre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Oiseau est à nid comme poisson est à ___",
+    "prompt": null,
+    "options": ["Mer", "Aquarium", "Récif", "Bocal"],
+    "answer": "Aquarium",
+    "explanation": "Un oiseau construit un nid pour vivre, de même, un poisson peut vivre dans un aquarium. Le récif et la mer sont des environnements naturels, ce qui n'est pas symétrique au concept de nidification.",
+    "hint": "Réfléchis à l'habitat artificiel."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Chat, Chien, Poisson, Loup",
+    "options": ["Chat", "Chien", "Poisson", "Loup"],
+    "answer": "Poisson",
+    "explanation": "Le poisson est aquatique, tandis que les autres animaux sont terrestres et appartiennent à la catégorie des mammifères.",
+    "hint": "Cherche l'animal qui ne vit pas sur terre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « commencer » ?",
+    "prompt": null,
+    "options": ["Finir", "Démarrer", "Arrêter", "Clore"],
+    "answer": "Démarrer",
+    "explanation": "« Démarrer » signifie débuter une action, tout comme « commencer ». « Finir », « arrêter » et « clore » désignent une action qui s'achève, ce qui est l'opposé de commencer.",
+    "hint": "Pense à appuyer sur le bouton 'start'."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « clair » ?",
+    "prompt": null,
+    "options": ["Lumineux", "Sombre", "Transparent", "Visible"],
+    "answer": "Sombre",
+    "explanation": "« Sombre » est l'antonyme direct de « clair » : il désigne ce qui manque de lumière. « Lumineux » et « transparent » sont synonymes de clair, tandis que « visible » n'exprime pas l'opposé du concept de clarté.",
+    "hint": "Cherche un mot lié à la lumière ou à son absence."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : « Avant de partir, il a pensé à ___ la porte.\"",
+    "prompt": null,
+    "options": ["Fermer", "Ouvrir", "Renverser", "Garder"],
+    "answer": "Fermer",
+    "explanation": "Il est logique de fermer la porte avant de quitter un lieu pour la sécuriser, tandis qu'ouvrir irait à l'encontre de cette idée. « Renverser » et « garder » ne conviennent pas dans ce contexte.",
+    "hint": "Pense à la sécurité d'une maison quand on part."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Voiture, Vélo, Avion, Glace",
+    "options": ["Voiture", "Vélo", "Avion", "Glace"],
+    "answer": "Glace",
+    "explanation": "La glace est un dessert froid, tandis que les autres sont des moyens de transport. Il s'agit de catégories distinctes.",
+    "hint": "Cherche ce qui ne sert pas à se déplacer."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « heureux » ?",
+    "prompt": null,
+    "options": ["Triste", "Joyeux", "Mécontent", "Furieux"],
+    "answer": "Joyeux",
+    "explanation": "« Joyeux » est synonyme de « heureux », les deux véhiculent un sentiment de plaisir. « Triste » et « mécontent » sont leurs antonymes, alors que « furieux » désigne une colère, éloignée du bonheur.",
+    "hint": "Cherche un terme synonyme de bonheur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « jour » ?",
+    "prompt": null,
+    "options": ["Crépuscule", "Nuit", "Aube", "Matin"],
+    "answer": "Nuit",
+    "explanation": "« Nuit » est l'antonyme de « jour » car elle représente la période d'obscurité, par opposition à la clarté du jour. « Crépuscule », « aube » et « matin » sont des moments spécifiques relatifs au jour.",
+    "hint": "Le jour n'est pas en soirée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : \"Il est temps de ___ le projecteur.\"",
+    "prompt": null,
+    "options": ["Allumer", "Éteindre", "Casser", "Oublier"],
+    "answer": "Allumer",
+    "explanation": "Il est courant d'allumer un projecteur pour qu'il fonctionne. Éteindre est l'opposé de cette action, tandis que « casser » et « oublier » ne sont pas pertinent dans ce contexte.",
+    "hint": "Pour voir clair, commence par cela."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de \"tranquille\" ?",
+    "prompt": null,
+    "options": ["Calme", "Bruyant", "Agité", "Vif"],
+    "answer": "Calme",
+    "explanation": "« Calme » et « tranquille » sont des synonymes exprimant un état de paix et de sérénité. « Bruyant », « agité » et « vif » expriment différents niveaux d'activité et de bruit, loin de la tranquillité.",
+    "hint": "Pense à une journée sans perturbations."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de \"riche\" ?",
+    "prompt": null,
+    "options": ["Pauvre", "Fortuné", "Aisé", "Opulent"],
+    "answer": "Pauvre",
+    "explanation": "« Pauvre » est l'antonyme direct de « riche », indiquant une manque de ressources. Les termes « fortuné », « aisé » et « opulent » sont des synonymes ou proches de « riche ».",
+    "hint": "Cherche le mot qui montre un manque d'argent."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Marteau est à clou comme tournevis est à ___",
+    "prompt": null,
+    "options": ["Vis", "Boulon", "Scie", "Tasse"],
+    "answer": "Vis",
+    "explanation": "Un marteau sert à enfoncer un clou, tandis qu'un tournevis sert à visser ou dévisser. Un boulon nécessite une clef, et une scie ou une tasse ne sont pas pertinentes dans ce contexte d'outillage.",
+    "hint": "Pense au complément du tournevis."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « précaire » ?",
+    "prompt": null,
+    "options": ["Stable", "Incertain", "Solide", "Durable"],
+    "answer": "Incertain",
+    "explanation": "« Incertain » est synonyme de « précaire », tous deux décrivent une situation non assurée. « Stable », « solide » et « durable » expriment une fiabilité qui s'oppose à la précarité.",
+    "hint": "Cherche un terme exprimant l'instabilité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « fraternel » ?",
+    "prompt": null,
+    "options": ["Hostile", "Amical", "Solidaire", "Fraternel"],
+    "answer": "Hostile",
+    "explanation": "« Hostile » exprime une opposition ou une animosité, contrairement au sens de « fraternel ». « Amical » et « solidaire » sont proches de « fraternel » quant à la bienveillance et l'entraide.",
+    "hint": "Pense au contraire d'un environnement amical."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Violoncelle, Hautbois, Flûte, Trompette",
+    "options": ["Violoncelle", "Hautbois", "Flûte", "Trompette"],
+    "answer": "Violoncelle",
+    "explanation": "Le violoncelle est un instrument à cordes, alors que le hautbois, la flûte et la trompette relèvent des instruments à vent.",
+    "hint": "Un seul ne se souffle pas."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Chef est à cuisine comme pilote est à ___",
+    "prompt": null,
+    "options": ["Cockpit", "Salon", "Garage", "Bureau"],
+    "answer": "Cockpit",
+    "explanation": "Un chef travaille en cuisine, tandis que le pilote opère dans le cockpit de l'avion. « Salon », « garage » et « bureau » ne sont pas pertinents dans le contexte du pilotage d'un avion.",
+    "hint": "Cherche l'endroit où le pilote se trouve."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : \"Pour cette mission, il est crucial de ___ tous les détails.\"",
+    "prompt": null,
+    "options": ["Oublier", "Ignorer", "Comprendre", "Détruire"],
+    "answer": "Comprendre",
+    "explanation": "Dans tout projet important, comprendre les détails est crucial. Oublier, ignorer, et détruire les détails va à l'encontre de cet objectif.",
+    "hint": "Pense à s'assurer que tout soit clair et su."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « ambigu » ?",
+    "prompt": null,
+    "options": ["Clair", "Confus", "Précis", "Évident"],
+    "answer": "Confus",
+    "explanation": "« Ambigu » et « confus » désignent une absence de clarté. « Clair », « précis », et « évident » sont antonymes étant donné leur expressivité d'une compréhension limpide.",
+    "hint": "Cherche l'idée d'une compréhension floue."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot \"pièce\" signifie : \"Elle a trouvé une pièce ancienne dans le grenier.\"",
+    "prompt": null,
+    "options": ["Salle", "Monnaie", "Partie", "Jeu"],
+    "answer": "Monnaie",
+    "explanation": "Dans le contexte, « pièce » désigne une monnaie ancienne. « Salle », « partie », et « jeu » désignent d'autres significations du mot sans rapport avec l'idée de découverte d'objets de valeur.",
+    "hint": "Ce mot est souvent utilisé pour décrire de l'argent."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « dilater » ?",
+    "prompt": null,
+    "options": ["Contracter", "Étendre", "Élasticité", "Développer"],
+    "answer": "Contracter",
+    "explanation": "« Contracter » signifie réduire en volume, antithèse de « dilater » qui signifie augmenter. « Étendre » et « développer » comportent l'idée d'élargissement, tandis qu'« élasticité » est une qualité sans lien axial avec l'opposition spécifiée.",
+    "hint": "Cherche une action qui oppose la notion d'élargir."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « audacieux » ?",
+    "prompt": null,
+    "options": ["Timide", "Intrépide", "Paresseux", "Craintif"],
+    "answer": "Intrépide",
+    "explanation": "« Intrépide » est synonyme de « audacieux » car ils décrivent une absence de peur face au risque. Les termes « timide », « paresseux », et « craintif » ne partagent pas cet enthousiasme ni cette bravoure.",
+    "hint": "Pense à quelqu'un qui n'a pas peur du danger."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Jasmin est à fleur comme chêne est à ___",
+    "prompt": null,
+    "options": ["Tronc", "Feuille", "Arbre", "Forêt"],
+    "answer": "Arbre",
+    "explanation": "Le jasmin est une fleur, tandis que le chêne est un arbre. Cette relation montre l'appartenance générique, où une fleur appartient au végétal, une espèce appartient à son genre. Tronc, feuille, et forêt ne respectent pas cette structure.",
+    "hint": "Considère l'espèce et son groupe biologique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « sibyllin » ?",
+    "prompt": null,
+    "options": ["Clair", "Énigmatique", "Evident", "Translucide"],
+    "answer": "Énigmatique",
+    "explanation": "« Sibyllin » et « énigmatique » indiquent tous deux quelque chose de mystérieux ou difficile à comprendre. « Clair », « évident », et « translucide » impliquent une compréhension facile et sont donc des antonymes.",
+    "hint": "Pense à un langage qui semble cacher des secrets."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète la phrase : \"Il a tenté de ___ ses erreurs comme des maladresses.\"",
+    "prompt": null,
+    "options": ["Disculper", "Justifier", "Dissimuler", "Confirmer"],
+    "answer": "Justifier",
+    "explanation": "« Justifier » ses erreurs en les expliquant comme des maladresses est une tentative de minimisation et d'excuse. « Disculper » implique innocence, « dissimuler » cache sans explication, et « confirmer » n'implique ici ni complaisance ni réassurance.",
+    "hint": "Cherche une action qui consiste à expliquer ou pardonner."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Hémoglobine, Chlorophylle, Globule, Procès",
+    "options": ["Hémoglobine", "Chlorophylle", "Globule", "Procès"],
+    "answer": "Procès",
+    "explanation": "Procès appartient au champ lexical judiciaire, tandis que les autres mots appartiennent au domaine biologique. Hémoglobine, chlorophylle, et globule sont liés à des éléments composant ou facilitant la vie.",
+    "hint": "Le scientifique n'a ici rien à faire avec la loi."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « atavique » ?",
+    "prompt": null,
+    "options": ["Moderne", "Antique", "Génétique", "Auroral"],
+    "answer": "Moderne",
+    "explanation": "« Moderne » est l'antonyme de « atavique », qui renvoie aux caractéristiques ancestrales. « Antique » et « génétique » sont soit de sens proche d'atavique, soit non antithétiques. « Auroral », relatif à l'aube, est hors contexte conceptuel cidessus.",
+    "hint": "Pense à ce qui renvoie à nos temps actuels."
+  }
+]

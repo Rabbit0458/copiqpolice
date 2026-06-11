@@ -1,0 +1,353 @@
+[
+    {
+        "difficulty": "Facile",
+        "sequence_text": "5, 10, 15, ?, 25",
+        "prompt": "Quel terme manque ?",
+        "options": ["18", "20", "22", "23"],
+        "answer": "20",
+        "explanation": "La progression est arithmétique avec une addition fixe de +5 à chaque étape. Ainsi, 15 + 5 = 20. Le piège serait de penser à un schéma multiplicatif à cause des chiffres ronds.",
+        "hint": "Réfléchis à l'addition constante."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "3, 6, 12, ?, 48",
+        "prompt": "Quel terme manque ?",
+        "options": ["18", "24", "30", "36"],
+        "answer": "24",
+        "explanation": "Chaque terme est obtenu en multipliant le précédent par 2. Donc, 12 × 2 = 24. Attention à ne pas prendre une somme ou une soustraction à la place de la multiplication.",
+        "hint": "La base est une multiplication simple."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "1, 1, 2, 3, 5, ?, 13",
+        "prompt": "Quel terme manque ?",
+        "options": ["7", "8", "9", "10"],
+        "answer": "8",
+        "explanation": "Cette suite suit la règle de Fibonacci. Chaque nombre est la somme des deux précédents, donc 3 + 5 = 8. Une erreur typique est de chercher une progression régulière et de sauter cette spécificité.",
+        "hint": "Tous les termes sont des sommes de deux éléments."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "1, 4, 9, ?, 25",
+        "prompt": "Quel terme manque ?",
+        "options": ["14", "15", "16", "17"],
+        "answer": "16",
+        "explanation": "Il s'agit d'une suite de carrés : 1², 2², 3², donc le terme manquant est 4² = 16. Ne pas confondre avec une progression arithmétique simple qui pourrait changer la régularité perçue.",
+        "hint": "Pense aux puissances de deux."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "?, 3, 6, 9, 12",
+        "prompt": "Quel terme manque ?",
+        "options": ["1", "2", "0", "3"],
+        "answer": "0",
+        "explanation": "La suite montre une progression arithmétique avec un ajout de 3 à chaque étape. Donc, avant 3, nous avons 0 (0 + 3 = 3). Le piège serait d'ignorer le sens de la suite et de penser à partir de 1.",
+        "hint": "Vérifie le motif subi par les termes."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "14, 21, 28, ?, 42",
+        "prompt": "Quel terme manque ?",
+        "options": ["34", "35", "36", "37"],
+        "answer": "35",
+        "explanation": "La suite ajoute constamment 7 : 14 + 7 = 21, 21 + 7 = 28, donc 28 + 7 = 35. Une erreur courante est de confondre cette progression avec une table différente.",
+        "hint": "Note une progression par multiples de 7."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "10, 20, ?, 40, 50",
+        "prompt": "Quel terme manque ?",
+        "options": ["25", "30", "35", "35"],
+        "answer": "30",
+        "explanation": "Nous sommes en présence d'une suite arithmétique avec un ajout de 10 à chaque étape. L'erreur peut provenir d'une mauvaise lecture des termes ou de l'ajout.",
+        "hint": "Observe le pas constant entre chaque chiffre."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "2, 6, 10, ?, 18",
+        "prompt": "Quel terme manque ?",
+        "options": ["12", "14", "16", "15"],
+        "answer": "14",
+        "explanation": "Chaque nombre augmente de 4 par rapport au précédent : 2, 6, 10, donc 10 + 4 = 14. Un piège serait de suivre une progression par paires au lieu de chiffres réels.",
+        "hint": "Réfléchis en termes d'addition fixe."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "7, 14, 21, ?, 35",
+        "prompt": "Quel terme manque ?",
+        "options": ["28", "27", "25", "30"],
+        "answer": "28",
+        "explanation": "C'est une multiplication par 7 : 7 × 1, 7 × 2, 7 × 3... Donc, le terme manquant est 7 × 4 = 28. Le danger est de deviner une autre suite, telle une addition simple.",
+        "hint": "Chaque terme est un multiple de 7."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "11, 22, 33, ?, 55",
+        "prompt": "Quel terme manque ?",
+        "options": ["44", "45", "46", "43"],
+        "answer": "44",
+        "explanation": "La progression ici est par multiplication par 11, soit : 11, 22 (11 × 2), 33 (11 × 3), donc le suivant est 44 (11 × 4). Une erreur commune serait de s'attendre à une progression linéaire via addition.",
+        "hint": "Identifier les nombres comme multiples."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "5, 10, ?, 25, 30",
+        "prompt": "Quel terme manque ?",
+        "options": ["15", "17", "18", "19"],
+        "answer": "20",
+        "explanation": "Il s'agit d'une progression par sauts de 5 unités. Donc, après 10, nous avons 10 + 5 = 15. Attention à ne pas confondre avec un schéma de multiplication.",
+        "hint": "Additionne un nombre fixe à chaque étape."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "2, 4, ?, 8, 10",
+        "prompt": "Quelle valeur complète la suite ?",
+        "options": ["5", "6", "7", "9"],
+        "answer": "6",
+        "explanation": "La séquence suit une progression arithmétique, chaque valeur augmentant de 2 par rapport à la précédente : 2, 4, donc 6 (4 + 2). Ne pas confondre avec une suite doublant chaque élément.",
+        "hint": "Cherche une addition constante."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "10, 20, 30, ?, 50",
+        "prompt": "Quel terme faut-il ajouter ?",
+        "options": ["35", "40", "45", "42"],
+        "answer": "40",
+        "explanation": "La suite s'incrémente par addition de 10 : 10, 20, 30, donc 30 + 10 = 40. Il est facile d'omettre ce rythme en se concentrant trop sur les doubles.",
+        "hint": "Différence constante."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "3, 6, 9, 12, ?",
+        "prompt": "Quel est le prochain nombre ?",
+        "options": ["14", "15", "16", "18"],
+        "answer": "15",
+        "explanation": "Chaque étape ajoute 3 : 3 + 3 = 6, 6 + 3 = 9, 9 + 3 = 12, donc 12 + 3 = 15. Ne pas confondre avec multiplication ou autres progressions.",
+        "hint": "Addition simple."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "15, 18, 21, ?, 27",
+        "prompt": "Quel chiffre remplace le point d'interrogation ?",
+        "options": ["24", "25", "26", "28"],
+        "answer": "24",
+        "explanation": "La progression est une addition de 3 : 15 + 3, 18 + 3, donc 21 + 3 = 24. Le risque est de chercher un modèle trop compliqué.",
+        "hint": "Pense à des additions fixes."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "8, 16, 24, ?, 40",
+        "prompt": "Quelle valeur manque à la suite ?",
+        "options": ["28", "30", "32", "36"],
+        "answer": "32",
+        "explanation": "Très simplement, chaque terme résulte de l'addition de 8 : 8, 16 (8 + 8), 24 (16 + 8), donc 24 + 8 = 32. Ne pas être induit en erreur par une multiplication perdue.",
+        "hint": "Regarde les additions uniformes."
+    },
+    {
+        "difficulty": "Facile",
+        "sequence_text": "4, 8, ?, 16, 20",
+        "prompt": "Quel élément complète la suite ?",
+        "options": ["10", "12", "14", "15"],
+        "answer": "12",
+        "explanation": "Dans cette suite, chaque ajout est de 4 : 4, 8, donc 8 + 4 = 12. Piège possible : percevoir un doublement.",
+        "hint": "Différence identique entre chaque terme."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "2, 4, 8, 14, ?",
+        "prompt": "Quel nombre complète la série ?",
+        "options": ["20", "22", "24", "26"],
+        "answer": "22",
+        "explanation": "Chaque terme additionne le premier nombre aux deux précédents termes (2, 2+2=4, 4+4=8, 8+6(2+4)=14), ce qui donne 14+8=22. Attention à bien suivre la totalité des termes et ne pas se perdre dans les calculs imbriqués.",
+        "hint": "Concentrer sur deux dernières valeurs."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "5, 11, 23, 47, ?",
+        "prompt": "Quel nombre manque ?",
+        "options": ["95", "95", "94", "98"],
+        "answer": "95",
+        "explanation": "La suite suit le pattern suivant : chaque terme double le précédent et soustrait 1 (5 × 2 - 1 = 9, mais ici en combinaison : 11 + 12 (on a dû sauter un terme sans explication directe dans la suite), 23 + 24 - 0), donc on a simplement imbriqué une multiplication et soustraction, 47 × 2 - 1 = 95 pour relier en idée. Attention à ne pas subtiliser une progression quadratique non essentielle ici.",
+        "hint": "Recherche des patterns purement arithmétiques."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "2, 6, 12, ?, 30",
+        "prompt": "Quel élément remplit la série ?",
+        "options": ["14", "20", "24", "18"],
+        "answer": "20",
+        "explanation": "En ajoutant 1, puis multipliant par 2 : 2×2=4, 4+2=6, 6×2=12, 12+2=14, 14×2=28 donc le résultat visé pour la progression approche 20 pour s’insérer, même malgré cela on a un ajustement progressif à 14, pour adoucir sur le thème. Résoudre ce mélange des temps peut céder à l'oubli des étapes.",
+        "hint": "Appliquer une règle mixte et progressive."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "9, 19, 29, 39, ?",
+        "prompt": "Quel élément poursuit la suite ?",
+        "options": ["49", "48", "50", "47"],
+        "answer": "49",
+        "explanation": "En ajoutant chaque fois 10 : 9+10=19, 19+10=29, 29+10=39, le modèle conduit à 39+10=49. L'erreur peut venir d'une vue tronquée dans les progressions plus complexes.",
+        "hint": "Navigue par simples additions successives."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "7, 14, ?, 42, 56",
+        "prompt": "Quel élément s'incorpore ?",
+        "options": ["24", "28", "35", "32"],
+        "answer": "28",
+        "explanation": "En augmentant simplement en multiplication par 2 et un retour à une constante ajustée, on alterne un effet prix par 2 à 7 : 14-14/2 (diviser et replier sur l’ajustement technique du calcul) à 21 en attelage. Doublement et intervention sobre sur les différences à lutse progressive.",
+        "hint": "Vérifie une série multipliant et pèse."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "16, 23, 31, ?, 49",
+        "prompt": "Quel nombre comble la suite ?",
+        "options": ["38", "39", "40", "42"],
+        "answer": "40",
+        "explanation": "Chaque terme augmente de 7 : 16+7=23, 23+8=31 avec un juste suivi vers 49. En contraste, mauvais choix sur la rédaction simplifiée pourrait troubler un programme union critique en note adjacente",
+        "hint": "Vérification en simplification, 7 chaque temps."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "2, 4, 8, 16, ?",
+        "prompt": "Quel chiffre achève le bloc ?",
+        "options": ["20", "23", "24", "32"],
+        "answer": "32",
+        "explanation": "En doublant chaque terme : simplement 2, 4 (2x2), 8 (4x2), 16 (8x2), donc 16x2=32. Attention à ne pas confondre une éventuelle alternance erratique ou redondance.",
+        "hint": "Règle identifiable qui double à chaque échelon."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "4, 12, 20, ?, 36",
+        "prompt": "Quel élément égalise le parcours ?",
+        "options": ["24", "26", "28", "30"],
+        "answer": "28",
+        "explanation": "Chaque terme est écarté de 8 : 4 et renversements multiples. Sur 4+8=12 (consacre une articulation), 12+8=20 et biaisant à sortie, exemple sur 20+8=28. Perturber les articulations prévues expose.",
+        "hint": "Analogue à un calage octave en différentiel."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "3, 8, 13, ?, 23",
+        "prompt": "Quel chiffre ajuste cette progression ?",
+        "options": ["16", "18", "19", "20"],
+        "answer": "18",
+        "explanation": "En ajoutant 5 à chaque, 3+5=8. Approchant tout un 8+5=13 en vue. Détaché entre 13+5=18 assure sur un entrepôt en fixité. Arriver à 23 séduite, ne pas morceler le cheminement.",
+        "hint": "Vérifie chaque addition prenant 5 à la fois."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "1, 2, 6, 24, ?, 720",
+        "prompt": "Quel est le nombre secret ?",
+        "options": ["76", "120", "144", "160"],
+        "answer": "120",
+        "explanation": "Cela est une suite de multiplications successives, chaque temps. Doublant avancée de facteurs (2 successifs et lignes arrondies, 1x1 ... 720 couvre les démonstrations facteur basées), consistant 24x5 en guise de présentation. Confusion potentielle autour de l'étalage factoriel.",
+        "hint": "Relations commutatives sur la série, sous-entendue."
+    },
+    {
+        "difficulty": "Moyenne",
+        "sequence_text": "14, 17, 20, ?, 26",
+        "prompt": "Quel élément à tire ?",
+        "options": ["23", "24", "25", "21"],
+        "answer": "23",
+        "explanation": "Chaque écart est augmenté de 3. Puis commencent 14+3 et 17+3 en conséquence, énoncé dans 20+3=23. Non-contradictoire propre à un premier apport mis-laissé. Compacté à la pertinence.",
+        "hint": "Aditionnement sur 3 en cadence idéelle et règle persistante."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "13, 21, ?, 55, 89",
+        "prompt": "Quel trait mathématique se substitue ?",
+        "options": ["29", "34", "33", "45"],
+        "answer": "34",
+        "explanation": "La suite emprunte Fibonacci de représentation : chaque auxiliaire suivant s'ajoute à deux genres. Pour être conforme, on montre 34 reliant. Finaliser en amortissant les combinaisons.",
+        "hint": "Un domaine célèbre sur les nécessités dérivées."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "1, 4, 9, 16, ?, 36",
+        "prompt": "Quel absent se rapproche ?",
+        "options": ["20", "24", "25", "26"],
+        "answer": "25",
+        "explanation": "Numéros au carré : 1², 2², 3², 4². Carré sur le chiffre moment : 5 (car 25 en agréant chaque section). Pourrait percevoir un simple rapport progressif, risquerait de tendre le processus.",
+        "hint": "Quadrature dans une simplicité créatrice."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "31, 37, 41, 43, ?, 53",
+        "prompt": "Quel nombre fourre au passage ?",
+        "options": ["47", "48", "49", "50"],
+        "answer": "47",
+        "explanation": "Indéniablement, il s'agit d'une suite de nombres premiers. 31, 37, 41, 43, donc 47 après. Non remise à modification soudaine pour détourner en ajoutant.",
+        "hint": "Oeuvre sur la bonne veine qui dénombre leurs cas distincts."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "16, 23, 31, ?, 49",
+        "prompt": "Quel est le suivant pour équilibrer ?",
+        "options": ["38", "39", "40", "42"],
+        "answer": "40",
+        "explanation": "L'étirement est de 7 unités ajoutées consistamment. Disposition : 16 + 7, 23 + 8. Cours créé ultimement. Pourrait ressembler à perte sur une addition de carrés.",
+        "hint": "Visualise en hoquant un moyen direct."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "1, 8, 27, ?, 125",
+        "prompt": "Quel est le domaine libre ?",
+        "options": ["54", "46", "64", "72"],
+        "answer": "64",
+        "explanation": "Il s'agit de nombres en cubes parfaits : 1³, 2³, 3³. Ce qui donne : 4³=64. Tendre des liens non-établis sans préserver la tendance.",
+        "hint": "Soumis aux forces cubées mises à chaque étape."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "10, 11, 14, 19, ?",
+        "prompt": "Qu'est-ce qu'en saupoudre le changement ?",
+        "options": ["21", "26", "27", "31"],
+        "answer": "26",
+        "explanation": "Etant squares plus un : 10 à prévoir pour distinction nette 26. Cela confond une suite simple. Peut-être intrinsèquement carrées imbriquées.",
+        "hint": "Déclenchement de règles singulaires. Appliquées à chaque créneau."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "2, 3, 5, 8, 13, ?",
+        "prompt": "Quel élément met utilement ensemble ?",
+        "options": ["15", "20", "21", "16"],
+        "answer": "21",
+        "explanation": "Certains calculent chaque nombre avec somme de deux termes précédents malgré l'avancement. Pour concorder : 13+8=21. Ajustement suffit, divisant à perception conceptuelle",
+        "hint": "Pour rappels méconnus de suites apparemment hasardeuses."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "1, 2, 6, 24, ?, 720",
+        "prompt": "Quel est la subtilité ?",
+        "options": ["76", "120", "144", "160"],
+        "answer": "120",
+        "explanation": "Nombre en multiplicateurs : séries factorielles, constant : fat 720. Evitement à fragmentation des éléments."),
+        "hint": "Traitement conséquent sur séries en multiplication rapide."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "3, 6, 18, ?",
+        "prompt": "Quel élément met en suite ?",
+        "options": ["36", "54", "72", "81"],
+        "answer": "54",
+        "explanation": "Relevé, multiplication ayant 3 conçu chaque fois, 9 à 9. Ajuste continus segmentations, 81. L'augmentation confirmée lors d'espacements contraires.",
+        "hint": "La multiplication que réalise efficacement chaque segment."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "3, 7, 15, ?",
+        "prompt": "Quel signe mixe ?",
+        "options": ["19", "31", "27", "63"],
+        "answer": "31",
+        "explanation": "Finalement, aussi le surnombre, supérieur. Achat plus long. Alourdissant par somme, impressionnisme. Ce qui perçoit orbes surcentrales."),
+        "hint": "Les grandeurs affinées d’un nouvel ensemble."
+    },
+    {
+        "difficulty": "Difficile",
+        "sequence_text": "33, 31, 9, 11, ?",
+        "prompt": "Qu'est imprégné dans le fossé flex ?",
+        "options": ["21", "25", "26", "29"],
+        "answer": "21",
+        "explanation": "Cette numérotation s'applique crescendo autonome. Vérifie en cochant chaque compte. En pré-planning occasion passagère. S'esquiver en périsant.",
+        "hint": "Accélération fréquente dans chacune division listée."
+    }
+]

@@ -1,0 +1,352 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « E » apparaît-elle dans la phrase ?",
+        "prompt": "Comptez avec attention.",
+        "stimulus": "Le renard rusé saute par-dessus le chien paresseux.",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7",
+        "explanation": "Décomptons ensemble : Le (1), renard (0), rusé (1), saute (1), par-dessus (2), le (1), chien (0), paresseux (1). Total = 7 occurrences. Le piège est de ne pas oublier l'article 'le' qui contient deux 'e'.",
+        "hint": "Commence par visualiser chaque mot pour repérer le 'e'."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans la suite ?",
+        "prompt": "Toutes les lettres suivent un modèle sauf une.",
+        "stimulus": "A C F J M P S U V",
+        "options": ["F", "J", "M", "U"],
+        "answer": "V",
+        "explanation": "Les lettres suivent un modèle en augmentant de 3 positions : A(1), C(3), F(6), J(10), M(13), P(16), S(19), U(21). V(22) ne suit pas le modèle car il n'augmente pas de 3 à partir de U. C'est donc l'intrus.",
+        "hint": "Vérifie la distance entre chaque lettre en termes de position."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois le chiffre « 5 » apparaît-il dans cette série ?",
+        "prompt": "Comptez chaque occurrence du chiffre 5.",
+        "stimulus": "1 5 9 5 4 5 7 2 5 8 5",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "explanation": "Positions 2, 4, 6, 9, 11 contiennent le chiffre 5. Le piège est de confondre les chiffres voisins comme 6 et 9 qui peuvent apparaître semblables si vous ne faites pas attention.",
+        "hint": "Évitez les distractions en vous concentrant sur chaque chiffre."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de voyelles contient la phrase ?",
+        "prompt": "Considérez a, e, i, o, u comme voyelles.",
+        "stimulus": "Un petit oiseau chante dans les arbres.",
+        "options": ["12", "13", "14", "15"],
+        "answer": "13",
+        "explanation": "Mot par mot : Un(1), petit(2), oiseau(4), chante(2), dans(1), les(1), arbres(2). Total = 13 voyelles. Une erreur commune est d'oublier le 'i' de petit ou le 'u' de oiseau.",
+        "hint": "Comptez les voyelles à voix haute pour mieux vous concentrer."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Identifie l'intrus dans cette suite de couleurs.",
+        "prompt": "Une couleur ne suit pas la séquence.",
+        "stimulus": "Rouge, Bleu, Vert, Jaune, Violet, Bleu",
+        "options": ["Rouge", "Jaune", "Violet", "Bleu"],
+        "answer": "Violet",
+        "explanation": "La suite suit l'ordre des couleurs de l'arc-en-ciel : Rouge, Bleu, Vert, Jaune, Bleu. Violet est donc ici un intrus car il vient naturellement après l'indigo, et non après le jaune.",
+        "hint": "Rappelez-vous de l'ordre classique des couleurs d'un arc-en-ciel."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois le chiffre « 7 » apparaît-il dans cette séquence ?",
+        "prompt": "Comptez uniquement les 7.",
+        "stimulus": "5 7 8 7 3 9 7 2 1",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Les chiffres 7 apparaissent aux positions 2, 4, et 7. Un piège est de se tromper avec des chiffres similaires comme le 1 ou le 9.",
+        "hint": "Prenez votre temps pour évaluer chaque chiffre individuellement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « P » apparaît-elle dans la phrase ?",
+        "prompt": "Incluez majuscules et minuscules.",
+        "stimulus": "Paul prend sa pomme pour le piquenique.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4",
+        "explanation": "Paul(1), prend(1), pomme(1), pour(1). Total = 4. Évitez de manquer des 'p' cachés dans les idées comme 'pomme' ou 'prend'.",
+        "hint": "Faites une pause après chaque mot contenant un 'p'."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel élément est l'intrus dans cette suite numérique ?",
+        "prompt": "Suivez la progression.",
+        "stimulus": "2 4 8 16 33 64 128",
+        "options": ["16", "33", "64", "128"],
+        "answer": "33",
+        "explanation": "La suite est basée sur des puissances de deux : 2^1, 2^2, 2^3, 2^4, 33, 2^6, 2^7. 33 est l'intrus, car il ne correspond pas à une puissance de 2.",
+        "hint": "Regardez les étapes de chaque progression."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de « k » minuscules apparaissent-ils ici ?",
+        "prompt": "Ne comptez pas les majuscules.",
+        "stimulus": "Kangourou et koala dans un parc au Kentucky.",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "explanation": "Dans 'kangourou'(1), 'koala'(1). Total = 2. Le piège est de compter le K majuscule du début ou de la majuscule de 'Kentucky' qui ne doivent pas être considérés.",
+        "hint": "Attention aux majuscules qui ne comptent pas."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans la suite suivante ?",
+        "prompt": "Repérez l'intrus.",
+        "stimulus": "E G I K M O Q S V",
+        "options": ["I", "K", "Q", "V"],
+        "answer": "V",
+        "explanation": "La série suit des lettres par intervalle de +2, mais apparaît V après S, ce qui n'augmente pas de +2 par rapport à O. L'intrus est donc V.",
+        "hint": "Checke la position de chaque lettre."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de fois la lettre « T » apparaît-elle dans la phrase ?",
+        "prompt": "Incluez majuscules et minuscules.",
+        "stimulus": "Tom tente timidement de tendre le tablier.",
+        "options": ["4", "5", "6", "7"],
+        "answer": "6",
+        "explanation": "Tom(1), tente(2), timidement(2), tendre(1). Total = 6. Piège potentiel : ne pas compter tous les T dissimulés dans 'timidement' ou 'tendre'.",
+        "hint": "Prêtez attention aux mots où un 't' est précédé d'un autre."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Identifie la séquence identique au modèle donné.",
+        "prompt": "Modèle : XYZ123",
+        "stimulus": "Séquences proposées",
+        "options": ["XYZ132", "XYZ321", "XY123Z", "XYZ123"],
+        "answer": "XYZ123",
+        "explanation": "Comparaison chaque séquence : ce qui correspond exactement est XYZ123. XYZ132 a une inversion de chiffres, XY123Z a un décalage, et XYZ321 est inversé. Toute différence mineure fausse le modèle.",
+        "hint": "Comparez calmement chaque caractère."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle lettre est l'intrus dans cette suite alphabétique ?",
+        "prompt": "Vérifiez la logique derrière les lettres données.",
+        "stimulus": "C E G I J L N P R",
+        "options": ["I", "J", "N", "R"],
+        "answer": "J",
+        "explanation": "Les lettres sont en progression arithmétique. Cependant, après G, I ne continue pas la progression par +2, car après I le modèle est brisé par J. I est donc l'intrus.",
+        "hint": "Vérifie l'espacement régulier entre chaque lettre."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de voyelles différentes apparaissent-elles ici ?",
+        "prompt": "Comptez chaque type de voyelles une fois.",
+        "stimulus": "Les arbres chantent chaque automne.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Les voyelles présentes sont a, e, u, o. Seuls les types de voyelles différents sont comptés. Un piège serait ici de compter toutes les occurrences au lieu de seulement les différentes.",
+        "hint": "Regardez chaque type de lettre, pas leur quantité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de fois le chiffre « 2 » apparaît-il ?",
+        "prompt": "Ne considérez que les 2 pas les chiffres voisins.",
+        "stimulus": "8 2 4 2 6 2 8 1 2 7",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Les chiffres 2 sont en positions 2, 4, 6, et 9. Chaque pose un 2. Les erreurs typiques incluent la confusion avec les chiffres voisins.",
+        "hint": "Comptez lentement pour éviter de sauter des chiffres."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'intrus dans la suite de mots suivante ?",
+        "prompt": "Un mot ne correspond pas.",
+        "stimulus": "lundi mardi mercredi jeudi vendredi orange",
+        "options": ["mardi", "jeudi", "orange", "vendredi"],
+        "answer": "orange",
+        "explanation": "Tous les mots sauf un sont des jours de la semaine. 'Orange' est l'intrus car c'est une couleur et non un jour.",
+        "hint": "Vérifiez quel mot ne suit pas la catégorie des jours."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de mots de 5 lettres ou plus sont présents ?",
+        "prompt": "Comptabilisez les mots longs.",
+        "stimulus": "Le sergent observait attentivement la scène.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "3",
+        "explanation": "Les mots sont: sergent(1), observait(1), attentivement(1). Total = 3. Le piège ici est de ne pas compter correctement en incluant les mots courts ou oublier les pluriels.",
+        "hint": "Comptez mentalement les lettres de chaque mot."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Identifiez l'intrus dans cette suite de nombres.",
+        "prompt": "Cherchez la séquence correcte.",
+        "stimulus": "10 15 20 30 40 50 65",
+        "options": ["15", "30", "50", "65"],
+        "answer": "65",
+        "explanation": "Tous les nombres sauf un progressent par incréments de dix : 10, 20, 30, 40, 50. 65 ne suit pas ce modèle et est donc l'intrus.",
+        "hint": "Vérifiez si vous suivez une addition simple."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence est identique au modèle fourni ?",
+        "prompt": "Modèle : 1A2B3C",
+        "stimulus": "Différentes séquences.",
+        "options": ["1A3B2C", "1B2A3C", "1A2B3C", "12AB3C"],
+        "answer": "1A2B3C",
+        "explanation": "Comparaison stricte montre que 1A2B3C est correct. Le reste ne correspond pas complètement.",
+        "hint": "Évaluez chaque partie de la séquence."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de fois la lettre « R » apparaît-elle ?",
+        "prompt": "Inclure, ne pas ignorer des majuscules ou minuscules.",
+        "stimulus": "La rivière roule rapidement vers la mer.",
+        "options": ["4", "5", "6", "7"],
+        "answer": "4",
+        "explanation": "Rivière(2), roule(1), rapidement(0), vers(0), mer(1). Total = 4. Piège couramment oublié : 'vers' et 'rapide' ne comptent pas.",
+        "hint": "Prêtez attention aux répétitions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence suit exactement le modèle ?",
+        "prompt": "Modèle : AB12CD34",
+        "stimulus": "Séquences proposées.",
+        "options": ["AB21CD43", "AB12CD34", "AB12DC34", "AB13CD24"],
+        "answer": "AB12CD34",
+        "explanation": "Seule AB12CD34 suit le modèle. Dérapages comme AB21CD43 changent l'ordre, et AB12DC34 renverse parts CD/DC.",
+        "hint": "Assurez-vous que chaque segment est correct."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de voyelles dans la phrase ?",
+        "prompt": "Inclure toutes les voyelles typiques.",
+        "stimulus": "Un matin d'hiver est plus long qu'un soir d'été.",
+        "options": ["10", "11", "12", "13"],
+        "answer": "12",
+        "explanation": "Décompte mot par mot : Un(1), matin(2), d'(0), hiver(2), est(1), plus(0), long(0), qu'(0), un(1), soir(1), d'(0), été(3). Total = 12.",
+        "hint": "Décompose chaque mot dans votre tête."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de fois le chiffre « 9 » apparaît-il ici ?",
+        "prompt": "Attention aux répétitions.",
+        "stimulus": "9 8 7 9 6 9 5 9 4 9 3",
+        "options": ["5", "6", "7", "8"],
+        "answer": "5",
+        "explanation": "Presque chaque nombre après 9 est 9 : position 1, 4, 6, 8, 10 inclus 9. Le nombre de distractions est élevé.",
+        "hint": "Concentrez-vous intensément sur 9 car les autres chiffres sont voisins."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de mots de plus de 5 lettres existent ?",
+        "prompt": "Réfléchir en profondeur sur ceci.",
+        "stimulus": "L'éléphant majestueux traversait le parc paisiblement.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Les mots sont : éléphant(1), majestueux(1), traversait(1), parc(0), paisiblement(1). Total = 3. Ne comptez pas les mots courts.",
+        "hint": "Faites un focus sur les mots complexes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel élément est un intrus dans cette suite ?",
+        "prompt": "Décodez le schéma continu.",
+        "stimulus": "2 4 6 11 14 16 18",
+        "options": ["6", "11", "14", "18"],
+        "answer": "11",
+        "explanation": "Une simple addition de 2 montre un souci à 11, car elle doit être 2n avec n entier. 11 ne l'est pas.",
+        "hint": "Vérifiez plus le motif pair."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Identifiez la séquence identique au modèle.",
+        "prompt": "Modèle : H7J8M9K7",
+        "stimulus": "Différentes options pour vérifier la similitude.",
+        "options": ["H7J8M7K9", "H7J8M9K8", "H7J8M9K7", "H7I8M9K7"],
+        "answer": "H7J8M9K7",
+        "explanation": "Le modèle exact est seulement trouvé dans H7J8M9K7. H7I8M9K7, H7J8M9K8 et H7J8M7K9 contiennent toutes des erreurs de position de chiffre.",
+        "hint": "Comparez chaque lettre et chiffre minutieusement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de fois apparaît la lettre « S » dans cette phrase ?",
+        "prompt": "Considère aussi les terminaisons.",
+        "stimulus": "Le suspect s'appelait Simon et il s'agitait souvent.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Décompte : suspect(1), s'appelait(1), Simon(1), s'agitait(1). Total = 4. Un piège simple est de négliger les apostrophes.",
+        "hint": "Soyez attentif aux contractions avec apostrophes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle suite est une copie fidèle du modèle donné ?",
+        "prompt": "Modèle : 3F5H7K10",
+        "stimulus": "Propositions diverses.",
+        "options": ["3F5H7K11", "3F5G7K10", "3F5H7K10", "3F5H8K10"],
+        "answer": "3F5H7K10",
+        "explanation": "Seulement 3F5H7K10 correspond au modèle exactement. Note les erreurs dans les autres : 3F5H7K11, 3F5G7K10, 3F5H8K10 chacune ont une erreur dans un seul caractère.",
+        "hint": "Examine chaque chiffre et lettre dans la séquence."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Repérez l'intrus dans cette série logique.",
+        "prompt": "Les nombres doivent se poursuivre dans leur modèle.",
+        "stimulus": "5 10 15 20 25 31 35 40",
+        "options": ["20", "25", "31", "35"],
+        "answer": "31",
+        "explanation": "Chaque nombre augmente par 5 sauf 31 qui ne poursuit pas cette logique linéaire mais plutôt brise le schéma. Il est donc l'intrus.",
+        "hint": "Additionnez chaque étape pour conclure son exactitude."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de consonnes y a-t-il dans cette phrase?",
+        "prompt": "Ne comptez que les consonnes.",
+        "stimulus": "L'enquêteur scrute les indices avec minutie.",
+        "options": ["18", "19", "20", "21"],
+        "answer": "20",
+        "explanation": "L(1), enquêteur(5), scrute(3), les(1), indices(4), avec(2), minutie(4). Total = 20. Piège courant : sautez les doubles consonnes dans des mots.",
+        "hint": "Vérifiez chaque mot plusieurs fois."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Identifiez la séquence qui ne suit pas le modèle.",
+        "prompt": "Modèle : 4A6C8E10G",
+        "stimulus": "Options multiples.",
+        "options": ["4A6C8E11G", "4A6C8E10G", "4A6C8F10G", "4A6C8E10H"],
+        "answer": "4A6C8E10G",
+        "explanation": "Le modèle original identifie 4A6C8E10G comme correct. Seule cette série respecte le modèle tandis que 10H ou autres contiennent une faille dans nombres/lettres.",
+        "hint": "Examine chaque suite de lettres et nombres."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, combien de mots commencent par une voyelle ?",
+        "prompt": "Ignore la casse et le statut de l'article.",
+        "stimulus": "On observe un énorme aigle arriver.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Les mots concernés sont : On(1), observe(1), un(1), et aigle(1). Total = 4. Un début commun est d'être confus par le 'un' dans certains contextes.",
+        "hint": "Rappelez-vous de chaque mot ouvert par a/e/i/o/u."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de E majuscules apparaît-il dans cette sélection ?",
+        "prompt": "Seules les majuscules sont comptées.",
+        "stimulus": "L'ELITE EXIGEANT ENTREVUE IMMENSE.",
+        "options": ["4", "5", "6", "7"],
+        "answer": "6",
+        "explanation": "L'(aucun), ELITE(2), EXIGEANT(2), ENTREVUE(2), IMMENSE(0). Total du bon nombre = 6. Une erreur est d'oublier les lettres en milieu de mot.",
+        "hint": "Surveillez spécifiquement un E en début, milieu ou fin des mots."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle phrase contient le bon nombre de 'i' ?",
+        "prompt": "Identifiez les alternatives données.",
+        "stimulus": "Sélection de phrases données.",
+        "options": ["il invite ici", "invite il ici", "il ici invite", "ici invite il"],
+        "answer": "il ici invite",
+        "explanation": "Seulement 'il ici invite' offre la bonne quantité exacte de 'i'. Le reste écarte le total par un mot mal placé.",
+        "hint": "Vérifiez l'emplacement de chaque 'i' dans le contexte de phrase."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Repérez l'intrus dans cette continuité.",
+        "prompt": "Une valeur ne suit pas la norme.",
+        "stimulus": "6 12 18 24 30 37 42",
+        "options": ["18", "24", "30", "37"],
+        "answer": "37",
+        "explanation": "La suite suit une progression de +6 mais discontinuité chez 37 qui ne respecte pas le modèle. Il est donc l'intrus.",
+        "hint": "Addition jusqu'au dernier chiffre puis visualiser où la suite change."
+    }
+]

@@ -14,7 +14,7 @@ class PPOrganisationMinisterePublicContenuPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     TextStyle sectionTitleStyle = GoogleFonts.fustat(
       fontWeight: FontWeight.w800,
@@ -490,13 +490,13 @@ class PPOrganisationMinisterePublicContenuPage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
             decoration: BoxDecoration(
               color: isDark
-                  ? Colors.black.withOpacity(.20)
+                  ? Colors.black.withValues(alpha: .20)
                   : const Color(0xFFF5F5F5),
               borderRadius: BorderRadius.circular(16),
               border: Border.all(
                 color: isDark
                     ? Colors.white24
-                    : const Color(0xFFBBBBBB).withOpacity(.7),
+                    : const Color(0xFFBBBBBB).withValues(alpha: .7),
               ),
             ),
             child: Column(
@@ -561,7 +561,7 @@ class _OrgLine extends StatelessWidget {
             child: Container(
               height: 10,
               width: 1.4,
-              color: Colors.grey.withOpacity(.5),
+              color: Colors.grey.withValues(alpha: .5),
             ),
           ),
         Row(

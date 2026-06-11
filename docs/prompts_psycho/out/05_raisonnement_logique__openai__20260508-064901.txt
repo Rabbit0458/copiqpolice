@@ -1,0 +1,406 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en déduire ?",
+    "prompt": "Tous les chiens sont des mammifères. Rex est un chien.",
+    "options": [
+      "Rex est un oiseau",
+      "Rex est un mammifère",
+      "Rex est un reptile",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Rex est un mammifère",
+    "explanation": "Il s'agit d'un syllogisme par transitivité. Tous les chiens étant des mammifères et Rex étant un chien, Rex doit être un mammifère. Il est crucial de ne pas ignorer la relation de transitivité entre les catégories pour éviter de conclure autre chose erronément."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus rapide ?",
+    "prompt": "Jean court plus vite que Max. Max court plus vite que Paul.",
+    "options": ["Paul", "Max", "Jean", "On ne peut pas savoir"],
+    "answer": "Jean",
+    "explanation": "Pour déterminer qui est le plus rapide, il faut établir un ordre en fonction des informations données. Si Jean est plus rapide que Max et Max est plus rapide que Paul, alors Jean est le plus rapide parmi eux. Il est important de bien suivre l'ordre donné et de ne pas inverser les comparaisons."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la conclusion ?",
+    "prompt": "Aucun livre sur cet étagère n'est en mauvais état. Ce livre est sur cet étagère.",
+    "options": [
+      "Le livre est en mauvais état",
+      "Le livre n'est pas en mauvais état",
+      "On ne peut pas savoir",
+      "Le livre est couvert"
+    ],
+    "answer": "Le livre n'est pas en mauvais état",
+    "explanation": "C'est un syllogisme avec une négation. Si aucun livre sur l'étagère n'est en mauvais état et que le livre en question se trouve sur cette étagère, alors le livre n'est pas en mauvais état. Il faut bien comprendre l'usage du mot \"aucun\" pour éviter les erreurs."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui arrivera en dernier ?",
+    "prompt": "Lucas arrive après Lucie, et Lucie arrive après Louise.",
+    "options": ["Lucas", "Lucie", "Louise", "On ne peut pas savoir"],
+    "answer": "Lucas",
+    "explanation": "L'ordre est clair : Louise arrive, puis Lucie, puis Lucas. Ainsi, Lucas arrive en dernier. Pour éviter les erreurs, il faut suivre correctement l'ordre chronologique mentionné."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel fruit est dans le panier ?",
+    "prompt": "Tous les fruits rouges sont dans le panier. Une fraise est un fruit rouge.",
+    "options": [
+      "La fraise est dans le panier",
+      "La fraise n'est pas dans le panier",
+      "On ne peut pas savoir",
+      "La fraise est verte"
+    ],
+    "answer": "La fraise est dans le panier",
+    "explanation": "C'est un exemple de syllogisme simple. Tous les fruits rouges étant dans le panier et la fraise étant rouge, elle se trouve forcément dans le panier. Ne pas se laisser piéger par les options qui suggèrent une incertitude."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en conclure ?",
+    "prompt": "Si le soleil brille, alors il ne pleut pas. Le soleil brille actuellement.",
+    "options": [
+      "Il pleut",
+      "Il ne pleut pas",
+      "On ne peut pas savoir",
+      "Il fait nuit"
+    ],
+    "answer": "Il ne pleut pas",
+    "explanation": "Il s'agit d'un modus ponens : si une condition est vérifiée (le soleil brille), alors la conséquence doit être vraie (il ne pleut pas). Ne pas confondre cette structure avec une condition inverse qui pourrait mener à l'erreur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'ordre correct ?",
+    "prompt": "Si Alice est plus vieille que Bob et Bob est plus vieux que Claire.",
+    "options": [
+      "Alice, Bob, Claire",
+      "Claire, Bob, Alice",
+      "Bob, Claire, Alice",
+      "Claire, Alice, Bob"
+    ],
+    "answer": "Alice, Bob, Claire",
+    "explanation": "Il s'agit ici d'établir un ordre simple. Alice étant plus vieille que Bob et Bob plus vieux que Claire, la chaîne de priorités nous donne Alice, Bob, puis Claire. Ne pas commettre l'erreur d'inverser une des relations."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle affirmation est correcte ?",
+    "prompt": "Tous les élèves du cours de danse savent lire une partition. Marie est dans le cours de danse.",
+    "options": [
+      "Marie sait lire une partition",
+      "Marie ne sait pas lire une partition",
+      "On ne peut pas savoir",
+      "Marie joue d'un instrument"
+    ],
+    "answer": "Marie sait lire une partition",
+    "explanation": "Ceci est un syllogisme. Si tous les participants au cours de danse savent lire une partition, alors Marie, qui est participante, le sait aussi. Attention à ne pas ignorer l'application directe de la règle donnée dans la prémisse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel animal est un félin ?",
+    "prompt": "Tous les tigres sont des félins. Simba est un tigre.",
+    "options": [
+      "Simba est un oiseau",
+      "Simba est un félin",
+      "Simba est un reptile",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Simba est un félin",
+    "explanation": "En appliquant le syllogisme par transitivité, si tous les tigres sont des félins et Simba est un tigre, alors Simba est un félin. Il est important de bien suivre la logique des catégories pour éviter les conclusions incorrectes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qu'est-ce qu'on peut déduire ?",
+    "prompt": "Si quelqu'un est végétalien, alors il ne mange pas d'animaux. Jacques est végétalien.",
+    "options": [
+      "Jacques mange des animaux",
+      "Jacques ne mange pas d'animaux",
+      "On ne peut pas savoir",
+      "Jacques est carnivore"
+    ],
+    "answer": "Jacques ne mange pas d'animaux",
+    "explanation": "Ceci correspond à un raisonnement en modus ponens. Si Jacques est végétalien, alors selon les prémisses, il ne mange pas d'animaux. Ne pas tomber dans le piège de croire que la prémisse ne s'applique pas."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion est correcte ?",
+    "prompt": "Tous les oiseaux peuvent voler. Un perroquet est un oiseau.",
+    "options": [
+      "Un perroquet ne peut pas voler",
+      "Un perroquet peut voler",
+      "On ne peut pas savoir",
+      "Les perroquets ne sont pas des oiseaux"
+    ],
+    "answer": "Un perroquet peut voler",
+    "explanation": "C'est un syllogisme classique. Tous les oiseaux peuvent voler, donc en affirmant qu'un perroquet est un oiseau, nous concluons qu'un perroquet peut voler. Ne pas oublier de lier chaque étape de la catégorisation correctement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qui est le plus jeune ?",
+    "prompt": "Julie est plus jeune que Marc. Marc est plus jeune qu'Émile.",
+    "options": ["Julie", "Marc", "Émile", "On ne peut pas savoir"],
+    "answer": "Julie",
+    "explanation": "L'ordre d'âge est expressément donné : Julie < Marc < Émile. Ainsi, Julie est la plus jeune de tous. Il faut donc être attentif à ne pas inverser cet ordre dans le raisonnement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Qu'en concluez-vous ?",
+    "prompt": "Si une voiture est électrique, alors elle ne consomme pas d'essence. Cette voiture est électrique.",
+    "options": [
+      "Cette voiture consomme de l'essence",
+      "Cette voiture ne consomme pas d'essence",
+      "On ne peut pas savoir",
+      "Cette voiture est hybride"
+    ],
+    "answer": "Cette voiture ne consomme pas d'essence",
+    "explanation": "Par modus ponens, on sait que si la voiture est électrique, elle ne consomme pas d'essence. Évitez de confondre cette implication avec des exceptions comme les hybrides qui ne s'appliquent pas ici."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Comment est le ciel ?",
+    "prompt": "Si le ciel est couvert, il pleuvra. Aujourd'hui, le ciel est couvert.",
+    "options": [
+      "Il pleuvra",
+      "Il ne pleuvra pas",
+      "On ne peut pas savoir",
+      "Le soleil brillera"
+    ],
+    "answer": "Il pleuvra",
+    "explanation": "C'est un exemple de logique par modus ponens où la condition et l'état connu impliquent directement la conséquence. Évitez de chercher des exceptions spécifiques non mentionnées qui pourraient être tentantes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui arrive le premier ?",
+    "prompt": "Alan arrive après Clara. Clara arrive avant Bob. Bob arrive après Damien.",
+    "options": ["Alan", "Clara", "Bob", "Damien"],
+    "answer": "Damien",
+    "explanation": "En réordonnant les arrivées : Damien arrive avant Bob, qui arrive avant Clara, elle-même avant Alan. La première personne mentionnée chronologiquement est Damien, ce qui nécessite une compréhension claire de l’enchainement des événements."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'animal que nous pouvons confirmer être sur la photo ?",
+    "prompt": "Tous les lions sont puissants. Tous les animaux puissants sont respectés. Sur la photo, il y a un lion.",
+    "options": [
+      "Un animal respecté",
+      "Un animal non respecté",
+      "On ne peut pas savoir",
+      "Un animal faible"
+    ],
+    "answer": "Un animal respecté",
+    "explanation": "C'est un syllogisme par transitivité en trois étapes : Lion est puissant, puissant est respecté, donc lion est respecté. Soyez attentif à ne pas interrompre la chaîne logique des affirmations."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus âgé ?",
+    "prompt": "Pedro est plus âgé que Luis. Luis est plus âgé que Marco. Marco est plus âgé que Nino.",
+    "options": ["Pedro", "Luis", "Marco", "Nino"],
+    "answer": "Pedro",
+    "explanation": "En établissant la hiérarchie d'âge, Pedro > Luis > Marco > Nino, on en déduit logiquement que Pedro est le plus âgé. Le problème repose sur la construction correcte de la chaîne d'âges sans se laisser distraire."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle affirmation est correcte ?",
+    "prompt": "Tous les musiciens classiques sont talentueux. Certains musiciens talentueux sont célèbres.",
+    "options": [
+      "Tous les musiciens classiques sont célèbres",
+      "Certains musiciens classiques peuvent être célèbres",
+      "Aucun musicien classique n'est célèbre",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Certains musiciens classiques peuvent être célèbres",
+    "explanation": "Le raisonnement est que certains musiciens classiques, qui sont tous talentueux, pourraient aussi faire partie des talentueux et célèbres. Cette possibilité découle des prémisses sans certitude dans tous les cas."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'ordre final ?",
+    "prompt": "Tom est plus grand que Jeff. Jeff est aussi grand que Claudia. Claudia est plus petite que Mila.",
+    "options": [
+      "Tom, Mila, Jeff, Claudia",
+      "Mila, Tom, Jeff, Claudia",
+      "Tom, Jeff, Mila, Claudia",
+      "Mila, Claudia, Jeff, Tom"
+    ],
+    "answer": "Mila, Tom, Jeff, Claudia",
+    "explanation": "En réordonnant les tailles, Tom est plus grand que Jeff et Claudia est égale à Jeff mais plus petite que Mila, plaçant Mila en supérieur. L'ordre correct est donc Mila, Tom, Jeff, et Claudia."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que se passe-t-il si Maxime n'étudie pas ?",
+    "prompt": "Si Maxime étudie, il réussira son examen. Si Maxime réussit son examen, il obtiendra son diplôme.",
+    "options": [
+      "Maxime réussira son examen",
+      "Maxime n'obtiendra pas son diplôme",
+      "On ne peut pas savoir",
+      "Maxime étudie"
+    ],
+    "answer": "Maxime n'obtiendra pas son diplôme",
+    "explanation": "Il s'agit d'une logique par modus tollens. Si Maxime n'étudie pas, il ne réussira pas son examen et donc n’obtiendra pas son diplôme. Ne confondez pas cela avec une réflexivité fausse qui pourrait mal orienter le raisonnement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle affirmation est juste ?",
+    "prompt": "Si une rose est rouge, alors elle est belle. La rose de Marie est rouge.",
+    "options": [
+      "La rose de Marie est belle",
+      "La rose de Marie n'est pas belle",
+      "On ne peut pas savoir",
+      "La rose de Marie est jaune"
+    ],
+    "answer": "La rose de Marie est belle",
+    "explanation": "Par le raisonnement de modus ponens, si la rose de Marie est rouge, elle doit être belle selon la prémisse. C'est un exemple classique d'application de condition où la deuxième affirmation découle directement de la première."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'ordre correct ?",
+    "prompt": "Anna marche plus vite que Béa. Chelsea marche plus lentement que Dalia. Béa marche plus lentement qu'Anna mais plus vite que Dalia.",
+    "options": [
+      "Anna, Béa, Chelsea, Dalia",
+      "Dalia, Béa, Anna, Chelsea",
+      "Anna, Chelsea, Béa, Dalia",
+      "Anna, Béa, Dalia, Chelsea"
+    ],
+    "answer": "Anna, Béa, Dalia, Chelsea",
+    "explanation": "En classant les vitesses, Anna > Béa > Dalia, puis puisque Chelsea est plus lente que Dalia, Chelsea doit être à la fin. Il est important de bien relier ces comparaisons pour obtenir le classement correct."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que se passe-t-il si Albert ne se rend pas à l'entraînement ?",
+    "prompt": "Si Albert va à l'entraînement, il joue le match. S'il joue le match, il rentre tard.",
+    "options": [
+      "Albert joue le match",
+      "Albert rentre tôt",
+      "Albert rentre tard",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Albert rentre tôt",
+    "explanation": "Logique par modus tollens : si Albert ne va pas à l'entraînement, il ne joue pas le match et donc rentre tôt. Assurez-vous de bien comprendre les implications en séquence pour éviter une conclusion contrefaite."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est le plus rapide ?",
+    "prompt": "François court plus vite que Gilbert. Gilbert court plus vite que Nadine. Nadine court aussi vite qu'Emma.",
+    "options": ["François", "Gilbert", "Nadine", "Emma"],
+    "answer": "François",
+    "explanation": "L'ordre des vitesses est François > Gilbert > Nadine = Emma. Puisque François court plus vite que tous les autres, il est le plus rapide. La clave ici est de ne pas se laisser perturber par les différentes comparaisons énoncées."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'ordre hiérarchique correct ?",
+    "prompt": "Simone dirige plus d'employés que Carole. Carole en dirige plus que Lucas. Tom ne dirige personne.",
+    "options": [
+      "Simone, Carole, Lucas, Tom",
+      "Simone, Lucas, Carole, Tom",
+      "Lucas, Carole, Tom, Simone",
+      "Carole, Simone, Lucas, Tom"
+    ],
+    "answer": "Simone, Carole, Lucas, Tom",
+    "explanation": "En évaluant les nombre d'employés dirigés, Simone > Carole > Lucas > Tom, avec Tom ne dirigeant personne. Une bonne analyse de la hiérarchie permet de clarifier rapidement cet ordre pratiquement logique."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Que peut-on en déduire sur Alex ?",
+    "prompt": "Si Alex va à la fête, alors Chris est heureux. Si Chris est heureux, il invite Diane à danser.",
+    "options": [
+      "Chris invite Diane à danser",
+      "Alex ne va pas à la fête",
+      "Alex va à la fête",
+      "On ne peut pas savoir"
+    ],
+    "answer": "On ne peut pas savoir",
+    "explanation": "Les prémisses nous donnent une chaîne conditionnelle : Alex va à la fête → Chris est heureux → Chris invite Diane. Si Alex va, Diane est invitée, mais sans que cela se produise, on ne peut pas savoir de manière certaine."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel âge a Lina aujourd'hui ?",
+    "prompt": "Lina a le double de l'âge d'Alex. Dans 5 ans, l'âge de Lina sera 3 fois celui d'Alex.",
+    "options": ["10 ans", "15 ans", "20 ans", "25 ans"],
+    "answer": "20 ans",
+    "explanation": "Soit a l'âge d'Alex aujourd'hui. Lina a actuellement 2a et dans 5 ans, Lina aura 2a + 5 = 3(a + 5). En résolvant l'équation 2a + 5 = 3a + 15, on trouve a = 10. Donc Lina a 20 ans. Il est important de bien poser et résoudre l'équation sans se perdre dans les transformations."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est votre place actuelle dans la course ?",
+    "prompt": "En doublant la troisième personne dans une course, quelle est votre nouvelle position ?",
+    "options": ["1ère", "2ème", "3ème", "4ème"],
+    "answer": "3ème",
+    "explanation": "En doublant la troisième personne, vous prenez sa place et devenez troisième. C'est un classique de la course où l'erreur serait de penser qu'on devient deuxième ou premier. Il faut bien comprendre le positionnement dynamique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Qui possède la montre rouge ?",
+    "prompt": "Jean possède une montre jaune ou rouge. Si Jean a une montre jaune, Lisa a une montre rouge. Jean n'a pas de montre jaune.",
+    "options": [
+      "Jean",
+      "Lisa",
+      "Personne",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Lisa",
+    "explanation": "S'agissant d'une situation impliquant un dilemme : Jean a soit une montre rouge soit jaune. Si elle est jaune, cela déduirait Lisa, mais ce n'est pas le cas ici, donc Lisa a la montre rouge via l'exclusion du choix jaune."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel liquide remplira la bouteille ?",
+    "prompt": "Une bouteille contient soit du jus d'orange ou du lait. Si elle contient du lait, elle a une étiquette bleue. Cette bouteille n'a pas d'étiquette bleue.",
+    "options": [
+      "Jus d'orange",
+      "Lait",
+      "On ne peut pas savoir",
+      "Bouteille vide"
+    ],
+    "answer": "Jus d'orange",
+    "explanation": "Il s'agit ici d'une proposition par élimination. Puisque la bouteille sans étiquette bleue ne peut contenir du lait, elle doit contenir du jus d'orange. Ne laissez pas la tentation de confondre étiquette et contenu vous tromper."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "De quel VTT parle-t-on ?",
+    "prompt": "Si ce VTT n'est pas rouge, il est bleu. S'il est bleu, il est neuf. Ce VTT n'est pas neuf.",
+    "options": [
+      "Rouge",
+      "Bleu",
+      "Neuf",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Rouge",
+    "explanation": "Ce problème repose sur une contradiction enchaînée. Ce VTT ne peut être bleu (puisqu'il n'est pas neuf), donc il doit être rouge. La chaîne logique de non-transitivité nous guide pour conclure sans céder aux déductions rapides."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que se passe-t-il si Martin emporte la clé ?",
+    "prompt": "Si Martin emporte la clé, Paul n’ouvre pas la porte. Si Paul n’ouvre pas la porte, le chat sort.",
+    "options": [
+      "Paul ouvre la porte",
+      "Le chat ne sort pas",
+      "Le chat sort",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Le chat sort",
+    "explanation": "Cette chaîne conditionnelle montre que si Martin garde la clé, Paul n’ouvre pas la porte, permettant ainsi au chat de sortir. Les conclusions multiples dépendent d’un bon suivi de logique sérialisée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Qui obtient la promotion ?",
+    "prompt": "Si Sandrine ou Marc finit le projet, alors ils obtiennent une promotion. Le projet n'est pas fini.",
+    "options": [
+      "Sandrine",
+      "Marc",
+      "Personne",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Personne",
+    "explanation": "Du fait que la condition de fin du projet n'est pas satisfaite, aucune promotion n'est donnée, ni à Sandrine, ni à Marc. La clé est de vérifier les conditions nécessaires manquantes avant de tirer une conclusion hâtive."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le bon ordre ?",
+    "prompt": "Philippe est plus intelligent que Nadine. Nadine est plus intelligente que Sarah. Sarah est plus intelligente que Mike.",
+    "options": [
+      "Mike, Sarah, Nadine, Philippe",
+      "Philippe, Nadine, Sarah, Mike",
+      "Nadine, Philippe, Sarah, Mike",
+      "Sarah, Nadine, Philippe, Mike"
+    ],
+    "answer": "Philippe, Nadine, Sarah, Mike",
+    "explanation": "La chaîne logique en termes d'intelligence est : Philippe > Nadine > Sarah > Mike, nécessitant un regroupement par comparaison d’intelligence. Il est crucial d'éviter les pièges liés à un mauvais classement."
+  }
+]
+```

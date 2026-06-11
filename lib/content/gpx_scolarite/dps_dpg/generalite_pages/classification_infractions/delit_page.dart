@@ -350,9 +350,9 @@ class DelitPage extends StatelessWidget {
     margin: const EdgeInsets.only(top: 6),
     padding: const EdgeInsets.all(12),
     decoration: BoxDecoration(
-      color: Colors.white.withOpacity(.08),
+      color: Colors.white.withValues(alpha: .08),
       borderRadius: BorderRadius.circular(12),
-      border: Border.all(color: Colors.white.withOpacity(.16)),
+      border: Border.all(color: Colors.white.withValues(alpha: .16)),
     ),
     child: Text(
       text,
@@ -565,9 +565,9 @@ class _ChipRow extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(999),
-                color: Colors.white.withOpacity(isDark ? .10 : .08),
+                color: Colors.white.withValues(alpha: isDark ? .10 : .08),
                 border: Border.all(
-                  color: Colors.white.withOpacity(isDark ? .18 : .14),
+                  color: Colors.white.withValues(alpha: isDark ? .18 : .14),
                 ),
               ),
               child: Text(

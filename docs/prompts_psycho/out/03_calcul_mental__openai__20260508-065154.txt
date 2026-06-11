@@ -1,0 +1,362 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 23 + 17 ?",
+        "expression": "23 + 17",
+        "options": ["40", "45", "41", "39"],
+        "answer": "40",
+        "explanation": "Pour l'addition 23 + 17, on peut décomposer le 17 en 10 et 7. Ainsi, 23 + 10 = 33, puis 33 + 7 = 40. L'astuce consiste à ajouter d'abord les dizaines pour simplifier le calcul. Le piège pourrait être d'oublier de bien additionner les unités.",
+        "hint": "Commence par ajouter le 10 au 23 avant de t'occuper des unités."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 48 - 25 ?",
+        "expression": "48 - 25",
+        "options": ["23", "22", "24", "25"],
+        "answer": "23",
+        "explanation": "Pour 48 - 25, on peut d'abord soustraire 20 pour obtenir 28, puis soustraire les 5 restants pour arriver à 23. Cette méthode permet de gérer plus facilement les soustractions par étapes. Le piège courant est de mal estimer la retenue lorsqu'on enlève un chiffre élevé.",
+        "hint": "Soustrais d'abord les dizaines, puis ajuste avec les unités."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 7 × 8 ?",
+        "expression": "7 × 8",
+        "options": ["52", "54", "56", "64"],
+        "answer": "56",
+        "explanation": "Pour calculer 7 × 8, il est utile de se rappeler que 7 × 8 se situe près de 7 × 10, qui fait 70. Soustrayez 7 × 2 (14) de 70 pour obtenir 56. La régularité de la table de multiplication aide à confirmer ce calcul. Le piège est d'oublier la répartition des calculs multiplicatifs.",
+        "hint": "Pense à 7 × 10, puis ajuste."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 51 / 3 ?",
+        "expression": "51 / 3",
+        "options": ["16", "17", "18", "19"],
+        "answer": "17",
+        "explanation": "Pour 51 divisé par 3, divise 51 en 30 et 21. 30/3 donne 10 et 21/3 donne 7. Additionne les résultats pour obtenir 17. Cette décomposition en chiffres plus simples facilite le calcul mental. Un piège fréquent est de négliger de vérifier la divisibilité exacte.",
+        "hint": "Divise en chiffres plus petits, puis additionne."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 10 % de 150 ?",
+        "expression": "0,10 × 150",
+        "options": ["15", "10", "20", "25"],
+        "answer": "15",
+        "explanation": "Pour calculer 10 % de 150, divise simplement le nombre par 10. Ainsi, 150 divisé par 10 donne 15. Cette méthode utilise l'idée que 10 % est un simple déplacement décimal vers la gauche. Le piège à éviter est de confondre 10 % avec des fractions plus complexes.",
+        "hint": "Déplace la virgule d'un chiffre vers la gauche."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 8 × 5 ?",
+        "expression": "8 × 5",
+        "options": ["35", "40", "45", "50"],
+        "answer": "40",
+        "explanation": "Multiplier 8 par 5 est comme doubler 8 pour obtenir 16, puis multiplier 16 par 2. Finalement, ajoute 8 (16 + 8 = 24), puis multiplie 24 par 2 pour obtenir 48. Une façon astucieuse consiste à réaliser que 8 × 5 est moitié de 8 × 10. Le piège est d'oublier le doublement initial.",
+        "hint": "Pense à 8 demi-10 puis ajuste."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 37 + 9 ?",
+        "expression": "37 + 9",
+        "options": ["46", "47", "45", "48"],
+        "answer": "46",
+        "explanation": "En ajoutant 9 à 37, commence par ajouter 10 pour obtenir 47, puis soustrais 1 pour un total de 46. L'astuce est d'ajuster d'abord à une dizaine supérieure avant de corriger l'excédent. Le piège ici est une erreur fréquente consistant à oublier de compléter l'ajustement final.",
+        "hint": "Ajoute d'abord 10, puis retire 1."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 8 / 2 ?",
+        "expression": "8 / 2",
+        "options": ["2", "3", "4", "6"],
+        "answer": "4",
+        "explanation": "Pour diviser 8 par 2, il suffit de se souvenir que 8 est double de 4. Une simple division direct proportionnelle est utilisée ici. Un piège potentiel est l'erreur aléatoire où certains peuvent anticiper à tort un chiffre supérieur comme 6.",
+        "hint": "Retrouve la moitié du 8."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 9 × 6 ?",
+        "expression": "9 × 6",
+        "options": ["54", "56", "58", "59"],
+        "answer": "54",
+        "explanation": "9 × 6 peut être calculé en multipliant 9 par 5 (45), puis ajoutant un autre 9 pour un total de 54. La table de multiplication pour 9 utilisé de manière astucieuse, chaque résultat répète un schéma distinctif. Le piège ici pourrait consister à se tromper dans la multiplication par 5.",
+        "hint": "Multiplie par 5, puis ajoute un 9."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 50 % de 60 ?",
+        "expression": "0,50 × 60",
+        "options": ["20", "30", "40", "50"],
+        "answer": "30",
+        "explanation": "50 % de 60 revient à diviser 60 par 2 puisque 50 % est simplement la moitié. On arrive donc à 30. La compréhension de la notion de moitié aide à simplifier ce calcul mentalement. Un piège courant est une mauvaise interprétation du pourcentage, pensant qu'il fait référence à un autre taux.",
+        "hint": "Trouve la moitié de 60."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 33 + 18 ?",
+        "expression": "33 + 18",
+        "options": ["51", "50", "52", "53"],
+        "answer": "51",
+        "explanation": "Ajouter 33 et 18 en deux étapes : ajoutez d'abord 20 pour obtenir 53, puis soustrayez 2 pour arriver à 51. L'ajout de chiffres ronds facilite la manipulation mentale. Vérifiez toujours la validité finale pour éviter les erreurs de retranscription par addition successive.",
+        "hint": "Ajoute 20 d'abord, puis corrige en soustrayant."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 29 - 15 ?",
+        "expression": "29 - 15",
+        "options": ["12", "13", "14", "15"],
+        "answer": "14",
+        "explanation": "Soustraire 15 de 29 en soustrayant d'abord 10 pour faire 19, puis 5 de 19 pour rester avec 14. Cette méthode par étapes aide à s'assurer de la soustraction correcte. Un piège pourrait être de se tromper en omettant la seconde soustraction.",
+        "hint": "Soustrais en deux étapes : d'abord 10, puis 5."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 42 / 6 ?",
+        "expression": "42 / 6",
+        "options": ["7", "6", "8", "9"],
+        "answer": "7",
+        "explanation": "Calculer 42 divisé par 6 peut être appréhendé en se souvenant que 42 est simplement 7 fois 6. Vérification par recomposition en signes multiplicatifs connus. Un piège pourrait inclure une confusion avec la division par un chiffre proche comme 5.",
+        "hint": "Pense en termes de multiples de 6."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 18 × 2 ?",
+        "expression": "18 × 2",
+        "options": ["34", "36", "38", "32"],
+        "answer": "36",
+        "explanation": "Pour le calcul 18 × 2, double simplement 18 pour obtenir 36. Simplifier par répétition rapide des valeurs numériques. Un piège communement rencontré est un déferlement vers l'addition faux de 18 en tant qu'ajustement erroné.",
+        "hint": "Pense à 2 fois 18."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font la moitié de 100 ?",
+        "expression": "100 / 2",
+        "options": ["40", "50", "60", "66"],
+        "answer": "50",
+        "explanation": "La moitié de 100 est tout simplement 50. Diviser toute base par deux représente un calcul simple où les valeurs ne laissent aucune place au doute. Un piège ici est de considérer à tort l'application d'une opération complexe lorsque le simple est suffisant.",
+        "hint": "Divise le centième par deux."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 12 + 8 ?",
+        "expression": "12 + 8",
+        "options": ["19", "20", "22", "21"],
+        "answer": "20",
+        "explanation": "Pour 12 + 8, commence par ajouter 10 pour obtenir 20, puis vérifie l'additivité des unités pour confirmer le chiffre total. L'ajustement à une vingtaine précise est une aide mentale. Un piège possible est d'oubli du correct ajustement des unités.",
+        "hint": "Commence par obtenir une dizaine supplémentaire."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien font 4 × 9 ?",
+        "expression": "4 × 9",
+        "options": ["34", "35", "36", "37"],
+        "answer": "36",
+        "explanation": "4 × 9 = 36 parce que, en réalité, on additionne 4 neuf fois. Vérifiez le flux par 5, puis ajoutez 4 pour la vérification finale. Un piège inclut d'ajouter incorrectement à plusieurs reprises la multiplication.",
+        "hint": "Multiplie par 5, puis ajoute des multiples de 4."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 238 + 167 ?",
+        "expression": "238 + 167",
+        "options": ["405", "395", "401", "407"],
+        "answer": "405",
+        "explanation": "Ajoutez initialement les centaines : 200 + 100 = 300. Ajoutez ensuite les dizaines : 30 + 60 = 90, puis augmentez de 15 en combinant 8 + 7, 300 + 90 + 15 donne 405. Vérifiez, quand à mieux est choisi, qu'il n'y précède des provocations erronées multipliées entre certaines opérations.",
+        "hint": "Additionne séparément centaines, dizaines et unités."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 624 - 389 ?",
+        "expression": "624 - 389",
+        "options": ["235", "234", "236", "225"],
+        "answer": "235",
+        "explanation": "Soustraire d'abord 300 donne 324, puis soustraire 60 fait 264. Finalement, soustraire 9 nous amène à 255. Effectuer la soustraction par parties permet une meilleure gestion mentale. Attention au risque habituel de négliger la deuxième soustraction.",
+        "hint": "Procède par étapes en soustrayant doucement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 27 × 30 ?",
+        "expression": "27 × 30",
+        "options": ["810", "820", "900", "810"],
+        "answer": "810",
+        "explanation": "Pour multiplier 27 par 30, commencez par 27 × 3 = 81, puis multipliez par 10 pour obtenir 810. L'utilisation d'un facteur de 10 facilite l'ajustement multiplicatif. Erreurs fréquentes : multiplication en oubliant le facteur correct de 10 dans le produit final.",
+        "hint": "Multiplie par 3, puis ajoute un zéro."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 13 % de 300 ?",
+        "expression": "0,13 × 300",
+        "options": ["39", "40", "38", "42"],
+        "answer": "39",
+        "explanation": "13 % de 300 est obtenu par 300 × 0,13 = 39. Comptez les chiffres en positionnement, c'est la maîtrise de la multiplication va aider. Se méfier de l'oubli classique des décimales après le pointage des pourcentages.",
+        "hint": "Pense à diviser 100 % en dix puis ajouter 3 %."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le carré de 12 ?",
+        "expression": "12²",
+        "options": ["146", "144", "154", "134"],
+        "answer": "144",
+        "explanation": "12² = 12 × 12 = 144. Multiplier en deux étapes car 12 exprimant de 10 plus 2, donc 10_ACTION_ERROOutput 240+4. Le défi est d'arriver à un secrétariat en pondération commune appliquée par loi et ordre des ordres parmi d'autres approches.",
+        "hint": "Multiplie 12 par 12 en décomposant."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 682 + 329 ?",
+        "expression": "682 + 329",
+        "options": ["1001", "1011", "1021", "1031"],
+        "answer": "1011",
+        "explanation": "Ajoutez d'abord les centaines : 600 + 300 = 900. Ensuite, les dizaines 80 + 20 = 100, et enfin, les unités 2 + 9 = 11. Finalement 900+100+11 donne 1011. En décomposant les nombres, on garantit l'évitement des erreurs de calcul rapides qu'on trouve fréquentés.",
+        "hint": "Additionnez chiffres par chiffre."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 456 - 214 ?",
+        "expression": "456 - 214",
+        "options": ["242", "241", "244", "245"],
+        "answer": "242",
+        "explanation": "Soustraire 200 pour obtenir 256, ensuite soustraire 10 pour arriver à 246, finalisant en soustrayant 4 pour 242. Cette décomposition rend l'opération lisible sur papier. Le piège : estimer mal économiquement les soustractions consécutives.",
+        "hint": "Utilise soustraction progressive par morceaux."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 12 × 15 ?",
+        "expression": "12 × 15",
+        "options": ["180", "185", "200", "175"],
+        "answer": "180",
+        "explanation": "En effectuant 12 × 10 = 120, puis ajoutant 5 × 12 = 60. Réunir les valeurs pour total de 180. La décomposition en portions simples facilite et améliore l'efficacité, dupliquées pour abu naziers. Attention au plus forminable juste demandant une multitude totale.",
+        "hint": "Décompose en 12 × 10 + 12 × 5."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien font 9 % de 200 ?",
+        "expression": "0,09 × 200",
+        "options": ["18", "16", "14", "20"],
+        "answer": "18",
+        "explanation": "Calculez 200 × 0,09 pour obtenir 18. Cette conversion représente une poussée qualitative, car la confiance est décisive. Une erreur commune serait de se tromper sur les décimales. Elles devraient être précises.",
+        "hint": "Divisez 200 par dix et ajustez par 9 %."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le carré de 15 ?",
+        "expression": "15²",
+        "options": ["225", "230", "235", "220"],
+        "answer": "225",
+        "explanation": "Pour obtenir 15², multiplier 15 par 15 soit 15 × 10 = 150 plus (5 × 15 =) 75; résultat final 225. Cette méthode émergeant divise et combine progresse comme produit en plus simple approche. Fréquemment, il arrive de calculer une mauvaise décimale ou de ne pas combiner correctement les résultats partiels.",
+        "hint": "Repense l'addition des carrés."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de temps en secondes est 1 heure ?",
+        "expression": "60 min × 60 sec",
+        "options": ["3900", "3600", "3500", "3000"],
+        "answer": "3600",
+        "explanation": "Une heure, convertie en secondes, s'obtient en multipliant 60 (minutes) par 60 (secondes par minute) pour faire 3600 secondes au total. Cette conversion contribue à renforcer toute unité retrouvée pour déclarer une équité bien pointée. Vérifiez l'opération auprès des autres fractions temporelles.",
+        "hint": "Multipliez 60 minutes par 60 secondes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font (47 × 8) - 76 ?",
+        "expression": "(47 × 8) − 76",
+        "options": ["300", "302", "300", "305"],
+        "answer": "300",
+        "explanation": "Pour calculer (47 × 8), commencez par 47 × 10 (470), puis retirez deux fois 47 pour obtenir 376. Ensuite, soustrayez 76 pour arriver à 300. Cet exemple démontre la déduction intégrale permettant une résolution directe en l'évitement des erreurs autour. Un tel déphasage pourrait être source d'erreurs en couches.",
+        "hint": "Calcules premièrement la multiplication."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 23 × 17 ?",
+        "expression": "23 × 17",
+        "options": ["391", "400", "379", "385"],
+        "answer": "391",
+        "explanation": "Pour calculer 23×17, décomposez en 23×(10+7) ; ainsi, 23×10=230, 23×7=161, ensemble 230+161=391. La technique aide à une multiplication graduelle. Le problème habituel est de prendre chaque facteur sans compter qu'une décomposition est cruciale.",
+        "hint": "Utilise distributivité, 23 × (10 + 7)."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 35 % de 180 ?",
+        "expression": "0,35 × 180",
+        "options": ["63", "67", "60", "65"],
+        "answer": "63",
+        "explanation": "Pour 35 % de 180, calculez 180 × 0,35, en voyant d'abord 10 % donc faire 18, puis 3,5×18 = 63. Décomposez abord in unités pratiques et suivez d'un pourcentage allait totalisé comme thought de calcul. Ne pas environner les calculs ou négliger l'arrondi précis du coup.",
+        "hint": "Décompose en 3.5 fois 10 %."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la racine carrée de 225 ?",
+        "expression": "√225",
+        "options": ["15", "14", "13", "12"],
+        "answer": "15",
+        "explanation": "La racine de 225 est 15, car 225 est égal à 15 au carré. Cette simplification s'étend sur la résignation d'une interprétation arrêtée multiple. Confusion est typique lors des essais de se souvenir des carrés plus élevés.",
+        "hint": "Rappelle-toi des carrés parfaits."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le résultat de (35 + 17) × 2 - 14 ?",
+        "expression": "(35 + 17) × 2 - 14",
+        "options": ["102", "110", "104", "106"],
+        "answer": "102",
+        "explanation": "D'abord, ajoutez 35 et 17, obtenez 52, doublez pour obtenir 104, puis soustrayez 14 pour l'ultime 90. Cela met en lumière le besoin de priorités organisées habitudes appropriées, habiles lors des augmentations arythmiques repensées. Un risque est la mauvaise attention à ne pas doublement comptabiliser les ajouts intermédiaires.",
+        "hint": "Calculez d'abord les additions puis doubler."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 96 ÷ 3 + 7 × 4 ?",
+        "expression": "96 ÷ 3 + 7 × 4",
+        "options": ["52", "53", "54", "55"],
+        "answer": "55",
+        "explanation": "Pour résoudre, commencez par la division 96 ÷ 3 = 32. Ensuite, procédez à la multiplication : 7 × 4 = 28 ; 32 + 28 donne le total de 55. Le piège lors de cette combinaison est souvent de ne pas saisir la vitesse mise par ordre correct testé.",
+        "hint": "Effectuez les calculs divisés séparément."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le résultat de 23 × 19 ?",
+        "expression": "23 × 19",
+        "options": ["437", "457", "417", "433"],
+        "answer": "437",
+        "explanation": "Calculer 23 × 19 en pensant à 23 × (20 - 1), ainsi 23 × 20 = 460, puis soustrayez un 23 à 460 : résultat final 437. Cette portion dynamique s'offre à une orchestration fournisseurs d'efficacité. Le piège est souvent dans les soustractions.",
+        "hint": "Utilisez la distribution 23 × 20 - 23."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 25 × 15 ?",
+        "expression": "25 × 15",
+        "options": ["365", "375", "385", "395"],
+        "answer": "375",
+        "explanation": "Pour 25 × 15, utilisez (25 × 10) + (25 × 5) = 250 + 125 = 375. Décomposition englobant étonne par simplification de multiplicité, confiée envers phases internes. Erreurs fréquentes incluent le calcul erroné de la deuxième partie du produit.",
+        "hint": "Méthode par ajout 10 puis ajout 5."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de millisecondes en une minute ?",
+        "expression": "60 sec × 1000",
+        "options": ["60000", "61000", "59000", "62000"],
+        "answer": "60000",
+        "explanation": "Une minute comportant 60 secondes et chaque seconde 1000 millisecondes, donc 60 × 1000 = 60,000 millisecondes. La conversion des unités doit rester précise à chaque reprise. Un piège courant est d'oublier la multiplication par les millisecondes.",
+        "hint": "Pensez en termes de mille par seconde."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien font 5/8 de 240 ?",
+        "expression": "5/8 × 240",
+        "options": ["150", "160", "180", "175"],
+        "answer": "150",
+        "explanation": "Calculez 1/8 de 240 en divisant 240 par 8 ce qui donne 30, puis multipliez cette valeur par 5 pour 150. Ce fractionnement peut être chiffre dans son abnégation. Des erreurs peuvent survenir si la division préalable est incorrectement effectuée.",
+        "hint": "Pense en termes de 1/8, puis multipliez."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la racine carrée de 144 ?",
+        "expression": "√144",
+        "options": ["10", "11", "12", "13"],
+        "answer": "12",
+        "explanation": "La racine carrée de 144 est 12, car 12 × 12 = 144. C'est un calcul utilisé couramment pour obtenir la séquence de formation première de valeurs numérotaires. L'oubli de la multiplication des valeurs d'origine est une erreur fréquente.",
+        "hint": "Rappelez-vous la base des carrés."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le résultat de 8 % de 250 ?",
+        "expression": "0,08 × 250",
+        "options": ["20", "22", "18", "25"],
+        "answer": "20",
+        "explanation": "Calculez 8 % de 250 en multipliant par 0,08, soit 250 × 0,08 = 20. Décomposez chaque pourcentage en sa frange et de son contexte calculette-total. Se méfier du piège potentiel qu'est le mauvais ajustement des décimales additionnelles.",
+        "hint": "Pensez en fraction 0,08."
+    }
+]

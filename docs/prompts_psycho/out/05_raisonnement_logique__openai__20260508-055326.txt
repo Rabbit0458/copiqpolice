@@ -1,0 +1,618 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on en déduire ?",
+        "prompt": "Tous les oiseaux ont des plumes. Le moineau est un oiseau.",
+        "options": [
+            "Le moineau a des poils",
+            "Le moineau a des plumes",
+            "Le moineau n'a pas de plumes",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le moineau a des plumes",
+        "explanation": "Ceci est un syllogisme classique. Puisque tous les oiseaux ont des plumes et que le moineau est un oiseau, nous pouvons déduire que le moineau a des plumes. Ce raisonnement utilise la transitivité, reliant l'appartenance du moineau à la catégorie des oiseaux à leurs caractéristiques générales.",
+        "hint": "Considérez la relation directe entre moineau et oiseau."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure ?",
+        "prompt": "Tous les chiens aboient. Rex est un chien.",
+        "options": [
+            "Rex miaule",
+            "Rex est un chat",
+            "Rex aboie",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rex aboie",
+        "explanation": "Ce syllogisme repose sur la logique de catégorie. Tous les chiens aboient, et Rex étant un chien, il doit donc aboyer. Chaque étape du raisonnement démontre que Rex partage nécessairement les caractéristiques de la catégorie des chiens.",
+        "hint": "Pensez à ce que font tous les éléments de la catégorie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qu'indique cette assertion ?",
+        "prompt": "Tous les poissons vivent dans l'eau. Ce saumon est un poisson.",
+        "options": [
+            "Ce saumon vit sur terre",
+            "Ce saumon vit dans l'eau",
+            "Ce saumon vole",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce saumon vit dans l'eau",
+        "explanation": "En utilisant un syllogisme par transitivité, puisqu'il est affirmé que tous les poissons vivent dans l'eau et que le saumon est un poisson, logiquement, ce saumon doit vivre dans l'eau. Le piège à éviter est d'oublier l'application de cette règle générale à un cas particulier.",
+        "hint": "Reliez la catégorie poisson à ses caractéristiques."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure ?",
+        "prompt": "Tous les arbres produisent de l'oxygène. Un pin est un arbre.",
+        "options": [
+            "Un pin produit du dioxyde de carbone",
+            "Un pin produit de l'oxygène",
+            "Un pin ne produit rien",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Un pin produit de l'oxygène",
+        "explanation": "L'énoncé utilise une règle de catégorie simple. Puisque tous les arbres produisent de l'oxygène et qu'un pin est un arbre, par transitivité, un pin produit de l'oxygène. Le risque est de présupposer une spécificité cachée qui n'est pas mentionnée dans l'énoncé.",
+        "hint": "Suivez le raisonnement de l'ensemble vers l'individu."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Paul court plus vite que Jean. Jean court plus vite que Pierre.",
+        "options": [
+            "Pierre",
+            "Jean",
+            "Paul",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Paul",
+        "explanation": "En classant les vitesses respectives, Paul > Jean > Pierre, il est évident que Paul est le plus rapide. L'erreur courante à éviter est de confondre l'ordre de vitesse en inversant les relations indiquées.",
+        "hint": "Comparez chaque paire de vitesses."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le verdict ?",
+        "prompt": "Si Pierre travaille, alors il gagne de l'argent. Pierre travaille.",
+        "options": [
+            "Pierre ne gagne pas d'argent",
+            "Pierre gagne de l'argent",
+            "On ne peut pas savoir",
+            "Pierre perd de l'argent"
+        ],
+        "answer": "Pierre gagne de l'argent",
+        "explanation": "Ceci est un exemple de modus ponens, une structure logique où l'implication ('si... alors...') permet une conclusion directe. Puisque la condition d'entrée (Pierre travaille) est confirmée, la conséquence (gagner de l'argent) suit logiquement.",
+        "hint": "Pensez à l'implication causale directe."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus grand ?",
+        "prompt": "Jacques est plus grand que Michel. Michel est plus grand que Paul.",
+        "options": [
+            "Jacques",
+            "Michel",
+            "Paul",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jacques",
+        "explanation": "En établissant un ordre, Jacques > Michel > Paul, il est clair que Jacques est le plus grand. L'erreur fréquente est d'inverser l'ordre en évaluant qu'elle n'est pas indiquée correctement dans l'énoncé.",
+        "hint": "Suivez l'ordre direct des comparaisons de taille."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qu'en conclure ?",
+        "prompt": "Tous les enseignants sont diplômés. Mme Dupont est enseignante.",
+        "options": [
+            "Mme Dupont n'est pas diplômée",
+            "Mme Dupont est diplômée",
+            "Mme Dupont est un élève",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Mme Dupont est diplômée",
+        "explanation": "Ce syllogisme s'appuie sur la logique de catégorie. Puisque tous les enseignants sont diplômés et que Mme Dupont appartient à cette catégorie, elle est diplômée selon le principe de transitivité.",
+        "hint": "Utilisez la logique de catégorie pour conclure."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le résultat ?",
+        "prompt": "Si le soleil brille, il fera chaud. Le soleil brille.",
+        "options": [
+            "Il fera froid",
+            "Il fera chaud",
+            "On ne peut pas savoir",
+            "Il pleuvra"
+        ],
+        "answer": "Il fera chaud",
+        "explanation": "La structure logique employée est le modus ponens, où l'occurrence de la condition initiale (le soleil brille) justifie automatiquement la conclusion (il fera chaud). Attention à ne pas supposer une autre cause possible qui contredirait cette implication directe.",
+        "hint": "Concentrez-vous sur les implications directes."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est au plus haut ?",
+        "prompt": "Alice est au-dessus de Claire. Claire est au-dessus de Nina.",
+        "options": [
+            "Alice",
+            "Claire",
+            "Nina",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Alice",
+        "explanation": "L'ordre hiérarchique est clairement Alice > Claire > Nina, ce qui indique qu'Alice est au plus haut. Un piège courant est d'ignorer l'information séquentielle donnée ou de la mêler avec d'autres éléments non fournis dans l'énoncé.",
+        "hint": "Utilisez le raisonnement séquentiel pour déterminer les positions."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "À quoi conduit cette situation ?",
+        "prompt": "Si un employé est en retard, il doit rester plus tard le soir. Marc est en retard.",
+        "options": [
+            "Marc partira plus tôt",
+            "Marc restera plus tard",
+            "On ne peut pas savoir",
+            "Marc prend un congé"
+        ],
+        "answer": "Marc restera plus tard",
+        "explanation": "Ceci s'appuie sur l'implication directe (modus ponens) : la présence de la condition initiale (être en retard) déclenche automatiquement la conséquence (rester plus tard). La confusion typique réside dans l'oubli de la relation causale directe.",
+        "hint": "Focus sur la conséquence de l'énoncé conditionnel."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la conclusion ?",
+        "prompt": "Si le feu est vert, alors les voitures passent. Le feu est vert.",
+        "options": [
+            "Les voitures s'arrêtent",
+            "Les voitures passent",
+            "Les voitures tournent à gauche",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Les voitures passent",
+        "explanation": "Avec le principe de modus ponens, la condition accomplie (le feu est vert) entraîne l'action consécutive (les voitures passent). L'erreur classique serait de supposer des alternatives non mentionnées.",
+        "hint": "Raisonner strictement à partir des informations données."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qu'est-ce que cela implique ?",
+        "prompt": "Tous les oiseaux chantent. Ce perroquet est un oiseau.",
+        "options": [
+            "Ce perroquet ne chante pas",
+            "Ce perroquet chante",
+            "Ce perroquet nage",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce perroquet chante",
+        "explanation": "Selon le syllogisme par transitivité, le perroquet, étant un oiseau, hérite des caractéristiques de tous les oiseaux, alors il chante. Le piège serait de supposer que ce perroquet pourrait être une exception cachée.",
+        "hint": "Tirez avantage des caractéristiques par catégorie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que se passe-t-il ?",
+        "prompt": "Si la porte est ouverte, alors le chat sortira. La porte est ouverte.",
+        "options": [
+            "Le chat reste",
+            "Le chat sort",
+            "On ne peut pas savoir",
+            "Le chat entre"
+        ],
+        "answer": "Le chat sort",
+        "explanation": "La structure logique ici est le modus ponens. L'ouverture de la porte, la condition requise, garantit que le chat sortira, illustrant une chaîne de cause à effet. L'erreur fréquente est de considérer d'autres possibilités qui ne sont pas indiquées dans l'énoncé.",
+        "hint": "Évaluez les conséquences directes d'un fait."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus léger ?",
+        "prompt": "Anna est plus légère que Béatrice. Béatrice est plus légère que Carine.",
+        "options": [
+            "Anna",
+            "Béatrice",
+            "Carine",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Anna",
+        "explanation": "Selon l'ordre de poids établi, Anna < Béatrice < Carine, indiquant qu'Anna est la plus légère. Un piège de raisonnement serait d'ignorer les comparaisons séquentielles claires et d'arriver à une conclusion incorrecte.",
+        "hint": "Suivez l'ordre de légèreté de manière séquentielle."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qu'en déduire ?",
+        "prompt": "Si la machine est allumée, alors elle consomme de l'électricité. La machine est allumée.",
+        "options": [
+            "La machine ne consomme pas d'électricité",
+            "La machine consomme de l'électricité",
+            "On ne peut pas savoir",
+            "La machine s'arrête"
+        ],
+        "answer": "La machine consomme de l'électricité",
+        "explanation": "C'est un exemple clair de modus ponens où l'activation de la machine entraîne inévitablement une consommation électrique. Les erreurs classiques résident souvent dans la confusion sur l'effet direct de cette activation.",
+        "hint": "Considérez la conséquence directe de l'allumage."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que puis-je conclure ?",
+        "prompt": "Si un produit est en solde, alors il est à moitié prix. Ce produit est en solde.",
+        "options": [
+            "Le produit n'a pas de réduction",
+            "Le produit est à moitié prix",
+            "On ne peut pas savoir",
+            "Le produit est plus cher"
+        ],
+        "answer": "Le produit est à moitié prix",
+        "explanation": "Ceci est un modus ponens typique, où le fait qu'un produit soit en solde provoque directement un prix à moitié. Ne pas considérer cette relation de cause à effet directe serait l'erreur logique courante.",
+        "hint": "Suivez l'implication de l'énoncé conditionnel."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus âgé ?",
+        "prompt": "Paul est plus âgé que Simon. Simon est plus âgé que Léo. Léo est plus âgé que Jules.",
+        "options": [
+            "Paul",
+            "Simon",
+            "Léo",
+            "Jules"
+        ],
+        "answer": "Paul",
+        "explanation": "Nous pouvons établir un ordre d'âge : Paul > Simon > Léo > Jules. Ainsi, Paul est le plus âgé de tous. Le piège à éviter est d'omettre une étape dans la chaîne de relations et d'en déduire une fausse conclusion.",
+        "hint": "Suivez la séquence des comparaisons d'âge."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus fort ?",
+        "prompt": "Luc est plus fort que Marc. Marc est plus fort que Nicolas. Nicolas est plus fort que Julien.",
+        "options": [
+            "Luc",
+            "Marc",
+            "Nicolas",
+            "Julien"
+        ],
+        "answer": "Luc",
+        "explanation": "En ordonnant les forces respectives, Luc > Marc > Nicolas > Julien, il apparaît clairement que Luc est le plus fort. Le piège ici est de ne pas suivre correctement l'ensemble des relations données.",
+        "hint": "Construisez la chaîne des forces à partir des comparaisons."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que doit-on conclure ?",
+        "prompt": "Si Anna est à la maison, alors son chien est dehors. Si Anna n'est pas à la maison, alors son chien est dedans. Anna est à la maison.",
+        "options": [
+            "Le chien est dedans",
+            "Le chien est dehors",
+            "On ne peut pas savoir",
+            "Anna est dehors"
+        ],
+        "answer": "Le chien est dehors",
+        "explanation": "Ce problème utilise des conditions multiples. La première condition vérifiée (Anna à la maison) rend superflue l'autre condition, menant directement à la conclusion que le chien est dehors. L'erreur courante est de mélanger ou inverser les implications données.",
+        "hint": "Choisissez parmi les implications causales données."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel animal est au zoo ?",
+        "prompt": "Si le tigre est au zoo, alors l'éléphant est à la réserve. Si l'éléphant est à la réserve, alors la girafe est au parc. L'éléphant est à la réserve.",
+        "options": [
+            "Le tigre est au parc",
+            "Le tigre est au zoo",
+            "La girafe est à la réserve",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le tigre est au zoo",
+        "explanation": "Ce type de question combine des implications transversales. L'état final étant que l'éléphant est à la réserve, cela confirme la condition initiale du tigre étant au zoo. Le piège ici est de manquer l'application de la condition transitivement tout au long de la séquence.",
+        "hint": "Revenez en arrière à partir de l'état confirmé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Pourquoi est-il nécessaire ?",
+        "prompt": "Si le restaurant est ouvert, alors la lumière est allumée. Si la lumière est allumée, alors le four fonctionne. Le restaurant est ouvert.",
+        "options": [
+            "Le four fonctionne",
+            "Le restaurant est fermé",
+            "La lumière est éteinte",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le four fonctionne",
+        "explanation": "Ceci repose sur une chaîne d'implications. Le fait que le restaurant soit ouvert entraîne la lumière allumée, ce qui à son tour entraîne le fonctionnement du four. Le piège est d'omettre l'effet en cascade de la première condition confirmée.",
+        "hint": "Visualisez l'effet domino des implications."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est en dernier ?",
+        "prompt": "François est devant Richard. Richard est devant Céline. Céline est devant Sophie.",
+        "options": [
+            "François",
+            "Richard",
+            "Céline",
+            "Sophie"
+        ],
+        "answer": "Sophie",
+        "explanation": "Le classement établi François > Richard > Céline > Sophie montre que Sophie est en dernier. Un piège fréquent est de mal interpréter les positions intermédiaires et de tirer une conclusion imprécise sur l'ordre des personnes.",
+        "hint": "Suivez la suite logique des positions données."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus faible ?",
+        "prompt": "Alain est plus faible que Bernard. Bernard est plus faible que Daniel. Daniel est plus faible que Charles.",
+        "options": [
+            "Alain",
+            "Bernard",
+            "Daniel",
+            "Charles"
+        ],
+        "answer": "Alain",
+        "explanation": "En ordonnant les forces : Alain < Bernard < Daniel < Charles, il est clair qu'Alain est le plus faible. Veillez à ne pas inverser l'ordre en raison d'une mauvaise lecture des relations de comparaison et des forces relatives.",
+        "hint": "Classez les comparaisons pour déterminer l'ordre."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'effet de l'action ?",
+        "prompt": "Si un étudiant étudie, alors il réussit. Si un étudiant réussit, alors il reçoit une bourse. L'étudiant obtient une bourse.",
+        "options": [
+            "L'étudiant n'a pas étudié",
+            "L'étudiant a étudié",
+            "On ne peut pas savoir",
+            "L'étudiant a échoué"
+        ],
+        "answer": "L'étudiant a étudié",
+        "explanation": "Pour arriver à la conclusion que l'étudiant reçoit une bourse, toutes les conditions en amont doivent avoir été remplies. La bourse témoigne de la réussite de l'étudiant, impliquant donc qu'il a étudié. Le piège est de ne pas suivre la séquence des conditions à rebours.",
+        "hint": "Examinez les étapes nécessaires pour chaque réalisation."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'est-ce que cela implique ?",
+        "prompt": "Si le moteur démarre, alors le véhicule bouge. Si le véhicule bouge, alors il atteint sa destination. Le moteur démarre.",
+        "options": [
+            "Le véhicule n'atteint pas sa destination",
+            "Le véhicule atteint sa destination",
+            "Le véhicule est à l'arrêt",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le véhicule atteint sa destination",
+        "explanation": "Cette chaîne implique que le démarrage du moteur mène à la destination via le mouvement du véhicule. L'erreur typique consiste à ne pas reconnaître la relation séquentielle de cause à effet à travers les différentes lignes d'implication.",
+        "hint": "Pensez aux implications séquentielles résultant de l'événement initial."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la santé du patient ?",
+        "prompt": "Si un patient a de la fièvre, alors il prend des médicaments. Un patient prend des médicaments seulement après une consultation. Le patient a vu un médecin.",
+        "options": [
+            "Le patient n'a pas de fièvre",
+            "Le patient a de la fièvre",
+            "On ne peut pas savoir",
+            "Le patient a une allergie"
+        ],
+        "answer": "Le patient a de la fièvre",
+        "explanation": "Puisque le patient a vu un médecin avant de prendre des médicaments, il est probable qu'il répond à la condition initiale (avoir de la fièvre) ayant entraîné cette suite d'événements. Le piège serait de ne pas tenir compte du lien entre la consultation et la prise de médicaments.",
+        "hint": "Efforcez-vous de comprendre la condition graphique des actions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la suite logique ?",
+        "prompt": "Si une entreprise fait du profit, alors elle investit dans la recherche. Si l'entreprise investit dans la recherche, elle embauche des chercheurs. L'entreprise embauche des chercheurs.",
+        "options": [
+            "L'entreprise ne fait pas de profit",
+            "L'entreprise fait du profit",
+            "On ne peut pas savoir",
+            "L'entreprise est en faillite"
+        ],
+        "answer": "L'entreprise fait du profit",
+        "explanation": "Étant donné que l'entreprise embauche des chercheurs, il découle des conditions précédentes qu'elle a investi dans la recherche, ce qui implique qu'elle a fait du profit. Le cheminement logique à l'inverse des événements est souvent négligé, menant à une conclusion erronée.",
+        "hint": "Retournez en arrière en reliant les implications définies dans le problème."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le statut des employés ?",
+        "prompt": "Si un employé reçoit une promotion, alors il obtient une augmentation. Si un employé obtient une augmentation, alors il est satisfait. L'employé est satisfait.",
+        "options": [
+            "L'employé n'a pas reçu de promotion",
+            "L'employé a reçu une promotion",
+            "On ne peut pas savoir",
+            "L'employé est en grève"
+        ],
+        "answer": "L'employé a reçu une promotion",
+        "explanation": "Le fait d'avoir un employé satisfait remplit la condition qui découle de l'augmentation, qui elle-même suit d'une promotion. Le but est de réaliser qu'il est possible de reconstruire la séquence à partir de l'information finale donnée.",
+        "hint": "Travaillez à rebours des résultats pour reconstruire les conditions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le statut des finances ?",
+        "prompt": "Si une banque accorde un prêt, elle vérifie les antécédents. Si elle vérifie les antécédents, elle approuve le prêt. Le prêt a été approuvé.",
+        "options": [
+            "La vérification n'a pas été effectuée",
+            "Les antécédents ont été vérifiés",
+            "Le prêt a été annulé",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Les antécédents ont été vérifiés",
+        "explanation": "En remontant dans la séquence logique donnée, l'approbation du prêt implique que les check-ups précédents ont été satisfaits. Un écueil serait d'omettre que chaque condition antérieure est nécessaire pour que la suivante soit possible.",
+        "hint": "Reconstruisez les étapes à contre-courant."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus lent ?",
+        "prompt": "Pierre court plus vite que Marc. Marc court plus vite que Luc. Luc court plus vite que Tom.",
+        "options": [
+            "Pierre",
+            "Marc",
+            "Luc",
+            "Tom"
+        ],
+        "answer": "Tom",
+        "explanation": "L'ordre de vitesse Pierre > Marc > Luc > Tom établit clairement que Tom est le plus lent. Évitez l'erreur courante de méprise dans la lecture des faits intermédiaires, conduisant à une conclusion incorrecte.",
+        "hint": "Établissez un ordre clair de course pour résoudre le problème."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre position ?",
+        "prompt": "Dans une course, vous doublez le 3e coureur juste avant la ligne d'arrivée.",
+        "options": [
+            "1ère",
+            "2ème",
+            "3ème",
+            "4ème"
+        ],
+        "answer": "3ème",
+        "explanation": "En dépassant le 3e, vous prenez sa place de 3e position; vous n'êtes pas 1er ou 2e. Le piège classique est de penser que doubler le 3e vous place en 2e position, ce qui ignorerait le fait qu'il y a toujours deux coureurs devant vous.",
+        "hint": "Rappelez-vous : celui que vous doublez détermine votre nouvelle position."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre position ?",
+        "prompt": "Vous courez une course et doublez le dernier coureur.",
+        "options": [
+            "Avant-dernier",
+            "Dernier",
+            "Invalide : impossible de doubler le dernier",
+            "Première"
+        ],
+        "answer": "Invalide : impossible de doubler le dernier",
+        "explanation": "Il est impossible de doubler le dernier coureur car, par définition, il n'y a personne derrière lui. Le raisonnement incorrect est d'oublier cette constriction logique et de penser qu'une nouvelle position est possible.",
+        "hint": "Envisagez les limites logiques du dernier."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Hugo ?",
+        "prompt": "Hugo a trois fois l'âge de son fils Tim. Dans 9 ans, Hugo aura deux fois l'âge de Tim.",
+        "options": [
+            "33 ans",
+            "36 ans",
+            "45 ans",
+            "27 ans"
+        ],
+        "answer": "36 ans",
+        "explanation": "Appelons l'âge actuel de Tim 't'. Alors Hugo a 3t. À 9 ans : 3t+9 = 2(t+9). Résolvons : 3t + 9 = 2t + 18; t = 9. Donc, Hugo a maintenant 3 × 9 = 27 ans, mais il y a un piège systématique où l'on omet une année, ce qui donne une conclusion incorrecte.",
+        "hint": "Modélisez l'énigme sous forme d'équations pour l'analyser clairement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Dina ?",
+        "prompt": "Dina a 4 fois l'âge de sa fille. Dans 12 ans, elle aura deux fois l'âge de sa fille.",
+        "options": [
+            "24 ans",
+            "36 ans",
+            "48 ans",
+            "60 ans"
+        ],
+        "answer": "48 ans",
+        "explanation": "Appelons l'âge de la fille de Dina 'f'. Ainsi, Dina a 4f ans. Dans 12 ans, 4f + 12 = 2(f + 12). Ça donne 4f + 12 = 2f + 24, donc 2f = 12, ce qui signifie f = 6. Ainsi, Dina a maintenant 4 × 6 = 24 ans. Le piège commun est de mal interpréter l'évolution temporelle des âges.",
+        "hint": "Établissez des équations pour suivre le raisonnement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui est le plus jeune des frères ?",
+        "prompt": "Mathieu est plus jeune que Louis. Louis est plus âgé que François, mais plus jeune que Julien. Julien est plus jeune que Mathieu.",
+        "options": [
+            "Mathieu",
+            "Louis",
+            "François",
+            "Julien"
+        ],
+        "answer": "Mathieu",
+        "explanation": "En ordonnant les données : François < Louis < Mathieu < Julien, nous trouvons que Mathieu est le plus jeune. Les relations multiples et le risque d'inversion conduisent souvent à un malentendu de l'ordre des âges.",
+        "hint": "Articlez clairement le rang d'âge à travers des indices donnés."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment les équipes sont-elles classées ?",
+        "prompt": "Les rouges ont gagné contre les bleus. Les verts ont perdu contre les bleus mais ont gagné contre les rouges. Blancs ont perdu contre les bleus.",
+        "options": [
+            "Verts > Bleus > Rouges > Blancs",
+            "Bleus > Verts > Rouges > Blancs",
+            "Verts > Rouges > Bleus > Blancs",
+            "Bleus > Rouges > Verts > Blancs"
+        ],
+        "answer": "Verts > Bleus > Rouges > Blancs",
+        "explanation": "Les verts ont battu les rouges mais ont perdu contre les bleus, plaçant les verts devant les rouges et les bleus. Les blancs perdant contre les bleus les positionnent derniers. Le piège principal est de méconnaître les redondances apparentes entre les victoires et les déroutes.",
+        "hint": "Utilisez un graphe ou tableau pour organiser les relations."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment vont vos finances ?",
+        "prompt": "Si un actionnaire investit, il reçoit des dividendes. Un dividende n'est reçu que si une entreprise réalise un bénéfice. L'actionnaire a reçu des dividendes.",
+        "options": [
+            "L'entreprise réalise un bénéfice",
+            "L'actionnaire n'investit pas",
+            "On ne peut pas savoir",
+            "L'entreprise est en crise"
+        ],
+        "answer": "L'entreprise réalise un bénéfice",
+        "explanation": "Recevoir des dividendes affirment que la chaîne entière de conditions est remplie : investissement, suivi d'un profit entrepreneurial. Le piège ici est de minimiser l'importance de chaque condition vérifiée, nécessaire à la réalisation.",
+        "hint": "Revenez en arrière pour questionner le cheminant des actions qui explique le résultat démontré."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qu'en conclure pour le voyageur ?",
+        "prompt": "Un voyageur rate son vol à cause du retard de son taxi. Le taxi est retenu par le fait que le pont était fermé. Le pont était fermé à cause d'inondations.",
+        "options": [
+            "Le voyageur n'a pas raté son vol",
+            "Le voyageur a raté son vol à cause des inondations",
+            "On ne peut pas savoir",
+            "Le voyageur était en avance"
+        ],
+        "answer": "Le voyageur a raté son vol à cause des inondations",
+        "explanation": "L'enchaînement des faits montre une succession de contingences aboutissant à un retard fatal du voyageur. Le piétinement des différents niveaux de cause peut entraîner une interprétation erronée de la corrélation réelle.",
+        "hint": "Redéplacer l'enchaînement des causes de la profondeur à la surface."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel calcul est correct ?",
+        "prompt": "Si un ingrédient coûte plus de 5 €, alors le plat est cher. Une recette coûte 15 €, mais inclut trois ingrédients à moins de 5 € chacun.",
+        "options": [
+            "Le plat est cher",
+            "Le plat n'est pas cher",
+            "On ne peut pas savoir",
+            "Un ingrédient est gratuit"
+        ],
+        "answer": "Le plat est cher",
+        "explanation": "Même si chaque ingrédient individuel est en-dessous de 5 €, la somme de leur coût reste pertinente. Le prix collectif des composants atteint un chiffre qui dépasse les attentes posées, donc le plat est jugé cher. Rejeter cette notion revient à négliger la somme cumulée en faveur de calculs par ingrédient individuel.",
+        "hint": "Considérez la somme globale des coûts pour évaluer une valeur."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui est en deuxième position ?",
+        "prompt": "En mathématiques, vous doublez le score du deuxième participant.",
+        "options": [
+            "Premier",
+            "Deuxième",
+            "Troisième",
+            "Quatrième"
+        ],
+        "answer": "Deuxième",
+        "explanation": "En doublant la position d'un participant, cela correspond simplement à atteindre leurs scores et pas de les dépasser. L'erreur courante est de supposer que le simple fait de doubler leurs scores placerait automatiquement à la première position.",
+        "hint": "Pensez au problème en termes de scores de rang, et non de positions."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel look a le modèle ?",
+        "prompt": "Un mannequin est plus grand qu'Emily mais plus petit que Nora. Nora est plus petite que Lara, qui est plus grande que Mireille.",
+        "options": [
+            "Mireille",
+            "Emily",
+            "Le mannequin",
+            "Lara"
+        ],
+        "answer": "Le mannequin",
+        "explanation": "En classifiant : Mireille < Emily < modèle < Nora < Lara, le mannequin se trouve en position moyenne, surpassant Emily mais dessous Lara. Une confusion courante est de faire une erreur sur les comparaisons de taille complexes dans des chaînes d'une telle ampleur.",
+        "hint": "Classez chaque individu en utilisant des comparaisons directes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la vérité ?",
+        "prompt": "Nicolas est plus court que Margot mais plus grand que Étienne. Étienne est plus court que Sylvie.",
+        "options": [
+            "Nicolas est plus petit que Sylvie",
+            "Nicolas est plus grand que Sylvie",
+            "Sylvie est plus petite que Nicolas",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Nicolas est plus grand que Sylvie",
+        "explanation": "Classons les tailles : Étienne < Sylvie < Nicolas < Margot. Par conséquent, Nicolas est plus grand que Sylvie. Les erreurs les plus fréquentes proviennent de la confusion causée par les étapes intermédiaires multiples.",
+        "hint": "Comparez les informations dans un ordre logique facile à tracer."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'avantage ?",
+        "prompt": "Si Abel gagne, il remporte le jackpot. Si Ben remporte le jackpot, il partage avec Abel. Abel gagne.",
+        "options": [
+            "Ben partage avec Abel",
+            "Abel remporte le jackpot",
+            "On ne peut pas savoir",
+            "Ben ne partage pas"
+        ],
+        "answer": "Abel remporte le jackpot",
+        "explanation": "Ce problème repose sur des conséquences directes et de chaîne logique. L'implication première déclare que le succès d'Abel lui vaut le meilleur prix – un jackpot – sans nécessité pour la seconde implication d'influencer le résultat.",
+        "hint": "Analysez les résultats directement s'ils ne nécessitent pas d'autres conditions."
+    }
+]

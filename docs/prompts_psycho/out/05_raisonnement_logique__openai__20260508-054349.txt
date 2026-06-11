@@ -1,0 +1,561 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on déduire de l'énoncé suivant ?",
+        "prompt": "Tous les dauphins sont des mammifères. Flipper est un dauphin.",
+        "options": [
+            "Flipper est un reptile",
+            "Flipper est un mammifère",
+            "Flipper est un oiseau",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Flipper est un mammifère",
+        "explanation": "C'est un syllogisme par transitivité : tous les dauphins sont des mammifères. Puisque Flipper est un dauphin, il doit logiquement être un mammifère. Le piège classique ici est de confondre les catégories animales si l'on ne suit pas correctement la transitivité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel fruit est à la fois rouge et sucré selon l'énoncé ?",
+        "prompt": "Tous les fraises sont rouges. Certains fruits rouges sont sucrés. Les fraises sont des fruits.",
+        "options": [
+            "Toutes les fraises sont sucrées",
+            "Aucune fraise n'est sucrée",
+            "Certaines fraises sont sucrées",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Certaines fraises sont sucrées",
+        "explanation": "Selon le syllogisme avec quantificateur particulier, nous savons que certains fruits rouges sont sucrés. Puisque toutes les fraises sont rouges, certaines pourraient également être sucrées. Le piège est de supposer à tort que toutes les fraises sont sucrées sans preuve."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure de l'énoncé ?",
+        "prompt": "Toutes les fleurs de ce jardin sont roses. Cette plante est une fleur de ce jardin.",
+        "options": [
+            "Cette plante est rose",
+            "Cette plante est bleue",
+            "Cette plante est verte",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette plante est rose",
+        "explanation": "Dans ce syllogisme, puisque toutes les fleurs du jardin sont roses et que cette plante est une fleur du jardin, elle doit être rose. Le piège est de déduire une couleur différente si l'on ignore la condition initiale selon laquelle toutes les fleurs sont roses."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel choix est correct selon cet ordre ?",
+        "prompt": "Ana est plus rapide que Luis. Luis est plus rapide que Rosa.",
+        "options": [
+            "Rosa est plus rapide qu'Ana",
+            "Ana est plus rapide que Rosa",
+            "Luis est le plus rapide",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ana est plus rapide que Rosa",
+        "explanation": "Pour déterminer l'ordre, nous avons Ana > Luis > Rosa. Ana, étant plus rapide que Luis qui est lui-même plus rapide que Rosa, est donc plus rapide que Rosa. Le piège classique serait de confondre l'ordre de rapidité en oubliant la chaîne de transitivité établie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle condition est vraie selon les énoncés ?",
+        "prompt": "Si une voiture est électrique, alors elle est écologique. La Tesla Model 3 est électrique.",
+        "options": [
+            "La Tesla Model 3 n'est pas écologique",
+            "La Tesla Model 3 est écologique",
+            "Toutes les voitures écologiques sont électriques",
+            "On ne peut pas savoir"
+        ],
+        "answer": "La Tesla Model 3 est écologique",
+        "explanation": "En utilisant le modus ponens, si être électrique implique être écologique et la Tesla Model 3 est électrique, alors elle doit être écologique. Le piège est d'inverser cette condition, pensant que toutes les écologiques sont électriques, ce qui n'est pas démontré ici."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure de l'ordre suivant ?",
+        "prompt": "Victor est plus vieux que Hugo. Hugo est plus vieux que Léo.",
+        "options": [
+            "Léo est plus vieux que Victor",
+            "Victor est le plus vieux",
+            "Hugo est le plus vieux",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Victor est le plus vieux",
+        "explanation": "La chaîne d'âges est ainsi : Victor > Hugo > Léo. La conclusion est donc que Victor est le plus vieux des trois. Le piège est d'inverser ces relations et de faire des erreurs en ne respectant pas l'ordre établi."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la conclusion correcte selon l'énoncé ?",
+        "prompt": "Tous les étudiants appliqués réussissent leurs examens. Louise est une étudiante appliquée.",
+        "options": [
+            "Louise échoue à ses examens",
+            "Louise réussit ses examens",
+            "Louise est paresseuse",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Louise réussit ses examens",
+        "explanation": "Nous avons un syllogisme par transitivité : tous les étudiants appliqués réussissent leurs examens. Étant appliquée, Louise doit donc réussir ses examens. Le piège est de penser que nous n'avons pas assez de données, alors que le lien est direct ici."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure ?",
+        "prompt": "Tous les romans sont des livres. Ce livre est un roman.",
+        "options": [
+            "Ce livre est un manuel",
+            "Ce livre n'est pas un livre",
+            "Ce livre est un livre",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce livre est un livre",
+        "explanation": "Il s'agit d'un syllogisme classique : si tous les romans sont des livres et que ce que nous avons est un roman, alors par définition, c'est un livre. Le piège est de supposer que parce que c'est un roman, une conclusion aberrante comme étant un manuel est possible."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel employé travaille le plus longtemps ?",
+        "prompt": "Julien travaille plus longtemps que Nina. Nina travaille plus longtemps qu'Alix.",
+        "options": [
+            "Alix",
+            "Nina",
+            "Julien",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julien",
+        "explanation": "Ordre des temps de travail : Julien > Nina > Alix. Julien travaille donc le plus longtemps des trois. Le piège est de mélanger les relations de travail, oubliant de suivre l'enchaînement correct basé sur les prémisses."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on affirmer suite à l'énoncé ?",
+        "prompt": "Si un objet flotte, alors il est plus léger que l'eau. Le bouchon flotte.",
+        "options": [
+            "Le bouchon est plus lourd que l'eau",
+            "Le bouchon est plus léger que l'eau",
+            "Le bouchon est en verre",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le bouchon est plus léger que l'eau",
+        "explanation": "Grâce au modus ponens, un objet qui flotte est nécessairement plus léger que l'eau. Comme le bouchon flotte, il est donc plus léger que l'eau. Le piège serait de supposer que sa capacité à flotter n'est pas liée à sa masse relative."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle phrase est correcte ?",
+        "prompt": "Tous les artistes talentueux vendent leur art. Lena vend son art.",
+        "options": [
+            "Lena n'est pas talentueuse",
+            "Lena est artiste",
+            "Lena ne vend pas son art",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Lena est artiste",
+        "explanation": "Bien que l'énoncé ne permette pas de conclure le talent, il est certain que vendre de l'art et être qualifié d'artiste sont intrinsèques. Le piège réside ici dans l'hypothèse incorrecte sur le talent non formulée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel animal est domestique selon l'énoncé ?",
+        "prompt": "Tous les chiens sont des animaux domestiques. Rex est un chien.",
+        "options": [
+            "Rex est un chat",
+            "Rex est un animal domestique",
+            "Rex est un animal sauvage",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rex est un animal domestique",
+        "explanation": "En utilisant un syllogisme par transitivité : tous les chiens sont des animaux domestiques et Rex est un chien. Donc, Rex est un animal domestique. L'erreur réside dans la confusion entre les catégories animales sans respect de la logique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel énoncé est vrai pour Baudelaire selon le prompt ?",
+        "prompt": "Tous les poètes célèbres ont écrit des oeuvres. Baudelaire est un poète célèbre.",
+        "options": [
+            "Baudelaire n'a pas écrit d'oeuvres",
+            "Baudelaire a écrit des oeuvres",
+            "Baudelaire est un peintre",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Baudelaire a écrit des oeuvres",
+        "explanation": "Utilisant le syllogisme par transitivité, chaque poète célèbre écrit des oeuvres, et donc Baudelaire en a écrit aussi. Le piège est de supposer que les célébrités n'engendrent pas d'oeuvres, omettant le lien direct entre artiste et production."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la conclusion à tirer ?",
+        "prompt": "Si un fruit est mûr, alors il est sucré. Cette pomme est mûre.",
+        "options": [
+            "Cette pomme est sucrée",
+            "Cette pomme est amère",
+            "Cette pomme est en bois",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette pomme est sucrée",
+        "explanation": "Avec le modus ponens, un fruit mûr est nécessairement sucré. Puisque cette pomme est mûre, alors elle est sucrée. Le piège serait de penser que le goût ne suit pas de manière certaine la maturité spécifiée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui finit en tête selon l'énoncé donné ?",
+        "prompt": "Sam court plus vite qu'Ella. Ella court plus vite que Tom.",
+        "options": [
+            "Tom",
+            "Ella",
+            "Sam",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Sam",
+        "explanation": "L'ordre des vitesses est Sam > Ella > Tom, Sam étant donc le plus rapide. Le piège est de ne pas suivre correctement cette logique et d'inverser les relations, confondant la place de chacun dans la course."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion est correcte suivant cette description ?",
+        "prompt": "Toutes les villes françaises ont une mairie. Bordeaux est une ville française.",
+        "options": [
+            "Bordeaux n'a pas de mairie",
+            "Bordeaux a une mairie",
+            "Bordeaux est une ville espagnole",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Bordeaux a une mairie",
+        "explanation": "Par application de la transitivité : toutes les villes françaises ont une mairie et Bordeaux étant parmi celles-ci, elle en possède donc une aussi. Le piège est de croire qu'il puisse exister une exception qui n'est pas présentée ici."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel membre est le plus lourd dans l'énoncé ?",
+        "prompt": "Le panier de Claude pèse plus que celui de Jean. Celui de Jean pèse plus que celui de Lola.",
+        "options": [
+            "Lola",
+            "Jean",
+            "Claude",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Claude",
+        "explanation": "Dans l'ordre, Claude > Jean > Lola. Claude a donc le panier le plus lourd. Le piège ici est de mal interpréter cet ordre et de faire des erreurs en inversant les positions scandées dans les prémisses."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est votre position après l'action ?",
+        "prompt": "Vous êtes dans une course et dépassez le dernier coureur.",
+        "options": [
+            "Vous êtes le dernier",
+            "Aucun changement",
+            "Vous êtes maintenant premier",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Aucun changement",
+        "explanation": "En dépassant le dernier, vous êtes techniquement toujours dans votre position initiale, car il est impossible de dépasser celui qui est à la fin. Le piège classique est de croire à tort que vous progressez dans la course simplement en doublant la queue, un concept contre-intuitif."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans quelle catégorie peut-on ranger Luc ?",
+        "prompt": "Tous les gagnants reçoivent un trophée. Quelques élèves reçoivent un trophée. Luc est un élève et a reçu un trophée.",
+        "options": [
+            "Luc est automatiquement un gagnant",
+            "Luc pourrait être un gagnant",
+            "Luc ne fait pas partie des gagnants",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Luc pourrait être un gagnant",
+        "explanation": "Bien que recevoir un trophée signifie potentiellement être un gagnant, ce n'est pas explicite. Certaines situations n'attribuent pas toujours le statut de victoire, donc Luc pourrait, mais pas obligatoirement être un gagnant. Ne pas tirer de conclusions hâtives est essentiel ici."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel individu est le plus jeune selon l'ordre suivant ?",
+        "prompt": "Martin est plus âgé que Paolo. Paolo est plus âgé que Lina. Lina est plus âgée qu'Alain.",
+        "options": [
+            "Martin",
+            "Paolo",
+            "Lina",
+            "Alain"
+        ],
+        "answer": "Alain",
+        "explanation": "L'ordre des âges est Martin > Paolo > Lina > Alain, avec Alain comme le plus jeune. Bien analyser chaque relation enchaînée est crucial pour ne pas se mélanger et aboutir à des conclusions erronées."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel produit a le coût le plus élevé ?",
+        "prompt": "Le prix du chocolat est supérieur à celui du café. Le café coûte plus cher que le thé. Le thé est moins cher que le sucre.",
+        "options": [
+            "Chocolat",
+            "Café",
+            "Thé",
+            "Sucre"
+        ],
+        "answer": "Chocolat",
+        "explanation": "Classement des prix : Chocolat > Café > Thé < Sucre. Le chocolat est donc le plus coûteux. L'erreur serait de négliger la suite correcte des relations des prix lorsque vous les superposez de manière incorrecte."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le statut du fruit selon cette logique ?",
+        "prompt": "Si le raisin est vert, alors il est acide. Si le raisin n'est pas acide, alors il est mûr. Ce raisin est acide.",
+        "options": [
+            "Ce raisin est vert",
+            "Ce raisin est mûr",
+            "Ce raisin est rouge",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce raisin est vert",
+        "explanation": "Selon les implications données, l'acidité résulte de sa couleur verte. Sa maturité n'est pas adressée, donc on conclut vert. Ne pas inverser la condition liée à l'acidité et à la maturité est vital pour éviter une mauvaise conclusion."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel ami arrive en retard selon l'ordre ?",
+        "prompt": "Mélanie arrive après Sophie. Sophie ne se trouve pas après Paul. Paul arrive avant Lucie.",
+        "options": [
+            "Mélanie",
+            "Sophie",
+            "Paul",
+            "Lucie"
+        ],
+        "answer": "Mélanie",
+        "explanation": "Ordonnée comme suit : Paul < Sophie < Lucie < Mélanie, Mélanie est alors la dernière. Méfiez-vous de mélange confus des arrivées en négligeant d'analyser toutes les conditions pleinement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel énoncé est valide étant donné les implications ?",
+        "prompt": "Si un élève passe l'examen, alors il reçoit une récompense. Magalie a reçu une récompense.",
+        "options": [
+            "Magalie a passé l'examen",
+            "Magalie n'a pas passé l'examen",
+            "Magalie a triché",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Magalie a passé l'examen",
+        "explanation": "Modus ponens : récompenser Magalie indique qu'elle a réussi. Le piège serait d'imaginer une circonstance non mentionnée qui pourrait avoir entraîné sa récompense, omettant celle spécifiquement liée à l'examen."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel objet est le plus lourd parmi les suivants ?",
+        "prompt": "Le livre est plus léger que la lampe. La lampe est plus légère que le vase. Le vase est moins lourd que l'horloge.",
+        "options": [
+            "Horloge",
+            "Vase",
+            "Lampe",
+            "Livre"
+        ],
+        "answer": "Horloge",
+        "explanation": "L'énumération des objets avec horloge > vase > lampe > livre détermine l'horloge comme la plus lourde. Attention à l'erreur fréquente de confondre étapes et paliers de poids en s'y perdant."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel animal est le plus grand dans l'énoncé ?",
+        "prompt": "Le lion est plus grand que le zèbre. L'éléphant est plus grand que le lion. La girafe n'est pas plus grande que l'éléphant.",
+        "options": [
+            "Lion",
+            "Zèbre",
+            "Éléphant",
+            "Girafe"
+        ],
+        "answer": "Éléphant",
+        "explanation": "L'ordre de taille est éléphant > girafe = lion > zèbre, plaçant l'éléphant au sommet. Malgré le statut de la girafe, elle n'est pas plus grande, alors catalyse cette observation."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle affirmation est vraie selon ces conditions ?",
+        "prompt": "Si un animal vit dans l'eau, alors il nage. Si un animal nage, alors il a des nageoires. Ce dauphin nage.",
+        "options": [
+            "Ce dauphin a des nageoires",
+            "Ce dauphin ne vit pas dans l'eau",
+            "Ce dauphin nage sans nageoires",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce dauphin a des nageoires",
+        "explanation": "Dépendant d'un enchaînement de conditions : natation implique présence de nageoires, confirmées avec le dauphin. L'erreur typique ici est d'ignorer la condition étendue par manque de clarté quant à la base du syllogisme par chaînes."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle réaction est certaine de se produire selon cette logique ?",
+        "prompt": "Si un verre tombe alors il se casse. Le verre de Claire est en train de tomber.",
+        "options": [
+            "Le verre sera intact",
+            "Le verre se cassera",
+            "Le verre restera suspendu",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le verre se cassera",
+        "explanation": "Une application du modus ponens : la chute induit la cassure garantie. À ne pas confondre avec des exceptions pratiquement plausibles - ne vous écartez pas de l'idée préétablie avec des extrapolations non validées."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel individu a le plus d'argent ?",
+        "prompt": "Jean a plus d'argent que Paul. Albert en a plus que Jean. Victor moins qu'Albert et plus que Paul.",
+        "options": [
+            "Paul",
+            "Jean",
+            "Albert",
+            "Victor"
+        ],
+        "answer": "Albert",
+        "explanation": "Les montants sont classés en : Albert > Jean > Victor > Paul. Albert a donc le plus d'argent. Surveiller les erreurs de classification dues à l'échelonnement confus des montants reçus."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle conclusion est valable d'après cet énoncé ?",
+        "prompt": "Si Marie gagne, elle achète une voiture. Si elle achète une voiture, elle la conduit. Marie a conduit une nouvelle voiture.",
+        "options": [
+            "Marie a gagné",
+            "Marie n'a pas gagné",
+            "Marie l'a empruntée",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marie a gagné",
+        "explanation": "En appliquant les implications enchaînées, on observe : gagner implique acheter et ensuite conduire. Les conclusions prévues ici montrent que Marie devait triompher. Ne pas assumer une autre explication non-mentionnée est primordial."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel ami obtient la plus mauvaise note ?",
+        "prompt": "Luc obtient une note plus basse que Nathalie. Anis obtient une note plus haute que Luc mais plus basse que Nathalie. Julie obtiendra une note inférieure à Anis.",
+        "options": [
+            "Luc",
+            "Nathalie",
+            "Anis",
+            "Julie"
+        ],
+        "answer": "Luc",
+        "explanation": "Classement de notes : Nathalie > Anis > Luc > Julie indique Luc en conséquence. L'échelonnage cohérent doit être suivi pour éviter des indications impactant votre déduction."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle conclusion pouvez-vous tirer sur l'âge de Pierre ?",
+        "prompt": "Pierre a trois fois l'âge d'Alain. Dans 12 ans, Pierre aura le double de l'âge qu'Alain aura à ce moment-là.",
+        "options": [
+            "24 ans",
+            "30 ans",
+            "36 ans",
+            "48 ans"
+        ],
+        "answer": "36 ans",
+        "explanation": "Réduire équations : Si Pierre = 3Alain, puis (3Alain + 12) = 2(Alain + 12) donc simplifie Alain = 12. Ensuite Pierre = 36. Examiner chaque terme et disposer soigneusement est vital ; erreurs mathématiques anticipées."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre position après avoir doublé ?",
+        "prompt": "En plein marathon, vous doublez celui qui est actuellement 5ème.",
+        "options": [
+            "3ème",
+            "4ème",
+            "5ème",
+            "6ème"
+        ],
+        "answer": "5ème",
+        "explanation": "Doublez le 5ème le place vous en même position actuelle, devenant vous-même 5ème, la positionāt précédente révise votre placement à tort. Captive cette nuance et référez chaque état du 5ème relégué sur place proprement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle age a Judith aujourd'hui d'après les faits ?",
+        "prompt": "Judith a cinq fois l'âge de son fils. Dans 6 ans, elle aura trois fois l'âge de son fils.",
+        "options": [
+            "25 ans",
+            "30 ans",
+            "35 ans",
+            "40 ans"
+        ],
+        "answer": "30 ans",
+        "explanation": "Âge fils f: 5f = Judith, et plus tard, 5f + 6 = 3(f + 6) donc f = 6 et Judith = 30. Calcul précis d'équations vitales ; ne pas multiplier ou diviser incorrectement aboutissant à une compréhension jeopardisée."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle hypothèse sur Marise peut-on formuler ?",
+        "prompt": "Si Marise étudie chaque soir, alors elle réussit le prochain test. Marise n'étudie pas ce soir.",
+        "options": [
+            "Marise réussira le test",
+            "Marise échouera le test",
+            "Marise pourrait réussir",
+            "On ne peut pas savoir"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Tradition contra chassée : études conditionnant le succès, cependant absence ne garantissant pas échec. Attention à l'idée de non effet binaire et de toutes causes internes négligeables bien nuancée."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle personne sera en avant selon la structure ?",
+        "prompt": "Mélanie arrive après Noémie. Noémie avant Inès. Inès après Fleur.",
+        "options": [
+            "Mélanie",
+            "Noémie",
+            "Inès",
+            "Fleur"
+        ],
+        "answer": "Fleur",
+        "explanation": "Trame se suivant : Fleur > Noémie > Inès > Mélanie ; abrite Fleur en précellence. S'assurer phase intégration correcte à chaque intersection, que dégénéré cumul évité à toute épreuve par langage ennuyeux négligé."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la clé des âges de ces participants ?",
+        "prompt": "Clara est deux fois plus vieille que Léo. Pierre a deux ans de plus que Clara. Clara à trois fois l'âge de Léo dans cinq ans.",
+        "options": [
+            "12 ans",
+            "14 ans",
+            "16 ans",
+            "18 ans"
+        ],
+        "answer": "14 ans",
+        "explanation": "Âge basé : Léo l'âge l = Clara deux fois l, puis 2(l + 5) + 2 pour Pierre avec Clara x3 de l dans 5 distances. Ulcérer chaque facteur en rigueur, évite le défi géométrique direct, embouteillage d'années."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la conclusion certifiée sur cette scène ?",
+        "prompt": "Si l'alarme se déclenche, alors le gardien vient. Si le gardien vient, le problème sera résolu. L'alarme s'est déclenchée.",
+        "options": [
+            "Le problème ne sera pas résolu",
+            "Le problème pourrait être résolu",
+            "Le problème sera résolu",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le problème sera résolu",
+        "explanation": "Phénomène logique en chaîne: alarme engendre gardien qui solutionne. Erreur d'omettre voir synergie de causes et effets. Sensibilisation imposée du relais d'événements capturés enclins d'être prévalus."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Marie actuellement, selon la chronologie ?",
+        "prompt": "Marie est trois fois plus âgée que sa fille. Dans 8 ans, elle aura seulement deux fois l'âge de sa fille.",
+        "options": [
+            "28 ans",
+            "32 ans",
+            "36 ans",
+            "40 ans"
+        ],
+        "answer": "36 ans",
+        "explanation": "Soit f présage de l'âge fille ; 3f Marian puis équation : (3f + 8) = 2(f + 8). Solution précise, disponible f = 8 et leurs état contemporain réévaluatif. Consistance mathématique attributif indispensable ici."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle distinction pouvez-vous faire sur Renée ?",
+        "prompt": "Si Renée lit le livre, elle passe l'examen. Renée échoue l'examen.",
+        "options": [
+            "Renée a lu le livre",
+            "Renée n'a pas lu le livre",
+            "Renée réussira la prochaine fois",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Renée n'a pas lu le livre",
+        "explanation": "Forme contra, par échec évaluation, suivie indique la non-lecture ; élément en défaut déclenche défaut particulier. Revirement dérobé essentiel à opérer, sans agacer perte entière à l'épreuve conjecturale du monde reconnu."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quand finiras-tu le parcours après cette brüscault ?",
+        "prompt": "Vous avez doublé le deuxième coureur sur la route.",
+        "options": [
+            "1ère",
+            "2ème",
+            "3ème",
+            "Dans le top 5"
+        ],
+        "answer": "2ème",
+        "explanation": "Placer sans équivoque : dépasser 2 place vous deuxième ! Rappel que non plus "piègez" au sommet à bouteille devant achever l'épreuve en arrière. Se retirer de prise à court intrépide par le biais de l'abat-jour inattention."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle taille détient le sapin d'après l'indication ?",
+        "prompt": "Le sapin dépasse tous les cyprès. Chaque cyprès franchit l'épinette.",
+        "options": [
+            "L'épinette est plus grande",
+            "Le sapin est le plus grand",
+            "Le cyprès est le plus grand",
+            "On ne peut pas vraiment distinguer"
+        ],
+        "answer": "Le sapin est le plus grand",
+        "explanation": "Position hiérarchique linéaire : sapin élargit avant les cyprès, lui-même axée en haute que l'épinette résulte hégémonique. Ne décomposez pas le positionnement formel intégré dans la disponibilité conditionnelle."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui est en première ligne selon les protocoles ?",
+        "prompt": "Si le signal est donné, alors la sentinelle sort. L'alarme n'a pas mûri.",
+        "options": [
+            "Le signal manque",
+            "La sentinelle est déjà partie",
+            "Le signal est indifférent",
+            "On ne peut absolument rien dire"
+        ],
+        "answer": "On ne peut absolument rien dire",
+        "explanation": "Mécanique interne fascinante, chaîne non activée implique une action, conclusion biaisée indemne un silence. Absence totale d'action globalement identifiée conséquemment à identifier les zones et pièges non vérifiés."
+    }
+]

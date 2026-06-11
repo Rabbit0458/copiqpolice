@@ -1,0 +1,604 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces possède un cube ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube, également connu sous le nom d'hexaèdre régulier, possède 6 faces carrées égales. Chaque face rencontre quatre autres faces, ce qui confère au cube une symétrie parfaite. Se rappeler que toutes les arêtes sont de même longueur et que chaque sommet du cube rejoint trois faces.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien d'arêtes un tétraèdre régulier possède-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "B",
+        "explanation": "Un tétraèdre régulier est une pyramide à base triangulaire avec quatre faces équilatérales. Il possède 6 arêtes, car chaque sommet est connecté aux trois autres sommets. Les arêtes sont de la même longueur, ce qui confère au tétraèdre sa forme régulière.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets a un prisme triangulaire ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "5"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "8"}
+        ],
+        "answer": "C",
+        "explanation": "Un prisme triangulaire est constitué de deux bases triangulaires reliées par trois faces rectangulaires. Chaque triangle de base a 3 sommets, et ces deux triangles contribuent ensemble à 6 sommets au total.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces patrons ne forme pas un cube une fois plié ?",
+        "prompt": "Considère 4 patrons composés de 6 carrés assemblés.",
+        "options": [
+            {"key": "A", "label": "Croix latine"},
+            {"key": "B", "label": "T renversé"},
+            {"key": "C", "label": "Ligne droite de 6 carrés"},
+            {"key": "D", "label": "Z de 6 carrés"}
+        ],
+        "answer": "C",
+        "explanation": "Une bande linéaire de 6 carrés ne forme jamais un cube car elle ne peut pas se replier sur elle-même pour fermer un volume. Les patrons en forme de croix et de T peuvent se plier proprement, tandis que la ligne ne permet pas de former une surface fermée.",
+        "hint": "Imagine le pliage : la bande reste plane."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la vue de face d'un cylindre droit ?",
+        "prompt": "Un cylindre posé verticalement.",
+        "options": [
+            {"key": "A", "label": "Cercle"},
+            {"key": "B", "label": "Rectangle"},
+            {"key": "C", "label": "Carré"},
+            {"key": "D", "label": "Ellipse"}
+        ],
+        "answer": "B",
+        "explanation": "La vue de face d'un cylindre droit, lorsqu'il est placé verticalement, est un rectangle. Les bases circulaires sont perpendiculaires à la vue et ne sont pas visibles directement. Le rectangle apparaît à cause de la hauteur du cylindre et la largeur correspondant au diamètre de la base.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Vu de dessus, à quoi ressemble une pyramide à base carrée ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Carré"},
+            {"key": "B", "label": "Triangle"},
+            {"key": "C", "label": "Cercle"},
+            {"key": "D", "label": "Trapèze"}
+        ],
+        "answer": "A",
+        "explanation": "La vue de dessus d'une pyramide à base carrée est un carré, car seule la base de la pyramide est visible directement de haut en bas. Le sommet de la pyramide est au centre, mais ne modifie pas la silhouette carrée de la base.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Un cône possède combien de faces ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "B",
+        "explanation": "Un cône est composé de deux faces : la face circulaire qui forme la base et la face conique latérale qui est une surface courbe. On distingue bien la base plate de la surface latérale enveloppante.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle forme a une pyramide tétraédrique vue de côté ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Triangle équilatéral"},
+            {"key": "B", "label": "Triangle isocèle"},
+            {"key": "C", "label": "Carré"},
+            {"key": "D", "label": "Rectangle"}
+        ],
+        "answer": "B",
+        "explanation": "Vue de côté, une pyramide tétraédrique montre une face latérale qui est un triangle isocèle. Les deux arêtes de la base et l'arête reliant le sommet au milieu de la base forment ce triangle isocèle.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces rectangulaires a un prisme rectangulaire ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "5"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "8"}
+        ],
+        "answer": "C",
+        "explanation": "Un prisme rectangulaire, communément appelé parallélépipède rectangle, possède 6 faces rectangulaires. Chaque paire de faces opposées est parallèle et égale en taille. Ces faces composent complètement le solide sans aucune face non rectangulaire.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Un cube déplié a combien de faces ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "5"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "7"},
+            {"key": "D", "label": "8"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube déplié, sous forme de patron, révèle ses 6 faces carrées. Ces faces sont connectées par les arêtes et doivent former une chaîne fermée lorsqu'elles sont repliées. Chaque carré doit relier deux autres carrés à ses arêtes.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Si on coupe un cube de 2x2x2 en cubes unitaires, combien obtient-on de cubes unitaires ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "C",
+        "explanation": "Un cube de dimension 2x2x2 a un volume total de 2x2x2, ce qui donne 8 unités de volume. En coupant le cube en cubes unitaires, chaque unité a un volume de 1, donc il y a exactement 8 cubes unitaires découpés.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces triangulaires un prisme triangulaire a-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "B",
+        "explanation": "Un prisme triangulaire possède deux bases triangulaires, situées l'une à chaque extrémité du prisme. Les autres faces sont rectangulaires, reliant les côtés des triangles entre eux.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle figure géométrique obtient-on en déroulant un cylindre ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Rectangle"},
+            {"key": "B", "label": "Carré"},
+            {"key": "C", "label": "Trapèze"},
+            {"key": "D", "label": "Cercle"}
+        ],
+        "answer": "A",
+        "explanation": "Un cylindre est composé d'une surface latérale courbe qui, lorsqu'elle est déroulée, devient un rectangle. Les deux bases circulaires restent inchangées. Le rectangle a une largeur égale à la hauteur du cylindre et une longueur égale à la circonférence de la base.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces possède une base carrée lorsqu'elle est en 3D ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "4"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "8"}
+        ],
+        "answer": "B",
+        "explanation": "Une base carrée, lorsqu'elle est intégrée dans une pyramide ou un prisme, est une simple surface plane. Elle n'a qu'une seule face propre. Néanmoins, en tant que base d'une pyramide ou d'un prisme, elle est un carré qui contribue avec les autres faces à la totalité de l'objet tridimensionnel.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel solide est formé par 6 carrés unis entre eux ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Cylindre"},
+            {"key": "B", "label": "Pyramide"},
+            {"key": "C", "label": "Tétraèdre"},
+            {"key": "D", "label": "Cube"}
+        ],
+        "answer": "D",
+        "explanation": "Six carrés unis entre eux de manière à ce que chaque carré ait deux voisins aboutissent à la formation d'un cube. Chaque coin du cube rencontre trois carrés se rejoignant à angle droit, créant une structure fermée tridimensionnelle.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le volume d'un cube de côté 3 ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "9"},
+            {"key": "B", "label": "18"},
+            {"key": "C", "label": "27"},
+            {"key": "D", "label": "36"}
+        ],
+        "answer": "C",
+        "explanation": "Le volume d'un cube est calculé en élevant à la puissance trois la longueur de son côté. Pour un cube dont le côté mesure 3, le volume est donc 3 × 3 × 3 = 27. Il s'agit d'un calcul de base pour tout cube.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Un octaèdre régulier est composé de combien de faces ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "C",
+        "explanation": "Un octaèdre régulier est constitué de 8 faces équilatérales triangulaires. Chacune de ces faces est reliée à 3 autres, et ensemble, elles forment un symétrie centrale autour du milieu de l'octaèdre.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces patrons ne peut pas former un cube une fois plié ?",
+        "prompt": "Pense à différentes combinaisons de carrés assemblés.",
+        "options": [
+            {"key": "A", "label": "Croix"},
+            {"key": "B", "label": "T"},
+            {"key": "C", "label": "Z"},
+            {"key": "D", "label": "Ligne droite"}
+        ],
+        "answer": "D",
+        "explanation": "Un patron en ligne droite ne peut pas former un cube car il ne peut se plier pour créer un volume complet. Seuls les patrons avec un arrangement en croix ou en forme comportant une courbe angulaire bien étudiée peuvent s'enrouler pour former les six faces d'un cube fermé.",
+        "hint": "Les extrémités doivent pouvoir se replier vers l'intérieur du cube."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de cubes de 1x1x1 composent un cube de 3x3x3 ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "18"},
+            {"key": "B", "label": "27"},
+            {"key": "C", "label": "36"},
+            {"key": "D", "label": "54"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube de 3x3x3 est divisé uniformément en petits cubes de 1x1x1. Le calcul implique de multiplier les côtés : 3 × 3 × 3 = 27. Chaque petite unité de volume compose ainsi l'intérieur intégral du cube plus grand.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la vue de dessus d'un cône posé sur sa base ?",
+        "prompt": "Un cône est placé avec sa base circulaire touchant le sol.",
+        "options": [
+            {"key": "A", "label": "Triangle"},
+            {"key": "B", "label": "Rectangle"},
+            {"key": "C", "label": "Cercle"},
+            {"key": "D", "label": "Disque"}
+        ],
+        "answer": "C",
+        "explanation": "Vu de dessus, la base circulaire du cône est visible sous la forme d'un cercle. Le sommet du cône, pointant vers l'observateur, n'affecte pas ce cercle de base, offrant une vue définie sans perspectives ni angles.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quels solides ont le même nombre de sommets que les arêtes ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Cube et tétraèdre"},
+            {"key": "B", "label": "Tétraèdre et prisme"},
+            {"key": "C", "label": "Cube et octaèdre"},
+            {"key": "D", "label": "Octaèdre et prisme"}
+        ],
+        "answer": "D",
+        "explanation": "Un octaèdre possède le même nombre de sommets et d'arêtes, soit 12. Un prisme triangulaire a également un nombre égal de sommets et d'arêtes, ce qui n'est pas le cas pour un cube ou tétraèdre, où ces chiffres diffèrent.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de faces un prisme hexagonal a-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "10"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "B",
+        "explanation": "Un prisme hexagonal possède deux bases hexagonales et 6 faces rectangulaires reliant les côtés des bases. Au total, cela compose donc 8 faces. Chaque face rectangulaire participe à relier deux arêtes opposées des bases hexagonales.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le nombre minimum de carrés pour former un patron de cube ?",
+        "prompt": "Cherchez combien de carrés sont nécessaires pour un patron de cube.",
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "5"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "7"}
+        ],
+        "answer": "C",
+        "explanation": "Un cube a 6 faces carrées, et chaque patron de cube doit refléter cela en matière de composition de carrés. Tous les patrons de cube possibles doivent inclure exactement ces 6 carrés disposés de telle manière qu'ils puissent se refermer en un solide.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle forme n'est pas obtenue en redéfinissant un tétraèdre ?",
+        "prompt": "Considérez les formes possibles à partir d'un tétraèdre.",
+        "options": [
+            {"key": "A", "label": "Prisme"},
+            {"key": "B", "label": "Octaèdre"},
+            {"key": "C", "label": "Cube"},
+            {"key": "D", "label": "Pyramide"}
+        ],
+        "answer": "C",
+        "explanation": "Un tétraèdre ne peut jamais se transformer en cube en utilisant ses éléments de structure de manière réaliste. Les faces et sommets diffèrent fondamentalement d'un cube. Cependant, en combinant plusieurs tétraèdres de manière organisée, on peut créer des octaèdres ou des prismes.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces patrons forme un cube ?",
+        "prompt": "Considérez des patrons faits de carrés.",
+        "options": [
+            {"key": "A", "label": "Croix latine"},
+            {"key": "B", "label": "Ligne diagonale"},
+            {"key": "C", "label": "Serpent"},
+            {"key": "D", "label": "Lettre H"}
+        ],
+        "answer": "A",
+        "explanation": "Un patron en croix latine forme un cube parce qu'une telle configuration permet aux faces de venir ensemble sans laisser de lacunes. En revanche, des formes complexes comme une ligne diagonale ou un serpent manquent d'agencement pratique pour rejoindre toutes les faces.",
+        "hint": "Vérifiez si les extrémités des carrés peuvent se retrouver."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de faces et de sommets un cube a-t-il au total ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "12"},
+            {"key": "B", "label": "14"},
+            {"key": "C", "label": "16"},
+            {"key": "D", "label": "18"}
+        ],
+        "answer": "C",
+        "explanation": "Un cube possède 6 faces et 8 sommets. En ajoutant ces chiffres ensemble (6 + 8), on obtient 14. Chaque sommet connecte trois faces du cube, garantissant une structure solide et symétrique.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel solide est composé uniquement de faces triangulaires ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Cube"},
+            {"key": "B", "label": "Tétraèdre"},
+            {"key": "C", "label": "Prisme rectangulaire"},
+            {"key": "D", "label": "Cône"}
+        ],
+        "answer": "B",
+        "explanation": "Un tétraèdre est une pyramide composée exclusivement de quatre faces triangulaires, qui sont équilatérales dans le cas d'un tétraèdre régulier. Aucun autre solide courant n'est constitué uniquement de triangles sur chaque face.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien d'arêtes rencontre un sommet de cube ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "3"},
+            {"key": "C", "label": "4"},
+            {"key": "D", "label": "5"}
+        ],
+        "answer": "B",
+        "explanation": "Chaque sommet d'un cube est un point de réunion pour trois arêtes et trois faces. À chaque sommet, les arêtes se rejoignent à des angles droits, formant un coin parfaitement carré.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la forme des bases d'un prisme hexagonal régulier ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Carré"},
+            {"key": "B", "label": "Hexagone"},
+            {"key": "C", "label": "Rectangle"},
+            {"key": "D", "label": "Triangle"}
+        ],
+        "answer": "B",
+        "explanation": "Les bases d'un prisme hexagonal régulier sont des hexagones. Chaque base se compose de six côtés égaux, et les faces latérales du prisme sont rectangulaires, reliant chaque côté hexagonal à son équivalent sur l'autre base.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de plans de symétrie un cube a-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "3"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "9"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube a 9 plans de symétrie : 3 passant par le milieu de chaque paire de faces opposées et 6 autres par les diagonales des faces. Chaque plan divise le cube en parties égales, reflétant ainsi la symétrie intrinsèque du cube.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de côtés un prisme triangulaire a-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "5"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "9"},
+            {"key": "D", "label": "10"}
+        ],
+        "answer": "C",
+        "explanation": "Un prisme triangulaire possède 9 arêtes en tout. Chaque base triangulaire a 3 côtés, et chaque côté est prolongé par une arête qui devient une face du prisme. Ainsi, on comptabilise 3 + 3 + 3 = 9 arêtes au total.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de petits cubes ont exactement 2 faces peintes dans un cube 4x4x4 peint ?",
+        "prompt": "Considère un cube géant 4x4x4 dont toutes les faces extérieures sont peintes.",
+        "options": [
+            {"key": "A", "label": "8"},
+            {"key": "B", "label": "16"},
+            {"key": "C", "label": "24"},
+            {"key": "D", "label": "32"}
+        ],
+        "answer": "C",
+        "explanation": "Dans un cube de 4x4x4, chaque arête contient 4 cubes, mais les cubes d'angle aux extrémités ont 3 faces peintes. Les cubes sur les arêtes, sans être aux coins, ont donc 2 faces peintes, résultat en 4 cubes par arête non coin, et on a 12 arêtes, donc 4 × 6 = 24 cubes avec 2 faces peintes.",
+        "hint": "Ignore les cubes d'angle aux extrémités des arêtes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de cubes ont 3 faces peintes dans un cube 3x3x3 peint ?",
+        "prompt": "Imagine un cube de taille 3x3x3 avec toutes ses faces totalement peintes.",
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "C",
+        "explanation": "Dans un cube 3x3x3, seulement les cubes aux coins ont 3 faces peintes. Le cube possède 8 coins (car deux coins par face et 4 faces se rencontrent en point), ce qui résulte donc en 8 cubes possédant 3 faces peintes.",
+        "hint": "Chaque coin du cube expose trois faces."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de petits cubes sans peinture existe-t-il dans un cube 4x4x4 peint ?",
+        "prompt": "Un cube 4x4x4 est intégralement peint à l'extérieur.",
+        "options": [
+            {"key": "A", "label": "8"},
+            {"key": "B", "label": "16"},
+            {"key": "C", "label": "24"},
+            {"key": "D", "label": "36"}
+        ],
+        "answer": "A",
+        "explanation": "Un cube 4x4x4 a un intérieur formé par des cubes de 2x2x2 (4 moins les couches de surface de chaque côté), qui contient donc 2×2×2 = 8 petits cubes sans aucune face peinte puisque ceux-ci sont complètement à l'intérieur.",
+        "hint": "Calculez l'intérieur non exposé du cube plus grand."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si un cube 5x5x5 est peint à l'extérieur, combien de ses cubes ont 1 face peinte uniquement ?",
+        "prompt": "Considérez un cube géant de 5x5x5 entièrement peintes.",
+        "options": [
+            {"key": "A", "label": "24"},
+            {"key": "B", "label": "36"},
+            {"key": "C", "label": "54"},
+            {"key": "D", "label": "96"}
+        ],
+        "answer": "B",
+        "explanation": "Pour chaque face du cube de 5x5, les cubes qui ont une seule face peinte forment un carré intérieur 3x3. Chaque face contient 9 de ces cubes. Avec 6 faces identiques, cela fait 9 × 6 = 54 cubes ayant seulement une face peinte.",
+        "hint": "Aimez un carré intérieur distinct sur chaque grosse face."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de cubes ont 0 faces peintes si un cube 5x5x5 est peint ?",
+        "prompt": "Imagine un cube 5x5x5 totalement peint sur ses faces extérieures.",
+        "options": [
+            {"key": "A", "label": "8"},
+            {"key": "B", "label": "27"},
+            {"key": "C", "label": "64"},
+            {"key": "D", "label": "125"}
+        ],
+        "answer": "B",
+        "explanation": "L'intérieur du cube 5x5x5 contient un volume non peint de cubes 3x3x3 après avoir retiré les couches extérieures peintes. Cela fait donc 3×3×3 = 27 petits cubes qui ne subissent aucune peinture puisque cachés par les cubes de surface.",
+        "hint": "Au centre, là où les couches externes colorées ne couvrent pas."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de petits cubes ont exactement 1 face peinte dans un cube 6x6x6 peint ?",
+        "prompt": "Considérez un cube de 6x6x6 entièrement recouvert de peinture.",
+        "options": [
+            {"key": "A", "label": "48"},
+            {"key": "B", "label": "54"},
+            {"key": "C", "label": "66"},
+            {"key": "D", "label": "78"}
+        ],
+        "answer": "A",
+        "explanation": "Chaque face du cube 6x6 présente un framework central de 4×4 héritière ses coins et bords peints, générant un total de 16 cubes par face. Avec 6 faces, cela totalise 16 × 6 = 96 cubes présentant exactement une seule face colorée.",
+        "hint": "Comptez les cubes centraux sur chaque face géante."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le patron incorrect pour former un cube ?",
+        "prompt": "Analysez plusieurs schémas possibles sous condition de pliage.",
+        "options": [
+            {"key": "A", "label": "Croix régulière"},
+            {"key": "B", "label": "Rectangle continu"},
+            {"key": "C", "label": "L en spirale"},
+            {"key": "D", "label": "Maison inversée"}
+        ],
+        "answer": "B",
+        "explanation": "Un arrangement en rectangle linéaire ne peut pas devenir un cube, les carrés extrémités divergent horizontalement sans se plier pour conclure un cube. Les patrons comme la croix ou la forme L en spirale assurent que tous les carrés se retrouvent et ferment bien le volume.",
+        "hint": "Considère si les extrémités peuvent s'entre-coïncider."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si on coupe un cube 6x6x6 en cubes unitaires, combien auront 2 faces peintes ?",
+        "prompt": "Un cube géant de 6x6x6 est enduit de peinture externe.",
+        "options": [
+            {"key": "A", "label": "48"},
+            {"key": "B", "label": "72"},
+            {"key": "C", "label": "96"},
+            {"key": "D", "label": "120"}
+        ],
+        "answer": "C",
+        "explanation": "Chacune des 12 arêtes du cube 6x6 contient 4 cubes unitaires (moyens) qui ne sont pas dans les coins. Les coins sont couverts 3-wire et ne sont pas comptés ici. 2 faces sont donc peintes ici, pour un total de 4 × 12 = 96.",
+        "hint": "Comptez les cubes moyens sur telles arêtes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle section de cube donnerait un hexagone ?",
+        "prompt": "Pensez à découper le cube, pour en révéler certaines formes possibles.",
+        "options": [
+            {"key": "A", "label": "Section horizontale"},
+            {"key": "B", "label": "Section diagonale"},
+            {"key": "C", "label": "Section verticale"},
+            {"key": "D", "label": "Section axiale"}
+        ],
+        "answer": "B",
+        "explanation": "Une section diagonale, traversant trois faces du cube, donne un hexagone. En coupant transversalement selon les arêtes et diagonales, les deux points finissent en un hexagone plat. Les autres coupes dont horizontales ou verticales suivent les arrêtes parallèles, donnant des quadrilatères.",
+        "hint": "Pensez à une coupe en biais à travers le cube, non parallèle aux faces."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de petits cubes sont peints sur au moins une face dans un cube 7x7x7 ?",
+        "prompt": "Un cube de 7x7x7 est entièrement recouvert de peinture.",
+        "options": [
+            {"key": "A", "label": "296"},
+            {"key": "B", "label": "342"},
+            {"key": "C", "label": "378"},
+            {"key": "D", "label": "392"}
+        ],
+        "answer": "D",
+        "explanation": "Le cube grand 7x7x7 contient 7³ cubes. Seuls ceux situés sous la surface sont libres. Le grand cube accueille un mini cube 5x5x5 (de dimension interne), l'absence de peinture couvrant ce cube (soit 5³ = 125). Calculez donc le nombre de cubes peints ou touchant une surface : 343 - 125 = 218.",
+        "hint": "Considérez le volume intérieur sans revêtement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de sommets un icosaèdre régulier possède-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "12"},
+            {"key": "B", "label": "20"},
+            {"key": "C", "label": "30"},
+            {"key": "D", "label": "60"}
+        ],
+        "answer": "A",
+        "explanation": "Un icosaèdre régulier, un solide plat fait de 20 triangles équilatéraux, a 12 sommets. Chaque sommet joint 5 faces triangulaires, formant ainsi une symétrie à multiples points capables de s'engager entre elles.",
+        "hint": "Un calcul de sommet raisonnable."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de faces un dodécaèdre régulier possède-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "12"},
+            {"key": "B", "label": "20"},
+            {"key": "C", "label": "30"},
+            {"key": "D", "label": "60"}
+        ],
+        "answer": "A",
+        "explanation": "Le dodécaèdre régulier est un solide composé de 12 façades pentagonales. Chaque façade est un polygone régulier à cinq côtés, donc l'ensemble du modèle présente un grand réseau de symétrie exceptionnellement cohérent.",
+        "hint": "Comptez les pentagones."
+    }
+]

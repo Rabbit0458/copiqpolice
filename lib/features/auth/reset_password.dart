@@ -654,8 +654,8 @@ class _TitleBlock extends StatelessWidget {
             end: Alignment.bottomRight,
             colors: [
               palette.text,
-              palette.text.withOpacity(0.85),
-              palette.glow.withOpacity(0.85),
+              palette.text.withValues(alpha: 0.85),
+              palette.glow.withValues(alpha: 0.85),
             ],
             stops: const [0.0, 0.6, 1.0],
           ).createShader(rect),
@@ -686,14 +686,14 @@ class _TitleBlock extends StatelessWidget {
                   borderRadius: BorderRadius.circular(99),
                   gradient: LinearGradient(
                     colors: [
-                      palette.glow.withOpacity(0.0),
+                      palette.glow.withValues(alpha: 0.0),
                       palette.glow,
-                      palette.glow.withOpacity(0.0),
+                      palette.glow.withValues(alpha: 0.0),
                     ],
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: palette.glow.withOpacity(0.55),
+                      color: palette.glow.withValues(alpha: 0.55),
                       blurRadius: 10,
                     ),
                   ],
@@ -783,8 +783,8 @@ class _HeroLogoBadgeState extends State<_HeroLogoBadge>
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
                     colors: [
-                      widget.palette.glow.withOpacity(0.18),
-                      widget.palette.glow.withOpacity(0.0),
+                      widget.palette.glow.withValues(alpha: 0.18),
+                      widget.palette.glow.withValues(alpha: 0.0),
                     ],
                   ),
                 ),
@@ -800,10 +800,10 @@ class _HeroLogoBadgeState extends State<_HeroLogoBadge>
                   shape: BoxShape.circle,
                   gradient: SweepGradient(
                     colors: [
-                      Colors.white.withOpacity(0.0),
-                      Colors.white.withOpacity(0.22),
-                      widget.palette.glow.withOpacity(0.55),
-                      Colors.white.withOpacity(0.0),
+                      Colors.white.withValues(alpha: 0.0),
+                      Colors.white.withValues(alpha: 0.22),
+                      widget.palette.glow.withValues(alpha: 0.55),
+                      Colors.white.withValues(alpha: 0.0),
                     ],
                     stops: const [0.0, 0.42, 0.62, 1.0],
                   ),
@@ -819,23 +819,23 @@ class _HeroLogoBadgeState extends State<_HeroLogoBadge>
                 gradient: RadialGradient(
                   center: const Alignment(-0.3, -0.4),
                   colors: [
-                    Colors.white.withOpacity(0.18),
-                    Colors.white.withOpacity(0.06),
-                    Colors.white.withOpacity(0.0),
+                    Colors.white.withValues(alpha: 0.18),
+                    Colors.white.withValues(alpha: 0.06),
+                    Colors.white.withValues(alpha: 0.0),
                   ],
                 ),
                 border: Border.all(
-                  color: Colors.white.withOpacity(0.14),
+                  color: Colors.white.withValues(alpha: 0.14),
                   width: 1,
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.30),
+                    color: Colors.black.withValues(alpha: 0.30),
                     blurRadius: 44,
                     offset: const Offset(0, 24),
                   ),
                   BoxShadow(
-                    color: widget.palette.accent.withOpacity(0.18),
+                    color: widget.palette.accent.withValues(alpha: 0.18),
                     blurRadius: 60,
                     spreadRadius: 6,
                   ),
@@ -870,7 +870,7 @@ class _HeroLogoBadgeState extends State<_HeroLogoBadge>
                   color: widget.palette.glow,
                   boxShadow: [
                     BoxShadow(
-                      color: widget.palette.glow.withOpacity(0.7),
+                      color: widget.palette.glow.withValues(alpha: 0.7),
                       blurRadius: 14,
                       spreadRadius: 2,
                     ),
@@ -896,12 +896,12 @@ class _HeroLogoBadgeState extends State<_HeroLogoBadge>
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: widget.palette.glow.withOpacity(0.55),
+                        color: widget.palette.glow.withValues(alpha: 0.55),
                         blurRadius: 24,
                         spreadRadius: -2,
                       ),
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.22),
+                        color: Colors.black.withValues(alpha: 0.22),
                         blurRadius: 12,
                         offset: const Offset(0, 6),
                       ),
@@ -988,19 +988,19 @@ class _MeshGradientBackgroundState extends State<_MeshGradientBackground>
             children: [
               _orb(
                 align: Alignment(dx1, dy1),
-                color: widget.palette.accent.withOpacity(0.40),
+                color: widget.palette.accent.withValues(alpha: 0.40),
                 size: 380,
                 blur: 120,
               ),
               _orb(
                 align: Alignment(dx2, dy2),
-                color: widget.palette.accent2.withOpacity(0.35),
+                color: widget.palette.accent2.withValues(alpha: 0.35),
                 size: 420,
                 blur: 130,
               ),
               _orb(
                 align: Alignment(dx3, dy3),
-                color: widget.palette.glow.withOpacity(0.18),
+                color: widget.palette.glow.withValues(alpha: 0.18),
                 size: 340,
                 blur: 100,
               ),
@@ -1078,8 +1078,8 @@ class _BreathingGridOverlayState extends State<_BreathingGridOverlay>
         return CustomPaint(
           painter: _GridPainter(
             progress: widget.enabled ? _c.value : 0.0,
-            color: Colors.white.withOpacity(0.06),
-            accent: widget.palette.glow.withOpacity(0.10),
+            color: Colors.white.withValues(alpha: 0.06),
+            accent: widget.palette.glow.withValues(alpha: 0.10),
           ),
           child: const SizedBox.expand(),
         );
@@ -1227,7 +1227,7 @@ class _ParticlesPainter extends CustomPainter {
 
       final fade = (math.sin(t * math.pi)).clamp(0.0, 1.0);
       final paint = Paint()
-        ..color = color.withOpacity(0.40 * fade)
+        ..color = color.withValues(alpha: 0.40 * fade)
         ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 1.2);
       canvas.drawCircle(Offset(x, y), p.size, paint);
     }
@@ -1252,9 +1252,9 @@ class _Vignette extends StatelessWidget {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Colors.black.withOpacity(0.20),
+            Colors.black.withValues(alpha: 0.20),
             Colors.transparent,
-            Colors.black.withOpacity(0.30),
+            Colors.black.withValues(alpha: 0.30),
           ],
           stops: const [0.0, 0.5, 1.0],
         ),
@@ -1288,12 +1288,12 @@ class _GlassCardPremium extends StatelessWidget {
             border: Border.all(color: palette.glassBorder, width: 1),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.30),
+                color: Colors.black.withValues(alpha: 0.30),
                 blurRadius: 36,
                 offset: const Offset(0, 22),
               ),
               BoxShadow(
-                color: palette.accent.withOpacity(0.08),
+                color: palette.accent.withValues(alpha: 0.08),
                 blurRadius: 30,
                 spreadRadius: -4,
               ),
@@ -1311,9 +1311,9 @@ class _GlassCardPremium extends StatelessWidget {
                         begin: Alignment.topLeft,
                         end: Alignment.bottomRight,
                         colors: [
-                          Colors.white.withOpacity(0.16),
-                          Colors.white.withOpacity(0.0),
-                          Colors.black.withOpacity(0.04),
+                          Colors.white.withValues(alpha: 0.16),
+                          Colors.white.withValues(alpha: 0.0),
+                          Colors.black.withValues(alpha: 0.04),
                         ],
                         stops: const [0.0, 0.45, 1.0],
                       ),
@@ -1331,9 +1331,9 @@ class _GlassCardPremium extends StatelessWidget {
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
                       colors: [
-                        Colors.white.withOpacity(0.0),
-                        Colors.white.withOpacity(0.50),
-                        Colors.white.withOpacity(0.0),
+                        Colors.white.withValues(alpha: 0.0),
+                        Colors.white.withValues(alpha: 0.50),
+                        Colors.white.withValues(alpha: 0.0),
                       ],
                     ),
                   ),
@@ -1469,12 +1469,12 @@ class _PremiumFormTextFieldState extends State<_PremiumFormTextField>
                   boxShadow: _hasFocus
                       ? [
                           BoxShadow(
-                            color: p.glow.withOpacity(0.30),
+                            color: p.glow.withValues(alpha: 0.30),
                             blurRadius: 24,
                             spreadRadius: 1,
                           ),
                           BoxShadow(
-                            color: p.accent.withOpacity(0.16),
+                            color: p.accent.withValues(alpha: 0.16),
                             blurRadius: 18,
                             offset: const Offset(0, 6),
                           ),
@@ -1498,14 +1498,14 @@ class _PremiumFormTextFieldState extends State<_PremiumFormTextField>
                   decoration: InputDecoration(
                     hintText: widget.hint,
                     hintStyle: GoogleFonts.montserrat(
-                      color: Colors.white.withOpacity(0.55),
+                      color: Colors.white.withValues(alpha: 0.55),
                       fontWeight: FontWeight.w500,
                     ),
                     prefixIcon: Icon(
                       Icons.email_outlined,
                       color: _hasFocus
                           ? p.glow
-                          : Colors.white.withOpacity(0.55),
+                          : Colors.white.withValues(alpha: 0.55),
                       size: 19,
                     ),
                     suffixIcon: AnimatedSwitcher(
@@ -1543,26 +1543,26 @@ class _PremiumFormTextFieldState extends State<_PremiumFormTextField>
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: p.fieldBorder.withOpacity(0.70),
+                        color: p.fieldBorder.withValues(alpha: 0.70),
                       ),
                       borderRadius: BorderRadius.circular(14),
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: Colors.white.withOpacity(0.95),
+                        color: Colors.white.withValues(alpha: 0.95),
                         width: 1.4,
                       ),
                       borderRadius: BorderRadius.circular(14),
                     ),
                     errorBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: softError.withOpacity(0.85),
+                        color: softError.withValues(alpha: 0.85),
                       ),
                       borderRadius: BorderRadius.circular(14),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
                       borderSide: BorderSide(
-                        color: softError.withOpacity(0.95),
+                        color: softError.withValues(alpha: 0.95),
                         width: 1.3,
                       ),
                       borderRadius: BorderRadius.circular(14),
@@ -1712,8 +1712,8 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.white.withOpacity(0.85),
-                            Colors.white.withOpacity(0.0),
+                            Colors.white.withValues(alpha: 0.85),
+                            Colors.white.withValues(alpha: 0.0),
                           ],
                           stops: const [0.0, 0.55],
                         ),
@@ -1742,9 +1742,9 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                                     end: Alignment.bottomCenter,
                                     colors: [
                                       Colors.transparent,
-                                      Colors.white.withOpacity(0.0),
-                                      Colors.white.withOpacity(0.55),
-                                      Colors.white.withOpacity(0.0),
+                                      Colors.white.withValues(alpha: 0.0),
+                                      Colors.white.withValues(alpha: 0.55),
+                                      Colors.white.withValues(alpha: 0.0),
                                       Colors.transparent,
                                     ],
                                     stops: const [0.0, 0.42, 0.50, 0.58, 1.0],
@@ -1762,8 +1762,8 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                   color: Colors.transparent,
                   child: InkWell(
                     onTap: widget.onPressed,
-                    splashColor: widget.palette.glow.withOpacity(0.18),
-                    highlightColor: widget.palette.glow.withOpacity(0.08),
+                    splashColor: widget.palette.glow.withValues(alpha: 0.18),
+                    highlightColor: widget.palette.glow.withValues(alpha: 0.08),
                     child: Center(
                       child: AnimatedSwitcher(
                         duration: const Duration(milliseconds: 200),
@@ -1775,7 +1775,7 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                                 child: CircularProgressIndicator(
                                   strokeWidth: 2.4,
                                   valueColor: AlwaysStoppedAnimation(
-                                    fg.withOpacity(0.85),
+                                    fg.withValues(alpha: 0.85),
                                   ),
                                 ),
                               )
@@ -1789,7 +1789,7 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                                       widget.leadingIcon,
                                       size: 18,
                                       color: isDisabled
-                                          ? fg.withOpacity(0.55)
+                                          ? fg.withValues(alpha: 0.55)
                                           : fg,
                                     ),
                                     const SizedBox(width: 10),
@@ -1804,7 +1804,7 @@ class _PrimaryButtonState extends State<_PrimaryButton>
                                         fontSize: 15.5,
                                         letterSpacing: -0.2,
                                         color: isDisabled
-                                            ? fg.withOpacity(0.65)
+                                            ? fg.withValues(alpha: 0.65)
                                             : fg,
                                       ),
                                     ),
@@ -1854,8 +1854,8 @@ class _GhostButton extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(16),
             ),
-            side: BorderSide(color: Colors.white.withOpacity(0.28), width: 1.2),
-            backgroundColor: Colors.white.withOpacity(0.06),
+            side: BorderSide(color: Colors.white.withValues(alpha: 0.28), width: 1.2),
+            backgroundColor: Colors.white.withValues(alpha: 0.06),
           ),
           label: Text(
             label,
@@ -1925,19 +1925,19 @@ class _SecurityPills extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 11, vertical: 7),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.07),
+              color: Colors.white.withValues(alpha: 0.07),
               borderRadius: BorderRadius.circular(999),
-              border: Border.all(color: Colors.white.withOpacity(0.14)),
+              border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(i.$1, size: 13, color: Colors.white.withOpacity(0.85)),
+                Icon(i.$1, size: 13, color: Colors.white.withValues(alpha: 0.85)),
                 const SizedBox(width: 6),
                 Text(
                   i.$2,
                   style: GoogleFonts.montserrat(
-                    color: Colors.white.withOpacity(0.85),
+                    color: Colors.white.withValues(alpha: 0.85),
                     fontSize: 11.5,
                     fontWeight: FontWeight.w700,
                     letterSpacing: 0.2,
@@ -2013,18 +2013,18 @@ class _SentContent extends StatelessWidget {
                     colors: canResend
                         ? const [Color(0xFF10B981), Color(0xFF34D399)]
                         : [
-                            Colors.white.withOpacity(0.18),
-                            Colors.white.withOpacity(0.06),
+                            Colors.white.withValues(alpha: 0.18),
+                            Colors.white.withValues(alpha: 0.06),
                           ],
                   ),
                   border: Border.all(
-                    color: Colors.white.withOpacity(canResend ? 0.40 : 0.20),
+                    color: Colors.white.withValues(alpha: canResend ? 0.40 : 0.20),
                     width: 1.3,
                   ),
                   boxShadow: canResend
                       ? [
                           BoxShadow(
-                            color: const Color(0xFF10B981).withOpacity(0.50),
+                            color: const Color(0xFF10B981).withValues(alpha: 0.50),
                             blurRadius: 32,
                             spreadRadius: -6,
                           ),
@@ -2066,7 +2066,7 @@ class _SentContent extends StatelessWidget {
           style: GoogleFonts.montserrat(
             fontSize: 13,
             height: 1.45,
-            color: Colors.white.withOpacity(0.85),
+            color: Colors.white.withValues(alpha: 0.85),
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -2116,9 +2116,9 @@ class _CountdownPill extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.06),
+        color: Colors.white.withValues(alpha: 0.06),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(0.16), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.16), width: 1),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -2149,7 +2149,7 @@ class _CountdownPill extends StatelessWidget {
               borderRadius: BorderRadius.circular(999),
               child: Stack(
                 children: [
-                  Container(height: 5, color: Colors.white.withOpacity(0.10)),
+                  Container(height: 5, color: Colors.white.withValues(alpha: 0.10)),
                   AnimatedFractionallySizedBox(
                     duration: const Duration(milliseconds: 800),
                     curve: Curves.easeOutCubic,
@@ -2162,7 +2162,7 @@ class _CountdownPill extends StatelessWidget {
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0xFF4F7CFF).withOpacity(0.55),
+                            color: const Color(0xFF4F7CFF).withValues(alpha: 0.55),
                             blurRadius: 6,
                           ),
                         ],
@@ -2187,10 +2187,10 @@ class _ReadyPill extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       decoration: BoxDecoration(
-        color: const Color(0xFF10B981).withOpacity(0.16),
+        color: const Color(0xFF10B981).withValues(alpha: 0.16),
         borderRadius: BorderRadius.circular(999),
         border: Border.all(
-          color: const Color(0xFF10B981).withOpacity(0.45),
+          color: const Color(0xFF10B981).withValues(alpha: 0.45),
           width: 1,
         ),
       ),
@@ -2249,7 +2249,7 @@ class _PulsingDotState extends State<_PulsingDot>
             color: widget.color,
             boxShadow: [
               BoxShadow(
-                color: widget.color.withOpacity(0.55 * t),
+                color: widget.color.withValues(alpha: 0.55 * t),
                 blurRadius: 8 + 4 * t,
                 spreadRadius: 1 + 1 * t,
               ),
@@ -2295,8 +2295,8 @@ class _BreathingHaloState extends State<_BreathingHalo>
             shape: BoxShape.circle,
             gradient: RadialGradient(
               colors: [
-                widget.color.withOpacity(0.18 + 0.10 * t),
-                widget.color.withOpacity(0.0),
+                widget.color.withValues(alpha: 0.18 + 0.10 * t),
+                widget.color.withValues(alpha: 0.0),
               ],
             ),
           ),
@@ -2427,7 +2427,7 @@ class _PasswordChangedSuccessOverlayState
                     sigmaY: 18 * _bgFade.value,
                   ),
                   child: Container(
-                    color: Colors.black.withOpacity(0.55 * _bgFade.value),
+                    color: Colors.black.withValues(alpha: 0.55 * _bgFade.value),
                   ),
                 ),
               ),
@@ -2442,7 +2442,7 @@ class _PasswordChangedSuccessOverlayState
                         colors: [
                           const Color(
                             0xFF10B981,
-                          ).withOpacity(0.18 * _haloPulse.value),
+                          ).withValues(alpha: 0.18 * _haloPulse.value),
                           Colors.transparent,
                         ],
                       ),
@@ -2469,7 +2469,7 @@ class _PasswordChangedSuccessOverlayState
                                   colors: [
                                     const Color(
                                       0xFF10B981,
-                                    ).withOpacity(0.32 * _haloPulse.value),
+                                    ).withValues(alpha: 0.32 * _haloPulse.value),
                                     Colors.transparent,
                                   ],
                                 ),
@@ -2510,8 +2510,8 @@ class _PasswordChangedSuccessOverlayState
                                         begin: Alignment.topLeft,
                                         end: Alignment.bottomRight,
                                         colors: [
-                                          Colors.white.withOpacity(0.18),
-                                          Colors.white.withOpacity(0.0),
+                                          Colors.white.withValues(alpha: 0.18),
+                                          Colors.white.withValues(alpha: 0.0),
                                         ],
                                       ),
                                     ),
@@ -2544,7 +2544,7 @@ class _PasswordChangedSuccessOverlayState
                             letterSpacing: -0.4,
                             shadows: [
                               Shadow(
-                                color: Colors.black.withOpacity(0.35),
+                                color: Colors.black.withValues(alpha: 0.35),
                                 blurRadius: 18,
                                 offset: const Offset(0, 4),
                               ),
@@ -2562,7 +2562,7 @@ class _PasswordChangedSuccessOverlayState
                           "Tu peux maintenant te connecter\navec ton nouveau mot de passe.",
                           textAlign: TextAlign.center,
                           style: GoogleFonts.montserrat(
-                            color: Colors.white.withOpacity(0.88),
+                            color: Colors.white.withValues(alpha: 0.88),
                             fontSize: 14.5,
                             height: 1.5,
                             fontWeight: FontWeight.w500,
@@ -2632,15 +2632,15 @@ class _ResumePromptSheet extends StatelessWidget {
             filter: ImageFilter.blur(sigmaX: 18, sigmaY: 18),
             child: Container(
               decoration: BoxDecoration(
-                color: const Color(0xFF0B1437).withOpacity(0.92),
+                color: const Color(0xFF0B1437).withValues(alpha: 0.92),
                 border: Border.all(
-                  color: Colors.white.withOpacity(0.10),
+                  color: Colors.white.withValues(alpha: 0.10),
                   width: 1,
                 ),
                 borderRadius: BorderRadius.circular(28),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.35),
+                    color: Colors.black.withValues(alpha: 0.35),
                     blurRadius: 26,
                     offset: const Offset(0, 10),
                   ),
@@ -2654,7 +2654,7 @@ class _ResumePromptSheet extends StatelessWidget {
                     width: 40,
                     height: 4,
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.18),
+                      color: Colors.white.withValues(alpha: 0.18),
                       borderRadius: BorderRadius.circular(999),
                     ),
                   ),
@@ -2671,7 +2671,7 @@ class _ResumePromptSheet extends StatelessWidget {
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFF4F7CFF).withOpacity(0.45),
+                          color: const Color(0xFF4F7CFF).withValues(alpha: 0.45),
                           blurRadius: 24,
                           spreadRadius: -4,
                         ),
@@ -2699,7 +2699,7 @@ class _ResumePromptSheet extends StatelessWidget {
                     "Si tu viens de modifier ton mot de passe sur le site COP'IQ, on te bascule sur l'écran de connexion.",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.montserrat(
-                      color: Colors.white.withOpacity(0.78),
+                      color: Colors.white.withValues(alpha: 0.78),
                       fontSize: 13.5,
                       height: 1.45,
                       fontWeight: FontWeight.w500,
@@ -2717,10 +2717,10 @@ class _ResumePromptSheet extends StatelessWidget {
                               borderRadius: BorderRadius.circular(14),
                             ),
                             side: BorderSide(
-                              color: Colors.white.withOpacity(0.20),
+                              color: Colors.white.withValues(alpha: 0.20),
                               width: 1.2,
                             ),
-                            backgroundColor: Colors.white.withOpacity(0.04),
+                            backgroundColor: Colors.white.withValues(alpha: 0.04),
                           ),
                           child: Text(
                             "Pas encore",

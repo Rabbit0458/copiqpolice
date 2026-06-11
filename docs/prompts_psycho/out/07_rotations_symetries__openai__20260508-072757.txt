@@ -1,0 +1,461 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel cube obtient-on après une rotation de 90° du patron autour de son axe vertical ?",
+    "prompt": "Patron de départ : croix latine, 6 faces distinctes représentant des couleurs.",
+    "transformation_type": "rotation",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "cross",
+      "faces": {
+        "top": "Rouge",
+        "bottom": "Bleu",
+        "left": "Vert",
+        "right": "Jaune",
+        "front": "Orange",
+        "back": "Violet"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "Rouge", "front": "Jaune", "right": "Violet"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "Rouge", "front": "Orange", "right": "Jaune"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "Bleu", "front": "Orange", "right": "Jaune"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "Rouge", "front": "Vert", "right": "Violet"}}
+    ],
+    "answer": "A",
+    "explanation": "Une rotation de 90° dans le sens horaire fait changer les positions des faces frontale, droite et arrière. La face frontale devient droite, la droite passe à l'arrière, et l'arrière se retrouve à gauche. La face du haut reste inchangée. Seul le Cube A correspond à cette nouvelle disposition.",
+    "hint": "Concentre-toi sur comment les faces latérales changent de position."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie possède un rectangle ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "B",
+    "explanation": "Un rectangle possède 2 axes de symétrie : un axe passant par son milieu horizontal et un autre passant par son milieu vertical. Ces axes divisent le rectangle en deux parties congruentes. Les rectangles n'ont pas de symétrie diagonale comme les carrés.",
+    "hint": "Imagine diviser le rectangle par le centre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle figure parmi les suivantes reste invariant après une rotation de 180° ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "Un triangle équilatéral"},
+      {"key": "B", "label": "Un carré"},
+      {"key": "C", "label": "Un hexagone régulier"},
+      {"key": "D", "label": "Un rectangle"}
+    ],
+    "answer": "C",
+    "explanation": "Une rotation de 180° change la position des figures à moins qu'elles ne soient centro-symétriques. Un hexagone régulier a cette propriété grâce à sa disposition symétrique autour de son centre. Ni un carré, ni un rectangle, ni un triangle équilatéral ne possèdent une symétrie de rotation de 180°.",
+    "hint": "Cherche une figure régulièrement symétrique autour de son centre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel cube obtient-on après une symétrie centrale du patron et son pliage ?",
+    "prompt": "Patron en forme de T avec 6 symboles distincts.",
+    "transformation_type": "symetrie_centrale",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "T",
+      "faces": {
+        "top": "α",
+        "bottom": "β",
+        "left": "γ",
+        "right": "δ",
+        "front": "ε",
+        "back": "ζ"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "β", "front": "ζ", "right": "γ"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "α", "front": "ε", "right": "δ"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "β", "front": "ε", "right": "δ"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "α", "front": "ζ", "right": "γ"}}
+    ],
+    "answer": "A",
+    "explanation": "Effectuer une symétrie centrale revient à inverser chaque segment de la forme par rapport à un point central, ici la position centrale des symboles. Après cette transformation, le pliage affiche top=β de son ancienne position en bas, front=ζ déplacé de derrière, et right=γ prenant la place de gauche.",
+    "hint": "Imagine chaque symbole voyageant à travers le centre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Laquelle des lettres suivantes a un axe de symétrie vertical ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "F"},
+      {"key": "B", "label": "O"},
+      {"key": "C", "label": "A"},
+      {"key": "D", "label": "T"}
+    ],
+    "answer": "B",
+    "explanation": "La lettre 'O' possède un axe de symétrie vertical qui la divise en deux parties parfaitement égales et miroirs, contrairement aux autres lettres mentionnées. Ni 'F', ni 'A', ni 'T' n'ont un axe de symétrie vertical.",
+    "hint": "Cherche une lettre parfaitement ronde ou symétrique verticalement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de rotations distinctes laissent un triangle équilatéral invariant ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "6"}
+    ],
+    "answer": "C",
+    "explanation": "Un triangle équilatéral peut être tourné de 0°, 120°, et 240° par rapport à son centre tout en conservant la même apparence. Ces trois positions correspondent aux trois symétries de rotation dont il dispose. Seules ces rotations permettent de superposer le triangle sur lui-même.",
+    "hint": "Pense à chaque rotation qui aligne les sommets."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel cube obtient-on après une symétrie axiale verticale du patron ?",
+    "prompt": "Croix latine avec des motifs animaux.",
+    "transformation_type": "symetrie_axiale",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "cross",
+      "faces": {
+        "top": "Chat",
+        "bottom": "Chien",
+        "left": "Oiseau",
+        "right": "Poisson",
+        "front": "Serpent",
+        "back": "Tigre"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "Chat", "front": "Tigre", "right": "Oiseau"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "Chat", "front": "Serpent", "right": "Poisson"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "Chien", "front": "Serpent", "right": "Poisson"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "Chat", "front": "Poisson", "right": "Tigre"}}
+    ],
+    "answer": "B",
+    "explanation": "La symétrie axiale verticale échange les positions des faces 'Oiseau' et 'Poisson', sans affecter le dessus et le dessous. Lors du pliage, 'Chat' reste visible en haut, 'Serpent' en façade, et 'Poisson' sur le côté droit après son déplacement.",
+    "hint": "Identifie l'effet miroir vertical du patron."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel chiffre parmi ceux donnés est une symétrie centrale ?",
+    "prompt": null,
+    "transformation_type": "symetrie_centrale",
+    "options": [
+      {"key": "A", "label": "0"},
+      {"key": "B", "label": "1"},
+      {"key": "C", "label": "9"},
+      {"key": "D", "label": "8"}
+    ],
+    "answer": "D",
+    "explanation": "Le chiffre '8' possède une symétrie centrale : il reste identique lorsqu'il est tourné de 180° autour de son centre. Aucun des autres chiffres ne présente cette propriété; par exemple, '0' est une symétrie axiale mais pas centrale. '1' et '9' n'ont pas de symétrie centrale.",
+    "hint": "Regarde quel chiffre ne change pas en étant retourné."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle transformation équivaut à deux symétries centrales successives ?",
+    "prompt": null,
+    "transformation_type": "combinee",
+    "options": [
+      {"key": "A", "label": "Une rotation de 180°"},
+      {"key": "B", "label": "Une symétrie axiale"},
+      {"key": "C", "label": "Une translation"},
+      {"key": "D", "label": "Une rotation de 360°"}
+    ],
+    "answer": "D",
+    "explanation": "Effectuer deux symétries centrales successives autour du même point revient à une transformation identitaire, qui est équivalente à une rotation de 360° ou de 0° si l'on considère que le point est invariant. Cela ramène la figure à son état d'origine.",
+    "hint": "Pense à l'effet d'une transformation complète."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel symbole parmi les suivants conserve son apparence après une rotation de 180° ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "†"},
+      {"key": "B", "label": "∞"},
+      {"key": "C", "label": "⚫"},
+      {"key": "D", "label": "~"}
+    ],
+    "answer": "B",
+    "explanation": "Le symbole de l'infini (∞) est symétrique par rapport à son centre, ce qui signifie qu'une rotation de 180° n'affecte pas son apparence. Les autres symboles changent de forme ou de perspective après une telle rotation.",
+    "hint": "Cherche un symbole bien équilibré visuellement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Après une rotation 270° dans le sens horaire, quelles faces vois-tu en pliant le cube selon ce patron ?",
+    "prompt": "Patron de cube, disposition en L avec motifs géométriques.",
+    "transformation_type": "rotation",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "L",
+      "faces": {
+        "top": "Spirale",
+        "bottom": "Carré",
+        "left": "Triangle",
+        "right": "Cercle",
+        "front": "Croix",
+        "back": "Ligne"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "Spirale", "front": "Ligne", "right": "Cercle"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "Carré", "front": "Croix", "right": "Cercle"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "Spirale", "front": "Croix", "right": "Triangle"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "Carré", "front": "Ligne", "right": "Triangle"}}
+    ],
+    "answer": "A",
+    "explanation": "Pour une rotation de 270° dans le sens horaire du plan, la face initialement devant (Croix) passe à gauche, celle de droite (Cercle) va devant et celle de derrière (Ligne) prend sa place à droite. Ainsi, après pliage, seule l'option A montre la configuration correcte des nouvelles positions des faces.",
+    "hint": "Visualise chaque position des faces après la rotation."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Parmi ces lettres, laquelle reste identique après une rotation de 180° ?",
+    "prompt": null,
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "S"},
+      {"key": "B", "label": "Z"},
+      {"key": "C", "label": "H"},
+      {"key": "D", "label": "N"}
+    ],
+    "answer": "C",
+    "explanation": "La lettre 'H' reste identique après une rotation de 180° car elle est centro-symétrique. A contrario, 'S', 'Z' et 'N' sont symétriques axialement ou pas du tout mais changent lors d'une rotation de 180°.",
+    "hint": "Recherchez une symétrie bien équilibrée autour du centre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel chiffre reste identique après une symétrie axiale horizontale ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "0"},
+      {"key": "B", "label": "8"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "6"}
+    ],
+    "answer": "B",
+    "explanation": "Le chiffre '8' possède une symétrie axiale horizontale, ce qui signifie qu'une ligne horizontale passant par son centre divise le chiffre en deux parties égales et reflétées. Aucun autre chiffre parmi les choices n'a cette symétrie.",
+    "hint": "Positionne mentalement une ligne horizontale à travers chaque chiffre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Après deux rotations de 180° successives, quel cube obtient-on ?",
+    "prompt": "Patron de cube, agencement en ligne droite avec motifs numériques.",
+    "transformation_type": "combinee",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "line",
+      "faces": {
+        "top": "1",
+        "bottom": "2",
+        "left": "3",
+        "right": "4",
+        "front": "5",
+        "back": "6"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "1", "front": "6", "right": "3"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "2", "front": "6", "right": "3"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "1", "front": "5", "right": "4"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "2", "front": "5", "right": "4"}}
+    ],
+    "answer": "C",
+    "explanation": "Deux rotations de 180° ramènent chaque face à sa position initiale respective. Ainsi, une rotation complète laisse '1' sur le dessus, '5' devant et '4' sur le côté droit, qui correspond au Cube C.",
+    "hint": "Chaque face fait un tour complet et revient à sa position d'origine."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel nombre parmi ceux-ci possède un seul axe de symétrie vertical ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "2"},
+      {"key": "B", "label": "3"},
+      {"key": "C", "label": "4"},
+      {"key": "D", "label": "8"}
+    ],
+    "answer": "C",
+    "explanation": "Le chiffre '4', quand il est écrit avec une police qui joue sur sa symétrie verticale, comme certains typographies modernes, possède un axe de symétrie vertical, divisant le chiffre en deux moitiés égales. Il en est de même pour des figures précises de '4', alors que les autres chiffres n'ont pas cette symétrie.",
+    "hint": "Représente mentalement une ligne verticale au centre de chaque chiffre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien d'axes de symétrie possède un cercle ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "2"},
+      {"key": "B", "label": "4"},
+      {"key": "C", "label": "8"},
+      {"key": "D", "label": "Infinité"}
+    ],
+    "answer": "D",
+    "explanation": "Un cercle a une infinité d'axes de symétrie, car toute ligne passant par son centre la divise en deux parties égales. C'est la seule figure qui possède cette propriété, contrairement aux polygones réguliers.",
+    "hint": "Un axe peut traverser un cercle de n'importe où tant qu'il passe par le centre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel cube obtient-on après une rotation de 90° avec un axe oblique ?",
+    "prompt": "Patron de cube, disposition Z, motifs lettres.",
+    "transformation_type": "rotation",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "Z",
+      "faces": {
+        "top": "A",
+        "bottom": "B",
+        "left": "C",
+        "right": "D",
+        "front": "E",
+        "back": "F"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "A", "front": "F", "right": "C"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "B", "front": "E", "right": "D"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "A", "front": "E", "right": "D"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "B", "front": "F", "right": "C"}}
+    ],
+    "answer": "C",
+    "explanation": "Une rotation de 90° avec un axe oblique touche particulièrement aux faces latérales. Le top ('A') reste au-dessus, le front ('E') prend la place à droite en un quart de tour. L'étalement Z centralise les mouvements; donc, Cube C respecte cette configuration.",
+    "hint": "Sujet à une rotation différente du simple axe nord-sud."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel pictogramme possède une symétrie axiale horizontale parmi les suivants ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "Éclair"},
+      {"key": "B", "label": "Cœur"},
+      {"key": "C", "label": "Flèche"},
+      {"key": "D", "label": "Sablier"}
+    ],
+    "answer": "D",
+    "explanation": "Le sablier a une symétrie axiale horizontale car il est généralement dessiné de manière symétrique autour de sa ligne médiane. Si vous le coupez horizontalement, les deux moitiés se reflètent l'une dans l'autre. Les autres formes ont des symétries différentes ou pas du tout.",
+    "hint": "Divise chaque pictogramme en deux par une ligne horizontale."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle combinaison de transformations équivaut à une rotation de 180° ?",
+    "prompt": null,
+    "transformation_type": "combinee",
+    "options": [
+      {"key": "A", "label": "Deux rotations de 90°"},
+      {"key": "B", "label": "Deux symétries axiales perpendiculaires"},
+      {"key": "C", "label": "Deux translations opposées"},
+      {"key": "D", "label": "Une symétrie centrale suivie d'une translation"}
+    ],
+    "answer": "B",
+    "explanation": "Deux symétries axiales perpendiculaires l'une à l'autre aboutissent à une rotation de 180°. C'est parce que chaque symétrie inverse une moitié de la figure et l'autre suit, recréant le même effet qu'une rotation de demi-tour.",
+    "hint": "Les transformations combinant une inversion complète s'alignent sur un demi-tour."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle lettre devient identique après un retournement à 180° sur un axe 3D ?",
+    "prompt": "On envisage chaque lettre en perspective 3D, basculée vers l'arrière à 180°.",
+    "transformation_type": "rotation",
+    "options": [
+      {"key": "A", "label": "M"},
+      {"key": "B", "label": "U"},
+      {"key": "C", "label": "W"},
+      {"key": "D", "label": "O"}
+    ],
+    "answer": "C",
+    "explanation": "La lettre 'W', lorsqu'elle est retournée à 180° en trois dimensions autour d'un axe horizontal imaginaire traversant its milieu, apparaît identique à sa position originale. 'M' apparaît inversé, 'U' prend la forme inversée d'une 'n', et 'O' reste le même, mais généralement pas après une transformation en axe 3D de ce type.",
+    "hint": "Pense à une lettre symétrique en forme et orientation."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien d'axes de symétrie axiale possède un triangle équilatéral ?",
+    "prompt": null,
+    "transformation_type": "symetrie_axiale",
+    "options": [
+      {"key": "A", "label": "1"},
+      {"key": "B", "label": "2"},
+      {"key": "C", "label": "3"},
+      {"key": "D", "label": "4"}
+    ],
+    "answer": "C",
+    "explanation": "Un triangle équilatéral a trois axes de symétrie. Ces axes sont tous des médiatrices qui traversent chaque sommet et le côté opposé. Cette symétrie repose crucialement sur l'égalité de ses côtés.",
+    "hint": "Chaque sommet et son opposé développent un axe."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel cube obtient-on après une symétrie axiale horizontale du patron ?",
+    "prompt": "Patron de type T, motifs saisonniers.",
+    "transformation_type": "symetrie_axiale",
+    "figure_data": {
+      "type": "cube_net",
+      "layout": "T",
+      "faces": {
+        "top": "Printemps",
+        "bottom": "Été",
+        "left": "Automne",
+        "right": "Hiver",
+        "front": "Pâques",
+        "back": "Noël"
+      }
+    },
+    "options": [
+      {"key": "A", "label": "Cube A", "folded": {"top": "Été", "front": "Noël", "right": "Automne"}},
+      {"key": "B", "label": "Cube B", "folded": {"top": "Printemps", "front": "Pâques", "right": "Hiver"}},
+      {"key": "C", "label": "Cube C", "folded": {"top": "Été", "front": "Pâques", "right": "Hiver"}},
+      {"key": "D", "label": "Cube D", "folded": {"top": "Été", "front": "Noël", "right": "Hiver"}}
+    ],
+    "answer": "C",
+    "explanation": "La symétrie axiale horizontale fait basculer le haut ('Printemps') et le bas ('Été'), leur échangeant. Les autres faces ne changent pas de place. Cube C montre correctement 'Été' au sommet, 'Pâques' devant et 'Hiver' sur le côté droit.",
+    "hint": "Visualise l'effet miroir horizontal sur les saisons."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle transformation résulte de l'application de deux rotations de 180° successives ?",
+    "prompt": null,
+    "transformation_type": "combinee",
+    "options": [
+      {"key": "A", "label": "Une rotation de 90°"},
+      {"key": "B", "label": "Une rotation de 360°"},
+      {"key": "C", "label": "Une symétrie centrale"},
+      {"key": "D", "label": "Une translation"}
+    ],
+    "answer": "B",
+    "explanation": "Deux rotations de 180° successives retournent chaque figure deux fois, ce qui équivaut à une rotation de 360°, ramenant la figure à sa position initiale. L'erreur commune serait de penser qu'elles s'annulent ou produisent une symétrie distincte.",
+    "hint": "Deux demi-tours équivalent à un tour complet."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la lettre centro-symétrique parmi les suivantes?",
+    "prompt": null,
+    "transformation_type": "symetrie_centrale",
+    "options": [
+      {"key": "A", "label": "Q"},
+      {"key": "B", "label": "S"},
+      {"key": "C", "label": "X"},
+      {"key": "D", "label": "L"}
+    ],
+    "answer": "C",
+    "explanation": "La lettre 'X' est centro-symétrique ; elle a un centre de symétrie qui la rend identique lorsqu'elle est retournée de 180°. 'Q', 'S', et 'L' ne partagent pas cette symétrie complète, ayant différents axes ou absence d'axes.",
+    "hint": "Cherchez une lettre symétrique centrée autour de son milieu."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle transformation est identique à une symétrie centrale et une rotation de 180° successives ?",
+    "prompt": null,
+    "transformation_type": "combinee",
+    "options": [
+      {"key": "A", "label": "Une symétrie axiale horizontale"},
+      {"key": "B", "label": "Une rotation de 360°"},
+      {"key": "C", "label": "Une symétrie axiale verticale"},
+      {"key": "D", "label": "Une rotation de 90°"}
+    ],
+    "answer": "B",
+    "explanation": "Effectuer une symétrie centrale suivie d'une rotation de 180° équivaut à une rotation complète de 360°, restaurant la figure à son état initial. Les autres options représentent des mouvements trop insuffisants ou unidirectionnels pour revenir au point de départ.",
+    "hint": "Imagine cumuler deux moitié-tours."
+  }
+]

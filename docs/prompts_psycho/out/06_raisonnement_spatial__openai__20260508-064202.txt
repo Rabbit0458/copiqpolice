@@ -1,0 +1,562 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces possède un cube ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube est un solide en forme de parallélépipède et possède 6 faces carrées toutes identiques. Chaque face est perpendiculaire à quatre autres faces. Les 6 faces sont disposées de manière à former un volume fermé. Ce nombre est fixe pour tous les objets cubiques parfaits.",
+        "hint": "Réfléchissez aux sides que vous pouvez voir et celles qui sont cachées."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien d'arêtes possède un tétraèdre régulier ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "A",
+        "explanation": "Un tétraèdre régulier est un solide à quatre faces triangulaires équilatérales identiques. Chacune des quatre sommets est connecté aux trois autres par des arêtes. En tout, cela fait 6 arêtes car chaque paire de sommets est reliée par une arête unique.",
+        "hint": "Imaginez une pyramide à base triangulaire."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets a un prisme triangulaire ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "10"}
+        ],
+        "answer": "B",
+        "explanation": "Un prisme triangulaire est constitué de deux triangles parallèles reliés par trois rectangles. Chacun des triangles possède 3 sommets, soit 6 sommets au total lorsque les triangles sont reliés par les rectangles au niveau de chaque sommet.",
+        "hint": "Deux bases triangulaires contribuent toutes les deux."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Sur un cube, combien d'arêtes se rejoignent à un sommet ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "3"},
+            {"key": "C", "label": "4"},
+            {"key": "D", "label": "5"}
+        ],
+        "answer": "B",
+        "explanation": "Chaque sommet d'un cube est le point de rencontre de trois arêtes. Il y a douze arêtes au total et huit sommets, permettant ce triplet d'arêtes incontournable. Chaque arête rejoint exactement deux sommets.",
+        "hint": "Pensez aux coins d'une boite en carton."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces possède un prisme rectangulaire ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "5"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "8"}
+        ],
+        "answer": "C",
+        "explanation": "Un prisme rectangulaire, aussi appelé parallélépipède rectangle, possède 6 faces. Chaque couple de faces opposées est de dimensions identiques et parallèles, assurant un total de trois paires.",
+        "hint": "Chaque face a une jumelle."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets possède un cube ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "C",
+        "explanation": "Un cube possède 8 sommets, avec chaque sommet relié à trois autres sommets par des arêtes. Les huit sommets déterminent les angles dans lesquels les arêtes se rejoignent.",
+        "hint": "Comptez les coins visibles et ceux cachés en perspective."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la forme de la base d'un cylindre ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Carré"},
+            {"key": "B", "label": "Triangle"},
+            {"key": "C", "label": "Rectangle"},
+            {"key": "D", "label": "Cercle"}
+        ],
+        "answer": "D",
+        "explanation": "Un cylindre possède deux bases circulaires identiques et parallèles. Ces deux cercles sont reliés par une surface courbe, formant le corps du cylindre. La base circulaire est une caractéristique clé qui distingue les cylindres des prismes.",
+        "hint": "Pensez aux formes géométriques basiques de la base."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces a une pyramide à base carrée ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "3"},
+            {"key": "B", "label": "4"},
+            {"key": "C", "label": "5"},
+            {"key": "D", "label": "6"}
+        ],
+        "answer": "C",
+        "explanation": "Une pyramide à base carrée est constituée d'une base carrée et de quatre faces triangulaires. Ainsi, elle a 5 faces au total. Chaque triangle partage une arête commune avec la base ou un autre triangle.",
+        "hint": "Une base et quatre côtés."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le nombre d'arêtes d'une pyramide à base triangulaire ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "9"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "A",
+        "explanation": "Une pyramide à base triangulaire, aussi appelée tétraèdre, a trois arêtes joignant chaque sommet de la base à l'apex, plus celles du triangle de base. Cela donne un total de 6 arêtes.",
+        "hint": "Comptez à partir de la base puis rejoignez le sommet."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la vue de dessus d'un prisme rectangulaire ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Un rectangle"},
+            {"key": "B", "label": "Un carré"},
+            {"key": "C", "label": "Un triangle"},
+            {"key": "D", "label": "Un cercle"}
+        ],
+        "answer": "A",
+        "explanation": "Vu de dessus, un prisme rectangulaire apparaît comme un rectangle, car il est formé de deux rectangles parallèles reliés par ses faces latérales. La forme exacte dépend des dimensions relatives de la base.",
+        "hint": "Vu de dessus, c'est simplement une face."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces latérales a un cône ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "A",
+        "explanation": "Un cône possède une face latérale unie qui ressemble à un segment de cercle si elle est dépliée. Cette face latérale est une surface courbe qui commence à la base circulaire et rejoint l'apex.",
+        "hint": "Il n'y a qu'une seule surface qui s'enroule."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces planes possède un cylindre ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "1"},
+            {"key": "C", "label": "2"},
+            {"key": "D", "label": "3"}
+        ],
+        "answer": "C",
+        "explanation": "Un cylindre a deux bases planes, chacune étant un cercle. Les bases sont les seules surfaces planes du cylindre contrairement à sa surface latérale qui est courbe.",
+        "hint": "Ce sont les surfaces aux extrémités du cylindre."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets possède une pyramide à base pentagonale ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "5"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "7"},
+            {"key": "D", "label": "8"}
+        ],
+        "answer": "B",
+        "explanation": "Une pyramide à base pentagonale possède cinq sommets sur sa base et un sommet supplémentaire au sommet de la pyramide. Ce qui fait un total de 6 sommets.",
+        "hint": "Comptez chaque sommet de la base plus le sommet."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces possède une pyramide rectangulaire ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "5"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "7"}
+        ],
+        "answer": "B",
+        "explanation": "Une pyramide rectangulaire a une base en forme de rectangle et quatre faces triangulaires qui se rejoignent à l'apex, totalisant cinq faces.",
+        "hint": "Une base avec quatre côtés supplémentaires."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien d'arêtes possède un cube ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "8"},
+            {"key": "B", "label": "12"},
+            {"key": "C", "label": "14"},
+            {"key": "D", "label": "16"}
+        ],
+        "answer": "B",
+        "explanation": "Un cube est composé de 12 arêtes. Chaque face du cube est un carré avec 4 arêtes, mais comme chaque arête est partagée par deux faces, on calcule 12 arêtes en tout.",
+        "hint": "Visualisez un cube déroulant pour identifier chaque section."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets un cube déplié possède-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "C",
+        "explanation": "Même en étant déplié, chaque coin d'un cube reste un sommet, il y en a donc toujours 8. Les faces peuvent s'étendre à plat, mais le nombre de sommets reste inchangé.",
+        "hint": "Le nombre de coins reste constant, plié ou pas."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle forme prend un cône droit lorsqu'il est vu de profil ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Un cercle"},
+            {"key": "B", "label": "Un triangle"},
+            {"key": "C", "label": "Un rectangle"},
+            {"key": "D", "label": "Une ellipse"}
+        ],
+        "answer": "B",
+        "explanation": "Vu de profil, un cône droit apparaît comme un triangle isocèle, avec la base du cône formant la base du triangle et le sommet formant le sommet du triangle.",
+        "hint": "Pensez à un chapeau pointu vu depuis un côté."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces patrons ne peut pas former un cube une fois plié ?",
+        "prompt": "Considère 4 patrons composés de 6 carrés assemblés.",
+        "options": [
+            {"key": "A", "label": "Croix latine"},
+            {"key": "B", "label": "T renversé"},
+            {"key": "C", "label": "Ligne droite de 6 carrés"},
+            {"key": "D", "label": "Z de 6 carrés"}
+        ],
+        "answer": "C",
+        "explanation": "Une bande linéaire de 6 carrés ne forme jamais un cube car elle ne peut pas se replier sur elle-même pour fermer un volume. Les autres patrons présentent des configurations permettant le rabat des faces pour former un volume cubique.",
+        "hint": "Imagine le pliage : la bande reste plane."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de sommets a un cylindre ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "1"},
+            {"key": "C", "label": "2"},
+            {"key": "D", "label": "3"}
+        ],
+        "answer": "A",
+        "explanation": "Un cylindre ne possède pas de sommets car ses bases sont circulaires et n'ont pas de coins qui se rejoignent. Un sommet est un point où un certain nombre d'arêtes convergent, ce qui n'existe pas dans le cas d'un cylindre.",
+        "hint": "Réfléchissez aux 'coins' typiques d'autres formes."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de faces un cylindre comporte-t-il ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "C",
+        "explanation": "Un cylindre a deux bases circulaires plates et une surface courbée. Au total, cela donne trois surfaces distinctes : deux planes et une courbe, mais elles ne sont pas toutes des 'faces'. En un sens géométrique de 'face', c'est considéré comme 3.",
+        "hint": "Considérez les surfaces visibles."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la vue de face d'un cylindre droit ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Un rectangle"},
+            {"key": "B", "label": "Un ovale"},
+            {"key": "C", "label": "Un cercle"},
+            {"key": "D", "label": "Un triangle"}
+        ],
+        "answer": "A",
+        "explanation": "Lorsqu'un cylindre est vu de face avec ses bases parallèles au plan frontal, il ressemble à un rectangle. La hauteur du rectangle correspond à la hauteur du cylindre et la largeur au diamètre de son cercle de base.",
+        "hint": "Imaginez regarder directement sans l'angle."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Si vous avez une pyramide à base carrée, combien d'arêtes visibles voit-on d'une vue de dessus ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "D",
+        "explanation": "Vu de dessus, une pyramide à base carrée expose les 4 arêtes de sa base carrée, mais les arêtes montant vers l'apex ne sont pas visibles. Par conséquent, toutes les arêtes de la base sont visibles, d'où le chiffre 4.",
+        "hint": "Concentrez-vous sur la base exposée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de petits cubes faut-il pour construire un cube de 4 d'arête ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "16"},
+            {"key": "B", "label": "32"},
+            {"key": "C", "label": "64"},
+            {"key": "D", "label": "128"}
+        ],
+        "answer": "C",
+        "explanation": "Construire un cube de 4 unités d'arête nécessite 4^3 petits cubes, soit 64. Chaque côté étant composé de 4 petits cubes, les empilements sur le volume total atteignent ces 64.",
+        "hint": "Considérez un cube de 2D et appliquez-le en trois dimensions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans un cube 3×3×3 totalement peint, combien de cubes n'ont aucune face peinte ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "1"},
+            {"key": "C", "label": "2"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "B",
+        "explanation": "Dans un cube 3×3×3, les cubes au centre du tout restent sans peinture. Étant donné que les couches externes sont peintes, il ne reste qu'un seul cube non exposé au centre.",
+        "hint": "Les coins internes sont rares dans cette disposition."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de cubes ont 1 face peinte dans un cube 3×3×3 ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "9"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "18"}
+        ],
+        "answer": "B",
+        "explanation": "Dans un cube 3×3×3 entièrement peint, il y a 9 cubes par face (chacune ayant une face peinte pour les cubes non coins et non arêtes) qui ne sont pas à l'intersection d'arêtes. Chaque face abrite 9 cubes ne comportant qu'une face peinte.",
+        "hint": "Considérez une grille surface de chaque côté."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Parmi 4 patrons de prisme, lequel ne forme pas un prisme triangulaire une fois plié ?",
+        "prompt": "Considère 4 patrons : deux avec bases triangulaires opposées, un avec base et sommet carrés, et un comme une bande continue de rectangles.",
+        "options": [
+            {"key": "A", "label": "Deux bases triangulaires, paralleles"},
+            {"key": "B", "label": "Un carré pour base et sommet"},
+            {"key": "C", "label": "Une longue bande rectangulaire sans joint"},
+            {"key": "D", "label": "Un parallelogramme avec deux triangles"},
+        ],
+        "answer": "B",
+        "explanation": "Le prisme triangulaire nécessite deux triangles parallèles, tandis que le patron basé sur des carrés ne peut pas produire cette forme. Les deux triangles et une bande permettent de former un corps triangulaire, ce qui n'est pas le cas pour deux plans carrés.",
+        "hint": "Faites attention à la forme générée par les bases proposées."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "En voyant une pyramide à base carrée de profil, combien de faces est-elle visible ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "B",
+        "explanation": "Vu de profil, une pyramide à base carrée expose deux faces triangulaires. Celles-ci incluent deux triangles latéraux adjacents à la vision. La face de la base reste invisible dans cette perspective.",
+        "hint": "Compte seulement les faces qui s'étendent dans le champ de vision."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de faces a un cercle vu depuis l'intérieur d'un cylindre creux ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "1"},
+            {"key": "C", "label": "2"},
+            {"key": "D", "label": "Indéfini"}
+        ],
+        "answer": "B",
+        "explanation": "Vu de l'intérieur d'un cylindre creux aligné à l'axe visuel, on observe un cercle à chaque extrémité du cylindre. Bien que ces deux cercles ne soient pas des 'faces' au sens strict, ils délimitent la 'vision'.",
+        "hint": "Imaginez-vous regardant à travers un tuyau ouvert."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Si vous pliez une croix pliable de 5 carrés formant un T, quel volume obtiendrez-vous ?",
+        "prompt": "Imaginez un T composé de petits carrés bien ajustés.",
+        "options": [
+            {"key": "A", "label": "Une boîte rectangulaire"},
+            {"key": "B", "label": "Un cube"},
+            {"key": "C", "label": "Une pyramide"},
+            {"key": "D", "label": "Aucun volume fermé"}
+        ],
+        "answer": "D",
+        "explanation": "Un T formé de cinq carrés n'est pas suffisant pour créer un volume fermé. Un cube nécessiterait au moins six carrés et une autre méthode de répartition qu'un T pour se replier afin de former un volume clos.",
+        "hint": "Pour refermer un volume, il faut une autre pièce."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de petits cubes ont exactement 2 faces peintes dans un cube 4×4×4 ?",
+        "prompt": "Un cube 4×4×4 est entièrement peint puis découpé en 64 petits cubes unitaires.",
+        "options": [
+            {"key": "A", "label": "8"},
+            {"key": "B", "label": "16"},
+            {"key": "C", "label": "24"},
+            {"key": "D", "label": "32"}
+        ],
+        "answer": "B",
+        "explanation": "Les cubes à 2 faces peintes se trouvent sur les arêtes du cube, excluant les coins. Chaque arête d'un cube 4×4×4 compte 2 cubes au centre avec 2 faces peintes. Avec 12 arêtes, cela fait 16 cubes au total.",
+        "hint": "Évitez de compter les coins d'arête."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans un cube 5×5×5 entièrement peint, combien de cubes n'ont aucune face peinte ?",
+        "prompt": "Le cube est routé extérieur en rouge avant d'être découpé.",
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "27"},
+            {"key": "D", "label": "64"}
+        ],
+        "answer": "B",
+        "explanation": "Le cube interne aux dimensions 3×3×3 reste non peint. Les cubes non peints sont intégrés vers le centre sans contact extérieur, laissant un cube interne de 3x3x3 soit 27 cubes au centre restants.",
+        "hint": "Pensez à un espace vide interne."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel solide résulte du pliage d'un Hexagone en étoile tricôtée ?",
+        "prompt": "Chaque losange périphérique se retrouve superposé sur ses voisins.",
+        "options": [
+            {"key": "A", "label": "Pyramide à base carrée"},
+            {"key": "B", "label": "Prisme pentagonal"},
+            {"key": "C", "label": "Une surface convolutée"},
+            {"key": "D", "label": "Une sphère imparfaite"}
+        ],
+        "answer": "C",
+        "explanation": "Un hexagone en étoile ainsi articulé ne peut pas se rabattre pour fermer un volume simple. Il conduit à une figure enchevêtrée sans symétrie fermée nette. Type de chose pouvant suggérer un modèle complexe tissé.",
+        "hint": "Considérez le résultat si les extrémités externes devaient se rejoindre."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de cubes unitaires existent-ils à l'intérieur d'un cube 6x6x6 ?",
+        "prompt": "À l'extérieur du cube, toutes les faces sont rouges.",
+        "options": [
+            {"key": "A", "label": "64"},
+            {"key": "B", "label": "216"},
+            {"key": "C", "label": "343"},
+            {"key": "D", "label": "125"}
+        ],
+        "answer": "A",
+        "explanation": "Les cubes à l'intérieur du cube 6x6x6, restant invisibles des influences externes, calculent à 4^3 = 64. Ceci en considérant les cubes 'cachés' sous trois couches par face.",
+        "hint": "Visualisez les blocs internes protégés des extérieurs."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "En pliant un tétraèdre, combien de sommets sont alignés sur une ligne droite parfaite ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "1"},
+            {"key": "C", "label": "2"},
+            {"key": "D", "label": "3"}
+        ],
+        "answer": "A",
+        "explanation": "Le tétraèdre par sa définition géométrique, maintient ses sommets de sorte qu'aucun n'est aligné sur un segment de ligne direct. Les quatre points ne parviennent jamais à partager une ligne droite commune.",
+        "hint": "Référez-vous aux règles concernant les sommeils d'un simple polyèdre."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien d'arêtes un cube tranché en diagonale possède-t-il en plus des originales ?",
+        "prompt": "Un cube non sculpté est divisé entre les sommets opposés.",
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "1"},
+            {"key": "C", "label": "2"},
+            {"key": "D", "label": "3"}
+        ],
+        "answer": "D",
+        "explanation": "Une coupe diagonale à travers un cube engage de nouvelles arêtes résultant en trois segments de coupe. Ces lignes ajoutent l'arête à celle originellement là, formant trois supplémentaires visibles.",
+        "hint": "Deux triangulaire dégagera trois nouveaux côtés."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de triangles visualise-t-on dans une section à 45° d'un prisme droit ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "B",
+        "explanation": "Une section d'un prisme droit à 45° tend à faire apparaître deux triangles distincts. Chacune des bases reçoit le coupe à travers deux arêtes clés, engendrant ainsi deux triangles conjugués.",
+        "hint": "Pensez à une coupe transversale et ellipse."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle forme est résultante de la projection d'une pyramide sur une surface plane ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Rectangle"},
+            {"key": "B", "label": "Pentagone"},
+            {"key": "C", "label": "Triangle"},
+            {"key": "D", "label": "Hexagone"}
+        ],
+        "answer": "C",
+        "explanation": "Une pyramide projetée sur un plan depuis n'importe quel point extérieur à sa base apparaît comme un triangle. La base et deux arêtes latérales déterminent cette configuration projetée.",
+        "hint": "Considérez la silhouette de base plus envergure airienne."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel type de triangle forme les sections horizontales d'un cône droit ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Équilatéral"},
+            {"key": "B", "label": "Isocèle"},
+            {"key": "C", "label": "Aigu"},
+            {"key": "D", "label": "Non applicable"}
+        ],
+        "answer": "D",
+        "explanation": "Les sections horizontales d’un cône droit sont toujours des cercles, non effectustections. Un triangle ne se fait pas indépendamment d'un axe incliné ou parallèle à l'axe central.",
+        "hint": "Pensez à ses coupes au plus large, non diagonal."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le genre d'ellipse obtenu en sectionnant un cylindre droit ?",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Petit axe horizontal"},
+            {"key": "B", "label": "Grand axe horizontal"},
+            {"key": "C", "label": "Axe incliné"},
+            {"key": "D", "label": "Non applicable"}
+        ],
+        "answer": "B",
+        "explanation": "Une section circulaire d'un cylindre droit au sommet produit une ellipse ayant des axes polarisés de manière horizontale, comme par élongation du contour via fixation.",
+        "hint": "Les sections centrales retoquent souvent un cadre elliptique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle forme solide reste-t-il avec deux cylindres de rayon inégal rassemblés ??",
+        "prompt": null,
+        "options": [
+            {"key": "A", "label": "Un prisme oblong"},
+            {"key": "B", "label": "Un tore usuel"},
+            {"key": "C", "label": "Un volume mixte car non sécant"},
+            {"key": "D", "label": "Deux boucles s'auto-interférant"}
+        ],
+        "answer": "C",
+        "explanation": "La combinaison de deux cylindres de rayon inégal produit une vue intérieure volumineuse où les abcisses ne fusionnent plus basée sur leurs disjoncetés obliques, créant ainsi un volume mixte non sécant.",
+        "hint": "Leurs volumes extérieurs sont rarement tangibles."
+    }
+]

@@ -1,0 +1,427 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « joyeux » ?",
+    "prompt": null,
+    "options": ["Triste", "Heureux", "Bizarre", "Méfiant"],
+    "answer": "Heureux",
+    "explanation": "Le mot « joyeux » signifie rempli de joie ou de bonheur, ce qui est synonyme de « heureux ». « Triste » est l'antonyme, signifiant dépourvu de bonheur. « Bizarre » et « méfiant » ne sont pas liés au bien-être ou à l'émotion positive.",
+    "hint": null
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « courageux » ?",
+    "prompt": null,
+    "options": ["Brave", "Poltron", "Vaillant", "Intrépide"],
+    "answer": "Poltron",
+    "explanation": "« Courageux » décrit quelqu'un avec du courage. « Poltron » désigne quelqu'un qui manque de courage, donc c'est l'antonyme. « Brave », « vaillant », et « intrépide » sont synonymes ou proches en sens de « courageux ».",
+    "hint": "Pense à l'opposé de quelqu'un qui fait face au danger sans peur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Plume est à écrire comme pinceau est à ___",
+    "prompt": null,
+    "options": ["Peindre", "Téléphoner", "Cuisiner", "Écouter"],
+    "answer": "Peindre",
+    "explanation": "Une plume est utilisée pour écrire, tout comme un pinceau est utilisé pour peindre. Les autres choix ne sont pas des activités liées à l'utilisation du pinceau.",
+    "hint": "Concentrez-vous sur l'activité principale associée à chaque outil."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot « glace » signifie… « Il prend une glace à la vanille cet été. »",
+    "prompt": "Il prend une glace à la vanille cet été.",
+    "options": ["Froid", "Plaisir", "Givré", "Crème glacée"],
+    "answer": "Crème glacée",
+    "explanation": "Dans le contexte de la phrase, « glace » se réfère à un dessert froid et sucré, typiquement fait de lait ou de crème, qui est la « crème glacée ». Les autres options font référence soit à la température soit à d'autres significations du mot glace.",
+    "hint": "Pensez à ce que l'on mange pour se rafraîchir en été."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Chat, Chien, Poisson, Table",
+    "options": ["Chat", "Chien", "Poisson", "Table"],
+    "answer": "Table",
+    "explanation": "La table est un objet inanimé alors que « chat », « chien » et « poisson » sont des animaux. Les choix animaux sont vivants, tandis que la table n'est qu'un meuble.",
+    "hint": "Identifiez ce qui n'est pas vivant."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « petite » ?",
+    "prompt": null,
+    "options": ["Grande", "Énorme", "Minuscule", "Colossale"],
+    "answer": "Minuscule",
+    "explanation": "« Petite » indique quelque chose de peu grand en taille, ce qui est synonyme de « minuscule ». « Grande », « énorme » et « colossale » sont des antonymes puisqu'ils désignent une grande taille.",
+    "hint": "Cherche une autre façon de dire 'très petit'."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « amical » ?",
+    "prompt": null,
+    "options": ["Antipathique", "Froid", "Agréable", "Hostile"],
+    "answer": "Agréable",
+    "explanation": "Quelqu'un « amical » se montre bienveillant et agréable envers les autres, c'est pourquoi « agréable » est un synonyme approprié. « Antipathique », « froid » et « hostile » renvoient à des comportements opposés.",
+    "hint": "Pense à un comportement qui attire la sympathie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « sec » ?",
+    "prompt": null,
+    "options": ["Mouillé", "Dur", "Lourd", "Doux"],
+    "answer": "Mouillé",
+    "explanation": "« Sec » signifie dépourvu d'humidité, donc son antonyme est « mouillé », qui signifie imbibé d'eau. « Dur », « lourd » et « doux » ne se rapportent pas au niveau d'humidité.",
+    "hint": "Pensez à ce qui implique la présence d'eau."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Boulanger est à pain comme couturier est à ___",
+    "prompt": null,
+    "options": ["Vêtement", "Sac", "Table", "Chaussure"],
+    "answer": "Vêtement",
+    "explanation": "Un boulanger fabrique des pains tout comme un couturier confectionne des vêtements. Les autres choix, bien que fabriqués, ne sont pas directement associés aux opérations principales du couturier.",
+    "hint": "Quel est le produit principal créé par un couturier ?"
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Carotte, Navet, Brocoli, Cuillère",
+    "options": ["Carotte", "Navet", "Brocoli", "Cuillère"],
+    "answer": "Cuillère",
+    "explanation": "Les trois premiers sont des légumes utilisés comme nourriture, tandis que « cuillère » est un ustensile de cuisine et n'est pas un légume.",
+    "hint": "Cherchez l'objet qui n'est pas un aliment."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot « pièce » signifie… « Il collectionne les pièces anciennes. »",
+    "prompt": "Il collectionne les pièces anciennes.",
+    "options": ["Chambre", "Monnaie", "Élément", "Fragment"],
+    "answer": "Monnaie",
+    "explanation": "Dans ce contexte, « pièce » signifie une unité de monnaie métallique, souvent collectionnée. Les termes « chambre », « élément » et « fragment » n'ont pas de rapport avec la monnaie.",
+    "hint": "Évoquez l'idée de collection numismatique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « peur » ?",
+    "prompt": null,
+    "options": ["Craint", "Confiance", "Jouissance", "Calme"],
+    "answer": "Craint",
+    "explanation": "« Peur » est un sentiment d'anxiété ou de crainte, donc « craint » est synonyme. « Confiance », « jouissance » et « calme » évoquent des états d'esprit opposés ou différents.",
+    "hint": "Cherche une autre manière d'exprimer de l'anxiété."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Chat est à ronronner comme chien est à ___",
+    "prompt": null,
+    "options": ["Aboyer", "Siffler", "Mugir", "Miauler"],
+    "answer": "Aboyer",
+    "explanation": "Le chat ronronne, c'est le son qu'il émet. Le chien, de son côté, aboie, c'est le son typique qu'il produit. Les autres termes ne sont pas représentatifs des sons typiques d'un chien.",
+    "hint": "Concentrez-vous sur les sons émis par les animaux domestiques."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « sombre » ?",
+    "prompt": null,
+    "options": ["Clair", "Lourd", "Dur", "Lisse"],
+    "answer": "Clair",
+    "explanation": "« Sombre » fait référence à un endroit qui manque de lumière ou qui est mystérieux. « Clair » indique le contraire, un endroit bien illuminé. « Lourd », « dur », et « lisse » ne réfèrent pas à la lumière ou au mystère.",
+    "hint": "Pensez à ce qui résulte d'une bonne illumination."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Pomme, Raisin, Banane, Montagne",
+    "options": ["Pomme", "Raisin", "Banane", "Montagne"],
+    "answer": "Montagne",
+    "explanation": "« Pomme », « raisin », et « banane » sont des fruits alors que « montagne » est une géographie. Les fruits partagent une catégorie en alimentation, tandis que la montagne est un relief naturel.",
+    "hint": "Identifiez l'élément naturel dans une liste d'aliments."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « haut » ?",
+    "prompt": null,
+    "options": ["Bas", "Large", "Gros", "Mince"],
+    "answer": "Bas",
+    "explanation": "« Haut » fait référence à quelque chose d'une grande altitude ou élévation. Son antonyme est « bas », qui suggère une faible hauteur. « Large », « gros », et « mince » ne sont pas liés à la hauteur.",
+    "hint": "Pensez à la direction opposée verticale."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot \"pièce\" signifie... \"Cette splendide pièce est dans notre musée.\"",
+    "prompt": "Cette splendide pièce est dans notre musée.",
+    "options": ["Salle", "Monnaie", "Œuvre", "Morceau"],
+    "answer": "Œuvre",
+    "explanation": "Dans un musée, une « pièce » fait référence à une œuvre d'art ou un objet de collection. La réponse n'est pas « salle », « monnaie » ou « morceau » car elles n'ont pas de pertinence dans ce contexte artistique.",
+    "hint": "Pensez à ce que le musée expose généralement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « colère » ?",
+    "prompt": null,
+    "options": ["Joie", "Rancune", "Rage", "Douleur"],
+    "answer": "Rage",
+    "explanation": "« Colère » est une émotion intense d'irritation ou de mécontentement, similaire à la « rage ». « Joie » est une émotion opposée, « rancune » est un ressentiment persistant, et « douleur » est une sensation physique ou émotionnelle différente.",
+    "hint": "Cherchez ce qui décrit une intensité élevée de mécontentement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « exhaustif » ?",
+    "prompt": null,
+    "options": ["Partiel", "Complet", "Inachevé", "Épars"],
+    "answer": "Complet",
+    "explanation": "« Exhaustif » signifie une couverture complète et détaillée d'un sujet. « Complet » est synonyme car il implique l'absence de manque. « Partiel », « inachevé » et « épars » signifient que quelque chose manque ou n'est pas entier.",
+    "hint": "Cherchez un terme correspondant à l'idée de totalité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « flexible » ?",
+    "prompt": null,
+    "options": ["Rigide", "Malléable", "Ductile", "Souple"],
+    "answer": "Rigide",
+    "explanation": "« Flexible » signifie capable de s'adapter ou de se plier sans se casser. Son antonyme est « rigide », qui signifie incapable de s'adapter ou de se courber. « Malléable », « ductile » et « souple » sont des synonymes ou mots proches de « flexible ».",
+    "hint": "Pensez à l'opposé de quelque chose facilement déformable."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Professeur est à enseigner comme médecin est à ___",
+    "prompt": null,
+    "options": ["Guérir", "Manger", "Écouter", "Conduire"],
+    "answer": "Guérir",
+    "explanation": "Un professeur enseigne, c'est sa fonction principale, tandis qu'un médecin est chargé de guérir ou soigner. Les autres choix ne sont pas directement liés à la principale responsabilité d'un médecin.",
+    "hint": "Pensez à la principale mission d'un médecin."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Assistante, Secrétaire, Infirmière, Journal",
+    "options": ["Assistante", "Secrétaire", "Infirmière", "Journal"],
+    "answer": "Journal",
+    "explanation": "Les trois premiers choix sont des professions dans le domaine d'aide ou de support, tandis que « journal » est un objet ou moyen de communication écrit. Les métiers partagent la nécessité du service à autrui, mais pas le journal.",
+    "hint": "Cherchez le mot qui ne définit pas une profession."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot \"courant\" signifie... \"Ils ont discuté du projet durant leur réunion.\"",
+    "prompt": "Ils ont discuté du projet durant leur réunion.",
+    "options": ["Habituel", "Électrique", "Fluide", "Rapide"],
+    "answer": "Habituel",
+    "explanation": "Dans cette phrase, « courant » est utilisé pour signifier « habituel, fréquent ». Ce n'est pas la signification technique d'électricité, de fluidité ou de rapidité qui conviendrait au contexte général d'une réunion.",
+    "hint": "Pensez à la fréquence d'un événement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « enrichi » ?",
+    "prompt": null,
+    "options": ["Appauvri", "Fortifié", "Somptueux", "Flamboyant"],
+    "answer": "Appauvri",
+    "explanation": "« Enrichi » désigne l'ajout de richesse ou de valeur. Son antonyme est « appauvri », qui signifie que quelque chose a perdu de sa richesse ou de sa valeur. « Fortifié », « somptueux » et « flamboyant » suggèrent une augmentation de la qualité ou de la valeur.",
+    "hint": "Pensez à l'effet inverse d'une augmentation de richesse."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Marteau est à clouer comme tournevis est à ___",
+    "prompt": null,
+    "options": ["Visser", "Clouer", "Scier", "Forer"],
+    "answer": "Visser",
+    "explanation": "Un marteau est utilisé pour clouer, tandis qu'un tournevis sert à visser. Les deux outils sont associés à des actions précises : l'insertion de clous est exclusive au marteau, comme le vissage est au tournevis.",
+    "hint": "Pensez à l'action principale effectuée avec chaque outil."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Dentiste, Cardiologue, Véhicule, Orthodontiste",
+    "options": ["Dentiste", "Cardiologue", "Véhicule", "Orthodontiste"],
+    "answer": "Véhicule",
+    "explanation": "Les trois premiers sont des termes médicaux ou des spécialités dentaires, et tous font référence à des professions. « Véhicule » est un mode de transport, pas une profession médicale.",
+    "hint": "Cherchez ce qui ne relève pas du domaine médical."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot \"coucher\" signifie... \"Il apprécie le coucher du soleil en été.\"",
+    "prompt": "Il apprécie le coucher du soleil en été.",
+    "options": ["Dormir", "Faille", "Crépuscule", "Position couchée"],
+    "answer": "Crépuscule",
+    "explanation": "Dans ce contexte, « coucher » signifie le moment de la journée où le soleil se couche, soit le crépuscule. Les autres choix désignent des actes ou des états physiques qui ne conviennent pas ici.",
+    "hint": "Évoquez le moment de la journée associé au soleil."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « prudent » ?",
+    "prompt": null,
+    "options": ["Imprudent", "Courageux", "Avisé", "Nerveux"],
+    "answer": "Avisé",
+    "explanation": "« Prudent » indique une approche réfléchie et attentive, semblable à « avisé », qui signifie avoir ou montrer du bon sens. « Imprudent » est un antonyme, tandis que « courageux » et « nerveux » ne correspondent pas à cette définition.",
+    "hint": "Pensez à quelqu'un qui prend des décisions basées sur la prévoyance."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « modeste » ?",
+    "prompt": null,
+    "options": ["Arrogant", "Timide", "Réservé", "Discret"],
+    "answer": "Arrogant",
+    "explanation": "« Modeste » signifie simple, humble et dépourvu de prétentieux. L'antonyme est « arrogant », qui indique un sentiment d'orgueil excessif. Les autres options sont des synonymes ou proches de « modeste ».",
+    "hint": "Pensez à l'opposé de l'humilité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Juge est à verdict comme roi est à ___",
+    "prompt": null,
+    "options": ["Couronne", "Jardinage", "Règne", "Gestion"],
+    "answer": "Règne",
+    "explanation": "Un juge rend un verdict, tout comme un roi exerce un règne. Une couronne est un symbole, le jardinage n'est pas pertinent, et la gestion est une activité qui peut être commune sans être exclusive à l'autorité royale.",
+    "hint": "Pensez à l'action effectuée par une figure d'autorité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Piano, Guitare, Trompette, Avocat",
+    "options": ["Piano", "Guitare", "Trompette", "Avocat"],
+    "answer": "Avocat",
+    "explanation": "Les trois premiers sont des instruments de musique, alors que « avocat » est une profession ou un fruit, mais aucunement un instrument musical.",
+    "hint": "Cherchez ce qui ne produit pas de musique."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « perplexe » ?",
+    "prompt": null,
+    "options": ["Clair", "Sombre", "Hésitant", "Évident"],
+    "answer": "Hésitant",
+    "explanation": "« Perplexe » signifie incertain ou confus, et « hésitant » décrit un état d'hésitation similaire. « Clair », « sombre » et « évident » n'expriment pas cette incertitude ou confusion.",
+    "hint": "Pense à quelqu'un qui n'est pas sûr de lui."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot \"relever\" signifie... \"Il doit relever le défi de ce nouvel emploi.\"",
+    "prompt": "Il doit relever le défi de ce nouvel emploi.",
+    "options": ["Soulever", "Rehausser", "Accepter", "Lever"],
+    "answer": "Accepter",
+    "explanation": "Dans ce contexte, « relever » veut dire entreprendre ou s'attaquer à un défi, synonyme de « accepter ». Autres options tournent autour de l'idée physique de lever ou d'augmenter, non applicables ici.",
+    "hint": "Pensez à ce que l'on fait face à un nouveau défi."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « pléthorique » ?",
+    "prompt": null,
+    "options": ["Abondant", "Rare", "Faible", "Modeste"],
+    "answer": "Abondant",
+    "explanation": "« Pléthorique » signifie en très grande quantité, donc « abondant » est synonyme. « Rare », « faible » et « modeste » suggèrent une faible quantité, ce qui n'est pas le cas ici.",
+    "hint": "Cherchez un terme exprimant une grande quantité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « sibyllin » ?",
+    "prompt": null,
+    "options": ["Clair", "Obscur", "Transparent", "Lumineux"],
+    "answer": "Obscur",
+    "explanation": "« Sibyllin » signifie quelque chose de difficile à comprendre ou qui cache un sens, synonyme de « obscur ». « Clair », « transparent » et « lumineux » suggèrent le contraire, c'est-à-dire quelque chose de compréhensible.",
+    "hint": "Cherchez un terme qui exprime la difficulté ou l'énigme."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « atavique » ?",
+    "prompt": null,
+    "options": ["Héréditaire", "Nouveau", "Ancien", "Traditionnel"],
+    "answer": "Nouveau",
+    "explanation": "« Atavique » se rapporte à quelque chose d'hérité ou d'ancien. L'antonyme « nouveau » signifie récent ou innovateur. « Héréditaire », « ancien » et « traditionnel » réfèrent à la continuation du passé et des coutumes anciennes.",
+    "hint": "Pensez à l'opposé de quelque chose transmis sur des générations."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « prolixe » ?",
+    "prompt": null,
+    "options": ["Concise", "Bavard", "Sombre", "Bref"],
+    "answer": "Bavard",
+    "explanation": "« Prolixe » signifie long et verbeux, clos de « bavard » qui désigne une personne parlant beaucoup. « Concise », « sombre » et « bref » expriment synthèse ou absence, se tenant loin de l'idée prolixe.",
+    "hint": "Pensez à une conversation où les mots coulent sans fin."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Menuisier est à bois comme maréchal-ferrant est à ___",
+    "prompt": null,
+    "options": ["Métal", "Cuir", "Pierre", "Verre"],
+    "answer": "Métal",
+    "explanation": "Un menuisier travaille principalement avec le bois, et un maréchal-ferrant travaille le métal, surtout concernant le fer à cheval des chevaux. Le cuir, la pierre, et le verre ne correspondent pas à l'expertise traditionnelle d'un maréchal-ferrant.",
+    "hint": "Quel matériau façonne traditionnellement un maréchal-ferrant ?"
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « contrit » ?",
+    "prompt": null,
+    "options": ["Apathique", "Nonchalant", "Insouciant", "Repentant"],
+    "answer": "Insouciant",
+    "explanation": "« Contrit » signifie repentant d'une erreur. « Insouciant » remarque un manque de regret, opposé de la contraction du regret ou de l'empathie d'une faute. « Apathique », « nonchalant » n'abordent pas la repentante ni l'absence de, et « repentant » partage même sens.",
+    "hint": "Concentrez-vous sur un manque perçu de souci ou de remords."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Auteur est à roman comme compositeur est à ___",
+    "prompt": null,
+    "options": ["Symphonie", "Galerie", "Film", "Essai"],
+    "answer": "Symphonie",
+    "explanation": "Un auteur écrit des romans, tout comme un compositeur crée des symphonies. « Galerie » est pour les oeuvres artistiques, « film » pour le cinéma, et « essai » est littéraire mais pas musical.",
+    "hint": "Cherchez une œuvre spécifiquement musicale créée par un compositeur."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Sédentaire, Actif, Nomade, Fixe",
+    "options": ["Sédentaire", "Actif", "Nomade", "Fixe"],
+    "answer": "Actif",
+    "explanation": "« Sédentaire », « nomade » et « fixe » décrivent des modes de vie, leurs déplacements. « Actif » réfère davantage au niveau d'activité. Malgré action, « actif » désigne pas mode de vie spécifique.",
+    "hint": "Concentrez-vous sur la mobilité ou la stabilité d'un style de vie."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « ésotérique » ?",
+    "prompt": null,
+    "options": ["Commun", "Occulte", "Manifesté", "Ouvert"],
+    "answer": "Occulte",
+    "explanation": "« Ésotérique » décrit quelque chose de compris par peu, et souvent « occulte » est utilisé pour signifier caché ou secret. « Commun », « manifesté » et « ouvert » sont largement et facilement accessibles et compris.",
+    "hint": "Cherchez un mot qui signifie caché, secret, ou réservé à des initiés."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de «  indolent » ?",
+    "prompt": null,
+    "options": ["Diligent", "Inactif", "Énergique", "Rigoureux"],
+    "answer": "Inactif",
+    "explanation": "« Indolent » désigne caractère de paresse ou manque d'énergie, donc « inactif » est synonyme. D'autres, « diligent », « énergique », « rigoureux », suggèrent travail ou vigueur, opposés à indolence.",
+    "hint": "Cherchez un adjectif exprimant un manque d'activité ou de motivation."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Architecte est à plan comme chef est à ___",
+    "prompt": null,
+    "options": ["Recette", "Poêle", "Miroir", "Plume"],
+    "answer": "Recette",
+    "explanation": "Un architecte élabore des plans, guidant constructions, tout comme un chef suit une « recette » pour guider la création d'un plat. « Poêle », « miroir », « plume » sont outils ou objets sans rapport direct.",
+    "hint": "Cherchez une instruction fondamentale pour la création."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Hépatalgie, Céphalalgie, Arthralgie, Légalité",
+    "options": ["Hépatalgie", "Céphalalgie", "Arthralgie", "Légalité"],
+    "answer": "Légalité",
+    "explanation": "Les trois premiers sont des termes médicaux désignant types de douleurs (foie, tête, articulations). « Légalité » est un terme juridique, décrivant conformité à la loi, hors contexte médical.",
+    "hint": "Cherchez un terme qui ne décrit pas une douleur médicale."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « laconique » ?",
+    "prompt": null,
+    "options": ["Volubile", "Succinct", "Prolixe", "Long"],
+    "answer": "Succinct",
+    "explanation": "« Laconique » renvoie à un style court, concis, proche de « succinct ». « Volubile », « prolixe », et « long » suggèrent développements prolixes ou abondance mots, antithèses de concision.",
+    "hint": "Cherchez un terme exprimant une brièveté dans le discours."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Chirurgien est à scalpel comme cuisinier est à ___",
+    "prompt": null,
+    "options": ["Couteau", "Scalpel", "Fenêtre", "Assiette"],
+    "answer": "Couteau",
+    "explanation": "Un chirurgien utilise un scalpel pour les opérations, tout comme un cuisinier utilise un couteau pour préparer les aliments. « Fenêtre », « assiette » n'illustrent pas outils coupants et « scalpel » est spécifique au corps médical.",
+    "hint": "Cherchez un outil coupant important pour les préparations culinaires."
+  }
+]
+```

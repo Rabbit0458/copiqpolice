@@ -1,0 +1,520 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on déduire d'un tel budget ?",
+        "prompt": "Tous les produits bio sont plus chers. Cet aliment est bio.",
+        "options": [
+            "Cet aliment est bon marché",
+            "Cet aliment n'est pas bio",
+            "Cet aliment est cher",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cet aliment est cher",
+        "explanation": "Il s'agit d'un syllogisme par transitivité : si tous les produits bio sont chers et que cet aliment est bio, il en résulte logiquement que cet aliment est cher. Le piège ici serait de supposer à tort qu'il y a des produits bio bon marché, mais ce n'est pas ce que dit la prémisse.",
+        "hint": "Applique le principe de transitivité aux prémisses données."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui entre au musée à titre gratuit ?",
+        "prompt": "Tous les enfants de moins de 12 ans entrent gratuitement. Jeanne a 10 ans.",
+        "options": [
+            "Jeanne doit payer",
+            "Jeanne entre gratuitement",
+            "Jeanne a plus de 12 ans",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jeanne entre gratuitement",
+        "explanation": "En utilisant le syllogisme classique : si tous les enfants de moins de 12 ans entrent gratuitement et Jeanne a 10 ans, cela signifie que Jeanne entre gratuitement au musée. Il ne faut pas confondre avec une situation où il existe des exceptions non mentionnées.",
+        "hint": "Focus sur l'âge par rapport au seuil donné."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion en tirer pour l'éléphant ?",
+        "prompt": "Tous les animaux de la savane font partie de la faune africaine. L'éléphant est un animal de la savane.",
+        "options": [
+            "L'éléphant est un mammifère",
+            "L'éléphant est un reptile",
+            "L'éléphant fait partie de la faune africaine",
+            "On ne peut pas savoir"
+        ],
+        "answer": "L'éléphant fait partie de la faune africaine",
+        "explanation": "Il s'agit d'une application du syllogisme par énoncé universel : tous les animaux de la savane appartiennent à la faune africaine, et comme l'éléphant en est un, il en fait partie. Le piège potentiel est de chercher à catégoriser davantage l'animal sans éléments supplémentaires, ce qui n'est pas demandé ici.",
+        "hint": "Utilise la catégorie générale pour tirer une conclusion."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le rapport entre un raisin et du vin ?",
+        "prompt": "Tous les vins sont faits à partir de raisins. Ce verre contient du vin.",
+        "options": [
+            "Ce verre contient de l'eau",
+            "Ce verre contient des raisins",
+            "Ce verre contient du raisin sec",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce verre contient des raisins",
+        "explanation": "Par inférence via un syllogisme : si chaque vin contient des raisins, et que le verre est du vin, alors évidemment il est issu de raisins. Attention à ne pas prendre des distractions comme l'idée erronée qu'il contient des raisins secs, ce n'est pas impliqué.",
+        "hint": "Concentre-toi sur l'origine du contenu du vin."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la conclusion sur Pierre ?",
+        "prompt": "Tous les enseignants sont titulaires d'un diplôme. Pierre est enseignant.",
+        "options": [
+            "Pierre n'a pas de diplôme",
+            "Pierre a un diplôme",
+            "Pierre est étudiant",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Pierre a un diplôme",
+        "explanation": "C'est un syllogisme direct : tous les enseignants ont un diplôme, Pierre étant l'un d'eux, il doit donc posséder un diplôme. L'erreur serait de confondre avec une observation qui ne concerne pas les enseignants du tout.",
+        "hint": "Rappelle-toi que l'inclusion concerne tous les membres de la classe."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion tirer de cet appareil ?",
+        "prompt": "Tous les appareils neufs bénéficient de la garantie. Ce produit est neuf.",
+        "options": [
+            "Le produit n'a pas de garantie",
+            "On ne peut pas savoir",
+            "Le produit bénéficie de la garantie",
+            "Le produit est hors garantie"
+        ],
+        "answer": "Le produit bénéficie de la garantie",
+        "explanation": "Selon le syllogisme, si chaque appareil neuf a une garantie et le produit est neuf, celui-ci bénéficie de la garantie. L'erreur courante serait de supposer qu'il est utilisé ou sans documentation, ce qui n'est pas mentionné dans les prémisses.",
+        "hint": "Vérifie la conformité à la règle générale."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'impact de la pluie sur le jardin ?",
+        "prompt": "Tous les jours de pluie, le jardin est arrosé. Aujourd'hui, il pleut.",
+        "options": [
+            "Le jardin est sec",
+            "On ne peut pas savoir",
+            "Le jardin est arrosé",
+            "Le jardin est inondé"
+        ],
+        "answer": "Le jardin est arrosé",
+        "explanation": "C'est un syllogisme de condition suffisante : les jours de pluie garantissent que le jardin est arrosé. La conclusion problématique serait de lancer sur des hypothèses non fournies, comme une inondation, qui n'est pas implicitement donnée dans l'énoncé.",
+        "hint": "Sois attentif à ce que les prémisses permettent de déterminer."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la décison prise pour le chat de Sophie ?",
+        "prompt": "Toutes les visites au vétérinaire mènent à un traitement. Le chat de Sophie visite le vétérinaire.",
+        "options": [
+            "Le chat de Sophie ne va pas recevoir de traitement",
+            "Le chat de Sophie reçoit un traitement",
+            "On ne peut pas savoir",
+            "Le chat de Sophie a disparu"
+        ],
+        "answer": "Le chat de Sophie reçoit un traitement",
+        "explanation": "C'est un raisonnement par syllogisme : chaque visite au vétérinaire se conclut par un traitement, or le chat de Sophie a effectué cette visite, donc il reçoit un traitement. Une confusion typique pourrait provenir d'une interprétation incomplète où le traitement n'est pas toujours assuré faute d'éléments spéculatifs.",
+        "hint": "Assure-toi de tracer la logique des évènements."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur de robe peut-on exclure pour Clara ?",
+        "prompt": "Toutes les filles portent une robe bleue à la fête. Clara y est.",
+        "options": [
+            "Clara porte une robe rouge",
+            "Clara porte une robe bleue",
+            "Clara porte une robe verte",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Clara porte une robe bleue",
+        "explanation": "Appliquons le syllogisme : si toutes les filles à la fête portent une robe bleue et que Clara est parmi elles, elle porte donc une robe bleue. Le piège ici serait d'imaginer des exceptions ou de supposer que Clara pourrait avoir une couleur différente malgré les informations données.",
+        "hint": "Base ta conclusion sur la règle générale donnée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que fait Sophie tous les matin ?",
+        "prompt": "Tous les jours, Sophie prend le bus pour aller travailler. Il est matin.",
+        "options": [
+            "Sophie conduit sa voiture",
+            "Sophie reste chez elle",
+            "Sophie prend le bus",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Sophie prend le bus",
+        "explanation": "La règle stipule que chaque jour Sophie utilise le bus pour le travail : ce matin n'échappe pas à cette logique. Un contre-exemple typique incorrect consisterait à supposer qu'elle prenne occasionnellement une autre méthode de transport que le bus, qui n'est pas indiqué.",
+        "hint": "Retient l'universalité de la proposition énoncée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le signe donné par la météo pour Eric ?",
+        "prompt": "Quand le ciel est clair, Eric fait du jogging. Le ciel est clair ce matin.",
+        "options": [
+            "Eric reste chez lui",
+            "Eric fait du vélo",
+            "Eric fait du jogging",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Eric fait du jogging",
+        "explanation": "Ici, il s'agit d'une règle conditionnelle où un ciel clair entraîne automatiquement qu'Eric fait du jogging. Il est donc logique qu'avec ce ciel clair, Eric fasse son running. Ne pas confondre avec une ouverture à d'autres activités qui ne sont pas couvertes par la condition.",
+        "hint": "Établis le lien entre l'événement et son résultat selon la règle."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que fait Julia avec ses lunettes de soleil ?",
+        "prompt": "Ensoleillé veut dire que Julia porte ses lunettes de soleil. Aujourd'hui, le soleil brille.",
+        "options": [
+            "Julia porte ses lunettes de soleil",
+            "Julia ne porte rien de particulier",
+            "Julia est à l'intérieur",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julia porte ses lunettes de soleil",
+        "explanation": "La condition posée est que le soleil implique le port de lunettes par Julia : ainsi, avec ce contexte ensoleillé, elle les porte. Les erreurs fréquentes incluent l'inférence incorrecte de ses actions autres (par exemple qu'elle pourrait les oublier), qui contredisent sans justification solide les prémisses.",
+        "hint": "Identifie la conséquence de la condition mentionnée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur peut-on attribuer à la lampe ?",
+        "prompt": "Toutes les lampes allumées sont rouges. Cette lampe est allumée.",
+        "options": [
+            "La lampe est bleue",
+            "La lampe est verte",
+            "La lampe est rouge",
+            "On ne peut pas savoir"
+        ],
+        "answer": "La lampe est rouge",
+        "explanation": "Une règle de transitivité s'applique : si toute lampe allumée est rouge et la lampe en question est allumée, alors elle doit être rouge. Ne pas se laisser tromper en considérant d'autres couleurs sans présence confirmée dans les prémisses.",
+        "hint": "Considère sérieusement la déduction par la règle générale."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle activité naît du froid pour Martin ?",
+        "prompt": "Martin va faire du ski chaque fois qu'il neige. Actuellement, il neige chez lui.",
+        "options": [
+            "Martin fait de la natation",
+            "On ne peut pas savoir",
+            "Martin reste à la maison",
+            "Martin fait du ski"
+        ],
+        "answer": "Martin fait du ski",
+        "explanation": "La condition de cause à effet dictée est celle où la neige conduit Martin à faire du ski, de sorte que l'actuelle chute de neige signifie invariablement qu'il skie. Confondre avec des activités alternatives tirées de circonstances non spécifiées est une erreur.",
+        "hint": "Assure-toi que la cause entraîne directement l'effet prévu."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la position d'Élodie sur le podium ?",
+        "prompt": "Dans une course, si Élodie double le 3e coureur, quel est son rang ?",
+        "options": [
+            "4ème",
+            "2ème",
+            "3ème",
+            "1ère"
+        ],
+        "answer": "3ème",
+        "explanation": "Lorsque Élodie double une personne à la 3e place, elle prend sa position, devenant ainsi le 3e coureur. Cela signifie qu'elle passe de la 4e à la 3e place. Une confusion habituelle réside dans l'idée trompeuse qu'elle pourrait finir par prendre le premier rang en ne surpassant qu'un concurrent.",
+        "hint": "Double le coureur veut dire que tu prends cette même place."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le poste de Marine après l'échange ?",
+        "prompt": "Marine prend le poste du 2ème après l'avoir dépassé.",
+        "options": [
+            "4ème",
+            "2ème",
+            "1ère",
+            "3ème"
+        ],
+        "answer": "2ème",
+        "explanation": "En prenant la place du deuxième, Marine devient elle-même la deuxième. Elle ne peut pas être la première, car elle n'a dépassé que la deuxième personne. C'est un raisonnement direct lié à la dynamique du dépassement dans une position ordonnée.",
+        "hint": "Travail sur la dynamique post-dépassement strictement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui arrivera à destination en premier ?",
+        "prompt": "Paul est plus rapide que Léa, mais Léa est plus rapide que Marc.",
+        "options": [
+            "Paul",
+            "Léa",
+            "Marc",
+            "Ils arriveront en même temps"
+        ],
+        "answer": "Paul",
+        "explanation": "En alignant Paul > Léa > Marc, il devient évident que Paul, étant le plus rapide, arrivera le premier à destination. Le piège couramment rencontré est l'omission de la hiérarchie complète, conduisant à une mauvaise conclusion.",
+        "hint": "Crée une chaîne complète et claire d'inégalités."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la couleur du cadeau à identifier ?",
+        "prompt": "Tous les cadeaux rouges sont pour les garçons. Matthieu a reçu un cadeau rouge.",
+        "options": [
+            "Matthieu l'a échangé",
+            "Le cadeau est resté emballé",
+            "Le cadeau est pour Matthieu",
+            "On ne peut pas déduire"
+        ],
+        "answer": "Le cadeau est pour Matthieu",
+        "explanation": "Avec tous les cadeaux rouges destinés aux garçons et Matthieu recevant un tel cadeau, il est déductif que ce cadeau soit pour lui. Les erreurs proviennent souvent de la conjecture, comme croire à un échange de cadeau sans mention explicite.",
+        "hint": "Focalise-toi sur la destination conforme à la couleur."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quels jours sont chômés chez Marie ?",
+        "prompt": "Marie est en congé chaque vendredi. Demain, c'est vendredi.",
+        "options": [
+            "Marie travaille demain",
+            "Marie ne travaille pas demain",
+            "On ne peut pas savoir",
+            "Marie est malade"
+        ],
+        "answer": "Marie ne travaille pas demain",
+        "explanation": "Puisque le vendredi est un jour de congé pour Marie, cela signifie qu'elle ne travaillera pas demain, qui est un vendredi. Un piège perceptible est une interprétation erronée des jours, causant de la confusion quant au jour précis de la semaine visée.",
+        "hint": "Appuie ton raisonnement sur la régularité saisie."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle conclusion tire-t-on pour un examen médical ?",
+        "prompt": "Toutes les fièvres supérieures à 38°C mènent à un examen médical. Jules a 39°C.",
+        "options": [
+            "Jules consulte un médecin",
+            "Jules va mieux",
+            "Jules n'a pas besoin d'examen",
+            "On ne peut pas déterminer l'issue"
+        ],
+        "answer": "Jules consulte un médecin",
+        "explanation": "Selon le syllogisme, la condition d'examen médical par seuil de fièvre est atteinte avec Jules ayant 39°C. La confusion survient habituellement dans de fausses déductions où l'on pense qu'il pourrait éviter l'examen irrégulièrement, malgré des indications claires.",
+        "hint": "Vérifie la pertinence par rapport à la condition."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Comment trancher entre deux promenades ?",
+        "prompt": "Si le parc est ouvert, Julien promène le chien. Or, le parc est fermé.",
+        "options": [
+            "Julien promène le chien",
+            "Julien ne promène pas le chien",
+            "Il y a une ouverture à 9h",
+            "On ne peut rien prédire"
+        ],
+        "answer": "Julien ne promène pas le chien",
+        "explanation": "L'implication est que le parc étant fermé, Julien ne promène pas le chien, selon la condition préalable. Le piège est une confusion de la contraposée : quand la condition préalable est fausse, l'action attachée ne survient pas. Ici, la tromperie serait présumer d'autres motifs non fournis.",
+        "hint": "Attends-toi aux impacts d'un refus de condition."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle obligation sort-elle de la réunion ?",
+        "prompt": "Chaque lundi, tous les managers doivent assister à la réunion hebdomadaire. Madeleine est manager.",
+        "options": [
+            "Madeleine peut ignorer la réunion",
+            "Madeleine assiste à la réunion",
+            "On ne peut pas trancher",
+            "Madeleine est en congé"
+        ],
+        "answer": "Madeleine assiste à la réunion",
+        "explanation": "Ici, selon le syllogisme, tous les managers devant être présents, Madeleine, en qualité de manager, y assiste sans doute aucune. Les erreurs se manifestent par des suppositions d'absence sans contexte suffisant, ce qui est trompeur en cohérence avec les prémisses.",
+        "hint": "Fais confiance à l'obligation exclusive des prémisses."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel jour du mois Clarisse échappe-t-elle au marché ?",
+        "prompt": "Clarisse va au marché chaque samedi sauf le premier du mois. Aujourd'hui, nous sommes le premier samedi d'octobre.",
+        "options": [
+            "Clarisse va au marché",
+            "Clarisse ne va pas au marché",
+            "Clarisse hésite",
+            "On ne peut le deviner"
+        ],
+        "answer": "Clarisse ne va pas au marché",
+        "explanation": "La stipulation est claire : sauf le premier samedi du mois, où elle n'y va pas. Étant le cas d'aujourd'hui, la logique dictée est qu'elle ne va pas. Le piège pour beaucoup est d'oublier l'exception mentionnée et de partir du postulat que le motif habituel prévaut.",
+        "hint": "Ne rate pas l'exception explicitée dans les conditions."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la collecte assurée avec Margot ?",
+        "prompt": "Si Margot récolte les pommes d'un arbre, elle en livre la totalité au marché. Margot termine la récolte.",
+        "options": [
+            "Margot conserve les pommes",
+            "Margot livre au marché",
+            "On ne peut le prévoir",
+            "Margot a oublié les pommes"
+        ],
+        "answer": "Margot livre au marché",
+        "explanation": "Avec la condition de récolte suivie par une livraison, Margot ayant achevé cette récolte, elle livre sans interruption. Excès de précaution serait le piège ici par méfiance d'une changement soudain hors-contexte donné.",
+        "hint": "Compte sur la condition initialement fixée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que gagne-t-on à termes avec les cartes de collection ?",
+        "prompt": "Toutes les cartes rares augmentent de valeur avec le temps. Cette carte est rare.",
+        "options": [
+            "La valeur de la carte diminue",
+            "La carte ne change pas de valeur",
+            "La valeur de la carte augmente",
+            "On ne peut rien anticiper"
+        ],
+        "answer": "La valeur de la carte augmente",
+        "explanation": "C'est un syllogisme par définition : les cartes rares augmentant de valeur, et cette carte étant rare, sa valeur croîtra inévitablement. Ne sois pas trompé par des préoccupations comme le marché non capturé ici.",
+        "hint": "Fonde-toi sur la relation d'évolution donnée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel agenda régit l'activité de titan de Julie actuellement ?",
+        "prompt": "Chaque Mardi, il y a une réunion d'équipe pour Julie. Aujourd'hui, nous sommes mardi.",
+        "options": [
+            "Julie est à la réunion",
+            "Julie a reporté la réunion",
+            "Julie est en vacances",
+            "On ne peut pas déterminer cela"
+        ],
+        "answer": "Julie est à la réunion",
+        "explanation": "La binding condition du calendrier conduit à l'actuelle présence de Julie à la réunion en ce jour de mardi. De nombreuses erreurs proviennent de biais personnels non contextuels envers les habitudes qui ne changent rien ici.",
+        "hint": "Regarde juste l'horizon du contexte présent dans les données."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est l'orientation politique générale de la loi ?",
+        "prompt": "Si une loi est votée, c'est soit pour des raisons économiques, soit sociales. La loi récente a été votée sur des critères sociaux.",
+        "options": [
+            "La loi n'a pas été votée",
+            "La loi a un fondement économique",
+            "La loi a un fondement social",
+            "On ne peut rien conclure"
+        ],
+        "answer": "La loi a un fondement social",
+        "explanation": "L'analyse d'implication est simple ici : la loi, ayant été votée pour des raisons sociales, s'aligne strictement à ce fondement. Beaucoup se laisseraient détourner en supposant à tort un possible silencieux économique, qui ne fait pas part aux prémisses.",
+        "hint": "Garde la séparation stricte des intentions."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle place est occupée par le thé pour l'aperçu gustatif ?",
+        "prompt": "Tous les thés haut de gamme sont choisis pour leur saveur unique. Ce thé a été sélectionné pour sa finesse.",
+        "options": [
+            "Ce thé n'est pas haut de gamme",
+            "Ce thé est haut de gamme",
+            "Ce thé n'a pas été choisi pour sa saveur",
+            "On ne peut décider"
+        ],
+        "answer": "Ce thé est haut de gamme",
+        "explanation": "La condition requise lié au goût unique établit que tout tel thé est haut de gamme, et comme sa finesse l'a valu, donc haut de gamme. L'écueil courant ici ressort d'analyses excessives sur des aspects non pertinents aux prémisses.",
+        "hint": "Cherche la ligne simple de prémisse à conclusion."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel choix constaté février influencera le prix futur ?",
+        "prompt": "Les voitures électriques sont moins chères que les hybrides, mais les hybrides sont moins chères que les véhicules à essence. Georges achète une hybride.",
+        "options": [
+            "Georges paye moins cher que l'électrique",
+            "Georges paye plus cher que le véhicule à essence",
+            "Georges paye moins cher que l'essence",
+            "On ne peut différencier"
+        ],
+        "answer": "Georges paye moins cher que le véhicule à essence",
+        "explanation": "L'ordre est Électrique < Hybride < Essence. Georges y ayant opté pour l'hybride dépense moins par rapport à l'essence. La confusion provient parfois de mauvaises interprétations comme penser qu'une hybride coûterait plus cher sans éléments suffisants.",
+        "hint": "Range clairement l'alignement de coûts fournis."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que symbolise vraiment la réservation de son contrat immobilier ?",
+        "prompt": "Sophie a dépassé le prix moyen du marché immobilier pour obtenir un bien. Cette situation est rare pour son quartier.",
+        "options": [
+            "Sophie a payé bien en dessous de la moyenne",
+            "Sophie a payé exactement le prix moyen",
+            "Sophie a payé au-dessus de la moyenne",
+            "On ne peut rien conclure"
+        ],
+        "answer": "Sophie a payé au-dessus de la moyenne",
+        "explanation": "L'information indique explicitement qu'une telle acquisition impose une dépense au-delà de la moyenne. Les erreurs typiques découlent du manque de concentration sur cette déduction suffisante et évidente en faveur de distractions secondaires.",
+        "hint": "Utilise la détermination de l'énoncé comme base."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quels métiers apparaissent pour François dans sa famille ?",
+        "prompt": "Dans la famille Dupont, si Charlie est comédien, son oncle Thierry est acteur. François est frère de Charlie.",
+        "options": [
+            "François est acteur",
+            "Thierry est acteur",
+            "François est comédien",
+            "On ne peut rien déterminer"
+        ],
+        "answer": "Thierry est acteur",
+        "explanation": "Le motif sous-entendu ici est que Charlie l'étant, l'implication leur permet de conclure qu'il entraîne Thierry comme acteur par extension au rôle dirigé. Il est crucial de ne pas confondre la situation de François avec les autres discussions sans rapport avec la règle destinée.",
+        "hint": "Enquêtes sur la contraposée de condition initiale."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de sœurs ont chaque frère dans cette famille ?",
+        "prompt": "Dans cette famille, chaque frère a deux fois plus de sœurs que de frères. Il y a 3 frères au total.",
+        "options": [
+            "2 sœurs",
+            "3 sœurs",
+            "4 sœurs",
+            "6 sœurs"
+        ],
+        "answer": "4 sœurs",
+        "explanation": "Avec 3 frères présents, chacun a 2 frères, soit 2 fois plus de sœurs implique 4 sœurs : (2 frères x 2). La confusion demeure avec des erreurs spontanées identifiant mal le total des proportions dans les ratios.",
+        "hint": "Construit l'équation à partir des données claires."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la base logique de la relation couverte avec ce voisin ?",
+        "prompt": "Chaque fois que Pierre prête son vélo, Jérôme l'emprunte. Jérôme n'a pas pu emprunter aujourd'hui.",
+        "options": [
+            "Pierre a prêté son vélo",
+            "Pierre a cassé son vélo",
+            "Pierre n'a pas prêté son vélo",
+            "On ne peut pas présumer"
+        ],
+        "answer": "Pierre n'a pas prêté son vélo",
+        "explanation": "La rule prend pour axiomatique que l'emprunt échoue seulement si le prêt initial échoue. Ne pas succomber à des suppositions basées sur d'autres motifs - quelque soit leur idée fausse - pour le manque d'emprunt de la journée.",
+        "hint": "Utilise la simplicité de l'implication logique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'état d'achèvement de la collection de cartes ?",
+        "prompt": "Tous les exemplaires de cette collection sont complets uniquement avec la carte ultime. Lucas achète cette carte aujourd'hui.",
+        "options": [
+            "Lucas a une collection incomplète",
+            "Lucas n'achèvera jamais sa collection",
+            "Lucas a une collection complète",
+            "On ne peut discerner le résultat"
+        ],
+        "answer": "Lucas a une collection complète",
+        "explanation": "La logique transitive aide : chaque collection doit nécessairement avoir la carte finale pour être complète. Avec Lucas l'obtenant désormais, sa collection l'est forcément tout autant. Entreprendre à errer supposerait une carte nécessitant une vérification boiteuse.",
+        "hint": "Complète la chaîne logique avec l'état premier défini."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est l'analogie dans l'exemple évoqué ?",
+        "prompt": "Si un ordinateur est en service, une lumière verte s'illumine. L'ordinateur d'Amélie a une lumière verte allumée.",
+        "options": [
+            "L'ordinateur d'Amélie est hors service",
+            "L'ordinateur d'Amélie est en service",
+            "On ne peut être sûr",
+            "La lumière défectueuse heurte Amélie"
+        ],
+        "answer": "L'ordinateur d'Amélie est en service",
+        "explanation": "Avec tous les ordinateurs en service s'affichant par lumière verte et celui ci visible, la conséquence immédiate est qu'il est en fonctionnement. Le piège serait des spéculations parasites sur le fonctionnement du voyant.",
+        "hint": "Laisse la condition initiale démontrer l'ouverture finale."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle forme de sujet légal identifie un quasi-contrat ?",
+        "prompt": "Si un quasi-contrat se fonde sur une action involontaire, il s'exécute par coercition. Jeanne ne cherche pas à exécuter sous contrainte.",
+        "options": [
+            "Jeanne est engagée dans un véritable contrat",
+            "Jeanne exécute un quasi-contrat",
+            "Jeanne ne peut être classée appropriée",
+            "On ne peut conclure correctement"
+        ],
+        "answer": "Jeanne est engagée dans un véritable contrat",
+        "explanation": "La spécification où un quasi-contrat seulement contraint, et Jeanne étant non coactivée, découvre purement Jeanne en contrat régulier. Le risque est une sur-évaluation ambiguë des termes stimulants sans conséquence, distordant la nature relationnelle.",
+        "hint": "Redressons les termes clés à la conclusion juste."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que symbolise la tour d'habitation en prix moyens ?",
+        "prompt": "Si la tour atteint 10 étages, elle est décrétée bâtiment élevé. Cette tour culmine à 10.",
+        "options": [
+            "La tour est basse",
+            "La tour est moyenne",
+            "La tour est élevée",
+            "On ne peut rien inférer"
+        ],
+        "answer": "La tour est élevée",
+        "explanation": "Par la formalité, une tour avec 10 étages cadre le statut de haute, s'appliquant donc à la construction actuelle pile à ce seuil. Le piège est d'une part de laisser concevoir autrement sa déduction souveraine.",
+        "hint": "Applique la définition strictement littérale."
+    }
+]

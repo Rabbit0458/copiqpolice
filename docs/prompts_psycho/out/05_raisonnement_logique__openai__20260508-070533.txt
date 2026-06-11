@@ -1,0 +1,604 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on en déduire ?",
+        "prompt": "Tous les poissons sont mouillés. Némo est un poisson.",
+        "options": [
+            "Némo est sec",
+            "Némo est mouillé",
+            "Némo est un chat",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Némo est mouillé",
+        "explanation": "Il s'agit d'un syllogisme simple. Si tous les poissons sont mouillés et Némo est un poisson, alors par transitivité, Némo doit être mouillé. Le piège ici est de penser qu'il pourrait ne pas être mouillé, mais ça contredit la première prémisse.",
+        "hint": "Applique la règle générale à l'élément spécifique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sœurs a Emma ?",
+        "prompt": "Emma, Marie et Sophie sont sœurs. Emma a deux sœurs.",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "answer": "2",
+        "explanation": "Emma fait partie d'un groupe de trois sœurs, incluant Marie et Sophie. Donc, elle a exactement deux sœurs. Le piège est de penser qu'il y en aurait plus, mais seules les noms Emma, Marie, et Sophie sont données.",
+        "hint": "Comptez les membres du groupe mentionné."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel animal est Tomy ?",
+        "prompt": "Tous les chiens aboient. Tomy aboie.",
+        "options": [
+            "Tomy est un chat",
+            "Tomy est un chien",
+            "On ne peut pas savoir",
+            "Tomy est un oiseau"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Ce n'est pas parce que tous les chiens aboient que tous ceux qui aboient sont des chiens. Tomy pourrait être un autre animal qui aboie. Le piège est de conclure trop rapidement que Tomy est un chien.",
+        "hint": "Inversez la relation pour tester sa validité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'animal qui ne vole pas ?",
+        "prompt": "Tous les moineaux volent. Certains canards volent. Un manchot ne vole pas.",
+        "options": [
+            "Moineau",
+            "Canard",
+            "Manchot",
+            "Tous volent"
+        ],
+        "answer": "Manchot",
+        "explanation": "Dans cet énoncé, l'information claire est que le manchot ne vole pas. Les moineaux volent et bien que certains canards volent, le manchot est explicitement déclaré non volant. Le piège consiste à ignorer cette distinction.",
+        "hint": "Focalisez-vous sur les exceptions claires fournies."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus jeune ?",
+        "prompt": "Paul est plus âgé que Luc. Luc est plus âgé que Marc.",
+        "options": [
+            "Paul",
+            "Luc",
+            "Marc",
+            "On ne sait pas"
+        ],
+        "answer": "Marc",
+        "explanation": "En suivant le classement, Paul > Luc > Marc. Donc, Marc est le plus jeune des trois. Le piège est de perdre de vue cet ordre simple.",
+        "hint": "Réorganisez les éléments du plus jeune au plus âgé."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que pouvez-vous conclure ?",
+        "prompt": "Tous les livres dans cette bibliothèque sont en anglais. Ce livre est en français.",
+        "options": [
+            "Ce livre est en anglais",
+            "Ce livre n'appartient pas à cette bibliothèque",
+            "On ne peut pas savoir",
+            "Ce livre est en espagnol"
+        ],
+        "answer": "Ce livre n'appartient pas à cette bibliothèque",
+        "explanation": "Si tous les livres de la bibliothèque sont en anglais, alors un livre en français n'en fait pas partie. Le dépit provient du fait de prendre l'énoncé 'tous' comme exceptionnel plutôt que comme exclusif.",
+        "hint": "Considérez l'exclusivité de l'énoncé."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur a l'objet ?",
+        "prompt": "Tous les objets rouges sont en métal. Cet objet est rouge.",
+        "options": [
+            "Cet objet est en bois",
+            "Cet objet est en métal",
+            "Cet objet est plastique",
+            "Cet objet n'est pas rouge"
+        ],
+        "answer": "Cet objet est en métal",
+        "explanation": "Syllogisme simple : si tous les objets rouges sont en métal et cet objet est rouge, alors par transitivité, cet objet est en métal. Le piège est de chercher à tirer des conclusions basées sur des options qui ne concordent pas avec les prémisses de départ.",
+        "hint": "Examinez les transpositions des prémisses."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que pouvez-vous conclure ?",
+        "prompt": "Si elle se lève tôt, alors elle fait du jogging. Elle s'est levée tôt.",
+        "options": [
+            "Elle a fait du jogging",
+            "Elle n'a pas fait de jogging",
+            "Elle est restée à la maison",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Elle a fait du jogging",
+        "explanation": "C'est un cas de modus ponens : si une condition A (elle se lève tôt) implique une condition B (elle fait du jogging) et la condition A est satisfaite, alors B se produit aussi. Le piège est de douter de cette série d'événements implicite.",
+        "hint": "Utilisez le schéma A implique B."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus lent ?",
+        "prompt": "Luc court plus vite que Paul. Paul court plus vite que Marc.",
+        "options": [
+            "Luc",
+            "Paul",
+            "Marc",
+            "On ne sait pas"
+        ],
+        "answer": "Marc",
+        "explanation": "En suivant la logique de classement, Luc > Paul > Marc en vitesse. Ceci signifie que Marc est le plus lent parmi eux. Le piège consiste à mal évaluer ce simple ordre de vitesse.",
+        "hint": "Reproduisez le classement du plus rapide au plus lent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la forme du jouet ?",
+        "prompt": "Tous les jouets ronds sont bleus. Ce jouet est rond.",
+        "options": [
+            "Ce jouet est rouge",
+            "Ce jouet est bleu",
+            "Ce jouet est carré",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce jouet est bleu",
+        "explanation": "Il s'agit à nouveau d'un syllogisme. Si tous les jouets ronds sont bleus et ce jouet est rond, alors logiquement ce jouet est bleu. Le piège serait de supposer une contradiction basée sur l'information partielle.",
+        "hint": "Relie la caractéristique de forme à la couleur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le prix le plus bas ?",
+        "prompt": "Le lait coûte moins cher que le pain. Le pain coûte moins cher que le fromage.",
+        "options": [
+            "Lait",
+            "Pain",
+            "Fromage",
+            "On ne sait pas"
+        ],
+        "answer": "Lait",
+        "explanation": "Selon l'ordre établi, le lait < pain < fromage en termes de coût, du moins cher au plus cher. Le piège est de mélanger cet ordre ou de suranalyser les données de coûts relatifs.",
+        "hint": "Classe l'information par ordre croissant de prix."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "En quoi est fait ce verre ?",
+        "prompt": "Tous les verres incassables sont en plastique. Ce verre est incassable.",
+        "options": [
+            "Ce verre est en verre",
+            "Ce verre est en plastique",
+            "Ce verre est en métal",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce verre est en plastique",
+        "explanation": "C'est une application basique d'un syllogisme : si tous les verres incassables sont en plastique et ce verre est incassable, il doit être en plastique. Le piège serait de penser qu'il pourrait être d'un autre matériau.",
+        "hint": "Cherchez la connection directe."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est en tête de course ?",
+        "prompt": "Si Pierre dépasse Marc, il est en tête. Pierre a dépassé Marc.",
+        "options": [
+            "Pierre",
+            "Marc",
+            "Les deux sont en tête",
+            "On ne sait pas"
+        ],
+        "answer": "Pierre",
+        "explanation": "Encore un exemple de modus ponens : la réalisation de la condition (Pierre dépassant Marc) entraîne la conclusion (Pierre est en tête). Le piège est d'imaginer qu'il pourrait y avoir d'autres concurrents non mentionnés.",
+        "hint": "Applique une logique causale directe."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le véhicule le plus rapide ?",
+        "prompt": "Tous les jets volent plus vite que les hélicoptères. Les hélicoptères volent plus vite que les voitures.",
+        "options": [
+            "Jet",
+            "Hélicoptère",
+            "Voiture",
+            "Trottinette"
+        ],
+        "answer": "Jet",
+        "explanation": "Selon l'ordre de vitesse fourni, jets > hélicoptères > voitures. Donc, les jets sont les plus rapides. Le piège consiste à oublier cet ordre de vitesse établi.",
+        "hint": "Structurez les informations du plus rapide au plus lent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on en déduire ?",
+        "prompt": "Si elle étudie, elle réussira l'examen. Elle a étudié.",
+        "options": [
+            "Elle a échoué",
+            "Elle a réussi",
+            "Elle a sauté l'examen",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Elle a réussi",
+        "explanation": "Il s'agit d'une application du modus ponens : puisqu'elle a étudié, la condition de réussite est remplie, donc elle réussit. Le piège serait de penser qu'il y a des exceptions non indiquées.",
+        "hint": "Utilisez la logique si-alors stricte."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Si cet animal est une girafe...",
+        "prompt": "Toutes les girafes ont un long cou. Cet animal a un long cou.",
+        "options": [
+            "Cet animal est une girafe",
+            "Cet animal est un éléphant",
+            "Cet animal est un chien",
+            "On ne peut pas savoir"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "La prémisse que les girafes ont un long cou ne signifie pas que seuls elles en ont. D'autres animaux peuvent aussi avoir des longs cous. Le piège est de conclure trop hâtivement que l'animal est une girafe.",
+        "hint": "Rappelez-vous : corrélation n'implique pas causalité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le matériau de ce jouet ?",
+        "prompt": "Tous les jouets verts sont en bois. Ce jouet est vert.",
+        "options": [
+            "Ce jouet est en métal",
+            "Ce jouet est en plastique",
+            "Ce jouet est en bois",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Ce jouet est en bois",
+        "explanation": "Ce syllogisme direct : si tous les jouets verts sont en bois et ce jouet est vert, alors ce jouet doit être en bois. Le piège serait de douter de l'association entre la couleur et le matériau.",
+        "hint": "Applique le syllogisme direct."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus âgé ?",
+        "prompt": "Anna est plus âgée que Julie. Julie est plus âgée que Clara. Clara est plus âgée que Sophie.",
+        "options": [
+            "Anna",
+            "Julie",
+            "Clara",
+            "Sophie"
+        ],
+        "answer": "Anna",
+        "explanation": "En suivant l'ordre donné : Anna > Julie > Clara > Sophie. Donc, Anna est la plus âgée. Le piège consiste à mal ordonner cette séquence d'âges croissants.",
+        "hint": "Organisez un classement hiérarchique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle couleur est la boîte si elle contient un cadeau ?",
+        "prompt": "Si une boîte contient un cadeau, alors elle est rouge. Cette boîte contient un cadeau.",
+        "options": [
+            "Rouge",
+            "Bleue",
+            "Verte",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rouge",
+        "explanation": "On suit un raisonnement par modus ponens : la condition A (boîte contenant un cadeau) entraîne toujours la condition B (la boîte est rouge). Le piège est de penser qu'il pourrait y avoir des exceptions ou que la conclusion n'est pas obligatoire.",
+        "hint": "Passez d'une condition remplie à sa conséquence."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'est-ce qu'on sait sur le chien de Pierre si c'est un berger allemand ?",
+        "prompt": "Tous les bergers allemands mangent des croquettes. Le chien de Pierre est un berger allemand.",
+        "options": [
+            "Le chien de Pierre ne mange pas de croquettes",
+            "Le chien de Pierre mange des croquettes",
+            "Le chien de Pierre boit du lait",
+            "On ne sait pas"
+        ],
+        "answer": "Le chien de Pierre mange des croquettes",
+        "explanation": "Ce syllogisme montre que si tous les bergers allemands mangent des croquettes et que le chien de Pierre en est un, alors il mange des croquettes. Le piège serait de supposer que son alimentation pourrait être différente.",
+        "hint": "Appliquez le logique universelle à l'échelle individuelle."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la couleur de la voiture si elle est stationnée à proximité ?",
+        "prompt": "Si une voiture est stationnée à proximité, alors elle est bleue. Cette voiture est stationnée à proximité.",
+        "options": [
+            "Rouge",
+            "Bleue",
+            "Noire",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Bleue",
+        "explanation": "Avec la règle du modus ponens, une voiture stationnée à proximité doit être bleue. Le piège ici est de croire qu'il y a peut-être des voitures d'une autre couleur stationnées à proximité sans que ça soit explicitement indiqué.",
+        "hint": "Passez de l'observation concrète à la conclusion possible."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est en arrière ?",
+        "prompt": "Jean est devant Marc. Marc est devant Luc. Luc est devant Tibo.",
+        "options": [
+            "Jean",
+            "Marc",
+            "Luc",
+            "Tibo"
+        ],
+        "answer": "Tibo",
+        "explanation": "En suivant la séquence : Jean > Marc > Luc > Tibo, il est clair que Tibo est en arrière. Le piège pourrait être de mal interpréter l'ordre donné et de penser en termes de vitesse ou d'autres unités.",
+        "hint": "Visualisez une ligne d'alignement et placez les noms dedans."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le jour où Pierre a cours ?",
+        "prompt": "Si c'est lundi, Pierre a cours de maths. Aujourd'hui est lundi.",
+        "options": [
+            "Pierre a cours d'histoire",
+            "Pierre a cours de maths",
+            "Pierre est en vacances",
+            "On ne sait pas"
+        ],
+        "answer": "Pierre a cours de maths",
+        "explanation": "En appliquant le modus ponens : la condition de la journée du lundi implique que Pierre a effectivement cours de maths. Le piège ici est de supposer que l'existence d'autres cours est implicite.",
+        "hint": "Déduisez une conséquence directe d'une condition remplie."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel fruit obtiens-tu si l’arbre est vieux ?",
+        "prompt": "Si l’arbre est vieux, il donne des pommes rouges. Cet arbre est vieux.",
+        "options": [
+            "L’arbre donne des pommes vertes",
+            "L’arbre ne donne pas de fruit",
+            "L’arbre donne des pommes rouges",
+            "On ne sait pas"
+        ],
+        "answer": "L’arbre donne des pommes rouges",
+        "explanation": "Cet énoncé suit un schéma de modus ponens : la vieille condition de l'arbre assure qu'il produira des pommes rouges. Le piège serait de douter de cette connexion directe en raison de l'absence d'autres alternatives.",
+        "hint": "Appliquez le modèle conditionnel habituel."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la couleur probable de la robe si elle appartient à Amélie ?",
+        "prompt": "Si une robe appartient à Amélie, alors elle est blanche. Cette robe appartient à Amélie.",
+        "options": [
+            "Rouge",
+            "Blanche",
+            "Noire",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Blanche",
+        "explanation": "La condition de l'appartenance de la robe à Amélie assure qu'elle est blanche selon le modus ponens. Le piège ici est de supposer que la couleur pourrait varier sans preuve implicite.",
+        "hint": "Suivez les règles de cause à effet."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans quel ordre se trouve l'étudiant ?",
+        "prompt": "Simon est devant Paul. Paul est devant Antoine. Antoine est devant Julien.",
+        "options": [
+            "Simon",
+            "Paul",
+            "Antoine",
+            "Julien"
+        ],
+        "answer": "Simon",
+        "explanation": "D'après le classement : Simon > Paul > Antoine > Julien, Simon est en premier. Le piège serait de perdre ce simple ordre parmi les autres informations de classement.",
+        "hint": "Visualisez la séquence sous forme de chaîne."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de chats a Émilie ?",
+        "prompt": "Émilie a trois fois le nombre de chats de Paul. Paul a deux chats.",
+        "options": [
+            "2",
+            "4",
+            "6",
+            "9"
+        ],
+        "answer": "6",
+        "explanation": "Paul a deux chats, et Émilie en a trois fois ce nombre, soit 6. Le piège ici réside dans le fait de mal comprendre la multiplicité ou de faire une erreur de calcul.",
+        "hint": "Multipliez le nombre de Paul par trois."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'objet qui n'est pas en métal ?",
+        "prompt": "Tous les couteaux sont en acier. Certains objets de la cuisine ne sont pas en métal.",
+        "options": [
+            "Couteau",
+            "Casserole",
+            "Cuillère en plastique",
+            "Aucun objet n'est en métal"
+        ],
+        "answer": "Cuillère en plastique",
+        "explanation": "Seule la cuillère en plastique n'est pas en métal, confirmée par l'information que certains objets ne sont pas de métal et l'immuabilité de l'acier dans les couteaux. Le piège est de faire une généralisation excessive non supportée.",
+        "hint": "Isolez les éléments qui contredisent les généralisations."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que savez-vous sur la boîte si elle est en plastique ?",
+        "prompt": "Tous les jouets en plastique sont de couleur jaune. Cette boîte est un jouet.",
+        "options": [
+            "Cette boîte est rouge",
+            "Cette boîte est jaune",
+            "Cette boîte est en bois",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Cette boîte est jaune",
+        "explanation": "Sachant que tous les jouets en plastique sont jaunes et que la boîte est un jouet en plastique, elle doit alors être jaune. Le piège est de mélanger l'information ou de supposer qu'une boîtes pourrait différer.",
+        "hint": "Notez que toute l'information fournie est essentielle."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus fort ?",
+        "prompt": "Thomas est plus fort que Lucas. Lucas est plus fort que Julien. Julien est plus fort que Baptiste.",
+        "options": [
+            "Thomas",
+            "Lucas",
+            "Julien",
+            "Baptiste"
+        ],
+        "answer": "Thomas",
+        "explanation": "Selon l'ordre : Thomas > Lucas > Julien > Baptiste. Thomas est donc le plus fort du groupe. Le piège dans cette question est de mal interpréter l'ordre de force.",
+        "hint": "Mettez l'ordre sur une échelle de force croissante."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans quel ordre est l'objet en bois ?",
+        "prompt": "L'armoire est plus large que la table. La table est plus large que la chaise. L'armoire est en bois.",
+        "options": [
+            "Armoire",
+            "Table",
+            "Chaise",
+            "On ne sait pas"
+        ],
+        "answer": "Armoire",
+        "explanation": "Il est précisé que l'armoire est plus large que les autres et est faite en bois, la spécifiant comme l'objet le plus large. Le piège est d'ignorer la description distinctive fournie.",
+        "hint": "Identifiez l'objet avec la caractéristique exacte."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le fruit de cet arbre ?",
+        "prompt": "Si un arbre est arrosé, il produit des pommes. Cet arbre est arrosé.",
+        "options": [
+            "L'arbre produit des oranges",
+            "L'arbre ne produit pas de fruit",
+            "L'arbre produit des pommes",
+            "On ne sait pas"
+        ],
+        "answer": "L'arbre produit des pommes",
+        "explanation": "Conformément au modus ponens, l'arrosage de l'arbre garantit la production de pommes. Le piège possible est un contenu implicite imaginaire qui pourrait générer différentes conclusions.",
+        "hint": "Déduisez le résultat d'une condition pleine."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel problème engendre le mauvais positionnement du cube ?",
+        "prompt": "Si le cube est posé sur une arête, il risque de rouler. Le cube est posé sur une arête.",
+        "options": [
+            "Il ne risque pas de rouler",
+            "Il risque de rouler",
+            "Il est immobile",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Il risque de rouler",
+        "explanation": "Le modus ponens indique clairement que le mauvais placement résulte dans une instabilité et un risque de roulement. Le piège est de négliger les conséquences d'un positionnement imprécis.",
+        "hint": "Analysez les conséquences d'une condition clé."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui est arrivé en premier sur le parcours ?",
+        "prompt": "Clara est arrivée avant Eva. Eva est arrivée avant Sophie. Marie est arrivée avant Clara.",
+        "options": [
+            "Clara",
+            "Eva",
+            "Sophie",
+            "Marie"
+        ],
+        "answer": "Marie",
+        "explanation": "La logique impose : Marie > Clara > Eva > Sophie en termes d'arrivée, donc Marie est arrivée première. Le piège consiste à omettre l'ajout de la dernière information donnée.",
+        "hint": "Calculez l'ordre total en modifiant les relations."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Pour quel montant a-t-on acheté l'objet ?",
+        "prompt": "L'objet a coûté le double du prix du livre. Le livre a coûté 10 euros. L'objet est un vase.",
+        "options": [
+            "10 euros",
+            "15 euros",
+            "20 euros",
+            "25 euros"
+        ],
+        "answer": "20 euros",
+        "explanation": "D'après l'énoncé, si le livre coûte 10 euros, le vase coûterait deux fois plus, soit 20 euros. Le piège est de mal interpréter 'le double' et d'opter pour des valeurs incorrectes.",
+        "hint": "Effectuez une multiplication simple pour trouver le prix approprié."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que décide Jean pour son voyage ?",
+        "prompt": "Si le soleil brille, Jean part en voyage. S'il pleut, il reste chez lui. Le temps est nuageux.",
+        "options": [
+            "Jean part en voyage",
+            "Jean reste chez lui",
+            "Jean annule son voyage",
+            "On ne sait pas"
+        ],
+        "answer": "On ne sait pas",
+        "explanation": "Le temps nuageux ne correspond ni à une condition de voyage ni à une condition explicite pour rester. Ainsi, aucune décision claire n'est préconisée. Le piège est de conjecturer au-delà des informations imparties.",
+        "hint": "Ne présumez pas dans des conditions sans interprétation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment se positionne l'objet instable ?",
+        "prompt": "Si la base est instable, l'objet bascule. La base est stable. L'objet est un vase.",
+        "options": [
+            "Le vase bascule",
+            "Le vase ne bouge pas",
+            "Le vase tombe par terre",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le vase ne bouge pas",
+        "explanation": "L'assertion 'si base instable, alors bascule' combinée avec 'base stable' entraîne que le vase reste immobile. Le piège est de confondre le lien causal avec d'autres facteurs non précisés.",
+        "hint": "Évaluez les résultats des conditions stabilisées."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle décision de transport choisit Paul ?",
+        "prompt": "Si Paul utilise la voiture, il arrive à l'heure. S'il marche, il est en retard. Paul prend le vélo.",
+        "options": [
+            "Paul arrive à l'heure",
+            "Paul est en retard",
+            "Paul arrive tôt",
+            "On ne sait pas"
+        ],
+        "answer": "On ne sait pas",
+        "explanation": "Aucune information ne permet de lier concrètement le choix de vélo avec l'arrivée de Paul. Le piège ici est de spéculer sur des conséquences non établies par l'énoncé.",
+        "hint": "Évitez les inférences concernant des résultats non décrits."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la destination finale de Léo ?",
+        "prompt": "Léo prendra un avion si le prix est bas. S'il reste, il économisera pour plus tard. Le prix est élevé.",
+        "options": [
+            "Léo part en vacances",
+            "Léo reste",
+            "Léo économise pour plus tard",
+            "On ne sait pas"
+        ],
+        "answer": "Léo reste",
+        "explanation": "Prix élevé implique que Léo ne prend pas l'avion et respecte sa décision d'économiser. Le défi ici est de ne pas être confus lorsque confronté à des critères de coût.",
+        "hint": "Déduisez les actions basées sur les prix de seuil."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel compromis réalise Julie sur ses études ?",
+        "prompt": "Si elle passe son examen, elle étudiera moins. Sinon, elle approfondira ses révisions. Julie a échoué.",
+        "options": [
+            "Julie étudie moins",
+            "Julie approfondit ses révisions",
+            "Julie quitte l'université",
+            "On ne sait pas"
+        ],
+        "answer": "Julie approfondit ses révisions",
+        "explanation": "Aucune réussite signifie que Julie choisit de renforcer ses révisions futures. Le piège est de supposer qu'un échec l'incite à changer de mœurs sans essayer.",
+        "hint": "Évaluez les motifs derrière les actions planifiées pour un échec."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que préfère Lise lors de la soirée ?",
+        "prompt": "Si elle amène un dessert, alors elle dîne chez elle. Si Lise vient seule, elle sort dîner. Lise amène une salade avec elle.",
+        "options": [
+            "Lise dîne chez elle",
+            "Lise sort dîner",
+            "Lise ne dîne pas",
+            "On ne sait pas"
+        ],
+        "answer": "Lise dîne chez elle",
+        "explanation": "La salade, un équivalent de dessert, suggère que Lise choisit de s'alimenter à domicile. Le piège vient de détourner les accessoires alimentaires à des destinations erronées.",
+        "hint": "Adoptez une logique conditionnelle sur les préparations domestiques."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel choix d'investissement fait Marc ?",
+        "prompt": "Si Marc achète des actions, alors il parie sur le court terme. S'il reste liquide, il se concentre sur le long terme. Marc a pris des actions.",
+        "options": [
+            "Marc investit sur le court terme",
+            "Marc investit sur le long terme",
+            "Marc ne prend aucune décision",
+            "On ne sait pas"
+        ],
+        "answer": "Marc investit sur le court terme",
+        "explanation": "Posséder des actions suppose que Marc est focalisé sur des gains rapides, prouvant l'implication du court terme. Le piège est de penser qu'il y a une balance ou hésitation sans indication précise.",
+        "hint": "Barnée par les implications claires des choix financiers."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel passage du livre affecte Gabriel ?",
+        "prompt": "Si il lit un chapitre inspirant, Gabriel écrit un essai. S'il risque de s'ennuyer, il arrête. Gabriel est inspiré.",
+        "options": [
+            "Gabriel arrête de lire",
+            "Gabriel continue de lire",
+            "Gabriel écrit un essai",
+            "On ne sait pas"
+        ],
+        "answer": "Gabriel écrit un essai",
+        "explanation": "L'impact d'une lecture stimulante sur Gabriel l'encourage à rédiger un essai, conformément à la condition première. Le piège est de sous-estimer l'effet que les mots puissants peuvent avoir.",
+        "hint": "évaluez les répércutions des lectures inspirantes."
+    }
+]

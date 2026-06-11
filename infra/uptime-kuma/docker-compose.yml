@@ -1,0 +1,41 @@
+# ──────────────────────────────────────────────────────────────────────────
+#  COP'IQ — Uptime Kuma (status page status.copiq.fr)
+#  Réf : docs/cas_pratique/PROGRESSION_CODE.md — CODE-083
+#  Doc complète : docs/cas_pratique/STATUS_PAGE_SETUP.md
+#
+#  Lancement :
+#    cd infra/uptime-kuma
+#    docker compose up -d
+#
+#  Premier login : http://localhost:3001 → créer admin
+# ──────────────────────────────────────────────────────────────────────────
+
+version: "3.8"
+
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:1
+    container_name: copiq-uptime-kuma
+    restart: unless-stopped
+    ports:
+      - "3001:3001"
+    volumes:
+      - uptime-kuma-data:/app/data
+    environment:
+      - UPTIME_KUMA_DISABLE_FRAME_SAMEORIGIN=false
+      - TZ=Europe/Paris
+    healthcheck:
+      test:
+        ["CMD-SHELL", "wget -q --spider http://localhost:3001 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  uptime-kuma-data:
+    driver: local

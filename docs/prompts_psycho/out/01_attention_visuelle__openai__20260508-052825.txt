@@ -1,0 +1,317 @@
+[
+    {
+        "difficulty": "easy",
+        "text_a": "Rue La Fayette, 75009 Paris",
+        "text_b": "Rue La Fayette, 75009 Paris",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Volvo XC90 bleue immatriculée EF-678-GH",
+        "text_b": "Volvo XC90 rouge immatriculée EF-678-GH",
+        "is_true": false,
+        "explanation": "La couleur diffère dans les deux textes : 'bleue' dans text_a et 'rouge' dans text_b. Ce genre de détail est grossier et facilement repérable. Un candidat peut se faire piéger par une relecture rapide sans attention aux détails évidents."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Rue de Rivoli, 75001 Paris",
+        "text_b": "Avenue de Rivoli, 75001 Paris",
+        "is_true": false,
+        "explanation": "Les textes diffèrent par le type de voie : 'Rue' devient 'Avenue'. Cette différence grossière est facilement détectable si on prête attention à chaque mot. Un piège ici serait de ne pas relire les premiers mots de chaque phrase attentivement."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Zoe Renault blanche immatriculée GH-345-IJ",
+        "text_b": "Zoe Renault blanche immatriculée GH-345-IJ",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Nissan Micra grise AB-345-CD",
+        "text_b": "Nissan Micra bleue AB-345-CD",
+        "is_true": false,
+        "explanation": "La couleur du véhicule 'grise' dans text_a est remplacée par 'bleue' dans text_b. Cette modification flagrante doit être évitée dans la précipitation. Le danger ici est de ne pas comparer les détails apparemment simples."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Mr. Lefevre, 3 rue du Jour",
+        "text_b": "Mr. Lefevre, 3 rue du Jour",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Immatriculation LM-123-NP",
+        "text_b": "Immatriculation LM-123-NB",
+        "is_true": false,
+        "explanation": "Les deux textes diffèrent par une lettre dans l'immatriculation : 'NP' dans text_a et 'NB' dans text_b. Il est crucial de vérifier chaque caractère à cet endroit. Un déplacement rapide du regard pourrait mener à une erreur."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Mme Martin, 5 rue de la Paix",
+        "text_b": "Mme Martin, 5 rue de la Paix",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Dacia Sandero noire CD-456-EF",
+        "text_b": "Dacia Sandero rouge CD-456-EF",
+        "is_true": false,
+        "explanation": "La couleur du véhicule change de 'noire' à 'rouge'. Ce type d'erreur est facilement évitable en se concentrant sur chaque adjectif descriptif. Un candidat pourrait commettre une erreur par méprise visuelle rapide."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Immeuble B 75 rue de Rome",
+        "text_b": "Immeuble B 75 rue de Rome",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Citroën C3 verte KL-789-MN",
+        "text_b": "Citroën C3 noire KL-789-MN",
+        "is_true": false,
+        "explanation": "La couleur du véhicule 'verte' dans text_a est différente de 'noire' dans text_b. La vigilance est requise pour détecter les variations dans les qualificatifs. Un manque d'attention aux détails visibles pourrait induire en erreur."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Audi Q5 blanche RT-678-WZ",
+        "text_b": "Audi Q5 blanche RT-678-WZ",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Immatriculation VW-456-YZ",
+        "text_b": "Immatriculation VZ-456-YZ",
+        "is_true": false,
+        "explanation": "La séquence 'VW' dans l’immatriculation de text_a est remplacée par 'VZ' dans text_b. Les légères différences en début de phrase, surtout avec des lettres similaires, demandent une attention toute particulière."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Toyota Yaris rouge CP-123-DF",
+        "text_b": "Toyota Yaris noire CP-123-DF",
+        "is_true": false,
+        "explanation": "Les deux textes diffèrent par la couleur : 'rouge' dans text_a contre 'noire' dans text_b. Repérer les caractéristiques visuellement est important pour éviter des erreurs évidentes."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "M. Dubois, 12 rue de Lyon",
+        "text_b": "M. Dubois, 12 rue de Lyon",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Chevrolet noire immatriculée AB-789-CD",
+        "text_b": "Chevrolet bleue immatriculée AB-789-CD",
+        "is_true": false,
+        "explanation": "La différence réside dans la couleur 'noire' versus 'bleue'. Le risque principal pour le candidat est de passer rapidement sur les adjectifs et ignorer les changements évidents."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Mme Dupont, 22 avenue Saint", 
+        "text_b": "Mme Dupont, 22 avenue Saint", 
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le 15/04/2023 à 09h32, M. Bernard Dupuis dépose un rapport pour vol.",
+        "text_b": "Le 15/04/2023 à 09h32, M. Bernard Dupuis dépose un rapport pour vol.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Mme Elise Martin, née le 02/02/1985, rapporte un accident de la route.",
+        "text_b": "Mme Élise Martin, née le 02/02/1985, rapporte un accident de la route.",
+        "is_true": false,
+        "explanation": "La différence réside dans l'accent sur le prénom 'Elise' et 'Élise'. C'est un piège courant, car les accents sont souvent ignorés pendant la lecture rapide. Ce type de différence met en lumière la nécessité de faire attention aux détails orthographiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Un vol a été rapporté sur la place de l'Opéra, 75009 Paris le 17/08/2023.",
+        "text_b": "Un vol a été rapporté sur la place de l'Opera, 75009 Paris le 17/08/2023.",
+        "is_true": false,
+        "explanation": "La différence est due à l'absence de l'accent sur 'Opéra'. Ce détail peut sembler mineur, mais il est crucial lors de la vérification de données. Les candidats doivent se méfier des caractères accentués qui ne sautent pas immédiatement aux yeux."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le témoin a décrit une Peugeot 308 grise immatriculée ZZ-678-AA.",
+        "text_b": "Le témoin a décrit une Peugeot 308 grîse immatriculée ZZ-678-AA.",
+        "is_true": false,
+        "explanation": "L'erreur se situe dans la présence d'un accent circonflexe sur 'grîse'. Ce type de détail est souvent négligé à cause de la proximité des lettres et l'habitude de lecture des candidats."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Un fait divers s'est déroulé le 29/11/2023 à 17h45 dans le centre-ville.",
+        "text_b": "Un fait divers s'est déroulé le 29/11/2023 à 17h45 dans le centre-ville.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La voiture impliquée est une Renault Clio immatriculée AB-123-CD.",
+        "text_b": "La voiture impliquée est une Renault Clio immatriculée AB-123-DC.",
+        "is_true": false,
+        "explanation": "Un simple échange de 'CD' en 'DC'. Le positionnement des chiffres et lettres est une source fréquente d'erreurs de lecture rapide. La vigilance est essentielle pour éviter de telles confusions subtiles mais cruciales."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Samedi 18 juin 2023, un accident a eu lieu sur l'autoroute A1 à 13h15.",
+        "text_b": "Samedi 18 juin 2023, un accident a eu lieu sur l'autoroute A1 à 13h15.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "M. Georges Legrand signale un cambriolage à 15h00 le 22/07/2023.",
+        "text_b": "M. Georges Legrand signale un cambriolage à 15h00 le 22/07/2023.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La déclaration a été faite par Mme Marion Leduc le 04/12/2023 à 09h20.",
+        "text_b": "La déclaration a été faite par Mme Marion Leduc le 04/12/2023 à 09h21.",
+        "is_true": false,
+        "explanation": "Une simple différence d'une minute dans l'heure entre '09h20' et '09h21'. Ces changements mineurs peuvent facilement être négligés si on ne porte pas une attention particulière aux détails temporels."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le véhicule suspect est un Ford Fiesta bleu immatriculé QX-321-VZ.",
+        "text_b": "Le véhicule suspect est un Ford Fiesta bleu immatriculé QX-321-VZ.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "L'incident a été rapporté par M. Alain Tournier le 30/09/2023.",
+        "text_b": "L’incident a été rapporté par M. Alain Tournier le 30/09/2023.",
+        "is_true": false,
+        "explanation": "Une différence subtile entre l'apostrophe droite 'a été' et l'apostrophe courbe 'a été'. Les distinctions typographiques telles que celle-ci nécessitent une attention visuelle intense pour être repérées."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La moto était une Kawasaki verte, immatriculée XY-654-ZT.",
+        "text_b": "La moto était une Kawasaki verte, immatriculée XY-654-ZT.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le vol s'est produit au 15 boulevard du Nord à 10:00.",
+        "text_b": "Le vòl s'est produit au 15 boulevard du Nord à 10:00.",
+        "is_true": false,
+        "explanation": "La présence d'un accent grave sur 'vòl' est incorrecte dans text_b. Les erreurs d'accents peuvent sembler mineures, mais leur détection aide à maintenir la précision."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Une femme identifiée comme Mme Claire Benoit a appelé à 11h45.",
+        "text_b": "Une femme identifiée comme Mme Claire Benoit a appelé à 11h45.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Témoin d'une agression, M. Pierre Michel, né le 17 juillet 1984, a été interrogé par les agents à 14h30 dans les locaux de l'hôtel de police.",
+        "text_b": "Témoin d'une agression, M. Pierre Michel, né le 17 juillet 1984, a été interrogé par les agents à 14h30 dans les locaux de l’hôtel de police.",
+        "is_true": false,
+        "explanation": "La seule différence réside dans l'apostrophe de 'l'hôtel' où un passage de l’apostrophe simple à l’apostrophe courbe a été effectué. Bien que discrète, cette subtile modification typographique exige une attention soutenue."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Poursuivant l'enquête, le brigadier-chef Deschamps a découvert que l'incident s'était produit à environ 23h15, sur une voie peu éclairée du 10ème arrondissement.",
+        "text_b": "Poursuivant l'enquête, le brigadier-chef Deschamps a découvert que l'incident s'était produit à environ 23h15, sur une voie peu éclairée du 10ème arrondissement.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Il est stipulé, selon l'article 322-6 du code pénal français, que quiconque établit sciemment une fausse attestation est passible de sanctions prévues par la loi.",
+        "text_b": "Il est stipulé, selon l'article 322-6 du code pénal français, que quiconque établit sciemment une fausse attestation est passible de sanctions prévues par la loi.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "L'intervention s'est déroulée à l'adresse mentionnée dans la déposition, au 55 rue Victor Hugo. Aucun obstacle particulier n'a été rencontré lors de l'opération.",
+        "text_b": "L'intervention s'est déroulée à l'adresse mentionnée dans la déposition, au 55 rue Victor Hugo. Aucun obstacle particulier n'a été renconrtré lors de l'opération.",
+        "is_true": false,
+        "explanation": "La différence se situe dans le mot 'renconrtré' au lieu de 'rencontré'. Ce type de coquille peut facilement être négligé en raison de la structure visuelle similaire des mots. Un candidat doit prêter attention à chaque mot individuellement."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Dans son témoignage, Mme Laetitia Brunel a précisé qu'un individu suspect avait été aperçu rôdant autour du domicile le 12 novembre 2023, vers 21 heures.",
+        "text_b": "Dans son témoignage, Mme Laetitia Brunel a précisé qu'un individu suspect avait été aperçu rôdant autour du domicile le 12 novembre 2023, vers 21 heures.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon l'enquête, la voiture aux phares éblouissants roulait à toute vitesse sur l’autoroute, malgré la visibilité réduite causée par la pluie intense.",
+        "text_b": "Selon l’enquête, la voiture aux phares éblouissants roulait à toute vitesse sur l’autoroute, malgré la visibilité réduite causée par la pluie intense.",
+        "is_true": false,
+        "explanation": "La différence repose sur l'apostrophe dans 'l’enquête' où une apostrophe courbe remplace une simple. Ce type de subtilité typographique peut échapper à une lecture rapide et demande une relecture attentive."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le délinquant aurait utilisé une alarme factice, comme le montre la caméra de surveillance le 8 août 2023 à l’intersection des rues Dupont et Durand.",
+        "text_b": "Le délinquant aurait utilisé une alarme factice, comme le montre la caméra de surveillance le 8 août 2023 à l’intersection des rues Dupont et Durand.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "L'article 313-3 stipule : L'escroquerie est le fait, par l'usage de fausse qualité, d'abuser de la confiance d'une personne pour obtenir une prestation.",
+        "text_b": "L'article 313-3 stipule : L'escroquerie est le fait, par l'usage de fausse qualité, d'abuser de la confiance d'une personne pour obtenir une prestation.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Les experts ont constaté une violation de domicile. Il a été décidé qu'un suivi des mouvements des suspects serait assuré en continu à partir du 15 septembre.",
+        "text_b": "Les experts ont constaté une violation de domicile. Il a été décidé qu'un suivi des mouvements des suspects serait assuré en continu à partir du 15 septembre.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "M. Olivier Turner, âgé de 43 ans, s'est présenté à la brigade pour signaler un vol qualifié s'étant produit dans les environs le 28 septembre à 22h13.",
+        "text_b": "M. Olivier Turner, âgé de 43 ans, s'est présenté à la brigade pour signaler un vol qualifié s'étant produit dans les environs le 28 septembre à 22h13.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Durant l'interrogatoire, Mr. Lucien Bertin, originaire de Toulouse, a évoqué un comportement anormal perpétré par l'accusé dans la soirée du dimanche 3 octobre dernier.",
+        "text_b": "Durant l'interrogatoire, Mr. Lucien Bertin, originaire de Toulouse, a évoqué un comportement anormal perpétré par l’accusé dans la soirée du dimanche 3 octobre dernier.",
+        "is_true": false,
+        "explanation": "Il y a une différence subtile d'apostrophe dans 'l'accusé'. La transition d'une apostrophe droite à une courbe peut passer inaperçue si l'on n'est pas particulièrement attentif aux détails typographiques minimes."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon les rapports, l'individu en fuite portait un manteau noir et une écharpe rouge, selon les témoignages recueillis au centre commercial le 5 janvier.",
+        "text_b": "Selon les rapports, l'individu en fuite portait un manteau noir et une écharpe rouge, selon les témoignages recueillis au centre commercial le 5 janvier.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "L'enregistrement du 20 septembre mentionne une voiture suspecte, une BMW noire, circulant dans le quartier entre 21h et 23h, selon plusieurs résidents locaux.",
+        "text_b": "L'enregistrement du 20 septembre mentionne une voiture suspecte, une BMW noire, circulant dans le quartier entre 21h et 23h selon plusieurs résidents locaux.",
+        "is_true": false,
+        "explanation": "La seule différence est l'absence de la virgule après '23h'. Les modifications de ponctuation exigent une concentration élevée, car elles nécessitent la vérification de la syntaxe générale."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Il a été déterminé, lors de l'audience, que le récidiviste était impliqué dans l'agression à main armée ayant eu lieu le 14 avril de cette année à Paris.",
+        "text_b": "Il a été déterminé lors de l'audience que le récidiviste était impliqué dans l'agression à main armée ayant eu lieu le 14 avril de cette année à Paris.",
+        "is_true": false,
+        "explanation": "La différence réside dans la présence d'une virgule après 'Il a été déterminé'. Cette subtilité de ponctuation peut tromper un œil non averti, nécessitant un examen attentif de la structure des phrases."
+    }
+]

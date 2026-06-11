@@ -1,0 +1,192 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre 'A' majuscule apparaît-elle ?",
+    "prompt": "Concentrez-vous uniquement sur les lettres majuscules.",
+    "stimulus": "ALICE AIME LES ARBRES ET LES ARBUSTES",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Dans la phrase donnée, la lettre 'A' majuscule apparaît dans les mots 'ALICE' (1), 'AIME' (1), 'ARBRES' (1), 'AR' de 'ARBUSTES' (1), et 'LES' (0, pas de 'A') = 5 occurrences. Il est important de ne compter que les majuscules, les 'a' minuscules ne comptent pas.",
+    "hint": "Ignore les minuscules, focalise-toi sur les premiers caractères de chaque mot."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel chiffre est l'intrus dans la suite ?",
+    "prompt": "Tous les chiffres sauf un suivent une règle.",
+    "stimulus": "2, 4, 6, 8, 10, 12, 15",
+    "options": ["6", "8", "10", "15"],
+    "answer": "15",
+    "explanation": "La suite est constituée uniquement de nombres pairs (2, 4, 6, 8, 10, 12). Le chiffre 15 est impair et brise la règle.",
+    "hint": "Concentrez-vous sur la parité des chiffres."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres '5' apparaissent dans la suite ?",
+    "prompt": "Regardez attentivement chaque chiffre.",
+    "stimulus": "5, 8, 5, 3, 1, 5, 9",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "En traversant la suite, on identifie les chiffres '5' en position 1, 3, et 6 totalisant à 3 occurrences. Ne pas considérer les autres chiffres qui pourraient ressembler à '5' mais ne le sont pas.",
+    "hint": "Repérez visuellement chaque chiffre de 5."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans cette suite ?",
+    "prompt": "Recherchez la lettre qui ne suit pas la logique.",
+    "stimulus": "A C E G I K M",
+    "options": ["I", "C", "K", "M"],
+    "answer": "I",
+    "explanation": "La suite présente des lettres séparées par un espacement constant de deux (A=1, C=3, E=5, G=7, K=11, M=13). La lettre I (=9) rompt cette régularité.",
+    "hint": "Cherchez des espacements irréguliers entre les lettres."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « E » apparaît-elle dans cette phrase ?",
+    "prompt": "Exacte attention sur la lettre 'E' quelle que soit son casse.",
+    "stimulus": "Eugénie étudiait ensemble avec Benoît et Léa.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "Dans la phrase présente, EUGÉNIE (2), ÉTUDIAIT (1), ENSEMBLE (2), AVEC (0), BENOÎT (1), LÉA (1)= 7 occurrences. Comptez chaque 'E', ignorant les autres lettres.",
+    "hint": "Mettez le focus sur toutes les formes de 'E'."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots contiennent plus de 4 lettres ?",
+    "prompt": "Décomptez précisément chaque mot de la phrase.",
+    "stimulus": "L'agent assure la sécurité discrètement.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Dans la phrase donnée, ASSURE (6), SÉCURITÉ (9), DISCRÈTEMENT (13) contiennent plus de 4 lettres. 'L’agent' (5) et 'la' (2) ne comptent pas. Ne tenez pas compte des mots avec 4 lettres ou moins.",
+    "hint": "Ignores les mots très courts."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : PR-4058K",
+    "stimulus": "PR-4058K",
+    "options": ["PR-4057K", "PR-4085K", "PR-4058K", "PR-4059L"],
+    "answer": "PR-4058K",
+    "explanation": "En comparant caractère par caractère, PR-4058K est une copie stricte du modèle. Les autres options ont soit un chiffre soit une lettre incorrecte.",
+    "hint": "Toujours comparer attentivement chaque chiffre et lettre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Identifiez le chiffre intrus dans la suite.",
+    "prompt": "Surveillez de près les propriétés des nombres.",
+    "stimulus": "3, 9, 15, 18, 27",
+    "options": ["15", "18", "27", "9"],
+    "answer": "18",
+    "explanation": "Cette suite semble composée uniquement de multiples de 3. Pourtant, seule 18 est un multiple de 9 également. Chaque autre multiple respecte une régularité alternée de 3 uniquement.",
+    "hint": "Zoomez sur les facteurs multiples de chaque nombre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres pairs apparaissent dans cette séquence ?",
+    "prompt": "Consulter chaque chiffre en termes de parité.",
+    "stimulus": "1, 4, 8, 5, 2, 7, 9, 6",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "En observant la séquence complète, seuls les chiffres 4, 8, 2 et 6 sont pairs. Prenez soin de ne pas confondre les chiffres impairs avec des pairs.",
+    "hint": "Faites défiler la liste avec une attention vers les fins paires."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle est la séquence identique au modèle ?",
+    "prompt": "Modèle : GJ147NKF9",
+    "stimulus": "GJ147NKF9",
+    "options": ["GJ147NKF9", "GJ147NJF9", "GJ147MKF9", "GJ147NKF8"],
+    "answer": "GJ147NKF9",
+    "explanation": "Effectuer la comparaison minutieuse du modèle montre que la première option GJ147NKF9 est exacte. Erreurs mineures dans chaque autre option prouvent le contrario.",
+    "hint": "Faites correspondre chaque caractère méthodiquement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots commencent par une consonne ?",
+    "prompt": "Lisez chaque mot avec prudence.",
+    "stimulus": "Silence malgré le bruit constant.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Les mots 'Silence' (S), 'malgré' (m), 'constante' (c) commencent par une consonne, alors que 'le' et 'bruit' commencent par une voyelle ou autre catégorisation.",
+    "hint": "Comptez les premières lettres rigoureusement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre « T » apparaît-elle ?",
+    "prompt": "Tous les T, majuscules et minuscules, comptent.",
+    "stimulus": "Totalement transparent, toute tentative tombe tôt.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "TOTAL (1), TRANS (1), TENTATIVE (2), TOMBE (1), TÔT (2) donnent 7 occurrences au total.",
+    "hint": "Concentrez-vous sur les 't' initial et final des mots."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de lettres 'G' majuscules sont présentes ?",
+    "prompt": "Focalisez-vous uniquement sur les majuscules 'G'.",
+    "stimulus": "GIGANTESQUE GRÉDINE GRANDIOSEMENT AU GÉNÉRAL.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "GIGANTESQUE (1), GRÉDINE (1), GRANDIOSEMENT (1), AU (0), GÉNÉRAL (1), ET (0)= contrairement à l'apparence, seul 5 'G'",
+    "hint": "Survolez les premiers et derniers mots surtout."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence correspond exactement au modèle ?",
+    "prompt": "Modèle : 123X45Y67Z89",
+    "stimulus": "123X45Y67Z89",
+    "options": ["123X45Y67Z89", "123X65Y47Z89", "321X45Y76Z89", "123X45Y67Z98"],
+    "answer": "123X45Y67Z89",
+    "explanation": "En analysant chaque position, 123X45Y67Z89 est la seule séquence qui correspond exactement. Vérification effectuée lettre/chiffre à chiffre.",
+    "hint": "Compte et observe chaque passage méthodiquement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles trouve-t-on dans cette phrase ?",
+    "prompt": "Inclure a, e, i, o, u, et y comme des voyelles.",
+    "stimulus": "Où est passée l'ombrelle que j'avais déposée ici ?",
+    "options": ["15", "16", "17", "18"],
+    "answer": "18",
+    "explanation": "Totalisez chaque mot, par lettre : Où(1) est(1) passée(3) l’ombrelle(3) que(1) j’avais(3) déposée(4) ici(2) = 18 voyelles.",
+    "hint": "Concentrez-vous sur chaque voyelle systématiquement avec des intervalles."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le nombre d'intrus dans cette suite de jours ?",
+    "prompt": "Tous les jours suivent un ordre à l'exception d’un.",
+    "stimulus": "Lundi, Mardi, Mercredi, Jeudi, Samedi, Dimanche",
+    "options": ["Vendredi", "Samedi", "Lundi", "Mardi"],
+    "answer": "Vendredi",
+    "explanation": "Vendredi manque dans la séquence chronologique. Chaque autre jour soit régulier jusqu'à leur nombre commun.",
+    "hint": "Vérifier l'ordre traditionnel des jours de la semaine."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre 'N' apparaît-elle seules ?",
+    "prompt": "Concentrez-vous sur le cas particulier des lettres N.",
+    "stimulus": "Nager pendant neuf neiges, image non?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "NAGER (1), NEUF (1), NEIGES (1), NON(1): chaque N est isolé sans répétition ou confusion. Ignore prononciation et phonétiques.",
+    "hint": "Cassez chaque prononciation avant comptage."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel chiffre est l'intrus dans cette longue suite ?",
+    "prompt": "Identifiez l’anomalie parmi les soustractions/devis.",
+    "stimulus": "48, 42, 36, 30, 29, 18",
+    "options": ["42", "30", "29", "18"],
+    "answer": "29",
+    "explanation": "La série décroît par -6 successifs sauf pour 29, qui ne suit pas cette séquentialité. Concentrez-vous sur chaque différence.",
+    "hint": "Visualisez chaque espacement entre les termes."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de consonnes sont présentes ?",
+    "prompt": "Inclure tous les sons autres que a, e, i, o, u, y.",
+    "stimulus": "Bryan quickly caught his bag, left the room.",
+    "options": ["17", "18", "19", "20"],
+    "answer": "20",
+    "explanation": "Décomptes sont faits par fragment: BRYAN(4), QUICK(3), CAUGHT(3), HIS(2), BAG(2), LEFT(3), ROOM(3), en totalité= 20 consonnes.",
+    "hint": "Sépare par pause chaque fragment, notamment les syllabes crues."
+  }
+]

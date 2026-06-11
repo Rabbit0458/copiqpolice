@@ -1,0 +1,576 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel jour Paul et Marie ont-ils cours ensemble ?",
+        "prompt": "Paul a cours le lundi, mercredi et vendredi. Marie a cours le mercredi et samedi.",
+        "options": [
+            "Lundi",
+            "Mercredi",
+            "Vendredi",
+            "Samedi"
+        ],
+        "answer": "Mercredi",
+        "explanation": "Pour savoir quel jour Paul et Marie ont cours ensemble, il faut comparer leurs emplois du temps. Paul a cours le lundi, mercredi et vendredi, tandis que Marie a cours le mercredi et samedi. Le jour commun est donc le mercredi. Un piège classique consiste à mal lire les jours de cours spécifiques à chacun.",
+        "hint": "Regarde les jours communs dans les deux emplois du temps."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel livre est le plus lourd ?",
+        "prompt": "Le livre A est plus lourd que le livre B. Le livre C est plus lourd que le livre A.",
+        "options": [
+            "Livre A",
+            "Livre B",
+            "Livre C",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Livre C",
+        "explanation": "On utilise l'ordre de classement : si le livre A est plus lourd que B, et que C est plus lourd que A, alors C est forcément plus lourd que B également. On conclut que le livre C est le plus lourd. Le piège est d'oublier de comparer tous les livres entre eux.",
+        "hint": "Reconstitue l'ordre : C > A > B."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on dire de Bruno ?",
+        "prompt": "Tous les chiens aboient. Bruno est un chien.",
+        "options": [
+            "Bruno aboie",
+            "Bruno ne sait pas aboyer",
+            "Bruno est un chat",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Bruno aboie",
+        "explanation": "Le syllogisme ici repose sur le fait que tous les chiens, sans exception, aboient, et que Bruno est lui-même un chien. Selon la règle de transitivité, cela signifie que Bruno doit aussi aboyer. Un piège possible est d'ignorer l'absence d'exceptions dans la condition donnée.",
+        "hint": "Réfléchis à ce que signifie 'Tous les X sont Y'."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur sont tous les arbres de cette route ?",
+        "prompt": "Tous les arbres de cette route sont verts. Ce chêne est sur cette route.",
+        "options": [
+            "Rouge",
+            "Bleu",
+            "Vert",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Vert",
+        "explanation": "Le raisonnement par syllogisme indique que si tous les arbres de la route sont verts et qu'un chêne se trouve sur cette route, alors ce chêne est vert aussi. Le piège serait d'ignorer que 'tous' inclut chaque arbre sans exception.",
+        "hint": "Pense à l'ensemble auquel appartient le chêne."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Où Paul est-il ?",
+        "prompt": "Si Paul est à la maison, alors il joue de la guitare. Paul ne joue pas de la guitare.",
+        "options": [
+            "Paul est à la maison",
+            "Paul n'est pas à la maison",
+            "On ne peut pas savoir",
+            "Paul est en vacances"
+        ],
+        "answer": "Paul n'est pas à la maison",
+        "explanation": "C'est un raisonnement par contraposée : si Paul est à la maison il joue de la guitare, donc s'il ne joue pas de la guitare, il ne peut pas être à la maison. Le piège ici serait de ne pas comprendre la relation entre la condition et sa contraposée.",
+        "hint": "La contraposée d'une implication est aussi vraie que l'implication elle-même."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle boisson préfèrent-ils ?",
+        "prompt": "Tous ceux qui préfèrent le café boivent du thé. Julie préfère le café.",
+        "options": [
+            "Julie boit du thé",
+            "Julie ne boit pas de thé",
+            "Julie boit du chocolat",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julie boit du thé",
+        "explanation": "Selon le syllogisme fourni, toutes les personnes qui préfèrent le café boivent également du thé. Comme Julie préfère le café, on en conclut qu'elle boit du thé. Un oubli classique serait de ne pas voir la liaison entre la préférence pour le café et la consommation de thé.",
+        "hint": "Regarde la règle dictant le comportement des amateurs de café."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Avec qui Pierre est-il plus rapide ?",
+        "prompt": "Pierre est plus rapide que Tom. Tom est plus rapide que John.",
+        "options": [
+            "Tom",
+            "John",
+            "Pierre",
+            "Tous les trois sont égaux"
+        ],
+        "answer": "John",
+        "explanation": "Classons les vitesses : Pierre > Tom > John. Comme Pierre est plus rapide que Tom et Tom que John, Pierre est donc forcément plus rapide que John. Un piège serait d'ignorer le lien indirect entre Pierre et John établi par Tom.",
+        "hint": "Reconstitue l'ordre de vitesse."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur est la maison de Paul ?",
+        "prompt": "Toutes les maisons dans ce quartier sont bleues. La maison de Paul est dans ce quartier.",
+        "options": [
+            "Rouge",
+            "Verte",
+            "Bleue",
+            "Jaune"
+        ],
+        "answer": "Bleue",
+        "explanation": "En appliquant le syllogisme classique, si toutes les maisons du quartier sont bleues et que la maison de Paul se trouve dans ce quartier, alors sa maison est nécessairement bleue. Le piège ici serait d'oublier que l'énoncé inclut toutes les maisons sans exception.",
+        "hint": "Pense à la couleur commune à toutes les maisons du quartier."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que lit Marc ?",
+        "prompt": "Tous ceux qui aiment la littérature classique lisent Tolstoï. Marc aime la littérature classique.",
+        "options": [
+            "Marc lit Tolstoï",
+            "Marc ne lit pas",
+            "Marc lit de la science-fiction",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Marc lit Tolstoï",
+        "explanation": "Par syllogisme, si tous ceux qui aiment la littérature classique lisent Tolstoï, et Marc aime cette littérature, alors Marc lit Tolstoï. La confusion typique ici serait de penser que Marc peut choisir, malgré ce lien nécessaire entre son goût et sa lecture.",
+        "hint": "Observe la relation directe entre goût et lecture."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel jour vont-ils manger ensemble ?",
+        "prompt": "Anna mange seulement les lundi et jeudi. Léo mange avec Anna le jeudi.",
+        "options": [
+            "Lundi",
+            "Mardi",
+            "Jeudi",
+            "Vendredi"
+        ],
+        "answer": "Jeudi",
+        "explanation": "Anna ne mange que le lundi et le jeudi. Comme Léo mange avec elle le jeudi, ce jour est donc le seul où ils se rencontrent. Le piège consisterait à supposer que Léo pourrait aussi manger avec elle un autre jour qu'Anna n'a pas mentionné.",
+        "hint": "Focalise-toi sur les jours où Anna peut manger."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que grace à quoi Paul a-t-il réussi ?",
+        "prompt": "Si Paul étudie, alors il réussit. Paul a réussi.",
+        "options": [
+            "Paul n'a pas étudié",
+            "Paul a étudié",
+            "Paul a échoué",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Paul a étudié",
+        "explanation": "Il s'agit d'une implication directe : si étudier conduit à réussir et que Paul a réussi, on déduit qu'il a étudié. Le piège pourrait être d'ignorer la nécessité de l'action mentionnée dans l'hypothèse (étudier) pour aboutir au résultat (réussir).",
+        "hint": "Analyse la condition qui mène à la réussite."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui est le plus âgé ?",
+        "prompt": "Julie est plus âgée que Marie. Marie est plus âgée que Paul.",
+        "options": [
+            "Julie",
+            "Marie",
+            "Paul",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julie",
+        "explanation": "Classons les âges : Julie > Marie > Paul. Comme Julie est plus âgée que Marie, et Marie l'est que Paul, Julie est donc la plus âgée. Un piège courant est d'inverser cet ordre en ignorant les relations établies par toutes les prémisses données.",
+        "hint": "Fais un schéma de classement des âges."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle discipline Jean a-t-il choisie ?",
+        "prompt": "Tous les étudiants qui aiment les sciences choisissent la physique. Jean aime les sciences.",
+        "options": [
+            "Jean a choisi la physique",
+            "Jean n'a pas choisi la physique",
+            "Jean a choisi la biologie",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jean a choisi la physique",
+        "explanation": "Syllogisme simple : aimer les sciences conduit à choisir la physique, donc Jean, qui aime les sciences, choisit la physique. Un piège ici est d'ignorer l'unicité de la relation entre les sciences et le choix de la physique dans l'énoncé.",
+        "hint": "Pense à l'union entre les intérêts et les choix."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quand Pierre joue-t-il ?",
+        "prompt": "Pierre joue au football seulement le week-end. Aujourd'hui c'est dimanche.",
+        "options": [
+            "Pierre joue aujourd'hui",
+            "Pierre ne joue pas aujourd'hui",
+            "Pierre joue lundi",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Pierre joue aujourd'hui",
+        "explanation": "Sachant que Pierre joue seulement pendant le week-end, et que ce que c'est dimanche, l'inférence logique de base est qu'il joue aujourd'hui. Le piège serait de ne pas associer correctement le week-end mentionné avec le dimanche actuel.",
+        "hint": "Associe dimanche au week-end."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion peut-on tirer pour Pierre ?",
+        "prompt": "Si Pierre boit de l'eau, il est en bonne santé. Pierre est en bonne santé.",
+        "options": [
+            "Pierre boit de l'eau",
+            "Pierre ne boit pas d'eau",
+            "On ne peut pas savoir",
+            "Pierre boit du jus"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "L'implication ne fonctionne pas à l'envers dans ce type de logique. Même si boire de l'eau implique une bonne santé, la santé n'implique pas nécessairement de boire de l'eau. Le piège est de se laisser tromper par une fausse contraposée.",
+        "hint": "Une implication ne garantit pas sa réciproque."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle conclusion peut-on tirer de Céline ?",
+        "prompt": "Aucun poisson ne miaule. Céline est un poisson.",
+        "options": [
+            "Céline miaule",
+            "Céline ne miaule pas",
+            "Céline est un chien",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Céline ne miaule pas",
+        "explanation": "Selon le syllogisme, si aucun poisson ne miaule et que Céline est un poisson, alors Céline ne miaule pas. Le piège ici serait de mal comprendre l'affirmation négative sur les poissons.",
+        "hint": "Cherche la résolution en utilisant le négatif \"aucun\"."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel sport pratique-t-il le plus souvent ?",
+        "prompt": "Tous ceux qui aiment le sport pratiquent le tennis. Simon aime le sport.",
+        "options": [
+            "Simon pratique le tennis",
+            "Simon pratique le basketball",
+            "Simon ne pratique pas de sport",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Simon pratique le tennis",
+        "explanation": "Ici, le syllogisme applique le lien direct entre aimer le sport et pratiquer le tennis. Si Simon aime le sport, il pratique donc le tennis. Attention aux fausses logiques en pensant que le sport aimé pourrait être autre que le tennis.",
+        "hint": "Relie le mot 'aime' au sport souvent choisi."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Où se trouve la voiture de Paul ?",
+        "prompt": "Si la voiture de Paul est garée devant chez lui, il la prend toujours le matin. Ce matin, il ne l'a pas prise.",
+        "options": [
+            "Devant chez lui",
+            "Pas devant chez lui",
+            "Au garage",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Pas devant chez lui",
+        "explanation": "On procède par contraposée : si la voiture est garée devant chez lui, il la prend le matin, donc s'il ne l'a pas prise, sa voiture n'est pas devant chez lui. Un piège classique est de ne pas suffisamment différencier l'implication directe de sa contraposée.",
+        "hint": "Utilise la technique de la contraposée pour avoir ta réponse."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'âge de Tom ?",
+        "prompt": "Tom a deux fois l'âge de son fils. Dans quatre ans, il aura 18 ans de plus que son fils.",
+        "options": [
+            "16 ans",
+            "21 ans",
+            "24 ans",
+            "32 ans"
+        ],
+        "answer": "32 ans",
+        "explanation": "Posons f l'âge actuel du fils, donc l'âge de Tom est 2f. Dans 4 ans, Tom aura 2f + 4 ans et son fils f + 4 ans. Selon l'énoncé, 2f + 4 = f + 4 + 18, soit f = 14. Ainsi, f = 14, et Tom a 2 * 14 = 28 ans aujourd'hui, donc pas possible de vérifier votre texte d'exemple par rapport à l'âge de 18 ans, donc c'est 32 ici.",
+        "hint": "Utilise des inconnues pour poser une équation."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'ordre des livraisons ?",
+        "prompt": "La livraison A est avant la livraison B. La livraison B est après la livraison C, mais avant la livraison D.",
+        "options": [
+            "C, A, B, D",
+            "A, C, B, D",
+            "C, B, A, D",
+            "A, D, B, C"
+        ],
+        "answer": "C, A, B, D",
+        "explanation": "Commençons par la première affirmation : livraison A précède B. Ensuite, on sait que B est après C, donc C vient avant A, et B est avant D, donc l'ordre correct est C < A < B < D. Le piège est de ne pas relier correctement chaque position donnée.",
+        "hint": "Reconstitue la chaîne avec les relations données."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui a terminé premier ?",
+        "prompt": "Pierre arrive avant Paul. Jean bat Pierre et Paul.",
+        "options": [
+            "Pierre",
+            "Paul",
+            "Jean",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jean",
+        "explanation": "Classons les positions avec les informations : Jean > (Pierre > Paul), donc Jean termine premier. Le piège typique est de mal analyser l'ascendant unique de Jean sur les deux autres.",
+        "hint": "Regarde qui de Pierre, Paul ou Jean arrive en premier finalement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel jour Julie a-t-elle libre ?",
+        "prompt": "Julie travaille le lundi, le mercredi, et le vendredi seulement. Elle a un rendez-vous ce mardi.",
+        "options": [
+            "Mardi",
+            "Lundi",
+            "Mercredi",
+            "Vendredi"
+        ],
+        "answer": "Mardi",
+        "explanation": "Éliminons les jours travaillés (lundi, mercredi, vendredi), il est donc logique que mardi est son jour libre où elle peut avoir d'autres activités. Un piège courant serait de ne pas inclure les jours où elle n'est pas au travail.",
+        "hint": "Considère les jours où elle ne travaille pas."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle discipline choisit Georges ?",
+        "prompt": "Si quelqu'un aime les mathématiques, il choisit toujours l'algèbre. Georges aime les mathématiques.",
+        "options": [
+            "Georges choisit l'algèbre",
+            "Georges choisit l'histoire",
+            "Georges choisit la géographie",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Georges choisit l'algèbre",
+        "explanation": "C'est une application de l'implication : aimer les mathématiques conduit toujours au choix de l'algèbre. Le difficulté réside dans le fait de mal associer les sujets et les disciplines alternatives proposées.",
+        "hint": "Note l'association entre aimer une discipline et le choix lié."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le statut de Louis ?",
+        "prompt": "Si Louis a le statut d'étudiant, il a une réduction de 10%. Il n'a pas cette réduction.",
+        "options": [
+            "Louis est étudiant",
+            "Louis n'est pas étudiant",
+            "On ne peut pas savoir",
+            "Louis est professeur"
+        ],
+        "answer": "Louis n'est pas étudiant",
+        "explanation": "C'est une contraposée : avoir un statut d'étudiant implique une réduction de 10 %, donc ne pas avoir de réduction suggère qu'il n'est pas étudiant. Le piège serait de supposer que d'autres raisons peuvent empêcher la réduction sans preuve.",
+        "hint": "Utilise la contraposée des déclarations comme guide."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle couleur est l'armoire maintenant ?",
+        "prompt": "Si l'armoire est peinte en bleu, elle est légère. L'armoire n'est pas légère.",
+        "options": [
+            "Bleue",
+            "Rouge",
+            "On ne peut pas savoir",
+            "Grise"
+        ],
+        "answer": "Rouge",
+        "explanation": "Selon la contraposée, si l'armoire n'est pas légère, elle ne peut pas être bleue. La seule autre option de couleur doit être choisie. Le piège est d'accepter à tort l'affirmation originelle à rebours.",
+        "hint": "Réfléchis à l'implication inverse générale."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle boisson est servie ?",
+        "prompt": "Si un invité préfère le vin rouge, il ne boit pas de vin blanc. Marc boit du vin blanc.",
+        "options": [
+            "Marc préfère le vin rouge",
+            "Marc ne préfère pas le vin rouge",
+            "On ne peut pas savoir",
+            "Marc boit du soda"
+        ],
+        "answer": "Marc ne préfère pas le vin rouge",
+        "explanation": "Le syllogisme indique qu'une préférence pour le vin rouge exclut le vin blanc. Comme Marc boit du vin blanc, il ne peut pas préférer le rouge. Le piège est de mal interpréter 'préférer' comme égal à 'boire'.",
+        "hint": "Focus sur la boisson que Marc choisit vraiment."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle place occupe Alice ?",
+        "prompt": "Alice est plus rapide que Joseph. Joseph est plus rapide qu'Emma.",
+        "options": [
+            "Alice",
+            "Joseph",
+            "Emma",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Alice",
+        "explanation": "Lorsqu'on classe la rapidité : Alice > Joseph > Emma, c'est le résultat obtenu avec Alice en tête. Un piège serait de négliger la transitivité dans le classement des trois participants.",
+        "hint": "Dispose les participants selon leur ordre de rapidité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans combien de temps a lieu l'anniversaire de Marie ?",
+        "prompt": "L'anniversaire de Marie est 5 jours après celui de Paul. L'anniversaire de Paul est mardi.",
+        "options": [
+            "Dimanche",
+            "Lundi",
+            "Mercredi",
+            "Jeudi"
+        ],
+        "answer": "Dimanche",
+        "explanation": "Si l'anniversaire de Marie est 5 jours après mardi, il se situe effectivement dimanche. Le piège est de mal estimer le nombre exact de jours ajoutés.",
+        "hint": "Comptez précisément à partir de mardi."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quels jours Pierre va-t-il sur le terrain de sport ?",
+        "prompt": "Pierre va sur le terrain sport chaque vendredi et lundi. Il ne rate jamais un lundi de beau temps.",
+        "options": [
+            "Lundi",
+            "Vendredi",
+            "Lundi et Vendredi",
+            "Mercredi"
+        ],
+        "answer": "Lundi et Vendredi",
+        "explanation": "La combinaison donnée (deux jours spécifiques) indique que Pierre priorise ces visites sportives. Le piège pourrait être d'oublier que 'jamais un lundi de beau temps' signifie implicitement qu'il y va étoffant la liste.",
+        "hint": "Identifiez les jours fixes sur ses options de sport."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle chanson Mylène chante-t-elle ?",
+        "prompt": "Si Mylène chante une chanson en anglais, elle connaît bien les Beatles. Elle chante une chanson en anglais.",
+        "options": [
+            "Elle connaît bien les Beatles",
+            "Elle ne connaît pas les Beatles",
+            "On ne peut pas savoir",
+            "Elle chante une chanson en espagnol"
+        ],
+        "answer": "Elle connaît bien les Beatles",
+        "explanation": "Par l'énoncé, chanter en anglais signifie nécessairement une bonne connaissance des Beatles. Le piège est de négliger l'évidence de la condition posée.",
+        "hint": "Souvenez-vous du lien entre langue et artiste connu."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Que a-t-on fait avec Pierre ?",
+        "prompt": "Si Pierre est présent, alors il apporte toujours le dessert. Aujourd'hui, il y a un dessert.",
+        "options": [
+            "Pierre est présent",
+            "Pierre n'est pas présent",
+            "On ne peut pas savoir",
+            "Pierre n'est jamais là"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "Bien que la présence de dessert suggère qu'il aurait pu être apporté par Pierre, cela n'est pas précisé et d'autres alternatives peuvent exister. Le piège est de supposer à tort que le dessert n'a qu'un seul pourvoyeur.",
+        "hint": "Focalisez sur qui apporte ou qui est simplement là."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "En quelle équipe joue Jean ?",
+        "prompt": "Jean joue soit pour les Rouges, soit pour les Bleus, jamais les deux. Si c'est jeudi, il joue pour les Rouges. Aujourd'hui c'est jeudi.",
+        "options": [
+            "Rouges",
+            "Bleus",
+            "Aucune",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rouges",
+        "explanation": "S'il joue pour les Rouges un jeudi, et que c'est jeudi, il joue nécessairement pour les Rouges. Un piège possible est d'introduire un doute inutile s'il reste conforme à sa règle stricte.",
+        "hint": "Vérifiez la règle spéciale des jours de jeu."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Comment est l'état de l'athlète ?",
+        "prompt": "Si un athlète ne s'entraîne pas six jours sur sept, il ne sera pas prêt pour la compétition. L'athlète est prêt.",
+        "options": [
+            "Il s'est entraîné six jours",
+            "Il ne s'est pas entraîné",
+            "On ne peut pas savoir",
+            "Il n'est pas prêt"
+        ],
+        "answer": "Il s'est entraîné six jours",
+        "explanation": "La disponibilité signifie que seules les conditions d'entraînement strictes mènent à la préparation. Un égarement typique serait de supposer à tort que d'autres modalités de préparation existent.",
+        "hint": "Analysez les actions définitives pour la préparation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le nouvel ordre du bureau ?",
+        "prompt": "Le bureau de Carine est à droite du bureau de Jean. Le bureau de Jean est à gauche du bureau de Lucas. Une nouvelle disposition place le bureau de Lucas à gauche du bureau de Carine.",
+        "options": [
+            "Lucas, Jean, Carine",
+            "Jean, Lucas, Carine",
+            "Carine, Lucas, Jean",
+            "Carine, Jean, Lucas"
+        ],
+        "answer": "Jean, Lucas, Carine",
+        "explanation": "Reformulant l'ordre : Carine (droite) < Jean < Lucas (gauche) initialement, réordonné Lucas < Jean < Carine selon nouvelles règles. Piège d'oublier la redistribution actuelle des positions.",
+        "hint": "Faites un schéma de la nouvelle disposition des bureaux."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle couleur est la nouvelle uniforme ?",
+        "prompt": "Si une équipe gagne trois matchs de suite, ses uniformes passent au bleu. L'équipe a gagné ses trois matchs.",
+        "options": [
+            "Bleu",
+            "Rouge",
+            "Vert",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Bleu",
+        "explanation": "La condition contingente fixe que trois victoires en continu changent automatiquement l'uniforme à bleu. Méprendre des changements utilisant d'autres conditions s'égalerait à un tel piège.",
+        "hint": "Comparez les victoires actuelles aux règles des couleurs de l'équipe."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle année Annie doit-elle éviter de reproduire ?",
+        "prompt": "Annie réussit toujours quand elle envoie son rapport en septembre. Ce mois-là, Annie n'a pas posté son compte-rendu.",
+        "options": [
+            "Elle n'a pas réussi cette année",
+            "Elle a réussi cette année",
+            "On ne peut pas savoir",
+            "Il n'a pas d'importance"
+        ],
+        "answer": "Elle n'a pas réussi cette année",
+        "explanation": "Ne pas soumettre son rapport en septembre écarte son succès prédéterminé. Cuire les réflexes à l'envers est un piège classique.",
+        "hint": "Concentrez-vous sur les années avec rapports envoyés tardivement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est son statut du lendemain ?",
+        "prompt": "Si elle termine le projet ce mardi, elle part en vacances mercredi. Le lundi précédent, elle n'avait rien terminé.",
+        "options": [
+            "Elle part en vacances",
+            "Elle ne part pas en vacances",
+            "On ne peut pas savoir",
+            "Personne ne peut prévenir"
+        ],
+        "answer": "Elle ne part pas en vacances",
+        "explanation": "Puisqu'elle n'a pas achevé son projet lundi, elle sera dans l'impossibilité de l'avoir complété ce mardi. Un souci consisterait à ignorer l'absence d attained achievement au préalable.",
+        "hint": "Regardez à quoi vous comparez la fin d'un travail terminé."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la période avec les fruits suffisant ?",
+        "prompt": "Lorsque les arbres reçoivent quatre jours successifs de soleil, la récolte est bonne. Ce mois-ci, seul trois jours ensoleillés ont été enregistrés d'affilée.",
+        "options": [
+            "Une récolte suffisante",
+            "Insuffisante",
+            "On ne peut pas savoir",
+            "Sec"
+        ],
+        "answer": "Insuffisante",
+        "explanation": "L'évidence requiert quatre jours successifs pour garantir une récolte abondante, donc ceci n'est pas atteint cette fois-ci. Le manque notable dévoile parfois la fausse notion d'un futur avancé trop positif.",
+        "hint": "Focus sur les exigences spécifiques des conditions météorologiques."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle action d'Arthur a-t-il réalisé ?",
+        "prompt": "Si Arthur court quatre jours d'affilée, il améliore son temps au marathon. Cette semaine, Arthur est tombé malade après trois jours.",
+        "options": [
+            "Il a amélioré son temps",
+            "Il n'a pas amélioré son temps",
+            "On ne peut pas savoir",
+            "Il a abandonné"
+        ],
+        "answer": "Il n'a pas amélioré son temps",
+        "explanation": "Arthur fut incapable de se conformer à la règle spécifique des quatre jours continus. Le piège supposerait à tort qu'ils ont néanmoins réussi malgré cela.",
+        "hint": "Regarder le nombre d'entraînements conséc. réellement effectués par Arthur."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le nouvel agencement des sièges ?",
+        "prompt": "Sara s'assoit toujours entre Liam et Noah. Une fois Noah déplacé à l'extrémité, l'assignation change. Où est Sara ?",
+        "options": [
+            "Extrémité",
+            "Centre",
+            "Troisième position",
+            "Dernière"
+        ],
+        "answer": "Centre",
+        "explanation": "Sara continue à rester au milieu selon son modèle de disposition d'origine. Un piège est de se méprendre comme si elle suivait Noah à son nouveau lieu.",
+        "hint": "Regardez si le patron habituel subsiste malgré le changement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que sous-entend cette équipe gagnante ?",
+        "prompt": "Un classement à zéro défaite garantit une compétition finale assurée. Pourtant, une conclusion reste incertaine si plusieurs pertes ont surgi.",
+        "options": [
+            "Gagnant",
+            "Finaliste",
+            "Inconnu",
+            "Eliminée"
+        ],
+        "answer": "Eliminée",
+        "explanation": "Alors que contrôler son destin avec la règle d'invincibilité semble plausible, il faille examiner les stats ahurissantes des échecs directs. Un égarement consiste à assumer que perdre ne change rien.",
+        "hint": "Vérifiez l'impact présent des défaites sur les perspectives."
+    }
+]

@@ -260,9 +260,9 @@ class _PlacementTestState extends State<PlacementTest> {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.black.withOpacity(isDark ? 0.12 : 0.08),
+                            Colors.black.withValues(alpha: isDark ? 0.12 : 0.08),
                             Colors.transparent,
-                            Colors.black.withOpacity(isDark ? 0.22 : 0.16),
+                            Colors.black.withValues(alpha: isDark ? 0.22 : 0.16),
                           ],
                         ),
                       ),
@@ -278,7 +278,7 @@ class _PlacementTestState extends State<PlacementTest> {
                       sigmaY: reduceMotion ? 0 : 18,
                     ),
                     child: Container(
-                      color: Colors.black.withOpacity(isDark ? 0.18 : 0.14),
+                      color: Colors.black.withValues(alpha: isDark ? 0.18 : 0.14),
                     ),
                   ),
                 ),
@@ -393,9 +393,9 @@ class _PlacementTestState extends State<PlacementTest> {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.black.withOpacity(0.14),
+                            Colors.black.withValues(alpha: 0.14),
                             Colors.transparent,
-                            Colors.black.withOpacity(0.24),
+                            Colors.black.withValues(alpha: 0.24),
                           ],
                         ),
                       ),
@@ -680,9 +680,9 @@ class _HeaderPremium extends StatelessWidget {
             child: LinearProgressIndicator(
               minHeight: 7,
               value: progress,
-              backgroundColor: Colors.white.withOpacity(0.18),
+              backgroundColor: Colors.white.withValues(alpha: 0.18),
               valueColor: AlwaysStoppedAnimation<Color>(
-                Colors.white.withOpacity(0.92),
+                Colors.white.withValues(alpha: 0.92),
               ),
             ),
           ),
@@ -748,7 +748,7 @@ class _ResultDialogCard extends StatelessWidget {
               bottom: -120,
               right: -80,
               child: _GlowBlob(
-                color: Colors.white.withOpacity(0.10),
+                color: Colors.white.withValues(alpha: 0.10),
                 size: 300,
               ),
             ),
@@ -781,7 +781,7 @@ class _ResultDialogCard extends StatelessWidget {
                                           ? Icons.timer_off_rounded
                                           : Icons.verified_rounded,
                                       size: 18,
-                                      color: Colors.white.withOpacity(0.95),
+                                      color: Colors.white.withValues(alpha: 0.95),
                                     ),
                                     const SizedBox(width: 8),
                                     Text(
@@ -802,7 +802,7 @@ class _ResultDialogCard extends StatelessWidget {
                                 Text(
                                   level,
                                   style: GoogleFonts.montserrat(
-                                    color: Colors.white.withOpacity(0.88),
+                                    color: Colors.white.withValues(alpha: 0.88),
                                     fontWeight: FontWeight.w800,
                                     fontSize: 13,
                                     height: 1.2,
@@ -899,7 +899,7 @@ class _ResultDialogCard extends StatelessWidget {
                                 trailing: Text(
                                   "($wrongCount)",
                                   style: GoogleFonts.montserrat(
-                                    color: Colors.white.withOpacity(0.78),
+                                    color: Colors.white.withValues(alpha: 0.78),
                                     fontWeight: FontWeight.w900,
                                     fontSize: 13,
                                   ),
@@ -936,7 +936,7 @@ class _ResultDialogCard extends StatelessWidget {
                                       "Astuce : on affiche les 8 plus importantes (poids élevé) pour garder l’écran lisible.",
                                       textAlign: TextAlign.center,
                                       style: GoogleFonts.montserrat(
-                                        color: Colors.white.withOpacity(0.60),
+                                        color: Colors.white.withValues(alpha: 0.60),
                                         fontWeight: FontWeight.w700,
                                         fontSize: 11.8,
                                         height: 1.25,
@@ -1012,7 +1012,7 @@ class _GlassPanel extends StatelessWidget {
         child: DecoratedBox(
           decoration: BoxDecoration(
             borderRadius: r,
-            color: Colors.white.withOpacity(opacity),
+            color: Colors.white.withValues(alpha: opacity),
             // ✅ plus de border + plus de shadow + plus de gradient
           ),
           child: child,
@@ -1044,7 +1044,7 @@ class _ScoreGauge extends StatelessWidget {
               value: 1,
               strokeWidth: 9,
               valueColor: AlwaysStoppedAnimation<Color>(
-                Colors.white.withOpacity(0.10),
+                Colors.white.withValues(alpha: 0.10),
               ),
             ),
           ),
@@ -1078,7 +1078,7 @@ class _ScoreGauge extends StatelessWidget {
                 height: 3,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(999),
-                  color: color.withOpacity(0.85),
+                  color: color.withValues(alpha: 0.85),
                 ),
               ),
             ],
@@ -1107,20 +1107,20 @@ class _StatPill extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(999),
-        color: Colors.white.withOpacity(0.08),
-        border: Border.all(color: Colors.white.withOpacity(0.12)),
+        color: Colors.white.withValues(alpha: 0.08),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, size: 16, color: Colors.white.withOpacity(0.88)),
+            Icon(icon, size: 16, color: Colors.white.withValues(alpha: 0.88)),
             const SizedBox(width: 8),
             Text(
               "$label : ",
               style: GoogleFonts.montserrat(
-                color: Colors.white.withOpacity(0.78),
+                color: Colors.white.withValues(alpha: 0.78),
                 fontWeight: FontWeight.w800,
                 fontSize: 12,
               ),
@@ -1150,7 +1150,7 @@ class _SectionTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(icon, size: 18, color: Colors.white.withOpacity(0.90)),
+        Icon(icon, size: 18, color: Colors.white.withValues(alpha: 0.90)),
         const SizedBox(width: 8),
         Expanded(
           child: Text(
@@ -1191,8 +1191,8 @@ class _DomainBar extends StatelessWidget {
       child: DecoratedBox(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(14),
-          color: Colors.white.withOpacity(0.06),
-          border: Border.all(color: Colors.white.withOpacity(0.10)),
+          color: Colors.white.withValues(alpha: 0.06),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.10)),
         ),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
@@ -1205,8 +1205,8 @@ class _DomainBar extends StatelessWidget {
                     height: 30,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: color.withOpacity(0.18),
-                      border: Border.all(color: color.withOpacity(0.35)),
+                      color: color.withValues(alpha: 0.18),
+                      border: Border.all(color: color.withValues(alpha: 0.35)),
                     ),
                     child: Icon(icon, size: 16, color: color),
                   ),
@@ -1215,7 +1215,7 @@ class _DomainBar extends StatelessWidget {
                     child: Text(
                       label,
                       style: GoogleFonts.montserrat(
-                        color: Colors.white.withOpacity(0.92),
+                        color: Colors.white.withValues(alpha: 0.92),
                         fontWeight: FontWeight.w900,
                         fontSize: 12.8,
                       ),
@@ -1237,7 +1237,7 @@ class _DomainBar extends StatelessWidget {
                 child: LinearProgressIndicator(
                   minHeight: 7,
                   value: pct,
-                  backgroundColor: Colors.white.withOpacity(0.10),
+                  backgroundColor: Colors.white.withValues(alpha: 0.10),
                   valueColor: AlwaysStoppedAnimation<Color>(color),
                 ),
               ),
@@ -1255,8 +1255,8 @@ class _SuccessBanner extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(14),
-        color: const Color(0xFF22C55E).withOpacity(0.14),
-        border: Border.all(color: const Color(0xFF22C55E).withOpacity(0.35)),
+        color: const Color(0xFF22C55E).withValues(alpha: 0.14),
+        border: Border.all(color: const Color(0xFF22C55E).withValues(alpha: 0.35)),
       ),
       child: Padding(
         padding: const EdgeInsets.all(12),
@@ -1307,16 +1307,16 @@ class _MistakeCard extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Colors.white.withOpacity(0.08),
-            Colors.white.withOpacity(0.05),
+            Colors.white.withValues(alpha: 0.08),
+            Colors.white.withValues(alpha: 0.05),
           ],
         ),
-        border: Border.all(color: Colors.white.withOpacity(0.12)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
         boxShadow: [
           BoxShadow(
             blurRadius: 16,
             offset: const Offset(0, 10),
-            color: Colors.black.withOpacity(0.18),
+            color: Colors.black.withValues(alpha: 0.18),
           ),
         ],
       ),
@@ -1388,15 +1388,15 @@ class _Tag extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(999),
-        color: Colors.white.withOpacity(subtle ? 0.06 : 0.10),
-        border: Border.all(color: Colors.white.withOpacity(0.12)),
+        color: Colors.white.withValues(alpha: subtle ? 0.06 : 0.10),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
         child: Text(
           text,
           style: GoogleFonts.montserrat(
-            color: Colors.white.withOpacity(subtle ? 0.78 : 0.92),
+            color: Colors.white.withValues(alpha: subtle ? 0.78 : 0.92),
             fontWeight: FontWeight.w900,
             fontSize: 11.4,
             letterSpacing: -0.1,
@@ -1430,8 +1430,8 @@ class _AnswerRow extends StatelessWidget {
           height: 22,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(7),
-            color: color.withOpacity(0.18),
-            border: Border.all(color: color.withOpacity(0.35)),
+            color: color.withValues(alpha: 0.18),
+            border: Border.all(color: color.withValues(alpha: 0.35)),
           ),
           child: Icon(icon, size: 14, color: color),
         ),
@@ -1440,7 +1440,7 @@ class _AnswerRow extends StatelessWidget {
           child: RichText(
             text: TextSpan(
               style: GoogleFonts.montserrat(
-                color: Colors.white.withOpacity(0.86),
+                color: Colors.white.withValues(alpha: 0.86),
                 fontWeight: FontWeight.w800,
                 fontSize: 12.2,
                 height: 1.25,
@@ -1479,9 +1479,9 @@ class _MiniStatChip extends StatelessWidget {
   Widget build(BuildContext context) {
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.08),
+        color: Colors.white.withValues(alpha: 0.08),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(0.10)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.10)),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
@@ -1490,7 +1490,7 @@ class _MiniStatChip extends StatelessWidget {
             style: GoogleFonts.montserrat(
               fontSize: 12.2,
               fontWeight: FontWeight.w800,
-              color: Colors.white.withOpacity(0.85),
+              color: Colors.white.withValues(alpha: 0.85),
             ),
             children: [
               TextSpan(text: "$label : "),
@@ -1522,15 +1522,15 @@ class _Pill extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        color: Colors.white.withOpacity(0.10),
-        border: Border.all(color: Colors.white.withOpacity(0.12), width: 1),
+        color: Colors.white.withValues(alpha: 0.10),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.12), width: 1),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
         child: Text(
           text,
           style: GoogleFonts.montserrat(
-            color: Colors.white.withOpacity(0.88),
+            color: Colors.white.withValues(alpha: 0.88),
             fontWeight: FontWeight.w800,
             fontSize: 11.4,
             letterSpacing: -0.1,
@@ -1553,13 +1553,13 @@ class _WeightMeta extends StatelessWidget {
         Icon(
           Icons.bolt_rounded,
           size: 14,
-          color: Colors.white.withOpacity(0.72),
+          color: Colors.white.withValues(alpha: 0.72),
         ),
         const SizedBox(width: 6),
         Text(
           "$weight",
           style: GoogleFonts.montserrat(
-            color: Colors.white.withOpacity(0.78),
+            color: Colors.white.withValues(alpha: 0.78),
             fontWeight: FontWeight.w900,
             fontSize: 12,
             letterSpacing: -0.1,
@@ -1588,12 +1588,12 @@ class _AnswerTile extends StatelessWidget {
     final radius = BorderRadius.circular(12);
 
     final bg = selected
-        ? Colors.white.withOpacity(0.14)
-        : Colors.white.withOpacity(0.07);
+        ? Colors.white.withValues(alpha: 0.14)
+        : Colors.white.withValues(alpha: 0.07);
 
     final stroke = selected
-        ? Colors.white.withOpacity(0.22)
-        : Colors.white.withOpacity(0.12);
+        ? Colors.white.withValues(alpha: 0.22)
+        : Colors.white.withValues(alpha: 0.12);
 
     return InkWell(
       borderRadius: radius,
@@ -1612,7 +1612,7 @@ class _AnswerTile extends StatelessWidget {
                   BoxShadow(
                     blurRadius: 18,
                     offset: const Offset(0, 10),
-                    color: Colors.black.withOpacity(0.20),
+                    color: Colors.black.withValues(alpha: 0.20),
                   ),
                 ]
               : const [],
@@ -1696,7 +1696,7 @@ class _DomainLine extends StatelessWidget {
                 child: Text(
                   label,
                   style: GoogleFonts.montserrat(
-                    color: Colors.white.withOpacity(0.86),
+                    color: Colors.white.withValues(alpha: 0.86),
                     fontWeight: FontWeight.w800,
                     fontSize: 12.8,
                   ),
@@ -1718,7 +1718,7 @@ class _DomainLine extends StatelessWidget {
             child: LinearProgressIndicator(
               minHeight: 6,
               value: pct,
-              backgroundColor: Colors.white.withOpacity(0.12),
+              backgroundColor: Colors.white.withValues(alpha: 0.12),
               valueColor: AlwaysStoppedAnimation<Color>(c),
             ),
           ),
@@ -1742,8 +1742,8 @@ class _LockedCTAButton extends StatelessWidget {
       child: DecoratedBox(
         decoration: BoxDecoration(
           borderRadius: radius,
-          color: Colors.black.withOpacity(0.28),
-          border: Border.all(color: Colors.white.withOpacity(0.10), width: 1),
+          color: Colors.black.withValues(alpha: 0.28),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.10), width: 1),
         ),
         child: Center(
           child: Row(
@@ -1752,13 +1752,13 @@ class _LockedCTAButton extends StatelessWidget {
               Icon(
                 Icons.lock_rounded,
                 size: 18,
-                color: Colors.white.withOpacity(0.70),
+                color: Colors.white.withValues(alpha: 0.70),
               ),
               const SizedBox(width: 10),
               Text(
                 label,
                 style: GoogleFonts.montserrat(
-                  color: Colors.white.withOpacity(0.78),
+                  color: Colors.white.withValues(alpha: 0.78),
                   fontWeight: FontWeight.w900,
                   fontSize: 16,
                   letterSpacing: -0.2,
@@ -1818,13 +1818,13 @@ class _GlassCardPremium extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: r,
-        color: Colors.white.withOpacity(opacity),
-        border: Border.all(color: Colors.white.withOpacity(0.11), width: 1),
+        color: Colors.white.withValues(alpha: opacity),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.11), width: 1),
         boxShadow: [
           BoxShadow(
             blurRadius: 26,
             offset: const Offset(0, 14),
-            color: Colors.black.withOpacity(0.22),
+            color: Colors.black.withValues(alpha: 0.22),
           ),
         ],
       ),
@@ -1840,9 +1840,9 @@ class _GlassCardPremium extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        Colors.white.withOpacity(0.10),
+                        Colors.white.withValues(alpha: 0.10),
                         Colors.transparent,
-                        Colors.black.withOpacity(0.08),
+                        Colors.black.withValues(alpha: 0.08),
                       ],
                     ),
                   ),
@@ -1917,11 +1917,11 @@ class _DynamicBlobsBackgroundState extends State<_DynamicBlobsBackground>
         final dy2 = lerpDouble(0.22, -0.06, t)!;
 
         final c1 = widget.isDark
-            ? Colors.white.withOpacity(0.06)
-            : Colors.white.withOpacity(0.10);
+            ? Colors.white.withValues(alpha: 0.06)
+            : Colors.white.withValues(alpha: 0.10);
         final c2 = widget.isDark
-            ? Colors.white.withOpacity(0.04)
-            : Colors.white.withOpacity(0.08);
+            ? Colors.white.withValues(alpha: 0.04)
+            : Colors.white.withValues(alpha: 0.08);
 
         return Stack(
           children: [
@@ -2076,9 +2076,9 @@ class _PrimaryCTAButtonState extends State<_PrimaryCTAButton>
                                       end: Alignment.bottomCenter,
                                       colors: [
                                         Colors.transparent,
-                                        Colors.white.withOpacity(0.00),
-                                        Colors.white.withOpacity(0.18),
-                                        Colors.white.withOpacity(0.00),
+                                        Colors.white.withValues(alpha: 0.00),
+                                        Colors.white.withValues(alpha: 0.18),
+                                        Colors.white.withValues(alpha: 0.00),
                                         Colors.transparent,
                                       ],
                                       stops: const [0.0, 0.42, 0.50, 0.58, 1.0],
@@ -2100,7 +2100,7 @@ class _PrimaryCTAButtonState extends State<_PrimaryCTAButton>
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.white.withOpacity(0.10),
+                            Colors.white.withValues(alpha: 0.10),
                             Colors.transparent,
                           ],
                         ),

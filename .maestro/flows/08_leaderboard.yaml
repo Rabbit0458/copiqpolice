@@ -1,0 +1,43 @@
+# COP'IQ — E2E Flow 08 : Leaderboard hebdomadaire
+# Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-099
+# Prérequis : connecté (premium ou free — le leaderboard est visible pour tous)
+
+appId: fr.copiq.app
+---
+- launchApp
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Naviguer vers le leaderboard via le menu ou un lien direct
+- tapOn:
+    text: "Classement"
+
+- waitForAnimationToEnd:
+    timeout: 8000
+
+# Vérifier que la page est chargée
+- assertVisible:
+    text: "Classement"
+
+# Vérifier la présence des rangs (au moins le top 1)
+- assertVisible:
+    text: "#1"
+
+# Vérifier l'anonymisation (format "Apprenti #XXXX")
+- assertVisible:
+    text: "Apprenti"
+
+# Vérifier la présence du rang personnel en bas
+- optional:
+    - assertVisible:
+        text: "Votre rang"
+
+# Rafraîchir via pull-to-refresh
+- swipeDown
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+- assertVisible:
+    text: "Classement"

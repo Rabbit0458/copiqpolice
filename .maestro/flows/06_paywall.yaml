@@ -1,0 +1,51 @@
+# COP'IQ — E2E Flow 06 : Déclenchement du paywall (2ème cas)
+# Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-099
+# Prérequis : connecté avec compte FREE, a déjà vu le cas 1 (démo)
+
+appId: fr.copiq.app
+---
+- launchApp
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Naviguer vers la liste des cas
+- tapOn:
+    text: "Cas Pratique"
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Tapper sur un cas premium (2ème cas = lock badge)
+- tapOn:
+    index: 1
+    id: "case_card"
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Le paywall doit s'afficher
+- assertVisible:
+    text: "Premium"
+
+- assertVisible:
+    text: "9,99"
+
+# Vérifier les 3 plans tarifaires
+- assertVisible:
+    text: "Mensuel"
+
+- assertVisible:
+    text: "Annuel"
+
+- assertVisible:
+    text: "Lifetime"
+
+# Fermer le paywall (bouton X)
+- tapOn:
+    id: "close_paywall"
+
+- waitForAnimationToEnd
+
+# Retour à la liste
+- assertVisible:
+    text: "Cas pratiques"

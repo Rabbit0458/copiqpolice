@@ -1,0 +1,398 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « joyeux » ?",
+        "prompt": null,
+        "options": ["Triste", "Heureux", "Mécontent", "Fatigué"],
+        "answer": "Heureux",
+        "explanation": "Le mot « joyeux » signifie être de bonne humeur, gai, et content. « Heureux » est un synonyme car il décrit un état de satisfaction et d'allégresse. « Triste » est l'antonyme, « mécontent » représente l'insatisfaction, et « fatigué » ne correspond pas à l'état émotionnel positif de « joyeux ».",
+        "hint": "Pensez aux émotions positives."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « clair » ?",
+        "prompt": null,
+        "options": ["Translucide", "Obscur", "Évident", "Visible"],
+        "answer": "Obscur",
+        "explanation": "« Clair » désigne ce qui est facilement visible ou compréhensible. Son antonyme est « obscur » qui signifie sombre ou difficile à comprendre. « Translucide » et « visible » indiquent encore des niveaux de clarté, tandis qu'« évident » va aussi vers la clarté, et donc n'est pas un antonyme.",
+        "hint": "Pensez à l'opposé de la lumière."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Même fatigué, il a ___ fini le travail.\"",
+        "prompt": null,
+        "options": ["quand même", "malgré", "dès que", "enfin"],
+        "answer": "quand même",
+        "explanation": "L'expression correcte est « quand même », qui signifie malgré une circonstance contraire, il a poursuivi son action. « Malgré » suit généralement un nom, et « dès que » indique une condition temporaire, tandis qu'« enfin » suggère l'achèvement ou le début tardif.",
+        "hint": "Cherchez une expression qui montre un achèvement en dépit d'un obstacle."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette phrase, le mot « glace » signifie : « Je mets de la glace dans mon verre. »",
+        "prompt": null,
+        "options": ["Miroir", "Glaçon", "Crème glacée", "Fenêtre"],
+        "answer": "Glaçon",
+        "explanation": "Ici, la « glace » se réfère à un glaçon car on met des glaçons dans les boissons pour les refroidir. Un « miroir » et une « fenêtre » sont des surfaces transparents qui ne se mettent pas dans un verre. La « crème glacée » est un dessert qui ne se dissout pas dans les boissons.",
+        "hint": "Quel élément ranime une boisson ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'intrus ?",
+        "prompt": "Chien, Chat, Serpent, Zèbre",
+        "options": ["Chien", "Chat", "Serpent", "Zèbre"],
+        "answer": "Serpent",
+        "explanation": "Le serpent est un reptile alors que le chien, le chat, et le zèbre sont des mammifères. Les mammifères nourrissent leurs petits avec du lait, contrairement aux reptiles. Cela en fait l'intrus de ce groupe.",
+        "hint": "Quel animal n'a pas le même mode de reproduction ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « commencer » ?",
+        "prompt": null,
+        "options": ["Arrêter", "Initier", "Achever", "Compléter"],
+        "answer": "Initier",
+        "explanation": "« Commencer » et « initier » signifient tous deux débuter quelque chose. « Arrêter » est l'opposé, signifiant finir une action. « Achever » et « compléter » se sont utilisés pour finir quelque chose, ce qui diffère de débuter.",
+        "hint": "Synonyme : initie une action."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Professeur est à école comme médecin est à ___",
+        "prompt": null,
+        "options": ["Bureau", "Église", "Hôpital", "Parc"],
+        "answer": "Hôpital",
+        "explanation": "Un professeur travaille dans une école. De la même manière, un médecin travaille dans un hôpital. Les autres options ne sont pas des lieux de travail typiques pour un médecin.",
+        "hint": "Quel est le lieu de soin par excellence ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « fort » ?",
+        "prompt": null,
+        "options": ["Puissant", "Faible", "Robuste", "Solide"],
+        "answer": "Faible",
+        "explanation": "« Fort » signifie avoir de la force, donc son antonyme est « faible », qui signifie manquer de force. Les mots « puissant », « robuste » et « solide » sont des synonymes de fort et donc ne peuvent être des antonymes.",
+        "hint": "Pensez à manquer de force."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Banane, Fraise, Voiture, Pomme",
+        "options": ["Banane", "Fraise", "Voiture", "Pomme"],
+        "answer": "Voiture",
+        "explanation": "La banane, la fraise et la pomme sont des fruits, alors que la voiture est un véhicule. Le critère de distinction ici est alimentaire contre transport.",
+        "hint": "Quel élément n'est pas comestible ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « travail » ?",
+        "prompt": null,
+        "options": ["Loisir", "Emploi", "Amusement", "Repos"],
+        "answer": "Emploi",
+        "explanation": "« Travail » et « emploi » signifient tous deux une activité rémunérée ou profession. « Loisir » et « amusement » désignent des activités ludiques opposées au travail. « Repos » désigne l'inaction volontaire ou forcée.",
+        "hint": "Cherchez une activité rémunérée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est l'analogie suivante : Clé est à serrure comme téléphone est à ___",
+        "prompt": null,
+        "options": ["Écoute", "Conversation", "Smartphone", "Numéro"],
+        "answer": "Numéro",
+        "explanation": "La clé sert à débloquer une serrure avec un code physique, de même qu'un numéro permet de joindre un interlocuteur au téléphone. « Écoute », « conversation » et « smartphone » désignent des usages, mais ne servent pas d’outil de connexion direct comme le numéro.",
+        "hint": "Quel élément permet d’établir une connexion ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « joyeux » ?",
+        "prompt": null,
+        "options": ["Triste", "Heureux", "Mécontent", "Fatigué"],
+        "answer": "Heureux",
+        "explanation": "Le mot « joyeux » signifie être de bonne humeur, gai, et content. « Heureux » est un synonyme car il décrit un état de satisfaction et d'allégresse. « Triste » est l'antonyme, « mécontent » représente l'insatisfaction, et « fatigué » ne correspond pas à l'état émotionnel positif de « joyeux ».",
+        "hint": "Pensez aux émotions positives."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette phrase, le mot « crayon » signifie : « J'ai perdu mon crayon préféré. »",
+        "prompt": null,
+        "options": ["Stylo", "Gomme", "Plume", "Outil d'écriture"],
+        "answer": "Outil d'écriture",
+        "explanation": "Dans ce contexte, un crayon désigne un outil d'écriture généralement en bois et graphite. Un « stylo » et une « plume » marquent ce que l'on écrit plutôt, alors qu'une « gomme » n'écrit pas et sert à effacer.",
+        "hint": "Élément qui permet d'écrire."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Chanteur est à concert comme acteur est à ___",
+        "prompt": null,
+        "options": ["Film", "Studio", "Scène", "Spectacle"],
+        "answer": "Film",
+        "explanation": "Un chanteur performe dans un concert, tandis qu'un acteur joue dans un film. Les options studio, scène et spectacle ne désignent pas directement le produit dans lequel l’acteur s'exprime, contrairement au film.",
+        "hint": "Cherchez le produit final de l’acteur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « fermer » ?",
+        "prompt": null,
+        "options": ["Ouvrir", "Clôturer", "Terminer", "Élargir"],
+        "answer": "Ouvrir",
+        "explanation": "L'action de « fermer » implique de rendre inaccessible ou de bloquer une ouverture. Son contraire direct est « ouvrir », ce qui permet l'accès ou l'accès à l'intérieur. « Clôturer », « terminer » et « élargir » n'ont pas d’opposé direct envers l'action de leur opposé.",
+        "hint": "Un geste qui rend accessible."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Sous la pluie, il a tout de même ___ sa promenade.\"",
+        "prompt": null,
+        "options": ["continué", "fini", "renoncé", "commencé"],
+        "answer": "continué",
+        "explanation": "Malgré les contraintes, « continuer » indique persévérer dans une action commencée. « Finir » implique que l’action est achevée, « commencer » renvoie au démarrage, tandis que « renoncer » implique un arrêt.",
+        "hint": "Cherchez la persévérance malgré les conditions."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Palmier, Chêne, Camion, Érable",
+        "options": ["Palmier", "Chêne", "Camion", "Érable"],
+        "answer": "Camion",
+        "explanation": "Tous sauf camion désignent des arbres au feuillage luxuriant ou significatif. Le camion est un moyen de transport qui ne partage pas ce groupe végétal.",
+        "hint": "Quel élément n'appartient pas au monde végétal ?"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Avocat est à loi comme médecin est à ___",
+        "prompt": null,
+        "options": ["Ordonnance", "Patient", "Médecine", "Consultation"],
+        "answer": "Médecine",
+        "explanation": "L'avocat étudie la loi pour exercer son métier; de la même manière, un médecin exerce dans le domaine de la médecine. Les autres choix représentent des parties ou dégâts partiels de son métier, tandis que « médecine » résume en un mot complet son domaine d'activité.",
+        "hint": "Pensez à la science qui soutient la pratique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « enrichir » ?",
+        "prompt": null,
+        "options": ["Appauvrir", "Augmenter", "Cultiver", "Améliorer"],
+        "answer": "Appauvrir",
+        "explanation": "Le verbe « enrichir » signifie augmenter ou améliorer la richesse ou la valeur. L'antonyme est « appauvrir », qui signifie réduire, diminuer en valeur. « Augmenter », « cultiver », et « améliorer » vont dans le sens d’une augmentation ou d'un dépassement.",
+        "hint": "Cherchez le mot qui signifie réduire la valeur."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'intrus ?",
+        "prompt": "Violoncelle, Trompette, Guitare, Piano",
+        "options": ["Violoncelle", "Trompette", "Guitare", "Piano"],
+        "answer": "Trompette",
+        "explanation": "Le violoncelle, la guitare, et le piano sont des instruments à cordes, tandis que la trompette est un instrument à vent. La distinction vient du type d'instrumentation pratiqué.",
+        "hint": "Quel est l'instrument qui n’a pas de cordes ?"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Il a préféré pratiquer ___ de l'art.\"",
+        "prompt": null,
+        "options": ["la musique", "la science", "le sport", "la littérature"],
+        "answer": "la musique",
+        "explanation": "Ici, la phrase laisse entendre qu'on est dans une optique artistique. La musique est souvent vue comme un art, donc elle est la meilleure option. La science et le sport, bien que nécessitant art et pratique, sont des disciplines distinctes.",
+        "hint": "Pensez à une forme d'art apprécié universellement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Plante est à photosynthèse comme animal est à ___",
+        "prompt": null,
+        "options": ["Respiration", "Reproduction", "Migration", "Evolution"],
+        "answer": "Respiration",
+        "explanation": "La photosynthèse est essentielle à la vie des plantes (production d'énergie), de même que la respiration est vitale pour les animaux. Les autres choix influencent l’animal, mais la respiration est la fonction essentielle comparable à la photosynthèse.",
+        "hint": "Quel élément vital et quotidien partage l'importance de la photosynthèse ?"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « perplexe » ?",
+        "prompt": null,
+        "options": ["Décidé", "Indécis", "Convaincu", "Certain"],
+        "answer": "Indécis",
+        "explanation": "Quelqu'un de « perplexe » est confus et hésitant, tout comme « indécis ». En revanche, « décidé », « convaincu », et « certain » désignent la clarté et la détermination, des opposés directs de la perplexité.",
+        "hint": "Pensez à la confusion et à l'indécision."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Hiver, Été, Lundi, Automne",
+        "options": ["Hiver", "Été", "Lundi", "Automne"],
+        "answer": "Lundi",
+        "explanation": "L'hiver, l'été et l'automne sont des saisons, tandis que lundi est un jour de la semaine. Ce qui distingue lundi des autres qui représentent des périodes de temps plus larges.",
+        "hint": "Quel élément ne représente pas une saison ?"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « réel » ?",
+        "prompt": null,
+        "options": ["Imaginaire", "Concret", "Visible", "Tangible"],
+        "answer": "Imaginaire",
+        "explanation": "« Réel » désigne ce qui existe dans la réalité, concrètement. « Imaginaire » est son opposé, désignant ce qui n'existe que dans l'esprit. « Concret », « visible », et « tangible » traduisent encore des aspects physiques des faits réels.",
+        "hint": "Cherchez l'opposé du concret."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot « pièce » signifie : « J'ai réparé ça avec une nouvelle pièce. »",
+        "prompt": null,
+        "options": ["Chambre", "Monnaie", "Composant", "Jouet"],
+        "answer": "Composant",
+        "explanation": "On parle ici d'une partie d'un tout nécessaire pour la réparation, donc une « pièce » est un « composant ». « Chambre » pourrait être une autre pièce, « monnaie » et « jouet » ne se rapportent pas à une réparation.",
+        "hint": "Pensez à remplacer ou reconstituer quelque chose avec une partie."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Peintre est à pinceau comme écrivain est à ___",
+        "prompt": null,
+        "options": ["Livre", "Encre", "Ordinateur", "Stylo"],
+        "answer": "Stylo",
+        "explanation": "Un peintre utilise un pinceau pour créer son œuvre, de même qu’un écrivain utilise un stylo comme outil principal pour écrire. Un livre, de l'encre et un ordinateur sont des supports ou matières secondaires au métier principal.",
+        "hint": "Pensez à l'outil traditionnel pour écrire."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « dépendant » ?",
+        "prompt": null,
+        "options": ["Autonome", "Libre", "Lié", "Indépendant"],
+        "answer": "Lié",
+        "explanation": "« Dépendant » se rapporte à une nécessité de relation ou dépendance, tout comme « lié ». Les termes « autonome », « libre », et « indépendant » imposent la liberté et l'absence de besoin d'un autre.",
+        "hint": "Réfléchissez à un lien de proximité indispensable."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « ancien » ?",
+        "prompt": null,
+        "options": ["Vieux", "Moderne", "Historique", "Antique"],
+        "answer": "Moderne",
+        "explanation": "« Ancien » désigne ce qui date de longtemps, tandis que « moderne » traduit l’actuel et le nouveau. « Vieux », « historique », et « antique » renvoient également à des notions du passé.",
+        "hint": "Cherchez ce qui appartient au présent ou à l'avenir."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Pendant les vacances, il est resté ___ à la maison.\"",
+        "prompt": null,
+        "options": ["tranquille", "nervé", "agité", "pressé"],
+        "answer": "tranquille",
+        "explanation": "Dans cette phrase, on cherche un mot qui évoque le calme lié au repos. « Tranquille » désigne le calme et le repos, contrairement à « nerveux », « agité » et « pressé » qui indiquent une tension ou un mouvement.",
+        "hint": "Pensez à un état sans perturbation ni préoccupation."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot « toile » signifie : « Le peintre a choisi une toile de grand format. »",
+        "prompt": null,
+        "options": ["Internet", "Tableau", "Chiffon", "Tissu"],
+        "answer": "Tissu",
+        "explanation": "Ici, la toile est utilisée pour peindre, et se réfère au support en tissu utilisé par les artistes. « Internet » est obsolète, « tableau » sert de produit final avec la toile comme support, alors que le « chiffon » ne convient pas.",
+        "hint": "Quel type de textile est utilisé pour créer un média visuel?"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Horloge est à temps comme boussole est à ___",
+        "prompt": null,
+        "options": ["Direction", "Carte", "Position", "Destination"],
+        "answer": "Direction",
+        "explanation": "L'horloge sert à mesurer le temps, tandis que la boussole est un outil qui indique la direction. « Carte » et « position » sont plus statiques, et « destination » se réfère à un point d'arrêt, pas au guide continu.",
+        "hint": "Quel outil est un guide constant ?"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « pléthorique » ?",
+        "prompt": null,
+        "options": ["Abondant", "Indigent", "Foisonnant", "Surabondant"],
+        "answer": "Indigent",
+        "explanation": "« Pléthorique » indique une grande quantité, son antonyme est « indigent », signifiant insuffisant. Les mots « abondant », « foisonnant » et « surabondant » sont synonymes, car ils désignent aussi une forte quantité.",
+        "hint": "Cherchez l'insuffisance."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Clair", "Mystérieux", "Simple", "Direct"],
+        "answer": "Mystérieux",
+        "explanation": "Le terme « sibyllin » désigne ce qui est mystérieux ou difficile à comprendre. « Clair », « simple » et « direct » sont les opposés, renvoyant à une compréhension immédiate.",
+        "hint": "Une œuvre complexe, irrésolue."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « cohérent » ?",
+        "prompt": null,
+        "options": ["Raisonnable", "Chaotique", "Logique", "Ordonné"],
+        "answer": "Chaotique",
+        "explanation": "« Cohérent » se rapporte à une logique suivie, contrairement à « chaotique » qui exprime l'entropie et le désordre. « Raisonnable », « logique », et « ordonné » sont synonymes du premier.",
+        "hint": "Cherche un mot pour le désordre."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « contrit » ?",
+        "prompt": null,
+        "options": ["Satisfait", "Penaud", "Content", "Joyeux"],
+        "answer": "Penaud",
+        "explanation": "La contrition renvoie au sentiment de peine ou remords, rendu par « penaud ». « Satisfait », « content » et « joyeux » impliquent des émotions positives, contraires à la contrition.",
+        "hint": "Un regret motivé par la honte."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Pince est à vis comme scie est à ___",
+        "prompt": null,
+        "options": ["Bois", "Clou", "Marteau", "Rouge"],
+        "answer": "Bois",
+        "explanation": "La pince manipule la vis, et de même, une scie coupe le bois. « Clou », « marteau » et « rouge » ne représentent pas d’association directe.",
+        "hint": "L’élément travaillé par son outil."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « impassible » ?",
+        "prompt": null,
+        "options": ["Émotionnel", "Froid", "Mystérieux", "Stoïque"],
+        "answer": "Émotionnel",
+        "explanation": "« Impassible » inclut ne montrer aucun signe extérieur d'émotion, tandis qu'« émotionnel » se rapporte à l'expressivité. « Froid », « mystérieux » et « stoïque » restent liés à l'insaillabilité.",
+        "hint": "Cherche extérieur manifesté de sentiments."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot « carton » signifie : « Il reçut un carton de remerciements. »",
+        "prompt": null,
+        "options": ["Boîte", "Invitation", "Enveloppe", "Papier"],
+        "answer": "Invitation",
+        "explanation": "Dans ce contexte, « carton » se réfère à un carton d’invitation ou de remerciements, comme dans une carte. « Boîte » et « enveloppe » indiquent des objets d’expédition, tandis que « papier » est la matière.",
+        "hint": "Pensez à une signification symbolique sociale."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « nébuleux » ?",
+        "prompt": null,
+        "options": ["Clair", "Vague", "Net", "Précis"],
+        "answer": "Vague",
+        "explanation": "« Nébuleux » signifie non clair, indistinct, semblable à « vague ». Les termes « clair », « net », et « précis » expriment la clarté et la définition discriminables.",
+        "hint": "Un flou athmosphérique."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Juriste, Médecin, Chirurgien, Avocat",
+        "options": ["Juriste", "Médecin", "Chirurgien", "Avocat"],
+        "answer": "Médecin",
+        "explanation": "Médecin et chirurgien font partie de la médecine, alors que juriste et avocat sont liés au droit. Le critère ici est la profession légale face médicale.",
+        "hint": "Quel métier est du domaine de la santé ?"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « minoritaire » ?",
+        "prompt": null,
+        "options": ["Réduit", "Principal", "Secondaire", "Majoritaire"],
+        "answer": "Majoritaire",
+        "explanation": "« Minoritaire » signifie en nombre réduit, opposé naturellement à « majoritaire » qui indique une majorité. « Réduit », « principal » et « secondaire » ne complètent pas cet échange significatif.",
+        "hint": "Pensez à la proportion dominante."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « altérer » ?",
+        "prompt": null,
+        "options": ["Modifier", "Alterner", "Conserver", "Préserver"],
+        "answer": "Modifier",
+        "explanation": "« Altérer » veut dire changer, détériorer ou dénaturer un objet ou une substance; « modifier » exprime aussi ce changement. « Alterner », « conserver », et « préserver » renvoient à d'autres manifestations.",
+        "hint": "Cherche intervention détournant un état initial."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « ignoble » ?",
+        "prompt": null,
+        "options": ["Répugnant", "Ignorant", "Noble", "Infâme"],
+        "answer": "Noble",
+        "explanation": "« Ignoble » désigne ce qui est dégradé honteusement, tandis que « noble » se décrit comme raffiné et distingué. « Répugnant », « ignorant », et « infâme » traduisent aussi des notes péjoratives.",
+        "hint": "Qualificatif pour distinguer dignité et respect."
+    }
+]

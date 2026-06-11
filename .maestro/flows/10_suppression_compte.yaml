@@ -1,0 +1,82 @@
+# COP'IQ — E2E Flow 10 : Suppression de compte (RGPD)
+# Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-099
+# ⚠️  Ce flow supprime RÉELLEMENT le compte de test — à exécuter en dernier.
+#     Utiliser un compte dédié E2E (TEST_DELETE_EMAIL) différent du compte test principal.
+# Prérequis : connecté avec TEST_DELETE_EMAIL
+
+appId: fr.copiq.app
+env:
+  TEST_DELETE_EMAIL: copiq_e2e_delete@mailsink.dev
+  TEST_DELETE_PASSWORD: E2eDelete2026!
+---
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Passer l'avertissement et l'onboarding
+- optional:
+    - tapOn:
+        text: "J'ai compris"
+- optional:
+    - tapOn:
+        text: "Démarrer maintenant"
+
+# Login avec le compte de suppression
+- tapOn:
+    text: "Se connecter"
+- tapOn:
+    id: "email_field"
+- inputText: "${TEST_DELETE_EMAIL}"
+- tapOn:
+    id: "password_field"
+- inputText: "${TEST_DELETE_PASSWORD}"
+- tapOn:
+    text: "Se connecter"
+- waitForAnimationToEnd:
+    timeout: 8000
+
+# Naviguer vers les paramètres → Données personnelles
+- tapOn:
+    text: "Paramètres"
+- waitForAnimationToEnd:
+    timeout: 3000
+
+- tapOn:
+    text: "Données personnelles"
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# La CpPrivacyPage doit être visible
+- assertVisible:
+    text: "Vos droits RGPD"
+
+# Tapper "Supprimer mon compte"
+- tapOn:
+    text: "Supprimer mon compte"
+- waitForAnimationToEnd:
+    timeout: 2000
+
+# Dialog d'avertissement : confirmer
+- assertVisible:
+    text: "irréversible"
+- tapOn:
+    text: "Continuer"
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Entrer le code de confirmation (6 chiffres envoyé par email — mock en test)
+# En CI, le code est injecté via une edge function d'administration ou un seed.
+- tapOn:
+    id: "deletion_code_field"
+- inputText: "000000"
+
+- tapOn:
+    text: "Confirmer la suppression"
+- waitForAnimationToEnd:
+    timeout: 10000
+
+# Après suppression → retour à l'écran d'accueil / login
+- assertVisible:
+    text: "Se connecter"

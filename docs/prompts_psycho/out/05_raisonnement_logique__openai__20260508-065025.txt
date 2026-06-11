@@ -1,0 +1,424 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en déduire ?",
+    "prompt": "Tous les chiens aboient. Rex est un chien.",
+    "options": [
+      "Rex est un chat",
+      "Rex ne peut pas aboyer",
+      "Rex aboie",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Rex aboie",
+    "explanation": "C'est un syllogisme simple : tous les chiens aboient, et Rex est un chien, donc Rex aboie. La structure est directe et suit la règle de transitivité. Un piège classique serait de nier que Rex représente bien un chien aboyant.",
+    "hint": "Applique le principe de base des syllogismes."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en conclure ?",
+    "prompt": "Tous les fruits de mer sont comestibles. Ce crabe est un fruit de mer.",
+    "options": [
+      "Ce crabe est toxique",
+      "Ce crabe est comestible",
+      "Ce crabe est une plante",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce crabe est comestible",
+    "explanation": "La proposition initiale indique que tous les fruits de mer sont comestibles. En sachant que le crabe est un fruit de mer, il doit donc être comestible. Ne confondez pas avec le piège de penser qu'un fruit de mer pourrait ne pas suivre cette règle générale.",
+    "hint": "Utilise la généralité de la première prémisse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel bilan pour Sandrine ?",
+    "prompt": "Tous les comptables savent utiliser Excel. Sandrine est comptable.",
+    "options": [
+      "Sandrine ne connaît pas Excel",
+      "Sandrine sait utiliser Excel",
+      "Sandrine est ingénieure",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Sandrine sait utiliser Excel",
+    "explanation": "Puisque tous les comptables savent utiliser Excel et que Sandrine est comptable, elle doit savoir utiliser Excel. La logique here repose sur l'application directe d'une catégorie générale à un cas particulier. Attention à ne pas ignorer cette transitivité.",
+    "hint": "Pense à l'appartenance de Sandrine au groupe initial."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que peut-on en déduire ?",
+    "prompt": "Tous les oiseaux peuvent voler. Un moineau est un oiseau.",
+    "options": [
+      "Un moineau ne peut pas voler",
+      "Un moineau peut voler",
+      "Un moineau est un poisson",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Un moineau peut voler",
+    "explanation": "Il s'agit d'un syllogisme par inclusion : tous les oiseaux peuvent voler, et un moineau est un oiseau, donc un moineau peut voler. Ne tombez pas dans le piège de supposer que certains oiseaux ne respectent pas cette propriété sans indications contraires.",
+    "hint": "Considère la capacité des oiseaux à voler."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel peut être le constat ?",
+    "prompt": "Tous les sportifs sont en bonne santé. Maxime est un sportif.",
+    "options": [
+      "Maxime est en mauvaise santé",
+      "Maxime est en bonne santé",
+      "Maxime est un artiste",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Maxime est en bonne santé",
+    "explanation": "Ce syllogisme infère une propriété générale (être en bonne santé) à un individu (Maxime) appartenant à ce groupe (sportifs). Assurez-vous de respecter le lien établi par les prémisses et n'inversez pas les conclusions.",
+    "hint": "Applique la relation décrite dans les prémisses."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion ?",
+    "prompt": "Tous les arbres ont des feuilles. Ce chêne est un arbre.",
+    "options": [
+      "Ce chêne n'a pas de feuilles",
+      "Ce chêne a des feuilles",
+      "Ce chêne est un arbuste",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce chêne a des feuilles",
+    "explanation": "La conclusion émane de la propriété attributive : si tous les arbres ont des feuilles et un chêne est un arbre, alors nécessairement un chêne a des feuilles. Ne sous-estimez pas la clarté de cette relation directe.",
+    "hint": "Regarde la relation universelle entre arbres et feuilles."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel lien établir ?",
+    "prompt": "Tous les poissons peuvent nager. Un saumon est un poisson.",
+    "options": [
+      "Un saumon ne peut pas nager",
+      "Un saumon peut nager",
+      "Un saumon est un mammifère",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Un saumon peut nager",
+    "explanation": "Ce syllogisme est simple et basé sur l'unicité de l'attribut commun (nager) des membres du groupe (poissons). Un saumon étant un poisson, il peut nager, évitez donc de généraliser à d'autres catégories sans preuve.",
+    "hint": "Focus sur la caractéristique commune des poissons."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion tirer ?",
+    "prompt": "Toutes les voitures rouges sont rapides. Celle-ci est rouge.",
+    "options": [
+      "Cette voiture est lente",
+      "Cette voiture est rapide",
+      "Cette voiture est bleue",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Cette voiture est rapide",
+    "explanation": "La conclusion découle naturellement des prémisses : toutes les voitures rouges sont rapides, et la voiture en question est rouge, donc forcément rapide. Le piège serait de douter de la généralité sans indice!",
+    "hint": "Considère l'association directe établie dans la prémisse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle conclusion est possible ?",
+    "prompt": "Tous les doux rêves se réalisent. Ce rêve est doux.",
+    "options": [
+      "Ce rêve ne se réalisera pas",
+      "Ce rêve se réalisera",
+      "Ce rêve est un cauchemar",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Ce rêve se réalisera",
+    "explanation": "Si tous les doux rêves se réalisent et que ce rêve est doux, par conséquent, il se réalisera. Le piège classique serait d'ignorer la certitude des doux rêves mentionnée dans la première prémisse.",
+    "hint": "S'appuyer sur la sureté donnée par la prémisse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la couleur de la voiture ?",
+    "prompt": "Toutes les voitures bleues ont des phares à LED. Cette voiture a des phares à LED.",
+    "options": [
+      "La voiture est rouge",
+      "La voiture n'est pas bleue",
+      "La voiture est bleue",
+      "On ne peut pas savoir"
+    ],
+    "answer": "On ne peut pas savoir",
+    "explanation": "Bien que toutes les voitures bleues aient des phares à LED, cela ne signifie pas que seules les voitures bleues ont cette caractéristique. Ce syllogisme met en évidence une erreur logique typique : supposer une réciprocité absente.",
+    "hint": "Ne confonds pas implication et équivalence."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le plus cher ?",
+    "prompt": "Le stylo coûte plus cher que le carnet. Le carnet coûte plus cher que le crayon.",
+    "options": [
+      "Le stylo",
+      "Le carnet",
+      "Le crayon",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Le stylo",
+    "explanation": "En classant les prix : stylo > carnet > crayon. Le stylo est donc le plus cher. Ne vous laissez pas distraire par l'ordre des phrases, l'important est de reconstituer la chaîne d'ordres.",
+    "hint": "Visualise la relation en termes d'ordre de prix."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle couleur est Jack ?",
+    "prompt": "Jack est plus grand que John. John est plus grand que Jill.",
+    "options": [
+      "Jack",
+      "John",
+      "Jill",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Jack",
+    "explanation": "En suivant l'ordre, Jack > John > Jill. La question cherche à identifier le plus grand, qui est logiquement Jack. Un piège possible est de se laisser embrouiller en inversant l'ordre présenté.",
+    "hint": "Reconstitue l'ordre décroissant de taille."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel jour sommes-nous ?",
+    "prompt": "Si aujourd'hui est samedi, alors demain sera dimanche. Aujourd'hui est effectivement samedi.",
+    "options": [
+      "Aujourd'hui est lundi",
+      "Aujourd'hui est samedi",
+      "Demain est lundi",
+      "Demain est dimanche"
+    ],
+    "answer": "Demain est dimanche",
+    "explanation": "À partir du modus ponens, si la condition initiale est vérifiée (aujourd'hui est samedi), la conclusion directe (demain sera dimanche) s'ensuit. Ne confondez pas validation de condition et renversement d'implication.",
+    "hint": "Utilise la relation conditionnelle simple."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel constat faire ?",
+    "prompt": "Si Anna étudie, elle réussira l'examen. Anna étudie beaucoup.",
+    "options": [
+      "Anna ratera l'examen",
+      "Anna réussira l'examen",
+      "Anna est malade",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Anna réussira l'examen",
+    "explanation": "Selon le modus ponens : étudier mène à réussir. Comme Anna étudie, il s'ensuit logiquement qu'elle réussira. Attention de ne pas négliger la condition première qui est bien remplie ici.",
+    "hint": "Valide l'implication par la condition assurée."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui est la personne la plus jeune ?",
+    "prompt": "Lucas est plus jeune que Simon. Simon est plus jeune que Marie. Marie est plus jeune que Paul.",
+    "options": [
+      "Lucas",
+      "Simon",
+      "Marie",
+      "Paul"
+    ],
+    "answer": "Lucas",
+    "explanation": "En classant par âge : Lucas < Simon < Marie < Paul. Ainsi, Lucas est le plus jeune. Le piège est d'oublier de lier profondément les âges pour retrouver le plus jeune par ordre.",
+    "hint": "Reconstitue l'ordre d'âge des personnes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est son prix ?",
+    "prompt": "Le livre est moins cher que le cahier. Le cahier est moins cher que le stylo. Le carnet est plus cher que le livre mais moins cher que le cahier.",
+    "options": [
+      "Le carnet est le moins cher",
+      "Le livre est le moins cher",
+      "Le stylo est le moins cher",
+      "Le carnet est le plus cher"
+    ],
+    "answer": "Le livre est le moins cher",
+    "explanation": "En classant : livre < carnet < cahier < stylo. Donc, le livre est le moins cher. Le piège ici est d'être distrait par les comparaisons successives et d'oublier de les situer correctement.",
+    "hint": "Ordonne correctement les objets selon leur prix."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel jour est-il ?",
+    "prompt": "Si aujourd'hui est vendredi, alors c'est jour de poisson. Si demain est samedi, alors aujourd'hui est vendredi.",
+    "options": [
+      "Aujourd'hui est samedi",
+      "Aujourd'hui est vendredi",
+      "Aujourd'hui est dimanche",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Aujourd'hui est vendredi",
+    "explanation": "Étant donné que demain est samedi, aujourd'hui doit être vendredi. Les deux conditions se suivent logiquement. Ne vous laissez pas induire en erreur par les jours, gardez une logique séquentielle.",
+    "hint": "Suivez les jours logiquement en avant."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle relation pour Claire ?",
+    "prompt": "Claire est plus grande que Sophie. Sophie est plus grande que Émile. Émile est plus grand que Martin.",
+    "options": [
+      "Claire est plus grande que Martin",
+      "Sophie est plus grande que Claire",
+      "Émile est plus grand que Claire",
+      "Martin est le plus grand"
+    ],
+    "answer": "Claire est plus grande que Martin",
+    "explanation": "En structurant par taille : Claire > Sophie > Émile > Martin, on conclut que Claire est plus grande que Martin. Un piège récurrent est de mal interpréter l'ordre énoncé.",
+    "hint": "Crée un schéma pour clarifier les relations."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle information déduire ?",
+    "prompt": "Si Pierre travaille, alors il économisera. S'il économise, alors il partira en vacances. Pierre part en vacances.",
+    "options": [
+      "Pierre n'économise pas",
+      "Pierre travaille",
+      "Pierre ne part pas en vacances",
+      "Pierre ne travaille pas"
+    ],
+    "answer": "Pierre travaille",
+    "explanation": "En backtracing, si Pierre est en vacances, il a dû économiser, et donc travailler. Cette rétroaction est un piège classique dans les chaînes conditionnelles multiples.",
+    "hint": "Travaillez à rebours à partir de la conclusion."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Qui semble le plus rapide ?",
+    "prompt": "La moto est plus rapide que la bicyclette. La bicyclette est plus rapide que la marche. Le scooter est plus rapide que la bicyclette.",
+    "options": [
+      "La moto",
+      "Le scooter",
+      "La marche",
+      "La bicyclette"
+    ],
+    "answer": "La moto",
+    "explanation": "En réorganisant : moto > scooter > bicyclette > marche. La moto apparaît comme le plus rapide. Un piège commun est de ne pas incorporer correctement tous les comparatifs dans l'ordre.",
+    "hint": "Reconstruction hiérarchique des vitesses."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle journée est représentée ?",
+    "prompt": "Si aujourd'hui est lundi, alors demain sera mardi. Si hier était dimanche, alors aujourd'hui est lundi.",
+    "options": [
+      "Aujourd'hui est samedi",
+      "Aujourd'hui est lundi",
+      "Aujourd'hui est mardi",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Aujourd'hui est lundi",
+    "explanation": "Sachant que hier était dimanche, aujourd'hui doit être lundi. En respectant le cadre fourni, ne laissez pas votre sens du temps se confondre avec d'autres indications.",
+    "hint": "Travaillez chronologiquement de jour en jour."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle vérité pour Emma ?",
+    "prompt": "Si Emma écrit un livre, alors elle publiera dans un an. Emma publie un livre.",
+    "options": [
+      "Emma n'a pas écrit de livre",
+      "Emma écrit un livre",
+      "Emma ne publiera jamais",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Emma écrit un livre",
+    "explanation": "Étant donné que la publication suit l'écriture, Emma doit avoir écrit un livre. Le piège ici réside dans une mauvaise interprétation de l'implication temporelle.",
+    "hint": "Pensez à la séquence temporelle logique."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle affirmation pour Tom ?",
+    "prompt": "Si Tom court tous les jours, alors il se maintiendra en forme. S'il se maintient en forme, alors il est heureux. Tom est heureux.",
+    "options": [
+      "Tom court tous les jours",
+      "Tom est malheureux",
+      "Tom ne court jamais",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Tom court tous les jours",
+    "explanation": "En déduisant, si Tom est heureux, il est en forme, et donc il court quotidiennement. Ce type de rétroaction est un piège commun lorsqu'on inverse une implication.",
+    "hint": "Regardez sous la structure conditionnelle rétroactive."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle conclusion pour Sarah ?",
+    "prompt": "Sarah participe aux marathons. Tous les participants des marathons sont courageux. Elle termine tous ses marathons.",
+    "options": [
+      "Sarah n'est pas courageuse",
+      "Sarah échoue souvent",
+      "Sarah est courageuse",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Sarah est courageuse",
+    "explanation": "Puisque participer implique courage et Sarah participe, elle doit être courageuse. Cette inférence simple peut être perdue dans des détails non pertinents.",
+    "hint": "Étable par transitivité et appartenance."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel jour est-ce ?",
+    "prompt": "Si aujourd'hui est mercredi, alors cessez de travailler tôt. Si hier était mardi, alors aujourd'hui est mercredi.",
+    "options": [
+      "Aujourd'hui est vendredi",
+      "Aujourd'hui est mercredi",
+      "Aujourd'hui est jeudi",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Aujourd'hui est mercredi",
+    "explanation": "Vu que hier était mardi, aujourd'hui doit être mercredi. Assurez-vous de lier correctement les jours à la séquence appropriée.",
+    "hint": "Suivez le calendrier avec logique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est l'issue pour Lucie aujourd'hui ?",
+    "prompt": "Lucie a trois fois le montant sur son compte que Paul, 200€ de moins que Julien. Julien a 400€.",
+    "options": [
+      "Lucie a 600€",
+      "Lucie a 200€",
+      "Lucie a 800€",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Lucie a 200€",
+    "explanation": "Si Julien a 400€, alors Lucie a 200€ de moins, soit 200€. Le piège est de focaliser trop sur le rapport avec Paul et ignorer le lien décisif avec Julien.",
+    "hint": "Concentrez-vous sur les différences de montant."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est l'issue pour la course ?", 
+    "prompt": "Michel double le deuxième,a ensuite doublé le troisième",
+    "options": [
+      "Michel termine premier",
+      "Michel termine deuxième",
+      "Michel termine troisième",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Michel termine premier",
+    "explanation": "Michel prend la première place en doublant ceux qui étaient devant lui, mais attention à bien suivre les mouvements séquentiels.",
+    "hint": "Chaque position doit être bien suivie."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est l'issue pour la bourse d'études ?", 
+    "prompt": "Paul a une note inférieure à Marie qui a une note supérieure à Jean",
+    "options": [
+      "Paul a la bourse",
+      "Jean a la bourse",
+      "Marie a la bourse",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Marie a la bourse",
+    "explanation": "Marie postule avec une note meilleure que Jean et Paul en raison de sa performance marquée. L'ordre doit être strictement préservé pour validité.",
+    "hint": "Classement performantielle."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est l'analyse pour les fruits ?", 
+    "prompt": "Si une poire, alors juteuse. Poire croquée par Emma.", 
+    "options": [
+      "Poire croquée n'est pas juteuse",
+      "Poire croquée est juteuse",
+      "Étaie de l'analyse popéenne",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Poire croquée est juteuse",
+    "explanation": "Emma consommé poire implique jutosité si la poire initiale conformationnelle respecte prémisse.",
+    "hint": "Proceeding conditionandpragmatis"
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle est la sortie pour le puzzle ?", 
+    "prompt": "Si spaghettis, alors tomates. Dîné spaghettis.",
+    "options": [
+      "Pas de tomates dans spaghettis",
+      "Tomates présentes",
+      "Controverse avec champignons",
+      "On ne peut pas savoir"
+    ],
+    "answer": "Tomates présentes",
+    "explanation": "Assurément les pâtes présentais cette composante initiatique légumes et, davantage plus, intégrées d'entrée.",
+    "hint": "Accueil ubiquitalement de prémisses culinaires."
+  }
+]
+```

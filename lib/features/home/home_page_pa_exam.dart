@@ -46,7 +46,7 @@ class _T {
 
 Color _muted(BuildContext context, [double opacity = .7]) {
   final isDark = Theme.of(context).brightness == Brightness.dark;
-  return (isDark ? Colors.white : Colors.black).withOpacity(opacity);
+  return (isDark ? Colors.white : Colors.black).withValues(alpha: opacity);
 }
 
 // ======================================================================
@@ -736,12 +736,12 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
     try {
       img = Image.asset(widget.item.image, fit: BoxFit.cover);
     } catch (_) {
-      img = Container(color: const Color(0xFF9E9E9E).withOpacity(.25));
+      img = Container(color: const Color(0xFF9E9E9E).withValues(alpha: .25));
     }
 
     final colors = [
-      Colors.black.withOpacity(.65),
-      Colors.black.withOpacity(.30),
+      Colors.black.withValues(alpha: .65),
+      Colors.black.withValues(alpha: .30),
       Colors.transparent,
     ];
 
@@ -771,7 +771,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
             top: 12,
             right: 12,
             child: Material(
-              color: Theme.of(context).cardColor.withOpacity(.95),
+              color: Theme.of(context).cardColor.withValues(alpha: .95),
               shape: const CircleBorder(),
               child: InkWell(
                 customBorder: const CircleBorder(),
@@ -818,7 +818,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.poppins(
-                      color: Colors.white.withOpacity(.85),
+                      color: Colors.white.withValues(alpha: .85),
                       fontWeight: FontWeight.w600,
                       fontSize: 12,
                       letterSpacing: .2,
@@ -925,7 +925,7 @@ class _MiniCard extends StatelessWidget {
     try {
       img = Image.asset(image, fit: BoxFit.cover);
     } catch (_) {
-      img = Container(color: const Color(0xFF9E9E9E).withOpacity(.25));
+      img = Container(color: const Color(0xFF9E9E9E).withValues(alpha: .25));
     }
 
     return Material(
@@ -1043,7 +1043,7 @@ class _SlidingPillNavBar extends StatelessWidget {
     final dotSize = (h * 0.62).clamp(30.0, 44.0);
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final barColor = isDark ? Colors.white.withOpacity(.08) : _T.ink;
+    final barColor = isDark ? Colors.white.withValues(alpha: .08) : _T.ink;
 
     return SafeArea(
       top: false,
@@ -1159,7 +1159,7 @@ class _CategoryDetailPage extends StatelessWidget {
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
-                  color: _T.ink.withOpacity(0.1),
+                  color: _T.ink.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: const Icon(Icons.article_rounded, color: _T.ink),

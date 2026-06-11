@@ -839,7 +839,7 @@ class _T {
       r28 = 28;
 
   static BoxShadow get shadow => BoxShadow(
-    color: Colors.black.withOpacity(.08),
+    color: Colors.black.withValues(alpha: .08),
     blurRadius: 20,
     offset: const Offset(0, 10),
   );
@@ -897,7 +897,7 @@ Color _muted(BuildContext context, [double a = .72]) {
   final base =
       Theme.of(context).textTheme.bodySmall?.color ??
       (Theme.of(context).brightness == Brightness.dark ? Colors.white : _T.ink);
-  return base.withOpacity(a);
+  return base.withValues(alpha: a);
 }
 
 // =========================== LOGGING ADMIN ===========================
@@ -1917,7 +1917,7 @@ class _CategoryDetailPage extends StatelessWidget {
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
-                  color: _T.ink.withOpacity(0.1),
+                  color: _T.ink.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(Icons.article_rounded, color: _T.ink),
@@ -2019,11 +2019,11 @@ class _CongratsBanner extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: isDark ? Colors.white.withOpacity(.06) : Colors.white,
+        color: isDark ? Colors.white.withValues(alpha: .06) : Colors.white,
         borderRadius: BorderRadius.circular(_T.r20),
         boxShadow: [_T.shadow],
         border: Border.all(
-          color: isDark ? Colors.white24 : Colors.black.withOpacity(.06),
+          color: isDark ? Colors.white24 : Colors.black.withValues(alpha: .06),
         ),
       ),
       child: Row(
@@ -2400,12 +2400,12 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
     try {
       img = Image.asset(item.image, fit: BoxFit.cover);
     } catch (_) {
-      img = Container(color: _T.g400.withOpacity(.25));
+      img = Container(color: _T.g400.withValues(alpha: .25));
     }
 
     final overlay = isDark
-        ? [Colors.black.withOpacity(.55), Colors.transparent]
-        : [Colors.black.withOpacity(.45), Colors.transparent];
+        ? [Colors.black.withValues(alpha: .55), Colors.transparent]
+        : [Colors.black.withValues(alpha: .45), Colors.transparent];
 
     final String listenKey = item.flagKey ?? 'paywall_enabled';
 
@@ -2456,7 +2456,7 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
                               width: 44,
                               height: 44,
                               decoration: BoxDecoration(
-                                color: Colors.red.withOpacity(.25),
+                                color: Colors.red.withValues(alpha: .25),
                                 shape: BoxShape.circle,
                               ),
                             ),
@@ -2464,7 +2464,7 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
                         ),
                       ),
                       Material(
-                        color: Theme.of(context).cardColor.withOpacity(.95),
+                        color: Theme.of(context).cardColor.withValues(alpha: .95),
                         shape: const CircleBorder(),
                         child: InkWell(
                           customBorder: const CircleBorder(),
@@ -2515,7 +2515,7 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
                           BackdropFilter(
                             filter: ImageFilter.blur(sigmaX: 2.6, sigmaY: 2.6),
                             child: Container(
-                              color: Colors.black.withOpacity(.10),
+                              color: Colors.black.withValues(alpha: .10),
                             ),
                           ),
                           Center(
@@ -2525,7 +2525,7 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
                                 horizontal: 12,
                               ),
                               decoration: BoxDecoration(
-                                color: Colors.black.withOpacity(.55),
+                                color: Colors.black.withValues(alpha: .55),
                                 borderRadius: BorderRadius.circular(999),
                               ),
                               child: const Row(
@@ -2599,7 +2599,7 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
                           height: 46,
                           padding: const EdgeInsets.symmetric(horizontal: 14),
                           decoration: BoxDecoration(
-                            color: _T.ink.withOpacity(.92),
+                            color: _T.ink.withValues(alpha: .92),
                             borderRadius: BorderRadius.circular(18),
                           ),
                           child: Row(
@@ -2674,7 +2674,7 @@ class _MiniCard extends StatelessWidget {
     try {
       img = Image.asset(image, fit: BoxFit.cover);
     } catch (_) {
-      img = Container(color: _T.g400.withOpacity(.25));
+      img = Container(color: _T.g400.withValues(alpha: .25));
     }
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
@@ -2723,7 +2723,7 @@ class _MiniCard extends StatelessWidget {
                                       sigmaY: 2.6,
                                     ),
                                     child: Container(
-                                      color: Colors.black.withOpacity(.10),
+                                      color: Colors.black.withValues(alpha: .10),
                                     ),
                                   ),
                                   Center(
@@ -2733,7 +2733,7 @@ class _MiniCard extends StatelessWidget {
                                         horizontal: 10,
                                       ),
                                       decoration: BoxDecoration(
-                                        color: Colors.black.withOpacity(.55),
+                                        color: Colors.black.withValues(alpha: .55),
                                         borderRadius: BorderRadius.circular(
                                           999,
                                         ),
@@ -2852,7 +2852,7 @@ class _SlidingPillNavBar extends StatelessWidget {
     final dotSize = (h * 0.62).clamp(30.0, 44.0);
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final barColor = isDark ? Colors.white.withOpacity(.08) : _T.ink;
+    final barColor = isDark ? Colors.white.withValues(alpha: .08) : _T.ink;
 
     return SafeArea(
       top: false,

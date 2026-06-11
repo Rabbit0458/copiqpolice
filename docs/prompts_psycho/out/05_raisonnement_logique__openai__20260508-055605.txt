@@ -1,0 +1,548 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on conclure ?",
+        "prompt": "Tous les chiens aboient. Rex est un chien.",
+        "options": [
+            "Rex miaule",
+            "Rex aboie",
+            "Rex est silencieux",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rex aboie",
+        "explanation": "Ceci est un syllogisme classique. Si tous les chiens aboient et que Rex est un chien, alors par transitivité, Rex aboie également. Le piège classique ici est d'oublier l'inférence par transitivité menant à la conclusion évidente.",
+        "hint": "Considère la relation de transitivité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui a réussi le test ?",
+        "prompt": "Tous les étudiants qui ont révisé ont réussi le test. Anna a révisé.",
+        "options": [
+            "Anna a échoué",
+            "Anna a réussi",
+            "Anna n'a pas passé le test",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Anna a réussi",
+        "explanation": "Il s'agit d'une déduction simple. Tous les étudiants qui ont révisé ont réussi. Anna a révisé, donc elle a réussi. Un piège à éviter est de supposer qu'Anna n'a pas passé ou échoué, par manque d'information contextuelle.",
+        "hint": "Rappelle-toi que toutes les conditions indiquées s'appliquent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le lien entre Tom et la piscine ?",
+        "prompt": "Tom nage tous les mardis. Aujourd'hui, c'est mardi.",
+        "options": [
+            "Tom nage aujourd'hui",
+            "Tom ne nage pas aujourd'hui",
+            "Tom court aujourd'hui",
+            "On ne sait pas si Tom nage"
+        ],
+        "answer": "Tom nage aujourd'hui",
+        "explanation": "La question utilise une sorte de condition que Tom remplit chaque mardi. Donc, s'il nage tous les mardis et que c'est mardi, il nage aujourd'hui. Le piège consisterait à ignorer le lien entre le jour précis et l'activité habituelle.",
+        "hint": "Les habitudes rigides ne changent pas sans autre précision."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Est-ce que Léa sera en retard ?",
+        "prompt": "Si Léa ne se réveille pas avant 7h00, elle sera en retard. Il est 7h30 et Léa dort encore.",
+        "options": [
+            "Léa sera en retard",
+            "Léa ne sera pas en retard",
+            "Léa est déjà au travail",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Léa sera en retard",
+        "explanation": "Ici, on applique un raisonnement par modus ponens. La condition 'si Léa ne se réveille pas avant 7h00' est remplie, donc la conséquence 'elle sera en retard' s'applique. Le piège classique est de croire que quelque chose pourrait la sauver d'être en retard sans autre information.",
+        "hint": "Encalvez bien les conditions données."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le choix de Simon ?",
+        "prompt": "Simon préfère les pommes aux oranges. Il n'y a que des pommes et des bananes disponibles.",
+        "options": [
+            "Simon choisit les bananes",
+            "Simon choisit les pommes",
+            "Simon ne choisit rien",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Simon choisit les pommes",
+        "explanation": "Logiquement, Simon préfère les pommes aux oranges, et comme il y a des pommes disponibles et pas d'oranges, il choisira les pommes. L'erreur possible serait de supposer un goût potentiel pour les bananes sans fondement dans l'énoncé.",
+        "hint": "Ecoute les préférences énoncées dans le contexte."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on dire de Max ?",
+        "prompt": "Tous les oiseaux volent. Max est un oiseau.",
+        "options": [
+            "Max ne vole pas",
+            "Max nage",
+            "Max vole",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Max vole",
+        "explanation": "C'est encore un syllogisme simple. Si tous les oiseaux volent et que Max est un oiseau, alors Max vole. Le piège à éviter est de penser qu’il existe une exception ici sans que cela soit mentionné dans l’énoncé.",
+        "hint": "Utilise la généralité indiquée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qu'est-ce que Léo va découvrir ?",
+        "prompt": "Si Léo entre dans la pièce noire, il découvrira la boîte secrète. Léo entre dans la pièce noire.",
+        "options": [
+            "Léo découvre la boîte",
+            "Léo n'entre plus",
+            "Léo voit sa chambre",
+            "Léo reste dehors"
+        ],
+        "answer": "Léo découvre la boîte",
+        "explanation": "On utilise ici le modus ponens. L'entrée dans la pièce permet de découvrir la boîte. Si Léo entre, la conséquence suit : il découvre la boîte. Il faut se méfier de croire que quelque chose peut fausser cette conséquence spécifique.",
+        "hint": "Les actions spécifiques ont des conséquences spécifiques."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui nettoie la cuisine ?",
+        "prompt": "Seule Emma nettoie la cuisine après dîner. Emma a dîné.",
+        "options": [
+            "Emma nettoie",
+            "Emma ne nettoie pas",
+            "Max nettoie",
+            "On ne sait pas qui nettoie"
+        ],
+        "answer": "Emma nettoie",
+        "explanation": "Comme Emma nettoie la cuisine après avoir dîné, et qu'elle a dîné, elle nettoiera la cuisine. La confusion pourrait provenir de penser que d'autres personnes pourraient nettoyer sans fondement dans le texte donné.",
+        "hint": "Notez qui est responsable de certaines tâches selon les situations."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le fruit préféré de Pauline aujourd'hui ?",
+        "prompt": "Tous les lundis, Pauline préfère les poires aux pommes. Aujourd'hui, nous sommes lundi.",
+        "options": [
+            "Les poires",
+            "Les pommes",
+            "Les raisins",
+            "On ne sait pas"
+        ],
+        "answer": "Les poires",
+        "explanation": "Puisque Pauline préfère les poires chaque lundi et qu'aujourd'hui est lundi, elle préférera les poires. Un piège est de supposer que les préférences pourraient changer sans information supplémentaire.",
+        "hint": "Retiens l'habitude régulière selon les jours spécifiques."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui gagne la course ?",
+        "prompt": "Tous les ans, celui qui commence en premier finit en premier. Cette année, c'est Pierre qui commence.",
+        "options": [
+            "Pierre",
+            "Paul",
+            "Jacques",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Pierre",
+        "explanation": "Étant donné le patron établi que celui qui commence en premier gagne, et que Pierre a commencé en premier, il gagne. Le piège classique est de penser qu'un changement aléatoire pourrait survenir sans en avoir la garantie.",
+        "hint": "Observe la constance des résultats passés."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le choix de Nina ?",
+        "prompt": "Chaque fois que le soleil brille, Nina va au parc. Il fait beau aujourd'hui.",
+        "options": [
+            "Nina reste à la maison",
+            "Nina va au parc",
+            "Nina va au cinéma",
+            "On ne sait pas où Nina va"
+        ],
+        "answer": "Nina va au parc",
+        "explanation": "La condition habituelle indique que si le soleil brille, Nina va au parc. Le piège est de ne pas prétendre à d'autres destinations sans justification.",
+        "hint": "Appuyez-vous sur la routine habituelle quand ces conditions sont présentes."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que fera Lucie ce soir ?",
+        "prompt": "Lucie sort tous les vendredis soirs. Aujourd'hui, c'est vendredi.",
+        "options": [
+            "Lucie reste chez elle",
+            "Lucie sort",
+            "Lucie va au lit tôt",
+            "On n'en est pas sûr"
+        ],
+        "answer": "Lucie sort",
+        "explanation": "Puisque Lucie sort chaque vendredi et qu'aujourd'hui est vendredi, on s'attend à ce qu'elle sorte ce soir. Un piège consisterait à supposer un changement sans raison indiquée dans l'énoncé.",
+        "hint": "Les schémas récurrents dictent les actions prévisibles."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Comment se déplace Jean ?",
+        "prompt": "Jean prend toujours le vélo pour aller au travail s'il pleut. Il pleut aujourd'hui.",
+        "options": [
+            "Jean prend le bus",
+            "Jean conduit sa voiture",
+            "Jean prend le vélo",
+            "On ne sait pas comment Jean se déplace"
+        ],
+        "answer": "Jean prend le vélo",
+        "explanation": "Selon l'habitude de Jean, en cas de pluie, il utilise le vélo pour se rendre au travail. La confusion pourrait résider dans le fait d'envisager d'autres moyens de transport sans se baser sur les informations fournies.",
+        "hint": "Habitudes fixées par des conditions météorologiques précises."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle boisson prendra Paul ?",
+        "prompt": "Si Paul mange des biscuits, il boit du lait. Paul mange des biscuits.",
+        "options": [
+            "Paul boit du lait",
+            "Paul boit du jus",
+            "Paul ne boit rien",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Paul boit du lait",
+        "explanation": "Par modus ponens, si Paul mange des biscuits, alors il boira du lait. Un piège serait de croire qu'il pourrait boire autre chose sans mention de cela.",
+        "hint": "Restez sur les associations directes établies dans l'habitude."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel livre Marie choisit-elle ?",
+        "prompt": "Tous les livres de Marie sont intéressants. Le livre qu'elle lit actuellement est de Marie.",
+        "options": [
+            "Le livre est ennuyeux",
+            "Le livre est intéressant",
+            "Le livre est court",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le livre est intéressant",
+        "explanation": "Un syllogisme simple : si tous les livres de Marie sont intéressants, alors le livre qu'elle lit, puisqu'il est de Marie, est intéressant. Le piège est de supposer que nous devrons savoir plus sur le livre en particulier alors que cette information est suffisante.",
+        "hint": "Pensez à la propriété de tous les éléments d'un set."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le résultat de Luc ?",
+        "prompt": "Tous les élèves en classe de Luc ont réussi l'examen. Luc est en classe.",
+        "options": [
+            "Luc a échoué",
+            "Luc a réussi",
+            "Luc n'a pas passé l'examen",
+            "On ne sait pas"
+        ],
+        "answer": "Luc a réussi",
+        "explanation": "Puisque tous les élèves de la classe de Luc ont réussi, et que Luc fait partie de cette classe, il a évidemment réussi. Evitez le piège de penser dans des exceptions contradictoires sans preuves.",
+        "hint": "Utilisez les faits globales mentionnés."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que fait Clara chaque samedi ?",
+        "prompt": "Clara va au marché chaque samedi. Aujourd'hui, c'est samedi.",
+        "options": [
+            "Clara va au cinéma",
+            "Clara reste à la maison",
+            "Clara va au marché",
+            "On ne sait pas ce que fait Clara"
+        ],
+        "answer": "Clara va au marché",
+        "explanation": "Etant donné que Clara va systématiquement au marché le samedi, elle ira aujourd'hui, car il est samedi. Un souci récurrent est de supposer qu'une action pourrait ne pas suivre malgré le jour précis désigné.",
+        "hint": "Repérez les comportements répétés par jours de la semaine."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est assis à côté de Julie ?",
+        "prompt": "Si Paul est à côté de Marie, alors Julie est à côté de Paul. Paul est à côté de Marie.",
+        "options": [
+            "Pierre",
+            "Julie",
+            "Simon",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Julie",
+        "explanation": "Ceci est un cas de modus ponens. Si Paul est à côté de Marie, alors Julie doit être à côté de Paul. Un piège courant ici est d’ignorer complètement l'association donnée par les conditions.",
+        "hint": "Vérifiez bien comment la chaîne de relations se forme."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel animal est un mammifère ?",
+        "prompt": "Tous les dauphins sont des mammifères. Tous les dauphins vivent dans la mer. Il existe des poissons qui ne sont pas des mammifères.",
+        "options": [
+            "Dauphin",
+            "Poisson",
+            "Moule",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Dauphin",
+        "explanation": "Ici, selon les prémisses données, bien que tous les dauphins vivent dans la mer, ce sont bien des mammifères, contrairement à certains poissons. Le piège serait de confondre vivre dans la mer avec être un poisson.",
+        "hint": "Concentrez-vous sur les propriétés spécifiées des catégories."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le résultat probable ?",
+        "prompt": "Quand il pleut, la rue est glissante. Il a beaucoup plu hier soir.",
+        "options": [
+            "La rue est sèche",
+            "La rue est glissante",
+            "Il fait chaud",
+            "On ne peut pas savoir"
+        ],
+        "answer": "La rue est glissante",
+        "explanation": "La pluie rend la rue glissante, et comme il pleuvait hier soir, la rue doit être aujourd'hui glissante. Le piège commun est de se laisser distraire par le temps actuel plutôt qu'une condition passée en rapport direct.",
+        "hint": "Penser aux conséquences assez immédiates d'une situation."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle condition est remplie pour que Tom soit présent ?",
+        "prompt": "Si Tom jouait de la guitare hier soir, il n'est pas là encore aujourd'hui. Tom jouait de la guitare hier soir.",
+        "options": [
+            "Tom est présent",
+            "Tom manque",
+            "Tom chante",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Tom manque",
+        "explanation": "Puisque l'énoncé dit que s'il jouait hier soir, il n'est pas là aujourd'hui, et qu'il a joué, il est donc absent. Le piège ici est de s'enliser dans le détails supplémentaires non pertinents.",
+        "hint": "Concentrez-vous sur la conséquence de la condition spécifique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel voyageur partage une chambre avec Marie ?",
+        "prompt": "Si Simon part en voyage, alors Paul partage toujours une chambre avec Marie. Simon a effectivement pris l'avion hier.",
+        "options": [
+            "Pierre",
+            "Paul",
+            "Jean",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Paul",
+        "explanation": "Selon le modus ponens, si Simon part, Paul se retrouve simplement à partager avec Marie. Ne vous laissez pas tromper en pensant que d'autres détails peuvent changer la situation sans justification.",
+        "hint": "Enchaînez les implications de chaque événement respectif."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui a pris sa décision ?",
+        "prompt": "Si Sébastien reçoit une promotion, alors il achète une nouvelle voiture. Sébastien vient d'acheter une nouvelle voiture.",
+        "options": [
+            "Sébastien ne reçoit pas de promotion",
+            "Sébastien reçoit une promotion",
+            "Sébastien part en vacances",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Sébastien reçoit une promotion",
+        "explanation": "La déduction par contraposée nous dit que si l'événement d'acheter une voiture arrive, c'est que la condition pour acheter est remplie, donc Sébastien a une promotion. Le piège serait d'ignorer les conséquences des actions pleinement réalisées.",
+        "hint": "Envisagez les conséquences déclenchées par l'action."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus rapide ?",
+        "prompt": "Usain court plus vite que Ben. Ben court plus vite que Éric. Éric court plus vite que Tom.",
+        "options": [
+            "Usain",
+            "Ben",
+            "Éric",
+            "Tom"
+        ],
+        "answer": "Usain",
+        "explanation": "Nous devons construire une chaîne d'inégalités : Usain > Ben > Éric > Tom. Avec cette hiérarchie, Usain est le coureur le plus rapide. La complexité peut surgir si les inégalités sont mal organisées.",
+        "hint": "Ordre d'inégalités formé par transitivité claire."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui a le salaire le plus bas ?",
+        "prompt": "Sophie gagne plus qu'Emma. Emma gagne plus que Lucas. Lucas gagne plus que David.",
+        "options": [
+            "Sophie",
+            "Emma",
+            "Lucas",
+            "David"
+        ],
+        "answer": "David",
+        "explanation": "En structurant les inégalités ainsi : Sophie > Emma > Lucas > David, il est clair que David est celui qui gagne le moins. La difficulté vient quand on oublie de bien établir l'ordre de comparaison.",
+        "hint": "Chiffre les salaires par la démarche de comparaison."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans quelle pièce se trouve Mathieu ?",
+        "prompt": "Si Mathieu ne se trouve pas dans la cuisine, alors il est dans la salle de jeux. Mathieu n'est pas dans la cuisine.",
+        "options": [
+            "Salle de bain",
+            "Chambre",
+            "Salle de jeux",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Salle de jeux",
+        "explanation": "La prémisse établit clairement qu'en l'absence en cuisine, c'est dans la salle de jeux que Mathieu se trouve. La tentation de rajouter des pièces non mentionnées pourrait brouiller ce syllogisme.",
+        "hint": "Pensez aux alternatives spécifiées par l'énoncé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'état des affaires de Jules ?",
+        "prompt": "Si Jules vend chaque produit, alors il fera un profit. Jules a vendu chaque produit cette semaine.",
+        "options": [
+            "Jules est à perte",
+            "Jules équilibre ses comptes",
+            "Jules fait un profit",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Jules fait un profit",
+        "explanation": "Vu que chaque produit vendu garantit un profit, et que Jules les a tous vendus, il fait un profit. L'ambiguïté ne survient que si on ne tient pas compte de la logique conditionnelle bien définie.",
+        "hint": "Démontrez le lien immédiat de la condition respectée."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui est le plus âgé ?",
+        "prompt": "Claire est plus âgée que Louise. Louise est plus âgée que Marc. Marc est plus âgé que Nicolas.",
+        "options": [
+            "Claire",
+            "Louise",
+            "Marc",
+            "Nicolas"
+        ],
+        "answer": "Claire",
+        "explanation": "L'ordre d'âge est établi comme suit : Claire > Louise > Marc > Nicolas, ce qui confirme clairement que Claire est la plus âgée des quatre. La confusion arrive souvent avec la mauvaise gestion des inégalités.",
+        "hint": "Établir correctement les relations d'âge par intermittence."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'est-ce qui s'est passé après que Charlotte ait pris la route ?",
+        "prompt": "Si Charlotte part à 8h00, elle évite le trafic. Charlotte est partie à 8h00 ce matin.",
+        "options": [
+            "Charlotte est coincée dans le trafic",
+            "Charlotte évite le trafic",
+            "Charlotte est arrivée en retard",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Charlotte évite le trafic",
+        "explanation": "Les conditions données dictent que partir à 8h00 assure d'éviter le trafic, ce qu'a fait Charlotte. Douter des implications en supposant des anomalies serait incorrect ici.",
+        "hint": "Associez la condition accomplie à ses conséquences logiques."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre position dans la course ?",
+        "prompt": "Lors de la course, vous dépassez le coureur en 2e position.",
+        "options": [
+            "1ère",
+            "2ème",
+            "3ème",
+            "4ème"
+        ],
+        "answer": "2ème",
+        "explanation": "En doublant le 2e, vous prenez sa place, vous êtes donc en 2e position et non en 1ère. Le piège consiste à confondre en pensant que doubler le 2e place automatiquement au 1er rang.",
+        "hint": "Souvenez-vous que pour devenir premier, il faut aussi choisir de dépasser le 1er."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de boutons rouges sont allumés ?",
+        "prompt": "Sur une machine, tous les boutons rouges sont allumés le lundi. Aujourd'hui, un mardi, seuls deux boutons rouges sont allumés.",
+        "options": [
+            "Tous les boutons rouges",
+            "La moitié des boutons rouges",
+            "Aucun bouton rouge",
+            "Quelques boutons rouges"
+        ],
+        "answer": "Quelques boutons rouges",
+        "explanation": "Contrairement au lundi où tous les boutons rouges sont activés, le mardi seulement certains le sont, en non totalité. Le piège est de supposer qu'il y a un changement radical chaque jour, ce qui n'est pas confirmé.",
+        "hint": "Saisissez les nuances d'une situation avec variation partielle."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Qui gagne ?",
+        "prompt": "Alex gagne si Tom perd. Tom a perdu le match.",
+        "options": [
+            "Alex perd",
+            "Alex est disqualifié",
+            "Alex gagne",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Alex gagne",
+        "explanation": "Avec Tom perdant, la condition stipule bien qu'Alex gagne. Ce raisonnement utilise la logique par contraposée, et il n'est pas nécessaire d'inférer d'autres résultats inversés.",
+        "hint": "Rappelle-toi qu'une vérité conditionnelle se confirme automatiquement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien d'argent Paul a-t-il emprunté ?",
+        "prompt": "Paul a emprunté deux fois plus d'argent à Mathieu qu'à Simon. En tout, il a emprunté 900 euros.",
+        "options": [
+            "300 euros",
+            "200 euros",
+            "180 euros",
+            "450 euros"
+        ],
+        "answer": "300 euros",
+        "explanation": "On a 2x pour Mathieu + x pour Simon = 900. Donc, 3x = 900, ce qui donne x = 300 euros. La difficulté réside dans l'ajustement de l'équation initiale et des variables de prêt.",
+        "hint": "Représente d'abord en formules les quantités."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Où se trouve le livre manquant ?",
+        "prompt": "Si le livre n'est ni sur l'étagère ni sur le bureau, il est dans le sac. Le livre n'est ni sur l'étagère ni sur le bureau.",
+        "options": [
+            "Sur le lit",
+            "Dans le sac",
+            "Sous la chaise",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Dans le sac",
+        "explanation": "La contraposée implique que si le livre n'est pas à deux endroits précisés, il est forcément dans le sac. Le piège classique consiste à rajouter encore d'autres emplacements.",
+        "hint": "Appuyez-vous sur les seules alternatives fournies."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la couleur de la boîte ?",
+        "prompt": "Si une boîte n'est pas bleue, elle est rouge. Cette boîte n'est pas bleue.",
+        "options": [
+            "Rouge",
+            "Jaune",
+            "Verte",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Rouge",
+        "explanation": "La premisse affirme que les boîtes non bleues sont rouges, donc cette boîte est rouge. La tentation de supposer des nuances supplémentaires ou imaginaires doit ici être maîtrisée.",
+        "hint": "Suivez méticuleusement la propriété conditionnelle stricte."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre place dans la queue ?",
+        "prompt": "Dans une file, vous dépassez le 20ème. Combien de personnes sont devant vous ?",
+        "options": [
+            "19",
+            "20",
+            "21",
+            "22"
+        ],
+        "answer": "20",
+        "explanation": "Si vous dépassez le 20ème, une personne est remplacée derrière vous, mettant ainsi 20 personnes encore devant. Il faut éviter de calculer à l'envers ou d'ajouter des personnes en attente.",
+        "hint": "Faites la simple transition logique sans sauter des places en supplémentaire."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la somme initiale de Pascal ?",
+        "prompt": "Pascal a dépensé la moitié de son argent, puis recevait 50 euros, ce qui le mène à 100 euros.",
+        "options": [
+            "50 euros",
+            "75 euros",
+            "100 euros",
+            "200 euros"
+        ],
+        "answer": "100 euros",
+        "explanation": "En partant de 100 euros après avoir reçu 50 euros, il avait donc 50 euros avant cela, qui est la moitié restante de sa somme initiale : hyp : x/2 + 50 = 100 → x = 100. Ne pas omettre d'ajustement rétroactif éviterait l'erreur.",
+        "hint": "Travaillez rétroactivement de la fin vers le début."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'âge de Clara ?",
+        "prompt": "Clara a actuellement 5 fois l'âge de Léa. Dans 10 ans, elle aura trois fois l'âge de Léa.",
+        "options": [
+            "20 ans",
+            "25 ans",
+            "30 ans",
+            "35 ans"
+        ],
+        "answer": "30 ans",
+        "explanation": "En posant x = âge de Léa, nous avons Clara = 5x maintenant, et dans 10 ans, 5x + 10 = 3(x + 10), il s'avère alors x = 6. Donc aujourd'hui Clara a 5x = 30 ans. Evitez le piège traditionnel de démarrer avec des suppositions illogiques.",
+        "hint": "Transformez ces conditions verbales en équation math."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la couleur de la voiture de Sophie ?",
+        "prompt": "Si une voiture n'est pas noire, elle est blanche. La voiture de Sophie n'est pas noire.",
+        "options": [
+            "Noire",
+            "Blanche",
+            "Rouge",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Blanche",
+        "explanation": "La prémisse sentiment catégorique que toute voiture non noire est blanche implique que la voiture de Sophie doit être blanche. Prétendre à une couleur hors cadre sans preuve est souvent la démarche erronée.",
+        "hint": "Maintenez les raisonnements sur les implications logiques basiques."
+    }
+]

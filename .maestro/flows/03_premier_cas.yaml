@@ -1,0 +1,61 @@
+# COP'IQ — E2E Flow 03 : Premier cas pratique (cas démo gratuit)
+# Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-099
+# Prérequis : connecté avec un compte valide
+
+appId: fr.copiq.app
+env:
+  TEST_EMAIL: copiq_e2e_test@mailsink.dev
+  TEST_PASSWORD: E2eTest2026!
+---
+- launchApp
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Login si nécessaire
+- optional:
+    - tapOn:
+        text: "Se connecter"
+    - tapOn:
+        id: "email_field"
+    - inputText: "${TEST_EMAIL}"
+    - tapOn:
+        id: "password_field"
+    - inputText: "${TEST_PASSWORD}"
+    - tapOn:
+        text: "Se connecter"
+    - waitForAnimationToEnd:
+        timeout: 8000
+
+# Naviguer vers les cas pratiques
+- tapOn:
+    text: "Cas Pratique"
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Vérifier que la liste est chargée
+- assertVisible:
+    text: "Cas pratiques"
+
+# Tapper sur le premier cas (démo gratuit)
+- tapOn:
+    index: 0
+    id: "case_card"
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Page intro du cas : vérifier les éléments
+- assertVisible:
+    text: "Commencer"
+
+- tapOn:
+    text: "Commencer"
+
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Première question visible
+- assertVisible:
+    text: "Question"

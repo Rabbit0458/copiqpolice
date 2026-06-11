@@ -1,0 +1,485 @@
+{
+  "_comment": "Exemple complet d'un cas pratique au format de la nouvelle base de données. Sert de référence pour comprendre la structure et alimenter T021-T028.",
+  "_engine_compatible_with": "2.0.0",
+
+  "theme": {
+    "slug": "securite_publique",
+    "label": "Sécurité publique",
+    "color_hex": "#F59E0B",
+    "icon": "security_rounded",
+    "sort_order": 40
+  },
+
+  "case": {
+    "slug": "case_1",
+    "title": "Cambriolage à Xville — Accueil de M. BRAVO",
+    "year": 2024,
+    "month": "Septembre",
+    "difficulty": "moyen",
+    "total_points": 15,
+    "estimated_minutes": 15,
+    "status": "published",
+    "situation_md": "## Contexte\n\nVous êtes en service à l'accueil du commissariat de **Xville** ce lundi 9 h. M. BRAVO, 47 ans, se présente. Visiblement contrarié, il explique qu'il vient de découvrir que sa **voiture** a été **vandalisée** durant la nuit : pneus crevés, vitre brisée. Il craint qu'il ne s'agisse du début d'un cambriolage à venir, car il part en **vacances** dans une semaine.\n\nIl s'impatiente, hausse la voix : *« Vous êtes lents ici, je n'ai pas que ça à faire. »*\n\nVous accueillez M. BRAVO et vous gérez la situation.",
+    "situation_text": "Vous êtes en service à l'accueil du commissariat de Xville ce lundi 9h. M. BRAVO, 47 ans, se présente. Visiblement contrarié, il explique qu'il vient de découvrir que sa voiture a été vandalisée durant la nuit : pneus crevés, vitre brisée. Il craint qu'il ne s'agisse du début d'un cambriolage à venir, car il part en vacances dans une semaine. Il s'impatiente, hausse la voix : « Vous êtes lents ici, je n'ai pas que ça à faire. » Vous accueillez M. BRAVO et vous gérez la situation."
+  },
+
+  "questions": [
+    {
+      "position": 1,
+      "label": "Comment qualifiez-vous juridiquement les faits décrits par M. BRAVO et quelles démarches lui proposez-vous ?",
+      "hint": "Pense à la qualification juridique, aux options de plainte, et à l'importance du dépôt.",
+      "max_points": 5,
+      "char_min": 80,
+      "char_recommended": 400,
+      "perfect_answer": {
+        "body_md": "Les faits décrits par M. BRAVO constituent une **dégradation volontaire de bien appartenant à autrui**, infraction prévue et réprimée par l'**article 322-1 du Code pénal**.\n\nJe l'informe qu'il n'est pas obligatoirement tenu de se déplacer immédiatement au commissariat. S'agissant d'une infraction sans auteur identifié, il peut effectuer une **pré-plainte en ligne**, ce qui lui permettra de gagner du temps. Cette démarche lui offrira la possibilité de compléter sa plainte ultérieurement sur rendez-vous.\n\nJe lui précise que, s'il le souhaite, il peut également se présenter directement à l'accueil pour déposer plainte (l'accueil du public étant une obligation pour les services de police).\n\nJe lui rappelle l'importance du dépôt de plainte, notamment pour les démarches auprès de son assurance.",
+        "references_legal": [
+          {"article": "322-1", "code": "penal", "label": "Dégradation volontaire d'un bien appartenant à autrui"}
+        ]
+      },
+      "rubric": [
+        {
+          "position": 1,
+          "label": "Qualifier l'infraction : dégradation volontaire d'un bien d'autrui (vandalisme)",
+          "weight": 1.50,
+          "is_required": true,
+          "kind": "core",
+          "explanation_md": "La qualification juridique est l'élément le plus important : sans elle, la suite (procédure, code applicable) ne peut pas être correcte.",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Vocabulaire de l'atteinte au bien",
+              "is_optional": false,
+              "keywords": [
+                {"value": "degradation", "fuzzy_max_dist": 1, "is_phrase": false},
+                {"value": "degrader", "fuzzy_max_dist": 1, "is_phrase": false},
+                {"value": "vandalisme", "fuzzy_max_dist": 1, "is_phrase": false},
+                {"value": "deterioration", "fuzzy_max_dist": 1, "is_phrase": false},
+                {"value": "atteinte aux biens", "is_phrase": true},
+                {"syn_dict_id": "@SYN/degrader"}
+              ]
+            },
+            {
+              "position": 2,
+              "description": "Vocabulaire de la propriété d'autrui",
+              "is_optional": false,
+              "keywords": [
+                {"value": "autrui", "fuzzy_max_dist": 0},
+                {"value": "propriete", "fuzzy_max_dist": 1},
+                {"value": "bien d autrui", "is_phrase": true},
+                {"value": "vehicule de la victime", "is_phrase": true},
+                {"value": "voiture de la victime", "is_phrase": true}
+              ]
+            },
+            {
+              "position": 3,
+              "description": "Caractère volontaire",
+              "is_optional": true,
+              "keywords": [
+                {"value": "volontaire", "fuzzy_max_dist": 1},
+                {"value": "intentionnel", "fuzzy_max_dist": 1},
+                {"value": "delibere", "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "label": "Mentionner l'article 322-1 du code pénal (référence légale)",
+          "weight": 1.00,
+          "is_required": false,
+          "kind": "bonus",
+          "explanation_md": "Citer l'article applicable est apprécié, mais pas indispensable.",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Article 322-1",
+              "is_optional": false,
+              "keywords": [
+                {"value": "322-1", "is_phrase": true, "fuzzy_max_dist": 0},
+                {"value": "article 322 1", "is_phrase": true},
+                {"value": "art 322 1", "is_phrase": true}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "label": "Proposer la pré-plainte en ligne (option dématérialisée)",
+          "weight": 1.00,
+          "is_required": true,
+          "kind": "core",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Vocabulaire pré-plainte ou démarche en ligne",
+              "is_optional": false,
+              "keywords": [
+                {"value": "pre plainte", "is_phrase": true, "fuzzy_max_dist": 1},
+                {"value": "preplainte", "fuzzy_max_dist": 1},
+                {"value": "plainte en ligne", "is_phrase": true},
+                {"value": "formulaire en ligne", "is_phrase": true},
+                {"value": "internet", "fuzzy_max_dist": 0},
+                {"value": "demarche en ligne", "is_phrase": true}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "label": "Rappeler la possibilité de déposer plainte au commissariat (accueil = obligation)",
+          "weight": 1.00,
+          "is_required": false,
+          "kind": "core",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Vocabulaire dépôt de plainte sur place",
+              "is_optional": false,
+              "keywords": [
+                {"value": "deposer plainte", "is_phrase": true},
+                {"value": "depot de plainte", "is_phrase": true},
+                {"value": "plainte au commissariat", "is_phrase": true},
+                {"value": "se presenter", "is_phrase": true}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Mentionner l'importance pour l'assurance",
+          "weight": 0.50,
+          "is_required": false,
+          "kind": "bonus",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Vocabulaire assurance",
+              "is_optional": false,
+              "keywords": [
+                {"value": "assurance", "fuzzy_max_dist": 1},
+                {"value": "assureur", "fuzzy_max_dist": 1},
+                {"value": "indemnisation", "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "label": "Quels conseils donnez-vous à M. BRAVO pour prévenir un cambriolage durant ses vacances ?",
+      "hint": "Pense au dispositif officiel de la police nationale, et aux conseils de bon sens.",
+      "max_points": 5,
+      "char_min": 80,
+      "char_recommended": 400,
+      "perfect_answer": {
+        "body_md": "Je lui conseille de s'inscrire à l'**opération « Tranquillité Vacances »**, proposée gratuitement par les services de police.\n\nCe dispositif permet aux forces de l'ordre d'effectuer des **passages réguliers** à proximité de son domicile pendant son absence, afin de dissuader toute tentative d'effraction.\n\nJe complète par des recommandations de bon sens :\n- ne pas laisser d'**objets de valeur visibles** depuis l'extérieur ;\n- bien **fermer / verrouiller** portes et fenêtres ;\n- éviter d'indiquer son **absence sur les réseaux sociaux** ;\n- demander à une **personne de confiance** de relever le courrier.\n\nCes mesures contribuent à **réduire les risques de cambriolage**.",
+        "references_legal": []
+      },
+      "rubric": [
+        {
+          "position": 1,
+          "label": "Mentionner l'opération « Tranquillité Vacances » (gratuite, services de police)",
+          "weight": 1.50,
+          "is_required": true,
+          "kind": "core",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Nom du dispositif",
+              "is_optional": false,
+              "keywords": [
+                {"value": "tranquillite vacances", "is_phrase": true},
+                {"value": "operation tranquillite", "is_phrase": true},
+                {"value": "OTV", "is_phrase": true, "fuzzy_max_dist": 0},
+                {"value": "passages reguliers", "is_phrase": true}
+              ]
+            },
+            {
+              "position": 2,
+              "description": "Caractère gratuit / police",
+              "is_optional": true,
+              "keywords": [
+                {"value": "gratuit", "fuzzy_max_dist": 1},
+                {"value": "gratuitement", "fuzzy_max_dist": 1},
+                {"value": "police", "fuzzy_max_dist": 0},
+                {"value": "forces de l ordre", "is_phrase": true}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "label": "Conseil : fermer/verrouiller portes et fenêtres",
+          "weight": 1.00,
+          "is_required": false,
+          "kind": "core",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Action de sécurisation",
+              "is_optional": false,
+              "keywords": [
+                {"value": "fermer", "fuzzy_max_dist": 1},
+                {"value": "verrouiller", "fuzzy_max_dist": 1},
+                {"value": "securiser", "fuzzy_max_dist": 1},
+                {"value": "bien fermer", "is_phrase": true}
+              ]
+            },
+            {
+              "position": 2,
+              "description": "Cibles",
+              "is_optional": false,
+              "keywords": [
+                {"value": "porte", "fuzzy_max_dist": 0},
+                {"value": "portes", "fuzzy_max_dist": 0},
+                {"value": "fenetre", "fuzzy_max_dist": 1},
+                {"value": "volets", "fuzzy_max_dist": 0}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "label": "Conseil : ne pas laisser d'objets de valeur visibles",
+          "weight": 1.00,
+          "is_required": false,
+          "kind": "core",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Objets de valeur",
+              "is_optional": false,
+              "keywords": [
+                {"value": "objets de valeur", "is_phrase": true},
+                {"value": "valeurs", "fuzzy_max_dist": 0},
+                {"value": "bijoux", "fuzzy_max_dist": 1}
+              ]
+            },
+            {
+              "position": 2,
+              "description": "Visibilité depuis l'extérieur",
+              "is_optional": false,
+              "keywords": [
+                {"value": "visible de l exterieur", "is_phrase": true},
+                {"value": "depuis l exterieur", "is_phrase": true},
+                {"value": "depuis la rue", "is_phrase": true},
+                {"value": "vue de l exterieur", "is_phrase": true}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "label": "Conseil : ne pas annoncer l'absence sur les réseaux sociaux",
+          "weight": 1.00,
+          "is_required": false,
+          "kind": "core",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Réseaux sociaux",
+              "is_optional": false,
+              "keywords": [
+                {"value": "reseaux sociaux", "is_phrase": true},
+                {"value": "facebook", "fuzzy_max_dist": 0},
+                {"value": "instagram", "fuzzy_max_dist": 0},
+                {"value": "tiktok", "fuzzy_max_dist": 0},
+                {"value": "snapchat", "fuzzy_max_dist": 0}
+              ]
+            },
+            {
+              "position": 2,
+              "description": "Annonce d'absence",
+              "is_optional": false,
+              "keywords": [
+                {"value": "absence", "fuzzy_max_dist": 1},
+                {"value": "depart", "fuzzy_max_dist": 1},
+                {"value": "annoncer", "fuzzy_max_dist": 1},
+                {"value": "publier", "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Conseil : faire relever le courrier par une personne de confiance",
+          "weight": 0.50,
+          "is_required": false,
+          "kind": "bonus",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Action sur le courrier",
+              "is_optional": false,
+              "keywords": [
+                {"value": "relever le courrier", "is_phrase": true},
+                {"value": "courrier", "fuzzy_max_dist": 0},
+                {"value": "boite aux lettres", "is_phrase": true}
+              ]
+            },
+            {
+              "position": 2,
+              "description": "Personne de confiance",
+              "is_optional": false,
+              "keywords": [
+                {"value": "personne de confiance", "is_phrase": true},
+                {"value": "voisin", "fuzzy_max_dist": 1},
+                {"value": "famille", "fuzzy_max_dist": 1},
+                {"value": "proche", "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "position": 3,
+      "label": "M. BRAVO continue de s'impatienter et hausse le ton. Quelle attitude adoptez-vous ?",
+      "hint": "Pense à la déontologie, à la posture professionnelle, et à la gestion des incivilités.",
+      "max_points": 5,
+      "char_min": 80,
+      "char_recommended": 400,
+      "perfect_answer": {
+        "body_md": "Je conserve une **attitude calme**, **professionnelle** et **respectueuse**, conformément aux **règles de déontologie** de la police nationale.\n\nJe ne réponds pas sur le même ton et **ne me laisse pas provoquer**.\n\nJe l'invite à s'exprimer dans le calme et lui explique posément que le commissariat **accueille de nombreuses personnes** et que les **délais d'attente** peuvent varier en fonction des **urgences** et **priorités opérationnelles**.\n\nJe lui rappelle que toutes les personnes sont reçues selon l'**ordre d'arrivée** (sauf urgence particulière) et que son dépôt de plainte sera **pris en compte dès que possible**.\n\nJe veille à **désamorcer la situation** et à **préserver la qualité du service public**. Si son comportement venait à perturber le service, je l'inviterais à se rasseoir et, si nécessaire, je **rendrais compte à ma hiérarchie**.",
+        "references_legal": []
+      },
+      "rubric": [
+        {
+          "position": 1,
+          "label": "Rester calme / professionnel / respectueux (déontologie)",
+          "weight": 1.50,
+          "is_required": true,
+          "kind": "core",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Posture professionnelle",
+              "is_optional": false,
+              "keywords": [
+                {"value": "calme", "fuzzy_max_dist": 0},
+                {"value": "calmement", "fuzzy_max_dist": 1},
+                {"value": "professionnel", "fuzzy_max_dist": 1},
+                {"value": "respectueux", "fuzzy_max_dist": 1},
+                {"value": "courtois", "fuzzy_max_dist": 1},
+                {"value": "deontologie", "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 2,
+          "label": "Ne pas répondre sur le même ton / ne pas se laisser provoquer",
+          "weight": 1.00,
+          "is_required": true,
+          "kind": "core",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Refus de provocation",
+              "is_optional": false,
+              "keywords": [
+                {"value": "pas le meme ton", "is_phrase": true},
+                {"value": "ne pas repondre", "is_phrase": true},
+                {"value": "ne pas se laisser provoquer", "is_phrase": true},
+                {"value": "ne pas envenimer", "is_phrase": true},
+                {"value": "provocation", "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 3,
+          "label": "Expliquer délais / urgences / nombreuses personnes",
+          "weight": 1.00,
+          "is_required": false,
+          "kind": "core",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Délais et attente",
+              "is_optional": false,
+              "keywords": [
+                {"value": "delai", "fuzzy_max_dist": 1},
+                {"value": "attente", "fuzzy_max_dist": 0},
+                {"value": "patienter", "fuzzy_max_dist": 1},
+                {"value": "nombreuses personnes", "is_phrase": true}
+              ]
+            },
+            {
+              "position": 2,
+              "description": "Urgences/priorités",
+              "is_optional": false,
+              "keywords": [
+                {"value": "urgence", "fuzzy_max_dist": 0},
+                {"value": "priorite", "fuzzy_max_dist": 1},
+                {"value": "missions", "fuzzy_max_dist": 0},
+                {"value": "interventions", "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 4,
+          "label": "Ordre d'arrivée + désamorcer / maintenir le calme",
+          "weight": 1.00,
+          "is_required": false,
+          "kind": "core",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Ordre d'arrivée",
+              "is_optional": false,
+              "keywords": [
+                {"value": "ordre d arrivee", "is_phrase": true},
+                {"value": "selon l ordre", "is_phrase": true},
+                {"value": "sauf urgence", "is_phrase": true}
+              ]
+            },
+            {
+              "position": 2,
+              "description": "Désamorcer",
+              "is_optional": false,
+              "keywords": [
+                {"value": "desamorcer", "fuzzy_max_dist": 1},
+                {"value": "apaiser", "fuzzy_max_dist": 1},
+                {"value": "calmer", "fuzzy_max_dist": 1},
+                {"value": "preserver", "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Si perturbation : rendre compte à la hiérarchie",
+          "weight": 0.50,
+          "is_required": false,
+          "kind": "bonus",
+          "groups": [
+            {
+              "position": 1,
+              "description": "Hiérarchie",
+              "is_optional": false,
+              "keywords": [
+                {"value": "hierarchie", "fuzzy_max_dist": 1},
+                {"value": "rendre compte", "is_phrase": true},
+                {"value": "superieur", "fuzzy_max_dist": 1},
+                {"value": "responsable", "fuzzy_max_dist": 1}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "expected_synonyms_dict_used": [
+    {
+      "slug": "degrader",
+      "label": "Synonymes de 'dégrader'",
+      "terms": ["degradation","degrader","degradations","deterioration","deteriorer","vandalisme","vandaliser","abimer","saccager","casser","briser","dommage"],
+      "tags": ["atteinte_biens","cas_pratique"]
+    }
+  ]
+}

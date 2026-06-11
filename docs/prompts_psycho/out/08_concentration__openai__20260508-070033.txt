@@ -1,0 +1,432 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « E » apparaît-elle dans cette phrase ?",
+    "prompt": "Comptez toutes les occurrences.",
+    "stimulus": "Le chien est très rapide.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Dans cette phrase, 'Le' contient un E (1), 'chien' n'en contient pas (0), 'est' contient un E (1), 'très' un E (1), et 'rapide' aucun (0). Total : 3 E.",
+    "hint": "Concentrez-vous sur les voyelles visibles."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Identifiez la lettre qui ne devrait pas être ici.",
+    "stimulus": "M O Q R S",
+    "options": ["Q", "M", "R", "S"],
+    "answer": "Q",
+    "explanation": "La suite suit l'ordre de l'alphabet sauf Q. Les lettres autour de Q devaient être O puis P, puis vient R. Q est l'intrus.",
+    "hint": "Vérifiez l'ordre alphabétique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « A » majuscule apparaît-elle ?",
+    "prompt": "Ne comptez que les A majuscules.",
+    "stimulus": "ALICE ET ARTHUR AIMENT L'ART.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "ALICE (1) + ET (0) + ARTHUR (1) + AIMENT (1) + L'ART (2) = 5 occurrences de A majuscules.",
+    "hint": "Repérez chaque A majuscule manuellement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : HJKL",
+    "stimulus": "HJKL",
+    "options": ["HJLK", "HJKL", "HKJL", "HLJK"],
+    "answer": "HJKL",
+    "explanation": "Seule la deuxième option correspond exactement au modèle donné. Comparaisons effectuées : HJLK (K et L inversés), HJKL (identique), HKJL (J et K inversés), HLJK (J et L inversés).",
+    "hint": "Concentrez-vous lettre par lettre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres « 5 » apparaissent dans la suite ?",
+    "prompt": null,
+    "stimulus": "5 3 5 6 7 5 2",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Dans la suite, 5 apparaît aux positions 1, 3, et 6. Trois occurrences au total. Le reste des chiffres sont différents.",
+    "hint": "Révisez chaque chiffre individuellement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de « T » apparaissent dans cette phrase ?",
+    "prompt": "Attention : ne comptez que les T.",
+    "stimulus": "Tom est très talentueux.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Tom (1) + est (1) + très (1) + talentueux (0) = 3 occurrences de T.",
+    "hint": "Passer en revue chaque mot pour T."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Comparez chaque lettre avec les autres.",
+    "stimulus": "B C E F G",
+    "options": ["E", "B", "F", "G"],
+    "answer": "E",
+    "explanation": "Dans cette suite, toutes les lettres sauf E sont consécutives dans l'alphabet (B, C, F, G). E interrompt la séquence.",
+    "hint": "Cherchez les interruptions dans l'ordre alphabétique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de « O » et de « o » apparaissent-ils ?",
+    "prompt": "Comptez les deux cas.",
+    "stimulus": "L'ours dort souvent sous l'olivier.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Dans cette phrase : 'ours' o (1), 'dort' o (1), 'souvent' o (1), 'sous' o (1), 'olivier' o (1). Total : 5.",
+    "hint": "Repérez les O et o en un seul balayage."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « L » apparaît-elle ?",
+    "prompt": "Ne comptez que les « l ».",
+    "stimulus": "La lune luit lentement.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "3",
+    "explanation": "La (1) + lune (1) + luit (1) + lentement (0) = 3 occurrences de la lettre L.",
+    "hint": "Cherchez les L majuscules et minuscules."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel chiffre est l'intrus dans cette suite ?",
+    "prompt": "Cherchez le chiffre qui ne suit pas la règle.",
+    "stimulus": "2 4 6 8 10 11 14",
+    "options": ["11", "4", "10", "14"],
+    "answer": "11",
+    "explanation": "Tous les nombres sauf 11 sont pairs. 11 est le seul nombre impair dans la liste.",
+    "hint": "Vérifiez la parité de chaque chiffre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de E minuscules apparaissent dans cette phrase ?",
+    "prompt": "Repérez-les sans tenir compte des majuscules.",
+    "stimulus": "Le pain et le beurre sont essentiels.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "Le (1) + pain (0) + et (1) + le (1) + beurre (1) + sont (0) + essentiels (2) = 6 occurrences de E minuscules.",
+    "hint": "Identifiez chaque e attentivement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « M » apparaît-elle dans cette phrase ?",
+    "prompt": "Considérez également les « m ».",
+    "stimulus": "Mes amis aiment manger en montagne.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Mes (1) + amis (1) + aiment (1) + manger (0) + en (0) + montagne (1) = 4 occurrences de M.",
+    "hint": "Passez en revue la phrase lentement pour chaque M."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : 12345",
+    "stimulus": "12345",
+    "options": ["12354", "12435", "12345", "13245"],
+    "answer": "12345",
+    "explanation": "La séquence 12345 correspond parfaitement au modèle, les autres séquences ont des chiffres permutés.",
+    "hint": "Relisez chaque séquence lentement pour repérer des différences."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « S » apparaît-elle ?",
+    "prompt": "Comptez majuscules et minuscules.",
+    "stimulus": "Six serpents silencieux sifflent sous les étoiles.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "Six (1) + serpents (1) + silencieux (1) + sifflent (1) + sous (1) + les (1) + étoiles (0) = 6.",
+    "hint": "Repérez chaque S un à un."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Les lettres doivent suivre un modèle.",
+    "stimulus": "A C E G I J",
+    "options": ["A", "I", "J", "E"],
+    "answer": "J",
+    "explanation": "Les lettres suivent un ordre des positions paires (A=1, C=3, E=5, G=7, I=9), mais J est en position 10, qui est paire.",
+    "hint": "Comparez chaque lettre entre elles pour déterminer la suite."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel chiffre est l'intrus dans la suite ?",
+    "prompt": "Trouvez l'élément qui ne correspond pas.",
+    "stimulus": "1 3 5 7 9 10",
+    "options": ["3", "10", "7", "5"],
+    "answer": "10",
+    "explanation": "Tous les chiffres sauf 10 sont impairs. 10 est le seul nombre pair de la séquence.",
+    "hint": "Regardez l'état pair ou impair de chaque chiffre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de « B » majuscules figurent dans cette phrase ?",
+    "prompt": "Considérez uniquement la majuscule.",
+    "stimulus": "BERGER BELGE BOUVIER.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "B dans BERGER (1) + BELGE (1) + BOUVIER (1) = 3 occurrences.",
+    "hint": "Cherchez les B en début de chaque mot."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est strictement identique au modèle ?",
+    "prompt": "Modèle : PQRST",
+    "stimulus": "PQRST",
+    "options": ["PRSTQ", "PQSRT", "PQRST", "PQRTS"],
+    "answer": "PQRST",
+    "explanation": "La séquence PQRST correspond intégralement au modèle donné, sans erreur. Les autres séquences ont des lettres interchangées.",
+    "hint": "Faites une lecture lettre par lettre."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres pairs dans cette suite ?",
+    "prompt": null,
+    "stimulus": "4 7 2 5 6 3 8 9 10",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Les chiffres pairs sont 4 (1), 2 (1), 6 (1), 8 (1), 10 (1) = 5 chiffres pairs au total.",
+    "hint": "Vérifiez chaque chiffre pour la parité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel chiffre est l'intrus dans la série ?",
+    "prompt": "Identifiez l'incohérence dans la série.",
+    "stimulus": "2 4 8 12 14",
+    "options": ["8", "12", "4", "14"],
+    "answer": "12",
+    "explanation": "Les nombres sont normalement des multiples de 2, sauf 12 qui est également un multiple de 3, brisant la série.",
+    "hint": "Cherchez les non-multiples dans la série."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de lettres « D » majuscules apparaissent-elles ?",
+    "prompt": "Recherchez toutes les D majuscules.",
+    "stimulus": "DONALD DIRA DEMAIN D'AUTRES DÉTAILS.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "DONALD (1) + DIRA (1) + DEMAIN (1) + D'AUTRES (1) + DÉTAILS (1) = 5 D majuscules.",
+    "hint": "Notez chaque D majuscule au début de chaque mot."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de « R » et de « r » dans cette phrase ?",
+    "prompt": "Tenez compte des majuscules et des minuscules.",
+    "stimulus": "Le rat court très rapidement vers la mer.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Le (0) + rat (1) + court (1) + très (1) + rapidement (1) + vers (1) + la (0) + mer (0) = 5 R.",
+    "hint": "Repérez les R majuscules et minuscules."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est strictement identique au modèle ?",
+    "prompt": "Modèle : FGHIJ",
+    "stimulus": "FGHIJ",
+    "options": ["FGIHI", "FGHIJ", "FGJIH", "FGHIJ"],
+    "answer": "FGHIJ",
+    "explanation": "La séquence FGHIJ correspond exactement au modèle. Les variations des options montrent des permutations des lettres, sauf la deuxième option.",
+    "hint": "Comparez soigneusement chaque séquence au modèle."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de voyelles sont dans cette phrase ?",
+    "prompt": "Comptez toutes les voyelles.",
+    "stimulus": "Le vent souffle fort sur les collines.",
+    "options": ["10", "11", "12", "13"],
+    "answer": "12",
+    "explanation": "Le (1) + vent (1) + souffle (3) + fort (1) + sur (1) + les (1) + collines (4) = 12 voyelles.",
+    "hint": "Procédez mot par mot pour plus de précision."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Identifiez la lettre qui ne suit pas la règle.",
+    "stimulus": "X Y Z B C",
+    "options": ["C", "Y", "X", "B"],
+    "answer": "C",
+    "explanation": "Dans cette suite, X Y Z forment un ensemble consécutif suivi de B. C diffère car il ne suit pas après B directement.",
+    "hint": "Faites attention à l'ordre des lettres de chaque série."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots de plus de 3 lettres dans cette phrase ?",
+    "prompt": null,
+    "stimulus": "Les policiers résolvent des enquêtes avec brio.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "5",
+    "explanation": "Mots de plus de 3 lettres : policiers (1), résolvent (1), enquêtes (1), avec (1) et brio (1) = 5 mots.",
+    "hint": "Considérez chaque mot séparément."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de E majuscules figurent dans cette phrase ?",
+    "prompt": "Ne comptez que les majuscules.",
+    "stimulus": "ENIGMATIQUE, ELLE EST ELLE-MÊME ÉNIGME.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "ENIGMATIQUE (1) + ELLE (1) + EST (0) + ELLE-MÊME (1) + ÉNIGME (1) = 4 E majuscules.",
+    "hint": "Concentrez-vous sur les débuts de mot pour E."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : QWERTY",
+    "stimulus": "QWERTY",
+    "options": ["QWREYT", "QWERTY", "QWTRYE", "QWEYRT"],
+    "answer": "QWERTY",
+    "explanation": "La séquence QWERTY est la seule exacte par rapport au modèle. Les autres options ont des permutations entre les lettres.",
+    "hint": "Faites attention à l'ordre exact des lettres."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre « C » apparaît dans le texte ?",
+    "prompt": "Comptabilisez les majuscules et minuscules.",
+    "stimulus": "Le capitaine Calcan mène avec célérité la campagne d'investigation le long de la côte.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "5",
+    "explanation": "Le (0) + capitaine (1) + Calcan (1) + mène (0) + avec (1) + célérité (1) + la (0) + campagne (1) + d'investigation (0) + le (0) + long (0) + de (0) + la (0) + côte (0) = 5 occurrences.",
+    "hint": "Segmenter mot par mot aide à éviter les erreurs."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chiffres impairs apparaissent dans cette longue suite ?",
+    "prompt": "Ne comptez que les impairs.",
+    "stimulus": "2 3 4 5 6 7 9 10 11 12 13 14 15 16 19 18",
+    "options": ["8", "7", "9", "6"],
+    "answer": "7",
+    "explanation": "Chiffres impairs : 3, 5, 7, 9, 11, 13, 15. Total = 7 chiffres impairs.",
+    "hint": "Parcourir séquentiellement pour tracer l'impairité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : mOnItOr",
+    "stimulus": "mOnItOr",
+    "options": ["monITOR", "mOnItOr", "mONiToR", "moNiTor"],
+    "answer": "mOnItOr",
+    "explanation": "La deuxième option mOnItOr est parfaitement identique au modèle. Les autres montrent des erreurs dans la casse.",
+    "hint": "Faites attention aux majuscules et minuscules précisément."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots de moins de 5 lettres dans ce passage ?",
+    "prompt": null,
+    "stimulus": "L'inspecteur nota que chaque aspect demandait une attention particulière pour aboutir.",
+    "options": ["8", "9", "7", "6"],
+    "answer": "8",
+    "explanation": "Mots de moins de 5 lettres : L'(1), nota(1), que(1), une(1), pour(1), est(1), à(1), à(1) = 8 mots.",
+    "hint": "En examinant chaque mot, comptabiliser seulement ceux de moins de 5 lettres."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de P majuscules dans cette phrase ?",
+    "prompt": "Concentrez-vous uniquement sur les majuscules.",
+    "stimulus": "Le Peintre Parfait Profite De La Parfaite Pendule.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "Peintre (1), Parfait (1), Profite (1), Parfaite (1), Pendule (1) = Total 5 P en majuscule.",
+    "hint": "Regardez attentivement chaque P majuscule au début des mots."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles dans cette phrase complexe ?",
+    "prompt": null,
+    "stimulus": "L'extraordinaire enquête fit émerger un réseau d'indices précieux.",
+    "options": ["14", "15", "16", "17"],
+    "answer": "15",
+    "explanation": "L'(0), extraordinaire(6), enquête(3), fit(1), émerger(3), un(1), réseau(2) = 15 voyelles.",
+    "hint": "Decomposé et vérifier chaque ensemble de mots."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence est identique au modèle ?",
+    "prompt": "Modèle : aBcDeFgHiJk",
+    "stimulus": "aBcDeFgHiJk",
+    "options": ["AbCdEFgHijK", "aBcDeFgHiJk", "AbCdEfGhIjk", "aBCdEfGHiJk"],
+    "answer": "aBcDeFgHiJk",
+    "explanation": "Seule la deuxième option conserve l'ordre et la case exactement comme dans le modèle. Les autres transgressent cette configuration.",
+    "hint": "Mise en évidence des erreurs mineures dans la casse par une attention méticuleuse."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle lettre est l'intrus dans cette série de lettres ?",
+    "prompt": "Observez attentivement l'ordre.",
+    "stimulus": "N O P R Q",
+    "options": ["N", "O", "R", "Q"],
+    "answer": "R",
+    "explanation": "Les lettres suivent une séquence séquentielle N O P Q mais la lettre R intervient après P, rompant la séquence.",
+    "hint": "Soyez attentif à chaque déviation de l'ordre alphabétique."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chiffres «1» sont présents dans cette suite ?",
+    "prompt": null,
+    "stimulus": "101 11 21 312 41 51 6 7 11",
+    "options": ["5", "6", "7", "8"],
+    "answer": "8",
+    "explanation": "Analyse position par position : 1(2), 11(2), 21(1)... Total = 8 occurrences de 1.",
+    "hint": "Examinez attentivement pour chaque occurence du chiffre '1'."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de consonnes dans cette phrase complexe ?",
+    "prompt": null,
+    "stimulus": "Dans une vision plus large des perspectives infinies, la situation s'adapte.",
+    "options": ["27", "28", "29", "30"],
+    "answer": "29",
+    "explanation": "Chaque mot vérifié : Dans (3) + vision (4) + plus (3) + large (3) + des (2) + perspectives (8) + infinies (4) + situation (5) = 29 consonnes.",
+    "hint": "Répartissez chaque mot en consonnes et voyelles avec soin."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de E, majuscule ou minuscule, dans cette phrase ?",
+    "prompt": "Ajoutez toutes les occurences des deux casses.",
+    "stimulus": "Les Experts en enquête estiment que seule une minorité était prête.",
+    "options": ["9", "10", "11", "12"],
+    "answer": "10",
+    "explanation": "Combinant les deux : Les (1), Experts (2), enquête (2), estiment (2), que (1), seule (1), était (1) = 10 occurrences.",
+    "hint": "Chaque E doit être précautionneusement identifié, sans omission des deux cas."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de consonnes dans ce long extrait ?",
+    "prompt": null,
+    "stimulus": "Le chemin difficile demande un engagement constant pour dépasser les obstacles.",
+    "options": ["29", "30", "31", "32"],
+    "answer": "31",
+    "explanation": "Décompte minutieux phrase par phrase : Le (1), chemin (4), difficile (5), demande (4), un (1), engagement (5), constant (5), pour (3), dépasser (4), les (2), = 31 consonnes.",
+    "hint": "Inspectez chaque lexème avec une attention concentrée pour décupler la précision."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle lettre est l'intrus dans cette longue série de lettres ?",
+    "prompt": "Repérez l'anomalie dans la suite.",
+    "stimulus": "A B C E F G H I J K L",
+    "options": ["E", "H", "I", "L"],
+    "answer": "E",
+    "explanation": "La séquence progresse selon l'ordre alphabétique classique, il ne devrait pas y avoir de fracture après C, d'où E est inopportunement placé.",
+    "hint": "Éviter étroitement les pièges des séquences à première vue logiques mais non alignées."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chiffres pairs figurent-ils dans cette série complexe ?",
+    "prompt": null,
+    "stimulus": "9 8 10 15 16 21 24 28 30 31 35",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "Les chiffres pairs sont : 8, 10, 16, 24, 28, 30, 31 = total de 7 nombres pairs.",
+    "hint": "Chaque chiffre vérifié pour une parité équitable est essentiel."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles dans cette phrase extensive ?",
+    "prompt": null,
+    "stimulus": "Chaque légende renferme une part de vérité transmise à travers le temps.",
+    "options": ["20", "21", "22", "23"],
+    "answer": "22",
+    "explanation": "'Chaque' (3), 'légende' (3), 'renferme' (3), 'une' (2), 'part' (1), 'vérité' (3), 'transmise' (3), 'à' (1), 'à' (1) = 22 voyelles.",
+    "hint": "Suivez les repères auditifs pour optimiser les constats sur les voyelles."
+  }
+]

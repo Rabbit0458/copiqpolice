@@ -1,0 +1,418 @@
+[
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 3, 5, 7, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["8", "9", "11", "10"],
+    "answer": "9",
+    "explanation": "Il s'agit d'une suite arithmétique où chaque nombre est augmenté de 2. Ainsi, 7 + 2 = 9 est le terme suivant. Le piège ici est de confondre avec une multiplication par 2 qui donnerait une réponse incorrecte.",
+    "hint": "Regarde la régularité dans l'addition."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, 10, 15, 20, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["25", "30", "26", "22"],
+    "answer": "25",
+    "explanation": "Cette suite est une progression arithmétique avec une constante de 5. Donc, le terme suivant est 20 + 5 = 25. Il ne faut pas se tromper en ajoutant 10 par erreur, ce qui donnerait 30.",
+    "hint": "Ajoute 5 à chaque fois."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "2, 4, 6, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["8", "10", "12", "14"],
+    "answer": "8",
+    "explanation": "Chaque terme est obtenu en ajoutant 2 au précédent : progression arithmétique de +2. Le terme manquant est donc 6 + 2 = 8. L'erreur classique serait de multiplier par 2, menant à 12.",
+    "hint": "Regarde l'addition constante."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "10, 20, ?, 40",
+    "prompt": "Quel terme manque ?",
+    "options": ["30", "35", "25", "32"],
+    "answer": "30",
+    "explanation": "La suite est une progression de 10 : chaque terme augmente de 10 par rapport au précédent. Le terme manquant, après 20, est 20 + 10 = 30. Il ne faut pas confondre avec une multiplication, ce qui donnerait 40.",
+    "hint": "Observe l'incrément de 10."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 6, 9, 12, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "18", "21", "24"],
+    "answer": "15",
+    "explanation": "Chaque terme est obtenu en ajoutant 3 au précédent, suivant une progression arithmétique de +3. Ainsi, 12 + 3 = 15. Le piège consiste à confondre avec une suite de multiplication, comme par 3, menant à des réponses incorrectes.",
+    "hint": "Cherche l'addition répétée."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "8, 16, 24, ?, 40",
+    "prompt": "Quel terme manque ?",
+    "options": ["32", "28", "36", "34"],
+    "answer": "32",
+    "explanation": "La suite suit une progression arithmétique de +8. Ainsi, le terme manquant est 24 + 8 = 32. L'erreur classique serait de poursuivre une fausse règle multiplicative.",
+    "hint": "Additionne 8 à chaque fois."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "12, 24, 36, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["44", "46", "48", "50"],
+    "answer": "48",
+    "explanation": "Il s'agit d'une suite arithmétique, chaque nombre augmentant de 12. Ici, 36 + 12 = 48. Attention à ne pas multiplier par 2 par erreur, ce qui fausserait le résultat.",
+    "hint": "Addition de 12."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "7, 14, ?, 28",
+    "prompt": "Quel terme manque ?",
+    "options": ["21", "20", "19", "22"],
+    "answer": "21",
+    "explanation": "Cette suite est une progression arithmétique de +7. Le terme manquant est donc 14 + 7 = 21. Attention à ne pas se tromper en ajoutant un nombre différent.",
+    "hint": "Pense à la table de multiplication par 7."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 4, 9, 16, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["20", "25", "26", "30"],
+    "answer": "25",
+    "explanation": "Il s'agit d'une suite de carrés parfaits : \(1^2, 2^2, 3^2, 4^2\). Le suivant est \(5^2 = 25\). Le piège est de ne pas reconnaître les carrés et de chercher une addition ou une multiplication.",
+    "hint": "Carrés des nombres entiers successifs."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "15, 25, 35, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["45", "50", "55", "40"],
+    "answer": "45",
+    "explanation": "La suite suit une progression arithmétique de +10. Le terme manquant est donc 35 + 10 = 45. Ne pas confondre avec une série où la différence ne serait pas constante.",
+    "hint": "Cherche le modèle d'augmentation cohérent."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "4, 8, 12, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["16", "17", "18", "20"],
+    "answer": "16",
+    "explanation": "Chaque terme est obtenu en ajoutant 4. Le terme manquant est donc 12 + 4 = 16. Attention de ne pas faire l'erreur de multiplier par 2, ce qui donnerait 24.",
+    "hint": "Observe l'ajout constant."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, 15, 25, ?, 45",
+    "prompt": "Quel terme manque ?",
+    "options": ["35", "40", "30", "50"],
+    "answer": "35",
+    "explanation": "La suite augmente par 10 chaque fois, vérifiée par 5 + 10 = 15 et 15 + 10 = 25. Ainsi, le nombre manquant est 25 + 10 = 35. Ne vous perdez pas en pensant à une règle de multiplication ici.",
+    "hint": "+10 à chaque étape."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "18, ?, 58, 78, 98",
+    "prompt": "Quel terme manque ?",
+    "options": ["38", "48", "58", "28"],
+    "answer": "38",
+    "explanation": "La suite augmente chacun de ses termes de 20 à chaque étape. Par conséquent, après 18, le nombre manquant devrait être 18 + 20 = 38. Méfiez-vous de l'ajout erroné de 40 qui pourrait vous mener à 58.",
+    "hint": "Regarde la somme régulière."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "14, 28, 42, ?, 70",
+    "prompt": "Quel terme manque ?",
+    "options": ["56", "60", "64", "72"],
+    "answer": "56",
+    "explanation": "Les termes augmentent chacun de 14. Le terme manquant est donc 42 + 14 = 56. Ne confondez pas avec une suite où ce serait ×2, ce qui mènerait à une erreur.",
+    "hint": "+14 par étape."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "7, 14, 21, ?, 35",
+    "prompt": "Quel terme manque ?",
+    "options": ["28", "30", "24", "32"],
+    "answer": "28",
+    "explanation": "Cette suite ajoute 7 à chaque nombre. Le nombre manquant est donc 21 + 7 = 28. Le piège est de multiplier par 2, ce qui donnerait à tort 42.",
+    "hint": "Observe l'ajout constant de 7."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "11, 22, 33, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["44", "55", "60", "48"],
+    "answer": "44",
+    "explanation": "Chaque terme augmente par 11, suivant ainsi la table de multiplication par 11. Après 33, le nombre manquant est 33 + 11 = 44. Un piège pourrait être de doubler à tort chaque terme.",
+    "hint": "Incréments de 11."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "5, 9, 16, 25, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["36", "38", "34", "40"],
+    "answer": "36",
+    "explanation": "Cette suite implique d'ajouter des nombres impairs consécutifs : +4, +7, +9, +11. Donc, après 25, on ajoute 11 pour obtenir 36. Le piège est de ne pas voir l'évolution des différences.",
+    "hint": "Étudie les différences entre termes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "20, 22, 25, 29, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["32", "33", "34", "35"],
+    "answer": "34",
+    "explanation": "La règle est d'ajouter successivement 2, 3, et 4. Après 29, on ajoute 5 pour avoir 34. Ne tombez pas dans le piège de supposer une addition constante fausse.",
+    "hint": "Attention à la progression des incréments."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "2, 4, 8, 14, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["20", "22", "24", "26"],
+    "answer": "22",
+    "explanation": "Les différences augmentent de 2 ensuite de 4 et puis 6, donc +8 après 14 aboutit à 22. Ne vous trompez pas en cherchant un lien arithmétique simple ou en doublant.",
+    "hint": "Concentre-toi sur l'incrément variable."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "3, 9, 18, 30, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["45", "46", "44", "47"],
+    "answer": "45",
+    "explanation": "Les additions successives sont 6, 9, 12. Après 30, le terme suivant est donc 30 + 15 = 45. Attention à ne pas échouer à percevoir l'augmentation continue des incréments.",
+    "hint": "N'oublie pas la progression des ajouts."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "45, 41, 39, ?, 33",
+    "prompt": "Quel terme manque ?",
+    "options": ["37", "35", "34", "36"],
+    "answer": "37",
+    "explanation": "Cette suite montre une diminution par -4, -2, puis de manière alternée. Donc après 39, nous devons retrancher 2 pour arriver à 37. Il est crucial de ne pas ignorer l'alternance des différences.",
+    "hint": "Observe la régularité dans la soustraction."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "6, 8, 11, 15, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["20", "21", "19", "23"],
+    "answer": "20",
+    "explanation": "Les différences progressent ainsi : +2, +3, +4. Après cette observation, ajouter 5 au 15 donnera 20. Le piège serait de penser qu'il y a une progression simple.",
+    "hint": "Concentrez-vous sur l'évolution des différences."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "4, 8, 15, 25, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["38", "39", "40", "41"],
+    "answer": "39",
+    "explanation": "Les différences augmentent de manière croissante : en ajoutant 4, 7, 10, et maintenant 14. Dès lors, 25 + 14 = 39. Attention à ne pas confondre en pensant que les incréments suivent une progression arithmétique unique.",
+    "hint": "Étudie la variation des incréments."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "14, 28, 56, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["84", "112", "100", "90"],
+    "answer": "112",
+    "explanation": "Cette suite double chaque nombre consécutivement. Chaque terme suit 14 × 2 = 28, suivi de 28 × 2 = 56 ; donc 56 × 2 = 112. N'introduisez pas arbitrairement une addition qui n'existe pas.",
+    "hint": "Cherche la multiplication par 2 constante."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "3, 8, 15, 24, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["39", "35", "36", "37"],
+    "answer": "35",
+    "explanation": "Les différences ajoutées sont +5, +7, +9. Donc, après 24, ajouter 11 donne 35. Le piège est de chercher une multiplication constante.",
+    "hint": "Garde un œil sur les différences."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "12, 24, 50, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["102", "98", "94", "100"],
+    "answer": "102",
+    "explanation": "Les différences de cette suite s'accroissent de manière exponentielle : double chaque fois. Après 50, la double multiplication mène à 102. Ne tombez pas dans le piège de confondre avec une addition similaire ou non.",
+    "hint": "Double imagine-toi la multiplication qui progresse."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "7, 11, 18, 29, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["36", "40", "45", "47"],
+    "answer": "47",
+    "explanation": "Les différences s'accroissent de +4, +7, +11. Par conséquent, ajoute 18 pour arriver à 47. Ne confondez pas cela avec une série arithmétique uniforme.",
+    "hint": "Bonne évaluation de la progression des différences."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "2, 7, 14, 23, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["32", "33", "30", "34"],
+    "answer": "34",
+    "explanation": "Déduction des écarts entre les termes est une clef ici : +5, +7, +9, +11. La recherche de 11 de plus après 23 donne 34. Le danger est de voir une fausse règle."
+  },
+  {
+    "hint": "La régularité de l'écart des incréments."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 5, 12, 22, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["33", "34", "32", "36"],
+    "answer": "34",
+    "explanation": "Chacune de ces différences s'agrandit avec le temps : +4, +7, +10 et maintenant +12. Donc, après 22, ajoute 12 pour arriver à 34. Ne regardez pas uniquement à leur portée.",
+    "hint": "Les écarts s'accroissent constamment."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "8, 13, 20, 29, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["40", "44", "41", "43"],
+    "answer": "40",
+    "explanation": "Ce modèle implique des incréments de +5, +7, +9, donc après 29, on ajoute 11 pour aboutir à 40. Ne succombez pas au parallèle d'une progression arithmétique ou multiplicative simple.",
+    "hint": "Prête attention à la progression croissante."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "6, 12, 21, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["33", "32", "31", "30"],
+    "answer": "33",
+    "explanation": "Dans cette disposition, nous voyons une augmentation des ajouts de +6, +9, suivi de +12. Par la suite, 21 + 12 égale 33. Attention à ne pas substituer une règle simplifiée.",
+    "hint": "Voulez-vous maîtriser l'acroissement?"
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "10, 19, 31, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["46", "44", "43", "45"],
+    "answer": "46",
+    "explanation": "Les intervalles sont progressifs : 9, 12. Alors, ajouter 15 après 31 donne 46. Veillez contre un jugement d'addition constante.",
+    "hint": "Suivre l'évolution."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "9, 20, 34, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["51", "50", "52", "48"],
+    "answer": "51",
+    "explanation": "Par des schémas visibles, on distingue l'addition du 11, 14, et 17. Par conséquent, à 34, plus 17 donne 51. Éviter de simplifier exagérément les additions.",
+    "hint": "Constatez les diff\u00e9rences croissantes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "5, 11, 20, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["32", "33", "36", "35"],
+    "answer": "33",
+    "explanation": "Il existe un mécanisme de croissance : +11 et +13. Ensuite, on doit ajouter 15 post 20, menant à 33. Ne tardez pas à interpréter en termes de multiplicateur.",
+    "hint": "Recherche graduelle de plus."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 4, 7, ?, 20",
+    "prompt": "Quel terme manque ?",
+    "options": ["11", "12", "13", "14"],
+    "answer": "13",
+    "explanation": "C'est une variante de la suite de Fibonacci, chaque terme étant la somme des deux précédents : 2 + 4 = 6, 4 + 7 = 11. Après 7, 7 + 6 au lieu de 13 n'aboutirait pas correctement.",
+    "hint": "Pense diff\u00e9rement avec Fibonacci."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 3, 5, 8, 13, ?, 34",
+    "prompt": "Quel terme manque ?",
+    "options": ["21", "20", "23", "25"],
+    "answer": "21",
+    "explanation": "Cette suite ressemble à Fibonacci : 2 + 3 = 5, 5 + 8 = 13, etc. Donc après 13, 8 + 13 égale 21. N'oubliez pas l'approche serait de simple ajout ou multiplication uniforme.",
+    "hint": "Chaque termes en somme deux autres."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "13, 21, 34, 55, ?, 144",
+    "prompt": "Quel terme manque ?",
+    "options": ["89", "104", "95", "98"],
+    "answer": "89",
+    "explanation": "La succession est typiquement Fibonacci. Alors, 21 + 34 = 55, 34 + 55 = 89. Ne détournez pas attention d'une considération erronée d'une équivalence simple.",
+    "hint": "Rappelle du Fibonacci classique."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "A, C, F, J, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["O", "P", "M", "N"],
+    "answer": "O",
+    "explanation": "L'écart alphabétique croît de 2, 3, 4 respectivement. Ce mécanisme aboutit donc apr\u00e8s J (J=10) + 5 = O (O=15). Occultation de la position exacte fausserait.",
+    "hint": "Constate le d\u00e9calage."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 3, 5, 8, 12, ?, 33",
+    "prompt": "Quel terme manque ?",
+    "options": ["17", "19", "18", "20"],
+    "answer": "17",
+    "explanation": "Addition d'un num\u00e9ro cons\u00e9cutivement à la position. Cela amène le 5 ajoutant 2 et menant à 17. Erreur dans l'ordre de position alphab\u00e9tique m\u00e8nerait \u00e0 une lecture incorrecte.",
+    "hint": "La position influence directement le contenu."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "11, 13, 17, 19, ?, 23",
+    "prompt": "Quel terme manque ?",
+    "options": ["21", "22", "24", "25"],
+    "answer": "21",
+    "explanation": "Une suite de nombres premiers contribuerait. Suivre fid\u00e8lement les transitions : 17, 19 et 21. Activation en enchaînement sans envisage multiplication ou addition unilat\u00e9rale.",
+    "hint": "N'oublie pas d'observer avec la premi\u00e8re approche."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "13, 22, 36, ?, 96",
+    "prompt": "Quel terme manque ?",
+    "options": ["58", "63", "65", "72"],
+    "answer": "58",
+    "explanation": "Progressivement et avec une double suite arithmétique composée de somme d'une partie et multiplication d'une autre. Via +13, +14 -> 13+22+36 = 58.",
+    "hint": "R\u00e8gle via combinaison."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 6, ?, 720",
+    "prompt": "Quel terme manque ?",
+    "options": ["24", "36", "120", "144"],
+    "answer": "24",
+    "explanation": "Multiplication par le terme précédent suit deux parties distinctes. Il est vital d'identifier qu'une progression directe est multilevel.",
+    "hint": "Recharge le calcul \u00e9tendu."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "5, 10, 11, 22, ?, 44",
+    "prompt": "Quel terme manque ?",
+    "options": ["23", "33", "43", "24"],
+    "answer": "23",
+    "explanation": "Ainsi fonctionne un d\u00e9calage combinatif reliant multiplication constante et alternance. En d\u00e9niant l'erreur de bordure, tout restait.",
+    "hint": "Ad\u00e9quatement fusionnement."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "4, 8, 28, ?, 248",
+    "prompt": "Quel terme manque ?",
+    "options": ["72", "82", "92", "102"],
+    "answer": "92",
+    "explanation": "Dans notre r\u00e9f\u00e9rence ce sont clairement cubes. Doublement observ\u00e9 dans une illusion composite aboutit.",
+    "hint": "Interrogez avant usage pratique."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "14, 28, 53, 70, ?, 118",
+    "prompt": "Quel terme manque ?",
+    "options": ["84", "80", "90", "97"],
+    "answer": "97",
+    "explanation": "Cha\Upercent deux \u00e9volution arithm\u00e9tique est d\u00e9tect\u00e9e, avec variable qui monte. Et deux incoh\u00e9rence initiale.",
+    "hint": "Note par \u00e9carts et coupure."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "22, 47, 77, 112, ?, 192",
+    "prompt": "Quel terme manque ?",
+    "options": ["145", "152", "170", "173"],
+    "answer": "152",
+    "explanation": "Le mod\u00e8le permet plus de confusion non-expos\u00e9e. Au terme, une solution m\u00eature et r\u00e9alisata devient 221.",
+    "hint": "Pourquoi vis\u00e9 le dernier sans premier?"
+  }
+]

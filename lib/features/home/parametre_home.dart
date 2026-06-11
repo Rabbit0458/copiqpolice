@@ -6,7 +6,7 @@ import 'package:copiqpolice/core/widgets/app_notifier.dart'; // AppNotifier + Ap
 // ---- Style helpers
 const double _r16 = 16;
 BoxShadow get _cardShadow => BoxShadow(
-  color: const Color(0xFF000000).withOpacity(0.10),
+  color: const Color(0xFF000000).withValues(alpha: 0.10),
   blurRadius: 16,
   offset: const Offset(0, 8),
 );
@@ -95,7 +95,7 @@ class _ParametreHomePageState extends State<ParametreHomePage> {
                     borderRadius: BorderRadius.circular(_r16),
                     boxShadow: [_cardShadow],
                     border: Border.all(
-                      color: theme.dividerColor.withOpacity(.10),
+                      color: theme.dividerColor.withValues(alpha: .10),
                     ),
                   ),
                   child: Row(
@@ -142,7 +142,7 @@ class _ParametreHomePageState extends State<ParametreHomePage> {
                 color: theme.colorScheme.surface,
                 borderRadius: BorderRadius.circular(_r16),
                 boxShadow: [_cardShadow],
-                border: Border.all(color: theme.dividerColor.withOpacity(.10)),
+                border: Border.all(color: theme.dividerColor.withValues(alpha: .10)),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -184,15 +184,15 @@ class _ParametreHomePageState extends State<ParametreHomePage> {
                             height: value,
                             decoration: BoxDecoration(
                               color: isDark
-                                  ? Colors.white.withOpacity(.08)
-                                  : theme.colorScheme.onSurface.withOpacity(
+                                  ? Colors.white.withValues(alpha: .08)
+                                  : theme.colorScheme.onSurface.withValues(alpha: 
                                       .90,
                                     ),
                               borderRadius: BorderRadius.circular(value / 2),
                               border: Border.all(
                                 color: isDark
-                                    ? Colors.white.withOpacity(.10)
-                                    : Colors.black.withOpacity(.06),
+                                    ? Colors.white.withValues(alpha: .10)
+                                    : Colors.black.withValues(alpha: .06),
                               ),
                             ),
                             padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -244,7 +244,7 @@ class _BackButtonMinimal extends StatelessWidget {
           color: theme.colorScheme.surface,
           borderRadius: BorderRadius.circular(14),
           boxShadow: [_cardShadow],
-          border: Border.all(color: theme.dividerColor.withOpacity(.10)),
+          border: Border.all(color: theme.dividerColor.withValues(alpha: .10)),
         ),
         child: Icon(
           Icons.arrow_back_rounded,
@@ -287,11 +287,11 @@ class _ThemePreviewCard extends StatelessWidget {
 
     final Color borderC = selected
         ? t.colorScheme.primary
-        : t.dividerColor.withOpacity(.25);
+        : t.dividerColor.withValues(alpha: .25);
 
     final BoxShadow glow = BoxShadow(
       color: selected
-          ? t.colorScheme.primary.withOpacity(.35)
+          ? t.colorScheme.primary.withValues(alpha: .35)
           : Colors.transparent,
       blurRadius: selected ? 18 : 0,
       spreadRadius: selected ? 1 : 0,
@@ -446,7 +446,7 @@ class _ThemePreviewCard extends StatelessWidget {
       width: 12,
       height: 12,
       decoration: BoxDecoration(
-        color: selected ? c : c.withOpacity(.35),
+        color: selected ? c : c.withValues(alpha: .35),
         shape: BoxShape.circle,
       ),
     );

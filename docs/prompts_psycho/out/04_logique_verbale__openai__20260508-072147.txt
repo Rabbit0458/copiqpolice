@@ -1,0 +1,373 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « joyeux » ?",
+    "prompt": null,
+    "options": ["Triste", "Heureux", "Fatigué", "Calme"],
+    "answer": "Heureux",
+    "explanation": "« Heureux » exprime un état de joie similaire à « joyeux ». « Triste » est contraire à joyeux, tandis que « Fatigué » et « Calme » ne décrivent pas l'allégresse.",
+    "hint": "Pensez à un état d'esprit positif."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « courageux » ?",
+    "prompt": null,
+    "options": ["Brave", "Timide", "Vaillant", "Intrépide"],
+    "answer": "Timide",
+    "explanation": "« Timide » désigne quelqu'un de réservé, souvent hésitant, opposé à « courageux ». « Brave », « Vaillant », et « Intrépide » sont synonymes de courageux.",
+    "hint": "Cherchez un mot qui décrit la retenue."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Vache, Mouton, Cheval, Voiture",
+    "options": ["Vache", "Mouton", "Cheval", "Voiture"],
+    "answer": "Voiture",
+    "explanation": "« Voiture » est un véhicule, tandis que « Vache », « Mouton », et « Cheval » sont des animaux.",
+    "hint": "Trois choix sont des êtres vivants."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : \"Lors de l'examen, il a ___ une question difficile.\"",
+    "prompt": null,
+    "options": ["Raté", "Réussi", "Évitée", "Réfléchi"],
+    "answer": "Réussi",
+    "explanation": "« Réussi » est le terme positif indiquant qu'il a bien répondu. « Raté » est synonyme d'échec. « Évitée » ne s'applique pas à une réussite, et « Réfléchi » signifie simplement y penser.",
+    "hint": "Pensez à un succès."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot « doux » signifie : \"Cet agneau est très doux.\"",
+    "prompt": null,
+    "options": ["Agréable", "Doux", "Robuste", "Agressif"],
+    "answer": "Agréable",
+    "explanation": "Dans le contexte d'un agneau, « doux » implique agréable au toucher. « Robuste » signifie solide, et « Agressif » est son contraire.",
+    "hint": "Considérez la texture."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « chanceux » ?",
+    "prompt": null,
+    "options": ["Malchanceux", "Fortuné", "Pauvre", "Découragé"],
+    "answer": "Fortuné",
+    "explanation": "« Fortuné » dénote un aspect de chance ou de réussite. « Malchanceux » est son contraire, « Pauvre » réfère à un manque de ressources, et « Découragé » n'exprime pas de chance.",
+    "hint": "Pensez à une connotation positive."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « bruyant » ?",
+    "prompt": null,
+    "options": ["Silencieux", "Énergique", "Vibrant", "Coloré"],
+    "answer": "Silencieux",
+    "explanation": "« Silencieux » signifie l'absence de bruit, opposé à « bruyant ». « Énergique » et « Vibrant » n'indiquent pas un volume sonore, et « Coloré » réfère à des couleurs.",
+    "hint": "Cherchez le calme."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Piano, Guitare, Peinture, Violon",
+    "options": ["Piano", "Guitare", "Peinture", "Violon"],
+    "answer": "Peinture",
+    "explanation": "« Peinture » est un art visuel, tandis que « Piano », « Guitare », et « Violon » sont des instruments de musique.",
+    "hint": "Seul un choix n'est pas musical."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : \"Bien qu'il soit petit, cet animal est très ___.\"",
+    "prompt": null,
+    "options": ["Féroce", "Lent", "Triste", "Ennuyeux"],
+    "answer": "Féroce",
+    "explanation": "La phrase suggère un contraste, donc « féroce » (intrépidité malgré la taille) est correct. « Lent », « Triste » et « Ennuyeux » ne correspondent pas à cet antagonisme.",
+    "hint": "Cherchez une contradiction avec « petit »."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot « frais » signifie : \" Cette eau est particulièrement fraîche.\"",
+    "prompt": null,
+    "options": ["Fraîche", "Courte", "Chaleureuse", "Salée"],
+    "answer": "Fraîche",
+    "explanation": "En parlant de l'eau, « fraîche » désigne sa température agréablement froide. « Courte » ne s'applique pas au liquide, « Chaleureuse » est opposé au frais, bien que « Salée » ne décrive ni la fraîcheur ni la température.",
+    "hint": "Pensez à la température."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « amusant » ?",
+    "prompt": null,
+    "options": ["Ennuyeux", "Drôle", "Sérieux", "Triste"],
+    "answer": "Drôle",
+    "explanation": "Pour décrire quelque chose d'« amusant », « drôle » s'adresse au divertissement. « Ennuyeux » et « Triste » expriment la déception et la morosité. « Sérieux » fréquemment précède le sérieux.",
+    "hint": "Pensez au rire."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « sec » ?",
+    "prompt": null,
+    "options": ["Humide", "Dur", "Léger", "Flexible"],
+    "answer": "Humide",
+    "explanation": "Dans ce contexte, « sec » désigne un manque d'humidité, « humide » étant son contraire. « Dur » n'indique pas l'humidité, tandis que « Léger » et « Flexible » ne sont ni liés au sec ni à son contraire.",
+    "hint": "Penser à la pluie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Chat, Boulanger, Chien, Souris",
+    "options": ["Chat", "Boulanger", "Chien", "Souris"],
+    "answer": "Boulanger",
+    "explanation": "Le « Boulanger » est un métier, tandis que « Chat », « Chien » et « Souris » sont des animaux.",
+    "hint": "Seul un choix n'est pas un animal."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : \"Elle a ___ sa langue devant la classe.\"",
+    "prompt": null,
+    "options": ["Perdu", "Trouvé", "Gagné", "Vu"],
+    "answer": "Perdu",
+    "explanation": "L'expression « perdu sa langue » signifie devenir muet. « Trouvé » se réfère à retrouver un élément. « Gagné » et « Vu » ne sont pas cohérents dans ce contexte particulier.",
+    "hint": "Pensez à une expression idiomatique."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot « court » signifie : \"Le film était étonnamment court.\"",
+    "prompt": null,
+    "options": ["Bref", "Long", "Intense", "Glacial"],
+    "answer": "Bref",
+    "explanation": "Quand il s'agit d'un film, « court » signifie « bref ». « Long » est son antonyme. « Intense » et « Glacial » ne décrivent nullement une durée.",
+    "hint": "Réfléchissez quant à la durée."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « debout » ?",
+    "prompt": null,
+    "options": ["Assis", "Érigé", "Couché", "Reposé"],
+    "answer": "Érigé",
+    "explanation": "Dans ce cas, « érigé » et « debout » désignent la position verticale. « Assis » et « Couché » sont opposés, tandis que « Reposé » est autre.",
+    "hint": "Cherchez quelque chose de vertical."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « difficile » ?",
+    "prompt": null,
+    "options": ["Compliqué", "Simple", "Énigmatique", "Épineux"],
+    "answer": "Simple",
+    "explanation": "Ici, « simple » est l'antonyme de « difficile ». « Compliqué », « énigmatique » et « épineux » compliquent au lieu de faciliter.",
+    "hint": "Anticipez une absence de complications."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « exhaustif » ?",
+    "prompt": null,
+    "options": ["Partiel", "Satisfactoire", "Complet", "Limité"],
+    "answer": "Complet",
+    "explanation": "« Exhaustif » signifie qu'un travail est détaillé et total. « Partiel » et « Limité » impliquent des restrictions, « Satisfactoire » indique la satisfaction sans dire que c'est entièrement fini.",
+    "hint": "Pensez à quelque chose de totalement abordé."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « rigoureux » ?",
+    "prompt": null,
+    "options": ["Sévère", "Relaxé", "Méticuleux", "Pointilleux"],
+    "answer": "Relaxé",
+    "explanation": "Dans ce contexte, « relaxé » est la contrepartie de « rigoureux ». « Sévère », « Méticuleux » et « Pointilleux » partagent la rigueur sans flexibilité.",
+    "hint": "Cherchez la décontraction."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Artiste est à peinture comme écrivain est à ___",
+    "prompt": null,
+    "options": ["Brosse", "Livre", "Palette", "Chevalet"],
+    "answer": "Livre",
+    "explanation": "L'artiste utilise la peinture comme l'écrivain produit avec un livre. « Brosse » et « Chevalet » sont des affaires d'art, et « Palette » plutôt pour l'artiste.",
+    "hint": "Considérez par quel médium l'auteur est connu."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Médecin, Infirmière, Réceptionniste, Avocat",
+    "options": ["Médecin", "Infirmière", "Réceptionniste", "Avocat"],
+    "answer": "Avocat",
+    "explanation": "Dans cet ensemble, seul « Avocat » n'appartient pas au domaine médical.",
+    "hint": "Trois choix sont liés à la santé."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : \"Pour convaincre, l'orateur s'est exprimé avec ___.\"",
+    "prompt": null,
+    "options": ["Hésitation", "Clarté", "Silence", "Ambiguïté"],
+    "answer": "Clarté",
+    "explanation": "Pour persuader le public, « clarté » est essentielle. Ni « Hésitation » ni « Silence » n'accomplissent cette tâche. « Ambiguïté » introduit des incertitudes.",
+    "hint": "Cherchez une qualité positive de discours."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot « tableau » signifie : \"Ils admirent le tableau moderne au musée.\"",
+    "prompt": null,
+    "options": ["Liste", "Peinture", "Chiffre", "Diagramme"],
+    "answer": "Peinture",
+    "explanation": "Au musée, un « tableau » est une peinture, une œuvre d'art. « Liste » et « Diagramme » se rapportent à des schémas. « Chiffre » ne désigne ni visuel ni galerie.",
+    "hint": "Pensez à une œuvre d'art."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « méticuleux » ?",
+    "prompt": null,
+    "options": ["Négligent", "Minutieux", "Décontracté", "Superficiel"],
+    "answer": "Minutieux",
+    "explanation": "« Minutieux » renvoie au soin, à l'exactitude des détails de la tâche. « Négligent » est inexact, « Décontracté » est insouciant, et « Superficiel » est sans profondeur.",
+    "hint": "Cherchez un synonyme de précision."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « urbain » ?",
+    "prompt": null,
+    "options": ["Rural", "Métropolitain", "Cosmopolite", "Municipal"],
+    "answer": "Rural",
+    "explanation": "« Urbain » désigne la ville, tandis que « rural » vise la campagne. « Métropolitain » et « Cosmopolite » s'étendent à un cadre urbain. « Municipal » n’oppose pas la ville.",
+    "hint": "Considérez l'opposé de la ville."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Agriculteur est à champ comme pêcheur est à ___",
+    "prompt": null,
+    "options": ["Forêt", "Rivière", "Route", "Montagne"],
+    "answer": "Rivière",
+    "explanation": "L’agriculteur travaille le champ tandis que le pêcheur gagne dans la rivière. Les autres options ne font pas de liens clairs à cette profession.",
+    "hint": "Considérez où agirait un pêcheur."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Ciseau, Mortier, Burin, Pilon",
+    "options": ["Ciseau", "Mortier", "Burin", "Pilon"],
+    "answer": "Mortier",
+    "explanation": "Dans cet ensemble, « mortier » reçoit les ingrédients, tandis que les autres outils tranchent.",
+    "hint": "Cherchez un outil qui ne coupe pas."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : \"Avec une ___ précision, il a élaboré son plan.\"",
+    "prompt": null,
+    "options": ["Vaste", "Grande", "Approximation", "Rude"],
+    "answer": "Grande",
+    "explanation": "« Grande précision » signale méticulosité. « Vaste », qui indique le volume, inappropriate à la description. « Approximation » suggère une précision médiocre, et « Rude » indique dureté.",
+    "hint": "Cherchez un exemple de soin."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot « pièce » signifie : \"Nous avons visité une pièce secrète dans le château.\"",
+    "prompt": null,
+    "options": ["Salle", "Monnaie", "Fragment", "Composition"],
+    "answer": "Salle",
+    "explanation": "Dans un château, une « pièce » fait référence à une salle, une chambre ou un espace intérieur. « Monnaie » ou « Fragment » ne collent pas au contexte spatial particulier.",
+    "hint": "Pensez à une partie d'un bâtiment."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « sibyllin » ?",
+    "prompt": null,
+    "options": ["Mystérieux", "Claire", "Évidente", "Réaliste"],
+    "answer": "Mystérieux",
+    "explanation": "« Sibyllin » signifie mystérieux, obscure, difficile à comprendre. « Claire » et « Évidente » sont les antonymes, tandis que « Réaliste » relève du pragmatisme.",
+    "hint": "Pensez à quelque chose de difficile à comprendre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « prolixe » ?",
+    "prompt": null,
+    "options": ["Succinct", "Long", "Rêveur", "Bavard"],
+    "answer": "Succinct",
+    "explanation": "« Prolixe » signifie détaillé dans son discours, alors que « succinct » indique la brièveté. « Long » et « bavard » renforcent la prolixité, et « rêveur » ne concerne pas la parole.",
+    "hint": "Cherchez la concision."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Chirurgien est à scalpel comme architecte est à ___",
+    "prompt": null,
+    "options": ["Scie", "Plan", "Béton", "Grue"],
+    "answer": "Plan",
+    "explanation": "Au métier de chirurgien appartient le scalpel, tout comme architecte contrôle le plan. « Scie » est un outil manuel, « béton » un matériau, et « grue » votre machine.",
+    "hint": "Pensez à un support de conception."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Cardiologue, Neurologue, Juriste, Chirurgien",
+    "options": ["Cardiologue", "Neurologue", "Juriste", "Chirurgien"],
+    "answer": "Juriste",
+    "explanation": "« Juriste » se rapporte au domaine juridique, tandis que les autres spécialisent en médecine.",
+    "hint": "Cherchez un expert non médical."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète la phrase : \"Il a dû admettre sa faute, bien qu'il en soit profondément ___\"",
+    "prompt": null,
+    "options": ["Réticent", "Contrit", "Indifférent", "Joyeux"],
+    "answer": "Contrit",
+    "explanation": "Avouer sa faute implique un terrain émotionnel comme être « contrit ». « Réticent » marque plutôt une réserve initiale. « Indifférent » et « joyeux » ne sont pas lui.",
+    "hint": "Pensez au regret sincère."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, le mot « altérer » signifie : \"Le soleil peut altérer les couleurs des tissus.\"",
+    "prompt": null,
+    "options": ["Changer", "Conserver", "Confirmer", "Nettoyer"],
+    "answer": "Changer",
+    "explanation": "« Altérer » ici veut dire modifier progressivement, affecter l'apparence originelle. « Conserver » préserve l'état, « confirmer » rentre une affirmation, et « nettoyer » l'efface.",
+    "hint": "Pensez à une dégradation."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « atavique » ?",
+    "prompt": null,
+    "options": ["Héréditaire", "Éphémère", "Moderne", "Archaïque"],
+    "answer": "Héréditaire",
+    "explanation": "L'adjectif « atavique » parle d'une caractéristique transmise depuis les ancêtres, ce qui est « héréditaire ». « Éphémère » parle de fugitivité, « moderne » affiche la nouveauté, et « archaïque » renvoie à l'ancien.",
+    "hint": "Considérez quelque chose de lignée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « dichotomie » ?",
+    "prompt": null,
+    "options": ["Unité", "Séparation", "Discorde", "Divorce"],
+    "answer": "Unité",
+    "explanation": "La « dichotomie » est une division binaire opposée à l'« unité » qui marque l'unification. « Séparation », « Discorde » et « Divorce » sont orientées vers une fracture.",
+    "hint": "Recherchez plutôt l'harmonie."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Juge est à tribunal comme professeur est à ___",
+    "prompt": null,
+    "options": ["École", "Bibliothèque", "Salle de sport", "Salon"],
+    "answer": "École",
+    "explanation": "Le juge travaille dans un tribunal, tout comme le professeur fonctionne dans une école. Les autres lieux n'atteignent pas majoritairement l'éducation.",
+    "hint": "Considérez où un enseignant offre enseignement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Arbitre, Avocat, Acteur, Procureur",
+    "options": ["Arbitre", "Avocat", "Acteur", "Procureur"],
+    "answer": "Acteur",
+    "explanation": "Les termes « Arbitre », « Avocat » et « Procureur » pratiquent leurs rôles au sein d'un cadre juridique. Cependant, « Acteur » réside dans le monde du spectacle.",
+    "hint": "Une seule profession est divertissante."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « prolifique » ?",
+    "prompt": null,
+    "options": ["Stérile", "Productif", "Économe", "Ressourcé"],
+    "answer": "Productif",
+    "explanation": "Un « prolifique » présente une grande productivité, un semblable à « productif ». « Stérile » renvoie à absence de résultat. « Économe » et « ressourcé » parlent de conservation mais pas de foisonnement.",
+    "hint": "Pensez à la production abondante."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « néophyte » ?",
+    "prompt": null,
+    "options": ["Expert", "Débutant", "Profane", "Amateur"],
+    "answer": "Expert",
+    "explanation": "Un « néophyte » est novice par rapport à un « expert », qui possède une maîtrise. « Débutant », « Profane », et « Amateur » rappellent l'inexpérience.",
+    "hint": "Sondez en direction de l'expérience."
+  }
+]
+```

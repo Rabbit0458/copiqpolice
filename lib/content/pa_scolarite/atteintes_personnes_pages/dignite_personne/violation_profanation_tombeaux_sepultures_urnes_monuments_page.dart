@@ -1,0 +1,580 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage
+    extends StatelessWidget {
+  const PaViolationProfanationTombeauxSepulturesUrnesMonumentsPage({super.key});
+
+  static const String routeName =
+      '/pa/dps_dpg/atteintes_personnes/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments';
+
+  static const Color _lawRed = Color(0xFFE53935);
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
+    final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
+
+    // Palette cards (propre + lisible)
+    final Color cardLegal = isDark
+        ? const Color(0xFF1F2733)
+        : const Color(0xFFF2F6FF);
+    final Color cardMat = isDark
+        ? const Color(0xFF1D2A24)
+        : const Color(0xFFF1FBF5);
+    final Color cardMoral = isDark
+        ? const Color(0xFF2A1F2D)
+        : const Color(0xFFFFF1F8);
+    final Color cardAggr = isDark
+        ? const Color(0xFF2C2417)
+        : const Color(0xFFFFF8E1);
+    final Color cardRep = isDark
+        ? const Color(0xFF222224)
+        : const Color(0xFFF7F7F7);
+
+    final Color accentBlue = isDark
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
+    final Color accentGreen = isDark
+        ? const Color(0xFF66BB6A)
+        : const Color(0xFF2E7D32);
+    final Color accentPink = isDark
+        ? const Color(0xFFF48FB1)
+        : const Color(0xFFC2185B);
+    final Color accentAmber = isDark
+        ? const Color(0xFFFFCA28)
+        : const Color(0xFFF9A825);
+    final Color accentGrey = isDark ? Colors.white70 : const Color(0xFF616161);
+
+    return Scaffold(
+      backgroundColor: bg,
+      appBar: AppBar(
+        backgroundColor: bg,
+        elevation: 0,
+        centerTitle: true,
+        leading: IconButton(
+          onPressed: () => Navigator.of(context).maybePop(),
+          icon: Icon(Icons.arrow_back_ios_new_rounded, color: textMain),
+          tooltip: 'Retour',
+        ),
+        title: Text(
+          "Atteintes à la dignité",
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: GoogleFonts.fustat(
+            fontWeight: FontWeight.w900,
+            fontSize: 18,
+            color: textMain,
+          ),
+        ),
+      ),
+      body: ListView(
+        physics: const BouncingScrollPhysics(),
+        padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
+        children: [
+          Text(
+            "Violation et profanation de tombeaux, sépultures, urnes cinéraires ou monuments à la mémoire des morts",
+            style: GoogleFonts.fustat(
+              fontWeight: FontWeight.w900,
+              fontSize: 21,
+              height: 1.15,
+              color: textMain,
+            ),
+          ),
+          const SizedBox(height: 10),
+
+          // Définition
+          _ConditionCard(
+            title: "Définition",
+            cardColor: cardRep,
+            accent: accentGrey,
+            titleColor: textMain,
+            children: const [
+              _Paragraph(
+                "La violation ou la profanation, par quelque moyen que ce soit, de tombeaux, de sépultures, "
+                "d’urnes cinéraires ou de monuments édifiés à la mémoire des morts, constitue une infraction.",
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // ✅ Élément légal en haut
+          _ConditionCard(
+            title: "I — Élément légal",
+            cardColor: cardLegal,
+            accent: accentBlue,
+            titleColor: textMain,
+            children: const [
+              _Paragraph.rich([
+                TextSpan(
+                  text: "Article 225-17 alinéa 2 du Code pénal",
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text:
+                      " : prévoit et réprime la violation ou la profanation de tombeaux, sépultures, urnes cinéraires "
+                      "ou monuments édifiés à la mémoire des morts.",
+                ),
+              ]),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Élément matériel
+          _ConditionCard(
+            title: "II — Élément matériel",
+            cardColor: cardMat,
+            accent: accentGreen,
+            titleColor: textMain,
+            children: const [
+              _SubTitle("A) Les lieux et objets protégés"),
+              _Paragraph.rich([
+                TextSpan(text: "Sont protégés par "),
+                TextSpan(
+                  text: "l’article 225-17 alinéa 2 du Code pénal",
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: " :"),
+              ]),
+              SizedBox(height: 8),
+              _BulletPoint(
+                text:
+                    "Les tombeaux : monument élevé sur les restes d’un mort (tous actes portant atteinte sont punissables, sauf s’il n’a pas encore servi de sépulture à un être humain).",
+              ),
+              _BulletPoint(
+                text:
+                    "Les sépultures : lieu où le défunt est enterré ; peut viser aussi le drap mortuaire ou le cercueil avant l’inhumation.",
+              ),
+              _BulletPoint(
+                text:
+                    "Les urnes cinéraires : vase fermé contenant les cendres après crémation, protégées au même titre que les sépultures (columbarium, caveaux d’urnes, monuments où elles sont scellées).",
+              ),
+              _BulletPoint(
+                text:
+                    "Les monuments édifiés à la mémoire des morts : monuments collectifs, plaques commémoratives, stèles… même sans sépulture (ex. plaque sur un mur, lieu où un soldat/résistant a été tué).",
+              ),
+
+              SizedBox(height: 14),
+
+              _SubTitle("B) Un acte de violation ou de profanation"),
+              _Paragraph(
+                "L’acte doit être matérialisé par une action physique ou une voie de fait. "
+                "Il peut s’agir de dégradations, d’atteintes, ou d’agissements portant atteinte au respect dû aux morts.",
+              ),
+              SizedBox(height: 10),
+              _SubTitle("Exemples d’actes (illustratifs)"),
+              _BulletPoint(
+                text:
+                    "Briser une pierre tombale, inscrire des tags/dessins, dégrader une sépulture.",
+              ),
+              _BulletPoint(
+                text:
+                    "Arracher des fleurs déposées/plantées par les proches du défunt.",
+              ),
+              _BulletPoint(
+                text:
+                    "Ouvrir un caveau, retirer un cercueil, déplacer des éléments funéraires.",
+              ),
+              _BulletPoint(
+                text:
+                    "Placarder un écrit injurieux/diffamatoire sur un tombeau.",
+              ),
+              _BulletPoint(
+                text:
+                    "Briser un objet funéraire (ex. crucifix) déposé sur le corps d’un défunt.",
+              ),
+
+              SizedBox(height: 12),
+
+              _NotaBox(
+                bodySpans: [
+                  TextSpan(
+                    text:
+                        "Ne sont pas punissables : l’exhumation réalisée dans les règles prescrites par la loi, "
+                        "ainsi que l’ouverture de sépultures très anciennes dans un intérêt historique.",
+                  ),
+                ],
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Élément moral
+          _ConditionCard(
+            title: "III — Élément moral",
+            cardColor: cardMoral,
+            accent: accentPink,
+            titleColor: textMain,
+            children: const [
+              _Paragraph(
+                "L’auteur agit en toute connaissance de cause : il a pleinement conscience d’accomplir un acte "
+                "de nature à porter atteinte au respect dû aux morts. Le mobile est indifférent.",
+              ),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Circonstances aggravantes
+          _ConditionCard(
+            title: "IV — Circonstances aggravantes",
+            cardColor: cardAggr,
+            accent: accentAmber,
+            titleColor: textMain,
+            children: const [
+              _Paragraph.rich([
+                TextSpan(
+                  text: "Article 225-17 alinéa 3 du Code pénal",
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text:
+                      " : l’infraction est aggravée lorsque la violation ou la profanation a été accompagnée d’une atteinte à l’intégrité du cadavre.",
+                ),
+              ]),
+            ],
+          ),
+
+          const SizedBox(height: 14),
+
+          // Répression + tentative/complicité
+          _ConditionCard(
+            title: "V — Répression",
+            cardColor: cardRep,
+            accent: accentGrey,
+            titleColor: textMain,
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
+              _Paragraph.rich([
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
+                  text: "1 an d’emprisonnement et 15 000 € d’amende — ",
+                ),
+                TextSpan(
+                  text: "article 225-17 alinéa 2 du Code pénal",
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+              SizedBox(height: 8),
+              _Paragraph.rich([
+                TextSpan(text: "Qualification aggravée : "),
+                TextSpan(
+                  text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
+                ),
+                TextSpan(
+                  text: "article 225-17 alinéa 3 du Code pénal",
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle("Personnes morales"),
+              _Paragraph.rich([
+                TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(
+                  text: "l’article 225-18-1 du Code pénal",
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: " ; amende selon "),
+                TextSpan(
+                  text: "l’article 131-38 du Code pénal",
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(text: " + peines des "),
+                TextSpan(
+                  text: "articles 131-39 du Code pénal",
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: " (dissolution, interdiction d’exercer, etc.).",
+                ),
+              ]),
+
+              SizedBox(height: 12),
+
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _Paragraph.rich([
+                TextSpan(text: "Complicité : OUI — "),
+                TextSpan(
+                  text: "articles 121-6 et 121-7 du Code pénal",
+                  style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
+                ),
+                TextSpan(
+                  text: " (aide/assistance, provocation, instructions).",
+                ),
+              ]),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+///                   TES WIDGETS PERSONNALISÉS EXACTS                    ///
+///////////////////////////////////////////////////////////////////////////////
+
+class _ConditionCard extends StatelessWidget {
+  const _ConditionCard({
+    required this.title,
+    required this.cardColor,
+    required this.accent,
+    required this.titleColor,
+    required this.children,
+  });
+
+  final String title;
+  final Color cardColor;
+  final Color accent;
+  final Color titleColor;
+  final List<Widget> children;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      container: true,
+      header: true,
+      child: Container(
+        decoration: BoxDecoration(
+          color: cardColor,
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withValues(alpha: .12),
+              blurRadius: 18,
+              offset: const Offset(0, 10),
+            ),
+          ],
+        ),
+        padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: GoogleFonts.fustat(
+                fontWeight: FontWeight.w800,
+                fontSize: 16.5,
+                color: titleColor,
+              ),
+            ),
+            const SizedBox(height: 12),
+            ...children,
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _SubTitle extends StatelessWidget {
+  const _SubTitle(this.text);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 6, bottom: 6),
+      child: Text(
+        text,
+        style: GoogleFonts.fustat(
+          fontWeight: FontWeight.w700,
+          fontSize: 15.5,
+          color: isDark ? Colors.white : const Color(0xFF0D47A1),
+        ),
+      ),
+    );
+  }
+}
+
+class _Paragraph extends StatelessWidget {
+  const _Paragraph(this.text) : spans = null;
+
+  const _Paragraph.rich(this.spans) : text = null;
+
+  final String? text;
+  final List<TextSpan>? spans;
+
+  @override
+  Widget build(BuildContext context) {
+    final isRich = spans != null;
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final Color color = isDark
+        ? Colors.white70
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
+
+    if (!isRich) {
+      return Text(
+        text!,
+        textAlign: TextAlign.justify,
+        style: GoogleFonts.fustat(
+          fontSize: 14,
+          height: 1.45,
+          fontWeight: FontWeight.w500,
+          color: color,
+        ),
+      );
+    }
+
+    return RichText(
+      textAlign: TextAlign.justify,
+      text: TextSpan(
+        style: GoogleFonts.fustat(
+          fontSize: 14,
+          height: 1.45,
+          fontWeight: FontWeight.w500,
+          color: color,
+        ),
+        children: spans!,
+      ),
+    );
+  }
+}
+
+class _IntroBullet extends StatelessWidget {
+  const _IntroBullet({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final Color bulletColor = isDark
+        ? const Color(0xFF64B5F6)
+        : const Color(0xFF1565C0);
+    final Color textColor = isDark
+        ? Colors.white70
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 2),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 4),
+            child: Icon(
+              Icons.arrow_right_rounded,
+              size: 18,
+              color: bulletColor,
+            ),
+          ),
+          const SizedBox(width: 2),
+          Expanded(
+            child: Text(
+              text,
+              style: GoogleFonts.fustat(
+                fontSize: 14,
+                height: 1.3,
+                fontWeight: FontWeight.w500,
+                color: textColor,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _BulletPoint extends StatelessWidget {
+  const _BulletPoint({required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 4),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Icon(
+            Icons.check_rounded,
+            size: 18,
+            color: isDark ? const Color(0xFF64B5F6) : const Color(0xFF1565C0),
+          ),
+          const SizedBox(width: 6),
+          Expanded(
+            child: Text(
+              text,
+              style: GoogleFonts.fustat(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                height: 1.35,
+                color: isDark
+                    ? Colors.white70
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _NotaBox extends StatelessWidget {
+  const _NotaBox({required this.bodySpans});
+
+  final List<TextSpan> bodySpans;
+  final String title;
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    final Color borderColor = isDark
+        ? const Color(0xFFFFCA28)
+        : const Color(0xFFF9A825);
+    final Color bgColor = isDark
+        ? const Color(0xFF26200F)
+        : const Color(0xFFFFF8E1);
+    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
+        borderRadius: BorderRadius.circular(12),
+        border: Border(left: BorderSide(color: borderColor, width: 3)),
+      ),
+      child: RichText(
+        textAlign: TextAlign.justify,
+        text: TextSpan(
+          style: GoogleFonts.fustat(
+            fontSize: 13.5,
+            fontWeight: FontWeight.w500,
+            height: 1.4,
+            color: isDark
+                ? Colors.white70
+                : const Color(0xFF3E2723).withValues(alpha: .95),
+          ),
+          children: [
+            TextSpan(
+              text: '$title : ',
+              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
+            ),
+            ...bodySpans,
+          ],
+        ),
+      ),
+    );
+  }
+}

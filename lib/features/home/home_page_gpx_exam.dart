@@ -47,7 +47,7 @@ class _T {
 
 Color _muted(BuildContext context, [double opacity = .7]) {
   final isDark = Theme.of(context).brightness == Brightness.dark;
-  return (isDark ? Colors.white : Colors.black).withOpacity(opacity);
+  return (isDark ? Colors.white : Colors.black).withValues(alpha: opacity);
 }
 
 // ======================================================================
@@ -1196,7 +1196,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                   filterQuality: FilterQuality.high,
                   errorBuilder: (_, __, ___) {
                     return Container(
-                      color: const Color(0xFF9E9E9E).withOpacity(.25),
+                      color: const Color(0xFF9E9E9E).withValues(alpha: .25),
                     );
                   },
                 ),
@@ -1210,7 +1210,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                       begin: Alignment.topCenter,
                       end: Alignment.center,
                       colors: [
-                        Colors.black.withOpacity(0.18),
+                        Colors.black.withValues(alpha: 0.18),
                         Colors.transparent,
                       ],
                     ),
@@ -1227,8 +1227,8 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                       end: Alignment.topCenter,
                       stops: const [0.00, 0.42, 0.85],
                       colors: [
-                        Colors.black.withOpacity(.72),
-                        Colors.black.withOpacity(.30),
+                        Colors.black.withValues(alpha: .72),
+                        Colors.black.withValues(alpha: .30),
                         Colors.transparent,
                       ],
                     ),
@@ -1253,7 +1253,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                 left: 12,
                 child: ClipOval(
                   child: Material(
-                    color: Colors.black.withOpacity(0.28),
+                    color: Colors.black.withValues(alpha: 0.28),
                     child: InkWell(
                       onTap: _toggleFavorite,
                       child: Container(
@@ -1262,7 +1262,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color: Colors.white.withOpacity(0.32),
+                            color: Colors.white.withValues(alpha: 0.32),
                             width: 1,
                           ),
                         ),
@@ -1324,7 +1324,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.poppins(
-                          color: Colors.white.withOpacity(.85),
+                          color: Colors.white.withValues(alpha: .85),
                           fontWeight: FontWeight.w600,
                           fontSize: 12,
                           letterSpacing: .2,
@@ -1377,10 +1377,10 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                             height: 46,
                             padding: const EdgeInsets.symmetric(horizontal: 16),
                             decoration: BoxDecoration(
-                              color: anthracite.withOpacity(0.92),
+                              color: anthracite.withValues(alpha: 0.92),
                               borderRadius: BorderRadius.circular(18),
                               border: Border.all(
-                                color: Colors.white.withOpacity(0.10),
+                                color: Colors.white.withValues(alpha: 0.10),
                                 width: 1,
                               ),
                             ),
@@ -1442,7 +1442,7 @@ class _SlidingPillNavBar extends StatelessWidget {
     final dotSize = (h * 0.62).clamp(30.0, 44.0);
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final barColor = isDark ? Colors.white.withOpacity(.08) : _T.ink;
+    final barColor = isDark ? Colors.white.withValues(alpha: .08) : _T.ink;
 
     return SafeArea(
       top: false,
@@ -1639,7 +1639,7 @@ class _QuickActionsGrid extends StatelessWidget {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
-    final soft = (isDark ? Colors.white : Colors.black).withOpacity(
+    final soft = (isDark ? Colors.white : Colors.black).withValues(alpha: 
       isDark ? .08 : .04,
     );
 
@@ -1674,7 +1674,7 @@ class _QuickActionsGrid extends StatelessWidget {
                   ),
                 ],
                 border: Border.all(
-                  color: (isDark ? Colors.white : Colors.black).withOpacity(
+                  color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                     0.06,
                   ),
                 ),
@@ -1757,7 +1757,7 @@ class _MiniHeroCard extends StatelessWidget {
     TextStyle overlineStyle() => GoogleFonts.poppins(
       fontSize: 12,
       fontWeight: FontWeight.w700,
-      color: Colors.white.withOpacity(.82),
+      color: Colors.white.withValues(alpha: .82),
       letterSpacing: .2,
     );
 
@@ -1786,7 +1786,7 @@ class _MiniHeroCard extends StatelessWidget {
                   fit: BoxFit.cover,
                   filterQuality: FilterQuality.high,
                   errorBuilder: (_, __, ___) => Container(
-                    color: const Color(0xFF9E9E9E).withOpacity(.18),
+                    color: const Color(0xFF9E9E9E).withValues(alpha: .18),
                   ),
                 ),
 
@@ -1798,9 +1798,9 @@ class _MiniHeroCard extends StatelessWidget {
                       end: Alignment.bottomCenter,
                       stops: const [0.0, 0.58, 1.0],
                       colors: [
-                        Colors.black.withOpacity(0.18),
-                        Colors.black.withOpacity(0.46),
-                        Colors.black.withOpacity(0.82),
+                        Colors.black.withValues(alpha: 0.18),
+                        Colors.black.withValues(alpha: 0.46),
+                        Colors.black.withValues(alpha: 0.82),
                       ],
                     ),
                   ),
@@ -1850,10 +1850,10 @@ class _MiniHeroCard extends StatelessWidget {
                         height: 46,
                         padding: const EdgeInsets.symmetric(horizontal: 14),
                         decoration: BoxDecoration(
-                          color: ctaBg.withOpacity(0.92),
+                          color: ctaBg.withValues(alpha: 0.92),
                           borderRadius: BorderRadius.circular(18),
                           border: Border.all(
-                            color: Colors.white.withOpacity(0.10),
+                            color: Colors.white.withValues(alpha: 0.10),
                             width: 1,
                           ),
                         ),
@@ -1952,8 +1952,8 @@ class _ModuleCard extends StatelessWidget {
         final locked = s.isLocked;
         final isDark = Theme.of(context).brightness == Brightness.dark;
 
-        final Color badgeBg = Colors.white.withOpacity(isDark ? 0.14 : 0.10);
-        final Color borderClr = Colors.white.withOpacity(isDark ? 0.18 : 0.14);
+        final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
+        final Color borderClr = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
 
         return LayoutBuilder(
           builder: (context, c) {
@@ -1980,7 +1980,7 @@ class _ModuleCard extends StatelessWidget {
             final subtitleStyle = GoogleFonts.fustat(
               fontWeight: FontWeight.w600,
               fontSize: 14,
-              color: Colors.white.withOpacity(.85),
+              color: Colors.white.withValues(alpha: .85),
               height: 1.15,
             );
 
@@ -2039,9 +2039,9 @@ class _ModuleCard extends StatelessWidget {
                               begin: Alignment.topCenter,
                               end: Alignment.bottomCenter,
                               colors: [
-                                Colors.black.withOpacity(.10),
-                                Colors.black.withOpacity(.55),
-                                Colors.black.withOpacity(.78),
+                                Colors.black.withValues(alpha: .10),
+                                Colors.black.withValues(alpha: .55),
+                                Colors.black.withValues(alpha: .78),
                               ],
                               stops: const [0.0, 0.55, 1.0],
                             ),
@@ -2143,7 +2143,7 @@ class _RoundCTA extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white.withOpacity(.12),
+      color: Colors.white.withValues(alpha: .12),
       shape: const StadiumBorder(),
       child: InkWell(
         customBorder: const StadiumBorder(),
@@ -2210,9 +2210,9 @@ class _PremiumBadge extends StatelessWidget {
     final child = Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: Colors.black.withOpacity(0.36),
+        color: Colors.black.withValues(alpha: 0.36),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(0.24), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.24), width: 1),
         boxShadow: const [
           BoxShadow(
             blurRadius: 18,

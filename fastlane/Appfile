@@ -1,0 +1,11 @@
+# Fastlane Appfile — COP'IQ
+# https://docs.fastlane.tools/advanced/Appfile/
+
+# ── Android ────────────────────────────────────
+package_name("fr.copiq.police")
+
+# ── iOS ────────────────────────────────────────
+app_identifier("fr.copiq.police")
+apple_id("#{ENV['APPLE_ID']}")          # ex : devteam@copiq.fr
+team_id("#{ENV['APPLE_TEAM_ID']}")      # ex : ABCD1234EF  (visible sur developer.apple.com)
+itc_team_id("#{ENV['ITC_TEAM_ID']}")   # App Store Connect team id (si différent)

@@ -1,0 +1,407 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « joyeux » ?",
+        "prompt": null,
+        "options": ["Triste", "Heureux", "Pénible", "Colérique"],
+        "answer": "Heureux",
+        "explanation": "Le terme « joyeux » désigne une personne ou une situation qui exprime la joie, similaire à « heureux ». « Triste » est l'antonyme de joyeux. « Pénible » et « colérique » n'ont pas de lien direct avec le concept de joie.",
+        "hint": "Pense à un sentiment positif et agréable."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « propre » ?",
+        "prompt": null,
+        "options": ["Sale", "Net", "Clair", "Brillant"],
+        "answer": "Sale",
+        "explanation": "« Sale » est l'opposé de « propre », signifiant recouvert de saleté ou impur. « Net », « clair » et « brillant » sont plutôt associés à l'idée de propreté ou de luminosité, et non à son inverse.",
+        "hint": "Cherchez l'opposé de pur et nettoyé."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Chat, Chien, Lapin, Taille-crayon",
+        "options": ["Chat", "Chien", "Lapin", "Taille-crayon"],
+        "answer": "Taille-crayon",
+        "explanation": "Le « taille-crayon » est un objet, tandis que le « chat », le « chien » et le « lapin » sont tous des animaux. C'est un intrus car il ne s'agit pas d'un être vivant.",
+        "hint": "Un de ces mots n’est pas un animal."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « commencer » ?",
+        "prompt": null,
+        "options": ["Finir", "Débuter", "Arrêter", "Suspendre"],
+        "answer": "Débuter",
+        "explanation": "« Débuter » signifie entreprendre quelque chose, pareil à « commencer ». « Finir » et « arrêter » suggèrent la fin d'une activité, et « suspendre » implique une pause.",
+        "hint": "Cherchez un terme qui signifie initier une action."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Quand il a compris la nouvelle, il était tellement ___ qu'il a crié.\"",
+        "prompt": null,
+        "options": ["Amusé", "Effrayé", "Étonné", "Indifférent"],
+        "answer": "Étonné",
+        "explanation": "Le mot « étonné » décrit une réaction forte souvent surprenante, ce qui pourrait bien être exprimé par un cri. « Amusé » pourrait aussi pousser à crier dans un autre contexte, mais ici « étonné » est plus précis. « Effrayé » impliquerait la peur, et « indifférent » ne correspond pas à une réaction forte.",
+        "hint": "Pensez à une réaction intense et inattendue."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « chaud » ?",
+        "prompt": null,
+        "options": ["Brûlant", "Tiède", "Givré", "Froid"],
+        "answer": "Froid",
+        "explanation": "« Froid » est l'opposé direct de « chaud », décrivant la température la plus basse. « Brûlant » et « tiède » indiquent diverses intensités de chaleur, et « givré » implique aussi le froid mais de manière moins directe.",
+        "hint": "Cherchez la température opposée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Banane, Raisin, Brocoli, Pomme",
+        "options": ["Banane", "Raisin", "Brocoli", "Pomme"],
+        "answer": "Brocoli",
+        "explanation": "Le « brocoli » est un légume, alors que la « banane », le « raisin » et la « pomme » sont tous des fruits. C'est le seul qui n'est pas sucré à manger cru.",
+        "hint": "Cherchez celui qui ne se mange pas en dessert."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « finir » ?",
+        "prompt": null,
+        "options": ["Commencer", "Continuer", "Achever", "Interrompre"],
+        "answer": "Achever",
+        "explanation": "« Achever » est un synonyme de « finir », signifiant amener une action à son terme. « Commencer » est son antonyme. « Continuer » et « interrompre » ne sont pas des actions qui suggèrent l'achèvement.",
+        "hint": "Pensez à faire le dernier pas avant la conclusion."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « clair » ?",
+        "prompt": null,
+        "options": ["Lumineux", "Sombre", "Translucide", "Brillant"],
+        "answer": "Sombre",
+        "explanation": "« Sombre » est l'opposé de « clair », signifiant l'absence de lumière ou une obscurité partielle. Les termes « lumineux » et « brillant » sont associés à la clarté, et « translucide » à la transparence.",
+        "hint": "Cherchez ce qui décrit l'absence de lumière."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « content » ?",
+        "prompt": null,
+        "options": ["Mécontent", "Triste", "Heureux", "Préoccupé"],
+        "answer": "Heureux",
+        "explanation": "« Heureux » exprime un état de satisfaction ou de contentement, comme « content ». « Mécontent » et « triste » sont des antonymes, tandis que « préoccupé » implique l'inquiétude.",
+        "hint": "Il s’agit de ressentir de la joie et du bien-être."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Il s'est lancé dans l'aventure avec un enthousiasme ___ .\"",
+        "prompt": null,
+        "options": ["Tiède", "Froid", "Démentiel", "Circonspect"],
+        "answer": "Démentiel",
+        "explanation": "« Démentiel » qui signifie extrême, est un adjectif qui renforce la notion d'un enthousiasme très grand. « Tiède » et « froid » sont des adjectifs qui n'intensifient pas la passion. « Circonspect » est synonyme de prudence et de caution.",
+        "hint": "Il s'agit d'une force extrêmement positive."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « actif » ?",
+        "prompt": null,
+        "options": ["Dynamique", "Passif", "Énergique", "Vif"],
+        "answer": "Passif",
+        "explanation": "« Passif » est l'opposé d'« actif », suggérant une absence d'activité ou d'initiative. « Dynamique », « énergique » et « vif » sont des termes qui impliquent tous une forme d'activité ou d'énergie.",
+        "hint": "Cherchez ce qui décrit une absence d'action."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Orange, Citron, Pastèque, Carotte",
+        "options": ["Orange", "Citron", "Pastèque", "Carotte"],
+        "answer": "Carotte",
+        "explanation": "La « carotte » est un légume alors que l'« orange », le « citron », et la « pastèque » sont des fruits. Cela en fait l'intrus parmi ce groupe de fruits.",
+        "hint": "Cherchez celui qui ne se mange pas sucré."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « fragile » ?",
+        "prompt": null,
+        "options": ["Solide", "Délicat", "Robuste", "Dur"],
+        "answer": "Délicat",
+        "explanation": "« Délicat » signifie être sensible ou susceptible de se briser facilement, donc synonyme de « fragile ». « Solide », « robuste » et « dur » ont un sens contraire, indiquant la résistance.",
+        "hint": "Pensez à quelque chose qui demande précaution."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Pour le dessert, elle a choisi une glace ___ à la fraise.\"",
+        "prompt": null,
+        "options": ["Chaud", "Froid", "Fondant", "Givré"],
+        "answer": "Givré",
+        "explanation": "Le mot « givré » est utilisé pour décrire une glace bien froide ou recouverte de givre, ce qui est un dessert approprié. « Froid » est correct mais moins spécifique. « Chaud » et « fondant » ne conviennent pas dans le contexte de la glace.",
+        "hint": "Pensez à la texture glaciale sur une glace."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « nouveau » ?",
+        "prompt": null,
+        "options": ["Ancien", "Récent", "Moderne", "Neuf"],
+        "answer": "Ancien",
+        "explanation": "« Ancien » est l'opposé de « nouveau », signifiant quelque chose qui existe depuis longtemps. « Récent », « moderne » et « neuf » échouent à capturer cette antithèse car ils évoquent aussi des nouveautés.",
+        "hint": "Cherchez le concept de ce qui n’est pas récent."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « beau » ?",
+        "prompt": null,
+        "options": ["Hideux", "Joli", "Laid", "Vilain"],
+        "answer": "Joli",
+        "explanation": "« Joli » est un mot qui donne un écho esthétiquement plaisant, d'où sa relation synonyme avec « beau ». « Hideux », « laid » et « vilain » sont tous des termes qui signifient quelque chose de désagréable à regarder.",
+        "hint": "C’est quelque chose qui plaît aux yeux."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « rigoureux » ?",
+        "prompt": null,
+        "options": ["Laxiste", "Sérieux", "Strict", "Méticuleux"],
+        "answer": "Laxiste",
+        "explanation": "« Laxiste » décrit une attitude peu exigeante, à l'opposé de « rigoureux » qui demande rigueur et discipline. « Sérieux », « strict » et « méticuleux » sont liés à la rigueur, et expriment tous un niveau de sérieux similaire.",
+        "hint": "Opposé à la sévérité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Enfant est à jeune comme adulte est à ___",
+        "prompt": null,
+        "options": ["Aîné", "Mûr", "Ancien", "Frais"],
+        "answer": "Mûr",
+        "explanation": "L'analogie nécessaire pour compléter la phrase est « mûr », qui désigne l'état de maturité d'un adulte, comme « jeune » le fait pour un enfant. « Aîné » pourrait être considéré pour un adulte, mais il ne capture pas la maturité. « Ancien » et « frais » ne conviennent pas dans cette analogie.",
+        "hint": "Pensez au terme qui décrit la maturité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « fascinant » ?",
+        "prompt": null,
+        "options": ["Ennuyeux", "Captivant", "Terne", "Insipide"],
+        "answer": "Captivant",
+        "explanation": "Le terme « captivant » désigne quelque chose d'attirant ou d'intéressant, en parfaite adéquation avec « fascinant ». « Ennuyeux », « terne » et « insipide » expriment des sentiments non engageants ou plats.",
+        "hint": "Cherchez un mot qui attire l'attention."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Médecin, Chirurgien, Avocat, Dentiste",
+        "options": ["Médecin", "Chirurgien", "Avocat", "Dentiste"],
+        "answer": "Avocat",
+        "explanation": "L'« avocat » est un professionnel du droit, tandis que les autres sont des professionnels de la santé. Médecin, chirurgien et dentiste traitent des préoccupations médicales.",
+        "hint": "Cherchez le professionnel qui ne travaille pas dans la santé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « flou » ?",
+        "prompt": null,
+        "options": ["Distordu", "Nette", "Vague", "Trouble"],
+        "answer": "Nette",
+        "explanation": "Le terme « nette » qualifie quelque chose de clair et précis, le contraire de « flou », qui est vague et indistinct. « Distordu », « trouble », et « vague » signifieraient une perte de précision ou de clarté.",
+        "hint": "Opposé à manque de clarté."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase: \"Il a dû se ___ pour suivre le rythme de ses collègues.\"",
+        "prompt": null,
+        "options": ["Détendre", "Hâter", "Reposer", "Résigner"],
+        "answer": "Hâter",
+        "explanation": "« Hâter » signifie se presser, ce qui convient bien pour suivre un rythme rapide. « Détendre » et « reposer » impliqueraient le contraire, c'est-à-dire ralentir. « Résigner » ne s'applique pas au contexte d'effort ou de vitesse.",
+        "hint": "Cherchez une action qui accélère le mouvement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Titanium, Aluminium, Or, Cipolin",
+        "options": ["Titanium", "Aluminium", "Or", "Cipolin"],
+        "answer": "Cipolin",
+        "explanation": "« Cipolin » désigne une variété de marbre, différent des autres qui sont des métaux purs. Depuis, Titane, Aluminium et Or sont des éléments métalliques, tandis que Cipolin ne l'est pas.",
+        "hint": "Cherchez celui qui n’est pas un métal."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme d'« étroit » ?",
+        "prompt": null,
+        "options": ["Large", "Serré", "Vaste", "Spacieux"],
+        "answer": "Serré",
+        "explanation": "« Serré » décrit un espace restreint ou limité, ce qui est associé à « étroit ». « Large », « vaste » et « spacieux » sont des indications de beaucoup d'espace, opposées à un espace restreint ou étroit.",
+        "hint": "Considérer un espace restreint."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « simple » ?",
+        "prompt": null,
+        "options": ["Élémentaire", "Simpliciste", "Compliqué", "Facile"],
+        "answer": "Compliqué",
+        "explanation": "Le terme « compliqué » exprime une complexité, ce qui est à l'opposé de « simple ». « Élémentaire » et « facile » sont des synonymes de simple, tandis que « simpliciste » peut évoquer une simple simplification.",
+        "hint": "Cherchez ce qui réfère à la complexité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Médecin est à guérison comme enseignant est à ___",
+        "prompt": null,
+        "options": ["Apprentissage", "Médicament", "Outil", "Mémoire"],
+        "answer": "Apprentissage",
+        "explanation": "Un médecin aide à atteindre la guérison d'un patient, tout comme un enseignant amène ses élèves à l'apprentissage, car ce sont les finalités de chacun de ses métiers. « Médicament » et « outil » sont des moyens ou materiels dans chaque domaine, et « mémoire » ne concerne pas un processus direct.",
+        "hint": "Cherchez une action liée à l'école."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « efficace » ?",
+        "prompt": null,
+        "options": ["Inefficace", "Performant", "Inutile", "Maladroit"],
+        "answer": "Performant",
+        "explanation": "Le synonyme de « efficace » est « performant », qui signifie également capable de produire les résultats souhaités. À l'inverse, « inefficace» et « inutile » décrivent l'incapacité à bien fonctionner, et « maladroit » n'est pas connexe.",
+        "hint": "Cherchez ce qui signifie capacité à produire le résultat attendu."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « courageux » ?",
+        "prompt": null,
+        "options": ["Pusillanime", "Audacieux", "Intrépide", "Brave"],
+        "answer": "Pusillanime",
+        "explanation": "« Pusillanime » désigne celui qui manque de courage et c'est l'antonyme de « courageux ». Les mots « audacieux », « intrépide » et « brave » sont synonymes de courageux.",
+        "hint": "Cherchez un mot qui pourrait signifier lâche."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Violon, Flûte, Harpe, Guitare",
+        "options": ["Violon", "Flûte", "Harpe", "Guitare"],
+        "answer": "Flûte",
+        "explanation": "Parmi les instruments listés, « flûte » est le seul à vent, alors que « violon », « harpe » et « guitare » sont tous des instruments à corde.",
+        "hint": "Trouvez l'instrument qui n'est pas à corde."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « bruyant » ?",
+        "prompt": null,
+        "options": ["Calme", "Silencieux", "Assourdissant", "Serein"],
+        "answer": "Assourdissant",
+        "explanation": "« Assourdissant » désigne un bruit très fort, rendant le mot synonyme parfait pour « bruyant ». Les termes « calme », « silencieux » et « serein » décrivent plutôt un environnement paisible sans bruit.",
+        "hint": "Cherchez un mot qui désigne un son fort."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Clair", "Mystérieux", "Évident", "Limpide"],
+        "answer": "Mystérieux",
+        "explanation": "« Sibyllin » désigne quelque chose d'énigmatique ou difficile à comprendre, synonyme de « mystérieux ». « Clair », « évident » et « limpide » décrivent des choses qui sont facilement compréhensibles.",
+        "hint": "Cherchez un mot qui signifierait obscur."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Plumage est à oiseau comme pelage est à ___",
+        "prompt": null,
+        "options": ["Poisson", "Serpent", "Mammifère", "Reptile"],
+        "answer": "Mammifère",
+        "explanation": "Les oiseaux ont des plumes et leur revêtement est le plumage, de même que les mammifères ont un pelage. « Poisson », « serpent » et « reptile » ne possèdent pas de pelage.",
+        "hint": "Cherchez un terme relié aux poils des animaux."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « épistolaire » ?",
+        "prompt": null,
+        "options": ["Oral", "Manuscrit", "Rédigé", "Verbal"],
+        "answer": "Oral",
+        "explanation": "« Épistolaire » réfère aux lettres ou à la correspondance écrite. Son antonyme est « oral » qui implique la communication parlée. « Manuscrit » et « rédigé » sont liés au fait de s'écrire, mais pas « verbal » qui reste proche d'oral.",
+        "hint": "C'est une alternative en communication, de vive voix."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « pléthorique » ?",
+        "prompt": null,
+        "options": ["Suffisant", "Abondant", "Rarissime", "Exigu"],
+        "answer": "Abondant",
+        "explanation": "« Pléthorique » signifie être en très grande quantité et donc il est synonyme d'« abondant ». « Suffisant », « rarissime » et « exigu » discutent de quantités plus basses ou limitées.",
+        "hint": "Pensez à quelque chose de très présent en grande quantité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « intégrité » ?",
+        "prompt": null,
+        "options": ["Probité", "Déloyauté", "Honnêteté", "Rectitude"],
+        "answer": "Déloyauté",
+        "explanation": "« Déloyauté » est l'opposé d'« intégrité », signifiant une inclinaison vers la tromperie ou la malhonnêteté. Les termes « probité », « honnêteté » et « rectitude » expriment tous des notions alignées avec l'intégrité.",
+        "hint": "Observez les qualités opposées à la moralité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : \"Il s'est avéré que ses prédictions étaient ___, mais personne ne voulait y croire.\"",
+        "prompt": null,
+        "options": ["Vaines", "Inexactes", "Précises", "Inécoutées"],
+        "answer": "Précises",
+        "explanation": "Le terme « précises » signifie correctes et vérifiables, surtout lorsque personne ne voulait y croire, indiquant que ses prédictions se sont révélées justes. « Vaines » signifierait une prédiction non accomplie et « inexactes » incorrectes, tandis que « inécoutées » ne représente pas un impact menaçant.",
+        "hint": "Recherchez le mot soulignant l'exactitude."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « ataraxie » ?",
+        "prompt": null,
+        "options": ["Anxiété", "Sérénité", "Agitation", "Bouillonnement"],
+        "answer": "Sérénité",
+        "explanation": "« Ataraxie » se réfère à un calme mental, dépourvu de troubles, synonyme de « sérénité ». Il s'oppose à l'angoisse exprimée par « anxiété », « agitation » et « bouillonnement ».",
+        "hint": "Cherchez un mot décrivant un état de paix absolu."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « ostensible » ?",
+        "prompt": null,
+        "options": ["Discret", "Manifestant", "Évident", "Translucide"],
+        "answer": "Discret",
+        "explanation": "« Ostensible » indique quelque chose de visible ou évident, à l'opposé de « discret » qui est caché ou non remarqué. « Manifestant », « évident » et « translucide » se rapprochent de la notoriété.",
+        "hint": "Trouvez ce qui est caché ou non visible à l'œil."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : \"La conférence a été annulée faute d'un nombre ___ de participants.\"",
+        "prompt": null,
+        "options": ["Insuffisant", "Foisonnant", "Équitable", "Exclusif"],
+        "answer": "Insuffisant",
+        "explanation": "« Insuffisant » décrit un nombre moindre à ce qui était nécessaire pour une conférence, d’où son annulation. « Foisonnant » indiquerait excédent, tandis que « équitable » et « exclusif » ne se concentrent pas sur la quantité requise.",
+        "hint": "Cherchez le mot décrivant une quantité moins qu'assez."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « faste » ?",
+        "prompt": null,
+        "options": ["Luxueux", "Opulent", "Économie", "Sobriété"],
+        "answer": "Sobriété",
+        "explanation": "« Sobriété » décrète le manque de luxe que requiert le mot « faste ». Tandis que « luxueux » et « opulent » décrivent des situations de richesse ou célébration similaire.",
+        "hint": "Cherchez l’opposé de l'excès."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Rire est à humour comme pleurer est à ___",
+        "prompt": null,
+        "options": ["Tristesse", "Joie", "Amusement", "Exultation"],
+        "answer": "Tristesse",
+        "explanation": "Rire est une réaction à l'humour, ainsi pleurer est une réaction à la tristesse. Les autres émotions ne justifient pas le besoin de larmes aussi directement.",
+        "hint": "Pensez à l'émotion traditionnelle associée aux pleurs."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « stérile » ?",
+        "prompt": null,
+        "options": ["Fécond", "Desséché", "Aride", "Infécond"],
+        "answer": "Fécond",
+        "explanation": "« Fécond » signifie productif de nouvelles vies, l'opposé de « stérile » qui décrit l’incapacité à produire. À l'inverse, « desséché », et « aride » retournent vers la notion de stérile tandis qu’« infécond » est synonyme perfectible.",
+        "hint": "Cherchez l’accomplissement croissant dans la fertilité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Témérité, Prudence, Cautèle, Circonspection",
+        "options": ["Témérité", "Prudence", "Cautèle", "Circonspection"],
+        "answer": "Témérité",
+        "explanation": "« Témérité » indique un manque de précaution, tandis que « prudence », « cautèle », et « circonspection » réfèrent toutes à des actes réfléchis et précautionneux.",
+        "hint": "Cherchez ce qui ne signifie pas la précaution."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « allègre » ?",
+        "prompt": null,
+        "options": ["Joyeux", "Triste", "Élégant", "Lugubre"],
+        "answer": "Lugubre",
+        "explanation": "« Lugubre » désigne une atmosphère sombre ou malheureuse opposée à l’ambiance vive marquée par « allègre ». Tandis que « joyeux » signifie à proximité et « élégant » ne partage pas de sentiments.",
+        "hint": "Pensez à chercher un contraste extrême au bonheur."
+    }
+]

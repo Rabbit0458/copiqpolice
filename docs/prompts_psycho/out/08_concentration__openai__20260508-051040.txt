@@ -1,0 +1,412 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « E » apparaît-elle dans cette phrase (majuscules et minuscules) ?",
+        "prompt": "Comptez attentivement.",
+        "stimulus": "Le ciel est bleu et les nuages sont élevés.",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7",
+        "explanation": "La lettre E apparaît dans : Le (1), ciel (0), est (1), bleu (1), et (1), les (1), nuages (0), sont (0), élevés (3). Total de 7 E.",
+        "hint": "Surlignez mentalement chaque E."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans la suite ?",
+        "prompt": "Toutes les lettres sauf une sont des voyelles.",
+        "stimulus": "A E I U O T",
+        "options": ["I", "U", "T", "O"],
+        "answer": "T",
+        "explanation": "A, E, I, U, et O sont des voyelles. T est une consonne, donc c'est l'intrus.",
+        "hint": "Connaissez-vous vos voyelles ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans la suite alphabétique ?",
+        "prompt": "Repérez la lettre qui ne se conforme pas à la progression par un intervalle de deux.",
+        "stimulus": "A C E G J H",
+        "options": ["C", "G", "H", "J"],
+        "answer": "H",
+        "explanation": "La suite est A, C, E, G, J avec un saut de deux. H brise cette règle.",
+        "hint": "Recherchez un intervalle régulier."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois le chiffre « 5 » apparaît-il dans cette suite de chiffres ?",
+        "prompt": "Regardez chaque chiffre attentivement.",
+        "stimulus": "3 5 7 5 9 11 5 13 5",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Le chiffre 5 apparaît aux positions 2, 4, 7, et 9. Il y a donc 4 occurrences.",
+        "hint": "Vérifiez chaque position et prenez des notes."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « T » apparaît-elle dans cette phrase ?",
+        "prompt": "Prenez en compte les majuscules et minuscules.",
+        "stimulus": "Thomas tient un grand tigre.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Thomas (1), tient (1), un (0), grand (0), tigre (1). Un T supplémentaire dans 'tigre' en majuscule donne 4 T.",
+        "hint": "Ne manquez pas les T majuscules."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur est l'intrus dans la suite ?",
+        "prompt": "Observez les couleurs primaires.",
+        "stimulus": "Rouge, Bleu, Jaune, Vert",
+        "options": ["Rouge", "Bleu", "Vert", "Jaune"],
+        "answer": "Vert",
+        "explanation": "Rouge, Bleu et Jaune sont des couleurs primaires. Vert est une couleur secondaire.",
+        "hint": "Connaissez les couleurs primaires ?"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans cette suite de voyelles ?",
+        "prompt": "Une seule lettre n'est pas une voyelle.",
+        "stimulus": "A E I O M U",
+        "options": ["U", "M", "O", "I"],
+        "answer": "M",
+        "explanation": "A, E, I, O, et U sont des voyelles. M est une consonne et ne suit pas la règle.",
+        "hint": "Identifiez la consonne."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « R » apparaît-elle dans cette phrase ?",
+        "prompt": "Voyez les R majuscules et minuscules.",
+        "stimulus": "Le rugissement du lion effraie.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Rugissement (1), du (0), lion (0), effraie (2 avec un R doublé). Total de 3 R.",
+        "hint": "Compte méthodiquement, mot par mot."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois le chiffre « 1 » apparaît-il dans la suite de chiffres ?",
+        "prompt": null,
+        "stimulus": "1 4 1 6 8 1 9 2 1",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Le chiffre 1 apparaît aux positions 1, 3, 6, et 9. Nous comptons un total de 4.",
+        "hint": "Vérifiez soigneusement chaque position."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans cette liste de lettres majuscules ?",
+        "prompt": "Tous proviennent du mot ANIMAL sauf un.",
+        "stimulus": "A N M I J L",
+        "options": ["A", "N", "J", "M"],
+        "answer": "J",
+        "explanation": "Les lettres A, N, M, I, et L proviennent du mot ANIMAL. J ne fait pas partie de ce mot.",
+        "hint": "Réfléchissez au mot ANIMAL."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « F » apparaît-elle dans cette phrase ?",
+        "prompt": "Inclut les majuscules et minuscules.",
+        "stimulus": "Le film fut fascinant pour les fans.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Film (1), fut (1), fascinant (1), pour (0), les (0), fans(1)= 3 occurrences.",
+        "hint": "Considérez les F majuscules et minuscules de la même manière."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel animal est l'intrus dans cette liste de mammifères ?",
+        "prompt": null,
+        "stimulus": "Chien, Chat, Serpent, Souris",
+        "options": ["Chien", "Chat", "Serpent", "Souris"],
+        "answer": "Serpent",
+        "explanation": "Chien, Chat, et Souris sont des mammifères. Serpent est un reptile et ne fait pas partie du groupe.",
+        "hint": "Identifiez le reptile."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « B » apparaît-elle dans la suite suivante ?",
+        "prompt": null,
+        "stimulus": "B B D F B H J",
+        "options": ["3", "4", "5", "6"],
+        "answer": "3",
+        "explanation": "Nous trouvons B à la position 1, 2, et 5. En total, on compte 3 Bs.",
+        "hint": "Notez chaque position où B apparaît."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle lettre est l'intrus dans cette suite ?",
+        "prompt": "Identifiez la lettre qui ne suit pas l'intervalle correct.",
+        "stimulus": "C E G I J",
+        "options": ["C", "E", "I", "J"],
+        "answer": "J",
+        "explanation": "C, E, G, et I suivent une progression par intervalle de 2. J ne correspond pas.",
+        "hint": "Trouvez une alternance incorrecte."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « C » apparaît-elle dans la phrase suivante ?",
+        "prompt": null,
+        "stimulus": "Les cerises sont cueillies ce matin.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3",
+        "explanation": "Cerises (1), sont (0), cueillies (1), ce (1), matin (0). Total de 3 C.",
+        "hint": "Chaque mot compte."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle saison est l'intrus dans cette liste de saisons ?",
+        "prompt": "Les saisons proviennent de l'hémisphère nord.",
+        "stimulus": "Printemps, Été, Hiver, Musique",
+        "options": ["Été", "Hiver", "Musique", "Printemps"],
+        "answer": "Musique",
+        "explanation": "Printemps, Été et Hiver sont des saisons. Musique est un genre artistique et n'est pas une saison.",
+        "hint": "Pensez aux quatre saisons."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de fois la lettre « S » apparaît-elle dans cette phrase ?",
+        "prompt": null,
+        "stimulus": "Sous le silence, la scène est solennelle.",
+        "options": ["4", "5", "6", "7"],
+        "answer": "6",
+        "explanation": "Sous (1), le (0), silence (1), la (0), scène (1), est (1), solennelle (2). Total de 6 S.",
+        "hint": "Cherchez les S finaux et initiaux."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de fois la lettre « A » apparaît-elle dans ce texte ?",
+        "prompt": "Prenez soin d'inclure toutes les majuscules et minuscules.",
+        "stimulus": "Alain adore aller au cinéma dans la soirée avec ses amis.",
+        "options": ["5", "6", "7", "8"],
+        "answer": "7",
+        "explanation": "Alain (2), adore (1), aller (1), au (1), cinéma (0), dans (1), la (1), soirée (0), avec (1), ses (0), amis (1). Total de 7 A.",
+        "hint": "Faites attention aux mots courts souvent ignorés."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de consonnes trouve-t-on dans cette phrase ?",
+        "prompt": "Ne considérez que les consonnes.",
+        "stimulus": "La brise rafraîchit l'air de la nuit étoilée.",
+        "options": ["18", "19", "20", "21"],
+        "answer": "19",
+        "explanation": "La (1), brise (3), rafraîchit (7), l'(1), air (1), de (0), la (0), nuit (3), étoilée (3) = 19 consonnes.",
+        "hint": "Comptez en supprimant les voyelles."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence est exactement identique au modèle ?",
+        "prompt": "Modèle : 1234-ABCD",
+        "stimulus": "Comparez chaque séquence.",
+        "options": ["1234-ACBD", "1234-ABDC", "1234-ABCD", "1234-BACD"],
+        "answer": "1234-ABCD",
+        "explanation": "Comparé au modèle, seule la troisième option a exactement les mêmes caractères placés correctement.",
+        "hint": "Lisez lentement caractère par caractère."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle lettre est l'intrus dans cette suite ?",
+        "prompt": "Les voyelles sont isolées par une consonne.",
+        "stimulus": "B A C E I G O K",
+        "options": ["A", "C", "G", "K"],
+        "answer": "K",
+        "explanation": "A, E, I, et O sont suivies par une consonne. Après O, K n'est pas une consonne suivant un vrai patron.",
+        "hint": "Identifiez l'alternance consonne-voyelle."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de chiffres pairs trouve-t-on dans la suite ?",
+        "prompt": null,
+        "stimulus": "2 3 4 5 6 7 8 9 10",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "explanation": "Les chiffres pairs sont 2, 4, 6, 8, et 10, totalisant 5 chiffres.",
+        "hint": "Repérez et notez chaque chiffre pair."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence est identique au modèle donné ?",
+        "prompt": "Modèle : XY-ZW-12",
+        "stimulus": "Cherchez l'ordre exact.",
+        "options": ["XY-WZ-12", "XY-ZW-12", "XZ-YW-12", "YZ-XW-12"],
+        "answer": "XY-ZW-12",
+        "explanation": "Toutes les séquences proposées diffèrent en un ou plusieurs points. Seule la deuxième séquence correspond exactement.",
+        "hint": "Évitez les pièges de permutation."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de termes contiennent un 'M' en majuscule ou minuscule ?",
+        "prompt": null,
+        "stimulus": "Montagne murale immense en mai.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Montagne (1), murale (1), immense (1), en (0), mai (1). Nous avons donc 4 termes contenant 'M'.",
+        "hint": "Vérifiez les débuts et milieux des mots."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle séquence correspond strictement au modèle ?",
+        "prompt": "Modèle : ABC-123",
+        "stimulus": "Trouvez une correspondance parfaite.",
+        "options": ["BCA-213", "ACB-213", "ABC-123", "BAC-321"],
+        "answer": "ABC-123",
+        "explanation": "En vérifiant chaque option, seule l'option ABC-123 suit parfaitement le modèle donné.",
+        "hint": "Inspectez minutieusement chaque fragment du modèle."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de voyelles sont présentes dans cette phrase ?",
+        "prompt": "A, E, I, O, U, Y sont considérées comme des voyelles.",
+        "stimulus": "Le silence est d'or et la parole est d'argent.",
+        "options": ["15", "16", "17", "18"],
+        "answer": "16",
+        "explanation": "Le (1) silence (3) est (1) d'or (2) et (1) la (1) parole (3) est (1) d'argent (3) = 16 voyelles.",
+        "hint": "Passez en revue chaque mot systématiquement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle suite d'éléments suit exactement l'ordre du modèle ?",
+        "prompt": "Modèle : 9A-7B-5C",
+        "stimulus": "Vérifiez chaque élément séparément.",
+        "options": ["9A-5B-7C", "9A-7B-5C", "7B-9A-5C", "5C-9A-7B"],
+        "answer": "9A-7B-5C",
+        "explanation": "Seule la deuxième option répète le même ordre et structure du modèle spécifié.",
+        "hint": "Mémorisez la séquence avant de vérifier les options."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel chiffre est l'intrus dans cette suite de nombres ?",
+        "prompt": "Tous les nombres sont des multiples de 3 sauf un.",
+        "stimulus": "3 6 9 12 14 15",
+        "options": ["6", "9", "12", "14"],
+        "answer": "14",
+        "explanation": "3, 6, 9, 12, et 15 sont des multiples de 3. 14 ne l'est pas, et il est l'intrus.",
+        "hint": "Testez chaque nombre comme divisible par 3."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle lettre est l'intrus dans cette séquence alternante de voyelles et consonnes ?",
+        "prompt": "Identifiez la lettre qui ne suit pas la séquence alternante.",
+        "stimulus": "A B E F I K O P",
+        "options": ["A", "E", "I", "K"],
+        "answer": "K",
+        "explanation": "Dans la suite, A (voyelle), B (consonne), E (voyelle), F (consonne), I (voyelle), K (consonne), O (voyelle), P (consonne), K suit I, ce qui ne respecte pas l'alternance car ça devrait être une voyelle après I.",
+        "hint": "Faites attention à l'ordre imposé de voyelles et consonnes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de fois la lettre « G » majuscule apparaît-elle dans le texte ?",
+        "prompt": "Concentrez-vous sur les G majuscules uniquement.",
+        "stimulus": "Georges gagne des grands jeux de Go grâce à son génie.",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5",
+        "explanation": "Georges (1), gagne (1), des (0), grands (1), jeux (0), de (0), Go (1), grâce (0), à (0), son (0), génie (1). Total de 5 G majuscules.",
+        "hint": "Ignorez les G minuscules, cherchez uniquement les majuscules."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel chiffre est l'intrus dans cette suite de réels positifs ?",
+        "prompt": "Tous les nombres sauf un sont des carrés parfaits.",
+        "stimulus": "1, 4, 9, 16, 18, 25, 36",
+        "options": ["9", "16", "18", "25"],
+        "answer": "18",
+        "explanation": "1, 4, 9, 16, 25, et 36 sont des carrés parfaits (1², 2², 3², 4², 5², 6²). 18 n'est pas un carré parfait.",
+        "hint": "Vérifiez si chaque nombre a une racine entière."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de chiffres impairs trouve-t-on dans cette suite de nombres ?",
+        "prompt": null,
+        "stimulus": "5 8 11 12 17 20 23",
+        "options": ["3", "4", "5", "6"],
+        "answer": "4",
+        "explanation": "Les chiffres impairs sont 5, 11, 17, 23, totalisant 4 chiffres impairs.",
+        "hint": "Concentrez-vous sur les terminaisons numériques pour identifier l'impairité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de mots dans cette phrase contiennent la lettre A ?",
+        "prompt": null,
+        "stimulus": "Anna va acheter du pain à la boulangerie aujourd'hui.",
+        "options": ["5", "6", "7", "8"],
+        "answer": "6",
+        "explanation": "Anna (1), va (1), acheter (1), du (0), pain (1), à (1), la (1), boulangerie (0), aujourd'hui (1). Total 6 mots avec la lettre A.",
+        "hint": "Vérifiez chaque mot pour des 'a' visibles."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle séquence est identique au modèle fourni ?",
+        "prompt": "Modèle : ZXY-987",
+        "stimulus": "Examiner chaque lettre et nombre.",
+        "options": ["ZXY-978", "ZYX-987", "ZXY-987", "ZYX-978"],
+        "answer": "ZXY-987",
+        "explanation": "Toutes les séquences à part la troisième présentent soit des inversions, soit des chiffres modifiés par rapport au modèle.",
+        "hint": "Notez l'ordre exact et les valeurs numériques."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de voyelles majuscules apparaissent dans cette citation ?",
+        "prompt": "Seules les voyelles en majuscules comptent.",
+        "stimulus": "POUR LA GLORIEUSE LIBERTÉ DE VIVRE.",
+        "options": ["6", "7", "8", "9"],
+        "answer": "8",
+        "explanation": "POUR (2), LA (1), GLORIEUSE (4), LIBERTÉ (3), DE (0), VIVRE (1). Total 8 voyelles majuscules.",
+        "hint": "Identifiez uniquement les A, E, I, O, U en majuscule."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de voyelles contient-elle cette phrase, considèrent les majuscules et minuscules ?.",
+        "prompt": null,
+        "stimulus": "Un invité honorable raconte une histoire étonnante du passé.",
+        "options": ["15", "16", "17", "18"],
+        "answer": "16",
+        "explanation": "Un (1), invité (2), honorable (4), raconte (2), une (1), histoire (3), étonnante (3), du (1), passé (2). Total 16 voyelles.",
+        "hint": "Vérifiez chaque mot pour les voyelles visibles."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle figure géométrique est l'intrus dans cette liste ?",
+        "prompt": null,
+        "stimulus": "Carré, Rectangle, Cercle, Triangle, Cube",
+        "options": ["Carré", "Rectangle", "Cercle", "Cube"],
+        "answer": "Cube",
+        "explanation": "Carré, Rectangle, Cercle, et Triangle sont des figures bidimensionnelles. Cube est la seule figure tridimensionnelle.",
+        "hint": "Pensez à la troisième dimension."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de fois le chiffre « 7 » apparaît-il dans la suite de nombres ?",
+        "prompt": null,
+        "stimulus": "7 8 7 12 7 19 7 21 7 30",
+        "options": ["4", "5", "6", "7"],
+        "answer": "5",
+        "explanation": "7 apparaît aux positions 1, 3, 5, 7, et 9, donnant un total de 5 occurrences.",
+        "hint": "Soyez attentif aux apparitions du chiffre 7."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle séquence numérique est parfaitement identique au modèle ?",
+        "prompt": "Modèle : 7654-21",
+        "stimulus": "Faites correspondre lettre par lettre.",
+        "options": ["7654-12", "7654-21", "7652-41", "7645-21"],
+        "answer": "7654-21",
+        "explanation": "Comparé au modèle, seule la deuxième séquence correspond exactement avec la même structure.",
+        "hint": "Suivez chaque chiffre et l'ordre présenté."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de fois la lettre « N » majuscule apparaît-elle ?",
+        "prompt": "Comptez strictement les N en majuscules.",
+        "stimulus": "NIeN m'a jamais dérangé sauf cet iNcident éNoooorme.",
+        "options": ["2", "3", "4", "5"],
+        "answer": "4",
+        "explanation": "NI (=2), m'a (0), jamais (0), dérangé (0), sauf (0), cet (0), iNcideNt (1), éNoooorme (1) = 4 occurrences de N majuscules.",
+        "hint": "Ignorez les n minuscules."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel mot est l'intrus dans cette liste de professions ?",
+        "prompt": null,
+        "stimulus": "Médecin, Avocat, Charpentier, Tracteur",
+        "options": ["Médecin", "Avocat", "Charpentier", "Tracteur"],
+        "answer": "Tracteur",
+        "explanation": "Médecin, Avocat et Charpentier sont des professions. Tracteur est une machine agricole.",
+        "hint": "Identifiez l'objet non-vivant."
+    }
+]

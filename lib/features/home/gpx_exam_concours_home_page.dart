@@ -7,7 +7,7 @@ class _T {
   static const Color ink = Color(0xFF212529);
 
   static BoxShadow get shadow => BoxShadow(
-    color: Colors.black.withOpacity(.10),
+    color: Colors.black.withValues(alpha: .10),
     blurRadius: 24,
     offset: const Offset(0, 14),
   );
@@ -17,7 +17,7 @@ Color _muted(BuildContext context, [double a = .72]) {
   final base =
       Theme.of(context).textTheme.bodySmall?.color ??
       (Theme.of(context).brightness == Brightness.dark ? Colors.white : _T.ink);
-  return base.withOpacity(a);
+  return base.withValues(alpha: a);
 }
 
 /// Route suggérée: '/gpx_exam/concours'
@@ -130,12 +130,12 @@ class _ChoiceHeroCard extends StatelessWidget {
     try {
       img = Image.asset(image, fit: BoxFit.cover);
     } catch (_) {
-      img = Container(color: Colors.black.withOpacity(.06));
+      img = Container(color: Colors.black.withValues(alpha: .06));
     }
 
     final borderColor = isDark
         ? const Color(0xFF90CAF9)
-        : const Color(0xFF1565C0).withOpacity(.9);
+        : const Color(0xFF1565C0).withValues(alpha: .9);
 
     return AnimatedScale(
       scale: selected ? 1.0 : 0.97,
@@ -164,7 +164,7 @@ class _ChoiceHeroCard extends StatelessWidget {
                 Positioned.fill(
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 7, sigmaY: 7),
-                    child: Container(color: Colors.black.withOpacity(0.30)),
+                    child: Container(color: Colors.black.withValues(alpha: 0.30)),
                   ),
                 ),
 
@@ -177,8 +177,8 @@ class _ChoiceHeroCard extends StatelessWidget {
                         center: Alignment.center,
                         radius: 0.70,
                         colors: [
-                          Colors.white.withOpacity(.34),
-                          Colors.white.withOpacity(.12),
+                          Colors.white.withValues(alpha: .34),
+                          Colors.white.withValues(alpha: .12),
                           Colors.transparent,
                         ],
                         stops: const [0.0, 0.45, 1.0],
@@ -216,7 +216,7 @@ class _ChoiceHeroCard extends StatelessWidget {
                           subtitle,
                           textAlign: TextAlign.center,
                           style: GoogleFonts.instrumentSans(
-                            color: Colors.white.withOpacity(.92),
+                            color: Colors.white.withValues(alpha: .92),
                             fontWeight: FontWeight.w600,
                             fontSize: 13.5,
                             height: 1.2,
@@ -266,7 +266,7 @@ class _DiscoverButton extends StatelessWidget {
         height: 46,
         padding: const EdgeInsets.symmetric(horizontal: 14),
         decoration: BoxDecoration(
-          color: _T.ink.withOpacity(.92),
+          color: _T.ink.withValues(alpha: .92),
           borderRadius: BorderRadius.circular(18),
         ),
         child: Row(

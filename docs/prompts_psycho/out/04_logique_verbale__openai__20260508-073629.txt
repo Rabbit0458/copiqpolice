@@ -1,0 +1,409 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « courageux » ?",
+    "prompt": null,
+    "options": ["Peur", "Lâche", "Hésitant", "Brave"],
+    "answer": "Lâche",
+    "explanation": "L'antonyme de courageux est « lâche », car cela signifie manquer de courage. « Peur » et « hésitant » ne sont pas des antonymes directs car on peut être courageux tout en éprouvant de la peur ou en hésitant. « Brave » est synonyme de courageux.",
+    "hint": "Pense à quelqu'un qui ne prend pas de risques par manque de courage."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : \"Pour obtenir un résultat optimal, il est essentiel de ___ les instructions.\"",
+    "prompt": null,
+    "options": ["Négliger", "Suivre", "Ignorer", "Contredire"],
+    "answer": "Suivre",
+    "explanation": "Pour obtenir un résultat optimal, il est nécessaire de « suivre » les instructions. « Négliger » et « ignorer » vont à l'encontre de suivre, et « contredire » est opposé à l'idée d'adhérer.",
+    "hint": "Penser à ce que quelqu'un ferait pour rester sur la bonne voie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « chanceux » ?",
+    "prompt": null,
+    "options": ["Malheureux", "Fortuné", "Triste", "Déçu"],
+    "answer": "Fortuné",
+    "explanation": "Le mot « fortuné » signifie ayant de la chance ou bénéficiant d'une bonne fortune. « Malheureux » et « triste » sont des antonymes de chanceux. « Déçu » n'est pas correct, car cela implique une attente non comblée.",
+    "hint": "Pense à une personne qui réussit souvent."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Chat, Poisson, Chien, Voiture",
+    "options": ["Chat", "Poisson", "Chien", "Voiture"],
+    "answer": "Voiture",
+    "explanation": "Parmi « Chat », « Poisson », et « Chien », tous sont des animaux. « Voiture » est l'intrus car c'est un véhicule.",
+    "hint": "Trois des mots partagent une catégorie, mais un est très différent."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « lever » ?",
+    "prompt": null,
+    "options": ["Soulever", "Abaisser", "Déplacer", "Tourner"],
+    "answer": "Abaisser",
+    "explanation": "L'antonyme de « lever » est « abaisser », car lever signifie monter, et abaisser signifie descendre. « Soulever » est similaire à lever. « Déplacer » et « tourner » ne sont pas des antonymes directs.",
+    "hint": "Pense à un mouvement vertical opposé."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Boulanger est à pain comme couturier est à ___",
+    "prompt": null,
+    "options": ["Farine", "Tissu", "Bois", "Métal"],
+    "answer": "Tissu",
+    "explanation": "Un boulanger travaille avec du pain, tandis qu'un couturier travaille avec du tissu. Farine est une matière première du pain, et bois et métal ne sont pas liés directement au couturier.",
+    "hint": "Considère la matière principale avec laquelle le professionnel travaille."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « joyeux » ?",
+    "prompt": null,
+    "options": ["Content", "Triste", "Ennuyé", "Fatigué"],
+    "answer": "Content",
+    "explanation": "« Content » est synonyme de « joyeux » car les deux expriment un sentiment de bonheur. « Triste », « ennuyé », et « fatigué » sont des états opposés à la joie.",
+    "hint": "Cherche un mot qui décrit le bonheur."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « silencieux » ?",
+    "prompt": null,
+    "options": ["Bruyant", "Calme", "Discret", "Paisible"],
+    "answer": "Bruyant",
+    "explanation": "« Bruyant » est l'antonyme de « silencieux » car il désigne quelque chose qui fait du bruit. « Calme », « discret », et « paisible » sont plutôt synonymes de silencieux.",
+    "hint": "Cherche le mot qui montre l'opposé du silence."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « apprendre » ?",
+    "prompt": null,
+    "options": ["Enseigner", "Oublier", "Comprendre", "Ignorer"],
+    "answer": "Comprendre",
+    "explanation": "« Comprendre » est souvent synonyme d'« apprendre » car cela inclut d'acquérir des connaissances. « Enseigner » est l'action d'une autre personne. Oublier et ignorer sont opposés car ils impliquent le manque d'apprentissage.",
+    "hint": "Penser au processus d'acquisition de connaissances."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « doux » ?",
+    "prompt": null,
+    "options": ["Dur", "Moelleux", "Tendre", "Souple"],
+    "answer": "Dur",
+    "explanation": "« Dur » est l'antonyme de « doux » car il caractérise quelque chose de rigide ou de ferme. « Moelleux », « tendre » et « souple » sont généralement associés à l'idée de douceur.",
+    "hint": "Cherche le mot contraire de mou."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Voiture, Train, Avion, Bateau",
+    "options": ["Voiture", "Train", "Avion", "Bateau"],
+    "answer": "Avion",
+    "explanation": "Tous ces mots désignent des moyens de transport, mais l'« avion » est le seul qui se déplace dans les airs, alors que les autres sont des transports terrestres ou maritimes.",
+    "hint": "Pense au moyen de transport qui n'utilise ni la terre ni l'eau."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « travailleur » ?",
+    "prompt": null,
+    "options": ["Paresseux", "Assidu", "Distraire", "Flexible"],
+    "answer": "Assidu",
+    "explanation": "« Assidu » est synonyme de « travailleur » car cela implique une grande application et constance. « Paresseux » est un antonyme. « Distraire » et « flexible » ne sont pas des synonymes directs de travailleur.",
+    "hint": "Cherche un mot qui décrit quelqu'un de diligent."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « haut » ?",
+    "prompt": null,
+    "options": ["Bas", "Élevé", "Grand", "Supérieur"],
+    "answer": "Bas",
+    "explanation": "« Bas » est l'antonyme de « haut » car il se réfère à une position ou une altitude faible. « Élevé », « grand » et « supérieur » sont associés à la hauteur.",
+    "hint": "Cherche le contraire de ce qui est élevé."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Médecin est à hôpital comme enseignant est à ___",
+    "prompt": null,
+    "options": ["École", "Bureau", "Maison", "Café"],
+    "answer": "École",
+    "explanation": "Un médecin travaille généralement dans un hôpital, de même qu'un enseignant exerce son métier essentiellement dans une école. « Bureau », « maison » et « café » ne sont pas les lieux principaux d'un enseignant.",
+    "hint": "Pense à l'endroit où se déroule l'enseignement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « débuter » ?",
+    "prompt": null,
+    "options": ["Commencer", "Finir", "Interrompre", "Abandonner"],
+    "answer": "Commencer",
+    "explanation": "« Commencer » est synonyme de « débuter » car les deux signifient initier quelque chose. « Finir » est un antonyme. « Interrompre » et « abandonner » n'indiquent pas le début.",
+    "hint": "Cherche un mot qui signifie entamer une action."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « sombre » ?",
+    "prompt": null,
+    "options": ["Lumineux", "Sombre", "Nuageux", "Opaque"],
+    "answer": "Lumineux",
+    "explanation": "« Lumineux » est l'antonyme de « sombre » car il se réfère à ce qui est rempli de lumière. « Sombre », « nuageux » et « opaque » sont dans la même direction sémantique que sombre.",
+    "hint": "Cherche un mot qui dénote la clarté."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « erreur » ?",
+    "prompt": null,
+    "options": ["Correction", "Erreur", "Explosion", "Faux"],
+    "answer": "Faux",
+    "explanation": "« Faux » est souvent synonyme d'« erreur » car cela désigne ce qui est incorrect. « Correction » est le contraire d'une erreur. « Explosion » n'a pas de lien direct avec erreur.",
+    "hint": "Cherche un mot qui signifie incorrect ou inexact."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « généreux » ?",
+    "prompt": null,
+    "options": ["Égoïste", "Altruiste", "Charitable", "Bénévole"],
+    "answer": "Égoïste",
+    "explanation": "« Égoïste » est l'antonyme de « généreux », car cela désigne quelqu'un qui agit principalement pour son propre intérêt. « Altruiste », « charitable » et « bénévole » sont des traits caractéristiques de la générosité.",
+    "hint": "Pense à une personne qui ne partage pas."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Marteau est à charpentier comme ___ est à tailleur",
+    "prompt": null,
+    "options": ["Aiguille", "Hache", "Scie", "Tournevis"],
+    "answer": "Aiguille",
+    "explanation": "Un marteau est utilisé par un charpentier, de même qu'une aiguille est utilisée par un tailleur. La hache et la scie sont aussi des outils mais pas typiques d'un tailleur, contrairement à l'aiguille.",
+    "hint": "Concentre-toi sur l'outil spécifique au métier du tailleur."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Chirurgien, Avocat, Cardiologue, Pédiatre",
+    "options": ["Chirurgien", "Avocat", "Cardiologue", "Pédiatre"],
+    "answer": "Avocat",
+    "explanation": "L'intrus est « avocat » car c'est une profession juridique, tandis que les autres sont des professions médicales.",
+    "hint": "Pense à la profession qui ne concerne pas la santé."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « méticuleux » ?",
+    "prompt": null,
+    "options": ["Négligent", "Minutieux", "Rapide", "Précipité"],
+    "answer": "Minutieux",
+    "explanation": "« Minutieux » est synonyme de « méticuleux », car les deux termes signifient prêter une grande attention aux détails. « Négligent » est l'opposé de méticuleux. « Rapide » et « précipité » ne mettent pas l'accent sur l'attention.",
+    "hint": "Cherche un mot qui décrit un souci du détail."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « cohérent » ?",
+    "prompt": null,
+    "options": ["Confus", "Logique", "Clair", "Harmonieux"],
+    "answer": "Confus",
+    "explanation": "L'antonyme de « cohérent » est « confus », car cohérent suggère une clarté et une logique d'ensemble alors que confus signifie désordonné. « Logique », « clair » et « harmonieux » sont en accord avec le sens de cohérent.",
+    "hint": "Imagine une situation qui manque de clarté."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Finir est à commencer comme arriver est à ___",
+    "prompt": null,
+    "options": ["Partir", "Rester", "Avancer", "Approcher"],
+    "answer": "Partir",
+    "explanation": "L'antonyme de finir est commencer, et l'antonyme d'arriver est partir. Les autres options ne sont pas des antithèses directes d'arriver.",
+    "hint": "Pense au concept opposé de l'arrivée à un lieu."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « exhaustif » ?",
+    "prompt": null,
+    "options": ["Complet", "Partiel", "Limitant", "Superficiel"],
+    "answer": "Complet",
+    "explanation": "« Complet » est synonyme d'« exhaustif » car il implique une couverture totale d'un sujet. « Partiel » désigne une couverture incomplète, tandis que « limitant » et « superficiel » signifient le manque de profondeur.",
+    "hint": "Cherche un mot qui englobe toute l'étendue d'un sujet."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Violon, Piano, Guitare, Fanfare",
+    "options": ["Violon", "Piano", "Guitare", "Fanfare"],
+    "answer": "Fanfare",
+    "explanation": "« Fanfare » est l'intrus car c'est un ensemble musical, alors que les autres sont des instruments individuels.",
+    "hint": "Concentre-toi sur ce qui ne désigne pas un instrument mais un groupement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « enrichir » ?",
+    "prompt": null,
+    "options": ["Appauvrir", "Agrandir", "Fortifier", "Embellir"],
+    "answer": "Appauvrir",
+    "explanation": "L'antonyme de « enrichir » est « appauvrir », car enrichir signifie augmenter, tandis qu'appauvrir signifie diminuer. « Agrandir », « fortifier » et « embellir » sont synonymes d'enrichir dans le contexte de l'amélioration.",
+    "hint": "Cherche un mot qui exprime l'idée de diminution de richesse."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Soleil est à jour comme lune est à ___",
+    "prompt": null,
+    "options": ["Nuit", "Etoile", "Eclipse", "Ciel"],
+    "answer": "Nuit",
+    "explanation": "Le soleil éclaire le jour, de même que la lune éclaire la nuit. Étoile, éclipse et ciel ne sont pas directement liés au concept d'éclairage de la nuit.",
+    "hint": "Considère le phénomène naturel qui se passe en l'absence de jour."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « éloquent » ?",
+    "prompt": null,
+    "options": ["Bavard", "Clair", "Confus", "Muet"],
+    "answer": "Clair",
+    "explanation": "« Clair » est synonyme d'« éloquent » car cela implique une expression fluide et précise. « Bavard » peut indiquer une loquacité mais pas nécessairement l'éloquence. « Confus » et « muet » sont opposés à une bonne communication.",
+    "hint": "Pense à la clarté du discours."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « efficace » ?",
+    "prompt": null,
+    "options": ["Inefficace", "Actif", "Concis", "Puissant"],
+    "answer": "Inefficace",
+    "explanation": "L'antonyme d'« efficace » est « inefficace », car inefficace signifie qui ne produit pas l'effet voulu. « Actif », « concis » et « puissant » peuvent être associés à l'efficacité mais ne sont pas des antonymes.",
+    "hint": "Cherche le mot qui exprime le contraire de l'efficacité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : \"En raison de son secret exceptionnel, il a été nommé ___ de l'entreprise.\"",
+    "prompt": null,
+    "options": ["Responsable", "Fondateur", "Gardien", "Candidat"],
+    "answer": "Gardien",
+    "explanation": "Il a été nommé « gardien » de l'entreprise en raison de son secret exceptionnel car un gardien est responsable de maintenir la sécurité ou la confidentialité. Fondateur et responsable concernent d'autres rôles, tandis que candidat n'indique pas un poste attribué.",
+    "hint": "Pense à un poste lié à la sécurité et au secret."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « pléthorique » ?",
+    "prompt": null,
+    "options": ["Abondant", "Rationné", "Parcimonieux", "Chiche"],
+    "answer": "Abondant",
+    "explanation": "« Pléthorique » signifie en très grande quantité et donc synonyme de « abondant ». « Rationné », « parcimonieux » et « chiche » impliquent la rareté ou une utilisation restreinte.",
+    "hint": "Pense à l'idée de quantité excessive."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « prolixe » ?",
+    "prompt": null,
+    "options": ["Bavard", "Lacunaire", "Concise", "Profus"],
+    "answer": "Concise",
+    "explanation": "« Concise » est l'antonyme de « prolixe », car concise signifie bref et précis, tandis que prolixe se réfère à une abondance de mots. « Bavard » et « profus » émettent aussi l'idée de profusion de mots. « Lacunaire » signifie incomplet, mais pas bref.",
+    "hint": "Pense à une expression concise et succincte."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Cardiologie, Neurologie, Jury, Dermatologie",
+    "options": ["Cardiologie", "Neurologie", "Jury", "Dermatologie"],
+    "answer": "Jury",
+    "explanation": "« Jury » est l'intrus, car c'est un terme juridique, tandis que les autres sont des spécialités médicales.",
+    "hint": "Réfléchis à celui qui ne correspond pas à un domaine médical."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Architecte est à bâtiment ce que écrivain est à ___",
+    "prompt": null,
+    "options": ["Stylo", "Chapitre", "Livre", "Page"],
+    "answer": "Livre",
+    "explanation": "Un architecte conçoit un bâtiment et un écrivain crée un livre. Stylo, chapitre, et page sont des éléments utilisés pour l’écriture mais ne représentent pas l'œuvre finale complète de l'écrivain.",
+    "hint": "Considère le produit final de leur travail respectif."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le sens du mot \"contrit\" dans cette phrase : \"Après avoir causé tant de tort, il était profondément contrit.\"",
+    "prompt": "Après avoir causé tant de tort, il était profondément contrit.",
+    "options": ["Content", "Désolé", "Indifférent", "Fâché"],
+    "answer": "Désolé",
+    "explanation": "« Contrit » signifie profondément désolé ou repentant. « Content » et « indifférent » n'ont rien à voir avec un sentiment de regret. « Fâché » implique une colère qui, dans ce contexte, ne convient pas.",
+    "hint": "Pense à un sentiment de regret intense."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « atavique » ?",
+    "prompt": null,
+    "options": ["Moderne", "Ancien", "Traditionnel", "Héréditaire"],
+    "answer": "Moderne",
+    "explanation": "« Atavique » est lié à ce qui est héréditaire ou ancien, son contraire est donc « moderne », signifiant nouveau ou actuel. « Ancien », « traditionnel » et « héréditaire » sont étroitement liés à l'idée d'atavisme.",
+    "hint": "Cherche un mot qui indique la nouveauté par opposition à l'héritage."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « prolixe » ?",
+    "prompt": null,
+    "options": ["Bavard", "Lacunaire", "Concis", "Profus"],
+    "answer": "Profus",
+    "explanation": "« Profus » est synonyme de « prolixe », car tous deux signifient une abondance excessive de paroles. « Bavard » partage aussi cette propriété mais n'est pas aussi moderne dans le sens. « Concis » et « lacunaire » sont des antonymes.",
+    "hint": "Pense à un discours ou un texte qui s'étend en longueur."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète la phrase : \"Il était un ___ de savoir et de science.\"",
+    "prompt": null,
+    "options": ["Puits", "Abîme", "Néant", "Enfermement"],
+    "answer": "Puits",
+    "explanation": "« Puits » de science est une expression indiquant une grande connaissance, en sens figuré. « Abîme », « néant » et « enfermement » ne conviennent pas car ils ne représentent pas la profondeur et la richesse positive de connaissances.",
+    "hint": "Pense à une expression poétique qui évoque une grande profondeur en richesse."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le sens du mot \"sibyllin\" dans cette phrase : \"Ses déclarations étaient souvent sibyllines, laissant planer le doute.\"",
+    "prompt": "Ses déclarations étaient souvent sibyllines, laissant planer le doute.",
+    "options": ["Claires", "Diplomatiques", "Enigmatiques", "Rassurantes"],
+    "answer": "Enigmatiques",
+    "explanation": "« Sibyllin » signifie énigmatique, mystérieux, créant la confusion. « Claires » et « rassurantes » sont opposées au sens énigmatique de sibyllin. « Diplomatiques » ne convient pas ici, car cela implique la tactique et non le mystère.",
+    "hint": "Cherche un mot qui renvoie au mystère ou à la complexité difficile à saisir."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « indélébile » ?",
+    "prompt": null,
+    "options": ["Effaçable", "Permanent", "Marquant", "Durable"],
+    "answer": "Effaçable",
+    "explanation": "« Indélébile » qualifie quelque chose qui ne peut être effacé, donc son antonyme est « effaçable ». « Permanent », « marquant » et « durable » sont en fait des synonymes ou des phrases proches de l'indélébilité.",
+    "hint": "Cherche un mot qui suggère la possibilité de disparition."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Thermomètre, Chronomètre, Baromètre, Calendrier",
+    "options": ["Thermomètre", "Chronomètre", "Baromètre", "Calendrier"],
+    "answer": "Calendrier",
+    "explanation": "« Calendrier » est l'intrus car il ne mesure pas comme les autres outils qui, eux, mesurent la température, le temps ou la pression.",
+    "hint": "Pense à l'objet qui sert à organiser plutôt qu'à mesurer."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « contrit » ?",
+    "prompt": null,
+    "options": ["Repentant", "Indifférent", "Arrogant", "Fier"],
+    "answer": "Repentant",
+    "explanation": "« Repentant » est synonyme de « contrit », car les deux décrivent quelqu'un qui ressent un profond regret. « Indifférent », « arrogant » et « fier » sont opposés à l'acte de ressentir du remords.",
+    "hint": "Pense à un sentiment qui suit l'auto-réflexion et le désir de rédemption."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le sens du mot \"atavique\" dans cette phrase : \"Il avait des peurs ataviques, héritées de ses ancêtres.\"",
+    "prompt": "Il avait des peurs ataviques, héritées de ses ancêtres.",
+    "options": ["Modernes", "Héréditaires", "Irrationnelles", "Bizarres"],
+    "answer": "Héréditaires",
+    "explanation": "« Atavique » se réfère à des traits héréditaires ou tendances anciennes. « Modernes » est le contraire. « Irrationnelles » et « bizarres » ne traduisent pas spécifiquement la notion d'héritage.",
+    "hint": "Pense à quelque chose transmis de génération en génération."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « infléchir » ?",
+    "prompt": null,
+    "options": ["Redresser", "Courber", "Pencher", "Déformer"],
+    "answer": "Redresser",
+    "explanation": "« Redresser » est l'antonyme de « infléchir », car infléchir signifie incliner ou courber, alors que redresser suggère le retour à une position droite. « Courber », « pencher » et « déformer » partagent une similarité de sens à infléchir.",
+    "hint": "Pense à l'acte de rendre droit ce qui était courbé."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « sibyllin » ?",
+    "prompt": null,
+    "options": ["Prophétique", "Clair", "Simple", "Direct"],
+    "answer": "Prophétique",
+    "explanation": "« Prophétique » est synonyme de « sibyllin » lorsqu'il désigne quelque chose de mystérieux ou de difficile à comprendre. « Clair », « simple », et « direct » sont des antonymes.",
+    "hint": "Pense à quelque chose qui semble prédire, mais pas clairement."
+  }
+]
+```

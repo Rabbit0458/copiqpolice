@@ -1,0 +1,443 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « joyeux » ?",
+        "prompt": null,
+        "options": ["Triste", "Heureux", "Calme", "Endormi"],
+        "answer": "Heureux",
+        "explanation": "Le mot 'heureux' exprime un sentiment de joie, proche de 'joyeux'. 'Triste' est l'opposé de 'joyeux'. 'Calme' se réfère à la tranquillité et 'endormi' à l'absence d'activité, sans lien avec la joie.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Soleil, Rayons, Pluie, Lumière",
+        "options": ["Soleil", "Rayons", "Pluie", "Lumière"],
+        "answer": "Pluie",
+        "explanation": "Le soleil, les rayons et la lumière sont liés par leur association à la clarté. La pluie, en revanche, est associée au temps pluvieux et à l'absence de soleil. Ainsi, 'pluie' est l'intrus.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : « Le chat a ___ sur le canapé. »",
+        "prompt": null,
+        "options": ["sauté", "sifflé", "marché", "mordu"],
+        "answer": "sauté",
+        "explanation": "Le verbe 'sauté' correspond à une action que le chat pourrait faire pour monter sur le canapé. 'Sifflé' n'est pas une action typique de chat, 'marché' indique un déplacement au sol, et 'mordu' implique une attaque.",
+        "hint": "Pense à une action de déplacement vertical."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « calme » ?",
+        "prompt": null,
+        "options": ["Tranquille", "Turbulent", "Serein", "Posé"],
+        "answer": "Turbulent",
+        "explanation": "Un individu turbulent exprime de l'agitation et du désordre, opposé à 'calme' qui implique sérénité. 'Tranquille', 'serein' et 'posé' sont synonymes de 'calme'.",
+        "hint": "Cherchez l'opposé du mot 'serein'."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « début » ?",
+        "prompt": null,
+        "options": ["Fin", "Commencement", "Achèvement", "Clôture"],
+        "answer": "Commencement",
+        "explanation": "Le mot 'commencement' signifie le début ou la mise en route d'une activité, tout comme 'début'. 'Fin', 'achèvement' et 'clôture' désignent la conclusion ou conclusion.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces aliments est l'intrus ?",
+        "prompt": "Orange, Citron, Fraise, Pamplemousse",
+        "options": ["Orange", "Citron", "Fraise", "Pamplemousse"],
+        "answer": "Fraise",
+        "explanation": "Les oranges, citrons et pamplemousses sont des agrumes, tandis que la fraise est un fruit rouge et sucré non agrume. Ainsi, la fraise est l'intrus.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « content » ?",
+        "prompt": null,
+        "options": ["Mécontent", "Heureux", "Triste", "Fâché"],
+        "answer": "Heureux",
+        "explanation": "'Heureux' signifie éprouver de la joie ou du contentement, ce qui est synonyme de 'content'. 'Mécontent', 'triste' et 'fâché' expriment le mécontentement et des sentiments négatifs.",
+        "hint": "Cherche un mot exprimant une joie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Crayon est à écrire comme peinture est à ___",
+        "prompt": null,
+        "options": ["Lire", "Colorier", "Dessiner", "Effacer"],
+        "answer": "Colorier",
+        "explanation": "Un crayon est utilisé pour écrire, tandis que la peinture est couramment utilisée pour colorier ou remplir de couleur. 'Dessiner' peut être plus directement relié au crayon.",
+        "hint": "Pense à l'action de remplir de couleur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette phrase, le mot « doux » signifie…",
+        "prompt": "Ce tissu est doux et agréable au toucher.",
+        "options": ["Rugueux", "Moelleux", "Piquant", "Dur"],
+        "answer": "Moelleux",
+        "explanation": "Dans le contexte de la phrase, 'doux' décrit une sensation agréable au toucher, synonyme de 'moelleux'. 'Rugueux', 'piquant', et 'dur' décrivent des textures désagréables à toucher.",
+        "hint": "Pense à une sensation agréable au toucher."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « clair » ?",
+        "prompt": null,
+        "options": ["Lumineux", "Obscur", "Évident", "Translucide"],
+        "answer": "Obscur",
+        "explanation": "Le mot 'obscur' est l'antonyme de 'clair', car il s'oppose à la luminosité. 'Lumineux', 'évident', et 'translucide' sont des mots associés à la clarté ou la transparence.",
+        "hint": "Cherchez l'opposé de la lumière."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Cercle, Carré, Triangle, Sablier",
+        "options": ["Sablier", "Cercle", "Carré", "Triangle"],
+        "answer": "Sablier",
+        "explanation": "Le cercle, le carré, et le triangle sont des formes géométriques, tandis qu'un sablier est un outil pour mesurer le temps. Ainsi, 'sablier' est l'intrus.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : « Le chien a ___ contre le mur. »",
+        "prompt": null,
+        "options": ["jappé", "glissé", "mordu", "dormi"],
+        "answer": "glissé",
+        "explanation": "'Glissé' décrit une action physique pouvant se produire spontanément contre un mur. 'Jappé', 'mordu', et 'dormi' n'impliquent pas une telle action physique brusque.",
+        "hint": "Pense à une action soudaine."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « malicieux » ?",
+        "prompt": null,
+        "options": ["Sérieux", "Rusé", "Simple", "Bête"],
+        "answer": "Rusé",
+        "explanation": "'Rusé' désigne une personne astucieuse et qui agit avec malice, semblable à 'malicieux'. 'Sérieux', 'simple', et 'bête' ne correspondent pas à cette acuité d'esprit.",
+        "hint": "Cherche un mot indiquant l'astuce."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « léger » ?",
+        "prompt": null,
+        "options": ["Lourd", "Douce", "Petit", "Aérien"],
+        "answer": "Lourd",
+        "explanation": "Le contraire de 'léger', qui signifie peu pesant, est 'lourd'. 'Douce', 'petit', et 'aérien' n'opposent pas directement le poids à 'léger'.",
+        "hint": "Pense à un mot en totale opposition de poids."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « regarder » ?",
+        "prompt": null,
+        "options": ["Voir", "Écouter", "Sentir", "Toucher"],
+        "answer": "Voir",
+        "explanation": "'Voir' est proche de 'regarder' car il s'agit de l'utilisation de la vue. 'Écouter', 'sentir', et 'toucher' se réfèrent à d'autres sens.",
+        "hint": "Cherche un mot du même sens que 'observer'."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans cette phrase, le mot « frais » signifie…",
+        "prompt": "Il fait frais ce matin.",
+        "options": ["Chaud", "Refroidi", "Tempéré", "Glacial"],
+        "answer": "Refroidi",
+        "explanation": "Dans cette phrase, 'frais' réfère à température un peu froide, synonyme de 'refroidi'. 'Chaud' et 'glacial' ne correspondent pas à la même nuance de température, et 'tempéré' est trop modéré.",
+        "hint": "Pense à une légère sensation de froid."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « petit » ?",
+        "prompt": null,
+        "options": ["Minuscule", "Grand", "Haut", "Lourd"],
+        "answer": "Minuscule",
+        "explanation": "'Minuscule' est un synonyme de 'petit' en signifiant une taille réduite. 'Grand', 'haut', et 'lourd' n'indiquent pas ces proportions minimales.",
+        "hint": null
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : « En été, il aime ___ des glaces. »",
+        "prompt": null,
+        "options": ["manger", "jeter", "construire", "enterrer"],
+        "answer": "manger",
+        "explanation": "'Manger' est l'action attendue face à l'énoncé mentionnant des glaces, perçues comme une nourriture. 'Jeter', 'construire', et 'enterrer' ne correspondent pas à cette consommation.",
+        "hint": "Réfléchissez à ce qu'on fait avec de la nourriture."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « complexe » ?",
+        "prompt": null,
+        "options": ["Simple", "Intriqué", "Basique", "Apparent"],
+        "answer": "Intriqué",
+        "explanation": "Le mot 'intriqué' implique une complexité ou une difficulté, synonymiquement associé à 'complexe'. 'Simple', 'basique', et 'apparent' désignent plutôt la clarté ou simplicité.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Jardin est à jardinier comme école est à ___",
+        "prompt": null,
+        "options": ["Professeur", "Arbre", "Table", "Élève"],
+        "answer": "Professeur",
+        "explanation": "Un jardin est entretenu par un jardinier comme une école est le lieu de travail d'un professeur. Les 'élèves' sont présents, mais ce sont des étudiants, pas ceux qui travaillent activement pour tenir l'établissement.",
+        "hint": "Pense à qui travaille là quotidiennement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Orchidée, Rose, Tulipe, Quetsche",
+        "options": ["Orchidée", "Rose", "Tulipe", "Quetsche"],
+        "answer": "Quetsche",
+        "explanation": "Orchidée, rose, et tulipe sont toutes des fleurs, tandis que la quetsche est un fruit. De ce fait, 'quetsche' est l'intrus.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot « pièce » signifie…",
+        "prompt": "La pièce où il travaille est bien éclairée.",
+        "options": ["Monnaie", "Chambre", "Fragment", "Scène"],
+        "answer": "Chambre",
+        "explanation": "Dans ce contexte, 'pièce' désigne une chambre ou une salle, car elle est un espace où il travaille. 'Monnaie', 'fragment', et 'scène' ont d'autres significations sans le même sens spatial.",
+        "hint": "Considérez un espace intérieur."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : « Malheureusement, il a ___ le jeu. »",
+        "prompt": null,
+        "options": ["gagné", "perdu", "aimé", "protégé"],
+        "answer": "perdu",
+        "explanation": "'Malheureusement' indique une issue négative, ainsi il a 'perdu' le jeu. 'Gagné' et 'aimé' sont positifs, et 'protégé' n'est pas une issue de jeu.",
+        "hint": "Cherchez une tournure défavorable."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « constructif » ?",
+        "prompt": null,
+        "options": ["Destructeur", "Édifiant", "Bénéfique", "Créatif"],
+        "answer": "Destructeur",
+        "explanation": "Le mot 'destructeur' est l'opposé de 'constructif' puisqu'il démolit au lieu de créer. 'Édifiant', 'bénéfique', et 'créatif' sont des termes plus positifs vers la création.",
+        "hint": "Pense à ce qui oppose à bâtir."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « flexible » ?",
+        "prompt": null,
+        "options": ["Rigide", "Souple", "Solide", "Épais"],
+        "answer": "Souple",
+        "explanation": "En décrivant un matériau ou une attitude adaptable, 'souple' se rapproche de 'flexible'. 'Rigide', 'solide', et 'épais' expriment plutôt l'inflexibilité ou la massivité.",
+        "hint": "Cherche ce qui peut s'adapter facilement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Marteau est à clou comme aiguille est à ___",
+        "prompt": null,
+        "options": ["Ciseaux", "Fil", "Papier", "Craie"],
+        "answer": "Fil",
+        "explanation": "Un marteau enfonce des clous, tout comme une aiguille sert à insérer du fil dans le tissu. 'Ciseaux', 'papier', et 'craie' ne complètent pas cette relation fonctionnelle.",
+        "hint": "Réfléchissez à un outil utilisé avec une aiguille."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : « Cet endroit est très ___ et paisible. »",
+        "prompt": null,
+        "options": ["calme", "bruyant", "agité", "glacial"],
+        "answer": "calme",
+        "explanation": "'Calme' est un qualificatif positif allant avec 'paisible' pour décrire un environnement serein. 'Bruyant', 'agité', et 'glacial' ne sont ni synonymes ni renforcent 'paisible'.",
+        "hint": "Cherchez un mot qui ajoute à la tranquillité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Dans cette phrase, le mot « glace » signifie…",
+        "prompt": "Sa boisson était pleine de glace.",
+        "options": ["Miroir", "Glaçons", "Verrière", "Froid"],
+        "answer": "Glaçons",
+        "explanation": "Ici, 'glace' se réfère aux morceaux glacés utilisés pour refroidir une boisson, ce qui correspond à 'glaçons'. 'Miroir', 'verrière', et 'froid' décrivent d'autres concepts non correspondants.",
+        "hint": "Pense à un moyen de refroidir une boisson."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Médecin, Infirmier, Pharmacien, Avocat",
+        "options": ["Médecin", "Infirmier", "Pharmacien", "Avocat"],
+        "answer": "Avocat",
+        "explanation": "Médecin, infirmier, et pharmacien travaillent tous dans le domaine médical, l'avocat travaille dans le domaine juridique, donc 'avocat' est l'intrus.",
+        "hint": null
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « périlleux » ?",
+        "prompt": null,
+        "options": ["Dangereux", "Sûr", "Rassurant", "Protecteur"],
+        "answer": "Dangereux",
+        "explanation": "'Dangereux' signifie comportant des risques, tout comme 'périlleux'. 'Sûr', 'rassurant', et 'protecteur' impliquent un sens de sécurité, opposé au danger.",
+        "hint": "Cherchez un mot indiquant un danger."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « humble » ?",
+        "prompt": null,
+        "options": ["Fier", "Modeste", "Discret", "Réservé"],
+        "answer": "Fier",
+        "explanation": "L'antonyme de 'humble', qui signifie modeste, est 'fier', impliquant orgueil et vanité. 'Modeste', 'discret', et 'réservé' sont liés à la modestie et l'humilité.",
+        "hint": "Pensez à l'antithèse de la modestie."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « prestance » ?",
+        "prompt": null,
+        "options": ["Négligence", "Preux", "Prestance", "Charisme"],
+        "answer": "Charisme",
+        "explanation": "Le synonyme de 'prestance', décrivant une allure imposante et charmante, est 'charisme'. 'Négligence', 'preux', et 'prestance' (une répétition intentionnelle) ne désignent pas la même prestance naturelle.",
+        "hint": "Cherchez un mot caractérisant l'attrait naturel."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Chien est à aboiement comme chat est à ___",
+        "prompt": null,
+        "options": ["Miaulement", "Hennissement", "Rugissement", "Sifflement"],
+        "answer": "Miaulement",
+        "explanation": "Le chien s'exprime en aboyant, tandis que le cri du chat est le miaulement. 'Hennissement', 'rugissement', et 'sifflement' caractérisent d'autres animaux.",
+        "hint": "Pensez au cri spécifique d'un chat."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « statique » ?",
+        "prompt": null,
+        "options": ["Dynamique", "Figé", "Calme", "Stable"],
+        "answer": "Dynamique",
+        "explanation": "Ce qui oppose 'statique', signifiant inerte ou stable, est 'dynamique', indiquant mouvement ou activité. 'Figé', 'calme', et 'stable' signifient immobilité.",
+        "hint": "Cherchez un terme indiquant le mouvement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Clair", "Énigmatique", "Évident", "Facile"],
+        "answer": "Énigmatique",
+        "explanation": "'Sibyllin' signifie obscur, difficile à comprendre, tout comme 'énigmatique'. 'Clair', 'évident', et 'facile' décrivent la transparence et la simplicité.",
+        "hint": "Cherchez un terme indiquant le mystère."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Architecte est à bâtiment comme auteur est à ___",
+        "prompt": null,
+        "options": ["Livre", "Bibliothèque", "Lettres", "Stylo"],
+        "answer": "Livre",
+        "explanation": "Un architecte conçoit des bâtiments, tout comme un auteur crée des livres. 'Bibliothèque', 'lettres', et 'stylo' sont associés à la littérature, mais ne sont pas l'œuvre directe de l'auteur.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot « pièce » signifie…",
+        "prompt": "Il a joué une belle pièce au théâtre.",
+        "options": ["Monnaie", "Scène", "Dramatique", "Spectacle"],
+        "answer": "Spectacle",
+        "explanation": "Dans le contexte, 'pièce' fait référence à une représentation théâtrale ou 'spectacle'. 'Monnaie', 'scène', et 'dramatique' ne correspondent pas à l'idée d'une œuvre théâtrale.",
+        "hint": "Considère l'art de la scène."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « magnanime » ?",
+        "prompt": null,
+        "options": ["Mesquin", "Généreux", "Bénévole", "Indulgent"],
+        "answer": "Mesquin",
+        "explanation": "L'antonyme de 'magnanime' est 'mesquin', indiquant une absence de grandeur d'esprit. 'Généreux', 'bénévole', et 'indulgent' alignent avec magnanimité.",
+        "hint": "Cherche l'opposé à la générosité d'âme."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « prolixe » ?",
+        "prompt": null,
+        "options": ["Lacunaire", "Verbeux", "Concise", "Silencieux"],
+        "answer": "Verbeux",
+        "explanation": "'Prolixe' signifie bavard ou qui use de beaucoup de mots, qui est 'verbeux'. 'Lacunaire', 'concise', et 'silencieux' désignent une brièveté de paroles.",
+        "hint": "Réfléchissez à quelqu'un qui use trop de mots."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Plume est à oiseau comme laine est à ___",
+        "prompt": null,
+        "options": ["Mouton", "Chèvre", "Soie", "Coton"],
+        "answer": "Mouton",
+        "explanation": "Une plume est un attribut d'un oiseau, comme la laine est associée au mouton. 'Chèvre', 'soie', et 'coton' ne décrivent pas l'origine directe de la laine.",
+        "hint": "Réfléchissez à l'animal fournissant la laine."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Zinc, Plomb, Cuivre, Chêne",
+        "options": ["Zinc", "Plomb", "Cuivre", "Chêne"],
+        "answer": "Chêne",
+        "explanation": "Zinc, plomb, et cuivre sont des métaux tandis que le chêne est un type d'arbre, ce qui en fait l'intrus. Les trois premiers mots représentent des éléments chimiques.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : « Avec prudence, elle a ___ l'obstacle. »",
+        "prompt": null,
+        "options": ["franchit", "heurté", "confronté", "observé"],
+        "answer": "franchit",
+        "explanation": "'Franchir' implique de passer avec succès un obstacle, ce qui est cohérent avec 'prudence'. 'Heurté', 'confronté', et 'observé' sont moins appropriés ici.",
+        "hint": "Cherchez un mot décrivant le passage."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « atavique » ?",
+        "prompt": null,
+        "options": ["Moderne", "Héréditaire", "Éphémère", "Assidu"],
+        "answer": "Héréditaire",
+        "explanation": "'Atavique' se réfère à des traits hérités ou ancestraux, synonymes de 'héréditaire'. 'Moderne', 'éphémère', et 'assidu' ne désignent pas une transmission de traits.",
+        "hint": "Considère un mot lié aux ancêtres."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot « voile » signifie…",
+        "prompt": "Le bateau avançait sous voile dans la baie.",
+        "options": ["Tissu", "Discrètement", "Navigation", "Masque"],
+        "answer": "Navigation",
+        "explanation": "Ici, 'voile' désigne l'état d'un bateau en train de naviguer, correspondant à 'navigation'. 'Tissu', 'discrètement', et 'masque' ne s'appliquent pas dans ce contexte nautique.",
+        "hint": "Considérez le contexte maritime."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « avarice » ?",
+        "prompt": null,
+        "options": ["Générosité", "Rapacité", "Égoïsme", "Frugalité"],
+        "answer": "Générosité",
+        "explanation": "L'antonyme d'« avarice », qui est une accumulation excessive des richesses, est « générosité », comportant une absence d'égoïsme financier. 'Rapacité', 'égoïsme', et 'frugalité' alignent davantage avec l'économie personnelle.",
+        "hint": "Réfléchissez à l'acte de donner librement."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « contrit » ?",
+        "prompt": null,
+        "options": ["Indifférent", "Peiné", "Joyeux", "Complaisant"],
+        "answer": "Peiné",
+        "explanation": "'Contrit' exprime le regret ou la douleur face à une faute, comme 'peiné'. 'Indifférent', 'joyeux', et 'complaisant' n'expriment pas ce sentiment de désolation.",
+        "hint": "Ce terme exprime une douleur morale."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Fleur est à bouquet comme lettre est à ___",
+        "prompt": null,
+        "options": ["Mot", "Pli", "Phrase", "Enveloppe"],
+        "answer": "Enveloppe",
+        "explanation": "Tout comme les fleurs forment un bouquet, une lettre est mise dans une enveloppe. 'Mot', 'pli', et 'phrase' ne complètent pas ce parallèle logistique.",
+        "hint": null
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Dans cette phrase, le mot « carton » signifie…",
+        "prompt": "Elle a reçu un carton plein de livres.",
+        "options": ["Du Perte", "Bal", "Boîte", "Invitation"],
+        "answer": "Boîte",
+        "explanation": "Dans ce contexte, 'carton' décrit un contenant, correspondant à 'boîte'. 'Perte', 'bal', et 'invitation' ne sont pas appropriés pour transmettre l'idée d'un conteneur pour objets.",
+        "hint": "Considère un conteneur pour colis."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « alterner » ?",
+        "prompt": null,
+        "options": ["Modifier", "Varier", "Stabiliser", "Simplifier"],
+        "answer": "Varier",
+        "explanation": "'Alterner' signifie faire varier les éléments de manière successive, synonymiquement associé à 'varier'. 'Modifier', 'stabiliser', et 'simplifier' n'impliquent pas nécessairement cette rotation.",
+        "hint": "Cherchez une idée de changement répétitif."
+    }
+]

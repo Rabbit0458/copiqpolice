@@ -1,0 +1,452 @@
+[
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 6, ?, 12, 15",
+    "prompt": "Quel terme manque ?",
+    "options": ["8", "9", "10", "11"],
+    "answer": "9",
+    "explanation": "La suite suit une progression arithmétique de +3. Après 6, le terme suivant est 6 + 3 = 9. Il ne faut pas ajouter un 4 par confusion avec une suite plus complexe.",
+    "hint": "Vérifie l'écart constant entre les chiffres."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, 10, ?, 20, 25",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "12", "18", "22"],
+    "answer": "15",
+    "explanation": "Chaque terme augmente de 5, une progression arithmétique typique. 10 + 5 = 15. Évitez de mélanger multiplication et addition, car il ne s'agit pas d'une suite multiplicative.",
+    "hint": "Cherche une addition simple récurrente."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "4, 8, 12, 16, ?",
+    "prompt": "Quel terme complète la suite ?",
+    "options": ["18", "19", "20", "24"],
+    "answer": "20",
+    "explanation": "Chaque terme est obtenu en ajoutant 4 au précédent (progression arithmétique +4). Ainsi, 16 + 4 = 20. Ne confondez pas avec une multiplication par un petit nombre.",
+    "hint": "Il s'agit d'une addition constante."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "7, 14, 21, ?, 35",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["28", "26", "25", "30"],
+    "answer": "28",
+    "explanation": "C'est une suite de la table de 7. Chaque terme est 7 fois plus grand que sa position dans la suite. 21 + 7 = 28. Une erreur commune est d'omettre l'addition.",
+    "hint": "Réfléchis en termes de table de multiplication."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 4, 9, 16, ?",
+    "prompt": "Quel terme complète cette suite ?",
+    "options": ["25", "20", "18", "22"],
+    "answer": "25",
+    "explanation": "Cette suite est constituée de carrés parfaits : 1², 2², 3², 4²,... Le terme manquant est 5² = 25. Veillez à ne pas confondre cela avec une suite arithmétique.",
+    "hint": "Pense aux carrés des nombres."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "8, 10, ?, 14, 16",
+    "prompt": "Quel terme manque ?",
+    "options": ["12", "11", "13", "15"],
+    "answer": "12",
+    "explanation": "La suite utilise une progression arithmétique de +2. Après 10, le terme suivant est 10 + 2 = 12. Ne soyez pas induit en erreur par des écarts variables.",
+    "hint": "+2 à chaque fois."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "2, 4, 6, 8, ?",
+    "prompt": "Quel terme complète la suite ?",
+    "options": ["9", "10", "11", "12"],
+    "answer": "10",
+    "explanation": "Cette suite utilise une progression arithmétique de +2 entre chaque terme. Le terme manquant est 8 + 2 = 10. Une confusion peut survenir si on attend un modèle multiplicatif.",
+    "hint": "Chaque terme augmente de 2."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "12, 10, ?, 6, 4",
+    "prompt": "Quel terme manque ?",
+    "options": ["8", "7", "5", "9"],
+    "answer": "8",
+    "explanation": "C'est une progression arithmétique de -2. Chaque terme est diminué de 2 par rapport au précédent. Donc 10 - 2 = 8. Ne vous laissez pas distraire par les potentiels modèles multiplicatifs.",
+    "hint": "Vérifie l'écart décroissant constant."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "2, 6, 18, ?, 162",
+    "prompt": "Quel terme manque ?",
+    "options": ["54", "56", "58", "60"],
+    "answer": "54",
+    "explanation": "Chaque terme est obtenu en multipliant le précédent par 3. 18 × 3 = 54. L'erreur fréquente est de penser à l'addition au lieu de la multiplication.",
+    "hint": "Cherche un multiplicateur."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "10, ?, 30, 40, 50",
+    "prompt": "Quel nombre complète cette suite ?",
+    "options": ["20", "25", "15", "30"],
+    "answer": "20",
+    "explanation": "La suite suit une progression arithmétique de +10. Donc 10 + 10 = 20. Attention à ne pas ajouter un nombre différent en raison d'une confusion.",
+    "hint": "Cherche un écart constant de 10."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, ?, 9, 12, 15",
+    "prompt": "Quel terme manque ?",
+    "options": ["6", "5", "7", "8"],
+    "answer": "6",
+    "explanation": "La progression arithmétique est de +3 à chaque étape. Ainsi, 3 + 3 = 6. Méfiez-vous des suites où les règles de progression changent.",
+    "hint": "Additionnez 3 chaque fois."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "9, 18, 27, ?, 45",
+    "prompt": "Quel terme complète la suite ?",
+    "options": ["36", "35", "34", "32"],
+    "answer": "36",
+    "explanation": "Chaque terme est la table de 9, donc c'est une addition constante de 9. 27 + 9 = 36. Il est essentiel de ne pas confondre cela avec une multiplication par un facteur croissant.",
+    "hint": "Pense aux multiples de 9."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, 15, 25, 35, ?",
+    "prompt": "Quel terme remplace le point d'interrogation ?",
+    "options": ["45", "40", "50", "55"],
+    "answer": "45",
+    "explanation": "Chaque terme est 10 de plus que le précédent. 35 + 10 = 45. Ne confondez pas avec un modèle non arithmétique.",
+    "hint": "Cette suite suit la table de 10 uniquement."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "16, 14, 12, 10, ?",
+    "prompt": "Quel terme manque ?",
+    "options": ["8", "9", "7", "6"],
+    "answer": "8",
+    "explanation": "Chaque terme décroit de 2, suivant une progression arithmétique simple. Donc 10 - 2 = 8. Évitez de vous tromper en considérant des intervalles non uniformes.",
+    "hint": "Toujours -2 à chaque étape."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "10, 20, ?, 40, 50",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["30", "25", "28", "32"],
+    "answer": "30",
+    "explanation": "Chaque terme est augmenté de 10, ce qui correspond à une progression arithmétique +10. Ainsi, 20 + 10 = 30. Ne vous laissez pas piéger en ajoutant par suite irrégulière.",
+    "hint": "Cherchez un ajout constant."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "2, 4, ?, 8, 10",
+    "prompt": "Quel terme manque ?",
+    "options": ["6", "5", "7", "9"],
+    "answer": "6",
+    "explanation": "Cette suite suit une progression arithmétique de +2. Donc 4 + 2 = 6. Méfiez-vous de relever des intervalles inéquitables dans d'autres modèles.",
+    "hint": "Chaque pas est constant."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 4, 9, 16, ?, 36",
+    "prompt": "Quel nombre doit figurer à la place du point d'interrogation ?",
+    "options": ["25", "20", "24", "23"],
+    "answer": "25",
+    "explanation": "C'est la suite des carrés : 1², 2², 3²,... Le terme manquant est donc 5² = 25. Gare à la confusion avec une simple addition ou suite arithmétique.",
+    "hint": "Cherchez les carrés parfaits."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "5, 11, ?, 35, 71",
+    "prompt": "Quel terme remplace le point d'interrogation ?",
+    "options": ["23", "17", "20", "22"],
+    "answer": "23",
+    "explanation": "Les différences sont successives : +6, +12, +24. Ajoutez donc 6 à 11 pour obtenir 23. Ne tombez pas dans le piège arithmétique d'additions égales entre termes.",
+    "hint": "Les différences entre les nombres augmentent progressivement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "2, 5, 10, 17, ?",
+    "prompt": "Quel terme achève la suite ?",
+    "options": ["26", "25", "24", "20"],
+    "answer": "26",
+    "explanation": "L'écart entre chaque terme augmente de +1 chaque fois : +3, +5, +7, +9. Après 17, 17 + 9 = 26. La difficulté réside dans l'identification de l'évolution progressive du différentiel.",
+    "hint": "Analyse l'évolution des différences."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "4, 10, 28, 82, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["244", "248", "242", "250"],
+    "answer": "244",
+    "explanation": "Chaque terme est obtenu en multipliant par 3 et en ajoutant 1 à l'exception du premier, donc (82 × 3) + 1 = 244. Ne vous égarez pas dans l’identification de modèles plus complexes.",
+    "hint": "Il y a multiplication suivie d'une addition."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "3, ?, 11, 19, 27",
+    "prompt": "Quel terme doit remplacer le point d'interrogation ?",
+    "options": ["7", "8", "9", "10"],
+    "answer": "7",
+    "explanation": "C'est une suite de progression avec une augmentation constante de 8. Ainsi, 3 + 8 = 11 dont auparavant, le chiffre manquant était 7. Soyez prudent dans les progressions arithmétiques à dérivation constante.",
+    "hint": "Focus sur un progression linéaire."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "5, 10, 13, 26, ?, 52",
+    "prompt": "Quel terme manque ?",
+    "options": ["39", "40", "41", "42"],
+    "answer": "39",
+    "explanation": "Les termes alternent entre une multiplication par 2 et un ajout de 3, donc 13 × 2 = 26 et 26 + 3 = 39. L'erreur classique est de manquer l'alternance entre multiplication et addition.",
+    "hint": "Alternez entre deux opérations."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "24, 27, ?, 33, 36",
+    "prompt": "Quel nombre continue la suite ?",
+    "options": ["30", "31", "29", "28"],
+    "answer": "30",
+    "explanation": "La série suit une progression arithmétique de +3. Donc 27 + 3 = 30. Erreur typique : se concentrer seulement sur le premier et ignorer les intervalles constants.",
+    "hint": "Cherchez un pas constant."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "11, 22, 34, ?, 61",
+    "prompt": "Quel terme remplit l'intervalle ?",
+    "options": ["49", "46", "48", "47"],
+    "answer": "46",
+    "explanation": "La progression est une alternance +11, +12 : ainsi, après 34, ajoutez 12 pour obtenir 46. Ne ratez pas le motif alternant addition-multiplication.",
+    "hint": "Il y a une alternance dans l'opération."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "9, 31, 97, ?, 883",
+    "prompt": "Quel terme replace le point d'interrogation ?",
+    "options": ["289", "293", "277", "281"],
+    "answer": "289",
+    "explanation": "Chaque terme est obtenu en multipliant le précédent par 3 et en ajoutant 4 : 97 × 3 + 4 = 289. Erreur typique : considérer un seul facteur, ici le multiplicateur.",
+    "hint": "Pensez à une séquence avec une multiplication suivie d'une addition."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "8, 24, ?, 72, 120",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["48", "40", "44", "50"],
+    "answer": "48",
+    "explanation": "La suite suit une progression par multiplication alternée par 3 : 8 × 3 = 24, puis 24 × 2 = 48. Attention à ne pas confondre avec de simples multiplications identiques chaque fois.",
+    "hint": "Cherchez une alternance de multiplication."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "10, 25, ?, 85, 145",
+    "prompt": "Quel terme remplace l'inconnue dans la suite ?",
+    "options": ["50", "55", "60", "65"],
+    "answer": "50",
+    "explanation": "Le motif alterne : terme ×2 - 5. Après 25 : (25 × 2) - 5 = 50. Ne pas manquer le modèle comprenant une méthode de multiplication doublée et soustraite de cinq.",
+    "hint": "Une opération est suivie d'une soustraction."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "18, 29, 43, 60, ?",
+    "prompt": "Quel terme achève cette suite ?",
+    "options": ["80", "81", "82", "83"],
+    "answer": "80",
+    "explanation": "Les différences prennent une progression arithmétique de +11, +14, +17, +20. Ainsi, 60 + 20 = 80. Piège habituel : erreur sur les différences croissantes.",
+    "hint": "Regardez les changements dans les différences entre les nombres."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "3, 15, 30, 48, ?",
+    "prompt": "Quel chiffre comble l'espace ?",
+    "options": ["69", "63", "64", "66"],
+    "answer": "69",
+    "explanation": "Une progression de différences est observée : 12, 15, 18. Ajoutez 21 à 48 pour trouver 69. Faite attention aux progressions additives qui augmentent progressivement.",
+    "hint": "Différences augmentant de façon stable."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "2, 4, 8, ?, 32",
+    "prompt": "Quel terme doit remplacer le point d'interrogation ?",
+    "options": ["16", "15", "14", "12"],
+    "answer": "16",
+    "explanation": "La suite suit la multiplication par 2 à chaque étape. 8 × 2 = 16. L'erreur courante est de croire à une progression inconsistante.",
+    "hint": "Coefficent multiplicateur."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 3, 7, 15, ?",
+    "prompt": "Quel terme complète la série ?",
+    "options": ["31", "29", "30", "28"],
+    "answer": "31",
+    "explanation": "Double plus un calcul : x2+1. Donc (15 × 2) + 1 = 31. Prise de conscience nécessaire des motifs multiplicateurs suivi par une addition.",
+    "hint": "Inclut multiplication suivie d'un ajout."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "10, ?, 40, 52, 64",
+    "prompt": "Quel nombre achève la suite ?",
+    "options": ["28", "26", "24", "22"],
+    "answer": "28",
+    "explanation": "La suite utilise une similarité de +12 entre chaque membre. 10 + 12 + 12 = 28. N’ignorez pas les sommes appropriées entre termes.",
+    "hint": "Considérez chaque ajout égal."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "17, 34, 68, ?, 272",
+    "prompt": "Quel terme poursuit la suite ?",
+    "options": ["136", "135", "140", "132"],
+    "answer": "136",
+    "explanation": "Résultat doublé `±1`. Effectuer (68 × 2 = 136). Attention, chaque fois est doublé du dernier, ne suivez pas d’ajouts monotones additionnels.",
+    "hint": "Consultez multiplicateur de 2."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "8, 12, ?, 24, 32",
+    "prompt": "Quel chiffre complète la suite ?",
+    "options": ["16", "18", "20", "22"],
+    "answer": "16",
+    "explanation": "Deutlich: Progression de +4 à chaque étape. À l'intérieur de 12, 12 + 4 = 16. Ne négligez pas les ajouts récurrents. Naturel, mathématique.",
+    "hint": "Seulement conservant +4 ajout à la fois."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 3, 5, ?, 13",
+    "prompt": "Quel terme complète cette suite ?",
+    "options": ["8", "6", "7", "9"],
+    "answer": "8",
+    "explanation": "C'est une suite de Fibonacci où chaque terme est la somme des deux précédents. Après 5 = (3 + 2), donc 3 + 5 = 8. Il est crucial de ne pas confondre avec une simple somme linéaire.",
+    "hint": "Suite où chaque terme découle des deux précédents."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "13, 21, 34, 55, ?, 144",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["89", "94", "78", "85"],
+    "answer": "89",
+    "explanation": "Cette suite suit le modèle de Fibonacci. Somme de deux termes précédents : 55 + 34 = 89. Erreur classique : alternance non évidente.",
+    "hint": "Deux termes sont toujours sommés."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "3, 9, 27, ?, 243",
+    "prompt": "Quel nombre remplace l'inconnue ?",
+    "options": ["81", "72", "75", "70"],
+    "answer": "81",
+    "explanation": "Chaque terme est obtenu en multipliant par 3. 27×3 = 81. Le danger ici est de confondre avec une addition progressive.",
+    "hint": "Vérification pour chaque doublage du précédent."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 4, 9, 16, 25, ?",
+    "prompt": "Quelle suite continue ?",
+    "options": ["36", "34", "37", "39"],
+    "answer": "36",
+    "explanation": "Suite de carrés parfaits : 1², 2², 3²,... Donc après carré de 5 (25), 6² =36. Ne vous embrouillez pas avec les progressions arithmétiques.",
+    "hint": "Carrés parfait : chaque nombre multiplié par lui-même."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, ?, 10, 26, 50",
+    "prompt": "L'inconnue dans cette suite est ?",
+    "options": ["4", "6", "5", "8"],
+    "answer": "4",
+    "explanation": "Les valeurs résultent des termes : (x+1)²−1. Pour 2, réduction après obtention d'un produit (4 - 1 =3). Prise de conscience concernant les additions additives simples.",
+    "hint": "Formule carrée retranchée."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "5, 10, 20, ?, 80",
+    "prompt": "Quel chiffre complète cette suite ?",
+    "options": ["40", "45", "50", "55"],
+    "answer": "40",
+    "explanation": "Chaque terme est le précédent multiplié par 2. Ainsi 20 × 2 donne 40. Ne mélangez pas espace réduit avec augmentation irrégulière des nombres.",
+    "hint": "Coefficient d'accumulation multiplicatif est 2."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "17, 18, 17, 16, ?, 14",
+    "prompt": "Quel terme achève la suite ?",
+    "options": ["15", "13", "14", "16"],
+    "answer": "15",
+    "explanation": "De nouvelles réductions +1 et redescente, note -1 découlant, continuant itérative ainsi. (16-1=15). Certaines similitudes progressives peuvent vous piéger.",
+    "hint": "Appliquez intentionnes et réductions cycliques."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 3, 6, 11, 18, ?",
+    "prompt": "Quel chiffre termine la série ?",
+    "options": ["27", "26", "28", "25"],
+    "answer": "27",
+    "explanation": "Chaque étape s'obtient (x+i). Ainsi, après 18, produit : (18)+9=27. Danger : considération de simples additions additives augmentant plus régulièrement.",
+    "hint": "La progression forme une série établie."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "4, 9, 19, 39, ?",
+    "prompt": "Quel chiffre résout cette suite ?",
+    "options": ["79", "80", "81", "78"],
+    "answer": "79",
+    "explanation": "Au doublement près de position, ajoutez +1 à tous ceux-ci. Modèle linéaire inclus partagé parmi. 39+40=79. L'erreur typique : multiplication sous-estimée.",
+    "hint": "Utilise multiplication et additif."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "6, 8, 15, 25, ?",
+    "prompt": "Quel terme complète cette suite ?",
+    "options": ["38", "40", "36", "37"],
+    "answer": "40",
+    "explanation": "Chaque terme s'ajoute : progression après x+y. 25+15=40. Assurez-vous d’un ajustement multiple, renforcé continu.",
+    "hint": "Multiply et additif corrects ensemble."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 4, 8, ?",
+    "prompt": "Quel chiffre complète cette suite ?",
+    "options": ["16", "12", "14", "11"],
+    "answer": "16",
+    "explanation": "Processus exécu(x)*2 doublant chaque valeur d'une série (8*2=16). Trahison inclinée de progressions simples.",
+    "hint": "Intensivement doublante toutes valeurs successives."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "3, 7, 15, 31, ?",
+    "prompt": "Quel chiffre complète cette suite ?",
+    "options": ["63", "62", "64", "60"],
+    "answer": "63",
+    "explanation": "Doublant plus un (x2+=1). Précédent plus doublement par points. (31)*2+1=63. Assurez-vous qu'il soit complet doublon chaque terme.",
+    "hint": "Utilise multiplication plus un ajout constant."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "0, 1, 4, 9, ?",
+    "prompt": "Quel terme clôture la suite ?",
+    "options": ["16", "18", "24", "14"],
+    "answer": "16",
+    "explanation": "Série de carrés : 0, 1(1²) s'accroît à compléter l'étendue. Fournis lancement par suivant 2 au carré=16. Concerné : témoin unique adjectif suite.",
+    "hint": "Assessment formation en carrés."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "14, 15, 17, 20, ?",
+    "prompt": "Quel terme achève cette série ?",
+    "options": ["24", "25", "26", "23"],
+    "answer": "24",
+    "explanation": "2 éléments suivant +3, 20 ajout 24 reste : +4. N'ajoutez pas confus confusion supplémentaire .",
+    "hint": "Moment d'extraction chiffres progressifs addition."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "23, 29, ?, 53, 67",
+    "prompt": "Quel élément constitue la suite ?",
+    "options": ["41", "37", "39", "35"],
+    "answer": "41",
+    "explanation": "Apercu en point liste premiers incréments chiffres uniques premiers nombre (29 à 41). Ne confondez pas calculations commençant distinctes.",
+    "hint": "Suite des nombres premiers à considérer."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "4, 6, 10, 16, 24, ?",
+    "prompt": "Quel chiffre conclue cette suite ?",
+    "options": ["34", "32", "33", "31"],
+    "answer": "34",
+    "explanation": "S'ajoute à chaque duplicité initiale par (16+24=34) ordonnées groupées . Assurez-vous d'ampleur ajout valeurs illumination correcte.",
+    "hint": "Certifié cumul attribué étendue."
+  }
+]

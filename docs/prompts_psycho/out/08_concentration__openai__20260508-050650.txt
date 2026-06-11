@@ -1,0 +1,252 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « E » apparaît-elle dans cette phrase (en minuscule uniquement) ?",
+    "prompt": "Comptez attentivement.",
+    "stimulus": "Le temps pluvieux persiste en été.",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Le mot 'Le' contient 1 'e'. 'temps' n'en a pas. 'pluvieux' contient 2 'e'. 'persiste' en a 2 et 'été' n'en a aucun en minuscule. Total : 1 (Le) + 2 (pluvieux) + 2 (persiste) = 5 'e'.",
+    "hint": "Vérifiez chaque mot et notez les e."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans la suite ?",
+    "prompt": "Toutes les lettres sauf une sont voyelles.",
+    "stimulus": "A I O U E K",
+    "options": ["A", "E", "I", "K"],
+    "answer": "K",
+    "explanation": "La suite est constituée uniquement de voyelles : A, I, O, U, E. K est l'intrus car c'est une consonne.",
+    "hint": "Identifiez les voyelles de la langue française."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres « 4 » apparaissent dans la suite ?",
+    "prompt": null,
+    "stimulus": "2 4 5 4 6 7 4 3 4 8",
+    "options": ["2", "3", "4", "5"],
+    "answer": "4",
+    "explanation": "Le chiffre 4 apparaît dans les positions 2, 4, 7 et 9. Cela fait un total de 4 occurrences.",
+    "hint": "Concentrez-vous sur les chiffres, un par un."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle séquence est strictement identique au modèle ?",
+    "prompt": "Modèle : DEFB",
+    "stimulus": "DEFB",
+    "options": ["DFEB", "DEFB", "DBFE", "DEBF"],
+    "answer": "DEFB",
+    "explanation": "Seule la deuxième option, DEFB, est identique au modèle. Les autres séquences ont un ou plusieurs caractères inversés.",
+    "hint": "Vérifiez la séquence caractère par caractère."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « M » majuscule apparaît-elle ?",
+    "prompt": "Comptez uniquement les M majuscules.",
+    "stimulus": "MaMme Muller M'a montré ma Maison.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Nous trouvons M à la position 1 (MaMme), à la position 8 (Muller) et à la position 22 (Maison), ce qui nous donne un total de 3 M majuscules.",
+    "hint": "Cherchez les majuscules uniquement."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres pairs apparaissent dans cette suite ?",
+    "prompt": null,
+    "stimulus": "1 2 3 4 5 6 7 8 9 0",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Les chiffres pairs sont 2, 4, 6, 8, et 0, qui sont présents respectivement aux positions 2, 4, 6, 8 et 10.",
+    "hint": "Identifiez les chiffres pairs un par un."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Identifiez l'intrus dans cette suite.",
+    "prompt": "Toutes les lettres sauf une sont des consonnes.",
+    "stimulus": "G K T R S O",
+    "options": ["G", "S", "T", "O"],
+    "answer": "O",
+    "explanation": "G, K, T, R et S sont toutes des consonnes. O est une voyelle, ce qui en fait l'intrus dans cette suite.",
+    "hint": "Déterminez les voyelles cachées parmi les consonnes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois la lettre « A » apparaît-elle (indépendamment de la casse) ?",
+    "prompt": "Comptez les majuscules et minuscules.",
+    "stimulus": "A l'abordage, les pirates amassent leur butin.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "5",
+    "explanation": "A (1) + l'(0) + abordage(1) + les(0) + pirates(1) + amassent(2) + leur(0) + butin(0) = 5 occurrences au total.",
+    "hint": "Mélangez les minuscules et les majuscules dans votre recherche."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est strictement identique au modèle ?",
+    "prompt": "Modèle : WXYZ1234",
+    "stimulus": "WXYZ1234",
+    "options": ["WYZ1234", "WXYZ123", "WXYZ1234", "WXY2134"],
+    "answer": "WXYZ1234",
+    "explanation": "La séquence correcte est WXYZ1234, où aucun des autres choix ne conserve exactement l'ordre initial du modèle.",
+    "hint": "Comparez chaque lettre du haut vers le bas."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Identifiez l'intrus dans la suite suivante.",
+    "prompt": "Toutes suivent une logique numérique sauf une.",
+    "stimulus": "2 4 8 5 16 32",
+    "options": ["4", "5", "16", "32"],
+    "answer": "5",
+    "explanation": "La suite suit une logique de multiplication par 2. Ainsi 2, 4, 8, 16, 32 respectent cette règle, sauf 5.",
+    "hint": "Recherchez une progression régulière."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de E majuscules apparaît-il dans ce titre ?",
+    "prompt": "Comptez les E en majuscule uniquement.",
+    "stimulus": "L'ELEPHANT ET SON ROYAUME.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "L'(0) + ELEPHANT(2) + ET(1) + SON(0) + ROYAUME(0) : seuls ELEPHANT et ET contiennent des E majuscules.",
+    "hint": "Vérifiez les majuscules uniquement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres « 7 » apparaissent dans cette suite ?",
+    "prompt": null,
+    "stimulus": "7 1 7 3 5 7 6 8 7 9",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Le chiffre 7 apparaît à la position 1, 3, 6 et 9, ce qui fait un total de 4 fois dans la suite.",
+    "hint": "Suivez chaque chiffre attentivement afin de les identifier."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle lettre est l'intrus dans cette suite ?",
+    "prompt": "Chaque lettre obéit à une séquence alternante.",
+    "stimulus": "B D F H J O",
+    "options": ["D", "F", "O", "J"],
+    "answer": "O",
+    "explanation": "La suite suit une logique basée sur les positions impaires de l'alphabet : B (2), D (4), F (6), H (8), J (10). O ne respecte pas cette séquence car sa position est 15.",
+    "hint": "Regardez la position de chaque lettre dans l'alphabet attentivement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de voyelles contient cette phrase ?",
+    "prompt": "Considère a, e, i, o, u comme voyelles. Casse insensible.",
+    "stimulus": "Les chiens aboient, mais la caravane passe.",
+    "options": ["14", "15", "16", "17"],
+    "answer": "16",
+    "explanation": "La répartition est : Les (1) chiens (2) aboient (3), mais (2) la (1) caravane (4) passe (3). Total = 16 voyelles en tout.",
+    "hint": "Passez chaque mot en revue méthodiquement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est strictement identique au modèle ?",
+    "prompt": "Modèle : 246813579",
+    "stimulus": "246813579",
+    "options": ["246813579", "246815379", "246831579", "264813579"],
+    "answer": "246813579",
+    "explanation": "Seule la première option 246813579 correspond exactement au modèle, les autres incluent une inversion ou erreur d'ordre.",
+    "hint": "Analysez chaque nombre individuellement pour une comparaison précise."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Identifiez l'intrus dans cette suite de mots.",
+    "prompt": "Toutes les villes sauf une sont capitales.",
+    "stimulus": "Paris, Londres, Madrid, Sydney, Rome",
+    "options": ["Paris", "Londres", "Madrid", "Sydney"],
+    "answer": "Sydney",
+    "explanation": "Paris, Londres, Madrid, et Rome sont toutes des capitales. Sydney ne l'est pas, c'est la plus grande ville d'Australie mais pas sa capitale qui est Canberra.",
+    "hint": "Rappelez-vous quels sont les chefs-lieux."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres impairs dans cette suite ?",
+    "prompt": null,
+    "stimulus": "1 2 3 4 5 6 7 8 9 0",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Les chiffres impairs présents sont : 1, 3, 5, 7, et 9, soit 5 au total.",
+    "hint": "Repérez chaque chiffre impair isolément."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre « S » apparaît-elle (indépendamment de la casse) ?",
+    "prompt": "Comptez les S majuscules et minuscules.",
+    "stimulus": "Soupçon suspect sous surveillance spéciale.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "explanation": "Soupçon (1xS) + suspect (1xS) + sous (1xS) + surveillance (2xS) + spéciale (1xS) pour un total de 7 occurrences.",
+    "hint": "Considérez les groupes de lettres plutôt qu'individuellement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de chiffres pairs apparaissent dans cette suite alphanumérique ?",
+    "prompt": null,
+    "stimulus": "A3B2C4D5E6F7G8",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les chiffres pairs présents sont 2, 4, 6, et 8 dans les positions 3, 5, 9, et 15, respectivement.",
+    "hint": "Regroupez les chiffres pour éviter les erreurs."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence est strictement identique au modèle en inversant l'ordre ?",
+    "prompt": "Modèle inversé : 987654321",
+    "stimulus": "987654321",
+    "options": ["987654321", "987654312", "987653421", "987654231"],
+    "answer": "987654321",
+    "explanation": "Tous les chiffres du modèle inversé doivent être dans l'ordre exact 987654321, que seule la première option respecte.",
+    "hint": "Retracez l'inversion caractère par caractère."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Identifiez l'intrus dans cette suite de nombres.",
+    "prompt": "Tous sont des carrés parfaits sauf un.",
+    "stimulus": "4, 9, 16, 28, 36",
+    "options": ["9", "16", "28", "36"],
+    "answer": "28",
+    "explanation": "4 (2²), 9 (3²), 16 (4²), 36 (6²) sont des carrés parfaits. 28 n'en est pas un, et constitue l'intrus.",
+    "hint": "Revenez aux compétences de calcul initiales."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles en minuscule dans cette phrase ?",
+    "prompt": "Comptez uniquement les voyelles minuscules.",
+    "stimulus": "Il était une fois un royaume magnifique.",
+    "options": ["14", "15", "16", "17"],
+    "answer": "16",
+    "explanation": "il (1)+ était (2) + une (2) + fois (1) + un (1) + royaume (3) + magnifique (6) = 16 voyelles, totalisant exclusivement les minuscules.",
+    "hint": "Soyez attentif uniquement aux voyelles en minuscule sans distraction."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois la lettre « R » apparaît-elle, incluant majuscules et minuscules ?",
+    "prompt": null,
+    "stimulus": "Recours régulier au Bureau de recrutement.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "Recours (2xR) + régulier (1xR) + Bureau (1xR) + de(0) + recrutement (2xR). Total de 6 occurrences de R.",
+    "hint": "Faites attention aux R en début et fin de mots."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence est exactement identique au modèle, en inversant certains groupes ?",
+    "prompt": "Modèle : A1B2C3D4",
+    "stimulus": "A1B2C3D4",
+    "options": ["D4C3B2A1", "A1B2C3D4", "A1D4B2C3", "A1C3B2D4"],
+    "answer": "A1B2C3D4",
+    "explanation": "Seule la séquence A1B2C3D4 est exactement identique au modèle avec toutes les positions initiales intactes.",
+    "hint": "Revoyez chaque groupe de lettres et de chiffres."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Identifiez l'intrus dans cette suite de saisons.",
+    "prompt": "Toutes les saisons sauf une sont des saisons traditionnelles.",
+    "stimulus": "Printemps, Été, Automne, Pluie, Hiver",
+    "options": ["Printemps", "Été", "Automne", "Pluie"],
+    "answer": "Pluie",
+    "explanation": "Printemps, Été, Automne, et Hiver sont les quatre saisons traditionnelles. Pluie ne correspond pas à une saison.",
+    "hint": "Réflechissez aux cycles annuels traditionnels."
+  }
+]

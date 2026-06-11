@@ -1,0 +1,172 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien de fois la lettre « E » apparaît-elle dans la phrase ci-dessous ?",
+    "prompt": "Comptez attentivement chaque occurrence de « E ».",
+    "stimulus": "Le sergent et le lieutenant enquêtent.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "Décompte détaillé : Le(1) + sergent(2) + et(3) + le(4) + lieutenant(5) + enquêtent(6) = 6 occurrences du « E ». Les autres options oublient une ou plusieurs occurrences.",
+    "hint": "Passe en revue chaque mot en mettant en évidence chaque « E »."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle lettre est l'intrus dans la suite suivante ?",
+    "prompt": "Repérez la lettre qui ne suit pas la même logique que les autres.",
+    "stimulus": "A C E G I J K",
+    "options": ["C", "I", "K", "J"],
+    "answer": "J",
+    "explanation": "La série suit les lettres aux positions impaires (A=1, C=3, E=5, G=7, I=9, K=11). J (=10) brise ce modèle et est l'intrus.",
+    "hint": "Vérifiez la position des lettres dans l'alphabet."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de chiffres « 1 » apparaissent-ils dans cette suite numérique ?",
+    "prompt": "Concentrez-vous uniquement sur le chiffre 1.",
+    "stimulus": "1 4 1 7 2 1 0 9 1 6 1 3",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Les chiffres 1 sont aux positions 1, 3, 6, 9, et 11 dans la suite. Il y a donc cinq occurrences en tout.",
+    "hint": "Notez chaque fois que vous rencontrez un 1."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de lettres majuscules « T » apparaissent dans ce titre ?",
+    "prompt": "Repérez uniquement les T majuscules.",
+    "stimulus": "TITAN SURGE DANS LA TORNADE",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Comptez chaque lettre T majuscule : TITAN(1) + SURGE(0) + DANS(0) + LA(0) + TORNADE(1) = 2 dans TITAN + 2 dans le reste, donc un total de 4.",
+    "hint": "Surlignez mentalement chaque mot contenant un T."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien de mots de plus de 4 lettres y a-t-il dans cette phrase ?",
+    "prompt": "Repérez les mots de plus de quatre lettres seulement.",
+    "stimulus": "L'inspecteur cherche des indices dans chaque recoin.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "5",
+    "explanation": "Les mots sont : L'inspecteur(11), cherche(7), indices(7), dans(4), chaque(6), recoin(6). Cinq de ces mots dépassent 4 lettres.",
+    "hint": "Compte les lettres pour chaque mot."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de fois le chiffre « 2 » apparaît-il dans cette série ?",
+    "prompt": "Considérez chaque chiffre 2.",
+    "stimulus": "2 5 2 8 2 1 2 0 3 4 2",
+    "options": ["5", "6", "7", "8"],
+    "answer": "5",
+    "explanation": "Les chiffres 2 sont aux positions 1, 3, 5, 7, et 11. Ainsi, la série comporte cinq fois le chiffre 2.",
+    "hint": "Concentrez-vous sur les positions impaires."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle séquence est exactement identique au modèle ?",
+    "prompt": "Modèle : RSTUVWXY",
+    "stimulus": "RSTUVWXY",
+    "options": ["RSTUVWXZ", "RSTVWXY", "RSTUVWXY", "RSTUYVWXY"],
+    "answer": "RSTUVWXY",
+    "explanation": "Analysez chaque lettre : RSTUVWXY est le seul choix sans erreur de lettre. Les autres séquences diffèrent par un ou plusieurs caractères.",
+    "hint": "Vérifiez méthodiquement chaque caractère."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de mots de plus de 6 lettres y a-t-il dans cette phrase ?",
+    "prompt": "Vérifiez chaque mot attentivement.",
+    "stimulus": "L'enquête approfondie met en lumière des informations surprenantes.",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "explanation": "Les mots : enquête (7), approfondie (12), lumière (7), informations (12), surprenantes (12). Ainsi, trois mots ont plus de 6 lettres.",
+    "hint": "Comptez les lettres scrupuleusement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de lettres « G » majuscules sont présentes ?",
+    "prompt": "Attention, seules les majuscules comptent.",
+    "stimulus": "GRAND GALA DANS LE GRAND GYMNASE",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Décompte des G majuscules : GRAND(1) + GALA(1) + DANS(0) + LE(0) + GRAND(1) + GYMNASE(1) = 4 majuscules G.",
+    "hint": "Vérifiez les mots commençant par G."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quelle lettre est l'intrus dans la suite suivante ?",
+    "prompt": "Repérez l'anomalie.",
+    "stimulus": "M Q S U W Z Y",
+    "options": ["Z", "W", "Y", "Q"],
+    "answer": "Y",
+    "explanation": "La suite suit un modèle de deux lettres entre chaque : M(13), Q(17), S(19), U(21), W(23), Z(26), Y(25) brise cette suite.",
+    "hint": "Comptez l'espace entre les lettres."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien de chiffres pairs cette série contient-elle ?",
+    "prompt": "Comptez les chiffres pairs uniquement.",
+    "stimulus": "1 3 4 6 7 8 9 2 5",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les chiffres pairs sont 4, 6, 8 et 2. Total de quatre chiffres pairs dans la série.",
+    "hint": "Notez les chiffres divisibles par 2."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots de plus de 5 lettres sont présents dans ce texte long ?",
+    "prompt": "Repérez précisément chaque mot dans le texte suivant.",
+    "stimulus": "L'officier, avec précision et professionnalisme, interrogea les suspects dans un style méthodique inégalé.",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "Comptez les mots : officier(8), précision(9), professionnalisme(18), interrogea(9), suspects(8), méthodique(10). Total de six mots.",
+    "hint": "Procédez mot par mot en vérifiant chaque lettre."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence est exactement identique au modèle ?",
+    "prompt": "Modèle : HGFEDCBA",
+    "stimulus": "HGFEDCBA",
+    "options": ["HGFEDCBA", "HGFDCEBA", "HGEFDACB", "HGFEDBCA"],
+    "answer": "HGFEDCBA",
+    "explanation": "Un examen attentif montre que HGFEDCBA est identique au modèle ; les autres ont de légères erreurs.",
+    "hint": "Considérez chaque lettre comme une pièce de puzzle."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de voyelles ce passage contient-il ?",
+    "prompt": "Incluez toutes les a, e, i, o, u.",
+    "stimulus": "Dans les méandres de l'imposant manoir se cachait un secret profondément enfoui.",
+    "options": ["22", "23", "24", "25"],
+    "answer": "23",
+    "explanation": "Décomptez chaque voyelle : Dans(1) + les(1) + méandres(3) + de(1) + l'imposant(3) + manoir(3) + se(1) + cachait(3) + un(1) + secret(2) + profondément(4) + enfoui(2) = Total de 23 voyelles.",
+    "hint": "Faites une révision approfondie de chaque mot."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de fois le chiffre « 4 » apparaît-il dans ce code alphanumérique ?",
+    "prompt": "Vérifiez chaque occurrence.",
+    "stimulus": "4D4E2344G34F",
+    "options": ["4", "5", "6", "7"],
+    "answer": "5",
+    "explanation": "Les chiffres 4 apparaissent aux positions 1, 3, 5, 8, et 10. Cela donne un total de cinq 4.",
+    "hint": "Cherchez spécifiquement les 4."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien de mots de plus de 7 lettres existent-ils dans le texte ?",
+    "prompt": "Identifiez les mots longs dans cette description.",
+    "stimulus": "La coordination méticuleuse des diverses unités permit une intervention rapide et réussie.",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4",
+    "explanation": "Les mots considérés sont coordination(12), méticuleuse(11), différentes (11), intervention(12). Ainsi, quatre atteignent plus de 7 lettres.",
+    "hint": "Vérifiez les mots qui ont une longueur substantielle."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quelle séquence suivante est une répétition exacte du modèle ?",
+    "prompt": "Modèle : PQRSXYZW",
+    "stimulus": "PQRSXYZW",
+    "options": ["PQRSXZYW", "PQRXSYZW", "PQRSXYZW", "PQSRXYZW"],
+    "answer": "PQRSXYZW",
+    "explanation": "En analysant chaque séquence, seule PQRSXYZW reflète fidèlement le modèle : les autres comportent des inversions.",
+    "hint": "Concentrez-vous sur chaque paire de lettres successivement."
+  }
+]

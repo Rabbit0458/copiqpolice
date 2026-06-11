@@ -35,12 +35,12 @@ class GpxCasPratiqueEntrainementWelcomePage extends StatelessWidget {
     final bgMid = isDark ? const Color(0xFF000A33) : const Color(0xFF0B2FAE);
     final bgBot = isDark ? const Color(0xFF00082D) : const Color(0xFF072894);
 
-    final overlayTop = Colors.black.withOpacity(isDark ? 0.22 : 0.18);
-    final overlayBot = Colors.black.withOpacity(isDark ? 0.32 : 0.30);
+    final overlayTop = Colors.black.withValues(alpha: isDark ? 0.22 : 0.18);
+    final overlayBot = Colors.black.withValues(alpha: isDark ? 0.32 : 0.30);
 
-    final onBgStrong = Colors.white.withOpacity(0.98);
-    final onBgSoft = Colors.white.withOpacity(0.88);
-    final onBgSofter = Colors.white.withOpacity(0.78);
+    final onBgStrong = Colors.white.withValues(alpha: 0.98);
+    final onBgSoft = Colors.white.withValues(alpha: 0.88);
+    final onBgSofter = Colors.white.withValues(alpha: 0.78);
 
     // ✅ CTA comme capture
     final ctaBg = Colors.white;
@@ -69,8 +69,8 @@ class GpxCasPratiqueEntrainementWelcomePage extends StatelessWidget {
           Positioned.fill(
             child: _DynamicBlobsBackground(
               enabled: !reduceMotion,
-              blobColorA: Colors.white.withOpacity(isDark ? 0.10 : 0.08),
-              blobColorB: Colors.white.withOpacity(isDark ? 0.06 : 0.05),
+              blobColorA: Colors.white.withValues(alpha: isDark ? 0.10 : 0.08),
+              blobColorB: Colors.white.withValues(alpha: isDark ? 0.06 : 0.05),
             ),
           ),
 
@@ -168,17 +168,17 @@ class GpxCasPratiqueEntrainementWelcomePage extends StatelessWidget {
                           const SizedBox(height: 22),
                           _InfoLine(
                             text: "Lecture d’un scénario terrain",
-                            color: Colors.white.withOpacity(0.90),
+                            color: Colors.white.withValues(alpha: 0.90),
                           ),
                           const SizedBox(height: 10),
                           _InfoLine(
                             text: "Structure claire et logique",
-                            color: Colors.white.withOpacity(0.90),
+                            color: Colors.white.withValues(alpha: 0.90),
                           ),
                           const SizedBox(height: 10),
                           _InfoLine(
                             text: "Correction expliquée et utile",
-                            color: Colors.white.withOpacity(0.90),
+                            color: Colors.white.withValues(alpha: 0.90),
                           ),
                         ],
                       ),
@@ -289,7 +289,7 @@ class _InfoLine extends StatelessWidget {
         Text(
           text,
           style: GoogleFonts.montserrat(
-            color: color.withOpacity(0.98),
+            color: color.withValues(alpha: 0.98),
             fontWeight: FontWeight.w700,
             fontSize: 13.6,
           ),
@@ -314,23 +314,23 @@ class _TopBackPill extends StatelessWidget {
         child: Ink(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.10),
+            color: Colors.white.withValues(alpha: 0.10),
             borderRadius: BorderRadius.circular(999),
-            border: Border.all(color: Colors.white.withOpacity(0.14)),
+            border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
               Icon(
                 Icons.chevron_left_rounded,
-                color: Colors.white.withOpacity(0.9),
+                color: Colors.white.withValues(alpha: 0.9),
                 size: 18,
               ),
               const SizedBox(width: 2),
               Text(
                 "Précédent",
                 style: GoogleFonts.montserrat(
-                  color: Colors.white.withOpacity(0.90),
+                  color: Colors.white.withValues(alpha: 0.90),
                   fontWeight: FontWeight.w800,
                   fontSize: 12.5,
                 ),
@@ -358,8 +358,8 @@ class _CenterGlow extends StatelessWidget {
             center: const Alignment(0.0, -0.10),
             radius: 0.07,
             colors: [
-              Colors.white.withOpacity(a),
-              Colors.white.withOpacity(a * 0.35),
+              Colors.white.withValues(alpha: a),
+              Colors.white.withValues(alpha: a * 0.35),
               Colors.transparent,
             ],
             stops: const [0.0, 0.65, 1.0],
@@ -385,7 +385,7 @@ class _SoftVignette extends StatelessWidget {
           gradient: RadialGradient(
             center: const Alignment(0.0, -0.15),
             radius: 1.10,
-            colors: [Colors.transparent, Colors.black.withOpacity(o)],
+            colors: [Colors.transparent, Colors.black.withValues(alpha: o)],
             stops: const [0.55, 1.0],
           ),
         ),

@@ -75,10 +75,10 @@ class _AbonnementPageState extends State<AbonnementPage>
     final isDark = t.brightness == Brightness.dark;
 
     final stroke = isDark
-        ? Colors.white.withOpacity(0.10)
-        : Colors.black.withOpacity(0.08);
+        ? Colors.white.withValues(alpha: 0.10)
+        : Colors.black.withValues(alpha: 0.08);
 
-    final subtle = t.colorScheme.onSurface.withOpacity(isDark ? 0.72 : 0.66);
+    final subtle = t.colorScheme.onSurface.withValues(alpha: isDark ? 0.72 : 0.66);
 
     return Scaffold(
       backgroundColor: t.scaffoldBackgroundColor,
@@ -334,9 +334,9 @@ Widget _miniChip(
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
     decoration: BoxDecoration(
-      color: t.colorScheme.primary.withOpacity(isDark ? .14 : .10),
+      color: t.colorScheme.primary.withValues(alpha: isDark ? .14 : .10),
       borderRadius: BorderRadius.circular(999),
-      border: Border.all(color: t.colorScheme.primary.withOpacity(.22)),
+      border: Border.all(color: t.colorScheme.primary.withValues(alpha: .22)),
     ),
     child: Row(
       mainAxisSize: MainAxisSize.min,
@@ -458,7 +458,7 @@ class _FeatureCard extends StatelessWidget {
                   fontSize: 12.6,
                   fontWeight: FontWeight.w800,
                   letterSpacing: -0.1,
-                  color: t.colorScheme.onSurface.withOpacity(.85),
+                  color: t.colorScheme.onSurface.withValues(alpha: .85),
                 ),
               ),
             ],
@@ -572,7 +572,7 @@ class _PlanCardState extends State<_PlanCard>
     final isDark = t.brightness == Brightness.dark;
 
     final borderColor = widget.highlighted
-        ? widget.tone.withOpacity(isDark ? .78 : .62)
+        ? widget.tone.withValues(alpha: isDark ? .78 : .62)
         : widget.stroke;
 
     final surface = t.colorScheme.surface;
@@ -582,14 +582,14 @@ class _PlanCardState extends State<_PlanCard>
             BoxShadow(
               blurRadius: 28,
               offset: const Offset(0, 14),
-              color: Colors.black.withOpacity(isDark ? .42 : .10),
+              color: Colors.black.withValues(alpha: isDark ? .42 : .10),
             ),
           ]
         : [
             BoxShadow(
               blurRadius: 18,
               offset: const Offset(0, 10),
-              color: Colors.black.withOpacity(isDark ? .22 : .06),
+              color: Colors.black.withValues(alpha: isDark ? .22 : .06),
             ),
           ];
 
@@ -614,7 +614,7 @@ class _PlanCardState extends State<_PlanCard>
       fontWeight: FontWeight.w600,
       height: 1.25,
       letterSpacing: -0.1,
-      color: t.colorScheme.onSurface.withOpacity(isDark ? .74 : .68),
+      color: t.colorScheme.onSurface.withValues(alpha: isDark ? .74 : .68),
     );
 
     final metaStyle = GoogleFonts.inter(
@@ -622,7 +622,7 @@ class _PlanCardState extends State<_PlanCard>
       fontWeight: FontWeight.w600,
       height: 1.2,
       letterSpacing: -0.1,
-      color: t.colorScheme.onSurface.withOpacity(isDark ? .66 : .60),
+      color: t.colorScheme.onSurface.withValues(alpha: isDark ? .66 : .60),
     );
 
     final bulletStyle = GoogleFonts.inter(
@@ -630,7 +630,7 @@ class _PlanCardState extends State<_PlanCard>
       fontWeight: FontWeight.w600,
       height: 1.28,
       letterSpacing: -0.05,
-      color: t.colorScheme.onSurface.withOpacity(isDark ? .92 : .88),
+      color: t.colorScheme.onSurface.withValues(alpha: isDark ? .92 : .88),
     );
 
     Widget bullet(String text) {
@@ -644,7 +644,7 @@ class _PlanCardState extends State<_PlanCard>
               child: Icon(
                 Icons.check_circle_rounded,
                 size: 18,
-                color: widget.tone.withOpacity(isDark ? .95 : .90),
+                color: widget.tone.withValues(alpha: isDark ? .95 : .90),
               ),
             ),
             const SizedBox(width: 10),
@@ -654,15 +654,15 @@ class _PlanCardState extends State<_PlanCard>
       );
     }
 
-    final chipBg = widget.tone.withOpacity(isDark ? .18 : .12);
-    final chipBorder = widget.tone.withOpacity(isDark ? .34 : .28);
+    final chipBg = widget.tone.withValues(alpha: isDark ? .18 : .12);
+    final chipBorder = widget.tone.withValues(alpha: isDark ? .34 : .28);
 
     Widget baseChip(String text, {IconData? icon, bool emphasized = false}) {
       return Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
         decoration: BoxDecoration(
           color: emphasized
-              ? widget.tone.withOpacity(isDark ? .22 : .16)
+              ? widget.tone.withValues(alpha: isDark ? .22 : .16)
               : chipBg,
           borderRadius: BorderRadius.circular(999),
           border: Border.all(color: chipBorder),
@@ -705,7 +705,7 @@ class _PlanCardState extends State<_PlanCard>
                   BoxShadow(
                     blurRadius: 18,
                     spreadRadius: 1,
-                    color: widget.tone.withOpacity(glow),
+                    color: widget.tone.withValues(alpha: glow),
                   ),
                 ],
               ),
@@ -717,7 +717,7 @@ class _PlanCardState extends State<_PlanCard>
     }
 
     // CTA color = tone (pour TOUS les plans, comme tu veux)
-    final ctaBg = _pressed ? widget.tone.withOpacity(.92) : widget.tone;
+    final ctaBg = _pressed ? widget.tone.withValues(alpha: .92) : widget.tone;
 
     return AnimatedScale(
       scale: _pressed ? 0.986 : 1,
@@ -785,7 +785,7 @@ class _PlanCardState extends State<_PlanCard>
                         Icon(
                           Icons.receipt_long_rounded,
                           size: 16,
-                          color: t.colorScheme.onSurface.withOpacity(
+                          color: t.colorScheme.onSurface.withValues(alpha: 
                             isDark ? .60 : .55,
                           ),
                         ),
@@ -854,7 +854,7 @@ class _LegalFooter extends StatelessWidget {
             style: t.textTheme.bodySmall?.copyWith(
               height: 1.45,
               fontWeight: FontWeight.w500,
-              color: t.colorScheme.onSurface.withOpacity(.65),
+              color: t.colorScheme.onSurface.withValues(alpha: .65),
             ),
           ),
         ),
@@ -968,7 +968,7 @@ class _ResiliationSheetState extends State<_ResiliationSheet> {
               fontSize: 14,
               height: 1.5,
               fontWeight: FontWeight.w600,
-              color: t.colorScheme.onSurface.withOpacity(.85),
+              color: t.colorScheme.onSurface.withValues(alpha: .85),
             ),
           ),
 

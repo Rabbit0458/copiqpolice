@@ -1,0 +1,272 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"joyeux\" ?",
+        "prompt": null,
+        "options": ["Triste", "Enthousiaste", "Indifférent", "Fâché"],
+        "answer": "Enthousiaste",
+        "explanation": "« Enthousiaste » exprime une joie et une excitation positives, en accord avec « joyeux ». « Triste » est l'antonyme, car il exprime l'absence de joie. « Indifférent » et « fâché » ne correspondent pas au sentiment de joie.",
+        "hint": "Pense à un mot qui exprime une joie active."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Malgré la fatigue, elle a ___ son travail.\"",
+        "prompt": null,
+        "options": ["abandonné", "terminé", "négligé", "ignoré"],
+        "answer": "terminé",
+        "explanation": "« Terminé » signifie conclure quelque chose qu'on a commencé, même en cas de fatigue. « Abandonné » et « négligé » indiquent un renoncement ou un manque d'attention, contraire au contexte de la phrase. « Ignoré » n'a pas de lien avec l'efficacité au travail.",
+        "hint": "Cherche un mot qui montre qu'elle est allée jusqu'au bout."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"grand\" ?",
+        "prompt": null,
+        "options": ["Minuscule", "Petit", "Immense", "Haut"],
+        "answer": "Petit",
+        "explanation": "« Petit » est l'antonyme direct de « grand », indiquant une taille réduite. « Minuscule » est plus extrême mais n'est pas le terme opposé le plus direct. « Immense » et « haut » sont des synonymes de « grand ». ",
+        "hint": "Pense simplement en opposé de taille."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Banane, Orange, Tomate, Fraise",
+        "options": ["Banane", "Orange", "Tomate", "Fraise"],
+        "answer": "Tomate",
+        "explanation": "La tomate, malgré son usage en cuisine, est un fruit-légume. Les autres, banane, orange et fraise, sont davantage perçus comme des fruits par leur goût et leur usage traditionnel.",
+        "hint": "Pense à la classification usuelle des aliments."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"content\" ?",
+        "prompt": null,
+        "options": ["Mécontent", "Heureux", "Triste", "Inquiet"],
+        "answer": "Heureux",
+        "explanation": "« Heureux » est synonyme de « content », les deux exprimant la satisfaction et le bonheur. « Mécontent » est l'antonyme direct. « Triste » et « inquiet » expriment des états émotionnels négatifs et sont donc incorrects.",
+        "hint": "Cherche un synonyme positif et simple."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : \"Pour apprendre l'histoire, il faut ___ des livres.\"",
+        "prompt": null,
+        "options": ["Écrire", "Lire", "Ignorer", "Jeter"],
+        "answer": "Lire",
+        "explanation": "« Lire » est l'activité qui permet d'apprendre en consultant des sources écrites. « Écrire » pourrait avoir un sens éducatif, mais ce n'est pas l'action primaire pour apprendre. « Ignorer » et « jeter » vont à l'encontre de l'objectif posé par la phrase.",
+        "hint": "Il s'agit de se procurer de l'information."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de \"clair\" ?",
+        "prompt": null,
+        "options": ["Sombre", "Lumineux", "Évident", "Brillant"],
+        "answer": "Sombre",
+        "explanation": "« Sombre » est l'opposé de « clair » lorsque l'on parle de luminosité ou de compréhension. « Lumineux » et « brillant » renforcent l'idée de clarté. « Évident » est une notion de compréhension mais ne s'oppose pas directement à la lumière fébrile.",
+        "hint": "Cherche quelque chose qui obscurcit."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Chat est à chaton comme chien est à ___",
+        "prompt": null,
+        "options": ["Chiot", "Larve", "Porcelet", "Poussin"],
+        "answer": "Chiot",
+        "explanation": "Un « chiot » est le petit du chien, continuant l'analogie fondée entre un animal adulte et son petit, tout comme un « chaton » est le petit du chat. « Larve », « porcelet » et « poussin » ne sont pas associés à la progéniture canine.",
+        "hint": "Pense au bébé chien."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de \"rapide\" ?",
+        "prompt": null,
+        "options": ["Lent", "Vif", "Reposé", "Endormi"],
+        "answer": "Vif",
+        "explanation": "« Vif » évoque vivacité et rapidité, ce qui en fait un bon synonyme de « rapide ». « Lent » s'oppose en terme de vitesse. « Reposé » et « endormi » sont davantage liés à un état de repos ou de sommeil, sans rapport avec la rapidité.",
+        "hint": "Pense à une notion de vivacité."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Que signifie \"précipité\" dans cet énoncé : Dans leur hâte, tout était précipité ?",
+        "prompt": "Dans leur hâte, tout était précipité.",
+        "options": ["Calme", "Organisé", "Accéléré", "Retardé"],
+        "answer": "Accéléré",
+        "explanation": "Dans ce contexte, « précipité » signifie avoir été fait plus vite que prévu, donc « accéléré ». « Calme » et « organisé » évoquent la lenteur et la méthode contraire. « Retardé » serait un ralentissement, ce qui ne concorde pas avec la hâte soumise.",
+        "hint": "Cherche une notion de rapidité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de \"complexe\" ?",
+        "prompt": null,
+        "options": ["Évident", "Simple", "Difficile", "Insoluble"],
+        "answer": "Simple",
+        "explanation": "« Simple » est l'opposé de « complexe », qui désigne quelque chose de facile à comprendre ou à réaliser. « Évident », bien que proche, n'est pas précisément l'antonyme direct. « Difficile » et « insoluble » renforcent au contraire l'idée de complexité.",
+        "hint": "Cherche quelque chose de direct et facile."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Marteau, Scie, Clou, Tournevis",
+        "options": ["Marteau", "Scie", "Clou", "Tournevis"],
+        "answer": "Clou",
+        "explanation": "Le clou, contrairement à marteau, scie et tournevis, n'est pas un outil, mais un consommable utilisé dans la construction et la menuiserie. Les autres sont des outils actifs servant à manipuler ou assembler.",
+        "hint": "Il n'est pas utilisé directement à la main."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Peindre est à peinture comme écrire est à ___",
+        "prompt": null,
+        "options": ["Stylo", "Papier", "Écriture", "Livre"],
+        "answer": "Écriture",
+        "explanation": "La liaison entre l'acte de peindre et sa forme achevée est « peinture » ; de même, écrire a pour résultat « écriture ». Bien que « stylo » et « papier » soient des objets de l'écriture, ils ne dénotent pas le produit final, comme le livre.",
+        "hint": "Cherche le produit fini de l'écriture."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de \"diligent\" ?",
+        "prompt": null,
+        "options": ["Paresseux", "Actif", "Léthargique", "Apathique"],
+        "answer": "Actif",
+        "explanation": "« Diligent » signifie travailleur ou consciencieux, comme « actif » suggère une tendance à travailler avec zèle. « Paresseux », « léthargique » et « apathique » décrivent le manque d'énergie ou d'entrain.",
+        "hint": "Cherche quelque chose qui renforce un travail appliqué."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de \"audacieux\" ?",
+        "prompt": null,
+        "options": ["Lâche", "Craintif", "Prudent", "Timide"],
+        "answer": "Craintif",
+        "explanation": "« Audacieux » est quelqu'un ayant du courage pour l'action aventureuse. « Craintif » décrit l'opposé, celui qui hésite par peur. « Lâche » et « timide » partagent cette idée mais dans un contexte différent de la prudence qui est rationnelle.",
+        "hint": "Cherche l'opposé du courage face à l'aventure."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Pomme, Carotte, Raisin, Poire",
+        "options": ["Pomme", "Carotte", "Raisin", "Poire"],
+        "answer": "Carotte",
+        "explanation": "La carotte est l'intrus car c'est un légume, alors que tous les autres, pomme, raisin et poire, sont des fruits. Leur classification se base sur leur saveur sucrée et leur consommation crue en dessert.",
+        "hint": "Un seul n'est pas un fruit."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de \"précis\" ?",
+        "prompt": null,
+        "options": ["Vague", "Rigoureux", "Incertain", "Flou"],
+        "answer": "Rigoureux",
+        "explanation": "« Rigoureux » est synonyme de « précis » car les deux mots évoquent une approche méthodique et spécifique. « Vague », « incertain » et « flou » ne conviennent pas car ils indiquent un manque de clarté ou de détails.",
+        "hint": "Il s'agit de quelque chose de détaillé et exact."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète la phrase : \"Pour être en bonne santé, il est important de ___ régulièrement.\"",
+        "prompt": null,
+        "options": ["Dormir", "Manger", "Faire de l'exercice", "Fumer"],
+        "answer": "Faire de l'exercice",
+        "explanation": "« Faire de l'exercice » est reconnu comme essentiel au maintien de la santé. « Dormir » et « manger » sont biens vitaux mais ne répondent pas directement à l'idée d'activité physique suggérée. « Fumer » nuit au bien-être.",
+        "hint": "Cherche l'action physique encouragée pour la santé."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de \"flexible\" ?",
+        "prompt": null,
+        "options": ["Rigide", "Souple", "Adaptable", "Malléable"],
+        "answer": "Rigide",
+        "explanation": "« Rigide » est l'antonyme de « flexible », décrivant une incapacité à se plier ou adapter. « Souple » et « malléable » sont des synonymes. « Adaptable » est proche de flexible, signifiant pouvoir changer facilement.",
+        "hint": "Envisage l'incapacité à changer de forme ou d'avis."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de \"atypique\" ?",
+        "prompt": null,
+        "options": ["Commun", "Ordinaire", "Exceptionnel", "Habituel"],
+        "answer": "Exceptionnel",
+        "explanation": "« Exceptionnel » est synonyme d'« atypique », décrivant ce qui se distingue par sa rareté ou sa singularité. « Commun » et « habituel » désignent ce qui est fréquent et normal. « Ordinaire » ne s'associe pas à quelque chose d'atypique.",
+        "hint": "Associe à quelque chose de rare et de particulier."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de \"pléthorique\" ?",
+        "prompt": null,
+        "options": ["Abondant", "Indigent", "Foisonnant", "Surabondant"],
+        "answer": "Indigent",
+        "explanation": "« Pléthorique » signifie en très grande quantité. Son antonyme est « indigent » (pauvre, insuffisant). Les trois autres « abondant », « foisonnant », et « surabondant » sont des synonymes de pléthorique qui suggèrent une grande quantité.",
+        "hint": "Cherche un mot qui signifie vide ou insuffisant."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Styliste, Avocat, Couturier, Modéliste",
+        "options": ["Styliste", "Avocat", "Couturier", "Modéliste"],
+        "answer": "Avocat",
+        "explanation": "L'avocat est un métier juridique, tandis que styliste, couturier et modéliste sont associés au domaine de la mode. Ces trois derniers sont des métiers créatifs impliquant la conception et la fabrication de vêtements ou d'accessoires.",
+        "hint": "Un seul de ces métiers travaille avec la loi."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de \"altruiste\" ?",
+        "prompt": null,
+        "options": ["Égoïste", "Généreux", "Cupide", "Avare"],
+        "answer": "Généreux",
+        "explanation": "« Généreux » est synonyme d'« altruiste » car cela implique une disposition à aider et donner aux autres. « Égoïste », « cupide » et « avare » indiquent plutôt un comportement centré sur soi-même ou sur la rétention de ses biens.",
+        "hint": "Trouve le mot indiquant une bienveillance envers autrui."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Boulanger est à pain comme cordonnier est à ___",
+        "prompt": null,
+        "options": ["Fleur", "Chaussure", "Vêtements", "Pâtisserie"],
+        "answer": "Chaussure",
+        "explanation": "Un boulanger fabrique du pain, tandis qu'un cordonnier répare ou crée des chaussures. Les fleurs, vêtements et pâtisseries n'ont pas de lien conceptuel direct avec le cordonnier, métier orienté sur la chaussure.",
+        "hint": "Réfléchis au produit fabriqué."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Pivoine, Tulipe, Jonquille, Ombrelle",
+        "options": ["Pivoine", "Tulipe", "Jonquille", "Ombrelle"],
+        "answer": "Ombrelle",
+        "explanation": "L'ombrelle n'est pas une fleur, à la différence de la pivoine, la tulipe et la jonquille, qui sont des types de fleurs. L'ombrelle est un objet utilisé pour se protéger du soleil.",
+        "hint": "Un objet ne correspond pas aux autres."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète la phrase : \"Le silence était si ___ qu'il était assourdissant.\"",
+        "prompt": null,
+        "options": ["profond", "léger", "superficiel", "bas"],
+        "answer": "profond",
+        "explanation": "Le silence « profond » évoque une intensité telle qu'il en devient presque tangible, une expression particulière du silence paradoxalement assourdissant. « Léger », « superficiel » et « bas » ne coïncident ni en intensité ni en évocation.",
+        "hint": "Cherche un mot évoquant une forte intensité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Écrivain est à livre comme compositeur est à ___",
+        "prompt": null,
+        "options": ["Musique", "Peinture", "Sculpture", "Danse"],
+        "answer": "Musique",
+        "explanation": "Un écrivain rédige un livre, tandis qu'un compositeur élabore une œuvre musicale. « Peinture », « sculpture » et « danse » sont éloignées de l'association d'un compositeur qui œuvre dans le domaine musical.",
+        "hint": "Cherche l'équivalent d'un auteur mais dans un domaine sonore."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Diamant, Émeraude, Grenat, Charbon",
+        "options": ["Diamant", "Émeraude", "Grenat", "Charbon"],
+        "answer": "Charbon",
+        "explanation": "Le charbon est un minéral combustible, contrairement à diamant, émeraude et grenat, qui sont des pierres précieuses traditionnellement utilisées en bijouterie.",
+        "hint": "Trois d'entre eux brillent."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de \"sibyllin\" ?",
+        "prompt": null,
+        "options": ["Clair", "Énigmatique", "Translucide", "Évident"],
+        "answer": "Énigmatique",
+        "explanation": "« Sibyllin » est un terme qui décrit quelque chose d'obscur et énigmatique. Cette synonymie exclut « clair », « translucide » et « évident », qui appartiennent à la notion de transparence et de simplicité.",
+        "hint": "Pense à l'obscurité des oracles ou des énigmes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Que signifie \"tirer le diable par la queue\" dans cette phrase ?",
+        "prompt": "Depuis des mois, il tire le diable par la queue.",
+        "options": ["Réussir", "Prospérer", "Lutter pour survivre", "Céder"],
+        "answer": "Lutter pour survivre",
+        "explanation": "« Tirer le diable par la queue » signifie vivre dans des conditions difficiles sur le plan financier, synonyme de « lutter pour survivre ». « Réussir », « prospérer » et « céder » désignent des réalités opposées à cette image de précarité.",
+        "hint": "Une expression liée aux difficultés économiques."
+    }
+]

@@ -1,0 +1,416 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « content » ?",
+    "prompt": null,
+    "options": ["Heureux", "Triste", "Fâché", "Paniqué"],
+    "answer": "Heureux",
+    "explanation": "« Heureux » est un synonyme de « content » car il exprime un état de satisfaction et de joie. « Triste » est un antonyme, car il exprime une absence de joie. « Fâché » et « paniqué » expriment des émotions négatives différentes de la joie.",
+    "hint": "Cherchez un mot qui exprime la joie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « clair » ?",
+    "prompt": null,
+    "options": ["Lumineux", "Sombre", "Brillant", "Translucide"],
+    "answer": "Sombre",
+    "explanation": "« Sombre » est l'antonyme de « clair » car il indique une absence de lumière ou une couleur peu vive. « Lumineux » et « brillant » sont des synonymes, évoquant une grande clarté. « Translucide » se réfère à un degré de transparence mais pas à l'opacité.",
+    "hint": "Pensez au manque de lumière."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complétez l'analogie : Chien est à chiot comme chat est à ___",
+    "prompt": null,
+    "options": ["Chaton", "Griffe", "Loup", "Pelage"],
+    "answer": "Chaton",
+    "explanation": "Un chiot est un jeune chien, et de même, un chaton est un jeune chat. « Griffe » et « pelage » sont des caractéristiques physiques, et « loup » est un autre animal.",
+    "hint": "Cherchez le nom de la version jeune du chat."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Table, Chaise, Banane, Armoire",
+    "options": ["Table", "Chaise", "Banane", "Armoire"],
+    "answer": "Banane",
+    "explanation": "La « banane » est un fruit, tandis que les autres sont des meubles. Les meubles servent à l'ameublement d'une pièce, alors qu'une banane est un aliment.",
+    "hint": "Un des mots est une nourriture."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot \"pièce\" signifie…",
+    "prompt": "Il a trouvé une pièce dans le parc.",
+    "options": ["Salle", "Monnaie", "Spectacle", "Accessoire"],
+    "answer": "Monnaie",
+    "explanation": "Dans le contexte de la phrase, « pièce » se réfère à une unité monétaire, puisqu'il s'agit d'un objet trouvé dans un parc. « Salle » et « spectacle » sont des significations possibles du mot « pièce » mais dans un contexte différent.",
+    "hint": "Pensez à ce que l'on peut perdre et trouver par terre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « fatigué » ?",
+    "prompt": null,
+    "options": ["Épuisé", "Reposé", "Éveillé", "Actif"],
+    "answer": "Épuisé",
+    "explanation": "« Épuisé » est un synonyme de « fatigué », indiquant un état de grande lassitude. « Reposé » et « éveillé » sont des antonymes car ils suggèrent une absence de fatigue. « Actif » implique une énergie contraire à l'épuisement.",
+    "hint": "Cherchez un mot qui exprime une grande fatigue."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « propre » ?",
+    "prompt": null,
+    "options": ["Sale", "Nettoyer", "Blanc", "Pur"],
+    "answer": "Sale",
+    "explanation": "« Sale » est l'antonyme de « propre » car il signifie un état d'encombrement ou de saleté. « Nettoyer » est une action pour rendre quelque chose propre mais pas un état. « Blanc » et « pur » sont des adjectifs qui ne sont pas des antithèses directes.",
+    "hint": "Pensez à ce que vous devez enlever pour avoir quelque chose de propre."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète la phrase : \"Après l'orage, le ciel est devenu ___.\"",
+    "prompt": null,
+    "options": ["Clair", "Sombre", "Nuageux", "Orageux"],
+    "answer": "Clair",
+    "explanation": "Après un orage, le ciel qui s'éclaircit devient souvent « clair », ce qui signifie un retour au calme et à la luminosité. « Sombre » et « nuageux » décrivent un ciel encore chargé. « Orageux » ne convient pas, car il désigne le moment de l'orage.",
+    "hint": "Pensez à l'état du ciel après dissipation des nuages."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Lait, Fromage, Beurre, Pomme",
+    "options": ["Lait", "Fromage", "Beurre", "Pomme"],
+    "answer": "Pomme",
+    "explanation": "La « pomme » est un fruit, tandis que les autres sont des produits laitiers. Les produits laitiers proviennent du lait, ce qui n'est pas le cas de la pomme.",
+    "hint": "Trois mots proviennent du même ingrédient d'origine."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « intelligent » ?",
+    "prompt": null,
+    "options": ["Brillant", "Stupide", "Lent", "Insensé"],
+    "answer": "Brillant",
+    "explanation": "« Brillant » est un synonyme de « intelligent » et suggère une grande capacité d'analyse ou de compréhension. « Stupide » est un antonyme. « Lent » et « insensé » ne sont pas des termes associés à l'intelligence en termes de synonyme.",
+    "hint": "Cherchez un mot qui exprime de la capacité mentale."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot \"batterie\" signifie…",
+    "prompt": "La batterie de son téléphone est à plat.",
+    "options": ["Instrument", "Accumulation", "Source d'énergie", "Groupe"],
+    "answer": "Source d'énergie",
+    "explanation": "Ici, « batterie » fait référence à la source d'énergie d'un appareil, plus précisément un téléphone. L’instrument de musique ne peut pas être à plat dans ce contexte, et une « accumulation » ou « groupe » ne sont pas pertinents ici.",
+    "hint": "Pensez à ce qui fait fonctionner un téléphone."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est l'antonyme de « silencieux » ?",
+    "prompt": null,
+    "options": ["Bruyant", "Paisible", "Muet", "Calme"],
+    "answer": "Bruyant",
+    "explanation": "« Bruyant » est l'antonyme de « silencieux » car il désigne un lieu ou objet émettant beaucoup de son. « Paisible » et « calme » sont des synonymes de silencieux. « Muet » est un état de silence personnel mais ne désigne pas un bruit actif.",
+    "hint": "Pensez à ce qui pourrait vous déranger dans un lieu silencieux."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Complète l'analogie : Plume est à écrire comme brosse est à ___",
+    "prompt": null,
+    "options": ["Peindre", "Lire", "Couper", "Moudre"],
+    "answer": "Peindre",
+    "explanation": "Une plume sert à écrire, de même une brosse est utilisée pour peindre. « Lire », « couper » et « moudre » sont des actions sans rapport avec les outils mentionnés.",
+    "hint": "Réfléchissez à l'activité principale faite avec une brosse."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Été, Hiver, Chapeau, Printemps",
+    "options": ["Été", "Hiver", "Chapeau", "Printemps"],
+    "answer": "Chapeau",
+    "explanation": "« Chapeau » est un accessoire de mode alors que les autres termes sont des saisons. Les saisons ne sont pas des objets, mais le chapeau l'est.",
+    "hint": "Un des mots n'est pas un moment de l'année."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Dans cette phrase, le mot \"feuille\" signifie…",
+    "prompt": "La feuille de l'arbre est tombée.",
+    "options": ["Page", "Vegetal", "Tôle", "Palette"],
+    "answer": "Vegetal",
+    "explanation": "Dans le contexte de la phrase, « feuille » se réfère à la partie d'un arbre, donc un élément végétal. « Page » et « tôle » sont d'autres significations de « feuille » mais ne conviennent pas ici.",
+    "hint": "Pensez à ce que l'on trouve naturellement sur les arbres."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le synonyme de « ami » ?",
+    "prompt": null,
+    "options": ["Camarade", "Adversaire", "Concurrence", "Rival"],
+    "answer": "Camarade",
+    "explanation": "« Camarade » est un synonyme de « ami » car il exprime une relation amicale ou de camaraderie. « Adversaire », « concurrence » et « rival » impliquent des relations antagonistes, ce qui est contraire à la notion d'amitié.",
+    "hint": "Cherchez un mot qui exprime la relation positive entre personnes."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « diligent » ?",
+    "prompt": null,
+    "options": ["Appliqué", "Négligent", "Paresseux", "Lent"],
+    "answer": "Appliqué",
+    "explanation": "« Appliqué » est synonyme de « diligent », car les deux indiquent une attention et un effort soutenu dans l'exécution d'une tâche. « Négligent » et « paresseux » sont des antonymes, indiquant un manque d'attention ou d'effort. « Lent » réfère à une vitesse et non à une assiduité.",
+    "hint": "Cherchez un mot qui indique soin et zèle."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Hôpital, Clinique, Tribunal, Dispensaire",
+    "options": ["Hôpital", "Clinique", "Tribunal", "Dispensaire"],
+    "answer": "Tribunal",
+    "explanation": "Le « tribunal » est une institution judiciaire, alors que les autres (« hôpital », « clinique », « dispensaire ») sont des établissements de santé. Ils offrent tous des soins médicaux contrairement au tribunal.",
+    "hint": "Un des lieux n'est pas lié à la santé."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Encre est au stylo comme essence est à ___",
+    "prompt": null,
+    "options": ["Voiture", "Stylo", "Encre", "Papier"],
+    "answer": "Voiture",
+    "explanation": "L'encre est le carburant du stylo, tandis que l'essence est le carburant de la voiture. « Stylo » et « papier » ne nécessitent pas d'essence, tandis que l’encre ne s’associe pas à une voiture.",
+    "hint": "Pensez au carburant nécessaire pour faire fonctionner la machine."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Violet, Rouge, Diagonal, Bleu",
+    "options": ["Violet", "Rouge", "Diagonal", "Bleu"],
+    "answer": "Diagonal",
+    "explanation": "« Diagonal » est une direction ou une position, alors que « violet », « rouge » et « bleu » sont des couleurs. Les couleurs sont une propriété visuelle, sans rapport avec la direction.",
+    "hint": "Trois mots décrivent une propriété de la lumière."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « robuste » ?",
+    "prompt": null,
+    "options": ["Fragile", "Fort", "Solide", "Stable"],
+    "answer": "Fragile",
+    "explanation": "« Fragile » est l'antonyme de « robuste », qui signifie résistant et durable. « Fort », « solide » et « stable » sont des synonymes de « robuste » en indiquant la force et la stabilité.",
+    "hint": "Cherchez un mot qui indiquerait une faiblesse."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète la phrase : \"Bien qu'il fût malade, il ___ à toutes ses obligations.\"",
+    "prompt": null,
+    "options": ["Souscrit", "Subit", "Veilla", "Répondit"],
+    "answer": "Répondit",
+    "explanation": "« Répondit » est approprié ici car il indique qu'il a satisfait à toutes ses obligations malgré sa maladie. « Souscrit », « subit » et « veilla » peuvent décrire des comportements similaires, mais ne correspondent pas sémantiquement au contexte des obligations.",
+    "hint": "Cherchez une action proactive envers des engagements."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « précaution » ?",
+    "prompt": null,
+    "options": ["Prévoyance", "Insouciance", "Hasard", "Imprudence"],
+    "answer": "Prévoyance",
+    "explanation": "« Prévoyance » est synonyme de « précaution », car les deux désignent une action prudente pour éviter les problèmes futurs. « Insouciance » et « imprudence » sont des antonymes, indiquant un manque de prise en compte des risques. « Hasard » est l'opposé d'une action planifiée.",
+    "hint": "Cherchez un mot qui exprime une protection proactive."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Médicament, Traitement, Maladie, Sérum",
+    "options": ["Médicament", "Traitement", "Maladie", "Sérum"],
+    "answer": "Maladie",
+    "explanation": "« Maladie » est une condition médicale, alors que « médicament », « traitement » et « sérum » sont des interventions médicales. Les trois derniers sont utilisés pour répondre à la première.",
+    "hint": "Un des mots décrit une condition traitée par les autres."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « prématuré » ?",
+    "prompt": null,
+    "options": ["Tardif", "Surprenant", "Précoce", "Étonnant"],
+    "answer": "Tardif",
+    "explanation": "« Tardif » est l'antonyme de « prématuré », qui signifie quelque chose qui survient avant le temps attendu. « Précoce » est un synonyme et « surprenant » et « étonnant » sont des termes non liés au temps.",
+    "hint": "Pensez au contraire d'un événement qui arrive trop tôt."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Complète l'analogie : Livre est à bibliothèque comme alphabet est à ___",
+    "prompt": null,
+    "options": ["Lettres", "Grammaire", "Livre", "Dictionnaire"],
+    "answer": "Dictionnaire",
+    "explanation": "Un livre est trouvé dans une bibliothèque, tout comme un alphabet est structuré et expliqué dans un dictionnaire. « Lettres » constituent l'alphabet, mais ne le contiennent pas comme un dictionnaire le fait pour clarifier.",
+    "hint": "Cherchez un ouvrage qui structure des ensembles de lettres."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le synonyme de « réprobation » ?",
+    "prompt": null,
+    "options": ["Censure", "Éloge", "Soutien", "Accord"],
+    "answer": "Censure",
+    "explanation": "« Censure » est synonyme de « réprobation », les deux impliquant une désapprobation ou une critique. « Éloge », « soutien » et « accord » sont antonymes, indiquant un appui ou une appréciation positive.",
+    "hint": "Cherchez un mot qui implique une critique."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est l'antonyme de « futile » ?",
+    "prompt": null,
+    "options": ["Important", "Vain", "Superflu", "Subalterne"],
+    "answer": "Important",
+    "explanation": "« Important » est l'antonyme de « futile », qui signifie insignifiant ou sans conséquence. « Vain », « superflu » et « subalterne » partagent le sens de l'inutilité ou secondaire.",
+    "hint": "Cherchez un mot qui exprime de la signification ou poids."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Dans cette phrase, le mot \"bille\" signifie…",
+    "prompt": "Il a gagné une bille d'ambre aux jeux de son enfance.",
+    "options": ["Jeu", "Champion", "Une petite sphère", "Un joueur"],
+    "answer": "Une petite sphère",
+    "explanation": "Dans ce contexte, « bille » se réfère à un petit objet sphérique utilisé dans les jeux d'enfance. « Jeu », « champion » et « un joueur » sont incorrects car ils ne décrivent pas clairement ce qu'est une bille.",
+    "hint": "Pensez aux petits objets ronds utilisés dans des jeux."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Or, Argent, Émeraude, Plomb",
+    "options": ["Or", "Argent", "Émeraude", "Plomb"],
+    "answer": "Émeraude",
+    "explanation": "« Émeraude » est une pierre précieuse, tandis que « or », « argent » et « plomb » sont des métaux. Les métaux sont utilisés pour la conductivité ou la construction, alors que l'émeraude est pour les bijoux.",
+    "hint": "Un des mots est utilisé principalement en bijouterie, mais n'est pas un métal."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « prolixe » ?",
+    "prompt": null,
+    "options": ["Verbeux", "Concise", "Silencieux", "Laconique"],
+    "answer": "Verbeux",
+    "explanation": "« Verbeux » est synonyme de « prolixe », car les deux signifient être très parlant ou écrire de façon excessivement détaillée. « Concise » et « laconique » sont antonymes et signifient être bref, tandis que « silencieux » n'est pas corrélé.",
+    "hint": "Pensez à une personne qui parle ou écrit beaucoup."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « sibyllin » ?",
+    "prompt": null,
+    "options": ["Clair", "Énigmatique", "Confus", "Obscur"],
+    "answer": "Clair",
+    "explanation": "« Clair » est l'antonyme de « sibyllin », qui signifie obscure ou difficile à comprendre. « Énigmatique », « confus » et « obscur » sont des synonymes, soulignant tous une complexité ou une ambiguïté.",
+    "hint": "Pensez à ce qui est compréhensible sans effort."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Bibliothèque est à livres comme musée est à ___",
+    "prompt": null,
+    "options": ["Tableaux", "Chaises", "Cabinet", "Étagères"],
+    "answer": "Tableaux",
+    "explanation": "Une bibliothèque contient des livres, tout comme un musée contient souvent des tableaux de maîtres. « Chaises » et « étagères » ne constituent pas l'essence même de ce que contient un musée, contrairement aux œuvres d'art.",
+    "hint": "Pensez à ce qu'on recherche principalement dans un musée."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Perspicace, Lucide, Obtus, Sagace",
+    "options": ["Perspicace", "Lucide", "Obtus", "Sagace"],
+    "answer": "Obtus",
+    "explanation": "« Obtus » désigne une lenteur à comprendre ou une difficulté à saisir les subtilités. « Perspicace », « lucide » et « sagace » sont des qualificatifs pour une grande acuité de discernement et d'analyse.",
+    "hint": "Un des mots indique une fermeture d'esprit."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Orage est à pluie comme explosion est à ___",
+    "prompt": null,
+    "options": ["Débris", "Étincelles", "Artifice", "Fête"],
+    "answer": "Débris",
+    "explanation": "Un orage implique souvent de la pluie, de même qu'une explosion implique des débris. Les étincelles peuvent créer une explosion, mais ne sont pas une résultante, et « artifice » et « fête » ne sont pas des conséquences directes.",
+    "hint": "Pensez à ce qui est généralement produit après une explosion."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « atavique » ?",
+    "prompt": null,
+    "options": ["Héréditaire", "Inhabituelle", "Recent", "Inattendu"],
+    "answer": "Héréditaire",
+    "explanation": "« Atavique » se réfère à des traits ou caractéristiques ancestraux. « Héréditaire » est synonyme car il concerne ce qui est transmis d'une génération à une autre. « Inhabituelle », « récent » et « inattendu » décrivent des attributs isolés ou momentanés, sans notion de transmission génétique.",
+    "hint": "Reflète un trait ancestral transmis par les générations."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « contrit » ?",
+    "prompt": null,
+    "options": ["Impénitent", "Attentif", "Désolé", "Plein de remords"],
+    "answer": "Impénitent",
+    "explanation": "« Contrit » signifie ressentir du remords pour une faute commise. « Impénitent » est l'antonyme, car il qualifie une absence de repentance. « Désolé » et « plein de remords » sont des synonymes, tandis qu'« attentif » n'est pas lié.",
+    "hint": "Cherchez un mot qui représente l'absence de regret."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète la phrase : \"Ainsi isolé, cet anneau est perceptible à l'œil ___.\"",
+    "prompt": null,
+    "options": ["Nu", "Armé", "Historique", "Supérieur"],
+    "answer": "Nu",
+    "explanation": "L'expression « œil nu » signifie sans équipement supplémentaire pour observer. « Armé » indiquerait l'usage de binocles ou télescope. « Historique » et « supérieur » ne font pas partie de cette expression idiomatique.",
+    "hint": "Pensez à quelque chose que l’on observe sans aide instrumentale."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Parallélisme, Concordance, Divergence, Homogénéité",
+    "options": ["Parallélisme", "Concordance", "Divergence", "Homogénéité"],
+    "answer": "Divergence",
+    "explanation": "« Divergence » décrit un écart ou désaccord, alors que « parallélisme », « concordance » et « homogénéité » impliquent une unité ou similitude entre deux ou plusieurs phénomènes.",
+    "hint": "Cherchez un mot qui exprime une différence tandis que les autres suggèrent la similarité."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, le mot \"déroulement\" signifie…",
+    "prompt": "Le déroulement de l'événement a été filmé.",
+    "options": ["Conduite", "Progression", "Infrastructure", "Espace"],
+    "answer": "Progression",
+    "explanation": "Dans ce contexte, « déroulement » se réfère à la manière dont un événement évolue dans le temps, donc sa progression. « Conduite » peut évoquer une action individuelle mais pas une ligne temporelle. « Infrastructure » et « espace » ne se rapportent pas.",
+    "hint": "Le mot dénote la manière dont quelque chose s'échelonne dans le temps."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « indubitable » ?",
+    "prompt": null,
+    "options": ["Certain", "Insaisissable", "Incertain", "Ambivalent"],
+    "answer": "Certain",
+    "explanation": "« Indubitable » signifie sans aucun doute, donc « certain » partage ce sens de certitude. « Insaisissable », « incertain » et « ambivalent » impliquent tous une forme de doute ou d'ambiguïté.",
+    "hint": "Reflète l'absence totale de doute."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Complète l'analogie : Médiation est au conflit ce qu'antidote est au ___",
+    "prompt": null,
+    "options": ["Poison", "Remède", "Médicament", "Guérison"],
+    "answer": "Poison",
+    "explanation": "La médiation résout ou apaise un conflit, tout comme un antidote neutralise un poison. Bien qu'un antidote soit un type de remède ou médicament, l'analogie se construit sur la relation de résolution d'une opposition ou d'un problème.",
+    "hint": "Cherchez l'entité que l'antidote est précisément conçu pour confronter."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est l'antonyme de « réfractaire » ?",
+    "prompt": null,
+    "options": ["Docile", "Résistant", "Indocile", "Rigide"],
+    "answer": "Docile",
+    "explanation": "« Réfractaire » désigne une résistance au changement ou à l'acceptation. « Docile » est l'opposé, car il indique une facilité à être dirigé ou influencé. « Résistant », « indocile » et « rigide » sont synonymes du caractère inflexible du réfractaire.",
+    "hint": "Cherchez un mot qui signifie la capacité à se conformer facilement."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Dans cette phrase, le mot \"coque\" signifie…",
+    "prompt": "La coque du bateau nécessite des réparations.",
+    "options": ["Écorce", "Structure externe", "Enveloppe", "Graine"],
+    "answer": "Structure externe",
+    "explanation": "Dans le contexte maritime, « coque » signifie la structure externe du bateau. « Écorce », « enveloppe » et « graine » peuvent aussi être des synonymes de coque dans un autre contexte mais ne s'appliquent pas ici.",
+    "hint": "Pensez à la partie du bateau qui entre en contact direct avec l'eau."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Lequel de ces mots est l'intrus ?",
+    "prompt": "Gastrique, Cardiaque, Pédagogique, Hépatique",
+    "options": ["Gastrique", "Cardiaque", "Pédagogique", "Hépatique"],
+    "answer": "Pédagogique",
+    "explanation": "« Pédagogique » concerne l'éducation, tandis que « gastrique », « cardiaque » et « hépatique » sont des termes médicaux liés à l'estomac, au cœur, et au foie respectivement.",
+    "hint": "Un mot est orienté vers l'enseignement plutôt que la médecine."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le synonyme de « magnanime » ?",
+    "prompt": null,
+    "options": ["Généreux", "Avaricieux", "Radieux", "Minuscule"],
+    "answer": "Généreux",
+    "explanation": "« Magnanime » désigne une personne d'une grande générosité. Ainsi, « généreux » est un synonyme direct. « Avaricieux » est l'antithèse de la générosité, tandis que « radieux » évoque la lumière et non la libéralité.",
+    "hint": "Pensez à une qualité d'un individu offrant avec largesse."
+  }
+]

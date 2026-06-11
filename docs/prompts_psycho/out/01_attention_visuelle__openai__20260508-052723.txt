@@ -1,0 +1,338 @@
+[
+    {
+        "difficulty": "easy",
+        "text_a": "Rue Pierre Curie, 92200 Neuilly",
+        "text_b": "Rue Paul Curie, 92200 Neuilly",
+        "is_true": false,
+        "explanation": "Les textes ne sont pas identiques. 'Pierre' dans text_a est remplacé par 'Paul' dans text_b. Cette différence de prénom peut facilement être ignorée si l'attention n'est pas focalisée."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Volkswagen Golf, IMM-345-KL",
+        "text_b": "Volkswagen Golf, IMM-345-KL",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "22 rue Victor Hugo, 75004 Paris",
+        "text_b": "22 avenue Victor Hugo, 75004 Paris",
+        "is_true": false,
+        "explanation": "Les textes sont différents. 'rue' dans text_a est remplacé par 'avenue' dans text_b. La différence entre rue et avenue peut passer inaperçue en raison de la similarité des mots."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Peugeot 208, plaque ZZ-981-AB",
+        "text_b": "Peugeot 208, plaque ZZ-981-AB",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Mme. Sophie Laurent",
+        "text_b": "Mlle. Sophie Laurent",
+        "is_true": false,
+        "explanation": "Les titres de civilité diffèrent : 'Mme.' dans text_a et 'Mlle.' dans text_b. Ce type de changement peut passer inaperçu lors d'une lecture rapide."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Audi Q5 noire, plaque AC-234-KJ",
+        "text_b": "Audi Q5 noire, plaque AC-234-KJ",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Immeuble A, app. 21",
+        "text_b": "Immeuble B, app. 21",
+        "is_true": false,
+        "explanation": "Les textes diffèrent par la lettre désignant l'immeuble. 'A' dans text_a est remplacé par 'B' dans text_b. Une erreur fréquente dans la lecture de listes multiples."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Suzuki Swift, plaque DE-567-LM",
+        "text_b": "Suzuki Swift, plaque DE-567-LM",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Rue de la Paix, 75002 Paris",
+        "text_b": "Rue de la Pèaix, 75002 Paris",
+        "is_true": false,
+        "explanation": "Il y a une différence dans les textes avec 'Paix' devenu 'Pèaix' dans text_b. Cette différence de lettre pourrait être facilement négligée."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Mercedes Classe A, plaque FF-888-GH",
+        "text_b": "Mercedes Classe A, plaque FF-888-GH",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "28 avenue de la République",
+        "text_b": "28 avenue de la Republique",
+        "is_true": false,
+        "explanation": "La différence réside dans l'absence d'accent sur 'République' dans text_b. L'absence d'accents peut souvent être négligée à cause de la similarité visuelle."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Toyota Yaris verte, plaque BC-192-JK",
+        "text_b": "Toyota Yaris verte, plaque BC-192-JK",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Place de l'Opéra, 75009 Paris",
+        "text_b": "Place de l'Opera, 75009 Paris",
+        "is_true": false,
+        "explanation": "Les textes sont différents. 'Opéra' dans text_a et 'Opera' sans accent dans text_b. Cette omission d'une accentuation peut passer inaperçue."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Citroën C3 blanche, plaque RT-234-XM",
+        "text_b": "Citroën C3 blanche, plaque RT-234-XM",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "22 mars 2024",
+        "text_b": "22 mar 2024",
+        "is_true": false,
+        "explanation": "Les textes diffèrent par l'abréviation de 'mars' en 'mar' dans text_b. Un mot raccourci peut sembler correct au premier abord."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Chevrolet Camaro rouge",
+        "text_b": "Chevrolet Camaro rose",
+        "is_true": false,
+        "explanation": "La couleur diffère : 'rouge' dans text_a et 'rose' dans text_b. C'est une différence facile à identifier avec une attention appropriée."
+    },
+    {
+        "difficulty": "easy",
+        "text_a": "Boulevard de la Tour-Maubourg",
+        "text_b": "Boulevard de la Tour-Maubourg",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Renault Twingo bleu matricule YR-981-VS aperçue à 14h30",
+        "text_b": "Renault Twingo bleu matricule YR-891-VS aperçue à 14h30",
+        "is_true": false,
+        "explanation": "Les textes diffèrent au niveau du numéro de matricule. '981' dans text_a est devenu '891' dans text_b. Inverser des chiffres est une erreur courante à cause de la proximité du clavier numérique."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Signalement : homme portant une veste bleue et un chapeau noir à 16:00",
+        "text_b": "Signalement : homme portant une veste bleue et un chapeau noir à 16:00",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Fiat Panda noire, stationnée Allée des Acacias, 8e quartier",
+        "text_b": "Fiat Panda noire, stationée Allée des Acacias, 8e quartier",
+        "is_true": false,
+        "explanation": "Les textes ne sont pas identiques. Le mot 'stationnée' dans text_a perd un 'n' pour devenir 'stationée' dans text_b. Cela peut facilement être négligé lors d'une lecture rapide."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le suspect, Marc Durand, a été vu le 12/08/2023 à 15h00",
+        "text_b": "Le suspect, Marc Durand, a été vu le 12/08/2023 à 15h00",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Rapport d'accident 23/04/2024 à l'intersection des rue X et Y",
+        "text_b": "Rapport d'accident 23/04/2024 à l'intersection des rue X et Y.",
+        "is_true": false,
+        "explanation": "Les textes ne sont pas identiques. Un point est ajouté à la fin du text_b. La ponctuation est essentielle dans la lecture des documents formels."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "La course-poursuite commence à 12:45, place de la Gare",
+        "text_b": "La course-poursuite commence à 12h45, place de la Gare",
+        "is_true": false,
+        "explanation": "Les textes diffèrent un peu. '12:45' dans text_a est noté '12h45' dans text_b. L'heure est écrite différemment, ce qui peut être confus au premier regard."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Mme Louise Martin-Bel, témoignant au procès-verbal, déclare avoir vu l'incident.",
+        "text_b": "Mme Louise Martin-Bel, témoignant au procès-verbal, déclare avoir vu l'incident.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Coupé Subaru bleu, aperçu stationné au 4 rue des Lilas",
+        "text_b": "Coupé Subaru bleu, aperçu stationé au 4 rue des Lilas",
+        "is_true": false,
+        "explanation": "Une lettre 'n' manque dans 'stationé' dans text_b par rapport à 'stationné' dans text_a. Ce genre de détails est souvent négligé."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Suite à une altercation, l'individu s'est enfui par la rue Agricole du Sud",
+        "text_b": "Suite à une altercation, l'individu s'est enfuit par la rue Agricole du Sud",
+        "is_true": false,
+        "explanation": "Malgré la similarité sonore, text_b utilise 'enfuit' tandis que text_a utilise 'enfui'. L'orthographe de certains verbes peut être trompeuse."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Le véhicule rouge a été aperçu quittant l'entrepôt à 11h59",
+        "text_b": "Le véhicule rouge a été aperçu quittant l'entrepôt à 11h59",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Surveillance effectuée le 15 juin 2025 dans le quartier des Halles",
+        "text_b": "Surveillance a été effectuée le 15 juin 2025 dans le quartier des Halles",
+        "is_true": false,
+        "explanation": "Les textes ne sont pas identiques. Une phrase supplémentaire, 'a été', est ajoutée dans text_b, modifiant légèrement la construction de la phrase."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Un homme a détournée l'attention du vendeur à la foire du 14 avril.",
+        "text_b": "Un homme a détourné l'attention du vendeur à la foire du 14 avril.",
+        "is_true": false,
+        "explanation": "Les textes divergent par la forme du participe passé 'détournée' utilisé à tort dans text_a au lieu de 'détourné' dans text_b. C'est une erreur qui peut être facilement commise mais facilement repérable lors d'une relecture attentive."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Monsieur Albert Delon, 36 ans, affirme avoir assisté à la scène en questions.",
+        "text_b": "Monsieur Albert Delon, 36 ans, affirme avoir assisté à la scène en question.",
+        "is_true": false,
+        "explanation": "La différence se trouve à la fin. 'questions' dans text_a est incorrect, le correct 'question' apparaît dans text_b. La proximité orthographique pourrait induire en erreur une observation rapide."
+    },
+    {
+        "difficulty": "medium",
+        "text_a": "Signalement reçu le 07/09/2023 concernant une Honda Civic blanche suspecte",
+        "text_b": "Signalement reçu le 07/09/2023 concernant une Honda Civic blanche suspecte",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le véhicule identifié, une Berline immatriculée AA-063-BN, était stationné à proximité du rond-point à 15 heures, lorsque deux personnes en sont sorties et se sont dirigées vers le centre commercial.",
+        "text_b": "Le véhicule identifié, une Berline immatriculée AA-063-BN, était stationné à proximité du rond-point à 15 heures, lorsque deux personnes en sont sorties et se sont dirigées vers le centre commercial.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Déposition de M. Bruno Lefèvre : « Ce jour, j'ai observé une Opel Corsa aux vitres teintées traverser à vive allure l'intersection de l'avenue Charles et de la rue de la Gare, ne respectant pas les feux de signalisation.»",
+        "text_b": "Déposition de M. Bruno Lefèvre : « Ce jour, j'ai observé une Opel Corsa aux vitres teintées traverser à vive allure l'intersection de l'avenue Charles et de la rue de la Gare, ne respectant pas les feux de signalisation ». ",
+        "is_true": false,
+        "explanation": "La différence réside dans l'espacement avant la fermeture du guillemet dans text_b. Ce type de détail typographique est un piège subtil pour les yeux fatigués par la lecture."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon le rapport du 5 avril 2024, une Toyota Yaris blanche avec le numéro de foyer XZ-543-PK stationnée illégalement, a été remorquée par le service de fourrière à 17h35, laissant l'artère principale débarrassée pour le trafic.",
+        "text_b": "Selon le rapport du 5 avril 2024, une Toyota Yaris blanche avec le numéro de foyer XZ-543-PK stationée illégalement, a été remorquée par le service de fourrière à 17h35, laissant l'artère principale débarrassée pour le trafic.",
+        "is_true": false,
+        "explanation": "L'erreur est à 'stationée', qui manque un 'n' dans text_b comparé à 'stationnée' dans text_a. La répétition de lettres similaires est souvent glissée dans des textes complexes."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Interrogatoire de Mme Pauline Dubois : le 14/07/2023, elle affirme avoir vu un jeune homme vêtu d'un pull rouge avec une casquette noire entrer dans le magasin par la sortie arrière vers 16 h, se déplaçant rapidement à l'intérieur avant de ressortir discrètement.",
+        "text_b": "Interrogatoire de Mme Pauline Dubois : le 14/07/2023, elle affirme avoir vu un jeune homme vêtu d'un pull rouge avec une casquette noire entrer dans le magasin par la sortie arrière vers 16 h, se déplaçant rapidement à l'intérieur avant de ressortir discrétement.",
+        "is_true": false,
+        "explanation": "La différence se trouve dans la terminaison de 'discrètement' dans text_b, écrit 'discrétement'. Les erreurs d'accentuation peuvent facilement passer inaperçues pour les lecteurs pressés."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "A 17h45, l'arrêté 2024-0678 déclare que toute manifestation sur la voie publique est interdite à proximité du centre-ville en raison des travaux d'aménagement, et le périmètre est clos jusqu'au 30/06/2024.",
+        "text_b": "A 17h45, l'arrêté 2024-0678 déclare que toute manifestation sur la voie publique est interdite à proximité du centre-ville en raison des travaux d'aménagement, et le périmètre est clos jusqu'au 30/06/2024.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Lors de l'audition, Mme Lavallée a confirmé que deux hommes portant des vestes sombres ont traversé la rue Saint-Honoré à 19h58, impatients et agités, élevant la voix tout en marchant vers le véhicule stationné à une centaine de mètres.",
+        "text_b": "Lors de l'audition, Mme Lavallée a confirmé que deux hommes portant des vestes sombres ont traversé la rue Saint-Honoré à 19h58, impatients et agités, élevant la voix tout en marchant vers le véhicule stationné à une centaine de métres.",
+        "is_true": false,
+        "explanation": "La divergence porte sur 'mètres', écrit 'métres' dans text_b. Les différences subtiles provoquées par des erreurs d'accent peuvent échapper facilement à l'œil non attentif."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Les constatations relatives à l'accident du 23/09/2023 indiquent que le véhicule impliqué, une Renault Clio grise, a traversé le carrefour sans respecter la priorité de passage vers 14 heures, causant une collision mineure ayant bloqué temporairement la circulation.",
+        "text_b": "Les constatations relatives à l'accident du 23/09/2023 indiquent que le véhicule impliqué, une Renault Clio grise, a traversé le carrefour sans respecter la priorité de passage vers 14 heures, causant une collision mineure ayant bloqué temporairement la circulation.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Conformément à l'article 132-19 du code pénal, une peine d'emprisonnement peut être prononcée si l'infraction est punissable d'une année d'emprisonnement ou plus, sans possibilité de sursis, afin de protéger les intérêts essentiels.",
+        "text_b": "Conformément à l'article 132-19 du code pénal, une peine d'emprisonnement peut être prononcée si l'infraction est punissable d'une année d'emprisonnement ou plus, sans possibilité de sursis, afin de protéger les intérêts essentiels.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le jugement rendu le 14 mai 2025 stipule que le recours à des armes pour la défense des biens est limité par la nécessaire proportionnalité des moyens de défense utilisés, en conformité avec les principes du droit.",
+        "text_b": "Le jugement rendu le 14 mai 2025 stipule que le recours à des armes pour la defense des biens est limité par la nécessaire proportionnalité des moyens de défense utilisés, en conformité avec les principes du droit.",
+        "is_true": false,
+        "explanation": "Une différence subtile réside dans l'absence d'accent sur le mot 'défense', écrit 'defense' dans text_b. La négligence des accents est une cause commune d'erreurs, surtout lorsqu'ils n'affectent pas la lecture phonétique."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Les faits relevés indiquent une tentative d'effraction survenue dans la nuit du 25 au 26 octobre 2023 dans un magasin situé rue de la Chapelle. Des traces d'outils ont été observées sur la serrure endommagée.",
+        "text_b": "Les faits relevés indiquent une tentative d'effraction survenue dans la nuit du 25 au 26 octobre 2023 dans un magasin situé rue de la Chapelle. Des traces d'outils ont été observées sur la serrure endommagée.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Pour faire suite à votre demande, veuillez vous présenter au bureau 4B de la direction permis de 9 à 17h, muni de votre pièce d'identité valide ainsi que du formulaire 820-6C pour l'enregistrement de votre dossier.",
+        "text_b": "Pour faire suite à votre demande, veuillez vous présenter au bureau 4B de la direction permis de 9 à 17h, muni de votre pièce d'identité valide ainsi que du formulaire 820-6C pour l’enregistrement de votre dossier.",
+        "is_true": false,
+        "explanation": "La principale différence est l'utilisation de deux types d'apostrophes : droite dans text_a et typographique dans text_b pour le mot 'enregistrement'. Cette subtile variation peut passer inaperçue lors d'une lecture rapide."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Durant la période estivale 2024, comme chaque année, le stationnement sera régulé dans les secteurs piétonniers afin de faciliter le passage des piétons et apporter la quiétude aux résidents locaux.",
+        "text_b": "Durant la periode estivale 2024, comme chaque année, le stationnement sera régulé dans les secteurs piétonniers afin de faciliter le passage des piétons et apporter la quiétude aux résidents locaux.",
+        "is_true": false,
+        "explanation": "La différence réside dans 'période', où text_a contient un accent sur le 'e' contrairement à text_b. L'omission peut être difficile à détecter du fait de leur absence phonétique."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon les témoins, le suspect portait un pull rayé noir et blanc, accompagné d'un sac à dos marron foncé, et se trouvait près de l'arrêt de bus vers 14h20, discutant vivement avec une autre personne.",
+        "text_b": "Selon les témoins, le suspect portait un pull rayé noir et blanc, accompagné d'un sac à dos marron foncé, et se trouvait près de l'arrêt de bus vers 14h20, discutant vivement avec une autre personne.",
+        "is_true": true,
+        "explanation": "Textes strictement identiques."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Conformément à l'alinéa 2 de l'article L111-2, les travaux publics doivent respecter les normes environnementales en vigueur, tenant compte de l'impact sur la biodiversité locale et la préservation des resources naturelles.",
+        "text_b": "Conformément à l'alinéa 2 de l'article L111-2, les travaux publics doivent respecter les normes environnementales en vigueur, tenant compte de l'impact sur la biodiversité locale et la préservation des ressources naturelles.",
+        "is_true": false,
+        "explanation": "Dans text_b le mot 'resources' est écrit correctement avec deux 's', mais il a été incorrectement écrit 'resources' dans text_a par oubli d'un 's'. La similitude visuelle des lettres rend l'erreur difficile à détecter."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Le règlement de copropriété stipule que tout conflit entre voisins se soldera par une médiation avant d'envisager toute procédure judiciaire. Le but principal est de maintenir de bonnes relations de voisinage via le dialogue et la négogiation.",
+        "text_b": "Le règlement de copropriété stipule que tout conflit entre voisins se soldera par une médiation avant d'envisager toute procédure judiciaire. Le but principal est de maintenir de bonnes relations de voisinage via le dialogue et la négociation.",
+        "is_true": false,
+        "explanation": "Texte b utilise 'négociation' correctement avec un 'c', alors que texte a présente une faute de frappe avec 'négogiation'. Cette erreur est peu visible sans attention renforcée."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Lors de la patrouille du soir, l'officier à dénoté une activité suspecte à l'arrière de l'immeuble numéro 33. Les résidents ont signalé des bruits étranges provenant du quatrième étage.",
+        "text_b": "Lors de la patrouille du soir, l'officier a dénoté une activité suspecte à l'arrière de l'immeuble numéro 33. Les résidents ont signalé des bruits étranges provenant du quatrième étage.",
+        "is_true": false,
+        "explanation": "La différence est très subtile, il s'agit de 'à dénoté' dans text_a écrit à la place de 'a dénoté' dans text_b, la présence inutile de l'accent 'à' sur le verbe 'a'. Un piège courant dans l'utilisation grammaticale des accents."
+    },
+    {
+        "difficulty": "hard",
+        "text_a": "Selon les décrets en vigueur, tout rassemblement sur le domaine public est strictement encadré par les articles L212-1 et suivants du code pénal, stipulant que nul ne saurait perturber l'ordre public sans motif valable.",
+        "text_b": "Selon les decrêts en vigueur, tout rassemblement sur le domaine public est strictement encadré par les articles L212-1 et suivants du code pénal, stipulant que nul ne saurait perturber l'ordre public sans motif valable.",
+        "is_true": false,
+        "explanation": "Dans text_a, 'décrets' est correctement orthographié, tandis que text_b présente un accent erroné avec 'decrêts'. La négligence des accents orthographiques est un piège courant pour les yeux habitués."
+    }
+]

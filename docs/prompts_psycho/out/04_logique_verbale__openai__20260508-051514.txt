@@ -1,0 +1,362 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « agile » ?",
+        "prompt": null,
+        "options": ["Lourd", "Habileté", "Souple", "Troublé"],
+        "answer": "Souple",
+        "explanation": "« Souple » désigne ce qui est capable de mouvement aisé et léger, semblable à « agile ». « Lourd » est l'opposé d'agile. « Habileté » est une compétence générale, et « troublé » se réfère à un état mental.",
+        "hint": "Pense à la flexibilité et la rapidité d'un mouvement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « courageux » ?",
+        "prompt": null,
+        "options": ["Brave", "Fou", "Lâche", "Aventureux"],
+        "answer": "Lâche",
+        "explanation": "« Lâche » signifie dépourvu de courage, ce qui est l'antonyme direct de « courageux ». « Brave » et « aventureux » sont des synonymes de courageux, tandis que « fou » indique un manque de rationnel, pas de courage.",
+        "hint": "Cherche le mot qui signifie l'absence de bravoure."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Soleil est à jour comme Lune est à ___",
+        "prompt": null,
+        "options": ["Mois", "Clair", "Nuit", "Sombre"],
+        "answer": "Nuit",
+        "explanation": "Le Soleil est associé au jour, de même que la Lune est associée à la nuit. La Lune n'est pas directement liée au mois ni au concept de clarté ou de noirceur.",
+        "hint": "Pense au cycle naturel des astres dans la journée."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Chien, Chat, Lapin, Clavier",
+        "options": ["Chien", "Chat", "Lapin", "Clavier"],
+        "answer": "Clavier",
+        "explanation": "« Chien », « chat » et « lapin » sont des animaux, tandis que « clavier » est un objet inanimé, ne faisant pas partie du règne animal.",
+        "hint": "Identifie le seul élément non-vivant parmi les options."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « triste » ?",
+        "prompt": null,
+        "options": ["Joyeux", "Déprimé", "Amusé", "Intrépide"],
+        "answer": "Déprimé",
+        "explanation": "« Déprimé » est une intensification de « triste », exprimant un sentiment similaire de mélancolie ou de chagrin. « Joyeux » et « amusé » sont des sentiments opposés. « Intrépide » se réfère au courage.",
+        "hint": "Cherche un mot qui décrit un sentiment similaire mais plus intense."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « pauvre » ?",
+        "prompt": null,
+        "options": ["Riche", "Aisé", "Sobre", "Malheureux"],
+        "answer": "Riche",
+        "explanation": "« Riche » indique une abondance de ressources matérielles, directement opposée à « pauvre ». « Aisé » est un synonyme de riche mais moins précis. « Sobre » et « malheureux » ne concernent pas la richesse matérielle.",
+        "hint": "Cherche le mot qui signifie avoir beaucoup de ressources."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : « En été, les jours sont plus ___ qu'en hiver. »",
+        "prompt": null,
+        "options": ["Longs", "Courts", "Froids", "Lents"],
+        "answer": "Longs",
+        "explanation": "En été, les jours sont plus « longs » à cause de l'inclinaison de la Terre vers le Soleil. « Courts » est l'inverse de ce qui se produit en été. « Froids » et « lents » ne s'appliquent pas à la durée des jours.",
+        "hint": "Pense aux heures supplémentaires de lumière en été."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « maison » ?",
+        "prompt": null,
+        "options": ["Logement", "Arbre", "Vélo", "Rivière"],
+        "answer": "Logement",
+        "explanation": "« Logement » est un terme générique pour un lieu d'habitation, semblable à « maison ». « Arbre », « vélo » et « rivière » ne concernent pas les habitations humaines.",
+        "hint": "Pense à un autre mot pour un lieu où l'on peut vivre."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « léger » ?",
+        "prompt": null,
+        "options": ["Dur", "Pesant", "Rapide", "Lisse"],
+        "answer": "Pesant",
+        "explanation": "« Pesant » décrit quelque chose qui est lourd et difficile à déplacer, ce qui est l'opposé de « léger ». « Dur » et « lisse » se réfèrent à d'autres caractéristiques physiques, tandis que « rapide » se concentre sur la vitesse.",
+        "hint": "Cherchez l'opposé en termes de poids ou de facilité à soulever."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Paris est à France comme Rome est à ___",
+        "prompt": null,
+        "options": ["Italie", "Espagne", "Grèce", "Portugal"],
+        "answer": "Italie",
+        "explanation": "Paris est la capitale de la France, de même que Rome est la capitale de l'Italie. Les autres pays ne correspondent pas à Rome.",
+        "hint": "Pense aux capitales nationales."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Fraise, Framboise, Tomate, Myrtille",
+        "options": ["Fraise", "Framboise", "Tomate", "Myrtille"],
+        "answer": "Tomate",
+        "explanation": "La « tomate » est un légume sur le plan culinaire, bien que botaniquement un fruit, contrairement aux autres, qui sont des fruits consommés comme tels.",
+        "hint": "Cherche ce qui est souvent consommé comme légume."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « heureux » ?",
+        "prompt": null,
+        "options": ["Content", "Fâché", "Beau", "Triste"],
+        "answer": "Content",
+        "explanation": "« Content » est un état de satisfaction et de bonheur, équivalent à « heureux ». « Fâché » et « triste » sont des antonymes, tandis que « beau » ne se rapporte pas à une émotion.",
+        "hint": "Cherche un mot qui reflète la satisfaction et la joie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « ouvert » ?",
+        "prompt": null,
+        "options": ["Fermé", "Doré", "Glacé", "Lumineux"],
+        "answer": "Fermé",
+        "explanation": "« Fermé » est l'état d'être clos ou verrouillé, directement opposé à « ouvert ». « Doré » et « glacé » concernent l'apparence ou la température, et « lumineux » se rapporte à la lumière.",
+        "hint": "Pense à ce que l'on fait lorsqu'on verrouille une porte."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète la phrase : « Il a ___ son sac à dos avant de partir. »",
+        "prompt": null,
+        "options": ["Pris", "Jeté", "Fait", "Touché"],
+        "answer": "Pris",
+        "explanation": "Logiquement, avant de partir, on prend quelque chose, ici son sac à dos. « Jeté » et « touché » ne semblent pas judicieux dans le contexte du départ.",
+        "hint": "Réfléchissez à ce qu'on fait avant de quitter un lieu avec ses affaires."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le synonyme de « petit » ?",
+        "prompt": null,
+        "options": ["Minuscule", "Grand", "Immense", "Large"],
+        "answer": "Minuscule",
+        "explanation": "« Minuscule » décrit quelque chose de très petit, et dans le sens de taille réduit, c'est un synonyme de « petit ». « Grand » et « immense » indiquent de grandes dimensions, tandis que « large » se réfère principalement à la largeur.",
+        "hint": "Cherche un mot qui exprime une taille très réduite."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'antonyme de « chaud » ?",
+        "prompt": null,
+        "options": ["Froid", "Brûlant", "Tiède", "Sombre"],
+        "answer": "Froid",
+        "explanation": "« Froid » est la température basse, directement opposée à « chaud ». « Brûlant » et « tiède » sont des degrés de chaleur, tandis que « sombre » se réfère à un manque de lumière.",
+        "hint": "Cherchez la sensation thermique opposée au chaud."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Complète l'analogie : Oiseau est à nid comme abeille est à ___",
+        "prompt": null,
+        "options": ["Ruche", "Confiture", "Plume", "Ami"],
+        "answer": "Ruche",
+        "explanation": "Un oiseau vit dans un nid, tout comme une abeille vit dans une ruche. Les autres options n'ont pas de lien direct avec l'habitat d'une abeille.",
+        "hint": "Pensez à la maison de l'abeille."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « argumenter » ?",
+        "prompt": null,
+        "options": ["Discuter", "Opiner", "Raisonner", "Se taire"],
+        "answer": "Raisonner",
+        "explanation": "« Raisonner » implique développer un raisonnement structuré, comme « argumenter ». « Discuter » se réfère davantage à échanger des points de vue, tandis que « opiner » signifie donner son opinion. « Se taire » est l'opposé d'argumenter.",
+        "hint": "Pense à défendre une idée avec logique."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « fixité » ?",
+        "prompt": null,
+        "options": ["Stabilité", "Changement", "Équilibre", "Calme"],
+        "answer": "Changement",
+        "explanation": "« Changement » représente une dynamique, opposée à la « fixité » qui indique une stabilité immobile. « Stabilité », « équilibre » et « calme » sont des états sans variation notoire.",
+        "hint": "Cherchez ce qui implique du mouvement par rapport à l'immobilité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Encre est à stylo comme plomb est à ___",
+        "prompt": null,
+        "options": ["Mine", "Papier", "Ardoise", "Crayon"],
+        "answer": "Crayon",
+        "explanation": "L'encre est utilisée dans les stylos comme le plomb est utilisé dans les crayons. « Mine » est une partie du crayon, « papier » et « ardoise » sont des surfaces d'écriture.",
+        "hint": "Pensez à ce que contient un crayon pour écrire."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Rouge, Bleu, Carré, Vert",
+        "options": ["Rouge", "Bleu", "Carré", "Vert"],
+        "answer": "Carré",
+        "explanation": "« Carré » est une forme géométrique, tandis que « rouge », « bleu » et « vert » sont des couleurs. Ces trois options représentent des teintes visibles.",
+        "hint": "Identifiez l'élément qui n'est pas une couleur."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « vigilant » ?",
+        "prompt": null,
+        "options": ["Inattentif", "Prudent", "Inquiétant", "Endormi"],
+        "answer": "Prudent",
+        "explanation": "« Prudent » signifie faire preuve de vigilance, en lien direct avec « vigilant ». Être « inattentif » et « endormi » est l'opposé d'une veille attentive. « Inquiétant » ne concerne pas la vigilance mais provoque de l'anxiété.",
+        "hint": "Pense à quelqu'un qui fait attention."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « enthousiasme » ?",
+        "prompt": null,
+        "options": ["Désintérêt", "Joie", "Dynamisme", "Rafraîchissement"],
+        "answer": "Désintérêt",
+        "explanation": "« Désintérêt » signifie absence d'intérêt ou d'enthousiasme. La « joie » et le « dynamisme » sont souvent associés à l'enthousiasme, tandis que « rafraîchissement » ne se réfère pas à un état émotionnel.",
+        "hint": "Concentrez-vous sur l'absence d'intérêt ou d'excitation."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Livre est à étagère comme couverts sont à ___",
+        "prompt": null,
+        "options": ["Tiroir", "Table", "Verre", "Cuisinier"],
+        "answer": "Tiroir",
+        "explanation": "Les livres sont stockés sur une étagère de la même manière que les couverts sont généralement rangés dans un tiroir. La « table » est où les couverts sont utilisés, mais pas nécessairement où ils sont rangés.",
+        "hint": "Pensez où vous rangez vos couverts souvent utilisés."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « prolifique » ?",
+        "prompt": null,
+        "options": ["Stérile", "Fécond", "Peuplant", "Chétif"],
+        "answer": "Fécond",
+        "explanation": "« Fécond » signifie capable de produire abondamment, tout comme « prolifique ». « Stérile » et « chétif » sont des antonymes. « Peuplant » ne décrit pas la capacité de production.",
+        "hint": "Cherchez un mot indiquant une grande capacité à produire."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « adroit » ?",
+        "prompt": null,
+        "options": ["Malfait", "Maladroit", "Dextre", "Habitué"],
+        "answer": "Maladroit",
+        "explanation": "« Maladroit » est l'antonyme d'« adroit », décrivant un manque d'habileté manuelle ou relationnelle. « Malfait » et « dextre » ne désignent pas dextérité ou habileté. « Habitué » indique une pratique fréquente.",
+        "hint": "Cherchez ce qui implique un manque d'habilité."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Complète l'analogie : Cheval est à galop comme serpent est à ___",
+        "prompt": null,
+        "options": ["Glissement", "Course", "Vol", "Braille"],
+        "answer": "Glissement",
+        "explanation": "Le galop est un mode de déplacement du cheval, le « glissement » est le mode de déplacement d'un serpent. « Course » et « vol » ne correspondent pas spécifiquement aux serpents.",
+        "hint": "Pense au mouvement naturel d'un serpent."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Fenêtre, Porte, Toit, Sol",
+        "options": ["Fenêtre", "Porte", "Toit", "Sol"],
+        "answer": "Sol",
+        "explanation": "« Sol » n'appartient pas à la catégorie des ouvertures ou des parties au-dessus d'une maison, comme « fenêtre », « porte » ou « toit ». Il supporting le bâtiment.",
+        "hint": "Identifiez ce qui supporte la maison parmi les autres."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le synonyme de « informer » ?",
+        "prompt": null,
+        "options": ["Questionner", "Notifier", "Ignorer", "Dérober"],
+        "answer": "Notifier",
+        "explanation": "« Notifier » signifie faire connaître une information, tout comme « informer ». « Questionner » se réfère à demander des informations, pas à en donner. « Ignorer » et « dérober » sont hors contexte.",
+        "hint": "Pensez à partager explicitement des nouvelles ou données."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'antonyme de « externe » ?",
+        "prompt": null,
+        "options": ["Interne", "Extérieur", "Imposant", "Créatif"],
+        "answer": "Interne",
+        "explanation": "« Interne » est directement opposé à « externe », signifiant intérieurement ou dedans. « Extérieur » est synonyme d'externe. « Imposant » et « créatif » ne se lient pas au concept d'intérieur/extérieur.",
+        "hint": "Cherchez un terme qui désigne l'intérieur."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Clair", "Occulte", "Limpide", "Serein"],
+        "answer": "Occulte",
+        "explanation": "« Sibyllin » signifie obscur ou difficile à comprendre, ce qui est similaire à « occulte », quelque chose de caché. « Clair » et « limpide » sont des antonymes, désignant des choses faciles à comprendre. « Serein » réfère à un état de calme.",
+        "hint": "Cherchez ce qui est également caché ou mystérieux."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « altérer » ?",
+        "prompt": null,
+        "options": ["Restaurer", "Changer", "Modifier", "Sculpter"],
+        "answer": "Restaurer",
+        "explanation": "« Altérer » signifie généralement affecter négativement, donc « restaurer », qui signifie remettre en état ou réparer, est le contraire. « Changer » et « modifier » impliquent une altération. « Sculpter » ne se réfère pas à la restauration ou altération en soi.",
+        "hint": "Cherchez ce qui ramène une chose vers son état initial."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Docteur est à médecin comme pléthorique est à ___",
+        "prompt": null,
+        "options": ["Abondant", "Profession", "Indigent", "Contrôle"],
+        "answer": "Abondant",
+        "explanation": "« Docteur » est un autre terme pour « médecin », et de même, « pléthorique » traduit une notion d'abondance. « Indigent » est l'opposé de pléthorique. « Profession » et « contrôle » sont hors de la relation donnée.",
+        "hint": "Regardez ce qui signifie également en grande quantité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Altruiste, Égoïste, Généreux, Philanthrope",
+        "options": ["Altruiste", "Égoïste", "Généreux", "Philanthrope"],
+        "answer": "Égoïste",
+        "explanation": "« Égoïste » est centré sur sa propre personne, ce qui est en opposition directe aux trois autres qui sont tournés vers autrui ou l'aide des autres.",
+        "hint": "Trouve celui qui n'est pas synonyme d'aide ou de don."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « atavique » ?",
+        "prompt": null,
+        "options": ["Moderne", "Héréditaire", "Inné", "Récent"],
+        "answer": "Héréditaire",
+        "explanation": "« Atavique » se rapporte à des traits transmis génétiquement, similaire à « héréditaire ». « Moderne » et « récent » impliquent quelque chose de nouveau, tandis que « inné » indique ce qui existe naturellement.",
+        "hint": "Cherchez ce qui est lié à la transmission par le sang."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « sibyllin » ?",
+        "prompt": null,
+        "options": ["Clair", "Énigmatique", "Complexe", "Troublant"],
+        "answer": "Clair",
+        "explanation": "« Clair » signifie facile à comprendre, ce qui est l'opposé de « sibyllin » qui est mystique et obscur. « Énigmatique », « complexe » et « troublant » appartiennent à la même famille de sens que « sibyllin ».",
+        "hint": "Cherchez quelque chose de simple et compréhensible."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Complète l'analogie : Fort est à musclé comme érudit est à ___",
+        "prompt": null,
+        "options": ["Cultivé", "Physique", "Simple", "Doux"],
+        "answer": "Cultivé",
+        "explanation": "Un « fort » est souvent considéré comme « musclé », ainsi un « érudit » se distingue par être « cultivé ». « Physique » et « simple » s'écartent de l'idée d'une intelligence ou d'un savoir.",
+        "hint": "Pensez à quelqu'un qui possède beaucoup de connaissances."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Lequel de ces mots est l'intrus ?",
+        "prompt": "Pandémie, Endémie, Épidémie, Aquarium",
+        "options": ["Pandémie", "Endémie", "Épidémie", "Aquarium"],
+        "answer": "Aquarium",
+        "explanation": "« Aquarium » est un récipient pour poissons, tandis que les autres termes concernent des phénomènes liés aux maladies transmissibles. C'est un contexte différent.",
+        "hint": "Identifie ce qui n'est pas lié à la santé ou aux maladies."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le synonyme de « contrit » ?",
+        "prompt": null,
+        "options": ["Pénitent", "Arrogant", "Satisfait", "Fier"],
+        "answer": "Pénitent",
+        "explanation": "« Contrit » signifie repentant pour ses actions, ce qui est similaire à « pénitent ». « Arrogant », « satisfait » et « fier » dénotent un manque de regret pour ses actions.",
+        "hint": "Pensez à quelqu'un qui cherche à expier ses fautes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'antonyme de « prolixe » ?",
+        "prompt": null,
+        "options": ["Bavard", "Laconiquement", "Sobre", "Concasseur"],
+        "answer": "Laconiquement",
+        "explanation": "« Prolixe » signifie verbeux ou excessivement bavard, dont l'antonyme est « laconiquement », qui implique une brièveté de parole. « Bavard » et « sobre » ne sont pas des antonymes directs, tandis que « concasseur » est hors contexte.",
+        "hint": "Recherchez ce qui signifie parler peu."
+    }
+]

@@ -330,12 +330,12 @@ class _UiTokens {
   static _UiTokens of(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final ink = isDark ? Colors.white : const Color(0xFF111111);
-    final muted = ink.withOpacity(.62);
+    final muted = ink.withValues(alpha: .62);
     final bgCard = isDark
-        ? Colors.white.withOpacity(.09)
-        : Colors.black.withOpacity(.045);
-    final border = ink.withOpacity(isDark ? .12 : .10);
-    final track = ink.withOpacity(isDark ? .14 : .10);
+        ? Colors.white.withValues(alpha: .09)
+        : Colors.black.withValues(alpha: .045);
+    final border = ink.withValues(alpha: isDark ? .12 : .10);
+    final track = ink.withValues(alpha: isDark ? .14 : .10);
 
     return _UiTokens(
       isDark: isDark,
@@ -382,7 +382,7 @@ class _AppCard extends StatelessWidget {
             BoxShadow(
               blurRadius: 18,
               offset: const Offset(0, 10),
-              color: c.withOpacity(t.isDark ? .12 : .10),
+              color: c.withValues(alpha: t.isDark ? .12 : .10),
             ),
         ],
       ),
@@ -642,9 +642,9 @@ class _GlobalHeaderCard extends StatelessWidget {
                   vertical: 10,
                 ),
                 decoration: BoxDecoration(
-                  color: c.withOpacity(t.isDark ? .14 : .10),
+                  color: c.withValues(alpha: t.isDark ? .14 : .10),
                   borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: c.withOpacity(.30)),
+                  border: Border.all(color: c.withValues(alpha: .30)),
                 ),
                 child: Text(
                   '$globalPercent%',
@@ -741,9 +741,9 @@ class _StatusChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: c.withOpacity(t.isDark ? .14 : .10),
+        color: c.withValues(alpha: t.isDark ? .14 : .10),
         borderRadius: BorderRadius.circular(kPillRadius),
-        border: Border.all(color: c.withOpacity(.25)),
+        border: Border.all(color: c.withValues(alpha: .25)),
       ),
       child: Text(
         scoreLabel(percent),
@@ -810,7 +810,7 @@ class _ThemeCard extends StatelessWidget {
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
-                  color: t.ink.withOpacity(t.isDark ? .06 : .04),
+                  color: t.ink.withValues(alpha: t.isDark ? .06 : .04),
                   borderRadius: BorderRadius.circular(14),
                   border: Border.all(color: t.border),
                 ),
@@ -882,9 +882,9 @@ class _MiniPill extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
       decoration: BoxDecoration(
-        color: color.withOpacity(t.isDark ? .14 : .10),
+        color: color.withValues(alpha: t.isDark ? .14 : .10),
         borderRadius: BorderRadius.circular(kPillRadius),
-        border: Border.all(color: color.withOpacity(.25)),
+        border: Border.all(color: color.withValues(alpha: .25)),
       ),
       child: Text(
         '$label $value',
@@ -934,9 +934,9 @@ class _AttemptRow extends StatelessWidget {
             width: 46,
             height: 46,
             decoration: BoxDecoration(
-              color: c.withOpacity(t.isDark ? .16 : .12),
+              color: c.withValues(alpha: t.isDark ? .16 : .12),
               borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: c.withOpacity(.30)),
+              border: Border.all(color: c.withValues(alpha: .30)),
             ),
             child: Center(
               child: Text(
@@ -1071,7 +1071,7 @@ class _SkeletonPill extends StatelessWidget {
     return Container(
       height: 36,
       decoration: BoxDecoration(
-        color: t.ink.withOpacity(t.isDark ? .07 : .05),
+        color: t.ink.withValues(alpha: t.isDark ? .07 : .05),
         borderRadius: BorderRadius.circular(kPillRadius),
         border: Border.all(color: t.border),
       ),
@@ -1091,7 +1091,7 @@ class _SkeletonCard extends StatelessWidget {
     return Container(
       height: height,
       decoration: BoxDecoration(
-        color: t.ink.withOpacity(t.isDark ? .07 : .05),
+        color: t.ink.withValues(alpha: t.isDark ? .07 : .05),
         borderRadius: BorderRadius.circular(radius),
         border: Border.all(color: t.border),
       ),

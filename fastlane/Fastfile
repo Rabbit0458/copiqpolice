@@ -1,0 +1,204 @@
+# Fastfile — COP'IQ
+# https://docs.fastlane.tools/
+#
+# Secrets attendus en variables d'environnement (GitHub Actions secrets) :
+#
+# ANDROID ──────────────────────────────────────────────────────────────────
+#   ANDROID_KEYSTORE_BASE64         Base64 du fichier .jks
+#   ANDROID_KEYSTORE_PASSWORD       Mot de passe du keystore
+#   ANDROID_KEY_ALIAS               Alias de la clé
+#   ANDROID_KEY_PASSWORD            Mot de passe de la clé
+#   GOOGLE_PLAY_JSON_KEY            Chemin local vers le JSON service account (écrit par le workflow)
+#
+# iOS ──────────────────────────────────────────────────────────────────────
+#   MATCH_PASSWORD                  Passphrase chiffrement du repo Match
+#   MATCH_GIT_BASIC_AUTHORIZATION   Base64(user:personal_access_token) pour le repo certs privé
+#   APP_STORE_CONNECT_API_KEY_ID    ID de la clé API App Store Connect
+#   APP_STORE_CONNECT_ISSUER_ID     Issuer ID App Store Connect
+#   APP_STORE_CONNECT_API_KEY       Contenu de la clé privée .p8 (multilignes)
+#   APPLE_ID / APPLE_TEAM_ID / ITC_TEAM_ID  (définis dans Appfile)
+#
+# SENTRY ───────────────────────────────────────────────────────────────────
+#   SENTRY_AUTH_TOKEN               Token Sentry (interne)
+#   SENTRY_ORG                      Slug organisation Sentry
+#   SENTRY_PROJECT                  Slug projet Sentry (ex : copiqpolice-flutter)
+#
+# APP RUNTIME ──────────────────────────────────────────────────────────────
+#   SENTRY_DSN, POSTHOG_API_KEY, APP_RELEASE
+
+# ────────────────────────────────────────────────────────────────────────────
+# Helpers partagés
+# ────────────────────────────────────────────────────────────────────────────
+
+# Retourne la version issue du pubspec.yaml
+def flutter_version
+  pubspec = File.read("../pubspec.yaml")
+  match  = pubspec.match(/^version:\s+(\d+\.\d+\.\d+)\+(\d+)/)
+  raise "Version introuvable dans pubspec.yaml" unless match
+  { version: match[1], build_number: match[2].to_i }
+end
+
+def dart_defines
+  dsn     = ENV.fetch("SENTRY_DSN", "")
+  posthog = ENV.fetch("POSTHOG_API_KEY", "")
+  release = ENV.fetch("APP_RELEASE", flutter_version[:version])
+  "--dart-define=SENTRY_DSN=\"#{dsn}\" " \
+  "--dart-define=SENTRY_ENV=production " \
+  "--dart-define=APP_RELEASE=\"#{release}\" " \
+  "--dart-define=POSTHOG_API_KEY=\"#{posthog}\""
+end
+
+# ────────────────────────────────────────────────────────────────────────────
+# PLATFORM: Android
+# ────────────────────────────────────────────────────────────────────────────
+platform :android do
+  # ── Lane : build_release ────────────────────────────────────────────────
+  # Utilisée en interne par le workflow CI (étape build-android)
+  desc "Build Android App Bundle (release signé)"
+  lane :build_release do
+    sh "flutter pub get", log: true
+
+    sh "flutter build appbundle --release #{dart_defines}", log: true
+    sh "flutter build apk --release #{dart_defines}", log: true
+
+    UI.success("✅ AAB et APK Android buildés avec succès.")
+  end
+
+  # ── Lane : deploy_internal ──────────────────────────────────────────────
+  desc "Upload l'AAB vers le Play Store (internal testing track)"
+  lane :deploy_internal do
+    json_key_path = ENV.fetch(
+      "GOOGLE_PLAY_JSON_KEY",
+      File.join(Dir.pwd, "google-play-key.json")
+    )
+
+    v = flutter_version
+
+    upload_to_play_store(
+      track:          "internal",
+      aab:            "../build/app/outputs/bundle/release/app-release.aab",
+      json_key:       json_key_path,
+      version_name:   v[:version],
+      version_code:   v[:build_number],
+      skip_upload_apk: true,
+      skip_upload_metadata: true,
+      skip_upload_images:   true,
+      skip_upload_screenshots: true,
+      release_status: "draft"   # Passe en "completed" manuellement avant promo
+    )
+
+    UI.success("✅ AAB uploadé sur le Play Store (internal track).")
+  end
+
+  # ── Lane : promote_to_production ────────────────────────────────────────
+  desc "Promeut la dernière internal → production (100 % rollout)"
+  lane :promote_to_production do
+    json_key_path = ENV.fetch(
+      "GOOGLE_PLAY_JSON_KEY",
+      File.join(Dir.pwd, "google-play-key.json")
+    )
+
+    upload_to_play_store(
+      track:            "internal",
+      track_promote_to: "production",
+      json_key:         json_key_path,
+      skip_upload_changelogs: false,
+      rollout:          "1.0"  # 100 %
+    )
+
+    UI.success("✅ Release promue vers la production Play Store.")
+  end
+end
+
+# ────────────────────────────────────────────────────────────────────────────
+# PLATFORM: iOS
+# ────────────────────────────────────────────────────────────────────────────
+platform :ios do
+  # ── Lane privée : prepare_api_key ────────────────────────────────────────
+  desc "Charge la clé API App Store Connect"
+  private_lane :prepare_api_key do
+    app_store_connect_api_key(
+      key_id:        ENV["APP_STORE_CONNECT_API_KEY_ID"],
+      issuer_id:     ENV["APP_STORE_CONNECT_ISSUER_ID"],
+      key_content:   ENV["APP_STORE_CONNECT_API_KEY"],
+      is_key_content_base64: false,
+      in_house:      false
+    )
+  end
+
+  # ── Lane : build_release ─────────────────────────────────────────────────
+  desc "Build iOS IPA (release signé avec Fastlane Match)"
+  lane :build_release do
+    api_key = prepare_api_key
+
+    # Sync des certificats + profils via Match (certs stockés dans un repo git privé)
+    match(
+      type:           "appstore",
+      api_key:        api_key,
+      readonly:       true,
+      clone_branch_directly: true
+    )
+
+    sh "flutter pub get", log: true
+
+    # Build flutter iOS (sans codesign — Fastlane gym s'en charge)
+    sh "flutter build ios --release --no-codesign #{dart_defines}", log: true
+
+    # Signer + packager en IPA avec gym
+    build_app(
+      workspace:      "../ios/Runner.xcworkspace",
+      scheme:         "Runner",
+      configuration:  "Release",
+      export_method:  "app-store",
+      output_directory: "../build/ios/ipa",
+      output_name:    "CopiqPolice.ipa",
+      export_options: {
+        method:                        "app-store",
+        uploadBitcode:                 false,
+        compileBitcode:                false,
+        uploadSymbols:                 true,
+        teamID:                        ENV["APPLE_TEAM_ID"],
+        provisioningProfiles: {
+          "fr.copiq.police" => "match AppStore fr.copiq.police"
+        }
+      }
+    )
+
+    UI.success("✅ IPA iOS buildée avec succès.")
+  end
+
+  # ── Lane : upload_testflight ─────────────────────────────────────────────
+  desc "Upload l'IPA vers TestFlight"
+  lane :upload_testflight do
+    api_key = prepare_api_key
+
+    ipa_path = Dir["../build/ios/ipa/*.ipa"].first
+    raise "Aucun IPA trouvé dans build/ios/ipa/" unless ipa_path
+
+    upload_to_testflight(
+      api_key:       api_key,
+      ipa:           ipa_path,
+      skip_waiting_for_build_processing: true,
+      distribute_external: false,  # Internal testers only au départ
+      changelog:     "Build automatique #{ENV.fetch('APP_RELEASE', 'latest')}"
+    )
+
+    UI.success("✅ IPA uploadée sur TestFlight.")
+  end
+
+  # ── Lane : beta (build + upload en 1 commande) ───────────────────────────
+  desc "Pipeline complet iOS : build + upload TestFlight"
+  lane :beta do
+    build_release
+    upload_testflight
+  end
+end
+
+# ────────────────────────────────────────────────────────────────────────────
+# Callbacks
+# ────────────────────────────────────────────────────────────────────────────
+
+error do |lane, exception|
+  UI.error("❌ Fastlane a échoué sur la lane '#{lane}' : #{exception.message}")
+  # Optionnel : notify Slack / Sentry si webhook disponible
+end

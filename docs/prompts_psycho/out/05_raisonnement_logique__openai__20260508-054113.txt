@@ -1,0 +1,618 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Who went to the market?",
+        "prompt": "All bakers are early risers. Julian is a baker.",
+        "options": [
+            "Julian went to the market.",
+            "Julian is an early riser.",
+            "Julian is not an early riser.",
+            "We can't determine"
+        ],
+        "answer": "Julian is an early riser.",
+        "explanation": "This is a classic syllogism. The rule is that if all bakers are early risers and Julian is a baker, then by transitivity, Julian is an early riser. The common mistake is assuming the conclusion pertains to going to the market without more context.",
+        "hint": "Apply transitivity of properties."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "What can be concluded?",
+        "prompt": "All red apples are sweet. This apple is red.",
+        "options": [
+            "This apple is sweet.",
+            "This apple is sour.",
+            "This apple is a vegetable.",
+            "We cannot say."
+        ],
+        "answer": "This apple is sweet.",
+        "explanation": "Syllogism structure here: all red apples being sweet and the apple in question being red means it must be sweet. Avoid assuming anything about it being a vegetable since no premise supports that.",
+        "hint": "Look at the defining qualities."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Which mode of transportation is slowest?",
+        "prompt": "Trains are faster than buses. Bicycles are slower than buses.",
+        "options": [
+            "Trains",
+            "Buses",
+            "Bicycles",
+            "Equal speed for all"
+        ],
+        "answer": "Bicycles",
+        "explanation": "By indirect transitivity, we establish that bicycles, being slower than buses, which are slower than trains, must be the slowest. Avoid mistaking buses for the slowest, as no direct train-to-bicycle comparison falsely equates these speeds.",
+        "hint": "Use indirect comparison."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "What kind of animal is Barky?",
+        "prompt": "All dogs are mammals. Barky is a dog.",
+        "options": [
+            "Barky is a fish",
+            "Barky is a mammal",
+            "Barky is a reptile",
+            "We can't say"
+        ],
+        "answer": "Barky is a mammal",
+        "explanation": "The syllogism operation allows us to deduce that if dogs belong to mammals and Barky is a dog, then Barky must be a mammal. Errors frequently arise by incorrectly linking Barky to an unrelated category like fish or reptile.",
+        "hint": "Apply the « All entities of type X is Y » rule."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "What can we say about Lily?",
+        "prompt": "All musicians are artists. Lily is a musician.",
+        "options": [
+            "Lily is a teacher",
+            "Lily is not an artist",
+            "Lily is an artist",
+            "Lily is a dancer"
+        ],
+        "answer": "Lily is an artist",
+        "explanation": "Using a simple syllogism, it reveals that if all musicians are artists and Lily is a musician, then Lily is, inevitably, an artist. Misunderstanding can lead to flaws, especially when adding irrelevant professions like teacher.",
+        "hint": "Consider professional hierarchy."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "What can be inferred?",
+        "prompt": "All roses are flowers. This one is a rose.",
+        "options": [
+            "This is not a flower",
+            "This is a flower",
+            "This is a tree",
+            "We are unsure"
+        ],
+        "answer": "This is a flower",
+        "explanation": "The setup is a standard example of syllogism. If all roses are flowers and the entity is identified as a rose, it follows that this is a flower. Errors often happen when mistakenly considering it as a tree, absent any foundational assertions.",
+        "hint": "Identify the categories."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Who consumes more water?",
+        "prompt": "Elephants drink more water than horses. Horses drink more water than cats.",
+        "options": [
+            "Elephants",
+            "Horses",
+            "Cats",
+            "Drink the same"
+        ],
+        "answer": "Elephants",
+        "explanation": "Analyzing the relationship, elephants are shown as more aquaphilic than both horses and cats. The logical pitfall is mistakenly finding horses to dominate merely due to comparison with solely cats.",
+        "hint": "Frame the progression distinctly."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "What is true about Steve?",
+        "prompt": "All runners are fit. Steve is a runner.",
+        "options": [
+            "Steve is fit",
+            "Steve is lazy",
+            "Steve is hungry",
+            "We can't assume fitness"
+        ],
+        "answer": "Steve is fit",
+        "explanation": "Applying the foundation of syllogistic logic dictates if every runner is fit and Steve falls in the runner category, Steve is indeed fit. Misjudgments are frequent when illogically equating running with laziness or hunger instead.",
+        "hint": "Conclude using the inherent property."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Who can fly?",
+        "prompt": "All birds can fly. A penguin is a bird.",
+        "options": [
+            "Penguins can fly",
+            "Penguins can't fly",
+            "Some penguins fly",
+            "Indeterminate ability"
+        ],
+        "answer": "Penguins can't fly",
+        "explanation": "This paradox lies in biotic differentiation; while most birds do fly, penguins form an exception. By system identification, they belong to birds but lack the trait, illustrating how exceptions in logic appear.",
+        "hint": "Evaluate specific exceptions."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Who is older?",
+        "prompt": "Sarah is older than Tom. Tom is older than Lucy.",
+        "options": [
+            "Sarah",
+            "Tom",
+            "Lucy",
+            "Uncertain"
+        ],
+        "answer": "Sarah",
+        "explanation": "The hierarchy of age demonstrates Sarah's supremacy over Tom and Lucy alike. There's potential for confusion when indirect relationships are muddled, equating possibly Tom elder than Sarah absent other evidence.",
+        "hint": "Retroduct the comparative pyramid."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Who weighs the least?",
+        "prompt": "Elephants weigh more than lions. Lions weigh more than dogs.",
+        "options": [
+            "Elephants",
+            "Lions",
+            "Dogs",
+            "Equal weight"
+        ],
+        "answer": "Dogs",
+        "explanation": "Ordering the elements discloses dogs as the least heavy in the triad. Mistakes may feign lion's equivalence with dogs without a full glance at elephant comparison distilling incremental mass increase.",
+        "hint": "Construct clear sequence rankings."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Who is the fastest?",
+        "prompt": "Cheetahs run faster than zebras. Zebras run faster than rabbits.",
+        "options": [
+            "Cheetahs",
+            "Zebras",
+            "Rabbits",
+            "All identical speed"
+        ],
+        "answer": "Cheetahs",
+        "explanation": "Hierarchal logic dictates cheetahs as faster than both zebras and rabbits. A user can mistake zebras for the swiftest by assuming rabbit comparison ubiquity itself provides maximal speed.",
+        "hint": "Review comprehensive pace strata."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Who completes the work?",
+        "prompt": "John finishes tasks quicker than Jane. Jane is faster than Henry.",
+        "options": [
+            "John",
+            "Henry",
+            "Jane",
+            "No one completes"
+        ],
+        "answer": "John",
+        "explanation": "John is evidently proficient over alternatively Jane or Henry in task execution. A logical fallacy demands misplaced emphasis, juxtaposing Jane as completing utmost expeditiously in absence of full array analysis.",
+        "hint": "Prioritize full encompasses."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "What type of weather is forecasted?",
+        "prompt": "Rainy days entail use of umbrellas. Tomorrow is forecasted rainy.",
+        "options": [
+            "Bring no umbrella",
+            "Bring an umbrella",
+            "Leave at risk",
+            "Indistinct forecast"
+        ],
+        "answer": "Bring an umbrella",
+        "explanation": "Under modus ponens logic: rain entails umbrella usage. Forecast explicity dictates rain tomorrow, logically necessitating preparedness. Errors include foresight conflation despite adverse extents explicitly declared.",
+        "hint": "Link explicit conditional announcements."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Who can attend the event?",
+        "prompt": "All invitees can attend an event. Peter received an invitation.",
+        "options": [
+            "Peter cannot attend",
+            "Peter can attend",
+            "Attendance unclear",
+            "Judgment defers"
+        ],
+        "answer": "Peter can attend",
+        "explanation": "Applying simple syllogism, invitees' presence is a requirement. With Peter solicited by invitation, automatic legality grants attendance. Misunderstanding centers on assuming arbitrary restrictions excluding attendance unsubstantiated.",
+        "hint": "Evaluate who’s under valid criteria."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Who bakes the best cakes?",
+        "prompt": "Bakers with five-star ratings bake better than four-star bakers. Bobby has a five-star rating.",
+        "options": [
+            "Bobby",
+            "A four-star baker",
+            "Bobby and another evenly",
+            "Nobody specified"
+        ],
+        "answer": "Bobby",
+        "explanation": "Bobby as five-stars signifies superior proficiency over any four-star comparisons. Logical oversight can occur via equivalency mistaken declaration when specifications elucidate no ambiguous cases per baking excellence script.",
+        "hint": "Match rated proficiencies closely."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "What is the heaviest fruit?",
+        "prompt": "All pineapples are heavier than oranges. This fruit is a pineapple.",
+        "options": [
+            "The fruit is an orange",
+            "The fruit is heavier than an orange",
+            "Their weights are equal",
+            "Inconclusive weight"
+        ],
+        "answer": "The fruit is heavier than an orange",
+        "explanation": "Given ruling that all pineapples outscale oranges and the examined fruit classifying as pineapple, mass comparison concludes pineapple objectification predominates. Pitfalls include incorrectly tuned assertions on weight equalization unfounded by precepts.",
+        "hint": "Refer to inclusive classification assertion."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Who finishes the race first?",
+        "prompt": "Tigers run faster than deer. Deer run faster than mice.",
+        "options": [
+            "Tigers",
+            "Deer",
+            "Mice",
+            "Race undecided"
+        ],
+        "answer": "Tigers",
+        "explanation": "Given linear comparison, tigers enjoy enhanced pace over both deer and mice. An error involves assuming speed equality that effectively contravenes the clearly outlined faster-than relationship relevant discourse.",
+        "hint": "Ascertain comparative speed hierarchy."  
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Who travels more effectively?",
+        "prompt": "Planes are faster than cars. Cars are faster than bicycles. Trains are faster than planes.",
+        "options": [
+            "Planes",
+            "Cars",
+            "Bicycles",
+            "Trains"
+        ],
+        "answer": "Trains",
+        "explanation": "Establishing the speed hierarchy: Trains > Planes > Cars > Bicycles permits concluding trains travel most effectively. A common oversight assumes planes' inherent dominance by omitting train-relative pace demonstration.",
+        "hint": "Order travel methods precisely."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Which container holds the most?",
+        "prompt": "A jug holds more than a cup. A bucket holds more than a jug. A tank holds more than a bucket.",
+        "options": [
+            "Jug",
+            "Cup",
+            "Tank",
+            "Bucket"
+        ],
+        "answer": "Tank",
+        "explanation": "From systematic capacity layout, tanks exceed all others: Tank > Bucket > Jug > Cup. Mistakes arise disregarding chains leading from tank-audited perspective to adopt lesser storage assertions.",
+        "hint": "Stack ranked inquiries recognizably."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "What can Alice conclude?",
+        "prompt": "If Alice studies, then she passes. Alice did not study.",
+        "options": [
+            "Alice passes",
+            "Alice fails",
+            "Indeterminate pass/fail",
+            "She studies"
+        ],
+        "answer": "Indeterminate pass/fail",
+        "explanation": "Using logical contraposition, absence of study precludes definitive pass or fail outcome admission. Errors are due to assuming converse guaranteed passage from conditional assuming the wrong inverse.",
+        "hint": "Evaluate contraposition thoroughly."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Who is the oldest?",
+        "prompt": "Linda is younger than Paul. Paul is younger than Nancy. John is older than all of them.",
+        "options": [
+            "Linda",
+            "Paul",
+            "Nancy",
+            "John"
+        ],
+        "answer": "John",
+        "explanation": "A temporal comparison places John above Linda, Nancy, and Paul. Mistakes arise if unawareness of John-claim directly misses overarching component relations constituting age priority correctly established.",
+        "hint": "Layer relational dynamics clearly."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Who should be hired?",
+        "prompt": "Candidates with food industry experience are preferable. Emma and Liam have such experience. Sarah does not.",
+        "options": [
+            "Emma",
+            "Liam",
+            "Sarah",
+            "Either Emma or Liam"
+        ],
+        "answer": "Either Emma or Liam",
+        "explanation": "Preference inherent to food industry veterans implies Emma and Liam enjoy priority over Sarah. Misunderstanding recruits Sarah assuming a paramount non-evident exposure boost insufficient to overtake candidates.",
+        "hint": "Identify preferred criteria."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Who can complete the project soonest?",
+        "prompt": "Tom finishes faster than Jerry. Sam and Jerry share the same pace. Lily is quicker than Tom.",
+        "options": [
+            "Tom",
+            "Sam",
+            "Lily",
+            "Jerry"
+        ],
+        "answer": "Lily",
+        "explanation": "Evaluation clarifies Lily surpassing Tom, Jerry, and Sam for rapid finalization. Oversight might perplex matters assuming Tom’s adeptness tops the listing context skipping direct Lily comparison.",
+        "hint": "Delineate pace attribution directly."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Who wins the contest?",
+        "prompt": "Carla sings better than Lila. Mona sings better than Carla and Lila.",
+        "options": [
+            "Lila",
+            "Carla",
+            "Mona",
+            "Lila and Carla equally"
+        ],
+        "answer": "Mona",
+        "explanation": "Mona surpasses both Carla and Lila hence wins. The mistake is to assume Carla victory or a tie absent insight into Mona's explicitly stronger position aptly expressed.",
+        "hint": "Compare all contestant performances."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "What does Philip drive?",
+        "prompt": "All sports cars are fast. Philip drives a sports car.",
+        "options": [
+            "Philip drives a bike",
+            "Philip drives a yacht",
+            "Philip drives a sports car",
+            "We are unsure"
+        ],
+        "answer": "Philip drives a sports car",
+        "explanation": "Philip with access to a sports car inherits speed assurances. Errors lurk assuming unrelated vehicles not confirmed by propositions extending sportscar identification directivity exclusively.",
+        "hint": "Link logic by type identification."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "What does the classification determine?",
+        "prompt": "All mathematicians know calculus. Aryan knows calculus.",
+        "options": [
+            "Aryan is a physicist",
+            "Aryan is a mathematician",
+            "Aryan is not a mathematician",
+            "Ambiguous classification"
+        ],
+        "answer": "Ambiguous classification",
+        "explanation": "With knowledge of calculus alone not exclusive to mathematicians generates ambiguity. A mistake is labeling Aryan directly when the overlap contains many disciplines, demanding caution for qualitative imprecision.",
+        "hint": "Consider classification overlaps."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "What is the lightest ingredient?",
+        "prompt": "Salt weighs less than sugar. Flour weighs more than sugar.",
+        "options": [
+            "Salt",
+            "Sugar",
+            "Flour",
+            "All proportionate"
+        ],
+        "answer": "Salt",
+        "explanation": "Logical analysis isolates salt lesser than sugar and flour: Salt < Sugar < Flour. Mis-quantification errors include inflated sugar lightness impacting correctness illusion where missteps deflect proper ranking output.",
+        "hint": "Rank weights appropriately."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Who drives the furthest?",
+        "prompt": "Max drives further than Liam. Noah drives further than Max.",
+        "options": [
+            "Max",
+            "Liam",
+            "Noah",
+            "Multiple drivers equally further"
+        ],
+        "answer": "Noah",
+        "explanation": "Noah's drivability commences and bests Max or Liam singularly. Mistakes reflect mistyped over extensions when trumpeting Max as top distant driver despite Noah dominant presence.",
+        "hint": "Query boundaries comprehensively."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Who has the heaviest luggage?",
+        "prompt": "Anna's luggage is heavier than Ben's. Chloe has heavier luggage than both.",
+        "options": [
+            "Anna",
+            "Ben",
+            "Chloe",
+            "Anna and Chloe equally"
+        ],
+        "answer": "Chloe",
+        "explanation": "By logical summation, Chloe carries the heaviest load ahead of both Anna and Ben. Failure instances falsely correlate Anna when the prime needy focus rests on Chloe via proper scrutiny.",
+        "hint": "Correlation arises prominently."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Which floor has the best view?",
+        "prompt": "Fourth floors have a better view than third. Fifth floors have a better view than both.",
+        "options": [
+            "Fourth",
+            "Third",
+            "Fifth",
+            "Equal views"
+        ],
+        "answer": "Fifth",
+        "explanation": "From designated spatial view order: Fifth > Fourth > Third categorically schedules floor preference. The risk is allowing obfuscation via fourth/fifth-flip, cramping vision accuracy constructivism meaningfully expressed.",
+        "hint": "Echelon sight delineations."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Who catches the earliest train?",
+        "prompt": "Janet arrives earlier than Paul. Lucy arrives earlier than Janet.",
+        "options": [
+            "Janet",
+            "Paul",
+            "Lucy",
+            "All miss the train"
+        ],
+        "answer": "Lucy",
+        "explanation": "In timely sequence, Lucy's arrival precludes either Janet or Paul hence takes the earliest train. Mistakes arise converting timed elements into notional swaps, extensive timing rationally secured anchors correctly negate this.",
+        "hint": "Align with time tables always."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Which bottle holds less liquid?",
+        "prompt": "Bottle X holds more liquid than Bottle Y. Bottle Z holds less than Bottle X but more than Bottle Y.",
+        "options": [
+            "Bottle X",
+            "Bottle Y",
+            "Bottle Z",
+            "All equally filled"
+        ],
+        "answer": "Bottle Y",
+        "explanation": "Hierarchically placed: X > Z > Y identifies Bottle Y containing less liquid. Mistakes might arise when inferring Z as lesser when qualitative measure precludes this with singular deviation.",
+        "hint": "Separation of scales."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Who should receive the award?",
+        "prompt": "If Anna writes more, she wins the award. Bob writes 100 pages. Anna writes 101 pages.",
+        "options": [
+            "Anna",
+            "Bob",
+            "Neither",
+            "Both"
+        ],
+        "answer": "Anna",
+        "explanation": "Anna surpasses Bob by one page distinctively! Common fallacy conjectures Bob wins mistaking mere number superiority effectively unmatched, elucidating calculation precludes bias for determinations.",
+        "hint": "Evaluate numeric supremacy precision."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "What occurs with the light?",
+        "prompt": "If the switch is up, then the light is on. The light is off.",
+        "options": [
+            "The switch is down",
+            "The switch is up",
+            "Indeterminate switch position",
+            "The bulb burned out"
+        ],
+        "answer": "The switch is down",
+        "explanation": "By logical contraposition, off light establishes switch is down ensuring light remains non-lit. Fallacy often intrudes via the bulb malfunction overlooking simple switch flipping metaphoric explanation where pertinent context.",
+        "hint": "Contrast via contraposition relevance."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "What scores the lowest?",
+        "prompt": "Album A rates better than Album B. Album C rates worse than Album A but better than Album B.",
+        "options": [
+            "Album A",
+            "Album B",
+            "Album C",
+            "Albums equally rated"
+        ],
+        "answer": "Album B",
+        "explanation": "Judging critiques yield A superior, C intermediary, B lowest cementing comprehension: A > C > B. Mistakes foster when ranking C below the rest misplaced despite textual index imprinting ignoring both constants.",
+        "hint": "Direct hierarchy reflections remain."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Who makes the final decision?",
+        "prompt": "If the president agrees, the board approves. The board did not approve.",
+        "options": [
+            "The president agreed",
+            "The president did not agree",
+            "Undecided classes",
+            "No involvement president held"
+        ],
+        "answer": "The president did not agree",
+        "explanation": "Implicate denial presupposition deductively. Board refusal fixes presidential no-agreement. Mistakes sitting central waiting misinterpret contextual implications equate mobility miss fidelized segregation contrarily.",
+        "hint": "Contrast positive-negative directives."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Who must prove eligibility?",
+        "prompt": "To qualify, evidence must be provided. Jill provided no evidence.",
+        "options": [
+            "Jill qualifies",
+            "Jill doesn't qualify",
+            "Indeterminate eligibility",
+            "Jill automatically disqualified"
+        ],
+        "answer": "Jill doesn't qualify",
+        "explanation": "Requiring fulfillment of conditions for qualification, Jill's omission denies eligibility submissions. Disjoint lays if assumptions per automatic disqualification error permeated singular necessity overrule shows without requirement achievements submitted.",
+        "hint": "Evidence parallels conditional proof boundaries."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "What route should be taken?",
+        "prompt": "If the fastest route is taken, you arrive on time. You arrived late.",
+        "options": [
+            "You took the fastest route",
+            "You took a slower route",
+            "Arrival timing inconclusive",
+            "Any route suffices"
+        ],
+        "answer": "You took a slower route",
+        "explanation": "Contraposition logic: late arrival situationally prescribes slower route selection deviation from anticipated time integrity. Breakdown emerges from misapplication assuming arrival normalcy deducts certitude from unenforced proof.",
+        "hint": "Apply the opposite conclusions ahead."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "What color is the car?",
+        "prompt": "If a car is blue, it is fast. This car is not fast.",
+        "options": [
+            "The car is blue",
+            "The car is not blue",
+            "Color inconclusive",
+            "The car is red"
+        ],
+        "answer": "The car is not blue",
+        "explanation": "Negation through contrapositive logic dictates an absence of blue attribute if not fast. Mistakes occur when color inconclusion is presumed, but logical flow accompanies the implied extensive paradigm.",
+        "hint": "Use reasoning based on elimination."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "What is the tallest structure?",
+        "prompt": "Building A is taller than Building C. Building B is shorter than Building A but taller than Building C.",
+        "options": [
+            "Building A",
+            "Building B",
+            "Building C",
+            "All equally tall"
+        ],
+        "answer": "Building A",
+        "explanation": "Navigating structural proportionality, Building A attains peak heights: A > B > C trusted upon sequentially opting proper towering rank imperative. Fallacy falsely equates B’s progression outclass erroneously when tangible statures echo irreplaceably.",
+        "hint": "Align order per vertical attributes."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "What is the heaviest element?",
+        "prompt": "Element T is heavier than Element S. Element R is heavier than Element T.",
+        "options": [
+            "Element T",
+            "Element S",
+            "Element R",
+            "All weigh equally"
+        ],
+        "answer": "Element R",
+        "explanation": "In order-derived sequence, Element R surpasses both S and T inferentially. Logical misdirection detours between S instead of R despite successive precedence aligning correctly for inference discrepancies minimizing.",
+        "hint": "Sequential weights organize helpfully."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Who will fail the exam?",
+        "prompt": "If Jake studies, then he passes. Jake did study but fell ill.",
+        "options": [
+            "Jake still fails",
+            "Jake passes",
+            "Indecisive outcome",
+            "Logical conundrum"
+        ],
+        "answer": "Indecisive outcome",
+        "explanation": "Although studying links to passes, extraneous illness jeopardizes predictions establishing uncertainty. Errors enabling unambiguous failure shine post external events intruding standard premise assumptions manipulation.",
+        "hint": "Account unforeseen factors alterations."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "What mode captures divisive nature?",
+        "prompt": "If a movie is lengthy, it is detailed. Some lengthy movies are unengaging.",
+        "options": [
+            "All lengthy movies engage",
+            "Some lengthy movies engage",
+            "All lengthy movies are unengaging",
+            "Separate adherence not defined"
+        ],
+        "answer": "Some lengthy movies engage",
+        "explanation": "Prescriptive distributed cognition encapsulates some engaging alignment insider quantitative engagement matches lengthy domain. Common mistaken sidetrips when limiting engagement ineffectively denying qualitative certain match provisions aligning mistakes.",
+        "hint": "Comprehend proportions advance properly."
+    }
+]

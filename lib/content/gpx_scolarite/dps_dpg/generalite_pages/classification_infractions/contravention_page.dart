@@ -528,7 +528,7 @@ class ContraventionPage extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(top: 7),
-          child: Icon(Icons.circle, size: 6, color: main.withOpacity(0.7)),
+          child: Icon(Icons.circle, size: 6, color: main.withValues(alpha: 0.7)),
         ),
         const SizedBox(width: 10),
         Expanded(
@@ -546,10 +546,10 @@ class ContraventionPage extends StatelessWidget {
     margin: const EdgeInsets.only(top: 8),
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(12),
-      color: isDark ? Colors.white.withOpacity(0.08) : const Color(0xFFF1F1F1),
+      color: isDark ? Colors.white.withValues(alpha: 0.08) : const Color(0xFFF1F1F1),
       border: Border.all(
         color: isDark
-            ? Colors.white.withOpacity(0.12)
+            ? Colors.white.withValues(alpha: 0.12)
             : const Color(0x22000000),
       ),
     ),
@@ -584,11 +584,11 @@ class ContraventionPage extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(999),
           color: isDark
-              ? Colors.white.withOpacity(.10)
+              ? Colors.white.withValues(alpha: .10)
               : const Color(0xFFEDEDED),
           border: Border.all(
             color: isDark
-                ? Colors.white.withOpacity(.18)
+                ? Colors.white.withValues(alpha: .18)
                 : const Color(0x22000000),
           ),
         ),
@@ -778,7 +778,7 @@ class _AccordionState extends State<_Accordion> {
                 child: Icon(
                   Icons.adjust_rounded,
                   size: 18,
-                  color: widget.textMain.withOpacity(0.55),
+                  color: widget.textMain.withValues(alpha: 0.55),
                 ),
               ),
               const SizedBox(width: 8),
@@ -817,11 +817,11 @@ class _ChipRow extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(999),
                 color: isDark
-                    ? Colors.white.withOpacity(.10)
+                    ? Colors.white.withValues(alpha: .10)
                     : const Color(0xFFEDEDED),
                 border: Border.all(
                   color: isDark
-                      ? Colors.white.withOpacity(.18)
+                      ? Colors.white.withValues(alpha: .18)
                       : const Color(0x22000000),
                 ),
               ),
@@ -875,17 +875,17 @@ class _FinesTable extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
           color: isDark
-              ? Colors.white.withOpacity(.12)
+              ? Colors.white.withValues(alpha: .12)
               : const Color(0x22000000),
         ),
-        color: isDark ? Colors.white.withOpacity(.05) : Colors.white,
+        color: isDark ? Colors.white.withValues(alpha: .05) : Colors.white,
       ),
       child: Table(
         columnWidths: const {0: FlexColumnWidth(1.2), 1: FlexColumnWidth(1.3)},
         border: TableBorder.symmetric(
           inside: BorderSide(
             color: isDark
-                ? Colors.white.withOpacity(.08)
+                ? Colors.white.withValues(alpha: .08)
                 : const Color(0x11000000),
           ),
         ),
@@ -893,7 +893,7 @@ class _FinesTable extends StatelessWidget {
           TableRow(
             decoration: BoxDecoration(
               color: isDark
-                  ? Colors.white.withOpacity(.06)
+                  ? Colors.white.withValues(alpha: .06)
                   : const Color(0x0F000000),
             ),
             children: [

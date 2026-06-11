@@ -1,0 +1,52 @@
+# COP'IQ — E2E Flow 04 : Réponse + validation + correction d'un cas
+# Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-099
+# Prérequis : connecté, sur la page Question 1 d'un cas (suite du flow 03)
+
+appId: fr.copiq.app
+---
+- launchApp
+
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Naviguer jusqu'à un cas (flow abrégé)
+- tapOn:
+    text: "Cas Pratique"
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    index: 0
+    id: "case_card"
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    text: "Commencer"
+- waitForAnimationToEnd:
+    timeout: 3000
+
+# Saisir une réponse dans la zone de texte
+- tapOn:
+    id: "answer_text_area"
+- inputText: "L'officier de police judiciaire doit d'abord sécuriser la scène et identifier les témoins avant d'intervenir conformément aux procédures légales en vigueur."
+
+- waitForAnimationToEnd
+
+# Valider la réponse
+- tapOn:
+    text: "Valider"
+
+- waitForAnimationToEnd:
+    timeout: 15000
+
+# Page correction : vérifier le score
+- assertVisible:
+    text: "/20"
+
+# Vérifier la présence du ScoreReveal et des PointPills
+- assertVisible:
+    text: "Votre score"
+
+# Optionnel : vérifier bouton partage
+- optional:
+    - assertVisible:
+        text: "Partager"

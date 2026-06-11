@@ -1,0 +1,618 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces possède un cube ?",
+        "prompt": "Considérez un solide en forme de cube.",
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "10"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "A",
+        "explanation": "Un cube est composé de 6 faces carrées, chaque face étant identique. Les candidats doivent se souvenir que chaque coin du cube est à la jonction de trois de ses 6 faces carrées, une propriété fondamentale des cubes.",
+        "hint": "Souvenez-vous qu'un cube a des faces carrées partout."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets possède un tétraèdre régulier ?",
+        "prompt": "Visualisez un tétraèdre où chaque face est un triangle équilatéral.",
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "10"}
+        ],
+        "answer": "A",
+        "explanation": "Un tétraèdre régulier possède 4 sommets. Chaque sommet est connecté à trois autres sommets, formant ainsi les arêtes du tétraèdre. Cela en fait le solide géométrique le plus simple en termes de sommets.",
+        "hint": "C'est le solide triple de triangles."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien d'arêtes un prisme triangulaire possède-t-il ?",
+        "prompt": "Un prisme triangulaire est dessiné avec une base triangulaire et une copie parallèle.",
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "9"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "15"}
+        ],
+        "answer": "B",
+        "explanation": "Un prisme triangulaire a 9 arêtes : 3 sur chaque base triangulaire plus 3 arêtes qui relient les sommets correspondants des triangles. Chaque triangle possède 3 arêtes, ce qui aide à visualiser 9 arêtes totale.",
+        "hint": "Comptez les arêtes des triangles et celles qui relient les bases."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Si on plie un carré sur sa diagonale, quelle figure obtient-on ?",
+        "prompt": "Imaginons un carré plié le long de l'une de ses diagonales.",
+        "options": [
+            {"key": "A", "label": "Triangle rectangle"},
+            {"key": "B", "label": "Trapèze"},
+            {"key": "C", "label": "Cercle"},
+            {"key": "D", "label": "Pentagone"}
+        ],
+        "answer": "A",
+        "explanation": "Plier un carré sur sa diagonale sépare le carré en deux triangles rectangles, car chaque diagonale coupe le carré en deux angles de 45 degrés et un angle de 90 degrés. C'est une transformation simple à cause des propriétés de symétrie du carré.",
+        "hint": "La diagonale coupe le carré en deux triangles."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien d'arêtes un cube possède-t-il ?",
+        "prompt": "Considérons un solide avec 6 faces carrées identiques.",
+        "options": [
+            {"key": "A", "label": "8"},
+            {"key": "B", "label": "10"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "14"}
+        ],
+        "answer": "C",
+        "explanation": "Un cube a 12 arêtes au total, 4 arêtes par face connectant chaque paire de sommets. En visualisant chaque face carrée, on peut réaliser que la somme des arêtes des trois axes (haut, bas, côté) correspond à 12.",
+        "hint": "Pensez à chaque coin avec ses trois arêtes."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de sommets une pyramide à base carrée possède-t-elle ?",
+        "prompt": "Considérez une pyramide dont la base est un carré.",
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "5"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "8"}
+        ],
+        "answer": "B",
+        "explanation": "Une pyramide à base carrée a cinq sommets : quatre sommets pour la base carrée et un cinquième sommet en haut où se rencontrent les quatre triangles latéraux. Ce sommet est commun à toutes les faces latérales.",
+        "hint": "Ajoutez le sommet du sommet aux quatre de la base."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Vu de dessus, à quoi ressemble un cylindre droit ?",
+        "prompt": "Pensez à une vue aérienne d'un cylindre vertical.",
+        "options": [
+            {"key": "A", "label": "Cercle"},
+            {"key": "B", "label": "Carré"},
+            {"key": "C", "label": "Rectangle"},
+            {"key": "D", "label": "Triangle"}
+        ],
+        "answer": "A",
+        "explanation": "Vu de dessus, un cylindre droit semble être un cercle parce que sa base est circulaire. Cela reste constant peu importe la hauteur du cylindre tant que l'axe est perpendiculaire au plan de base.",
+        "hint": "Considérez uniquement la base circulaire."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Sur le patron d'un cube, combien de faces sont visibles ?",
+        "prompt": "Imaginez un patron typique d'un cube avant pliage.",
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "5"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "7"}
+        ],
+        "answer": "C",
+        "explanation": "Tous les patrons d'un cube comportent les 6 faces visibles et dépliées sur un plan. Celles-ci sont présentées de manière à pouvoir être assemblées en volume, formant les six faces du cube.",
+        "hint": "Le patron d'un cube doit avoir toutes ses faces."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel solide classique a 6 sommets, 9 arêtes et 5 faces ?",
+        "prompt": "Évoquez un solide avec ces caractéristiques géométriques.",
+        "options": [
+            {"key": "A", "label": "Prisme triangulaire"},
+            {"key": "B", "label": "Pyramide à base triangulaire"},
+            {"key": "C", "label": "Tétraèdre"},
+            {"key": "D", "label": "Cube"}
+        ],
+        "answer": "A",
+        "explanation": "Un prisme triangulaire a deux triangles comme bases parallèles (6 sommets) et 3 rectangles reliant les sommets des bases. Cela donne 9 arêtes en total et 5 faces (2 triangles, 3 rectangles).",
+        "hint": "Il s'agit d'un prisme avec des bases triangulaires."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces un pentagone régulier a-t-il ?",
+        "prompt": "En vous concentrant sur un solide pentagonal.",
+        "options": [
+            {"key": "A", "label": "5"},
+            {"key": "B", "label": "7"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "9"}
+        ],
+        "answer": "A",
+        "explanation": "Un pentagone comme un polygone plat rouge ne possède qu'un seul bord. S'il est visualisé comme une base avec cinq côtés, et sans en faire un volume, nous examinerions une seule face.",
+        "hint": "Considérez les côtés du pentagone comme un polygone plat."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le nombre total d'arêtes d'un octaèdre régulier ?",
+        "prompt": "Imaginez un solide symétrique où chaque face est un triangle équilatéral.",
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "14"}
+        ],
+        "answer": "C",
+        "explanation": "Un octaèdre régulier est formé de 8 triangles équilatéraux, chacun ayant 3 arêtes, avec un total combiné de 12 arêtes interconnectées sans redondance, se croisant à travers chaque sommet.",
+        "hint": "Pensez à chaque face comme un triangle rouge."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Combien de faces non triangulaires un tétraèdre régulier possède-t-il ?",
+        "prompt": "Visualisez un tétraèdre avec des sommets rectangulaires.",
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "1"},
+            {"key": "C", "label": "2"},
+            {"key": "D", "label": "3"}
+        ],
+        "answer": "A",
+        "explanation": "Un tétraèdre est constitué de 4 faces triangulaires, toutes équilatérales. Aucune de ces faces n'est non triangulaire car la définition d'un tétraèdre repose uniquement sur des triangles.",
+        "hint": "Considérez seulement les arêtes triangulaires."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle est la vue de profil d'une pyramide à base carrée ?",
+        "prompt": "Imaginez une pyramide observée depuis un côté.",
+        "options": [
+            {"key": "A", "label": "Triangle"},
+            {"key": "B", "label": "Carré"},
+            {"key": "C", "label": "Rectangle"},
+            {"key": "D", "label": "Cercle"}
+        ],
+        "answer": "A",
+        "explanation": "La vue de profil d'une pyramide à base carrée montre toujours un triangle. Ce triangle est formé par la base de la pyramide et le sommet supérieur. Chaque flanc de la pyramide apparaît comme une ligne droite de haut en bas.",
+        "hint": "En observant une seule arête verticale."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le nombre minimal de faces nécessaires pour former un solide fermé ?",
+        "prompt": "Pensez à une configuration de faces formant un volume.",
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "4"},
+            {"key": "C", "label": "5"},
+            {"key": "D", "label": "6"}
+        ],
+        "answer": "B",
+        "explanation": "Pour former le solide le plus simple, 4 triangles équilatéraux sont nécessaires pour créer un tétraèdre, ce qui est la forme la plus légère possible pour un volume fermé. La base est un triangle, entouré de 3 autres faces triangulaires.",
+        "hint": "Pensez au tétraèdre le plus allégé !"
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Si l'on coupe un parallélépipède uniformément en 8 parts, combien de faces chaque part possédera-t-elle ?",
+        "prompt": "Considérons un parallélépipède découpé de manière stricte.",
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "10"}
+        ],
+        "answer": "B",
+        "explanation": "Chaque part d'un cube découpé en blocs plus petits forme un cube et a donc 6 faces. En divisant un parallélépipède en 8, nous réalisons une redéfinition en mini-cubes, conservant le nombre de faces chaque mini-cube.",
+        "hint": "Considérez chaque fractionnement pour les mini-cubes."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Dans un cube, combien de faces sont adjacentes à une face donnée ?",
+        "prompt": "Imaginez une face unique au sein du cube.",
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "3"},
+            {"key": "C", "label": "4"},
+            {"key": "D", "label": "5"}
+        ],
+        "answer": "C",
+        "explanation": "Chaque face carrée d'un cube est adjacente à 4 autres faces. Cela est dû au positionnement à angle droit, où chaque face partage une arête avec quatre autres surfaces cubiques adjacentes.",
+        "hint": "Dans un cube, chaque arête attribue une connivence."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Lequel de ces patrons ne peut pas former un cube une fois plié ?",
+        "prompt": "Considérez 4 arrangements de 6 carrés.",
+        "options": [
+            {"key": "A", "label": "Croix"},
+            {"key": "B", "label": "T renversé"},
+            {"key": "C", "label": "Bande droite"},
+            {"key": "D", "label": "Z"}
+        ],
+        "answer": "C",
+        "explanation": "Un bande droite de carrés ne peut pas entourer complètement un cube, car il manque la capacité à se fermer dans un espace tridimensionnel. Les autres formes permettent un joint fermé autour d'un volume cubique.",
+        "hint": "En ligne droite, le pliage se restreint strictement."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de cubes composent un cube 3x3x3 ?",
+        "prompt": "Visualisez un grand cube divisé en mini-mesures égales.",
+        "options": [
+            {"key": "A", "label": "9"},
+            {"key": "B", "label": "18"},
+            {"key": "C", "label": "27"},
+            {"key": "D", "label": "81"}
+        ],
+        "answer": "C",
+        "explanation": "Un cube de 3x3x3 est constitué de 27 petits cubes unitaires. Chaque dimension du cube englobe 3 cubes, ce qui donne 3x3x3 = 27 après avoir compté chaque section unitaire et multipliant collectivement.",
+        "hint": "Multipliez le nombre par dimension !"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la vue de face d'un prisme rectangulaire ?",
+        "prompt": "Pensez à une face d'observation directe d'un prisme rectangulaire.",
+        "options": [
+            {"key": "A", "label": "Rectangle"},
+            {"key": "B", "label": "Cercle"},
+            {"key": "C", "label": "Triangle"},
+            {"key": "D", "label": "Trapèze"}
+        ],
+        "answer": "A",
+        "explanation": "Un prisme rectangulaire, lorsque regardé de face, montre un rectangle. Les parallèles de longueurs égales constituent un rectangle idéal en suivant la perspective linéaire symétrique des longueurs.",
+        "hint": "Regardez directement le long de l'axe le plus court."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de petits cubes ont exactement 2 faces peintes dans un cube 3x3x3 ?",
+        "prompt": "Couvrez un cube rouge complet avant de le subdiviser.",
+        "options": [
+            {"key": "A", "label": "12"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "24"}
+        ],
+        "answer": "A",
+        "explanation": "Dans un cube 3x3x3, il y a 12 petits cubes situés le long de ses arêtes, mais ne touchant pas les coins (chaque arête a 3 petits cubes, les coins ayant trois faces peintes). Ainsi, 12 ont 2 faces peintes.",
+        "hint": "Comptez les arêtes du cube, pas les coins."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de cubes sur un cube 3x3x3 ne sont pas peints ?",
+        "prompt": "Découvrez un cube repeint et voyez l'intérieur non modifié.",
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "27"}
+        ],
+        "answer": "A",
+        "explanation": "Le petit cube central d'un cube 3x3x3 est le seul non peint puisqu'il est complet à l'intérieur. Étant complètement entouré par d'autres cubes, il échappe à l'application de peinture.",
+        "hint": "Imaginez l'intérieur : un noyau inaltéré !"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de sommets totalise un dodecaèdre ?",
+        "prompt": "Visualisez un objet à douze faces soit un dodecaèdre régulier.",
+        "options": [
+            {"key": "A", "label": "12"},
+            {"key": "B", "label": "20"},
+            {"key": "C", "label": "30"},
+            {"key": "D", "label": "32"}
+        ],
+        "answer": "B",
+        "explanation": "Un dodecaèdre régulier possède 20 sommets, chacun étant le résultat de l'intersection de trois faces pentagonales. C'est un solide platonique exceptionnel parmi ses pairs.",
+        "hint": "Trois faces s'unissent : seulement 20 configurations."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le patron correct pour former un prisme triangulaire ?",
+        "prompt": "Choisissez parmi plusieurs modèles plats pour créer un prisme.",
+        "options": [
+            {"key": "A", "label": "Deux triangles et trois rectangles"},
+            {"key": "B", "label": "Quatre carrés"},
+            {"key": "C", "label": "Deux cercles et un rectangle"},
+            {"key": "D", "label": "Deux pentagones et trois rectangles"}
+        ],
+        "answer": "A",
+        "explanation": "Pour plier un prisme triangulaire, il faut deux triangles pour ses bases et trois rectangles pour ses faces latérales. Cela crée une structure où les rectangles enserrent entre elles les triangles.",
+        "hint": "Utilisez deux formes identiques pour les bases."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Combien de faces sont tangentes simultanément à un seul sommet sur un tétraèdre régulier ?",
+        "prompt": "Visualisez chaque sommet à l'intersection des faces.",
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "3"},
+            {"key": "C", "label": "4"},
+            {"key": "D", "label": "5"}
+        ],
+        "answer": "B",
+        "explanation": "Sur un tétraèdre régulier, chaque sommet est commun à exactement 3 faces. C'est une propriété intrinsèque des solides où chaque point d'intersection renferme géométriquement 3 segments.",
+        "hint": "Aux intersections triangulaires, trois se rencontrent."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle est la vue de dessus d'une pyramide triangulaire?",
+        "prompt": "Imaginez votre regard plongeant directement sur le sommet de la pyramide.",
+        "options": [
+            {"key": "A", "label": "Triangle"},
+            {"key": "B", "label": "Carré"},
+            {"key": "C", "label": "Hexagone"},
+            {"key": "D", "label": "Pentagone"}
+        ],
+        "answer": "A",
+        "explanation": "En regardant une pyramide triangulaire de dessus, nous voyons un triangle qui comprend sa base triangulaire. Sa structure convexe et symétrique produit cette apparence claire et concise.",
+        "hint": "Considérez la forme de base unique interposant."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Si un cube 4x4x4 est peint, combien de petits cubes unitaires sont entièrement rouge ?",
+        "prompt": "Pensez à un cube peint de façon intensive.",
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "16"},
+            {"key": "D", "label": "24"}
+        ],
+        "answer": "A",
+        "explanation": "Lorsque toutes les faces d'un cube sont peintes, aucun cube unitaire ne peut être rouge sur toutes ses faces car ils sont tous situés à l'intérieur. Seuls ceux touchant l'extérieur sont peints.",
+        "hint": "Le rouge ne couvre que l'extérieur !"
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel tétraèdre a toutes ses arêtes inégalement dessinées ?",
+        "prompt": "Regardez attentivement les longueurs diverses au long des arêtes.",
+        "options": [
+            {"key": "A", "label": "Tétraèdre irrégulier"},
+            {"key": "B", "label": "Tétraèdre équilatéral"},
+            {"key": "C", "label": "Prisme triangulaire"},
+            {"key": "D", "label": "Tétraèdre orthogonal"}
+        ],
+        "answer": "A",
+        "explanation": "Un tétraèdre irrégulier se compose de côtés dont les longueurs ne sont pas égales. Tandis que les autres types possèdent des symétries, ici chaque arête présente une disparité mesurable.",
+        "hint": "Inégalité par défaut."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Après avoir plié un triangle équilatéral, combien d'arêtes découle du triangle sectionné ?",
+        "prompt": "Imaginez un pli en milieu sans fusion complèmentaire.",
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "3"},
+            {"key": "C", "label": "4"},
+            {"key": "D", "label": "5"}
+        ],
+        "answer": "C",
+        "explanation": "Le pliage d'une partie d'un triangle équilatéral ne fusionne pas les plans en un. Le pliage interne ajoute une section au niveau des deux arêtes orientantes, apparaissant ensemble ici quatre arêtes.",
+        "hint": "Venez contempler les bordures visibles !"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Après avoir partiellement peint les deux axes d'un cube, combien de petits cubes sont touchés à deux faces ?",
+        "prompt": "Se pencher sur un cube peint le long de seulement deux de ses axes.",
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "16"}
+        ],
+        "answer": "C",
+        "explanation": "Ce cube mesure une symétrie partielle car deux axes sont peints : douze cubes sont en contact direct à deux surfaces selon l'unique l'agencement croissant du schéma direct.",
+        "hint": "Accédez à la dynamique complexe d'orientations !"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si un cube 4x4x4 est peint et ensuite découpé, combien de petits cubes ont une face peinte dedans ?",
+        "prompt": "Envisagez un cube entièrement recouvert qui est divisé.",
+        "options": [
+            {"key": "A", "label": "27"},
+            {"key": "B", "label": "36"},
+            {"key": "C", "label": "56"},
+            {"key": "D", "label": "24"}
+        ],
+        "answer": "B",
+        "explanation": "Les petites parcelles englobent initialement qu'une face peinte, englobant une bande continue de trois cubes intérieurs. Sur chaque face, six cubes remplissent ce critère, répliqués pour 6 faces.",
+        "hint": "Familiarisez-vous avec chaque coup de peinture en façade."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de petits cubes au centre d'un cube 5x5x5 peint sont privés de peinture ?",
+        "prompt": "Considérez un volumineux cube repeint et scindé de l'intérieur.",
+        "options": [
+            {"key": "A", "label": "0"},
+            {"key": "B", "label": "1"},
+            {"key": "C", "label": "27"},
+            {"key": "D", "label": "64"}
+        ],
+        "answer": "C",
+        "explanation": "Dans le centre complet, un cube de cœurs incolores occupe 27 mini-cubes intacts. Seules les couches périphériques supportent la touche teintée, renfermant sa structure interne en sécurité.",
+        "hint": "N'ignorez pas le centre de votre évaluation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la projection axonométrique d'un prisme triangulaire ?",
+        "prompt": "Entamez la consignation des trois dimensions de ce prisme.",
+        "options": [
+            {"key": "A", "label": "Losange"},
+            {"key": "B", "label": "Rectangle"},
+            {"key": "C", "label": "Triangle"},
+            {"key": "D", "label": "Trapèze"}
+        ],
+        "answer": "D",
+        "explanation": "Une projection axonométrique s'émule en trapèze d'un prisme triangulaire, car sa base parallèle distingue visuellement le format géométrique schématisé de ce plan.",
+        "hint": "Traversez les plans et apercevez le changement !"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Etant donné une base pentagonale comportant une voûte, combien totalise-t-elle de faces latérales ?",
+        "prompt": "Vérifiez les aboutissements du sommet en angule géodésique.",
+        "options": [
+            {"key": "A", "label": "5"},
+            {"key": "B", "label": "7"},
+            {"key": "C", "label": "10"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "A",
+        "explanation": "Une base au pentagone sous-entend cinq faces de ceintures latérales redoublées. Ces faces constituent la progression ascendante d'une voûte monocorde vers l'apogée ultime chaque lien s'adaptant.",
+        "hint": "Jeu de formes par face incluse."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si un cube de 6x6x6 est sectionné par un plan parallèle à l'une de ses faces, combien de nouveaux solides se forment?",
+        "prompt": "Insistez sur le découpage parallèle sur un axe choisi.",
+        "options": [
+            {"key": "A", "label": "2"},
+            {"key": "B", "label": "3"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "8"}
+        ],
+        "answer": "A",
+        "explanation": "Un plan parallèle à l'une des faces divise le cube en deux solides égaux. Compte tenu de la parfaite symétrie centrale du cube, ces formes sont géométriquement identiques.",
+        "hint": "Pensez à un partage méthodique et cohérent, notant la stabilité."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Après une coupe horizontale à travers chaque sommet d'un cube, combien de sections sont apparentes ?",
+        "prompt": "Suivez une configuration de coupe précise.",
+        "options": [
+            {"key": "A", "label": "3"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "12"}
+        ],
+        "answer": "B",
+        "explanation": "Chaque section visible correspond positionnement exact d'une face. Ces subdivisions altèrent complexe la superficie résultante en rectification continue à partir de son axe.",
+        "hint": "Evaluer un agrandissement d'éclatement planifié."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le nouvel extérieur en découpant horizontalement deux couches supérieures au-dessus d'un cube 6x6x6 ?",
+        "prompt": "Cherchez une transposition orientée de surface.",
+        "options": [
+            {"key": "A", "label": "Tétraèdre"},
+            {"key": "B", "label": "Parallélépipède"},
+            {"key": "C", "label": "Cube déséquilibré"},
+            {"key": "D", "label": "Prisme retouché"}
+        ],
+        "answer": "B",
+        "explanation": "Ainsi transformé, trois des pairs les plus supérieurs sont préservés tandis que l'ensemble renferme un volume régulier, équivalant désormais à un parallélépipède formé des 4 niveaux inférieurs.",
+        "hint": "Reconsidérez la dualité des dimensions projetées."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Une boîte cubique 4x4x4 a été découpée en plans passant par les médianes des côtés. Combien de blocs obtient-on ?",
+        "prompt": "En vous focalisant sur chaque coupe.",
+        "options": [
+            {"key": "A", "label": "8"},
+            {"key": "B", "label": "16"},
+            {"key": "C", "label": "32"},
+            {"key": "D", "label": "64"}
+        ],
+        "answer": "B",
+        "explanation": "Chaque coupe médiane divise le cube pour produire de multiples portions symétriques, résultat de lieux ordonnés équilatéraux, menant à 16 secteurs uniformes.",
+        "hint": "Le principe des emplacements moitié symétrie est incontournable."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Par une intersection biaisée, combien d'arêtes sont reconstituées sur la face d'une introversive ?",
+        "prompt": "Concevez une approche destinée à intégrer tous les angles.",
+        "options": [
+            {"key": "A", "label": "3"},
+            {"key": "B", "label": "4"},
+            {"key": "C", "label": "5"},
+            {"key": "D", "label": "6"}
+        ],
+        "answer": "A",
+        "explanation": "La conjonction astucieuse s'effectue à travers trois zonages avec transformation multiple des axes, en configurant ces tranches en une forme harmonieuse intérieurement tertiaire.",
+        "hint": "Disciplinel parameter se corrige dans les angles."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "En diagonalisant toutes les faces d'un hexaèdre, quelle serait sa solution géodésique ?",
+        "prompt": "Prenez les coupes diagonales par face individuelle.",
+        "options": [
+            {"key": "A", "label": "Kit pentagonal axiomatique"},
+            {"key": "B", "label": "Combiné bipyramidal plateaux"},
+            {"key": "C", "label": "Restructurée hexaèdre piriforme"},
+            {"key": "D", "label": "Triangulé redéploiement radial"}
+        ],
+        "answer": "D",
+        "explanation": "La répétition des coupes diagonales ajuste la masse en un ensemble de composants triangulaires réarrangeant chaque segment à la conformation ciselée convenable exposée en expansion radiale.",
+        "hint": "Chaque face devient complètement triangulaire."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Si une pyramide heptagonale est sectionnée en lignes droites, combien de figures intactes persistent ?",
+        "prompt": "Manipulez chaque fragmentation pour enregistrer.",
+        "options": [
+            {"key": "A", "label": "7"},
+            {"key": "B", "label": "8"},
+            {"key": "C", "label": "9"},
+            {"key": "D", "label": "14"}
+        ],
+        "answer": "A",
+        "explanation": "Huit faces équivalent initialement à des ligneurs alignés qui arrangeraient une multi-intégrité de la section géophysique. Elles s'accumulent distinctement, contrebalancées symétriquement dans chaque assise projetée.",
+        "hint": "Distinguez chaque lien complémentaire interprété."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Sur un prisme hexagonal, combien d'arêtes coïncident étroitement le long de ses flancs ?",
+        "prompt": "Projetreriez-vous chaque extrémité jointure.",
+        "options": [
+            {"key": "A", "label": "6"},
+            {"key": "B", "label": "9"},
+            {"key": "C", "label": "12"},
+            {"key": "D", "label": "18"}
+        ],
+        "answer": "B",
+        "explanation": "Chacune des lignes prolonge la manifestation duale d'une facette intermédiaire. Leur symétrie excessive stipule une progression rigoureuse dans leur occupation invariable des trois surfaces latéralisées.",
+        "hint": "Additionnez toutes les tangentes équilatérales."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Interposez une coupe transversale sur un octaèdre et combien de profils se développent effectivement ?",
+        "prompt": "Tolérez une immersion axiale.",
+        "options": [
+            {"key": "A", "label": "4"},
+            {"key": "B", "label": "5"},
+            {"key": "C", "label": "6"},
+            {"key": "D", "label": "7"}
+        ],
+        "answer": "C",
+        "explanation": "Jouxtant formations singulières, chaque axe, lorsqu'il est segmenté, s'interconnecte pour compléter l'enceinte catalytique des arêtes des six côtés emblématiques transversaux.",
+        "hint": "Un réseau radiant déployé perpendiculairement est distinct."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien de faces hexagonales figureraient sur un prisme fendu ?",
+        "prompt": "Imaginez vraiment un segment intégrant une application serrée.",
+        "options": [
+            {"key": "A", "label": "1"},
+            {"key": "B", "label": "2"},
+            {"key": "C", "label": "3"},
+            {"key": "D", "label": "4"}
+        ],
+        "answer": "A",
+        "explanation": "Toute face hexagonale, agrégée à une projection en expansion planétaire, expérimente sa résolution totalisée par un fermage cohérent. Chaque pochette individuelle suit une cohésion granulaire sur cette interposition exagérée.",
+        "hint": "Procédez avec la définition intégrale hexagonale."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est le total majeur de vues potentielles de prisme à bases triangulaires ?",
+        "prompt": "Regardez sous une multitude d'angles possibles.",
+        "options": [
+            {"key": "A", "label": "5"},
+            {"key": "B", "label": "6"},
+            {"key": "C", "label": "8"},
+            {"key": "D", "label": "10"}
+        ],
+        "answer": "B",
+        "explanation": "Chaque prisme triangulaire introduit distinctement six variantes d'aspects homogènes influenceurs. Ces postes imbriquées coulissent complémentaires se démontrant échiqueté complètes.",
+        "hint": "Considérez chaque base en combinaison des flancs."
+    }
+]

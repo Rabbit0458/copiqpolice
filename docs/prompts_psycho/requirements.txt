@@ -1,0 +1,11 @@
+# COP'IQ — AI Generation Pipeline v2
+# pip install -r requirements.txt
+
+openai>=1.40.0
+anthropic>=0.30.0
+supabase>=2.7.0
+python-dotenv>=1.0.0
+colorama>=0.4.6        # couleurs sur PowerShell / cmd Windows
+
+# Optionnel — Gemini (pas encore branché) :
+# google-genai>=0.3.0

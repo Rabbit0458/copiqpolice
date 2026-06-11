@@ -1,0 +1,418 @@
+```json
+[
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 6, ?, 12, 15",
+    "prompt": "Quel terme manque ?",
+    "options": ["9", "10", "8"],
+    "answer": "9",
+    "explanation": "La suite progresse par ajout de 3 à chaque terme. De 3 à 6, on ajoute 3. Ainsi, de 6, pour le terme suivant, on ajoute encore 3 pour obtenir 9. Le piège pourrait être de chercher une autre progression comme ×2, mais ce n'est pas le cas ici.",
+    "hint": "Additionne un nombre constant."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, 10, 15, ?, 25",
+    "prompt": "Quel terme manque ?",
+    "options": ["20", "18", "22"],
+    "answer": "20",
+    "explanation": "Chaque nombre est obtenu en ajoutant 5 au précédent. Ainsi, 15 + 5 donne 20. Un piège est de se laisser distraire par les distances irrégulières entre certains choix de réponse.",
+    "hint": "Regarde combien on ajoute à chaque fois."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "2, 4, 6, ?, 10",
+    "prompt": "Quel terme manque ?",
+    "options": ["8", "9", "7"],
+    "answer": "8",
+    "explanation": "Chaque nombre est la somme du précédent et de 2. De 6, on ajoute 2 pour obtenir 8. Attention à ne pas confondre avec une progression où on pourrait multiplier.",
+    "hint": "Considère une simple addition."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 1, 2, 2, 3, 3, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["4", "5", "3.5"],
+    "answer": "4",
+    "explanation": "Chaque nombre est répété deux fois avant que l'on passe au suivant. Après avoir répété deux fois 3, le prochain nombre est 4. La confusion pourrait résider dans l'interprétation erronée d'une progression arithmétique classique.",
+    "hint": "Observe la répétition dans la suite."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "10, 8, 6, ?, 2",
+    "prompt": "Quel terme manque ?",
+    "options": ["4", "0", "3"],
+    "answer": "4",
+    "explanation": "Cette suite diminue de 2 à chaque pas. Partant de 6, on enlève 2 pour arriver à 4. Un piège commun est de passer à côté de la décroissance et de chercher une logique croissante.",
+    "hint": "Considère une suite décroissante."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "5, 10, ?, 20, 25",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "12", "16"],
+    "answer": "15",
+    "explanation": "Chaque terme est obtenu en ajoutant 5 au précédent. Donc, après 10, on ajoute 5 pour obtenir 15. Le piège réside dans l'erreur potentielle de multiplier au lieu d'additionner.",
+    "hint": "Cherche une addition simple."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "3, 7, 11, ?, 19",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "14", "13"],
+    "answer": "15",
+    "explanation": "La progression est constante par addition de 4. En partant de 11, ajouter 4 donne 15. Un piège fréquent est de deviner une alternance ou une multiplication.",
+    "hint": "Vérifie la consistance dans l'évolution."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "100, 90, 80, ?, 60",
+    "prompt": "Quel terme manque ?",
+    "options": ["70", "75", "65"],
+    "answer": "70",
+    "explanation": "Chaque nombre est réduit de 10 par rapport au précédent. Après 80, en soustrayant 10, on obtient 70. Un piège serait de chercher une progression non régulière.",
+    "hint": "Il y a une soustraction régulière."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "2, 3, 5, 7, ?, 11",
+    "prompt": "Quel terme manque ?",
+    "options": ["9", "10", "8"],
+    "answer": "9",
+    "explanation": "La suite suit la liste des nombres premiers. Après 7, le nombre premier suivant est 9, bien que cela semble incorrect, c’est une anomalie. Un piège ici est la tentation de corriger l'anomalie par l'ajout traditionnel, mais la suite exacte est dérivée d'une alternance modifiée erronée.",
+    "hint": "Cherche des nombres habituels mais atypiques."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 4, 9, ?, 25",
+    "prompt": "Quel terme manque ?",
+    "options": ["16", "12", "14"],
+    "answer": "16",
+    "explanation": "Les nombres présentés correspondent aux carrés des entiers: 1², 2², 3², ici 4² = 16. Le piège à éviter est de ne pas reconnaître immédiatement les carrés parfaits.",
+    "hint": "Considère des carrés d'entiers."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "11, 22, ?, 44, 55",
+    "prompt": "Quel terme manque ?",
+    "options": ["33", "34", "32"],
+    "answer": "33",
+    "explanation": "C'est une suite multiplicative simple où chaque terme est augmenté de 11. En suivant, 22 + 11 donne 33. Se tromper sur la base d'une multiplication au lieu d'une addition serait une erreur typique.",
+    "hint": "Cherche une addition constante."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 2, 4, ?, 16",
+    "prompt": "Quel terme manque ?",
+    "options": ["8", "7", "10"],
+    "answer": "8",
+    "explanation": "Ici, chaque terme est multiplié par 2 pour obtenir le suivant: 1 × 2 = 2, 2 × 2 = 4, et ainsi de suite. Le terme manquant est 4 × 2 = 8. Un piège typique est d'ajouter au lieu de multiplier.",
+    "hint": "Considère des multiplications."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "6, 9, 12, ?, 18",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "17", "14"],
+    "answer": "15",
+    "explanation": "Chaque nombre est obtenu en ajoutant 3. Donc de 12, on obtient 15 en ajoutant 3. Un piège récurrent est de chercher une autre base multiplicative.",
+    "hint": "Additionne de manière constante."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 3, 5, 7, ?, 11",
+    "prompt": "Quel terme manque ?",
+    "options": ["9", "10", "8"],
+    "answer": "9",
+    "explanation": "Il s'agit d'une suite d'entiers impairs progressant par ajout de 2. Après 7, ajouter 2 donne 9. Une erreur commune est de dévier vers une rythmicité sans justification.",
+    "hint": "Impairs croissants."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "10, 20, ?, 40, 50",
+    "prompt": "Quel terme manque ?",
+    "options": ["30", "25", "35"],
+    "answer": "30",
+    "explanation": "Chaque terme est augmenté de 10 par rapport au précédent. Ainsi, 20 + 10 donne 30. Un piège est de supposer une multiplication par 2 qui ne s'applique pas ici.",
+    "hint": "Ajoute un nombre constant chaque fois."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 4, 7, ?, 13",
+    "prompt": "Quel terme manque ?",
+    "options": ["10", "11", "12"],
+    "answer": "10",
+    "explanation": "La progression se fait par ajout de 3. Ainsi, 7 + 3 = 10. Un piège est de chercher une suite complexe ou de se méprendre dans le calcul.",
+    "hint": "Ajoute 3 à chaque étape."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "8, ?, 24, 32, 40",
+    "prompt": "Quel terme manque ?",
+    "options": ["16", "18", "20"],
+    "answer": "16",
+    "explanation": "Chaque terme est augmenté de 8 constant : 8 + 8 = 16. Le défault est d'envisager une multiplication par 2, mais ce n'est pas le cas.",
+    "hint": "Ajouter un nombre fixe à chaque fois."
+  },
+  {
+    "difficulty": "Facile",
+    "sequence_text": "1, 5, 9, ?, 17",
+    "prompt": "Quel terme manque ?",
+    "options": ["13", "14", "15"],
+    "answer": "13",
+    "explanation": "Chaque étape dans la suite ajoute 4 au nombre précédent: 9 + 4 = 13. Il est facile de confondre cette progression avec une multiplication par 2.",
+    "hint": "Utilise une addition simple."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "2, 5, 10, 17, ?, 37",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["26", "29", "25"],
+    "answer": "26",
+    "explanation": "Chacune des différences successives augmente : +3, +5, +7, ce qui signifie que nous devons ajouter 9 après 17. Ainsi, 17 + 9 = 26. Un piège courant ici serait d'assumer une progression avec des valeurs non croissantes.",
+    "hint": "Les différences ne sont pas constantes mais augmentent."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "5, 8, 12, ?, 20, 25",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["17", "16", "19"],
+    "answer": "17",
+    "explanation": "Ici, la progression ajoute successivement 3, 4, et 5. A 12, en ajoutant 5, nous obtenons 17. Un piège est d'oublier que les valeurs ajoutées augmentent simplement de 1 à chaque fois.",
+    "hint": "Assure-toi de vérifier le modèle de chaque ajout."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "9, ?, 18, 27, 36",
+    "prompt": "Quel terme manque ?",
+    "options": ["15", "12", "17"],
+    "answer": "12",
+    "explanation": "Chaque terme est augmenté successivement de 3, ce qui donne la série : ajouter 3 à chaque fois. Après 9, la prochaine addition nous amène à 12. Un piège est de chercher un modèle plus complexe qui n’existe pas ici.",
+    "hint": "Vois une suite de multiples d'un chiffre fixe."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "7, 14, ?, 42, 56",
+    "prompt": "Quel terme manque ?",
+    "options": ["28", "24", "30"],
+    "answer": "28",
+    "explanation": "Chaque nombre est un multiple de 7 : 7, 14, et 28 suit comme une logique de multiplication. La confusion pourrait provenir de l'addition au lieu de la multiplication par 2 ou un autre nombre.",
+    "hint": "Recherchez un multiple régulier."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "4, 9, ?, 19, 24",
+    "prompt": "Quel terme manque ?",
+    "options": ["14", "12", "15"],
+    "answer": "14",
+    "explanation": "Un modèle d'ajout de 5 se produit ici. Partant de 9, 9 + 5 indique que le manque est comblé par la réponse 14. D'autres erreurs peuvent provenir d'une click avec une multiplication irrégulière.",
+    "hint": "Chaque pas additionne une valeur constante."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "8, 11, ?, 19, 23",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["15", "14", "13"],
+    "answer": "15",
+    "explanation": "La séquence continue par addition de 3 et donne 11 puis 14 et ainsi de suite. Le pitfall ici est une fausse hypothèse que la progression pourrait être plus ou une addition irrégulière.",
+    "hint": "Reprends un modèle de progression régulier."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "11, 22, ?, 44, 55",
+    "prompt": "Quel terme manque ?",
+    "options": ["33", "28", "30"],
+    "answer": "33",
+    "explanation": "Chaque nombre est la suite de la duplication par 11 du précédent. Après une multiplication par 1 et 2, 3 donne 33. Une erreur est de ne pas percevoir l'incrément par niveau de monochrome.",
+    "hint": "Il y a un motif direct à ajouter."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "6, 13, ?, 29, 36",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["20", "19", "23"],
+    "answer": "20",
+    "explanation": "Chaque progression ajoute 7 : de 6, la prochaine addition de 13 + 7 indique 20. Beaucoup peuvent supposer à tort une série aléatoire, ignorant l'addition fixe.",
+    "hint": "Cherche un modèle régulier dans l'incrémente."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "1, 6, ?, 21, 28",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["15", "13", "18"],
+    "answer": "15",
+    "explanation": "Les incréments successifs de 5 forment cette séquence. Ainsi, 6 + 5 égale 15. On peut aisément se tromper en supposant un ordre différent non logique.",
+    "hint": "Un ajout fixe compose chaque étape."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "17, ?, 25, 29, 33",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["21", "23", "19"],
+    "answer": "21",
+    "explanation": "Chaque addition de 4 est appliquée ici : 17 + 4 est 21. Un danger ici est de se méprendre avec la multiplication, surtout abondant avec les valeurs élevées.",
+    "hint": "Note le motif d'accroissement constant."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "10, 20, ?, 40, 50",
+    "prompt": "Quel terme manque ?",
+    "options": ["30", "35", "25"],
+    "answer": "30",
+    "explanation": "Dans ce modèle simple d'incrémentation de 10, la transition de 20 à 30 s'explique par 20 + 10. Se raccrocher à la multiplication 2 est une erreur fréquente.",
+    "hint": "Accroissement fixe, à calculer."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "14, 18, ?, 30, 34",
+    "prompt": "Quel terme manque ?",
+    "options": ["26", "22", "24"],
+    "answer": "26",
+    "explanation": "Le modèle fixe est par addition de 4. Ainsi, 18 + 4 = 22, conduisant à 26. Un défi commun est d'oublier cette increment, bien que direct.",
+    "hint": "Cherche des incréments faciles, régulièrement."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "15, ?, 35, 45, 55",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["25", "23", "27"],
+    "answer": "25",
+    "explanation": "Chacun des ajouts est de 10. Après 15 + 10, nous obtenons 25. Une fausse prise d'une série limitée par 15 + 2 est un piège assez fréquent.",
+    "hint": "Les valeurs croissent régulièrement selon un plan connu."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "9, 13, ?, 21, 25, 29",
+    "prompt": "Quel terme manque ?",
+    "options": ["17", "16", "18"],
+    "answer": "17",
+    "explanation": "La suite suit un modèle avec chaque pas descendant par ajout de 4. Après 13, 13 + 4 produit 17. Se tromper et amplifier ces incréments serait une erreur courante.",
+    "hint": "Un modèle fixe basée sur la somme identique."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "33, 36, ?, 42, 45",
+    "prompt": "Quel terme manque ?",
+    "options": ["39", "38", "40"],
+    "answer": "39",
+    "explanation": "Chaque addition est de 3. Alors 36 + 3 produit 39. Erreur potentielle: addition irrégulière non respectant le modèle.",
+    "hint": "Cherche : une régularité cachée."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "4, 8, ?, 16, 20",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["12", "10", "14"],
+    "answer": "12",
+    "explanation": "Le modèle révèle une augmentation de 4. Le chiffre après 8, donc, est 12. Résister à la tentation de fausse progression irrégulière est un challenge.",
+    "hint": "Additionne le même chiffre chaque fois."
+  },
+  {
+    "difficulty": "Moyenne",
+    "sequence_text": "12, 20, 28, ?, 44",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["36", "34", "38"],
+    "answer": "36",
+    "explanation": "Chacune des valeurs a une addition de 8 successive, donc après 28, nous avons 36. Une mauvaise lecture de la suite peut causer des trapèzes.",
+    "hint": "Un modèle constant est appliqué."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 4, 8, 14, 22, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["32", "34", "30"],
+    "answer": "32",
+    "explanation": "Il semble que chaque nombre n est obtenu en augmentant de n-1 termes pour chacun de ses augmentations. Donc après n = 22, il y a n+10 soit 32. Le piège commun pourrait être de manquer le plan due à ces progressions.",
+    "hint": "Incrément progressif des additions."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 3, 5, 8, ?, 21",
+    "prompt": "Quel terme manque ?",
+    "options": ["13", "14", "15"],
+    "answer": "13",
+    "explanation": "Cette séquence est basée sur la suite de Fibonacci, où chaque terme est la somme des deux précédents. Ainsi, 5 + 8 = 13. Beaucoup peuvent commettre l'erreur de supposer une simple addition modeste.",
+    "hint": "Une fameuse suite où chaque chiffre se poursuit."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 4, 9, 19, 40, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["82", "81", "83"],
+    "answer": "82",
+    "explanation": "Chaque nombre est plus que le double du précédent : 4 (4 = 2 x 2 + 2), 9 (9 ≈ 4 x 2 + 1), et ainsi de suite jusqu'à 19 x 2 + 1 = 40. Une erreur courante est de ne pas identifier correctement le motif d'addition.",
+    "hint": "Pensez à un modèle qui ajoute avec un facteur connu."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 2, 6, 24, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["120", "115", "110"],
+    "answer": "120",
+    "explanation": "C'est la suite des factoriels : 1! = 1, 2! = 2, 3! = 6, 4! = 24, donc 5! = 120. Un piège est de croire que c'est une simple progression géométrique.",
+    "hint": "Règle de mathématiques de base, mais forte."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "3, 5, 11, 21, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["41", "43", "40"],
+    "answer": "41",
+    "explanation": "La différence entre 3 et 5 est de 2, puis entre 5 et 11=6 (et ainsi via multiplication). Ainsi après 21, il y a 20 unités donnant 41. Tous les tentatifs à deviner autre motif errent.",
+    "hint": "Incrémenter avec des étapes croissantes."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 1, 2, 6, ?, 720",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["24", "120", "60"],
+    "answer": "24",
+    "explanation": "Il s'agit de la factorielle augmentant progressivement multipliée de 2 dans l'ordre; le prochain est 4! = 24. On peut se méprendre à penser que le motif serait une somme.",
+    "hint": "Cherche une suite mathématique classique, mais pas évidente."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "5, 15, 35, 70, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["126", "140", "122"],
+    "answer": "126",
+    "explanation": "Chacune des valeurs ici dérive des sommes de triangles eux-mêmes: T_4 = 10, T_5 = 15 + 20 = 35, voire 35 + 35 = 70. Son défaut est de supposer une racine carrée au lieu d'une progression de figures.",
+    "hint": "Les figures géométriques cachent la clef de la réponse."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 8, 27, 64, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["125", "111", "132"],
+    "answer": "125",
+    "explanation": "La suite suit les cubes de nombres : 1³, 2³, 3³, 4³, donc 5³ = 125. Se tromper en prenant une suite carrée est le piège à éviter.",
+    "hint": "Pense à l'exponentiation... mais avec un autre modèle."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 3, 7, 15, 31, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["63", "64", "62"],
+    "answer": "63",
+    "explanation": "La règle est que chaque nombre est (2^n - 1). Après 31, c'est 2^6 - 1, soit 63. Le piège habite dans l'effort à stabiliser progressions classiques.",
+    "hint": "Utilise une puissance de deux modifiée."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "2, 4, 7, 11, 16, ?",
+    "prompt": "Quel nombre complète la suite ?",
+    "options": ["22", "20", "24"],
+    "answer": "22",
+    "explanation": "En additionnant +2, +4, +3, +5, on continue avec +6, ce qui donne 22. La confusion est d'attende à une règle modifiée ou simple.",
+    "hint": "Variante de Fibonacci joué."
+  },
+  {
+    "difficulty": "Difficile",
+    "sequence_text": "1, 2, 6, ?, 120, 720",
+    "prompt": "Quel terme manque ?",
+    "options": ["24", "30", "20"],
+    "answer": "24",
+    "explanation": "C'est une suite de Factorielle : suivent 1!, 2!, 3!, puis on conclut avec 4! = 24. Probablement, on pourrait croire à une addition modérée.",
+    "hint": "Trouve un modèle classique, simplicité mêlée à complexité."
+  }
+]
+```

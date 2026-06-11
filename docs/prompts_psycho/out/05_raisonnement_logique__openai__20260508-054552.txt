@@ -1,0 +1,604 @@
+[
+    {
+        "difficulty": "Facile",
+        "question": "Que peut-on en déduire ?",
+        "prompt": "Toutes les roses rouges ont des épines. Cette fleur est une rose rouge.",
+        "options": [
+            "Cette fleur n'a pas d'épines",
+            "Cette fleur a des épines",
+            "Cette fleur est sans odeur",
+            "Cette fleur est un cactus"
+        ],
+        "answer": "Cette fleur a des épines",
+        "explanation": "Il s'agit d'un syllogisme classique. Toutes les roses rouges ont des épines, et cette fleur est une rose rouge. Donc, par transitivité, cette fleur a des épines.",
+        "hint": "Rappelle-toi que toutes les instances d'une catégorie partagent les mêmes propriétés."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle couleur est le chapeau de Pierre ?",
+        "prompt": "Si le chapeau de Pierre est rouge, alors celui de Paul est bleu. Le chapeau de Paul est bleu.",
+        "options": [
+            "Le chapeau de Pierre est rouge",
+            "Le chapeau de Pierre n'est pas rouge",
+            "Le chapeau de Pierre est vert",
+            "On ne peut pas savoir"
+        ],
+        "answer": "On ne peut pas savoir",
+        "explanation": "La condition ne fonctionne que dans un sens : 'Si rouge, alors bleu' ne signifie pas nécessairement 'Si bleu, alors rouge'. Ainsi, même si le chapeau de Paul est bleu, cela ne confirme ni infirme quoi que ce soit sur le chapeau de Pierre.",
+        "hint": "Attention à ne pas inverser les conditions logiques."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui arrive en premier ?",
+        "prompt": "Anna arrive avant Louis. Louis arrive avant Max.",
+        "options": [
+            "Anna",
+            "Louis",
+            "Max",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Anna",
+        "explanation": "En ordonnant : Anna > Louis > Max. Puisque Anna arrive avant tout le monde, Anna est la première.",
+        "hint": "Construis une chaîne d'ordres."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qu'est-ce que l'équipage doit vérifier ensuite ?",
+        "prompt": "Si tous les gilets de sauvetage sont rangés, alors le bateau est prêt à partir. Les gilets de sauvetage sont rangés.",
+        "options": [
+            "Le bateau est prêt à partir",
+            "Il manque quelque chose",
+            "On ne peut pas partir encore",
+            "Vérifiez les gilets de sauvetage à nouveau"
+        ],
+        "answer": "Le bateau est prêt à partir",
+        "explanation": "Le raisonnement ici suit la structure du modus ponens : si les gilets de sauvetage sont rangés, alors le bateau est prêt. Comme ils sont rangés, la conclusion logique est que le bateau est prêt.",
+        "hint": "Pense en termes de cause à effet."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel fruit est considéré ?",
+        "prompt": "Tous les oranges sont des fruits. Ce que Marc mange est une orange.",
+        "options": [
+            "Marc mange un légume",
+            "Marc mange un fruit",
+            "Marc mange un dessert",
+            "Marc mange un aliment salé"
+        ],
+        "answer": "Marc mange un fruit",
+        "explanation": "C'est un syllogisme logique : toutes les oranges sont des fruits et Marc mange une orange. Conclusion, Marc mange donc un fruit.",
+        "hint": "Concentre-toi sur le lien entre l'appartenance et la catégorie."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle température fera-t-il aujourd'hui ?",
+        "prompt": "Si le ciel est dégagé, alors il fera chaud aujourd'hui. Le ciel est dégagé.",
+        "options": [
+            "Il fera froid",
+            "Il neigera",
+            "Il fera chaud",
+            "Le ciel est nuageux"
+        ],
+        "answer": "Il fera chaud",
+        "explanation": "Utilisons le modus ponens : à condition que le ciel soit dégagé, il fera chaud. Comme le ciel l'est, on en déduit logiquement qu'il fera chaud.",
+        "hint": "Rappelle-toi la structure 'Si A, alors B'."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel véhicule séduit le client ?",
+        "prompt": "Toutes les voitures électriques sont silencieuses. Le client a choisi une voiture électrique.",
+        "options": [
+            "Le véhicule est bruyant",
+            "Le véhicule est silencieux",
+            "Le véhicule est rapide",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le véhicule est silencieux",
+        "explanation": "C'est un syllogisme simple : toutes les voitures électriques sont silencieuses et le client choisit une telle voiture. Ainsi, logiquement, le véhicule choisi est silencieux.",
+        "hint": "Souviens-toi de la relation d'inclusion."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Le frère de Paul a combien de sœurs ?",
+        "prompt": "Paul a deux sœurs et un frère.",
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        "answer": "2",
+        "explanation": "Le frère de Paul a les mêmes sœurs que Paul puisqu'ils partagent la même fratrie. Donc, le frère de Paul a aussi deux sœurs.",
+        "hint": "Pense à la structure familiale identique."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel livre est le plus épais ?",
+        "prompt": "Le livre A est plus épais que le livre B. Le livre B est plus épais que le livre C.",
+        "options": [
+            "Livre A",
+            "Livre B",
+            "Livre C",
+            "Livre D"
+        ],
+        "answer": "Livre A",
+        "explanation": "En classant les livres : A > B > C. Le livre A est donc le plus épais.",
+        "hint": "Construis une chaîne d'épaisseurs."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est le statut du projet ?",
+        "prompt": "Si le projet est terminé, alors le rapport est écrit. Le projet est terminé.",
+        "options": [
+            "Le rapport est en cours",
+            "Le projet est annulé",
+            "Le rapport est écrit",
+            "On doit encore écrire le rapport"
+        ],
+        "answer": "Le rapport est écrit",
+        "explanation": "Encore une fois, il s'agit du modus ponens. Étant donné que le projet est terminé et qu'un projet terminé signifie un rapport écrit, le rapport l'est donc logiquement aussi.",
+        "hint": "Découle la condition directement."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui s'assoit en tête de table ?",
+        "prompt": "Si Marc est là, Ana s'assoit en tête de table. Marc est présent.",
+        "options": [
+            "Ana s'assoit ailleurs",
+            "Ana n'est pas là",
+            "Ana s'assoit en tête de table",
+            "Marc s'assoit en tête de table"
+        ],
+        "answer": "Ana s'assoit en tête de table",
+        "explanation": "Toujours selon la logique du modus ponens : la présence de Marc implique qu'Ana s'assoit en tête de table. Comme Marc est là, Ana est à cette place.",
+        "hint": "Cherche la conséquence immédiate liée à Marc."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'état du paquet ?",
+        "prompt": "Si le paquet est livré, alors il est signé à la réception. Le paquet a été livré.",
+        "options": [
+            "Le paquet n'était pas signé",
+            "Le paquet est perdu",
+            "Le paquet est signé",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le paquet est signé",
+        "explanation": "Le modus ponens nous aide ici aussi. Puisque le paquet est livré et que cela entraîne une signature, le paquet doit donc être signé.",
+        "hint": "Vérifie la condition après livraison."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel étage est le plus élevé ?",
+        "prompt": "L'étage 5 est au-dessus de l'étage 3. L'étage 3 est au-dessus de l'étage 1.",
+        "options": [
+            "Étage 1",
+            "Étage 3",
+            "Étage 5",
+            "Étage 2"
+        ],
+        "answer": "Étage 5",
+        "explanation": "En rangeant les étages par hauteur : 5 > 3 > 1. L'étage 5 est donc le plus élevé.",
+        "hint": "Décompose la chaîne d'ordres en hauteur."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui mange des pommes ?",
+        "prompt": "Si Noël mange des pommes, alors Marie en mange aussi. Noël mange des pommes.",
+        "options": [
+            "Marie ne mange pas de pommes",
+            "Marie mange des pommes",
+            "Noël mange des poires",
+            "Marie mange des poires"
+        ],
+        "answer": "Marie mange des pommes",
+        "explanation": "C'est un raisonnement basé sur le modus ponens. La consommation de pommes par Noël entraîne que Marie en mange également. Noël mange des pommes, donc Marie en mange aussi.",
+        "hint": "Fie-toi à la conséquence conditionnelle."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui arrive en dernier ?",
+        "prompt": "Thomas arrive après Émilie. Émilie arrive après Alex.",
+        "options": [
+            "Alex",
+            "Émilie",
+            "Thomas",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Thomas",
+        "explanation": "En rangant : Alex > Émilie > Thomas. Ce qui signifie que Thomas arrive en dernier.",
+        "hint": "Range les participants par ordre."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quelle maison est la plus loin ?",
+        "prompt": "La maison B est plus loin que la maison A. La maison C est plus loin que la maison B.",
+        "options": [
+            "Maison A",
+            "Maison B",
+            "Maison C",
+            "Maison D"
+        ],
+        "answer": "Maison C",
+        "explanation": "En construisant la relation de distance : C > B > A. La maison C est donc la plus éloignée.",
+        "hint": "Établis l'ordre de distance pour être sûr."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Qui lit le plus ?",
+        "prompt": "Léa lit plus que Paul. Paul lit plus que Sarah.",
+        "options": [
+            "Léa",
+            "Paul",
+            "Sarah",
+            "Inconnu"
+        ],
+        "answer": "Léa",
+        "explanation": "Classons les personnes par quantité de lecture : Léa > Paul > Sarah. Par conséquent, Léa lit le plus.",
+        "hint": "Note l'ordre croissant."
+    },
+    {
+        "difficulty": "Facile",
+        "question": "Quel est l'état de l'ordinateur ?",
+        "prompt": "Si l'ordinateur est allumé, alors il fonctionne. L'ordinateur est allumé.",
+        "options": [
+            "Il est éteint",
+            "Il ne fonctionne pas",
+            "Il fonctionne",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Il fonctionne",
+        "explanation": "La structure est celle du modus ponens. Étant donné que l'ordinateur est allumé, il doit donc logiquement être en fonctionnement.",
+        "hint": "Rappelle-toi le lien direct entre un état et sa conséquence."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quelle était la température initiale ?",
+        "prompt": "Si la température descend sous zéro, la piscine gèle. La piscine est gelée.",
+        "options": [
+            "Il faisait plus que 0°C",
+            "Il faisait précisément 0°C",
+            "Il faisait moins que 0°C",
+            "Il fait 10°C"
+        ],
+        "answer": "Il faisait moins que 0°C",
+        "explanation": "Le raisonnement utilise la contraposition : si la piscine gèle, alors il faut que la température descende en dessous de zéro. Comme cet état est bien là, la température initiale était sous zéro.",
+        "hint": "Inverser les conditions peut parfois donner la réponse."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'est-ce que Julia a acheté ?",
+        "prompt": "Si Julia achète des fraises, alors elle achète du sucre. Elle a du sucre chez elle.",
+        "options": [
+            "Elle a acheté des fraises",
+            "Elle a acheté des pommes",
+            "Elle n'a pas acheté de fraises",
+            "Elle a acheté des bananes"
+        ],
+        "answer": "Elle a acheté des fraises",
+        "explanation": "C'est un argument par modus ponens inversé : la présence de sucre implique l'achat de fraises selon la condition donnée.",
+        "hint": "Cherche à inverser l'implication initiale."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le prochain événement ?",
+        "prompt": "Si le ciel devient nuageux, alors il pleuvra. Le ciel est nuageux.",
+        "options": [
+            "Il y a une tempête",
+            "Il fait beau",
+            "Il pleut",
+            "On ne peut pas dire"
+        ],
+        "answer": "Il pleut",
+        "explanation": "Par modus ponens, le ciel nuageux entraîne logiquement la pluie. L'observation du ciel nuageux nous permet ainsi de conclure que l'averse arrive.",
+        "hint": "Note le lien entre événement et cause."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Comment réagit le père de Paul ?",
+        "prompt": "Si Paul échoue à son examen, son père sera déçu. Paul a échoué.",
+        "options": [
+            "Son père est déçu",
+            "Son père est content",
+            "Son père n'est pas affecté",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Son père est déçu",
+        "explanation": "Cet énoncé suit la structure du modus ponens. Paul échouant à son examen, la conséquence logique est que son père est déçu.",
+        "hint": "Suis les implications naturelles des événements."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel fruit a-t-elle mangé ?",
+        "prompt": "Si elle mange des pommes, alors elle boit du jus de pomme. Si elle boit du jus de pomme, alors elle mange aussi des kiwis. Elle mange des kiwis.",
+        "options": [
+            "Elle mange des pommes",
+            "Elle mange des poires",
+            "Elle ne mange pas de pommes",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Elle mange des pommes",
+        "explanation": "C'est un syllogisme par transitivité. La consommation de pommes implique le jus de pomme, qui implique les kiwis. Elle mange des kiwis, ce qui suit cette chaîne de conséquences, donc elle mange aussi des pommes.",
+        "hint": "Suis la chaîne de relations logiques."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le statut de leur relation ?",
+        "prompt": "Si Pierre appelle Léa, c'est qu'ils se réconcilient. Si Léa ne répond pas, Pierre est triste. Léa ne répond pas.",
+        "options": [
+            "Ils se réconcilient",
+            "Léa ne veut plus parler à Pierre",
+            "Pierre est triste",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Pierre est triste",
+        "explanation": "Par la relation de cause à effet en plusieurs étapes, le non-réponse de Léa entraîne la tristesse de Pierre, comme indiqué dans le prompt.",
+        "hint": "Enchaîne les conditions pour trouver le résultat."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le dernier numéro tiré ?",
+        "prompt": "Lors d'un tirage, si le numéro 3 est tiré, alors le numéro 7 l'est aussi. Si le numéro 7 est tiré, alors le numéro 4 est également sorti. Le numéro 4 est tiré.",
+        "options": [
+            "Le numéro 3 est tiré",
+            "Le numéro 7 n'est pas tiré",
+            "Le numéro 7 est tiré",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le numéro 7 est tiré",
+        "explanation": "C'est une suite logique : tirer le numéro 4 confirme le tirage du numéro 7 qui, en retour, pourrait confirmer le tirage du numéro 3.",
+        "hint": "Reviens sur la chaîne avec les infos fournies."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qu'est-ce que Julie a décidé ?",
+        "prompt": "Si Julie part en vacances, alors elle va à la montagne. Elle a décidé de partir en vacances.",
+        "options": [
+            "Elle va à la plage",
+            "Elle ne va pas à la montagne",
+            "Elle va à la montagne",
+            "Elle ne part pas en vacances"
+        ],
+        "answer": "Elle va à la montagne",
+        "explanation": "L'énoncé suit la logique du modus ponens. Le départ en vacances de Julie implique automatiquement qu'elle se rende à la montagne, selon les prémisses fournies.",
+        "hint": "Cerner le lien direct entre décision et destination."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le choix de Fabien ?",
+        "prompt": "Si Fabien choisit un dessert, il choisit un gâteau. Il choisit un dessert.",
+        "options": [
+            "Il choisit une glace",
+            "Il choisit un gâteau",
+            "Il ne choisit pas de dessert",
+            "Il choisit des fruits"
+        ],
+        "answer": "Il choisit un gâteau",
+        "explanation": "Ce raisonnement utilise le modus ponens. Le choix de Fabien d'un dessert implique le choix d'un gâteau d'après les prémisses.",
+        "hint": "S'appuyer sur la découle logique des choix."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Qui a vu quoi ?",
+        "prompt": "Si Carole voit un oiseau, alors Marc voit un chat. Marc n'a pas vu de chat.",
+        "options": [
+            "Carole a vu un oiseau",
+            "Carole n'a pas vu un oiseau",
+            "Carole a vu deux oiseaux",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Carole n'a pas vu un oiseau",
+        "explanation": "Nous utilisons ici le raisonnement par contraposition : si Marc n’a pas vu de chat, alors Carole n’a pas pu voir d’oiseau.",
+        "hint": "Utilise la négation pour déduire le contraire."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est le prix du stand ?",
+        "prompt": "Si le stand de fruits est ouvert, le jus est à 2 euros. Le stand de fruits est fermé.",
+        "options": [
+            "Le jus est toujours à 2 euros",
+            "Le jus est gratuit",
+            "Il n'y a pas de jus en vente",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Il n'y a pas de jus en vente",
+        "explanation": "Étant donné que le stand de fruits est fermé et qu'un jus à 2 euros est conditionnel à son ouverture, il ne peut donc pas y avoir de vente de jus.",
+        "hint": "Cherche l'effet d'invalidation de la condition."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel est l'état du jardin ?",
+        "prompt": "Si le jardin est arrosé, alors les fleurs poussent. Les fleurs ne poussent pas.",
+        "options": [
+            "Le jardin est arrosé",
+            "Le jardin n'est pas arrosé",
+            "Les fleurs poussent",
+            "On ne peut pas savoir"
+        ],
+        "answer": "Le jardin n'est pas arrosé",
+        "explanation": "En appliquant la contraposition : si les fleurs ne poussent pas, cela signifie nécessairement que le jardin n'a pas été arrosé.",
+        "hint": "Inverser les prémisses peut mener à des conclusions importantes."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel ensemble est ouvert ?",
+        "prompt": "Si le magasin de jouets est ouvert, alors le parc est ouvert. Si le parc est ouvert, le café est ouvert. Le magasin de jouets est ouvert.",
+        "options": [
+            "Le café est ouvert",
+            "Le parc est fermé",
+            "Le café est fermé",
+            "Le parc est ouvert"
+        ],
+        "answer": "Le café est ouvert",
+        "explanation": "Ce raisonnement par enchaînement logique nous dit : magasin ouvert implique parc ouvert, qui à son tour entraîne le café ouvert. Le magasin de jouets étant ouvert, le café l'est aussi.",
+        "hint": "Crée une chaîne de conséquences."
+    },
+    {
+        "difficulty": "Moyenne",
+        "question": "Quel repas est commandé ?",
+        "prompt": "Si Sarah commande une soupe, alors elle commande aussi une salade. Si elle commande une salade, elle commande du pain. Sarah a commandé une salade.",
+        "options": [
+            "Elle commande du pain",
+            "Elle ne commande pas de soupe",
+            "Elle ne commande pas de salade",
+            "Elle se contente d'une soupe"
+        ],
+        "answer": "Elle commande du pain",
+        "explanation": "Ce syllogisme par transitivité nous montre que commander une salade implique de facto de commander du pain, comme indiqué dans les prémisses.",
+        "hint": "Poursuis la chaîne de conséquences logiques."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "À quelle position terminez-vous si vous doublez le coureur en 3ème position ?",
+        "prompt": "Dans une course, vous doublez le coureur en 3ème position juste avant la ligne d'arrivée.",
+        "options": [
+            "1ère",
+            "2ème",
+            "3ème",
+            "4ème"
+        ],
+        "answer": "3ème",
+        "explanation": "En doublant le 3ème, vous prenez sa place et devenez à votre tour le 3ème. Les deux premiers n'ont pas été affectés par ce dépassement.",
+        "hint": "Il est crucial de ne pas confondre doublement et passage en tête."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Julie actuellement ?",
+        "prompt": "Julie a 5 ans de plus que sa sœur. Dans 3 ans, elle aura deux fois l'âge actuel de sa sœur.",
+        "options": [
+            "10 ans",
+            "11 ans",
+            "12 ans",
+            "13 ans"
+        ],
+        "answer": "12 ans",
+        "explanation": "Soit S l'âge actuel de la sœur. Alors Julie a S+5 ans. Dans 3 ans, 2(S+3) = S+8. Résolution: 12 = S+5, donc Julie a actuellement 12 ans.",
+        "hint": "Exprime l'âge futur et équationne."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est votre nouvelle position en doublant le 4ème ?",
+        "prompt": "Dans une course, juste avant l'arrivée, vous doublez le 4ème coureur. Quelle est alors votre position ?",
+        "options": [
+            "1ère",
+            "3ème",
+            "4ème",
+            "5ème"
+        ],
+        "answer": "4ème",
+        "explanation": "En doublant le 4ème, vous récupérez sa position, vous positionnant vous-même à la 4ème place. Ceux devant lui ne sont pas affectés.",
+        "hint": "Avez-vous bien pris le relais de la même place ?"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a le père de Lucas ?",
+        "prompt": "Lucas a un tiers de l'âge de son père. Dans 12 ans, il en aura la moitié.",
+        "options": [
+            "24 ans",
+            "36 ans",
+            "48 ans",
+            "60 ans"
+        ],
+        "answer": "36 ans",
+        "explanation": "Soit L l'âge actuel de Lucas. Voila : 3L = âge du père. Dans 12 ans, 3(L+12) = 2L+24. Résollution nous mène à L=12, donc 3x12 = 36.",
+        "hint": "Réduis le problème à une équation d'années futures."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'âge de Carmen aujourd'hui ?",
+        "prompt": "Carmen a quatre fois l'âge de son fils. Dans 8 ans, elle aura encore deux fois cet âge.",
+        "options": [
+            "32 ans",
+            "40 ans",
+            "48 ans",
+            "56 ans"
+        ],
+        "answer": "40 ans",
+        "explanation": "Si f est l'âge du fils, alors 4f = âge de Carmen. Dans 8 ans : 4f+8=2(f+8). Cela donne : 4f+8=2f+16. Résolution: f=8. Donc Carmen a 4*8 = 32.",
+        "hint": "Exprime une équation d'années futures."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel est l'ordre des coureurs à l'arrivée après que vous doublez le 5ème coureur ?",
+        "prompt": "Vous êtes en 6ème position au début. Vous doublez le 5ème coureur juste avant la fin.",
+        "options": [
+            "1er",
+            "5ème",
+            "6ème",
+            "4ème"
+        ],
+        "answer": "5ème",
+        "explanation": "En dépassant le 5ème, vous récupérez sa position, prenant vous-même la 5ème position. Vous ne affectez pas ceux au-dessus de lui (top 4).",
+        "hint": "Quel numéro dans le classement avez-vous prisomaine?"
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien y a-t-il de couples de billets ?",
+        "prompt": "Alice a deux fois plus de billets de 10 euros que de billets de 20. Il y a en tout 200 euros.",
+        "options": [
+            "5",
+            "7",
+            "8",
+            "10"
+        ],
+        "answer": "5",
+        "explanation": "Si x est le nombre de billets de 20 euros, alors 2x sont ceux de 10 euros. La somme : 20x + 10(2x) = 200. Résolution: 40x = 200, donc x=5. 5 couples, donc 15 billets en total.",
+        "hint": "Transforme le problème en équation."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel numéro tire Pierre lors du tirage ?",
+        "prompt": "Dans un chapeau, il y a 10 boules, numérotées de 1 à 10. Sur 10 essais, Pierre tire un numéro différent à chaque fois sauf une fois où il tire le numéro 7, deux fois.",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "answer": "7",
+        "explanation": "Pierre a tiré le 7 deux fois, ce qui signifie qu'il a un double tirage pour ce numéro selon les conditions du prompt où il ne double une seule fois.",
+        "hint": "Notez la seule répétition autorisée."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quel âge a Sophie ?",
+        "prompt": "Sophie a 3 ans de moins que sa sœur Lyne. Dans 5 ans, elle aura la moitié de l'âge de leur mère.",
+        "options": [
+            "20 ans",
+            "22 ans",
+            "24 ans",
+            "26 ans"
+        ],
+        "answer": "24 ans",
+        "explanation": "Appelons L l'âge de Lyne, S celui de Sophie et M la mère. S=L-3, 2(S+5)=M+5. Résollu: L=24, donc S=21. Pas possible, donc Lyne a 24, Sophie 24-3, donc 21.",
+        "hint": "Passe par une équation d'années augmentées."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Combien y a-t-il de chaises dans le jardin ?",
+        "prompt": "Il y a trois fois plus de chaises que de tables dans le jardin. Chaque table peut accueillir 4 chaises. Au total, il y a 28 emplacements disponibles.",
+        "options": [
+            "16",
+            "18",
+            "20",
+            "22"
+        ],
+        "answer": "16",
+        "explanation": "Soit T le nombre de tables, donc 3T le nombre de chaises. Avec chaque table accueillant 4 chaises, et chaises / tables rendues : 4T + 4T = 28. Résolution: T=4, donc 4 chaises/table, soit 16 chaises au total.",
+        "hint": "Transforme en équation lineaire."
+    },
+    {
+        "difficulty": "Difficile",
+        "question": "Quelle est la différence d'âge entre Claude et son cousin ?",
+        "prompt": "Claude a deux fois l'âge de son cousin. Dans 5 ans, la différence sera encore la même.",
+        "options": [
+            "5 ans",
+            "10 ans",
+            "15 ans",
+            "20 ans"
+        ],
+        "answer": "10 ans",
+        "explanation": "Être actuellement deux fois plus vieux signifie qu'il maintient cette différence (Cousin = c, Claude = 2c, donc 2c-c=10). 5 ans après, (c+5)-(3c+5)=10.",
+        "hint": "Réduis les deux âges à une simple équation."
+    }
+]

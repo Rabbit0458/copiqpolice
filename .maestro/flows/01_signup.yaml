@@ -1,0 +1,52 @@
+# COP'IQ — E2E Flow 01 : Inscription (signup)
+# Référence : docs/cas_pratique/PROGRESSION_CODE.md — CODE-099
+# Prérequis : app lancée sur émulateur/device, compte TEST_EMAIL non existant
+
+appId: fr.copiq.app
+---
+- launchApp:
+    clearState: true
+
+# Attendre le splash puis l'écran avertissement
+- waitForAnimationToEnd:
+    timeout: 5000
+
+# Passer l'écran d'avertissement si présent
+- optional:
+    - tapOn:
+        text: "J'ai compris"
+
+# Passer l'onboarding
+- optional:
+    - swipeLeft
+    - swipeLeft
+    - swipeLeft
+    - tapOn:
+        text: "Démarrer"
+
+# Aller vers inscription
+- tapOn:
+    text: "Créer un compte"
+
+- waitForAnimationToEnd
+
+# Remplir le formulaire
+- tapOn:
+    id: "email_field"
+- clearText
+- inputText: "${TEST_EMAIL:-copiq_e2e_test@mailsink.dev}"
+
+- tapOn:
+    id: "password_field"
+- clearText
+- inputText: "${TEST_PASSWORD:-E2eTest2026!}"
+
+- tapOn:
+    text: "S'inscrire"
+
+- waitForAnimationToEnd:
+    timeout: 10000
+
+# Vérifier qu'on est bien loggué (home visible)
+- assertVisible:
+    text: "COP'IQ"

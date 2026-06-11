@@ -209,12 +209,12 @@ class _EmptyStateScrollable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      physics: const AlwaysScrollableScrollPhysics(
+    return const SingleChildScrollView(
+      physics: AlwaysScrollableScrollPhysics(
         parent: BouncingScrollPhysics(),
       ),
-      padding: const EdgeInsets.symmetric(vertical: 80),
-      child: const _EmptyState(),
+      padding: EdgeInsets.symmetric(vertical: 80),
+      child: _EmptyState(),
     );
   }
 }

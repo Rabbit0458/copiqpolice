@@ -1,0 +1,398 @@
+[
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 34 + 19 ?",
+    "expression": "34 + 19",
+    "options": ["53", "54", "55", "56"],
+    "answer": "53",
+    "explanation": "34 + 19 peut être vu comme 34 + 20 − 1 = 54 − 1 = 53. L'astuce est d'arrondir 19 à 20 pour simplifier, puis ajuster en soustrayant 1. Attention à ne pas oublier la dernière soustraction de 1.",
+    "hint": "Arrondis d'abord 19 à 20 pour faciliter le calcul."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le double de 23 ?",
+    "expression": "23 × 2",
+    "options": ["44", "46", "48", "50"],
+    "answer": "46",
+    "explanation": "Le double de 23 est simplement 23 + 23 = 46. Il s'agit ici de faire une addition rapide. Un piège classique est de ne pas aligner correctement les chiffres.",
+    "hint": "Pense à une addition répétée : 23 + 23."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 81 divisé par 9 ?",
+    "expression": "81 / 9",
+    "options": ["8", "9", "10", "11"],
+    "answer": "9",
+    "explanation": "81 divisé par 9 revient à trouver combien de fois 9 entre dans 81. 9 × 9 = 81, donc le résultat est 9. Ne pas confondre avec un multiplié par erreur en raison de chiffres similaires.",
+    "hint": "Pense à quel nombre fois 9 fait 81."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Calculez 50 % de 120.",
+    "expression": "0,5 × 120",
+    "options": ["50", "60", "70", "80"],
+    "answer": "60",
+    "explanation": "50 % de 120 est la moitié de 120. Donc 120 / 2 = 60. Souvent, le piège est de mal interpréter 50 % et de confondre avec 0,5 fois un chiffre incorrect.",
+    "hint": "La moitié d'un nombre est simplement ce nombre divisé par 2."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Calculer 7 × 8.",
+    "expression": "7 × 8",
+    "options": ["54", "56", "58", "60"],
+    "answer": "56",
+    "explanation": "7 × 8 = 56 est un produit de table de multiplication. Connaître les produits courants aide à éviter les erreurs. Un piège serait une confusion avec un nombre proche, comme 8 × 7.",
+    "hint": "Utilise la table de multiplication pour 7."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 65 − 22 ?",
+    "expression": "65 − 22",
+    "options": ["42", "43", "44", "45"],
+    "answer": "43",
+    "explanation": "65 − 22 = 43. Pensez à effectuer le calcul chiffres par chiffres, comme 65 − 20 = 45, puis 45 − 2 = 43. Le piège ici est de ne pas gérer correctement les soustractions avec retenue.",
+    "hint": "Fais d'abord 65 − 20, puis soustrais 2."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le triple de 15 ?",
+    "expression": "15 × 3",
+    "options": ["40", "45", "50", "55"],
+    "answer": "45",
+    "explanation": "Le triple de 15 est 15 + 15 + 15 = 45. C'est un calcul direct, mais attention à bien additionner toutes les occurrences si vous utilisez l'addition au lieu de la multiplication directe.",
+    "hint": "Multiplie 15 par 3 directement pour un compte rapide."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le résultat de 48 / 6 ?",
+    "expression": "48 / 6",
+    "options": ["6", "7", "8", "9"],
+    "answer": "8",
+    "explanation": "48 divisé par 6 donne 8, car 6 multiplié par 8 donne 48. Une erreur commune pourrait être de confondre la multiplication croisée et d'opter pour un mauvais produit.",
+    "hint": "Cherche combien de fois 6 entre dans 48."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Calculez 15 % de 80.",
+    "expression": "0,15 × 80",
+    "options": ["8", "10", "12", "15"],
+    "answer": "12",
+    "explanation": "15 % de 80 revient à trouver 15 sur 100 de 80, c'est-à-dire (80 × 15) / 100 = 12. Un piège classique est de simplement multiplier par 10 % et oublier les 5 % supplémentaires (la moitié de 10 %).",
+    "hint": "Calcule d'abord 10 % puis 5 % et ajoute-les."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 72 − 34 ?",
+    "expression": "72 − 34",
+    "options": ["38", "39", "40", "41"],
+    "answer": "38",
+    "explanation": "Pour 72 − 34, commence par 72 − 30 = 42, puis 42 − 4 = 38. Ne pas bien aligner les soustractions peut mener à des erreurs dans ce type de calcul.",
+    "hint": "Soustrais d'abord les dizaines, puis les unités."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Calculez 24 + 17.",
+    "expression": "24 + 17",
+    "options": ["39", "41", "43", "45"],
+    "answer": "41",
+    "explanation": "24 + 17 se décompose en 24 + 20 − 3 = 44 − 3 = 41. L'astuce consiste à simplifier en arrondissant 17 à la dizaine puis corriger en soustrayant l'excès.",
+    "hint": "Arrondis 17 à 20 puis ajuste en soustrayant 3."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le résultat de 54 divisé par 9 ?",
+    "expression": "54 / 9",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6",
+    "explanation": "54 divisé par 9 est 6, car 6 × 9 = 54. Une erreur fréquemment commise est d'ajouter ou de soustraire au mauvais endroit lorsqu'on vérifie par multiplication.",
+    "hint": "Vérifie la table de multiplication de 9."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quelle est la moitié de 36 ?",
+    "expression": "36 / 2",
+    "options": ["16", "17", "18", "19"],
+    "answer": "18",
+    "explanation": "36 divisé par 2 donne directement 18. Ce genre de question nécessite juste de diviser par deux mentalement. Veillez à bien diviser chaque partie du nombre si vous décomposez.",
+    "hint": "Divise le nombre total par 2 pour une moitié."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 18 × 3 ?",
+    "expression": "18 × 3",
+    "options": ["48", "52", "54", "56"],
+    "answer": "54",
+    "explanation": "18 × 3 est égal à 54 car on peut le voir comme 18 + 18 + 18. Un piège est de confondre et de faire une erreur dans le comptage à travers une addition répétée.",
+    "hint": "Multiplie directement ou additionne trois fois."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Que vaut 60 % de 50 ?",
+    "expression": "0,6 × 50",
+    "options": ["25", "30", "35", "40"],
+    "answer": "30",
+    "explanation": "60 % de 50, c'est 0,6 × 50 = 30. Un possible piège est de mal interpréter le pourcentage et utiliser 6 ou 0,06 par erreur.",
+    "hint": "60 % est comme 6/10, donc divise puis multiplie."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Quel est le carré de 9 ?",
+    "expression": "9²",
+    "options": ["71", "79", "81", "89"],
+    "answer": "81",
+    "explanation": "9² signifie 9 multiplié par lui-même: 9 × 9 = 81. Le carré d'un nombre est souvent confondu avec son double ou avec un espace de calcul insuffisant.",
+    "hint": "Multiplie 9 par 9 pour le carré."
+  },
+  {
+    "difficulty": "Facile",
+    "question": "Combien font 6% de 200 ?",
+    "expression": "0,06 × 200",
+    "options": ["10", "12", "18", "20"],
+    "answer": "12",
+    "explanation": "6 % de 200 revient à multiplier 200 par 0,06, ce qui donne 12. Le piège pourrait être de multiplier par 6 au lieu de par 0,06, faussant ainsi le résultat.",
+    "hint": "Multiplie par 0,06 ou trouve d'abord 1 % puis multiplie par 6."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Calculez 145 + 278.",
+    "expression": "145 + 278",
+    "options": ["413", "423", "433", "443"],
+    "answer": "423",
+    "explanation": "145 + 278 peut être décomposé en additionnant chiffres par chiffres : (145 + 200) + 70 + 8 = 423. L'erreur pourrait venir d'une mauvaise manipulation des dizaines lorsqu'on ajuste mentalement.",
+    "hint": "Additionne d'abord des centaines, puis dizaines et unités."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 680 − 275 ?",
+    "expression": "680 − 275",
+    "options": ["395", "405", "415", "425"],
+    "answer": "405",
+    "explanation": "680 − 275 se résout ainsi : 680 − 270 = 410, puis 410 − 5 = 405. Attention à ne pas oublier la soustraction finale, causant un écart.",
+    "hint": "Soustrais les plus faciles d'abord : d'abord 270, puis 5."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le carré de 16 ?",
+    "expression": "16²",
+    "options": ["236", "246", "256", "266"],
+    "answer": "256",
+    "explanation": "16², c'est 16 × 16 = 256. Une erreur courante est la confusion entre le carré et la multiplication par 2, ou une erreur de transport dans les calculs intermédiaires.",
+    "hint": "Multiplie 16 par 16, utilise la multiplication par décomposition si nécessaire."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Calculez 35 % de 120.",
+    "expression": "0,35 × 120",
+    "options": ["40", "42", "44", "46"],
+    "answer": "42",
+    "explanation": "Pour 35 % de 120, on fait : 120 × 0,35 = 42. Penser au calcul en deux étapes en prenant d'abord 10 % de 120 puis multipliant par 3,5 est utile.",
+    "hint": "Divise par 10 puis multiplie par 3,5."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 862 − 489 ?",
+    "expression": "862 − 489",
+    "options": ["373", "374", "375", "376"],
+    "answer": "373",
+    "explanation": "Pour faire le calcul 862 − 489 : d'abord, 862 − 400 = 462, puis 462 − 80 = 382, et enfin 382 − 9 = 373. Le piège est de perdre une retenue en cours de route.",
+    "hint": "Progression des soustractions : centaines, dizaines, unités."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le résultat de 73 × 6 ?",
+    "expression": "73 × 6",
+    "options": ["418", "428", "438", "448"],
+    "answer": "438",
+    "explanation": "73 × 6 peut être vu comme (70 × 6) + (3 × 6) = 420 + 18 = 438. Le piège est souvent de mal gérer la multiplication des unités.",
+    "hint": "Décompose en 70 × 6 et 3 × 6, puis additionne."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Calculez 154 × 5.",
+    "expression": "154 × 5",
+    "options": ["770", "780", "790", "800"],
+    "answer": "770",
+    "explanation": "154 × 5 = 770 car (150 × 5) + (4 × 5) = 750 + 20 = 770. Un piège typique est de ne pas séparer correctement les unités ou d'oublier une partie du calcul.",
+    "hint": "Calcule d'abord 150 × 5, puis ajoute 4 × 5."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 234 + 567 ?",
+    "expression": "234 + 567",
+    "options": ["791", "801", "811", "821"],
+    "answer": "801",
+    "explanation": "234 + 567 = 801, calculé par l'addition directe : (200 + 500 = 700), (30 + 60 = 90) et (4 + 7 = 11), puis 700 + 90 + 11 = 801. Piège : mauvaise addition des dizaines et unités avec retenue.",
+    "hint": "Additionne séparément les centaines, dizaines puis unités."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le résultat de 145 / 5 ?",
+    "expression": "145 / 5",
+    "options": ["27", "28", "29", "30"],
+    "answer": "29",
+    "explanation": "Pour 145 divisé par 5, décompose : 140 divisé par 5 = 28, et 5 divisé par 5 = 1, donc 28 + 1 = 29. La division pourrait être confuse à cause d'une approximation de la première opération.",
+    "hint": "Divise le nombre principal, puis ajoute le petit reste."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Calculez la valeur 17².",
+    "expression": "17²",
+    "options": ["278", "288", "298", "289"],
+    "answer": "289",
+    "explanation": "17² est 17 × 17, soit 289. Une décomposition peut aider : 17 × (10 + 7) = 170 + 119 = 289. Le piège est de s'emmêler dans les calculs intermédiaires.",
+    "hint": "Utilise la formule (a+b)² si cela aide : 10+7."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 912 − 345 ?",
+    "expression": "912 − 345",
+    "options": ["557", "567", "577", "587"],
+    "answer": "567",
+    "explanation": "912 moins 345 peut être simplifié par étapes : 912 − 300 = 612, 612 − 40 = 572, 572 − 5 = 567. Ne pas oublier la soustraction finale de 5 qui peut être un piège.",
+    "hint": "Décompose le calcul en plusieurs étapes : 100ens, 10aines, 1ité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Calculez 20 % de 350.",
+    "expression": "0,2 × 350",
+    "options": ["65", "70", "75", "80"],
+    "answer": "70",
+    "explanation": "20 % de 350, c'est 350 divisé par 5, donnant 70. Un piège popularisé est d'oublier que 20 % est 2/10, ou une cinquième partie du total.",
+    "hint": "Divise par 5 pour obtenir 20 % de la totalité."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Quel est le résultat de 38 × 25 ?",
+    "expression": "38 × 25",
+    "options": ["925", "950", "975", "1000"],
+    "answer": "950",
+    "explanation": "Pour 38 multiplié par 25 : 38 × 25 peut être aussi calculé comme (38 × 100) / 4 = 950. Le piège ici serait de ne pas bien diviser par 4 le produit intermédiaire, ou de choisir le mauvais facteur.",
+    "hint": "Traitement comme un quart de 3800."
+  },
+  {
+    "difficulty": "Moyenne",
+    "question": "Combien font 567 − 291 ?",
+    "expression": "567 − 291",
+    "options": ["276", "277", "278", "279"],
+    "answer": "276",
+    "explanation": "Avec 567 − 291 : commencez par 567 − 200 = 367, puis 367 − 90 = 277, et enfin 277 − 1 = 276. Une erreur commune serait mal gérer des chiffres lorsque l'on doit emprunter.",
+    "hint": "Subdivise la soustraction : 200s, puis 90, puis 1."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Calculez 48 × 22.",
+    "expression": "48 × 22",
+    "options": ["1016", "1056", "1086", "1106"],
+    "answer": "1056",
+    "explanation": "Pour savoir combien font 48 multiplié par 22, pensez (48 × 20) + (48 × 2) = 960 + 96 = 1056. Le piège est de se tromper en alignant les produits partiels.",
+    "hint": "Décompose le calcul : avec (20+2)."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien font (52 × 7) − 124 ?",
+    "expression": "(52 × 7) − 124",
+    "options": ["220", "236", "242", "244"],
+    "answer": "236",
+    "explanation": "52 × 7 = 364 et 364 − 124 = 236. Le principal piège : oublier la priorité des opérations et soustraire d'abord.",
+    "hint": "Calcule l'opération entre parenthèses d'abord."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Calculez 18 % de 300.",
+    "expression": "0,18 × 300",
+    "options": ["52", "54", "56", "58"],
+    "answer": "54",
+    "explanation": "18 % de 300 est 300 × 0,18, ce qui équivaut à 54. Un piège est de traiter l'avers comme 1,8 % à cause de la confusion avec les décimales.",
+    "hint": "Réduit par dix 3 fois pour isoler 18 %."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Combien fait 3/4 de 256 ?",
+    "expression": "3/4 × 256",
+    "options": ["188", "192", "196", "200"],
+    "answer": "192",
+    "explanation": "3/4 de 256 signifie multiplier 256 par 0,75, ou diviser par 4 et multiplier par 3, soit 192. Le piège est mal gérer les fractions et oublier de multiplier par trois après la division.",
+    "hint": "Divise par 4, puis multiplie par 3."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le résultat de 1234 − 789 ?",
+    "expression": "1234 − 789",
+    "options": ["445", "455", "465", "475"],
+    "answer": "445",
+    "explanation": "Pour 1234 − 789 : 1234 − 700 = 534, puis 534 − 80 = 454 et enfin 454 − 9 = 445. Erreur fréquente : mauvaise gestion de la retenue sur les soustractions partielles.",
+    "hint": "Retire par étapes, gérer d’abord les centaines."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Que vaut (42 + 68) × 2 − 50 ?",
+    "expression": "(42 + 68) × 2 − 50",
+    "options": ["120", "130", "140", "150"],
+    "answer": "150",
+    "explanation": "42 + 68 donne 110. Multiplier 110 par 2 donne 220, puis 220 − 50 égal 150. Le piège ici est de mal suivre l'ordre des opérations, notamment de soustraire avant de multiplier.",
+    "hint": "Additionne d'abord, puis multiplie le total."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le carré de 14 ?",
+    "expression": "14²",
+    "options": ["186", "196", "206", "216"],
+    "answer": "196",
+    "explanation": "14^2 égale 14 × 14 = 196. Une astuce : 14^2 est aussi (10+4)^2 donnant 100 + 80 + 16 = 196. Le piège est souvent de mal multiplier 4 x 4 en fin de compte.",
+    "hint": "Pense à décomposer : (a+b)²."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Calculez 312 ÷ 12.",
+    "expression": "312 ÷ 12",
+    "options": ["24", "26", "28", "30"],
+    "answer": "26",
+    "explanation": "312 divisé par 12 : 312 est 360 − 48 soit 12 × 26 = 312. Astuce: diviser par 6 puis diviser par 2. Le piège est mal aligner les divisors.",
+    "hint": "Utilise méthode de division par étape."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Résolvez 12 × 15 + 37.",
+    "expression": "12 × 15 + 37",
+    "options": ["197", "207", "217", "227"],
+    "answer": "217",
+    "explanation": "12 × 15 = 180, puis ajoute 37 qui donne 217. Un piège classique est d'oublier ou d'inverser l'ordre de l'addition ou multiplication.",
+    "hint": "Multiplie puis ajoute le reste."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Quel est le résultat de (27 × 5) − 64 ?",
+    "expression": "(27 × 5) − 64",
+    "options": ["65", "71", "75", "81"],
+    "answer": "71",
+    "explanation": "Pour (27 × 5) − 64 : 27 × 5 = 135 et 135 − 64 = 71. Le piège est de mal aligner soustraction et multiplication en faisant des erreurs de priorité.",
+    "hint": "Calcule le produit d’abord, la soustraction ensuite."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Calculez 11² + 10².",
+    "expression": "11² + 10²",
+    "options": ["191", "201", "211", "221"],
+    "answer": "221",
+    "explanation": "11² = 121 et 10² = 100, ainsi 121 + 100 = 221. Une confusion est possible entre calcul sommation et une multiplication d'addition.",
+    "hint": "Additionne les carrés séparément, puis combine."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Déterminez la racine carrée de 121.",
+    "expression": "√121",
+    "options": ["9", "10", "11", "12"],
+    "answer": "11",
+    "explanation": "La racine carrée de 121 est 11, car 11 × 11 = 121. Mal interpréter le signe racine peut mener à exécuter par erreur d'autres fonctions.",
+    "hint": "Cherchez un nombre multiplié par lui-même obtenant 121."
+  },
+  {
+    "difficulty": "Difficile",
+    "question": "Résolvons (58 × 9) + 63.",
+    "expression": "(58 × 9) + 63",
+    "options": ["583", "585", "597", "609"],
+    "answer": "585",
+    "explanation": "58 × 9 = 522 et 522 + 63 = 585. Erreurs classiques incluent des erreurs d'addition suite à un produit incorrect.",
+    "hint": "Multipliez d'abord, puis additionnez le numéro suivant."
+  }
+]
