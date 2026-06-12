@@ -895,7 +895,7 @@ class _BulletPoint extends StatelessWidget {
 /// BLOC EXEMPLE / ILLUSTRATION
 /// ------------------------------------------------------------------
 class _ExempleBox extends StatelessWidget {
-  const _ExempleBox({required this.bodySpans});
+  const _ExempleBox({required this.bodySpans, this.title = 'NOTA'});
 
   final String title;
   final List<TextSpan> bodySpans;

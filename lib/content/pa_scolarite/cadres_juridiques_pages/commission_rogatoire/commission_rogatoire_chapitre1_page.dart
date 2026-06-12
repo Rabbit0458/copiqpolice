@@ -577,7 +577,7 @@ class _BulletPoint extends StatelessWidget {
 /// BLOC EXEMPLE
 /// ------------------------------------------------------------------
 class _ExempleBox extends StatelessWidget {
-  const _ExempleBox({required this.bodySpans});
+  const _ExempleBox({required this.bodySpans, this.title = 'NOTA'});
 
   final String title;
   final List<TextSpan> bodySpans;
@@ -640,7 +640,7 @@ class _NotaBox extends StatelessWidget {
   const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
+  final String title = 'NOTA';
 
   @override
   Widget build(BuildContext context) {
