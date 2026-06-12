@@ -742,6 +742,6 @@ class _ErrorState extends StatelessWidget {
         ],
     
       ),
-    ),
+    );
   }
 }

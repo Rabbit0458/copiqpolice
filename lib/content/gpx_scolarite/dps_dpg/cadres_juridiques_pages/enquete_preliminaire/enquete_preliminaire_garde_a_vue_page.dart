@@ -744,10 +744,10 @@ class _ExempleBox extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
+  final String title = 'NOTA';
 
   @override
   Widget build(BuildContext context) {
